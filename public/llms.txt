@@ -1,6 +1,16 @@
-# Ad Docs Context
+# Ad Docs LLMs
 
 LLM-readable documentation pack for advertising platform APIs.
+
+## kuaishou
+
+Use these docs to answer kuaishou API questions. Open the task links first, then follow the full index when needed.
+
+### Common Tasks
+
+### Platform Index
+
+- [kuaishou document index](/kuaishou/index.md)
 
 ## oceanengine
 

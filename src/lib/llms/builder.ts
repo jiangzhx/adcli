@@ -250,7 +250,7 @@ function buildSourceFrontmatter(document: LlmsDocument): string {
 
 function buildLlmsTxt(manifests: LlmsManifest[]): string {
   const lines = [
-    "# Ad Docs Context",
+    "# Ad Docs LLMs",
     "",
     "LLM-readable documentation pack for advertising platform APIs.",
     "",
@@ -294,7 +294,7 @@ function buildPlatformLlmsSection(platform: string, documents: LlmsDocument[]): 
 
 function buildLlmsFullTxt(manifests: LlmsManifest[]): string {
   return [
-    "# Ad Docs Context Full Index",
+    "# Ad Docs LLMs Full Index",
     "",
     ...manifests.flatMap((manifest) => [
       `## ${manifest.platform}`,

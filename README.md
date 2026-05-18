@@ -1,6 +1,6 @@
-# Ad Docs Context
+# Ad Docs LLMs
 
-面向 IDE Agent 的广告平台文档上下文项目。当前主线是把已采集的广告平台文档生成 `llms.txt`、`llms-full.txt` 和静态 Markdown 文档包。
+面向 IDE Agent 和 LLM 的广告平台 API 文档包。当前主线是把已采集的广告平台文档生成 `llms.txt`、`llms-full.txt` 和静态 Markdown 文档包。
 
 项目当前是 Node.js/TypeScript CLI，不使用 Next.js。
 

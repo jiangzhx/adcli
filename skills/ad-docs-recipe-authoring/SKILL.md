@@ -1,6 +1,6 @@
 ---
 name: ad-docs-recipe-authoring
-description: Use when creating, adding, or reviewing Ad Docs Context recipes for source URLs, collection entry pages, discovery rules, or crawl seed definitions
+description: Use when creating, adding, or reviewing Ad Docs LLMs recipes for source URLs, collection entry pages, discovery rules, or crawl seed definitions
 ---
 
 # Ad Docs Recipe Authoring
@@ -39,6 +39,7 @@ Use this decision table:
 | --- | --- | --- |
 | One known HTML document | `official_html` | `id`, `platform`, `type`, `url`, `capture` |
 | One entry page with many child docs | `official_html_collection` | `id`, `platform`, `type`, `entry_url`, `discover` |
+| One entry page backed by a public menu/detail JSON API | `official_html_collection` | Keep the collection recipe small; add builder support that turns API menu rows into source recipes |
 | PDF, Lark doc, sheet, or manual note | typed source recipe | Keep the same source boundary rules; add parser support before relying on it |
 
 If unsure whether a URL is an entry page, create a collection recipe with a small `max_items`, run discovery, and inspect the manifest before ingesting content.
@@ -72,6 +73,36 @@ Look for:
 - Generic navigation titles appearing before real document titles.
 - `javascript:` links that must not be collected.
 - Whether stable ids come from numeric doc ids or URL path slugs.
+- Whether the visible menu is loaded by JSON APIs instead of `<a>` links. For example, Kuaishou DSP docs load `document/menu/list` and `document/detail`; in that case the recipe still describes the entry URL, but discovery must consume the menu API and source ids must come from `documentId`, not the shared `/docs` path.
+
+## API-backed Collection Notes
+
+Some documentation sites expose all documents through the same route and identify pages only through query parameters or API payloads.
+
+Kuaishou DSP example:
+
+```json
+{
+  "id": "kuaishou_dsp_developer_docs",
+  "platform": "kuaishou",
+  "type": "official_html_collection",
+  "entry_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2539&menuId=3765",
+  "discover": {
+    "mode": "fetch",
+    "link_patterns": ["docType=DSP"],
+    "wait_for": "body",
+    "max_items": "all"
+  }
+}
+```
+
+For this shape:
+
+- Probe network requests before assuming link discovery is enough.
+- Use the menu API as the deterministic source inventory.
+- Deduplicate by the real document id when multiple menu entries point to the same document.
+- Generate source URLs that keep all required query parameters, such as `docType`, `documentId`, and `menuId`.
+- Capture source content from the detail API when the rendered page is only a shell.
 
 ## Recipe Types
 

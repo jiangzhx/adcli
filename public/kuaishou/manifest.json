@@ -1,0 +1,2940 @@
+{
+  "platform": "kuaishou",
+  "documents": [
+    {
+      "id": "kuaishou_2419",
+      "doc_id": "kuaishou_2419",
+      "platform": "kuaishou",
+      "title": "短剧付费模式查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2419&menuId=3541",
+      "public_path": "/kuaishou/docs/kuaishou_2419.md"
+    },
+    {
+      "id": "kuaishou_2539",
+      "doc_id": "kuaishou_2539",
+      "platform": "kuaishou",
+      "title": "MAPI注册授权流程说明",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2539&menuId=3765",
+      "public_path": "/kuaishou/docs/kuaishou_2539.md"
+    },
+    {
+      "id": "kuaishou_2540",
+      "doc_id": "kuaishou_2540",
+      "platform": "kuaishou",
+      "title": "scope 权限说明",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2540&menuId=3766",
+      "public_path": "/kuaishou/docs/kuaishou_2540.md"
+    },
+    {
+      "id": "kuaishou_2541",
+      "doc_id": "kuaishou_2541",
+      "platform": "kuaishou",
+      "title": "Token的有效期和续期",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2541&menuId=3768",
+      "public_path": "/kuaishou/docs/kuaishou_2541.md"
+    },
+    {
+      "id": "kuaishou_2542",
+      "doc_id": "kuaishou_2542",
+      "platform": "kuaishou",
+      "title": "流式及分片上传接入说明",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2542&menuId=3257",
+      "public_path": "/kuaishou/docs/kuaishou_2542.md"
+    },
+    {
+      "id": "kuaishou_2543",
+      "doc_id": "kuaishou_2543",
+      "platform": "kuaishou",
+      "title": "智能托管枚举说明",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2543&menuId=3258",
+      "public_path": "/kuaishou/docs/kuaishou_2543.md"
+    },
+    {
+      "id": "kuaishou_2544",
+      "doc_id": "kuaishou_2544",
+      "platform": "kuaishou",
+      "title": "创建和调用限制",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2544&menuId=3259",
+      "public_path": "/kuaishou/docs/kuaishou_2544.md"
+    },
+    {
+      "id": "kuaishou_2545",
+      "doc_id": "kuaishou_2545",
+      "platform": "kuaishou",
+      "title": "接口调用分级使用",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2545&menuId=3260",
+      "public_path": "/kuaishou/docs/kuaishou_2545.md"
+    },
+    {
+      "id": "kuaishou_2546",
+      "doc_id": "kuaishou_2546",
+      "platform": "kuaishou",
+      "title": "转化归因信息合辑",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2546&menuId=3261",
+      "public_path": "/kuaishou/docs/kuaishou_2546.md"
+    },
+    {
+      "id": "kuaishou_2547",
+      "doc_id": "kuaishou_2547",
+      "platform": "kuaishou",
+      "title": "应用中心接入前言",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2547&menuId=3262",
+      "public_path": "/kuaishou/docs/kuaishou_2547.md"
+    },
+    {
+      "id": "kuaishou_2565",
+      "doc_id": "kuaishou_2565",
+      "platform": "kuaishou",
+      "title": "创建广告计划",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2565&menuId=3288",
+      "public_path": "/kuaishou/docs/kuaishou_2565.md"
+    },
+    {
+      "id": "kuaishou_2566",
+      "doc_id": "kuaishou_2566",
+      "platform": "kuaishou",
+      "title": "修改广告计划",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2566&menuId=3289",
+      "public_path": "/kuaishou/docs/kuaishou_2566.md"
+    },
+    {
+      "id": "kuaishou_2568",
+      "doc_id": "kuaishou_2568",
+      "platform": "kuaishou",
+      "title": "查询广告计划",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2568&menuId=3290",
+      "public_path": "/kuaishou/docs/kuaishou_2568.md"
+    },
+    {
+      "id": "kuaishou_2569",
+      "doc_id": "kuaishou_2569",
+      "platform": "kuaishou",
+      "title": "修改广告计划状态",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2569&menuId=3291",
+      "public_path": "/kuaishou/docs/kuaishou_2569.md"
+    },
+    {
+      "id": "kuaishou_2570",
+      "doc_id": "kuaishou_2570",
+      "platform": "kuaishou",
+      "title": "创建广告组",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2570&menuId=3292",
+      "public_path": "/kuaishou/docs/kuaishou_2570.md"
+    },
+    {
+      "id": "kuaishou_2571",
+      "doc_id": "kuaishou_2571",
+      "platform": "kuaishou",
+      "title": "修改广告组",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2571&menuId=3293",
+      "public_path": "/kuaishou/docs/kuaishou_2571.md"
+    },
+    {
+      "id": "kuaishou_2572",
+      "doc_id": "kuaishou_2572",
+      "platform": "kuaishou",
+      "title": "查询广告组",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2572&menuId=3294",
+      "public_path": "/kuaishou/docs/kuaishou_2572.md"
+    },
+    {
+      "id": "kuaishou_2573",
+      "doc_id": "kuaishou_2573",
+      "platform": "kuaishou",
+      "title": "修改广告组预算",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2573&menuId=3297",
+      "public_path": "/kuaishou/docs/kuaishou_2573.md"
+    },
+    {
+      "id": "kuaishou_2575",
+      "doc_id": "kuaishou_2575",
+      "platform": "kuaishou",
+      "title": "修改广告组状态",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2575&menuId=3298",
+      "public_path": "/kuaishou/docs/kuaishou_2575.md"
+    },
+    {
+      "id": "kuaishou_2576",
+      "doc_id": "kuaishou_2576",
+      "platform": "kuaishou",
+      "title": "修改广告组出价",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2576&menuId=3299",
+      "public_path": "/kuaishou/docs/kuaishou_2576.md"
+    },
+    {
+      "id": "kuaishou_2577",
+      "doc_id": "kuaishou_2577",
+      "platform": "kuaishou",
+      "title": "创建自定义创意",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2577&menuId=3300",
+      "public_path": "/kuaishou/docs/kuaishou_2577.md"
+    },
+    {
+      "id": "kuaishou_2578",
+      "doc_id": "kuaishou_2578",
+      "platform": "kuaishou",
+      "title": "创建程序化创意",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2578&menuId=3301",
+      "public_path": "/kuaishou/docs/kuaishou_2578.md"
+    },
+    {
+      "id": "kuaishou_2579",
+      "doc_id": "kuaishou_2579",
+      "platform": "kuaishou",
+      "title": "修改自定义创意",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2579&menuId=3302",
+      "public_path": "/kuaishou/docs/kuaishou_2579.md"
+    },
+    {
+      "id": "kuaishou_2580",
+      "doc_id": "kuaishou_2580",
+      "platform": "kuaishou",
+      "title": "修改程序化创意",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2580&menuId=3303",
+      "public_path": "/kuaishou/docs/kuaishou_2580.md"
+    },
+    {
+      "id": "kuaishou_2581",
+      "doc_id": "kuaishou_2581",
+      "platform": "kuaishou",
+      "title": "批量修改自定义创意",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2581&menuId=3304",
+      "public_path": "/kuaishou/docs/kuaishou_2581.md"
+    },
+    {
+      "id": "kuaishou_2582",
+      "doc_id": "kuaishou_2582",
+      "platform": "kuaishou",
+      "title": "查询自定义创意",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2582&menuId=3305",
+      "public_path": "/kuaishou/docs/kuaishou_2582.md"
+    },
+    {
+      "id": "kuaishou_2583",
+      "doc_id": "kuaishou_2583",
+      "platform": "kuaishou",
+      "title": "查询程序化创意",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2583&menuId=3306",
+      "public_path": "/kuaishou/docs/kuaishou_2583.md"
+    },
+    {
+      "id": "kuaishou_2584",
+      "doc_id": "kuaishou_2584",
+      "platform": "kuaishou",
+      "title": "修改创意状态",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2584&menuId=3307",
+      "public_path": "/kuaishou/docs/kuaishou_2584.md"
+    },
+    {
+      "id": "kuaishou_2585",
+      "doc_id": "kuaishou_2585",
+      "platform": "kuaishou",
+      "title": "创意体验",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2585&menuId=3308",
+      "public_path": "/kuaishou/docs/kuaishou_2585.md"
+    },
+    {
+      "id": "kuaishou_2586",
+      "doc_id": "kuaishou_2586",
+      "platform": "kuaishou",
+      "title": "创意标签填写建议",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2586&menuId=3309",
+      "public_path": "/kuaishou/docs/kuaishou_2586.md"
+    },
+    {
+      "id": "kuaishou_2591",
+      "doc_id": "kuaishou_2591",
+      "platform": "kuaishou",
+      "title": "获取程序化创意/智能创意审核信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2591&menuId=3314",
+      "public_path": "/kuaishou/docs/kuaishou_2591.md"
+    },
+    {
+      "id": "kuaishou_2592",
+      "doc_id": "kuaishou_2592",
+      "platform": "kuaishou",
+      "title": "批量获取监测链接接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2592&menuId=3316",
+      "public_path": "/kuaishou/docs/kuaishou_2592.md"
+    },
+    {
+      "id": "kuaishou_2593",
+      "doc_id": "kuaishou_2593",
+      "platform": "kuaishou",
+      "title": "批量导出关键词",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2593&menuId=3317",
+      "public_path": "/kuaishou/docs/kuaishou_2593.md"
+    },
+    {
+      "id": "kuaishou_2594",
+      "doc_id": "kuaishou_2594",
+      "platform": "kuaishou",
+      "title": "获取关键词导出文件",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2594&menuId=3318",
+      "public_path": "/kuaishou/docs/kuaishou_2594.md"
+    },
+    {
+      "id": "kuaishou_2595",
+      "doc_id": "kuaishou_2595",
+      "platform": "kuaishou",
+      "title": "创意高相关词推荐",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2595&menuId=3092",
+      "public_path": "/kuaishou/docs/kuaishou_2595.md"
+    },
+    {
+      "id": "kuaishou_2596",
+      "doc_id": "kuaishou_2596",
+      "platform": "kuaishou",
+      "title": "更新否定词",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2596&menuId=3320",
+      "public_path": "/kuaishou/docs/kuaishou_2596.md"
+    },
+    {
+      "id": "kuaishou_2597",
+      "doc_id": "kuaishou_2597",
+      "platform": "kuaishou",
+      "title": "获取优词提量列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2597&menuId=3321",
+      "public_path": "/kuaishou/docs/kuaishou_2597.md"
+    },
+    {
+      "id": "kuaishou_2598",
+      "doc_id": "kuaishou_2598",
+      "platform": "kuaishou",
+      "title": "创建优词提量信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2598&menuId=3322",
+      "public_path": "/kuaishou/docs/kuaishou_2598.md"
+    },
+    {
+      "id": "kuaishou_2599",
+      "doc_id": "kuaishou_2599",
+      "platform": "kuaishou",
+      "title": "获取快手号授权列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2599&menuId=3323",
+      "public_path": "/kuaishou/docs/kuaishou_2599.md"
+    },
+    {
+      "id": "kuaishou_2600",
+      "doc_id": "kuaishou_2600",
+      "platform": "kuaishou",
+      "title": "快手号授权接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2600&menuId=3324",
+      "public_path": "/kuaishou/docs/kuaishou_2600.md"
+    },
+    {
+      "id": "kuaishou_2601",
+      "doc_id": "kuaishou_2601",
+      "platform": "kuaishou",
+      "title": "共享授权接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2601&menuId=3325",
+      "public_path": "/kuaishou/docs/kuaishou_2601.md"
+    },
+    {
+      "id": "kuaishou_2602",
+      "doc_id": "kuaishou_2602",
+      "platform": "kuaishou",
+      "title": "共享授权结果",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2602&menuId=3326",
+      "public_path": "/kuaishou/docs/kuaishou_2602.md"
+    },
+    {
+      "id": "kuaishou_2603",
+      "doc_id": "kuaishou_2603",
+      "platform": "kuaishou",
+      "title": "共享授权-获取已共享授权授权记录",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2603&menuId=3327",
+      "public_path": "/kuaishou/docs/kuaishou_2603.md"
+    },
+    {
+      "id": "kuaishou_2604",
+      "doc_id": "kuaishou_2604",
+      "platform": "kuaishou",
+      "title": "开启原生扩量开关接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2604&menuId=3328",
+      "public_path": "/kuaishou/docs/kuaishou_2604.md"
+    },
+    {
+      "id": "kuaishou_2605",
+      "doc_id": "kuaishou_2605",
+      "platform": "kuaishou",
+      "title": "获取原生快手号列表接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2605&menuId=3329",
+      "public_path": "/kuaishou/docs/kuaishou_2605.md"
+    },
+    {
+      "id": "kuaishou_2606",
+      "doc_id": "kuaishou_2606",
+      "platform": "kuaishou",
+      "title": "广告主数据（实时）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2606&menuId=3330",
+      "public_path": "/kuaishou/docs/kuaishou_2606.md"
+    },
+    {
+      "id": "kuaishou_2607",
+      "doc_id": "kuaishou_2607",
+      "platform": "kuaishou",
+      "title": "广告计划数据（实时）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2607&menuId=3331",
+      "public_path": "/kuaishou/docs/kuaishou_2607.md"
+    },
+    {
+      "id": "kuaishou_2608",
+      "doc_id": "kuaishou_2608",
+      "platform": "kuaishou",
+      "title": "广告组数据",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2608&menuId=3332",
+      "public_path": "/kuaishou/docs/kuaishou_2608.md"
+    },
+    {
+      "id": "kuaishou_2609",
+      "doc_id": "kuaishou_2609",
+      "platform": "kuaishou",
+      "title": "广告创意数据（自定义）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2609&menuId=3333",
+      "public_path": "/kuaishou/docs/kuaishou_2609.md"
+    },
+    {
+      "id": "kuaishou_2610",
+      "doc_id": "kuaishou_2610",
+      "platform": "kuaishou",
+      "title": "程序化创意数据(包含程序化2.0 + 智能创意)",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2610&menuId=3334",
+      "public_path": "/kuaishou/docs/kuaishou_2610.md"
+    },
+    {
+      "id": "kuaishou_2611",
+      "doc_id": "kuaishou_2611",
+      "platform": "kuaishou",
+      "title": "获取创意审核详情接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2611&menuId=3335",
+      "public_path": "/kuaishou/docs/kuaishou_2611.md"
+    },
+    {
+      "id": "kuaishou_2612",
+      "doc_id": "kuaishou_2612",
+      "platform": "kuaishou",
+      "title": "代理商-可复制账户列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2612&menuId=3336",
+      "public_path": "/kuaishou/docs/kuaishou_2612.md"
+    },
+    {
+      "id": "kuaishou_2613",
+      "doc_id": "kuaishou_2613",
+      "platform": "kuaishou",
+      "title": "获取广告主资质信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2613&menuId=3337",
+      "public_path": "/kuaishou/docs/kuaishou_2613.md"
+    },
+    {
+      "id": "kuaishou_2614",
+      "doc_id": "kuaishou_2614",
+      "platform": "kuaishou",
+      "title": "获取广告账户余额信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2614&menuId=3338",
+      "public_path": "/kuaishou/docs/kuaishou_2614.md"
+    },
+    {
+      "id": "kuaishou_2615",
+      "doc_id": "kuaishou_2615",
+      "platform": "kuaishou",
+      "title": "获取罗盘绑定广告主列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2615&menuId=3339",
+      "public_path": "/kuaishou/docs/kuaishou_2615.md"
+    },
+    {
+      "id": "kuaishou_2621",
+      "doc_id": "kuaishou_2621",
+      "platform": "kuaishou",
+      "title": "程序化落地页报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2621&menuId=3345",
+      "public_path": "/kuaishou/docs/kuaishou_2621.md"
+    },
+    {
+      "id": "kuaishou_2622",
+      "doc_id": "kuaishou_2622",
+      "platform": "kuaishou",
+      "title": "商品库报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2622&menuId=3346",
+      "public_path": "/kuaishou/docs/kuaishou_2622.md"
+    },
+    {
+      "id": "kuaishou_2623",
+      "doc_id": "kuaishou_2623",
+      "platform": "kuaishou",
+      "title": "直播间组件报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2623&menuId=3347",
+      "public_path": "/kuaishou/docs/kuaishou_2623.md"
+    },
+    {
+      "id": "kuaishou_2624",
+      "doc_id": "kuaishou_2624",
+      "platform": "kuaishou",
+      "title": "直播间报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2624&menuId=3348",
+      "public_path": "/kuaishou/docs/kuaishou_2624.md"
+    },
+    {
+      "id": "kuaishou_2625",
+      "doc_id": "kuaishou_2625",
+      "platform": "kuaishou",
+      "title": "关键词报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2625&menuId=3349",
+      "public_path": "/kuaishou/docs/kuaishou_2625.md"
+    },
+    {
+      "id": "kuaishou_2626",
+      "doc_id": "kuaishou_2626",
+      "platform": "kuaishou",
+      "title": "搜索词报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2626&menuId=3350",
+      "public_path": "/kuaishou/docs/kuaishou_2626.md"
+    },
+    {
+      "id": "kuaishou_2627",
+      "doc_id": "kuaishou_2627",
+      "platform": "kuaishou",
+      "title": "探索工具关键报表数据",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2627&menuId=3351",
+      "public_path": "/kuaishou/docs/kuaishou_2627.md"
+    },
+    {
+      "id": "kuaishou_2628",
+      "doc_id": "kuaishou_2628",
+      "platform": "kuaishou",
+      "title": "快小游ECPM报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2628&menuId=3352",
+      "public_path": "/kuaishou/docs/kuaishou_2628.md"
+    },
+    {
+      "id": "kuaishou_2629",
+      "doc_id": "kuaishou_2629",
+      "platform": "kuaishou",
+      "title": "查询图片list接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2629&menuId=3353",
+      "public_path": "/kuaishou/docs/kuaishou_2629.md"
+    },
+    {
+      "id": "kuaishou_2630",
+      "doc_id": "kuaishou_2630",
+      "platform": "kuaishou",
+      "title": "图片推送",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2630&menuId=3354",
+      "public_path": "/kuaishou/docs/kuaishou_2630.md"
+    },
+    {
+      "id": "kuaishou_2631",
+      "doc_id": "kuaishou_2631",
+      "platform": "kuaishou",
+      "title": "视频库-推送视频",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2631&menuId=3355",
+      "public_path": "/kuaishou/docs/kuaishou_2631.md"
+    },
+    {
+      "id": "kuaishou_2632",
+      "doc_id": "kuaishou_2632",
+      "platform": "kuaishou",
+      "title": "视频库-推送视频（新版）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2632&menuId=3356",
+      "public_path": "/kuaishou/docs/kuaishou_2632.md"
+    },
+    {
+      "id": "kuaishou_2633",
+      "doc_id": "kuaishou_2633",
+      "platform": "kuaishou",
+      "title": "视频库-批量更新视频功能",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2633&menuId=3357",
+      "public_path": "/kuaishou/docs/kuaishou_2633.md"
+    },
+    {
+      "id": "kuaishou_2634",
+      "doc_id": "kuaishou_2634",
+      "platform": "kuaishou",
+      "title": "上传视频接口 v2",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2634&menuId=3358",
+      "public_path": "/kuaishou/docs/kuaishou_2634.md"
+    },
+    {
+      "id": "kuaishou_2635",
+      "doc_id": "kuaishou_2635",
+      "platform": "kuaishou",
+      "title": "视频库-删除视频标签",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2635&menuId=3359",
+      "public_path": "/kuaishou/docs/kuaishou_2635.md"
+    },
+    {
+      "id": "kuaishou_2636",
+      "doc_id": "kuaishou_2636",
+      "platform": "kuaishou",
+      "title": "获取视频信息 get 接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2636&menuId=3360",
+      "public_path": "/kuaishou/docs/kuaishou_2636.md"
+    },
+    {
+      "id": "kuaishou_2638",
+      "doc_id": "kuaishou_2638",
+      "platform": "kuaishou",
+      "title": "视频库-视频关联创意数查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2638&menuId=3362",
+      "public_path": "/kuaishou/docs/kuaishou_2638.md"
+    },
+    {
+      "id": "kuaishou_2639",
+      "doc_id": "kuaishou_2639",
+      "platform": "kuaishou",
+      "title": "获取视频信息list接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2639&menuId=3363",
+      "public_path": "/kuaishou/docs/kuaishou_2639.md"
+    },
+    {
+      "id": "kuaishou_2640",
+      "doc_id": "kuaishou_2640",
+      "platform": "kuaishou",
+      "title": "游标查询视频信息接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2640&menuId=3364",
+      "public_path": "/kuaishou/docs/kuaishou_2640.md"
+    },
+    {
+      "id": "kuaishou_2641",
+      "doc_id": "kuaishou_2641",
+      "platform": "kuaishou",
+      "title": "查询账号共享视频库按钮是否开启",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2641&menuId=3365",
+      "public_path": "/kuaishou/docs/kuaishou_2641.md"
+    },
+    {
+      "id": "kuaishou_2642",
+      "doc_id": "kuaishou_2642",
+      "platform": "kuaishou",
+      "title": "第一步：获取上传token",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2642&menuId=3366",
+      "public_path": "/kuaishou/docs/kuaishou_2642.md"
+    },
+    {
+      "id": "kuaishou_2643",
+      "doc_id": "kuaishou_2643",
+      "platform": "kuaishou",
+      "title": "第三步：领用上传token",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2643&menuId=3368",
+      "public_path": "/kuaishou/docs/kuaishou_2643.md"
+    },
+    {
+      "id": "kuaishou_2644",
+      "doc_id": "kuaishou_2644",
+      "platform": "kuaishou",
+      "title": "魔力建站落地页批量创建接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2644&menuId=3369",
+      "public_path": "/kuaishou/docs/kuaishou_2644.md"
+    },
+    {
+      "id": "kuaishou_2645",
+      "doc_id": "kuaishou_2645",
+      "platform": "kuaishou",
+      "title": "魔力建站更新落地页Cid信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2645&menuId=3370",
+      "public_path": "/kuaishou/docs/kuaishou_2645.md"
+    },
+    {
+      "id": "kuaishou_2646",
+      "doc_id": "kuaishou_2646",
+      "platform": "kuaishou",
+      "title": "魔力建站营销组件-表单查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2646&menuId=3371",
+      "public_path": "/kuaishou/docs/kuaishou_2646.md"
+    },
+    {
+      "id": "kuaishou_2647",
+      "doc_id": "kuaishou_2647",
+      "platform": "kuaishou",
+      "title": "魔力建站预约下载信息查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2647&menuId=3372",
+      "public_path": "/kuaishou/docs/kuaishou_2647.md"
+    },
+    {
+      "id": "kuaishou_2648",
+      "doc_id": "kuaishou_2648",
+      "platform": "kuaishou",
+      "title": "魔力建站落地页组信息查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2648&menuId=3373",
+      "public_path": "/kuaishou/docs/kuaishou_2648.md"
+    },
+    {
+      "id": "kuaishou_2649",
+      "doc_id": "kuaishou_2649",
+      "platform": "kuaishou",
+      "title": "魔力建站落地页组创建接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2649&menuId=3374",
+      "public_path": "/kuaishou/docs/kuaishou_2649.md"
+    },
+    {
+      "id": "kuaishou_2650",
+      "doc_id": "kuaishou_2650",
+      "platform": "kuaishou",
+      "title": "魔力建站落地页组更新接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2650&menuId=3375",
+      "public_path": "/kuaishou/docs/kuaishou_2650.md"
+    },
+    {
+      "id": "kuaishou_2651",
+      "doc_id": "kuaishou_2651",
+      "platform": "kuaishou",
+      "title": "魔力建站落地页组删除接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2651&menuId=3376",
+      "public_path": "/kuaishou/docs/kuaishou_2651.md"
+    },
+    {
+      "id": "kuaishou_2652",
+      "doc_id": "kuaishou_2652",
+      "platform": "kuaishou",
+      "title": "魔力建站落地页投放开关接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2652&menuId=3377",
+      "public_path": "/kuaishou/docs/kuaishou_2652.md"
+    },
+    {
+      "id": "kuaishou_2653",
+      "doc_id": "kuaishou_2653",
+      "platform": "kuaishou",
+      "title": "魔力建站获取数据报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2653&menuId=3378",
+      "public_path": "/kuaishou/docs/kuaishou_2653.md"
+    },
+    {
+      "id": "kuaishou_2654",
+      "doc_id": "kuaishou_2654",
+      "platform": "kuaishou",
+      "title": "crm赔付线索回传接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2654&menuId=3539",
+      "public_path": "/kuaishou/docs/kuaishou_2654.md"
+    },
+    {
+      "id": "kuaishou_2655",
+      "doc_id": "kuaishou_2655",
+      "platform": "kuaishou",
+      "title": "线索通-批量创建微信小游戏",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2655&menuId=3379",
+      "public_path": "/kuaishou/docs/kuaishou_2655.md"
+    },
+    {
+      "id": "kuaishou_2656",
+      "doc_id": "kuaishou_2656",
+      "platform": "kuaishou",
+      "title": "线索通-获取微信小游戏列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2656&menuId=3380",
+      "public_path": "/kuaishou/docs/kuaishou_2656.md"
+    },
+    {
+      "id": "kuaishou_2657",
+      "doc_id": "kuaishou_2657",
+      "platform": "kuaishou",
+      "title": "线索crm信息查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2657&menuId=3382",
+      "public_path": "/kuaishou/docs/kuaishou_2657.md"
+    },
+    {
+      "id": "kuaishou_2658",
+      "doc_id": "kuaishou_2658",
+      "platform": "kuaishou",
+      "title": "线索crm意向度/进度/通话状态更新接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2658&menuId=3384",
+      "public_path": "/kuaishou/docs/kuaishou_2658.md"
+    },
+    {
+      "id": "kuaishou_2660",
+      "doc_id": "kuaishou_2660",
+      "platform": "kuaishou",
+      "title": "线索crm 发起外呼",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2660&menuId=3386",
+      "public_path": "/kuaishou/docs/kuaishou_2660.md"
+    },
+    {
+      "id": "kuaishou_2661",
+      "doc_id": "kuaishou_2661",
+      "platform": "kuaishou",
+      "title": "线索crm 获取通话记录列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2661&menuId=3387",
+      "public_path": "/kuaishou/docs/kuaishou_2661.md"
+    },
+    {
+      "id": "kuaishou_2663",
+      "doc_id": "kuaishou_2663",
+      "platform": "kuaishou",
+      "title": "文件上传接口(新)",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2663&menuId=3391",
+      "public_path": "/kuaishou/docs/kuaishou_2663.md"
+    },
+    {
+      "id": "kuaishou_2664",
+      "doc_id": "kuaishou_2664",
+      "platform": "kuaishou",
+      "title": "人群包创建接口(新)",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2664&menuId=3392",
+      "public_path": "/kuaishou/docs/kuaishou_2664.md"
+    },
+    {
+      "id": "kuaishou_2665",
+      "doc_id": "kuaishou_2665",
+      "platform": "kuaishou",
+      "title": "人群包更新接口(新)",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2665&menuId=3393",
+      "public_path": "/kuaishou/docs/kuaishou_2665.md"
+    },
+    {
+      "id": "kuaishou_2666",
+      "doc_id": "kuaishou_2666",
+      "platform": "kuaishou",
+      "title": "系统推荐定向/排除人群包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2666&menuId=3394",
+      "public_path": "/kuaishou/docs/kuaishou_2666.md"
+    },
+    {
+      "id": "kuaishou_2667",
+      "doc_id": "kuaishou_2667",
+      "platform": "kuaishou",
+      "title": "获取可选的深度转化目标",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2667&menuId=3077",
+      "public_path": "/kuaishou/docs/kuaishou_2667.md"
+    },
+    {
+      "id": "kuaishou_2668",
+      "doc_id": "kuaishou_2668",
+      "platform": "kuaishou",
+      "title": "获取可选的浅度转化目标",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2668&menuId=3400",
+      "public_path": "/kuaishou/docs/kuaishou_2668.md"
+    },
+    {
+      "id": "kuaishou_2669",
+      "doc_id": "kuaishou_2669",
+      "platform": "kuaishou",
+      "title": "获取可选的动态词包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2669&menuId=3401",
+      "public_path": "/kuaishou/docs/kuaishou_2669.md"
+    },
+    {
+      "id": "kuaishou_2670",
+      "doc_id": "kuaishou_2670",
+      "platform": "kuaishou",
+      "title": "获取行动号召按钮",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2670&menuId=3402",
+      "public_path": "/kuaishou/docs/kuaishou_2670.md"
+    },
+    {
+      "id": "kuaishou_2671",
+      "doc_id": "kuaishou_2671",
+      "platform": "kuaishou",
+      "title": "获取可用的转化目标",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2671&menuId=3403",
+      "public_path": "/kuaishou/docs/kuaishou_2671.md"
+    },
+    {
+      "id": "kuaishou_2673",
+      "doc_id": "kuaishou_2673",
+      "platform": "kuaishou",
+      "title": "获取创意分类查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2673&menuId=3405",
+      "public_path": "/kuaishou/docs/kuaishou_2673.md"
+    },
+    {
+      "id": "kuaishou_2674",
+      "doc_id": "kuaishou_2674",
+      "platform": "kuaishou",
+      "title": "快手网红-网红分类",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2674&menuId=3406",
+      "public_path": "/kuaishou/docs/kuaishou_2674.md"
+    },
+    {
+      "id": "kuaishou_2675",
+      "doc_id": "kuaishou_2675",
+      "platform": "kuaishou",
+      "title": "获取种子人群包列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2675&menuId=3409",
+      "public_path": "/kuaishou/docs/kuaishou_2675.md"
+    },
+    {
+      "id": "kuaishou_2677",
+      "doc_id": "kuaishou_2677",
+      "platform": "kuaishou",
+      "title": "快手网红-搜索快手网红",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2677&menuId=3410",
+      "public_path": "/kuaishou/docs/kuaishou_2677.md"
+    },
+    {
+      "id": "kuaishou_2680",
+      "doc_id": "kuaishou_2680",
+      "platform": "kuaishou",
+      "title": "评论置顶",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2680&menuId=3413",
+      "public_path": "/kuaishou/docs/kuaishou_2680.md"
+    },
+    {
+      "id": "kuaishou_2682",
+      "doc_id": "kuaishou_2682",
+      "platform": "kuaishou",
+      "title": "创建定向模板",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2682&menuId=3416",
+      "public_path": "/kuaishou/docs/kuaishou_2682.md"
+    },
+    {
+      "id": "kuaishou_2683",
+      "doc_id": "kuaishou_2683",
+      "platform": "kuaishou",
+      "title": "更新定向模板",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2683&menuId=3417",
+      "public_path": "/kuaishou/docs/kuaishou_2683.md"
+    },
+    {
+      "id": "kuaishou_2684",
+      "doc_id": "kuaishou_2684",
+      "platform": "kuaishou",
+      "title": "查询定向模板",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2684&menuId=3418",
+      "public_path": "/kuaishou/docs/kuaishou_2684.md"
+    },
+    {
+      "id": "kuaishou_2685",
+      "doc_id": "kuaishou_2685",
+      "platform": "kuaishou",
+      "title": "删除定向模板",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2685&menuId=3419",
+      "public_path": "/kuaishou/docs/kuaishou_2685.md"
+    },
+    {
+      "id": "kuaishou_2686",
+      "doc_id": "kuaishou_2686",
+      "platform": "kuaishou",
+      "title": "定向模板同步",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2686&menuId=3420",
+      "public_path": "/kuaishou/docs/kuaishou_2686.md"
+    },
+    {
+      "id": "kuaishou_2688",
+      "doc_id": "kuaishou_2688",
+      "platform": "kuaishou",
+      "title": "查询同步失败列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2688&menuId=3421",
+      "public_path": "/kuaishou/docs/kuaishou_2688.md"
+    },
+    {
+      "id": "kuaishou_2689",
+      "doc_id": "kuaishou_2689",
+      "platform": "kuaishou",
+      "title": "查询模板关联广告组",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2689&menuId=3423",
+      "public_path": "/kuaishou/docs/kuaishou_2689.md"
+    },
+    {
+      "id": "kuaishou_2690",
+      "doc_id": "kuaishou_2690",
+      "platform": "kuaishou",
+      "title": "查询待升级模板",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2690&menuId=3424",
+      "public_path": "/kuaishou/docs/kuaishou_2690.md"
+    },
+    {
+      "id": "kuaishou_2694",
+      "doc_id": "kuaishou_2694",
+      "platform": "kuaishou",
+      "title": "升级定向模板",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2694&menuId=3428",
+      "public_path": "/kuaishou/docs/kuaishou_2694.md"
+    },
+    {
+      "id": "kuaishou_2698",
+      "doc_id": "kuaishou_2698",
+      "platform": "kuaishou",
+      "title": "批量更新监测链接接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2698&menuId=3433",
+      "public_path": "/kuaishou/docs/kuaishou_2698.md"
+    },
+    {
+      "id": "kuaishou_2699",
+      "doc_id": "kuaishou_2699",
+      "platform": "kuaishou",
+      "title": "隐藏视频同步个人主页",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2699&menuId=3434",
+      "public_path": "/kuaishou/docs/kuaishou_2699.md"
+    },
+    {
+      "id": "kuaishou_2700",
+      "doc_id": "kuaishou_2700",
+      "platform": "kuaishou",
+      "title": "获取达人原生视频列表接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2700&menuId=3435",
+      "public_path": "/kuaishou/docs/kuaishou_2700.md"
+    },
+    {
+      "id": "kuaishou_2701",
+      "doc_id": "kuaishou_2701",
+      "platform": "kuaishou",
+      "title": "本地视频上传接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2701&menuId=3436",
+      "public_path": "/kuaishou/docs/kuaishou_2701.md"
+    },
+    {
+      "id": "kuaishou_2702",
+      "doc_id": "kuaishou_2702",
+      "platform": "kuaishou",
+      "title": "原生效果数据整体概览接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2702&menuId=3437",
+      "public_path": "/kuaishou/docs/kuaishou_2702.md"
+    },
+    {
+      "id": "kuaishou_2705",
+      "doc_id": "kuaishou_2705",
+      "platform": "kuaishou",
+      "title": "批量删除视频",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2705&menuId=3440",
+      "public_path": "/kuaishou/docs/kuaishou_2705.md"
+    },
+    {
+      "id": "kuaishou_2706",
+      "doc_id": "kuaishou_2706",
+      "platform": "kuaishou",
+      "title": "上传图文视频",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2706&menuId=3441",
+      "public_path": "/kuaishou/docs/kuaishou_2706.md"
+    },
+    {
+      "id": "kuaishou_2707",
+      "doc_id": "kuaishou_2707",
+      "platform": "kuaishou",
+      "title": "图文音频文件上传",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2707&menuId=3070",
+      "public_path": "/kuaishou/docs/kuaishou_2707.md"
+    },
+    {
+      "id": "kuaishou_2708",
+      "doc_id": "kuaishou_2708",
+      "platform": "kuaishou",
+      "title": "查询短剧的剧集列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2708&menuId=3443",
+      "public_path": "/kuaishou/docs/kuaishou_2708.md"
+    },
+    {
+      "id": "kuaishou_2709",
+      "doc_id": "kuaishou_2709",
+      "platform": "kuaishou",
+      "title": "获取授权的短剧作者列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2709&menuId=3444",
+      "public_path": "/kuaishou/docs/kuaishou_2709.md"
+    },
+    {
+      "id": "kuaishou_2710",
+      "doc_id": "kuaishou_2710",
+      "platform": "kuaishou",
+      "title": "查询创意推荐理由",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2710&menuId=3445",
+      "public_path": "/kuaishou/docs/kuaishou_2710.md"
+    },
+    {
+      "id": "kuaishou_2711",
+      "doc_id": "kuaishou_2711",
+      "platform": "kuaishou",
+      "title": "代理商-复制账户",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2711&menuId=3446",
+      "public_path": "/kuaishou/docs/kuaishou_2711.md"
+    },
+    {
+      "id": "kuaishou_2712",
+      "doc_id": "kuaishou_2712",
+      "platform": "kuaishou",
+      "title": "上传样本文件接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2712&menuId=3447",
+      "public_path": "/kuaishou/docs/kuaishou_2712.md"
+    },
+    {
+      "id": "kuaishou_2713",
+      "doc_id": "kuaishou_2713",
+      "platform": "kuaishou",
+      "title": "通过上传方式新建样本接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2713&menuId=3448",
+      "public_path": "/kuaishou/docs/kuaishou_2713.md"
+    },
+    {
+      "id": "kuaishou_2714",
+      "doc_id": "kuaishou_2714",
+      "platform": "kuaishou",
+      "title": "联盟定向媒体包创建",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2714&menuId=3449",
+      "public_path": "/kuaishou/docs/kuaishou_2714.md"
+    },
+    {
+      "id": "kuaishou_2715",
+      "doc_id": "kuaishou_2715",
+      "platform": "kuaishou",
+      "title": "联盟定向媒体包修改",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2715&menuId=3450",
+      "public_path": "/kuaishou/docs/kuaishou_2715.md"
+    },
+    {
+      "id": "kuaishou_2716",
+      "doc_id": "kuaishou_2716",
+      "platform": "kuaishou",
+      "title": "联盟定向媒体包删除",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2716&menuId=3451",
+      "public_path": "/kuaishou/docs/kuaishou_2716.md"
+    },
+    {
+      "id": "kuaishou_2720",
+      "doc_id": "kuaishou_2720",
+      "platform": "kuaishou",
+      "title": "直存试玩",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2720&menuId=3453",
+      "public_path": "/kuaishou/docs/kuaishou_2720.md"
+    },
+    {
+      "id": "kuaishou_2721",
+      "doc_id": "kuaishou_2721",
+      "platform": "kuaishou",
+      "title": "上传试玩素材",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2721&menuId=3452",
+      "public_path": "/kuaishou/docs/kuaishou_2721.md"
+    },
+    {
+      "id": "kuaishou_2722",
+      "doc_id": "kuaishou_2722",
+      "platform": "kuaishou",
+      "title": "获取试玩按钮列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2722&menuId=3454",
+      "public_path": "/kuaishou/docs/kuaishou_2722.md"
+    },
+    {
+      "id": "kuaishou_2723",
+      "doc_id": "kuaishou_2723",
+      "platform": "kuaishou",
+      "title": "获取试玩列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2723&menuId=3455",
+      "public_path": "/kuaishou/docs/kuaishou_2723.md"
+    },
+    {
+      "id": "kuaishou_2724",
+      "doc_id": "kuaishou_2724",
+      "platform": "kuaishou",
+      "title": "试玩推送",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2724&menuId=3457",
+      "public_path": "/kuaishou/docs/kuaishou_2724.md"
+    },
+    {
+      "id": "kuaishou_2725",
+      "doc_id": "kuaishou_2725",
+      "platform": "kuaishou",
+      "title": "查看共享账户",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2725&menuId=3458",
+      "public_path": "/kuaishou/docs/kuaishou_2725.md"
+    },
+    {
+      "id": "kuaishou_2726",
+      "doc_id": "kuaishou_2726",
+      "platform": "kuaishou",
+      "title": "查询 DPA 模板信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2726&menuId=3459",
+      "public_path": "/kuaishou/docs/kuaishou_2726.md"
+    },
+    {
+      "id": "kuaishou_2727",
+      "doc_id": "kuaishou_2727",
+      "platform": "kuaishou",
+      "title": "获取商品库列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2727&menuId=3460",
+      "public_path": "/kuaishou/docs/kuaishou_2727.md"
+    },
+    {
+      "id": "kuaishou_2728",
+      "doc_id": "kuaishou_2728",
+      "platform": "kuaishou",
+      "title": "获取商品库类目树",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2728&menuId=3461",
+      "public_path": "/kuaishou/docs/kuaishou_2728.md"
+    },
+    {
+      "id": "kuaishou_2729",
+      "doc_id": "kuaishou_2729",
+      "platform": "kuaishou",
+      "title": "创建商品",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2729&menuId=3462",
+      "public_path": "/kuaishou/docs/kuaishou_2729.md"
+    },
+    {
+      "id": "kuaishou_2730",
+      "doc_id": "kuaishou_2730",
+      "platform": "kuaishou",
+      "title": "更新商品",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2730&menuId=3463",
+      "public_path": "/kuaishou/docs/kuaishou_2730.md"
+    },
+    {
+      "id": "kuaishou_2732",
+      "doc_id": "kuaishou_2732",
+      "platform": "kuaishou",
+      "title": "获取商品列表(部分信息)",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2732&menuId=3465",
+      "public_path": "/kuaishou/docs/kuaishou_2732.md"
+    },
+    {
+      "id": "kuaishou_2733",
+      "doc_id": "kuaishou_2733",
+      "platform": "kuaishou",
+      "title": "获取商品列表(游标)",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2733&menuId=3466",
+      "public_path": "/kuaishou/docs/kuaishou_2733.md"
+    },
+    {
+      "id": "kuaishou_2734",
+      "doc_id": "kuaishou_2734",
+      "platform": "kuaishou",
+      "title": "获取SDPA创意视频模板",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2734&menuId=3467",
+      "public_path": "/kuaishou/docs/kuaishou_2734.md"
+    },
+    {
+      "id": "kuaishou_2735",
+      "doc_id": "kuaishou_2735",
+      "platform": "kuaishou",
+      "title": "批量模板合成SDPA创意视频",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2735&menuId=3468",
+      "public_path": "/kuaishou/docs/kuaishou_2735.md"
+    },
+    {
+      "id": "kuaishou_2736",
+      "doc_id": "kuaishou_2736",
+      "platform": "kuaishou",
+      "title": "获取广告组曝光转化预估",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2736&menuId=3469",
+      "public_path": "/kuaishou/docs/kuaishou_2736.md"
+    },
+    {
+      "id": "kuaishou_2737",
+      "doc_id": "kuaishou_2737",
+      "platform": "kuaishou",
+      "title": "获取广告组投放预估曲线",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2737&menuId=3470",
+      "public_path": "/kuaishou/docs/kuaishou_2737.md"
+    },
+    {
+      "id": "kuaishou_2738",
+      "doc_id": "kuaishou_2738",
+      "platform": "kuaishou",
+      "title": "获取主播列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2738&menuId=3471",
+      "public_path": "/kuaishou/docs/kuaishou_2738.md"
+    },
+    {
+      "id": "kuaishou_2739",
+      "doc_id": "kuaishou_2739",
+      "platform": "kuaishou",
+      "title": "获取直播间小铃铛列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2739&menuId=3472",
+      "public_path": "/kuaishou/docs/kuaishou_2739.md"
+    },
+    {
+      "id": "kuaishou_2740",
+      "doc_id": "kuaishou_2740",
+      "platform": "kuaishou",
+      "title": "小铃铛创建接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2740&menuId=3473",
+      "public_path": "/kuaishou/docs/kuaishou_2740.md"
+    },
+    {
+      "id": "kuaishou_2741",
+      "doc_id": "kuaishou_2741",
+      "platform": "kuaishou",
+      "title": "小铃铛激活接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2741&menuId=3474",
+      "public_path": "/kuaishou/docs/kuaishou_2741.md"
+    },
+    {
+      "id": "kuaishou_2742",
+      "doc_id": "kuaishou_2742",
+      "platform": "kuaishou",
+      "title": "小铃铛挂载接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2742&menuId=3475",
+      "public_path": "/kuaishou/docs/kuaishou_2742.md"
+    },
+    {
+      "id": "kuaishou_2743",
+      "doc_id": "kuaishou_2743",
+      "platform": "kuaishou",
+      "title": "小铃铛删除接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2743&menuId=3476",
+      "public_path": "/kuaishou/docs/kuaishou_2743.md"
+    },
+    {
+      "id": "kuaishou_2744",
+      "doc_id": "kuaishou_2744",
+      "platform": "kuaishou",
+      "title": "一键复苏开启",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2744&menuId=3477",
+      "public_path": "/kuaishou/docs/kuaishou_2744.md"
+    },
+    {
+      "id": "kuaishou_2745",
+      "doc_id": "kuaishou_2745",
+      "platform": "kuaishou",
+      "title": "一键复苏关闭",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2745&menuId=3480",
+      "public_path": "/kuaishou/docs/kuaishou_2745.md"
+    },
+    {
+      "id": "kuaishou_2753",
+      "doc_id": "kuaishou_2753",
+      "platform": "kuaishou",
+      "title": "智能托管创建接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2753&menuId=3488",
+      "public_path": "/kuaishou/docs/kuaishou_2753.md"
+    },
+    {
+      "id": "kuaishou_2754",
+      "doc_id": "kuaishou_2754",
+      "platform": "kuaishou",
+      "title": "智能托管更新接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2754&menuId=3489",
+      "public_path": "/kuaishou/docs/kuaishou_2754.md"
+    },
+    {
+      "id": "kuaishou_2755",
+      "doc_id": "kuaishou_2755",
+      "platform": "kuaishou",
+      "title": "智能托管状态更新",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2755&menuId=3490",
+      "public_path": "/kuaishou/docs/kuaishou_2755.md"
+    },
+    {
+      "id": "kuaishou_2756",
+      "doc_id": "kuaishou_2756",
+      "platform": "kuaishou",
+      "title": "智能托管删除接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2756&menuId=3491",
+      "public_path": "/kuaishou/docs/kuaishou_2756.md"
+    },
+    {
+      "id": "kuaishou_2757",
+      "doc_id": "kuaishou_2757",
+      "platform": "kuaishou",
+      "title": "获取智能托管详情接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2757&menuId=3492",
+      "public_path": "/kuaishou/docs/kuaishou_2757.md"
+    },
+    {
+      "id": "kuaishou_2758",
+      "doc_id": "kuaishou_2758",
+      "platform": "kuaishou",
+      "title": "获取智能托管物料接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2758&menuId=3493",
+      "public_path": "/kuaishou/docs/kuaishou_2758.md"
+    },
+    {
+      "id": "kuaishou_2759",
+      "doc_id": "kuaishou_2759",
+      "platform": "kuaishou",
+      "title": "智能托管报表接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2759&menuId=3495",
+      "public_path": "/kuaishou/docs/kuaishou_2759.md"
+    },
+    {
+      "id": "kuaishou_2760",
+      "doc_id": "kuaishou_2760",
+      "platform": "kuaishou",
+      "title": "分小说展开效果数据接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2760&menuId=3497",
+      "public_path": "/kuaishou/docs/kuaishou_2760.md"
+    },
+    {
+      "id": "kuaishou_2761",
+      "doc_id": "kuaishou_2761",
+      "platform": "kuaishou",
+      "title": "创建投前预估任务",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2761&menuId=3498",
+      "public_path": "/kuaishou/docs/kuaishou_2761.md"
+    },
+    {
+      "id": "kuaishou_2762",
+      "doc_id": "kuaishou_2762",
+      "platform": "kuaishou",
+      "title": "投前预估详情",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2762&menuId=3499",
+      "public_path": "/kuaishou/docs/kuaishou_2762.md"
+    },
+    {
+      "id": "kuaishou_2763",
+      "doc_id": "kuaishou_2763",
+      "platform": "kuaishou",
+      "title": "投前预估列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2763&menuId=3500",
+      "public_path": "/kuaishou/docs/kuaishou_2763.md"
+    },
+    {
+      "id": "kuaishou_2764",
+      "doc_id": "kuaishou_2764",
+      "platform": "kuaishou",
+      "title": "投前预估任务管理接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2764&menuId=3501",
+      "public_path": "/kuaishou/docs/kuaishou_2764.md"
+    },
+    {
+      "id": "kuaishou_2766",
+      "doc_id": "kuaishou_2766",
+      "platform": "kuaishou",
+      "title": "上传 APK 文件",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2766&menuId=3502",
+      "public_path": "/kuaishou/docs/kuaishou_2766.md"
+    },
+    {
+      "id": "kuaishou_2767",
+      "doc_id": "kuaishou_2767",
+      "platform": "kuaishou",
+      "title": "上传图片",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2767&menuId=3503",
+      "public_path": "/kuaishou/docs/kuaishou_2767.md"
+    },
+    {
+      "id": "kuaishou_2768",
+      "doc_id": "kuaishou_2768",
+      "platform": "kuaishou",
+      "title": "创建 Android 应用",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2768&menuId=3504",
+      "public_path": "/kuaishou/docs/kuaishou_2768.md"
+    },
+    {
+      "id": "kuaishou_2769",
+      "doc_id": "kuaishou_2769",
+      "platform": "kuaishou",
+      "title": "创建 iOS 应用",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2769&menuId=3505",
+      "public_path": "/kuaishou/docs/kuaishou_2769.md"
+    },
+    {
+      "id": "kuaishou_2770",
+      "doc_id": "kuaishou_2770",
+      "platform": "kuaishou",
+      "title": "更新 Android 应用",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2770&menuId=3506",
+      "public_path": "/kuaishou/docs/kuaishou_2770.md"
+    },
+    {
+      "id": "kuaishou_2771",
+      "doc_id": "kuaishou_2771",
+      "platform": "kuaishou",
+      "title": "更新 iOS 应用",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2771&menuId=3507",
+      "public_path": "/kuaishou/docs/kuaishou_2771.md"
+    },
+    {
+      "id": "kuaishou_2772",
+      "doc_id": "kuaishou_2772",
+      "platform": "kuaishou",
+      "title": "获取新版应用发布列表【单元创编】",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2772&menuId=3508",
+      "public_path": "/kuaishou/docs/kuaishou_2772.md"
+    },
+    {
+      "id": "kuaishou_2773",
+      "doc_id": "kuaishou_2773",
+      "platform": "kuaishou",
+      "title": "获取新版分包发布列表【单元创编】",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2773&menuId=3509",
+      "public_path": "/kuaishou/docs/kuaishou_2773.md"
+    },
+    {
+      "id": "kuaishou_2774",
+      "doc_id": "kuaishou_2774",
+      "platform": "kuaishou",
+      "title": "获取应用列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2774&menuId=3510",
+      "public_path": "/kuaishou/docs/kuaishou_2774.md"
+    },
+    {
+      "id": "kuaishou_2775",
+      "doc_id": "kuaishou_2775",
+      "platform": "kuaishou",
+      "title": "获取应用详情",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2775&menuId=3511",
+      "public_path": "/kuaishou/docs/kuaishou_2775.md"
+    },
+    {
+      "id": "kuaishou_2776",
+      "doc_id": "kuaishou_2776",
+      "platform": "kuaishou",
+      "title": "添加应用共享",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2776&menuId=3513",
+      "public_path": "/kuaishou/docs/kuaishou_2776.md"
+    },
+    {
+      "id": "kuaishou_2777",
+      "doc_id": "kuaishou_2777",
+      "platform": "kuaishou",
+      "title": "取消应用共享",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2777&menuId=3514",
+      "public_path": "/kuaishou/docs/kuaishou_2777.md"
+    },
+    {
+      "id": "kuaishou_2778",
+      "doc_id": "kuaishou_2778",
+      "platform": "kuaishou",
+      "title": "获取应用已共享账号列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2778&menuId=3515",
+      "public_path": "/kuaishou/docs/kuaishou_2778.md"
+    },
+    {
+      "id": "kuaishou_2779",
+      "doc_id": "kuaishou_2779",
+      "platform": "kuaishou",
+      "title": "获取应用已共享主体列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2779&menuId=3516",
+      "public_path": "/kuaishou/docs/kuaishou_2779.md"
+    },
+    {
+      "id": "kuaishou_2780",
+      "doc_id": "kuaishou_2780",
+      "platform": "kuaishou",
+      "title": "获取单个主体下共享账号列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2780&menuId=3517",
+      "public_path": "/kuaishou/docs/kuaishou_2780.md"
+    },
+    {
+      "id": "kuaishou_2782",
+      "doc_id": "kuaishou_2782",
+      "platform": "kuaishou",
+      "title": "获取可共享的账号列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2782&menuId=3519",
+      "public_path": "/kuaishou/docs/kuaishou_2782.md"
+    },
+    {
+      "id": "kuaishou_2783",
+      "doc_id": "kuaishou_2783",
+      "platform": "kuaishou",
+      "title": "iOS 应用上报更新",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2783&menuId=3520",
+      "public_path": "/kuaishou/docs/kuaishou_2783.md"
+    },
+    {
+      "id": "kuaishou_2784",
+      "doc_id": "kuaishou_2784",
+      "platform": "kuaishou",
+      "title": "发布应用",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2784&menuId=3521",
+      "public_path": "/kuaishou/docs/kuaishou_2784.md"
+    },
+    {
+      "id": "kuaishou_2785",
+      "doc_id": "kuaishou_2785",
+      "platform": "kuaishou",
+      "title": "应用上架",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2785&menuId=3523",
+      "public_path": "/kuaishou/docs/kuaishou_2785.md"
+    },
+    {
+      "id": "kuaishou_2786",
+      "doc_id": "kuaishou_2786",
+      "platform": "kuaishou",
+      "title": "应用下架",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2786&menuId=3524",
+      "public_path": "/kuaishou/docs/kuaishou_2786.md"
+    },
+    {
+      "id": "kuaishou_2787",
+      "doc_id": "kuaishou_2787",
+      "platform": "kuaishou",
+      "title": "应用商店上下架",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2787&menuId=3525",
+      "public_path": "/kuaishou/docs/kuaishou_2787.md"
+    },
+    {
+      "id": "kuaishou_2788",
+      "doc_id": "kuaishou_2788",
+      "platform": "kuaishou",
+      "title": "新建应用分包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2788&menuId=3526",
+      "public_path": "/kuaishou/docs/kuaishou_2788.md"
+    },
+    {
+      "id": "kuaishou_2789",
+      "doc_id": "kuaishou_2789",
+      "platform": "kuaishou",
+      "title": "更新/恢复/删除应用分包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2789&menuId=3527",
+      "public_path": "/kuaishou/docs/kuaishou_2789.md"
+    },
+    {
+      "id": "kuaishou_2790",
+      "doc_id": "kuaishou_2790",
+      "platform": "kuaishou",
+      "title": "修改应用分包备注",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2790&menuId=3528",
+      "public_path": "/kuaishou/docs/kuaishou_2790.md"
+    },
+    {
+      "id": "kuaishou_2791",
+      "doc_id": "kuaishou_2791",
+      "platform": "kuaishou",
+      "title": "获取分包管理/回收站列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2791&menuId=3529",
+      "public_path": "/kuaishou/docs/kuaishou_2791.md"
+    },
+    {
+      "id": "kuaishou_2792",
+      "doc_id": "kuaishou_2792",
+      "platform": "kuaishou",
+      "title": "分包失败重新构建",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2792&menuId=3530",
+      "public_path": "/kuaishou/docs/kuaishou_2792.md"
+    },
+    {
+      "id": "kuaishou_2793",
+      "doc_id": "kuaishou_2793",
+      "platform": "kuaishou",
+      "title": "获取APP服务类目详情",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2793&menuId=3531",
+      "public_path": "/kuaishou/docs/kuaishou_2793.md"
+    },
+    {
+      "id": "kuaishou_2794",
+      "doc_id": "kuaishou_2794",
+      "platform": "kuaishou",
+      "title": "获取最新未发布应用包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2794&menuId=3532",
+      "public_path": "/kuaishou/docs/kuaishou_2794.md"
+    },
+    {
+      "id": "kuaishou_2795",
+      "doc_id": "kuaishou_2795",
+      "platform": "kuaishou",
+      "title": "获取应用版本记录",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2795&menuId=3533",
+      "public_path": "/kuaishou/docs/kuaishou_2795.md"
+    },
+    {
+      "id": "kuaishou_2796",
+      "doc_id": "kuaishou_2796",
+      "platform": "kuaishou",
+      "title": "获取新版应用发布详情",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2796&menuId=3534",
+      "public_path": "/kuaishou/docs/kuaishou_2796.md"
+    },
+    {
+      "id": "kuaishou_2797",
+      "doc_id": "kuaishou_2797",
+      "platform": "kuaishou",
+      "title": "人群包数据",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2797&menuId=3535",
+      "public_path": "/kuaishou/docs/kuaishou_2797.md"
+    },
+    {
+      "id": "kuaishou_2798",
+      "doc_id": "kuaishou_2798",
+      "platform": "kuaishou",
+      "title": "获取应用中心隐私详情",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2798&menuId=3536",
+      "public_path": "/kuaishou/docs/kuaishou_2798.md"
+    },
+    {
+      "id": "kuaishou_2800",
+      "doc_id": "kuaishou_2800",
+      "platform": "kuaishou",
+      "title": "魔力建站落地页批量更新接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2800&menuId=3538",
+      "public_path": "/kuaishou/docs/kuaishou_2800.md"
+    },
+    {
+      "id": "kuaishou_2801",
+      "doc_id": "kuaishou_2801",
+      "platform": "kuaishou",
+      "title": "查询企微回传投放信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2801&menuId=3540",
+      "public_path": "/kuaishou/docs/kuaishou_2801.md"
+    },
+    {
+      "id": "kuaishou_2802",
+      "doc_id": "kuaishou_2802",
+      "platform": "kuaishou",
+      "title": "小说列表查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2802&menuId=3543",
+      "public_path": "/kuaishou/docs/kuaishou_2802.md"
+    },
+    {
+      "id": "kuaishou_2803",
+      "doc_id": "kuaishou_2803",
+      "platform": "kuaishou",
+      "title": "小铃铛推送接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2803&menuId=3544",
+      "public_path": "/kuaishou/docs/kuaishou_2803.md"
+    },
+    {
+      "id": "kuaishou_2863",
+      "doc_id": "kuaishou_2863",
+      "platform": "kuaishou",
+      "title": "获取广告账户流水信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2863&menuId=3597",
+      "public_path": "/kuaishou/docs/kuaishou_2863.md"
+    },
+    {
+      "id": "kuaishou_2864",
+      "doc_id": "kuaishou_2864",
+      "platform": "kuaishou",
+      "title": "上传资质文件",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2864&menuId=3598",
+      "public_path": "/kuaishou/docs/kuaishou_2864.md"
+    },
+    {
+      "id": "kuaishou_2865",
+      "doc_id": "kuaishou_2865",
+      "platform": "kuaishou",
+      "title": "创建或更新账户信息和开户资质",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2865&menuId=3599",
+      "public_path": "/kuaishou/docs/kuaishou_2865.md"
+    },
+    {
+      "id": "kuaishou_2919",
+      "doc_id": "kuaishou_2919",
+      "platform": "kuaishou",
+      "title": "账户操作记录信息查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2919&menuId=3669",
+      "public_path": "/kuaishou/docs/kuaishou_2919.md"
+    },
+    {
+      "id": "kuaishou_2920",
+      "doc_id": "kuaishou_2920",
+      "platform": "kuaishou",
+      "title": "获取高级创意列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2920&menuId=3670",
+      "public_path": "/kuaishou/docs/kuaishou_2920.md"
+    },
+    {
+      "id": "kuaishou_2921",
+      "doc_id": "kuaishou_2921",
+      "platform": "kuaishou",
+      "title": "创建高级创意接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2921&menuId=3671",
+      "public_path": "/kuaishou/docs/kuaishou_2921.md"
+    },
+    {
+      "id": "kuaishou_2922",
+      "doc_id": "kuaishou_2922",
+      "platform": "kuaishou",
+      "title": "删除高级创意接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2922&menuId=3672",
+      "public_path": "/kuaishou/docs/kuaishou_2922.md"
+    },
+    {
+      "id": "kuaishou_2923",
+      "doc_id": "kuaishou_2923",
+      "platform": "kuaishou",
+      "title": "获取关键词列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2923&menuId=3673",
+      "public_path": "/kuaishou/docs/kuaishou_2923.md"
+    },
+    {
+      "id": "kuaishou_2924",
+      "doc_id": "kuaishou_2924",
+      "platform": "kuaishou",
+      "title": "创建关键词",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2924&menuId=3674",
+      "public_path": "/kuaishou/docs/kuaishou_2924.md"
+    },
+    {
+      "id": "kuaishou_2925",
+      "doc_id": "kuaishou_2925",
+      "platform": "kuaishou",
+      "title": "修改关键词匹配方式",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2925&menuId=3675",
+      "public_path": "/kuaishou/docs/kuaishou_2925.md"
+    },
+    {
+      "id": "kuaishou_2926",
+      "doc_id": "kuaishou_2926",
+      "platform": "kuaishou",
+      "title": "修改关键词投放状态",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2926&menuId=3676",
+      "public_path": "/kuaishou/docs/kuaishou_2926.md"
+    },
+    {
+      "id": "kuaishou_2927",
+      "doc_id": "kuaishou_2927",
+      "platform": "kuaishou",
+      "title": "创建历史数据查询任务",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2927&menuId=3677",
+      "public_path": "/kuaishou/docs/kuaishou_2927.md"
+    },
+    {
+      "id": "kuaishou_2928",
+      "doc_id": "kuaishou_2928",
+      "platform": "kuaishou",
+      "title": "获取任务状态",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2928&menuId=3678",
+      "public_path": "/kuaishou/docs/kuaishou_2928.md"
+    },
+    {
+      "id": "kuaishou_2929",
+      "doc_id": "kuaishou_2929",
+      "platform": "kuaishou",
+      "title": "上传图片 v1 接口【逐步废弃，请使用V2接口】",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2929&menuId=3679",
+      "public_path": "/kuaishou/docs/kuaishou_2929.md"
+    },
+    {
+      "id": "kuaishou_2930",
+      "doc_id": "kuaishou_2930",
+      "platform": "kuaishou",
+      "title": "上传图片 v2 接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2930&menuId=3680",
+      "public_path": "/kuaishou/docs/kuaishou_2930.md"
+    },
+    {
+      "id": "kuaishou_2931",
+      "doc_id": "kuaishou_2931",
+      "platform": "kuaishou",
+      "title": "查询图片信息 get 接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2931&menuId=3681",
+      "public_path": "/kuaishou/docs/kuaishou_2931.md"
+    },
+    {
+      "id": "kuaishou_2932",
+      "doc_id": "kuaishou_2932",
+      "platform": "kuaishou",
+      "title": "查询图片关联创意接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2932&menuId=3682",
+      "public_path": "/kuaishou/docs/kuaishou_2932.md"
+    },
+    {
+      "id": "kuaishou_2933",
+      "doc_id": "kuaishou_2933",
+      "platform": "kuaishou",
+      "title": "人群包跨账户推送",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2933&menuId=3683",
+      "public_path": "/kuaishou/docs/kuaishou_2933.md"
+    },
+    {
+      "id": "kuaishou_2935",
+      "doc_id": "kuaishou_2935",
+      "platform": "kuaishou",
+      "title": "人群列表查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2935&menuId=3685",
+      "public_path": "/kuaishou/docs/kuaishou_2935.md"
+    },
+    {
+      "id": "kuaishou_2936",
+      "doc_id": "kuaishou_2936",
+      "platform": "kuaishou",
+      "title": "联盟定向媒体包广告位报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2936&menuId=3687",
+      "public_path": "/kuaishou/docs/kuaishou_2936.md"
+    },
+    {
+      "id": "kuaishou_2938",
+      "doc_id": "kuaishou_2938",
+      "platform": "kuaishou",
+      "title": "获取联盟定向媒体包列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2938&menuId=3689",
+      "public_path": "/kuaishou/docs/kuaishou_2938.md"
+    },
+    {
+      "id": "kuaishou_2939",
+      "doc_id": "kuaishou_2939",
+      "platform": "kuaishou",
+      "title": "获取应用列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2939&menuId=3690",
+      "public_path": "/kuaishou/docs/kuaishou_2939.md"
+    },
+    {
+      "id": "kuaishou_2940",
+      "doc_id": "kuaishou_2940",
+      "platform": "kuaishou",
+      "title": "获取联盟投放白名单",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2940&menuId=3691",
+      "public_path": "/kuaishou/docs/kuaishou_2940.md"
+    },
+    {
+      "id": "kuaishou_2941",
+      "doc_id": "kuaishou_2941",
+      "platform": "kuaishou",
+      "title": "获取可选的应用定向",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2941&menuId=3693",
+      "public_path": "/kuaishou/docs/kuaishou_2941.md"
+    },
+    {
+      "id": "kuaishou_2942",
+      "doc_id": "kuaishou_2942",
+      "platform": "kuaishou",
+      "title": "获取可选的定向标签",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2942&menuId=3694",
+      "public_path": "/kuaishou/docs/kuaishou_2942.md"
+    },
+    {
+      "id": "kuaishou_2943",
+      "doc_id": "kuaishou_2943",
+      "platform": "kuaishou",
+      "title": "获取可选的封面贴纸样式",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2943&menuId=3695",
+      "public_path": "/kuaishou/docs/kuaishou_2943.md"
+    },
+    {
+      "id": "kuaishou_2944",
+      "doc_id": "kuaishou_2944",
+      "platform": "kuaishou",
+      "title": "获取地域定向",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2944&menuId=3696",
+      "public_path": "/kuaishou/docs/kuaishou_2944.md"
+    },
+    {
+      "id": "kuaishou_2945",
+      "doc_id": "kuaishou_2945",
+      "platform": "kuaishou",
+      "title": "获取商圈地域定向",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2945&menuId=3697",
+      "public_path": "/kuaishou/docs/kuaishou_2945.md"
+    },
+    {
+      "id": "kuaishou_2946",
+      "doc_id": "kuaishou_2946",
+      "platform": "kuaishou",
+      "title": "获取可用咨询组件列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2946&menuId=3698",
+      "public_path": "/kuaishou/docs/kuaishou_2946.md"
+    },
+    {
+      "id": "kuaishou_2947",
+      "doc_id": "kuaishou_2947",
+      "platform": "kuaishou",
+      "title": "创建或更新投放资质",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2947&menuId=3699",
+      "public_path": "/kuaishou/docs/kuaishou_2947.md"
+    },
+    {
+      "id": "kuaishou_2948",
+      "doc_id": "kuaishou_2948",
+      "platform": "kuaishou",
+      "title": "账户日预算查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2948&menuId=3700",
+      "public_path": "/kuaishou/docs/kuaishou_2948.md"
+    },
+    {
+      "id": "kuaishou_2951",
+      "doc_id": "kuaishou_2951",
+      "platform": "kuaishou",
+      "title": "修改账户预算",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2951&menuId=3702",
+      "public_path": "/kuaishou/docs/kuaishou_2951.md"
+    },
+    {
+      "id": "kuaishou_2952",
+      "doc_id": "kuaishou_2952",
+      "platform": "kuaishou",
+      "title": "代理商数据（t-1 数据需要第二天 9 点以后获取）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2952&menuId=3703",
+      "public_path": "/kuaishou/docs/kuaishou_2952.md"
+    },
+    {
+      "id": "kuaishou_2954",
+      "doc_id": "kuaishou_2954",
+      "platform": "kuaishou",
+      "title": "小店通转化数据报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2954&menuId=3705",
+      "public_path": "/kuaishou/docs/kuaishou_2954.md"
+    },
+    {
+      "id": "kuaishou_2955",
+      "doc_id": "kuaishou_2955",
+      "platform": "kuaishou",
+      "title": "获取素造视频接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2955&menuId=3706",
+      "public_path": "/kuaishou/docs/kuaishou_2955.md"
+    },
+    {
+      "id": "kuaishou_2956",
+      "doc_id": "kuaishou_2956",
+      "platform": "kuaishou",
+      "title": "获取可选的推荐封面",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2956&menuId=3707",
+      "public_path": "/kuaishou/docs/kuaishou_2956.md"
+    },
+    {
+      "id": "kuaishou_2957",
+      "doc_id": "kuaishou_2957",
+      "platform": "kuaishou",
+      "title": "应用权限信息列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2957&menuId=3708",
+      "public_path": "/kuaishou/docs/kuaishou_2957.md"
+    },
+    {
+      "id": "kuaishou_2958",
+      "doc_id": "kuaishou_2958",
+      "platform": "kuaishou",
+      "title": "获取行为兴趣\"关键词\"",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2958&menuId=3709",
+      "public_path": "/kuaishou/docs/kuaishou_2958.md"
+    },
+    {
+      "id": "kuaishou_2959",
+      "doc_id": "kuaishou_2959",
+      "platform": "kuaishou",
+      "title": "评论列表数据查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2959&menuId=3710",
+      "public_path": "/kuaishou/docs/kuaishou_2959.md"
+    },
+    {
+      "id": "kuaishou_2960",
+      "doc_id": "kuaishou_2960",
+      "platform": "kuaishou",
+      "title": "回复评论",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2960&menuId=3711",
+      "public_path": "/kuaishou/docs/kuaishou_2960.md"
+    },
+    {
+      "id": "kuaishou_2962",
+      "doc_id": "kuaishou_2962",
+      "platform": "kuaishou",
+      "title": "评论树查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2962&menuId=3713",
+      "public_path": "/kuaishou/docs/kuaishou_2962.md"
+    },
+    {
+      "id": "kuaishou_2964",
+      "doc_id": "kuaishou_2964",
+      "platform": "kuaishou",
+      "title": "屏蔽评论",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2964&menuId=3715",
+      "public_path": "/kuaishou/docs/kuaishou_2964.md"
+    },
+    {
+      "id": "kuaishou_2965",
+      "doc_id": "kuaishou_2965",
+      "platform": "kuaishou",
+      "title": "增加屏蔽评论信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2965&menuId=3716",
+      "public_path": "/kuaishou/docs/kuaishou_2965.md"
+    },
+    {
+      "id": "kuaishou_2966",
+      "doc_id": "kuaishou_2966",
+      "platform": "kuaishou",
+      "title": "删除屏蔽评论信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2966&menuId=3717",
+      "public_path": "/kuaishou/docs/kuaishou_2966.md"
+    },
+    {
+      "id": "kuaishou_2969",
+      "doc_id": "kuaishou_2969",
+      "platform": "kuaishou",
+      "title": "获取屏蔽评论信息列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2969&menuId=3718",
+      "public_path": "/kuaishou/docs/kuaishou_2969.md"
+    },
+    {
+      "id": "kuaishou_2972",
+      "doc_id": "kuaishou_2972",
+      "platform": "kuaishou",
+      "title": "第二步：文件上传（二选一使用）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2972&menuId=3367",
+      "public_path": "/kuaishou/docs/kuaishou_2972.md"
+    },
+    {
+      "id": "kuaishou_2973",
+      "doc_id": "kuaishou_2973",
+      "platform": "kuaishou",
+      "title": "第四步：上传视频库",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2973&menuId=3720",
+      "public_path": "/kuaishou/docs/kuaishou_2973.md"
+    },
+    {
+      "id": "kuaishou_2974",
+      "doc_id": "kuaishou_2974",
+      "platform": "kuaishou",
+      "title": "获取账号信息和开户资质",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2974&menuId=3721",
+      "public_path": "/kuaishou/docs/kuaishou_2974.md"
+    },
+    {
+      "id": "kuaishou_2975",
+      "doc_id": "kuaishou_2975",
+      "platform": "kuaishou",
+      "title": "素材报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2975&menuId=3722",
+      "public_path": "/kuaishou/docs/kuaishou_2975.md"
+    },
+    {
+      "id": "kuaishou_2976",
+      "doc_id": "kuaishou_2976",
+      "platform": "kuaishou",
+      "title": "数据下载",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2976&menuId=3723",
+      "public_path": "/kuaishou/docs/kuaishou_2976.md"
+    },
+    {
+      "id": "kuaishou_2977",
+      "doc_id": "kuaishou_2977",
+      "platform": "kuaishou",
+      "title": "人群分析报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2977&menuId=3724",
+      "public_path": "/kuaishou/docs/kuaishou_2977.md"
+    },
+    {
+      "id": "kuaishou_2978",
+      "doc_id": "kuaishou_2978",
+      "platform": "kuaishou",
+      "title": "报表新增直播数据",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2978&menuId=3725",
+      "public_path": "/kuaishou/docs/kuaishou_2978.md"
+    },
+    {
+      "id": "kuaishou_2979",
+      "doc_id": "kuaishou_2979",
+      "platform": "kuaishou",
+      "title": "人群包删除接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2979&menuId=3726",
+      "public_path": "/kuaishou/docs/kuaishou_2979.md"
+    },
+    {
+      "id": "kuaishou_2980",
+      "doc_id": "kuaishou_2980",
+      "platform": "kuaishou",
+      "title": "人群包上线接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2980&menuId=3727",
+      "public_path": "/kuaishou/docs/kuaishou_2980.md"
+    },
+    {
+      "id": "kuaishou_2981",
+      "doc_id": "kuaishou_2981",
+      "platform": "kuaishou",
+      "title": "获取可选白名单接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2981&menuId=3728",
+      "public_path": "/kuaishou/docs/kuaishou_2981.md"
+    },
+    {
+      "id": "kuaishou_2982",
+      "doc_id": "kuaishou_2982",
+      "platform": "kuaishou",
+      "title": "获取创意分类标签白名单客户",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2982&menuId=3729",
+      "public_path": "/kuaishou/docs/kuaishou_2982.md"
+    },
+    {
+      "id": "kuaishou_2983",
+      "doc_id": "kuaishou_2983",
+      "platform": "kuaishou",
+      "title": "获取行为与兴趣\"类目\"",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2983&menuId=3730",
+      "public_path": "/kuaishou/docs/kuaishou_2983.md"
+    },
+    {
+      "id": "kuaishou_2985",
+      "doc_id": "kuaishou_2985",
+      "platform": "kuaishou",
+      "title": "报错 code 枚举值",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2985&menuId=3732",
+      "public_path": "/kuaishou/docs/kuaishou_2985.md"
+    },
+    {
+      "id": "kuaishou_3005",
+      "doc_id": "kuaishou_3005",
+      "platform": "kuaishou",
+      "title": "更新账户智投(标准)配置信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3005&menuId=3752",
+      "public_path": "/kuaishou/docs/kuaishou_3005.md"
+    },
+    {
+      "id": "kuaishou_3007",
+      "doc_id": "kuaishou_3007",
+      "platform": "kuaishou",
+      "title": "批量获取广告组出价建议",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3007&menuId=3754",
+      "public_path": "/kuaishou/docs/kuaishou_3007.md"
+    },
+    {
+      "id": "kuaishou_3024",
+      "doc_id": "kuaishou_3024",
+      "platform": "kuaishou",
+      "title": "获取可共享的主体列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3024&menuId=3518",
+      "public_path": "/kuaishou/docs/kuaishou_3024.md"
+    },
+    {
+      "id": "kuaishou_3025",
+      "doc_id": "kuaishou_3025",
+      "platform": "kuaishou",
+      "title": "拉取token下授权广告账户接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3025&menuId=3800",
+      "public_path": "/kuaishou/docs/kuaishou_3025.md"
+    },
+    {
+      "id": "kuaishou_3028",
+      "doc_id": "kuaishou_3028",
+      "platform": "kuaishou",
+      "title": "查询账户智投(标准)配置信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3028&menuId=3804",
+      "public_path": "/kuaishou/docs/kuaishou_3028.md"
+    },
+    {
+      "id": "kuaishou_3029",
+      "doc_id": "kuaishou_3029",
+      "platform": "kuaishou",
+      "title": "魔力建站落地页信息查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3029&menuId=3537",
+      "public_path": "/kuaishou/docs/kuaishou_3029.md"
+    },
+    {
+      "id": "kuaishou_3031",
+      "doc_id": "kuaishou_3031",
+      "platform": "kuaishou",
+      "title": "魔力建站落地页批量转赠",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3031&menuId=3750",
+      "public_path": "/kuaishou/docs/kuaishou_3031.md"
+    },
+    {
+      "id": "kuaishou_3032",
+      "doc_id": "kuaishou_3032",
+      "platform": "kuaishou",
+      "title": "查询客服链接绑定成员",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3032&menuId=3758",
+      "public_path": "/kuaishou/docs/kuaishou_3032.md"
+    },
+    {
+      "id": "kuaishou_3034",
+      "doc_id": "kuaishou_3034",
+      "platform": "kuaishou",
+      "title": "创建企微活码包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3034&menuId=3762",
+      "public_path": "/kuaishou/docs/kuaishou_3034.md"
+    },
+    {
+      "id": "kuaishou_3035",
+      "doc_id": "kuaishou_3035",
+      "platform": "kuaishou",
+      "title": "查询企微活码包绑定成员",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3035&menuId=3760",
+      "public_path": "/kuaishou/docs/kuaishou_3035.md"
+    },
+    {
+      "id": "kuaishou_3036",
+      "doc_id": "kuaishou_3036",
+      "platform": "kuaishou",
+      "title": "更新活码包成员",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3036&menuId=3761",
+      "public_path": "/kuaishou/docs/kuaishou_3036.md"
+    },
+    {
+      "id": "kuaishou_3037",
+      "doc_id": "kuaishou_3037",
+      "platform": "kuaishou",
+      "title": "更新获客链接成员",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3037&menuId=3759",
+      "public_path": "/kuaishou/docs/kuaishou_3037.md"
+    },
+    {
+      "id": "kuaishou_3040",
+      "doc_id": "kuaishou_3040",
+      "platform": "kuaishou",
+      "title": "获取商品列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3040&menuId=3464",
+      "public_path": "/kuaishou/docs/kuaishou_3040.md"
+    },
+    {
+      "id": "kuaishou_3042",
+      "doc_id": "kuaishou_3042",
+      "platform": "kuaishou",
+      "title": "查询原生快手号列表(for 原生报表)",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3042&menuId=3439",
+      "public_path": "/kuaishou/docs/kuaishou_3042.md"
+    },
+    {
+      "id": "kuaishou_3047",
+      "doc_id": "kuaishou_3047",
+      "platform": "kuaishou",
+      "title": "刷新token",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3047&menuId=3791",
+      "public_path": "/kuaishou/docs/kuaishou_3047.md"
+    },
+    {
+      "id": "kuaishou_3049",
+      "doc_id": "kuaishou_3049",
+      "platform": "kuaishou",
+      "title": "原生效果数据报表明细接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3049&menuId=3438",
+      "public_path": "/kuaishou/docs/kuaishou_3049.md"
+    },
+    {
+      "id": "kuaishou_3050",
+      "doc_id": "kuaishou_3050",
+      "platform": "kuaishou",
+      "title": "联盟媒体包推送",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3050&menuId=3605",
+      "public_path": "/kuaishou/docs/kuaishou_3050.md"
+    },
+    {
+      "id": "kuaishou_3065",
+      "doc_id": "kuaishou_3065",
+      "platform": "kuaishou",
+      "title": "查询企微授权成员",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3065&menuId=3757",
+      "public_path": "/kuaishou/docs/kuaishou_3065.md"
+    },
+    {
+      "id": "kuaishou_3077",
+      "doc_id": "kuaishou_3077",
+      "platform": "kuaishou",
+      "title": "查询短剧付费模板信息接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3077&menuId=3756",
+      "public_path": "/kuaishou/docs/kuaishou_3077.md"
+    },
+    {
+      "id": "kuaishou_3078",
+      "doc_id": "kuaishou_3078",
+      "platform": "kuaishou",
+      "title": "CID暗投SDPA接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3078&menuId=3813",
+      "public_path": "/kuaishou/docs/kuaishou_3078.md"
+    },
+    {
+      "id": "kuaishou_3079",
+      "doc_id": "kuaishou_3079",
+      "platform": "kuaishou",
+      "title": "取消评论置顶",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3079&menuId=3755",
+      "public_path": "/kuaishou/docs/kuaishou_3079.md"
+    },
+    {
+      "id": "kuaishou_3080",
+      "doc_id": "kuaishou_3080",
+      "platform": "kuaishou",
+      "title": "行为意向4.0类目词查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3080&menuId=3415",
+      "public_path": "/kuaishou/docs/kuaishou_3080.md"
+    },
+    {
+      "id": "kuaishou_3085",
+      "doc_id": "kuaishou_3085",
+      "platform": "kuaishou",
+      "title": "获取 token",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3085&menuId=3784",
+      "public_path": "/kuaishou/docs/kuaishou_3085.md"
+    },
+    {
+      "id": "kuaishou_3089",
+      "doc_id": "kuaishou_3089",
+      "platform": "kuaishou",
+      "title": "AI视频推荐",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3089&menuId=3830",
+      "public_path": "/kuaishou/docs/kuaishou_3089.md"
+    },
+    {
+      "id": "kuaishou_3099",
+      "doc_id": "kuaishou_3099",
+      "platform": "kuaishou",
+      "title": "代理商给广告主账户转账接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3099&menuId=3842",
+      "public_path": "/kuaishou/docs/kuaishou_3099.md"
+    },
+    {
+      "id": "kuaishou_3101",
+      "doc_id": "kuaishou_3101",
+      "platform": "kuaishou",
+      "title": "原生报表披露自然流量的数据整体概览接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3101&menuId=3844",
+      "public_path": "/kuaishou/docs/kuaishou_3101.md"
+    },
+    {
+      "id": "kuaishou_3103",
+      "doc_id": "kuaishou_3103",
+      "platform": "kuaishou",
+      "title": "原生报表披露自然流量后查询原生经营明细接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3103&menuId=3843",
+      "public_path": "/kuaishou/docs/kuaishou_3103.md"
+    },
+    {
+      "id": "kuaishou_3105",
+      "doc_id": "kuaishou_3105",
+      "platform": "kuaishou",
+      "title": "获取线索优选开关状态",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3105&menuId=3846",
+      "public_path": "/kuaishou/docs/kuaishou_3105.md"
+    },
+    {
+      "id": "kuaishou_3106",
+      "doc_id": "kuaishou_3106",
+      "platform": "kuaishou",
+      "title": "修改线索优选开关状态",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3106&menuId=3847",
+      "public_path": "/kuaishou/docs/kuaishou_3106.md"
+    },
+    {
+      "id": "kuaishou_3109",
+      "doc_id": "kuaishou_3109",
+      "platform": "kuaishou",
+      "title": "新建素材包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3109&menuId=3851",
+      "public_path": "/kuaishou/docs/kuaishou_3109.md"
+    },
+    {
+      "id": "kuaishou_3110",
+      "doc_id": "kuaishou_3110",
+      "platform": "kuaishou",
+      "title": "查询素材包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3110&menuId=3853",
+      "public_path": "/kuaishou/docs/kuaishou_3110.md"
+    },
+    {
+      "id": "kuaishou_3111",
+      "doc_id": "kuaishou_3111",
+      "platform": "kuaishou",
+      "title": "添加视频至素材包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3111&menuId=3854",
+      "public_path": "/kuaishou/docs/kuaishou_3111.md"
+    },
+    {
+      "id": "kuaishou_3112",
+      "doc_id": "kuaishou_3112",
+      "platform": "kuaishou",
+      "title": "从素材包内删除视频",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3112&menuId=3855",
+      "public_path": "/kuaishou/docs/kuaishou_3112.md"
+    },
+    {
+      "id": "kuaishou_3113",
+      "doc_id": "kuaishou_3113",
+      "platform": "kuaishou",
+      "title": "删除素材包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3113&menuId=3856",
+      "public_path": "/kuaishou/docs/kuaishou_3113.md"
+    },
+    {
+      "id": "kuaishou_3114",
+      "doc_id": "kuaishou_3114",
+      "platform": "kuaishou",
+      "title": "编辑素材包",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3114&menuId=3857",
+      "public_path": "/kuaishou/docs/kuaishou_3114.md"
+    },
+    {
+      "id": "kuaishou_3115",
+      "doc_id": "kuaishou_3115",
+      "platform": "kuaishou",
+      "title": "素材包推送",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3115&menuId=3858",
+      "public_path": "/kuaishou/docs/kuaishou_3115.md"
+    },
+    {
+      "id": "kuaishou_3158",
+      "doc_id": "kuaishou_3158",
+      "platform": "kuaishou",
+      "title": "获取推荐广告语接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3158&menuId=3913",
+      "public_path": "/kuaishou/docs/kuaishou_3158.md"
+    },
+    {
+      "id": "kuaishou_3164",
+      "doc_id": "kuaishou_3164",
+      "platform": "kuaishou",
+      "title": "代理商-创建广告主",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3164&menuId=3917",
+      "public_path": "/kuaishou/docs/kuaishou_3164.md"
+    },
+    {
+      "id": "kuaishou_3165",
+      "doc_id": "kuaishou_3165",
+      "platform": "kuaishou",
+      "title": "代理商-创建广告主发送验证码",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3165&menuId=3916",
+      "public_path": "/kuaishou/docs/kuaishou_3165.md"
+    },
+    {
+      "id": "kuaishou_3168",
+      "doc_id": "kuaishou_3168",
+      "platform": "kuaishou",
+      "title": "代理商-广告主流水列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3168&menuId=3920",
+      "public_path": "/kuaishou/docs/kuaishou_3168.md"
+    },
+    {
+      "id": "kuaishou_3169",
+      "doc_id": "kuaishou_3169",
+      "platform": "kuaishou",
+      "title": "企微加粉后链路数据回传",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3169&menuId=3922",
+      "public_path": "/kuaishou/docs/kuaishou_3169.md"
+    },
+    {
+      "id": "kuaishou_3170",
+      "doc_id": "kuaishou_3170",
+      "platform": "kuaishou",
+      "title": "数据源文件上传接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3170&menuId=3923",
+      "public_path": "/kuaishou/docs/kuaishou_3170.md"
+    },
+    {
+      "id": "kuaishou_3171",
+      "doc_id": "kuaishou_3171",
+      "platform": "kuaishou",
+      "title": "数据源新建接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3171&menuId=3924",
+      "public_path": "/kuaishou/docs/kuaishou_3171.md"
+    },
+    {
+      "id": "kuaishou_3172",
+      "doc_id": "kuaishou_3172",
+      "platform": "kuaishou",
+      "title": "数据源更新接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3172&menuId=3925",
+      "public_path": "/kuaishou/docs/kuaishou_3172.md"
+    },
+    {
+      "id": "kuaishou_3181",
+      "doc_id": "kuaishou_3181",
+      "platform": "kuaishou",
+      "title": "代理商流水列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3181&menuId=3934",
+      "public_path": "/kuaishou/docs/kuaishou_3181.md"
+    },
+    {
+      "id": "kuaishou_3182",
+      "doc_id": "kuaishou_3182",
+      "platform": "kuaishou",
+      "title": "代理商-账户列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3182&menuId=3935",
+      "public_path": "/kuaishou/docs/kuaishou_3182.md"
+    },
+    {
+      "id": "kuaishou_3183",
+      "doc_id": "kuaishou_3183",
+      "platform": "kuaishou",
+      "title": "修改周期稳投计划续投状态",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3183&menuId=3938",
+      "public_path": "/kuaishou/docs/kuaishou_3183.md"
+    },
+    {
+      "id": "kuaishou_3184",
+      "doc_id": "kuaishou_3184",
+      "platform": "kuaishou",
+      "title": "增量探索配置列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3184&menuId=3943",
+      "public_path": "/kuaishou/docs/kuaishou_3184.md"
+    },
+    {
+      "id": "kuaishou_3185",
+      "doc_id": "kuaishou_3185",
+      "platform": "kuaishou",
+      "title": "获取转化目标当前消耗",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3185&menuId=3945",
+      "public_path": "/kuaishou/docs/kuaishou_3185.md"
+    },
+    {
+      "id": "kuaishou_3186",
+      "doc_id": "kuaishou_3186",
+      "platform": "kuaishou",
+      "title": "增量探索配置项报表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3186&menuId=3944",
+      "public_path": "/kuaishou/docs/kuaishou_3186.md"
+    },
+    {
+      "id": "kuaishou_3187",
+      "doc_id": "kuaishou_3187",
+      "platform": "kuaishou",
+      "title": "添加增量探索配置",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3187&menuId=3942",
+      "public_path": "/kuaishou/docs/kuaishou_3187.md"
+    },
+    {
+      "id": "kuaishou_3188",
+      "doc_id": "kuaishou_3188",
+      "platform": "kuaishou",
+      "title": "编辑增量探索配置",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3188&menuId=3946",
+      "public_path": "/kuaishou/docs/kuaishou_3188.md"
+    },
+    {
+      "id": "kuaishou_3189",
+      "doc_id": "kuaishou_3189",
+      "platform": "kuaishou",
+      "title": "暂停增量探索",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3189&menuId=3948",
+      "public_path": "/kuaishou/docs/kuaishou_3189.md"
+    },
+    {
+      "id": "kuaishou_3190",
+      "doc_id": "kuaishou_3190",
+      "platform": "kuaishou",
+      "title": "重启增量探索",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3190&menuId=3949",
+      "public_path": "/kuaishou/docs/kuaishou_3190.md"
+    },
+    {
+      "id": "kuaishou_3191",
+      "doc_id": "kuaishou_3191",
+      "platform": "kuaishou",
+      "title": "删除增量探索配置",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3191&menuId=3947",
+      "public_path": "/kuaishou/docs/kuaishou_3191.md"
+    },
+    {
+      "id": "kuaishou_3192",
+      "doc_id": "kuaishou_3192",
+      "platform": "kuaishou",
+      "title": "获取历史上有消耗的转化目标",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3192&menuId=3941",
+      "public_path": "/kuaishou/docs/kuaishou_3192.md"
+    },
+    {
+      "id": "kuaishou_3200",
+      "doc_id": "kuaishou_3200",
+      "platform": "kuaishou",
+      "title": "广告主退钱给代理商",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3200&menuId=3957",
+      "public_path": "/kuaishou/docs/kuaishou_3200.md"
+    },
+    {
+      "id": "kuaishou_3201",
+      "doc_id": "kuaishou_3201",
+      "platform": "kuaishou",
+      "title": "广告主转账",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3201&menuId=3958",
+      "public_path": "/kuaishou/docs/kuaishou_3201.md"
+    },
+    {
+      "id": "kuaishou_3202",
+      "doc_id": "kuaishou_3202",
+      "platform": "kuaishou",
+      "title": "批量拉取代理商下账户列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3202&menuId=3959",
+      "public_path": "/kuaishou/docs/kuaishou_3202.md"
+    },
+    {
+      "id": "kuaishou_3205",
+      "doc_id": "kuaishou_3205",
+      "platform": "kuaishou",
+      "title": "客户共享钱包余额查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3205&menuId=3965",
+      "public_path": "/kuaishou/docs/kuaishou_3205.md"
+    },
+    {
+      "id": "kuaishou_3210",
+      "doc_id": "kuaishou_3210",
+      "platform": "kuaishou",
+      "title": "客户共享钱包交易明细查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3210&menuId=3980",
+      "public_path": "/kuaishou/docs/kuaishou_3210.md"
+    },
+    {
+      "id": "kuaishou_3211",
+      "doc_id": "kuaishou_3211",
+      "platform": "kuaishou",
+      "title": "客户共享钱包消耗明细查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3211&menuId=3981",
+      "public_path": "/kuaishou/docs/kuaishou_3211.md"
+    },
+    {
+      "id": "kuaishou_3212",
+      "doc_id": "kuaishou_3212",
+      "platform": "kuaishou",
+      "title": "客户共享钱包账户绑定/解绑",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3212&menuId=3982",
+      "public_path": "/kuaishou/docs/kuaishou_3212.md"
+    },
+    {
+      "id": "kuaishou_3213",
+      "doc_id": "kuaishou_3213",
+      "platform": "kuaishou",
+      "title": "客户共享钱包账户充值/退款",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3213&menuId=3983",
+      "public_path": "/kuaishou/docs/kuaishou_3213.md"
+    },
+    {
+      "id": "kuaishou_3245",
+      "doc_id": "kuaishou_3245",
+      "platform": "kuaishou",
+      "title": "创建商品（音视频-短剧）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3245&menuId=4017",
+      "public_path": "/kuaishou/docs/kuaishou_3245.md"
+    },
+    {
+      "id": "kuaishou_3246",
+      "doc_id": "kuaishou_3246",
+      "platform": "kuaishou",
+      "title": "更新商品（音视频-短剧）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3246&menuId=4018",
+      "public_path": "/kuaishou/docs/kuaishou_3246.md"
+    },
+    {
+      "id": "kuaishou_3247",
+      "doc_id": "kuaishou_3247",
+      "platform": "kuaishou",
+      "title": "创建商品（音视频-漫剧）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3247&menuId=4020",
+      "public_path": "/kuaishou/docs/kuaishou_3247.md"
+    },
+    {
+      "id": "kuaishou_3248",
+      "doc_id": "kuaishou_3248",
+      "platform": "kuaishou",
+      "title": "更新商品（音视频-漫剧）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3248&menuId=4021",
+      "public_path": "/kuaishou/docs/kuaishou_3248.md"
+    },
+    {
+      "id": "kuaishou_3257",
+      "doc_id": "kuaishou_3257",
+      "platform": "kuaishou",
+      "title": "查询授权短剧列表（新）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3257&menuId=4046",
+      "public_path": "/kuaishou/docs/kuaishou_3257.md"
+    },
+    {
+      "id": "kuaishou_3265",
+      "doc_id": "kuaishou_3265",
+      "platform": "kuaishou",
+      "title": "一代给二代充值",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3265&menuId=4038",
+      "public_path": "/kuaishou/docs/kuaishou_3265.md"
+    },
+    {
+      "id": "kuaishou_3266",
+      "doc_id": "kuaishou_3266",
+      "platform": "kuaishou",
+      "title": "客户共享钱包列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3266&menuId=4039",
+      "public_path": "/kuaishou/docs/kuaishou_3266.md"
+    },
+    {
+      "id": "kuaishou_3267",
+      "doc_id": "kuaishou_3267",
+      "platform": "kuaishou",
+      "title": "获取交易状态信息",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3267&menuId=4040",
+      "public_path": "/kuaishou/docs/kuaishou_3267.md"
+    },
+    {
+      "id": "kuaishou_3272",
+      "doc_id": "kuaishou_3272",
+      "platform": "kuaishou",
+      "title": "更新商品（书库-网络小说）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3272&menuId=4049",
+      "public_path": "/kuaishou/docs/kuaishou_3272.md"
+    },
+    {
+      "id": "kuaishou_3273",
+      "doc_id": "kuaishou_3273",
+      "platform": "kuaishou",
+      "title": "创建商品（书库-网络小说）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3273&menuId=4048",
+      "public_path": "/kuaishou/docs/kuaishou_3273.md"
+    },
+    {
+      "id": "kuaishou_3277",
+      "doc_id": "kuaishou_3277",
+      "platform": "kuaishou",
+      "title": "代理商-获取新的交易号",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3277&menuId=4053",
+      "public_path": "/kuaishou/docs/kuaishou_3277.md"
+    },
+    {
+      "id": "kuaishou_3278",
+      "doc_id": "kuaishou_3278",
+      "platform": "kuaishou",
+      "title": "智投项目查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3278&menuId=4058",
+      "public_path": "/kuaishou/docs/kuaishou_3278.md"
+    },
+    {
+      "id": "kuaishou_3279",
+      "doc_id": "kuaishou_3279",
+      "platform": "kuaishou",
+      "title": "智投配置更新接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3279&menuId=4057",
+      "public_path": "/kuaishou/docs/kuaishou_3279.md"
+    },
+    {
+      "id": "kuaishou_3281",
+      "doc_id": "kuaishou_3281",
+      "platform": "kuaishou",
+      "title": "代理商-修改账户名称",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3281&menuId=4059",
+      "public_path": "/kuaishou/docs/kuaishou_3281.md"
+    },
+    {
+      "id": "kuaishou_3283",
+      "doc_id": "kuaishou_3283",
+      "platform": "kuaishou",
+      "title": "创建商品（医疗库）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3283&menuId=4060",
+      "public_path": "/kuaishou/docs/kuaishou_3283.md"
+    },
+    {
+      "id": "kuaishou_3284",
+      "doc_id": "kuaishou_3284",
+      "platform": "kuaishou",
+      "title": "更新商品（医疗库）",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3284&menuId=4061",
+      "public_path": "/kuaishou/docs/kuaishou_3284.md"
+    },
+    {
+      "id": "kuaishou_3309",
+      "doc_id": "kuaishou_3309",
+      "platform": "kuaishou",
+      "title": "拉取账户可复制信息列表",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3309&menuId=4090",
+      "public_path": "/kuaishou/docs/kuaishou_3309.md"
+    },
+    {
+      "id": "kuaishou_3312",
+      "doc_id": "kuaishou_3312",
+      "platform": "kuaishou",
+      "title": "客户共享钱包绑定账户查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3312&menuId=4093",
+      "public_path": "/kuaishou/docs/kuaishou_3312.md"
+    },
+    {
+      "id": "kuaishou_3313",
+      "doc_id": "kuaishou_3313",
+      "platform": "kuaishou",
+      "title": "客户共享钱包告警信息查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3313&menuId=4092",
+      "public_path": "/kuaishou/docs/kuaishou_3313.md"
+    },
+    {
+      "id": "kuaishou_3315",
+      "doc_id": "kuaishou_3315",
+      "platform": "kuaishou",
+      "title": "H5一键获取手机号接口【使用请联系行运提报】",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3315&menuId=4095",
+      "public_path": "/kuaishou/docs/kuaishou_3315.md"
+    },
+    {
+      "id": "kuaishou_3317",
+      "doc_id": "kuaishou_3317",
+      "platform": "kuaishou",
+      "title": "MAPI平台SPI订阅服务",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3317&menuId=4096",
+      "public_path": "/kuaishou/docs/kuaishou_3317.md"
+    },
+    {
+      "id": "kuaishou_3318",
+      "doc_id": "kuaishou_3318",
+      "platform": "kuaishou",
+      "title": "查询订阅账户",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3318&menuId=4101",
+      "public_path": "/kuaishou/docs/kuaishou_3318.md"
+    },
+    {
+      "id": "kuaishou_3319",
+      "doc_id": "kuaishou_3319",
+      "platform": "kuaishou",
+      "title": "新增订阅账户",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3319&menuId=4099",
+      "public_path": "/kuaishou/docs/kuaishou_3319.md"
+    },
+    {
+      "id": "kuaishou_3320",
+      "doc_id": "kuaishou_3320",
+      "platform": "kuaishou",
+      "title": "取消订阅账户",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3320&menuId=4100",
+      "public_path": "/kuaishou/docs/kuaishou_3320.md"
+    },
+    {
+      "id": "kuaishou_3321",
+      "doc_id": "kuaishou_3321",
+      "platform": "kuaishou",
+      "title": "X-Open-Signature签名校验",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3321&menuId=4104",
+      "public_path": "/kuaishou/docs/kuaishou_3321.md"
+    },
+    {
+      "id": "kuaishou_3322",
+      "doc_id": "kuaishou_3322",
+      "platform": "kuaishou",
+      "title": "订阅服务数据推送",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3322&menuId=4105",
+      "public_path": "/kuaishou/docs/kuaishou_3322.md"
+    },
+    {
+      "id": "kuaishou_3323",
+      "doc_id": "kuaishou_3323",
+      "platform": "kuaishou",
+      "title": "SPI回调地址设置",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3323&menuId=4103",
+      "public_path": "/kuaishou/docs/kuaishou_3323.md"
+    },
+    {
+      "id": "kuaishou_3324",
+      "doc_id": "kuaishou_3324",
+      "platform": "kuaishou",
+      "title": "代理商-广告主可转/退金额查询",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3324&menuId=4106",
+      "public_path": "/kuaishou/docs/kuaishou_3324.md"
+    },
+    {
+      "id": "kuaishou_3325",
+      "doc_id": "kuaishou_3325",
+      "platform": "kuaishou",
+      "title": "智投短剧查询接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3325&menuId=4108",
+      "public_path": "/kuaishou/docs/kuaishou_3325.md"
+    },
+    {
+      "id": "kuaishou_3326",
+      "doc_id": "kuaishou_3326",
+      "platform": "kuaishou",
+      "title": "智投项目创建接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3326&menuId=4109",
+      "public_path": "/kuaishou/docs/kuaishou_3326.md"
+    },
+    {
+      "id": "kuaishou_3327",
+      "doc_id": "kuaishou_3327",
+      "platform": "kuaishou",
+      "title": "智投项目更新接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3327&menuId=4110",
+      "public_path": "/kuaishou/docs/kuaishou_3327.md"
+    },
+    {
+      "id": "kuaishou_3333",
+      "doc_id": "kuaishou_3333",
+      "platform": "kuaishou",
+      "title": "创建 Harmony 应用",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3333&menuId=4116",
+      "public_path": "/kuaishou/docs/kuaishou_3333.md"
+    },
+    {
+      "id": "kuaishou_3334",
+      "doc_id": "kuaishou_3334",
+      "platform": "kuaishou",
+      "title": "更新 Harmony 应用",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3334&menuId=4117",
+      "public_path": "/kuaishou/docs/kuaishou_3334.md"
+    },
+    {
+      "id": "kuaishou_3335",
+      "doc_id": "kuaishou_3335",
+      "platform": "kuaishou",
+      "title": "推送高级创意接口",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3335&menuId=4119",
+      "public_path": "/kuaishou/docs/kuaishou_3335.md"
+    },
+    {
+      "id": "kuaishou_3341",
+      "doc_id": "kuaishou_3341",
+      "platform": "kuaishou",
+      "title": "客户共享钱包间转账",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3341&menuId=4137",
+      "public_path": "/kuaishou/docs/kuaishou_3341.md"
+    },
+    {
+      "id": "kuaishou_3352",
+      "doc_id": "kuaishou_3352",
+      "platform": "kuaishou",
+      "title": "线索列表查询v3",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3352&menuId=4150",
+      "public_path": "/kuaishou/docs/kuaishou_3352.md"
+    },
+    {
+      "id": "kuaishou_3353",
+      "doc_id": "kuaishou_3353",
+      "platform": "kuaishou",
+      "title": "callback合法性校验",
+      "source_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3353&menuId=4151",
+      "public_path": "/kuaishou/docs/kuaishou_3353.md"
+    }
+  ],
+  "outputs": {
+    "llms": "/llms.txt",
+    "llms_full": "/llms-full.txt",
+    "platform_index": "/kuaishou/index.md",
+    "platform_manifest": "/kuaishou/manifest.json"
+  },
+  "updated_at": "2026-05-18T12:16:38.652Z"
+}

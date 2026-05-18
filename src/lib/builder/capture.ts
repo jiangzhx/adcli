@@ -1,7 +1,12 @@
 import type { SourceRecipe } from "./recipe";
 import { defaultRenderedTextMinLength } from "./render-wait";
+import { captureKuaishouDocumentHtml, isKuaishouDocsUrl } from "./kuaishou";
 
 export async function captureHtml(recipe: SourceRecipe): Promise<string> {
+  if (isKuaishouDocsUrl(recipe.url)) {
+    return captureKuaishouDocumentHtml(recipe.url);
+  }
+
   if (recipe.capture.mode === "fetch") {
     return fetchHtml(recipe.url);
   }
@@ -12,7 +17,7 @@ export async function captureHtml(recipe: SourceRecipe): Promise<string> {
 async function fetchHtml(url: string): Promise<string> {
   const response = await fetch(url, {
     headers: {
-      "user-agent": "ad-docs-context-builder/0.1",
+      "user-agent": "ad-docs-llms-builder/0.1",
     },
   });
 

@@ -1,6 +1,6 @@
 ---
 name: ad-docs-source-quality
-description: Use when validating Ad Docs Context seed data, source crawl output, collection manifests, cleaned Markdown, or blocks before publishing llms docs
+description: Use when validating Ad Docs LLMs seed data, source crawl output, collection manifests, cleaned Markdown, or blocks before publishing llms docs
 ---
 
 # Ad Docs Source Quality
@@ -179,6 +179,33 @@ Interpretation:
 
 If `references` is high but `targetRefs` is `0`, the extractor is probably preserving links but failing to infer source ids for this platform's URL shape.
 
+### 6. Thin External Documents
+
+Use this for platforms whose detail API sometimes returns only metadata plus an external document URL, such as Kuaishou RICHTEXT pages that point to Qingque docs.
+
+```bash
+node - <<'NODE'
+const fs=require('fs');
+const path=require('path');
+const platform=process.env.PLATFORM || 'kuaishou';
+const base=`data/sources/${platform}`;
+const dirs=fs.readdirSync(base,{withFileTypes:true})
+  .filter(d=>d.isDirectory()&&!d.name.startsWith('_'))
+  .map(d=>d.name);
+const thin=[];
+for (const dir of dirs) {
+  const clean=fs.readFileSync(path.join(base,dir,'cleaned.md'),'utf8').trim();
+  const source=JSON.parse(fs.readFileSync(path.join(base,dir,'source.json'),'utf8'));
+  if (clean.includes('## 外部文档') && clean.length < 900) {
+    thin.push({dir,title:source.title,chars:clean.length,url:source.url});
+  }
+}
+console.log(JSON.stringify({thinExternalCount:thin.length, samples:thin.slice(0,20)}, null, 2));
+NODE
+```
+
+Expected: `thinExternalCount` can be non-zero when the platform deliberately hosts rich-text content elsewhere, but it must be reported as a quality boundary before treating the docs pack as complete.
+
 ## Current OceanEngine Baseline
 
 The current full seed crawl on 2026-05-18 produced:
@@ -195,6 +222,24 @@ The current full seed crawl on 2026-05-18 produced:
 
 Treat this as a baseline, not a permanent target. If discovery grows later, update the expected counts after reviewing the manifest diff.
 
+## Current Kuaishou DSP Baseline
+
+The current Kuaishou DSP seed crawl on 2026-05-18 produced:
+
+- `manifestItems`: 366
+- `sourceDirs`: 366
+- `completeSources`: 366
+- `badCount`: 0
+- `titleOnlyCount`: 0
+- `genericTitleCount`: 0
+- `thinExternalCount`: 29
+- `references`: 29
+- `targetRefs`: 0
+- `internalTargets`: 0
+- source data size: about `11M`
+
+Treat the 29 thin external documents as a known boundary: the Kuaishou detail API exposes an external Qingque URL but not the embedded rich-text body for those pages.
+
 ## Acceptance
 
 Seed data is usable when:
@@ -206,6 +251,7 @@ Seed data is usable when:
 - Generic navigation titles are not used as document titles.
 - Block references are extracted when the source HTML contains links, and `targetRefs` is plausible for same-site links.
 - Crawlee reports zero failed requests, or failures are listed and intentionally excluded.
+- Thin external documents are counted and reported when a platform's API only exposes an external rich-text URL.
 
 ## Common Mistakes
 

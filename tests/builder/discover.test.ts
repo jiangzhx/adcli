@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import { discoverDocumentsFromLinks, discoverDocumentsFromOceanEngineTree } from "@/src/lib/builder/discover";
+import { discoverDocumentsFromKuaishouMenu } from "@/src/lib/builder/kuaishou";
 
 test("discoverDocumentsFromLinks filters, normalizes, deduplicates, and creates source recipes", () => {
   const manifest = discoverDocumentsFromLinks({
@@ -236,6 +237,76 @@ test("discoverDocumentsFromLinks creates stable source ids for path-based docs",
         source_id: "tencent_ads_v3_0_docs_api_oauth_token",
         title: "获取 Token",
         url: "https://developers.e.qq.com/v3.0/docs/api/oauth/token",
+      },
+    ],
+  );
+});
+
+test("discoverDocumentsFromLinks creates stable source ids for query-based Kuaishou docs", () => {
+  const manifest = discoverDocumentsFromLinks({
+    collectionId: "kuaishou_dsp_developer_docs",
+    platform: "kuaishou",
+    entryUrl: "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2539&menuId=3765",
+    linkPatterns: ["docType=DSP"],
+    links: [
+      {
+        text: "获取 token",
+        href: "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3085&menuId=3784",
+      },
+    ],
+  });
+
+  assert.equal(manifest.items[0]?.source_id, "kuaishou_3085");
+  assert.equal(
+    manifest.items[0]?.url,
+    "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3085&menuId=3784",
+  );
+});
+
+test("discoverDocumentsFromKuaishouMenu flattens menu API docs and deduplicates document ids", () => {
+  const manifest = discoverDocumentsFromKuaishouMenu({
+    collectionId: "kuaishou_dsp_developer_docs",
+    platform: "kuaishou",
+    entryUrl: "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2539&menuId=3765",
+    menuList: [
+      {
+        menuId: 3767,
+        menuName: "Token管理",
+        platformType: "DSP",
+        documentId: 0,
+        children: [
+          {
+            menuId: 3784,
+            menuName: "获取 token",
+            platformType: "DSP",
+            documentId: 3085,
+            documentName: "获取 token",
+          },
+          {
+            menuId: 3900,
+            menuName: "获取 token 重复入口",
+            platformType: "DSP",
+            documentId: 3085,
+            documentName: "获取 token",
+          },
+        ],
+      },
+    ],
+  });
+
+  assert.deepEqual(
+    manifest.items.map((item) => ({
+      source_id: item.source_id,
+      title: item.title,
+      url: item.url,
+      capture_mode: item.recipe.capture.mode,
+    })),
+    [
+      {
+        source_id: "kuaishou_3085",
+        title: "获取 token",
+        url: "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3085&menuId=3784",
+        capture_mode: "fetch",
       },
     ],
   );

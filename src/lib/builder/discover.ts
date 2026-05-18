@@ -3,6 +3,11 @@ import path from "node:path";
 
 import { PlaywrightCrawler } from "crawlee";
 
+import {
+  discoverDocumentsFromKuaishouMenu,
+  fetchKuaishouMenuList,
+  isKuaishouDocsUrl,
+} from "./kuaishou";
 import { parseCollectionRecipe, type CollectionRecipe, type SourceRecipe } from "./recipe";
 
 export type DiscoveredLink = {
@@ -145,6 +150,17 @@ export async function readCollectionRecipe(recipePath: string): Promise<Collecti
 }
 
 export async function discoverCollection(recipe: CollectionRecipe): Promise<CollectionManifest> {
+  if (isKuaishouDocsUrl(recipe.entry_url)) {
+    const menuList = await fetchKuaishouMenuList(recipe.entry_url);
+    return discoverDocumentsFromKuaishouMenu({
+      collectionId: recipe.id,
+      platform: recipe.platform,
+      entryUrl: recipe.entry_url,
+      menuList,
+      maxItems: recipe.discover.max_items,
+    });
+  }
+
   const discovery = recipe.discover.mode === "fetch"
     ? { links: await discoverLinksWithFetch(recipe.entry_url), trees: [] as unknown[] }
     : await discoverLinksWithPlaywright(recipe);
@@ -191,7 +207,7 @@ export async function writeCollectionManifest(
 async function discoverLinksWithFetch(entryUrl: string): Promise<DiscoveredLink[]> {
   const response = await fetch(entryUrl, {
     headers: {
-      "user-agent": "ad-docs-context-builder/0.1",
+      "user-agent": "ad-docs-llms-builder/0.1",
     },
   });
 
@@ -344,6 +360,11 @@ function matchesAnyPattern(url: string, patterns: string[]): boolean {
 
 function sourceIdFromUrl(platform: string, url: string): string | undefined {
   const parsed = new URL(url);
+  const documentId = parsed.searchParams.get("documentId");
+  if (documentId && /^[0-9]+$/.test(documentId)) {
+    return `${platform}_${documentId}`;
+  }
+
   const match = parsed.pathname.match(/\/docs\/([0-9]+)/);
   if (!match?.[1]) {
     const pathSlug = slugFromPath(parsed.pathname);

@@ -1,8 +1,8 @@
-# Ad Docs Context 需求文档
+# Ad Docs LLMs 需求文档
 
 ## 项目定位
 
-Ad Docs Context 是一个面向 IDE Agent 的广告平台文档上下文项目。
+Ad Docs LLMs 是一个面向 IDE Agent 和 LLM 的广告平台 API 文档包项目。
 
 当前第一阶段不做 MCP 服务，也不做 Next.js 应用。目标是用 Node.js/TypeScript CLI 把广告平台文档生成 LLM-readable docs pack，让 Codex、Claude、Cursor、ChatGPT 等 Agent 能从 `llms.txt` 进入，再打开具体 Markdown 文档。
 

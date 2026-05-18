@@ -1,6 +1,6 @@
 ---
 name: ad-docs-llms-curation
-description: Use when curating Ad Docs Context llms task entries, Common Tasks, platform navigation, AI-proposed index summaries, or reviewed task-link recommendations
+description: Use when curating Ad Docs LLMs llms task entries, Common Tasks, platform navigation, AI-proposed index summaries, or reviewed task-link recommendations
 ---
 
 # Ad Docs Llms Curation

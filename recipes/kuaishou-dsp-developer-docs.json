@@ -1,0 +1,12 @@
+{
+  "id": "kuaishou_dsp_developer_docs",
+  "platform": "kuaishou",
+  "type": "official_html_collection",
+  "entry_url": "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2539&menuId=3765",
+  "discover": {
+    "mode": "fetch",
+    "link_patterns": ["docType=DSP"],
+    "wait_for": "body",
+    "max_items": "all"
+  }
+}

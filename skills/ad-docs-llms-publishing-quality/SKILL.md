@@ -1,6 +1,6 @@
 ---
 name: ad-docs-llms-publishing-quality
-description: Use when validating Ad Docs Context public llms artifacts, root indexes, platform manifests, public Markdown paths, or multi-platform publishing output
+description: Use when validating Ad Docs LLMs public llms artifacts, root indexes, platform manifests, public Markdown paths, or multi-platform publishing output
 ---
 
 # Ad Docs Llms Publishing Quality

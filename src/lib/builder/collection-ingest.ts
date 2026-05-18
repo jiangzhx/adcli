@@ -5,6 +5,7 @@ import path from "node:path";
 import { PlaywrightCrawler, type Dictionary } from "crawlee";
 
 import { buildSourceArtifacts } from "./artifacts";
+import { captureHtml } from "./capture";
 import type { CollectionManifest, CollectionManifestItem } from "./discover";
 import { defaultRenderedTextMinLength } from "./render-wait";
 import { writeSourceArtifacts } from "./store";
@@ -104,6 +105,76 @@ export async function ingestCollection(
     recursive: true,
   });
 
+  async function processRawHtml(item: CollectionManifestItem, rawHtml: string): Promise<void> {
+    const artifacts = buildSourceArtifacts({
+      recipe: item.recipe,
+      rawHtml,
+    });
+    const contentHash = sha256(artifacts.cleanedMarkdown);
+    const previous = state.sources[item.source_id];
+    const artifactsComplete = await hasSourceArtifacts(options.rootDir, manifest.platform, item.source_id);
+    const shouldWriteArtifacts = shouldWriteSourceArtifacts({
+      changedOnly: options.changedOnly ?? false,
+      artifactsComplete,
+      previousContentHash: previous?.content_hash,
+      nextContentHash: contentHash,
+    });
+
+    const nextSourceState = buildUpdatedSourceState({
+      item,
+      checkedAt,
+      previous,
+      contentHash,
+      rawHash: artifacts.source.hash,
+    });
+    if (nextSourceState.status === "changed") {
+      changed += 1;
+    } else {
+      unchanged += 1;
+    }
+
+    if (shouldWriteArtifacts) {
+      await writeSourceArtifacts(options.rootDir, artifacts);
+    }
+
+    state.sources[item.source_id] = nextSourceState;
+    succeeded += 1;
+  }
+
+  if (items.every((item) => item.recipe.capture.mode === "fetch")) {
+    await runWithConcurrency(items, options.maxConcurrency ?? 2, async (item) => {
+      try {
+        await processRawHtml(item, await captureHtml(item.recipe));
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        state.sources[item.source_id] = {
+          ...state.sources[item.source_id],
+          url: item.url,
+          title: item.title,
+          status: "failed",
+          last_checked_at: checkedAt,
+          error: message,
+        };
+        failed.push({
+          source_id: item.source_id,
+          url: item.url,
+          error: message,
+        });
+      }
+    });
+
+    state.last_checked_at = checkedAt;
+    await writeCollectionState(statePath, state);
+
+    return {
+      requested: items.length,
+      succeeded,
+      changed,
+      unchanged,
+      failed,
+    };
+  }
+
   const crawler = new PlaywrightCrawler({
     maxConcurrency: options.maxConcurrency ?? 2,
     maxRequestRetries: options.maxRequestRetries ?? 2,
@@ -128,40 +199,7 @@ export async function ingestCollection(
           { timeout: 15_000 },
         )
         .catch(() => undefined);
-      const rawHtml = await page.content();
-      const artifacts = buildSourceArtifacts({
-        recipe: item.recipe,
-        rawHtml,
-      });
-      const contentHash = sha256(artifacts.cleanedMarkdown);
-      const previous = state.sources[item.source_id];
-      const artifactsComplete = await hasSourceArtifacts(options.rootDir, manifest.platform, item.source_id);
-      const shouldWriteArtifacts = shouldWriteSourceArtifacts({
-        changedOnly: options.changedOnly ?? false,
-        artifactsComplete,
-        previousContentHash: previous?.content_hash,
-        nextContentHash: contentHash,
-      });
-
-      const nextSourceState = buildUpdatedSourceState({
-        item,
-        checkedAt,
-        previous,
-        contentHash,
-        rawHash: artifacts.source.hash,
-      });
-      if (nextSourceState.status === "changed") {
-        changed += 1;
-      } else {
-        unchanged += 1;
-      }
-
-      if (shouldWriteArtifacts) {
-        await writeSourceArtifacts(options.rootDir, artifacts);
-      }
-
-      state.sources[item.source_id] = nextSourceState;
-      succeeded += 1;
+      await processRawHtml(item, await page.content());
     },
     async failedRequestHandler({ request }, error) {
       const item = (request.userData as CrawleeUserData).item;
@@ -298,6 +336,27 @@ async function hasSourceArtifacts(
 
     throw error;
   }
+}
+
+async function runWithConcurrency<T>(
+  items: T[],
+  concurrency: number,
+  handler: (item: T) => Promise<void>,
+): Promise<void> {
+  const workerCount = Math.max(1, Math.min(concurrency, items.length));
+  const workers = Array.from(
+    { length: workerCount },
+    async (_, workerIndex) => {
+      for (let index = workerIndex; index < items.length; index += workerCount) {
+        const item = items[index];
+        if (item !== undefined) {
+          await handler(item);
+        }
+      }
+    },
+  );
+
+  await Promise.all(workers);
 }
 
 function sha256(value: string): string {

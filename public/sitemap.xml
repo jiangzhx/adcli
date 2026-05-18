@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ad-docs-context.pages.dev/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ad-docs-context.pages.dev/llms.txt</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ad-docs-context.pages.dev/llms-full.txt</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ad-docs-context.pages.dev/kuaishou/index.md</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ad-docs-context.pages.dev/oceanengine/index.md</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ad-docs-context.pages.dev/tencent_ads/index.md</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>

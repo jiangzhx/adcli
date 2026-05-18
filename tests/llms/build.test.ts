@@ -30,7 +30,7 @@ test("buildLlmsArtifacts publishes source markdown and llms indexes", async () =
     assert.equal("source_dir" in manifest.documents[0]!, false);
 
     const llms = await readFile(path.join(rootDir, "public", "llms.txt"), "utf8");
-    assert.match(llms, /# Ad Docs Context/);
+    assert.match(llms, /# Ad Docs LLMs/);
     assert.match(llms, /获取广告消耗数据/);
     assert.match(llms, /\/oceanengine\/docs\/1741387668314126\.md/);
 
