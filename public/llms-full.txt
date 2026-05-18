@@ -1,4 +1,4 @@
-# Ad Docs LLMs Full Index
+# AdLLMs Full Index
 
 ## kuaishou
 

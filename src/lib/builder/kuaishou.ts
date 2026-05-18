@@ -221,7 +221,7 @@ async function postKuaishouDocumentApi(refererUrl: string, path: string, body: u
     method: "POST",
     headers: {
       "content-type": "application/json",
-      "user-agent": "ad-docs-llms-builder/0.1",
+      "user-agent": "adllms-builder/0.1",
       referer: refererUrl,
     },
     body: JSON.stringify(body),

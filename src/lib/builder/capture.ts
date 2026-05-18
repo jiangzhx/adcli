@@ -17,7 +17,7 @@ export async function captureHtml(recipe: SourceRecipe): Promise<string> {
 async function fetchHtml(url: string): Promise<string> {
   const response = await fetch(url, {
     headers: {
-      "user-agent": "ad-docs-llms-builder/0.1",
+      "user-agent": "adllms-builder/0.1",
     },
   });
 

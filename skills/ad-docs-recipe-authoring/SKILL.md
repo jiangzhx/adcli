@@ -1,6 +1,6 @@
 ---
 name: ad-docs-recipe-authoring
-description: Use when creating, adding, or reviewing Ad Docs LLMs recipes for source URLs, collection entry pages, discovery rules, or crawl seed definitions
+description: Use when creating, adding, or reviewing AdLLMs recipes for source URLs, collection entry pages, discovery rules, or crawl seed definitions
 ---
 
 # Ad Docs Recipe Authoring

@@ -1,6 +1,6 @@
 ---
 name: ad-docs-source-quality
-description: Use when validating Ad Docs LLMs seed data, source crawl output, collection manifests, cleaned Markdown, or blocks before publishing llms docs
+description: Use when validating AdLLMs seed data, source crawl output, collection manifests, cleaned Markdown, or blocks before publishing llms docs
 ---
 
 # Ad Docs Source Quality

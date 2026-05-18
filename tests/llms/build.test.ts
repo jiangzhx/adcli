@@ -7,7 +7,7 @@ import test from "node:test";
 import { buildAllLlmsArtifacts, buildLlmsArtifacts } from "@/src/lib/llms/builder";
 
 test("buildLlmsArtifacts publishes source markdown and llms indexes", async () => {
-  const rootDir = await mkdtemp(path.join(os.tmpdir(), "ad-docs-llms-"));
+  const rootDir = await mkdtemp(path.join(os.tmpdir(), "adllms-"));
 
   try {
     await writeSource(rootDir, "oceanengine", "oceanengine_1741387668314126", {
@@ -30,7 +30,7 @@ test("buildLlmsArtifacts publishes source markdown and llms indexes", async () =
     assert.equal("source_dir" in manifest.documents[0]!, false);
 
     const llms = await readFile(path.join(rootDir, "public", "llms.txt"), "utf8");
-    assert.match(llms, /# Ad Docs LLMs/);
+    assert.match(llms, /# AdLLMs/);
     assert.match(llms, /获取广告消耗数据/);
     assert.match(llms, /\/oceanengine\/docs\/1741387668314126\.md/);
 
@@ -48,7 +48,7 @@ test("buildLlmsArtifacts publishes source markdown and llms indexes", async () =
 });
 
 test("buildLlmsArtifacts keeps path-based source ids as doc ids", async () => {
-  const rootDir = await mkdtemp(path.join(os.tmpdir(), "ad-docs-llms-"));
+  const rootDir = await mkdtemp(path.join(os.tmpdir(), "adllms-"));
 
   try {
     await writeSource(rootDir, "tencent_ads", "tencent_ads_v3_0_pages_docs_reference_industry_v6_1", {
@@ -82,7 +82,7 @@ test("buildLlmsArtifacts keeps path-based source ids as doc ids", async () => {
 });
 
 test("buildLlmsArtifacts aggregates root indexes across built platforms", async () => {
-  const rootDir = await mkdtemp(path.join(os.tmpdir(), "ad-docs-llms-"));
+  const rootDir = await mkdtemp(path.join(os.tmpdir(), "adllms-"));
 
   try {
     await writeSource(rootDir, "oceanengine", "oceanengine_1741387668314126", {
@@ -114,7 +114,7 @@ test("buildLlmsArtifacts aggregates root indexes across built platforms", async 
 });
 
 test("buildAllLlmsArtifacts publishes every source platform into root indexes", async () => {
-  const rootDir = await mkdtemp(path.join(os.tmpdir(), "ad-docs-llms-"));
+  const rootDir = await mkdtemp(path.join(os.tmpdir(), "adllms-"));
 
   try {
     await writeSource(rootDir, "oceanengine", "oceanengine_1741387668314126", {

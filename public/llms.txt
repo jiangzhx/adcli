@@ -1,4 +1,4 @@
-# Ad Docs LLMs
+# AdLLMs
 
 LLM-readable documentation pack for advertising platform APIs.
 
