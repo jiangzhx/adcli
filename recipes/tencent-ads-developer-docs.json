@@ -1,0 +1,12 @@
+{
+  "id": "tencent_ads_developer_docs",
+  "platform": "tencent_ads",
+  "type": "official_html_collection",
+  "entry_url": "https://developers.e.qq.com/v3.0/pages/regist_developer",
+  "discover": {
+    "mode": "playwright",
+    "link_patterns": ["/v3.0/pages/", "/v3.0/docs/"],
+    "wait_for": "body",
+    "max_items": "all"
+  }
+}

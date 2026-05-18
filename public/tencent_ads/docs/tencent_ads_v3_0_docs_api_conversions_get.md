@@ -1,0 +1,185 @@
+---
+title: 获取转化归因 全部接口
+platform: tencent_ads
+source_url: https://developers.e.qq.com/v3.0/docs/api/conversions/get
+doc_id: tencent_ads_v3_0_docs_api_conversions_get
+source_id: tencent_ads_v3_0_docs_api_conversions_get
+---
+# 获取转化归因 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+
+| 所属权限 | ads_management,ads_insights |
+| --- | --- |
+| 请求地址 | conversions/get |
+| 请求方法 | GET |
+
+## 全局参数
+
+全局参数是指每一个接口都需要使用到的参数。详情[参考](https://developers.e.qq.com/v3.0/pages/send_request)，代码案例[参考](https://developers.e.qq.com/v3.0/pages/send_request)。
+
+| 参数名称 | 参数类型 |
+| --- | --- |
+| access_token | 授权令牌，完成 OAuth 2.0 授权后获得，参考[授权认证](https://developers.e.qq.com/docs/start/authorization)章节 |
+| timestamp | 当前的时间戳，单位为秒，允许客户端请求最大时间误差为 300 秒。 MarketingAPI 所使用的时间戳，若无特殊说明，均为秒级时间戳 MarketingAPI 所使用的时区为 GMT+8，例如当时间戳为 1494840119 时，表示 2017-05-15 17:21:59 |
+| nonce | 随机字串标识，不超过 32 个字符，由调用方自行生成，需保证全局唯一性 |
+
+## 请求参数
+
+标有*的参数为必填项
+
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 10 |
+| field* | string | 过滤字段 字段长度最小 1 字节，长度最大 32 字节 |
+| operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 app_android_channel_package_id 时，可选值：{ EQUALS } 当 field 取值 conversion_id 时，可选值：{ EQUALS } 当 field 取值 impression_feedback_url 时，可选值：{ EQUALS } 当 field 取值 attribution_window 时，可选值：{ EQUALS } 当 field 取值 conversion_link_id 时，可选值：{ EQUALS } 当 field 取值 create_source_type 时，可选值：{ EQUALS } 当 field 取值 conversion_name 时，可选值：{ CONTAINS } 当 field 取值 site_set 时，可选值：{ IN } 当 field 取值 optimization_goal 时，可选值：{ EQUALS } 当 field 取值 deep_behavior_optimization_goal 时，可选值：{ EQUALS } 当 field 取值 deep_worth_optimization_goal 时，可选值：{ EQUALS } 当 field 取值 deep_worth_advanced_goal 时，可选值：{ EQUALS } 当 field 取值 access_status 时，可选值：{ IN } 当 field 取值 cost_type 时，可选值：{ EQUALS } 当 field 取值 marketing_scene 时，可选值：{ EQUALS } 当 field 取值 live_video_mode 时，可选值：{ EQUALS } 当 field 取值 live_video_sub_mode 时，可选值：{ EQUALS } 当 field 取值 campaign_type 时，可选值：{ EQUALS } 当 field 取值 marketing_goal 时，可选值：{ EQUALS } 当 field 取值 marketing_sub_goal 时，可选值：{ EQUALS } 当 field 取值 marketing_target_type 时，可选值：{ EQUALS } 当 field 取值 marketing_carrier_type 时，可选值：{ EQUALS } |
+| values* | string[] | 字段取值，values 数组的个数限制与 operator 的取值相关，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 当 field 取值 create_source_type 时，数组长度为 1 可选值：{ SELF_CREATED, PLATFORM } 当 field 取值 app_android_channel_package_id 时，数组长度为 1 字段长度最小 1 字节，长度最大 128 字节 当 field 取值 impression_feedback_url 时，数组长度为 1 字段长度最小 1 字节，长度最大 2048 字节 当 field 取值 attribution_window 时，数组长度为 1 当 field 取值 conversion_id 时，数组长度为 1 当 field 取值 conversion_link_id 时，数组长度为 1 当 field 取值 conversion_name 时，数组长度为 1 字段长度最小 1 字节，长度最大 120 字节 当 field 取值 site_set 且 operator 取值 IN 时， 数组最小长度 1，最大长度 100 可选值：{ SITE_SET_MOBILE_UNION, SITE_SET_WECHAT, SITE_SET_TENCENT_NEWS, SITE_SET_TENCENT_VIDEO, SITE_SET_MOBILE_YYB, SITE_SET_PCQQ, SITE_SET_KANDIAN, SITE_SET_QQ_MUSIC_GAME, SITE_SET_MOMENTS, SITE_SET_CHANNELS, SITE_SET_WECHAT_SEARCH, SITE_SET_WECHAT_PLUGIN, SITE_SET_QBSEARCH, SITE_SET_SEARCH_SCENE, SITE_SET_SEARCH_MOBILE_UNION, SITE_SET_SMART } 当 field 取值 site_set 且 operator 取值 EQUALS 时， 数组长度为 1 可选值：{ SITE_SET_MOBILE_UNION, SITE_SET_WECHAT, SITE_SET_TENCENT_NEWS, SITE_SET_TENCENT_VIDEO, SITE_SET_MOBILE_YYB, SITE_SET_PCQQ, SITE_SET_KANDIAN, SITE_SET_QQ_MUSIC_GAME, SITE_SET_MOMENTS, SITE_SET_CHANNELS, SITE_SET_WECHAT_SEARCH, SITE_SET_WECHAT_PLUGIN, SITE_SET_QBSEARCH, SITE_SET_SEARCH_SCENE, SITE_SET_SEARCH_MOBILE_UNION, SITE_SET_SMART } 当 field 取值 optimization_goal 时，数组长度为 1 可选值：{ OPTIMIZATIONGOAL_NONE, OPTIMIZATIONGOAL_BRAND_CONVERSION, OPTIMIZATIONGOAL_FOLLOW, OPTIMIZATIONGOAL_CLICK, OPTIMIZATIONGOAL_IMPRESSION, OPTIMIZATIONGOAL_APP_DOWNLOAD, OPTIMIZATIONGOAL_APP_ACTIVATE, OPTIMIZATIONGOAL_APP_REGISTER, OPTIMIZATIONGOAL_ONE_DAY_RETENTION, OPTIMIZATIONGOAL_APP_PURCHASE, OPTIMIZATIONGOAL_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ECOMMERCE_CHECKOUT, OPTIMIZATIONGOAL_LEADS, OPTIMIZATIONGOAL_ECOMMERCE_CART, OPTIMIZATIONGOAL_PROMOTION_CLICK_KEY_PAGE, OPTIMIZATIONGOAL_VIEW_COMMODITY_PAGE, OPTIMIZATIONGOAL_ONLINE_CONSULTATION, OPTIMIZATIONGOAL_TELEPHONE_CONSULTATION, OPTIMIZATIONGOAL_PAGE_RESERVATION, OPTIMIZATIONGOAL_DELIVERY, OPTIMIZATIONGOAL_MESSAGE_AFTER_FOLLOW, OPTIMIZATIONGOAL_CLICK_MENU_AFTER_FOLLOW, OPTIMIZATIONGOAL_PAGE_EFFECTIVE_ONLINE_CONSULT, OPTIMIZATIONGOAL_APPLY, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_CONSULT, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_PHONE, OPTIMIZATIONGOAL_LEADS_COLLECT, OPTIMIZATIONGOAL_FIRST_PURCHASE, OPTIMIZATIONGOAL_PRE_CREDIT, OPTIMIZATIONGOAL_CREDIT, OPTIMIZATIONGOAL_WITHDRAW_DEPOSITS, OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE, OPTIMIZATIONGOAL_MOBILE_APP_CREATE_ROLE, OPTIMIZATIONGOAL_CANVAS_CLICK, OPTIMIZATIONGOAL_PROMOTION_CLAIM_OFFER, OPTIMIZATIONGOAL_ECOMMERCE_ADD_TO_WISHLIST, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_RESERVATION, OPTIMIZATIONGOAL_PAGE_RECEIPT, OPTIMIZATIONGOAL_PAGE_SCAN_CODE, OPTIMIZATIONGOAL_SELECT_COURSE, OPTIMIZATIONGOAL_CONFIRM_POTENTIAL_CUSTOMER_PHONE, OPTIMIZATIONGOAL_MOBILE_APP_AD_INCOME, OPTIMIZATIONGOAL_MOBILE_APP_ACCREDIT, OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD, OPTIMIZATIONGOAL_PAGE_CONFIRM_EFFECTIVE_LEADS, OPTIMIZATIONGOAL_RESERVATION, OPTIMIZATIONGOAL_FIRST_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_LIKE, OPTIMIZATIONGOAL_ADD_DESKTOP, OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK, OPTIMIZATIONGOAL_BUY_COUPONS, OPTIMIZATIONGOAL_LEAVE_INFORMATION, OPTIMIZATIONGOAL_CORE_ACTION, OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO, OPTIMIZATIONGOAL_PROMOTION_READ_ARTICLE, OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ECOMMERCE_SCANCODE_WX, OPTIMIZATIONGOAL_MOBILE_APP_SEVEN_DAYS_RETENTION, OPTIMIZATIONGOAL_CLASS_PARTICIPATED, OPTIMIZATIONGOAL_INSURANCE_PURCHASE, OPTIMIZATIONGOAL_RESERVATION_CHECK, OPTIMIZATIONGOAL_OPEN_ACCOUNT, OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ADD_WECHAT, OPTIMIZATIONGOAL_WECOM_CONSULT, OPTIMIZATIONGOAL_ADD_GROUP, OPTIMIZATIONGOAL_QUICK_ORDER, OPTIMIZATIONGOAL_PRE_PAY, OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG, OPTIMIZATIONGOAL_CALL_DURATION_THIRTY_SECONDS, OPTIMIZATIONGOAL_CLAIM_COURSE, OPTIMIZATIONGOAL_QUIT_GROUP, OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT, OPTIMIZATIONGOAL_BACK_FLOW, OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG, OPTIMIZATIONGOAL_RENEWAL, OPTIMIZATIONGOAL_LOW_PRICE_COURSE, OPTIMIZATIONGOAL_CONSULT_INTENTION, OPTIMIZATIONGOAL_EVERY_DAY_RETENTION, OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE_UV, OPTIMIZATIONGOAL_LIVE_STREAM_DURATION_1MIN, OPTIMIZATIONGOAL_LIVE_STREAM_INTERACTION, OPTIMIZATIONGOAL_ECOMMERCE_CANCEL_ORDER, OPTIMIZATIONGOAL_CLICK_LEADS_COMPONENT, OPTIMIZATIONGOAL_REGULAR_PRICE_COURSE, OPTIMIZATIONGOAL_VISIT_STROE, OPTIMIZATIONGOAL_EFFECTIVE_ENTRY, OPTIMIZATIONGOAL_CREDIT_RATIO, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_DEAL, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_PRODUCT_CLICK, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_AUDIENCE, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_COMMENT, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS, OPTIMIZATIONGOAL_24H_FIRSTPAY, OPTIMIZATIONGOAL_STORE_STAY, OPTIMIZATIONGOAL_LOW_PRICE_INSURANCE_PAYMENT, OPTIMIZATIONGOAL_UNDERWRITING, OPTIMIZATIONGOAL_FIRST_WITHDRAW, OPTIMIZATIONGOAL_BRIDGING_COURSE_COMPLETED, OPTIMIZATIONGOAL_THIRTY_SECONDS_SCANCODE_WX, OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE, OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN, OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT, OPTIMIZATIONGOAL_ECOMMERCE_GIFTING, OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED, OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE, OPTIMIZATIONGOAL_NET_PROFIT_24H, OPTIMIZATIONGOAL_EFFECTIVE_INSURE, OPTIMIZATIONGOAL_COLLECT } 当 field 取值 deep_behavior_optimization_goal 时，数组长度为 1 可选值：{ OPTIMIZATIONGOAL_NONE, OPTIMIZATIONGOAL_BRAND_CONVERSION, OPTIMIZATIONGOAL_FOLLOW, OPTIMIZATIONGOAL_CLICK, OPTIMIZATIONGOAL_IMPRESSION, OPTIMIZATIONGOAL_APP_DOWNLOAD, OPTIMIZATIONGOAL_APP_ACTIVATE, OPTIMIZATIONGOAL_APP_REGISTER, OPTIMIZATIONGOAL_ONE_DAY_RETENTION, OPTIMIZATIONGOAL_APP_PURCHASE, OPTIMIZATIONGOAL_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ECOMMERCE_CHECKOUT, OPTIMIZATIONGOAL_LEADS, OPTIMIZATIONGOAL_ECOMMERCE_CART, OPTIMIZATIONGOAL_PROMOTION_CLICK_KEY_PAGE, OPTIMIZATIONGOAL_VIEW_COMMODITY_PAGE, OPTIMIZATIONGOAL_ONLINE_CONSULTATION, OPTIMIZATIONGOAL_TELEPHONE_CONSULTATION, OPTIMIZATIONGOAL_PAGE_RESERVATION, OPTIMIZATIONGOAL_DELIVERY, OPTIMIZATIONGOAL_MESSAGE_AFTER_FOLLOW, OPTIMIZATIONGOAL_CLICK_MENU_AFTER_FOLLOW, OPTIMIZATIONGOAL_PAGE_EFFECTIVE_ONLINE_CONSULT, OPTIMIZATIONGOAL_APPLY, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_CONSULT, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_PHONE, OPTIMIZATIONGOAL_LEADS_COLLECT, OPTIMIZATIONGOAL_FIRST_PURCHASE, OPTIMIZATIONGOAL_PRE_CREDIT, OPTIMIZATIONGOAL_CREDIT, OPTIMIZATIONGOAL_WITHDRAW_DEPOSITS, OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE, OPTIMIZATIONGOAL_MOBILE_APP_CREATE_ROLE, OPTIMIZATIONGOAL_CANVAS_CLICK, OPTIMIZATIONGOAL_PROMOTION_CLAIM_OFFER, OPTIMIZATIONGOAL_ECOMMERCE_ADD_TO_WISHLIST, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_RESERVATION, OPTIMIZATIONGOAL_PAGE_RECEIPT, OPTIMIZATIONGOAL_PAGE_SCAN_CODE, OPTIMIZATIONGOAL_SELECT_COURSE, OPTIMIZATIONGOAL_CONFIRM_POTENTIAL_CUSTOMER_PHONE, OPTIMIZATIONGOAL_MOBILE_APP_AD_INCOME, OPTIMIZATIONGOAL_MOBILE_APP_ACCREDIT, OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD, OPTIMIZATIONGOAL_PAGE_CONFIRM_EFFECTIVE_LEADS, OPTIMIZATIONGOAL_RESERVATION, OPTIMIZATIONGOAL_FIRST_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_LIKE, OPTIMIZATIONGOAL_ADD_DESKTOP, OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK, OPTIMIZATIONGOAL_BUY_COUPONS, OPTIMIZATIONGOAL_LEAVE_INFORMATION, OPTIMIZATIONGOAL_CORE_ACTION, OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO, OPTIMIZATIONGOAL_PROMOTION_READ_ARTICLE, OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ECOMMERCE_SCANCODE_WX, OPTIMIZATIONGOAL_MOBILE_APP_SEVEN_DAYS_RETENTION, OPTIMIZATIONGOAL_CLASS_PARTICIPATED, OPTIMIZATIONGOAL_INSURANCE_PURCHASE, OPTIMIZATIONGOAL_RESERVATION_CHECK, OPTIMIZATIONGOAL_OPEN_ACCOUNT, OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ADD_WECHAT, OPTIMIZATIONGOAL_WECOM_CONSULT, OPTIMIZATIONGOAL_ADD_GROUP, OPTIMIZATIONGOAL_QUICK_ORDER, OPTIMIZATIONGOAL_PRE_PAY, OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG, OPTIMIZATIONGOAL_CALL_DURATION_THIRTY_SECONDS, OPTIMIZATIONGOAL_CLAIM_COURSE, OPTIMIZATIONGOAL_QUIT_GROUP, OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT, OPTIMIZATIONGOAL_BACK_FLOW, OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG, OPTIMIZATIONGOAL_RENEWAL, OPTIMIZATIONGOAL_LOW_PRICE_COURSE, OPTIMIZATIONGOAL_CONSULT_INTENTION, OPTIMIZATIONGOAL_EVERY_DAY_RETENTION, OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE_UV, OPTIMIZATIONGOAL_LIVE_STREAM_DURATION_1MIN, OPTIMIZATIONGOAL_LIVE_STREAM_INTERACTION, OPTIMIZATIONGOAL_ECOMMERCE_CANCEL_ORDER, OPTIMIZATIONGOAL_CLICK_LEADS_COMPONENT, OPTIMIZATIONGOAL_REGULAR_PRICE_COURSE, OPTIMIZATIONGOAL_VISIT_STROE, OPTIMIZATIONGOAL_EFFECTIVE_ENTRY, OPTIMIZATIONGOAL_CREDIT_RATIO, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_DEAL, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_PRODUCT_CLICK, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_AUDIENCE, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_COMMENT, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS, OPTIMIZATIONGOAL_24H_FIRSTPAY, OPTIMIZATIONGOAL_STORE_STAY, OPTIMIZATIONGOAL_LOW_PRICE_INSURANCE_PAYMENT, OPTIMIZATIONGOAL_UNDERWRITING, OPTIMIZATIONGOAL_FIRST_WITHDRAW, OPTIMIZATIONGOAL_BRIDGING_COURSE_COMPLETED, OPTIMIZATIONGOAL_THIRTY_SECONDS_SCANCODE_WX, OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE, OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN, OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT, OPTIMIZATIONGOAL_ECOMMERCE_GIFTING, OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED, OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE, OPTIMIZATIONGOAL_NET_PROFIT_24H, OPTIMIZATIONGOAL_EFFECTIVE_INSURE, OPTIMIZATIONGOAL_COLLECT } 当 field 取值 deep_worth_optimization_goal 时，数组长度为 1 可选值：{ GOAL_NONE, GOAL_7DAY_PURCHASE_ROAS, GOAL_15DAY_PURCHASE_ROAS, GOAL_30DAY_PURCHASE_ROAS, GOAL_60DAY_PURCHASE_ROAS, GOAL_30DAY_MONETIZATION_ROAS, GOAL_30DAY_ORDER_ROAS, GOAL_1DAY_PURCHASE_ROAS, GOAL_1DAY_MONETIZATION_ROAS, GOAL_3DAY_PURCHASE_ROAS, GOAL_3DAY_MONETIZATION_ROAS, GOAL_7DAY_MONETIZATION_ROAS, GOAL_15DAY_MONETIZATION_ROAS, GOAL_7DAY_RETENTION_TIMES, GOAL_7DAY_LONGTERM_PURCHASE_ROAS, GOAL_14DAY_LONGTERM_PURCHASE_ROAS, GOAL_30DAY_LONGTERM_PURCHASE_ROAS, GOAL_QYT_7DAY_LIVE_STREAM_DEAL_ROAS, GOAL_WITHDRAW_DEPOSITS_ROAS, GOAL_1DAY_PURCHASE_MONETIZATION_ROAS, GOAL_NET_PROFIT_24H_ROAS, GOAL_CPS_ESTIMATED_DISTRIBUTE_ROAS } 当 field 取值 deep_worth_advanced_goal 时，数组长度为 1 可选值：{ GOAL_NONE, GOAL_7DAY_PURCHASE_ROAS, GOAL_15DAY_PURCHASE_ROAS, GOAL_30DAY_PURCHASE_ROAS, GOAL_60DAY_PURCHASE_ROAS, GOAL_30DAY_MONETIZATION_ROAS, GOAL_30DAY_ORDER_ROAS, GOAL_1DAY_PURCHASE_ROAS, GOAL_1DAY_MONETIZATION_ROAS, GOAL_3DAY_PURCHASE_ROAS, GOAL_3DAY_MONETIZATION_ROAS, GOAL_7DAY_MONETIZATION_ROAS, GOAL_15DAY_MONETIZATION_ROAS, GOAL_7DAY_RETENTION_TIMES, GOAL_7DAY_LONGTERM_PURCHASE_ROAS, GOAL_14DAY_LONGTERM_PURCHASE_ROAS, GOAL_30DAY_LONGTERM_PURCHASE_ROAS, GOAL_QYT_7DAY_LIVE_STREAM_DEAL_ROAS, GOAL_WITHDRAW_DEPOSITS_ROAS, GOAL_1DAY_PURCHASE_MONETIZATION_ROAS, GOAL_NET_PROFIT_24H_ROAS, GOAL_CPS_ESTIMATED_DISTRIBUTE_ROAS } 当 field 取值 access_status 且 operator 取值 IN 时， 数组最小长度 1，最大长度 2 可选值：{ ACCESS_STATUS_COMPLETED, ACCESS_STATUS_PENDING } 当 field 取值 cost_type 时，数组长度为 1 可选值：{ BID_TYPE_CPC, BID_TYPE_CPA, BID_TYPE_CPS, BID_TYPE_CPM, BID_TYPE_CPD } 当 field 取值 marketing_scene 时，数组长度为 1 可选值：{ DEFAULT, GAME_RESERVATION, GAME_PROMOTION, GAME_CLOSED_BETA_TEST, ECOMMERCE_GOODS_DIRECT_PURCHASE_DAILY, ECOMMERCE_GOODS_LIVE_PURCHASE_DAILY, ECOMMERCE_CONSUMER_COLLECT_CLUES_DAILY, ECOMMERCE_CONSUMER_ADD_FOLLOWERS_DAILY, ECOMMERCE_CONSUMER_OFFICIAL_ACCOUNTS_DAILY, ECOMMERCE_CONSUMER_CHANNELS_DAILY, ECOMMERCE_CONSUMER_ANDROID_NEW_DAILY, ECOMMERCE_CONSUMER_IOS_NEW_DAILY, ECOMMERCE_CONTENT_BRAND_DAILY } 当 field 取值 live_video_mode 时，数组长度为 1 可选值：{ LIVE_VIDEO_MODE_DEFAULT, LIVE_VIDEO_MODE_VIDEO, LIVE_VIDEO_MODE_LIVE } 当 field 取值 live_video_sub_mode 时，数组长度为 1 可选值：{ LIVE_VIDEO_SUBMODE_DEFAULT, LIVE_VIDEO_SUBMODE_LIVE_ROOM, LIVE_VIDEO_SUBMODE_LIVE_RESERVATION } 当 field 取值 campaign_type 时，数组长度为 1 可选值：{ CAMPAIGN_TYPE_SEARCH, CAMPAIGN_TYPE_NORMAL } |
+| page | integer | 搜索页码 最小值 1，最大值 99999 默认值：1 |
+| page_size | integer | 一页显示的数据条数 最小值 1，最大值 100 默认值：10 |
+| fields | string[] | 返回字段列表 数组最大长度 255 |
+
+使用说明
+
+## 请求示例
+
+```
+curl -v -G 'https://api.e.qq.com/v3.0/conversions/get?access_token=<ACCESS_TOKEN>&timestamp=<TIMESTAMP>&nonce=<NONCE>' \
+-d 'account_id=<ACCOUNT_ID>' \
+-d 'filtering=[
+    {
+        "values": []
+    }
+]' \
+-d 'page=1' \
+-d 'page_size=10' \
+-d 'fields=[]'
+curl -v -G 'https://api.e.qq.com/v3.0/conversions/get?access_token=<ACCESS_TOKEN>&timestamp=<TIMESTAMP>&nonce=<NONCE>' \
+-d 'account_id=<ACCOUNT_ID>' \
+-d 'filtering=[
+    {
+        "values": []
+    }
+]' \
+-d 'page=1' \
+-d 'page_size=10' \
+-d 'fields=[]'
+```
+
+## 应答字段
+
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| list | struct[] | 返回信息列表 |
+| conversion_id | integer | 转化 id |
+| conversion_name | string | 转化名称，字段长度最小 1 个等宽字符，长度最大 60 等宽字符（即字段最大长度为 60 个中文字或全角标点，120 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） |
+| access_type | enum | 上报方式，SDK 上报方式仅支持安卓和 ios 转化场景，JS 上报方式仅支持网页转化场景。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#access_type) |
+| claim_type | enum | 归因方式，SDK 上报方式时归因方式只能为 CLAIM_TYPE_ACTIVATION，JS 上报方式时只能是 CLAIM_TYPE_CLICK,微信小游戏推广仅支持 CLAIM_TYPE_REGISTER，QQ 小游戏推广、企业微信推广仅支持是 CLAIM_TYPE_CLICK，APP 类型、WEB 类型、微信小程序并且配置白名单的账户支持 CLAIM_TYPE_IMPRESSION。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#claim_type) |
+| feedback_url | string | 监控链接，点击监测链接用于接收平台的点击信息，需输入合法 url，可参考文档：[https://developers.e.qq.com/docs/ads/ads/3rdtracking](https://developers.e.qq.com/docs/guide/conversion/new_version/dianjijiance)。当自归因为 true 并且 conversion_scene 为 ANDROID 或者 iOS，Feedback_URL 必填 |
+| self_attributed | boolean | 是否自归因，当选择 true 代表自归因，自行匹配转化数据后上报给平台，当选择 false 代表全量上报，将产生的所有转化数据上报给平台进行归因。上报方式为 API 时必须为 TRUE，上报方式为 SDK/JS 时必须为 FALSE |
+| optimization_goal | enum | 优化目标类型，支持的优化目标及对应的深度优化目标可通过“[查询优化目标权限](https://developers.e.qq.com/docs/api/tools/capabilities/optimization_goal_permissions_get)”接口进行查询。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| deep_behavior_optimization_goal | enum | 深度优化行为目标，深度优化行为目标和深度优化 ROI 目标仅可填写其中一个。枚举列表：[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| deep_worth_optimization_goal | enum | 深度优化 ROI 目标，深度优化行为目标、深度优化 ROI 和深度强化 ROI 目标仅可填写其中一个。枚举列表：[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#conversion_optimization_goal) |
+| user_action_set_id | integer | 数据源 id，当是否自归因选择 true 时，数据源 id 不可填，当是否自归因选择 false 时，如果该 APP 在当前账户下可见多个数据源，则需要手动指定一个，其他情况可不填 |
+| user_action_set_key | string | SDK 接入时对应的密钥，与 user_action_set_id 相对应，当过滤条件里按照转化 id 筛选时返回该字段 |
+| site_set_enable | boolean | 当前站点是否可用，true：是，false：否 |
+| is_deleted | boolean | 是否已删除，true：是，false：否 |
+| access_status | enum | 接入状态，枚举列表：[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#access_status) |
+| create_source_type | enum | 转化创建来源，如 SELF_CREATED,PLATFORM 等，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#create_source_type) |
+| app_android_channel_package_id | string | 安卓应用渠道包 id，在投放推广目标类型为 Android 应用且接入方式为 SDK 的情况下，可以填写 Market API 中[android_union_channel_packages/add](https://developers.e.qq.com/docs/api/business_assets/android_union_channel_packages/android_union_channel_packages_add)接口创建的腾讯广告渠道包的渠道包 id。只可以选择自定义渠道包 id 非空的渠道包，且只会将自定义渠道包 id 一致的数据计入转化量。渠道包 id 可以从推广目标模块的读取接口获取，渠道包 id 字段由"xx;yy" 两部分组成，在写入时 xx 会被置为 0，0 为正常。 |
+| marketing_carrier_id | string | 营销载体 id，如安卓应用 id、IOS 应用 id、小游戏 id 等 |
+| conversion_scene | enum | 转化场景，网页及微信小程序转化场景无需输入推广目标 id。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#conversion_scene) |
+| owner_id | integer | 转化的拥有者 id，即创建该转化的账号 id |
+| deep_worth_advanced_goal | enum | 强化 ROI 目标，深度优化行为目标、深度优化 ROI 和深度强化 ROI 目标仅可填写其中一个。枚举列表：[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#conversion_optimization_goal) |
+| conversion_link_id | integer | 转化链路 id，当转化场景为 CONVERSION_SCENE_WEB 或者 CONVERSION_SCENE_WECHAT_MINI_PROGRAM 并且上报方式为 ACCESS_TYPE_API 时，可填写转化链路 id，其余情况不支持。详见[转化归因链路明细](https://developers.e.qq.com/docs/reference/conversionlinkid) |
+| impression_feedback_url | string | 监控链接，曝光监测链接用于接收平台的曝光信息，需输入合法 url，可参考文档：[https://developers.e.qq.com/docs/ads/ads/3rdtracking](https://developers.e.qq.com/docs/guide/conversion/new_version/baoguangjiance)。白名单账户可选填 |
+| attribution_window | integer | 曝光归因窗口期 默认值：7 |
+| deep_behavior_advanced_goal | enum | 加强优化行为目标，加强优化行为目标和加强优化 ROI 目标仅可填写其中一个。枚举列表：[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) 默认值：7 |
+| deep_behavior_advanced_goal_min_price | integer | 加强优化行为目标最低出价，单位分 |
+| deep_behavior_advanced_goal_max_price | integer | 加强优化行为目标最高出价，单位分 |
+| deep_optimization_goal_type | enum | 深度优化目标类型，如 SELF_OG,AUTO_OG 等。详见 [link href='deep_optimization_goal_type']深度优化目标类型[/link]，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#deep_optimization_goal_type) |
+| forward_link_assist | enum | 优化目标类型，支持的优化目标及对应的深度优化目标可通过“[查询优化目标权限](https://developers.e.qq.com/docs/api/tools/capabilities/optimization_goal_permissions_get)”接口进行查询。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| incubation_optimization_goal | enum | 优化目标类型，支持的优化目标及对应的深度优化目标可通过“[查询优化目标权限](https://developers.e.qq.com/docs/api/tools/capabilities/optimization_goal_permissions_get)”接口进行查询。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| conversion_link_info | struct | 链路信息，链路信息描述 |
+| conversion_link_id | integer | 转化链路 id，当转化场景为 CONVERSION_SCENE_WEB 或者 CONVERSION_SCENE_WECHAT_MINI_PROGRAM 并且上报方式为 ACCESS_TYPE_API 时，可填写转化链路 id，其余情况不支持。详见[转化归因链路明细](https://developers.e.qq.com/docs/reference/conversionlinkid) |
+| conversion_link_desc | string | 链路详情描述信息，取值为字符串 |
+| landing_page_access | struct | 落地页准入控制 |
+| support_page_types | enum[] | 支持的落地页类型列表，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_type) |
+| must_not_page_types | enum[] | 不允许使用的落地页类型列表，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_type) |
+| must_page_types | enum[] | 强制使用的落地页类型列表，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_type) |
+| disable_code | integer | 不可用的异常码，取值为数字 |
+| disable_message | string | 不可用的原因，取值为字符串 |
+| inspection_free_switch | boolean | 免巡检开关，true：是，false：否 |
+| custom_report_node_list | integer[] | 客户选择的上报节点索引，首个节点索引值为 0 |
+| must_report_node_list | integer[] | 链路必须上报节点索引，首个节点索引值为 0 |
+| recommend_report_node_list | integer[] | 链路推荐上报节点索引，首个节点索引值为 0 |
+| conversion_link_nodes | struct[] | 链路节点信息，包含每个节点的详细信息 |
+| conversion_link_node_id | integer | 链路节点 id |
+| conversion_link_node_name | string | 链路节点名称 |
+| conversion_link_node_index | integer | 链路节点索引 |
+| conversion_link_action_type | string[] | 行为类型 |
+| og_id | array | 优化目标 |
+| roi_og_id | array | roi 优化目标 |
+| carrier_id | integer | 载体 id |
+| carrier_name | string | 载体名称 |
+| data_source | string | 上报来源 |
+| created_by_action_set | boolean | 是否通过数据源 id 创建，true：是，false：否 |
+| page_info | struct | 分页配置信息 |
+| page | integer | 搜索页码 默认值：1 |
+| page_size | integer | 一页显示的数据条数 默认值：10 |
+| total_number | integer | 总条数 |
+| total_page | integer | 总页数 |
+
+## 应答示例
+
+```
+{
+    "code": 0,
+    "message": "",
+    "message_cn": "",
+    "data": {
+        "list": [
+            {
+                "conversion_id": 12345,
+                "conversion_name": "测试转化",
+                "access_type": "ACCESS_TYPE_API",
+                "claim_type": "CLAIM_TYPE_ACTIVATION",
+                "feedback_url": "http://wwww.qq.com?a=__CLICK_ID__&b=__CLICK_TIME__&c=__MUID__&d=__ACCOUNT_ID__&f=__CALLBACK__&g=__DEVICE_OS_TYPE__&h=__HASH_MAC__&i=__HASH_OAID__&j=__OAID__&k=__HASH_ANDROID_ID__&l=__PROMOTED_OBJECT_ID__&o=__AD_ID__",
+                "self_attributed": true,
+                "optimization_goal": "OPTIMIZATIONGOAL_APP_ACTIVATE",
+                "deep_behavior_optimization_goal": "OPTIMIZATIONGOAL_APP_REGISTER",
+                "is_deleted": false,
+                "app_android_channel_package_id": "0;10000534",
+                "conversion_scene": "CONVERSION_SCENE_ANDROID",
+                "conversion_link_info": {
+                    "landing_page_access": {
+                        "support_page_types": [],
+                        "must_not_page_types": [],
+                        "must_page_types": []
+                    }
+                },
+                "custom_report_node_list": [],
+                "must_report_node_list": [],
+                "recommend_report_node_list": [],
+                "conversion_link_nodes": [
+                    {
+                        "conversion_link_action_type": [],
+                        "og_id": [],
+                        "roi_og_id": []
+                    }
+                ]
+            }
+        ],
+        "page_info": {
+            "page": 1,
+            "page_size": 10,
+            "total_number": 1,
+            "total_page": 1
+        }
+    }
+}
+```
+
+## 可视化调试工具
+
+问题仍未解决？
+
+请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务

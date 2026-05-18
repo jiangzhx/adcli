@@ -1,0 +1,28 @@
+{
+  "name": "ad-docs-context",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm verify:public",
+    "discover:sources": "tsx scripts/discover-sources.ts",
+    "ingest:collection": "tsx scripts/ingest-collection.ts",
+    "ingest:source": "tsx scripts/ingest-source.ts",
+    "rebuild:source-blocks": "tsx scripts/rebuild-source-blocks.ts",
+    "build:llms": "tsx scripts/build-llms.ts",
+    "verify:public": "tsx scripts/verify-public.ts",
+    "test": "node --import tsx --test 'tests/**/*.test.ts'",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^20",
+    "crawlee": "^3.16.0",
+    "eslint": "^9",
+    "playwright": "^1.60.0",
+    "tsx": "^4.22.1",
+    "typescript": "^5",
+    "typescript-eslint": "^8.59.3"
+  }
+}

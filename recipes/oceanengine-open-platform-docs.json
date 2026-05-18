@@ -1,0 +1,12 @@
+{
+  "id": "oceanengine_open_platform_docs",
+  "platform": "oceanengine",
+  "type": "official_html_collection",
+  "entry_url": "https://open.oceanengine.com/labels/7/docs/1839621283557572",
+  "discover": {
+    "mode": "playwright",
+    "link_patterns": ["/labels/7/docs/"],
+    "wait_for": "body",
+    "max_items": "all"
+  }
+}

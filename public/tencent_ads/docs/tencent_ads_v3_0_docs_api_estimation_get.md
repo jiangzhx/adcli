@@ -1,0 +1,257 @@
+---
+title: 预估覆盖人数 全部接口
+platform: tencent_ads
+source_url: https://developers.e.qq.com/v3.0/docs/api/estimation/get
+doc_id: tencent_ads_v3_0_docs_api_estimation_get
+source_id: tencent_ads_v3_0_docs_api_estimation_get
+---
+# 预估覆盖人数 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+
+| 所属权限 | ads_management |
+| --- | --- |
+| 请求地址 | estimation/get |
+| 请求方法 | POST |
+| Content-Type | application/json |
+
+## 全局参数
+
+全局参数是指每一个接口都需要使用到的参数。详情[参考](https://developers.e.qq.com/v3.0/pages/send_request)，代码案例[参考](https://developers.e.qq.com/v3.0/pages/send_request)。
+
+| 参数名称 | 参数类型 |
+| --- | --- |
+| access_token | 授权令牌，完成 OAuth 2.0 授权后获得，参考[授权认证](https://developers.e.qq.com/docs/start/authorization)章节 |
+| timestamp | 当前的时间戳，单位为秒，允许客户端请求最大时间误差为 300 秒。 MarketingAPI 所使用的时间戳，若无特殊说明，均为秒级时间戳 MarketingAPI 所使用的时区为 GMT+8，例如当时间戳为 1494840119 时，表示 2017-05-15 17:21:59 |
+| nonce | 随机字串标识，不超过 32 个字符，由调用方自行生成，需保证全局唯一性 |
+
+## 请求参数
+
+标有*的参数为必填项
+
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| adgroup_id | int64 | 广告 id |
+| adgroup_name | string | 广告名称，同一帐号下的广告名称不允许重复。字段长度最小 1 个等宽字符，长度最大 60 等宽字符（即字段最大长度为 60 个中文字或全角标点，120 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） 字段长度最小 1 字节，长度最大 180 字节 |
+| marketing_goal | enum | 营销目的类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_marketing_goal) 可选值：{ MARKETING_GOAL_UNKNOWN, MARKETING_GOAL_USER_GROWTH, MARKETING_GOAL_PRODUCT_SALES, MARKETING_GOAL_LEAD_RETENTION, MARKETING_GOAL_BRAND_PROMOTION, MARKETING_GOAL_INCREASE_FANS_INTERACTION } |
+| marketing_target_type | enum | 推广产品类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_marketing_target_type) 可选值：{ MARKETING_TARGET_TYPE_APP_ANDROID, MARKETING_TARGET_TYPE_APP_IOS, MARKETING_TARGET_TYPE_WECHAT_OFFICIAL_ACCOUNT, MARKETING_TARGET_TYPE_PRODUCT, MARKETING_TARGET_TYPE_TRAFFIC, MARKETING_TARGET_TYPE_LOCAL_STORE, MARKETING_TARGET_TYPE_WECHAT_MINI_GAME, MARKETING_TARGET_TYPE_CONSUMER_PRODUCT, MARKETING_TARGET_TYPE_WECHAT_CHANNELS, MARKETING_TARGET_TYPE_WECHAT_CHANNELS_LIVE, MARKETING_TARGET_TYPE_WECHAT_CHANNELS_LIVE_RESERVATION, MARKETING_TARGET_TYPE_MINI_PROGRAM_WECHAT, MARKETING_TARGET_TYPE_APP_QUICK_APP, MARKETING_TARGET_TYPE_CONSUME_MEDICAL, MARKETING_TARGET_TYPE_COMPREHENSIVE_HOUSEKEEPING, MARKETING_TARGET_TYPE_FICTION, MARKETING_TARGET_TYPE_SHORT_DRAMA, MARKETING_TARGET_TYPE_AUDIOVISUAL_ENTERTAINMENT, MARKETING_TARGET_TYPE_BEAUTY_AND_PERSONAL_CARE, MARKETING_TARGET_TYPE_WEDDING_AND_PORTRAIT_PHOTOGRAPHY, MARKETING_TARGET_TYPE_FRANCHISE_BRAND, MARKETING_TARGET_TYPE_ENTERPRISE_SERVICES, MARKETING_TARGET_TYPE_EXHIBITION_BOOTH_DESIGN, MARKETING_TARGET_TYPE_INSURANCE, MARKETING_TARGET_TYPE_BANK, MARKETING_TARGET_TYPE_CREDIT, MARKETING_TARGET_TYPE_INVESTMENT_CONSULTING, MARKETING_TARGET_TYPE_REAL_ESTATE, MARKETING_TARGET_TYPE_TELECOMMUNICATIONS_OPERATOR, MARKETING_TARGET_TYPE_TOURIST_ATTRACTIONS_TICKETS, MARKETING_TARGET_TYPE_RENOVATION_SERVICES, MARKETING_TARGET_TYPE_FURNITURE_AND_BUILDING_MATERIALS, MARKETING_TARGET_TYPE_EXHIBITION_SALES, MARKETING_TARGET_TYPE_MEDICINE_INDUSTRY_COMMERCIAL, MARKETING_TARGET_TYPE_FINANCE, MARKETING_TARGET_TYPE_LOCAL_STORE_PACKAGE, MARKETING_TARGET_TYPE_CATERING_AND_LEISURE, MARKETING_TARGET_TYPE_CHAIN_RESTAURANT, MARKETING_TARGET_TYPE_COMMODITY_SET, MARKETING_TARGET_TYPE_TOURIST_TRAVEL_ROUTE, MARKETING_TARGET_TYPE_TOURIST_CRUISE_LINE, MARKETING_TARGET_TYPE_TOURIST_HOTEL_SERVICE, MARKETING_TARGET_TYPE_TOURIST_AIRLINE_TICKETS, MARKETING_TARGET_TYPE_LOCAL_STORE_COMBINE_WITH_PRODUCT, MARKETING_TARGET_TYPE_ACTIVITY, MARKETING_TARGET_TYPE_STORE, MARKETING_TARGET_TYPE_MINI_GAME_QQ, MARKETING_TARGET_TYPE_PC_GAME, MARKETING_TARGET_TYPE_WECHAT_WORK, MARKETING_TARGET_TYPE_LIVE_STREAM_ROOM, MARKETING_TARGET_TYPE_PERSONAL_STORE, MARKETING_TARGET_TYPE_PLATFORM_CHANNEL, MARKETING_TARGET_TYPE_TWO_WHEEL_VEHICLE, MARKETING_TARGET_TYPE_GOVERNMENT_AFFAIRS, MARKETING_TARGET_TYPE_CAR_ECOLOGY, MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT, MARKETING_TARGET_TYPE_APP_HARMONY, MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT_SET, MARKETING_TARGET_TYPE_PRODUCT_AGGREGATION_PAGE, MARKETING_TARGET_TYPE_WECHAT_STORE, MARKETING_TARGET_TYPE_RESALE_AND_COMMERCIAL_LAND, MARKETING_TARGET_TYPE_VIDEO_PROGRAM, MARKETING_TARGET_TYPE_FUN_TEST, MARKETING_TARGET_TYPE_MATERNITY_PARENTING, MARKETING_TARGET_TYPE_LEISURE_ENTERTAINMENT, MARKETING_TARGET_TYPE_MEDICAL_INSTITUTION, MARKETING_TARGET_TYPE_WECHAT_CHANNELS_ACTIVITY } |
+| marketing_target_detail | struct | 营销对象详情 |
+| marketing_target_detail_id* | string | 推广内容资产详情 id |
+| marketing_target_sub_detail_id* | string | 二级推广内容资产详情 id |
+| marketing_sub_goal | enum | 二级营销目的类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_marketing_sub_goal) 可选值：{ MARKETING_SUB_GOAL_UNKNOWN, MARKETING_SUB_GOAL_NEW_GAME_RESERVE, MARKETING_SUB_GOAL_NEW_GAME_TEST, MARKETING_SUB_GOAL_NEW_GAME_LAUNCH, MARKETING_SUB_GOAL_PLATEAU_PHASE_LAUNCH, MARKETING_SUB_GOAL_MINI_GAME_NEW_CUSTOMER_GROWTH, MARKETING_SUB_GOAL_MINI_GAME_RETURN_CUSTOMER_ENGAGEMENT, MARKETING_SUB_GOAL_APP_ACQUISITION, MARKETING_SUB_GOAL_APP_ACTIVATION, MARKETING_SUB_GOAL_NOT_INSTALL_USER, MARKETING_SUB_GOAL_PRE_INSTALL_USER, MARKETING_SUB_GOAL_UNLOADED_USER, MARKETING_SUB_GOAL_SHORT_INACTIVE_USER, MARKETING_SUB_GOAL_LONG_INACTIVE_USER, MARKETING_SUB_GOAL_GAME_VERSION_UPGRADE, MARKETING_SUB_GOAL_NEW_STORE_OPENING, MARKETING_SUB_GOAL_EVENING_PROMOTION, MARKETING_SUB_GOAL_SPECIAL_RELEASE } |
+| marketing_carrier_type | enum | 营销载体类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_marketing_carrier_type) 可选值：{ MARKETING_CARRIER_TYPE_UNKNOWN, MARKETING_CARRIER_TYPE_APP_ANDROID, MARKETING_CARRIER_TYPE_APP_IOS, MARKETING_CARRIER_TYPE_WECHAT_OFFICIAL_ACCOUNT, MARKETING_CARRIER_TYPE_JUMP_PAGE, MARKETING_CARRIER_TYPE_WECHAT_MINI_GAME, MARKETING_CARRIER_TYPE_WECHAT_CHANNELS_LIVE, MARKETING_CARRIER_TYPE_WECHAT_CHANNELS, MARKETING_CARRIER_TYPE_WECHAT_CHANNELS_LIVE_RESERVATION, MARKETING_CARRIER_TYPE_MINI_PROGRAM_WECHAT, MARKETING_CARRIER_TYPE_APP_QUICK_APP, MARKETING_CARRIER_TYPE_PC_GAME, MARKETING_CARRIER_TYPE_QQ_MINI_GAME, MARKETING_CARRIER_TYPE_APP_HARMONY } |
+| marketing_carrier_detail | struct | 营销载体详情，当营销载体类型是 MARKETING_CARRIER_TYPE_APP_ANDROID、MARKETING_CARRIER_TYPE_APP_IOS 和 MARKETING_CARRIER_TYPE_WECHAT_MINI_GAME 等需要使用该结构体 |
+| marketing_carrier_id* | string | 营销载体 id，如安卓应用 id、IOS 应用 id、小游戏 id 等 字段长度最小 0 字节，长度最大 2048 字节 |
+| marketing_sub_carrier_id | string | 二级营销载体 id |
+| marketing_carrier_name | string | 营销载体名称 |
+| automatic_site_enabled | boolean | 是否开启智能版位功能，建议使用。ADX 程序化广告不可填写提交。 可选值：{ true, false } |
+| site_set | enum[] | 投放站点集合，当前单站点或者 SITE_SET_TENCENT_NEWS+SITE_SET_TENCENT_VIDEO 的组合，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_site_set_definition) 数组最小长度 1，最大长度 32 可选值：{ SITE_SET_MOBILE_UNION, SITE_SET_WECHAT, SITE_SET_TENCENT_NEWS, SITE_SET_TENCENT_VIDEO, SITE_SET_PCQQ, SITE_SET_CHANNELS, SITE_SET_WECHAT_SEARCH, SITE_SET_WECHAT_PLUGIN, SITE_SET_QBSEARCH, SITE_SET_SEARCH_SCENE } |
+| bid_mode | enum | 出价方式，ADX 程序化广告仅支持{BID_MODE_CPC,BID_MODE_CPM}，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_bid_mode) 可选值：{ BID_MODE_CPC, BID_MODE_CPA, BID_MODE_CPS, BID_MODE_CPM, BID_MODE_OCPC, BID_MODE_OCPM } |
+| bid_amount | integer | 广告出价，单位为分，ADX 程序化广告默认填写 200，详见 [\[出价规则\]](https://developers.e.qq.com/docs/start/limit#a5) |
+| optimization_goal | enum | 广告优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) 可选值：{ OPTIMIZATIONGOAL_NONE, OPTIMIZATIONGOAL_BRAND_CONVERSION, OPTIMIZATIONGOAL_FOLLOW, OPTIMIZATIONGOAL_CLICK, OPTIMIZATIONGOAL_IMPRESSION, OPTIMIZATIONGOAL_APP_DOWNLOAD, OPTIMIZATIONGOAL_APP_ACTIVATE, OPTIMIZATIONGOAL_APP_REGISTER, OPTIMIZATIONGOAL_ONE_DAY_RETENTION, OPTIMIZATIONGOAL_APP_PURCHASE, OPTIMIZATIONGOAL_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ECOMMERCE_CHECKOUT, OPTIMIZATIONGOAL_LEADS, OPTIMIZATIONGOAL_ECOMMERCE_CART, OPTIMIZATIONGOAL_PROMOTION_CLICK_KEY_PAGE, OPTIMIZATIONGOAL_VIEW_COMMODITY_PAGE, OPTIMIZATIONGOAL_ONLINE_CONSULTATION, OPTIMIZATIONGOAL_TELEPHONE_CONSULTATION, OPTIMIZATIONGOAL_PAGE_RESERVATION, OPTIMIZATIONGOAL_DELIVERY, OPTIMIZATIONGOAL_MESSAGE_AFTER_FOLLOW, OPTIMIZATIONGOAL_CLICK_MENU_AFTER_FOLLOW, OPTIMIZATIONGOAL_PAGE_EFFECTIVE_ONLINE_CONSULT, OPTIMIZATIONGOAL_APPLY, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_CONSULT, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_PHONE, OPTIMIZATIONGOAL_LEADS_COLLECT, OPTIMIZATIONGOAL_FIRST_PURCHASE, OPTIMIZATIONGOAL_PRE_CREDIT, OPTIMIZATIONGOAL_CREDIT, OPTIMIZATIONGOAL_WITHDRAW_DEPOSITS, OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE, OPTIMIZATIONGOAL_MOBILE_APP_CREATE_ROLE, OPTIMIZATIONGOAL_CANVAS_CLICK, OPTIMIZATIONGOAL_PROMOTION_CLAIM_OFFER, OPTIMIZATIONGOAL_ECOMMERCE_ADD_TO_WISHLIST, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_RESERVATION, OPTIMIZATIONGOAL_PAGE_RECEIPT, OPTIMIZATIONGOAL_PAGE_SCAN_CODE, OPTIMIZATIONGOAL_SELECT_COURSE, OPTIMIZATIONGOAL_CONFIRM_POTENTIAL_CUSTOMER_PHONE, OPTIMIZATIONGOAL_MOBILE_APP_AD_INCOME, OPTIMIZATIONGOAL_MOBILE_APP_ACCREDIT, OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD, OPTIMIZATIONGOAL_PAGE_CONFIRM_EFFECTIVE_LEADS, OPTIMIZATIONGOAL_RESERVATION, OPTIMIZATIONGOAL_FIRST_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_LIKE, OPTIMIZATIONGOAL_ADD_DESKTOP, OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK, OPTIMIZATIONGOAL_BUY_COUPONS, OPTIMIZATIONGOAL_LEAVE_INFORMATION, OPTIMIZATIONGOAL_CORE_ACTION, OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO, OPTIMIZATIONGOAL_PROMOTION_READ_ARTICLE, OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ECOMMERCE_SCANCODE_WX, OPTIMIZATIONGOAL_MOBILE_APP_SEVEN_DAYS_RETENTION, OPTIMIZATIONGOAL_CLASS_PARTICIPATED, OPTIMIZATIONGOAL_INSURANCE_PURCHASE, OPTIMIZATIONGOAL_RESERVATION_CHECK, OPTIMIZATIONGOAL_OPEN_ACCOUNT, OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ADD_WECHAT, OPTIMIZATIONGOAL_WECOM_CONSULT, OPTIMIZATIONGOAL_ADD_GROUP, OPTIMIZATIONGOAL_QUICK_ORDER, OPTIMIZATIONGOAL_PRE_PAY, OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG, OPTIMIZATIONGOAL_CALL_DURATION_THIRTY_SECONDS, OPTIMIZATIONGOAL_CLAIM_COURSE, OPTIMIZATIONGOAL_QUIT_GROUP, OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT, OPTIMIZATIONGOAL_BACK_FLOW, OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG, OPTIMIZATIONGOAL_RENEWAL, OPTIMIZATIONGOAL_LOW_PRICE_COURSE, OPTIMIZATIONGOAL_CONSULT_INTENTION, OPTIMIZATIONGOAL_EVERY_DAY_RETENTION, OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE_UV, OPTIMIZATIONGOAL_LIVE_STREAM_DURATION_1MIN, OPTIMIZATIONGOAL_LIVE_STREAM_INTERACTION, OPTIMIZATIONGOAL_ECOMMERCE_CANCEL_ORDER, OPTIMIZATIONGOAL_CLICK_LEADS_COMPONENT, OPTIMIZATIONGOAL_REGULAR_PRICE_COURSE, OPTIMIZATIONGOAL_VISIT_STROE, OPTIMIZATIONGOAL_EFFECTIVE_ENTRY, OPTIMIZATIONGOAL_CREDIT_RATIO, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_DEAL, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_PRODUCT_CLICK, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_AUDIENCE, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_COMMENT, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS, OPTIMIZATIONGOAL_24H_FIRSTPAY, OPTIMIZATIONGOAL_STORE_STAY, OPTIMIZATIONGOAL_LOW_PRICE_INSURANCE_PAYMENT, OPTIMIZATIONGOAL_UNDERWRITING, OPTIMIZATIONGOAL_FIRST_WITHDRAW, OPTIMIZATIONGOAL_BRIDGING_COURSE_COMPLETED, OPTIMIZATIONGOAL_THIRTY_SECONDS_SCANCODE_WX, OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE, OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN, OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT, OPTIMIZATIONGOAL_ECOMMERCE_GIFTING, OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED, OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE, OPTIMIZATIONGOAL_NET_PROFIT_24H, OPTIMIZATIONGOAL_EFFECTIVE_INSURE, OPTIMIZATIONGOAL_COLLECT } |
+| time_series | string | 投放时间段，格式为 48 * 7 位字符串，且都为 0 和 1，以半个小时为最小粒度，从周一零点开始至周日 24 点结束。0 为不投放，1 为投放，全传 1 视为全时段投放，不允许全部传 0。朋友圈广告的投放时间需大于等于 6 小时，小于等于 30 个自然日，且每天至少投放 6 小时，且每天投放的时段需保持一致； ADX 程序化广告默认填写 336 个 1。 字段长度为 336 字节 |
+| targeting | struct | 定向详细设置，存放所有定向条件，ADX 程序化广告不可填写提交。 |
+| geo_location | struct | 地理位置定向，"regions"、"business_districts"、"custom_locations" 不能同时为空。 |
+| location_types* | enum[] | 地点类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_location_types)，选择限制：对于微信流量，仅能选择"LIVE_IN"（常住）； 使用商圈（business_district）以及自定义地理位置（custom_locations）时，仅可选 "VISITED_IN"（去过），"LIVE_IN"（常住）； 如：["LIVE_IN", "VISITED_IN"] 数组最小长度 1，最大长度 5 可选值：{ RECENTLY_IN, VISITED_IN, LIVE_IN, TRAVEL_IN, CAA_RECENTLY_IN, LIVE_AND_RECENTLY, INTELLIGENCE } |
+| regions | integer[] | 省市区县列表，可通过 [\[targeting_tags/get\]](https://developers.e.qq.com/v3.0/docs/api/targeting_tags/get) 接口获取 数组最小长度 0，最大长度 2000 |
+| business_districts | integer[] | 商圈 id 列表，可通过 [\[targeting_tags/get\]](https://developers.e.qq.com/v3.0/docs/api/targeting_tags/get) 接口获取 数组最小长度 0，最大长度 400 |
+| custom_locations | struct[] | 自定义地理位置列表，使用火星系坐标。 数组最小长度 1，最大长度 2000 |
+| longitude* | float64 | 经度，单位度 最小值-180，最大值 180，最多保留 6 位小数 |
+| latitude* | float64 | 纬度，单位度 最小值-90，最大值 90，最多保留 6 位小数 |
+| radius* | integer | 半径，单位米 最小值 200，最大值 25000 |
+| geo_location_auto_audience | boolean | 是否使用地域优选 可选值：{ true, false } |
+| gender | enum[] | 性别定向，仅单选，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_gender) 数组长度为 1 可选值：{ MALE, FEMALE } |
+| age | struct[] | 年龄定向，范围为 18~66，设置步长需不小于 4，66 代表的是 66 岁及 66 岁以上，如 18~66 代表大于等于 18 岁 数组最小长度 1，最大长度 5 |
+| min* | integer | 年龄限制 最小值 14，最大值 66 |
+| max* | integer | 年龄限制 最小值 14，最大值 66 |
+| education | enum[] | 用户学历，该功能即将下线，仅部分行业灰度开放，如有问题可联系您的客户运营。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_education) 数组最小长度 1，最大长度 100 可选值：{ DOCTOR, MASTER, BACHELOR, SENIOR, JUNIOR, PRIMARY, JUNIOR_COLLEGE } |
+| app_install_status | enum[] | 应用安装，当且仅当推广目标类型为 ANDROID、IOS 时使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_app_install_status) 数组长度为 1 可选值：{ NOT_INSTALLED, INSTALLED } |
+| marital_status | enum[] | 婚恋状态，该功能即将下线，仅部分行业灰度开放，如有问题可联系您的客户运营。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_marriage_status) 数组最小长度 1，最大长度 100 可选值：{ SINGLE, IN_LOVE, NEWLY_MARRIED, MARRIED, PARENTING, PARENTING_0, PARENTING_0_6, PARENTING_6_12, PARENTING_12_24, PARENTING_24_36, CHILD_PRE_SCHOOL, CHILD_PRIMARY_SCHOOL, CHILD_JUNIOR_SCHOOL, CHILD_HIGH_SCHOOL } |
+| excluded_converted_audience | struct | 排除已转化人群行为定向，排除已转化用户定向范围 同应用，仅当推广产品类型为 ANDROID/IOS 应用时可以使用，没有选择自定义转化行为（excluded_dimension）时，使用该定向出价需要满足是 oCPC、oCPM 广告； 没有选择自定义转化行为（excluded_dimension）时，使用该定向出价需要满足是 oCPC、oCPM 广告； |
+| excluded_dimension* | enum | 排除已转化人群的数据维度，排除已转化人群的数据维度枚举，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_excluded_dimension) 可选值：{ EXCLUDED_DIMENSION_UID, EXCLUDED_DIMENSION_COMPANY_ACCOUNT, EXCLUDED_DIMENSION_APP, EXCLUDED_DIMENSION_PRODUCT, EXCLUDE_DIMENSION_WORKTABLE } |
+| conversion_behavior_list | enum[] | 转化行为，ENUM 值同广告优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) 数组最小长度 1，最大长度 2 可选值：{ OPTIMIZATIONGOAL_NONE, OPTIMIZATIONGOAL_BRAND_CONVERSION, OPTIMIZATIONGOAL_FOLLOW, OPTIMIZATIONGOAL_CLICK, OPTIMIZATIONGOAL_IMPRESSION, OPTIMIZATIONGOAL_APP_DOWNLOAD, OPTIMIZATIONGOAL_APP_ACTIVATE, OPTIMIZATIONGOAL_APP_REGISTER, OPTIMIZATIONGOAL_ONE_DAY_RETENTION, OPTIMIZATIONGOAL_APP_PURCHASE, OPTIMIZATIONGOAL_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ECOMMERCE_CHECKOUT, OPTIMIZATIONGOAL_LEADS, OPTIMIZATIONGOAL_ECOMMERCE_CART, OPTIMIZATIONGOAL_PROMOTION_CLICK_KEY_PAGE, OPTIMIZATIONGOAL_VIEW_COMMODITY_PAGE, OPTIMIZATIONGOAL_ONLINE_CONSULTATION, OPTIMIZATIONGOAL_TELEPHONE_CONSULTATION, OPTIMIZATIONGOAL_PAGE_RESERVATION, OPTIMIZATIONGOAL_DELIVERY, OPTIMIZATIONGOAL_MESSAGE_AFTER_FOLLOW, OPTIMIZATIONGOAL_CLICK_MENU_AFTER_FOLLOW, OPTIMIZATIONGOAL_PAGE_EFFECTIVE_ONLINE_CONSULT, OPTIMIZATIONGOAL_APPLY, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_CONSULT, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_PHONE, OPTIMIZATIONGOAL_LEADS_COLLECT, OPTIMIZATIONGOAL_FIRST_PURCHASE, OPTIMIZATIONGOAL_PRE_CREDIT, OPTIMIZATIONGOAL_CREDIT, OPTIMIZATIONGOAL_WITHDRAW_DEPOSITS, OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE, OPTIMIZATIONGOAL_MOBILE_APP_CREATE_ROLE, OPTIMIZATIONGOAL_CANVAS_CLICK, OPTIMIZATIONGOAL_PROMOTION_CLAIM_OFFER, OPTIMIZATIONGOAL_ECOMMERCE_ADD_TO_WISHLIST, OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_RESERVATION, OPTIMIZATIONGOAL_PAGE_RECEIPT, OPTIMIZATIONGOAL_PAGE_SCAN_CODE, OPTIMIZATIONGOAL_SELECT_COURSE, OPTIMIZATIONGOAL_CONFIRM_POTENTIAL_CUSTOMER_PHONE, OPTIMIZATIONGOAL_MOBILE_APP_AD_INCOME, OPTIMIZATIONGOAL_MOBILE_APP_ACCREDIT, OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD, OPTIMIZATIONGOAL_PAGE_CONFIRM_EFFECTIVE_LEADS, OPTIMIZATIONGOAL_RESERVATION, OPTIMIZATIONGOAL_FIRST_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_LIKE, OPTIMIZATIONGOAL_ADD_DESKTOP, OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK, OPTIMIZATIONGOAL_BUY_COUPONS, OPTIMIZATIONGOAL_LEAVE_INFORMATION, OPTIMIZATIONGOAL_CORE_ACTION, OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO, OPTIMIZATIONGOAL_PROMOTION_READ_ARTICLE, OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ECOMMERCE_SCANCODE_WX, OPTIMIZATIONGOAL_MOBILE_APP_SEVEN_DAYS_RETENTION, OPTIMIZATIONGOAL_CLASS_PARTICIPATED, OPTIMIZATIONGOAL_INSURANCE_PURCHASE, OPTIMIZATIONGOAL_RESERVATION_CHECK, OPTIMIZATIONGOAL_OPEN_ACCOUNT, OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER, OPTIMIZATIONGOAL_ADD_WECHAT, OPTIMIZATIONGOAL_WECOM_CONSULT, OPTIMIZATIONGOAL_ADD_GROUP, OPTIMIZATIONGOAL_QUICK_ORDER, OPTIMIZATIONGOAL_PRE_PAY, OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG, OPTIMIZATIONGOAL_CALL_DURATION_THIRTY_SECONDS, OPTIMIZATIONGOAL_CLAIM_COURSE, OPTIMIZATIONGOAL_QUIT_GROUP, OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT, OPTIMIZATIONGOAL_BACK_FLOW, OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG, OPTIMIZATIONGOAL_RENEWAL, OPTIMIZATIONGOAL_LOW_PRICE_COURSE, OPTIMIZATIONGOAL_CONSULT_INTENTION, OPTIMIZATIONGOAL_EVERY_DAY_RETENTION, OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE_UV, OPTIMIZATIONGOAL_LIVE_STREAM_DURATION_1MIN, OPTIMIZATIONGOAL_LIVE_STREAM_INTERACTION, OPTIMIZATIONGOAL_ECOMMERCE_CANCEL_ORDER, OPTIMIZATIONGOAL_CLICK_LEADS_COMPONENT, OPTIMIZATIONGOAL_REGULAR_PRICE_COURSE, OPTIMIZATIONGOAL_VISIT_STROE, OPTIMIZATIONGOAL_EFFECTIVE_ENTRY, OPTIMIZATIONGOAL_CREDIT_RATIO, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_DEAL, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_PRODUCT_CLICK, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_AUDIENCE, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_COMMENT, OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS, OPTIMIZATIONGOAL_24H_FIRSTPAY, OPTIMIZATIONGOAL_STORE_STAY, OPTIMIZATIONGOAL_LOW_PRICE_INSURANCE_PAYMENT, OPTIMIZATIONGOAL_UNDERWRITING, OPTIMIZATIONGOAL_FIRST_WITHDRAW, OPTIMIZATIONGOAL_BRIDGING_COURSE_COMPLETED, OPTIMIZATIONGOAL_THIRTY_SECONDS_SCANCODE_WX, OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE, OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN, OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT, OPTIMIZATIONGOAL_ECOMMERCE_GIFTING, OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED, OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE, OPTIMIZATIONGOAL_NET_PROFIT_24H, OPTIMIZATIONGOAL_EFFECTIVE_INSURE, OPTIMIZATIONGOAL_COLLECT } |
+| excluded_day | enum | 排除天数，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_excluded_day) 可选值：{ EXCLUDED_DAY_SEVEN_DAY, EXCLUDED_DAY_ONE_MONTH, EXCLUDED_DAY_ONE_DAY } |
+| custom_audience | integer[] | 定向用户群，通过 [\[创建人群接口\]](https://developers.e.qq.com/v3.0/docs/api/custom_audiences/add) 创建的人群 id，custom_audience 和 excluded_custom_audience 个数之和不能超过 200 个 数组最小长度 1，最大长度 200 |
+| excluded_custom_audience | integer[] | 排除用户群，通过 [\[创建人群接口\]](https://developers.e.qq.com/v3.0/docs/api/custom_audiences/add) 创建的人群 id，custom_audience 和 excluded_custom_audience 个数之和不能超过 200 个 数组最小长度 1，最大长度 200 |
+| device_brand_model | struct | 设备品牌型号定向，该功能即将下线，仅部分行业灰度开放，如有问题可联系您的客户运营 |
+| included_list | integer[] | 设备品牌型号定向，可通过 [\[targeting_tags/get\]](https://developers.e.qq.com/v3.0/docs/api/targeting_tags/get) 接口获取 数组最小长度 0，最大长度 400 最小值 0，最大值 10000000000 |
+| excluded_list | integer[] | 排除设备品牌型号列表，不能与 included_list 同时使用，可通过 [\[targeting_tags/get\]](https://developers.e.qq.com/v3.0/docs/api/targeting_tags/get) 接口获取 数组最小长度 0，最大长度 400 最小值 0，最大值 10000000000 |
+| user_os | enum[] | 操作系统定向，该功能即将下线，仅部分行业灰度开放，如有问题可联系您的客户运营。当 marketing_carrier_type=MARKETING_CARRIER_TYPE_APP_ANDROID 时，广告只会在 Android 操作系统上展示；当 marketing_carrier_type=MARKETING_CARRIER_TYPE_APP_IOS 时，广告只会在 iOS 操作系统上展示，其他场景下均需指定 user_os。举例：当 marketing_target_type = MARKETING_TARGET_TYPE_APP_ANDROID 或 MARKETING_TARGET_TYPE_APP_IOS 时，需要传输 user_os 的值，否则会默认通投到 iOS 和 android 双端。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_os) 当版位=腾讯平台与内容媒体电脑端，推广产品≠微信小游戏时，不支持参数 user_os。 数组最小长度 1，最大长度 100 可选值：{ IOS, IOS_VERSION_4, IOS_VERSION_5, IOS_VERSION_6, IOS_VERSION_7, IOS_VERSION_8, IOS_VERSION_9, IOS_VERSION_10, IOS_VERSION_11, IOS_VERSION_12, IOS_VERSION_13, IOS_VERSION_14, IOS_VERSION_15, IOS_VERSION_16, IOS_VERSION_17, IOS_VERSION_18, ANDROID, ANDROID_VERSION_1, ANDROID_VERSION_2, ANDROID_VERSION_3, ANDROID_VERSION_4, ANDROID_VERSION_5, ANDROID_VERSION_6, ANDROID_VERSION_7, ANDROID_VERSION_8, ANDROID_VERSION_9, ANDROID_VERSION_10, ANDROID_VERSION_11, ANDROID_VERSION_12, ANDROID_VERSION_13, ANDROID_VERSION_14, ANDROID_VERSION_15, ANDROID_VERSION_16, HARMONY } |
+| network_type | enum[] | 联网方式定向，该功能即将下线，仅部分行业灰度开放，如有问题可联系您的客户运营。详见 [\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_network_type) 数组最小长度 1，最大长度 100 可选值：{ WIFI, NET_2G, NET_3G, NET_4G, NET_5G } |
+| device_price | enum[] | 设备价格定向，该功能即将下线，仅部分行业灰度开放，如有问题可联系您的客户运营，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_device_price) 数组最小长度 1，最大长度 100 可选值：{ PRICE_1500_LESS, PRICE_1500_2500, PRICE_2500_3500, PRICE_3500_4500, PRICE_4500_MORE } |
+| wechat_ad_behavior | struct | 微信广告行为定向，当且仅当投放微信广告时有效,当枚举值选择【已经添加过企业微信】需要传入企业微信 id |
+| actions | enum[] | 微信再营销类型，WECHAT_OFFICIAL_ACCOUNT_FOLLOWED，关注过广告主微信公众号 APP_INSTALLED，已安装你的应用（推广目标仅支持 ANDROID、IOS） WECHAT_COUPON_OBTAINED，领取过广告主微信卡券 WECHAT_OFFICIAL_ACCOUNT_AD_LIKE，对微信公众号广告感兴趣 WECHAT_MOMENTS_AD_LIKE，对微信朋友圈广告感兴趣 MINI_GAME_WECHAT_REGISTERED，曾经注册过你的小游戏（仅推广目标为微信小游戏），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_ad_behavior_route_type) 数组最小长度 0，最大长度 10 可选值：{ WECHAT_OFFICIAL_ACCOUNT_FOLLOWED, WECHAT_COUPON_OBTAINED, WECHAT_OFFICIAL_ACCOUNT_AD_LIKE, WECHAT_MOMENTS_AD_LIKE, MINI_GAME_WECHAT_REGISTERED, WECHAT_WORK_CONTACTS_ADDED, GDT_WECHAT_OFFICIAL_ACCOUNT_FOLLOWED, WECHAT_CHANNELS_FANS, WE_COM_CORP_ID_ADDED, WECHAT_MINI_GAME_AD_LIKE } |
+| excluded_actions | enum[] | 微信再营销类型，WECHAT_OFFICIAL_ACCOUNT_FOLLOWED，关注过广告主微信公众号 APP_INSTALLED，已安装你的应用（推广目标仅支持 ANDROID、IOS） WECHAT_COUPON_OBTAINED，领取过广告主微信卡券 WECHAT_OFFICIAL_ACCOUNT_AD_LIKE，对微信公众号广告感兴趣 WECHAT_MOMENTS_AD_LIKE，对微信朋友圈广告感兴趣 MINI_GAME_WECHAT_REGISTERED，曾经注册过你的小游戏（仅推广目标为微信小游戏），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_ad_behavior_route_type) 数组最小长度 0，最大长度 10 可选值：{ WECHAT_OFFICIAL_ACCOUNT_FOLLOWED, WECHAT_COUPON_OBTAINED, WECHAT_OFFICIAL_ACCOUNT_AD_LIKE, WECHAT_MOMENTS_AD_LIKE, MINI_GAME_WECHAT_REGISTERED, WECHAT_WORK_CONTACTS_ADDED, GDT_WECHAT_OFFICIAL_ACCOUNT_FOLLOWED, WECHAT_CHANNELS_FANS, WE_COM_CORP_ID_ADDED, WECHAT_MINI_GAME_AD_LIKE } |
+| corp_id | string[] | 微信再营销 corp_id 列表，选择已添加过企业微信，必须填入 corp_id 列表 数组最小长度 1，最大长度 10 |
+| game_consumption_level | enum[] | 游戏消费能力，该功能即将下线，仅部分行业灰度开放，如有问题可联系您的客户运营，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_game_consumption_level) 数组最小长度 1，最大长度 2 可选值：{ HIGH, NORMAL } |
+| excluded_os | enum[] | 排除操作系统定向，目前 ANDROID_PURE_MODE 枚举仅支持 MARKETING_CARRIER_TYPE_APP_ANDROID 载体类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_excluded_os) 数组最小长度 1，最大长度 100 可选值：{ ANDROID_PURE_MODE, IOS, IOS_VERSION_4, IOS_VERSION_5, IOS_VERSION_6, IOS_VERSION_7, IOS_VERSION_8, IOS_VERSION_9, IOS_VERSION_10, IOS_VERSION_11, IOS_VERSION_12, IOS_VERSION_13, IOS_VERSION_14, IOS_VERSION_15, IOS_VERSION_16, IOS_VERSION_17, IOS_VERSION_18, ANDROID, ANDROID_VERSION_1, ANDROID_VERSION_2, ANDROID_VERSION_3, ANDROID_VERSION_4, ANDROID_VERSION_5, ANDROID_VERSION_6, ANDROID_VERSION_7, ANDROID_VERSION_8, ANDROID_VERSION_9, ANDROID_VERSION_10, ANDROID_VERSION_11, ANDROID_VERSION_12, ANDROID_VERSION_13, ANDROID_VERSION_14, ANDROID_VERSION_15, ANDROID_VERSION_16, WINDOWS, SYMBIAN, JAVA } |
+| scene_spec | struct | 场景定向，ADX 程序化广告不可填写提交。 |
+| mobile_union | enum[] | 移动联盟场景定向，当且仅当投放移动联盟流量时可以使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_mobile_union_scene_for_write) 数组最小长度 1，最大长度 9 可选值：{ MOBILE_UNION_IN_WECHAT, MOBILE_UNION_REWARDED_VIDEO, MOBILE_UNION_REWARDED_MEDIA, MOBILE_UNION_SMB_CUSTOMIZATION, MOBILE_UNION_GAME_ADVERTISER_PECULIAR, MOBILE_UNION_READ_ADVERTISER } |
+| exclude_mobile_union | enum[] | 移动联盟场景屏蔽定向，当且仅当投放移动联盟流量时可以使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_exclude_mobile_union_scene_for_write) 数组最小长度 1，最大长度 8 可选值：{ MOBILE_UNION_IN_WECHAT, MOBILE_UNION_REWARDED_VIDEO, MOBILE_UNION_REWARDED_MEDIA, MOBILE_UNION_GAME_ADVERTISER_EXCLUDE, MOBILE_UNION_READ_ADVERTISER_EXCLUDE, MOBILE_UNION_LIGHT_GAME_ADVERTISER_EXCLUDE } |
+| union_position_package | integer[] | 定投联盟流量包列表，一个广告最多可选择 5 个定投流量包，且该广告所有流量包关联的广告位数量不得超过 10000 个 数组最小长度 1，最大长度 20 |
+| exclude_union_position_package | integer[] | 屏蔽联盟流量包列表，一个广告最多可选择 5 个屏蔽流量包，且该广告所有流量包关联的广告位数量不得超过 10000 个 数组最小长度 1，最大长度 20 |
+| tencent_news | enum[] | 腾讯新闻流量场景定向，当且仅当投放腾讯新闻流量时可以使用，功能灰度开放，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_tencent_news_scene) 数组最小长度 1，最大长度 3 可选值：{ TENCENT_NEWS_APP, TENCENT_NEWS_WECHAT, TENCENT_NEWS_QQ } |
+| display_scene | enum[] | 广告展示场景，当且仅当投放移动联盟流量时可以使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_display_scene) 数组最小长度 0，最大长度 32 可选值：{ DISPLAY_SCENE_BANNER, DISPLAY_SCENE_INLINE, DISPLAY_SCENE_SPLASH, DISPLAY_SCENE_NATIVE, DISPLAY_SCENE_REWARDED_VIDEO } |
+| wechat_scene | struct | 微信场景定向 |
+| official_account_media_category | integer[] | 公众号媒体类型 数组最小长度 0，最大长度 100 |
+| mini_program_and_mini_game | integer[] | 小程序小游戏流量类型 数组最小长度 0，最大长度 100 |
+| pay_scene | integer[] | 订单详情页消费场景 数组最小长度 0，最大长度 100 |
+| wechat_position | integer[] | 微信公众号与小程序定投，当且仅当投放公众号流量（site_set = SITE_SET_WECHAT）时可以使用，可用场景值从投放辅助工具（scene_spec_tags/get）获取。不允许修改 数组最小长度 0，最大长度 100 |
+| mobile_union_category | integer[] | 腾讯广告联盟媒体类型场景定向，当且仅当投放腾讯广告联盟流量时（site_set = SITE_SET_MOBILE_UNION）时可以使用 数组最小长度 1，最大长度 200 |
+| qbsearch_scene | enum[] | QQ 浏览器、应用宝流量场景，当且仅当投放 SITE_SET_QBSEARCH 版位时可以使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_qb_search_scene) 数组最小长度 0，最大长度 32 可选值：{ QBSEARCH_SCENE_MOBILE, QBSEARCH_SCENE_PC } |
+| wechat_channels_scene | integer[] | 微信视频号定投 数组最小长度 0，最大长度 100 |
+| pc_scene | enum[] | PC 端定投，当且仅当投放 SITE_SET_PCQQ 版位时可以使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_p_c_scene) 数组最小长度 0，最大长度 32 可选值：{ WECHAT_MOMENTS_PC, WECHAT_APP_REWARDED_PC, WECHAT_MINI_PROGRAM_TABLE_PLAQUE_PC, WECHAT_APP_COVER_PC, WECHAT_MINI_PROGRAM_NATIVE_TEMPLATE_PC, WECHAT_PUBLIC_ACCOUNT_ARTICLE_MIDDLE_PC, WECHAT_PUBLIC_ACCOUNT_ARTICLE_BOTTOM_PC, PCAD_PC, UNION_PC, WECHAT_CHANNELS_PC, WECHAT_PUBLIC_ACCOUNT_BOX_PC } |
+| wechat_search_scene | enum[] | 搜一搜流量场景，当且仅当投放 SITE_SET_WECHAT 版位时可以使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_wechat_search_scene) 数组最小长度 0，最大长度 32 可选值：{ WECHAT_SEARCH_SCENE_MOBILE, WECHAT_SEARCH_SCENE_PC } |
+
+## 请求示例
+
+```
+curl 'https://api.e.qq.com/v3.0/estimation/get?access_token=<ACCESS_TOKEN>&timestamp=<TIMESTAMP>&nonce=<NONCE>' \
+-H 'Content-Type: application/json' \
+-d '{
+    "account_id": "<ACCOUNT_ID>",
+    "adgroup_id": "<ADGROUP_ID>",
+    "adgroup_name": "推广广告",
+    "marketing_target_detail": [],
+    "marketing_carrier_detail": [],
+    "site_set": [],
+    "targeting": {
+        "gender": [
+            "MALE"
+        ],
+        "age": [
+            {
+                "min": 18,
+                "max": 30
+            }
+        ],
+        "geo_location": {
+            "regions": [
+                110000,
+                310000
+            ],
+            "location_types": [
+                "LIVE_IN"
+            ]
+        }
+    },
+    "scene_spec": {
+        "mobile_union": [],
+        "exclude_mobile_union": [],
+        "union_position_package": [],
+        "exclude_union_position_package": [],
+        "tencent_news": [],
+        "display_scene": [],
+        "wechat_scene": {
+            "official_account_media_category": [],
+            "mini_program_and_mini_game": [],
+            "pay_scene": []
+        },
+        "wechat_position": [],
+        "mobile_union_category": [],
+        "qbsearch_scene": [],
+        "wechat_channels_scene": [],
+        "pc_scene": [],
+        "wechat_search_scene": []
+    }
+}'
+curl 'https://api.e.qq.com/v3.0/estimation/get?access_token=<ACCESS_TOKEN>&timestamp=<TIMESTAMP>&nonce=<NONCE>' \
+-H 'Content-Type: application/json' \
+-d '{
+    "account_id": "<ACCOUNT_ID>",
+    "adgroup_id": "<ADGROUP_ID>",
+    "adgroup_name": "推广广告",
+    "marketing_target_detail": [],
+    "marketing_carrier_detail": [],
+    "site_set": [],
+    "targeting": {
+        "gender": [
+            "MALE"
+        ],
+        "age": [
+            {
+                "min": 18,
+                "max": 30
+            }
+        ],
+        "geo_location": {
+            "regions": [
+                110000,
+                310000
+            ],
+            "location_types": [
+                "LIVE_IN"
+            ]
+        }
+    },
+    "scene_spec": {
+        "mobile_union": [],
+        "exclude_mobile_union": [],
+        "union_position_package": [],
+        "exclude_union_position_package": [],
+        "tencent_news": [],
+        "display_scene": [],
+        "wechat_scene": {
+            "official_account_media_category": [],
+            "mini_program_and_mini_game": [],
+            "pay_scene": []
+        },
+        "wechat_position": [],
+        "mobile_union_category": [],
+        "qbsearch_scene": [],
+        "wechat_channels_scene": [],
+        "pc_scene": [],
+        "wechat_search_scene": []
+    }
+}'
+```
+
+## 应答字段
+
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| max_active_user_count | integer | 预估最大覆盖用户数 |
+| approximate_count | integer | 预估日覆盖用户数最大值 |
+| impression | integer | 预估日曝光量最大值 |
+| min_bid_amount | integer | 出价下限，单位为分 |
+| max_bid_amount | integer | 出价上限，单位为分 |
+| suggest_min_bid_amount | integer | 建议最小出价，单位为分 |
+| suggest_max_bid_amount | integer | 建议最大出价，单位为分 |
+| suggest_bid_content_ocpa | string | oCPC/oCPM 广告返回建议内容 |
+| min_users_daily | integer | 预估日覆盖用户数下限 |
+| max_users_daily | integer | 预估日覆盖用户数上限 |
+| min_exposure_daily | integer | 预估日曝光量下限 |
+| max_exposure_daily | integer | 预估日曝光量上限 |
+| targeting_status | enum | 定向状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#targeting_status) |
+| suggest_targeting | string[] | 建议调整的定向 |
+| is_real_exposure_supported | boolean | 当前请求是否满足真实曝光量预估要求 |
+| stage_bid_info | struct[] | 分阶段出价建议 |
+| stage_name | string | 阶段名称 |
+| lower_bound | integer | 出价下限 |
+| upper_bound | integer | 出价上限 |
+| default_bid | integer | 默认出价 |
+| ratio | float | 竞胜概率 |
+
+## 应答示例
+
+```
+{
+    "code": 0,
+    "message": "",
+    "message_cn": "",
+    "data": {
+        "max_active_user_count": 10232887,
+        "approximate_count": 1023288,
+        "impression": 102311,
+        "min_bid_amount": 117,
+        "max_bid_amount": 199,
+        "suggest_targeting": [],
+        "stage_bid_info": []
+    }
+}
+```
+
+## 可视化调试工具
+
+问题仍未解决？
+
+请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务

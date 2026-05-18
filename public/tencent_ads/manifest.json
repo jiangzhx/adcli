@@ -1,0 +1,3292 @@
+{
+  "platform": "tencent_ads",
+  "documents": [
+    {
+      "id": "tencent_ads_v3_0_docs_api_account_subsidy_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_account_subsidy_get",
+      "platform": "tencent_ads",
+      "title": "获取客户关联的补贴账号 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/account_subsidy/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_account_subsidy_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_account_version_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_account_version_get",
+      "platform": "tencent_ads",
+      "title": "获取广告主新版 API 投放状态版本 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/account_version/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_account_version_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_ad_label_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_ad_label_get",
+      "platform": "tencent_ads",
+      "title": "获取创意标签 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/ad_label/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_ad_label_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_ad_param_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_ad_param_get",
+      "platform": "tencent_ads",
+      "title": "获取词包 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/ad_param/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_ad_param_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_ad_union_reports_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_ad_union_reports_get",
+      "platform": "tencent_ads",
+      "title": "联盟广告位报表接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/ad_union_reports/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_ad_union_reports_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adcreative_previews_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_adcreative_previews_add",
+      "platform": "tencent_ads",
+      "title": "绑定广告预览受众 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adcreative_previews/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adcreative_previews_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adcreative_previews_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_adcreative_previews_get",
+      "platform": "tencent_ads",
+      "title": "获取绑定的广告预览受众列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adcreative_previews/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adcreative_previews_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adcreative_previews_qrcode_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_adcreative_previews_qrcode_get",
+      "platform": "tencent_ads",
+      "title": "获取广告预览二维码 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adcreative_previews_qrcode/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adcreative_previews_qrcode_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroup_negativewords_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroup_negativewords_add",
+      "platform": "tencent_ads",
+      "title": "新增否定词 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroup_negativewords/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroup_negativewords_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroup_negativewords_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroup_negativewords_get",
+      "platform": "tencent_ads",
+      "title": "查询否定词 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroup_negativewords/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroup_negativewords_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroup_negativewords_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroup_negativewords_update",
+      "platform": "tencent_ads",
+      "title": "更新否定词 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroup_negativewords/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroup_negativewords_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroups_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroups_add",
+      "platform": "tencent_ads",
+      "title": "创建营销单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroups/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroups_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroups_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroups_delete",
+      "platform": "tencent_ads",
+      "title": "删除营销单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroups/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroups_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroups_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroups_get",
+      "platform": "tencent_ads",
+      "title": "获取营销单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroups/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroups_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroups_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroups_update",
+      "platform": "tencent_ads",
+      "title": "更新营销单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroups/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroups_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroups_update_bid_amount",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroups_update_bid_amount",
+      "platform": "tencent_ads",
+      "title": "批量修改营销单元出价 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroups/update_bid_amount",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroups_update_bid_amount.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroups_update_configured_status",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroups_update_configured_status",
+      "platform": "tencent_ads",
+      "title": "批量修改营销单元开启/暂停状态 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroups/update_configured_status",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroups_update_configured_status.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroups_update_daily_budget",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroups_update_daily_budget",
+      "platform": "tencent_ads",
+      "title": "批量修改营销单元日预算 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroups/update_daily_budget",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroups_update_daily_budget.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_adgroups_update_datetime",
+      "doc_id": "tencent_ads_v3_0_docs_api_adgroups_update_datetime",
+      "platform": "tencent_ads",
+      "title": "批量修改营销单元投放起止时间 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/adgroups/update_datetime",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroups_update_datetime.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_advertiser_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_advertiser_add",
+      "platform": "tencent_ads",
+      "title": "添加服务商子客 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/advertiser/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_advertiser_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_advertiser_config_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_advertiser_config_add",
+      "platform": "tencent_ads",
+      "title": "设置客户投放偏好 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/advertiser_config/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_advertiser_config_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_advertiser_config_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_advertiser_config_get",
+      "platform": "tencent_ads",
+      "title": "获取客户投放偏好 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/advertiser_config/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_advertiser_config_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_advertiser_daily_budget_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_advertiser_daily_budget_get",
+      "platform": "tencent_ads",
+      "title": "获取竞价账户日预算 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/advertiser_daily_budget/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_advertiser_daily_budget_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_advertiser_daily_budget_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_advertiser_daily_budget_update",
+      "platform": "tencent_ads",
+      "title": "更新竞价账户日预算 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/advertiser_daily_budget/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_advertiser_daily_budget_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_advertiser_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_advertiser_get",
+      "platform": "tencent_ads",
+      "title": "查询客户信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/advertiser/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_advertiser_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_advertiser_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_advertiser_update",
+      "platform": "tencent_ads",
+      "title": "更新客户信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/advertiser/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_advertiser_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_advertiser_update_daily_budget",
+      "doc_id": "tencent_ads_v3_0_docs_api_advertiser_update_daily_budget",
+      "platform": "tencent_ads",
+      "title": "批量修改账户日预算 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/advertiser/update_daily_budget",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_advertiser_update_daily_budget.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_agency_business_unit_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_agency_business_unit_add",
+      "platform": "tencent_ads",
+      "title": "创建服务商业务单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/agency_business_unit/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_business_unit_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_agency_business_unit_list_account_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_agency_business_unit_list_account_get",
+      "platform": "tencent_ads",
+      "title": "查询服务商业务单元下的账号列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/agency_business_unit_list_account/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_business_unit_list_account_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_agency_business_unit_list_by_account_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_agency_business_unit_list_by_account_get",
+      "platform": "tencent_ads",
+      "title": "查询账号所属的服务商业务单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/agency_business_unit_list_by_account/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_business_unit_list_by_account_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_agency_business_unit_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_agency_business_unit_list_get",
+      "platform": "tencent_ads",
+      "title": "查询服务商业务单元列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/agency_business_unit_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_business_unit_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_agency_business_unit_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_agency_business_unit_update",
+      "platform": "tencent_ads",
+      "title": "修改服务商业务单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/agency_business_unit/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_business_unit_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_agency_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_agency_get",
+      "platform": "tencent_ads",
+      "title": "查询服务商信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/agency/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_agency_realtime_cost_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_agency_realtime_cost_get",
+      "platform": "tencent_ads",
+      "title": "服务商当日分账户实时消耗 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/agency_realtime_cost/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_realtime_cost_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_agency_wallet_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_agency_wallet_list_get",
+      "platform": "tencent_ads",
+      "title": "获取代理商创建的共享钱包信息列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/agency_wallet_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_wallet_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_android_channel_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_android_channel_get",
+      "platform": "tencent_ads",
+      "title": "获取 Android 渠道包 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/android_channel/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_android_channel_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_asset_similarity_detail_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_asset_similarity_detail_get",
+      "platform": "tencent_ads",
+      "title": "获取创意资产相似度检测详情 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/asset_similarity_detail/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_asset_similarity_detail_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_asset_similarity_detail_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_asset_similarity_detail_update",
+      "platform": "tencent_ads",
+      "title": "更新创意资产相似度 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/asset_similarity_detail/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_asset_similarity_detail_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_async_report_files_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_async_report_files_get",
+      "platform": "tencent_ads",
+      "title": "获取文件接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/async_report_files/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_async_report_files_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_async_reports_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_async_reports_add",
+      "platform": "tencent_ads",
+      "title": "创建异步报表任务 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/async_reports/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_async_reports_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_async_reports_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_async_reports_get",
+      "platform": "tencent_ads",
+      "title": "获取异步报表任务 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/async_reports/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_async_reports_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_async_tasks_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_async_tasks_add",
+      "platform": "tencent_ads",
+      "title": "创建异步任务 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/async_tasks/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_async_tasks_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_async_tasks_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_async_tasks_get",
+      "platform": "tencent_ads",
+      "title": "获取异步任务 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/async_tasks/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_async_tasks_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_audience_grant_relations_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_audience_grant_relations_add",
+      "platform": "tencent_ads",
+      "title": "添加人群授权 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/audience_grant_relations/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_audience_grant_relations_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_audience_grant_relations_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_audience_grant_relations_get",
+      "platform": "tencent_ads",
+      "title": "获取人群授权信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/audience_grant_relations/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_audience_grant_relations_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_barrage_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_barrage_add",
+      "platform": "tencent_ads",
+      "title": "添加弹幕 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/barrage/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_barrage_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_barrage_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_barrage_get",
+      "platform": "tencent_ads",
+      "title": "获取弹幕 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/barrage/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_barrage_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_barrage_recommend_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_barrage_recommend_get",
+      "platform": "tencent_ads",
+      "title": "查询运营推荐弹幕列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/barrage_recommend/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_barrage_recommend_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_batch_async_request_specification_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_batch_async_request_specification_get",
+      "platform": "tencent_ads",
+      "title": "获取批量异步请求任务详情 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/batch_async_request_specification/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_batch_async_request_specification_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_batch_async_requests_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_batch_async_requests_add",
+      "platform": "tencent_ads",
+      "title": "创建批量异步请求任务 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/batch_async_requests/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_batch_async_requests_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_batch_async_requests_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_batch_async_requests_get",
+      "platform": "tencent_ads",
+      "title": "获取批量异步请求任务列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/batch_async_requests/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_batch_async_requests_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_batch_requests_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_batch_requests_add",
+      "platform": "tencent_ads",
+      "title": "创建批量请求 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/batch_requests/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_batch_requests_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_bid_simulation_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_bid_simulation_get",
+      "platform": "tencent_ads",
+      "title": "出价模拟预估 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/bid_simulation/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_bid_simulation_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_bidword_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_bidword_add",
+      "platform": "tencent_ads",
+      "title": "创建关键词 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/bidword/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_bidword_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_bidword_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_bidword_delete",
+      "platform": "tencent_ads",
+      "title": "删除关键词 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/bidword/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_bidword_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_bidword_flow_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_bidword_flow_get",
+      "platform": "tencent_ads",
+      "title": "查询关键词流量接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/bidword_flow/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_bidword_flow_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_bidword_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_bidword_get",
+      "platform": "tencent_ads",
+      "title": "获取关键词 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/bidword/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_bidword_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_bidword_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_bidword_update",
+      "platform": "tencent_ads",
+      "title": "更新关键词 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/bidword/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_bidword_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_brand_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_brand_add",
+      "platform": "tencent_ads",
+      "title": "创建品牌形象 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/brand/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_brand_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_brand_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_brand_get",
+      "platform": "tencent_ads",
+      "title": "获取品牌形象列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/brand/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_brand_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_business_point_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_business_point_get",
+      "platform": "tencent_ads",
+      "title": "查询行业业务点信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/business_point/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_business_point_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_business_unit_account_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_business_unit_account_get",
+      "platform": "tencent_ads",
+      "title": "查询账号所属的业务单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/business_unit_account/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_business_unit_account_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_business_unit_account_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_business_unit_account_update",
+      "platform": "tencent_ads",
+      "title": "修改客户业务单元帐户 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/business_unit_account/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_business_unit_account_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_business_unit_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_business_unit_add",
+      "platform": "tencent_ads",
+      "title": "创建客户业务单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/business_unit/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_business_unit_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_business_unit_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_business_unit_list_get",
+      "platform": "tencent_ads",
+      "title": "查询业务单元列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/business_unit_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_business_unit_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_categories_attribute_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_categories_attribute_get",
+      "platform": "tencent_ads",
+      "title": "获取商品属性 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/categories_attribute/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_categories_attribute_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_categories_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_categories_get",
+      "platform": "tencent_ads",
+      "title": "获取腾讯系商品类目 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/categories/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_categories_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_channels_comment_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_channels_comment_add",
+      "platform": "tencent_ads",
+      "title": "回复视频号评论 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/channels_comment/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_channels_comment_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_channels_comment_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_channels_comment_delete",
+      "platform": "tencent_ads",
+      "title": "删除视频号评论 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/channels_comment/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_channels_comment_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_channels_finderobject_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_channels_finderobject_get",
+      "platform": "tencent_ads",
+      "title": "获取视频号动态详情 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/channels_finderobject/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_channels_finderobject_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_channels_livenoticeinfo_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_channels_livenoticeinfo_get",
+      "platform": "tencent_ads",
+      "title": "获取视频号当前的预约直播信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/channels_livenoticeinfo/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_channels_livenoticeinfo_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_channels_userpageobjects_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_channels_userpageobjects_get",
+      "platform": "tencent_ads",
+      "title": "获取视频号动态列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/channels_userpageobjects/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_channels_userpageobjects_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_comment_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_comment_list_get",
+      "platform": "tencent_ads",
+      "title": "全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/comment_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_comment_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_component_depends_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_component_depends_get",
+      "platform": "tencent_ads",
+      "title": "查询创意组件字段选项对于其他组件的依赖信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/component_depends/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_component_depends_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_component_detail_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_component_detail_get",
+      "platform": "tencent_ads",
+      "title": "获取创意组件详情 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/component_detail/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_component_detail_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_component_element_urge_review_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_component_element_urge_review_add",
+      "platform": "tencent_ads",
+      "title": "创意组件元素催审 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/component_element_urge_review/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_component_element_urge_review_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_component_element_urge_review_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_component_element_urge_review_get",
+      "platform": "tencent_ads",
+      "title": "获取创意组件元素催审状态 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/component_element_urge_review/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_component_element_urge_review_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_component_review_results_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_component_review_results_get",
+      "platform": "tencent_ads",
+      "title": "查询组件审核结果 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/component_review_results/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_component_review_results_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_component_sharing_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_component_sharing_get",
+      "platform": "tencent_ads",
+      "title": "查询创意组件共享信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/component_sharing/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_component_sharing_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_component_sharing_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_component_sharing_update",
+      "platform": "tencent_ads",
+      "title": "修改创意组件共享 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/component_sharing/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_component_sharing_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_components_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_components_add",
+      "platform": "tencent_ads",
+      "title": "创建创意组件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/components/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_components_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_components_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_components_delete",
+      "platform": "tencent_ads",
+      "title": "删除创意组件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/components/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_components_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_components_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_components_get",
+      "platform": "tencent_ads",
+      "title": "获取创意组件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/components/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_components_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_components_metadata_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_components_metadata_get",
+      "platform": "tencent_ads",
+      "title": "查询创意组件元数据 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/components_metadata/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_components_metadata_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_conversion_link_asset_available_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_conversion_link_asset_available_get",
+      "platform": "tencent_ads",
+      "title": "获取可投放链路列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/conversion_link_asset_available/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_conversion_link_asset_available_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_conversion_link_assets_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_conversion_link_assets_add",
+      "platform": "tencent_ads",
+      "title": "创建营销链路 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/conversion_link_assets/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_conversion_link_assets_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_conversion_link_assets_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_conversion_link_assets_get",
+      "platform": "tencent_ads",
+      "title": "获取营销链路 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/conversion_link_assets/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_conversion_link_assets_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_conversion_link_assets_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_conversion_link_assets_update",
+      "platform": "tencent_ads",
+      "title": "更新营销链路 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/conversion_link_assets/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_conversion_link_assets_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_conversion_links_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_conversion_links_get",
+      "platform": "tencent_ads",
+      "title": "获取营销链路模板 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/conversion_links/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_conversion_links_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_conversions_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_conversions_add",
+      "platform": "tencent_ads",
+      "title": "新增转化归因 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/conversions/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_conversions_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_conversions_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_conversions_get",
+      "platform": "tencent_ads",
+      "title": "获取转化归因 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/conversions/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_conversions_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_creative_recommend_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_creative_recommend_get",
+      "platform": "tencent_ads",
+      "title": "获取创意相关建议 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/creative_recommend/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_creative_recommend_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_creative_template_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_creative_template_get",
+      "platform": "tencent_ads",
+      "title": "获取创意形式详情 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/creative_template/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_creative_template_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_creative_template_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_creative_template_list_get",
+      "platform": "tencent_ads",
+      "title": "获取创意形式列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/creative_template_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_creative_template_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_creative_template_previews_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_creative_template_previews_get",
+      "platform": "tencent_ads",
+      "title": "获取广告创意预览 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/creative_template_previews/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_creative_template_previews_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_creativetools_text_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_creativetools_text_get",
+      "platform": "tencent_ads",
+      "title": "获取创意文案 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/creativetools_text/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_creativetools_text_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_custom_audience_estimations_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_custom_audience_estimations_get",
+      "platform": "tencent_ads",
+      "title": "人群覆盖数预估 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/custom_audience_estimations/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_custom_audience_estimations_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_custom_audience_files_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_custom_audience_files_add",
+      "platform": "tencent_ads",
+      "title": "上传客户人群数据文件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/custom_audience_files/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_custom_audience_files_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_custom_audience_files_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_custom_audience_files_get",
+      "platform": "tencent_ads",
+      "title": "获取客户人群数据文件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/custom_audience_files/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_custom_audience_files_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_custom_audiences_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_custom_audiences_add",
+      "platform": "tencent_ads",
+      "title": "创建客户人群 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/custom_audiences/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_custom_audiences_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_custom_audiences_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_custom_audiences_delete",
+      "platform": "tencent_ads",
+      "title": "删除客户人群 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/custom_audiences/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_custom_audiences_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_custom_audiences_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_custom_audiences_get",
+      "platform": "tencent_ads",
+      "title": "获取客户人群 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/custom_audiences/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_custom_audiences_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_custom_audiences_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_custom_audiences_update",
+      "platform": "tencent_ads",
+      "title": "更新客户人群 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/custom_audiences/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_custom_audiences_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_daily_balance_report_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_daily_balance_report_get",
+      "platform": "tencent_ads",
+      "title": "获取资金账户日结明细（新，包含日终结余数据） 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/daily_balance_report/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_daily_balance_report_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_daily_reports_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_daily_reports_get",
+      "platform": "tencent_ads",
+      "title": "获取日报表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/daily_reports/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_daily_reports_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_data_source_dispatch_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_data_source_dispatch_get",
+      "platform": "tencent_ads",
+      "title": "数据源分发关系获取 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/data_source_dispatch/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_data_source_dispatch_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dc_component_summary_info_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_dc_component_summary_info_get",
+      "platform": "tencent_ads",
+      "title": "获取创意资产总结 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dc_component_summary_info/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dc_component_summary_info_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_ad_image_templates_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_ad_image_templates_get",
+      "platform": "tencent_ads",
+      "title": "获取动态商品图片模板 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_image_templates/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_image_templates_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_ad_images_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_ad_images_add",
+      "platform": "tencent_ads",
+      "title": "创建用于广告投放的动态广告图片 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_images/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_images_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_ad_images_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_ad_images_get",
+      "platform": "tencent_ads",
+      "title": "获取动态广告图片信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_images/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_images_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_ad_video_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_ad_video_add",
+      "platform": "tencent_ads",
+      "title": "创建用于广告投放的动态广告视频 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_video/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_video_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_ad_video_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_ad_video_get",
+      "platform": "tencent_ads",
+      "title": "获取广告投放的动态广告视频 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_video/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_video_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_ad_video_templates_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_ad_video_templates_get",
+      "platform": "tencent_ads",
+      "title": "获取动态商品视频模板 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_video_templates/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_video_templates_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_creative_previews_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_creative_previews_add",
+      "platform": "tencent_ads",
+      "title": "3.0 创意绑定在线预览 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_creative_previews/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creative_previews_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_creative_review_results_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_creative_review_results_get",
+      "platform": "tencent_ads",
+      "title": "查询动态创意审核结果 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_creative_review_results/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creative_review_results_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_creatives_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_creatives_add",
+      "platform": "tencent_ads",
+      "title": "创建动态创意 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creatives_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_creatives_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_creatives_delete",
+      "platform": "tencent_ads",
+      "title": "删除广告创意 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creatives_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_creatives_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_creatives_get",
+      "platform": "tencent_ads",
+      "title": "获取动态创意 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creatives_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_dynamic_creatives_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_dynamic_creatives_update",
+      "platform": "tencent_ads",
+      "title": "更新创意 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creatives_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_ecommerce_order_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_ecommerce_order_get",
+      "platform": "tencent_ads",
+      "title": "获取订单 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/ecommerce_order/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_ecommerce_order_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_ecommerce_order_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_ecommerce_order_update",
+      "platform": "tencent_ads",
+      "title": "更新订单 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/ecommerce_order/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_ecommerce_order_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_element_appeal_quota_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_element_appeal_quota_get",
+      "platform": "tencent_ads",
+      "title": "获取元素申诉复审配额 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/element_appeal_quota/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_element_appeal_quota_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_element_appeal_review_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_element_appeal_review_add",
+      "platform": "tencent_ads",
+      "title": "发起元素申诉复审 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/element_appeal_review/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_element_appeal_review_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_element_appeal_review_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_element_appeal_review_get",
+      "platform": "tencent_ads",
+      "title": "获取元素申诉复审结果 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/element_appeal_review/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_element_appeal_review_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_estimation_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_estimation_get",
+      "platform": "tencent_ads",
+      "title": "预估覆盖人数 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/estimation/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_estimation_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_extend_package_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_extend_package_add",
+      "platform": "tencent_ads",
+      "title": "创建应用分包 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/extend_package/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_extend_package_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_extend_package_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_extend_package_get",
+      "platform": "tencent_ads",
+      "title": "查询应用分包列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/extend_package/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_extend_package_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_extend_package_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_extend_package_update",
+      "platform": "tencent_ads",
+      "title": "更新应用子包版本 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/extend_package/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_extend_package_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_finder_ad_object_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_finder_ad_object_list_get",
+      "platform": "tencent_ads",
+      "title": "全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/finder_ad_object_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_finder_ad_object_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_fund_statements_detailed_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_fund_statements_detailed_get",
+      "platform": "tencent_ads",
+      "title": "获取资金流水 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/fund_statements_detailed/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_fund_statements_detailed_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_fund_transfer_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_fund_transfer_add",
+      "platform": "tencent_ads",
+      "title": "发起代理商与子客户之间转账 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/fund_transfer/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_fund_transfer_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_funds_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_funds_get",
+      "platform": "tencent_ads",
+      "title": "获取资金账户信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/funds/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_funds_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_game_feature_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_game_feature_add",
+      "platform": "tencent_ads",
+      "title": "新增游戏 App 特征 V5 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/game_feature/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_game_feature_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_game_feature_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_game_feature_get",
+      "platform": "tencent_ads",
+      "title": "获取游戏 App 特征 V5 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/game_feature/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_game_feature_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_game_feature_tags_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_game_feature_tags_get",
+      "platform": "tencent_ads",
+      "title": "获取游戏特征标签 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/game_feature_tags/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_game_feature_tags_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_game_feature_v6_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_game_feature_v6_add",
+      "platform": "tencent_ads",
+      "title": "新增游戏 App 特征 V6 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/game_feature_v6/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_game_feature_v6_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_game_feature_v6_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_game_feature_v6_get",
+      "platform": "tencent_ads",
+      "title": "获取游戏 App 特征 V6 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/game_feature_v6/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_game_feature_v6_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_get_wx_game_app_gift_pack_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_get_wx_game_app_gift_pack_get",
+      "platform": "tencent_ads",
+      "title": "获取游戏中心礼包 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/get_wx_game_app_gift_pack/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_get_wx_game_app_gift_pack_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_hourly_reports_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_hourly_reports_get",
+      "platform": "tencent_ads",
+      "title": "获取小时报表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/hourly_reports/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_hourly_reports_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_illegal_complaint_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_illegal_complaint_add",
+      "platform": "tencent_ads",
+      "title": "新增广告主违规申述 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_illegal_complaint_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_illegal_complaint_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_illegal_complaint_get",
+      "platform": "tencent_ads",
+      "title": "获取直客广告主违规申述列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_illegal_complaint_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_image_processing_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_image_processing_add",
+      "platform": "tencent_ads",
+      "title": "进行图片处理 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/image_processing/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_image_processing_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_images_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_images_add",
+      "platform": "tencent_ads",
+      "title": "添加图片文件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/images/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_images_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_images_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_images_delete",
+      "platform": "tencent_ads",
+      "title": "删除图片 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/images/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_images_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_images_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_images_get",
+      "platform": "tencent_ads",
+      "title": "获取图片信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/images/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_images_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_images_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_images_update",
+      "platform": "tencent_ads",
+      "title": "修改图片信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/images/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_images_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_joint_budget_rules_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_joint_budget_rules_add",
+      "platform": "tencent_ads",
+      "title": "创建联合预算规则 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/joint_budget_rules/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_joint_budget_rules_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_joint_budget_rules_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_joint_budget_rules_get",
+      "platform": "tencent_ads",
+      "title": "获取联合预算 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/joint_budget_rules/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_joint_budget_rules_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_joint_budget_rules_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_joint_budget_rules_update",
+      "platform": "tencent_ads",
+      "title": "更新联合预算规则 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/joint_budget_rules/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_joint_budget_rules_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_keyword_recommend_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_keyword_recommend_get",
+      "platform": "tencent_ads",
+      "title": "获取关键词推荐结果 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/keyword_recommend/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_keyword_recommend_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_labels_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_labels_get",
+      "platform": "tencent_ads",
+      "title": "标签广场标签获取 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/labels/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_labels_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_landing_page_sell_strategy_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_landing_page_sell_strategy_add",
+      "platform": "tencent_ads",
+      "title": "短剧售卖策略-创建售卖策略 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/landing_page_sell_strategy/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_landing_page_sell_strategy_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_landing_page_sell_strategy_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_landing_page_sell_strategy_get",
+      "platform": "tencent_ads",
+      "title": "短剧售卖策略-获取售卖策略列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/landing_page_sell_strategy/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_landing_page_sell_strategy_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_action_type_report_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_action_type_report_add",
+      "platform": "tencent_ads",
+      "title": "线索上报 DMP 平台 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_action_type_report/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_action_type_report_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_add",
+      "platform": "tencent_ads",
+      "title": "外部线索数据导入 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_call_record_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_call_record_get",
+      "platform": "tencent_ads",
+      "title": "获取通话结果 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_call_record/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_call_record_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_call_records_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_call_records_get",
+      "platform": "tencent_ads",
+      "title": "获取一个账号下的全部通话结果 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_call_records/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_call_records_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_call_virtual_number_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_call_virtual_number_get",
+      "platform": "tencent_ads",
+      "title": "获取中间号 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_call_virtual_number/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_call_virtual_number_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_claim_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_claim_update",
+      "platform": "tencent_ads",
+      "title": "更新线索归因信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_claim/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_claim_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_invalid_pay_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_invalid_pay_get",
+      "platform": "tencent_ads",
+      "title": "获取无效赔付明细 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_invalid_pay/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_invalid_pay_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_list_get",
+      "platform": "tencent_ads",
+      "title": "获取线索列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_status_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_status_update",
+      "platform": "tencent_ads",
+      "title": "外部线索状态更新 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_status/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_status_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_update",
+      "platform": "tencent_ads",
+      "title": "更新线索基本信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_voip_call_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_voip_call_add",
+      "platform": "tencent_ads",
+      "title": "网络电话呼叫 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_voip_call/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_voip_call_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_leads_voip_call_token_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_leads_voip_call_token_get",
+      "platform": "tencent_ads",
+      "title": "获取网络电话 token 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/leads_voip_call_token/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_leads_voip_call_token_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_live_room_component_status_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_live_room_component_status_update",
+      "platform": "tencent_ads",
+      "title": "更新直播间组件状态 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/live_room_component_status/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_live_room_component_status_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_live_room_components_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_live_room_components_add",
+      "platform": "tencent_ads",
+      "title": "创建直播间组件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/live_room_components/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_live_room_components_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_live_room_components_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_live_room_components_delete",
+      "platform": "tencent_ads",
+      "title": "删除直播间组件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/live_room_components/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_live_room_components_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_live_room_components_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_live_room_components_get",
+      "platform": "tencent_ads",
+      "title": "查询直播间组件信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/live_room_components/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_live_room_components_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_live_room_components_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_live_room_components_update",
+      "platform": "tencent_ads",
+      "title": "更新直播间组件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/live_room_components/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_live_room_components_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_store_packages_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_store_packages_add",
+      "platform": "tencent_ads",
+      "title": "创建门店包 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_store_packages/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_store_packages_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_store_packages_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_store_packages_delete",
+      "platform": "tencent_ads",
+      "title": "删除门店包 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_store_packages/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_store_packages_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_store_packages_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_store_packages_get",
+      "platform": "tencent_ads",
+      "title": "查询门店包信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_store_packages/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_store_packages_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_store_packages_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_store_packages_update",
+      "platform": "tencent_ads",
+      "title": "更新门店包信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_store_packages/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_store_packages_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_stores_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_stores_add",
+      "platform": "tencent_ads",
+      "title": "批量录入门店 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_stores/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_stores_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_stores_address_parsing_result_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_stores_address_parsing_result_get",
+      "platform": "tencent_ads",
+      "title": "解析门店地址 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_stores_address_parsing_result/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_stores_address_parsing_result_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_stores_categories_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_stores_categories_get",
+      "platform": "tencent_ads",
+      "title": "查询门店类目 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_stores_categories/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_stores_categories_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_stores_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_stores_delete",
+      "platform": "tencent_ads",
+      "title": "批量删除门店信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_stores/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_stores_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_stores_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_stores_get",
+      "platform": "tencent_ads",
+      "title": "查询门店信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_stores/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_stores_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_stores_search_info_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_stores_search_info_get",
+      "platform": "tencent_ads",
+      "title": "搜索门店 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_stores_search_info/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_stores_search_info_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_stores_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_stores_update",
+      "platform": "tencent_ads",
+      "title": "更新门店信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_stores/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_stores_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_local_stores_wxpay_merchants_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_local_stores_wxpay_merchants_get",
+      "platform": "tencent_ads",
+      "title": "查询微信支付商户号 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/local_stores_wxpay_merchants/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_local_stores_wxpay_merchants_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_rules_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_rules_get",
+      "platform": "tencent_ads",
+      "title": "获取营销表达组合 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_rules/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_rules_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_target_asset_categories_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_target_asset_categories_get",
+      "platform": "tencent_ads",
+      "title": "获取可用的推广内容资产类目 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_target_asset_categories/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_asset_categories_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_target_asset_detail_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_target_asset_detail_get",
+      "platform": "tencent_ads",
+      "title": "获取推广内容资产详情 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_target_asset_detail/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_asset_detail_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_target_asset_properties_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_target_asset_properties_get",
+      "platform": "tencent_ads",
+      "title": "获取可用的推广内容资产属性 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_target_asset_properties/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_asset_properties_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_target_asset_property_values_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_target_asset_property_values_get",
+      "platform": "tencent_ads",
+      "title": "获取可用的推广内容资产属性值 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_target_asset_property_values/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_asset_property_values_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_target_assets_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_target_assets_add",
+      "platform": "tencent_ads",
+      "title": "创建推广内容资产 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_target_assets/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_assets_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_target_assets_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_target_assets_delete",
+      "platform": "tencent_ads",
+      "title": "删除推广内容资产 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_target_assets/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_assets_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_target_assets_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_target_assets_get",
+      "platform": "tencent_ads",
+      "title": "获取可投放推广内容资产列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_target_assets/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_assets_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_target_assets_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_target_assets_update",
+      "platform": "tencent_ads",
+      "title": "更新推广内容资产 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_target_assets/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_assets_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_marketing_target_types_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_marketing_target_types_get",
+      "platform": "tencent_ads",
+      "title": "获取可投放推广内容资产类型名称 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/marketing_target_types/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_types_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_ai_annotation_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_ai_annotation_add",
+      "platform": "tencent_ads",
+      "title": "素材标注 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_ai_annotation/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_ai_annotation_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_async_tasks_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_async_tasks_add",
+      "platform": "tencent_ads",
+      "title": "提交异步任务 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_async_tasks/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_async_tasks_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_async_tasks_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_async_tasks_get",
+      "platform": "tencent_ads",
+      "title": "获取异步任务 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_async_tasks/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_async_tasks_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_dcaset_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_dcaset_add",
+      "platform": "tencent_ads",
+      "title": "素材 DCA 集合绑定新增 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_dcaset/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_dcaset_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_dcatag_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_dcatag_add",
+      "platform": "tencent_ads",
+      "title": "素材 DCA 标签绑定新增 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_dcatag/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_dcatag_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_dcatag_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_dcatag_get",
+      "platform": "tencent_ads",
+      "title": "素材 DCA 标签绑定查询 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_dcatag/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_dcatag_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_labels_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_labels_add",
+      "platform": "tencent_ads",
+      "title": "创建素材标签 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_labels/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_labels_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_labels_bind",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_labels_bind",
+      "platform": "tencent_ads",
+      "title": "绑定标签素材关联关系 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_labels/bind",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_labels_bind.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_labels_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_labels_delete",
+      "platform": "tencent_ads",
+      "title": "删除素材标签 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_labels/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_labels_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_labels_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_labels_get",
+      "platform": "tencent_ads",
+      "title": "获取素材标签列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_labels/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_labels_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_material_labels_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_material_labels_update",
+      "platform": "tencent_ads",
+      "title": "更新素材标签 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/material_labels/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_labels_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_merge_fund_type_daily_balance_report_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_merge_fund_type_daily_balance_report_get",
+      "platform": "tencent_ads",
+      "title": "获取资金合并类型资金账户日结明细 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/merge_fund_type_daily_balance_report/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_merge_fund_type_daily_balance_report_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_merge_fund_type_fund_statements_detailed_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_merge_fund_type_fund_statements_detailed_get",
+      "platform": "tencent_ads",
+      "title": "获取资金合并类型资金流水 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/merge_fund_type_fund_statements_detailed/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_merge_fund_type_fund_statements_detailed_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_merge_fund_type_funds_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_merge_fund_type_funds_get",
+      "platform": "tencent_ads",
+      "title": "获取资金合并类型资金账户信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/merge_fund_type_funds/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_merge_fund_type_funds_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_merge_fund_type_subcustomer_transfer_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_merge_fund_type_subcustomer_transfer_add",
+      "platform": "tencent_ads",
+      "title": "资金合并类型同商务管家子客间转账 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/merge_fund_type_subcustomer_transfer/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_merge_fund_type_subcustomer_transfer_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_muse_ai_material_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_muse_ai_material_add",
+      "platform": "tencent_ads",
+      "title": "选择并保存妙思 AI 素材接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/muse_ai_material/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_ai_material_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_muse_ai_task_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_muse_ai_task_add",
+      "platform": "tencent_ads",
+      "title": "创建妙思任务接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/muse_ai_task/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_ai_task_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_muse_ai_task_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_muse_ai_task_get",
+      "platform": "tencent_ads",
+      "title": "获取妙思任务结果接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/muse_ai_task/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_ai_task_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_muse_ai_ugc_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_muse_ai_ugc_add",
+      "platform": "tencent_ads",
+      "title": "二次编辑素材回传接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/muse_ai_ugc/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_ai_ugc_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_muse_audios_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_muse_audios_get",
+      "platform": "tencent_ads",
+      "title": "获取妙思版权音频列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/muse_audios/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_audios_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_muse_derive_switch_settings_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_muse_derive_switch_settings_get",
+      "platform": "tencent_ads",
+      "title": "查询生成偏好设置 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/muse_derive_switch_settings/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_derive_switch_settings_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_negativewords_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_negativewords_add",
+      "platform": "tencent_ads",
+      "title": "新增否定词，可在广告、创意上新增 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/negativewords/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_negativewords_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_negativewords_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_negativewords_get",
+      "platform": "tencent_ads",
+      "title": "查询否定词，可查询广告、创意的否词 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/negativewords/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_negativewords_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_negativewords_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_negativewords_update",
+      "platform": "tencent_ads",
+      "title": "更新否定词，可在广告、创意上更新 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/negativewords/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_negativewords_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_oauth_authorize",
+      "doc_id": "tencent_ads_v3_0_docs_api_oauth_authorize",
+      "platform": "tencent_ads",
+      "title": "获取 Authorization Code 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/oauth/authorize",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_oauth_authorize.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_oauth_refresh_token",
+      "doc_id": "tencent_ads_v3_0_docs_api_oauth_refresh_token",
+      "platform": "tencent_ads",
+      "title": "刷新 Refresh Token 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/oauth/refresh_token",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_oauth_refresh_token.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_oauth_token",
+      "doc_id": "tencent_ads_v3_0_docs_api_oauth_token",
+      "platform": "tencent_ads",
+      "title": "通过 Authorization Code 获取 Access Token 或刷新 Access Token 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/oauth/token",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_oauth_token.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_object_comment_flag_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_object_comment_flag_update",
+      "platform": "tencent_ads",
+      "title": "设置视频号评论管理 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/object_comment_flag/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_object_comment_flag_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_official_landing_page_component_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_official_landing_page_component_add",
+      "platform": "tencent_ads",
+      "title": "官方落地页-基于组件创建 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/official_landing_page_component/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_official_landing_page_component_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_official_landing_page_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_official_landing_page_delete",
+      "platform": "tencent_ads",
+      "title": "官方落地页-删除落地页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/official_landing_page/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_official_landing_page_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_official_landing_page_detail_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_official_landing_page_detail_get",
+      "platform": "tencent_ads",
+      "title": "官方落地页-获取落地页详情 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/official_landing_page_detail/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_official_landing_page_detail_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_official_landing_page_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_official_landing_page_list_get",
+      "platform": "tencent_ads",
+      "title": "官方落地页-获取落地页列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/official_landing_page_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_official_landing_page_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_official_landing_page_submit_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_official_landing_page_submit_update",
+      "platform": "tencent_ads",
+      "title": "官方落地页-送审落地页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/official_landing_page_submit/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_official_landing_page_submit_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_online_preview_qrcode_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_online_preview_qrcode_get",
+      "platform": "tencent_ads",
+      "title": "获取在线预览二维码 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/online_preview_qrcode/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_online_preview_qrcode_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_operation_log_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_operation_log_list_get",
+      "platform": "tencent_ads",
+      "title": "获取操作日志列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/operation_log_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_operation_log_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_optimization_goal_permissions_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_optimization_goal_permissions_get",
+      "platform": "tencent_ads",
+      "title": "查询优化目标权限 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/optimization_goal_permissions/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_optimization_goal_permissions_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_organization_account_relation_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_organization_account_relation_get",
+      "platform": "tencent_ads",
+      "title": "查询组织下账户信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/organization_account_relation/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_organization_account_relation_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_pages_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_pages_get",
+      "platform": "tencent_ads",
+      "title": "获取落地页列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/pages/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_pages_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_catalogs_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_catalogs_add",
+      "platform": "tencent_ads",
+      "title": "创建商品库 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_catalogs/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_catalogs_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_catalogs_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_catalogs_get",
+      "platform": "tencent_ads",
+      "title": "获取商品库 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_catalogs/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_catalogs_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_categories_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_categories_list_get",
+      "platform": "tencent_ads",
+      "title": "获取商品类目 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_categories_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_categories_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_items_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_items_add",
+      "platform": "tencent_ads",
+      "title": "添加商品 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_items/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_items_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_items_batch_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_items_batch_update",
+      "platform": "tencent_ads",
+      "title": "批量更新商品信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_items/batch_update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_items_batch_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_items_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_items_delete",
+      "platform": "tencent_ads",
+      "title": "删除商品信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_items/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_items_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_items_detail_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_items_detail_get",
+      "platform": "tencent_ads",
+      "title": "获取商品详情 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_items_detail/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_items_detail_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_items_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_items_get",
+      "platform": "tencent_ads",
+      "title": "获取商品 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_items/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_items_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_items_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_items_update",
+      "platform": "tencent_ads",
+      "title": "更新商品信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_items/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_items_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_items_verticals_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_items_verticals_get",
+      "platform": "tencent_ads",
+      "title": "行业列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_items_verticals/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_items_verticals_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_series_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_series_add",
+      "platform": "tencent_ads",
+      "title": "创建商品系列 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_series/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_series_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_product_series_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_product_series_get",
+      "platform": "tencent_ads",
+      "title": "获取商品系列 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/product_series/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_series_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_products_system_status_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_products_system_status_get",
+      "platform": "tencent_ads",
+      "title": "获取审核失败的商品 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/products_system_status/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_products_system_status_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_profiles_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_profiles_add",
+      "platform": "tencent_ads",
+      "title": "创建朋友圈头像昵称跳转页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/profiles/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_profiles_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_profiles_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_profiles_delete",
+      "platform": "tencent_ads",
+      "title": "删除朋友圈头像昵称跳转页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/profiles/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_profiles_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_profiles_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_profiles_get",
+      "platform": "tencent_ads",
+      "title": "获取朋友圈头像昵称跳转页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/profiles/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_profiles_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_add",
+      "platform": "tencent_ads",
+      "title": "组件化创意衍生预览创建接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/programmed_commponent_preview/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_commponent_preview_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_delete",
+      "platform": "tencent_ads",
+      "title": "组件化创意衍生预览删除接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/programmed_commponent_preview/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_commponent_preview_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_get",
+      "platform": "tencent_ads",
+      "title": "组件化创意衍生预览查询接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/programmed_commponent_preview/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_commponent_preview_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_template_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_template_update",
+      "platform": "tencent_ads",
+      "title": "组件化创意衍生预览模版替换接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/programmed_commponent_preview_template/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_commponent_preview_template_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_programmed_commponent_preview_update",
+      "platform": "tencent_ads",
+      "title": "组件化创意衍生预览更新接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/programmed_commponent_preview/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_commponent_preview_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_programmed_commponent_result_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_programmed_commponent_result_get",
+      "platform": "tencent_ads",
+      "title": "组件化创意衍生成品查询接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/programmed_commponent_result/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_commponent_result_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_programmed_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_programmed_get",
+      "platform": "tencent_ads",
+      "title": "获取模板预览接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/programmed/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_programmed_material_mappings_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_programmed_material_mappings_get",
+      "platform": "tencent_ads",
+      "title": "获取衍生素材映射关系接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/programmed_material_mappings/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_material_mappings_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_programmed_template_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_programmed_template_get",
+      "platform": "tencent_ads",
+      "title": "获取模板列表接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/programmed_template/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_template_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_punish_detail_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_punish_detail_get",
+      "platform": "tencent_ads",
+      "title": "获取计量处罚明细 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/punish_detail/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_punish_detail_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_punish_metrics_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_punish_metrics_get",
+      "platform": "tencent_ads",
+      "title": "获取处罚指标数据 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/punish_metrics/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_punish_metrics_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_punish_uid_metrics_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_punish_uid_metrics_get",
+      "platform": "tencent_ads",
+      "title": "获取处罚 UID 维度指标数据 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/punish_uid_metrics/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_punish_uid_metrics_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_punishment_config_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_punishment_config_get",
+      "platform": "tencent_ads",
+      "title": "获取处罚系统配置 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/punishment_config/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_punishment_config_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_punishment_query_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_punishment_query_get",
+      "platform": "tencent_ads",
+      "title": "获取违规处罚列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/punishment_query/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_punishment_query_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_qualification_images_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_qualification_images_add",
+      "platform": "tencent_ads",
+      "title": "全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/qualification_images/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_qualification_images_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_qualification_images_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_qualification_images_get",
+      "platform": "tencent_ads",
+      "title": "全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/qualification_images/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_qualification_images_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_qualification_structure_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_qualification_structure_get",
+      "platform": "tencent_ads",
+      "title": "获取客户资质结构 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_qualification_structure_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_qualifications_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_qualifications_add",
+      "platform": "tencent_ads",
+      "title": "创建客户资质 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/qualifications/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_qualifications_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_qualifications_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_qualifications_delete",
+      "platform": "tencent_ads",
+      "title": "删除客户资质 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/qualifications/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_qualifications_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_qualifications_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_qualifications_get",
+      "platform": "tencent_ads",
+      "title": "获取客户资质 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/qualifications/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_qualifications_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_qualifications_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_qualifications_update",
+      "platform": "tencent_ads",
+      "title": "更新客户资质 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/qualifications/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_qualifications_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_realtime_cost_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_realtime_cost_get",
+      "platform": "tencent_ads",
+      "title": "获取实时消耗 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/realtime_cost/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_realtime_cost_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_review_element_prereview_results_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_review_element_prereview_results_get",
+      "platform": "tencent_ads",
+      "title": "查询元素的预审结果 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/review_element_prereview_results/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_review_element_prereview_results_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rta_info_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_rta_info_get",
+      "platform": "tencent_ads",
+      "title": "基本信息查询 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rta_info/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rta_info_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rtaexp_data_roi_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_rtaexp_data_roi_get",
+      "platform": "tencent_ads",
+      "title": "实验数据查询 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rtaexp_data_roi/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rtaexp_data_roi_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rtaexp_dsp_tag_data_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_rtaexp_dsp_tag_data_get",
+      "platform": "tencent_ads",
+      "title": "dsp_tag 数据查询 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rtaexp_dsp_tag_data/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rtaexp_dsp_tag_data_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rtaexp_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_rtaexp_get",
+      "platform": "tencent_ads",
+      "title": "获取实验信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rtaexp/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rtaexp_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rtatarget_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_rtatarget_add",
+      "platform": "tencent_ads",
+      "title": "新增 RTA 策略 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rtatarget/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rtatarget_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rtatarget_bind_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_rtatarget_bind_add",
+      "platform": "tencent_ads",
+      "title": "新增策略绑定 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rtatarget_bind/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rtatarget_bind_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rtatarget_bind_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_rtatarget_bind_delete",
+      "platform": "tencent_ads",
+      "title": "解除策略绑定 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rtatarget_bind/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rtatarget_bind_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rtatarget_bind_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_rtatarget_bind_get",
+      "platform": "tencent_ads",
+      "title": "查询已绑定 id 列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rtatarget_bind/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rtatarget_bind_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rtatarget_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_rtatarget_delete",
+      "platform": "tencent_ads",
+      "title": "删除 RTA 策略 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rtatarget/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rtatarget_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_rtatarget_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_rtatarget_get",
+      "platform": "tencent_ads",
+      "title": "获取 RTA 策略 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/rtatarget/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_rtatarget_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_scene_spec_tags_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_scene_spec_tags_get",
+      "platform": "tencent_ads",
+      "title": "获取场景定向标签 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/scene_spec_tags/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_scene_spec_tags_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_search_adgroups_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_search_adgroups_add",
+      "platform": "tencent_ads",
+      "title": "创建营销单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/search_adgroups/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_search_adgroups_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_search_adgroups_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_search_adgroups_update",
+      "platform": "tencent_ads",
+      "title": "更新营销单元 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/search_adgroups/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_search_adgroups_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_search_dynamic_creatives_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_search_dynamic_creatives_add",
+      "platform": "tencent_ads",
+      "title": "创建搜索动态创意 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/search_dynamic_creatives/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_search_dynamic_creatives_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_search_dynamic_creatives_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_search_dynamic_creatives_update",
+      "platform": "tencent_ads",
+      "title": "更新搜索创意 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/search_dynamic_creatives/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_search_dynamic_creatives_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_subcustomer_transfer_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_subcustomer_transfer_add",
+      "platform": "tencent_ads",
+      "title": "同商务管家子客间转账 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/subcustomer_transfer/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_subcustomer_transfer_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_subscription_task_account_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_subscription_task_account_add",
+      "platform": "tencent_ads",
+      "title": "添加订阅账户 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/subscription_task_account/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_subscription_task_account_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_subscription_task_account_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_subscription_task_account_delete",
+      "platform": "tencent_ads",
+      "title": "取消订阅账户 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/subscription_task_account/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_subscription_task_account_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_subscription_task_account_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_subscription_task_account_get",
+      "platform": "tencent_ads",
+      "title": "查询订阅账户 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/subscription_task_account/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_subscription_task_account_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_subsidy_account_bind_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_subsidy_account_bind_add",
+      "platform": "tencent_ads",
+      "title": "补贴账号绑定或解绑账户 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/subsidy_account_bind/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_subsidy_account_bind_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_subsidy_bound_account_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_subsidy_bound_account_list_get",
+      "platform": "tencent_ads",
+      "title": "获取补贴账号关联的账号列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/subsidy_bound_account_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_subsidy_bound_account_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_targeting_tag_reports_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_targeting_tag_reports_get",
+      "platform": "tencent_ads",
+      "title": "获取定向标签报表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/targeting_tag_reports/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_targeting_tag_reports_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_targeting_tags_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_targeting_tags_get",
+      "platform": "tencent_ads",
+      "title": "获取定向标签 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/targeting_tags/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_targeting_tags_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_targeting_tags_uv_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_targeting_tags_uv_get",
+      "platform": "tencent_ads",
+      "title": "获取行为/兴趣/意向标签覆盖人群数 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/targeting_tags_uv/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_targeting_tags_uv_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_targetings_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_targetings_get",
+      "platform": "tencent_ads",
+      "title": "获取定向模板 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/targetings/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_targetings_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_union_position_packages_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_union_position_packages_add",
+      "platform": "tencent_ads",
+      "title": "联盟流量包模块 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/union_position_packages/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_union_position_packages_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_union_position_packages_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_union_position_packages_delete",
+      "platform": "tencent_ads",
+      "title": "联盟流量包删除接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/union_position_packages/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_union_position_packages_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_union_position_packages_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_union_position_packages_get",
+      "platform": "tencent_ads",
+      "title": "联盟流量包获取接口 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/union_position_packages/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_union_position_packages_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_union_position_packages_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_union_position_packages_update",
+      "platform": "tencent_ads",
+      "title": "联盟流量包模块 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/union_position_packages/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_union_position_packages_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_user_action_set_reports_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_user_action_set_reports_get",
+      "platform": "tencent_ads",
+      "title": "获取用户行为数据源报表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/user_action_set_reports/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_user_action_set_reports_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_user_action_sets_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_user_action_sets_add",
+      "platform": "tencent_ads",
+      "title": "创建用户行为数据源 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/user_action_sets/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_user_action_sets_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_user_action_sets_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_user_action_sets_get",
+      "platform": "tencent_ads",
+      "title": "获取用户行为数据源 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/user_action_sets/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_user_action_sets_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_user_actions_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_user_actions_add",
+      "platform": "tencent_ads",
+      "title": "上传用户行为数据 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/user_actions/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_user_actions_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_user_organization_authentication_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_user_organization_authentication_get",
+      "platform": "tencent_ads",
+      "title": "查询用户组织认证 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/user_organization_authentication/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_user_organization_authentication_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_video_channel_dealer_data_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_video_channel_dealer_data_get",
+      "platform": "tencent_ads",
+      "title": "获取经销商聚合数据 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/video_channel_dealer_data/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_video_channel_dealer_data_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_video_channel_fans_data_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_video_channel_fans_data_get",
+      "platform": "tencent_ads",
+      "title": "获取粉丝数据 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/video_channel_fans_data/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_video_channel_fans_data_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_video_channel_leads_data_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_video_channel_leads_data_get",
+      "platform": "tencent_ads",
+      "title": "获取线索数据 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/video_channel_leads_data/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_video_channel_leads_data_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_video_channel_live_data_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_video_channel_live_data_get",
+      "platform": "tencent_ads",
+      "title": "获取直播数据 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/video_channel_live_data/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_video_channel_live_data_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_videos_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_videos_add",
+      "platform": "tencent_ads",
+      "title": "添加视频文件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/videos/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_videos_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_videos_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_videos_delete",
+      "platform": "tencent_ads",
+      "title": "删除视频 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/videos/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_videos_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_videos_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_videos_get",
+      "platform": "tencent_ads",
+      "title": "获取视频文件 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/videos/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_videos_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_videos_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_videos_update",
+      "platform": "tencent_ads",
+      "title": "修改视频信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/videos/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_videos_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wallet_basic_info_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wallet_basic_info_get",
+      "platform": "tencent_ads",
+      "title": "通过钱包 id 去查询共享钱包基础信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wallet_basic_info/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_basic_info_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wallet_bind_advertiser_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wallet_bind_advertiser_add",
+      "platform": "tencent_ads",
+      "title": "共享钱包绑定或解绑广告账户 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wallet_bind_advertiser/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_bind_advertiser_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wallet_create_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wallet_create_add",
+      "platform": "tencent_ads",
+      "title": "新建共享钱包 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wallet_create/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_create_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wallet_edit_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wallet_edit_add",
+      "platform": "tencent_ads",
+      "title": "编辑共享钱包基础信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wallet_edit/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_edit_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wallet_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wallet_get",
+      "platform": "tencent_ads",
+      "title": "获取钱包信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wallet/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wallet_get_binding_advertiser_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wallet_get_binding_advertiser_get",
+      "platform": "tencent_ads",
+      "title": "查询单个共享钱包下的关联账户信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wallet_get_binding_advertiser/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_get_binding_advertiser_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wallet_invoice_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wallet_invoice_get",
+      "platform": "tencent_ads",
+      "title": "共享钱包流水相关信息查询 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wallet_invoice/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_invoice_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wallet_transfer_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wallet_transfer_add",
+      "platform": "tencent_ads",
+      "title": "发起代理商与钱包之间转账 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wallet_transfer/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_transfer_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_watermarks_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_watermarks_add",
+      "platform": "tencent_ads",
+      "title": "批量添加警示语 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/watermarks/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_watermarks_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_watermarks_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_watermarks_get",
+      "platform": "tencent_ads",
+      "title": "查询警示语添加记录 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/watermarks/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_watermarks_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_accounts_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_accounts_get",
+      "platform": "tencent_ads",
+      "title": "获取视频号列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_accounts/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_accounts_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_add",
+      "platform": "tencent_ads",
+      "title": "视频号开户 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_certification_file_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_certification_file_add",
+      "platform": "tencent_ads",
+      "title": "视频号开户资质上传 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account_certification_file/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_certification_file_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_delete",
+      "platform": "tencent_ads",
+      "title": "删除开户记录 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_get",
+      "platform": "tencent_ads",
+      "title": "查询视频号开户记录 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_update",
+      "platform": "tencent_ads",
+      "title": "视频号开户修改 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_validation_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_validation_get",
+      "platform": "tencent_ads",
+      "title": "视频号一键开户校验 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account_validation/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_validation_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_wechat_binding_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_wechat_binding_add",
+      "platform": "tencent_ads",
+      "title": "视频号开户绑定微信号 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account_wechat_binding/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_wechat_binding_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_wechat_binding_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_ad_account_wechat_binding_get",
+      "platform": "tencent_ads",
+      "title": "视频号开户绑定微信状态查询 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account_wechat_binding/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_wechat_binding_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_authorization_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_authorization_add",
+      "platform": "tencent_ads",
+      "title": "创建视频号授权 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_authorization/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_authorization_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_authorization_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_authorization_delete",
+      "platform": "tencent_ads",
+      "title": "删除视频号授权 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_authorization/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_authorization_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_authorization_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_authorization_get",
+      "platform": "tencent_ads",
+      "title": "获取视频号授权记录列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_authorization/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_authorization_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_channels_authorization_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_channels_authorization_update",
+      "platform": "tencent_ads",
+      "title": "更新视频号授权 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_channels_authorization/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_authorization_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_official_accounts_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_official_accounts_get",
+      "platform": "tencent_ads",
+      "title": "获取公众号列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_official_accounts/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_official_accounts_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_add",
+      "platform": "tencent_ads",
+      "title": "基于模板创建微信原生页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_csgroup_status_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_csgroup_status_update",
+      "platform": "tencent_ads",
+      "title": "更新企业微信组件客服状态 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgroup_status/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_csgroup_status_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_csgroup_user_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_csgroup_user_get",
+      "platform": "tencent_ads",
+      "title": "获取企业微信组件客服列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgroup_user/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_csgroup_user_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_add",
+      "platform": "tencent_ads",
+      "title": "增加企业微信组件客服组 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgrouplist/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_get",
+      "platform": "tencent_ads",
+      "title": "获取企业微信客服组列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgrouplist/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_update",
+      "platform": "tencent_ads",
+      "title": "更新企业微信组件客服组 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgrouplist/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_custom_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_custom_add",
+      "platform": "tencent_ads",
+      "title": "基于组件创建微信原生页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages_custom/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_custom_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_delete",
+      "platform": "tencent_ads",
+      "title": "删除微信落地页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_get",
+      "platform": "tencent_ads",
+      "title": "获取微信落地页列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_pages_grantinfo_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_pages_grantinfo_get",
+      "platform": "tencent_ads",
+      "title": "获取原生页授权方信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_pages_grantinfo/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_pages_grantinfo_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_shop_authorization_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_shop_authorization_add",
+      "platform": "tencent_ads",
+      "title": "创建微信小店授权 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_shop_authorization/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_shop_authorization_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_shop_authorization_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_shop_authorization_get",
+      "platform": "tencent_ads",
+      "title": "获取微信小店授权记录列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_shop_authorization/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_shop_authorization_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_shop_authorization_status_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_shop_authorization_status_update",
+      "platform": "tencent_ads",
+      "title": "微信小店授权状态更新 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_shop_authorization_status/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_shop_authorization_status_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_shop_authorization_validation_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_shop_authorization_validation_get",
+      "platform": "tencent_ads",
+      "title": "微信小店授权校验 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_shop_authorization_validation/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_shop_authorization_validation_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_shop_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_shop_get",
+      "platform": "tencent_ads",
+      "title": "查询微信小店信息 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_shop/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_shop_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_store_catalogs_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_store_catalogs_get",
+      "platform": "tencent_ads",
+      "title": "获取微信小店商品库 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_store_catalogs/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_store_catalogs_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wechat_store_product_items_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wechat_store_product_items_get",
+      "platform": "tencent_ads",
+      "title": "获取微信小店商品 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wechat_store_product_items/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_store_product_items_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wildcards_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wildcards_get",
+      "platform": "tencent_ads",
+      "title": "获取落地页通配符 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wildcards/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wildcards_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_wx_game_playable_page_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_wx_game_playable_page_get",
+      "platform": "tencent_ads",
+      "title": "获取微信小游戏试玩页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/wx_game_playable_page/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_wx_game_playable_page_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_xijing_complex_template_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_xijing_complex_template_get",
+      "platform": "tencent_ads",
+      "title": "获取蹊径落地页互动模板配置 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/xijing_complex_template/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_complex_template_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_xijing_page_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_xijing_page_add",
+      "platform": "tencent_ads",
+      "title": "蹊径-基于模板创建落地页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/xijing_page/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_page_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_xijing_page_by_components_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_xijing_page_by_components_add",
+      "platform": "tencent_ads",
+      "title": "蹊径-基于组件创建落地页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/xijing_page_by_components/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_page_by_components_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_xijing_page_delete",
+      "doc_id": "tencent_ads_v3_0_docs_api_xijing_page_delete",
+      "platform": "tencent_ads",
+      "title": "蹊径-删除落地页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/xijing_page/delete",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_page_delete.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_xijing_page_interactive_add",
+      "doc_id": "tencent_ads_v3_0_docs_api_xijing_page_interactive_add",
+      "platform": "tencent_ads",
+      "title": "蹊径-创建互动落地页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/xijing_page_interactive/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_page_interactive_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_xijing_page_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_xijing_page_list_get",
+      "platform": "tencent_ads",
+      "title": "蹊径-获取落地页列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/xijing_page_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_page_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_xijing_page_update",
+      "doc_id": "tencent_ads_v3_0_docs_api_xijing_page_update",
+      "platform": "tencent_ads",
+      "title": "蹊径-送审落地页 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/xijing_page/update",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_page_update.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_xijing_template_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_xijing_template_get",
+      "platform": "tencent_ads",
+      "title": "获取蹊径落地页模板 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/xijing_template/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_template_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_api_xijing_template_list_get",
+      "doc_id": "tencent_ads_v3_0_docs_api_xijing_template_list_get",
+      "platform": "tencent_ads",
+      "title": "获取蹊径落地页模板列表 全部接口",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/api/xijing_template_list/get",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_template_list_get.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_apilist",
+      "doc_id": "tencent_ads_v3_0_docs_apilist",
+      "platform": "tencent_ads",
+      "title": "接口清单",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/apilist",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_apilist.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_enums",
+      "doc_id": "tencent_ads_v3_0_docs_enums",
+      "platform": "tencent_ads",
+      "title": "枚举值",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/enums",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_enums.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_docs_errors",
+      "doc_id": "tencent_ads_v3_0_docs_errors",
+      "platform": "tencent_ads",
+      "title": "返回码",
+      "source_url": "https://developers.e.qq.com/v3.0/docs/errors",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_docs_errors.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_ad_insights",
+      "doc_id": "tencent_ads_v3_0_pages_ad_insights",
+      "platform": "tencent_ads",
+      "title": "广告数据洞察",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/ad_insights",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_ad_insights.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_ad30_joint_budget",
+      "doc_id": "tencent_ads_v3_0_pages_ad30_joint_budget",
+      "platform": "tencent_ads",
+      "title": "联合预算工具使用指引",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/ad30_joint_budget",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_ad30_joint_budget.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_adgroups_add",
+      "doc_id": "tencent_ads_v3_0_pages_adgroups_add",
+      "platform": "tencent_ads",
+      "title": "创建新投放",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/adgroups/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_adgroups_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_authorization_and_authentication",
+      "doc_id": "tencent_ads_v3_0_pages_authorization_and_authentication",
+      "platform": "tencent_ads",
+      "title": "如何授权认证？",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/authorization_and_authentication",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_authorization_and_authentication.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_basic_mcp_tool_list",
+      "doc_id": "tencent_ads_v3_0_pages_basic_mcp_tool_list",
+      "platform": "tencent_ads",
+      "title": "基础 MCP 工具",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/basic_mcp_tool_list",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_basic_mcp_tool_list.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_brand",
+      "doc_id": "tencent_ads_v3_0_pages_brand",
+      "platform": "tencent_ads",
+      "title": "品牌形象指南",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/brand",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_brand.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_channel_package_auth",
+      "doc_id": "tencent_ads_v3_0_pages_channel_package_auth",
+      "platform": "tencent_ads",
+      "title": "应用宝渠道包授权及管理指引",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/channel_package_auth",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_channel_package_auth.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_client_application",
+      "doc_id": "tencent_ads_v3_0_pages_client_application",
+      "platform": "tencent_ads",
+      "title": "如何创建应用并申请权限",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/client_application",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_client_application.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_component",
+      "doc_id": "tencent_ads_v3_0_pages_component",
+      "platform": "tencent_ads",
+      "title": "创建创意组件及使用",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/component",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_component.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_conversion_link_assets",
+      "doc_id": "tencent_ads_v3_0_pages_conversion_link_assets",
+      "platform": "tencent_ads",
+      "title": "创建营销链路转化",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/conversion_link_assets",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_conversion_link_assets.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_conversion_target_type",
+      "doc_id": "tencent_ads_v3_0_pages_conversion_target_type",
+      "platform": "tencent_ads",
+      "title": "数据展示功能介绍",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/conversion_target_type",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_conversion_target_type.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_data_deepconnet",
+      "doc_id": "tencent_ads_v3_0_pages_data_deepconnet",
+      "platform": "tencent_ads",
+      "title": "数据深度打通解决方案",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/data/deepconnet",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_data_deepconnet.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_debugger_tool",
+      "doc_id": "tencent_ads_v3_0_pages_debugger_tool",
+      "platform": "tencent_ads",
+      "title": "投放端联调工具",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/debugger-tool",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_debugger_tool.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_deep_optimization",
+      "doc_id": "tencent_ads_v3_0_pages_deep_optimization",
+      "platform": "tencent_ads",
+      "title": "oCPC/oCPM 深度转化优化广告",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/deep_optimization",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_deep_optimization.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_docs_guide_errorprocessing",
+      "doc_id": "tencent_ads_v3_0_pages_docs_guide_errorprocessing",
+      "platform": "tencent_ads",
+      "title": "投放接口错误处理指引",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/docs/guide/errorprocessing",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_docs_guide_errorprocessing.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_docs_readme_go_sdk",
+      "doc_id": "tencent_ads_v3_0_pages_docs_readme_go_sdk",
+      "platform": "tencent_ads",
+      "title": "Go SDK 使用指南",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/docs/readme/go_sdk",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_docs_readme_go_sdk.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_docs_readme_java_sdk",
+      "doc_id": "tencent_ads_v3_0_pages_docs_readme_java_sdk",
+      "platform": "tencent_ads",
+      "title": "Java SDK 使用指南",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/docs/readme/java_sdk",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_docs_readme_java_sdk.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_docs_readme_php_sdk",
+      "doc_id": "tencent_ads_v3_0_pages_docs_readme_php_sdk",
+      "platform": "tencent_ads",
+      "title": "PHP SDK 使用指南",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/docs/readme/php_sdk",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_docs_readme_php_sdk.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_docs_reference_industry_v6_1",
+      "doc_id": "tencent_ads_v3_0_pages_docs_reference_industry_v6_1",
+      "platform": "tencent_ads",
+      "title": "行业分类-2026 年 1 月 5 日生效",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/docs/reference/industry_v6.1",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_docs_reference_industry_v6_1.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_dynamic_creatives_add",
+      "doc_id": "tencent_ads_v3_0_pages_dynamic_creatives_add",
+      "platform": "tencent_ads",
+      "title": "创建新投放创意",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/dynamic_creatives/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_dynamic_creatives_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_get_response",
+      "doc_id": "tencent_ads_v3_0_pages_get_response",
+      "platform": "tencent_ads",
+      "title": "如何接收应答",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/get_response",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_get_response.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_get_user_token",
+      "doc_id": "tencent_ads_v3_0_pages_get_user_token",
+      "platform": "tencent_ads",
+      "title": "如何获取实名认证令牌？",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/get_user_token",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_get_user_token.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_label",
+      "doc_id": "tencent_ads_v3_0_pages_label",
+      "platform": "tencent_ads",
+      "title": "标签投放",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/label",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_label.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_marketing_product",
+      "doc_id": "tencent_ads_v3_0_pages_marketing_product",
+      "platform": "tencent_ads",
+      "title": "如何创建推广内容资产",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/marketing_product",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_marketing_product.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_mcp_info",
+      "doc_id": "tencent_ads_v3_0_pages_mcp_info",
+      "platform": "tencent_ads",
+      "title": "MCP 简介",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/mcp_info",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_mcp_info.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_message_tool",
+      "doc_id": "tencent_ads_v3_0_pages_message_tool",
+      "platform": "tencent_ads",
+      "title": "消息订阅工具",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/message-tool",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_message_tool.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_mktapi_updata",
+      "doc_id": "tencent_ads_v3_0_pages_mktapi_updata",
+      "platform": "tencent_ads",
+      "title": "新投放 MKTAPI 升级概述",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/mktapi/updata",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_mktapi_updata.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_mpa_ad_param",
+      "doc_id": "tencent_ads_v3_0_pages_mpa_ad_param",
+      "platform": "tencent_ads",
+      "title": "多商品广告动态商品词包",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/mpa_ad_param",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_mpa_ad_param.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_mpa_introduction",
+      "doc_id": "tencent_ads_v3_0_pages_mpa_introduction",
+      "platform": "tencent_ads",
+      "title": "多商品广告（MPA）",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/mpa_introduction",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_mpa_introduction.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_new_to_api_v3",
+      "doc_id": "tencent_ads_v3_0_pages_new_to_api_v3",
+      "platform": "tencent_ads",
+      "title": "新投放 MKTAPI3.0 如何接入",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/new_to_api_v3",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_new_to_api_v3.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_ocpx_smart_bid",
+      "doc_id": "tencent_ads_v3_0_pages_ocpx_smart_bid",
+      "platform": "tencent_ads",
+      "title": "oCPC/oCPM 智能出价广告",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/ocpx_smart_bid",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_ocpx_smart_bid.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_page_type_h5",
+      "doc_id": "tencent_ads_v3_0_pages_page_type_h5",
+      "platform": "tencent_ads",
+      "title": "自定义落地页使用指引",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/page_type_h5",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_page_type_h5.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_page_type_official",
+      "doc_id": "tencent_ads_v3_0_pages_page_type_official",
+      "platform": "tencent_ads",
+      "title": "官方落地页使用指引",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/page_type_official",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_page_type_official.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_programmed_commponent_preview_add",
+      "doc_id": "tencent_ads_v3_0_pages_programmed_commponent_preview_add",
+      "platform": "tencent_ads",
+      "title": "「 AIGC 素材推荐」组件化升级",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/programmed_commponent_preview/add",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_programmed_commponent_preview_add.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_q_a",
+      "doc_id": "tencent_ads_v3_0_pages_q_a",
+      "platform": "tencent_ads",
+      "title": "MKTAPI3.0-Q&A",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/Q&A",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_q_a.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_quick_api_mcp",
+      "doc_id": "tencent_ads_v3_0_pages_quick_api_mcp",
+      "platform": "tencent_ads",
+      "title": "快速投放 MCP 工具",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/quick_api_mcp",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_quick_api_mcp.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_regist_developer",
+      "doc_id": "tencent_ads_v3_0_pages_regist_developer",
+      "platform": "tencent_ads",
+      "title": "如何注册成为开发者？",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/regist_developer",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_regist_developer.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_send_request",
+      "doc_id": "tencent_ads_v3_0_pages_send_request",
+      "platform": "tencent_ads",
+      "title": "如何发起请求",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/send_request",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_send_request.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_subscription_callback",
+      "doc_id": "tencent_ads_v3_0_pages_subscription_callback",
+      "platform": "tencent_ads",
+      "title": "订阅服务消息推送说明",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/subscription_callback",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_subscription_callback.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_subscription_info",
+      "doc_id": "tencent_ads_v3_0_pages_subscription_info",
+      "platform": "tencent_ads",
+      "title": "订阅服务说明",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/subscription_info",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_subscription_info.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_switching",
+      "doc_id": "tencent_ads_v3_0_pages_switching",
+      "platform": "tencent_ads",
+      "title": "MKTAPI 切换节奏",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/switching",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_switching.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_terminology_introduction",
+      "doc_id": "tencent_ads_v3_0_pages_terminology_introduction",
+      "platform": "tencent_ads",
+      "title": "术语介绍和技术准备",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/terminology_introduction",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_terminology_introduction.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_wechat_channel",
+      "doc_id": "tencent_ads_v3_0_pages_wechat_channel",
+      "platform": "tencent_ads",
+      "title": "视频号接入指南",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/wechat_channel",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_wechat_channel.md"
+    },
+    {
+      "id": "tencent_ads_v3_0_pages_wechatmoments",
+      "doc_id": "tencent_ads_v3_0_pages_wechatmoments",
+      "platform": "tencent_ads",
+      "title": "微信朋友圈广告",
+      "source_url": "https://developers.e.qq.com/v3.0/pages/wechatmoments",
+      "public_path": "/tencent_ads/docs/tencent_ads_v3_0_pages_wechatmoments.md"
+    }
+  ],
+  "outputs": {
+    "llms": "/llms.txt",
+    "llms_full": "/llms-full.txt",
+    "platform_index": "/tencent_ads/index.md",
+    "platform_manifest": "/tencent_ads/manifest.json"
+  },
+  "updated_at": "2026-05-18T11:24:00.109Z"
+}

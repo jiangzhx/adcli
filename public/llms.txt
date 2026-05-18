@@ -1,0 +1,61 @@
+# Ad Docs Context
+
+LLM-readable documentation pack for advertising platform APIs.
+
+## oceanengine
+
+Use these docs to answer oceanengine API questions. Open the task links first, then follow the full index when needed.
+
+### Common Tasks
+
+#### 获取广告消耗数据
+
+- [自定义报表](/oceanengine/docs/1741387668314126.md)
+- [获取自定义报表可用指标和维度](/oceanengine/docs/1755261744248832.md)
+- [查询账户日流水](/oceanengine/docs/1696710526682112.md)
+- [代理商消耗报表数据](/oceanengine/docs/1784979080790218.md)
+
+#### 获取 Access Token
+
+- [获取Access Token](/oceanengine/docs/1696710505596940.md)
+
+### Platform Index
+
+- [oceanengine document index](/oceanengine/index.md)
+
+## tencent_ads
+
+Use these docs to answer tencent_ads API questions. Open the task links first, then follow the full index when needed.
+
+### Common Tasks
+
+#### 获取广告消耗数据
+
+- [获取实时消耗 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_realtime_cost_get.md)
+- [服务商当日分账户实时消耗 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_realtime_cost_get.md)
+
+#### 获取广告报表
+
+- [获取日报表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_daily_reports_get.md)
+- [获取小时报表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_hourly_reports_get.md)
+- [创建异步报表任务 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_async_reports_add.md)
+- [获取异步报表任务 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_async_reports_get.md)
+
+#### 获取资金流水
+
+- [获取资金流水 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_fund_statements_detailed_get.md)
+- [获取资金账户日结明细（新，包含日终结余数据） 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_daily_balance_report_get.md)
+
+#### 获取 Access Token
+
+- [获取 Authorization Code 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_oauth_authorize.md)
+- [通过 Authorization Code 获取 Access Token 或刷新 Access Token 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_oauth_token.md)
+- [刷新 Refresh Token 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_oauth_refresh_token.md)
+
+### Platform Index
+
+- [tencent_ads document index](/tencent_ads/index.md)
+
+## Full Index
+
+- [Full llms index](/llms-full.txt)
