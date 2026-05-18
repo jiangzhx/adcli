@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ad-docs-context.pages.dev/sitemap.xml
+Sitemap: https://adllms.pages.dev/sitemap.xml
