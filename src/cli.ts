@@ -17,12 +17,22 @@ type ParsedArgs = {
 const help = `adcli
 
 Usage:
+  adcli list [--json]
+  adcli doc list [--json]
   adcli doc search <query> [--platform tencent_ads] [--limit 10] [--json] [--refresh]
   adcli doc sync
+  adcli prompt
+  adcli llms [--json]
+  adcli llms prompt
 
 Commands:
+  list          List supported advertising platforms
+  doc list      List published docs platforms
   doc search    Search published advertising API docs
   doc sync      Download and cache the latest search index
+  prompt        Print an AI/Agent instruction prompt for using the docs pack
+  llms          Print LLM-readable docs pack entry URLs
+  llms prompt   Print an AI/Agent instruction prompt for using the docs pack
 `;
 
 async function main(): Promise<void> {
@@ -33,10 +43,32 @@ async function main(): Promise<void> {
     return;
   }
 
+  if (args.domain === "list") {
+    const index = await loadSearchIndex({ index: args.index, refresh: args.refresh });
+    printDocList(index, args);
+    return;
+  }
+
   if (args.domain === "doc" && args.command === "sync") {
     const index = await refreshSearchIndex();
     const cache = getSearchIndexCacheInfo();
     console.log(`Synced ${index.documents.length} docs to ${cache.cachePath}`);
+    return;
+  }
+
+  if (args.domain === "doc" && args.command === "list") {
+    const index = await loadSearchIndex({ index: args.index, refresh: args.refresh });
+    printDocList(index, args);
+    return;
+  }
+
+  if (args.domain === "prompt") {
+    printLlms({ ...args, domain: "llms", command: "prompt" });
+    return;
+  }
+
+  if (args.domain === "llms") {
+    printLlms(args);
     return;
   }
 
@@ -77,6 +109,85 @@ async function main(): Promise<void> {
     }
     console.log(`   Score: ${result.score.toFixed(2)}`);
   }
+}
+
+function printDocList(
+  index: Awaited<ReturnType<typeof loadSearchIndex>>,
+  args: ParsedArgs,
+): void {
+  const platforms = [...new Set(index.documents.map((document) => document.platform))]
+    .sort()
+    .map((platform) => {
+      const documents = index.documents.filter((document) => document.platform === platform);
+
+      return {
+        platform,
+        documents: documents.length,
+        index_url: `https://adcli.jiangzhx.com/${platform}/index.md`,
+      };
+    });
+
+  if (args.json) {
+    console.log(JSON.stringify({ platforms }, null, 2));
+    return;
+  }
+
+  for (const item of platforms) {
+    console.log(`${item.platform} (${item.documents} docs)`);
+    console.log(`  ${item.index_url}`);
+  }
+}
+
+function printLlms(args: ParsedArgs): void {
+  const payload = {
+    name: "AdCLI Docs Pack",
+    base_url: "https://adcli.jiangzhx.com",
+    llms_txt: "https://adcli.jiangzhx.com/llms.txt",
+    llms_full_txt: "https://adcli.jiangzhx.com/llms-full.txt",
+    search_index: "https://adcli.jiangzhx.com/search-index.json",
+    platform_indexes: [
+      "https://adcli.jiangzhx.com/kuaishou/index.md",
+      "https://adcli.jiangzhx.com/oceanengine/index.md",
+      "https://adcli.jiangzhx.com/tencent_ads/index.md",
+    ],
+  };
+
+  if (args.json) {
+    console.log(JSON.stringify(payload, null, 2));
+    return;
+  }
+
+  if (args.command === "prompt") {
+    console.log([
+      "Use the AdCLI advertising API docs pack when answering advertising platform API questions.",
+      "",
+      `Start with: ${payload.llms_txt}`,
+      `Use full index when needed: ${payload.llms_full_txt}`,
+      `Use search index for local/tool search: ${payload.search_index}`,
+      "",
+      "Rules:",
+      "- Prefer the Markdown docs from this docs pack over memory.",
+      "- Cite the specific platform document URL or source URL used.",
+      "- If a query names a platform, keep that platform as the primary context but do not ignore relevant cross-platform differences.",
+      "- For API testing or implementation, identify method, path, auth requirement, parameters, response fields, and known limits.",
+      "- If the docs are incomplete or ambiguous, say what is missing instead of guessing.",
+    ].join("\n"));
+    return;
+  }
+
+  console.log([
+    "AdCLI Docs Pack",
+    "",
+    `llms.txt:       ${payload.llms_txt}`,
+    `llms-full.txt:  ${payload.llms_full_txt}`,
+    `search index:   ${payload.search_index}`,
+    "",
+    "Platform indexes:",
+    ...payload.platform_indexes.map((url) => `- ${url}`),
+    "",
+    "Prompt for AI/Agent:",
+    "  adcli llms prompt",
+  ].join("\n"));
 }
 
 function parseArgs(argv: string[]): ParsedArgs {

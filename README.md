@@ -49,6 +49,14 @@ adcli doc search "广告消耗" --refresh
 adcli doc search "广告消耗" --index public/search-index.json
 ```
 
+给 AI / Agent 使用文档包：
+
+```bash
+adcli list
+adcli llms
+adcli prompt
+```
+
 ## 常用命令
 
 ```bash
