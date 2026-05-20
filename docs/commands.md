@@ -9,12 +9,17 @@
 
 ### `adcli list`
 
-列出当前发布文档包中的平台和文档数量。
+列出当前支持的广告平台和能力。
 
 ```bash
 adcli list
+adcli list kuaishou
 adcli list --json
 ```
+
+当前能力：
+
+- `doc`: 已发布的文档查询能力，对应命令形态是 `adcli doc search <query> --platform <platform>`。
 
 这个命令会读取本地缓存；缓存不存在时会下载线上 `search-index.json`。
 

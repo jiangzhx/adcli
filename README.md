@@ -53,6 +53,7 @@ adcli doc search "广告消耗" --index public/search-index.json
 
 ```bash
 adcli list
+adcli list kuaishou
 adcli llms
 adcli prompt
 ```

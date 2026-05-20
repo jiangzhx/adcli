@@ -17,7 +17,7 @@ type ParsedArgs = {
 const help = `adcli
 
 Usage:
-  adcli list [--json]
+  adcli list [platform] [--json]
   adcli doc list [--json]
   adcli doc search <query> [--platform tencent_ads] [--limit 10] [--json] [--refresh]
   adcli doc sync
@@ -26,7 +26,7 @@ Usage:
   adcli llms prompt
 
 Commands:
-  list          List supported advertising platforms
+  list          List supported advertising platforms and capabilities
   doc list      List published docs platforms
   doc search    Search published advertising API docs
   doc sync      Download and cache the latest search index
@@ -115,17 +115,31 @@ function printDocList(
   index: Awaited<ReturnType<typeof loadSearchIndex>>,
   args: ParsedArgs,
 ): void {
+  const platformFilter = args.command;
   const platforms = [...new Set(index.documents.map((document) => document.platform))]
     .sort()
+    .filter((platform) => !platformFilter || platform === platformFilter)
     .map((platform) => {
       const documents = index.documents.filter((document) => document.platform === platform);
 
       return {
         platform,
-        documents: documents.length,
-        index_url: `https://adcli.jiangzhx.com/${platform}/index.md`,
+        capabilities: [
+          {
+            name: "doc",
+            documents: documents.length,
+            index_url: `https://adcli.jiangzhx.com/${platform}/index.md`,
+            commands: [
+              `adcli doc search <query> --platform ${platform}`,
+            ],
+          },
+        ],
       };
     });
+
+  if (platformFilter && platforms.length === 0) {
+    throw new Error(`unsupported platform: ${platformFilter}`);
+  }
 
   if (args.json) {
     console.log(JSON.stringify({ platforms }, null, 2));
@@ -133,8 +147,15 @@ function printDocList(
   }
 
   for (const item of platforms) {
-    console.log(`${item.platform} (${item.documents} docs)`);
-    console.log(`  ${item.index_url}`);
+    console.log(item.platform);
+    for (const capability of item.capabilities) {
+      console.log(`  ${capability.name}`);
+      for (const command of capability.commands) {
+        console.log(`    ${command}`);
+      }
+      console.log(`    docs: ${capability.documents}`);
+      console.log(`    index: ${capability.index_url}`);
+    }
   }
 }
 
