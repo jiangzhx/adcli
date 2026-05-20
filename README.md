@@ -10,7 +10,7 @@
 
 ```bash
 node --version
-npm install -g adcli
+npm install -g @jiangzhx/adcli
 adcli doc search "广点通 广告消耗"
 ```
 

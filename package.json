@@ -1,5 +1,5 @@
 {
-  "name": "adcli",
+  "name": "@jiangzhx/adcli",
   "version": "0.1.0",
   "description": "CLI for searching hosted advertising platform API docs.",
   "type": "module",
