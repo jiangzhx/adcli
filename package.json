@@ -1,6 +1,6 @@
 {
   "name": "@jiangzhx/adcli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI for searching hosted advertising platform API docs.",
   "type": "module",
   "packageManager": "bun@1.3.10",
@@ -16,7 +16,7 @@
     "adcli": "dist/cli.js"
   },
   "files": [
-    "dist",
+    "dist/cli.js",
     "README.md",
     "docs/commands.md"
   ],
