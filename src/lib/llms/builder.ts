@@ -1,6 +1,8 @@
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
+import { buildSearchIndex } from "@/src/lib/search/index-builder";
+
 type SourceMetadata = {
   id: string;
   platform: string;
@@ -152,6 +154,7 @@ export async function buildLlmsArtifacts(input: BuildLlmsArtifactsInput): Promis
     writeFile(path.join(publicRoot, "llms.txt"), buildLlmsTxt(publishedManifests), "utf8"),
     writeFile(path.join(publicRoot, "llms-full.txt"), buildLlmsFullTxt(publishedManifests), "utf8"),
   ]);
+  await buildSearchIndex({ rootDir });
 
   return manifest;
 }
@@ -250,7 +253,7 @@ function buildSourceFrontmatter(document: LlmsDocument): string {
 
 function buildLlmsTxt(manifests: LlmsManifest[]): string {
   const lines = [
-    "# AdLLMs",
+    "# adcli",
     "",
     "LLM-readable documentation pack for advertising platform APIs.",
     "",
@@ -294,7 +297,7 @@ function buildPlatformLlmsSection(platform: string, documents: LlmsDocument[]): 
 
 function buildLlmsFullTxt(manifests: LlmsManifest[]): string {
   return [
-    "# AdLLMs Full Index",
+    "# adcli Full Index",
     "",
     ...manifests.flatMap((manifest) => [
       `## ${manifest.platform}`,

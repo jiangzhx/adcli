@@ -1,4 +1,4 @@
-#!/usr/bin/env tsx
+#!/usr/bin/env bun
 
 import { access, readdir, readFile } from "node:fs/promises";
 import path from "node:path";
@@ -16,8 +16,9 @@ async function main(): Promise<void> {
   const publicRoot = path.join(process.cwd(), "public");
   const llmsPath = path.join(publicRoot, "llms.txt");
   const fullPath = path.join(publicRoot, "llms-full.txt");
+  const searchIndexPath = path.join(publicRoot, "search-index.json");
 
-  for (const filePath of [llmsPath, fullPath]) {
+  for (const filePath of [llmsPath, fullPath, searchIndexPath]) {
     if (!(await exists(filePath))) {
       throw new Error(`missing public artifact: ${path.relative(process.cwd(), filePath)}`);
     }
@@ -25,6 +26,10 @@ async function main(): Promise<void> {
 
   const llms = await readFile(llmsPath, "utf8");
   const full = await readFile(fullPath, "utf8");
+  const searchIndex = JSON.parse(await readFile(searchIndexPath, "utf8")) as {
+    documents?: Array<{ id?: string; public_path?: string }>;
+  };
+  const indexedDocumentPaths = new Set((searchIndex.documents ?? []).map((document) => document.public_path));
   const platforms = (await readdir(publicRoot, { withFileTypes: true }))
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name)
@@ -57,10 +62,14 @@ async function main(): Promise<void> {
       if (!(await exists(markdownPath))) {
         throw new Error(`missing public markdown: ${document.public_path}`);
       }
+
+      if (!indexedDocumentPaths.has(document.public_path)) {
+        throw new Error(`public/search-index.json is missing document: ${document.public_path}`);
+      }
     }
   }
 
-  console.log(JSON.stringify({ platforms }, null, 2));
+  console.log(JSON.stringify({ platforms, search_documents: searchIndex.documents?.length ?? 0 }, null, 2));
 }
 
 main().catch((error: unknown) => {

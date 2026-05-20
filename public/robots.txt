@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adllms.jiangzhx.com/sitemap.xml
+Sitemap: https://adcli.jiangzhx.com/sitemap.xml

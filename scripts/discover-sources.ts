@@ -1,11 +1,11 @@
-#!/usr/bin/env tsx
+#!/usr/bin/env bun
 
 import { discoverCollection, readCollectionRecipe, writeCollectionManifest } from "@/src/lib/builder/discover";
 
 const recipePath = process.argv[2];
 
 if (!recipePath) {
-  console.error("Usage: pnpm discover:sources <collection-recipe.json>");
+  console.error("Usage: bun run discover:sources <collection-recipe.json>");
   process.exit(1);
 }
 

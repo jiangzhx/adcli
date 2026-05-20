@@ -1,6 +1,6 @@
 ---
 name: ad-docs-llms-curation
-description: Use when curating AdLLMs llms task entries, Common Tasks, platform navigation, AI-proposed index summaries, or reviewed task-link recommendations
+description: Use when curating adcli llms task entries, Common Tasks, platform navigation, AI-proposed index summaries, or reviewed task-link recommendations
 ---
 
 # Ad Docs Llms Curation
@@ -66,7 +66,7 @@ After human review, promote to:
 data/curation/{platform}/common-tasks.json
 ```
 
-Only reviewed curation should affect `pnpm build:llms all`.
+Only reviewed curation should affect `bun run build:llms all`.
 
 ## Suggested Task Groups
 

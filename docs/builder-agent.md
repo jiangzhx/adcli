@@ -126,7 +126,7 @@ skills/ad-docs-recipe-authoring/SKILL.md
 运行：
 
 ```bash
-pnpm discover:sources recipes/oceanengine-open-platform-docs.json
+bun run discover:sources recipes/oceanengine-open-platform-docs.json
 ```
 
 输出：
@@ -150,7 +150,7 @@ Discovery 和批量采集都使用 Crawlee 调度 Playwright。
 批量采集命令：
 
 ```bash
-pnpm ingest:collection data/sources/oceanengine/_collections/oceanengine_open_platform_docs/manifest.json --limit 10 --concurrency 2
+bun run ingest:collection data/sources/oceanengine/_collections/oceanengine_open_platform_docs/manifest.json --limit 10 --concurrency 2
 ```
 
 可选参数：
@@ -277,7 +277,7 @@ skills/ad-docs-source-quality/SKILL.md
 当前主线是把 source 发布成静态 LLM 文档包：
 
 ```bash
-pnpm build:llms all
+bun run build:llms all
 ```
 
 输出：

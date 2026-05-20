@@ -1,4 +1,4 @@
-#!/usr/bin/env tsx
+#!/usr/bin/env bun
 
 import { ingestSource } from "@/src/lib/builder/ingest";
 import { readSourceRecipe } from "@/src/lib/builder/store";
@@ -6,7 +6,7 @@ import { readSourceRecipe } from "@/src/lib/builder/store";
 const recipePath = process.argv[2];
 
 if (!recipePath) {
-  console.error("Usage: pnpm ingest:source <recipe.json>");
+  console.error("Usage: bun run ingest:source <recipe.json>");
   process.exit(1);
 }
 

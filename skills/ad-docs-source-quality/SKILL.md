@@ -1,6 +1,6 @@
 ---
 name: ad-docs-source-quality
-description: Use when validating AdLLMs seed data, source crawl output, collection manifests, cleaned Markdown, or blocks before publishing llms docs
+description: Use when validating adcli seed data, source crawl output, collection manifests, cleaned Markdown, or blocks before publishing llms docs
 ---
 
 # Ad Docs Source Quality
@@ -13,8 +13,8 @@ Core rule: validate the source inventory first, then validate each source has us
 
 ## When to Use
 
-- After full or partial `pnpm ingest:collection`.
-- Before running `pnpm build:llms`.
+- After full or partial `bun run ingest:collection`.
+- Before running `bun run build:llms`.
 - When `cleaned.md` quality is questioned.
 - When checking whether discovery collected too few, duplicate, empty, or title-only documents.
 

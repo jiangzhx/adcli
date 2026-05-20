@@ -1,10 +1,10 @@
-# AdLLMs 需求文档
+# adcli 需求文档
 
 ## 项目定位
 
-AdLLMs 是一个面向 IDE Agent 和 LLM 的广告平台 API 文档包项目。
+adcli 是一个面向 IDE Agent 和 LLM 的广告平台 API 文档包项目。
 
-当前第一阶段不做 MCP 服务，也不做 Next.js 应用。目标是用 Node.js/TypeScript CLI 把广告平台文档生成 LLM-readable docs pack，让 Codex、Claude、Cursor、ChatGPT 等 Agent 能从 `llms.txt` 进入，再打开具体 Markdown 文档。
+当前第一阶段不做 MCP 服务，也不做 Next.js 应用。目标是用 Bun + TypeScript CLI 把广告平台文档生成 LLM-readable docs pack，让 Codex、Claude、Cursor、ChatGPT 等 Agent 能从 `llms.txt` 进入，再打开具体 Markdown 文档。
 
 ## 背景问题
 
@@ -76,7 +76,7 @@ AdLLMs 是一个面向 IDE Agent 和 LLM 的广告平台 API 文档包项目。
 
 最低验收：
 
-- `pnpm build:llms all` 能生成静态产物。
+- `bun run build:llms all` 能生成静态产物。
 - `/llms.txt` 包含跨平台入口和高频任务入口。
 - `/llms-full.txt` 包含跨平台完整文档目录。
 - `/{platform}/docs/{doc_id}.md` 包含 source frontmatter 和 cleaned Markdown。

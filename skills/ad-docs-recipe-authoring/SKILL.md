@@ -1,6 +1,6 @@
 ---
 name: ad-docs-recipe-authoring
-description: Use when creating, adding, or reviewing AdLLMs recipes for source URLs, collection entry pages, discovery rules, or crawl seed definitions
+description: Use when creating, adding, or reviewing adcli recipes for source URLs, collection entry pages, discovery rules, or crawl seed definitions
 ---
 
 # Ad Docs Recipe Authoring
@@ -168,7 +168,7 @@ Use a single-source recipe only for one known document:
 For a collection recipe:
 
 ```bash
-pnpm discover:sources recipes/oceanengine-open-platform-docs.json
+bun run discover:sources recipes/oceanengine-open-platform-docs.json
 node - <<'NODE'
 const manifest=require('./data/sources/oceanengine/_collections/oceanengine_open_platform_docs/manifest.json');
 console.log({count: manifest.items.length});
@@ -179,20 +179,20 @@ NODE
 Then sample ingest:
 
 ```bash
-pnpm ingest:collection data/sources/oceanengine/_collections/oceanengine_open_platform_docs/manifest.json --limit 10 --concurrency 2
+bun run ingest:collection data/sources/oceanengine/_collections/oceanengine_open_platform_docs/manifest.json --limit 10 --concurrency 2
 ```
 
 After the sample passes, set `"max_items": "all"`, rerun discovery, then run full ingestion:
 
 ```bash
-pnpm discover:sources recipes/oceanengine-open-platform-docs.json
-pnpm ingest:collection data/sources/oceanengine/_collections/oceanengine_open_platform_docs/manifest.json --concurrency 4
+bun run discover:sources recipes/oceanengine-open-platform-docs.json
+bun run ingest:collection data/sources/oceanengine/_collections/oceanengine_open_platform_docs/manifest.json --concurrency 4
 ```
 
 For a single-source recipe:
 
 ```bash
-pnpm ingest:source recipes/some-single-source.json
+bun run ingest:source recipes/some-single-source.json
 ```
 
 ## Review Checklist

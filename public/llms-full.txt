@@ -1,4 +1,4 @@
-# AdLLMs Full Index
+# adcli Full Index
 
 ## kuaishou
 

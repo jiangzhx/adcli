@@ -1,4 +1,4 @@
-#!/usr/bin/env tsx
+#!/usr/bin/env bun
 
 import { ingestCollection, readCollectionManifest } from "@/src/lib/builder/collection-ingest";
 
@@ -6,7 +6,7 @@ const args = process.argv.slice(2);
 const manifestPath = args[0];
 
 if (!manifestPath) {
-  console.error("Usage: pnpm ingest:collection <manifest.json> [--limit N] [--concurrency N] [--source-id ID] [--changed-only]");
+  console.error("Usage: bun run ingest:collection <manifest.json> [--limit N] [--concurrency N] [--source-id ID] [--changed-only]");
   process.exit(1);
 }
 

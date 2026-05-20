@@ -1,13 +1,13 @@
 ---
 name: ad-docs-llms-publishing-quality
-description: Use when validating AdLLMs public llms artifacts, root indexes, platform manifests, public Markdown paths, or multi-platform publishing output
+description: Use when validating adcli public llms artifacts, root indexes, platform manifests, public Markdown paths, or multi-platform publishing output
 ---
 
 # Ad Docs Llms Publishing Quality
 
 ## Overview
 
-Use this after `pnpm build:llms all` or any `pnpm build:llms <platform>` run. The goal is to verify `public/` is a publishable multi-platform docs pack and that one platform did not overwrite the root indexes for another.
+Use this after `bun run build:llms all` or any `bun run build:llms <platform>` run. The goal is to verify `public/` is a publishable multi-platform docs pack and that one platform did not overwrite the root indexes for another.
 
 ## When to Use
 
@@ -24,7 +24,7 @@ Do not use this for crawl quality. Use `ad-docs-source-quality` before this.
 ### 1. Build All Platforms
 
 ```bash
-pnpm build:llms all
+bun run build:llms all
 ```
 
 Expected: the output lists every platform under `data/sources/*` and a combined document count.
@@ -89,16 +89,16 @@ Expected: path-based platforms should not collapse to short numeric paths such a
 
 Publishing is ready when:
 
-- `pnpm build:llms all` succeeds.
+- `bun run build:llms all` succeeds.
 - Root `llms.txt` contains every platform section.
 - Root `llms-full.txt` contains every platform section.
 - Each platform manifest points only to existing public Markdown.
 - No manifest leaks local-only fields such as `source_dir`.
-- `pnpm test`, `pnpm typecheck`, and `pnpm lint` pass after builder changes.
+- `bun run test`, `bun run typecheck`, and `bun run lint` pass after builder changes.
 
 ## Common Mistakes
 
-- Running only `pnpm build:llms <platform>` after deleting `public/`, then publishing a root index with one platform.
+- Running only `bun run build:llms <platform>` after deleting `public/`, then publishing a root index with one platform.
 - Letting each platform build overwrite root `llms.txt` instead of aggregating manifests.
 - Treating `llms-full.txt` as a single-platform file.
 - Letting path-based source ids collapse to short numeric suffixes.

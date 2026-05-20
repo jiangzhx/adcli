@@ -1,4 +1,4 @@
-# AdLLMs
+# adcli
 
 LLM-readable documentation pack for advertising platform APIs.
 

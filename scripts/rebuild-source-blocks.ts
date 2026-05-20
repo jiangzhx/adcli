@@ -1,4 +1,4 @@
-#!/usr/bin/env tsx
+#!/usr/bin/env bun
 
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -8,7 +8,7 @@ import { extractBlocksFromHtml } from "@/src/lib/builder/html-to-blocks";
 const [platform] = process.argv.slice(2);
 
 if (!platform) {
-  console.error("Usage: pnpm rebuild:source-blocks <platform>");
+  console.error("Usage: bun run rebuild:source-blocks <platform>");
   process.exit(1);
 }
 

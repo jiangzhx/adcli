@@ -1,17 +1,41 @@
 {
-  "name": "adllms",
+  "name": "adcli",
   "version": "0.1.0",
-  "private": true,
+  "description": "CLI for searching hosted advertising platform API docs.",
   "type": "module",
+  "packageManager": "bun@1.3.10",
+  "homepage": "https://github.com/jiangzhx/adcli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangzhx/adcli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiangzhx/adcli/issues"
+  },
+  "bin": {
+    "adcli": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "docs/commands.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "build": "pnpm verify:public",
-    "discover:sources": "tsx scripts/discover-sources.ts",
-    "ingest:collection": "tsx scripts/ingest-collection.ts",
-    "ingest:source": "tsx scripts/ingest-source.ts",
-    "rebuild:source-blocks": "tsx scripts/rebuild-source-blocks.ts",
-    "build:llms": "tsx scripts/build-llms.ts",
-    "verify:public": "tsx scripts/verify-public.ts",
-    "test": "node --import tsx --test 'tests/**/*.test.ts'",
+    "build": "bun run verify:public",
+    "build:cli": "bun scripts/build-cli.ts",
+    "discover:sources": "bun scripts/discover-sources.ts",
+    "ingest:collection": "bun scripts/ingest-collection.ts",
+    "ingest:source": "bun scripts/ingest-source.ts",
+    "rebuild:source-blocks": "bun scripts/rebuild-source-blocks.ts",
+    "build:llms": "bun scripts/build-llms.ts",
+    "build:search-index": "bun scripts/build-search-index.ts",
+    "verify:public": "bun scripts/verify-public.ts",
+    "adcli": "bun src/cli.ts",
+    "prepack": "bun run build:cli",
+    "test": "bun test tests/**/*.test.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint"
   },
@@ -21,8 +45,10 @@
     "crawlee": "^3.16.0",
     "eslint": "^9",
     "playwright": "^1.60.0",
-    "tsx": "^4.22.1",
     "typescript": "^5",
     "typescript-eslint": "^8.59.3"
+  },
+  "dependencies": {
+    "minisearch": "^7.2.0"
   }
 }
