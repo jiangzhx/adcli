@@ -1,30 +1,28 @@
 #!/usr/bin/env bun
 
-import { readFile } from "node:fs/promises";
-import path from "node:path";
-
+import { getSearchIndexCacheInfo, loadSearchIndex, refreshSearchIndex } from "@/src/lib/search/cache";
 import { searchDocuments } from "@/src/lib/search/searcher";
-import type { SearchIndex } from "@/src/lib/search/types";
 
 type ParsedArgs = {
   domain?: string;
   command?: string;
   query: string[];
-  index: string;
+  index?: string;
   limit: number;
   json: boolean;
   platform?: string;
+  refresh: boolean;
 };
-
-const defaultSearchIndexUrl = "https://adcli.jiangzhx.com/search-index.json";
 
 const help = `adcli
 
 Usage:
-  adcli doc search <query> [--index ${defaultSearchIndexUrl}] [--platform tencent_ads] [--limit 10] [--json]
+  adcli doc search <query> [--platform tencent_ads] [--limit 10] [--json] [--refresh]
+  adcli doc sync
 
 Commands:
   doc search    Search published advertising API docs
+  doc sync      Download and cache the latest search index
 `;
 
 async function main(): Promise<void> {
@@ -32,6 +30,13 @@ async function main(): Promise<void> {
 
   if (!args.domain || args.domain === "help" || args.domain === "--help" || args.domain === "-h") {
     console.log(help.trim());
+    return;
+  }
+
+  if (args.domain === "doc" && args.command === "sync") {
+    const index = await refreshSearchIndex();
+    const cache = getSearchIndexCacheInfo();
+    console.log(`Synced ${index.documents.length} docs to ${cache.cachePath}`);
     return;
   }
 
@@ -44,7 +49,7 @@ async function main(): Promise<void> {
     throw new Error("missing search query");
   }
 
-  const index = await loadSearchIndex(args.index);
+  const index = await loadSearchIndex({ index: args.index, refresh: args.refresh });
   const results = await searchDocuments({
     query,
     documents: index.documents,
@@ -79,9 +84,10 @@ function parseArgs(argv: string[]): ParsedArgs {
     domain: argv[0],
     command: argv[1],
     query: [],
-    index: process.env.ADCLI_SEARCH_INDEX ?? defaultSearchIndexUrl,
+    index: process.env.ADCLI_SEARCH_INDEX,
     limit: 10,
     json: false,
+    refresh: false,
   };
 
   for (let index = 2; index < argv.length; index += 1) {
@@ -95,6 +101,11 @@ function parseArgs(argv: string[]): ParsedArgs {
     if (value === "--index") {
       args.index = argv[index + 1] ?? "";
       index += 1;
+      continue;
+    }
+
+    if (value === "--refresh") {
+      args.refresh = true;
       continue;
     }
 
@@ -118,29 +129,6 @@ function parseArgs(argv: string[]): ParsedArgs {
   }
 
   return args;
-}
-
-async function loadSearchIndex(index: string): Promise<SearchIndex> {
-  if (/^https?:\/\//i.test(index)) {
-    const response = await fetch(index);
-    if (!response.ok) {
-      throw new Error(`failed to fetch search index: ${index} (${response.status})`);
-    }
-
-    return await response.json() as SearchIndex;
-  }
-
-  const indexPath = path.resolve(index);
-
-  try {
-    return JSON.parse(await readFile(indexPath, "utf8")) as SearchIndex;
-  } catch (error) {
-    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
-      throw new Error(`missing search index: ${path.relative(process.cwd(), indexPath)}. Use --index ${defaultSearchIndexUrl} or run: bun run build:search-index`);
-    }
-
-    throw error;
-  }
 }
 
 main().catch((error: unknown) => {

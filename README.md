@@ -36,6 +36,13 @@ adcli doc search "广告消耗"
 https://adcli.jiangzhx.com/search-index.json
 ```
 
+首次搜索会下载索引并缓存到系统标准缓存目录。也可以手动更新：
+
+```bash
+adcli doc sync
+adcli doc search "广告消耗" --refresh
+```
+
 本地调试可指定索引：
 
 ```bash

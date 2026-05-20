@@ -1,9 +1,159 @@
 #!/usr/bin/env node
 // @bun
 
-// src/cli.ts
-import { readFile } from "fs/promises";
-import path from "path";
+// src/lib/search/cache.ts
+import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import path2 from "node:path";
+
+// node_modules/env-paths/index.js
+import path from "node:path";
+import os from "node:os";
+import process2 from "node:process";
+
+// node_modules/is-safe-filename/index.js
+var unsafeFilenameFixtures = Object.freeze([
+  "",
+  "   ",
+  ".",
+  "..",
+  " .",
+  ". ",
+  " ..",
+  ".. ",
+  "../",
+  "../foo",
+  "foo/../bar",
+  "foo/bar",
+  "foo\\bar",
+  "foo\x00bar"
+]);
+function isSafeFilename(filename) {
+  if (typeof filename !== "string") {
+    return false;
+  }
+  const trimmed = filename.trim();
+  return trimmed !== "" && trimmed !== "." && trimmed !== ".." && !filename.includes("/") && !filename.includes("\\") && !filename.includes("\x00");
+}
+function assertSafeFilename(filename) {
+  if (typeof filename !== "string") {
+    throw new TypeError("Expected a string");
+  }
+  if (!isSafeFilename(filename)) {
+    throw new Error(`Unsafe filename: ${JSON.stringify(filename)}`);
+  }
+}
+
+// node_modules/env-paths/index.js
+var homedir = os.homedir();
+var tmpdir = os.tmpdir();
+var { env } = process2;
+var macos = (name) => {
+  const library = path.join(homedir, "Library");
+  return {
+    data: path.join(library, "Application Support", name),
+    config: path.join(library, "Preferences", name),
+    cache: path.join(library, "Caches", name),
+    log: path.join(library, "Logs", name),
+    temp: path.join(tmpdir, name)
+  };
+};
+var windows = (name) => {
+  const appData = env.APPDATA || path.join(homedir, "AppData", "Roaming");
+  const localAppData = env.LOCALAPPDATA || path.join(homedir, "AppData", "Local");
+  return {
+    data: path.join(localAppData, name, "Data"),
+    config: path.join(appData, name, "Config"),
+    cache: path.join(localAppData, name, "Cache"),
+    log: path.join(localAppData, name, "Log"),
+    temp: path.join(tmpdir, name)
+  };
+};
+var linux = (name) => {
+  const username = path.basename(homedir);
+  return {
+    data: path.join(env.XDG_DATA_HOME || path.join(homedir, ".local", "share"), name),
+    config: path.join(env.XDG_CONFIG_HOME || path.join(homedir, ".config"), name),
+    cache: path.join(env.XDG_CACHE_HOME || path.join(homedir, ".cache"), name),
+    log: path.join(env.XDG_STATE_HOME || path.join(homedir, ".local", "state"), name),
+    temp: path.join(tmpdir, username, name)
+  };
+};
+function envPaths(name, { suffix = "nodejs" } = {}) {
+  assertSafeFilename(name);
+  if (suffix) {
+    name += `-${suffix}`;
+  }
+  assertSafeFilename(name);
+  if (process2.platform === "darwin") {
+    return macos(name);
+  }
+  if (process2.platform === "win32") {
+    return windows(name);
+  }
+  return linux(name);
+}
+
+// src/lib/search/cache.ts
+var defaultSearchIndexUrl = "https://adcli.jiangzhx.com/search-index.json";
+function getSearchIndexCacheInfo(options = {}) {
+  const cacheDir = options.cacheDir ?? envPaths("adcli", { suffix: "" }).cache;
+  return {
+    cachePath: path2.join(cacheDir, "search-index.json"),
+    indexUrl: options.indexUrl ?? defaultSearchIndexUrl
+  };
+}
+async function loadSearchIndex(options = {}) {
+  if (options.index) {
+    return await loadExplicitSearchIndex(options.index, options.fetcher);
+  }
+  const cacheInfo = getSearchIndexCacheInfo(options);
+  if (!options.refresh) {
+    try {
+      return JSON.parse(await readFile(cacheInfo.cachePath, "utf8"));
+    } catch (error) {
+      if (!isNotFoundError(error)) {
+        throw error;
+      }
+    }
+  }
+  return await refreshSearchIndex(options);
+}
+async function refreshSearchIndex(options = {}) {
+  const cacheInfo = getSearchIndexCacheInfo(options);
+  const index = await fetchSearchIndex(cacheInfo.indexUrl, options.fetcher);
+  await writeCachedSearchIndex(cacheInfo.cachePath, index);
+  return index;
+}
+async function loadExplicitSearchIndex(index, fetcher = fetch) {
+  if (/^https?:\/\//i.test(index)) {
+    return await fetchSearchIndex(index, fetcher);
+  }
+  try {
+    return JSON.parse(await readFile(path2.resolve(index), "utf8"));
+  } catch (error) {
+    if (isNotFoundError(error)) {
+      throw new Error(`missing search index: ${path2.relative(process.cwd(), path2.resolve(index))}`);
+    }
+    throw error;
+  }
+}
+async function fetchSearchIndex(indexUrl, fetcher = fetch) {
+  const response = await fetcher(indexUrl);
+  if (!response.ok) {
+    throw new Error(`failed to fetch search index: ${indexUrl} (${response.status})`);
+  }
+  return await response.json();
+}
+async function writeCachedSearchIndex(cachePath, index) {
+  await mkdir(path2.dirname(cachePath), { recursive: true });
+  const tempPath = `${cachePath}.${process.pid}.tmp`;
+  await writeFile(tempPath, `${JSON.stringify(index)}
+`, "utf8");
+  await rename(tempPath, cachePath);
+}
+function isNotFoundError(error) {
+  return error instanceof Error && "code" in error && error.code === "ENOENT";
+}
 
 // node_modules/minisearch/dist/es/index.js
 var ENTRIES = "ENTRIES";
@@ -131,9 +281,9 @@ class SearchableMap {
     if (!prefix.startsWith(this._prefix)) {
       throw new Error("Mismatched prefix");
     }
-    const [node, path] = trackDown(this._tree, prefix.slice(this._prefix.length));
+    const [node, path3] = trackDown(this._tree, prefix.slice(this._prefix.length));
     if (node === undefined) {
-      const [parentNode, key] = last(path);
+      const [parentNode, key] = last(path3);
       for (const k of parentNode.keys()) {
         if (k !== LEAF && k.startsWith(key)) {
           const node2 = new Map;
@@ -231,18 +381,18 @@ class SearchableMap {
     return SearchableMap.from(Object.entries(object));
   }
 }
-var trackDown = (tree, key, path = []) => {
+var trackDown = (tree, key, path3 = []) => {
   if (key.length === 0 || tree == null) {
-    return [tree, path];
+    return [tree, path3];
   }
   for (const k of tree.keys()) {
     if (k !== LEAF && key.startsWith(k)) {
-      path.push([tree, k]);
-      return trackDown(tree.get(k), key.slice(k.length), path);
+      path3.push([tree, k]);
+      return trackDown(tree.get(k), key.slice(k.length), path3);
     }
   }
-  path.push([tree, key]);
-  return trackDown(undefined, "", path);
+  path3.push([tree, key]);
+  return trackDown(undefined, "", path3);
 };
 var lookup = (tree, key) => {
   if (key.length === 0 || tree == null) {
@@ -285,38 +435,38 @@ var createPath = (node, key) => {
   return node;
 };
 var remove = (tree, key) => {
-  const [node, path] = trackDown(tree, key);
+  const [node, path3] = trackDown(tree, key);
   if (node === undefined) {
     return;
   }
   node.delete(LEAF);
   if (node.size === 0) {
-    cleanup(path);
+    cleanup(path3);
   } else if (node.size === 1) {
     const [key2, value] = node.entries().next().value;
-    merge(path, key2, value);
+    merge(path3, key2, value);
   }
 };
-var cleanup = (path) => {
-  if (path.length === 0) {
+var cleanup = (path3) => {
+  if (path3.length === 0) {
     return;
   }
-  const [node, key] = last(path);
+  const [node, key] = last(path3);
   node.delete(key);
   if (node.size === 0) {
-    cleanup(path.slice(0, -1));
+    cleanup(path3.slice(0, -1));
   } else if (node.size === 1) {
     const [key2, value] = node.entries().next().value;
     if (key2 !== LEAF) {
-      merge(path.slice(0, -1), key2, value);
+      merge(path3.slice(0, -1), key2, value);
     }
   }
 };
-var merge = (path, key, value) => {
-  if (path.length === 0) {
+var merge = (path3, key, value) => {
+  if (path3.length === 0) {
     return;
   }
-  const [node, nodeKey] = last(path);
+  const [node, nodeKey] = last(path3);
   node.set(nodeKey + key, value);
   node.delete(nodeKey);
 };
@@ -1274,19 +1424,26 @@ function compact(value) {
 }
 
 // src/cli.ts
-var defaultSearchIndexUrl = "https://adcli.jiangzhx.com/search-index.json";
 var help = `adcli
 
 Usage:
-  adcli doc search <query> [--index ${defaultSearchIndexUrl}] [--platform tencent_ads] [--limit 10] [--json]
+  adcli doc search <query> [--platform tencent_ads] [--limit 10] [--json] [--refresh]
+  adcli doc sync
 
 Commands:
   doc search    Search published advertising API docs
+  doc sync      Download and cache the latest search index
 `;
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   if (!args.domain || args.domain === "help" || args.domain === "--help" || args.domain === "-h") {
     console.log(help.trim());
+    return;
+  }
+  if (args.domain === "doc" && args.command === "sync") {
+    const index2 = await refreshSearchIndex();
+    const cache = getSearchIndexCacheInfo();
+    console.log(`Synced ${index2.documents.length} docs to ${cache.cachePath}`);
     return;
   }
   if (args.domain !== "doc" || args.command !== "search") {
@@ -1296,7 +1453,7 @@ async function main() {
   if (!query) {
     throw new Error("missing search query");
   }
-  const index = await loadSearchIndex(args.index);
+  const index = await loadSearchIndex({ index: args.index, refresh: args.refresh });
   const results = await searchDocuments({
     query,
     documents: index.documents,
@@ -1327,9 +1484,10 @@ function parseArgs(argv) {
     domain: argv[0],
     command: argv[1],
     query: [],
-    index: process.env.ADCLI_SEARCH_INDEX ?? defaultSearchIndexUrl,
+    index: process.env.ADCLI_SEARCH_INDEX,
     limit: 10,
-    json: false
+    json: false,
+    refresh: false
   };
   for (let index = 2;index < argv.length; index += 1) {
     const value = argv[index];
@@ -1340,6 +1498,10 @@ function parseArgs(argv) {
     if (value === "--index") {
       args.index = argv[index + 1] ?? "";
       index += 1;
+      continue;
+    }
+    if (value === "--refresh") {
+      args.refresh = true;
       continue;
     }
     if (value === "--limit") {
@@ -1358,24 +1520,6 @@ function parseArgs(argv) {
     throw new Error("--limit must be a positive integer");
   }
   return args;
-}
-async function loadSearchIndex(index) {
-  if (/^https?:\/\//i.test(index)) {
-    const response = await fetch(index);
-    if (!response.ok) {
-      throw new Error(`failed to fetch search index: ${index} (${response.status})`);
-    }
-    return await response.json();
-  }
-  const indexPath = path.resolve(index);
-  try {
-    return JSON.parse(await readFile(indexPath, "utf8"));
-  } catch (error) {
-    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
-      throw new Error(`missing search index: ${path.relative(process.cwd(), indexPath)}. Use --index ${defaultSearchIndexUrl} or run: bun run build:search-index`);
-    }
-    throw error;
-  }
 }
 main().catch((error) => {
   console.error(error instanceof Error ? error.message : error);

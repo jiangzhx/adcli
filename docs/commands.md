@@ -36,6 +36,19 @@ bun run adcli doc search "广告消耗" --platform tencent_ads
 https://adcli.jiangzhx.com/search-index.json
 ```
 
+第一次搜索会下载索引并写入系统标准缓存目录：
+
+- macOS: `~/Library/Caches/adcli/search-index.json`
+- Linux: `${XDG_CACHE_HOME:-~/.cache}/adcli/search-index.json`
+- Windows: `%LOCALAPPDATA%/adcli/Cache/search-index.json`
+
+主动更新缓存：
+
+```bash
+adcli doc sync
+adcli doc search "广告消耗" --refresh
+```
+
 也可以用环境变量覆盖：
 
 ```bash
