@@ -1428,21 +1428,25 @@ var help = `adcli
 
 Usage:
   adcli list [platform] [--json]
-  adcli doc list [--json]
-  adcli doc search <query> [--platform tencent_ads] [--limit 10] [--json] [--refresh]
-  adcli doc sync
+  adcli doc <command>
   adcli prompt
-  adcli llms [--json]
-  adcli llms prompt
+  adcli llms
 
 Commands:
   list          List supported advertising platforms and capabilities
-  doc list      List published docs platforms
-  doc search    Search published advertising API docs
-  doc sync      Download and cache the latest search index
+  doc           Search and sync published advertising API docs
   prompt        Print an AI/Agent instruction prompt for using the docs pack
   llms          Print LLM-readable docs pack entry URLs
-  llms prompt   Print an AI/Agent instruction prompt for using the docs pack
+`;
+var docHelp = `adcli doc
+
+Usage:
+  adcli doc search <query> [--platform tencent_ads] [--limit 10] [--json] [--refresh]
+  adcli doc sync
+
+Commands:
+  search    Search published advertising API docs
+  sync      Download and cache the latest search index
 `;
 async function main() {
   const args = parseArgs(process.argv.slice(2));
@@ -1453,6 +1457,10 @@ async function main() {
   if (args.domain === "list") {
     const index2 = await loadSearchIndex({ index: args.index, refresh: args.refresh });
     printDocList(index2, args);
+    return;
+  }
+  if (args.domain === "doc" && (!args.command || args.command === "--help" || args.command === "-h" || args.command === "help")) {
+    console.log(docHelp.trim());
     return;
   }
   if (args.domain === "doc" && args.command === "sync") {
