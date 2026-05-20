@@ -83,7 +83,7 @@ bun run build:search-index
 本地搜索已发布文档：
 
 ```bash
-bun run adcli doc search "广告消耗"
+adcli doc search "广告消耗"
 ```
 
 完整命令清单见 [docs/commands.md](docs/commands.md)。

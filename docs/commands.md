@@ -37,19 +37,13 @@ adcli doc list
 adcli doc search "广告消耗"
 ```
 
-项目内开发时也可以用：
-
-```bash
-bun run adcli doc search "广告消耗"
-```
-
 支持参数：
 
 ```bash
-bun run adcli doc search "广告消耗" --limit 5
-bun run adcli doc search "广告消耗" --json
-bun run adcli doc search "广告消耗" --index public/search-index.json
-bun run adcli doc search "广告消耗" --platform tencent_ads
+adcli doc search "广告消耗" --limit 5
+adcli doc search "广告消耗" --json
+adcli doc search "广告消耗" --index public/search-index.json
+adcli doc search "广告消耗" --platform tencent_ads
 ```
 
 全局 CLI 默认读取：

@@ -62,7 +62,7 @@ data/sources/{platform}/{source_id}/cleaned.md
 
 ```bash
 bun run build:search-index
-bun run adcli doc search "广告消耗"
+adcli doc search "广告消耗"
 ```
 
 搜索先走本地 `public/search-index.json`，返回平台、标题、公开 Markdown 路径和原始文档 URL。这个索引可以随 `public/` 一起发布，使用者不需要重新采集原始文档。
