@@ -13,7 +13,7 @@
     "url": "https://github.com/jiangzhx/adcli/issues"
   },
   "bin": {
-    "adcli": "./dist/cli.js"
+    "adcli": "dist/cli.js"
   },
   "files": [
     "dist",
