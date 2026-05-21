@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerImageMaterials, PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerTitleMaterial, PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerVideoMaterial } from "../models";
+
+export interface PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInner {
+  creative_id?: number;
+  image_materials?: PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerImageMaterials;
+  title_material?: PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerTitleMaterial;
+  video_material?: PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerVideoMaterial;
+}
+

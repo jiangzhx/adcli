@@ -1,0 +1,8 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentSplashButtonText {
+  splash_button_text?: string;
+}
+

@@ -1,0 +1,16 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsBpAssetManagementShareV30AllAccountsByBp, ToolsBpAssetManagementShareV30AssetType, ToolsBpAssetManagementShareV30RequestAccountInfosInner, ToolsBpAssetManagementShareV30RequestAllAccountsByCompanyInner, ToolsBpAssetManagementShareV30ShareMode } from "../models";
+
+export interface ToolsBpAssetManagementShareV30Request {
+  account_infos?: ToolsBpAssetManagementShareV30RequestAccountInfosInner[];
+  all_accounts_by_bp?: ToolsBpAssetManagementShareV30AllAccountsByBp[];
+  all_accounts_by_company?: ToolsBpAssetManagementShareV30RequestAllAccountsByCompanyInner[];
+  asset_type: ToolsBpAssetManagementShareV30AssetType;
+  instance_id: number;
+  organization_id: number;
+  share_mode: ToolsBpAssetManagementShareV30ShareMode;
+}
+

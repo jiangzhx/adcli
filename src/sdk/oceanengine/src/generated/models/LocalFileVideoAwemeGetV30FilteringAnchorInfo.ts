@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { LocalFileVideoAwemeGetV30FilteringAnchorInfoAnchorTypes } from "../models";
+
+export interface LocalFileVideoAwemeGetV30FilteringAnchorInfo {
+  anchor_types: LocalFileVideoAwemeGetV30FilteringAnchorInfoAnchorTypes[];
+  poi_ids?: number[];
+  product_ids?: number[];
+}
+

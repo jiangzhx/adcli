@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const KeywordUpdateV2V2DataErrorListMatchType = {
+  EXTENSIVE: "EXTENSIVE",
+  PHRASE: "PHRASE",
+  PRECISION: "PRECISION",
+} as const;
+
+export type KeywordUpdateV2V2DataErrorListMatchType = typeof KeywordUpdateV2V2DataErrorListMatchType[keyof typeof KeywordUpdateV2V2DataErrorListMatchType];
+

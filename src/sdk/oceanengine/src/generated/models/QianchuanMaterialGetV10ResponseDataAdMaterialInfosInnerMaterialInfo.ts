@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoMaterialType, QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoImageMaterial, QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoRoomMaterial, QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoTitleMaterial, QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterial } from "../models";
+
+export interface QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfo {
+  image_material?: QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoImageMaterial;
+  material_type: QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoMaterialType;
+  room_material?: QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoRoomMaterial;
+  title_material?: QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoTitleMaterial;
+  video_material?: QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterial;
+}
+

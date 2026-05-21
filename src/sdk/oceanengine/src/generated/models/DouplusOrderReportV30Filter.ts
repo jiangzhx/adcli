@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { DouplusOrderReportV30FilterOrderCreateTime } from "../models";
+
+export interface DouplusOrderReportV30Filter {
+  author_unique_ids?: string[];
+  item_ids?: number[];
+  order_create_time?: DouplusOrderReportV30FilterOrderCreateTime;
+  order_ids?: number[];
+  room_ids?: number[];
+  task_ids?: number[];
+}
+

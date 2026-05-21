@@ -1,0 +1,12 @@
+{
+  "phase": "B",
+  "apis": 1136,
+  "specialApis": [
+    {
+      "file": "api/CommonReqApi.java",
+      "coverage": "src/runtime/CommonReqApi.ts"
+    }
+  ],
+  "models": 9671,
+  "skipped": []
+}

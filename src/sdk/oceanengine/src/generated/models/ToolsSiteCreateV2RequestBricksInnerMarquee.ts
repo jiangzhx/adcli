@@ -1,0 +1,9 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export interface ToolsSiteCreateV2RequestBricksInnerMarquee {
+  prefix_icon?: string;
+  text_list?: string[];
+}
+

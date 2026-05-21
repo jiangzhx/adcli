@@ -1,0 +1,59 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import { ApiClient } from "../../runtime/ApiClient";
+import { ApiException } from "../../runtime/ApiException";
+import type { ApiResponse } from "../../runtime/ApiResponse";
+import type { QianchuanToolsAllowCouponV10CampaignScene, QianchuanToolsAllowCouponV10MarketingGoal, QianchuanToolsAllowCouponV10MarketingScene, QianchuanToolsAllowCouponV10Response } from "../models";
+
+
+export class QianchuanToolsAllowCouponV10Api {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async openApiV10QianchuanToolsAllowCouponGet(advertiserId: number, marketingGoal: QianchuanToolsAllowCouponV10MarketingGoal, campaignScene: QianchuanToolsAllowCouponV10CampaignScene, marketingScene: QianchuanToolsAllowCouponV10MarketingScene, awemeIds: number[], productIds: number[], isLabAd: boolean): Promise<QianchuanToolsAllowCouponV10Response> {
+    const response = await this.openApiV10QianchuanToolsAllowCouponGetWithHttpInfo(advertiserId, marketingGoal, campaignScene, marketingScene, awemeIds, productIds, isLabAd);
+    return response.data;
+  }
+
+  async openApiV10QianchuanToolsAllowCouponGetWithHttpInfo(advertiserId: number, marketingGoal: QianchuanToolsAllowCouponV10MarketingGoal, campaignScene: QianchuanToolsAllowCouponV10CampaignScene, marketingScene: QianchuanToolsAllowCouponV10MarketingScene, awemeIds: number[], productIds: number[], isLabAd: boolean): Promise<ApiResponse<QianchuanToolsAllowCouponV10Response>> {
+    if (advertiserId == null) {
+      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsAllowCouponGet");
+    }
+
+    if (marketingGoal == null) {
+      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanToolsAllowCouponGet");
+    }
+
+    if (campaignScene == null) {
+      throw new ApiException("Missing the required parameter 'campaignScene' when calling openApiV10QianchuanToolsAllowCouponGet");
+    }
+
+    if (marketingScene == null) {
+      throw new ApiException("Missing the required parameter 'marketingScene' when calling openApiV10QianchuanToolsAllowCouponGet");
+    }
+    return this.apiClient.requestWithHttpInfo<QianchuanToolsAllowCouponV10Response>({
+      method: "GET",
+      path: "/open_api/v1.0/qianchuan/tools/allow_coupon/",
+      queryParams: [
+        { name: "advertiser_id", value: advertiserId },
+        { name: "marketing_goal", value: marketingGoal },
+        { name: "campaign_scene", value: campaignScene },
+        { name: "marketing_scene", value: marketingScene },
+        { name: "is_lab_ad", value: isLabAd },
+        { name: "aweme_ids", value: awemeIds, collectionFormat: "csv" },
+        { name: "product_ids", value: productIds, collectionFormat: "csv" }
+      ]
+    });
+  }
+}
+
+

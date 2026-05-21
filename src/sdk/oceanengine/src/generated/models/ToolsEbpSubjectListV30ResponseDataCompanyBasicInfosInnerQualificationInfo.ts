@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoSubjectQualification, ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoVerifyInfoDto } from "../models";
+
+export interface ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfo {
+  query_type: number;
+  subject_qualification: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoSubjectQualification;
+  verify_info_dto?: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoVerifyInfoDto;
+}
+

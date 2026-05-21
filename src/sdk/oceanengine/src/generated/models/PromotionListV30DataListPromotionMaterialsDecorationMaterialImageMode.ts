@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode = {
+  CREATIVE_IMAGE_MODE_DECORATION_COUPON: "CREATIVE_IMAGE_MODE_DECORATION_COUPON",
+} as const;
+
+export type PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode = typeof PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode[keyof typeof PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode];
+

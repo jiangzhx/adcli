@@ -1,0 +1,16 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { CreativeProceduralCreativeUpdateV2RequestCreativeAbstractMaterialsInner, CreativeProceduralCreativeUpdateV2RequestCreativeComponentMaterialsInner, CreativeProceduralCreativeUpdateV2RequestCreativeDecorationMaterial, CreativeProceduralCreativeUpdateV2RequestCreativeImageMaterialsInner, CreativeProceduralCreativeUpdateV2RequestCreativeSubTitleMaterial, CreativeProceduralCreativeUpdateV2RequestCreativeTitleMaterialsInner, CreativeProceduralCreativeUpdateV2RequestCreativeVideoMaterialsInner } from "../models";
+
+export interface CreativeProceduralCreativeUpdateV2RequestCreative {
+  abstract_materials?: CreativeProceduralCreativeUpdateV2RequestCreativeAbstractMaterialsInner[];
+  component_materials?: CreativeProceduralCreativeUpdateV2RequestCreativeComponentMaterialsInner[];
+  decoration_material?: CreativeProceduralCreativeUpdateV2RequestCreativeDecorationMaterial;
+  image_materials?: CreativeProceduralCreativeUpdateV2RequestCreativeImageMaterialsInner[];
+  sub_title_material?: CreativeProceduralCreativeUpdateV2RequestCreativeSubTitleMaterial;
+  title_materials?: CreativeProceduralCreativeUpdateV2RequestCreativeTitleMaterialsInner[];
+  video_materials?: CreativeProceduralCreativeUpdateV2RequestCreativeVideoMaterialsInner[];
+}
+

@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const LocalProjectListV30FilteringMarketingGoal = {
+  ALL: "ALL",
+  LIVE: "LIVE",
+  VIDEO_IMAGE: "VIDEO_IMAGE",
+} as const;
+
+export type LocalProjectListV30FilteringMarketingGoal = typeof LocalProjectListV30FilteringMarketingGoal[keyof typeof LocalProjectListV30FilteringMarketingGoal];
+

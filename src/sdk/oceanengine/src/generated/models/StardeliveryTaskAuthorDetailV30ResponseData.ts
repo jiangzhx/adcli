@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { StardeliveryTaskAuthorDetailV30ResponseDataPageInfo, StardeliveryTaskAuthorDetailV30ResponseDataTaskAuthorsInfoInner } from "../models";
+
+export interface StardeliveryTaskAuthorDetailV30ResponseData {
+  page_info?: StardeliveryTaskAuthorDetailV30ResponseDataPageInfo;
+  task_authors_info: StardeliveryTaskAuthorDetailV30ResponseDataTaskAuthorsInfoInner[];
+}
+

@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export interface QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMaterialListInnerCoverImage {
+  height?: number;
+  id?: string;
+  image_url?: string;
+  width?: number;
+}
+

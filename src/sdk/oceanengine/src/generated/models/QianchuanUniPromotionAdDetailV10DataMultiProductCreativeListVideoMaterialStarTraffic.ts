@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic = {
+
+} as const;
+
+export type QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic = typeof QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic[keyof typeof QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic];
+

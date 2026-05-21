@@ -1,0 +1,18 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export interface QianchuanToolsSmartBoostAdBoostReportGetV10ResponseDataRaiseResultsInner {
+  ad_id?: number;
+  advertiser_id?: number;
+  click_cnt?: number;
+  convert_cnt?: number;
+  convert_rate?: number;
+  ctr?: number;
+  pay_order_amount_gmv?: number;
+  prepay_and_pay_order_roi?: number;
+  show_cnt?: number;
+  stat_cost?: number;
+  stat_datetime?: string;
+}
+

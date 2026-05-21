@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ClueFormUpdateV2RequestExtendInfo } from "../models";
+
+export interface ClueFormUpdateV2Request {
+  advertiser_id: number;
+  extend_info?: ClueFormUpdateV2RequestExtendInfo;
+  instance_id: number;
+  layer_submit_text?: string;
+  name?: string;
+  submit_text?: string;
+}
+

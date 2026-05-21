@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdScheduleDateUpdateV10RequestUpdateScheduleInfosInner } from "../models";
+
+export interface QianchuanUniPromotionAdScheduleDateUpdateV10Request {
+  advertiser_id: number;
+  update_schedule_infos: QianchuanUniPromotionAdScheduleDateUpdateV10RequestUpdateScheduleInfosInner[];
+}
+

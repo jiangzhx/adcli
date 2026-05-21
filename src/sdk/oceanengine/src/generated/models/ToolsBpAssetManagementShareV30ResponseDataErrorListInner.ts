@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsBpAssetManagementShareV30DataErrorListAllAccountsByBp, ToolsBpAssetManagementShareV30DataErrorListShareMode, ToolsBpAssetManagementShareV30ResponseDataErrorListInnerAccountInfo, ToolsBpAssetManagementShareV30ResponseDataErrorListInnerAllAccountsByCompany } from "../models";
+
+export interface ToolsBpAssetManagementShareV30ResponseDataErrorListInner {
+  account_info?: ToolsBpAssetManagementShareV30ResponseDataErrorListInnerAccountInfo;
+  all_accounts_by_bp?: ToolsBpAssetManagementShareV30DataErrorListAllAccountsByBp;
+  all_accounts_by_company?: ToolsBpAssetManagementShareV30ResponseDataErrorListInnerAllAccountsByCompany;
+  error_message?: string;
+  share_mode?: ToolsBpAssetManagementShareV30DataErrorListShareMode;
+}
+

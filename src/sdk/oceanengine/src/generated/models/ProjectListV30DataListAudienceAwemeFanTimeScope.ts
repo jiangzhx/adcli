@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const ProjectListV30DataListAudienceAwemeFanTimeScope = {
+  FIFTEEN_DAYS: "FIFTEEN_DAYS",
+  SIXTY_DAYS: "SIXTY_DAYS",
+  THIRTY_DAYS: "THIRTY_DAYS",
+} as const;
+
+export type ProjectListV30DataListAudienceAwemeFanTimeScope = typeof ProjectListV30DataListAudienceAwemeFanTimeScope[keyof typeof ProjectListV30DataListAudienceAwemeFanTimeScope];
+

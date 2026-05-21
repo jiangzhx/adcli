@@ -1,0 +1,40 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import { ApiClient } from "../../runtime/ApiClient";
+import { ApiException } from "../../runtime/ApiException";
+import type { ApiResponse } from "../../runtime/ApiResponse";
+import type { ToolsAppManagementBpShareV2Request, ToolsAppManagementBpShareV2Response } from "../models";
+
+
+export class ToolsAppManagementBpShareV2Api {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async openApi2ToolsAppManagementBpSharePost(toolsAppManagementBpShareV2Request: ToolsAppManagementBpShareV2Request): Promise<ToolsAppManagementBpShareV2Response> {
+    const response = await this.openApi2ToolsAppManagementBpSharePostWithHttpInfo(toolsAppManagementBpShareV2Request);
+    return response.data;
+  }
+
+  async openApi2ToolsAppManagementBpSharePostWithHttpInfo(toolsAppManagementBpShareV2Request: ToolsAppManagementBpShareV2Request): Promise<ApiResponse<ToolsAppManagementBpShareV2Response>> {
+
+    return this.apiClient.requestWithHttpInfo<ToolsAppManagementBpShareV2Response>({
+      method: "POST",
+      path: "/open_api/2/tools/app_management/bp_share/",
+      queryParams: [
+
+      ],
+      body: toolsAppManagementBpShareV2Request
+    });
+  }
+}
+
+

@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { CreativeProceduralCreativeCreateV2RequestCreativeAbstractMaterialsInnerStructAbstractInfo, CreativeProceduralCreativeCreateV2RequestCreativeAbstractMaterialsInnerTextAbstractInfo } from "../models";
+
+export interface CreativeProceduralCreativeCreateV2RequestCreativeAbstractMaterialsInner {
+  material_id?: number;
+  struct_abstract_info?: CreativeProceduralCreativeCreateV2RequestCreativeAbstractMaterialsInnerStructAbstractInfo;
+  text_abstract_info?: CreativeProceduralCreativeCreateV2RequestCreativeAbstractMaterialsInnerTextAbstractInfo;
+}
+

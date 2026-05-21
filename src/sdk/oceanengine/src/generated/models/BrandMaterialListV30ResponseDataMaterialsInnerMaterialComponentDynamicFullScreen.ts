@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreenImageInfoBkListInner, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreenImageInfoListInner } from "../models";
+
+export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreen {
+  image_info_bk_list?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreenImageInfoBkListInner[];
+  image_info_list?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreenImageInfoListInner[];
+}
+

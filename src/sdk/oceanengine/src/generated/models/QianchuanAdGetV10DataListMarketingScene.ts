@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const QianchuanAdGetV10DataListMarketingScene = {
+  ALL: "ALL",
+  FEED: "FEED",
+  SEARCH: "SEARCH",
+  SHOPPING_MALL: "SHOPPING_MALL",
+} as const;
+
+export type QianchuanAdGetV10DataListMarketingScene = typeof QianchuanAdGetV10DataListMarketingScene[keyof typeof QianchuanAdGetV10DataListMarketingScene];
+

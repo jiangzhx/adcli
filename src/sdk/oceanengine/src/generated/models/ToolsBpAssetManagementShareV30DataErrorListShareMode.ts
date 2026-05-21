@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const ToolsBpAssetManagementShareV30DataErrorListShareMode = {
+  BP_ALL_ACCOUNTS: "BP_ALL_ACCOUNTS",
+  COMPANY_ALL_ACCOUNTS: "COMPANY_ALL_ACCOUNTS",
+  PART: "PART",
+} as const;
+
+export type ToolsBpAssetManagementShareV30DataErrorListShareMode = typeof ToolsBpAssetManagementShareV30DataErrorListShareMode[keyof typeof ToolsBpAssetManagementShareV30DataErrorListShareMode];
+

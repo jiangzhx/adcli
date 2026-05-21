@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const BudgetGroupListV30FilteringDeliveryType = {
+  MANUAL: "MANUAL",
+  PROCEDURAL: "PROCEDURAL",
+} as const;
+
+export type BudgetGroupListV30FilteringDeliveryType = typeof BudgetGroupListV30FilteringDeliveryType[keyof typeof BudgetGroupListV30FilteringDeliveryType];
+

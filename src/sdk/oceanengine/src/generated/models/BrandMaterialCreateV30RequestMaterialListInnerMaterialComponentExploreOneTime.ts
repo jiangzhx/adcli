@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeAfterImage, BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeBeforeImage, BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeImage } from "../models";
+
+export interface BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTime {
+  advanced_duration?: number;
+  wipe_after_image?: BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeAfterImage;
+  wipe_before_image?: BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeBeforeImage;
+  wipe_image?: BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeImage;
+  wipe_text?: string;
+}
+

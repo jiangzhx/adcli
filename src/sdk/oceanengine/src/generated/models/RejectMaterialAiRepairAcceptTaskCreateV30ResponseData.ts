@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { RejectMaterialAiRepairAcceptTaskCreateV30ResponseDataErrorsInner } from "../models";
+
+export interface RejectMaterialAiRepairAcceptTaskCreateV30ResponseData {
+  adopt_ai_repair_ids?: number[];
+  errors?: RejectMaterialAiRepairAcceptTaskCreateV30ResponseDataErrorsInner[];
+}
+

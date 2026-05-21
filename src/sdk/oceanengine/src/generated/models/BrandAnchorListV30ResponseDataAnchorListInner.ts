@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { BrandAnchorListV30DataAnchorListAnchorStatus, BrandAnchorListV30DataAnchorListAnchorType } from "../models";
+
+export interface BrandAnchorListV30ResponseDataAnchorListInner {
+  anchor_id?: string;
+  anchor_status?: BrandAnchorListV30DataAnchorListAnchorStatus;
+  anchor_title?: string;
+  anchor_type?: BrandAnchorListV30DataAnchorListAnchorType;
+}
+

@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const QueryRebateBalanceV2FilteringStandard = {
+  YES: "YES",
+  NO: "NO",
+  YES_OF_INSPIRE: "YES_OF_INSPIRE",
+} as const;
+
+export type QueryRebateBalanceV2FilteringStandard = typeof QueryRebateBalanceV2FilteringStandard[keyof typeof QueryRebateBalanceV2FilteringStandard];
+

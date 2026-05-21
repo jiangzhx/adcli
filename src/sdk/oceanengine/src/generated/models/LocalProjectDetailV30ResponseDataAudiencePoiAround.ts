@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { LocalProjectDetailV30DataAudiencePoiAroundPoiAroundRadius } from "../models";
+
+export interface LocalProjectDetailV30ResponseDataAudiencePoiAround {
+  poi_around_ids?: number[];
+  poi_around_radius?: LocalProjectDetailV30DataAudiencePoiAroundPoiAroundRadius;
+}
+

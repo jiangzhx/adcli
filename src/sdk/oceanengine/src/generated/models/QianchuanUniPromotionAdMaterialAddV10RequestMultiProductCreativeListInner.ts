@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerCarouselMaterialInner, QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerImageMaterialInner, QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerTitleMaterialInner, QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerVideoMaterialInner } from "../models";
+
+export interface QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner {
+  carousel_material?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerCarouselMaterialInner[];
+  image_material?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerImageMaterialInner[];
+  product_id?: number;
+  title_material?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerTitleMaterialInner[];
+  video_material?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerVideoMaterialInner[];
+}
+

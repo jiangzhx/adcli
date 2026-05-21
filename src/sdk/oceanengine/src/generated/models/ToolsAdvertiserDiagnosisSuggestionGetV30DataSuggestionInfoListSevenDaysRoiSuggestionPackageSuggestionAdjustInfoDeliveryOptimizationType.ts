@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSevenDaysRoiSuggestionPackageSuggestionAdjustInfoDeliveryOptimizationType = {
+  UP_COST: "OPTIMIZE_COST_EFFECT_UP_COST",
+  UP_ROI: "OPTIMIZE_COST_EFFECT_UP_ROI",
+  UP_ROI_STABLE_COST: "OPTIMIZE_COST_EFFECT_UP_ROI_STABLE_COST",
+  DOWN_COST: "OPTIMIZE_COST_EFFECT_DOWN_COST",
+} as const;
+
+export type ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSevenDaysRoiSuggestionPackageSuggestionAdjustInfoDeliveryOptimizationType = typeof ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSevenDaysRoiSuggestionPackageSuggestionAdjustInfoDeliveryOptimizationType[keyof typeof ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSevenDaysRoiSuggestionPackageSuggestionAdjustInfoDeliveryOptimizationType];
+

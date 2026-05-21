@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const StardeliveryTaskAuthorVideoDetailV30StarTaskVideoRange = {
+  ALL_SUBMITTED_ITEM: "ALL_SUBMITTED_ITEM",
+  CAN_DELIVERY_ITEM: "CAN_DELIVERY_ITEM",
+} as const;
+
+export type StardeliveryTaskAuthorVideoDetailV30StarTaskVideoRange = typeof StardeliveryTaskAuthorVideoDetailV30StarTaskVideoRange[keyof typeof StardeliveryTaskAuthorVideoDetailV30StarTaskVideoRange];
+

@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { BrandCreativeUpdateV30RequestAdvancedCreativeInfoExploreOneTimeComponentWipeAfterImage, BrandCreativeUpdateV30RequestAdvancedCreativeInfoExploreOneTimeComponentWipeBeforeImage, BrandCreativeUpdateV30RequestAdvancedCreativeInfoExploreOneTimeComponentWipeImage } from "../models";
+
+export interface BrandCreativeUpdateV30RequestAdvancedCreativeInfoExploreOneTimeComponent {
+  advanced_duration?: number;
+  wipe_after_image?: BrandCreativeUpdateV30RequestAdvancedCreativeInfoExploreOneTimeComponentWipeAfterImage;
+  wipe_before_image?: BrandCreativeUpdateV30RequestAdvancedCreativeInfoExploreOneTimeComponentWipeBeforeImage;
+  wipe_image?: BrandCreativeUpdateV30RequestAdvancedCreativeInfoExploreOneTimeComponentWipeImage;
+  wipe_text?: string;
+}
+

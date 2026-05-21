@@ -1,0 +1,19 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSuggestionCategory, ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSuggestionType, ToolsAdvertiserDiagnosisSuggestionGetV30ResponseDataSuggestionInfoListInnerSevenDaysRoiSuggestion } from "../models";
+
+export interface ToolsAdvertiserDiagnosisSuggestionGetV30ResponseDataSuggestionInfoListInner {
+  expire_timestamp?: string;
+  name: string;
+  seven_days_roi_suggestion?: ToolsAdvertiserDiagnosisSuggestionGetV30ResponseDataSuggestionInfoListInnerSevenDaysRoiSuggestion;
+  suggestion_category: ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSuggestionCategory;
+  suggestion_content?: string;
+  suggestion_id: string;
+  suggestion_intro: string;
+  suggestion_predict_content?: string;
+  suggestion_tag?: number;
+  suggestion_type?: ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSuggestionType;
+}
+

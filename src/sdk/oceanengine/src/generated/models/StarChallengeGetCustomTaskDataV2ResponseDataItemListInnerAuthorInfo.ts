@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export interface StarChallengeGetCustomTaskDataV2ResponseDataItemListInnerAuthorInfo {
+  author_id?: number;
+  author_name?: string;
+  douyin_id?: string;
+}
+

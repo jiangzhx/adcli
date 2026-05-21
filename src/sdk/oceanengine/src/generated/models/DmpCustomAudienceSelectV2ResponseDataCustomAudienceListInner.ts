@@ -1,0 +1,19 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { DmpCustomAudienceSelectV2DataCustomAudienceListDeliveryStatus, DmpCustomAudienceSelectV2DataCustomAudienceListSource } from "../models";
+
+export interface DmpCustomAudienceSelectV2ResponseDataCustomAudienceListInner {
+  cover_num?: number;
+  custom_audience_id?: number;
+  data_source_id?: string;
+  delivery_status?: DmpCustomAudienceSelectV2DataCustomAudienceListDeliveryStatus;
+  isdel?: number;
+  name?: string;
+  source?: DmpCustomAudienceSelectV2DataCustomAudienceListSource;
+  status?: number;
+  tag?: string;
+  upload_num?: number;
+}
+

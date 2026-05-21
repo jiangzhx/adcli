@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const QianchuanUniAwemeAdCreateV10MultiProductCreativeListCreativeCardPromotionCardActionButton = {
+
+} as const;
+
+export type QianchuanUniAwemeAdCreateV10MultiProductCreativeListCreativeCardPromotionCardActionButton = typeof QianchuanUniAwemeAdCreateV10MultiProductCreativeListCreativeCardPromotionCardActionButton[keyof typeof QianchuanUniAwemeAdCreateV10MultiProductCreativeListCreativeCardPromotionCardActionButton];
+

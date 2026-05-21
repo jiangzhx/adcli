@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsAwemeAuthAuthShareAdShareV2AuthType } from "../models";
+
+export interface ToolsAwemeAuthAuthShareAdShareV2Request {
+  advertiser_id: number;
+  advertiser_ids: number[];
+  auth_type: ToolsAwemeAuthAuthShareAdShareV2AuthType;
+  aweme_id?: string;
+  item_id?: number;
+}
+

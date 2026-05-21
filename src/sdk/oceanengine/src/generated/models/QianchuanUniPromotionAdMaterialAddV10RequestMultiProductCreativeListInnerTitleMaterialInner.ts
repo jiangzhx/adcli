@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdMaterialAddV10MultiProductCreativeListTitleMaterialTitleType, QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerTitleMaterialInnerDynamicWordsInner } from "../models";
+
+export interface QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerTitleMaterialInner {
+  dynamic_words?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerTitleMaterialInnerDynamicWordsInner[];
+  title: string;
+  title_type?: QianchuanUniPromotionAdMaterialAddV10MultiProductCreativeListTitleMaterialTitleType;
+}
+

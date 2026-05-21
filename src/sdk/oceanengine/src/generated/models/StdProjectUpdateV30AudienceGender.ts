@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const StdProjectUpdateV30AudienceGender = {
+  GENDER_FEMALE: "GENDER_FEMALE",
+  GENDER_MALE: "GENDER_MALE",
+  GENDER_UNLIMITED: "GENDER_UNLIMITED",
+  NONE: "NONE",
+} as const;
+
+export type StdProjectUpdateV30AudienceGender = typeof StdProjectUpdateV30AudienceGender[keyof typeof StdProjectUpdateV30AudienceGender];
+

@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { StarDemanderQueryCpsTaskSalesV2ResponseDataSalesInner } from "../models";
+
+export interface StarDemanderQueryCpsTaskSalesV2ResponseData {
+  has_more: boolean;
+  sales: StarDemanderQueryCpsTaskSalesV2ResponseDataSalesInner[];
+  star_id: number;
+  task_id: number;
+}
+

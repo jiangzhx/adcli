@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const ToolsAppManagementBookingGetV2DataListHistoryAccountType = {
+  AD: "AD",
+  BP: "BP",
+  STAR: "STAR",
+} as const;
+
+export type ToolsAppManagementBookingGetV2DataListHistoryAccountType = typeof ToolsAppManagementBookingGetV2DataListHistoryAccountType[keyof typeof ToolsAppManagementBookingGetV2DataListHistoryAccountType];
+

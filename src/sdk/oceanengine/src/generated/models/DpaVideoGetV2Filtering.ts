@@ -1,0 +1,16 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { DpaVideoGetV2FilteringImageMode } from "../models";
+
+export interface DpaVideoGetV2Filtering {
+  end_time?: string;
+  image_mode?: DpaVideoGetV2FilteringImageMode;
+  package_id?: string;
+  package_name?: string;
+  product_ids?: number[];
+  product_platform_ids?: number[];
+  start_time?: string;
+}
+

@@ -1,0 +1,19 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const QianchuanToolsEstimateAudienceV10ExternalAction = {
+  CARD_ACTIVE: "AD_CONVERT_TYPE_CARD_ACTIVE",
+  LIVE_CLICK_PRODUCT_ACTION: "AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION",
+  LIVE_PAY_ROI: "AD_CONVERT_TYPE_LIVE_PAY_ROI",
+  LIVE_SUCCESSORDER_ACTION: "AD_CONVERT_TYPE_LIVE_SUCCESSORDER_ACTION",
+  LIVE_SUCCESSORDER_PAY: "AD_CONVERT_TYPE_LIVE_SUCCESSORDER_PAY",
+  LIVE_SUCCESSORDER_PAY_7DAYS: "AD_CONVERT_TYPE_LIVE_SUCCESSORDER_PAY_7DAYS",
+  NEW_FOLLOW_ACTION: "AD_CONVERT_TYPE_NEW_FOLLOW_ACTION",
+  QC_FOLLOW_ACTION: "AD_CONVERT_TYPE_QC_FOLLOW_ACTION",
+  QC_MUST_BUY: "AD_CONVERT_TYPE_QC_MUST_BUY",
+  SHOPPING: "AD_CONVERT_TYPE_SHOPPING",
+} as const;
+
+export type QianchuanToolsEstimateAudienceV10ExternalAction = typeof QianchuanToolsEstimateAudienceV10ExternalAction[keyof typeof QianchuanToolsEstimateAudienceV10ExternalAction];
+

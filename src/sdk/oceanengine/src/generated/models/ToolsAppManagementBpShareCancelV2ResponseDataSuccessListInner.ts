@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsAppManagementBpShareCancelV2DataSuccessListShareMode, ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAccountInfo, ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAllAccount, ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAllAccountByCompany } from "../models";
+
+export interface ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInner {
+  account_info?: ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAccountInfo;
+  all_account?: ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAllAccount;
+  all_account_by_company?: ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAllAccountByCompany;
+  share_mode?: ToolsAppManagementBpShareCancelV2DataSuccessListShareMode;
+}
+

@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { PromotionEasyUpdateV30RequestPromotionMaterialsCarouselMaterialListInner, PromotionEasyUpdateV30RequestPromotionMaterialsExternalUrlMaterialListInner, PromotionEasyUpdateV30RequestPromotionMaterialsTitleMaterialListInner, PromotionEasyUpdateV30RequestPromotionMaterialsVideoMaterialListInner } from "../models";
+
+export interface PromotionEasyUpdateV30RequestPromotionMaterials {
+  carousel_material_list?: PromotionEasyUpdateV30RequestPromotionMaterialsCarouselMaterialListInner[];
+  external_url_material_list?: PromotionEasyUpdateV30RequestPromotionMaterialsExternalUrlMaterialListInner[];
+  title_material_list: PromotionEasyUpdateV30RequestPromotionMaterialsTitleMaterialListInner[];
+  video_material_list?: PromotionEasyUpdateV30RequestPromotionMaterialsVideoMaterialListInner[];
+}
+

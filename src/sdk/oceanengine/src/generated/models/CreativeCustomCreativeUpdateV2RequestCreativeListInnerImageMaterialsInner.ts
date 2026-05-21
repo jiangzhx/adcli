@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { CreativeCustomCreativeUpdateV2CreativeListImageMaterialsImageMode, CreativeCustomCreativeUpdateV2RequestCreativeListInnerImageMaterialsInnerImageInfo, CreativeCustomCreativeUpdateV2RequestCreativeListInnerImageMaterialsInnerTemplateImage } from "../models";
+
+export interface CreativeCustomCreativeUpdateV2RequestCreativeListInnerImageMaterialsInner {
+  image_info?: CreativeCustomCreativeUpdateV2RequestCreativeListInnerImageMaterialsInnerImageInfo;
+  image_mode?: CreativeCustomCreativeUpdateV2CreativeListImageMaterialsImageMode;
+  template_image?: CreativeCustomCreativeUpdateV2RequestCreativeListInnerImageMaterialsInnerTemplateImage;
+}
+

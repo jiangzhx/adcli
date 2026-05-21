@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanRoiGoalUpdateV10RequestRoiGoalUpdatesInner } from "../models";
+
+export interface QianchuanRoiGoalUpdateV10Request {
+  advertiser_id: number;
+  roi_goal_updates: QianchuanRoiGoalUpdateV10RequestRoiGoalUpdatesInner[];
+}
+

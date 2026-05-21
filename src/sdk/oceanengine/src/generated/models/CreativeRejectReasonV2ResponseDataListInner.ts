@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { CreativeRejectReasonV2ResponseDataListInnerMaterialRejectInner, CreativeRejectReasonV2ResponseDataListInnerRejectDataInner } from "../models";
+
+export interface CreativeRejectReasonV2ResponseDataListInner {
+  creative_id?: number;
+  material_reject?: CreativeRejectReasonV2ResponseDataListInnerMaterialRejectInner[];
+  reject_data?: CreativeRejectReasonV2ResponseDataListInnerRejectDataInner[];
+}
+

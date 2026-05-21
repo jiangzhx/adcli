@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanAdBidUpdateV10RequestDataInner } from "../models";
+
+export interface QianchuanAdBidUpdateV10Request {
+  advertiser_id: number;
+  data: QianchuanAdBidUpdateV10RequestDataInner[];
+}
+

@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType } from "../models";
+
+export interface QianchuanUniPromotionAdControlTaskStatusUpdateV10Request {
+  advertiser_id: number;
+  opt_type: QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType;
+  task_ids: number[];
+}
+

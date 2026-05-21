@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdStatusUpdateV10ResponseDataResultsInnerError } from "../models";
+
+export interface QianchuanUniPromotionAdStatusUpdateV10ResponseDataResultsInner {
+  ad_id?: number;
+  error?: QianchuanUniPromotionAdStatusUpdateV10ResponseDataResultsInnerError;
+  flag?: boolean;
+}
+

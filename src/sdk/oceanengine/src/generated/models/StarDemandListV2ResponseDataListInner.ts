@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { StarDemandListV2DataListComponentType, StarDemandListV2DataListTaskCategory, StarDemandListV2DataListUniversalSettlementType } from "../models";
+
+export interface StarDemandListV2ResponseDataListInner {
+  component_type?: StarDemandListV2DataListComponentType;
+  create_time?: string;
+  demand_id?: number;
+  demand_name?: string;
+  task_category?: StarDemandListV2DataListTaskCategory;
+  universal_settlement_type?: StarDemandListV2DataListUniversalSettlementType;
+}
+

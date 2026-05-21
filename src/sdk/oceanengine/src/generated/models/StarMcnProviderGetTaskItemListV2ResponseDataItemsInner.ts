@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerExtraItemInfo, StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfo, StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerStarAdUniteItemInfo } from "../models";
+
+export interface StarMcnProviderGetTaskItemListV2ResponseDataItemsInner {
+  extra_item_info?: StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerExtraItemInfo;
+  item_info: StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfo;
+  star_ad_unite_item_info?: StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerStarAdUniteItemInfo;
+}
+

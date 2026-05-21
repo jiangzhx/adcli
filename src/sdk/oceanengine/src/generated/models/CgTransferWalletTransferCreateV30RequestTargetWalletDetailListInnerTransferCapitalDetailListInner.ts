@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { CgTransferWalletTransferCreateV30TargetWalletDetailListTransferCapitalDetailListCapitalSubType, CgTransferWalletTransferCreateV30TargetWalletDetailListTransferCapitalDetailListCapitalType, CgTransferWalletTransferCreateV30TargetWalletDetailListTransferCapitalDetailListPlatform } from "../models";
+
+export interface CgTransferWalletTransferCreateV30RequestTargetWalletDetailListInnerTransferCapitalDetailListInner {
+  capital_sub_type?: CgTransferWalletTransferCreateV30TargetWalletDetailListTransferCapitalDetailListCapitalSubType;
+  capital_type: CgTransferWalletTransferCreateV30TargetWalletDetailListTransferCapitalDetailListCapitalType;
+  platform: CgTransferWalletTransferCreateV30TargetWalletDetailListTransferCapitalDetailListPlatform;
+  transfer_amount: number;
+}
+

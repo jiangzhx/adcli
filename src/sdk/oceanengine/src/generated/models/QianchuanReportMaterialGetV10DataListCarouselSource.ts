@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const QianchuanReportMaterialGetV10DataListCarouselSource = {
+  AWEME: "AWEME",
+  E_COMMERCE: "E_COMMERCE",
+  JI_CHUANG: "JI_CHUANG",
+} as const;
+
+export type QianchuanReportMaterialGetV10DataListCarouselSource = typeof QianchuanReportMaterialGetV10DataListCarouselSource[keyof typeof QianchuanReportMaterialGetV10DataListCarouselSource];
+

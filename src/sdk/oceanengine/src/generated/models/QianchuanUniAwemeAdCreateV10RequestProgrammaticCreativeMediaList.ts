@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListBlockVideoMaterialInner, QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListTitleMaterialInner, QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListVideoMaterialInner } from "../models";
+
+export interface QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaList {
+  block_video_material?: QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListBlockVideoMaterialInner[];
+  title_material?: QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListTitleMaterialInner[];
+  video_material?: QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListVideoMaterialInner[];
+}
+

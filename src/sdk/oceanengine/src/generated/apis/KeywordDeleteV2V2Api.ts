@@ -1,0 +1,40 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import { ApiClient } from "../../runtime/ApiClient";
+import { ApiException } from "../../runtime/ApiException";
+import type { ApiResponse } from "../../runtime/ApiResponse";
+import type { KeywordDeleteV2V2Request, KeywordDeleteV2V2Response } from "../models";
+
+
+export class KeywordDeleteV2V2Api {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async openApi2KeywordDeleteV2Post(keywordDeleteV2V2Request: KeywordDeleteV2V2Request): Promise<KeywordDeleteV2V2Response> {
+    const response = await this.openApi2KeywordDeleteV2PostWithHttpInfo(keywordDeleteV2V2Request);
+    return response.data;
+  }
+
+  async openApi2KeywordDeleteV2PostWithHttpInfo(keywordDeleteV2V2Request: KeywordDeleteV2V2Request): Promise<ApiResponse<KeywordDeleteV2V2Response>> {
+
+    return this.apiClient.requestWithHttpInfo<KeywordDeleteV2V2Response>({
+      method: "POST",
+      path: "/open_api/2/keyword/delete_v2/",
+      queryParams: [
+
+      ],
+      body: keywordDeleteV2V2Request
+    });
+  }
+}
+
+

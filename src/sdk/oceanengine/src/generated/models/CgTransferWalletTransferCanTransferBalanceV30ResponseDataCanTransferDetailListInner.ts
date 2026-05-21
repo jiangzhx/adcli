@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { CgTransferWalletTransferCanTransferBalanceV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInner, CgTransferWalletTransferCanTransferBalanceV30ResponseDataCanTransferDetailListInnerRemitterCapitalDetailListInner } from "../models";
+
+export interface CgTransferWalletTransferCanTransferBalanceV30ResponseDataCanTransferDetailListInner {
+  non_brand_max_transfer_balance?: number;
+  payee_transfer_amount_detail_list?: CgTransferWalletTransferCanTransferBalanceV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInner[];
+  remitter_capital_detail_list?: CgTransferWalletTransferCanTransferBalanceV30ResponseDataCanTransferDetailListInnerRemitterCapitalDetailListInner[];
+  remitter_wallet_id?: number;
+}
+

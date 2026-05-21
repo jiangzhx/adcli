@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const ToolsWechatGameListV30DataListMinPaymentTierRange = {
+  SIX_TEN: "SIX_TEN",
+  TEN_TWENTY: "TEN_TWENTY",
+  TWENTY_FIFTY: "TWENTY_FIFTY",
+  ZERO_FIVE: "ZERO_FIVE",
+} as const;
+
+export type ToolsWechatGameListV30DataListMinPaymentTierRange = typeof ToolsWechatGameListV30DataListMinPaymentTierRange[keyof typeof ToolsWechatGameListV30DataListMinPaymentTierRange];
+

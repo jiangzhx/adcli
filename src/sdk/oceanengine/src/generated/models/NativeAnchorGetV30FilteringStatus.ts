@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const NativeAnchorGetV30FilteringStatus = {
+  AUDIT_FAILD: "AUDIT_FAILD",
+  AUDIT_SUCCESS: "AUDIT_SUCCESS",
+  CREATE: "CREATE",
+  DELETE: "DELETE",
+} as const;
+
+export type NativeAnchorGetV30FilteringStatus = typeof NativeAnchorGetV30FilteringStatus[keyof typeof NativeAnchorGetV30FilteringStatus];
+

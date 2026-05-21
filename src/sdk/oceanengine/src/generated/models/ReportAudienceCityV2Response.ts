@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ReportAudienceCityV2ResponseData } from "../models";
+
+export interface ReportAudienceCityV2Response {
+  code?: number;
+  data?: ReportAudienceCityV2ResponseData;
+  message?: string;
+  request_id?: string;
+}
+

@@ -1,0 +1,25 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const LocalPromotionListV30FilteringPromotionStatusSecond = {
+  AUDIT: "AUDIT",
+  AUDIT_DENY: "AUDIT_DENY",
+  AWEME_ACCOUNT_DISABLED: "AWEME_ACCOUNT_DISABLED",
+  BALANCE_OFFLINE_BUDGET: "BALANCE_OFFLINE_BUDGET",
+  DISABLED: "DISABLED",
+  DISABLE_BY_QUOTA: "DISABLE_BY_QUOTA",
+  LIVE_ROOM_OFF: "LIVE_ROOM_OFF",
+  NO_SCHEDULE: "NO_SCHEDULE",
+  OFFLINE_BALANCE: "OFFLINE_BALANCE",
+  PRODUCT_OR_POI_OFFLINE: "PRODUCT_OR_POI_OFFLINE",
+  PROJECT_DISABLED: "PROJECT_DISABLED",
+  PROJECT_OFFLINE_BUDGET: "PROJECT_OFFLINE_BUDGET",
+  PROMOTION_OFFLINE_BUDGET: "PROMOTION_OFFLINE_BUDGET",
+  REAUDIT: "REAUDIT",
+  ROI2_DISABLE: "ROI2_DISABLE",
+  TIME_NO_REACH: "TIME_NO_REACH",
+} as const;
+
+export type LocalPromotionListV30FilteringPromotionStatusSecond = typeof LocalPromotionListV30FilteringPromotionStatusSecond[keyof typeof LocalPromotionListV30FilteringPromotionStatusSecond];
+

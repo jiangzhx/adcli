@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsThirdSiteGetV2DataListAuditStatus } from "../models";
+
+export interface ToolsThirdSiteGetV2ResponseDataListInner {
+  audit_status?: ToolsThirdSiteGetV2DataListAuditStatus;
+  create_time?: string;
+  name?: string;
+  site_id?: number;
+  thumbnail?: string;
+  url?: string;
+}
+

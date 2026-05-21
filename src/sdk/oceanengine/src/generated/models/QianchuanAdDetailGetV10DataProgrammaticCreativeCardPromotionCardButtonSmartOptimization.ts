@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const QianchuanAdDetailGetV10DataProgrammaticCreativeCardPromotionCardButtonSmartOptimization = {
+
+} as const;
+
+export type QianchuanAdDetailGetV10DataProgrammaticCreativeCardPromotionCardButtonSmartOptimization = typeof QianchuanAdDetailGetV10DataProgrammaticCreativeCardPromotionCardButtonSmartOptimization[keyof typeof QianchuanAdDetailGetV10DataProgrammaticCreativeCardPromotionCardButtonSmartOptimization];
+

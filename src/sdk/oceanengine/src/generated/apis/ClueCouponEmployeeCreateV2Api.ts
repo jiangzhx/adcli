@@ -1,0 +1,40 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import { ApiClient } from "../../runtime/ApiClient";
+import { ApiException } from "../../runtime/ApiException";
+import type { ApiResponse } from "../../runtime/ApiResponse";
+import type { ClueCouponEmployeeCreateV2Request, ClueCouponEmployeeCreateV2Response } from "../models";
+
+
+export class ClueCouponEmployeeCreateV2Api {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async openApi2ClueCouponEmployeeCreatePost(clueCouponEmployeeCreateV2Request: ClueCouponEmployeeCreateV2Request): Promise<ClueCouponEmployeeCreateV2Response> {
+    const response = await this.openApi2ClueCouponEmployeeCreatePostWithHttpInfo(clueCouponEmployeeCreateV2Request);
+    return response.data;
+  }
+
+  async openApi2ClueCouponEmployeeCreatePostWithHttpInfo(clueCouponEmployeeCreateV2Request: ClueCouponEmployeeCreateV2Request): Promise<ApiResponse<ClueCouponEmployeeCreateV2Response>> {
+
+    return this.apiClient.requestWithHttpInfo<ClueCouponEmployeeCreateV2Response>({
+      method: "POST",
+      path: "/open_api/2/clue/coupon/employee/create/",
+      queryParams: [
+
+      ],
+      body: clueCouponEmployeeCreateV2Request
+    });
+  }
+}
+
+

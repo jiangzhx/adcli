@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanAdCreateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate, QianchuanAdCreateV10MultiProductCreativeListCreativeSettingDynamicCreative, QianchuanAdCreateV10MultiProductCreativeListCreativeSettingIsHomepageHide, QianchuanAdCreateV10RequestMultiProductCreativeListInnerCreativeSettingCreativeCategory } from "../models";
+
+export interface QianchuanAdCreateV10RequestMultiProductCreativeListInnerCreativeSetting {
+  ad_keywords?: string[];
+  aweme_id?: number;
+  creative_auto_generate?: QianchuanAdCreateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate;
+  creative_category?: QianchuanAdCreateV10RequestMultiProductCreativeListInnerCreativeSettingCreativeCategory;
+  dynamic_creative?: QianchuanAdCreateV10MultiProductCreativeListCreativeSettingDynamicCreative;
+  is_homepage_hide?: QianchuanAdCreateV10MultiProductCreativeListCreativeSettingIsHomepageHide;
+}
+

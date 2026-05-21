@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsSiteTemplateGetV2DataListBricksButtonEventType, ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonAppointEvent, ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonDownloadEvent, ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonLinkEvent, ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonPhoneEvent } from "../models";
+
+export interface ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButton {
+  appoint_event?: ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonAppointEvent;
+  bg_image_url?: string;
+  download_event?: ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonDownloadEvent;
+  event_type: ToolsSiteTemplateGetV2DataListBricksButtonEventType;
+  link_event?: ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonLinkEvent;
+  phone_event?: ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonPhoneEvent;
+}
+

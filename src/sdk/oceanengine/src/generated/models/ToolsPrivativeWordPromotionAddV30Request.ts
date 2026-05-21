@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsPrivativeWordPromotionAddV30RequestPromotionListInner } from "../models";
+
+export interface ToolsPrivativeWordPromotionAddV30Request {
+  advertiser_id: number;
+  promotion_list: ToolsPrivativeWordPromotionAddV30RequestPromotionListInner[];
+}
+

@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreativeSplashFullVideoImageInfoBkListInner, BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreativeSplashFullVideoVideoListInner } from "../models";
+
+export interface BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreativeSplashFullVideo {
+  image_info_bk_list?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreativeSplashFullVideoImageInfoBkListInner[];
+  video_list?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreativeSplashFullVideoVideoListInner[];
+}
+

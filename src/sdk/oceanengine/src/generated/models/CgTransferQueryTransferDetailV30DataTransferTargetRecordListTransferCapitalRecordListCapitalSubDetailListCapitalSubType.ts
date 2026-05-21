@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferCapitalRecordListCapitalSubDetailListCapitalSubType = {
+  NORMAL: "NORMAL",
+  PRELOAN: "PRELOAN",
+} as const;
+
+export type CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferCapitalRecordListCapitalSubDetailListCapitalSubType = typeof CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferCapitalRecordListCapitalSubDetailListCapitalSubType[keyof typeof CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferCapitalRecordListCapitalSubDetailListCapitalSubType];
+

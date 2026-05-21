@@ -1,0 +1,16 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerDuplicateWords, ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerExceedLengthWords, ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerExceedLimitWords, ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerHasEmojiWords, ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerSuccessWords } from "../models";
+
+export interface ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInner {
+  campaign_id?: number;
+  duplicate_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerDuplicateWords;
+  exceed_length_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerExceedLengthWords;
+  exceed_limit_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerExceedLimitWords;
+  has_emoji_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerHasEmojiWords;
+  status?: string;
+  success_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerSuccessWords;
+}
+

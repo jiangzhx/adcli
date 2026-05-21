@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { CreativeProceduralCreativeCreateV2CreativeVideoMaterialsDpaVideoTemplateType, CreativeProceduralCreativeCreateV2CreativeVideoMaterialsImageMode, CreativeProceduralCreativeCreateV2RequestCreativeVideoMaterialsInnerImageInfo, CreativeProceduralCreativeCreateV2RequestCreativeVideoMaterialsInnerVideoInfo } from "../models";
+
+export interface CreativeProceduralCreativeCreateV2RequestCreativeVideoMaterialsInner {
+  dpa_video_task_ids?: string[];
+  dpa_video_template_type?: CreativeProceduralCreativeCreateV2CreativeVideoMaterialsDpaVideoTemplateType;
+  image_info?: CreativeProceduralCreativeCreateV2RequestCreativeVideoMaterialsInnerImageInfo;
+  image_mode?: CreativeProceduralCreativeCreateV2CreativeVideoMaterialsImageMode;
+  material_id?: number;
+  video_info?: CreativeProceduralCreativeCreateV2RequestCreativeVideoMaterialsInnerVideoInfo;
+}
+

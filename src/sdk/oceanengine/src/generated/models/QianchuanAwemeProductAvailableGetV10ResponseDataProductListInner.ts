@@ -1,0 +1,21 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanAwemeProductAvailableGetV10DataProductListChannelType } from "../models";
+
+export interface QianchuanAwemeProductAvailableGetV10ResponseDataProductListInner {
+  category_name?: string;
+  channel_id?: number;
+  channel_type?: QianchuanAwemeProductAvailableGetV10DataProductListChannelType;
+  discount_higher_price?: number;
+  discount_lower_price?: number;
+  id: number;
+  img: string;
+  inventory?: number;
+  marketing_price?: number;
+  name: string;
+  product_rate?: number;
+  support_product_new_open?: boolean;
+}
+

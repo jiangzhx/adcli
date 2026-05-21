@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { CgTransferQueryCanTransferBalanceV30DataCanTransferDetailListCapitalDetailListCapitalType, CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerCapitalDetailListInnerCapitalSubDetailsInner } from "../models";
+
+export interface CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerCapitalDetailListInner {
+  capital_sub_details?: CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerCapitalDetailListInnerCapitalSubDetailsInner[];
+  capital_type: CgTransferQueryCanTransferBalanceV30DataCanTransferDetailListCapitalDetailListCapitalType;
+  transfer_balance: number;
+}
+

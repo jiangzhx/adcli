@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { BrandMaterialUpdateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType, BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentCommonExternalMicroAppInfo, BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentCommonExternalWechatMicroAppInfo } from "../models";
+
+export interface BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentCommonExternal {
+  external_url?: string;
+  external_url_is_download?: number;
+  micro_app_info?: BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentCommonExternalMicroAppInfo;
+  micro_app_open_url_type?: BrandMaterialUpdateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType;
+  open_url?: string;
+  wechat_micro_app_info?: BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentCommonExternalWechatMicroAppInfo;
+}
+

@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const ToolsMicroAppUpdateV30MembershipType = {
+  ANNUAL: "ANNUAL",
+  LIFETIME: "LIFETIME",
+  MONTHLY: "MONTHLY",
+  NONE: "NONE",
+  WEEKLY_DAILY: "WEEKLY_DAILY",
+} as const;
+
+export type ToolsMicroAppUpdateV30MembershipType = typeof ToolsMicroAppUpdateV30MembershipType[keyof typeof ToolsMicroAppUpdateV30MembershipType];
+

@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfoSubSharedRange } from "../models";
+
+export interface SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfo {
+  adv_cnt?: number;
+  main_wallet_id?: number;
+  sub_shared_range?: SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfoSubSharedRange;
+}
+

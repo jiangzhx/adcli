@@ -1,0 +1,18 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { SubscribeAccountsListV30DataAdvertisersAccountType, SubscribeAccountsListV30DataAdvertisersSource, SubscribeAccountsListV30DataAdvertisersStatus } from "../models";
+
+export interface SubscribeAccountsListV30ResponseDataAdvertisersInner {
+  account_type?: SubscribeAccountsListV30DataAdvertisersAccountType;
+  advertiser_id: number;
+  core_user_id: number;
+  created_time?: string;
+  event?: string;
+  reason?: string;
+  source?: SubscribeAccountsListV30DataAdvertisersSource;
+  status?: SubscribeAccountsListV30DataAdvertisersStatus;
+  updated_time?: string;
+}
+

@@ -1,0 +1,19 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { PromotionListV30DataListPromotionRelatedProductVideoMaterialListImageMode, PromotionListV30DataListPromotionRelatedProductVideoMaterialListIsCarryMaterial, PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialOptStatus, PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialStatus, PromotionListV30DataListPromotionRelatedProductVideoMaterialListVideoHpVisibility } from "../models";
+
+export interface PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerVideoMaterialListInner {
+  image_mode?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListImageMode;
+  is_carry_material?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListIsCarryMaterial;
+  item_id?: number;
+  material_id?: number;
+  material_opt_status?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialOptStatus;
+  material_status?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialStatus;
+  video_cover_id?: string;
+  video_hp_visibility?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListVideoHpVisibility;
+  video_id?: string;
+  visible_end_date?: string;
+}
+

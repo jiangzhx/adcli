@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export interface ToolsRubeexRemarkV2ResponseDataListInner {
+  data_md5?: string;
+  project_id?: number;
+  section?: string;
+  section_area?: string;
+  section_area_remark?: string;
+  section_remark?: string;
+}
+

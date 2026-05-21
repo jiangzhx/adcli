@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const BrandMaterialUpdateV30ContentType = {
+  LANDING_PAGE: "LANDING_PAGE",
+  NATIVE: "NATIVE",
+} as const;
+
+export type BrandMaterialUpdateV30ContentType = typeof BrandMaterialUpdateV30ContentType[keyof typeof BrandMaterialUpdateV30ContentType];
+

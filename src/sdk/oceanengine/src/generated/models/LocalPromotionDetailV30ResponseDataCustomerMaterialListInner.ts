@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { LocalPromotionDetailV30DataCustomerMaterialListImageMode, LocalPromotionDetailV30ResponseDataCustomerMaterialListInnerTitleMaterial, LocalPromotionDetailV30ResponseDataCustomerMaterialListInnerVideoMaterial } from "../models";
+
+export interface LocalPromotionDetailV30ResponseDataCustomerMaterialListInner {
+  image_mode?: LocalPromotionDetailV30DataCustomerMaterialListImageMode;
+  title_material?: LocalPromotionDetailV30ResponseDataCustomerMaterialListInnerTitleMaterial;
+  video_material?: LocalPromotionDetailV30ResponseDataCustomerMaterialListInnerVideoMaterial;
+}
+

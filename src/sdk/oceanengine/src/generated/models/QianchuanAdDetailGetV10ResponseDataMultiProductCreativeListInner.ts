@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMaterialMode, QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerCreativeSetting, QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerProgrammaticCreative } from "../models";
+
+export interface QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInner {
+  creative_material_mode?: QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMaterialMode;
+  creative_setting?: QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerCreativeSetting;
+  product_id?: number;
+  programmatic_creative?: QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerProgrammaticCreative;
+}
+

@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { DecorationCouponGetV30ResponseDataDataListInner, DecorationCouponGetV30ResponseDataDataPageInfo } from "../models";
+
+export interface DecorationCouponGetV30ResponseDataData {
+  list?: DecorationCouponGetV30ResponseDataDataListInner[];
+  page_info?: DecorationCouponGetV30ResponseDataDataPageInfo;
+}
+

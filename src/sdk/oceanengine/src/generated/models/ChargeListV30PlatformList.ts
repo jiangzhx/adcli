@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const ChargeListV30PlatformList = {
+  AD: "AD",
+  DOU_JIA: "DOU_JIA",
+  DOU_JIA_UPGRADE: "DOU_JIA_UPGRADE",
+} as const;
+
+export type ChargeListV30PlatformList = typeof ChargeListV30PlatformList[keyof typeof ChargeListV30PlatformList];
+

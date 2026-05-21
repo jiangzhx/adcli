@@ -1,0 +1,19 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAge, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAwemeFanBehaviors, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAwemeFanBehaviorsDays, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceDistrict, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceGender, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceLocationType } from "../models";
+
+export interface QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerAudience {
+  age?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAge[];
+  aweme_fan_accounts?: number[];
+  aweme_fan_behaviors?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAwemeFanBehaviors[];
+  aweme_fan_behaviors_days?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAwemeFanBehaviorsDays;
+  aweme_fan_categories?: number[];
+  city?: number[];
+  district?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceDistrict;
+  district_type?: boolean;
+  gender?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceGender;
+  location_type?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceLocationType;
+}
+

@@ -1,0 +1,40 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { PromotionCreateV30PromotionMaterialsAdvancedDcSettings, PromotionCreateV30PromotionMaterialsBlueFlowMaterialRecommend, PromotionCreateV30PromotionMaterialsDynamicCreativeSwitch, PromotionCreateV30PromotionMaterialsIntelligentGeneration, PromotionCreateV30PromotionMaterialsOpenUrlType, PromotionCreateV30PromotionMaterialsOriginalVideoTitle, PromotionCreateV30PromotionMaterialsParamsType, PromotionCreateV30PromotionMaterialsUlinkType, PromotionCreateV30RequestPromotionMaterialsAnchorMaterialListInner, PromotionCreateV30RequestPromotionMaterialsCarouselMaterialListInner, PromotionCreateV30RequestPromotionMaterialsComponentMaterialListInner, PromotionCreateV30RequestPromotionMaterialsImageMaterialListInner, PromotionCreateV30RequestPromotionMaterialsInstantPlayMaterialListInner, PromotionCreateV30RequestPromotionMaterialsMiniProgramInfo, PromotionCreateV30RequestPromotionMaterialsPlantGrassSearchWordMaterialListInner, PromotionCreateV30RequestPromotionMaterialsProductInfo, PromotionCreateV30RequestPromotionMaterialsTextAbstractListInner, PromotionCreateV30RequestPromotionMaterialsTitleMaterialListInner, PromotionCreateV30RequestPromotionMaterialsTrialPlayMaterialListInner, PromotionCreateV30RequestPromotionMaterialsVideoMaterialListInner } from "../models";
+
+export interface PromotionCreateV30RequestPromotionMaterials {
+  advanced_dc_settings?: PromotionCreateV30PromotionMaterialsAdvancedDcSettings[];
+  anchor_material_list?: PromotionCreateV30RequestPromotionMaterialsAnchorMaterialListInner[];
+  blue_flow_material_recommend?: PromotionCreateV30PromotionMaterialsBlueFlowMaterialRecommend;
+  call_to_action_buttons?: string[];
+  carousel_material_list?: PromotionCreateV30RequestPromotionMaterialsCarouselMaterialListInner[];
+  component_material_list?: PromotionCreateV30RequestPromotionMaterialsComponentMaterialListInner[];
+  dynamic_creative_switch?: PromotionCreateV30PromotionMaterialsDynamicCreativeSwitch;
+  external_url_field?: string;
+  external_url_material_list?: string[];
+  external_url_params?: string;
+  image_material_list?: PromotionCreateV30RequestPromotionMaterialsImageMaterialListInner[];
+  instant_play_material_list?: PromotionCreateV30RequestPromotionMaterialsInstantPlayMaterialListInner[];
+  intelligent_generation?: PromotionCreateV30PromotionMaterialsIntelligentGeneration;
+  mini_program_info?: PromotionCreateV30RequestPromotionMaterialsMiniProgramInfo;
+  open_url?: string;
+  open_url_field?: string;
+  open_url_params?: string;
+  open_url_type?: PromotionCreateV30PromotionMaterialsOpenUrlType;
+  open_urls?: string[];
+  original_video_title?: PromotionCreateV30PromotionMaterialsOriginalVideoTitle;
+  params_type?: PromotionCreateV30PromotionMaterialsParamsType;
+  plant_grass_search_word_material_list?: PromotionCreateV30RequestPromotionMaterialsPlantGrassSearchWordMaterialListInner[];
+  playlet_series_url_list?: string[];
+  product_info?: PromotionCreateV30RequestPromotionMaterialsProductInfo;
+  text_abstract_list?: PromotionCreateV30RequestPromotionMaterialsTextAbstractListInner[];
+  title_material_list?: PromotionCreateV30RequestPromotionMaterialsTitleMaterialListInner[];
+  trial_play_material_list?: PromotionCreateV30RequestPromotionMaterialsTrialPlayMaterialListInner[];
+  ulink?: string;
+  ulink_type?: PromotionCreateV30PromotionMaterialsUlinkType;
+  video_material_list?: PromotionCreateV30RequestPromotionMaterialsVideoMaterialListInner[];
+  web_url_material_list?: string[];
+}
+

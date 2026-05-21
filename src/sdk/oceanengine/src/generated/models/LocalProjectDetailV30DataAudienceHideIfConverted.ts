@@ -1,0 +1,16 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const LocalProjectDetailV30DataAudienceHideIfConverted = {
+  ADVERTISER: "ADVERTISER",
+  APP: "APP",
+  CUSTOMER: "CUSTOMER",
+  NO_EXCLUDE: "NO_EXCLUDE",
+  ORGANIZATION: "ORGANIZATION",
+  PROJECT: "PROJECT",
+  PROMOTION: "PROMOTION",
+} as const;
+
+export type LocalProjectDetailV30DataAudienceHideIfConverted = typeof LocalProjectDetailV30DataAudienceHideIfConverted[keyof typeof LocalProjectDetailV30DataAudienceHideIfConverted];
+

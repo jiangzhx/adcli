@@ -1,0 +1,9 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export interface CustomerCenterAdvertiserTransferableListV2ResponseDataListInner {
+  advertiser_id?: number;
+  is_enabled?: boolean;
+}
+

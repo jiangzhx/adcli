@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanReportUniPromotionConfigGetV10DataCustomConfigDatasDataTopic, QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerDimensionsInner, QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerMetricsInner, QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerQueryLimit } from "../models";
+
+export interface QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInner {
+  data_topic?: QianchuanReportUniPromotionConfigGetV10DataCustomConfigDatasDataTopic;
+  dimensions?: QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerDimensionsInner[];
+  metrics?: QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerMetricsInner[];
+  query_limit?: QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerQueryLimit;
+}
+

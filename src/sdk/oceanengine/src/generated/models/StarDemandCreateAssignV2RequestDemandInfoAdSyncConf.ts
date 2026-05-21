@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { StarDemandCreateAssignV2RequestDemandInfoAdSyncConfContentMarketing, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfDouPlus, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfEcomShop, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfLocalPromotion, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfOceanEngine, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfQianchuan } from "../models";
+
+export interface StarDemandCreateAssignV2RequestDemandInfoAdSyncConf {
+  content_marketing?: StarDemandCreateAssignV2RequestDemandInfoAdSyncConfContentMarketing;
+  dou_plus?: StarDemandCreateAssignV2RequestDemandInfoAdSyncConfDouPlus;
+  ecom_shop?: StarDemandCreateAssignV2RequestDemandInfoAdSyncConfEcomShop;
+  local_promotion?: StarDemandCreateAssignV2RequestDemandInfoAdSyncConfLocalPromotion;
+  ocean_engine?: StarDemandCreateAssignV2RequestDemandInfoAdSyncConfOceanEngine;
+  qianchuan?: StarDemandCreateAssignV2RequestDemandInfoAdSyncConfQianchuan;
+}
+

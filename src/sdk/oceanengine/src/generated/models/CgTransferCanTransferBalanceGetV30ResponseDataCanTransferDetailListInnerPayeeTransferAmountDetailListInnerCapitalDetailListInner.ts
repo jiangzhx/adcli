@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { CgTransferCanTransferBalanceGetV30DataCanTransferDetailListPayeeTransferAmountDetailListCapitalDetailListCapitalType } from "../models";
+
+export interface CgTransferCanTransferBalanceGetV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInnerCapitalDetailListInner {
+  capital_type: CgTransferCanTransferBalanceGetV30DataCanTransferDetailListPayeeTransferAmountDetailListCapitalDetailListCapitalType;
+  transfer_balance: number;
+}
+

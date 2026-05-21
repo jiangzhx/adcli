@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeSettingCreativeAutoGenerate = {
+
+} as const;
+
+export type QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeSettingCreativeAutoGenerate = typeof QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeSettingCreativeAutoGenerate[keyof typeof QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeSettingCreativeAutoGenerate];
+

@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { StarVasGetBoostItemGroupDetailV2ResponseDataAllFlowStatInfo, StarVasGetBoostItemGroupDetailV2ResponseDataBoostFlowStatInfo, StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInner, StarVasGetBoostItemGroupDetailV2ResponseDataTaskInfo } from "../models";
+
+export interface StarVasGetBoostItemGroupDetailV2ResponseData {
+  all_flow_stat_info: StarVasGetBoostItemGroupDetailV2ResponseDataAllFlowStatInfo;
+  boost_flow_stat_info: StarVasGetBoostItemGroupDetailV2ResponseDataBoostFlowStatInfo;
+  order_stat_info: StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInner[];
+  task_info: StarVasGetBoostItemGroupDetailV2ResponseDataTaskInfo;
+}
+

@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { SharedWalletWalletInfoGetV30DataWalletInfoMainWalletInfoMainSharedRangeItemsAccountPlatform, SharedWalletWalletInfoGetV30DataWalletInfoMainWalletInfoMainSharedRangeItemsCustomerCategory } from "../models";
+
+export interface SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfoMainSharedRangeItemsInner {
+  account_platform?: SharedWalletWalletInfoGetV30DataWalletInfoMainWalletInfoMainSharedRangeItemsAccountPlatform;
+  customer_category?: SharedWalletWalletInfoGetV30DataWalletInfoMainWalletInfoMainSharedRangeItemsCustomerCategory;
+}
+

@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { BrandCustomAudienceListV30DataAudiencePackageListCategory } from "../models";
+
+export interface BrandCustomAudienceListV30ResponseDataAudiencePackageListInner {
+  category?: BrandCustomAudienceListV30DataAudiencePackageListCategory;
+  expire_time: number;
+  id: number;
+  name: string;
+}
+

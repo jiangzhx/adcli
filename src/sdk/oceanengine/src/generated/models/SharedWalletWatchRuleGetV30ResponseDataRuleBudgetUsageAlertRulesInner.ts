@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { SharedWalletWatchRuleGetV30DataRuleBudgetUsageAlertRulesLevel } from "../models";
+
+export interface SharedWalletWatchRuleGetV30ResponseDataRuleBudgetUsageAlertRulesInner {
+  level?: SharedWalletWatchRuleGetV30DataRuleBudgetUsageAlertRulesLevel;
+  threshold?: number;
+}
+

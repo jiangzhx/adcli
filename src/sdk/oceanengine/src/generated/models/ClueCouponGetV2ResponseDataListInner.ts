@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ClueCouponGetV2DataListActivityType, ClueCouponGetV2ResponseDataListInnerCoupon } from "../models";
+
+export interface ClueCouponGetV2ResponseDataListInner {
+  activity_id?: number;
+  activity_type?: ClueCouponGetV2DataListActivityType;
+  bind_form_id?: number;
+  coupon?: ClueCouponGetV2ResponseDataListInnerCoupon;
+}
+

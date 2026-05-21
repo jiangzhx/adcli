@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { ReportStardeliveryTaskDataGetV30FilteringMetricValueFilterInner, ReportStardeliveryTaskDataGetV30FilteringStarTaskCategoryType, ReportStardeliveryTaskDataGetV30FilteringStarTaskStatus } from "../models";
+
+export interface ReportStardeliveryTaskDataGetV30Filtering {
+  metric_value_filter?: ReportStardeliveryTaskDataGetV30FilteringMetricValueFilterInner[];
+  star_task_category_name?: string;
+  star_task_category_type?: ReportStardeliveryTaskDataGetV30FilteringStarTaskCategoryType;
+  star_task_ids?: number[];
+  star_task_status?: ReportStardeliveryTaskDataGetV30FilteringStarTaskStatus;
+}
+

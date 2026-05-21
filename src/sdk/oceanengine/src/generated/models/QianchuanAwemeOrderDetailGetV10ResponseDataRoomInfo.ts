@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanAwemeOrderDetailGetV10DataRoomInfoRoomStatus } from "../models";
+
+export interface QianchuanAwemeOrderDetailGetV10ResponseDataRoomInfo {
+  room_cover?: string;
+  room_id?: number;
+  room_status?: QianchuanAwemeOrderDetailGetV10DataRoomInfoRoomStatus;
+  room_title?: string;
+}
+

@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const QianchuanToolsAllowCouponV10MarketingScene = {
+  ALL: "ALL",
+  FEED: "FEED",
+  SEARCH: "SEARCH",
+  SHOPPING_MALL: "SHOPPING_MALL",
+} as const;
+
+export type QianchuanToolsAllowCouponV10MarketingScene = typeof QianchuanToolsAllowCouponV10MarketingScene[keyof typeof QianchuanToolsAllowCouponV10MarketingScene];
+

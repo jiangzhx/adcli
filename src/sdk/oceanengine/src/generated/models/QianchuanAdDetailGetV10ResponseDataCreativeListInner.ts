@@ -1,0 +1,18 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanAdDetailGetV10DataCreativeListImageMode, QianchuanAdDetailGetV10ResponseDataCreativeListInnerCarouselMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerImageMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerPromotionCardMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerTitleMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerVideoMaterial } from "../models";
+
+export interface QianchuanAdDetailGetV10ResponseDataCreativeListInner {
+  carousel_material?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerCarouselMaterial;
+  creative_create_time?: string;
+  creative_id?: number;
+  creative_modify_time?: string;
+  image_material?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerImageMaterial;
+  image_mode?: QianchuanAdDetailGetV10DataCreativeListImageMode;
+  promotion_card_material?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerPromotionCardMaterial;
+  title_material?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerTitleMaterial;
+  video_material?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerVideoMaterial;
+}
+

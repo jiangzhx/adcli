@@ -1,0 +1,18 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+import type { QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeType, QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerBlockVideoMaterialInner, QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerCarouselMaterialInner, QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerCreativeCard, QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerImageMaterialInner, QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerTitleMaterialInner, QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerVideoMaterialInner } from "../models";
+
+export interface QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInner {
+  block_video_material?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerBlockVideoMaterialInner[];
+  carousel_material?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerCarouselMaterialInner[];
+  creative_card?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerCreativeCard;
+  creative_type?: QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeType;
+  hide_in_aweme?: boolean;
+  image_material?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerImageMaterialInner[];
+  product_id?: number;
+  title_material?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerTitleMaterialInner[];
+  video_material?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerVideoMaterialInner[];
+}
+

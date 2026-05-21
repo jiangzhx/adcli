@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_java
+// Phase: B
+// Do not edit manually.
+
+export const AdvertiserFundGrantTransactionGetV2DataListTransactionType = {
+  RECHARGE: "RECHARGE",
+  TRANSFER: "TRANSFER",
+} as const;
+
+export type AdvertiserFundGrantTransactionGetV2DataListTransactionType = typeof AdvertiserFundGrantTransactionGetV2DataListTransactionType[keyof typeof AdvertiserFundGrantTransactionGetV2DataListTransactionType];
+
