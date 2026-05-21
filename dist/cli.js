@@ -5,12 +5,12 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path2 from "node:path";
 
-// node_modules/env-paths/index.js
+// node_modules/.bun/env-paths@4.0.0/node_modules/env-paths/index.js
 import path from "node:path";
 import os from "node:os";
 import process2 from "node:process";
 
-// node_modules/is-safe-filename/index.js
+// node_modules/.bun/is-safe-filename@0.1.1/node_modules/is-safe-filename/index.js
 var unsafeFilenameFixtures = Object.freeze([
   "",
   "   ",
@@ -43,7 +43,7 @@ function assertSafeFilename(filename) {
   }
 }
 
-// node_modules/env-paths/index.js
+// node_modules/.bun/env-paths@4.0.0/node_modules/env-paths/index.js
 var homedir = os.homedir();
 var tmpdir = os.tmpdir();
 var { env } = process2;
@@ -155,7 +155,7 @@ function isNotFoundError(error) {
   return error instanceof Error && "code" in error && error.code === "ENOENT";
 }
 
-// node_modules/minisearch/dist/es/index.js
+// node_modules/.bun/minisearch@7.2.0/node_modules/minisearch/dist/es/index.js
 var ENTRIES = "ENTRIES";
 var KEYS = "KEYS";
 var VALUES = "VALUES";
@@ -1423,18 +1423,577 @@ function compact(value) {
   return value.toLowerCase().replace(/\s+/g, "");
 }
 
+// src/sdk/oceanengine/src/runtime/ApiException.ts
+class ApiException extends Error {
+  statusCode;
+  responseBody;
+  headers;
+  constructor(message, options = {}) {
+    super(message);
+    this.name = "ApiException";
+    this.statusCode = options.statusCode;
+    this.responseBody = options.responseBody;
+    this.headers = options.headers;
+  }
+}
+
+// src/sdk/oceanengine/src/runtime/json.ts
+var MAX_SAFE_INTEGER = BigInt(Number.MAX_SAFE_INTEGER);
+function parseJsonPreservingLargeIntegers(text) {
+  return JSON.parse(quoteUnsafeIntegerLiterals(text));
+}
+function quoteUnsafeIntegerLiterals(text) {
+  let output = "";
+  let index = 0;
+  while (index < text.length) {
+    const char = text[index];
+    if (char === '"') {
+      const stringEnd = findStringEnd(text, index);
+      output += text.slice(index, stringEnd);
+      index = stringEnd;
+      continue;
+    }
+    if (char === "-" || isDigit(char)) {
+      const token = readNumberToken(text, index);
+      if (token) {
+        output += shouldQuoteIntegerToken(token.value) ? `"${token.value}"` : token.value;
+        index = token.end;
+        continue;
+      }
+    }
+    output += char;
+    index += 1;
+  }
+  return output;
+}
+function findStringEnd(text, start) {
+  let escaped = false;
+  let index = start + 1;
+  while (index < text.length) {
+    const char = text[index];
+    if (escaped) {
+      escaped = false;
+    } else if (char === "\\") {
+      escaped = true;
+    } else if (char === '"') {
+      return index + 1;
+    }
+    index += 1;
+  }
+  return text.length;
+}
+function readNumberToken(text, start) {
+  let index = start;
+  if (text[index] === "-") {
+    index += 1;
+    if (!isDigit(text[index])) {
+      return;
+    }
+  }
+  while (isDigit(text[index])) {
+    index += 1;
+  }
+  if (text[index] === "." || text[index] === "e" || text[index] === "E") {
+    index += 1;
+    while (isNumberContinuation(text[index])) {
+      index += 1;
+    }
+  }
+  return { value: text.slice(start, index), end: index };
+}
+function shouldQuoteIntegerToken(token) {
+  if (token.includes(".") || token.includes("e") || token.includes("E")) {
+    return false;
+  }
+  const magnitude = token.startsWith("-") ? token.slice(1) : token;
+  return BigInt(magnitude) > MAX_SAFE_INTEGER;
+}
+function isDigit(char) {
+  return char != null && char >= "0" && char <= "9";
+}
+function isNumberContinuation(char) {
+  return isDigit(char) || char === "+" || char === "-" || char === "." || char === "e" || char === "E";
+}
+
+// src/sdk/oceanengine/src/runtime/ApiClient.ts
+var SDK_VERSION = "0.0.0-phase-a";
+
+class ApiClient {
+  basePath = "https://api.oceanengine.com";
+  fetchImpl;
+  defaultHeaders = new Headers;
+  constructor(options = {}) {
+    this.fetchImpl = options.fetch ?? fetch;
+    if (options.basePath) {
+      this.basePath = options.basePath;
+    }
+    this.setUserAgent("Bytedance Ads Openapi SDK");
+    this.addDefaultHeader("X-Sdk-Language", "node");
+    this.addDefaultHeader("X-Sdk-Version", SDK_VERSION);
+  }
+  getBasePath() {
+    return this.basePath;
+  }
+  setBasePath(basePath) {
+    this.basePath = basePath;
+    return this;
+  }
+  setUserAgent(userAgent) {
+    this.addDefaultHeader("User-Agent", userAgent);
+    return this;
+  }
+  addDefaultHeader(name, value) {
+    this.defaultHeaders.set(name, value);
+    return this;
+  }
+  setAccessToken(token) {
+    this.addDefaultHeader("Access-Token", token);
+    return this;
+  }
+  buildUrl(path3, queryParams = []) {
+    const url = new URL(path3, this.basePath);
+    for (const param of queryParams) {
+      if (param.value == null) {
+        continue;
+      }
+      if (Array.isArray(param.value)) {
+        if (param.collectionFormat === "multi") {
+          for (const value of param.value) {
+            url.searchParams.append(param.name, this.parameterToString(value));
+          }
+          continue;
+        }
+        if (param.collectionFormat !== "csv") {
+          throw new ApiException(`Unsupported collection format for query parameter '${param.name}'`);
+        }
+        url.searchParams.append(param.name, param.value.map((value) => this.parameterToString(value)).join(","));
+        continue;
+      }
+      url.searchParams.append(param.name, this.parameterToString(param.value));
+    }
+    return url;
+  }
+  async request(options) {
+    const response = await this.requestWithHttpInfo(options);
+    return response.data;
+  }
+  async requestWithHttpInfo(options) {
+    const request = this.buildRequest(options);
+    const response = await this.fetchImpl(request);
+    const data = await this.readResponseBody(response);
+    if (!response.ok) {
+      throw new ApiException(`HTTP ${response.status}`, {
+        statusCode: response.status,
+        responseBody: data,
+        headers: response.headers
+      });
+    }
+    return {
+      data,
+      statusCode: response.status,
+      headers: response.headers
+    };
+  }
+  buildRequest(options) {
+    const headers = new Headers(this.defaultHeaders);
+    for (const [name, value] of Object.entries(options.headers ?? {})) {
+      headers.set(name, value);
+    }
+    let body;
+    if (options.method !== "GET" && options.formParams) {
+      const contentType = options.contentType ?? "application/x-www-form-urlencoded";
+      headers.set("Content-Type", contentType);
+      if (contentType !== "application/x-www-form-urlencoded") {
+        throw new ApiException(`Unsupported form content type '${contentType}'`);
+      }
+      const formBody = new URLSearchParams;
+      for (const [name, value] of Object.entries(options.formParams)) {
+        if (value != null) {
+          formBody.append(name, this.parameterToString(value));
+        }
+      }
+      body = formBody;
+    } else if (options.method !== "GET" && options.body != null) {
+      const contentType = options.contentType ?? "application/json";
+      headers.set("Content-Type", contentType);
+      body = contentType === "application/json" ? JSON.stringify(options.body) : String(options.body);
+    }
+    return new Request(this.buildUrl(options.path, options.queryParams), {
+      method: options.method,
+      headers,
+      body
+    });
+  }
+  async readResponseBody(response) {
+    const text = await response.text();
+    if (!text) {
+      return;
+    }
+    const contentType = response.headers.get("Content-Type") ?? "";
+    if (contentType.includes("application/json")) {
+      return parseJsonPreservingLargeIntegers(text);
+    }
+    return text;
+  }
+  parameterToString(value) {
+    if (value instanceof Date) {
+      return value.toISOString();
+    }
+    if (typeof value === "object" && value !== null) {
+      return JSON.stringify(value);
+    }
+    return String(value);
+  }
+}
+// src/sdk/oceanengine/src/generated/apis/Oauth2AdvertiserGetApi.ts
+class Oauth2AdvertiserGetApi {
+  apiClient;
+  constructor(apiClient = new ApiClient) {
+    this.apiClient = apiClient;
+  }
+  getApiClient() {
+    return this.apiClient;
+  }
+  setApiClient(apiClient) {
+    this.apiClient = apiClient;
+  }
+  async openApiOauth2AdvertiserGetGet(accessToken) {
+    const response = await this.openApiOauth2AdvertiserGetGetWithHttpInfo(accessToken);
+    return response.data;
+  }
+  async openApiOauth2AdvertiserGetGetWithHttpInfo(accessToken) {
+    return this.apiClient.requestWithHttpInfo({
+      method: "GET",
+      path: "/open_api/oauth2/advertiser/get/",
+      queryParams: [
+        { name: "access_token", value: accessToken }
+      ]
+    });
+  }
+}
+
+// src/sdk/oceanengine/src/generated/apis/ProjectListV30Api.ts
+class ProjectListV30Api {
+  apiClient;
+  constructor(apiClient = new ApiClient) {
+    this.apiClient = apiClient;
+  }
+  getApiClient() {
+    return this.apiClient;
+  }
+  setApiClient(apiClient) {
+    this.apiClient = apiClient;
+  }
+  async openApiV30ProjectListGet(advertiserId, fields, filtering, page, pageSize) {
+    const response = await this.openApiV30ProjectListGetWithHttpInfo(advertiserId, fields, filtering, page, pageSize);
+    return response.data;
+  }
+  async openApiV30ProjectListGetWithHttpInfo(advertiserId, fields, filtering, page, pageSize) {
+    if (advertiserId == null) {
+      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ProjectListGet");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "GET",
+      path: "/open_api/v3.0/project/list/",
+      queryParams: [
+        { name: "filtering", value: filtering },
+        { name: "advertiser_id", value: advertiserId },
+        { name: "page", value: page },
+        { name: "page_size", value: pageSize },
+        { name: "fields", value: fields, collectionFormat: "csv" }
+      ]
+    });
+  }
+}
+
+// src/sdk/oceanengine/src/generated/apis/PromotionListV30Api.ts
+class PromotionListV30Api {
+  apiClient;
+  constructor(apiClient = new ApiClient) {
+    this.apiClient = apiClient;
+  }
+  getApiClient() {
+    return this.apiClient;
+  }
+  setApiClient(apiClient) {
+    this.apiClient = apiClient;
+  }
+  async openApiV30PromotionListGet(advertiserId, filtering, fields, includingMaterialAtrributes, page, pageSize, cursor, count) {
+    const response = await this.openApiV30PromotionListGetWithHttpInfo(advertiserId, filtering, fields, includingMaterialAtrributes, page, pageSize, cursor, count);
+    return response.data;
+  }
+  async openApiV30PromotionListGetWithHttpInfo(advertiserId, filtering, fields, includingMaterialAtrributes, page, pageSize, cursor, count) {
+    if (advertiserId == null) {
+      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30PromotionListGet");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "GET",
+      path: "/open_api/v3.0/promotion/list/",
+      queryParams: [
+        { name: "advertiser_id", value: advertiserId },
+        { name: "filtering", value: filtering },
+        { name: "including_material_atrributes", value: includingMaterialAtrributes },
+        { name: "page", value: page },
+        { name: "page_size", value: pageSize },
+        { name: "cursor", value: cursor },
+        { name: "count", value: count },
+        { name: "fields", value: fields, collectionFormat: "csv" }
+      ]
+    });
+  }
+}
+// src/lib/oceanengine/config.ts
+import { chmod, mkdir as mkdir2, readFile as readFile2, rename as rename2, writeFile as writeFile2 } from "node:fs/promises";
+import path3 from "node:path";
+function getOceanEngineConfigInfo(options = {}) {
+  const configDir = options.configDir ?? envPaths("adcli", { suffix: "" }).cache;
+  return {
+    configPath: path3.join(configDir, "oceanengine.json")
+  };
+}
+async function saveOceanEngineAccessToken(token, options = {}) {
+  const trimmed = token.trim();
+  if (!trimmed) {
+    throw new Error("missing OceanEngine token");
+  }
+  const configInfo = getOceanEngineConfigInfo(options);
+  await mkdir2(path3.dirname(configInfo.configPath), { recursive: true });
+  const tempPath = `${configInfo.configPath}.${process.pid}.tmp`;
+  await writeFile2(tempPath, `${JSON.stringify({ access_token: trimmed })}
+`, {
+    encoding: "utf8",
+    mode: 384
+  });
+  await rename2(tempPath, configInfo.configPath);
+  await chmod(configInfo.configPath, 384);
+  return configInfo;
+}
+async function loadOceanEngineAccessToken(options = {}) {
+  const configInfo = getOceanEngineConfigInfo(options);
+  let config;
+  try {
+    config = JSON.parse(await readFile2(configInfo.configPath, "utf8"));
+  } catch (error) {
+    if (isNotFoundError2(error)) {
+      return;
+    }
+    throw error;
+  }
+  if (typeof config.access_token !== "string" || !config.access_token.trim()) {
+    return;
+  }
+  return config.access_token.trim();
+}
+function isNotFoundError2(error) {
+  return error instanceof Error && "code" in error && error.code === "ENOENT";
+}
+
+// src/lib/oceanengine/commands.ts
+async function runOceanEngineCommand(argv, options = {}) {
+  const args = parseOceanEngineArgs(argv);
+  if (args.resource === "auth") {
+    const token2 = args.action;
+    if (!token2) {
+      throw new Error("missing OceanEngine token");
+    }
+    const configInfo = await saveOceanEngineAccessToken(token2, { configDir: options.configDir });
+    return {
+      ok: true,
+      config_path: configInfo.configPath
+    };
+  }
+  const token = await resolveAccessToken(args, options);
+  const apiClient = new ApiClient({ fetch: options.fetch }).setAccessToken(token);
+  if (args.resource === "advertiser" && args.action === "list") {
+    return new Oauth2AdvertiserGetApi(apiClient).openApiOauth2AdvertiserGetGet(token);
+  }
+  if (isProjectListCommand(args)) {
+    const advertiserId = getRequiredNumber(args, "advertiser-id");
+    return new ProjectListV30Api(apiClient).openApiV30ProjectListGet(advertiserId, parseCsv(args.flags.fields), parseJsonFlag(args.flags.filtering), parseNumberFlag(args.flags.page), parseNumberFlag(args.flags["page-size"]));
+  }
+  if (args.resource === "promotion" && args.action === "list") {
+    const advertiserId = getRequiredNumber(args, "advertiser-id");
+    const filtering = {
+      ...parseJsonFlag(args.flags.filtering),
+      ...parseProjectFilter(args.flags["project-id"])
+    };
+    return new PromotionListV30Api(apiClient).openApiV30PromotionListGet(advertiserId, Object.keys(filtering).length > 0 ? filtering : undefined, parseCsv(args.flags.fields), args.flags["including-material-attributes"], parseNumberFlag(args.flags.page), parseNumberFlag(args.flags["page-size"]), parseNumberFlag(args.flags.cursor), parseNumberFlag(args.flags.count));
+  }
+  throw new Error(`unknown oceanengine command: ${[args.resource, args.action].filter(Boolean).join(" ")}`);
+}
+function formatOceanEngineOutput(payload, json, argv = []) {
+  if (json) {
+    return JSON.stringify(payload, null, 2);
+  }
+  if (isOceanEngineErrorPayload(payload)) {
+    return JSON.stringify(payload, null, 2);
+  }
+  if (argv[0] === "project" && argv[1] === "list") {
+    return formatEntityList(payload, "project_id", ["project_id", "id"], ["name", "project_name"]);
+  }
+  if (argv[0] === "promotion" && argv[1] === "list") {
+    return formatEntityList(payload, "promotion_id", ["promotion_id", "id"], ["name", "promotion_name"]);
+  }
+  return JSON.stringify(payload, null, 2);
+}
+function formatOceanEngineError(error) {
+  if (!isRecord(error) || !("responseBody" in error)) {
+    return;
+  }
+  const responseBody = error.responseBody;
+  if (responseBody == null) {
+    return;
+  }
+  if (typeof responseBody === "string") {
+    return responseBody;
+  }
+  return JSON.stringify(responseBody, null, 2);
+}
+function parseOceanEngineArgs(argv) {
+  const args = {
+    resource: argv[0],
+    action: argv[1],
+    flags: {}
+  };
+  for (let index = 2;index < argv.length; index += 1) {
+    const value = argv[index];
+    if (!value?.startsWith("--")) {
+      continue;
+    }
+    const name = value.slice(2);
+    const next = argv[index + 1];
+    if (!next || next.startsWith("--")) {
+      args.flags[name] = true;
+      continue;
+    }
+    args.flags[name] = next;
+    index += 1;
+  }
+  return args;
+}
+async function resolveAccessToken(args, options) {
+  const explicitToken = getOptionalString(args.flags["access-token"]);
+  if (explicitToken) {
+    return explicitToken;
+  }
+  const env2 = options.env ?? process.env;
+  const envToken = getOptionalString(env2.OCEANENGINE_ACCESS_TOKEN);
+  if (envToken) {
+    return envToken;
+  }
+  const savedToken = await loadOceanEngineAccessToken({ configDir: options.configDir });
+  if (savedToken) {
+    return savedToken;
+  }
+  throw new Error("missing --access-token; run adcli oceanengine auth <token> or set OCEANENGINE_ACCESS_TOKEN");
+}
+function getRequiredString(args, flag) {
+  const value = getOptionalString(args.flags[flag]);
+  if (!value) {
+    throw new Error(`missing --${flag}`);
+  }
+  return value;
+}
+function getOptionalString(value) {
+  if (typeof value !== "string" || !value) {
+    return;
+  }
+  return value;
+}
+function getRequiredNumber(args, flag) {
+  const value = getRequiredString(args, flag);
+  const parsed = Number(value);
+  if (!Number.isFinite(parsed)) {
+    throw new Error(`--${flag} must be a number`);
+  }
+  return parsed;
+}
+function parseNumberFlag(value) {
+  if (value == null || value === true) {
+    return;
+  }
+  const parsed = Number(value);
+  if (!Number.isFinite(parsed)) {
+    throw new Error(`numeric flag must be a number: ${value}`);
+  }
+  return parsed;
+}
+function parseCsv(value) {
+  if (typeof value !== "string" || !value) {
+    return;
+  }
+  return value.split(",").map((item) => item.trim()).filter(Boolean);
+}
+function parseJsonFlag(value) {
+  if (typeof value !== "string" || !value) {
+    return;
+  }
+  return parseJsonPreservingLargeIntegers(value);
+}
+function parseProjectFilter(value) {
+  if (typeof value !== "string" || !value) {
+    return {};
+  }
+  if (!/^\d+$/.test(value)) {
+    throw new Error("--project-id must be an integer id");
+  }
+  return { project_id: value };
+}
+function isProjectListCommand(args) {
+  return args.resource === "project" && args.action === "list";
+}
+function formatEntityList(payload, idHeader, idKeys, nameKeys) {
+  const list = getPayloadList(payload);
+  const header = `${idHeader}	name`;
+  if (list.length === 0) {
+    return header;
+  }
+  return [
+    header,
+    ...list.map((item) => {
+      const id = getRecordValue(item, idKeys);
+      const name = getRecordValue(item, nameKeys);
+      return `${id}	${name}`;
+    })
+  ].join(`
+`);
+}
+function getPayloadList(payload) {
+  if (!isRecord(payload) || !isRecord(payload.data) || !Array.isArray(payload.data.list)) {
+    return [];
+  }
+  return payload.data.list.filter(isRecord);
+}
+function getRecordValue(record, keys) {
+  for (const key of keys) {
+    const value = record[key];
+    if (typeof value === "string" || typeof value === "number") {
+      return String(value);
+    }
+  }
+  return "";
+}
+function isRecord(value) {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+function isOceanEngineErrorPayload(payload) {
+  return isRecord(payload) && typeof payload.code === "number" && payload.code !== 0;
+}
+
 // src/cli.ts
 var help = `adcli
 
 Usage:
   adcli list [platform] [--json]
   adcli doc <command>
+  adcli oceanengine <resource> <command>
   adcli prompt
   adcli llms
 
 Commands:
   list          List supported advertising platforms and capabilities
   doc           Search and sync published advertising API docs
+  oceanengine   Call OceanEngine APIs through the generated Node.js SDK
   prompt        Print an AI/Agent instruction prompt for using the docs pack
   llms          Print LLM-readable docs pack entry URLs
 `;
@@ -1447,6 +2006,18 @@ Usage:
 Commands:
   search    Search published advertising API docs
   sync      Download and cache the latest search index
+`;
+var oceanEngineHelp = `adcli oceanengine
+
+Usage:
+  adcli oceanengine auth <token>
+  adcli oceanengine advertiser list [--access-token token] [--json]
+  adcli oceanengine project list --advertiser-id 123 [--access-token token] [--page 1] [--page-size 20] [--filtering '{"status":"PROJECT_STATUS_ALL"}'] [--json]
+  adcli oceanengine promotion list --advertiser-id 123 [--access-token token] [--project-id 456] [--fields promotion_id,name,status_first] [--filtering '{}'] [--json]
+
+Environment:
+  Token precedence is --access-token, OCEANENGINE_ACCESS_TOKEN, then the saved token.
+  Project list does not include deleted projects by default; use filtering status PROJECT_STATUS_ALL for all projects.
 `;
 async function main() {
   const args = parseArgs(process.argv.slice(2));
@@ -1480,6 +2051,16 @@ async function main() {
   }
   if (args.domain === "llms") {
     printLlms(args);
+    return;
+  }
+  if (args.domain === "oceanengine") {
+    if (!args.command || args.command === "--help" || args.command === "-h" || args.command === "help") {
+      console.log(oceanEngineHelp.trim());
+      return;
+    }
+    const oceanEngineArgv = [args.command, ...args.query];
+    const payload = await runOceanEngineCommand(oceanEngineArgv);
+    console.log(formatOceanEngineOutput(payload, args.json, oceanEngineArgv));
     return;
   }
   if (args.domain !== "doc" || args.command !== "search") {
@@ -1645,6 +2226,6 @@ function parseArgs(argv) {
   return args;
 }
 main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
+  console.error(formatOceanEngineError(error) ?? (error instanceof Error ? error.message : error));
   process.exit(1);
 });

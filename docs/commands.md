@@ -115,6 +115,85 @@ adcli prompt
 adcli llms prompt
 ```
 
+### `adcli oceanengine auth`
+
+保存巨量引擎 access token。保存后，巨量引擎相关命令可以不再重复传 `--access-token`。
+
+```bash
+adcli oceanengine auth <token>
+```
+
+token 会按 CLI 缓存处理，保存到 AdCLI 缓存目录下的 `oceanengine.json`。macOS 默认路径：
+
+```text
+~/Library/Caches/adcli/oceanengine.json
+```
+
+token 优先级：
+
+1. `--access-token`
+2. `OCEANENGINE_ACCESS_TOKEN`
+3. `adcli oceanengine auth <token>` 保存的本地 token
+
+### `adcli oceanengine advertiser list`
+
+通过当前仓库内的巨量引擎 Node.js SDK 拉取授权广告主列表。
+
+```bash
+adcli oceanengine advertiser list --access-token <token>
+adcli oceanengine advertiser list --json
+```
+
+也可以用环境变量提供 token，或先通过 `adcli oceanengine auth <token>` 保存 token：
+
+```bash
+OCEANENGINE_ACCESS_TOKEN=<token> adcli oceanengine advertiser list --json
+```
+
+对应 SDK/API：
+
+- SDK: `Oauth2AdvertiserGetApi`
+- API: `GET /open_api/oauth2/advertiser/get/`
+
+### `adcli oceanengine project list`
+
+通过当前仓库内的巨量引擎 Node.js SDK 拉取广告主下的项目列表，对应巨量引擎 OpenAPI 的 `project/list`。
+
+```bash
+adcli oceanengine project list --advertiser-id <advertiser_id> --access-token <token>
+adcli oceanengine project list --advertiser-id <advertiser_id> --page 1 --page-size 20
+adcli oceanengine project list --advertiser-id <advertiser_id> --json
+adcli oceanengine project list --advertiser-id <advertiser_id> --filtering '{"status":"PROJECT_STATUS_ALL"}'
+adcli oceanengine project list --advertiser-id <advertiser_id> --filtering '{"status_first":"PROJECT_STATUS_ENABLE"}'
+```
+
+默认输出只包含 `project_id` 和 `name` 两列；使用 `--json` 打印完整原始响应。
+巨量接口默认不返回已删除项目；需要和 fujian 同步口径一致时，使用 `--filtering '{"status":"PROJECT_STATUS_ALL"}'` 拉取包含已删除项目的全量列表。
+
+对应 SDK/API：
+
+- SDK: `ProjectListV30Api`
+- API: `GET /open_api/v3.0/project/list/`
+
+### `adcli oceanengine promotion list`
+
+通过当前仓库内的巨量引擎 Node.js SDK 拉取广告主下的广告列表，对应巨量引擎 OpenAPI 的 `promotion/list`。
+
+```bash
+adcli oceanengine promotion list --advertiser-id <advertiser_id> --access-token <token>
+adcli oceanengine promotion list --advertiser-id <advertiser_id> --project-id <project_id>
+adcli oceanengine promotion list --advertiser-id <advertiser_id> --project-id <project_id> --json
+adcli oceanengine promotion list --advertiser-id <advertiser_id> --fields promotion_id,name,status_first
+adcli oceanengine promotion list --advertiser-id <advertiser_id> --filtering '{"status_first":"PROMOTION_STATUS_ENABLE"}'
+```
+
+默认输出只包含 `promotion_id` 和 `name` 两列；使用 `--json` 打印完整原始响应。
+
+对应 SDK/API：
+
+- SDK: `PromotionListV30Api`
+- API: `GET /open_api/v3.0/promotion/list/`
+
 ## 采集命令
 
 ### `bun run discover:sources`

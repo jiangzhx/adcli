@@ -2,6 +2,7 @@
 
 import { getSearchIndexCacheInfo, loadSearchIndex, refreshSearchIndex } from "@/src/lib/search/cache";
 import { searchDocuments } from "@/src/lib/search/searcher";
+import { formatOceanEngineError, formatOceanEngineOutput, runOceanEngineCommand } from "@/src/lib/oceanengine/commands";
 
 type ParsedArgs = {
   domain?: string;
@@ -19,12 +20,14 @@ const help = `adcli
 Usage:
   adcli list [platform] [--json]
   adcli doc <command>
+  adcli oceanengine <resource> <command>
   adcli prompt
   adcli llms
 
 Commands:
   list          List supported advertising platforms and capabilities
   doc           Search and sync published advertising API docs
+  oceanengine   Call OceanEngine APIs through the generated Node.js SDK
   prompt        Print an AI/Agent instruction prompt for using the docs pack
   llms          Print LLM-readable docs pack entry URLs
 `;
@@ -38,6 +41,19 @@ Usage:
 Commands:
   search    Search published advertising API docs
   sync      Download and cache the latest search index
+`;
+
+const oceanEngineHelp = `adcli oceanengine
+
+Usage:
+  adcli oceanengine auth <token>
+  adcli oceanengine advertiser list [--access-token token] [--json]
+  adcli oceanengine project list --advertiser-id 123 [--access-token token] [--page 1] [--page-size 20] [--filtering '{"status":"PROJECT_STATUS_ALL"}'] [--json]
+  adcli oceanengine promotion list --advertiser-id 123 [--access-token token] [--project-id 456] [--fields promotion_id,name,status_first] [--filtering '{}'] [--json]
+
+Environment:
+  Token precedence is --access-token, OCEANENGINE_ACCESS_TOKEN, then the saved token.
+  Project list does not include deleted projects by default; use filtering status PROJECT_STATUS_ALL for all projects.
 `;
 
 async function main(): Promise<void> {
@@ -79,6 +95,17 @@ async function main(): Promise<void> {
 
   if (args.domain === "llms") {
     printLlms(args);
+    return;
+  }
+
+  if (args.domain === "oceanengine") {
+    if (!args.command || args.command === "--help" || args.command === "-h" || args.command === "help") {
+      console.log(oceanEngineHelp.trim());
+      return;
+    }
+    const oceanEngineArgv = [args.command, ...args.query];
+    const payload = await runOceanEngineCommand(oceanEngineArgv);
+    console.log(formatOceanEngineOutput(payload, args.json, oceanEngineArgv));
     return;
   }
 
@@ -274,6 +301,6 @@ function parseArgs(argv: string[]): ParsedArgs {
 }
 
 main().catch((error: unknown) => {
-  console.error(error instanceof Error ? error.message : error);
+  console.error(formatOceanEngineError(error) ?? (error instanceof Error ? error.message : error));
   process.exit(1);
 });
