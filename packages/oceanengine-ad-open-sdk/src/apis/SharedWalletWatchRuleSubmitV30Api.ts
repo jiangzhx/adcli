@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { SharedWalletWatchRuleSubmitV30Request, SharedWalletWatchRuleSubmitV30Response } from "../models";
 
+
+export interface OpenApiV30SharedWalletWatchRuleSubmitPostRequest {
+  sharedWalletWatchRuleSubmitV30Request?: SharedWalletWatchRuleSubmitV30Request;
+}
 
 export class SharedWalletWatchRuleSubmitV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class SharedWalletWatchRuleSubmitV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30SharedWalletWatchRuleSubmitPost(sharedWalletWatchRuleSubmitV30Request: SharedWalletWatchRuleSubmitV30Request): Promise<SharedWalletWatchRuleSubmitV30Response> {
-    const response = await this.openApiV30SharedWalletWatchRuleSubmitPostWithHttpInfo(sharedWalletWatchRuleSubmitV30Request);
+  async openApiV30SharedWalletWatchRuleSubmitPost(request: OpenApiV30SharedWalletWatchRuleSubmitPostRequest): Promise<SharedWalletWatchRuleSubmitV30Response> {
+    const response = await this.openApiV30SharedWalletWatchRuleSubmitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30SharedWalletWatchRuleSubmitPostWithHttpInfo(sharedWalletWatchRuleSubmitV30Request: SharedWalletWatchRuleSubmitV30Request): Promise<ApiResponse<SharedWalletWatchRuleSubmitV30Response>> {
+  async openApiV30SharedWalletWatchRuleSubmitPostWithHttpInfo(request: OpenApiV30SharedWalletWatchRuleSubmitPostRequest): Promise<ApiResponse<SharedWalletWatchRuleSubmitV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<SharedWalletWatchRuleSubmitV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class SharedWalletWatchRuleSubmitV30Api {
       queryParams: [
 
       ],
-      body: sharedWalletWatchRuleSubmitV30Request
+      body: request.sharedWalletWatchRuleSubmitV30Request
     });
   }
 }

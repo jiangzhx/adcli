@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AdvertiserAvatarUploadV2Response } from "../models";
 
+
+export interface OpenApi2AdvertiserAvatarUploadPostRequest {
+  advertiserId: number;
+  imageFile: File;
+}
 
 export class AdvertiserAvatarUploadV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,17 +23,17 @@ export class AdvertiserAvatarUploadV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AdvertiserAvatarUploadPost(advertiserId: number, imageFile: File): Promise<AdvertiserAvatarUploadV2Response> {
-    const response = await this.openApi2AdvertiserAvatarUploadPostWithHttpInfo(advertiserId, imageFile);
+  async openApi2AdvertiserAvatarUploadPost(request: OpenApi2AdvertiserAvatarUploadPostRequest): Promise<AdvertiserAvatarUploadV2Response> {
+    const response = await this.openApi2AdvertiserAvatarUploadPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AdvertiserAvatarUploadPostWithHttpInfo(advertiserId: number, imageFile: File): Promise<ApiResponse<AdvertiserAvatarUploadV2Response>> {
-    if (advertiserId == null) {
+  async openApi2AdvertiserAvatarUploadPostWithHttpInfo(request: OpenApi2AdvertiserAvatarUploadPostRequest): Promise<ApiResponse<AdvertiserAvatarUploadV2Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AdvertiserAvatarUploadPost");
     }
 
-    if (imageFile == null) {
+    if (request.imageFile == null) {
       throw new ApiException("Missing the required parameter 'imageFile' when calling openApi2AdvertiserAvatarUploadPost");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserAvatarUploadV2Response>({

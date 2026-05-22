@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsClueLiteContactRecordV2Request, ToolsClueLiteContactRecordV2Response } from "../models";
 
+
+export interface OpenApi2ToolsClueLiteContactRecordPostRequest {
+  toolsClueLiteContactRecordV2Request?: ToolsClueLiteContactRecordV2Request;
+}
 
 export class ToolsClueLiteContactRecordV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsClueLiteContactRecordV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsClueLiteContactRecordPost(toolsClueLiteContactRecordV2Request: ToolsClueLiteContactRecordV2Request): Promise<ToolsClueLiteContactRecordV2Response> {
-    const response = await this.openApi2ToolsClueLiteContactRecordPostWithHttpInfo(toolsClueLiteContactRecordV2Request);
+  async openApi2ToolsClueLiteContactRecordPost(request: OpenApi2ToolsClueLiteContactRecordPostRequest): Promise<ToolsClueLiteContactRecordV2Response> {
+    const response = await this.openApi2ToolsClueLiteContactRecordPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsClueLiteContactRecordPostWithHttpInfo(toolsClueLiteContactRecordV2Request: ToolsClueLiteContactRecordV2Request): Promise<ApiResponse<ToolsClueLiteContactRecordV2Response>> {
+  async openApi2ToolsClueLiteContactRecordPostWithHttpInfo(request: OpenApi2ToolsClueLiteContactRecordPostRequest): Promise<ApiResponse<ToolsClueLiteContactRecordV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsClueLiteContactRecordV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsClueLiteContactRecordV2Api {
       queryParams: [
 
       ],
-      body: toolsClueLiteContactRecordV2Request
+      body: request.toolsClueLiteContactRecordV2Request
     });
   }
 }

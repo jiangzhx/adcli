@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ProjectListV30DataListDeliverySettingBidSpeed, ProjectListV30DataListDeliverySettingBudgetMode, ProjectListV30DataListDeliverySettingBudgetOptimizeSwitch, ProjectListV30DataListDeliverySettingDeepBidType, ProjectListV30DataListDeliverySettingLayerRoiSwitch, ProjectListV30DataListDeliverySettingProjectCustom, ProjectListV30DataListDeliverySettingScheduleType, ProjectListV30DataListDeliverySettingSearchContinueDelivery, ProjectListV30ResponseDataListInnerDeliverySettingShopMultiRoiGoalsInner } from "../models";

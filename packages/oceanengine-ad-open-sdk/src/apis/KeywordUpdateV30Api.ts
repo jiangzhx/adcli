@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { KeywordUpdateV30Request, KeywordUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30KeywordUpdatePostRequest {
+  keywordUpdateV30Request?: KeywordUpdateV30Request;
+}
 
 export class KeywordUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class KeywordUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30KeywordUpdatePost(keywordUpdateV30Request: KeywordUpdateV30Request): Promise<KeywordUpdateV30Response> {
-    const response = await this.openApiV30KeywordUpdatePostWithHttpInfo(keywordUpdateV30Request);
+  async openApiV30KeywordUpdatePost(request: OpenApiV30KeywordUpdatePostRequest): Promise<KeywordUpdateV30Response> {
+    const response = await this.openApiV30KeywordUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30KeywordUpdatePostWithHttpInfo(keywordUpdateV30Request: KeywordUpdateV30Request): Promise<ApiResponse<KeywordUpdateV30Response>> {
+  async openApiV30KeywordUpdatePostWithHttpInfo(request: OpenApiV30KeywordUpdatePostRequest): Promise<ApiResponse<KeywordUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<KeywordUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class KeywordUpdateV30Api {
       queryParams: [
 
       ],
-      body: keywordUpdateV30Request
+      body: request.keywordUpdateV30Request
     });
   }
 }

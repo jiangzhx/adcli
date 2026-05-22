@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { SuggWordsV30Request, SuggWordsV30Response } from "../models";
 
+
+export interface OpenApiV30SuggWordsPostRequest {
+  suggWordsV30Request?: SuggWordsV30Request;
+}
 
 export class SuggWordsV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class SuggWordsV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30SuggWordsPost(suggWordsV30Request: SuggWordsV30Request): Promise<SuggWordsV30Response> {
-    const response = await this.openApiV30SuggWordsPostWithHttpInfo(suggWordsV30Request);
+  async openApiV30SuggWordsPost(request: OpenApiV30SuggWordsPostRequest): Promise<SuggWordsV30Response> {
+    const response = await this.openApiV30SuggWordsPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30SuggWordsPostWithHttpInfo(suggWordsV30Request: SuggWordsV30Request): Promise<ApiResponse<SuggWordsV30Response>> {
+  async openApiV30SuggWordsPostWithHttpInfo(request: OpenApiV30SuggWordsPostRequest): Promise<ApiResponse<SuggWordsV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<SuggWordsV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class SuggWordsV30Api {
       queryParams: [
 
       ],
-      body: suggWordsV30Request
+      body: request.suggWordsV30Request
     });
   }
 }

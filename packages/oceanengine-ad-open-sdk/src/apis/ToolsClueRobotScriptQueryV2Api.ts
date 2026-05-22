@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsClueRobotScriptQueryV2Request, ToolsClueRobotScriptQueryV2Response } from "../models";
 
+
+export interface OpenApi2ToolsClueRobotScriptQueryPostRequest {
+  toolsClueRobotScriptQueryV2Request?: ToolsClueRobotScriptQueryV2Request;
+}
 
 export class ToolsClueRobotScriptQueryV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsClueRobotScriptQueryV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsClueRobotScriptQueryPost(toolsClueRobotScriptQueryV2Request: ToolsClueRobotScriptQueryV2Request): Promise<ToolsClueRobotScriptQueryV2Response> {
-    const response = await this.openApi2ToolsClueRobotScriptQueryPostWithHttpInfo(toolsClueRobotScriptQueryV2Request);
+  async openApi2ToolsClueRobotScriptQueryPost(request: OpenApi2ToolsClueRobotScriptQueryPostRequest): Promise<ToolsClueRobotScriptQueryV2Response> {
+    const response = await this.openApi2ToolsClueRobotScriptQueryPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsClueRobotScriptQueryPostWithHttpInfo(toolsClueRobotScriptQueryV2Request: ToolsClueRobotScriptQueryV2Request): Promise<ApiResponse<ToolsClueRobotScriptQueryV2Response>> {
+  async openApi2ToolsClueRobotScriptQueryPostWithHttpInfo(request: OpenApi2ToolsClueRobotScriptQueryPostRequest): Promise<ApiResponse<ToolsClueRobotScriptQueryV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsClueRobotScriptQueryV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsClueRobotScriptQueryV2Api {
       queryParams: [
 
       ],
-      body: toolsClueRobotScriptQueryV2Request
+      body: request.toolsClueRobotScriptQueryV2Request
     });
   }
 }

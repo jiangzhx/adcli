@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsBpAssetManagementShareGetV30DataSharedAccountsAllAccountsByBp, ToolsBpAssetManagementShareGetV30DataSharedAccountsShareMode, ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInnerAccountInfo, ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInnerAllAccountsByCompany } from "../models";

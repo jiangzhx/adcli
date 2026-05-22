@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CreativeCustomCreativeCreateV2Request, CreativeCustomCreativeCreateV2Response } from "../models";
 
+
+export interface OpenApi2CreativeCustomCreativeCreatePostRequest {
+  creativeCustomCreativeCreateV2Request?: CreativeCustomCreativeCreateV2Request;
+}
 
 export class CreativeCustomCreativeCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class CreativeCustomCreativeCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2CreativeCustomCreativeCreatePost(creativeCustomCreativeCreateV2Request: CreativeCustomCreativeCreateV2Request): Promise<CreativeCustomCreativeCreateV2Response> {
-    const response = await this.openApi2CreativeCustomCreativeCreatePostWithHttpInfo(creativeCustomCreativeCreateV2Request);
+  async openApi2CreativeCustomCreativeCreatePost(request: OpenApi2CreativeCustomCreativeCreatePostRequest): Promise<CreativeCustomCreativeCreateV2Response> {
+    const response = await this.openApi2CreativeCustomCreativeCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2CreativeCustomCreativeCreatePostWithHttpInfo(creativeCustomCreativeCreateV2Request: CreativeCustomCreativeCreateV2Request): Promise<ApiResponse<CreativeCustomCreativeCreateV2Response>> {
+  async openApi2CreativeCustomCreativeCreatePostWithHttpInfo(request: OpenApi2CreativeCustomCreativeCreatePostRequest): Promise<ApiResponse<CreativeCustomCreativeCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<CreativeCustomCreativeCreateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class CreativeCustomCreativeCreateV2Api {
       queryParams: [
 
       ],
-      body: creativeCustomCreativeCreateV2Request
+      body: request.creativeCustomCreativeCreateV2Request
     });
   }
 }

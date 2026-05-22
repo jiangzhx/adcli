@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandToolQueryStockBalanceV30AudienceInfoAc, BrandToolQueryStockBalanceV30AudienceInfoAges, BrandToolQueryStockBalanceV30AudienceInfoDistrictInfo, BrandToolQueryStockBalanceV30AudienceInfoGender, BrandToolQueryStockBalanceV30AudienceInfoPlatform, BrandToolQueryStockBalanceV30AudienceInfoRetargetingInfo } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandOrderCreateV30Request, BrandOrderCreateV30Response } from "../models";
 
+
+export interface OpenApiV30BrandOrderCreatePostRequest {
+  brandOrderCreateV30Request?: BrandOrderCreateV30Request;
+}
 
 export class BrandOrderCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class BrandOrderCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandOrderCreatePost(brandOrderCreateV30Request: BrandOrderCreateV30Request): Promise<BrandOrderCreateV30Response> {
-    const response = await this.openApiV30BrandOrderCreatePostWithHttpInfo(brandOrderCreateV30Request);
+  async openApiV30BrandOrderCreatePost(request: OpenApiV30BrandOrderCreatePostRequest): Promise<BrandOrderCreateV30Response> {
+    const response = await this.openApiV30BrandOrderCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandOrderCreatePostWithHttpInfo(brandOrderCreateV30Request: BrandOrderCreateV30Request): Promise<ApiResponse<BrandOrderCreateV30Response>> {
+  async openApiV30BrandOrderCreatePostWithHttpInfo(request: OpenApiV30BrandOrderCreatePostRequest): Promise<ApiResponse<BrandOrderCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<BrandOrderCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class BrandOrderCreateV30Api {
       queryParams: [
 
       ],
-      body: brandOrderCreateV30Request
+      body: request.brandOrderCreateV30Request
     });
   }
 }

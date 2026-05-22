@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionScheduleTimeUpdateV30Request, PromotionScheduleTimeUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30PromotionScheduleTimeUpdatePostRequest {
+  promotionScheduleTimeUpdateV30Request?: PromotionScheduleTimeUpdateV30Request;
+}
 
 export class PromotionScheduleTimeUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class PromotionScheduleTimeUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionScheduleTimeUpdatePost(promotionScheduleTimeUpdateV30Request: PromotionScheduleTimeUpdateV30Request): Promise<PromotionScheduleTimeUpdateV30Response> {
-    const response = await this.openApiV30PromotionScheduleTimeUpdatePostWithHttpInfo(promotionScheduleTimeUpdateV30Request);
+  async openApiV30PromotionScheduleTimeUpdatePost(request: OpenApiV30PromotionScheduleTimeUpdatePostRequest): Promise<PromotionScheduleTimeUpdateV30Response> {
+    const response = await this.openApiV30PromotionScheduleTimeUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionScheduleTimeUpdatePostWithHttpInfo(promotionScheduleTimeUpdateV30Request: PromotionScheduleTimeUpdateV30Request): Promise<ApiResponse<PromotionScheduleTimeUpdateV30Response>> {
+  async openApiV30PromotionScheduleTimeUpdatePostWithHttpInfo(request: OpenApiV30PromotionScheduleTimeUpdatePostRequest): Promise<ApiResponse<PromotionScheduleTimeUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<PromotionScheduleTimeUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class PromotionScheduleTimeUpdateV30Api {
       queryParams: [
 
       ],
-      body: promotionScheduleTimeUpdateV30Request
+      body: request.promotionScheduleTimeUpdateV30Request
     });
   }
 }

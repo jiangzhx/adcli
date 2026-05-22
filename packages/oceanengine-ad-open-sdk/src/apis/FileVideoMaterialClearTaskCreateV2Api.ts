@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FileVideoMaterialClearTaskCreateV2Request, FileVideoMaterialClearTaskCreateV2Response } from "../models";
 
+
+export interface OpenApi2FileVideoMaterialClearTaskCreatePostRequest {
+  fileVideoMaterialClearTaskCreateV2Request?: FileVideoMaterialClearTaskCreateV2Request;
+}
 
 export class FileVideoMaterialClearTaskCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class FileVideoMaterialClearTaskCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2FileVideoMaterialClearTaskCreatePost(fileVideoMaterialClearTaskCreateV2Request: FileVideoMaterialClearTaskCreateV2Request): Promise<FileVideoMaterialClearTaskCreateV2Response> {
-    const response = await this.openApi2FileVideoMaterialClearTaskCreatePostWithHttpInfo(fileVideoMaterialClearTaskCreateV2Request);
+  async openApi2FileVideoMaterialClearTaskCreatePost(request: OpenApi2FileVideoMaterialClearTaskCreatePostRequest): Promise<FileVideoMaterialClearTaskCreateV2Response> {
+    const response = await this.openApi2FileVideoMaterialClearTaskCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2FileVideoMaterialClearTaskCreatePostWithHttpInfo(fileVideoMaterialClearTaskCreateV2Request: FileVideoMaterialClearTaskCreateV2Request): Promise<ApiResponse<FileVideoMaterialClearTaskCreateV2Response>> {
+  async openApi2FileVideoMaterialClearTaskCreatePostWithHttpInfo(request: OpenApi2FileVideoMaterialClearTaskCreatePostRequest): Promise<ApiResponse<FileVideoMaterialClearTaskCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<FileVideoMaterialClearTaskCreateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class FileVideoMaterialClearTaskCreateV2Api {
       queryParams: [
 
       ],
-      body: fileVideoMaterialClearTaskCreateV2Request
+      body: request.fileVideoMaterialClearTaskCreateV2Request
     });
   }
 }

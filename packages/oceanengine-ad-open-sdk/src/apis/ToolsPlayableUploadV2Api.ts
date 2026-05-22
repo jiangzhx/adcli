@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPlayableUploadV2Response } from "../models";
 
+
+export interface OpenApi2ToolsPlayableUploadPostRequest {
+  advertiserId: number;
+  playablePackage: File;
+}
 
 export class ToolsPlayableUploadV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,17 +23,17 @@ export class ToolsPlayableUploadV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsPlayableUploadPost(advertiserId: number, playablePackage: File): Promise<ToolsPlayableUploadV2Response> {
-    const response = await this.openApi2ToolsPlayableUploadPostWithHttpInfo(advertiserId, playablePackage);
+  async openApi2ToolsPlayableUploadPost(request: OpenApi2ToolsPlayableUploadPostRequest): Promise<ToolsPlayableUploadV2Response> {
+    const response = await this.openApi2ToolsPlayableUploadPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsPlayableUploadPostWithHttpInfo(advertiserId: number, playablePackage: File): Promise<ApiResponse<ToolsPlayableUploadV2Response>> {
-    if (advertiserId == null) {
+  async openApi2ToolsPlayableUploadPostWithHttpInfo(request: OpenApi2ToolsPlayableUploadPostRequest): Promise<ApiResponse<ToolsPlayableUploadV2Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsPlayableUploadPost");
     }
 
-    if (playablePackage == null) {
+    if (request.playablePackage == null) {
       throw new ApiException("Missing the required parameter 'playablePackage' when calling openApi2ToolsPlayableUploadPost");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPlayableUploadV2Response>({

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ReportProductHourlyAsyncTaskCreateV30Request } from "../models";
 
+
+export interface OpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest {
+  reportProductHourlyAsyncTaskCreateV30Request?: ReportProductHourlyAsyncTaskCreateV30Request;
+}
 
 export class ReportProductHourlyAsyncTaskCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ReportProductHourlyAsyncTaskCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ReportProductHourlyAsyncTaskCreatePost(reportProductHourlyAsyncTaskCreateV30Request: ReportProductHourlyAsyncTaskCreateV30Request): Promise<ArrayBuffer> {
-    const response = await this.openApiV30ReportProductHourlyAsyncTaskCreatePostWithHttpInfo(reportProductHourlyAsyncTaskCreateV30Request);
+  async openApiV30ReportProductHourlyAsyncTaskCreatePost(request: OpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest): Promise<ArrayBuffer> {
+    const response = await this.openApiV30ReportProductHourlyAsyncTaskCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ReportProductHourlyAsyncTaskCreatePostWithHttpInfo(reportProductHourlyAsyncTaskCreateV30Request: ReportProductHourlyAsyncTaskCreateV30Request): Promise<ApiResponse<ArrayBuffer>> {
+  async openApiV30ReportProductHourlyAsyncTaskCreatePostWithHttpInfo(request: OpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest): Promise<ApiResponse<ArrayBuffer>> {
 
     return this.apiClient.requestWithHttpInfo<ArrayBuffer>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ReportProductHourlyAsyncTaskCreateV30Api {
       queryParams: [
 
       ],
-      body: reportProductHourlyAsyncTaskCreateV30Request
+      body: request.reportProductHourlyAsyncTaskCreateV30Request
     });
   }
 }

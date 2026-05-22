@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanAdQuotaGetV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanAdQuotaGetGetRequest {
+  advertiserId: number;
+}
 
 export class QianchuanAdQuotaGetV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,20 +22,20 @@ export class QianchuanAdQuotaGetV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanAdQuotaGetGet(advertiserId: number): Promise<QianchuanAdQuotaGetV10Response> {
-    const response = await this.openApiV10QianchuanAdQuotaGetGetWithHttpInfo(advertiserId);
+  async openApiV10QianchuanAdQuotaGetGet(request: OpenApiV10QianchuanAdQuotaGetGetRequest): Promise<QianchuanAdQuotaGetV10Response> {
+    const response = await this.openApiV10QianchuanAdQuotaGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanAdQuotaGetGetWithHttpInfo(advertiserId: number): Promise<ApiResponse<QianchuanAdQuotaGetV10Response>> {
-    if (advertiserId == null) {
+  async openApiV10QianchuanAdQuotaGetGetWithHttpInfo(request: OpenApiV10QianchuanAdQuotaGetGetRequest): Promise<ApiResponse<QianchuanAdQuotaGetV10Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdQuotaGetGet");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdQuotaGetV10Response>({
       method: "GET",
       path: "/open_api/v1.0/qianchuan/ad/quota/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId }
+        { name: "advertiser_id", value: request.advertiserId }
       ]
     });
   }

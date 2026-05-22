@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ReportRubeexGetV2FilteringAppCode, ReportRubeexGetV2FilteringDataScope, ReportRubeexGetV2FilteringOsType, ReportRubeexGetV2FilteringPlayableType, ReportRubeexGetV2FilteringType } from "../models";

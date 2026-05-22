@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ReportProductDailyAsyncTaskCreateV30Request } from "../models";
 
+
+export interface OpenApiV30ReportProductDailyAsyncTaskCreatePostRequest {
+  reportProductDailyAsyncTaskCreateV30Request?: ReportProductDailyAsyncTaskCreateV30Request;
+}
 
 export class ReportProductDailyAsyncTaskCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ReportProductDailyAsyncTaskCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ReportProductDailyAsyncTaskCreatePost(reportProductDailyAsyncTaskCreateV30Request: ReportProductDailyAsyncTaskCreateV30Request): Promise<ArrayBuffer> {
-    const response = await this.openApiV30ReportProductDailyAsyncTaskCreatePostWithHttpInfo(reportProductDailyAsyncTaskCreateV30Request);
+  async openApiV30ReportProductDailyAsyncTaskCreatePost(request: OpenApiV30ReportProductDailyAsyncTaskCreatePostRequest): Promise<ArrayBuffer> {
+    const response = await this.openApiV30ReportProductDailyAsyncTaskCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ReportProductDailyAsyncTaskCreatePostWithHttpInfo(reportProductDailyAsyncTaskCreateV30Request: ReportProductDailyAsyncTaskCreateV30Request): Promise<ApiResponse<ArrayBuffer>> {
+  async openApiV30ReportProductDailyAsyncTaskCreatePostWithHttpInfo(request: OpenApiV30ReportProductDailyAsyncTaskCreatePostRequest): Promise<ApiResponse<ArrayBuffer>> {
 
     return this.apiClient.requestWithHttpInfo<ArrayBuffer>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ReportProductDailyAsyncTaskCreateV30Api {
       queryParams: [
 
       ],
-      body: reportProductDailyAsyncTaskCreateV30Request
+      body: request.reportProductDailyAsyncTaskCreateV30Request
     });
   }
 }

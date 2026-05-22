@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { PrepayChargeGenerateRemittanceCodeCreateV30Caller, PrepayChargeGenerateRemittanceCodeCreateV30ChargeTargetType, PrepayChargeGenerateRemittanceCodeCreateV30ChargeType, PrepayChargeGenerateRemittanceCodeCreateV30Platform, PrepayChargeGenerateRemittanceCodeCreateV30RequestContractInfo } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { EbpAdvertiserTaskCreateV2Request, EbpAdvertiserTaskCreateV2Response } from "../models";
 
+
+export interface OpenApi2EbpAdvertiserTaskCreatePostRequest {
+  ebpAdvertiserTaskCreateV2Request?: EbpAdvertiserTaskCreateV2Request;
+}
 
 export class EbpAdvertiserTaskCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class EbpAdvertiserTaskCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2EbpAdvertiserTaskCreatePost(ebpAdvertiserTaskCreateV2Request: EbpAdvertiserTaskCreateV2Request): Promise<EbpAdvertiserTaskCreateV2Response> {
-    const response = await this.openApi2EbpAdvertiserTaskCreatePostWithHttpInfo(ebpAdvertiserTaskCreateV2Request);
+  async openApi2EbpAdvertiserTaskCreatePost(request: OpenApi2EbpAdvertiserTaskCreatePostRequest): Promise<EbpAdvertiserTaskCreateV2Response> {
+    const response = await this.openApi2EbpAdvertiserTaskCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2EbpAdvertiserTaskCreatePostWithHttpInfo(ebpAdvertiserTaskCreateV2Request: EbpAdvertiserTaskCreateV2Request): Promise<ApiResponse<EbpAdvertiserTaskCreateV2Response>> {
+  async openApi2EbpAdvertiserTaskCreatePostWithHttpInfo(request: OpenApi2EbpAdvertiserTaskCreatePostRequest): Promise<ApiResponse<EbpAdvertiserTaskCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<EbpAdvertiserTaskCreateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class EbpAdvertiserTaskCreateV2Api {
       queryParams: [
 
       ],
-      body: ebpAdvertiserTaskCreateV2Request
+      body: request.ebpAdvertiserTaskCreateV2Request
     });
   }
 }

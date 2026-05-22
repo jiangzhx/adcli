@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,12 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarAttachmentUploadV2Response } from "../models";
 
+
+export interface OpenApi2StarAttachmentUploadPostRequest {
+  file: File;
+  fileName: string;
+  starId: number;
+}
 
 export class StarAttachmentUploadV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,21 +24,21 @@ export class StarAttachmentUploadV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarAttachmentUploadPost(_file: File, fileName: string, starId: number): Promise<StarAttachmentUploadV2Response> {
-    const response = await this.openApi2StarAttachmentUploadPostWithHttpInfo(_file, fileName, starId);
+  async openApi2StarAttachmentUploadPost(request: OpenApi2StarAttachmentUploadPostRequest): Promise<StarAttachmentUploadV2Response> {
+    const response = await this.openApi2StarAttachmentUploadPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarAttachmentUploadPostWithHttpInfo(_file: File, fileName: string, starId: number): Promise<ApiResponse<StarAttachmentUploadV2Response>> {
-    if (_file == null) {
-      throw new ApiException("Missing the required parameter '_file' when calling openApi2StarAttachmentUploadPost");
+  async openApi2StarAttachmentUploadPostWithHttpInfo(request: OpenApi2StarAttachmentUploadPostRequest): Promise<ApiResponse<StarAttachmentUploadV2Response>> {
+    if (request.file == null) {
+      throw new ApiException("Missing the required parameter 'file' when calling openApi2StarAttachmentUploadPost");
     }
 
-    if (fileName == null) {
+    if (request.fileName == null) {
       throw new ApiException("Missing the required parameter 'fileName' when calling openApi2StarAttachmentUploadPost");
     }
 
-    if (starId == null) {
+    if (request.starId == null) {
       throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarAttachmentUploadPost");
     }
     return this.apiClient.requestWithHttpInfo<StarAttachmentUploadV2Response>({

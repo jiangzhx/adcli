@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,20 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandPolicyListV30AdForm, BrandPolicyListV30AppOrigin, BrandPolicyListV30AudienceInfo, BrandPolicyListV30Classify, BrandPolicyListV30DeliveryInfo, BrandPolicyListV30FrequencyInfo, BrandPolicyListV30GdSendType, BrandPolicyListV30PricingType, BrandPolicyListV30ProType, BrandPolicyListV30Response } from "../models";
 
+
+export interface OpenApiV30BrandPolicyListGetRequest {
+  advertiserId: number;
+  classify: BrandPolicyListV30Classify;
+  proType: BrandPolicyListV30ProType;
+  adForm: BrandPolicyListV30AdForm;
+  appOrigin: BrandPolicyListV30AppOrigin;
+  pricingType: BrandPolicyListV30PricingType;
+  gdSendType: BrandPolicyListV30GdSendType;
+  deliveryInfo: BrandPolicyListV30DeliveryInfo;
+  intentionNo?: string;
+  audienceInfo?: BrandPolicyListV30AudienceInfo;
+  frequencyInfo?: BrandPolicyListV30FrequencyInfo;
+}
 
 export class BrandPolicyListV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,58 +32,58 @@ export class BrandPolicyListV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandPolicyListGet(advertiserId: number, classify: BrandPolicyListV30Classify, proType: BrandPolicyListV30ProType, adForm: BrandPolicyListV30AdForm, appOrigin: BrandPolicyListV30AppOrigin, pricingType: BrandPolicyListV30PricingType, gdSendType: BrandPolicyListV30GdSendType, deliveryInfo: BrandPolicyListV30DeliveryInfo, intentionNo: string, audienceInfo: BrandPolicyListV30AudienceInfo, frequencyInfo: BrandPolicyListV30FrequencyInfo): Promise<BrandPolicyListV30Response> {
-    const response = await this.openApiV30BrandPolicyListGetWithHttpInfo(advertiserId, classify, proType, adForm, appOrigin, pricingType, gdSendType, deliveryInfo, intentionNo, audienceInfo, frequencyInfo);
+  async openApiV30BrandPolicyListGet(request: OpenApiV30BrandPolicyListGetRequest): Promise<BrandPolicyListV30Response> {
+    const response = await this.openApiV30BrandPolicyListGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandPolicyListGetWithHttpInfo(advertiserId: number, classify: BrandPolicyListV30Classify, proType: BrandPolicyListV30ProType, adForm: BrandPolicyListV30AdForm, appOrigin: BrandPolicyListV30AppOrigin, pricingType: BrandPolicyListV30PricingType, gdSendType: BrandPolicyListV30GdSendType, deliveryInfo: BrandPolicyListV30DeliveryInfo, intentionNo: string, audienceInfo: BrandPolicyListV30AudienceInfo, frequencyInfo: BrandPolicyListV30FrequencyInfo): Promise<ApiResponse<BrandPolicyListV30Response>> {
-    if (advertiserId == null) {
+  async openApiV30BrandPolicyListGetWithHttpInfo(request: OpenApiV30BrandPolicyListGetRequest): Promise<ApiResponse<BrandPolicyListV30Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandPolicyListGet");
     }
 
-    if (classify == null) {
+    if (request.classify == null) {
       throw new ApiException("Missing the required parameter 'classify' when calling openApiV30BrandPolicyListGet");
     }
 
-    if (proType == null) {
+    if (request.proType == null) {
       throw new ApiException("Missing the required parameter 'proType' when calling openApiV30BrandPolicyListGet");
     }
 
-    if (adForm == null) {
+    if (request.adForm == null) {
       throw new ApiException("Missing the required parameter 'adForm' when calling openApiV30BrandPolicyListGet");
     }
 
-    if (appOrigin == null) {
+    if (request.appOrigin == null) {
       throw new ApiException("Missing the required parameter 'appOrigin' when calling openApiV30BrandPolicyListGet");
     }
 
-    if (pricingType == null) {
+    if (request.pricingType == null) {
       throw new ApiException("Missing the required parameter 'pricingType' when calling openApiV30BrandPolicyListGet");
     }
 
-    if (gdSendType == null) {
+    if (request.gdSendType == null) {
       throw new ApiException("Missing the required parameter 'gdSendType' when calling openApiV30BrandPolicyListGet");
     }
 
-    if (deliveryInfo == null) {
+    if (request.deliveryInfo == null) {
       throw new ApiException("Missing the required parameter 'deliveryInfo' when calling openApiV30BrandPolicyListGet");
     }
     return this.apiClient.requestWithHttpInfo<BrandPolicyListV30Response>({
       method: "GET",
       path: "/open_api/v3.0/brand/policy/list/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "classify", value: classify },
-        { name: "intention_no", value: intentionNo },
-        { name: "pro_type", value: proType },
-        { name: "ad_form", value: adForm },
-        { name: "app_origin", value: appOrigin },
-        { name: "pricing_type", value: pricingType },
-        { name: "gd_send_type", value: gdSendType },
-        { name: "audience_info", value: audienceInfo },
-        { name: "frequency_info", value: frequencyInfo },
-        { name: "delivery_info", value: deliveryInfo }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "classify", value: request.classify },
+        { name: "intention_no", value: request.intentionNo },
+        { name: "pro_type", value: request.proType },
+        { name: "ad_form", value: request.adForm },
+        { name: "app_origin", value: request.appOrigin },
+        { name: "pricing_type", value: request.pricingType },
+        { name: "gd_send_type", value: request.gdSendType },
+        { name: "audience_info", value: request.audienceInfo },
+        { name: "frequency_info", value: request.frequencyInfo },
+        { name: "delivery_info", value: request.deliveryInfo }
       ]
     });
   }

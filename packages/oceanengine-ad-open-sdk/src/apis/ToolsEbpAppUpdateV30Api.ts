@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpAppUpdateV30Request, ToolsEbpAppUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsEbpAppUpdatePostRequest {
+  toolsEbpAppUpdateV30Request?: ToolsEbpAppUpdateV30Request;
+}
 
 export class ToolsEbpAppUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsEbpAppUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpAppUpdatePost(toolsEbpAppUpdateV30Request: ToolsEbpAppUpdateV30Request): Promise<ToolsEbpAppUpdateV30Response> {
-    const response = await this.openApiV30ToolsEbpAppUpdatePostWithHttpInfo(toolsEbpAppUpdateV30Request);
+  async openApiV30ToolsEbpAppUpdatePost(request: OpenApiV30ToolsEbpAppUpdatePostRequest): Promise<ToolsEbpAppUpdateV30Response> {
+    const response = await this.openApiV30ToolsEbpAppUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpAppUpdatePostWithHttpInfo(toolsEbpAppUpdateV30Request: ToolsEbpAppUpdateV30Request): Promise<ApiResponse<ToolsEbpAppUpdateV30Response>> {
+  async openApiV30ToolsEbpAppUpdatePostWithHttpInfo(request: OpenApiV30ToolsEbpAppUpdatePostRequest): Promise<ApiResponse<ToolsEbpAppUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsEbpAppUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsEbpAppUpdateV30Api {
       queryParams: [
 
       ],
-      body: toolsEbpAppUpdateV30Request
+      body: request.toolsEbpAppUpdateV30Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DouplusOrderListV30ResponseDataOrderListInnerAdListInner, DouplusOrderListV30ResponseDataOrderListInnerItemInfoListInner, DouplusOrderListV30ResponseDataOrderListInnerLiveRoomInfo, DouplusOrderListV30ResponseDataOrderListInnerOrder } from "../models";

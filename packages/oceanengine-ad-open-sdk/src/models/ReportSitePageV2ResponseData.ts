@@ -1,9 +1,8 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export interface ReportSitePageV2ResponseData {
   site_id?: string;
-  site_record?: unknown;
+  site_record?: Record<string, unknown>;
 }
 

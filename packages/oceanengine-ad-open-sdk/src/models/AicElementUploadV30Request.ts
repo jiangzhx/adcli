@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { AicElementUploadV30AccountType, AicElementUploadV30ElementType, AicElementUploadV30UseAs } from "../models";

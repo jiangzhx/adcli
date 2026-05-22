@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ProjectRoigoalUpdateV30Request, ProjectRoigoalUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30ProjectRoigoalUpdatePostRequest {
+  projectRoigoalUpdateV30Request?: ProjectRoigoalUpdateV30Request;
+}
 
 export class ProjectRoigoalUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ProjectRoigoalUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ProjectRoigoalUpdatePost(projectRoigoalUpdateV30Request: ProjectRoigoalUpdateV30Request): Promise<ProjectRoigoalUpdateV30Response> {
-    const response = await this.openApiV30ProjectRoigoalUpdatePostWithHttpInfo(projectRoigoalUpdateV30Request);
+  async openApiV30ProjectRoigoalUpdatePost(request: OpenApiV30ProjectRoigoalUpdatePostRequest): Promise<ProjectRoigoalUpdateV30Response> {
+    const response = await this.openApiV30ProjectRoigoalUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ProjectRoigoalUpdatePostWithHttpInfo(projectRoigoalUpdateV30Request: ProjectRoigoalUpdateV30Request): Promise<ApiResponse<ProjectRoigoalUpdateV30Response>> {
+  async openApiV30ProjectRoigoalUpdatePostWithHttpInfo(request: OpenApiV30ProjectRoigoalUpdatePostRequest): Promise<ApiResponse<ProjectRoigoalUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ProjectRoigoalUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ProjectRoigoalUpdateV30Api {
       queryParams: [
 
       ],
-      body: projectRoigoalUpdateV30Request
+      body: request.projectRoigoalUpdateV30Request
     });
   }
 }

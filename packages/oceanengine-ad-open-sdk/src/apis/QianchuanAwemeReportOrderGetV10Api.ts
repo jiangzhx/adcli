@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,18 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanAwemeReportOrderGetV10Filtering, QianchuanAwemeReportOrderGetV10OrderType, QianchuanAwemeReportOrderGetV10PageSize, QianchuanAwemeReportOrderGetV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanAwemeReportOrderGetGetRequest {
+  advertiserId: number;
+  startDate: string;
+  endDate: string;
+  filtering: QianchuanAwemeReportOrderGetV10Filtering;
+  fields?: string[];
+  orderField?: string;
+  orderType?: QianchuanAwemeReportOrderGetV10OrderType;
+  page?: number;
+  pageSize?: QianchuanAwemeReportOrderGetV10PageSize;
+}
 
 export class QianchuanAwemeReportOrderGetV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,40 +30,40 @@ export class QianchuanAwemeReportOrderGetV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanAwemeReportOrderGetGet(advertiserId: number, startDate: string, endDate: string, filtering: QianchuanAwemeReportOrderGetV10Filtering, fields: string[], orderField: string, orderType: QianchuanAwemeReportOrderGetV10OrderType, page: number, pageSize: QianchuanAwemeReportOrderGetV10PageSize): Promise<QianchuanAwemeReportOrderGetV10Response> {
-    const response = await this.openApiV10QianchuanAwemeReportOrderGetGetWithHttpInfo(advertiserId, startDate, endDate, filtering, fields, orderField, orderType, page, pageSize);
+  async openApiV10QianchuanAwemeReportOrderGetGet(request: OpenApiV10QianchuanAwemeReportOrderGetGetRequest): Promise<QianchuanAwemeReportOrderGetV10Response> {
+    const response = await this.openApiV10QianchuanAwemeReportOrderGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanAwemeReportOrderGetGetWithHttpInfo(advertiserId: number, startDate: string, endDate: string, filtering: QianchuanAwemeReportOrderGetV10Filtering, fields: string[], orderField: string, orderType: QianchuanAwemeReportOrderGetV10OrderType, page: number, pageSize: QianchuanAwemeReportOrderGetV10PageSize): Promise<ApiResponse<QianchuanAwemeReportOrderGetV10Response>> {
-    if (advertiserId == null) {
+  async openApiV10QianchuanAwemeReportOrderGetGetWithHttpInfo(request: OpenApiV10QianchuanAwemeReportOrderGetGetRequest): Promise<ApiResponse<QianchuanAwemeReportOrderGetV10Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeReportOrderGetGet");
     }
 
-    if (startDate == null) {
+    if (request.startDate == null) {
       throw new ApiException("Missing the required parameter 'startDate' when calling openApiV10QianchuanAwemeReportOrderGetGet");
     }
 
-    if (endDate == null) {
+    if (request.endDate == null) {
       throw new ApiException("Missing the required parameter 'endDate' when calling openApiV10QianchuanAwemeReportOrderGetGet");
     }
 
-    if (filtering == null) {
+    if (request.filtering == null) {
       throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanAwemeReportOrderGetGet");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeReportOrderGetV10Response>({
       method: "GET",
       path: "/open_api/v1.0/qianchuan/aweme/report/order/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "start_date", value: startDate },
-        { name: "end_date", value: endDate },
-        { name: "order_field", value: orderField },
-        { name: "order_type", value: orderType },
-        { name: "filtering", value: filtering },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "fields", value: fields, collectionFormat: "csv" }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "start_date", value: request.startDate },
+        { name: "end_date", value: request.endDate },
+        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "order_field", value: request.orderField },
+        { name: "order_type", value: request.orderType },
+        { name: "filtering", value: request.filtering },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

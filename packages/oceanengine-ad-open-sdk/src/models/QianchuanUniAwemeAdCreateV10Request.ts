@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanUniAwemeAdCreateV10MarketingGoal, QianchuanUniAwemeAdCreateV10RequestCreativeSetting, QianchuanUniAwemeAdCreateV10RequestDeliverySetting, QianchuanUniAwemeAdCreateV10RequestMultiProductCreativeListInner, QianchuanUniAwemeAdCreateV10RequestProductChannelInfoInner, QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaList } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { LocalReportProjectGetV30FilteringCampaignType, LocalReportProjectGetV30FilteringDeliveryMode, LocalReportProjectGetV30FilteringExternalAction, LocalReportProjectGetV30FilteringLocalDeliveryScene, LocalReportProjectGetV30FilteringMarketingGoal } from "../models";

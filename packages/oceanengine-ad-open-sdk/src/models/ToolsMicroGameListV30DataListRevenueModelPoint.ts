@@ -1,10 +1,9 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const ToolsMicroGameListV30DataListRevenueModelPoint = {
-  A: "IAAP_A",
-  P: "IAAP_P",
+  IAAP_A: "IAAP_A",
+  IAAP_P: "IAAP_P",
 } as const;
 
 export type ToolsMicroGameListV30DataListRevenueModelPoint = typeof ToolsMicroGameListV30DataListRevenueModelPoint[keyof typeof ToolsMicroGameListV30DataListRevenueModelPoint];

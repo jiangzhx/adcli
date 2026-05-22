@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanToolsShopAuthV10Request, QianchuanToolsShopAuthV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanToolsShopAuthPostRequest {
+  qianchuanToolsShopAuthV10Request?: QianchuanToolsShopAuthV10Request;
+}
 
 export class QianchuanToolsShopAuthV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanToolsShopAuthV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanToolsShopAuthPost(qianchuanToolsShopAuthV10Request: QianchuanToolsShopAuthV10Request): Promise<QianchuanToolsShopAuthV10Response> {
-    const response = await this.openApiV10QianchuanToolsShopAuthPostWithHttpInfo(qianchuanToolsShopAuthV10Request);
+  async openApiV10QianchuanToolsShopAuthPost(request: OpenApiV10QianchuanToolsShopAuthPostRequest): Promise<QianchuanToolsShopAuthV10Response> {
+    const response = await this.openApiV10QianchuanToolsShopAuthPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanToolsShopAuthPostWithHttpInfo(qianchuanToolsShopAuthV10Request: QianchuanToolsShopAuthV10Request): Promise<ApiResponse<QianchuanToolsShopAuthV10Response>> {
+  async openApiV10QianchuanToolsShopAuthPostWithHttpInfo(request: OpenApiV10QianchuanToolsShopAuthPostRequest): Promise<ApiResponse<QianchuanToolsShopAuthV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanToolsShopAuthV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanToolsShopAuthV10Api {
       queryParams: [
 
       ],
-      body: qianchuanToolsShopAuthV10Request
+      body: request.qianchuanToolsShopAuthV10Request
     });
   }
 }

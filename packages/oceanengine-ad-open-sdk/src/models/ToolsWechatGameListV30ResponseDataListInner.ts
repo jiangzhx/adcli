@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsWechatGameListV30DataListAccountType, ToolsWechatGameListV30DataListAgeLimit, ToolsWechatGameListV30DataListAuditStatus, ToolsWechatGameListV30DataListAuthorizationStatus, ToolsWechatGameListV30DataListHistoryAccountType, ToolsWechatGameListV30DataListMaxPaymentTierRange, ToolsWechatGameListV30DataListMidPaymentTierRange, ToolsWechatGameListV30DataListMinPaymentTierRange, ToolsWechatGameListV30DataListRevenueModel, ToolsWechatGameListV30DataListScheduleCards } from "../models";

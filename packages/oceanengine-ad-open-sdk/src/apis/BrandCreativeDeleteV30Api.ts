@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandCreativeDeleteV30Request, BrandCreativeDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30BrandCreativeDeletePostRequest {
+  brandCreativeDeleteV30Request?: BrandCreativeDeleteV30Request;
+}
 
 export class BrandCreativeDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class BrandCreativeDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandCreativeDeletePost(brandCreativeDeleteV30Request: BrandCreativeDeleteV30Request): Promise<BrandCreativeDeleteV30Response> {
-    const response = await this.openApiV30BrandCreativeDeletePostWithHttpInfo(brandCreativeDeleteV30Request);
+  async openApiV30BrandCreativeDeletePost(request: OpenApiV30BrandCreativeDeletePostRequest): Promise<BrandCreativeDeleteV30Response> {
+    const response = await this.openApiV30BrandCreativeDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandCreativeDeletePostWithHttpInfo(brandCreativeDeleteV30Request: BrandCreativeDeleteV30Request): Promise<ApiResponse<BrandCreativeDeleteV30Response>> {
+  async openApiV30BrandCreativeDeletePostWithHttpInfo(request: OpenApiV30BrandCreativeDeletePostRequest): Promise<ApiResponse<BrandCreativeDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<BrandCreativeDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class BrandCreativeDeleteV30Api {
       queryParams: [
 
       ],
-      body: brandCreativeDeleteV30Request
+      body: request.brandCreativeDeleteV30Request
     });
   }
 }

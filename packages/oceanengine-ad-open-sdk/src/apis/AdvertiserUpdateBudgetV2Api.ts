@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AdvertiserUpdateBudgetV2Request, AdvertiserUpdateBudgetV2Response } from "../models";
 
+
+export interface OpenApi2AdvertiserUpdateBudgetPostRequest {
+  advertiserUpdateBudgetV2Request?: AdvertiserUpdateBudgetV2Request;
+}
 
 export class AdvertiserUpdateBudgetV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AdvertiserUpdateBudgetV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AdvertiserUpdateBudgetPost(advertiserUpdateBudgetV2Request: AdvertiserUpdateBudgetV2Request): Promise<AdvertiserUpdateBudgetV2Response> {
-    const response = await this.openApi2AdvertiserUpdateBudgetPostWithHttpInfo(advertiserUpdateBudgetV2Request);
+  async openApi2AdvertiserUpdateBudgetPost(request: OpenApi2AdvertiserUpdateBudgetPostRequest): Promise<AdvertiserUpdateBudgetV2Response> {
+    const response = await this.openApi2AdvertiserUpdateBudgetPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AdvertiserUpdateBudgetPostWithHttpInfo(advertiserUpdateBudgetV2Request: AdvertiserUpdateBudgetV2Request): Promise<ApiResponse<AdvertiserUpdateBudgetV2Response>> {
+  async openApi2AdvertiserUpdateBudgetPostWithHttpInfo(request: OpenApi2AdvertiserUpdateBudgetPostRequest): Promise<ApiResponse<AdvertiserUpdateBudgetV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<AdvertiserUpdateBudgetV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AdvertiserUpdateBudgetV2Api {
       queryParams: [
 
       ],
-      body: advertiserUpdateBudgetV2Request
+      body: request.advertiserUpdateBudgetV2Request
     });
   }
 }

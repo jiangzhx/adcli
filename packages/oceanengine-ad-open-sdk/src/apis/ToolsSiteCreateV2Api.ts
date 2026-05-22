@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsSiteCreateV2Request, ToolsSiteCreateV2Response } from "../models";
 
+
+export interface OpenApi2ToolsSiteCreatePostRequest {
+  xOrangeCaller?: string;
+  toolsSiteCreateV2Request?: ToolsSiteCreateV2Request;
+}
 
 export class ToolsSiteCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +23,12 @@ export class ToolsSiteCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsSiteCreatePost(xOrangeCaller: string, toolsSiteCreateV2Request: ToolsSiteCreateV2Request): Promise<ToolsSiteCreateV2Response> {
-    const response = await this.openApi2ToolsSiteCreatePostWithHttpInfo(xOrangeCaller, toolsSiteCreateV2Request);
+  async openApi2ToolsSiteCreatePost(request: OpenApi2ToolsSiteCreatePostRequest): Promise<ToolsSiteCreateV2Response> {
+    const response = await this.openApi2ToolsSiteCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsSiteCreatePostWithHttpInfo(xOrangeCaller: string, toolsSiteCreateV2Request: ToolsSiteCreateV2Request): Promise<ApiResponse<ToolsSiteCreateV2Response>> {
+  async openApi2ToolsSiteCreatePostWithHttpInfo(request: OpenApi2ToolsSiteCreatePostRequest): Promise<ApiResponse<ToolsSiteCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsSiteCreateV2Response>({
       method: "POST",
@@ -32,7 +36,7 @@ export class ToolsSiteCreateV2Api {
       queryParams: [
 
       ],
-      body: toolsSiteCreateV2Request
+      body: request.toolsSiteCreateV2Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingBidType, QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingDeepExternalAction, QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingQcpxMode } from "../models";

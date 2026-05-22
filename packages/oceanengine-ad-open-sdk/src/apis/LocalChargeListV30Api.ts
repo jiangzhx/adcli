@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,15 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { LocalChargeListV30ChargeMethods, LocalChargeListV30Response } from "../models";
 
+
+export interface OpenApiV30LocalChargeListGetRequest {
+  localAccountId: number;
+  startTime: string;
+  endTime: string;
+  chargeMethods?: LocalChargeListV30ChargeMethods[];
+  page?: number;
+  pageSize?: number;
+}
 
 export class LocalChargeListV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,33 +27,33 @@ export class LocalChargeListV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30LocalChargeListGet(localAccountId: number, startTime: string, endTime: string, chargeMethods: LocalChargeListV30ChargeMethods[], page: number, pageSize: number): Promise<LocalChargeListV30Response> {
-    const response = await this.openApiV30LocalChargeListGetWithHttpInfo(localAccountId, startTime, endTime, chargeMethods, page, pageSize);
+  async openApiV30LocalChargeListGet(request: OpenApiV30LocalChargeListGetRequest): Promise<LocalChargeListV30Response> {
+    const response = await this.openApiV30LocalChargeListGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30LocalChargeListGetWithHttpInfo(localAccountId: number, startTime: string, endTime: string, chargeMethods: LocalChargeListV30ChargeMethods[], page: number, pageSize: number): Promise<ApiResponse<LocalChargeListV30Response>> {
-    if (localAccountId == null) {
+  async openApiV30LocalChargeListGetWithHttpInfo(request: OpenApiV30LocalChargeListGetRequest): Promise<ApiResponse<LocalChargeListV30Response>> {
+    if (request.localAccountId == null) {
       throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalChargeListGet");
     }
 
-    if (startTime == null) {
+    if (request.startTime == null) {
       throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30LocalChargeListGet");
     }
 
-    if (endTime == null) {
+    if (request.endTime == null) {
       throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30LocalChargeListGet");
     }
     return this.apiClient.requestWithHttpInfo<LocalChargeListV30Response>({
       method: "GET",
       path: "/open_api/v3.0/local/charge/list/",
       queryParams: [
-        { name: "local_account_id", value: localAccountId },
-        { name: "start_time", value: startTime },
-        { name: "end_time", value: endTime },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "charge_methods", value: chargeMethods, collectionFormat: "csv" }
+        { name: "local_account_id", value: request.localAccountId },
+        { name: "start_time", value: request.startTime },
+        { name: "end_time", value: request.endTime },
+        { name: "charge_methods", value: request.chargeMethods, collectionFormat: "csv" },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StardeliveryTaskUnshareV30Request, StardeliveryTaskUnshareV30Response } from "../models";
 
+
+export interface OpenApiV30StardeliveryTaskUnsharePostRequest {
+  stardeliveryTaskUnshareV30Request?: StardeliveryTaskUnshareV30Request;
+}
 
 export class StardeliveryTaskUnshareV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StardeliveryTaskUnshareV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30StardeliveryTaskUnsharePost(stardeliveryTaskUnshareV30Request: StardeliveryTaskUnshareV30Request): Promise<StardeliveryTaskUnshareV30Response> {
-    const response = await this.openApiV30StardeliveryTaskUnsharePostWithHttpInfo(stardeliveryTaskUnshareV30Request);
+  async openApiV30StardeliveryTaskUnsharePost(request: OpenApiV30StardeliveryTaskUnsharePostRequest): Promise<StardeliveryTaskUnshareV30Response> {
+    const response = await this.openApiV30StardeliveryTaskUnsharePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30StardeliveryTaskUnsharePostWithHttpInfo(stardeliveryTaskUnshareV30Request: StardeliveryTaskUnshareV30Request): Promise<ApiResponse<StardeliveryTaskUnshareV30Response>> {
+  async openApiV30StardeliveryTaskUnsharePostWithHttpInfo(request: OpenApiV30StardeliveryTaskUnsharePostRequest): Promise<ApiResponse<StardeliveryTaskUnshareV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskUnshareV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StardeliveryTaskUnshareV30Api {
       queryParams: [
 
       ],
-      body: stardeliveryTaskUnshareV30Request
+      body: request.stardeliveryTaskUnshareV30Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { CreativeStrategyListV2DataStrategyModelsType, CreativeStrategyListV2ResponseDataStrategyModelsInnerInfo, CreativeStrategyListV2ResponseDataStrategyModelsInnerStateListInner } from "../models";

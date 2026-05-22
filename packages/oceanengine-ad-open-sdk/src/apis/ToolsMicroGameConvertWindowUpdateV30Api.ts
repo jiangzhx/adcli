@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsMicroGameConvertWindowUpdateV30Request, ToolsMicroGameConvertWindowUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest {
+  toolsMicroGameConvertWindowUpdateV30Request?: ToolsMicroGameConvertWindowUpdateV30Request;
+}
 
 export class ToolsMicroGameConvertWindowUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsMicroGameConvertWindowUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsMicroGameConvertWindowUpdatePost(toolsMicroGameConvertWindowUpdateV30Request: ToolsMicroGameConvertWindowUpdateV30Request): Promise<ToolsMicroGameConvertWindowUpdateV30Response> {
-    const response = await this.openApiV30ToolsMicroGameConvertWindowUpdatePostWithHttpInfo(toolsMicroGameConvertWindowUpdateV30Request);
+  async openApiV30ToolsMicroGameConvertWindowUpdatePost(request: OpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest): Promise<ToolsMicroGameConvertWindowUpdateV30Response> {
+    const response = await this.openApiV30ToolsMicroGameConvertWindowUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsMicroGameConvertWindowUpdatePostWithHttpInfo(toolsMicroGameConvertWindowUpdateV30Request: ToolsMicroGameConvertWindowUpdateV30Request): Promise<ApiResponse<ToolsMicroGameConvertWindowUpdateV30Response>> {
+  async openApiV30ToolsMicroGameConvertWindowUpdatePostWithHttpInfo(request: OpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest): Promise<ApiResponse<ToolsMicroGameConvertWindowUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsMicroGameConvertWindowUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsMicroGameConvertWindowUpdateV30Api {
       queryParams: [
 
       ],
-      body: toolsMicroGameConvertWindowUpdateV30Request
+      body: request.toolsMicroGameConvertWindowUpdateV30Request
     });
   }
 }

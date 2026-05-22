@@ -1,9 +1,8 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export interface YuntuAudienceInfoCreateV30RequestCalculatePoolsInnerTagsInner {
-  data: unknown;
+  data: Record<string, unknown>;
   param_config_id: string;
 }
 

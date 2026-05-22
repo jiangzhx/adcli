@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,21 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { EventManagerDeepBidTypeGetV30AdType, EventManagerDeepBidTypeGetV30DeepExternalAction, EventManagerDeepBidTypeGetV30DeliveryMode, EventManagerDeepBidTypeGetV30ExternalAction, EventManagerDeepBidTypeGetV30LandingType, EventManagerDeepBidTypeGetV30MarketingGoal, EventManagerDeepBidTypeGetV30MicroPromotionType, EventManagerDeepBidTypeGetV30ProductSetting, EventManagerDeepBidTypeGetV30Response, EventManagerDeepBidTypeGetV30ValueOptimizedType } from "../models";
 
+
+export interface OpenApiV30EventManagerDeepBidTypeGetGetRequest {
+  advertiserId: number;
+  externalAction: EventManagerDeepBidTypeGetV30ExternalAction;
+  assetId?: number;
+  deepExternalAction?: EventManagerDeepBidTypeGetV30DeepExternalAction;
+  convertId?: number;
+  deliveryMode?: EventManagerDeepBidTypeGetV30DeliveryMode;
+  landingType?: EventManagerDeepBidTypeGetV30LandingType;
+  adType?: EventManagerDeepBidTypeGetV30AdType;
+  marketingGoal?: EventManagerDeepBidTypeGetV30MarketingGoal;
+  microPromotionType?: EventManagerDeepBidTypeGetV30MicroPromotionType;
+  productSetting?: EventManagerDeepBidTypeGetV30ProductSetting;
+  valueOptimizedType?: EventManagerDeepBidTypeGetV30ValueOptimizedType;
+}
 
 export class EventManagerDeepBidTypeGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,35 +33,35 @@ export class EventManagerDeepBidTypeGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30EventManagerDeepBidTypeGetGet(advertiserId: number, externalAction: EventManagerDeepBidTypeGetV30ExternalAction, assetId: number, deepExternalAction: EventManagerDeepBidTypeGetV30DeepExternalAction, convertId: number, deliveryMode: EventManagerDeepBidTypeGetV30DeliveryMode, landingType: EventManagerDeepBidTypeGetV30LandingType, adType: EventManagerDeepBidTypeGetV30AdType, marketingGoal: EventManagerDeepBidTypeGetV30MarketingGoal, microPromotionType: EventManagerDeepBidTypeGetV30MicroPromotionType, productSetting: EventManagerDeepBidTypeGetV30ProductSetting, valueOptimizedType: EventManagerDeepBidTypeGetV30ValueOptimizedType): Promise<EventManagerDeepBidTypeGetV30Response> {
-    const response = await this.openApiV30EventManagerDeepBidTypeGetGetWithHttpInfo(advertiserId, externalAction, assetId, deepExternalAction, convertId, deliveryMode, landingType, adType, marketingGoal, microPromotionType, productSetting, valueOptimizedType);
+  async openApiV30EventManagerDeepBidTypeGetGet(request: OpenApiV30EventManagerDeepBidTypeGetGetRequest): Promise<EventManagerDeepBidTypeGetV30Response> {
+    const response = await this.openApiV30EventManagerDeepBidTypeGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30EventManagerDeepBidTypeGetGetWithHttpInfo(advertiserId: number, externalAction: EventManagerDeepBidTypeGetV30ExternalAction, assetId: number, deepExternalAction: EventManagerDeepBidTypeGetV30DeepExternalAction, convertId: number, deliveryMode: EventManagerDeepBidTypeGetV30DeliveryMode, landingType: EventManagerDeepBidTypeGetV30LandingType, adType: EventManagerDeepBidTypeGetV30AdType, marketingGoal: EventManagerDeepBidTypeGetV30MarketingGoal, microPromotionType: EventManagerDeepBidTypeGetV30MicroPromotionType, productSetting: EventManagerDeepBidTypeGetV30ProductSetting, valueOptimizedType: EventManagerDeepBidTypeGetV30ValueOptimizedType): Promise<ApiResponse<EventManagerDeepBidTypeGetV30Response>> {
-    if (advertiserId == null) {
+  async openApiV30EventManagerDeepBidTypeGetGetWithHttpInfo(request: OpenApiV30EventManagerDeepBidTypeGetGetRequest): Promise<ApiResponse<EventManagerDeepBidTypeGetV30Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30EventManagerDeepBidTypeGetGet");
     }
 
-    if (externalAction == null) {
+    if (request.externalAction == null) {
       throw new ApiException("Missing the required parameter 'externalAction' when calling openApiV30EventManagerDeepBidTypeGetGet");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerDeepBidTypeGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/event_manager/deep_bid_type/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "asset_id", value: assetId },
-        { name: "external_action", value: externalAction },
-        { name: "deep_external_action", value: deepExternalAction },
-        { name: "convert_id", value: convertId },
-        { name: "delivery_mode", value: deliveryMode },
-        { name: "landing_type", value: landingType },
-        { name: "ad_type", value: adType },
-        { name: "marketing_goal", value: marketingGoal },
-        { name: "micro_promotion_type", value: microPromotionType },
-        { name: "product_setting", value: productSetting },
-        { name: "value_optimized_type", value: valueOptimizedType }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "asset_id", value: request.assetId },
+        { name: "external_action", value: request.externalAction },
+        { name: "deep_external_action", value: request.deepExternalAction },
+        { name: "convert_id", value: request.convertId },
+        { name: "delivery_mode", value: request.deliveryMode },
+        { name: "landing_type", value: request.landingType },
+        { name: "ad_type", value: request.adType },
+        { name: "marketing_goal", value: request.marketingGoal },
+        { name: "micro_promotion_type", value: request.microPromotionType },
+        { name: "product_setting", value: request.productSetting },
+        { name: "value_optimized_type", value: request.valueOptimizedType }
       ]
     });
   }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsEstimateAudienceV2ResponseDataAweme, ToolsEstimateAudienceV2ResponseDataTomatoNovelApp, ToolsEstimateAudienceV2ResponseDataToutiao, ToolsEstimateAudienceV2ResponseDataUnion, ToolsEstimateAudienceV2ResponseDataVideoApp } from "../models";

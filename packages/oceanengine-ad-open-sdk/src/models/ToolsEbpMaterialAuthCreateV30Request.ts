@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsEbpMaterialAuthCreateV30AccountType, ToolsEbpMaterialAuthCreateV30MaterialType, ToolsEbpMaterialAuthCreateV30RequestTargetEbpsInner } from "../models";

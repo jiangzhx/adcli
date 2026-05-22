@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarCopyrightCreateV2Request, StarCopyrightCreateV2Response } from "../models";
 
+
+export interface OpenApi2StarCopyrightCreatePostRequest {
+  starCopyrightCreateV2Request?: StarCopyrightCreateV2Request;
+}
 
 export class StarCopyrightCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarCopyrightCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarCopyrightCreatePost(starCopyrightCreateV2Request: StarCopyrightCreateV2Request): Promise<StarCopyrightCreateV2Response> {
-    const response = await this.openApi2StarCopyrightCreatePostWithHttpInfo(starCopyrightCreateV2Request);
+  async openApi2StarCopyrightCreatePost(request: OpenApi2StarCopyrightCreatePostRequest): Promise<StarCopyrightCreateV2Response> {
+    const response = await this.openApi2StarCopyrightCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarCopyrightCreatePostWithHttpInfo(starCopyrightCreateV2Request: StarCopyrightCreateV2Request): Promise<ApiResponse<StarCopyrightCreateV2Response>> {
+  async openApi2StarCopyrightCreatePostWithHttpInfo(request: OpenApi2StarCopyrightCreatePostRequest): Promise<ApiResponse<StarCopyrightCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarCopyrightCreateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarCopyrightCreateV2Api {
       queryParams: [
 
       ],
-      body: starCopyrightCreateV2Request
+      body: request.starCopyrightCreateV2Request
     });
   }
 }

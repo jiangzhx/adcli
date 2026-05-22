@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsAppManagementAndroidAppListV2FilteringCreateTime, ToolsAppManagementAndroidAppListV2FilteringPublishTime, ToolsAppManagementAndroidAppListV2FilteringSearchType, ToolsAppManagementAndroidAppListV2FilteringStatus } from "../models";

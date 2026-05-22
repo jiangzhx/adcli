@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarAttributeJdOverflowConvertV2Request, StarAttributeJdOverflowConvertV2Response } from "../models";
 
+
+export interface OpenApi2StarAttributeJdOverflowConvertPostRequest {
+  starAttributeJdOverflowConvertV2Request?: StarAttributeJdOverflowConvertV2Request;
+}
 
 export class StarAttributeJdOverflowConvertV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarAttributeJdOverflowConvertV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarAttributeJdOverflowConvertPost(starAttributeJdOverflowConvertV2Request: StarAttributeJdOverflowConvertV2Request): Promise<StarAttributeJdOverflowConvertV2Response> {
-    const response = await this.openApi2StarAttributeJdOverflowConvertPostWithHttpInfo(starAttributeJdOverflowConvertV2Request);
+  async openApi2StarAttributeJdOverflowConvertPost(request: OpenApi2StarAttributeJdOverflowConvertPostRequest): Promise<StarAttributeJdOverflowConvertV2Response> {
+    const response = await this.openApi2StarAttributeJdOverflowConvertPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarAttributeJdOverflowConvertPostWithHttpInfo(starAttributeJdOverflowConvertV2Request: StarAttributeJdOverflowConvertV2Request): Promise<ApiResponse<StarAttributeJdOverflowConvertV2Response>> {
+  async openApi2StarAttributeJdOverflowConvertPostWithHttpInfo(request: OpenApi2StarAttributeJdOverflowConvertPostRequest): Promise<ApiResponse<StarAttributeJdOverflowConvertV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarAttributeJdOverflowConvertV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarAttributeJdOverflowConvertV2Api {
       queryParams: [
 
       ],
-      body: starAttributeJdOverflowConvertV2Request
+      body: request.starAttributeJdOverflowConvertV2Request
     });
   }
 }

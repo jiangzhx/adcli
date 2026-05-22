@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanUniPromotionAdControlTaskDurationUpdateV10Request, QianchuanUniPromotionAdControlTaskDurationUpdateV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest {
+  qianchuanUniPromotionAdControlTaskDurationUpdateV10Request?: QianchuanUniPromotionAdControlTaskDurationUpdateV10Request;
+}
 
 export class QianchuanUniPromotionAdControlTaskDurationUpdateV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanUniPromotionAdControlTaskDurationUpdateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePost(qianchuanUniPromotionAdControlTaskDurationUpdateV10Request: QianchuanUniPromotionAdControlTaskDurationUpdateV10Request): Promise<QianchuanUniPromotionAdControlTaskDurationUpdateV10Response> {
-    const response = await this.openApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostWithHttpInfo(qianchuanUniPromotionAdControlTaskDurationUpdateV10Request);
+  async openApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePost(request: OpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest): Promise<QianchuanUniPromotionAdControlTaskDurationUpdateV10Response> {
+    const response = await this.openApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostWithHttpInfo(qianchuanUniPromotionAdControlTaskDurationUpdateV10Request: QianchuanUniPromotionAdControlTaskDurationUpdateV10Request): Promise<ApiResponse<QianchuanUniPromotionAdControlTaskDurationUpdateV10Response>> {
+  async openApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostWithHttpInfo(request: OpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest): Promise<ApiResponse<QianchuanUniPromotionAdControlTaskDurationUpdateV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionAdControlTaskDurationUpdateV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanUniPromotionAdControlTaskDurationUpdateV10Api {
       queryParams: [
 
       ],
-      body: qianchuanUniPromotionAdControlTaskDurationUpdateV10Request
+      body: request.qianchuanUniPromotionAdControlTaskDurationUpdateV10Request
     });
   }
 }

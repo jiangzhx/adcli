@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarVasSubmitExportBoostItemGroupDataV2Request, StarVasSubmitExportBoostItemGroupDataV2Response } from "../models";
 
+
+export interface OpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest {
+  starVasSubmitExportBoostItemGroupDataV2Request?: StarVasSubmitExportBoostItemGroupDataV2Request;
+}
 
 export class StarVasSubmitExportBoostItemGroupDataV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarVasSubmitExportBoostItemGroupDataV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarVasSubmitExportBoostItemGroupDataPost(starVasSubmitExportBoostItemGroupDataV2Request: StarVasSubmitExportBoostItemGroupDataV2Request): Promise<StarVasSubmitExportBoostItemGroupDataV2Response> {
-    const response = await this.openApi2StarVasSubmitExportBoostItemGroupDataPostWithHttpInfo(starVasSubmitExportBoostItemGroupDataV2Request);
+  async openApi2StarVasSubmitExportBoostItemGroupDataPost(request: OpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest): Promise<StarVasSubmitExportBoostItemGroupDataV2Response> {
+    const response = await this.openApi2StarVasSubmitExportBoostItemGroupDataPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarVasSubmitExportBoostItemGroupDataPostWithHttpInfo(starVasSubmitExportBoostItemGroupDataV2Request: StarVasSubmitExportBoostItemGroupDataV2Request): Promise<ApiResponse<StarVasSubmitExportBoostItemGroupDataV2Response>> {
+  async openApi2StarVasSubmitExportBoostItemGroupDataPostWithHttpInfo(request: OpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest): Promise<ApiResponse<StarVasSubmitExportBoostItemGroupDataV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarVasSubmitExportBoostItemGroupDataV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarVasSubmitExportBoostItemGroupDataV2Api {
       queryParams: [
 
       ],
-      body: starVasSubmitExportBoostItemGroupDataV2Request
+      body: request.starVasSubmitExportBoostItemGroupDataV2Request
     });
   }
 }

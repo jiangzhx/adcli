@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { NativeAnchorGetV30FilteringAnchorType, NativeAnchorGetV30FilteringExternalAction, NativeAnchorGetV30FilteringLandingType, NativeAnchorGetV30FilteringSource, NativeAnchorGetV30FilteringStatus } from "../models";

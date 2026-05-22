@@ -1,12 +1,11 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const PromotionAutoGenerateConfigGetV30DataStrategyDataType = {
-  HORIZONTAL2HORIZONTAL: "Horizontal2Horizontal",
-  HORIZONTAL2VERTICAL: "Horizontal2Vertical",
-  VERTICAL2HORIZONTAL: "Vertical2Horizontal",
-  VERTICAL2VERTICAL: "Vertical2Vertical",
+  HORIZONTAL2_HORIZONTAL: "Horizontal2Horizontal",
+  HORIZONTAL2_VERTICAL: "Horizontal2Vertical",
+  VERTICAL2_HORIZONTAL: "Vertical2Horizontal",
+  VERTICAL2_VERTICAL: "Vertical2Vertical",
 } as const;
 
 export type PromotionAutoGenerateConfigGetV30DataStrategyDataType = typeof PromotionAutoGenerateConfigGetV30DataStrategyDataType[keyof typeof PromotionAutoGenerateConfigGetV30DataStrategyDataType];

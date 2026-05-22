@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoGameIndustryInfo, StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationObjectInfoInner, StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoSmallAppInfo, StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoStarMicroGameUniteExtraInfo, StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoTaskRequirementInfo } from "../models";

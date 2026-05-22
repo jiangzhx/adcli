@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,19 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandQueryStockV30AdForm, BrandQueryStockV30AppOrigin, BrandQueryStockV30AudienceInfo, BrandQueryStockV30Classify, BrandQueryStockV30GdSendType, BrandQueryStockV30LandingType, BrandQueryStockV30Response, BrandQueryStockV30ScheduleInfo } from "../models";
 
+
+export interface OpenApiV30BrandQueryStockGetRequest {
+  advertiserId: number;
+  classify: BrandQueryStockV30Classify;
+  landingType: BrandQueryStockV30LandingType;
+  appOrigin: BrandQueryStockV30AppOrigin;
+  adForm: BrandQueryStockV30AdForm;
+  gdSendType: BrandQueryStockV30GdSendType;
+  policyNo: string;
+  scheduleInfo: BrandQueryStockV30ScheduleInfo;
+  audienceInfo?: BrandQueryStockV30AudienceInfo;
+  merchantIntentionNo?: string;
+}
 
 export class BrandQueryStockV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,57 +31,57 @@ export class BrandQueryStockV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandQueryStockGet(advertiserId: number, classify: BrandQueryStockV30Classify, landingType: BrandQueryStockV30LandingType, appOrigin: BrandQueryStockV30AppOrigin, adForm: BrandQueryStockV30AdForm, gdSendType: BrandQueryStockV30GdSendType, policyNo: string, scheduleInfo: BrandQueryStockV30ScheduleInfo, audienceInfo: BrandQueryStockV30AudienceInfo, merchantIntentionNo: string): Promise<BrandQueryStockV30Response> {
-    const response = await this.openApiV30BrandQueryStockGetWithHttpInfo(advertiserId, classify, landingType, appOrigin, adForm, gdSendType, policyNo, scheduleInfo, audienceInfo, merchantIntentionNo);
+  async openApiV30BrandQueryStockGet(request: OpenApiV30BrandQueryStockGetRequest): Promise<BrandQueryStockV30Response> {
+    const response = await this.openApiV30BrandQueryStockGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandQueryStockGetWithHttpInfo(advertiserId: number, classify: BrandQueryStockV30Classify, landingType: BrandQueryStockV30LandingType, appOrigin: BrandQueryStockV30AppOrigin, adForm: BrandQueryStockV30AdForm, gdSendType: BrandQueryStockV30GdSendType, policyNo: string, scheduleInfo: BrandQueryStockV30ScheduleInfo, audienceInfo: BrandQueryStockV30AudienceInfo, merchantIntentionNo: string): Promise<ApiResponse<BrandQueryStockV30Response>> {
-    if (advertiserId == null) {
+  async openApiV30BrandQueryStockGetWithHttpInfo(request: OpenApiV30BrandQueryStockGetRequest): Promise<ApiResponse<BrandQueryStockV30Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandQueryStockGet");
     }
 
-    if (classify == null) {
+    if (request.classify == null) {
       throw new ApiException("Missing the required parameter 'classify' when calling openApiV30BrandQueryStockGet");
     }
 
-    if (landingType == null) {
+    if (request.landingType == null) {
       throw new ApiException("Missing the required parameter 'landingType' when calling openApiV30BrandQueryStockGet");
     }
 
-    if (appOrigin == null) {
+    if (request.appOrigin == null) {
       throw new ApiException("Missing the required parameter 'appOrigin' when calling openApiV30BrandQueryStockGet");
     }
 
-    if (adForm == null) {
+    if (request.adForm == null) {
       throw new ApiException("Missing the required parameter 'adForm' when calling openApiV30BrandQueryStockGet");
     }
 
-    if (gdSendType == null) {
+    if (request.gdSendType == null) {
       throw new ApiException("Missing the required parameter 'gdSendType' when calling openApiV30BrandQueryStockGet");
     }
 
-    if (policyNo == null) {
+    if (request.policyNo == null) {
       throw new ApiException("Missing the required parameter 'policyNo' when calling openApiV30BrandQueryStockGet");
     }
 
-    if (scheduleInfo == null) {
+    if (request.scheduleInfo == null) {
       throw new ApiException("Missing the required parameter 'scheduleInfo' when calling openApiV30BrandQueryStockGet");
     }
     return this.apiClient.requestWithHttpInfo<BrandQueryStockV30Response>({
       method: "GET",
       path: "/open_api/v3.0/brand/query_stock/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "classify", value: classify },
-        { name: "landing_type", value: landingType },
-        { name: "app_origin", value: appOrigin },
-        { name: "ad_form", value: adForm },
-        { name: "gd_send_type", value: gdSendType },
-        { name: "audience_info", value: audienceInfo },
-        { name: "policy_no", value: policyNo },
-        { name: "schedule_info", value: scheduleInfo },
-        { name: "merchant_intention_no", value: merchantIntentionNo }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "classify", value: request.classify },
+        { name: "landing_type", value: request.landingType },
+        { name: "app_origin", value: request.appOrigin },
+        { name: "ad_form", value: request.adForm },
+        { name: "gd_send_type", value: request.gdSendType },
+        { name: "audience_info", value: request.audienceInfo },
+        { name: "policy_no", value: request.policyNo },
+        { name: "schedule_info", value: request.scheduleInfo },
+        { name: "merchant_intention_no", value: request.merchantIntentionNo }
       ]
     });
   }

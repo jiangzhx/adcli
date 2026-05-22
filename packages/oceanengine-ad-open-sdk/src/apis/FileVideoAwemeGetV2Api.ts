@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,16 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FileVideoAwemeGetV2Filtering, FileVideoAwemeGetV2Response } from "../models";
 
+
+export interface OpenApi2FileVideoAwemeGetGetRequest {
+  advertiserId: number;
+  awemeId: string;
+  filtering?: FileVideoAwemeGetV2Filtering;
+  page?: number;
+  pageSize?: number;
+  cursor?: string;
+  count?: number;
+}
 
 export class FileVideoAwemeGetV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,30 +28,30 @@ export class FileVideoAwemeGetV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2FileVideoAwemeGetGet(advertiserId: number, awemeId: string, filtering: FileVideoAwemeGetV2Filtering, page: number, pageSize: number, cursor: string, count: number): Promise<FileVideoAwemeGetV2Response> {
-    const response = await this.openApi2FileVideoAwemeGetGetWithHttpInfo(advertiserId, awemeId, filtering, page, pageSize, cursor, count);
+  async openApi2FileVideoAwemeGetGet(request: OpenApi2FileVideoAwemeGetGetRequest): Promise<FileVideoAwemeGetV2Response> {
+    const response = await this.openApi2FileVideoAwemeGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2FileVideoAwemeGetGetWithHttpInfo(advertiserId: number, awemeId: string, filtering: FileVideoAwemeGetV2Filtering, page: number, pageSize: number, cursor: string, count: number): Promise<ApiResponse<FileVideoAwemeGetV2Response>> {
-    if (advertiserId == null) {
+  async openApi2FileVideoAwemeGetGetWithHttpInfo(request: OpenApi2FileVideoAwemeGetGetRequest): Promise<ApiResponse<FileVideoAwemeGetV2Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoAwemeGetGet");
     }
 
-    if (awemeId == null) {
+    if (request.awemeId == null) {
       throw new ApiException("Missing the required parameter 'awemeId' when calling openApi2FileVideoAwemeGetGet");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoAwemeGetV2Response>({
       method: "GET",
       path: "/open_api/2/file/video/aweme/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "aweme_id", value: awemeId },
-        { name: "filtering", value: filtering },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "cursor", value: cursor },
-        { name: "count", value: count }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "aweme_id", value: request.awemeId },
+        { name: "filtering", value: request.filtering },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize },
+        { name: "cursor", value: request.cursor },
+        { name: "count", value: request.count }
       ]
     });
   }

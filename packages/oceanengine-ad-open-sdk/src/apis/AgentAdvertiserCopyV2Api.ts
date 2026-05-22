@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AgentAdvertiserCopyV2Request, AgentAdvertiserCopyV2Response } from "../models";
 
+
+export interface OpenApi2AgentAdvertiserCopyPostRequest {
+  agentAdvertiserCopyV2Request?: AgentAdvertiserCopyV2Request;
+}
 
 export class AgentAdvertiserCopyV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AgentAdvertiserCopyV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AgentAdvertiserCopyPost(agentAdvertiserCopyV2Request: AgentAdvertiserCopyV2Request): Promise<AgentAdvertiserCopyV2Response> {
-    const response = await this.openApi2AgentAdvertiserCopyPostWithHttpInfo(agentAdvertiserCopyV2Request);
+  async openApi2AgentAdvertiserCopyPost(request: OpenApi2AgentAdvertiserCopyPostRequest): Promise<AgentAdvertiserCopyV2Response> {
+    const response = await this.openApi2AgentAdvertiserCopyPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AgentAdvertiserCopyPostWithHttpInfo(agentAdvertiserCopyV2Request: AgentAdvertiserCopyV2Request): Promise<ApiResponse<AgentAdvertiserCopyV2Response>> {
+  async openApi2AgentAdvertiserCopyPostWithHttpInfo(request: OpenApi2AgentAdvertiserCopyPostRequest): Promise<ApiResponse<AgentAdvertiserCopyV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<AgentAdvertiserCopyV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AgentAdvertiserCopyV2Api {
       queryParams: [
 
       ],
-      body: agentAdvertiserCopyV2Request
+      body: request.agentAdvertiserCopyV2Request
     });
   }
 }

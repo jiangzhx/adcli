@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { CampaignGetV2DataListBudgetMode, CampaignGetV2DataListCampaignBudgetOptimization, CampaignGetV2DataListCampaignType, CampaignGetV2DataListDedicateType, CampaignGetV2DataListDeliveryMode, CampaignGetV2DataListDeliveryRelatedNum, CampaignGetV2DataListLandingType, CampaignGetV2DataListMarketingPurpose, CampaignGetV2DataListMarketingScene, CampaignGetV2DataListSmartBidType, CampaignGetV2DataListStatus } from "../models";

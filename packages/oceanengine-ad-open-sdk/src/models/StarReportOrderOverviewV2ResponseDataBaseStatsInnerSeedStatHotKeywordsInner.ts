@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StarReportOrderOverviewV2ResponseDataBaseStatsInnerSeedStatHotKeywordsInnerAllInner, StarReportOrderOverviewV2ResponseDataBaseStatsInnerSeedStatHotKeywordsInnerBrandInner, StarReportOrderOverviewV2ResponseDataBaseStatsInnerSeedStatHotKeywordsInnerCharacterInner, StarReportOrderOverviewV2ResponseDataBaseStatsInnerSeedStatHotKeywordsInnerPainInner, StarReportOrderOverviewV2ResponseDataBaseStatsInnerSeedStatHotKeywordsInnerProductInner, StarReportOrderOverviewV2ResponseDataBaseStatsInnerSeedStatHotKeywordsInnerSceneInner } from "../models";

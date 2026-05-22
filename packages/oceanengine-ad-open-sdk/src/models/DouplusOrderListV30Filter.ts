@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DouplusOrderListV30FilterOrderCreateTime, DouplusOrderListV30FilterSceneType, DouplusOrderListV30FilterStatus } from "../models";

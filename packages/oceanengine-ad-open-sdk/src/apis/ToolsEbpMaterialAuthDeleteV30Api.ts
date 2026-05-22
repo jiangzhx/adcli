@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpMaterialAuthDeleteV30Request, ToolsEbpMaterialAuthDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsEbpMaterialAuthDeletePostRequest {
+  toolsEbpMaterialAuthDeleteV30Request?: ToolsEbpMaterialAuthDeleteV30Request;
+}
 
 export class ToolsEbpMaterialAuthDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsEbpMaterialAuthDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpMaterialAuthDeletePost(toolsEbpMaterialAuthDeleteV30Request: ToolsEbpMaterialAuthDeleteV30Request): Promise<ToolsEbpMaterialAuthDeleteV30Response> {
-    const response = await this.openApiV30ToolsEbpMaterialAuthDeletePostWithHttpInfo(toolsEbpMaterialAuthDeleteV30Request);
+  async openApiV30ToolsEbpMaterialAuthDeletePost(request: OpenApiV30ToolsEbpMaterialAuthDeletePostRequest): Promise<ToolsEbpMaterialAuthDeleteV30Response> {
+    const response = await this.openApiV30ToolsEbpMaterialAuthDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpMaterialAuthDeletePostWithHttpInfo(toolsEbpMaterialAuthDeleteV30Request: ToolsEbpMaterialAuthDeleteV30Request): Promise<ApiResponse<ToolsEbpMaterialAuthDeleteV30Response>> {
+  async openApiV30ToolsEbpMaterialAuthDeletePostWithHttpInfo(request: OpenApiV30ToolsEbpMaterialAuthDeletePostRequest): Promise<ApiResponse<ToolsEbpMaterialAuthDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsEbpMaterialAuthDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsEbpMaterialAuthDeleteV30Api {
       queryParams: [
 
       ],
-      body: toolsEbpMaterialAuthDeleteV30Request
+      body: request.toolsEbpMaterialAuthDeleteV30Request
     });
   }
 }

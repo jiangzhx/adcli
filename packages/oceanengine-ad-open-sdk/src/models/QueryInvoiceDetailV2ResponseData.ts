@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QueryInvoiceDetailV2ResponseDataBillProjectInfoListInner, QueryInvoiceDetailV2ResponseDataCusQualificationInfo, QueryInvoiceDetailV2ResponseDataElectronicReceiveInfo, QueryInvoiceDetailV2ResponseDataPaperReceiveInfo, QueryInvoiceDetailV2ResponseDataPaperSendInfo } from "../models";

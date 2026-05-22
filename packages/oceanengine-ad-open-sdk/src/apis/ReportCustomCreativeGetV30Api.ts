@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,18 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ReportCustomCreativeGetV30FiltersInner, ReportCustomCreativeGetV30OrderByInner, ReportCustomCreativeGetV30Response } from "../models";
 
+
+export interface OpenApiV30ReportCustomCreativeGetGetRequest {
+  dimensions: string[];
+  advertiserId: number;
+  metrics: string[];
+  filters: ReportCustomCreativeGetV30FiltersInner[];
+  startTime: string;
+  endTime: string;
+  orderBy: ReportCustomCreativeGetV30OrderByInner[];
+  page?: number;
+  pageSize?: number;
+}
 
 export class ReportCustomCreativeGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,52 +30,52 @@ export class ReportCustomCreativeGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ReportCustomCreativeGetGet(dimensions: string[], advertiserId: number, metrics: string[], filters: ReportCustomCreativeGetV30FiltersInner[], startTime: string, endTime: string, orderBy: ReportCustomCreativeGetV30OrderByInner[], page: number, pageSize: number): Promise<ReportCustomCreativeGetV30Response> {
-    const response = await this.openApiV30ReportCustomCreativeGetGetWithHttpInfo(dimensions, advertiserId, metrics, filters, startTime, endTime, orderBy, page, pageSize);
+  async openApiV30ReportCustomCreativeGetGet(request: OpenApiV30ReportCustomCreativeGetGetRequest): Promise<ReportCustomCreativeGetV30Response> {
+    const response = await this.openApiV30ReportCustomCreativeGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ReportCustomCreativeGetGetWithHttpInfo(dimensions: string[], advertiserId: number, metrics: string[], filters: ReportCustomCreativeGetV30FiltersInner[], startTime: string, endTime: string, orderBy: ReportCustomCreativeGetV30OrderByInner[], page: number, pageSize: number): Promise<ApiResponse<ReportCustomCreativeGetV30Response>> {
-    if (dimensions == null) {
+  async openApiV30ReportCustomCreativeGetGetWithHttpInfo(request: OpenApiV30ReportCustomCreativeGetGetRequest): Promise<ApiResponse<ReportCustomCreativeGetV30Response>> {
+    if (request.dimensions == null) {
       throw new ApiException("Missing the required parameter 'dimensions' when calling openApiV30ReportCustomCreativeGetGet");
     }
 
-    if (advertiserId == null) {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportCustomCreativeGetGet");
     }
 
-    if (metrics == null) {
+    if (request.metrics == null) {
       throw new ApiException("Missing the required parameter 'metrics' when calling openApiV30ReportCustomCreativeGetGet");
     }
 
-    if (filters == null) {
+    if (request.filters == null) {
       throw new ApiException("Missing the required parameter 'filters' when calling openApiV30ReportCustomCreativeGetGet");
     }
 
-    if (startTime == null) {
+    if (request.startTime == null) {
       throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30ReportCustomCreativeGetGet");
     }
 
-    if (endTime == null) {
+    if (request.endTime == null) {
       throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30ReportCustomCreativeGetGet");
     }
 
-    if (orderBy == null) {
+    if (request.orderBy == null) {
       throw new ApiException("Missing the required parameter 'orderBy' when calling openApiV30ReportCustomCreativeGetGet");
     }
     return this.apiClient.requestWithHttpInfo<ReportCustomCreativeGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/report/custom/creative/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "start_time", value: startTime },
-        { name: "end_time", value: endTime },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "dimensions", value: dimensions, collectionFormat: "csv" },
-        { name: "metrics", value: metrics, collectionFormat: "csv" },
-        { name: "filters", value: filters, collectionFormat: "multi" },
-        { name: "order_by", value: orderBy, collectionFormat: "multi" }
+        { name: "dimensions", value: request.dimensions, collectionFormat: "csv" },
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "filters", value: request.filters, collectionFormat: "csv" },
+        { name: "start_time", value: request.startTime },
+        { name: "end_time", value: request.endTime },
+        { name: "order_by", value: request.orderBy, collectionFormat: "csv" },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

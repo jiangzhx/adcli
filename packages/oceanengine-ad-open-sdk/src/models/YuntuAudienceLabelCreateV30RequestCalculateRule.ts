@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { YuntuAudienceLabelCreateV30CalculateRuleFieldFilters, YuntuAudienceLabelCreateV30RequestCalculateRuleBehaviorFilters, YuntuAudienceLabelCreateV30RequestCalculateRuleItemFilters, YuntuAudienceLabelCreateV30RequestCalculateRuleWordRule } from "../models";

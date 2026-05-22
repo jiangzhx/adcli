@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarGetCreateChallengeDataDictV2Response } from "../models";
 
+
+export interface OpenApi2StarGetCreateChallengeDataDictGetRequest {
+  starId: number;
+}
 
 export class StarGetCreateChallengeDataDictV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,20 +22,20 @@ export class StarGetCreateChallengeDataDictV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarGetCreateChallengeDataDictGet(starId: number): Promise<StarGetCreateChallengeDataDictV2Response> {
-    const response = await this.openApi2StarGetCreateChallengeDataDictGetWithHttpInfo(starId);
+  async openApi2StarGetCreateChallengeDataDictGet(request: OpenApi2StarGetCreateChallengeDataDictGetRequest): Promise<StarGetCreateChallengeDataDictV2Response> {
+    const response = await this.openApi2StarGetCreateChallengeDataDictGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarGetCreateChallengeDataDictGetWithHttpInfo(starId: number): Promise<ApiResponse<StarGetCreateChallengeDataDictV2Response>> {
-    if (starId == null) {
+  async openApi2StarGetCreateChallengeDataDictGetWithHttpInfo(request: OpenApi2StarGetCreateChallengeDataDictGetRequest): Promise<ApiResponse<StarGetCreateChallengeDataDictV2Response>> {
+    if (request.starId == null) {
       throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarGetCreateChallengeDataDictGet");
     }
     return this.apiClient.requestWithHttpInfo<StarGetCreateChallengeDataDictV2Response>({
       method: "GET",
       path: "/open_api/2/star/get_create_challenge_data_dict/",
       queryParams: [
-        { name: "star_id", value: starId }
+        { name: "star_id", value: request.starId }
       ]
     });
   }

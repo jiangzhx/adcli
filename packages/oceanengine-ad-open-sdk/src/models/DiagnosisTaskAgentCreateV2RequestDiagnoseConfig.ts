@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DiagnosisTaskAgentCreateV2DiagnoseConfigAudienceAge, DiagnosisTaskAgentCreateV2DiagnoseConfigAudienceGender, DiagnosisTaskAgentCreateV2DiagnoseConfigAudienceNetwork, DiagnosisTaskAgentCreateV2DiagnoseConfigExternalAction, DiagnosisTaskAgentCreateV2DiagnoseConfigPlatform, DiagnosisTaskAgentCreateV2DiagnoseConfigPricingType } from "../models";

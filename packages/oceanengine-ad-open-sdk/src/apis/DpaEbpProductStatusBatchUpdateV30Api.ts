@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DpaEbpProductStatusBatchUpdateV30Request, DpaEbpProductStatusBatchUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30DpaEbpProductStatusBatchUpdatePostRequest {
+  dpaEbpProductStatusBatchUpdateV30Request?: DpaEbpProductStatusBatchUpdateV30Request;
+}
 
 export class DpaEbpProductStatusBatchUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class DpaEbpProductStatusBatchUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30DpaEbpProductStatusBatchUpdatePost(dpaEbpProductStatusBatchUpdateV30Request: DpaEbpProductStatusBatchUpdateV30Request): Promise<DpaEbpProductStatusBatchUpdateV30Response> {
-    const response = await this.openApiV30DpaEbpProductStatusBatchUpdatePostWithHttpInfo(dpaEbpProductStatusBatchUpdateV30Request);
+  async openApiV30DpaEbpProductStatusBatchUpdatePost(request: OpenApiV30DpaEbpProductStatusBatchUpdatePostRequest): Promise<DpaEbpProductStatusBatchUpdateV30Response> {
+    const response = await this.openApiV30DpaEbpProductStatusBatchUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30DpaEbpProductStatusBatchUpdatePostWithHttpInfo(dpaEbpProductStatusBatchUpdateV30Request: DpaEbpProductStatusBatchUpdateV30Request): Promise<ApiResponse<DpaEbpProductStatusBatchUpdateV30Response>> {
+  async openApiV30DpaEbpProductStatusBatchUpdatePostWithHttpInfo(request: OpenApiV30DpaEbpProductStatusBatchUpdatePostRequest): Promise<ApiResponse<DpaEbpProductStatusBatchUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<DpaEbpProductStatusBatchUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class DpaEbpProductStatusBatchUpdateV30Api {
       queryParams: [
 
       ],
-      body: dpaEbpProductStatusBatchUpdateV30Request
+      body: request.dpaEbpProductStatusBatchUpdateV30Request
     });
   }
 }

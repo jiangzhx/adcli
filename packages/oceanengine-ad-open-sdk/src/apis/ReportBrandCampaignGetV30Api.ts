@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,17 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ReportBrandCampaignGetV30LandingType, ReportBrandCampaignGetV30PricingType, ReportBrandCampaignGetV30Response } from "../models";
 
+
+export interface OpenApiV30ReportBrandCampaignGetGetRequest {
+  advertiserId: number;
+  page: number;
+  size: number;
+  landingType?: ReportBrandCampaignGetV30LandingType;
+  pricingType?: ReportBrandCampaignGetV30PricingType;
+  campaignIds?: string[];
+  startTime?: string;
+  endTime?: string;
+}
 
 export class ReportBrandCampaignGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,35 +29,35 @@ export class ReportBrandCampaignGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ReportBrandCampaignGetGet(advertiserId: number, page: number, size: number, landingType: ReportBrandCampaignGetV30LandingType, pricingType: ReportBrandCampaignGetV30PricingType, campaignIds: string[], startTime: string, endTime: string): Promise<ReportBrandCampaignGetV30Response> {
-    const response = await this.openApiV30ReportBrandCampaignGetGetWithHttpInfo(advertiserId, page, size, landingType, pricingType, campaignIds, startTime, endTime);
+  async openApiV30ReportBrandCampaignGetGet(request: OpenApiV30ReportBrandCampaignGetGetRequest): Promise<ReportBrandCampaignGetV30Response> {
+    const response = await this.openApiV30ReportBrandCampaignGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ReportBrandCampaignGetGetWithHttpInfo(advertiserId: number, page: number, size: number, landingType: ReportBrandCampaignGetV30LandingType, pricingType: ReportBrandCampaignGetV30PricingType, campaignIds: string[], startTime: string, endTime: string): Promise<ApiResponse<ReportBrandCampaignGetV30Response>> {
-    if (advertiserId == null) {
+  async openApiV30ReportBrandCampaignGetGetWithHttpInfo(request: OpenApiV30ReportBrandCampaignGetGetRequest): Promise<ApiResponse<ReportBrandCampaignGetV30Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportBrandCampaignGetGet");
     }
 
-    if (page == null) {
+    if (request.page == null) {
       throw new ApiException("Missing the required parameter 'page' when calling openApiV30ReportBrandCampaignGetGet");
     }
 
-    if (size == null) {
+    if (request.size == null) {
       throw new ApiException("Missing the required parameter 'size' when calling openApiV30ReportBrandCampaignGetGet");
     }
     return this.apiClient.requestWithHttpInfo<ReportBrandCampaignGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/report/brand/campaign/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "landing_type", value: landingType },
-        { name: "pricing_type", value: pricingType },
-        { name: "start_time", value: startTime },
-        { name: "end_time", value: endTime },
-        { name: "page", value: page },
-        { name: "size", value: size },
-        { name: "campaign_ids", value: campaignIds, collectionFormat: "csv" }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "landing_type", value: request.landingType },
+        { name: "pricing_type", value: request.pricingType },
+        { name: "campaign_ids", value: request.campaignIds, collectionFormat: "csv" },
+        { name: "start_time", value: request.startTime },
+        { name: "end_time", value: request.endTime },
+        { name: "page", value: request.page },
+        { name: "size", value: request.size }
       ]
     });
   }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ProjectCreateV30DeliverySettingBidType, ProjectCreateV30DeliverySettingBudgetMode, ProjectCreateV30DeliverySettingBudgetOptimizeSwitch, ProjectCreateV30DeliverySettingDeepBidType, ProjectCreateV30DeliverySettingFilterNightSwitch, ProjectCreateV30DeliverySettingLayerRoiSwitch, ProjectCreateV30DeliverySettingPricing, ProjectCreateV30DeliverySettingProjectCustom, ProjectCreateV30DeliverySettingScheduleType, ProjectCreateV30DeliverySettingSearchContinueDelivery } from "../models";

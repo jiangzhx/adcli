@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsEbpMicroGameLinkListV30DataLinksActiveStatus, ToolsEbpMicroGameLinkListV30DataLinksAuditStatus, ToolsEbpMicroGameLinkListV30DataLinksOwnerAccountType } from "../models";

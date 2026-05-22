@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,13 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FileVideoMaterialClearTaskGetV2Response } from "../models";
 
+
+export interface OpenApi2FileVideoMaterialClearTaskGetGetRequest {
+  advertiserId: number;
+  clearIds?: number[];
+  page?: number;
+  pageSize?: number;
+}
 
 export class FileVideoMaterialClearTaskGetV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,23 +25,23 @@ export class FileVideoMaterialClearTaskGetV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2FileVideoMaterialClearTaskGetGet(advertiserId: number, clearIds: number[], page: number, pageSize: number): Promise<FileVideoMaterialClearTaskGetV2Response> {
-    const response = await this.openApi2FileVideoMaterialClearTaskGetGetWithHttpInfo(advertiserId, clearIds, page, pageSize);
+  async openApi2FileVideoMaterialClearTaskGetGet(request: OpenApi2FileVideoMaterialClearTaskGetGetRequest): Promise<FileVideoMaterialClearTaskGetV2Response> {
+    const response = await this.openApi2FileVideoMaterialClearTaskGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2FileVideoMaterialClearTaskGetGetWithHttpInfo(advertiserId: number, clearIds: number[], page: number, pageSize: number): Promise<ApiResponse<FileVideoMaterialClearTaskGetV2Response>> {
-    if (advertiserId == null) {
+  async openApi2FileVideoMaterialClearTaskGetGetWithHttpInfo(request: OpenApi2FileVideoMaterialClearTaskGetGetRequest): Promise<ApiResponse<FileVideoMaterialClearTaskGetV2Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoMaterialClearTaskGetGet");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoMaterialClearTaskGetV2Response>({
       method: "GET",
       path: "/open_api/2/file/video/material/clear_task/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "clear_ids", value: clearIds, collectionFormat: "csv" }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "clear_ids", value: request.clearIds, collectionFormat: "csv" },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsEbpWechatAppletCreateV30AccountType, ToolsEbpWechatAppletCreateV30RequestExtra, ToolsEbpWechatAppletCreateV30RequestHead, ToolsEbpWechatAppletCreateV30RequestIcon, ToolsEbpWechatAppletCreateV30RequestMaterialInner } from "../models";

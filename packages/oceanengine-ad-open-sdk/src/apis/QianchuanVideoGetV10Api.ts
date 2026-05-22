@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,13 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanVideoGetV10Filtering, QianchuanVideoGetV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanVideoGetGetRequest {
+  advertiserId: number;
+  filtering?: QianchuanVideoGetV10Filtering;
+  page?: number;
+  pageSize?: number;
+}
 
 export class QianchuanVideoGetV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,23 +25,23 @@ export class QianchuanVideoGetV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanVideoGetGet(advertiserId: number, filtering: QianchuanVideoGetV10Filtering, page: number, pageSize: number): Promise<QianchuanVideoGetV10Response> {
-    const response = await this.openApiV10QianchuanVideoGetGetWithHttpInfo(advertiserId, filtering, page, pageSize);
+  async openApiV10QianchuanVideoGetGet(request: OpenApiV10QianchuanVideoGetGetRequest): Promise<QianchuanVideoGetV10Response> {
+    const response = await this.openApiV10QianchuanVideoGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanVideoGetGetWithHttpInfo(advertiserId: number, filtering: QianchuanVideoGetV10Filtering, page: number, pageSize: number): Promise<ApiResponse<QianchuanVideoGetV10Response>> {
-    if (advertiserId == null) {
+  async openApiV10QianchuanVideoGetGetWithHttpInfo(request: OpenApiV10QianchuanVideoGetGetRequest): Promise<ApiResponse<QianchuanVideoGetV10Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanVideoGetGet");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanVideoGetV10Response>({
       method: "GET",
       path: "/open_api/v1.0/qianchuan/video/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "filtering", value: filtering },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "filtering", value: request.filtering },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

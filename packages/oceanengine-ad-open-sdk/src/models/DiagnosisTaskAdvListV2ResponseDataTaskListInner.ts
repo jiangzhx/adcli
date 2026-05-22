@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DiagnosisTaskAdvListV2DataTaskListIsAdHighQualityMaterial, DiagnosisTaskAdvListV2DataTaskListIsEcpHighQualityMaterial, DiagnosisTaskAdvListV2DataTaskListIsFirstPublishMaterial, DiagnosisTaskAdvListV2DataTaskListIsInefficientMaterial, DiagnosisTaskAdvListV2DataTaskListStatus } from "../models";

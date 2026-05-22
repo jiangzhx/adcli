@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,17 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FileVideoAgentV2Response, FileVideoAgentV2UploadType } from "../models";
 
+
+export interface OpenApi2FileVideoAgentPostRequest {
+  agentId: number;
+  fileName: string;
+  isNeedAuth: boolean;
+  isAigc?: boolean;
+  uploadType?: FileVideoAgentV2UploadType;
+  videoFile?: File;
+  videoSignature?: string;
+  videoUrl?: string;
+}
 
 export class FileVideoAgentV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,21 +29,21 @@ export class FileVideoAgentV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2FileVideoAgentPost(agentId: number, fileName: string, isNeedAuth: boolean, isAigc: boolean, uploadType: FileVideoAgentV2UploadType, videoFile: File, videoSignature: string, videoUrl: string): Promise<FileVideoAgentV2Response> {
-    const response = await this.openApi2FileVideoAgentPostWithHttpInfo(agentId, fileName, isNeedAuth, isAigc, uploadType, videoFile, videoSignature, videoUrl);
+  async openApi2FileVideoAgentPost(request: OpenApi2FileVideoAgentPostRequest): Promise<FileVideoAgentV2Response> {
+    const response = await this.openApi2FileVideoAgentPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2FileVideoAgentPostWithHttpInfo(agentId: number, fileName: string, isNeedAuth: boolean, isAigc: boolean, uploadType: FileVideoAgentV2UploadType, videoFile: File, videoSignature: string, videoUrl: string): Promise<ApiResponse<FileVideoAgentV2Response>> {
-    if (agentId == null) {
+  async openApi2FileVideoAgentPostWithHttpInfo(request: OpenApi2FileVideoAgentPostRequest): Promise<ApiResponse<FileVideoAgentV2Response>> {
+    if (request.agentId == null) {
       throw new ApiException("Missing the required parameter 'agentId' when calling openApi2FileVideoAgentPost");
     }
 
-    if (fileName == null) {
+    if (request.fileName == null) {
       throw new ApiException("Missing the required parameter 'fileName' when calling openApi2FileVideoAgentPost");
     }
 
-    if (isNeedAuth == null) {
+    if (request.isNeedAuth == null) {
       throw new ApiException("Missing the required parameter 'isNeedAuth' when calling openApi2FileVideoAgentPost");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoAgentV2Response>({

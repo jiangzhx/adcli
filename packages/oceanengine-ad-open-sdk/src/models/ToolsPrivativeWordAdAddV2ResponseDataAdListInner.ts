@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsPrivativeWordAdAddV2ResponseDataAdListInnerDuplicateWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLengthWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLimitWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerHasEmojiWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerSuccessWords } from "../models";

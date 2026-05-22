@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { AdGetV2DataAdvancedCreativeType, AdGetV2DataAppType, AdGetV2DataAudienceExtend, AdGetV2DataAutoInheritSwitch, AdGetV2DataAutoUpdateKeyword, AdGetV2DataBudgetMode, AdGetV2DataCategoryType, AdGetV2DataConvertedTimeDuration, AdGetV2DataDeepBidType, AdGetV2DataDeepExternalAction, AdGetV2DataDeliveryPhase, AdGetV2DataDeliveryRange, AdGetV2DataDownloadMode, AdGetV2DataDownloadType, AdGetV2DataDpaAdtype, AdGetV2DataDpaOpenUrlType, AdGetV2DataExternalAction, AdGetV2DataExternalActions, AdGetV2DataFeedDeliverySearch, AdGetV2DataFlowControlMode, AdGetV2DataHideIfConverted, AdGetV2DataInheritType, AdGetV2DataIntelligentFlowSwitch, AdGetV2DataInventoryCatalog, AdGetV2DataInventoryType, AdGetV2DataLaunchTargetType, AdGetV2DataOptStatus, AdGetV2DataParamsType, AdGetV2DataPricing, AdGetV2DataPromotionType, AdGetV2DataSceneInventory, AdGetV2DataScheduleType, AdGetV2DataSmartBidType, AdGetV2DataSmartInventory, AdGetV2DataStatus, AdGetV2DataStoreType, AdGetV2DataStoreproUnit, AdGetV2DataTrackUrlSendType, AdGetV2DataUnionVideoType, AdGetV2ResponseDataAudience, AdGetV2ResponseDataDpaProductTargetInner, AdGetV2ResponseDataShopInfo, AdGetV2ResponseDataUdShop } from "../models";

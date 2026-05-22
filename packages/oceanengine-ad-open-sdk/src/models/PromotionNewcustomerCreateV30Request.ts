@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { PromotionNewcustomerCreateV30BidType, PromotionNewcustomerCreateV30ExternalAction, PromotionNewcustomerCreateV30RequestAudience, PromotionNewcustomerCreateV30RequestPromotionMaterials, PromotionNewcustomerCreateV30RequestRelatedProductsInner } from "../models";

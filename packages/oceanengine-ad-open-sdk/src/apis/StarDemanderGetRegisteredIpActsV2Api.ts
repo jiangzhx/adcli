@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarDemanderGetRegisteredIpActsV2Response } from "../models";
 
+
+export interface OpenApi2StarDemanderGetRegisteredIpActsGetRequest {
+  starId: number;
+}
 
 export class StarDemanderGetRegisteredIpActsV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,20 +22,20 @@ export class StarDemanderGetRegisteredIpActsV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarDemanderGetRegisteredIpActsGet(starId: number): Promise<StarDemanderGetRegisteredIpActsV2Response> {
-    const response = await this.openApi2StarDemanderGetRegisteredIpActsGetWithHttpInfo(starId);
+  async openApi2StarDemanderGetRegisteredIpActsGet(request: OpenApi2StarDemanderGetRegisteredIpActsGetRequest): Promise<StarDemanderGetRegisteredIpActsV2Response> {
+    const response = await this.openApi2StarDemanderGetRegisteredIpActsGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarDemanderGetRegisteredIpActsGetWithHttpInfo(starId: number): Promise<ApiResponse<StarDemanderGetRegisteredIpActsV2Response>> {
-    if (starId == null) {
+  async openApi2StarDemanderGetRegisteredIpActsGetWithHttpInfo(request: OpenApi2StarDemanderGetRegisteredIpActsGetRequest): Promise<ApiResponse<StarDemanderGetRegisteredIpActsV2Response>> {
+    if (request.starId == null) {
       throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemanderGetRegisteredIpActsGet");
     }
     return this.apiClient.requestWithHttpInfo<StarDemanderGetRegisteredIpActsV2Response>({
       method: "GET",
       path: "/open_api/2/star/demander/get_registered_ip_acts/",
       queryParams: [
-        { name: "star_id", value: starId }
+        { name: "star_id", value: request.starId }
       ]
     });
   }

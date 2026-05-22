@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsMicroGameCreateV30AgeLimit, ToolsMicroGameCreateV30MaxPaymentTierRange, ToolsMicroGameCreateV30MidPaymentTierRange, ToolsMicroGameCreateV30MinPaymentTierRange, ToolsMicroGameCreateV30RequestGameLink, ToolsMicroGameCreateV30RevenueModel, ToolsMicroGameCreateV30ScheduleCards } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AgentPrepayChargeGenerateRemittanceCodeV2Request, AgentPrepayChargeGenerateRemittanceCodeV2Response } from "../models";
 
+
+export interface OpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest {
+  agentPrepayChargeGenerateRemittanceCodeV2Request?: AgentPrepayChargeGenerateRemittanceCodeV2Request;
+}
 
 export class AgentPrepayChargeGenerateRemittanceCodeV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AgentPrepayChargeGenerateRemittanceCodeV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AgentPrepayChargeGenerateRemittanceCodePost(agentPrepayChargeGenerateRemittanceCodeV2Request: AgentPrepayChargeGenerateRemittanceCodeV2Request): Promise<AgentPrepayChargeGenerateRemittanceCodeV2Response> {
-    const response = await this.openApi2AgentPrepayChargeGenerateRemittanceCodePostWithHttpInfo(agentPrepayChargeGenerateRemittanceCodeV2Request);
+  async openApi2AgentPrepayChargeGenerateRemittanceCodePost(request: OpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest): Promise<AgentPrepayChargeGenerateRemittanceCodeV2Response> {
+    const response = await this.openApi2AgentPrepayChargeGenerateRemittanceCodePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AgentPrepayChargeGenerateRemittanceCodePostWithHttpInfo(agentPrepayChargeGenerateRemittanceCodeV2Request: AgentPrepayChargeGenerateRemittanceCodeV2Request): Promise<ApiResponse<AgentPrepayChargeGenerateRemittanceCodeV2Response>> {
+  async openApi2AgentPrepayChargeGenerateRemittanceCodePostWithHttpInfo(request: OpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest): Promise<ApiResponse<AgentPrepayChargeGenerateRemittanceCodeV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<AgentPrepayChargeGenerateRemittanceCodeV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AgentPrepayChargeGenerateRemittanceCodeV2Api {
       queryParams: [
 
       ],
-      body: agentPrepayChargeGenerateRemittanceCodeV2Request
+      body: request.agentPrepayChargeGenerateRemittanceCodeV2Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAwemeOrderDetailGetV10DataDeliverySettingBidMode, QianchuanAwemeOrderDetailGetV10DataDeliverySettingBidType, QianchuanAwemeOrderDetailGetV10DataDeliverySettingExternalAction, QianchuanAwemeOrderDetailGetV10DataDeliverySettingLiveroomHeatMode } from "../models";

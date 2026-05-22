@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsWechatGameCreateV30Request, ToolsWechatGameCreateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsWechatGameCreatePostRequest {
+  toolsWechatGameCreateV30Request?: ToolsWechatGameCreateV30Request;
+}
 
 export class ToolsWechatGameCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsWechatGameCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsWechatGameCreatePost(toolsWechatGameCreateV30Request: ToolsWechatGameCreateV30Request): Promise<ToolsWechatGameCreateV30Response> {
-    const response = await this.openApiV30ToolsWechatGameCreatePostWithHttpInfo(toolsWechatGameCreateV30Request);
+  async openApiV30ToolsWechatGameCreatePost(request: OpenApiV30ToolsWechatGameCreatePostRequest): Promise<ToolsWechatGameCreateV30Response> {
+    const response = await this.openApiV30ToolsWechatGameCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsWechatGameCreatePostWithHttpInfo(toolsWechatGameCreateV30Request: ToolsWechatGameCreateV30Request): Promise<ApiResponse<ToolsWechatGameCreateV30Response>> {
+  async openApiV30ToolsWechatGameCreatePostWithHttpInfo(request: OpenApiV30ToolsWechatGameCreatePostRequest): Promise<ApiResponse<ToolsWechatGameCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsWechatGameCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsWechatGameCreateV30Api {
       queryParams: [
 
       ],
-      body: toolsWechatGameCreateV30Request
+      body: request.toolsWechatGameCreateV30Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,14 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsIsSupportUniversalGetV2DeepBidType, ToolsIsSupportUniversalGetV2DeepExternalAction, ToolsIsSupportUniversalGetV2ExternalAction, ToolsIsSupportUniversalGetV2LandingType, ToolsIsSupportUniversalGetV2Response } from "../models";
 
+
+export interface OpenApi2ToolsIsSupportUniversalGetGetRequest {
+  advertiserId: number;
+  landingType: ToolsIsSupportUniversalGetV2LandingType;
+  externalAction: ToolsIsSupportUniversalGetV2ExternalAction;
+  deepExternalAction?: ToolsIsSupportUniversalGetV2DeepExternalAction;
+  deepBidType?: ToolsIsSupportUniversalGetV2DeepBidType;
+}
 
 export class ToolsIsSupportUniversalGetV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,32 +26,32 @@ export class ToolsIsSupportUniversalGetV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsIsSupportUniversalGetGet(advertiserId: number, landingType: ToolsIsSupportUniversalGetV2LandingType, externalAction: ToolsIsSupportUniversalGetV2ExternalAction, deepExternalAction: ToolsIsSupportUniversalGetV2DeepExternalAction, deepBidType: ToolsIsSupportUniversalGetV2DeepBidType): Promise<ToolsIsSupportUniversalGetV2Response> {
-    const response = await this.openApi2ToolsIsSupportUniversalGetGetWithHttpInfo(advertiserId, landingType, externalAction, deepExternalAction, deepBidType);
+  async openApi2ToolsIsSupportUniversalGetGet(request: OpenApi2ToolsIsSupportUniversalGetGetRequest): Promise<ToolsIsSupportUniversalGetV2Response> {
+    const response = await this.openApi2ToolsIsSupportUniversalGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsIsSupportUniversalGetGetWithHttpInfo(advertiserId: number, landingType: ToolsIsSupportUniversalGetV2LandingType, externalAction: ToolsIsSupportUniversalGetV2ExternalAction, deepExternalAction: ToolsIsSupportUniversalGetV2DeepExternalAction, deepBidType: ToolsIsSupportUniversalGetV2DeepBidType): Promise<ApiResponse<ToolsIsSupportUniversalGetV2Response>> {
-    if (advertiserId == null) {
+  async openApi2ToolsIsSupportUniversalGetGetWithHttpInfo(request: OpenApi2ToolsIsSupportUniversalGetGetRequest): Promise<ApiResponse<ToolsIsSupportUniversalGetV2Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsIsSupportUniversalGetGet");
     }
 
-    if (landingType == null) {
+    if (request.landingType == null) {
       throw new ApiException("Missing the required parameter 'landingType' when calling openApi2ToolsIsSupportUniversalGetGet");
     }
 
-    if (externalAction == null) {
+    if (request.externalAction == null) {
       throw new ApiException("Missing the required parameter 'externalAction' when calling openApi2ToolsIsSupportUniversalGetGet");
     }
     return this.apiClient.requestWithHttpInfo<ToolsIsSupportUniversalGetV2Response>({
       method: "GET",
       path: "/open_api/2/tools/is_support_universal/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "landing_type", value: landingType },
-        { name: "external_action", value: externalAction },
-        { name: "deep_external_action", value: deepExternalAction },
-        { name: "deep_bid_type", value: deepBidType }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "landing_type", value: request.landingType },
+        { name: "external_action", value: request.externalAction },
+        { name: "deep_external_action", value: request.deepExternalAction },
+        { name: "deep_bid_type", value: request.deepBidType }
       ]
     });
   }

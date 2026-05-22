@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,14 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarMcnProviderGetTaskItemListV2Response } from "../models";
 
+
+export interface OpenApi2StarMcnProviderGetTaskItemListGetRequest {
+  starId: number;
+  taskId: number;
+  page: number;
+  limit: number;
+  providerConfirming?: boolean;
+}
 
 export class StarMcnProviderGetTaskItemListV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,36 +26,36 @@ export class StarMcnProviderGetTaskItemListV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarMcnProviderGetTaskItemListGet(starId: number, taskId: number, page: number, limit: number, providerConfirming: boolean): Promise<StarMcnProviderGetTaskItemListV2Response> {
-    const response = await this.openApi2StarMcnProviderGetTaskItemListGetWithHttpInfo(starId, taskId, page, limit, providerConfirming);
+  async openApi2StarMcnProviderGetTaskItemListGet(request: OpenApi2StarMcnProviderGetTaskItemListGetRequest): Promise<StarMcnProviderGetTaskItemListV2Response> {
+    const response = await this.openApi2StarMcnProviderGetTaskItemListGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarMcnProviderGetTaskItemListGetWithHttpInfo(starId: number, taskId: number, page: number, limit: number, providerConfirming: boolean): Promise<ApiResponse<StarMcnProviderGetTaskItemListV2Response>> {
-    if (starId == null) {
+  async openApi2StarMcnProviderGetTaskItemListGetWithHttpInfo(request: OpenApi2StarMcnProviderGetTaskItemListGetRequest): Promise<ApiResponse<StarMcnProviderGetTaskItemListV2Response>> {
+    if (request.starId == null) {
       throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarMcnProviderGetTaskItemListGet");
     }
 
-    if (taskId == null) {
+    if (request.taskId == null) {
       throw new ApiException("Missing the required parameter 'taskId' when calling openApi2StarMcnProviderGetTaskItemListGet");
     }
 
-    if (page == null) {
+    if (request.page == null) {
       throw new ApiException("Missing the required parameter 'page' when calling openApi2StarMcnProviderGetTaskItemListGet");
     }
 
-    if (limit == null) {
+    if (request.limit == null) {
       throw new ApiException("Missing the required parameter 'limit' when calling openApi2StarMcnProviderGetTaskItemListGet");
     }
     return this.apiClient.requestWithHttpInfo<StarMcnProviderGetTaskItemListV2Response>({
       method: "GET",
       path: "/open_api/2/star/mcn/provider_get_task_item_list/",
       queryParams: [
-        { name: "star_id", value: starId },
-        { name: "task_id", value: taskId },
-        { name: "page", value: page },
-        { name: "limit", value: limit },
-        { name: "provider_confirming", value: providerConfirming }
+        { name: "star_id", value: request.starId },
+        { name: "task_id", value: request.taskId },
+        { name: "page", value: request.page },
+        { name: "limit", value: request.limit },
+        { name: "provider_confirming", value: request.providerConfirming }
       ]
     });
   }

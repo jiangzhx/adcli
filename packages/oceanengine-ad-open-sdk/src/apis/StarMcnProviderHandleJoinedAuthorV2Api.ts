@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarMcnProviderHandleJoinedAuthorV2Request, StarMcnProviderHandleJoinedAuthorV2Response } from "../models";
 
+
+export interface OpenApi2StarMcnProviderHandleJoinedAuthorPostRequest {
+  starMcnProviderHandleJoinedAuthorV2Request?: StarMcnProviderHandleJoinedAuthorV2Request;
+}
 
 export class StarMcnProviderHandleJoinedAuthorV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarMcnProviderHandleJoinedAuthorV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarMcnProviderHandleJoinedAuthorPost(starMcnProviderHandleJoinedAuthorV2Request: StarMcnProviderHandleJoinedAuthorV2Request): Promise<StarMcnProviderHandleJoinedAuthorV2Response> {
-    const response = await this.openApi2StarMcnProviderHandleJoinedAuthorPostWithHttpInfo(starMcnProviderHandleJoinedAuthorV2Request);
+  async openApi2StarMcnProviderHandleJoinedAuthorPost(request: OpenApi2StarMcnProviderHandleJoinedAuthorPostRequest): Promise<StarMcnProviderHandleJoinedAuthorV2Response> {
+    const response = await this.openApi2StarMcnProviderHandleJoinedAuthorPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarMcnProviderHandleJoinedAuthorPostWithHttpInfo(starMcnProviderHandleJoinedAuthorV2Request: StarMcnProviderHandleJoinedAuthorV2Request): Promise<ApiResponse<StarMcnProviderHandleJoinedAuthorV2Response>> {
+  async openApi2StarMcnProviderHandleJoinedAuthorPostWithHttpInfo(request: OpenApi2StarMcnProviderHandleJoinedAuthorPostRequest): Promise<ApiResponse<StarMcnProviderHandleJoinedAuthorV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarMcnProviderHandleJoinedAuthorV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarMcnProviderHandleJoinedAuthorV2Api {
       queryParams: [
 
       ],
-      body: starMcnProviderHandleJoinedAuthorV2Request
+      body: request.starMcnProviderHandleJoinedAuthorV2Request
     });
   }
 }

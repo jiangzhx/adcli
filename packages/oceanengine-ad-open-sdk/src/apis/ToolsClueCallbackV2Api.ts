@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsClueCallbackV2Request, ToolsClueCallbackV2Response } from "../models";
 
+
+export interface OpenApi2ToolsClueCallbackPostRequest {
+  toolsClueCallbackV2Request?: ToolsClueCallbackV2Request;
+}
 
 export class ToolsClueCallbackV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsClueCallbackV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsClueCallbackPost(toolsClueCallbackV2Request: ToolsClueCallbackV2Request): Promise<ToolsClueCallbackV2Response> {
-    const response = await this.openApi2ToolsClueCallbackPostWithHttpInfo(toolsClueCallbackV2Request);
+  async openApi2ToolsClueCallbackPost(request: OpenApi2ToolsClueCallbackPostRequest): Promise<ToolsClueCallbackV2Response> {
+    const response = await this.openApi2ToolsClueCallbackPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsClueCallbackPostWithHttpInfo(toolsClueCallbackV2Request: ToolsClueCallbackV2Request): Promise<ApiResponse<ToolsClueCallbackV2Response>> {
+  async openApi2ToolsClueCallbackPostWithHttpInfo(request: OpenApi2ToolsClueCallbackPostRequest): Promise<ApiResponse<ToolsClueCallbackV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsClueCallbackV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsClueCallbackV2Api {
       queryParams: [
 
       ],
-      body: toolsClueCallbackV2Request
+      body: request.toolsClueCallbackV2Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,16 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { LocalToolPackListGetV30DeliveryGoal, LocalToolPackListGetV30IntelligentSelectionMode, LocalToolPackListGetV30Response } from "../models";
 
+
+export interface OpenApiV30LocalToolPackListGetGetRequest {
+  localAccountId: number;
+  deliveryGoal: LocalToolPackListGetV30DeliveryGoal;
+  intelligentSelectionMode: LocalToolPackListGetV30IntelligentSelectionMode;
+  poiIds?: number[];
+  productIds?: number[];
+  page?: number;
+  pageSize?: number;
+}
 
 export class LocalToolPackListGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,34 +28,34 @@ export class LocalToolPackListGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30LocalToolPackListGetGet(localAccountId: number, deliveryGoal: LocalToolPackListGetV30DeliveryGoal, intelligentSelectionMode: LocalToolPackListGetV30IntelligentSelectionMode, poiIds: number[], productIds: number[], page: number, pageSize: number): Promise<LocalToolPackListGetV30Response> {
-    const response = await this.openApiV30LocalToolPackListGetGetWithHttpInfo(localAccountId, deliveryGoal, intelligentSelectionMode, poiIds, productIds, page, pageSize);
+  async openApiV30LocalToolPackListGetGet(request: OpenApiV30LocalToolPackListGetGetRequest): Promise<LocalToolPackListGetV30Response> {
+    const response = await this.openApiV30LocalToolPackListGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30LocalToolPackListGetGetWithHttpInfo(localAccountId: number, deliveryGoal: LocalToolPackListGetV30DeliveryGoal, intelligentSelectionMode: LocalToolPackListGetV30IntelligentSelectionMode, poiIds: number[], productIds: number[], page: number, pageSize: number): Promise<ApiResponse<LocalToolPackListGetV30Response>> {
-    if (localAccountId == null) {
+  async openApiV30LocalToolPackListGetGetWithHttpInfo(request: OpenApiV30LocalToolPackListGetGetRequest): Promise<ApiResponse<LocalToolPackListGetV30Response>> {
+    if (request.localAccountId == null) {
       throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalToolPackListGetGet");
     }
 
-    if (deliveryGoal == null) {
+    if (request.deliveryGoal == null) {
       throw new ApiException("Missing the required parameter 'deliveryGoal' when calling openApiV30LocalToolPackListGetGet");
     }
 
-    if (intelligentSelectionMode == null) {
+    if (request.intelligentSelectionMode == null) {
       throw new ApiException("Missing the required parameter 'intelligentSelectionMode' when calling openApiV30LocalToolPackListGetGet");
     }
     return this.apiClient.requestWithHttpInfo<LocalToolPackListGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/local/tool_pack_list/get/",
       queryParams: [
-        { name: "local_account_id", value: localAccountId },
-        { name: "delivery_goal", value: deliveryGoal },
-        { name: "intelligent_selection_mode", value: intelligentSelectionMode },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "poi_ids", value: poiIds, collectionFormat: "csv" },
-        { name: "product_ids", value: productIds, collectionFormat: "csv" }
+        { name: "local_account_id", value: request.localAccountId },
+        { name: "delivery_goal", value: request.deliveryGoal },
+        { name: "poi_ids", value: request.poiIds, collectionFormat: "csv" },
+        { name: "product_ids", value: request.productIds, collectionFormat: "csv" },
+        { name: "intelligent_selection_mode", value: request.intelligentSelectionMode },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

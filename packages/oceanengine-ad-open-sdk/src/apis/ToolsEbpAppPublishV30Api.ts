@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpAppPublishV30Request, ToolsEbpAppPublishV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsEbpAppPublishPostRequest {
+  toolsEbpAppPublishV30Request?: ToolsEbpAppPublishV30Request;
+}
 
 export class ToolsEbpAppPublishV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsEbpAppPublishV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpAppPublishPost(toolsEbpAppPublishV30Request: ToolsEbpAppPublishV30Request): Promise<ToolsEbpAppPublishV30Response> {
-    const response = await this.openApiV30ToolsEbpAppPublishPostWithHttpInfo(toolsEbpAppPublishV30Request);
+  async openApiV30ToolsEbpAppPublishPost(request: OpenApiV30ToolsEbpAppPublishPostRequest): Promise<ToolsEbpAppPublishV30Response> {
+    const response = await this.openApiV30ToolsEbpAppPublishPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpAppPublishPostWithHttpInfo(toolsEbpAppPublishV30Request: ToolsEbpAppPublishV30Request): Promise<ApiResponse<ToolsEbpAppPublishV30Response>> {
+  async openApiV30ToolsEbpAppPublishPostWithHttpInfo(request: OpenApiV30ToolsEbpAppPublishPostRequest): Promise<ApiResponse<ToolsEbpAppPublishV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsEbpAppPublishV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsEbpAppPublishV30Api {
       queryParams: [
 
       ],
-      body: toolsEbpAppPublishV30Request
+      body: request.toolsEbpAppPublishV30Request
     });
   }
 }

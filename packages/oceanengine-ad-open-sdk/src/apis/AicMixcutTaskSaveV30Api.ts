@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AicMixcutTaskSaveV30Request, AicMixcutTaskSaveV30Response } from "../models";
 
+
+export interface OpenApiV30AicMixcutTaskSavePostRequest {
+  aicMixcutTaskSaveV30Request?: AicMixcutTaskSaveV30Request;
+}
 
 export class AicMixcutTaskSaveV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AicMixcutTaskSaveV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AicMixcutTaskSavePost(aicMixcutTaskSaveV30Request: AicMixcutTaskSaveV30Request): Promise<AicMixcutTaskSaveV30Response> {
-    const response = await this.openApiV30AicMixcutTaskSavePostWithHttpInfo(aicMixcutTaskSaveV30Request);
+  async openApiV30AicMixcutTaskSavePost(request: OpenApiV30AicMixcutTaskSavePostRequest): Promise<AicMixcutTaskSaveV30Response> {
+    const response = await this.openApiV30AicMixcutTaskSavePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AicMixcutTaskSavePostWithHttpInfo(aicMixcutTaskSaveV30Request: AicMixcutTaskSaveV30Request): Promise<ApiResponse<AicMixcutTaskSaveV30Response>> {
+  async openApiV30AicMixcutTaskSavePostWithHttpInfo(request: OpenApiV30AicMixcutTaskSavePostRequest): Promise<ApiResponse<AicMixcutTaskSaveV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<AicMixcutTaskSaveV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AicMixcutTaskSaveV30Api {
       queryParams: [
 
       ],
-      body: aicMixcutTaskSaveV30Request
+      body: request.aicMixcutTaskSaveV30Request
     });
   }
 }

@@ -3,19 +3,20 @@ import type { JavaApiSpec, JavaModelSpec } from "./java-parser";
 export interface ApiEmitOptions {
   runtimePrefix?: string;
   modelsModule?: string;
+  parameterStyle?: "positional" | "requestObject";
 }
 
 export function emitApiClass(spec: JavaApiSpec, options: ApiEmitOptions = {}) {
   return `${emitApiHeader([spec], options)}
 
-${emitApiClassBody(spec)}
+${emitApiClassBody(spec, options)}
 `;
 }
 
 export function emitApiFile(specs: JavaApiSpec[], options: ApiEmitOptions = {}) {
   return `${emitApiHeader(specs, options)}
 
-${specs.map((spec) => emitApiClassBody(spec)).join("\n")}
+${specs.map((spec) => emitApiClassBody(spec, options)).join("\n")}
 `;
 }
 
@@ -48,7 +49,10 @@ function extractModelImports(spec: JavaModelSpec) {
   return modelImports;
 }
 
-function emitApiClassBody(spec: JavaApiSpec) {
+function emitApiClassBody(spec: JavaApiSpec, options: ApiEmitOptions = {}) {
+  if (options.parameterStyle === "requestObject") {
+    return emitApiClassBodyWithRequestObject(spec);
+  }
   const responseType = toTypeScriptType(spec.responseType);
   const params = spec.params.map((param) => `${param.name}: ${toTypeScriptType(param.javaType)}`).join(", ");
   const args = spec.params.map((param) => param.name).join(", ");
@@ -95,6 +99,63 @@ ${queryParams}
     });
   }
 }
+
+`;
+}
+
+function emitApiClassBodyWithRequestObject(spec: JavaApiSpec) {
+  const responseType = toTypeScriptType(spec.responseType);
+  const requestType = `${upperFirst(spec.methodName)}Request`;
+  const fields = spec.params
+    .map((param) => `  ${param.name}${param.required ? "" : "?"}: ${toTypeScriptType(param.javaType)};`)
+    .join("\n");
+  const checks = spec.params
+    .filter((param) => param.required)
+    .map(
+      (param) =>
+        `    if (request.${param.name} == null) {\n      throw new ApiException("Missing the required parameter '${param.name}' when calling ${spec.methodName}");\n    }`,
+    )
+    .join("\n\n");
+  const queryParams = spec.queryParams
+    .map((param) => {
+      const collection = param.collectionFormat ? `, collectionFormat: "${param.collectionFormat}"` : "";
+      return `        { name: "${param.name}", value: ${param.source}${collection} }`;
+    })
+    .join(",\n");
+  const body = spec.bodyParam ? `,\n      body: ${spec.bodyParam}` : "";
+
+  return `
+export interface ${requestType} {
+${fields}
+}
+
+export class ${spec.className} {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async ${spec.methodName}(request: ${requestType}): Promise<${responseType}> {
+    const response = await this.${spec.methodName}WithHttpInfo(request);
+    return response.data;
+  }
+
+  async ${spec.methodName}WithHttpInfo(request: ${requestType}): Promise<ApiResponse<${responseType}>> {
+${checks}
+    return this.apiClient.requestWithHttpInfo<${responseType}>({
+      method: "${spec.httpMethod}",
+      path: "${spec.path}",
+      queryParams: [
+${queryParams}
+      ]${body}
+    });
+  }
+}
 `;
 }
 
@@ -104,7 +165,7 @@ export function emitModelFile(specs: JavaModelSpec[]) {
 
 export function emitModel(spec: JavaModelSpec) {
   if (spec.kind === "enum") {
-    const values = spec.values.map((value) => `  ${value.key}: "${value.value}",`).join("\n");
+    const values = spec.values.map((value) => `  ${value.key}: ${JSON.stringify(value.value)},`).join("\n");
     return `export const ${spec.name} = {
 ${values}
 } as const;
@@ -133,6 +194,10 @@ ${fields}
 
 function toPropertyKey(name: string) {
   return /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(name) ? name : JSON.stringify(name);
+}
+
+function upperFirst(value: string) {
+  return value ? value[0].toUpperCase() + value.slice(1) : value;
 }
 
 function toTypeScriptType(javaType: string): string {

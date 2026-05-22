@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { NativeAnchorUpdateV30AnchorInfoAnchorType, NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchor, NativeAnchorUpdateV30RequestAnchorInfoGameAnchor, NativeAnchorUpdateV30RequestAnchorInfoNetServiceAnchor, NativeAnchorUpdateV30RequestAnchorInfoPrivateChat, NativeAnchorUpdateV30RequestAnchorInfoShoppingCartAnchor } from "../models";

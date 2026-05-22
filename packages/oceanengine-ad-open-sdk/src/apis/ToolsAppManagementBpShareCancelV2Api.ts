@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAppManagementBpShareCancelV2Request, ToolsAppManagementBpShareCancelV2Response } from "../models";
 
+
+export interface OpenApi2ToolsAppManagementBpShareCancelPostRequest {
+  toolsAppManagementBpShareCancelV2Request?: ToolsAppManagementBpShareCancelV2Request;
+}
 
 export class ToolsAppManagementBpShareCancelV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsAppManagementBpShareCancelV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsAppManagementBpShareCancelPost(toolsAppManagementBpShareCancelV2Request: ToolsAppManagementBpShareCancelV2Request): Promise<ToolsAppManagementBpShareCancelV2Response> {
-    const response = await this.openApi2ToolsAppManagementBpShareCancelPostWithHttpInfo(toolsAppManagementBpShareCancelV2Request);
+  async openApi2ToolsAppManagementBpShareCancelPost(request: OpenApi2ToolsAppManagementBpShareCancelPostRequest): Promise<ToolsAppManagementBpShareCancelV2Response> {
+    const response = await this.openApi2ToolsAppManagementBpShareCancelPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsAppManagementBpShareCancelPostWithHttpInfo(toolsAppManagementBpShareCancelV2Request: ToolsAppManagementBpShareCancelV2Request): Promise<ApiResponse<ToolsAppManagementBpShareCancelV2Response>> {
+  async openApi2ToolsAppManagementBpShareCancelPostWithHttpInfo(request: OpenApi2ToolsAppManagementBpShareCancelPostRequest): Promise<ApiResponse<ToolsAppManagementBpShareCancelV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementBpShareCancelV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsAppManagementBpShareCancelV2Api {
       queryParams: [
 
       ],
-      body: toolsAppManagementBpShareCancelV2Request
+      body: request.toolsAppManagementBpShareCancelV2Request
     });
   }
 }

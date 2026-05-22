@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { LocalImUploadImageV30Response } from "../models";
 
+
+export interface OpenApiV30LocalImUploadImagePostRequest {
+  imageFile: File;
+  localAccountId: number;
+}
 
 export class LocalImUploadImageV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,17 +23,17 @@ export class LocalImUploadImageV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30LocalImUploadImagePost(imageFile: File, localAccountId: number): Promise<LocalImUploadImageV30Response> {
-    const response = await this.openApiV30LocalImUploadImagePostWithHttpInfo(imageFile, localAccountId);
+  async openApiV30LocalImUploadImagePost(request: OpenApiV30LocalImUploadImagePostRequest): Promise<LocalImUploadImageV30Response> {
+    const response = await this.openApiV30LocalImUploadImagePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30LocalImUploadImagePostWithHttpInfo(imageFile: File, localAccountId: number): Promise<ApiResponse<LocalImUploadImageV30Response>> {
-    if (imageFile == null) {
+  async openApiV30LocalImUploadImagePostWithHttpInfo(request: OpenApiV30LocalImUploadImagePostRequest): Promise<ApiResponse<LocalImUploadImageV30Response>> {
+    if (request.imageFile == null) {
       throw new ApiException("Missing the required parameter 'imageFile' when calling openApiV30LocalImUploadImagePost");
     }
 
-    if (localAccountId == null) {
+    if (request.localAccountId == null) {
       throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalImUploadImagePost");
     }
     return this.apiClient.requestWithHttpInfo<LocalImUploadImageV30Response>({

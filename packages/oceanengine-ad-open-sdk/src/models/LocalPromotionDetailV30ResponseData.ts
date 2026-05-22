@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { LocalPromotionDetailV30DataLiveMaterialType, LocalPromotionDetailV30DataVideoHpVisibility, LocalPromotionDetailV30ResponseDataCustomerMaterialListInner, LocalPromotionDetailV30ResponseDataProceduralMaterial, LocalPromotionDetailV30ResponseDataPromotionCardInfo } from "../models";

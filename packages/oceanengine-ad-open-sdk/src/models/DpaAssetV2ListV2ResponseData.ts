@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DpaAssetV2ListV2ResponseDataAssetListInner, DpaAssetV2ListV2ResponseDataPageInfo } from "../models";

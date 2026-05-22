@@ -1,14 +1,13 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const QueryRebateBalanceV2FilteringMonthQuarter = {
-  ALLYEAR: "AllYear",
+  ALL_YEAR: "AllYear",
   APR: "Apr",
   AUG: "Aug",
   DEC: "Dec",
   FEB: "Feb",
-  FIRHALF: "FirHalf",
+  FIR_HALF: "FirHalf",
   JAN: "Jan",
   JUL: "Jul",
   JUN: "Jun",
@@ -20,7 +19,7 @@ export const QueryRebateBalanceV2FilteringMonthQuarter = {
   Q2: "Q2",
   Q3: "Q3",
   Q4: "Q4",
-  SECHALF: "SecHalf",
+  SEC_HALF: "SecHalf",
   SEP: "Sep",
 } as const;
 

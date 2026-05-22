@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AgentAdvTemporaryPunishV2Request, AgentAdvTemporaryPunishV2Response } from "../models";
 
+
+export interface OpenApi2AgentAdvTemporaryPunishPostRequest {
+  agentAdvTemporaryPunishV2Request?: AgentAdvTemporaryPunishV2Request;
+}
 
 export class AgentAdvTemporaryPunishV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AgentAdvTemporaryPunishV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AgentAdvTemporaryPunishPost(agentAdvTemporaryPunishV2Request: AgentAdvTemporaryPunishV2Request): Promise<AgentAdvTemporaryPunishV2Response> {
-    const response = await this.openApi2AgentAdvTemporaryPunishPostWithHttpInfo(agentAdvTemporaryPunishV2Request);
+  async openApi2AgentAdvTemporaryPunishPost(request: OpenApi2AgentAdvTemporaryPunishPostRequest): Promise<AgentAdvTemporaryPunishV2Response> {
+    const response = await this.openApi2AgentAdvTemporaryPunishPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AgentAdvTemporaryPunishPostWithHttpInfo(agentAdvTemporaryPunishV2Request: AgentAdvTemporaryPunishV2Request): Promise<ApiResponse<AgentAdvTemporaryPunishV2Response>> {
+  async openApi2AgentAdvTemporaryPunishPostWithHttpInfo(request: OpenApi2AgentAdvTemporaryPunishPostRequest): Promise<ApiResponse<AgentAdvTemporaryPunishV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<AgentAdvTemporaryPunishV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AgentAdvTemporaryPunishV2Api {
       queryParams: [
 
       ],
-      body: agentAdvTemporaryPunishV2Request
+      body: request.agentAdvTemporaryPunishV2Request
     });
   }
 }

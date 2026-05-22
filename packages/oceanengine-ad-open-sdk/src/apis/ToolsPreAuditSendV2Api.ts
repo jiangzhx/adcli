@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPreAuditSendV2Request, ToolsPreAuditSendV2Response } from "../models";
 
+
+export interface OpenApi2ToolsPreAuditSendPostRequest {
+  toolsPreAuditSendV2Request?: ToolsPreAuditSendV2Request;
+}
 
 export class ToolsPreAuditSendV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsPreAuditSendV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsPreAuditSendPost(toolsPreAuditSendV2Request: ToolsPreAuditSendV2Request): Promise<ToolsPreAuditSendV2Response> {
-    const response = await this.openApi2ToolsPreAuditSendPostWithHttpInfo(toolsPreAuditSendV2Request);
+  async openApi2ToolsPreAuditSendPost(request: OpenApi2ToolsPreAuditSendPostRequest): Promise<ToolsPreAuditSendV2Response> {
+    const response = await this.openApi2ToolsPreAuditSendPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsPreAuditSendPostWithHttpInfo(toolsPreAuditSendV2Request: ToolsPreAuditSendV2Request): Promise<ApiResponse<ToolsPreAuditSendV2Response>> {
+  async openApi2ToolsPreAuditSendPostWithHttpInfo(request: OpenApi2ToolsPreAuditSendPostRequest): Promise<ApiResponse<ToolsPreAuditSendV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsPreAuditSendV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsPreAuditSendV2Api {
       queryParams: [
 
       ],
-      body: toolsPreAuditSendV2Request
+      body: request.toolsPreAuditSendV2Request
     });
   }
 }

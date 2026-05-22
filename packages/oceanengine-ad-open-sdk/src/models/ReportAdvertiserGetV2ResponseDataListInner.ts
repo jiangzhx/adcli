@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ReportAdvertiserGetV2DataListAc, ReportAdvertiserGetV2DataListCampaignType, ReportAdvertiserGetV2DataListCreativeMaterialMode, ReportAdvertiserGetV2DataListExternalAction, ReportAdvertiserGetV2DataListGender, ReportAdvertiserGetV2DataListImageMode, ReportAdvertiserGetV2DataListInventory, ReportAdvertiserGetV2DataListLandingType, ReportAdvertiserGetV2DataListPricing, ReportAdvertiserGetV2DataListPricingCategory, ReportAdvertiserGetV2DataListRealRecallMatchType } from "../models";

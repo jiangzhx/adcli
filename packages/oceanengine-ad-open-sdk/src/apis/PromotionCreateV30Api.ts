@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionCreateV30Request, PromotionCreateV30Response } from "../models";
 
+
+export interface OpenApiV30PromotionCreatePostRequest {
+  promotionCreateV30Request?: PromotionCreateV30Request;
+}
 
 export class PromotionCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class PromotionCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionCreatePost(promotionCreateV30Request: PromotionCreateV30Request): Promise<PromotionCreateV30Response> {
-    const response = await this.openApiV30PromotionCreatePostWithHttpInfo(promotionCreateV30Request);
+  async openApiV30PromotionCreatePost(request: OpenApiV30PromotionCreatePostRequest): Promise<PromotionCreateV30Response> {
+    const response = await this.openApiV30PromotionCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionCreatePostWithHttpInfo(promotionCreateV30Request: PromotionCreateV30Request): Promise<ApiResponse<PromotionCreateV30Response>> {
+  async openApiV30PromotionCreatePostWithHttpInfo(request: OpenApiV30PromotionCreatePostRequest): Promise<ApiResponse<PromotionCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<PromotionCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class PromotionCreateV30Api {
       queryParams: [
 
       ],
-      body: promotionCreateV30Request
+      body: request.promotionCreateV30Request
     });
   }
 }

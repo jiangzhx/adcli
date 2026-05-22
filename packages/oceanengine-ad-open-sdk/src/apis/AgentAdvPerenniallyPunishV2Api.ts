@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AgentAdvPerenniallyPunishV2Request, AgentAdvPerenniallyPunishV2Response } from "../models";
 
+
+export interface OpenApi2AgentAdvPerenniallyPunishPostRequest {
+  agentAdvPerenniallyPunishV2Request?: AgentAdvPerenniallyPunishV2Request;
+}
 
 export class AgentAdvPerenniallyPunishV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AgentAdvPerenniallyPunishV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AgentAdvPerenniallyPunishPost(agentAdvPerenniallyPunishV2Request: AgentAdvPerenniallyPunishV2Request): Promise<AgentAdvPerenniallyPunishV2Response> {
-    const response = await this.openApi2AgentAdvPerenniallyPunishPostWithHttpInfo(agentAdvPerenniallyPunishV2Request);
+  async openApi2AgentAdvPerenniallyPunishPost(request: OpenApi2AgentAdvPerenniallyPunishPostRequest): Promise<AgentAdvPerenniallyPunishV2Response> {
+    const response = await this.openApi2AgentAdvPerenniallyPunishPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AgentAdvPerenniallyPunishPostWithHttpInfo(agentAdvPerenniallyPunishV2Request: AgentAdvPerenniallyPunishV2Request): Promise<ApiResponse<AgentAdvPerenniallyPunishV2Response>> {
+  async openApi2AgentAdvPerenniallyPunishPostWithHttpInfo(request: OpenApi2AgentAdvPerenniallyPunishPostRequest): Promise<ApiResponse<AgentAdvPerenniallyPunishV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<AgentAdvPerenniallyPunishV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AgentAdvPerenniallyPunishV2Api {
       queryParams: [
 
       ],
-      body: agentAdvPerenniallyPunishV2Request
+      body: request.agentAdvPerenniallyPunishV2Request
     });
   }
 }

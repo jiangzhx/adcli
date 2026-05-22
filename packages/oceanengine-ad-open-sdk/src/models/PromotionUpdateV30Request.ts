@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { PromotionUpdateV30AutoExtendTraffic, PromotionUpdateV30CreativeAutoGenerateSwitch, PromotionUpdateV30IsCommentDisable, PromotionUpdateV30MaterialsType, PromotionUpdateV30RequestBrandInfo, PromotionUpdateV30RequestKeywordsInner, PromotionUpdateV30RequestNativeSetting, PromotionUpdateV30RequestPromotionMaterials, PromotionUpdateV30RequestPromotionRelatedProductInner, PromotionUpdateV30RequestShopMultiRoiGoalsInner } from "../models";

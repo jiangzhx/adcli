@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanFileImageDeleteV10Request, QianchuanFileImageDeleteV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanFileImageDeletePostRequest {
+  qianchuanFileImageDeleteV10Request?: QianchuanFileImageDeleteV10Request;
+}
 
 export class QianchuanFileImageDeleteV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanFileImageDeleteV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanFileImageDeletePost(qianchuanFileImageDeleteV10Request: QianchuanFileImageDeleteV10Request): Promise<QianchuanFileImageDeleteV10Response> {
-    const response = await this.openApiV10QianchuanFileImageDeletePostWithHttpInfo(qianchuanFileImageDeleteV10Request);
+  async openApiV10QianchuanFileImageDeletePost(request: OpenApiV10QianchuanFileImageDeletePostRequest): Promise<QianchuanFileImageDeleteV10Response> {
+    const response = await this.openApiV10QianchuanFileImageDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanFileImageDeletePostWithHttpInfo(qianchuanFileImageDeleteV10Request: QianchuanFileImageDeleteV10Request): Promise<ApiResponse<QianchuanFileImageDeleteV10Response>> {
+  async openApiV10QianchuanFileImageDeletePostWithHttpInfo(request: OpenApiV10QianchuanFileImageDeletePostRequest): Promise<ApiResponse<QianchuanFileImageDeleteV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanFileImageDeleteV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanFileImageDeleteV10Api {
       queryParams: [
 
       ],
-      body: qianchuanFileImageDeleteV10Request
+      body: request.qianchuanFileImageDeleteV10Request
     });
   }
 }

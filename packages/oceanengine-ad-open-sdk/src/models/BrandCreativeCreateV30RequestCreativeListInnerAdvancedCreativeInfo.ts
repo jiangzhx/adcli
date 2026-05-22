@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoCard, BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoExploreOneTimeComponent, BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoSearchComponent } from "../models";

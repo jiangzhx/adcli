@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsEbpAppDetailV30DataCurrentVersionGameIpType, ToolsEbpAppDetailV30DataCurrentVersionMaxPaymentTierRange, ToolsEbpAppDetailV30DataCurrentVersionMaxRechargeTier, ToolsEbpAppDetailV30DataCurrentVersionMembershipType, ToolsEbpAppDetailV30DataCurrentVersionMidPaymentTierRange, ToolsEbpAppDetailV30DataCurrentVersionMinPaymentTierRange, ToolsEbpAppDetailV30DataCurrentVersionMinRechargeTier, ToolsEbpAppDetailV30DataCurrentVersionRecommendedRechargeTier, ToolsEbpAppDetailV30DataCurrentVersionRevenueModel, ToolsEbpAppDetailV30DataCurrentVersionScheduleCards } from "../models";

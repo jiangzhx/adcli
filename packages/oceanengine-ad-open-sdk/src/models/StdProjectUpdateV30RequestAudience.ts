@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StdProjectUpdateV30AudienceAge, StdProjectUpdateV30AudienceAndroidOsv, StdProjectUpdateV30AudienceAutoExtendTargets, StdProjectUpdateV30AudienceCarrierRegionOptimize, StdProjectUpdateV30AudienceConvertedTimeDuration, StdProjectUpdateV30AudienceDistrict, StdProjectUpdateV30AudienceFilterEvent, StdProjectUpdateV30AudienceGender, StdProjectUpdateV30AudienceHarmonyOsv, StdProjectUpdateV30AudienceHideIfConverted, StdProjectUpdateV30AudienceHideIfExists, StdProjectUpdateV30AudienceIosOsv, StdProjectUpdateV30AudienceLocationType, StdProjectUpdateV30AudiencePlatform, StdProjectUpdateV30AudienceRegionRecommend, StdProjectUpdateV30AudienceSmartExtend, StdProjectUpdateV30RequestAudienceGeolocationInner } from "../models";

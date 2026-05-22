@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanUniPromotionListV10FilteringHavingCost, QianchuanUniPromotionListV10FilteringSearchKeywordType, QianchuanUniPromotionListV10FilteringSmartBidType, QianchuanUniPromotionListV10FilteringStatus } from "../models";

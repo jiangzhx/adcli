@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAppManagementUploadTaskCreateV2Request, ToolsAppManagementUploadTaskCreateV2Response } from "../models";
 
+
+export interface OpenApi2ToolsAppManagementUploadTaskCreatePostRequest {
+  toolsAppManagementUploadTaskCreateV2Request?: ToolsAppManagementUploadTaskCreateV2Request;
+}
 
 export class ToolsAppManagementUploadTaskCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsAppManagementUploadTaskCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsAppManagementUploadTaskCreatePost(toolsAppManagementUploadTaskCreateV2Request: ToolsAppManagementUploadTaskCreateV2Request): Promise<ToolsAppManagementUploadTaskCreateV2Response> {
-    const response = await this.openApi2ToolsAppManagementUploadTaskCreatePostWithHttpInfo(toolsAppManagementUploadTaskCreateV2Request);
+  async openApi2ToolsAppManagementUploadTaskCreatePost(request: OpenApi2ToolsAppManagementUploadTaskCreatePostRequest): Promise<ToolsAppManagementUploadTaskCreateV2Response> {
+    const response = await this.openApi2ToolsAppManagementUploadTaskCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsAppManagementUploadTaskCreatePostWithHttpInfo(toolsAppManagementUploadTaskCreateV2Request: ToolsAppManagementUploadTaskCreateV2Request): Promise<ApiResponse<ToolsAppManagementUploadTaskCreateV2Response>> {
+  async openApi2ToolsAppManagementUploadTaskCreatePostWithHttpInfo(request: OpenApi2ToolsAppManagementUploadTaskCreatePostRequest): Promise<ApiResponse<ToolsAppManagementUploadTaskCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementUploadTaskCreateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsAppManagementUploadTaskCreateV2Api {
       queryParams: [
 
       ],
-      body: toolsAppManagementUploadTaskCreateV2Request
+      body: request.toolsAppManagementUploadTaskCreateV2Request
     });
   }
 }

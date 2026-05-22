@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAppManagementExtendPackageUpdateV2Request, ToolsAppManagementExtendPackageUpdateV2Response } from "../models";
 
+
+export interface OpenApi2ToolsAppManagementExtendPackageUpdatePostRequest {
+  toolsAppManagementExtendPackageUpdateV2Request?: ToolsAppManagementExtendPackageUpdateV2Request;
+}
 
 export class ToolsAppManagementExtendPackageUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsAppManagementExtendPackageUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsAppManagementExtendPackageUpdatePost(toolsAppManagementExtendPackageUpdateV2Request: ToolsAppManagementExtendPackageUpdateV2Request): Promise<ToolsAppManagementExtendPackageUpdateV2Response> {
-    const response = await this.openApi2ToolsAppManagementExtendPackageUpdatePostWithHttpInfo(toolsAppManagementExtendPackageUpdateV2Request);
+  async openApi2ToolsAppManagementExtendPackageUpdatePost(request: OpenApi2ToolsAppManagementExtendPackageUpdatePostRequest): Promise<ToolsAppManagementExtendPackageUpdateV2Response> {
+    const response = await this.openApi2ToolsAppManagementExtendPackageUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsAppManagementExtendPackageUpdatePostWithHttpInfo(toolsAppManagementExtendPackageUpdateV2Request: ToolsAppManagementExtendPackageUpdateV2Request): Promise<ApiResponse<ToolsAppManagementExtendPackageUpdateV2Response>> {
+  async openApi2ToolsAppManagementExtendPackageUpdatePostWithHttpInfo(request: OpenApi2ToolsAppManagementExtendPackageUpdatePostRequest): Promise<ApiResponse<ToolsAppManagementExtendPackageUpdateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementExtendPackageUpdateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsAppManagementExtendPackageUpdateV2Api {
       queryParams: [
 
       ],
-      body: toolsAppManagementExtendPackageUpdateV2Request
+      body: request.toolsAppManagementExtendPackageUpdateV2Request
     });
   }
 }

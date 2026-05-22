@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,13 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarReportDataTopicConfigV2Response, StarReportDataTopicConfigV2Topics } from "../models";
 
+
+export interface OpenApi2StarReportDataTopicConfigGetRequest {
+  starId: number;
+  workId: number;
+  demandId: number;
+  topics: StarReportDataTopicConfigV2Topics[];
+}
 
 export class StarReportDataTopicConfigV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,35 +25,35 @@ export class StarReportDataTopicConfigV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarReportDataTopicConfigGet(starId: number, workId: number, demandId: number, topics: StarReportDataTopicConfigV2Topics[]): Promise<StarReportDataTopicConfigV2Response> {
-    const response = await this.openApi2StarReportDataTopicConfigGetWithHttpInfo(starId, workId, demandId, topics);
+  async openApi2StarReportDataTopicConfigGet(request: OpenApi2StarReportDataTopicConfigGetRequest): Promise<StarReportDataTopicConfigV2Response> {
+    const response = await this.openApi2StarReportDataTopicConfigGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarReportDataTopicConfigGetWithHttpInfo(starId: number, workId: number, demandId: number, topics: StarReportDataTopicConfigV2Topics[]): Promise<ApiResponse<StarReportDataTopicConfigV2Response>> {
-    if (starId == null) {
+  async openApi2StarReportDataTopicConfigGetWithHttpInfo(request: OpenApi2StarReportDataTopicConfigGetRequest): Promise<ApiResponse<StarReportDataTopicConfigV2Response>> {
+    if (request.starId == null) {
       throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarReportDataTopicConfigGet");
     }
 
-    if (workId == null) {
+    if (request.workId == null) {
       throw new ApiException("Missing the required parameter 'workId' when calling openApi2StarReportDataTopicConfigGet");
     }
 
-    if (demandId == null) {
+    if (request.demandId == null) {
       throw new ApiException("Missing the required parameter 'demandId' when calling openApi2StarReportDataTopicConfigGet");
     }
 
-    if (topics == null) {
+    if (request.topics == null) {
       throw new ApiException("Missing the required parameter 'topics' when calling openApi2StarReportDataTopicConfigGet");
     }
     return this.apiClient.requestWithHttpInfo<StarReportDataTopicConfigV2Response>({
       method: "GET",
       path: "/open_api/2/star/report/data_topic_config/",
       queryParams: [
-        { name: "star_id", value: starId },
-        { name: "work_id", value: workId },
-        { name: "demand_id", value: demandId },
-        { name: "topics", value: topics, collectionFormat: "csv" }
+        { name: "star_id", value: request.starId },
+        { name: "work_id", value: request.workId },
+        { name: "demand_id", value: request.demandId },
+        { name: "topics", value: request.topics, collectionFormat: "csv" }
       ]
     });
   }

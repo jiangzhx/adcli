@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPrivativeWordProjectUpdateV30Request, ToolsPrivativeWordProjectUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsPrivativeWordProjectUpdatePostRequest {
+  toolsPrivativeWordProjectUpdateV30Request?: ToolsPrivativeWordProjectUpdateV30Request;
+}
 
 export class ToolsPrivativeWordProjectUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsPrivativeWordProjectUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsPrivativeWordProjectUpdatePost(toolsPrivativeWordProjectUpdateV30Request: ToolsPrivativeWordProjectUpdateV30Request): Promise<ToolsPrivativeWordProjectUpdateV30Response> {
-    const response = await this.openApiV30ToolsPrivativeWordProjectUpdatePostWithHttpInfo(toolsPrivativeWordProjectUpdateV30Request);
+  async openApiV30ToolsPrivativeWordProjectUpdatePost(request: OpenApiV30ToolsPrivativeWordProjectUpdatePostRequest): Promise<ToolsPrivativeWordProjectUpdateV30Response> {
+    const response = await this.openApiV30ToolsPrivativeWordProjectUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsPrivativeWordProjectUpdatePostWithHttpInfo(toolsPrivativeWordProjectUpdateV30Request: ToolsPrivativeWordProjectUpdateV30Request): Promise<ApiResponse<ToolsPrivativeWordProjectUpdateV30Response>> {
+  async openApiV30ToolsPrivativeWordProjectUpdatePostWithHttpInfo(request: OpenApiV30ToolsPrivativeWordProjectUpdatePostRequest): Promise<ApiResponse<ToolsPrivativeWordProjectUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsPrivativeWordProjectUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsPrivativeWordProjectUpdateV30Api {
       queryParams: [
 
       ],
-      body: toolsPrivativeWordProjectUpdateV30Request
+      body: request.toolsPrivativeWordProjectUpdateV30Request
     });
   }
 }

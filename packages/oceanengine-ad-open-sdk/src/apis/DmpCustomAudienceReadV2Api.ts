@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DmpCustomAudienceReadV2Response } from "../models";
 
+
+export interface OpenApi2DmpCustomAudienceReadGetRequest {
+  advertiserId: number;
+  customAudienceIds: number[];
+}
 
 export class DmpCustomAudienceReadV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,25 +23,25 @@ export class DmpCustomAudienceReadV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2DmpCustomAudienceReadGet(advertiserId: number, customAudienceIds: number[]): Promise<DmpCustomAudienceReadV2Response> {
-    const response = await this.openApi2DmpCustomAudienceReadGetWithHttpInfo(advertiserId, customAudienceIds);
+  async openApi2DmpCustomAudienceReadGet(request: OpenApi2DmpCustomAudienceReadGetRequest): Promise<DmpCustomAudienceReadV2Response> {
+    const response = await this.openApi2DmpCustomAudienceReadGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2DmpCustomAudienceReadGetWithHttpInfo(advertiserId: number, customAudienceIds: number[]): Promise<ApiResponse<DmpCustomAudienceReadV2Response>> {
-    if (advertiserId == null) {
+  async openApi2DmpCustomAudienceReadGetWithHttpInfo(request: OpenApi2DmpCustomAudienceReadGetRequest): Promise<ApiResponse<DmpCustomAudienceReadV2Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DmpCustomAudienceReadGet");
     }
 
-    if (customAudienceIds == null) {
+    if (request.customAudienceIds == null) {
       throw new ApiException("Missing the required parameter 'customAudienceIds' when calling openApi2DmpCustomAudienceReadGet");
     }
     return this.apiClient.requestWithHttpInfo<DmpCustomAudienceReadV2Response>({
       method: "GET",
       path: "/open_api/2/dmp/custom_audience/read/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "custom_audience_ids", value: customAudienceIds, collectionFormat: "csv" }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "custom_audience_ids", value: request.customAudienceIds, collectionFormat: "csv" }
       ]
     });
   }

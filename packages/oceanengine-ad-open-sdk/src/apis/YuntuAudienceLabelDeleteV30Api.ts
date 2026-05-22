@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { YuntuAudienceLabelDeleteV30Request, YuntuAudienceLabelDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30YuntuAudienceLabelDeletePostRequest {
+  yuntuAudienceLabelDeleteV30Request?: YuntuAudienceLabelDeleteV30Request;
+}
 
 export class YuntuAudienceLabelDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class YuntuAudienceLabelDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30YuntuAudienceLabelDeletePost(yuntuAudienceLabelDeleteV30Request: YuntuAudienceLabelDeleteV30Request): Promise<YuntuAudienceLabelDeleteV30Response> {
-    const response = await this.openApiV30YuntuAudienceLabelDeletePostWithHttpInfo(yuntuAudienceLabelDeleteV30Request);
+  async openApiV30YuntuAudienceLabelDeletePost(request: OpenApiV30YuntuAudienceLabelDeletePostRequest): Promise<YuntuAudienceLabelDeleteV30Response> {
+    const response = await this.openApiV30YuntuAudienceLabelDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30YuntuAudienceLabelDeletePostWithHttpInfo(yuntuAudienceLabelDeleteV30Request: YuntuAudienceLabelDeleteV30Request): Promise<ApiResponse<YuntuAudienceLabelDeleteV30Response>> {
+  async openApiV30YuntuAudienceLabelDeletePostWithHttpInfo(request: OpenApiV30YuntuAudienceLabelDeletePostRequest): Promise<ApiResponse<YuntuAudienceLabelDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<YuntuAudienceLabelDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class YuntuAudienceLabelDeleteV30Api {
       queryParams: [
 
       ],
-      body: yuntuAudienceLabelDeleteV30Request
+      body: request.yuntuAudienceLabelDeleteV30Request
     });
   }
 }

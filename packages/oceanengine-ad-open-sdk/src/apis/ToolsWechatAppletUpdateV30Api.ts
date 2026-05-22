@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsWechatAppletUpdateV30Request, ToolsWechatAppletUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsWechatAppletUpdatePostRequest {
+  toolsWechatAppletUpdateV30Request?: ToolsWechatAppletUpdateV30Request;
+}
 
 export class ToolsWechatAppletUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsWechatAppletUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsWechatAppletUpdatePost(toolsWechatAppletUpdateV30Request: ToolsWechatAppletUpdateV30Request): Promise<ToolsWechatAppletUpdateV30Response> {
-    const response = await this.openApiV30ToolsWechatAppletUpdatePostWithHttpInfo(toolsWechatAppletUpdateV30Request);
+  async openApiV30ToolsWechatAppletUpdatePost(request: OpenApiV30ToolsWechatAppletUpdatePostRequest): Promise<ToolsWechatAppletUpdateV30Response> {
+    const response = await this.openApiV30ToolsWechatAppletUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsWechatAppletUpdatePostWithHttpInfo(toolsWechatAppletUpdateV30Request: ToolsWechatAppletUpdateV30Request): Promise<ApiResponse<ToolsWechatAppletUpdateV30Response>> {
+  async openApiV30ToolsWechatAppletUpdatePostWithHttpInfo(request: OpenApiV30ToolsWechatAppletUpdatePostRequest): Promise<ApiResponse<ToolsWechatAppletUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsWechatAppletUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsWechatAppletUpdateV30Api {
       queryParams: [
 
       ],
-      body: toolsWechatAppletUpdateV30Request
+      body: request.toolsWechatAppletUpdateV30Request
     });
   }
 }

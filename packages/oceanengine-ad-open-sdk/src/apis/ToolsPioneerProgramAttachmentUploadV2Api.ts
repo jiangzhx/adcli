@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,17 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPioneerProgramAttachmentUploadV2DataFileType, ToolsPioneerProgramAttachmentUploadV2Platform, ToolsPioneerProgramAttachmentUploadV2Response } from "../models";
 
+
+export interface OpenApi2ToolsPioneerProgramAttachmentUploadPostRequest {
+  appId: number;
+  dataFileType: ToolsPioneerProgramAttachmentUploadV2DataFileType;
+  fileData: File;
+  fileIndex: number;
+  fileTotalNum: number;
+  pDate: string;
+  platform: ToolsPioneerProgramAttachmentUploadV2Platform;
+  debugMode?: boolean;
+}
 
 export class ToolsPioneerProgramAttachmentUploadV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,37 +29,37 @@ export class ToolsPioneerProgramAttachmentUploadV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsPioneerProgramAttachmentUploadPost(appId: number, dataFileType: ToolsPioneerProgramAttachmentUploadV2DataFileType, fileData: File, fileIndex: number, fileTotalNum: number, pDate: string, platform: ToolsPioneerProgramAttachmentUploadV2Platform, debugMode: boolean): Promise<ToolsPioneerProgramAttachmentUploadV2Response> {
-    const response = await this.openApi2ToolsPioneerProgramAttachmentUploadPostWithHttpInfo(appId, dataFileType, fileData, fileIndex, fileTotalNum, pDate, platform, debugMode);
+  async openApi2ToolsPioneerProgramAttachmentUploadPost(request: OpenApi2ToolsPioneerProgramAttachmentUploadPostRequest): Promise<ToolsPioneerProgramAttachmentUploadV2Response> {
+    const response = await this.openApi2ToolsPioneerProgramAttachmentUploadPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsPioneerProgramAttachmentUploadPostWithHttpInfo(appId: number, dataFileType: ToolsPioneerProgramAttachmentUploadV2DataFileType, fileData: File, fileIndex: number, fileTotalNum: number, pDate: string, platform: ToolsPioneerProgramAttachmentUploadV2Platform, debugMode: boolean): Promise<ApiResponse<ToolsPioneerProgramAttachmentUploadV2Response>> {
-    if (appId == null) {
+  async openApi2ToolsPioneerProgramAttachmentUploadPostWithHttpInfo(request: OpenApi2ToolsPioneerProgramAttachmentUploadPostRequest): Promise<ApiResponse<ToolsPioneerProgramAttachmentUploadV2Response>> {
+    if (request.appId == null) {
       throw new ApiException("Missing the required parameter 'appId' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
     }
 
-    if (dataFileType == null) {
+    if (request.dataFileType == null) {
       throw new ApiException("Missing the required parameter 'dataFileType' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
     }
 
-    if (fileData == null) {
+    if (request.fileData == null) {
       throw new ApiException("Missing the required parameter 'fileData' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
     }
 
-    if (fileIndex == null) {
+    if (request.fileIndex == null) {
       throw new ApiException("Missing the required parameter 'fileIndex' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
     }
 
-    if (fileTotalNum == null) {
+    if (request.fileTotalNum == null) {
       throw new ApiException("Missing the required parameter 'fileTotalNum' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
     }
 
-    if (pDate == null) {
+    if (request.pDate == null) {
       throw new ApiException("Missing the required parameter 'pDate' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
     }
 
-    if (platform == null) {
+    if (request.platform == null) {
       throw new ApiException("Missing the required parameter 'platform' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPioneerProgramAttachmentUploadV2Response>({

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,18 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FileVideoAdV2Response, FileVideoAdV2UploadType } from "../models";
 
+
+export interface OpenApi2FileVideoAdPostRequest {
+  advertiserId: number;
+  filename?: string;
+  isAigc?: boolean;
+  isGuideVideo?: boolean;
+  labels?: string[];
+  uploadType?: FileVideoAdV2UploadType;
+  videoFile?: File;
+  videoSignature?: string;
+  videoUrl?: string;
+}
 
 export class FileVideoAdV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,13 +30,13 @@ export class FileVideoAdV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2FileVideoAdPost(advertiserId: number, filename: string, isAigc: boolean, isGuideVideo: boolean, labels: string[], uploadType: FileVideoAdV2UploadType, videoFile: File, videoSignature: string, videoUrl: string): Promise<FileVideoAdV2Response> {
-    const response = await this.openApi2FileVideoAdPostWithHttpInfo(advertiserId, filename, isAigc, isGuideVideo, labels, uploadType, videoFile, videoSignature, videoUrl);
+  async openApi2FileVideoAdPost(request: OpenApi2FileVideoAdPostRequest): Promise<FileVideoAdV2Response> {
+    const response = await this.openApi2FileVideoAdPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2FileVideoAdPostWithHttpInfo(advertiserId: number, filename: string, isAigc: boolean, isGuideVideo: boolean, labels: string[], uploadType: FileVideoAdV2UploadType, videoFile: File, videoSignature: string, videoUrl: string): Promise<ApiResponse<FileVideoAdV2Response>> {
-    if (advertiserId == null) {
+  async openApi2FileVideoAdPostWithHttpInfo(request: OpenApi2FileVideoAdPostRequest): Promise<ApiResponse<FileVideoAdV2Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoAdPost");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoAdV2Response>({

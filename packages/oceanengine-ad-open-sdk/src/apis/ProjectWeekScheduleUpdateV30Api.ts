@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ProjectWeekScheduleUpdateV30Request, ProjectWeekScheduleUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30ProjectWeekScheduleUpdatePostRequest {
+  projectWeekScheduleUpdateV30Request?: ProjectWeekScheduleUpdateV30Request;
+}
 
 export class ProjectWeekScheduleUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ProjectWeekScheduleUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ProjectWeekScheduleUpdatePost(projectWeekScheduleUpdateV30Request: ProjectWeekScheduleUpdateV30Request): Promise<ProjectWeekScheduleUpdateV30Response> {
-    const response = await this.openApiV30ProjectWeekScheduleUpdatePostWithHttpInfo(projectWeekScheduleUpdateV30Request);
+  async openApiV30ProjectWeekScheduleUpdatePost(request: OpenApiV30ProjectWeekScheduleUpdatePostRequest): Promise<ProjectWeekScheduleUpdateV30Response> {
+    const response = await this.openApiV30ProjectWeekScheduleUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ProjectWeekScheduleUpdatePostWithHttpInfo(projectWeekScheduleUpdateV30Request: ProjectWeekScheduleUpdateV30Request): Promise<ApiResponse<ProjectWeekScheduleUpdateV30Response>> {
+  async openApiV30ProjectWeekScheduleUpdatePostWithHttpInfo(request: OpenApiV30ProjectWeekScheduleUpdatePostRequest): Promise<ApiResponse<ProjectWeekScheduleUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ProjectWeekScheduleUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ProjectWeekScheduleUpdateV30Api {
       queryParams: [
 
       ],
-      body: projectWeekScheduleUpdateV30Request
+      body: request.projectWeekScheduleUpdateV30Request
     });
   }
 }

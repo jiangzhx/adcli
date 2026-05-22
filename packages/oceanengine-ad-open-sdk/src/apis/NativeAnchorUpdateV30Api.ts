@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { NativeAnchorUpdateV30Request, NativeAnchorUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30NativeAnchorUpdatePostRequest {
+  nativeAnchorUpdateV30Request?: NativeAnchorUpdateV30Request;
+}
 
 export class NativeAnchorUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class NativeAnchorUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30NativeAnchorUpdatePost(nativeAnchorUpdateV30Request: NativeAnchorUpdateV30Request): Promise<NativeAnchorUpdateV30Response> {
-    const response = await this.openApiV30NativeAnchorUpdatePostWithHttpInfo(nativeAnchorUpdateV30Request);
+  async openApiV30NativeAnchorUpdatePost(request: OpenApiV30NativeAnchorUpdatePostRequest): Promise<NativeAnchorUpdateV30Response> {
+    const response = await this.openApiV30NativeAnchorUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30NativeAnchorUpdatePostWithHttpInfo(nativeAnchorUpdateV30Request: NativeAnchorUpdateV30Request): Promise<ApiResponse<NativeAnchorUpdateV30Response>> {
+  async openApiV30NativeAnchorUpdatePostWithHttpInfo(request: OpenApiV30NativeAnchorUpdatePostRequest): Promise<ApiResponse<NativeAnchorUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<NativeAnchorUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class NativeAnchorUpdateV30Api {
       queryParams: [
 
       ],
-      body: nativeAnchorUpdateV30Request
+      body: request.nativeAnchorUpdateV30Request
     });
   }
 }

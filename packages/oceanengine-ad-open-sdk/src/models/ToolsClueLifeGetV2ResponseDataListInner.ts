@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsClueLifeGetV2DataListActionType, ToolsClueLifeGetV2DataListAdType, ToolsClueLifeGetV2DataListAllocationStatus, ToolsClueLifeGetV2DataListClueType, ToolsClueLifeGetV2DataListConvertStatus, ToolsClueLifeGetV2DataListEffectiveState, ToolsClueLifeGetV2DataListEffectiveStateName, ToolsClueLifeGetV2DataListFlowEntrance, ToolsClueLifeGetV2DataListFlowType, ToolsClueLifeGetV2DataListFollowLifeAccountType, ToolsClueLifeGetV2DataListFollowStateName, ToolsClueLifeGetV2DataListGender, ToolsClueLifeGetV2DataListIsPrivateClue, ToolsClueLifeGetV2DataListLeadsPage, ToolsClueLifeGetV2DataListProductType, ToolsClueLifeGetV2DataListQcpxTicketStatus } from "../models";

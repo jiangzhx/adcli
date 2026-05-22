@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsCommentStickOnTopV30Request, ToolsCommentStickOnTopV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsCommentStickOnTopPostRequest {
+  toolsCommentStickOnTopV30Request?: ToolsCommentStickOnTopV30Request;
+}
 
 export class ToolsCommentStickOnTopV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsCommentStickOnTopV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsCommentStickOnTopPost(toolsCommentStickOnTopV30Request: ToolsCommentStickOnTopV30Request): Promise<ToolsCommentStickOnTopV30Response> {
-    const response = await this.openApiV30ToolsCommentStickOnTopPostWithHttpInfo(toolsCommentStickOnTopV30Request);
+  async openApiV30ToolsCommentStickOnTopPost(request: OpenApiV30ToolsCommentStickOnTopPostRequest): Promise<ToolsCommentStickOnTopV30Response> {
+    const response = await this.openApiV30ToolsCommentStickOnTopPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsCommentStickOnTopPostWithHttpInfo(toolsCommentStickOnTopV30Request: ToolsCommentStickOnTopV30Request): Promise<ApiResponse<ToolsCommentStickOnTopV30Response>> {
+  async openApiV30ToolsCommentStickOnTopPostWithHttpInfo(request: OpenApiV30ToolsCommentStickOnTopPostRequest): Promise<ApiResponse<ToolsCommentStickOnTopV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsCommentStickOnTopV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsCommentStickOnTopV30Api {
       queryParams: [
 
       ],
-      body: toolsCommentStickOnTopV30Request
+      body: request.toolsCommentStickOnTopV30Request
     });
   }
 }

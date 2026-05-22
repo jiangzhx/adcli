@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CustomerCenterAccountOfflineListV30Filter, CustomerCenterAccountOfflineListV30Response } from "../models";
 
+
+export interface OpenApiV30CustomerCenterAccountOfflineListGetRequest {
+  accountId: number;
+  filter: CustomerCenterAccountOfflineListV30Filter;
+}
 
 export class CustomerCenterAccountOfflineListV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,25 +23,25 @@ export class CustomerCenterAccountOfflineListV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30CustomerCenterAccountOfflineListGet(accountId: number, filter: CustomerCenterAccountOfflineListV30Filter): Promise<CustomerCenterAccountOfflineListV30Response> {
-    const response = await this.openApiV30CustomerCenterAccountOfflineListGetWithHttpInfo(accountId, filter);
+  async openApiV30CustomerCenterAccountOfflineListGet(request: OpenApiV30CustomerCenterAccountOfflineListGetRequest): Promise<CustomerCenterAccountOfflineListV30Response> {
+    const response = await this.openApiV30CustomerCenterAccountOfflineListGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30CustomerCenterAccountOfflineListGetWithHttpInfo(accountId: number, filter: CustomerCenterAccountOfflineListV30Filter): Promise<ApiResponse<CustomerCenterAccountOfflineListV30Response>> {
-    if (accountId == null) {
+  async openApiV30CustomerCenterAccountOfflineListGetWithHttpInfo(request: OpenApiV30CustomerCenterAccountOfflineListGetRequest): Promise<ApiResponse<CustomerCenterAccountOfflineListV30Response>> {
+    if (request.accountId == null) {
       throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30CustomerCenterAccountOfflineListGet");
     }
 
-    if (filter == null) {
+    if (request.filter == null) {
       throw new ApiException("Missing the required parameter 'filter' when calling openApiV30CustomerCenterAccountOfflineListGet");
     }
     return this.apiClient.requestWithHttpInfo<CustomerCenterAccountOfflineListV30Response>({
       method: "GET",
       path: "/open_api/v3.0/customer_center/account/offline_list/",
       queryParams: [
-        { name: "account_id", value: accountId },
-        { name: "filter", value: filter }
+        { name: "account_id", value: request.accountId },
+        { name: "filter", value: request.filter }
       ]
     });
   }

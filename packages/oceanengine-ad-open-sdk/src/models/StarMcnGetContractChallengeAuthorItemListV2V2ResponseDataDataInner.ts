@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoDailyListInner, StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerLiveEffectData, StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerSmallGameSettle } from "../models";

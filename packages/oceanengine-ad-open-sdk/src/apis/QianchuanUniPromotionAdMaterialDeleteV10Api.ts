@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanUniPromotionAdMaterialDeleteV10Request, QianchuanUniPromotionAdMaterialDeleteV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanUniPromotionAdMaterialDeletePostRequest {
+  qianchuanUniPromotionAdMaterialDeleteV10Request?: QianchuanUniPromotionAdMaterialDeleteV10Request;
+}
 
 export class QianchuanUniPromotionAdMaterialDeleteV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanUniPromotionAdMaterialDeleteV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanUniPromotionAdMaterialDeletePost(qianchuanUniPromotionAdMaterialDeleteV10Request: QianchuanUniPromotionAdMaterialDeleteV10Request): Promise<QianchuanUniPromotionAdMaterialDeleteV10Response> {
-    const response = await this.openApiV10QianchuanUniPromotionAdMaterialDeletePostWithHttpInfo(qianchuanUniPromotionAdMaterialDeleteV10Request);
+  async openApiV10QianchuanUniPromotionAdMaterialDeletePost(request: OpenApiV10QianchuanUniPromotionAdMaterialDeletePostRequest): Promise<QianchuanUniPromotionAdMaterialDeleteV10Response> {
+    const response = await this.openApiV10QianchuanUniPromotionAdMaterialDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanUniPromotionAdMaterialDeletePostWithHttpInfo(qianchuanUniPromotionAdMaterialDeleteV10Request: QianchuanUniPromotionAdMaterialDeleteV10Request): Promise<ApiResponse<QianchuanUniPromotionAdMaterialDeleteV10Response>> {
+  async openApiV10QianchuanUniPromotionAdMaterialDeletePostWithHttpInfo(request: OpenApiV10QianchuanUniPromotionAdMaterialDeletePostRequest): Promise<ApiResponse<QianchuanUniPromotionAdMaterialDeleteV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionAdMaterialDeleteV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanUniPromotionAdMaterialDeleteV10Api {
       queryParams: [
 
       ],
-      body: qianchuanUniPromotionAdMaterialDeleteV10Request
+      body: request.qianchuanUniPromotionAdMaterialDeleteV10Request
     });
   }
 }

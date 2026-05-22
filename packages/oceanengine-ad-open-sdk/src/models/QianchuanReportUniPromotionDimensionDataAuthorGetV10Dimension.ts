@@ -1,10 +1,9 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension = {
-  DAILY: "TIME_GRANULARITY_DAILY",
-  HOURLY: "TIME_GRANULARITY_HOURLY",
+  TIME_GRANULARITY_DAILY: "TIME_GRANULARITY_DAILY",
+  TIME_GRANULARITY_HOURLY: "TIME_GRANULARITY_HOURLY",
 } as const;
 
 export type QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension = typeof QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension[keyof typeof QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension];

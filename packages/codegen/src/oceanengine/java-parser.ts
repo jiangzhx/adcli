@@ -38,7 +38,7 @@ export type JavaModelSpec =
   | {
       kind: "enum";
       name: string;
-      values: Array<{ key: string; value: string }>;
+      values: Array<{ key: string; value: string | number }>;
     };
 
 export function parseJavaApiSource(source: string, filename: string): JavaApiSpec {

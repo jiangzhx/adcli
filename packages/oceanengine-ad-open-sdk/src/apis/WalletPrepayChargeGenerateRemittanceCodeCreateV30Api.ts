@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { WalletPrepayChargeGenerateRemittanceCodeCreateV30Request, WalletPrepayChargeGenerateRemittanceCodeCreateV30Response } from "../models";
 
+
+export interface OpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest {
+  walletPrepayChargeGenerateRemittanceCodeCreateV30Request?: WalletPrepayChargeGenerateRemittanceCodeCreateV30Request;
+}
 
 export class WalletPrepayChargeGenerateRemittanceCodeCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class WalletPrepayChargeGenerateRemittanceCodeCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePost(walletPrepayChargeGenerateRemittanceCodeCreateV30Request: WalletPrepayChargeGenerateRemittanceCodeCreateV30Request): Promise<WalletPrepayChargeGenerateRemittanceCodeCreateV30Response> {
-    const response = await this.openApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostWithHttpInfo(walletPrepayChargeGenerateRemittanceCodeCreateV30Request);
+  async openApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePost(request: OpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest): Promise<WalletPrepayChargeGenerateRemittanceCodeCreateV30Response> {
+    const response = await this.openApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostWithHttpInfo(walletPrepayChargeGenerateRemittanceCodeCreateV30Request: WalletPrepayChargeGenerateRemittanceCodeCreateV30Request): Promise<ApiResponse<WalletPrepayChargeGenerateRemittanceCodeCreateV30Response>> {
+  async openApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostWithHttpInfo(request: OpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest): Promise<ApiResponse<WalletPrepayChargeGenerateRemittanceCodeCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<WalletPrepayChargeGenerateRemittanceCodeCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class WalletPrepayChargeGenerateRemittanceCodeCreateV30Api {
       queryParams: [
 
       ],
-      body: walletPrepayChargeGenerateRemittanceCodeCreateV30Request
+      body: request.walletPrepayChargeGenerateRemittanceCodeCreateV30Request
     });
   }
 }

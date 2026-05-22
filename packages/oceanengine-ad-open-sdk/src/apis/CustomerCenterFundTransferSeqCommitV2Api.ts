@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CustomerCenterFundTransferSeqCommitV2Request, CustomerCenterFundTransferSeqCommitV2Response } from "../models";
 
+
+export interface OpenApi2CustomerCenterFundTransferSeqCommitPostRequest {
+  customerCenterFundTransferSeqCommitV2Request?: CustomerCenterFundTransferSeqCommitV2Request;
+}
 
 export class CustomerCenterFundTransferSeqCommitV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class CustomerCenterFundTransferSeqCommitV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2CustomerCenterFundTransferSeqCommitPost(customerCenterFundTransferSeqCommitV2Request: CustomerCenterFundTransferSeqCommitV2Request): Promise<CustomerCenterFundTransferSeqCommitV2Response> {
-    const response = await this.openApi2CustomerCenterFundTransferSeqCommitPostWithHttpInfo(customerCenterFundTransferSeqCommitV2Request);
+  async openApi2CustomerCenterFundTransferSeqCommitPost(request: OpenApi2CustomerCenterFundTransferSeqCommitPostRequest): Promise<CustomerCenterFundTransferSeqCommitV2Response> {
+    const response = await this.openApi2CustomerCenterFundTransferSeqCommitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2CustomerCenterFundTransferSeqCommitPostWithHttpInfo(customerCenterFundTransferSeqCommitV2Request: CustomerCenterFundTransferSeqCommitV2Request): Promise<ApiResponse<CustomerCenterFundTransferSeqCommitV2Response>> {
+  async openApi2CustomerCenterFundTransferSeqCommitPostWithHttpInfo(request: OpenApi2CustomerCenterFundTransferSeqCommitPostRequest): Promise<ApiResponse<CustomerCenterFundTransferSeqCommitV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<CustomerCenterFundTransferSeqCommitV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class CustomerCenterFundTransferSeqCommitV2Api {
       queryParams: [
 
       ],
-      body: customerCenterFundTransferSeqCommitV2Request
+      body: request.customerCenterFundTransferSeqCommitV2Request
     });
   }
 }

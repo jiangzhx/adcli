@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StarReportOrderUserDistributionGetV2ResponseDataActivityInner, StarReportOrderUserDistributionGetV2ResponseDataAgeInner, StarReportOrderUserDistributionGetV2ResponseDataCityInner, StarReportOrderUserDistributionGetV2ResponseDataDeviceInner, StarReportOrderUserDistributionGetV2ResponseDataGenderInner, StarReportOrderUserDistributionGetV2ResponseDataInterestInner, StarReportOrderUserDistributionGetV2ResponseDataProvinceInner } from "../models";

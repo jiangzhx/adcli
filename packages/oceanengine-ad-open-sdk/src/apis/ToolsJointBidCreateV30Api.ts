@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsJointBidCreateV30Request, ToolsJointBidCreateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsJointBidCreatePostRequest {
+  toolsJointBidCreateV30Request?: ToolsJointBidCreateV30Request;
+}
 
 export class ToolsJointBidCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsJointBidCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsJointBidCreatePost(toolsJointBidCreateV30Request: ToolsJointBidCreateV30Request): Promise<ToolsJointBidCreateV30Response> {
-    const response = await this.openApiV30ToolsJointBidCreatePostWithHttpInfo(toolsJointBidCreateV30Request);
+  async openApiV30ToolsJointBidCreatePost(request: OpenApiV30ToolsJointBidCreatePostRequest): Promise<ToolsJointBidCreateV30Response> {
+    const response = await this.openApiV30ToolsJointBidCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsJointBidCreatePostWithHttpInfo(toolsJointBidCreateV30Request: ToolsJointBidCreateV30Request): Promise<ApiResponse<ToolsJointBidCreateV30Response>> {
+  async openApiV30ToolsJointBidCreatePostWithHttpInfo(request: OpenApiV30ToolsJointBidCreatePostRequest): Promise<ApiResponse<ToolsJointBidCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsJointBidCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsJointBidCreateV30Api {
       queryParams: [
 
       ],
-      body: toolsJointBidCreateV30Request
+      body: request.toolsJointBidCreateV30Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AicMaterialPushV30Request, AicMaterialPushV30Response } from "../models";
 
+
+export interface OpenApiV30AicMaterialPushPostRequest {
+  aicMaterialPushV30Request?: AicMaterialPushV30Request;
+}
 
 export class AicMaterialPushV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AicMaterialPushV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AicMaterialPushPost(aicMaterialPushV30Request: AicMaterialPushV30Request): Promise<AicMaterialPushV30Response> {
-    const response = await this.openApiV30AicMaterialPushPostWithHttpInfo(aicMaterialPushV30Request);
+  async openApiV30AicMaterialPushPost(request: OpenApiV30AicMaterialPushPostRequest): Promise<AicMaterialPushV30Response> {
+    const response = await this.openApiV30AicMaterialPushPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AicMaterialPushPostWithHttpInfo(aicMaterialPushV30Request: AicMaterialPushV30Request): Promise<ApiResponse<AicMaterialPushV30Response>> {
+  async openApiV30AicMaterialPushPostWithHttpInfo(request: OpenApiV30AicMaterialPushPostRequest): Promise<ApiResponse<AicMaterialPushV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<AicMaterialPushV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AicMaterialPushV30Api {
       queryParams: [
 
       ],
-      body: aicMaterialPushV30Request
+      body: request.aicMaterialPushV30Request
     });
   }
 }

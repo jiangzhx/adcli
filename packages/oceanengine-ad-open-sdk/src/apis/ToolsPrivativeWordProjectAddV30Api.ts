@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPrivativeWordProjectAddV30Request, ToolsPrivativeWordProjectAddV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsPrivativeWordProjectAddPostRequest {
+  toolsPrivativeWordProjectAddV30Request?: ToolsPrivativeWordProjectAddV30Request;
+}
 
 export class ToolsPrivativeWordProjectAddV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsPrivativeWordProjectAddV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsPrivativeWordProjectAddPost(toolsPrivativeWordProjectAddV30Request: ToolsPrivativeWordProjectAddV30Request): Promise<ToolsPrivativeWordProjectAddV30Response> {
-    const response = await this.openApiV30ToolsPrivativeWordProjectAddPostWithHttpInfo(toolsPrivativeWordProjectAddV30Request);
+  async openApiV30ToolsPrivativeWordProjectAddPost(request: OpenApiV30ToolsPrivativeWordProjectAddPostRequest): Promise<ToolsPrivativeWordProjectAddV30Response> {
+    const response = await this.openApiV30ToolsPrivativeWordProjectAddPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsPrivativeWordProjectAddPostWithHttpInfo(toolsPrivativeWordProjectAddV30Request: ToolsPrivativeWordProjectAddV30Request): Promise<ApiResponse<ToolsPrivativeWordProjectAddV30Response>> {
+  async openApiV30ToolsPrivativeWordProjectAddPostWithHttpInfo(request: OpenApiV30ToolsPrivativeWordProjectAddPostRequest): Promise<ApiResponse<ToolsPrivativeWordProjectAddV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsPrivativeWordProjectAddV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsPrivativeWordProjectAddV30Api {
       queryParams: [
 
       ],
-      body: toolsPrivativeWordProjectAddV30Request
+      body: request.toolsPrivativeWordProjectAddV30Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListAuthType, QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListLiveDisableReasons, QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListLiveUniPromApplyType, QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListProductDisableReasons, QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListProductUniPromApplyType } from "../models";

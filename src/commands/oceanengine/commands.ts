@@ -41,18 +41,18 @@ export async function runOceanEngineCommand(argv: string[], options: OceanEngine
   const apiClient = new ApiClient({ fetch: options.fetch }).setAccessToken(token);
 
   if (args.resource === "advertiser" && args.action === "list") {
-    return new Oauth2AdvertiserGetApi(apiClient).openApiOauth2AdvertiserGetGet(token);
+    return new Oauth2AdvertiserGetApi(apiClient).openApiOauth2AdvertiserGetGet({ accessToken: token });
   }
 
   if (isProjectListCommand(args)) {
     const advertiserId = getRequiredId(args, "advertiser-id");
-    return new ProjectListV30Api(apiClient).openApiV30ProjectListGet(
+    return new ProjectListV30Api(apiClient).openApiV30ProjectListGet({
       advertiserId,
-      parseCsv(args.flags.fields),
-      parseJsonFlag<ProjectListV30Filtering>(args.flags.filtering) as never,
-      parseNumberFlag(args.flags.page),
-      parseNumberFlag(args.flags["page-size"]),
-    );
+      fields: parseCsv(args.flags.fields),
+      filtering: parseJsonFlag<ProjectListV30Filtering>(args.flags.filtering),
+      page: parseNumberFlag(args.flags.page),
+      pageSize: parseNumberFlag(args.flags["page-size"]),
+    });
   }
 
   if (args.resource === "promotion" && args.action === "list") {
@@ -61,16 +61,16 @@ export async function runOceanEngineCommand(argv: string[], options: OceanEngine
       ...parseJsonFlag<PromotionListV30Filtering>(args.flags.filtering),
       ...parseProjectFilter(args.flags["project-id"]),
     };
-    return new PromotionListV30Api(apiClient).openApiV30PromotionListGet(
+    return new PromotionListV30Api(apiClient).openApiV30PromotionListGet({
       advertiserId,
-      (Object.keys(filtering).length > 0 ? filtering : undefined) as never,
-      parseCsv(args.flags.fields),
-      args.flags["including-material-attributes"] as never,
-      parseNumberFlag(args.flags.page),
-      parseNumberFlag(args.flags["page-size"]),
-      parseNumberFlag(args.flags.cursor),
-      parseNumberFlag(args.flags.count),
-    );
+      filtering: Object.keys(filtering).length > 0 ? filtering : undefined,
+      fields: parseCsv(args.flags.fields),
+      includingMaterialAtrributes: args.flags["including-material-attributes"] as never,
+      page: parseNumberFlag(args.flags.page),
+      pageSize: parseNumberFlag(args.flags["page-size"]),
+      cursor: parseNumberFlag(args.flags.cursor),
+      count: parseNumberFlag(args.flags.count),
+    });
   }
 
   throw new Error(`unknown oceanengine command: ${[args.resource, args.action].filter(Boolean).join(" ")}`);
@@ -183,7 +183,7 @@ function getRequiredId(args: OceanEngineArgs, flag: string) {
   if (!/^\d+$/.test(value)) {
     throw new Error(`--${flag} must be an integer id`);
   }
-  return value;
+  return Number(value);
 }
 
 function parseNumberFlag(value: string | boolean | undefined) {

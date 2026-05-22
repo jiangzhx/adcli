@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanAwemeOrderTerminateV10Request, QianchuanAwemeOrderTerminateV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanAwemeOrderTerminatePostRequest {
+  qianchuanAwemeOrderTerminateV10Request?: QianchuanAwemeOrderTerminateV10Request;
+}
 
 export class QianchuanAwemeOrderTerminateV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanAwemeOrderTerminateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanAwemeOrderTerminatePost(qianchuanAwemeOrderTerminateV10Request: QianchuanAwemeOrderTerminateV10Request): Promise<QianchuanAwemeOrderTerminateV10Response> {
-    const response = await this.openApiV10QianchuanAwemeOrderTerminatePostWithHttpInfo(qianchuanAwemeOrderTerminateV10Request);
+  async openApiV10QianchuanAwemeOrderTerminatePost(request: OpenApiV10QianchuanAwemeOrderTerminatePostRequest): Promise<QianchuanAwemeOrderTerminateV10Response> {
+    const response = await this.openApiV10QianchuanAwemeOrderTerminatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanAwemeOrderTerminatePostWithHttpInfo(qianchuanAwemeOrderTerminateV10Request: QianchuanAwemeOrderTerminateV10Request): Promise<ApiResponse<QianchuanAwemeOrderTerminateV10Response>> {
+  async openApiV10QianchuanAwemeOrderTerminatePostWithHttpInfo(request: OpenApiV10QianchuanAwemeOrderTerminatePostRequest): Promise<ApiResponse<QianchuanAwemeOrderTerminateV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeOrderTerminateV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanAwemeOrderTerminateV10Api {
       queryParams: [
 
       ],
-      body: qianchuanAwemeOrderTerminateV10Request
+      body: request.qianchuanAwemeOrderTerminateV10Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,20 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ChargeListV30ChargeSourceList, ChargeListV30ChargeStatusList, ChargeListV30ChargeTargetType, ChargeListV30ChargeTypeList, ChargeListV30PlatformList, ChargeListV30Response } from "../models";
 
+
+export interface OpenApiV30ChargeListGetRequest {
+  advertiserId: number;
+  chargeTargetType: ChargeListV30ChargeTargetType;
+  platformList: ChargeListV30PlatformList[];
+  chargeStatusList: ChargeListV30ChargeStatusList[];
+  chargeTypeList: ChargeListV30ChargeTypeList[];
+  chargeSourceList?: ChargeListV30ChargeSourceList[];
+  startTime?: string;
+  endTime?: string;
+  needTotalAmount?: boolean;
+  page?: number;
+  pageSize?: number;
+}
 
 export class ChargeListV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,46 +32,46 @@ export class ChargeListV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ChargeListGet(advertiserId: number, chargeTargetType: ChargeListV30ChargeTargetType, platformList: ChargeListV30PlatformList[], chargeStatusList: ChargeListV30ChargeStatusList[], chargeTypeList: ChargeListV30ChargeTypeList[], chargeSourceList: ChargeListV30ChargeSourceList[], startTime: string, endTime: string, needTotalAmount: boolean, page: number, pageSize: number): Promise<ChargeListV30Response> {
-    const response = await this.openApiV30ChargeListGetWithHttpInfo(advertiserId, chargeTargetType, platformList, chargeStatusList, chargeTypeList, chargeSourceList, startTime, endTime, needTotalAmount, page, pageSize);
+  async openApiV30ChargeListGet(request: OpenApiV30ChargeListGetRequest): Promise<ChargeListV30Response> {
+    const response = await this.openApiV30ChargeListGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ChargeListGetWithHttpInfo(advertiserId: number, chargeTargetType: ChargeListV30ChargeTargetType, platformList: ChargeListV30PlatformList[], chargeStatusList: ChargeListV30ChargeStatusList[], chargeTypeList: ChargeListV30ChargeTypeList[], chargeSourceList: ChargeListV30ChargeSourceList[], startTime: string, endTime: string, needTotalAmount: boolean, page: number, pageSize: number): Promise<ApiResponse<ChargeListV30Response>> {
-    if (advertiserId == null) {
+  async openApiV30ChargeListGetWithHttpInfo(request: OpenApiV30ChargeListGetRequest): Promise<ApiResponse<ChargeListV30Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ChargeListGet");
     }
 
-    if (chargeTargetType == null) {
+    if (request.chargeTargetType == null) {
       throw new ApiException("Missing the required parameter 'chargeTargetType' when calling openApiV30ChargeListGet");
     }
 
-    if (platformList == null) {
+    if (request.platformList == null) {
       throw new ApiException("Missing the required parameter 'platformList' when calling openApiV30ChargeListGet");
     }
 
-    if (chargeStatusList == null) {
+    if (request.chargeStatusList == null) {
       throw new ApiException("Missing the required parameter 'chargeStatusList' when calling openApiV30ChargeListGet");
     }
 
-    if (chargeTypeList == null) {
+    if (request.chargeTypeList == null) {
       throw new ApiException("Missing the required parameter 'chargeTypeList' when calling openApiV30ChargeListGet");
     }
     return this.apiClient.requestWithHttpInfo<ChargeListV30Response>({
       method: "GET",
       path: "/open_api/v3.0/charge/list/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "charge_target_type", value: chargeTargetType },
-        { name: "start_time", value: startTime },
-        { name: "end_time", value: endTime },
-        { name: "need_total_amount", value: needTotalAmount },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "platform_list", value: platformList, collectionFormat: "csv" },
-        { name: "charge_status_list", value: chargeStatusList, collectionFormat: "csv" },
-        { name: "charge_source_list", value: chargeSourceList, collectionFormat: "csv" },
-        { name: "charge_type_list", value: chargeTypeList, collectionFormat: "csv" }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "charge_target_type", value: request.chargeTargetType },
+        { name: "platform_list", value: request.platformList, collectionFormat: "csv" },
+        { name: "charge_status_list", value: request.chargeStatusList, collectionFormat: "csv" },
+        { name: "charge_source_list", value: request.chargeSourceList, collectionFormat: "csv" },
+        { name: "start_time", value: request.startTime },
+        { name: "end_time", value: request.endTime },
+        { name: "charge_type_list", value: request.chargeTypeList, collectionFormat: "csv" },
+        { name: "need_total_amount", value: request.needTotalAmount },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

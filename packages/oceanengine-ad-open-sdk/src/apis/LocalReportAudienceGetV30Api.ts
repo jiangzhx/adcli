@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,20 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { LocalReportAudienceGetV30AudienceDimension, LocalReportAudienceGetV30DataDimension, LocalReportAudienceGetV30Filtering, LocalReportAudienceGetV30OrderType, LocalReportAudienceGetV30Response } from "../models";
 
+
+export interface OpenApiV30LocalReportAudienceGetGetRequest {
+  localAccountId: number;
+  startDate: string;
+  endDate: string;
+  audienceDimension: LocalReportAudienceGetV30AudienceDimension;
+  dataDimension: LocalReportAudienceGetV30DataDimension;
+  fields?: string[];
+  orderType?: LocalReportAudienceGetV30OrderType;
+  orderField?: string;
+  filtering?: LocalReportAudienceGetV30Filtering;
+  page?: number;
+  pageSize?: number;
+}
 
 export class LocalReportAudienceGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,46 +32,46 @@ export class LocalReportAudienceGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30LocalReportAudienceGetGet(localAccountId: number, startDate: string, endDate: string, audienceDimension: LocalReportAudienceGetV30AudienceDimension, dataDimension: LocalReportAudienceGetV30DataDimension, fields: string[], orderType: LocalReportAudienceGetV30OrderType, orderField: string, filtering: LocalReportAudienceGetV30Filtering, page: number, pageSize: number): Promise<LocalReportAudienceGetV30Response> {
-    const response = await this.openApiV30LocalReportAudienceGetGetWithHttpInfo(localAccountId, startDate, endDate, audienceDimension, dataDimension, fields, orderType, orderField, filtering, page, pageSize);
+  async openApiV30LocalReportAudienceGetGet(request: OpenApiV30LocalReportAudienceGetGetRequest): Promise<LocalReportAudienceGetV30Response> {
+    const response = await this.openApiV30LocalReportAudienceGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30LocalReportAudienceGetGetWithHttpInfo(localAccountId: number, startDate: string, endDate: string, audienceDimension: LocalReportAudienceGetV30AudienceDimension, dataDimension: LocalReportAudienceGetV30DataDimension, fields: string[], orderType: LocalReportAudienceGetV30OrderType, orderField: string, filtering: LocalReportAudienceGetV30Filtering, page: number, pageSize: number): Promise<ApiResponse<LocalReportAudienceGetV30Response>> {
-    if (localAccountId == null) {
+  async openApiV30LocalReportAudienceGetGetWithHttpInfo(request: OpenApiV30LocalReportAudienceGetGetRequest): Promise<ApiResponse<LocalReportAudienceGetV30Response>> {
+    if (request.localAccountId == null) {
       throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalReportAudienceGetGet");
     }
 
-    if (startDate == null) {
+    if (request.startDate == null) {
       throw new ApiException("Missing the required parameter 'startDate' when calling openApiV30LocalReportAudienceGetGet");
     }
 
-    if (endDate == null) {
+    if (request.endDate == null) {
       throw new ApiException("Missing the required parameter 'endDate' when calling openApiV30LocalReportAudienceGetGet");
     }
 
-    if (audienceDimension == null) {
+    if (request.audienceDimension == null) {
       throw new ApiException("Missing the required parameter 'audienceDimension' when calling openApiV30LocalReportAudienceGetGet");
     }
 
-    if (dataDimension == null) {
+    if (request.dataDimension == null) {
       throw new ApiException("Missing the required parameter 'dataDimension' when calling openApiV30LocalReportAudienceGetGet");
     }
     return this.apiClient.requestWithHttpInfo<LocalReportAudienceGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/local/report/audience/get/",
       queryParams: [
-        { name: "local_account_id", value: localAccountId },
-        { name: "start_date", value: startDate },
-        { name: "end_date", value: endDate },
-        { name: "audience_dimension", value: audienceDimension },
-        { name: "data_dimension", value: dataDimension },
-        { name: "order_type", value: orderType },
-        { name: "order_field", value: orderField },
-        { name: "filtering", value: filtering },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "fields", value: fields, collectionFormat: "csv" }
+        { name: "local_account_id", value: request.localAccountId },
+        { name: "start_date", value: request.startDate },
+        { name: "end_date", value: request.endDate },
+        { name: "audience_dimension", value: request.audienceDimension },
+        { name: "data_dimension", value: request.dataDimension },
+        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "order_type", value: request.orderType },
+        { name: "order_field", value: request.orderField },
+        { name: "filtering", value: request.filtering },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

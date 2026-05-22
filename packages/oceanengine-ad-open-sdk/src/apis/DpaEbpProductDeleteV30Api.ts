@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DpaEbpProductDeleteV30Request, DpaEbpProductDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30DpaEbpProductDeletePostRequest {
+  dpaEbpProductDeleteV30Request?: DpaEbpProductDeleteV30Request;
+}
 
 export class DpaEbpProductDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class DpaEbpProductDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30DpaEbpProductDeletePost(dpaEbpProductDeleteV30Request: DpaEbpProductDeleteV30Request): Promise<DpaEbpProductDeleteV30Response> {
-    const response = await this.openApiV30DpaEbpProductDeletePostWithHttpInfo(dpaEbpProductDeleteV30Request);
+  async openApiV30DpaEbpProductDeletePost(request: OpenApiV30DpaEbpProductDeletePostRequest): Promise<DpaEbpProductDeleteV30Response> {
+    const response = await this.openApiV30DpaEbpProductDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30DpaEbpProductDeletePostWithHttpInfo(dpaEbpProductDeleteV30Request: DpaEbpProductDeleteV30Request): Promise<ApiResponse<DpaEbpProductDeleteV30Response>> {
+  async openApiV30DpaEbpProductDeletePostWithHttpInfo(request: OpenApiV30DpaEbpProductDeletePostRequest): Promise<ApiResponse<DpaEbpProductDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<DpaEbpProductDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class DpaEbpProductDeleteV30Api {
       queryParams: [
 
       ],
-      body: dpaEbpProductDeleteV30Request
+      body: request.dpaEbpProductDeleteV30Request
     });
   }
 }

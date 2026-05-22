@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,13 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CgTransferQueryTransferDetailV30Response } from "../models";
 
+
+export interface OpenApiV30CgTransferQueryTransferDetailGetRequest {
+  bizRequestNo: string;
+  agentId: number;
+  transferBizRequestNo?: string;
+  transferSerial?: string;
+}
 
 export class CgTransferQueryTransferDetailV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,27 +25,27 @@ export class CgTransferQueryTransferDetailV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30CgTransferQueryTransferDetailGet(bizRequestNo: string, agentId: number, transferBizRequestNo: string, transferSerial: string): Promise<CgTransferQueryTransferDetailV30Response> {
-    const response = await this.openApiV30CgTransferQueryTransferDetailGetWithHttpInfo(bizRequestNo, agentId, transferBizRequestNo, transferSerial);
+  async openApiV30CgTransferQueryTransferDetailGet(request: OpenApiV30CgTransferQueryTransferDetailGetRequest): Promise<CgTransferQueryTransferDetailV30Response> {
+    const response = await this.openApiV30CgTransferQueryTransferDetailGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30CgTransferQueryTransferDetailGetWithHttpInfo(bizRequestNo: string, agentId: number, transferBizRequestNo: string, transferSerial: string): Promise<ApiResponse<CgTransferQueryTransferDetailV30Response>> {
-    if (bizRequestNo == null) {
+  async openApiV30CgTransferQueryTransferDetailGetWithHttpInfo(request: OpenApiV30CgTransferQueryTransferDetailGetRequest): Promise<ApiResponse<CgTransferQueryTransferDetailV30Response>> {
+    if (request.bizRequestNo == null) {
       throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferQueryTransferDetailGet");
     }
 
-    if (agentId == null) {
+    if (request.agentId == null) {
       throw new ApiException("Missing the required parameter 'agentId' when calling openApiV30CgTransferQueryTransferDetailGet");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferQueryTransferDetailV30Response>({
       method: "GET",
       path: "/open_api/v3.0/cg_transfer/query_transfer_detail/",
       queryParams: [
-        { name: "biz_request_no", value: bizRequestNo },
-        { name: "agent_id", value: agentId },
-        { name: "transfer_biz_request_no", value: transferBizRequestNo },
-        { name: "transfer_serial", value: transferSerial }
+        { name: "biz_request_no", value: request.bizRequestNo },
+        { name: "agent_id", value: request.agentId },
+        { name: "transfer_biz_request_no", value: request.transferBizRequestNo },
+        { name: "transfer_serial", value: request.transferSerial }
       ]
     });
   }

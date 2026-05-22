@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarComponentUpdateLinkV2Request, StarComponentUpdateLinkV2Response } from "../models";
 
+
+export interface OpenApi2StarComponentUpdateLinkPostRequest {
+  starComponentUpdateLinkV2Request?: StarComponentUpdateLinkV2Request;
+}
 
 export class StarComponentUpdateLinkV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarComponentUpdateLinkV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarComponentUpdateLinkPost(starComponentUpdateLinkV2Request: StarComponentUpdateLinkV2Request): Promise<StarComponentUpdateLinkV2Response> {
-    const response = await this.openApi2StarComponentUpdateLinkPostWithHttpInfo(starComponentUpdateLinkV2Request);
+  async openApi2StarComponentUpdateLinkPost(request: OpenApi2StarComponentUpdateLinkPostRequest): Promise<StarComponentUpdateLinkV2Response> {
+    const response = await this.openApi2StarComponentUpdateLinkPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarComponentUpdateLinkPostWithHttpInfo(starComponentUpdateLinkV2Request: StarComponentUpdateLinkV2Request): Promise<ApiResponse<StarComponentUpdateLinkV2Response>> {
+  async openApi2StarComponentUpdateLinkPostWithHttpInfo(request: OpenApi2StarComponentUpdateLinkPostRequest): Promise<ApiResponse<StarComponentUpdateLinkV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarComponentUpdateLinkV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarComponentUpdateLinkV2Api {
       queryParams: [
 
       ],
-      body: starComponentUpdateLinkV2Request
+      body: request.starComponentUpdateLinkV2Request
     });
   }
 }

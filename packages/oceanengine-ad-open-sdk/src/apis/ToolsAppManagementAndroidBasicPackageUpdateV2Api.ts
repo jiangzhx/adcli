@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAppManagementAndroidBasicPackageUpdateV2Request, ToolsAppManagementAndroidBasicPackageUpdateV2Response } from "../models";
 
+
+export interface OpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest {
+  toolsAppManagementAndroidBasicPackageUpdateV2Request?: ToolsAppManagementAndroidBasicPackageUpdateV2Request;
+}
 
 export class ToolsAppManagementAndroidBasicPackageUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsAppManagementAndroidBasicPackageUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsAppManagementAndroidBasicPackageUpdatePost(toolsAppManagementAndroidBasicPackageUpdateV2Request: ToolsAppManagementAndroidBasicPackageUpdateV2Request): Promise<ToolsAppManagementAndroidBasicPackageUpdateV2Response> {
-    const response = await this.openApi2ToolsAppManagementAndroidBasicPackageUpdatePostWithHttpInfo(toolsAppManagementAndroidBasicPackageUpdateV2Request);
+  async openApi2ToolsAppManagementAndroidBasicPackageUpdatePost(request: OpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest): Promise<ToolsAppManagementAndroidBasicPackageUpdateV2Response> {
+    const response = await this.openApi2ToolsAppManagementAndroidBasicPackageUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsAppManagementAndroidBasicPackageUpdatePostWithHttpInfo(toolsAppManagementAndroidBasicPackageUpdateV2Request: ToolsAppManagementAndroidBasicPackageUpdateV2Request): Promise<ApiResponse<ToolsAppManagementAndroidBasicPackageUpdateV2Response>> {
+  async openApi2ToolsAppManagementAndroidBasicPackageUpdatePostWithHttpInfo(request: OpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest): Promise<ApiResponse<ToolsAppManagementAndroidBasicPackageUpdateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementAndroidBasicPackageUpdateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsAppManagementAndroidBasicPackageUpdateV2Api {
       queryParams: [
 
       ],
-      body: toolsAppManagementAndroidBasicPackageUpdateV2Request
+      body: request.toolsAppManagementAndroidBasicPackageUpdateV2Request
     });
   }
 }

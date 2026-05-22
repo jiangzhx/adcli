@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { FileRebateMaterialDownloadCreateTaskV2FilteringIsAccumulation, FileRebateMaterialDownloadCreateTaskV2FilteringIsLiveRebateType, FileRebateMaterialDownloadCreateTaskV2FilteringIsValidMaterial, FileRebateMaterialDownloadCreateTaskV2FilteringMaterialIsEffective, FileRebateMaterialDownloadCreateTaskV2FilteringMaterialTag, FileRebateMaterialDownloadCreateTaskV2FilteringOperatorTag, FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcPolicyType, FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcSettlementStatsType } from "../models";

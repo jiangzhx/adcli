@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,16 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DpaEbpLibraryListV30AccountType, DpaEbpLibraryListV30AssetQueryScope, DpaEbpLibraryListV30Response } from "../models";
 
+
+export interface OpenApiV30DpaEbpLibraryListGetRequest {
+  accountId: number;
+  accountType: DpaEbpLibraryListV30AccountType;
+  storeType?: number;
+  nameOrId?: string;
+  offset?: number;
+  limit?: number;
+  assetQueryScope?: DpaEbpLibraryListV30AssetQueryScope;
+}
 
 export class DpaEbpLibraryListV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,30 +28,30 @@ export class DpaEbpLibraryListV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30DpaEbpLibraryListGet(accountId: number, accountType: DpaEbpLibraryListV30AccountType, storeType: number, nameOrId: string, offset: number, limit: number, assetQueryScope: DpaEbpLibraryListV30AssetQueryScope): Promise<DpaEbpLibraryListV30Response> {
-    const response = await this.openApiV30DpaEbpLibraryListGetWithHttpInfo(accountId, accountType, storeType, nameOrId, offset, limit, assetQueryScope);
+  async openApiV30DpaEbpLibraryListGet(request: OpenApiV30DpaEbpLibraryListGetRequest): Promise<DpaEbpLibraryListV30Response> {
+    const response = await this.openApiV30DpaEbpLibraryListGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30DpaEbpLibraryListGetWithHttpInfo(accountId: number, accountType: DpaEbpLibraryListV30AccountType, storeType: number, nameOrId: string, offset: number, limit: number, assetQueryScope: DpaEbpLibraryListV30AssetQueryScope): Promise<ApiResponse<DpaEbpLibraryListV30Response>> {
-    if (accountId == null) {
+  async openApiV30DpaEbpLibraryListGetWithHttpInfo(request: OpenApiV30DpaEbpLibraryListGetRequest): Promise<ApiResponse<DpaEbpLibraryListV30Response>> {
+    if (request.accountId == null) {
       throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30DpaEbpLibraryListGet");
     }
 
-    if (accountType == null) {
+    if (request.accountType == null) {
       throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30DpaEbpLibraryListGet");
     }
     return this.apiClient.requestWithHttpInfo<DpaEbpLibraryListV30Response>({
       method: "GET",
       path: "/open_api/v3.0/dpa/ebp/library/list/",
       queryParams: [
-        { name: "account_id", value: accountId },
-        { name: "account_type", value: accountType },
-        { name: "store_type", value: storeType },
-        { name: "name_or_id", value: nameOrId },
-        { name: "offset", value: offset },
-        { name: "limit", value: limit },
-        { name: "asset_query_scope", value: assetQueryScope }
+        { name: "account_id", value: request.accountId },
+        { name: "account_type", value: request.accountType },
+        { name: "store_type", value: request.storeType },
+        { name: "name_or_id", value: request.nameOrId },
+        { name: "offset", value: request.offset },
+        { name: "limit", value: request.limit },
+        { name: "asset_query_scope", value: request.assetQueryScope }
       ]
     });
   }

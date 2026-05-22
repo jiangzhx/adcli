@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { LocalProjectCreateV30Request, LocalProjectCreateV30Response } from "../models";
 
+
+export interface OpenApiV30LocalProjectCreatePostRequest {
+  localProjectCreateV30Request?: LocalProjectCreateV30Request;
+}
 
 export class LocalProjectCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class LocalProjectCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30LocalProjectCreatePost(localProjectCreateV30Request: LocalProjectCreateV30Request): Promise<LocalProjectCreateV30Response> {
-    const response = await this.openApiV30LocalProjectCreatePostWithHttpInfo(localProjectCreateV30Request);
+  async openApiV30LocalProjectCreatePost(request: OpenApiV30LocalProjectCreatePostRequest): Promise<LocalProjectCreateV30Response> {
+    const response = await this.openApiV30LocalProjectCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30LocalProjectCreatePostWithHttpInfo(localProjectCreateV30Request: LocalProjectCreateV30Request): Promise<ApiResponse<LocalProjectCreateV30Response>> {
+  async openApiV30LocalProjectCreatePostWithHttpInfo(request: OpenApiV30LocalProjectCreatePostRequest): Promise<ApiResponse<LocalProjectCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<LocalProjectCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class LocalProjectCreateV30Api {
       queryParams: [
 
       ],
-      body: localProjectCreateV30Request
+      body: request.localProjectCreateV30Request
     });
   }
 }

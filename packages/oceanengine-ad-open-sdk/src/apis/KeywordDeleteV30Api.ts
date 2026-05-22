@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { KeywordDeleteV30Request, KeywordDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30KeywordDeletePostRequest {
+  keywordDeleteV30Request?: KeywordDeleteV30Request;
+}
 
 export class KeywordDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class KeywordDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30KeywordDeletePost(keywordDeleteV30Request: KeywordDeleteV30Request): Promise<KeywordDeleteV30Response> {
-    const response = await this.openApiV30KeywordDeletePostWithHttpInfo(keywordDeleteV30Request);
+  async openApiV30KeywordDeletePost(request: OpenApiV30KeywordDeletePostRequest): Promise<KeywordDeleteV30Response> {
+    const response = await this.openApiV30KeywordDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30KeywordDeletePostWithHttpInfo(keywordDeleteV30Request: KeywordDeleteV30Request): Promise<ApiResponse<KeywordDeleteV30Response>> {
+  async openApiV30KeywordDeletePostWithHttpInfo(request: OpenApiV30KeywordDeletePostRequest): Promise<ApiResponse<KeywordDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<KeywordDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class KeywordDeleteV30Api {
       queryParams: [
 
       ],
-      body: keywordDeleteV30Request
+      body: request.keywordDeleteV30Request
     });
   }
 }

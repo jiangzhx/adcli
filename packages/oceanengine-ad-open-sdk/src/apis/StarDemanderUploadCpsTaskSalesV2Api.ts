@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarDemanderUploadCpsTaskSalesV2Request, StarDemanderUploadCpsTaskSalesV2Response } from "../models";
 
+
+export interface OpenApi2StarDemanderUploadCpsTaskSalesPostRequest {
+  starDemanderUploadCpsTaskSalesV2Request?: StarDemanderUploadCpsTaskSalesV2Request;
+}
 
 export class StarDemanderUploadCpsTaskSalesV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarDemanderUploadCpsTaskSalesV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarDemanderUploadCpsTaskSalesPost(starDemanderUploadCpsTaskSalesV2Request: StarDemanderUploadCpsTaskSalesV2Request): Promise<StarDemanderUploadCpsTaskSalesV2Response> {
-    const response = await this.openApi2StarDemanderUploadCpsTaskSalesPostWithHttpInfo(starDemanderUploadCpsTaskSalesV2Request);
+  async openApi2StarDemanderUploadCpsTaskSalesPost(request: OpenApi2StarDemanderUploadCpsTaskSalesPostRequest): Promise<StarDemanderUploadCpsTaskSalesV2Response> {
+    const response = await this.openApi2StarDemanderUploadCpsTaskSalesPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarDemanderUploadCpsTaskSalesPostWithHttpInfo(starDemanderUploadCpsTaskSalesV2Request: StarDemanderUploadCpsTaskSalesV2Request): Promise<ApiResponse<StarDemanderUploadCpsTaskSalesV2Response>> {
+  async openApi2StarDemanderUploadCpsTaskSalesPostWithHttpInfo(request: OpenApi2StarDemanderUploadCpsTaskSalesPostRequest): Promise<ApiResponse<StarDemanderUploadCpsTaskSalesV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarDemanderUploadCpsTaskSalesV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarDemanderUploadCpsTaskSalesV2Api {
       queryParams: [
 
       ],
-      body: starDemanderUploadCpsTaskSalesV2Request
+      body: request.starDemanderUploadCpsTaskSalesV2Request
     });
   }
 }

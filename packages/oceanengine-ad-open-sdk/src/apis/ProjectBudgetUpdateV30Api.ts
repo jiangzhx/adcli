@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ProjectBudgetUpdateV30Request, ProjectBudgetUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30ProjectBudgetUpdatePostRequest {
+  projectBudgetUpdateV30Request?: ProjectBudgetUpdateV30Request;
+}
 
 export class ProjectBudgetUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ProjectBudgetUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ProjectBudgetUpdatePost(projectBudgetUpdateV30Request: ProjectBudgetUpdateV30Request): Promise<ProjectBudgetUpdateV30Response> {
-    const response = await this.openApiV30ProjectBudgetUpdatePostWithHttpInfo(projectBudgetUpdateV30Request);
+  async openApiV30ProjectBudgetUpdatePost(request: OpenApiV30ProjectBudgetUpdatePostRequest): Promise<ProjectBudgetUpdateV30Response> {
+    const response = await this.openApiV30ProjectBudgetUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ProjectBudgetUpdatePostWithHttpInfo(projectBudgetUpdateV30Request: ProjectBudgetUpdateV30Request): Promise<ApiResponse<ProjectBudgetUpdateV30Response>> {
+  async openApiV30ProjectBudgetUpdatePostWithHttpInfo(request: OpenApiV30ProjectBudgetUpdatePostRequest): Promise<ApiResponse<ProjectBudgetUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ProjectBudgetUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ProjectBudgetUpdateV30Api {
       queryParams: [
 
       ],
-      body: projectBudgetUpdateV30Request
+      body: request.projectBudgetUpdateV30Request
     });
   }
 }

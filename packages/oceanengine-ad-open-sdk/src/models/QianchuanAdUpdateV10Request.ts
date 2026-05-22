@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAdUpdateV10CreativeAutoGenerate, QianchuanAdUpdateV10DynamicCreative, QianchuanAdUpdateV10IsHomepageHide, QianchuanAdUpdateV10IsIntelligent, QianchuanAdUpdateV10RequestAudience, QianchuanAdUpdateV10RequestCreativeListInner, QianchuanAdUpdateV10RequestDeliverySetting, QianchuanAdUpdateV10RequestKeywordsInner, QianchuanAdUpdateV10RequestMultiProductCreativeListInner, QianchuanAdUpdateV10RequestProgrammaticCreativeCard, QianchuanAdUpdateV10RequestProgrammaticCreativeMediaListInner, QianchuanAdUpdateV10RequestProgrammaticCreativeTitleListInner, QianchuanAdUpdateV10RequestTrackUrl } from "../models";

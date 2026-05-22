@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DiagnosisTaskAgentCreateV2Request, DiagnosisTaskAgentCreateV2Response } from "../models";
 
+
+export interface OpenApi2DiagnosisTaskAgentCreatePostRequest {
+  diagnosisTaskAgentCreateV2Request?: DiagnosisTaskAgentCreateV2Request;
+}
 
 export class DiagnosisTaskAgentCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class DiagnosisTaskAgentCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2DiagnosisTaskAgentCreatePost(diagnosisTaskAgentCreateV2Request: DiagnosisTaskAgentCreateV2Request): Promise<DiagnosisTaskAgentCreateV2Response> {
-    const response = await this.openApi2DiagnosisTaskAgentCreatePostWithHttpInfo(diagnosisTaskAgentCreateV2Request);
+  async openApi2DiagnosisTaskAgentCreatePost(request: OpenApi2DiagnosisTaskAgentCreatePostRequest): Promise<DiagnosisTaskAgentCreateV2Response> {
+    const response = await this.openApi2DiagnosisTaskAgentCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2DiagnosisTaskAgentCreatePostWithHttpInfo(diagnosisTaskAgentCreateV2Request: DiagnosisTaskAgentCreateV2Request): Promise<ApiResponse<DiagnosisTaskAgentCreateV2Response>> {
+  async openApi2DiagnosisTaskAgentCreatePostWithHttpInfo(request: OpenApi2DiagnosisTaskAgentCreatePostRequest): Promise<ApiResponse<DiagnosisTaskAgentCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<DiagnosisTaskAgentCreateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class DiagnosisTaskAgentCreateV2Api {
       queryParams: [
 
       ],
-      body: diagnosisTaskAgentCreateV2Request
+      body: request.diagnosisTaskAgentCreateV2Request
     });
   }
 }

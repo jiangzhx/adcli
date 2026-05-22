@@ -1,8 +1,8 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const ProjectListV30DataListAudienceHarmonyOsv = {
+  Enum_5_0: "5.0",
   NONE: "NONE",
 } as const;
 

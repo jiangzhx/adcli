@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { SharedWalletBudgetSubmitV30Request, SharedWalletBudgetSubmitV30Response } from "../models";
 
+
+export interface OpenApiV30SharedWalletBudgetSubmitPostRequest {
+  sharedWalletBudgetSubmitV30Request?: SharedWalletBudgetSubmitV30Request;
+}
 
 export class SharedWalletBudgetSubmitV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class SharedWalletBudgetSubmitV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30SharedWalletBudgetSubmitPost(sharedWalletBudgetSubmitV30Request: SharedWalletBudgetSubmitV30Request): Promise<SharedWalletBudgetSubmitV30Response> {
-    const response = await this.openApiV30SharedWalletBudgetSubmitPostWithHttpInfo(sharedWalletBudgetSubmitV30Request);
+  async openApiV30SharedWalletBudgetSubmitPost(request: OpenApiV30SharedWalletBudgetSubmitPostRequest): Promise<SharedWalletBudgetSubmitV30Response> {
+    const response = await this.openApiV30SharedWalletBudgetSubmitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30SharedWalletBudgetSubmitPostWithHttpInfo(sharedWalletBudgetSubmitV30Request: SharedWalletBudgetSubmitV30Request): Promise<ApiResponse<SharedWalletBudgetSubmitV30Response>> {
+  async openApiV30SharedWalletBudgetSubmitPostWithHttpInfo(request: OpenApiV30SharedWalletBudgetSubmitPostRequest): Promise<ApiResponse<SharedWalletBudgetSubmitV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<SharedWalletBudgetSubmitV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class SharedWalletBudgetSubmitV30Api {
       queryParams: [
 
       ],
-      body: sharedWalletBudgetSubmitV30Request
+      body: request.sharedWalletBudgetSubmitV30Request
     });
   }
 }

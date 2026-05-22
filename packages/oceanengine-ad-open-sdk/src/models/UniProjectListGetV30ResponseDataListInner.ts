@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { UniProjectListGetV30DataListAigcDynamicCreativeSwitch, UniProjectListGetV30DataListMonetizationMode, UniProjectListGetV30DataListPricing, UniProjectListGetV30DataListScheduleType, UniProjectListGetV30DataListStatusFirst, UniProjectListGetV30DataListStatusSecond, UniProjectListGetV30ResponseDataListInnerAudience, UniProjectListGetV30ResponseDataListInnerBrandInfo, UniProjectListGetV30ResponseDataListInnerRelatedProduct } from "../models";

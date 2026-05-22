@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanCampaignListGetV10DataListBudgetMode, QianchuanCampaignListGetV10DataListMarketingGoal, QianchuanCampaignListGetV10DataListMarketingScene, QianchuanCampaignListGetV10DataListStatus } from "../models";

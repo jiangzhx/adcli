@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandOrderCancelDeleteV30Request, BrandOrderCancelDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30BrandOrderCancelDeletePostRequest {
+  brandOrderCancelDeleteV30Request?: BrandOrderCancelDeleteV30Request;
+}
 
 export class BrandOrderCancelDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class BrandOrderCancelDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandOrderCancelDeletePost(brandOrderCancelDeleteV30Request: BrandOrderCancelDeleteV30Request): Promise<BrandOrderCancelDeleteV30Response> {
-    const response = await this.openApiV30BrandOrderCancelDeletePostWithHttpInfo(brandOrderCancelDeleteV30Request);
+  async openApiV30BrandOrderCancelDeletePost(request: OpenApiV30BrandOrderCancelDeletePostRequest): Promise<BrandOrderCancelDeleteV30Response> {
+    const response = await this.openApiV30BrandOrderCancelDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandOrderCancelDeletePostWithHttpInfo(brandOrderCancelDeleteV30Request: BrandOrderCancelDeleteV30Request): Promise<ApiResponse<BrandOrderCancelDeleteV30Response>> {
+  async openApiV30BrandOrderCancelDeletePostWithHttpInfo(request: OpenApiV30BrandOrderCancelDeletePostRequest): Promise<ApiResponse<BrandOrderCancelDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<BrandOrderCancelDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class BrandOrderCancelDeleteV30Api {
       queryParams: [
 
       ],
-      body: brandOrderCancelDeleteV30Request
+      body: request.brandOrderCancelDeleteV30Request
     });
   }
 }

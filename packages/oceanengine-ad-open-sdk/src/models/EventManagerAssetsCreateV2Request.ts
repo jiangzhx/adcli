@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { EventManagerAssetsCreateV2AssetType, EventManagerAssetsCreateV2RequestAppAsset, EventManagerAssetsCreateV2RequestMiniProgramAsset, EventManagerAssetsCreateV2RequestQuickAppAsset, EventManagerAssetsCreateV2RequestSiteAsset, EventManagerAssetsCreateV2RequestThirdPartAsset } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsMicroGameListV30FilteringAuditStatus, ToolsMicroGameListV30FilteringCreateTime, ToolsMicroGameListV30FilteringSearchType } from "../models";

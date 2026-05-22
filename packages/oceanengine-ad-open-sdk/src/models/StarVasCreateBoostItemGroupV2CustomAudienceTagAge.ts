@@ -1,8 +1,11 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const StarVasCreateBoostItemGroupV2CustomAudienceTagAge = {
+  Enum_18_TO_23: "18_TO_23",
+  Enum_24_TO_30: "24_TO_30",
+  Enum_31_TO_40: "31_TO_40",
+  Enum_41_TO_50: "41_TO_50",
   INFINITE: "INFINITE",
 } as const;
 

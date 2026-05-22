@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const ProjectListV30DataListDeliverySettingDeepBidType = {
@@ -12,7 +11,7 @@ export const ProjectListV30DataListDeliverySettingDeepBidType = {
   DEEP_BID_TYPE_RETENTION_DAYS: "DEEP_BID_TYPE_RETENTION_DAYS",
   FIRST_AND_SEVEN_PAY_ROI: "FIRST_AND_SEVEN_PAY_ROI",
   FORM_BID: "FORM_BID",
-  IAAP_ROI_24H_AND_7D: "IAAP_ROI_24H_AND_7D",
+  IAAP_ROI_24_H_AND_7_D: "IAAP_ROI_24H_AND_7D",
   IAAP_SEVEN_ROI_COEFFICIENT: "IAAP_SEVEN_ROI_COEFFICIENT",
   LOAN_ROI: "LOAN_ROI",
   MIN_SECOND_STAGE: "MIN_SECOND_STAGE",

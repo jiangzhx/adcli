@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FilePlayableCreateV30Request, FilePlayableCreateV30Response } from "../models";
 
+
+export interface OpenApiV30FilePlayableCreatePostRequest {
+  filePlayableCreateV30Request?: FilePlayableCreateV30Request;
+}
 
 export class FilePlayableCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class FilePlayableCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30FilePlayableCreatePost(filePlayableCreateV30Request: FilePlayableCreateV30Request): Promise<FilePlayableCreateV30Response> {
-    const response = await this.openApiV30FilePlayableCreatePostWithHttpInfo(filePlayableCreateV30Request);
+  async openApiV30FilePlayableCreatePost(request: OpenApiV30FilePlayableCreatePostRequest): Promise<FilePlayableCreateV30Response> {
+    const response = await this.openApiV30FilePlayableCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30FilePlayableCreatePostWithHttpInfo(filePlayableCreateV30Request: FilePlayableCreateV30Request): Promise<ApiResponse<FilePlayableCreateV30Response>> {
+  async openApiV30FilePlayableCreatePostWithHttpInfo(request: OpenApiV30FilePlayableCreatePostRequest): Promise<ApiResponse<FilePlayableCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<FilePlayableCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class FilePlayableCreateV30Api {
       queryParams: [
 
       ],
-      body: filePlayableCreateV30Request
+      body: request.filePlayableCreateV30Request
     });
   }
 }

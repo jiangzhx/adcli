@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListBlockVideoMaterialInner, QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListTitleMaterialInner, QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListVideoMaterialInner } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandOrderCreateV30AudienceInfoAc, BrandOrderCreateV30AudienceInfoAges, BrandOrderCreateV30AudienceInfoGender, BrandOrderCreateV30AudienceInfoPlatform, BrandOrderCreateV30RequestAudienceInfoDistrictInfo, BrandOrderCreateV30RequestAudienceInfoRetargetingInfo } from "../models";

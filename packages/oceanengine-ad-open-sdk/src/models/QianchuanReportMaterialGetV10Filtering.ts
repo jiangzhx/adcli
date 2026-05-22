@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanReportMaterialGetV10FilteringAnalysisType, QianchuanReportMaterialGetV10FilteringCarouselSource, QianchuanReportMaterialGetV10FilteringImageSource, QianchuanReportMaterialGetV10FilteringMaterialMode, QianchuanReportMaterialGetV10FilteringMaterialType, QianchuanReportMaterialGetV10FilteringVideoSource } from "../models";

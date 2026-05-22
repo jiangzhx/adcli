@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpWechatAppletUpdateV30Request, ToolsEbpWechatAppletUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsEbpWechatAppletUpdatePostRequest {
+  toolsEbpWechatAppletUpdateV30Request?: ToolsEbpWechatAppletUpdateV30Request;
+}
 
 export class ToolsEbpWechatAppletUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsEbpWechatAppletUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpWechatAppletUpdatePost(toolsEbpWechatAppletUpdateV30Request: ToolsEbpWechatAppletUpdateV30Request): Promise<ToolsEbpWechatAppletUpdateV30Response> {
-    const response = await this.openApiV30ToolsEbpWechatAppletUpdatePostWithHttpInfo(toolsEbpWechatAppletUpdateV30Request);
+  async openApiV30ToolsEbpWechatAppletUpdatePost(request: OpenApiV30ToolsEbpWechatAppletUpdatePostRequest): Promise<ToolsEbpWechatAppletUpdateV30Response> {
+    const response = await this.openApiV30ToolsEbpWechatAppletUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpWechatAppletUpdatePostWithHttpInfo(toolsEbpWechatAppletUpdateV30Request: ToolsEbpWechatAppletUpdateV30Request): Promise<ApiResponse<ToolsEbpWechatAppletUpdateV30Response>> {
+  async openApiV30ToolsEbpWechatAppletUpdatePostWithHttpInfo(request: OpenApiV30ToolsEbpWechatAppletUpdatePostRequest): Promise<ApiResponse<ToolsEbpWechatAppletUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsEbpWechatAppletUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsEbpWechatAppletUpdateV30Api {
       queryParams: [
 
       ],
-      body: toolsEbpWechatAppletUpdateV30Request
+      body: request.toolsEbpWechatAppletUpdateV30Request
     });
   }
 }

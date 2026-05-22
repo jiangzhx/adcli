@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ClueCouponDetailV2DataFormEnableLayer, ClueCouponDetailV2DataFormFormType, ClueCouponDetailV2DataFormValidateType, ClueCouponDetailV2ResponseDataFormElementsInner, ClueCouponDetailV2ResponseDataFormExtendInfo } from "../models";

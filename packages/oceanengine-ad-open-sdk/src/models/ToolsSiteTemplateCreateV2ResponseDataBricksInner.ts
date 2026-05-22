@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsSiteTemplateCreateV2DataBricksType, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButton, ToolsSiteTemplateCreateV2ResponseDataBricksInnerCoupon, ToolsSiteTemplateCreateV2ResponseDataBricksInnerForm, ToolsSiteTemplateCreateV2ResponseDataBricksInnerPicture, ToolsSiteTemplateCreateV2ResponseDataBricksInnerPictureGroup, ToolsSiteTemplateCreateV2ResponseDataBricksInnerText, ToolsSiteTemplateCreateV2ResponseDataBricksInnerVideo, ToolsSiteTemplateCreateV2ResponseDataBricksInnerWechatApplet, ToolsSiteTemplateCreateV2ResponseDataBricksInnerWechatGame } from "../models";

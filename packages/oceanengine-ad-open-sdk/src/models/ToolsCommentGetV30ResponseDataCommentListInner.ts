@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsCommentGetV30DataCommentListCommentPermission, ToolsCommentGetV30DataCommentListCommentType, ToolsCommentGetV30DataCommentListEmotionType, ToolsCommentGetV30DataCommentListHideStatus, ToolsCommentGetV30DataCommentListLevelType } from "../models";

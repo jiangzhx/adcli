@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanUniPromotionBlockMaterialGetV10ResponseDataCarouselListInner, QianchuanUniPromotionBlockMaterialGetV10ResponseDataPageInfo, QianchuanUniPromotionBlockMaterialGetV10ResponseDataVideoListInner } from "../models";

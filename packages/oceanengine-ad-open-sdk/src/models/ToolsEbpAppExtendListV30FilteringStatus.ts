@@ -1,15 +1,14 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const ToolsEbpAppExtendListV30FilteringStatus = {
   ALL: "All",
-  CREATEFAIL: "CreateFail",
+  CREATE_FAIL: "CreateFail",
   CREATING: "Creating",
   OFFLINE: "Offline",
   PREPARED: "Prepared",
   PUBLISHED: "Published",
-  UPDATEFAIL: "UpdateFail",
+  UPDATE_FAIL: "UpdateFail",
   UPDATING: "Updating",
 } as const;
 

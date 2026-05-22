@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionDeepbidUpdateV30Request, PromotionDeepbidUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30PromotionDeepbidUpdatePostRequest {
+  promotionDeepbidUpdateV30Request?: PromotionDeepbidUpdateV30Request;
+}
 
 export class PromotionDeepbidUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class PromotionDeepbidUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionDeepbidUpdatePost(promotionDeepbidUpdateV30Request: PromotionDeepbidUpdateV30Request): Promise<PromotionDeepbidUpdateV30Response> {
-    const response = await this.openApiV30PromotionDeepbidUpdatePostWithHttpInfo(promotionDeepbidUpdateV30Request);
+  async openApiV30PromotionDeepbidUpdatePost(request: OpenApiV30PromotionDeepbidUpdatePostRequest): Promise<PromotionDeepbidUpdateV30Response> {
+    const response = await this.openApiV30PromotionDeepbidUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionDeepbidUpdatePostWithHttpInfo(promotionDeepbidUpdateV30Request: PromotionDeepbidUpdateV30Request): Promise<ApiResponse<PromotionDeepbidUpdateV30Response>> {
+  async openApiV30PromotionDeepbidUpdatePostWithHttpInfo(request: OpenApiV30PromotionDeepbidUpdatePostRequest): Promise<ApiResponse<PromotionDeepbidUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<PromotionDeepbidUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class PromotionDeepbidUpdateV30Api {
       queryParams: [
 
       ],
-      body: promotionDeepbidUpdateV30Request
+      body: request.promotionDeepbidUpdateV30Request
     });
   }
 }

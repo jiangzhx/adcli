@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { UniProjectMonetizationModeUpdateV30Request, UniProjectMonetizationModeUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30UniProjectMonetizationModeUpdatePostRequest {
+  uniProjectMonetizationModeUpdateV30Request?: UniProjectMonetizationModeUpdateV30Request;
+}
 
 export class UniProjectMonetizationModeUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class UniProjectMonetizationModeUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30UniProjectMonetizationModeUpdatePost(uniProjectMonetizationModeUpdateV30Request: UniProjectMonetizationModeUpdateV30Request): Promise<UniProjectMonetizationModeUpdateV30Response> {
-    const response = await this.openApiV30UniProjectMonetizationModeUpdatePostWithHttpInfo(uniProjectMonetizationModeUpdateV30Request);
+  async openApiV30UniProjectMonetizationModeUpdatePost(request: OpenApiV30UniProjectMonetizationModeUpdatePostRequest): Promise<UniProjectMonetizationModeUpdateV30Response> {
+    const response = await this.openApiV30UniProjectMonetizationModeUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30UniProjectMonetizationModeUpdatePostWithHttpInfo(uniProjectMonetizationModeUpdateV30Request: UniProjectMonetizationModeUpdateV30Request): Promise<ApiResponse<UniProjectMonetizationModeUpdateV30Response>> {
+  async openApiV30UniProjectMonetizationModeUpdatePostWithHttpInfo(request: OpenApiV30UniProjectMonetizationModeUpdatePostRequest): Promise<ApiResponse<UniProjectMonetizationModeUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<UniProjectMonetizationModeUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class UniProjectMonetizationModeUpdateV30Api {
       queryParams: [
 
       ],
-      body: uniProjectMonetizationModeUpdateV30Request
+      body: request.uniProjectMonetizationModeUpdateV30Request
     });
   }
 }

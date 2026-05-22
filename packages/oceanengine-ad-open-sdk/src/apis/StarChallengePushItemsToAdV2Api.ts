@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarChallengePushItemsToAdV2Request, StarChallengePushItemsToAdV2Response } from "../models";
 
+
+export interface OpenApi2StarChallengePushItemsToAdPostRequest {
+  starChallengePushItemsToAdV2Request?: StarChallengePushItemsToAdV2Request;
+}
 
 export class StarChallengePushItemsToAdV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarChallengePushItemsToAdV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarChallengePushItemsToAdPost(starChallengePushItemsToAdV2Request: StarChallengePushItemsToAdV2Request): Promise<StarChallengePushItemsToAdV2Response> {
-    const response = await this.openApi2StarChallengePushItemsToAdPostWithHttpInfo(starChallengePushItemsToAdV2Request);
+  async openApi2StarChallengePushItemsToAdPost(request: OpenApi2StarChallengePushItemsToAdPostRequest): Promise<StarChallengePushItemsToAdV2Response> {
+    const response = await this.openApi2StarChallengePushItemsToAdPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarChallengePushItemsToAdPostWithHttpInfo(starChallengePushItemsToAdV2Request: StarChallengePushItemsToAdV2Request): Promise<ApiResponse<StarChallengePushItemsToAdV2Response>> {
+  async openApi2StarChallengePushItemsToAdPostWithHttpInfo(request: OpenApi2StarChallengePushItemsToAdPostRequest): Promise<ApiResponse<StarChallengePushItemsToAdV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarChallengePushItemsToAdV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarChallengePushItemsToAdV2Api {
       queryParams: [
 
       ],
-      body: starChallengePushItemsToAdV2Request
+      body: request.starChallengePushItemsToAdV2Request
     });
   }
 }

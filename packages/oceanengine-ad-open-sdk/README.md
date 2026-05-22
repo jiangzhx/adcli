@@ -1,6 +1,6 @@
 # @jiangzhx/oceanengine-ad-open-sdk
 
-基于官方 Java SDK `oceanengine/ad_open_sdk_java` 迁移的巨量引擎 Node.js/TypeScript SDK。
+基于官方 Go SDK `oceanengine/ad_open_sdk_go` 生成的巨量引擎 Node.js/TypeScript SDK。
 
 ## 当前包形态
 
@@ -27,16 +27,15 @@ packages/oceanengine-ad-open-sdk/
 packages/oceanengine-ad-open-sdk/src/
   apis.ts            # barrel export
   models.ts          # barrel export
-  apis/*.ts          # one generated file per Java API class
-  models/*.ts        # one generated file per Java model/enum
+  apis/*.ts          # one generated file per Go API service / official API class
+  models/*.ts        # one generated file per Go model/enum
 ```
 
 当前基线：
 
 - generated API: 1136
-- special runtime API: 1 (`api/CommonReqApi.java`)
 - generated model: 9671
-- skipped: 0
+- skipped: 3 个非接口源码文件（`api_common.go`、`client.go`、`middleware.go`）
 
 ## 包验证
 
@@ -61,7 +60,8 @@ import {
 const client = new ApiClient().setAccessToken("access-token");
 const api = new ReportCustomConfigGetV30Api(client);
 
-await api.openApiV30ReportCustomConfigGetGet(123, [
-  ReportCustomConfigGetV30DataTopics.BASIC_DATA,
-]);
+await api.openApiV30ReportCustomConfigGetGet({
+  advertiserId: 123,
+  dataTopics: [ReportCustomConfigGetV30DataTopics.BASIC_DATA],
+});
 ```

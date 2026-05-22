@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType, BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExternalMicroAppInfo, BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExternalWechatMicroAppInfo } from "../models";

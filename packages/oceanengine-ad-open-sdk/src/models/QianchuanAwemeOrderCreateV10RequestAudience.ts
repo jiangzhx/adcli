@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAwemeOrderCreateV10AudienceAge, QianchuanAwemeOrderCreateV10AudienceAudienceMode, QianchuanAwemeOrderCreateV10AudienceBehaviors, QianchuanAwemeOrderCreateV10AudienceDistrict, QianchuanAwemeOrderCreateV10AudienceExcludeLimitedRegion, QianchuanAwemeOrderCreateV10AudienceGender, QianchuanAwemeOrderCreateV10AudienceRegionVersion } from "../models";

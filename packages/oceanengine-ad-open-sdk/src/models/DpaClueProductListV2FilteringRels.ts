@@ -1,10 +1,9 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const DpaClueProductListV2FilteringRels = {
-  COP: "REL_COP",
-  OWN: "REL_OWN",
+  REL_COP: "REL_COP",
+  REL_OWN: "REL_OWN",
 } as const;
 
 export type DpaClueProductListV2FilteringRels = typeof DpaClueProductListV2FilteringRels[keyof typeof DpaClueProductListV2FilteringRels];

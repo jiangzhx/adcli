@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,13 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { EventManagerShareGetV30Response } from "../models";
 
+
+export interface OpenApiV30EventManagerShareGetGetRequest {
+  organizationId: number;
+  assetId: number;
+  page?: number;
+  pageSize?: number;
+}
 
 export class EventManagerShareGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,27 +25,27 @@ export class EventManagerShareGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30EventManagerShareGetGet(organizationId: number, assetId: number, page: number, pageSize: number): Promise<EventManagerShareGetV30Response> {
-    const response = await this.openApiV30EventManagerShareGetGetWithHttpInfo(organizationId, assetId, page, pageSize);
+  async openApiV30EventManagerShareGetGet(request: OpenApiV30EventManagerShareGetGetRequest): Promise<EventManagerShareGetV30Response> {
+    const response = await this.openApiV30EventManagerShareGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30EventManagerShareGetGetWithHttpInfo(organizationId: number, assetId: number, page: number, pageSize: number): Promise<ApiResponse<EventManagerShareGetV30Response>> {
-    if (organizationId == null) {
+  async openApiV30EventManagerShareGetGetWithHttpInfo(request: OpenApiV30EventManagerShareGetGetRequest): Promise<ApiResponse<EventManagerShareGetV30Response>> {
+    if (request.organizationId == null) {
       throw new ApiException("Missing the required parameter 'organizationId' when calling openApiV30EventManagerShareGetGet");
     }
 
-    if (assetId == null) {
+    if (request.assetId == null) {
       throw new ApiException("Missing the required parameter 'assetId' when calling openApiV30EventManagerShareGetGet");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerShareGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/event_manager/share/get/",
       queryParams: [
-        { name: "organization_id", value: organizationId },
-        { name: "asset_id", value: assetId },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize }
+        { name: "organization_id", value: request.organizationId },
+        { name: "asset_id", value: request.assetId },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

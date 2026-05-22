@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { OcProjectMaterialStatusUpdateV30Request, OcProjectMaterialStatusUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30OcProjectMaterialStatusUpdatePostRequest {
+  ocProjectMaterialStatusUpdateV30Request?: OcProjectMaterialStatusUpdateV30Request;
+}
 
 export class OcProjectMaterialStatusUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class OcProjectMaterialStatusUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30OcProjectMaterialStatusUpdatePost(ocProjectMaterialStatusUpdateV30Request: OcProjectMaterialStatusUpdateV30Request): Promise<OcProjectMaterialStatusUpdateV30Response> {
-    const response = await this.openApiV30OcProjectMaterialStatusUpdatePostWithHttpInfo(ocProjectMaterialStatusUpdateV30Request);
+  async openApiV30OcProjectMaterialStatusUpdatePost(request: OpenApiV30OcProjectMaterialStatusUpdatePostRequest): Promise<OcProjectMaterialStatusUpdateV30Response> {
+    const response = await this.openApiV30OcProjectMaterialStatusUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30OcProjectMaterialStatusUpdatePostWithHttpInfo(ocProjectMaterialStatusUpdateV30Request: OcProjectMaterialStatusUpdateV30Request): Promise<ApiResponse<OcProjectMaterialStatusUpdateV30Response>> {
+  async openApiV30OcProjectMaterialStatusUpdatePostWithHttpInfo(request: OpenApiV30OcProjectMaterialStatusUpdatePostRequest): Promise<ApiResponse<OcProjectMaterialStatusUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<OcProjectMaterialStatusUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class OcProjectMaterialStatusUpdateV30Api {
       queryParams: [
 
       ],
-      body: ocProjectMaterialStatusUpdateV30Request
+      body: request.ocProjectMaterialStatusUpdateV30Request
     });
   }
 }

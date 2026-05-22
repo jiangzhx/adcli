@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ReportAgentGetV2V2FilteringAccountSource, ReportAgentGetV2V2FilteringAccountStatus, ReportAgentGetV2V2FilteringActive } from "../models";

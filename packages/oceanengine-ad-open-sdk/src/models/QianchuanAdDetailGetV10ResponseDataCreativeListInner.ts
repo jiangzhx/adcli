@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAdDetailGetV10DataCreativeListImageMode, QianchuanAdDetailGetV10ResponseDataCreativeListInnerCarouselMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerImageMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerPromotionCardMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerTitleMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerVideoMaterial } from "../models";

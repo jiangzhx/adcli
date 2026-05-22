@@ -1,13 +1,12 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const ProjectListV30DataListInternalAdvertiserInfoClassify = {
-  APPORTION: "CLASSIFY_APPORTION",
-  EXCHANGE: "CLASSIFY_EXCHANGE",
-  INTERNAL: "CLASSIFY_INTERNAL",
-  SALE: "CLASSIFY_SALE",
-  SUPPLEMENT: "CLASSIFY_SUPPLEMENT",
+  CLASSIFY_APPORTION: "CLASSIFY_APPORTION",
+  CLASSIFY_EXCHANGE: "CLASSIFY_EXCHANGE",
+  CLASSIFY_INTERNAL: "CLASSIFY_INTERNAL",
+  CLASSIFY_SALE: "CLASSIFY_SALE",
+  CLASSIFY_SUPPLEMENT: "CLASSIFY_SUPPLEMENT",
 } as const;
 
 export type ProjectListV30DataListInternalAdvertiserInfoClassify = typeof ProjectListV30DataListInternalAdvertiserInfoClassify[keyof typeof ProjectListV30DataListInternalAdvertiserInfoClassify];

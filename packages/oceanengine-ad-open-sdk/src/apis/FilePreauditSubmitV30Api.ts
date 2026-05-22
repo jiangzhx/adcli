@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FilePreauditSubmitV30Request, FilePreauditSubmitV30Response } from "../models";
 
+
+export interface OpenApiV30FilePreauditSubmitPostRequest {
+  filePreauditSubmitV30Request?: FilePreauditSubmitV30Request;
+}
 
 export class FilePreauditSubmitV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class FilePreauditSubmitV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30FilePreauditSubmitPost(filePreauditSubmitV30Request: FilePreauditSubmitV30Request): Promise<FilePreauditSubmitV30Response> {
-    const response = await this.openApiV30FilePreauditSubmitPostWithHttpInfo(filePreauditSubmitV30Request);
+  async openApiV30FilePreauditSubmitPost(request: OpenApiV30FilePreauditSubmitPostRequest): Promise<FilePreauditSubmitV30Response> {
+    const response = await this.openApiV30FilePreauditSubmitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30FilePreauditSubmitPostWithHttpInfo(filePreauditSubmitV30Request: FilePreauditSubmitV30Request): Promise<ApiResponse<FilePreauditSubmitV30Response>> {
+  async openApiV30FilePreauditSubmitPostWithHttpInfo(request: OpenApiV30FilePreauditSubmitPostRequest): Promise<ApiResponse<FilePreauditSubmitV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<FilePreauditSubmitV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class FilePreauditSubmitV30Api {
       queryParams: [
 
       ],
-      body: filePreauditSubmitV30Request
+      body: request.filePreauditSubmitV30Request
     });
   }
 }

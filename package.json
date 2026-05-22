@@ -47,6 +47,7 @@
     "sdk:test": "bun run sdk:oceanengine:test",
     "sdk:typecheck": "bun run sdk:oceanengine:typecheck",
     "codegen:oceanengine:generate": "bun run --cwd packages/codegen generate:oceanengine",
+    "codegen:oceanengine:generate:go": "bun run --cwd packages/codegen generate:oceanengine:go",
     "codegen:oceanengine:phase-a": "bun run --cwd packages/codegen phase-a:oceanengine",
     "codegen:oceanengine:test": "bun run --cwd packages/codegen test:oceanengine",
     "codegen:test": "bun run --cwd packages/codegen test",

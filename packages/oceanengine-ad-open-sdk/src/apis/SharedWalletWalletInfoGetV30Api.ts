@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,12 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { SharedWalletWalletInfoGetV30AccountType, SharedWalletWalletInfoGetV30Response } from "../models";
 
+
+export interface OpenApiV30SharedWalletWalletInfoGetGetRequest {
+  accountId: number;
+  walletIdList: number[];
+  accountType: SharedWalletWalletInfoGetV30AccountType;
+}
 
 export class SharedWalletWalletInfoGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,30 +24,30 @@ export class SharedWalletWalletInfoGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30SharedWalletWalletInfoGetGet(accountId: number, walletIdList: number[], accountType: SharedWalletWalletInfoGetV30AccountType): Promise<SharedWalletWalletInfoGetV30Response> {
-    const response = await this.openApiV30SharedWalletWalletInfoGetGetWithHttpInfo(accountId, walletIdList, accountType);
+  async openApiV30SharedWalletWalletInfoGetGet(request: OpenApiV30SharedWalletWalletInfoGetGetRequest): Promise<SharedWalletWalletInfoGetV30Response> {
+    const response = await this.openApiV30SharedWalletWalletInfoGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30SharedWalletWalletInfoGetGetWithHttpInfo(accountId: number, walletIdList: number[], accountType: SharedWalletWalletInfoGetV30AccountType): Promise<ApiResponse<SharedWalletWalletInfoGetV30Response>> {
-    if (accountId == null) {
+  async openApiV30SharedWalletWalletInfoGetGetWithHttpInfo(request: OpenApiV30SharedWalletWalletInfoGetGetRequest): Promise<ApiResponse<SharedWalletWalletInfoGetV30Response>> {
+    if (request.accountId == null) {
       throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30SharedWalletWalletInfoGetGet");
     }
 
-    if (walletIdList == null) {
+    if (request.walletIdList == null) {
       throw new ApiException("Missing the required parameter 'walletIdList' when calling openApiV30SharedWalletWalletInfoGetGet");
     }
 
-    if (accountType == null) {
+    if (request.accountType == null) {
       throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30SharedWalletWalletInfoGetGet");
     }
     return this.apiClient.requestWithHttpInfo<SharedWalletWalletInfoGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/shared_wallet/wallet_info/get/",
       queryParams: [
-        { name: "account_id", value: accountId },
-        { name: "account_type", value: accountType },
-        { name: "wallet_id_list", value: walletIdList, collectionFormat: "csv" }
+        { name: "account_id", value: request.accountId },
+        { name: "wallet_id_list", value: request.walletIdList, collectionFormat: "csv" },
+        { name: "account_type", value: request.accountType }
       ]
     });
   }

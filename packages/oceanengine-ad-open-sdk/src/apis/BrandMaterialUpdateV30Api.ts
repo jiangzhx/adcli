@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandMaterialUpdateV30Request, BrandMaterialUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30BrandMaterialUpdatePostRequest {
+  brandMaterialUpdateV30Request?: BrandMaterialUpdateV30Request;
+}
 
 export class BrandMaterialUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class BrandMaterialUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandMaterialUpdatePost(brandMaterialUpdateV30Request: BrandMaterialUpdateV30Request): Promise<BrandMaterialUpdateV30Response> {
-    const response = await this.openApiV30BrandMaterialUpdatePostWithHttpInfo(brandMaterialUpdateV30Request);
+  async openApiV30BrandMaterialUpdatePost(request: OpenApiV30BrandMaterialUpdatePostRequest): Promise<BrandMaterialUpdateV30Response> {
+    const response = await this.openApiV30BrandMaterialUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandMaterialUpdatePostWithHttpInfo(brandMaterialUpdateV30Request: BrandMaterialUpdateV30Request): Promise<ApiResponse<BrandMaterialUpdateV30Response>> {
+  async openApiV30BrandMaterialUpdatePostWithHttpInfo(request: OpenApiV30BrandMaterialUpdatePostRequest): Promise<ApiResponse<BrandMaterialUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<BrandMaterialUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class BrandMaterialUpdateV30Api {
       queryParams: [
 
       ],
-      body: brandMaterialUpdateV30Request
+      body: request.brandMaterialUpdateV30Request
     });
   }
 }

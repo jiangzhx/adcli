@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StardeliveryTaskDetailV30Response } from "../models";
 
+
+export interface OpenApiV30StardeliveryTaskDetailGetRequest {
+  advertiserId: number;
+  starTaskId: number;
+}
 
 export class StardeliveryTaskDetailV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,25 +23,25 @@ export class StardeliveryTaskDetailV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30StardeliveryTaskDetailGet(advertiserId: number, starTaskId: number): Promise<StardeliveryTaskDetailV30Response> {
-    const response = await this.openApiV30StardeliveryTaskDetailGetWithHttpInfo(advertiserId, starTaskId);
+  async openApiV30StardeliveryTaskDetailGet(request: OpenApiV30StardeliveryTaskDetailGetRequest): Promise<StardeliveryTaskDetailV30Response> {
+    const response = await this.openApiV30StardeliveryTaskDetailGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30StardeliveryTaskDetailGetWithHttpInfo(advertiserId: number, starTaskId: number): Promise<ApiResponse<StardeliveryTaskDetailV30Response>> {
-    if (advertiserId == null) {
+  async openApiV30StardeliveryTaskDetailGetWithHttpInfo(request: OpenApiV30StardeliveryTaskDetailGetRequest): Promise<ApiResponse<StardeliveryTaskDetailV30Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30StardeliveryTaskDetailGet");
     }
 
-    if (starTaskId == null) {
+    if (request.starTaskId == null) {
       throw new ApiException("Missing the required parameter 'starTaskId' when calling openApiV30StardeliveryTaskDetailGet");
     }
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskDetailV30Response>({
       method: "GET",
       path: "/open_api/v3.0/stardelivery/task/detail/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "star_task_id", value: starTaskId }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "star_task_id", value: request.starTaskId }
       ]
     });
   }

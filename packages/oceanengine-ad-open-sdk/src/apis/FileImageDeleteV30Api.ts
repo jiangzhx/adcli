@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FileImageDeleteV30Request, FileImageDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30FileImageDeletePostRequest {
+  fileImageDeleteV30Request?: FileImageDeleteV30Request;
+}
 
 export class FileImageDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class FileImageDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30FileImageDeletePost(fileImageDeleteV30Request: FileImageDeleteV30Request): Promise<FileImageDeleteV30Response> {
-    const response = await this.openApiV30FileImageDeletePostWithHttpInfo(fileImageDeleteV30Request);
+  async openApiV30FileImageDeletePost(request: OpenApiV30FileImageDeletePostRequest): Promise<FileImageDeleteV30Response> {
+    const response = await this.openApiV30FileImageDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30FileImageDeletePostWithHttpInfo(fileImageDeleteV30Request: FileImageDeleteV30Request): Promise<ApiResponse<FileImageDeleteV30Response>> {
+  async openApiV30FileImageDeletePostWithHttpInfo(request: OpenApiV30FileImageDeletePostRequest): Promise<ApiResponse<FileImageDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<FileImageDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class FileImageDeleteV30Api {
       queryParams: [
 
       ],
-      body: fileImageDeleteV30Request
+      body: request.fileImageDeleteV30Request
     });
   }
 }

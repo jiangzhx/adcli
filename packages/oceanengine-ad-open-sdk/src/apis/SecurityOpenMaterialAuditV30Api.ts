@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { SecurityOpenMaterialAuditV30Request, SecurityOpenMaterialAuditV30Response } from "../models";
 
+
+export interface OpenApiV30SecurityOpenMaterialAuditPostRequest {
+  securityOpenMaterialAuditV30Request?: SecurityOpenMaterialAuditV30Request;
+}
 
 export class SecurityOpenMaterialAuditV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class SecurityOpenMaterialAuditV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30SecurityOpenMaterialAuditPost(securityOpenMaterialAuditV30Request: SecurityOpenMaterialAuditV30Request): Promise<SecurityOpenMaterialAuditV30Response> {
-    const response = await this.openApiV30SecurityOpenMaterialAuditPostWithHttpInfo(securityOpenMaterialAuditV30Request);
+  async openApiV30SecurityOpenMaterialAuditPost(request: OpenApiV30SecurityOpenMaterialAuditPostRequest): Promise<SecurityOpenMaterialAuditV30Response> {
+    const response = await this.openApiV30SecurityOpenMaterialAuditPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30SecurityOpenMaterialAuditPostWithHttpInfo(securityOpenMaterialAuditV30Request: SecurityOpenMaterialAuditV30Request): Promise<ApiResponse<SecurityOpenMaterialAuditV30Response>> {
+  async openApiV30SecurityOpenMaterialAuditPostWithHttpInfo(request: OpenApiV30SecurityOpenMaterialAuditPostRequest): Promise<ApiResponse<SecurityOpenMaterialAuditV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<SecurityOpenMaterialAuditV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class SecurityOpenMaterialAuditV30Api {
       queryParams: [
 
       ],
-      body: securityOpenMaterialAuditV30Request
+      body: request.securityOpenMaterialAuditV30Request
     });
   }
 }

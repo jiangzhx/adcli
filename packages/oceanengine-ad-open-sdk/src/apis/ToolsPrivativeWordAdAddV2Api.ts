@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPrivativeWordAdAddV2Request, ToolsPrivativeWordAdAddV2Response } from "../models";
 
+
+export interface OpenApi2ToolsPrivativeWordAdAddPostRequest {
+  toolsPrivativeWordAdAddV2Request?: ToolsPrivativeWordAdAddV2Request;
+}
 
 export class ToolsPrivativeWordAdAddV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsPrivativeWordAdAddV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsPrivativeWordAdAddPost(toolsPrivativeWordAdAddV2Request: ToolsPrivativeWordAdAddV2Request): Promise<ToolsPrivativeWordAdAddV2Response> {
-    const response = await this.openApi2ToolsPrivativeWordAdAddPostWithHttpInfo(toolsPrivativeWordAdAddV2Request);
+  async openApi2ToolsPrivativeWordAdAddPost(request: OpenApi2ToolsPrivativeWordAdAddPostRequest): Promise<ToolsPrivativeWordAdAddV2Response> {
+    const response = await this.openApi2ToolsPrivativeWordAdAddPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsPrivativeWordAdAddPostWithHttpInfo(toolsPrivativeWordAdAddV2Request: ToolsPrivativeWordAdAddV2Request): Promise<ApiResponse<ToolsPrivativeWordAdAddV2Response>> {
+  async openApi2ToolsPrivativeWordAdAddPostWithHttpInfo(request: OpenApi2ToolsPrivativeWordAdAddPostRequest): Promise<ApiResponse<ToolsPrivativeWordAdAddV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsPrivativeWordAdAddV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsPrivativeWordAdAddV2Api {
       queryParams: [
 
       ],
-      body: toolsPrivativeWordAdAddV2Request
+      body: request.toolsPrivativeWordAdAddV2Request
     });
   }
 }

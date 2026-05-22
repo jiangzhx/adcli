@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarTaskBindProjectV2Request, StarTaskBindProjectV2Response } from "../models";
 
+
+export interface OpenApi2StarTaskBindProjectPostRequest {
+  starTaskBindProjectV2Request?: StarTaskBindProjectV2Request;
+}
 
 export class StarTaskBindProjectV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarTaskBindProjectV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarTaskBindProjectPost(starTaskBindProjectV2Request: StarTaskBindProjectV2Request): Promise<StarTaskBindProjectV2Response> {
-    const response = await this.openApi2StarTaskBindProjectPostWithHttpInfo(starTaskBindProjectV2Request);
+  async openApi2StarTaskBindProjectPost(request: OpenApi2StarTaskBindProjectPostRequest): Promise<StarTaskBindProjectV2Response> {
+    const response = await this.openApi2StarTaskBindProjectPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarTaskBindProjectPostWithHttpInfo(starTaskBindProjectV2Request: StarTaskBindProjectV2Request): Promise<ApiResponse<StarTaskBindProjectV2Response>> {
+  async openApi2StarTaskBindProjectPostWithHttpInfo(request: OpenApi2StarTaskBindProjectPostRequest): Promise<ApiResponse<StarTaskBindProjectV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarTaskBindProjectV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarTaskBindProjectV2Api {
       queryParams: [
 
       ],
-      body: starTaskBindProjectV2Request
+      body: request.starTaskBindProjectV2Request
     });
   }
 }

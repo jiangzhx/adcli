@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandCreativeUpdateV30Request, BrandCreativeUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30BrandCreativeUpdatePostRequest {
+  brandCreativeUpdateV30Request?: BrandCreativeUpdateV30Request;
+}
 
 export class BrandCreativeUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class BrandCreativeUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandCreativeUpdatePost(brandCreativeUpdateV30Request: BrandCreativeUpdateV30Request): Promise<BrandCreativeUpdateV30Response> {
-    const response = await this.openApiV30BrandCreativeUpdatePostWithHttpInfo(brandCreativeUpdateV30Request);
+  async openApiV30BrandCreativeUpdatePost(request: OpenApiV30BrandCreativeUpdatePostRequest): Promise<BrandCreativeUpdateV30Response> {
+    const response = await this.openApiV30BrandCreativeUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandCreativeUpdatePostWithHttpInfo(brandCreativeUpdateV30Request: BrandCreativeUpdateV30Request): Promise<ApiResponse<BrandCreativeUpdateV30Response>> {
+  async openApiV30BrandCreativeUpdatePostWithHttpInfo(request: OpenApiV30BrandCreativeUpdatePostRequest): Promise<ApiResponse<BrandCreativeUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<BrandCreativeUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class BrandCreativeUpdateV30Api {
       queryParams: [
 
       ],
-      body: brandCreativeUpdateV30Request
+      body: request.brandCreativeUpdateV30Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsBpAssetManagementShareV30Request, ToolsBpAssetManagementShareV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsBpAssetManagementSharePostRequest {
+  toolsBpAssetManagementShareV30Request?: ToolsBpAssetManagementShareV30Request;
+}
 
 export class ToolsBpAssetManagementShareV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsBpAssetManagementShareV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsBpAssetManagementSharePost(toolsBpAssetManagementShareV30Request: ToolsBpAssetManagementShareV30Request): Promise<ToolsBpAssetManagementShareV30Response> {
-    const response = await this.openApiV30ToolsBpAssetManagementSharePostWithHttpInfo(toolsBpAssetManagementShareV30Request);
+  async openApiV30ToolsBpAssetManagementSharePost(request: OpenApiV30ToolsBpAssetManagementSharePostRequest): Promise<ToolsBpAssetManagementShareV30Response> {
+    const response = await this.openApiV30ToolsBpAssetManagementSharePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsBpAssetManagementSharePostWithHttpInfo(toolsBpAssetManagementShareV30Request: ToolsBpAssetManagementShareV30Request): Promise<ApiResponse<ToolsBpAssetManagementShareV30Response>> {
+  async openApiV30ToolsBpAssetManagementSharePostWithHttpInfo(request: OpenApiV30ToolsBpAssetManagementSharePostRequest): Promise<ApiResponse<ToolsBpAssetManagementShareV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsBpAssetManagementShareV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsBpAssetManagementShareV30Api {
       queryParams: [
 
       ],
-      body: toolsBpAssetManagementShareV30Request
+      body: request.toolsBpAssetManagementShareV30Request
     });
   }
 }

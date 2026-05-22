@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsLandingGroupUpdateV2Request, ToolsLandingGroupUpdateV2Response } from "../models";
 
+
+export interface OpenApi2ToolsLandingGroupUpdatePostRequest {
+  xOrangeCaller?: string;
+  toolsLandingGroupUpdateV2Request?: ToolsLandingGroupUpdateV2Request;
+}
 
 export class ToolsLandingGroupUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +23,12 @@ export class ToolsLandingGroupUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsLandingGroupUpdatePost(xOrangeCaller: string, toolsLandingGroupUpdateV2Request: ToolsLandingGroupUpdateV2Request): Promise<ToolsLandingGroupUpdateV2Response> {
-    const response = await this.openApi2ToolsLandingGroupUpdatePostWithHttpInfo(xOrangeCaller, toolsLandingGroupUpdateV2Request);
+  async openApi2ToolsLandingGroupUpdatePost(request: OpenApi2ToolsLandingGroupUpdatePostRequest): Promise<ToolsLandingGroupUpdateV2Response> {
+    const response = await this.openApi2ToolsLandingGroupUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsLandingGroupUpdatePostWithHttpInfo(xOrangeCaller: string, toolsLandingGroupUpdateV2Request: ToolsLandingGroupUpdateV2Request): Promise<ApiResponse<ToolsLandingGroupUpdateV2Response>> {
+  async openApi2ToolsLandingGroupUpdatePostWithHttpInfo(request: OpenApi2ToolsLandingGroupUpdatePostRequest): Promise<ApiResponse<ToolsLandingGroupUpdateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsLandingGroupUpdateV2Response>({
       method: "POST",
@@ -32,7 +36,7 @@ export class ToolsLandingGroupUpdateV2Api {
       queryParams: [
 
       ],
-      body: toolsLandingGroupUpdateV2Request
+      body: request.toolsLandingGroupUpdateV2Request
     });
   }
 }

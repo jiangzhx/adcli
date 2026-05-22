@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsPrivativeWordPromotionUpdateV30ResponseDataErrorListInner } from "../models";
@@ -7,6 +6,6 @@ import type { ToolsPrivativeWordPromotionUpdateV30ResponseDataErrorListInner } f
 export interface ToolsPrivativeWordPromotionUpdateV30ResponseData {
   error_list?: ToolsPrivativeWordPromotionUpdateV30ResponseDataErrorListInner[];
   promotion_error_list?: number[];
-  promotion_list?: unknown[];
+  promotion_list?: Record<string, unknown>[];
 }
 

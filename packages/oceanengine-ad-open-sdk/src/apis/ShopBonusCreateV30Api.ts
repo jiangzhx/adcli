@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ShopBonusCreateV30Request, ShopBonusCreateV30Response } from "../models";
 
+
+export interface OpenApiV30ShopBonusCreatePostRequest {
+  shopBonusCreateV30Request?: ShopBonusCreateV30Request;
+}
 
 export class ShopBonusCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ShopBonusCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ShopBonusCreatePost(shopBonusCreateV30Request: ShopBonusCreateV30Request): Promise<ShopBonusCreateV30Response> {
-    const response = await this.openApiV30ShopBonusCreatePostWithHttpInfo(shopBonusCreateV30Request);
+  async openApiV30ShopBonusCreatePost(request: OpenApiV30ShopBonusCreatePostRequest): Promise<ShopBonusCreateV30Response> {
+    const response = await this.openApiV30ShopBonusCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ShopBonusCreatePostWithHttpInfo(shopBonusCreateV30Request: ShopBonusCreateV30Request): Promise<ApiResponse<ShopBonusCreateV30Response>> {
+  async openApiV30ShopBonusCreatePostWithHttpInfo(request: OpenApiV30ShopBonusCreatePostRequest): Promise<ApiResponse<ShopBonusCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ShopBonusCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ShopBonusCreateV30Api {
       queryParams: [
 
       ],
-      body: shopBonusCreateV30Request
+      body: request.shopBonusCreateV30Request
     });
   }
 }

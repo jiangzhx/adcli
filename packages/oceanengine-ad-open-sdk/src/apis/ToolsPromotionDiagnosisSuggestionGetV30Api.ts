@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,12 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPromotionDiagnosisSuggestionGetV30Response, ToolsPromotionDiagnosisSuggestionGetV30Scenes } from "../models";
 
+
+export interface OpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest {
+  advertiserId: number;
+  promotionIds: number[];
+  scenes: ToolsPromotionDiagnosisSuggestionGetV30Scenes[];
+}
 
 export class ToolsPromotionDiagnosisSuggestionGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,30 +24,30 @@ export class ToolsPromotionDiagnosisSuggestionGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsPromotionDiagnosisSuggestionGetGet(advertiserId: number, promotionIds: number[], scenes: ToolsPromotionDiagnosisSuggestionGetV30Scenes[]): Promise<ToolsPromotionDiagnosisSuggestionGetV30Response> {
-    const response = await this.openApiV30ToolsPromotionDiagnosisSuggestionGetGetWithHttpInfo(advertiserId, promotionIds, scenes);
+  async openApiV30ToolsPromotionDiagnosisSuggestionGetGet(request: OpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest): Promise<ToolsPromotionDiagnosisSuggestionGetV30Response> {
+    const response = await this.openApiV30ToolsPromotionDiagnosisSuggestionGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsPromotionDiagnosisSuggestionGetGetWithHttpInfo(advertiserId: number, promotionIds: number[], scenes: ToolsPromotionDiagnosisSuggestionGetV30Scenes[]): Promise<ApiResponse<ToolsPromotionDiagnosisSuggestionGetV30Response>> {
-    if (advertiserId == null) {
+  async openApiV30ToolsPromotionDiagnosisSuggestionGetGetWithHttpInfo(request: OpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest): Promise<ApiResponse<ToolsPromotionDiagnosisSuggestionGetV30Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsPromotionDiagnosisSuggestionGetGet");
     }
 
-    if (promotionIds == null) {
+    if (request.promotionIds == null) {
       throw new ApiException("Missing the required parameter 'promotionIds' when calling openApiV30ToolsPromotionDiagnosisSuggestionGetGet");
     }
 
-    if (scenes == null) {
+    if (request.scenes == null) {
       throw new ApiException("Missing the required parameter 'scenes' when calling openApiV30ToolsPromotionDiagnosisSuggestionGetGet");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPromotionDiagnosisSuggestionGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/tools/promotion_diagnosis/suggestion/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "promotion_ids", value: promotionIds, collectionFormat: "csv" },
-        { name: "scenes", value: scenes, collectionFormat: "csv" }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "promotion_ids", value: request.promotionIds, collectionFormat: "csv" },
+        { name: "scenes", value: request.scenes, collectionFormat: "csv" }
       ]
     });
   }

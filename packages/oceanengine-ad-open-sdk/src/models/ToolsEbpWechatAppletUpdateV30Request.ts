@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsEbpWechatAppletUpdateV30AccountType, ToolsEbpWechatAppletUpdateV30RequestHead, ToolsEbpWechatAppletUpdateV30RequestIcon, ToolsEbpWechatAppletUpdateV30RequestMaterialInner } from "../models";
@@ -7,7 +6,7 @@ import type { ToolsEbpWechatAppletUpdateV30AccountType, ToolsEbpWechatAppletUpda
 export interface ToolsEbpWechatAppletUpdateV30Request {
   account_id: number;
   account_type: ToolsEbpWechatAppletUpdateV30AccountType;
-  data: unknown;
+  data: Record<string, unknown>;
   guide_copy?: string;
   head?: ToolsEbpWechatAppletUpdateV30RequestHead;
   icon: ToolsEbpWechatAppletUpdateV30RequestIcon;

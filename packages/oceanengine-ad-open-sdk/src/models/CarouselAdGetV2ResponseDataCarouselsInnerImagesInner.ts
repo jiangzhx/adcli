@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { CarouselAdGetV2ResponseDataCarouselsInnerImagesInnerImageSubject } from "../models";
@@ -10,7 +9,7 @@ export interface CarouselAdGetV2ResponseDataCarouselsInnerImagesInner {
   image_subject?: CarouselAdGetV2ResponseDataCarouselsInnerImagesInnerImageSubject;
   ratio?: number;
   size?: number;
-  url?: unknown;
+  url?: Record<string, unknown>;
   width?: number;
 }
 

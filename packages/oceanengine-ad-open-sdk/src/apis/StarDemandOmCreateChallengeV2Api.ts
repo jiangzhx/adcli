@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarDemandOmCreateChallengeV2Request, StarDemandOmCreateChallengeV2Response } from "../models";
 
+
+export interface OpenApi2StarDemandOmCreateChallengePostRequest {
+  starDemandOmCreateChallengeV2Request?: StarDemandOmCreateChallengeV2Request;
+}
 
 export class StarDemandOmCreateChallengeV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarDemandOmCreateChallengeV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarDemandOmCreateChallengePost(starDemandOmCreateChallengeV2Request: StarDemandOmCreateChallengeV2Request): Promise<StarDemandOmCreateChallengeV2Response> {
-    const response = await this.openApi2StarDemandOmCreateChallengePostWithHttpInfo(starDemandOmCreateChallengeV2Request);
+  async openApi2StarDemandOmCreateChallengePost(request: OpenApi2StarDemandOmCreateChallengePostRequest): Promise<StarDemandOmCreateChallengeV2Response> {
+    const response = await this.openApi2StarDemandOmCreateChallengePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarDemandOmCreateChallengePostWithHttpInfo(starDemandOmCreateChallengeV2Request: StarDemandOmCreateChallengeV2Request): Promise<ApiResponse<StarDemandOmCreateChallengeV2Response>> {
+  async openApi2StarDemandOmCreateChallengePostWithHttpInfo(request: OpenApi2StarDemandOmCreateChallengePostRequest): Promise<ApiResponse<StarDemandOmCreateChallengeV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarDemandOmCreateChallengeV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarDemandOmCreateChallengeV2Api {
       queryParams: [
 
       ],
-      body: starDemandOmCreateChallengeV2Request
+      body: request.starDemandOmCreateChallengeV2Request
     });
   }
 }

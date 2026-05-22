@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,19 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanUniPromotionAdProductGetV10Filtering, QianchuanUniPromotionAdProductGetV10OrderType, QianchuanUniPromotionAdProductGetV10PageSize, QianchuanUniPromotionAdProductGetV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanUniPromotionAdProductGetGetRequest {
+  advertiserId: number;
+  adId: number;
+  startDate: string;
+  endDate: string;
+  fields: string[];
+  filtering?: QianchuanUniPromotionAdProductGetV10Filtering;
+  orderType?: QianchuanUniPromotionAdProductGetV10OrderType;
+  orderField?: string;
+  page?: number;
+  pageSize?: QianchuanUniPromotionAdProductGetV10PageSize;
+}
 
 export class QianchuanUniPromotionAdProductGetV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,45 +31,45 @@ export class QianchuanUniPromotionAdProductGetV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanUniPromotionAdProductGetGet(advertiserId: number, adId: number, startDate: string, endDate: string, fields: string[], filtering: QianchuanUniPromotionAdProductGetV10Filtering, orderType: QianchuanUniPromotionAdProductGetV10OrderType, orderField: string, page: number, pageSize: QianchuanUniPromotionAdProductGetV10PageSize): Promise<QianchuanUniPromotionAdProductGetV10Response> {
-    const response = await this.openApiV10QianchuanUniPromotionAdProductGetGetWithHttpInfo(advertiserId, adId, startDate, endDate, fields, filtering, orderType, orderField, page, pageSize);
+  async openApiV10QianchuanUniPromotionAdProductGetGet(request: OpenApiV10QianchuanUniPromotionAdProductGetGetRequest): Promise<QianchuanUniPromotionAdProductGetV10Response> {
+    const response = await this.openApiV10QianchuanUniPromotionAdProductGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanUniPromotionAdProductGetGetWithHttpInfo(advertiserId: number, adId: number, startDate: string, endDate: string, fields: string[], filtering: QianchuanUniPromotionAdProductGetV10Filtering, orderType: QianchuanUniPromotionAdProductGetV10OrderType, orderField: string, page: number, pageSize: QianchuanUniPromotionAdProductGetV10PageSize): Promise<ApiResponse<QianchuanUniPromotionAdProductGetV10Response>> {
-    if (advertiserId == null) {
+  async openApiV10QianchuanUniPromotionAdProductGetGetWithHttpInfo(request: OpenApiV10QianchuanUniPromotionAdProductGetGetRequest): Promise<ApiResponse<QianchuanUniPromotionAdProductGetV10Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
     }
 
-    if (adId == null) {
+    if (request.adId == null) {
       throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
     }
 
-    if (startDate == null) {
+    if (request.startDate == null) {
       throw new ApiException("Missing the required parameter 'startDate' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
     }
 
-    if (endDate == null) {
+    if (request.endDate == null) {
       throw new ApiException("Missing the required parameter 'endDate' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
     }
 
-    if (fields == null) {
+    if (request.fields == null) {
       throw new ApiException("Missing the required parameter 'fields' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionAdProductGetV10Response>({
       method: "GET",
       path: "/open_api/v1.0/qianchuan/uni_promotion/ad/product/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "ad_id", value: adId },
-        { name: "start_date", value: startDate },
-        { name: "end_date", value: endDate },
-        { name: "filtering", value: filtering },
-        { name: "order_type", value: orderType },
-        { name: "order_field", value: orderField },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "fields", value: fields, collectionFormat: "csv" }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "ad_id", value: request.adId },
+        { name: "start_date", value: request.startDate },
+        { name: "end_date", value: request.endDate },
+        { name: "filtering", value: request.filtering },
+        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "order_type", value: request.orderType },
+        { name: "order_field", value: request.orderField },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

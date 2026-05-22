@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarAttributeUserInfoFeedbackV2Request, StarAttributeUserInfoFeedbackV2Response } from "../models";
 
+
+export interface OpenApi2StarAttributeUserInfoFeedbackPostRequest {
+  starAttributeUserInfoFeedbackV2Request?: StarAttributeUserInfoFeedbackV2Request;
+}
 
 export class StarAttributeUserInfoFeedbackV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarAttributeUserInfoFeedbackV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarAttributeUserInfoFeedbackPost(starAttributeUserInfoFeedbackV2Request: StarAttributeUserInfoFeedbackV2Request): Promise<StarAttributeUserInfoFeedbackV2Response> {
-    const response = await this.openApi2StarAttributeUserInfoFeedbackPostWithHttpInfo(starAttributeUserInfoFeedbackV2Request);
+  async openApi2StarAttributeUserInfoFeedbackPost(request: OpenApi2StarAttributeUserInfoFeedbackPostRequest): Promise<StarAttributeUserInfoFeedbackV2Response> {
+    const response = await this.openApi2StarAttributeUserInfoFeedbackPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarAttributeUserInfoFeedbackPostWithHttpInfo(starAttributeUserInfoFeedbackV2Request: StarAttributeUserInfoFeedbackV2Request): Promise<ApiResponse<StarAttributeUserInfoFeedbackV2Response>> {
+  async openApi2StarAttributeUserInfoFeedbackPostWithHttpInfo(request: OpenApi2StarAttributeUserInfoFeedbackPostRequest): Promise<ApiResponse<StarAttributeUserInfoFeedbackV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarAttributeUserInfoFeedbackV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarAttributeUserInfoFeedbackV2Api {
       queryParams: [
 
       ],
-      body: starAttributeUserInfoFeedbackV2Request
+      body: request.starAttributeUserInfoFeedbackV2Request
     });
   }
 }

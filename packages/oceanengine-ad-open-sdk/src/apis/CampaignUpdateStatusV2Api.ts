@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CampaignUpdateStatusV2Request, CampaignUpdateStatusV2Response } from "../models";
 
+
+export interface OpenApi2CampaignUpdateStatusPostRequest {
+  campaignUpdateStatusV2Request?: CampaignUpdateStatusV2Request;
+}
 
 export class CampaignUpdateStatusV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class CampaignUpdateStatusV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2CampaignUpdateStatusPost(campaignUpdateStatusV2Request: CampaignUpdateStatusV2Request): Promise<CampaignUpdateStatusV2Response> {
-    const response = await this.openApi2CampaignUpdateStatusPostWithHttpInfo(campaignUpdateStatusV2Request);
+  async openApi2CampaignUpdateStatusPost(request: OpenApi2CampaignUpdateStatusPostRequest): Promise<CampaignUpdateStatusV2Response> {
+    const response = await this.openApi2CampaignUpdateStatusPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2CampaignUpdateStatusPostWithHttpInfo(campaignUpdateStatusV2Request: CampaignUpdateStatusV2Request): Promise<ApiResponse<CampaignUpdateStatusV2Response>> {
+  async openApi2CampaignUpdateStatusPostWithHttpInfo(request: OpenApi2CampaignUpdateStatusPostRequest): Promise<ApiResponse<CampaignUpdateStatusV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<CampaignUpdateStatusV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class CampaignUpdateStatusV2Api {
       queryParams: [
 
       ],
-      body: campaignUpdateStatusV2Request
+      body: request.campaignUpdateStatusV2Request
     });
   }
 }

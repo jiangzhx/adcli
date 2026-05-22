@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandMaterialCreateV30ContentType, BrandMaterialCreateV30CreativeDisplayMode, BrandMaterialCreateV30RequestCategoryInfo, BrandMaterialCreateV30RequestLbs, BrandMaterialCreateV30RequestMaterialListInner, BrandMaterialCreateV30RequestTrackUrlInfo } from "../models";

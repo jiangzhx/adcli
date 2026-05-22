@@ -1,8 +1,7 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export interface AdvConvertOleConvertV2ResponseData {
-  order_infos?: unknown[];
+  order_infos?: Record<string, unknown>[];
 }
 

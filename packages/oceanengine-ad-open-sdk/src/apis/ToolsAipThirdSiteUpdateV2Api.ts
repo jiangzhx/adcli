@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAipThirdSiteUpdateV2Request, ToolsAipThirdSiteUpdateV2Response } from "../models";
 
+
+export interface OpenApi2ToolsAipThirdSiteUpdatePostRequest {
+  toolsAipThirdSiteUpdateV2Request?: ToolsAipThirdSiteUpdateV2Request;
+}
 
 export class ToolsAipThirdSiteUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsAipThirdSiteUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsAipThirdSiteUpdatePost(toolsAipThirdSiteUpdateV2Request: ToolsAipThirdSiteUpdateV2Request): Promise<ToolsAipThirdSiteUpdateV2Response> {
-    const response = await this.openApi2ToolsAipThirdSiteUpdatePostWithHttpInfo(toolsAipThirdSiteUpdateV2Request);
+  async openApi2ToolsAipThirdSiteUpdatePost(request: OpenApi2ToolsAipThirdSiteUpdatePostRequest): Promise<ToolsAipThirdSiteUpdateV2Response> {
+    const response = await this.openApi2ToolsAipThirdSiteUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsAipThirdSiteUpdatePostWithHttpInfo(toolsAipThirdSiteUpdateV2Request: ToolsAipThirdSiteUpdateV2Request): Promise<ApiResponse<ToolsAipThirdSiteUpdateV2Response>> {
+  async openApi2ToolsAipThirdSiteUpdatePostWithHttpInfo(request: OpenApi2ToolsAipThirdSiteUpdatePostRequest): Promise<ApiResponse<ToolsAipThirdSiteUpdateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsAipThirdSiteUpdateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsAipThirdSiteUpdateV2Api {
       queryParams: [
 
       ],
-      body: toolsAipThirdSiteUpdateV2Request
+      body: request.toolsAipThirdSiteUpdateV2Request
     });
   }
 }

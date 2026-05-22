@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QueryRebateBalanceV2FilteringApprovalStatus, QueryRebateBalanceV2FilteringArchiveStatusList, QueryRebateBalanceV2FilteringInvoiceStatusList, QueryRebateBalanceV2FilteringMonthQuarter, QueryRebateBalanceV2FilteringPlatforms, QueryRebateBalanceV2FilteringStampStatusList, QueryRebateBalanceV2FilteringStampType, QueryRebateBalanceV2FilteringStandard, QueryRebateBalanceV2FilteringUseType } from "../models";

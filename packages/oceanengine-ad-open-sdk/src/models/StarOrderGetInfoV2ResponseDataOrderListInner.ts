@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StarOrderGetInfoV2ResponseDataOrderListInnerAuthorInfo, StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfo, StarOrderGetInfoV2ResponseDataOrderListInnerOrderItemInfo, StarOrderGetInfoV2ResponseDataOrderListInnerPaymentInfo } from "../models";

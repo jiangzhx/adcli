@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ClueCouponEmployeeDeleteV2Request, ClueCouponEmployeeDeleteV2Response } from "../models";
 
+
+export interface OpenApi2ClueCouponEmployeeDeletePostRequest {
+  clueCouponEmployeeDeleteV2Request?: ClueCouponEmployeeDeleteV2Request;
+}
 
 export class ClueCouponEmployeeDeleteV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ClueCouponEmployeeDeleteV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ClueCouponEmployeeDeletePost(clueCouponEmployeeDeleteV2Request: ClueCouponEmployeeDeleteV2Request): Promise<ClueCouponEmployeeDeleteV2Response> {
-    const response = await this.openApi2ClueCouponEmployeeDeletePostWithHttpInfo(clueCouponEmployeeDeleteV2Request);
+  async openApi2ClueCouponEmployeeDeletePost(request: OpenApi2ClueCouponEmployeeDeletePostRequest): Promise<ClueCouponEmployeeDeleteV2Response> {
+    const response = await this.openApi2ClueCouponEmployeeDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ClueCouponEmployeeDeletePostWithHttpInfo(clueCouponEmployeeDeleteV2Request: ClueCouponEmployeeDeleteV2Request): Promise<ApiResponse<ClueCouponEmployeeDeleteV2Response>> {
+  async openApi2ClueCouponEmployeeDeletePostWithHttpInfo(request: OpenApi2ClueCouponEmployeeDeletePostRequest): Promise<ApiResponse<ClueCouponEmployeeDeleteV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ClueCouponEmployeeDeleteV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ClueCouponEmployeeDeleteV2Api {
       queryParams: [
 
       ],
-      body: clueCouponEmployeeDeleteV2Request
+      body: request.clueCouponEmployeeDeleteV2Request
     });
   }
 }

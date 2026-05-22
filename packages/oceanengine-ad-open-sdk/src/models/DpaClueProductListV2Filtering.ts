@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DpaClueProductListV2FilteringAuditStatus, DpaClueProductListV2FilteringCompletionStatus, DpaClueProductListV2FilteringRels, DpaClueProductListV2FilteringStatuses } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { LocalProjectListV30DataProjectListAdType, LocalProjectListV30DataProjectListBidType, LocalProjectListV30DataProjectListDeepExternalAction, LocalProjectListV30DataProjectListDeliveryGoal, LocalProjectListV30DataProjectListDeliveryPackage, LocalProjectListV30DataProjectListExternalAction, LocalProjectListV30DataProjectListLocalDeliveryScene, LocalProjectListV30DataProjectListMarketingGoal, LocalProjectListV30DataProjectListProjectBudgetMode, LocalProjectListV30DataProjectListProjectStatusFirst, LocalProjectListV30DataProjectListProjectStatusSecond, LocalProjectListV30ResponseDataProjectListInnerPoiInfo, LocalProjectListV30ResponseDataProjectListInnerProductInfo } from "../models";

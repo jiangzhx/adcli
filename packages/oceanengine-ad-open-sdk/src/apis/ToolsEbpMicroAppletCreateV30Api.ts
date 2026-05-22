@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpMicroAppletCreateV30Request, ToolsEbpMicroAppletCreateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsEbpMicroAppletCreatePostRequest {
+  toolsEbpMicroAppletCreateV30Request?: ToolsEbpMicroAppletCreateV30Request;
+}
 
 export class ToolsEbpMicroAppletCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsEbpMicroAppletCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpMicroAppletCreatePost(toolsEbpMicroAppletCreateV30Request: ToolsEbpMicroAppletCreateV30Request): Promise<ToolsEbpMicroAppletCreateV30Response> {
-    const response = await this.openApiV30ToolsEbpMicroAppletCreatePostWithHttpInfo(toolsEbpMicroAppletCreateV30Request);
+  async openApiV30ToolsEbpMicroAppletCreatePost(request: OpenApiV30ToolsEbpMicroAppletCreatePostRequest): Promise<ToolsEbpMicroAppletCreateV30Response> {
+    const response = await this.openApiV30ToolsEbpMicroAppletCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpMicroAppletCreatePostWithHttpInfo(toolsEbpMicroAppletCreateV30Request: ToolsEbpMicroAppletCreateV30Request): Promise<ApiResponse<ToolsEbpMicroAppletCreateV30Response>> {
+  async openApiV30ToolsEbpMicroAppletCreatePostWithHttpInfo(request: OpenApiV30ToolsEbpMicroAppletCreatePostRequest): Promise<ApiResponse<ToolsEbpMicroAppletCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsEbpMicroAppletCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsEbpMicroAppletCreateV30Api {
       queryParams: [
 
       ],
-      body: toolsEbpMicroAppletCreateV30Request
+      body: request.toolsEbpMicroAppletCreateV30Request
     });
   }
 }

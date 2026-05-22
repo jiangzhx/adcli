@@ -1,11 +1,15 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
 import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 
+
+export interface OpenApiV30ReportCustomAsyncTaskDownloadGetRequest {
+  advertiserId: number;
+  taskId: number;
+}
 
 export class ReportCustomAsyncTaskDownloadV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -18,25 +22,25 @@ export class ReportCustomAsyncTaskDownloadV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ReportCustomAsyncTaskDownloadGet(advertiserId: number, taskId: number): Promise<ArrayBuffer> {
-    const response = await this.openApiV30ReportCustomAsyncTaskDownloadGetWithHttpInfo(advertiserId, taskId);
+  async openApiV30ReportCustomAsyncTaskDownloadGet(request: OpenApiV30ReportCustomAsyncTaskDownloadGetRequest): Promise<ArrayBuffer> {
+    const response = await this.openApiV30ReportCustomAsyncTaskDownloadGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ReportCustomAsyncTaskDownloadGetWithHttpInfo(advertiserId: number, taskId: number): Promise<ApiResponse<ArrayBuffer>> {
-    if (advertiserId == null) {
+  async openApiV30ReportCustomAsyncTaskDownloadGetWithHttpInfo(request: OpenApiV30ReportCustomAsyncTaskDownloadGetRequest): Promise<ApiResponse<ArrayBuffer>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportCustomAsyncTaskDownloadGet");
     }
 
-    if (taskId == null) {
+    if (request.taskId == null) {
       throw new ApiException("Missing the required parameter 'taskId' when calling openApiV30ReportCustomAsyncTaskDownloadGet");
     }
     return this.apiClient.requestWithHttpInfo<ArrayBuffer>({
       method: "GET",
       path: "/open_api/v3.0/report/custom/async_task/download/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "task_id", value: taskId }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "task_id", value: request.taskId }
       ]
     });
   }

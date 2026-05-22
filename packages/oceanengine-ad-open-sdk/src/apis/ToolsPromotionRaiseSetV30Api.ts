@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPromotionRaiseSetV30Request, ToolsPromotionRaiseSetV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsPromotionRaiseSetPostRequest {
+  toolsPromotionRaiseSetV30Request?: ToolsPromotionRaiseSetV30Request;
+}
 
 export class ToolsPromotionRaiseSetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsPromotionRaiseSetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsPromotionRaiseSetPost(toolsPromotionRaiseSetV30Request: ToolsPromotionRaiseSetV30Request): Promise<ToolsPromotionRaiseSetV30Response> {
-    const response = await this.openApiV30ToolsPromotionRaiseSetPostWithHttpInfo(toolsPromotionRaiseSetV30Request);
+  async openApiV30ToolsPromotionRaiseSetPost(request: OpenApiV30ToolsPromotionRaiseSetPostRequest): Promise<ToolsPromotionRaiseSetV30Response> {
+    const response = await this.openApiV30ToolsPromotionRaiseSetPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsPromotionRaiseSetPostWithHttpInfo(toolsPromotionRaiseSetV30Request: ToolsPromotionRaiseSetV30Request): Promise<ApiResponse<ToolsPromotionRaiseSetV30Response>> {
+  async openApiV30ToolsPromotionRaiseSetPostWithHttpInfo(request: OpenApiV30ToolsPromotionRaiseSetPostRequest): Promise<ApiResponse<ToolsPromotionRaiseSetV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsPromotionRaiseSetV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsPromotionRaiseSetV30Api {
       queryParams: [
 
       ],
-      body: toolsPromotionRaiseSetV30Request
+      body: request.toolsPromotionRaiseSetV30Request
     });
   }
 }

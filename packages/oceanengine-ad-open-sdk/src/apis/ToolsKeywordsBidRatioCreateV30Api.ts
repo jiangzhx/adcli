@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsKeywordsBidRatioCreateV30Request, ToolsKeywordsBidRatioCreateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsKeywordsBidRatioCreatePostRequest {
+  toolsKeywordsBidRatioCreateV30Request?: ToolsKeywordsBidRatioCreateV30Request;
+}
 
 export class ToolsKeywordsBidRatioCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsKeywordsBidRatioCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsKeywordsBidRatioCreatePost(toolsKeywordsBidRatioCreateV30Request: ToolsKeywordsBidRatioCreateV30Request): Promise<ToolsKeywordsBidRatioCreateV30Response> {
-    const response = await this.openApiV30ToolsKeywordsBidRatioCreatePostWithHttpInfo(toolsKeywordsBidRatioCreateV30Request);
+  async openApiV30ToolsKeywordsBidRatioCreatePost(request: OpenApiV30ToolsKeywordsBidRatioCreatePostRequest): Promise<ToolsKeywordsBidRatioCreateV30Response> {
+    const response = await this.openApiV30ToolsKeywordsBidRatioCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsKeywordsBidRatioCreatePostWithHttpInfo(toolsKeywordsBidRatioCreateV30Request: ToolsKeywordsBidRatioCreateV30Request): Promise<ApiResponse<ToolsKeywordsBidRatioCreateV30Response>> {
+  async openApiV30ToolsKeywordsBidRatioCreatePostWithHttpInfo(request: OpenApiV30ToolsKeywordsBidRatioCreatePostRequest): Promise<ApiResponse<ToolsKeywordsBidRatioCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsKeywordsBidRatioCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsKeywordsBidRatioCreateV30Api {
       queryParams: [
 
       ],
-      body: toolsKeywordsBidRatioCreateV30Request
+      body: request.toolsKeywordsBidRatioCreateV30Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { CgTransferWalletTransferListV30DataRecordListPayeeCategory, CgTransferWalletTransferListV30DataRecordListRemitterCategory, CgTransferWalletTransferListV30DataRecordListTransferTargetStatus, CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInner } from "../models";

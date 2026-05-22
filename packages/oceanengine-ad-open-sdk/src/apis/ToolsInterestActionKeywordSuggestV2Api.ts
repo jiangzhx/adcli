@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,14 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsInterestActionKeywordSuggestV2ActionDays, ToolsInterestActionKeywordSuggestV2Response, ToolsInterestActionKeywordSuggestV2TagType, ToolsInterestActionKeywordSuggestV2TargetingType } from "../models";
 
+
+export interface OpenApi2ToolsInterestActionKeywordSuggestGetRequest {
+  advertiserId: number;
+  id: number;
+  tagType: ToolsInterestActionKeywordSuggestV2TagType;
+  targetingType: ToolsInterestActionKeywordSuggestV2TargetingType;
+  actionDays?: ToolsInterestActionKeywordSuggestV2ActionDays;
+}
 
 export class ToolsInterestActionKeywordSuggestV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,36 +26,36 @@ export class ToolsInterestActionKeywordSuggestV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsInterestActionKeywordSuggestGet(advertiserId: number, id: number, tagType: ToolsInterestActionKeywordSuggestV2TagType, targetingType: ToolsInterestActionKeywordSuggestV2TargetingType, actionDays: ToolsInterestActionKeywordSuggestV2ActionDays): Promise<ToolsInterestActionKeywordSuggestV2Response> {
-    const response = await this.openApi2ToolsInterestActionKeywordSuggestGetWithHttpInfo(advertiserId, id, tagType, targetingType, actionDays);
+  async openApi2ToolsInterestActionKeywordSuggestGet(request: OpenApi2ToolsInterestActionKeywordSuggestGetRequest): Promise<ToolsInterestActionKeywordSuggestV2Response> {
+    const response = await this.openApi2ToolsInterestActionKeywordSuggestGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsInterestActionKeywordSuggestGetWithHttpInfo(advertiserId: number, id: number, tagType: ToolsInterestActionKeywordSuggestV2TagType, targetingType: ToolsInterestActionKeywordSuggestV2TargetingType, actionDays: ToolsInterestActionKeywordSuggestV2ActionDays): Promise<ApiResponse<ToolsInterestActionKeywordSuggestV2Response>> {
-    if (advertiserId == null) {
+  async openApi2ToolsInterestActionKeywordSuggestGetWithHttpInfo(request: OpenApi2ToolsInterestActionKeywordSuggestGetRequest): Promise<ApiResponse<ToolsInterestActionKeywordSuggestV2Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsInterestActionKeywordSuggestGet");
     }
 
-    if (id == null) {
+    if (request.id == null) {
       throw new ApiException("Missing the required parameter 'id' when calling openApi2ToolsInterestActionKeywordSuggestGet");
     }
 
-    if (tagType == null) {
+    if (request.tagType == null) {
       throw new ApiException("Missing the required parameter 'tagType' when calling openApi2ToolsInterestActionKeywordSuggestGet");
     }
 
-    if (targetingType == null) {
+    if (request.targetingType == null) {
       throw new ApiException("Missing the required parameter 'targetingType' when calling openApi2ToolsInterestActionKeywordSuggestGet");
     }
     return this.apiClient.requestWithHttpInfo<ToolsInterestActionKeywordSuggestV2Response>({
       method: "GET",
       path: "/open_api/2/tools/interest_action/keyword/suggest/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "id", value: id },
-        { name: "tag_type", value: tagType },
-        { name: "targeting_type", value: targetingType },
-        { name: "action_days", value: actionDays }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "id", value: request.id },
+        { name: "tag_type", value: request.tagType },
+        { name: "targeting_type", value: request.targetingType },
+        { name: "action_days", value: request.actionDays }
       ]
     });
   }

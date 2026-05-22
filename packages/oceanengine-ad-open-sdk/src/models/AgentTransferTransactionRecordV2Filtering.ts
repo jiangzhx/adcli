@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { AgentTransferTransactionRecordV2FilteringPayeeType, AgentTransferTransactionRecordV2FilteringPlatform, AgentTransferTransactionRecordV2FilteringRemitterType, AgentTransferTransactionRecordV2FilteringTransferType } from "../models";

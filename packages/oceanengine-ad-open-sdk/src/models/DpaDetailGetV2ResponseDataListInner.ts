@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DpaDetailGetV2DataListSpuSource, DpaDetailGetV2ResponseDataListInnerAuditReasonsInner, DpaDetailGetV2ResponseDataListInnerBrandInfo, DpaDetailGetV2ResponseDataListInnerImageUrlsInner, DpaDetailGetV2ResponseDataListInnerLandingInfo, DpaDetailGetV2ResponseDataListInnerPriceInfo, DpaDetailGetV2ResponseDataListInnerShopKeeperInfo, DpaDetailGetV2ResponseDataListInnerVideosInner } from "../models";

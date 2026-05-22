@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanAdRegionUpdateV10Request, QianchuanAdRegionUpdateV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanAdRegionUpdatePostRequest {
+  qianchuanAdRegionUpdateV10Request?: QianchuanAdRegionUpdateV10Request;
+}
 
 export class QianchuanAdRegionUpdateV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanAdRegionUpdateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanAdRegionUpdatePost(qianchuanAdRegionUpdateV10Request: QianchuanAdRegionUpdateV10Request): Promise<QianchuanAdRegionUpdateV10Response> {
-    const response = await this.openApiV10QianchuanAdRegionUpdatePostWithHttpInfo(qianchuanAdRegionUpdateV10Request);
+  async openApiV10QianchuanAdRegionUpdatePost(request: OpenApiV10QianchuanAdRegionUpdatePostRequest): Promise<QianchuanAdRegionUpdateV10Response> {
+    const response = await this.openApiV10QianchuanAdRegionUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanAdRegionUpdatePostWithHttpInfo(qianchuanAdRegionUpdateV10Request: QianchuanAdRegionUpdateV10Request): Promise<ApiResponse<QianchuanAdRegionUpdateV10Response>> {
+  async openApiV10QianchuanAdRegionUpdatePostWithHttpInfo(request: OpenApiV10QianchuanAdRegionUpdatePostRequest): Promise<ApiResponse<QianchuanAdRegionUpdateV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanAdRegionUpdateV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanAdRegionUpdateV10Api {
       queryParams: [
 
       ],
-      body: qianchuanAdRegionUpdateV10Request
+      body: request.qianchuanAdRegionUpdateV10Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsMaterialRaiseCreateV30Request, ToolsMaterialRaiseCreateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsMaterialRaiseCreatePostRequest {
+  toolsMaterialRaiseCreateV30Request?: ToolsMaterialRaiseCreateV30Request;
+}
 
 export class ToolsMaterialRaiseCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsMaterialRaiseCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsMaterialRaiseCreatePost(toolsMaterialRaiseCreateV30Request: ToolsMaterialRaiseCreateV30Request): Promise<ToolsMaterialRaiseCreateV30Response> {
-    const response = await this.openApiV30ToolsMaterialRaiseCreatePostWithHttpInfo(toolsMaterialRaiseCreateV30Request);
+  async openApiV30ToolsMaterialRaiseCreatePost(request: OpenApiV30ToolsMaterialRaiseCreatePostRequest): Promise<ToolsMaterialRaiseCreateV30Response> {
+    const response = await this.openApiV30ToolsMaterialRaiseCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsMaterialRaiseCreatePostWithHttpInfo(toolsMaterialRaiseCreateV30Request: ToolsMaterialRaiseCreateV30Request): Promise<ApiResponse<ToolsMaterialRaiseCreateV30Response>> {
+  async openApiV30ToolsMaterialRaiseCreatePostWithHttpInfo(request: OpenApiV30ToolsMaterialRaiseCreatePostRequest): Promise<ApiResponse<ToolsMaterialRaiseCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsMaterialRaiseCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsMaterialRaiseCreateV30Api {
       queryParams: [
 
       ],
-      body: toolsMaterialRaiseCreateV30Request
+      body: request.toolsMaterialRaiseCreateV30Request
     });
   }
 }

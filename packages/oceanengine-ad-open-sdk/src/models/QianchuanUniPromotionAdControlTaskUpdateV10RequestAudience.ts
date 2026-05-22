@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanUniPromotionAdControlTaskUpdateV10AudienceAge, QianchuanUniPromotionAdControlTaskUpdateV10AudienceAwemeFanBehaviors, QianchuanUniPromotionAdControlTaskUpdateV10AudienceAwemeFanBehaviorsDays, QianchuanUniPromotionAdControlTaskUpdateV10AudienceDistrict, QianchuanUniPromotionAdControlTaskUpdateV10AudienceGender, QianchuanUniPromotionAdControlTaskUpdateV10AudienceLocationType } from "../models";

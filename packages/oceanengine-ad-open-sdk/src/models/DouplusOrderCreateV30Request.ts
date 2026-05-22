@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DouplusOrderCreateV30BidType, DouplusOrderCreateV30ExternalAction, DouplusOrderCreateV30LiveroomHeatMode, DouplusOrderCreateV30RequestObjectInfosInner, DouplusOrderCreateV30RequestTargeting } from "../models";

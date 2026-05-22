@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { LocalProjectUpdateV30AudienceAge, LocalProjectUpdateV30AudienceConvertedTimeDuration, LocalProjectUpdateV30AudienceCustomizedInterestAction, LocalProjectUpdateV30AudienceDistrict, LocalProjectUpdateV30AudienceFilterAwemeAbnormalActive, LocalProjectUpdateV30AudienceFilterAwemeFansCount, LocalProjectUpdateV30AudienceGender, LocalProjectUpdateV30AudienceHideIfConverted, LocalProjectUpdateV30RequestAudienceActionConfig, LocalProjectUpdateV30RequestAudienceCustomArea, LocalProjectUpdateV30RequestAudienceInterestConfig, LocalProjectUpdateV30RequestAudiencePoiAround, LocalProjectUpdateV30RequestAudienceRegion } from "../models";

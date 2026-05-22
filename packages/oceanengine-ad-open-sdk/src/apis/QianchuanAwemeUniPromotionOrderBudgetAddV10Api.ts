@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanAwemeUniPromotionOrderBudgetAddV10Request, QianchuanAwemeUniPromotionOrderBudgetAddV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanAwemeUniPromotionOrderBudgetAddPostRequest {
+  qianchuanAwemeUniPromotionOrderBudgetAddV10Request?: QianchuanAwemeUniPromotionOrderBudgetAddV10Request;
+}
 
 export class QianchuanAwemeUniPromotionOrderBudgetAddV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanAwemeUniPromotionOrderBudgetAddV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanAwemeUniPromotionOrderBudgetAddPost(qianchuanAwemeUniPromotionOrderBudgetAddV10Request: QianchuanAwemeUniPromotionOrderBudgetAddV10Request): Promise<QianchuanAwemeUniPromotionOrderBudgetAddV10Response> {
-    const response = await this.openApiV10QianchuanAwemeUniPromotionOrderBudgetAddPostWithHttpInfo(qianchuanAwemeUniPromotionOrderBudgetAddV10Request);
+  async openApiV10QianchuanAwemeUniPromotionOrderBudgetAddPost(request: OpenApiV10QianchuanAwemeUniPromotionOrderBudgetAddPostRequest): Promise<QianchuanAwemeUniPromotionOrderBudgetAddV10Response> {
+    const response = await this.openApiV10QianchuanAwemeUniPromotionOrderBudgetAddPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanAwemeUniPromotionOrderBudgetAddPostWithHttpInfo(qianchuanAwemeUniPromotionOrderBudgetAddV10Request: QianchuanAwemeUniPromotionOrderBudgetAddV10Request): Promise<ApiResponse<QianchuanAwemeUniPromotionOrderBudgetAddV10Response>> {
+  async openApiV10QianchuanAwemeUniPromotionOrderBudgetAddPostWithHttpInfo(request: OpenApiV10QianchuanAwemeUniPromotionOrderBudgetAddPostRequest): Promise<ApiResponse<QianchuanAwemeUniPromotionOrderBudgetAddV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeUniPromotionOrderBudgetAddV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanAwemeUniPromotionOrderBudgetAddV10Api {
       queryParams: [
 
       ],
-      body: qianchuanAwemeUniPromotionOrderBudgetAddV10Request
+      body: request.qianchuanAwemeUniPromotionOrderBudgetAddV10Request
     });
   }
 }

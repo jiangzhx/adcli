@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,18 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CgTransferWalletTransferListV30AccountType, CgTransferWalletTransferListV30PageInfo, CgTransferWalletTransferListV30Response } from "../models";
 
+
+export interface OpenApiV30CgTransferWalletTransferListGetRequest {
+  accountId: number;
+  accountType: CgTransferWalletTransferListV30AccountType;
+  bizRequestNo: string;
+  queryBeginTime: string;
+  queryEndTime: string;
+  queryWalletIdList: number[];
+  pageInfo: CgTransferWalletTransferListV30PageInfo;
+  payeeId?: number;
+  remitterId?: number;
+}
 
 export class CgTransferWalletTransferListV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,52 +30,52 @@ export class CgTransferWalletTransferListV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30CgTransferWalletTransferListGet(accountId: number, accountType: CgTransferWalletTransferListV30AccountType, bizRequestNo: string, queryBeginTime: string, queryEndTime: string, queryWalletIdList: number[], pageInfo: CgTransferWalletTransferListV30PageInfo, payeeId: number, remitterId: number): Promise<CgTransferWalletTransferListV30Response> {
-    const response = await this.openApiV30CgTransferWalletTransferListGetWithHttpInfo(accountId, accountType, bizRequestNo, queryBeginTime, queryEndTime, queryWalletIdList, pageInfo, payeeId, remitterId);
+  async openApiV30CgTransferWalletTransferListGet(request: OpenApiV30CgTransferWalletTransferListGetRequest): Promise<CgTransferWalletTransferListV30Response> {
+    const response = await this.openApiV30CgTransferWalletTransferListGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30CgTransferWalletTransferListGetWithHttpInfo(accountId: number, accountType: CgTransferWalletTransferListV30AccountType, bizRequestNo: string, queryBeginTime: string, queryEndTime: string, queryWalletIdList: number[], pageInfo: CgTransferWalletTransferListV30PageInfo, payeeId: number, remitterId: number): Promise<ApiResponse<CgTransferWalletTransferListV30Response>> {
-    if (accountId == null) {
+  async openApiV30CgTransferWalletTransferListGetWithHttpInfo(request: OpenApiV30CgTransferWalletTransferListGetRequest): Promise<ApiResponse<CgTransferWalletTransferListV30Response>> {
+    if (request.accountId == null) {
       throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30CgTransferWalletTransferListGet");
     }
 
-    if (accountType == null) {
+    if (request.accountType == null) {
       throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30CgTransferWalletTransferListGet");
     }
 
-    if (bizRequestNo == null) {
+    if (request.bizRequestNo == null) {
       throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferWalletTransferListGet");
     }
 
-    if (queryBeginTime == null) {
+    if (request.queryBeginTime == null) {
       throw new ApiException("Missing the required parameter 'queryBeginTime' when calling openApiV30CgTransferWalletTransferListGet");
     }
 
-    if (queryEndTime == null) {
+    if (request.queryEndTime == null) {
       throw new ApiException("Missing the required parameter 'queryEndTime' when calling openApiV30CgTransferWalletTransferListGet");
     }
 
-    if (queryWalletIdList == null) {
+    if (request.queryWalletIdList == null) {
       throw new ApiException("Missing the required parameter 'queryWalletIdList' when calling openApiV30CgTransferWalletTransferListGet");
     }
 
-    if (pageInfo == null) {
+    if (request.pageInfo == null) {
       throw new ApiException("Missing the required parameter 'pageInfo' when calling openApiV30CgTransferWalletTransferListGet");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferWalletTransferListV30Response>({
       method: "GET",
       path: "/open_api/v3.0/cg_transfer/wallet/transfer/list/",
       queryParams: [
-        { name: "account_id", value: accountId },
-        { name: "account_type", value: accountType },
-        { name: "biz_request_no", value: bizRequestNo },
-        { name: "query_begin_time", value: queryBeginTime },
-        { name: "query_end_time", value: queryEndTime },
-        { name: "payee_id", value: payeeId },
-        { name: "remitter_id", value: remitterId },
-        { name: "page_info", value: pageInfo },
-        { name: "query_wallet_id_list", value: queryWalletIdList, collectionFormat: "csv" }
+        { name: "account_id", value: request.accountId },
+        { name: "account_type", value: request.accountType },
+        { name: "biz_request_no", value: request.bizRequestNo },
+        { name: "query_begin_time", value: request.queryBeginTime },
+        { name: "query_end_time", value: request.queryEndTime },
+        { name: "query_wallet_id_list", value: request.queryWalletIdList, collectionFormat: "csv" },
+        { name: "payee_id", value: request.payeeId },
+        { name: "remitter_id", value: request.remitterId },
+        { name: "page_info", value: request.pageInfo }
       ]
     });
   }

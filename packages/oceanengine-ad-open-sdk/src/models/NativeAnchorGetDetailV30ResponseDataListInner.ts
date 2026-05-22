@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { NativeAnchorGetDetailV30DataListAnchorType, NativeAnchorGetDetailV30DataListSource, NativeAnchorGetDetailV30ResponseDataListInnerAppEcommerceAnchor, NativeAnchorGetDetailV30ResponseDataListInnerGameAnchor, NativeAnchorGetDetailV30ResponseDataListInnerInsuranceEnterpriseAnchor, NativeAnchorGetDetailV30ResponseDataListInnerMicroAppAnchor, NativeAnchorGetDetailV30ResponseDataListInnerMicroGameAnchor, NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchor, NativeAnchorGetDetailV30ResponseDataListInnerPrivateChatAnchor, NativeAnchorGetDetailV30ResponseDataListInnerShoppingCartAnchor } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsAwemeAuthListV2DataListAuthStatus, ToolsAwemeAuthListV2DataListAuthType, ToolsAwemeAuthListV2DataListAwemeUserType, ToolsAwemeAuthListV2DataListShareType, ToolsAwemeAuthListV2DataListSubStatus, ToolsAwemeAuthListV2DataListWarningTypes, ToolsAwemeAuthListV2ResponseDataListInnerAuthThresholdInfo, ToolsAwemeAuthListV2ResponseDataListInnerVideoInfo } from "../models";

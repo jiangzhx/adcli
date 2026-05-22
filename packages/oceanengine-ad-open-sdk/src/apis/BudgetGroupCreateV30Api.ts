@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BudgetGroupCreateV30Request, BudgetGroupCreateV30Response } from "../models";
 
+
+export interface OpenApiV30BudgetGroupCreatePostRequest {
+  budgetGroupCreateV30Request?: BudgetGroupCreateV30Request;
+}
 
 export class BudgetGroupCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class BudgetGroupCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BudgetGroupCreatePost(budgetGroupCreateV30Request: BudgetGroupCreateV30Request): Promise<BudgetGroupCreateV30Response> {
-    const response = await this.openApiV30BudgetGroupCreatePostWithHttpInfo(budgetGroupCreateV30Request);
+  async openApiV30BudgetGroupCreatePost(request: OpenApiV30BudgetGroupCreatePostRequest): Promise<BudgetGroupCreateV30Response> {
+    const response = await this.openApiV30BudgetGroupCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BudgetGroupCreatePostWithHttpInfo(budgetGroupCreateV30Request: BudgetGroupCreateV30Request): Promise<ApiResponse<BudgetGroupCreateV30Response>> {
+  async openApiV30BudgetGroupCreatePostWithHttpInfo(request: OpenApiV30BudgetGroupCreatePostRequest): Promise<ApiResponse<BudgetGroupCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<BudgetGroupCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class BudgetGroupCreateV30Api {
       queryParams: [
 
       ],
-      body: budgetGroupCreateV30Request
+      body: request.budgetGroupCreateV30Request
     });
   }
 }

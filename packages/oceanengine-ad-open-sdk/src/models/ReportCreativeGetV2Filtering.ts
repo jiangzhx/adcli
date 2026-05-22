@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ReportCreativeGetV2FilteringCampaignTypes, ReportCreativeGetV2FilteringCreativeMaterialModes, ReportCreativeGetV2FilteringDeliveryMode, ReportCreativeGetV2FilteringImageMode, ReportCreativeGetV2FilteringImageModes, ReportCreativeGetV2FilteringInventoryTypes, ReportCreativeGetV2FilteringLandingType, ReportCreativeGetV2FilteringLandingTypes, ReportCreativeGetV2FilteringPricing, ReportCreativeGetV2FilteringPricingCategories, ReportCreativeGetV2FilteringPricings, ReportCreativeGetV2FilteringStatus } from "../models";

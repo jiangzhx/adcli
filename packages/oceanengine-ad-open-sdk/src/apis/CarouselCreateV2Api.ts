@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CarouselCreateV2Request, CarouselCreateV2Response } from "../models";
 
+
+export interface OpenApi2CarouselCreatePostRequest {
+  carouselCreateV2Request?: CarouselCreateV2Request;
+}
 
 export class CarouselCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class CarouselCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2CarouselCreatePost(carouselCreateV2Request: CarouselCreateV2Request): Promise<CarouselCreateV2Response> {
-    const response = await this.openApi2CarouselCreatePostWithHttpInfo(carouselCreateV2Request);
+  async openApi2CarouselCreatePost(request: OpenApi2CarouselCreatePostRequest): Promise<CarouselCreateV2Response> {
+    const response = await this.openApi2CarouselCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2CarouselCreatePostWithHttpInfo(carouselCreateV2Request: CarouselCreateV2Request): Promise<ApiResponse<CarouselCreateV2Response>> {
+  async openApi2CarouselCreatePostWithHttpInfo(request: OpenApi2CarouselCreatePostRequest): Promise<ApiResponse<CarouselCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<CarouselCreateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class CarouselCreateV2Api {
       queryParams: [
 
       ],
-      body: carouselCreateV2Request
+      body: request.carouselCreateV2Request
     });
   }
 }

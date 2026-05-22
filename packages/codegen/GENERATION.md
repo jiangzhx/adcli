@@ -1,42 +1,41 @@
-# OceanEngine Java SDK -> Node.js SDK Generation Guide
+# OceanEngine Go SDK -> Node.js SDK Generation Guide
 
-你正在把官方 Java SDK 迁移成 Node.js/TypeScript SDK。开始写任何代码前，必须先读完整份文档。
+你正在把官方 Go SDK 迁移成 Node.js/TypeScript SDK。开始写任何代码前，必须先读完整份文档。
 
 本文档定义迁移规则、执行阶段、生成器边界和 verifier 检查清单。后续实现、生成器、测试和 review 都必须以本文档为约束。
 
-迁移目标不是重新设计一个更顺手的 SDK，而是先得到一份能和 Java SDK 逐项对照的 Node.js SDK。第一阶段优先保证语义、路径、参数、字段和错误行为可核对。
+迁移目标不是重新设计 OceanEngine API，而是在 JS/TS 里复用官网 `Class / Method / HTTP request` 命名，并把 Go SDK 的 request struct 自然映射成 TypeScript request object。
 
 ## 1. Source of Truth
 
-迁移以官方 Java SDK 为唯一基准：
+当前迁移以官方 Go SDK 为默认基准：
 
-- Repository: `https://github.com/oceanengine/ad_open_sdk_java`
-- Java package: `com.bytedance.ads`
-- API version: `1.1.87`
-- Build date: `2026-05-14T14:04:07.544989881+08:00[Asia/Shanghai]`
+- Repository: `https://github.com/oceanengine/ad_open_sdk_go`
+- Go module: `github.com/oceanengine/ad_open_sdk_go`
+- 目录：`api/*.go`、`models/*.go`
 
-Go SDK 不作为迁移基准。只有当 Java SDK 代码语义不清时，才允许把 Go SDK 当作非权威参考。
+Java SDK 生成链路保留为历史对照和 fallback，不再作为默认全量生成入口。
 
-长期最优 source of truth 是官方 OpenAPI JSON/YAML schema。如果后续能拿到巨量引擎用于生成 Java SDK 的原始 OpenAPI schema，应优先改成 `OpenAPI schema -> Node.js SDK`，而不是继续依赖 `Java generated source -> Node.js SDK`。
+长期最优 source of truth 是官方 OpenAPI JSON/YAML schema。如果后续能拿到巨量引擎用于生成官方 SDK 的原始 OpenAPI schema，应优先改成 `OpenAPI schema -> Node.js SDK`，而不是继续依赖二次生成源码。
 
-当前 Java parser 是 bridge/fallback：
+当前 Go parser 是默认 bridge：
 
 - 用途：验证 Node SDK runtime、API/model 映射、全量覆盖率和生成报告。
-- 优点：不依赖官方额外提供 schema，能直接从已发布 Java SDK 反推出大部分 API/model。
-- 风险：Java 代码是二次生成物，可能丢失 OpenAPI schema 里的 description、format、oneOf/anyOf、binary response、nullable 等更精确信息。
-- 约束：parser 必须输出 manifest 和 skipped 原因，不允许静默忽略无法解析的 Java 模式。
+- 优点：Go SDK 的 API 文件直接暴露 request struct、required nil check、HTTP method、path、query/body 参数。
+- 风险：Go 代码仍是二次生成物，可能丢失 OpenAPI schema 里的 description、format、oneOf/anyOf 等更精确信息。
+- 约束：parser 必须输出 manifest 和 skipped 原因，不允许静默忽略无法解析的 Go 模式。
 
 ## 2. Goal
 
-生成一份独立的 Node.js/TypeScript SDK，覆盖 Java SDK 的核心能力：
+生成一份独立的 Node.js/TypeScript SDK，覆盖 Go SDK 的核心能力：
 
 - `ApiClient`
 - `ApiException`
 - `ApiResponse`
 - `CommonReqApi`
 - `auth/ApiKeyAuth`
-- 所有 `api/*Api.java` 对应的 API 方法
-- 所有 `model/*.java` 对应的 TypeScript 类型、枚举、请求和响应结构
+- 所有 `api/api_*.go` 对应的 API 方法
+- 所有 `models/model_*.go` 对应的 TypeScript 类型、枚举、请求和响应结构
 - 默认 header、鉴权、query 参数、body、form、multipart 行为
 
 这份 SDK 在当前 `adcli` 仓库内开发和测试，但代码边界必须保持为独立 SDK，不依赖 `adcli` 的文档采集逻辑。
@@ -58,12 +57,12 @@ Go SDK 不作为迁移基准。只有当 Java SDK 代码语义不清时，才允
 
 ### Phase A: Faithful Draft
 
-目标是生成一份可读、可 diff、可测试的 TypeScript 草稿。它可以只覆盖少量 API，但必须忠实表达 Java SDK 的运行时语义。
+目标是生成一份可读、可 diff、可测试的 TypeScript 草稿。它可以只覆盖少量 API，但必须忠实表达 Go SDK 暴露的 HTTP 语义。
 
 Phase A 必须完成：
 
 - 运行时核心：`ApiClient`、`ApiException`、`ApiResponse`。
-- 生成器骨架：能从 Java 源码解析 API 方法和 model。
+- 生成器骨架：能从 Go 源码解析 API 方法和 model。
 - 3 个代表接口的端到端生成和测试：
   - `Oauth2AccessTokenApi`
   - `ReportCustomConfigGetV30Api`
@@ -78,12 +77,12 @@ Phase A 允许：
 Phase A 禁止：
 
 - 手写 generated API 作为“临时实现”。
-- 为了让 API 更像 JavaScript 而改变 Java 方法名、参数顺序或字段名。
+- 为了让 API 更像 JavaScript 而改变官网 Class/Method 名或字段名。
 - 靠 README 接口列表猜路径或方法。
 
 ### Phase B: Full Generation
 
-目标是扩展生成器覆盖全部 Java `api/*.java` 和 `model/*.java`。
+目标是扩展生成器覆盖全部 Go `api/*.go` 和 `models/*.go`。
 
 Phase B 必须完成：
 
@@ -94,11 +93,9 @@ Phase B 必须完成：
 
 当前 Phase B 基线：
 
-- Java SDK `api/*.java`: 1137 个。
+- Go SDK `api/*.go`: 1139 个源码文件，其中 3 个是非接口运行时文件。
 - 已生成 API class: 1136 个。
-- special runtime API: 1 个。
-  - `api/CommonReqApi.java`: 已由 runtime 手写 `src/runtime/CommonReqApi.ts` 覆盖，不走 generated API。
-- Java SDK `model/*.java`: 9671 个。
+- Go SDK `models/*.go`: 9671 个 model/enum。
 - 已生成 model: 9671 个。
   - `model/AbstractOpenApiSchema.java`: 作为 OpenAPI Generator 内部抽象 schema 生成最小 TypeScript interface。
 - skipped: 0 个。
@@ -121,7 +118,7 @@ Phase C 才允许做：
 - 当前 exports 指向 TypeScript 源码，适合 Bun/TypeScript 环境继续验证。
 - 尚未生成 npm 发布用 `dist` 产物；正式发布前必须补构建产物验证。
 
-任何 Phase C 改动不得破坏 Phase A/B 的 Java parity。
+任何 Phase C 改动不得破坏官网 Class/Method/HTTP request 映射。
 
 ## 5. Output Package Shape
 

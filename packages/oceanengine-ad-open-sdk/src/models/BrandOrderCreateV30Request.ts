@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandOrderCreateV30AdForm, BrandOrderCreateV30AppOrigin, BrandOrderCreateV30Classify, BrandOrderCreateV30GdSendType, BrandOrderCreateV30PricingType, BrandOrderCreateV30ProType, BrandOrderCreateV30RequestAudienceInfo, BrandOrderCreateV30RequestBookingQuantityInfo, BrandOrderCreateV30RequestFrequencyInfo } from "../models";

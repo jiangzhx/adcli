@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AdUpdateBidV2Request, AdUpdateBidV2Response } from "../models";
 
+
+export interface OpenApi2AdUpdateBidPostRequest {
+  adUpdateBidV2Request?: AdUpdateBidV2Request;
+}
 
 export class AdUpdateBidV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AdUpdateBidV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AdUpdateBidPost(adUpdateBidV2Request: AdUpdateBidV2Request): Promise<AdUpdateBidV2Response> {
-    const response = await this.openApi2AdUpdateBidPostWithHttpInfo(adUpdateBidV2Request);
+  async openApi2AdUpdateBidPost(request: OpenApi2AdUpdateBidPostRequest): Promise<AdUpdateBidV2Response> {
+    const response = await this.openApi2AdUpdateBidPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AdUpdateBidPostWithHttpInfo(adUpdateBidV2Request: AdUpdateBidV2Request): Promise<ApiResponse<AdUpdateBidV2Response>> {
+  async openApi2AdUpdateBidPostWithHttpInfo(request: OpenApi2AdUpdateBidPostRequest): Promise<ApiResponse<AdUpdateBidV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<AdUpdateBidV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AdUpdateBidV2Api {
       queryParams: [
 
       ],
-      body: adUpdateBidV2Request
+      body: request.adUpdateBidV2Request
     });
   }
 }

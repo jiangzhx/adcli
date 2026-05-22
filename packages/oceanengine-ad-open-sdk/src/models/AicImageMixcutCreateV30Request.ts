@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { AicImageMixcutCreateV30AccountType, AicImageMixcutCreateV30RequestAudioOption, AicImageMixcutCreateV30RequestGenElement, AicImageMixcutCreateV30RequestProductInfo, AicImageMixcutCreateV30RequestRenderOption, AicImageMixcutCreateV30RequestSubtitleStyle } from "../models";

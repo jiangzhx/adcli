@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsClueRefundInfoQueryV2Request, ToolsClueRefundInfoQueryV2Response } from "../models";
 
+
+export interface OpenApi2ToolsClueRefundInfoQueryPostRequest {
+  toolsClueRefundInfoQueryV2Request?: ToolsClueRefundInfoQueryV2Request;
+}
 
 export class ToolsClueRefundInfoQueryV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsClueRefundInfoQueryV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsClueRefundInfoQueryPost(toolsClueRefundInfoQueryV2Request: ToolsClueRefundInfoQueryV2Request): Promise<ToolsClueRefundInfoQueryV2Response> {
-    const response = await this.openApi2ToolsClueRefundInfoQueryPostWithHttpInfo(toolsClueRefundInfoQueryV2Request);
+  async openApi2ToolsClueRefundInfoQueryPost(request: OpenApi2ToolsClueRefundInfoQueryPostRequest): Promise<ToolsClueRefundInfoQueryV2Response> {
+    const response = await this.openApi2ToolsClueRefundInfoQueryPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsClueRefundInfoQueryPostWithHttpInfo(toolsClueRefundInfoQueryV2Request: ToolsClueRefundInfoQueryV2Request): Promise<ApiResponse<ToolsClueRefundInfoQueryV2Response>> {
+  async openApi2ToolsClueRefundInfoQueryPostWithHttpInfo(request: OpenApi2ToolsClueRefundInfoQueryPostRequest): Promise<ApiResponse<ToolsClueRefundInfoQueryV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsClueRefundInfoQueryV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsClueRefundInfoQueryV2Api {
       queryParams: [
 
       ],
-      body: toolsClueRefundInfoQueryV2Request
+      body: request.toolsClueRefundInfoQueryV2Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AccountUpdateV30Request, AccountUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30AccountUpdatePostRequest {
+  accountUpdateV30Request?: AccountUpdateV30Request;
+}
 
 export class AccountUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AccountUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AccountUpdatePost(accountUpdateV30Request: AccountUpdateV30Request): Promise<AccountUpdateV30Response> {
-    const response = await this.openApiV30AccountUpdatePostWithHttpInfo(accountUpdateV30Request);
+  async openApiV30AccountUpdatePost(request: OpenApiV30AccountUpdatePostRequest): Promise<AccountUpdateV30Response> {
+    const response = await this.openApiV30AccountUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AccountUpdatePostWithHttpInfo(accountUpdateV30Request: AccountUpdateV30Request): Promise<ApiResponse<AccountUpdateV30Response>> {
+  async openApiV30AccountUpdatePostWithHttpInfo(request: OpenApiV30AccountUpdatePostRequest): Promise<ApiResponse<AccountUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<AccountUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AccountUpdateV30Api {
       queryParams: [
 
       ],
-      body: accountUpdateV30Request
+      body: request.accountUpdateV30Request
     });
   }
 }

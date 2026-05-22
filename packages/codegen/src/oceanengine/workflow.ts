@@ -1,5 +1,6 @@
 import { readdir, readFile, writeFile, mkdir, rm } from "node:fs/promises";
-import { join, resolve } from "node:path";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { parseJavaApiSource, parseJavaModelSource } from "./java-parser";
 import { emitApiClass, emitModelModule } from "./typescript-emitter";
 import type { JavaApiSpec, JavaModelSpec } from "./java-parser";
@@ -23,7 +24,7 @@ export interface PortWorkflowResult {
 
 export async function runPortWorkflow(options: PortWorkflowOptions): Promise<PortWorkflowResult> {
   const javaSdkRoot = resolve(options.javaSdkRoot);
-  const outputDir = resolve(options.outputDir ?? "packages/oceanengine-ad-open-sdk/src");
+  const outputDir = resolve(options.outputDir ?? defaultSdkOutputDir());
   const apiFiles = options.apiFiles ?? (await listJavaFiles(javaSdkRoot, "api"));
   const modelFiles = options.modelFiles ?? (await listJavaFiles(javaSdkRoot, "model"));
   const skipped: Array<{ file: string; reason: string }> = [];
@@ -92,6 +93,10 @@ export async function runPortWorkflow(options: PortWorkflowOptions): Promise<Por
   await writeFile(join(outputDir, "manifest.json"), `${JSON.stringify(result, null, 2)}\n`);
 
   return result;
+}
+
+function defaultSdkOutputDir() {
+  return resolve(dirname(fileURLToPath(import.meta.url)), "../../../oceanengine-ad-open-sdk/src");
 }
 
 async function listJavaFiles(javaSdkRoot: string, kind: "api" | "model") {

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CgTransferCreateTransferV30Request, CgTransferCreateTransferV30Response } from "../models";
 
+
+export interface OpenApiV30CgTransferCreateTransferPostRequest {
+  cgTransferCreateTransferV30Request?: CgTransferCreateTransferV30Request;
+}
 
 export class CgTransferCreateTransferV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class CgTransferCreateTransferV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30CgTransferCreateTransferPost(cgTransferCreateTransferV30Request: CgTransferCreateTransferV30Request): Promise<CgTransferCreateTransferV30Response> {
-    const response = await this.openApiV30CgTransferCreateTransferPostWithHttpInfo(cgTransferCreateTransferV30Request);
+  async openApiV30CgTransferCreateTransferPost(request: OpenApiV30CgTransferCreateTransferPostRequest): Promise<CgTransferCreateTransferV30Response> {
+    const response = await this.openApiV30CgTransferCreateTransferPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30CgTransferCreateTransferPostWithHttpInfo(cgTransferCreateTransferV30Request: CgTransferCreateTransferV30Request): Promise<ApiResponse<CgTransferCreateTransferV30Response>> {
+  async openApiV30CgTransferCreateTransferPostWithHttpInfo(request: OpenApiV30CgTransferCreateTransferPostRequest): Promise<ApiResponse<CgTransferCreateTransferV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<CgTransferCreateTransferV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class CgTransferCreateTransferV30Api {
       queryParams: [
 
       ],
-      body: cgTransferCreateTransferV30Request
+      body: request.cgTransferCreateTransferV30Request
     });
   }
 }

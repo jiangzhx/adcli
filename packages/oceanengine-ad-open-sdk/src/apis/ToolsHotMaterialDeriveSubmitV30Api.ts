@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsHotMaterialDeriveSubmitV30Request, ToolsHotMaterialDeriveSubmitV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsHotMaterialDeriveSubmitPostRequest {
+  toolsHotMaterialDeriveSubmitV30Request?: ToolsHotMaterialDeriveSubmitV30Request;
+}
 
 export class ToolsHotMaterialDeriveSubmitV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsHotMaterialDeriveSubmitV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsHotMaterialDeriveSubmitPost(toolsHotMaterialDeriveSubmitV30Request: ToolsHotMaterialDeriveSubmitV30Request): Promise<ToolsHotMaterialDeriveSubmitV30Response> {
-    const response = await this.openApiV30ToolsHotMaterialDeriveSubmitPostWithHttpInfo(toolsHotMaterialDeriveSubmitV30Request);
+  async openApiV30ToolsHotMaterialDeriveSubmitPost(request: OpenApiV30ToolsHotMaterialDeriveSubmitPostRequest): Promise<ToolsHotMaterialDeriveSubmitV30Response> {
+    const response = await this.openApiV30ToolsHotMaterialDeriveSubmitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsHotMaterialDeriveSubmitPostWithHttpInfo(toolsHotMaterialDeriveSubmitV30Request: ToolsHotMaterialDeriveSubmitV30Request): Promise<ApiResponse<ToolsHotMaterialDeriveSubmitV30Response>> {
+  async openApiV30ToolsHotMaterialDeriveSubmitPostWithHttpInfo(request: OpenApiV30ToolsHotMaterialDeriveSubmitPostRequest): Promise<ApiResponse<ToolsHotMaterialDeriveSubmitV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsHotMaterialDeriveSubmitV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsHotMaterialDeriveSubmitV30Api {
       queryParams: [
 
       ],
-      body: toolsHotMaterialDeriveSubmitV30Request
+      body: request.toolsHotMaterialDeriveSubmitV30Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { LocalProjectCreateV30AdType, LocalProjectCreateV30AigcDynamicCreativeSwitch, LocalProjectCreateV30AutoUpdatePois, LocalProjectCreateV30BidType, LocalProjectCreateV30BudgetMode, LocalProjectCreateV30DeliveryGoal, LocalProjectCreateV30DeliveryPackage, LocalProjectCreateV30DeliveryPoiMode, LocalProjectCreateV30ExternalAction, LocalProjectCreateV30IntelligentSelectionMode, LocalProjectCreateV30LocalAssetType, LocalProjectCreateV30LocalDeliveryScene, LocalProjectCreateV30MarketingGoal, LocalProjectCreateV30PeakHolidays, LocalProjectCreateV30PeakWeekDays, LocalProjectCreateV30RequestAudience, LocalProjectCreateV30ScheduleType } from "../models";

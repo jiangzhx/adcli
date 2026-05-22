@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPlayableGrantV2Request, ToolsPlayableGrantV2Response } from "../models";
 
+
+export interface OpenApi2ToolsPlayableGrantPostRequest {
+  toolsPlayableGrantV2Request?: ToolsPlayableGrantV2Request;
+}
 
 export class ToolsPlayableGrantV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsPlayableGrantV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsPlayableGrantPost(toolsPlayableGrantV2Request: ToolsPlayableGrantV2Request): Promise<ToolsPlayableGrantV2Response> {
-    const response = await this.openApi2ToolsPlayableGrantPostWithHttpInfo(toolsPlayableGrantV2Request);
+  async openApi2ToolsPlayableGrantPost(request: OpenApi2ToolsPlayableGrantPostRequest): Promise<ToolsPlayableGrantV2Response> {
+    const response = await this.openApi2ToolsPlayableGrantPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsPlayableGrantPostWithHttpInfo(toolsPlayableGrantV2Request: ToolsPlayableGrantV2Request): Promise<ApiResponse<ToolsPlayableGrantV2Response>> {
+  async openApi2ToolsPlayableGrantPostWithHttpInfo(request: OpenApi2ToolsPlayableGrantPostRequest): Promise<ApiResponse<ToolsPlayableGrantV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsPlayableGrantV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsPlayableGrantV2Api {
       queryParams: [
 
       ],
-      body: toolsPlayableGrantV2Request
+      body: request.toolsPlayableGrantV2Request
     });
   }
 }

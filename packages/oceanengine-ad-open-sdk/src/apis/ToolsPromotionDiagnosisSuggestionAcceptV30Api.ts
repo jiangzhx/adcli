@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPromotionDiagnosisSuggestionAcceptV30Request, ToolsPromotionDiagnosisSuggestionAcceptV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest {
+  toolsPromotionDiagnosisSuggestionAcceptV30Request?: ToolsPromotionDiagnosisSuggestionAcceptV30Request;
+}
 
 export class ToolsPromotionDiagnosisSuggestionAcceptV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsPromotionDiagnosisSuggestionAcceptV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsPromotionDiagnosisSuggestionAcceptPost(toolsPromotionDiagnosisSuggestionAcceptV30Request: ToolsPromotionDiagnosisSuggestionAcceptV30Request): Promise<ToolsPromotionDiagnosisSuggestionAcceptV30Response> {
-    const response = await this.openApiV30ToolsPromotionDiagnosisSuggestionAcceptPostWithHttpInfo(toolsPromotionDiagnosisSuggestionAcceptV30Request);
+  async openApiV30ToolsPromotionDiagnosisSuggestionAcceptPost(request: OpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest): Promise<ToolsPromotionDiagnosisSuggestionAcceptV30Response> {
+    const response = await this.openApiV30ToolsPromotionDiagnosisSuggestionAcceptPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsPromotionDiagnosisSuggestionAcceptPostWithHttpInfo(toolsPromotionDiagnosisSuggestionAcceptV30Request: ToolsPromotionDiagnosisSuggestionAcceptV30Request): Promise<ApiResponse<ToolsPromotionDiagnosisSuggestionAcceptV30Response>> {
+  async openApiV30ToolsPromotionDiagnosisSuggestionAcceptPostWithHttpInfo(request: OpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest): Promise<ApiResponse<ToolsPromotionDiagnosisSuggestionAcceptV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsPromotionDiagnosisSuggestionAcceptV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsPromotionDiagnosisSuggestionAcceptV30Api {
       queryParams: [
 
       ],
-      body: toolsPromotionDiagnosisSuggestionAcceptV30Request
+      body: request.toolsPromotionDiagnosisSuggestionAcceptV30Request
     });
   }
 }

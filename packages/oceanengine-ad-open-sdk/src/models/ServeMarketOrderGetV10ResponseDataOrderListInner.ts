@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ServeMarketOrderGetV10DataOrderListOrderStatus, ServeMarketOrderGetV10DataOrderListSkuType, ServeMarketOrderGetV10ResponseDataOrderListInnerFunction, ServeMarketOrderGetV10ResponseDataOrderListInnerSpecsInner } from "../models";

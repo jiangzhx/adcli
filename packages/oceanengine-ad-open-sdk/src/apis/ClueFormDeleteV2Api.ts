@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ClueFormDeleteV2Request, ClueFormDeleteV2Response } from "../models";
 
+
+export interface OpenApi2ClueFormDeletePostRequest {
+  clueFormDeleteV2Request?: ClueFormDeleteV2Request;
+}
 
 export class ClueFormDeleteV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ClueFormDeleteV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ClueFormDeletePost(clueFormDeleteV2Request: ClueFormDeleteV2Request): Promise<ClueFormDeleteV2Response> {
-    const response = await this.openApi2ClueFormDeletePostWithHttpInfo(clueFormDeleteV2Request);
+  async openApi2ClueFormDeletePost(request: OpenApi2ClueFormDeletePostRequest): Promise<ClueFormDeleteV2Response> {
+    const response = await this.openApi2ClueFormDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ClueFormDeletePostWithHttpInfo(clueFormDeleteV2Request: ClueFormDeleteV2Request): Promise<ApiResponse<ClueFormDeleteV2Response>> {
+  async openApi2ClueFormDeletePostWithHttpInfo(request: OpenApi2ClueFormDeletePostRequest): Promise<ApiResponse<ClueFormDeleteV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ClueFormDeleteV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ClueFormDeleteV2Api {
       queryParams: [
 
       ],
-      body: clueFormDeleteV2Request
+      body: request.clueFormDeleteV2Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,15 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ReportJointGrowthCusGetV30Response } from "../models";
 
+
+export interface OpenApiV30ReportJointGrowthCusGetGetRequest {
+  advertiserId: number;
+  rtaId: number;
+  startTime: string;
+  endTime: string;
+  page?: number;
+  pageSize?: number;
+}
 
 export class ReportJointGrowthCusGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,37 +27,37 @@ export class ReportJointGrowthCusGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ReportJointGrowthCusGetGet(advertiserId: number, rtaId: number, startTime: string, endTime: string, page: number, pageSize: number): Promise<ReportJointGrowthCusGetV30Response> {
-    const response = await this.openApiV30ReportJointGrowthCusGetGetWithHttpInfo(advertiserId, rtaId, startTime, endTime, page, pageSize);
+  async openApiV30ReportJointGrowthCusGetGet(request: OpenApiV30ReportJointGrowthCusGetGetRequest): Promise<ReportJointGrowthCusGetV30Response> {
+    const response = await this.openApiV30ReportJointGrowthCusGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ReportJointGrowthCusGetGetWithHttpInfo(advertiserId: number, rtaId: number, startTime: string, endTime: string, page: number, pageSize: number): Promise<ApiResponse<ReportJointGrowthCusGetV30Response>> {
-    if (advertiserId == null) {
+  async openApiV30ReportJointGrowthCusGetGetWithHttpInfo(request: OpenApiV30ReportJointGrowthCusGetGetRequest): Promise<ApiResponse<ReportJointGrowthCusGetV30Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportJointGrowthCusGetGet");
     }
 
-    if (rtaId == null) {
+    if (request.rtaId == null) {
       throw new ApiException("Missing the required parameter 'rtaId' when calling openApiV30ReportJointGrowthCusGetGet");
     }
 
-    if (startTime == null) {
+    if (request.startTime == null) {
       throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30ReportJointGrowthCusGetGet");
     }
 
-    if (endTime == null) {
+    if (request.endTime == null) {
       throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30ReportJointGrowthCusGetGet");
     }
     return this.apiClient.requestWithHttpInfo<ReportJointGrowthCusGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/report/joint_growth_cus/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "rta_id", value: rtaId },
-        { name: "start_time", value: startTime },
-        { name: "end_time", value: endTime },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "rta_id", value: request.rtaId },
+        { name: "start_time", value: request.startTime },
+        { name: "end_time", value: request.endTime },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

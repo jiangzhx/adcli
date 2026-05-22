@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarMcnProviderUploadSearchItemV2Request, StarMcnProviderUploadSearchItemV2Response } from "../models";
 
+
+export interface OpenApi2StarMcnProviderUploadSearchItemPostRequest {
+  starMcnProviderUploadSearchItemV2Request?: StarMcnProviderUploadSearchItemV2Request;
+}
 
 export class StarMcnProviderUploadSearchItemV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarMcnProviderUploadSearchItemV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarMcnProviderUploadSearchItemPost(starMcnProviderUploadSearchItemV2Request: StarMcnProviderUploadSearchItemV2Request): Promise<StarMcnProviderUploadSearchItemV2Response> {
-    const response = await this.openApi2StarMcnProviderUploadSearchItemPostWithHttpInfo(starMcnProviderUploadSearchItemV2Request);
+  async openApi2StarMcnProviderUploadSearchItemPost(request: OpenApi2StarMcnProviderUploadSearchItemPostRequest): Promise<StarMcnProviderUploadSearchItemV2Response> {
+    const response = await this.openApi2StarMcnProviderUploadSearchItemPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarMcnProviderUploadSearchItemPostWithHttpInfo(starMcnProviderUploadSearchItemV2Request: StarMcnProviderUploadSearchItemV2Request): Promise<ApiResponse<StarMcnProviderUploadSearchItemV2Response>> {
+  async openApi2StarMcnProviderUploadSearchItemPostWithHttpInfo(request: OpenApi2StarMcnProviderUploadSearchItemPostRequest): Promise<ApiResponse<StarMcnProviderUploadSearchItemV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarMcnProviderUploadSearchItemV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarMcnProviderUploadSearchItemV2Api {
       queryParams: [
 
       ],
-      body: starMcnProviderUploadSearchItemV2Request
+      body: request.starMcnProviderUploadSearchItemV2Request
     });
   }
 }

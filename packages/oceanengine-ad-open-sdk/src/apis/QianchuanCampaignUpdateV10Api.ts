@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanCampaignUpdateV10Request, QianchuanCampaignUpdateV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanCampaignUpdatePostRequest {
+  qianchuanCampaignUpdateV10Request?: QianchuanCampaignUpdateV10Request;
+}
 
 export class QianchuanCampaignUpdateV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanCampaignUpdateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanCampaignUpdatePost(qianchuanCampaignUpdateV10Request: QianchuanCampaignUpdateV10Request): Promise<QianchuanCampaignUpdateV10Response> {
-    const response = await this.openApiV10QianchuanCampaignUpdatePostWithHttpInfo(qianchuanCampaignUpdateV10Request);
+  async openApiV10QianchuanCampaignUpdatePost(request: OpenApiV10QianchuanCampaignUpdatePostRequest): Promise<QianchuanCampaignUpdateV10Response> {
+    const response = await this.openApiV10QianchuanCampaignUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanCampaignUpdatePostWithHttpInfo(qianchuanCampaignUpdateV10Request: QianchuanCampaignUpdateV10Request): Promise<ApiResponse<QianchuanCampaignUpdateV10Response>> {
+  async openApiV10QianchuanCampaignUpdatePostWithHttpInfo(request: OpenApiV10QianchuanCampaignUpdatePostRequest): Promise<ApiResponse<QianchuanCampaignUpdateV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanCampaignUpdateV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanCampaignUpdateV10Api {
       queryParams: [
 
       ],
-      body: qianchuanCampaignUpdateV10Request
+      body: request.qianchuanCampaignUpdateV10Request
     });
   }
 }

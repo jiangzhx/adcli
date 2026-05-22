@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarVasCreateBoostItemGroupV2Request, StarVasCreateBoostItemGroupV2Response } from "../models";
 
+
+export interface OpenApi2StarVasCreateBoostItemGroupPostRequest {
+  starVasCreateBoostItemGroupV2Request?: StarVasCreateBoostItemGroupV2Request;
+}
 
 export class StarVasCreateBoostItemGroupV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarVasCreateBoostItemGroupV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarVasCreateBoostItemGroupPost(starVasCreateBoostItemGroupV2Request: StarVasCreateBoostItemGroupV2Request): Promise<StarVasCreateBoostItemGroupV2Response> {
-    const response = await this.openApi2StarVasCreateBoostItemGroupPostWithHttpInfo(starVasCreateBoostItemGroupV2Request);
+  async openApi2StarVasCreateBoostItemGroupPost(request: OpenApi2StarVasCreateBoostItemGroupPostRequest): Promise<StarVasCreateBoostItemGroupV2Response> {
+    const response = await this.openApi2StarVasCreateBoostItemGroupPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarVasCreateBoostItemGroupPostWithHttpInfo(starVasCreateBoostItemGroupV2Request: StarVasCreateBoostItemGroupV2Request): Promise<ApiResponse<StarVasCreateBoostItemGroupV2Response>> {
+  async openApi2StarVasCreateBoostItemGroupPostWithHttpInfo(request: OpenApi2StarVasCreateBoostItemGroupPostRequest): Promise<ApiResponse<StarVasCreateBoostItemGroupV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarVasCreateBoostItemGroupV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarVasCreateBoostItemGroupV2Api {
       queryParams: [
 
       ],
-      body: starVasCreateBoostItemGroupV2Request
+      body: request.starVasCreateBoostItemGroupV2Request
     });
   }
 }

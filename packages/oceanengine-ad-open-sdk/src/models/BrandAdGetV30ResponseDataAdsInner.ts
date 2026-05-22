@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandAdGetV30DataAdsClassify, BrandAdGetV30DataAdsEnableMerchantIntention, BrandAdGetV30ResponseDataAdsInnerAdStockInfosInner, BrandAdGetV30ResponseDataAdsInnerAudienceInfo, BrandAdGetV30ResponseDataAdsInnerBudgetInfo, BrandAdGetV30ResponseDataAdsInnerFrequencyInfo, BrandAdGetV30ResponseDataAdsInnerMagazinePriceInfo, BrandAdGetV30ResponseDataAdsInnerPromotionsInner, BrandAdGetV30ResponseDataAdsInnerScheduleInfo } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StarMcnProviderGetRecruitInfoGetV2ResponseDataChallenge, StarMcnProviderGetRecruitInfoGetV2ResponseDataComponent, StarMcnProviderGetRecruitInfoGetV2ResponseDataDemand, StarMcnProviderGetRecruitInfoGetV2ResponseDataRecruitInfo } from "../models";

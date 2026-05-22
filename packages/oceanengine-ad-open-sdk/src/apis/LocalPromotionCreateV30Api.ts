@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { LocalPromotionCreateV30Request, LocalPromotionCreateV30Response } from "../models";
 
+
+export interface OpenApiV30LocalPromotionCreatePostRequest {
+  localPromotionCreateV30Request?: LocalPromotionCreateV30Request;
+}
 
 export class LocalPromotionCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class LocalPromotionCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30LocalPromotionCreatePost(localPromotionCreateV30Request: LocalPromotionCreateV30Request): Promise<LocalPromotionCreateV30Response> {
-    const response = await this.openApiV30LocalPromotionCreatePostWithHttpInfo(localPromotionCreateV30Request);
+  async openApiV30LocalPromotionCreatePost(request: OpenApiV30LocalPromotionCreatePostRequest): Promise<LocalPromotionCreateV30Response> {
+    const response = await this.openApiV30LocalPromotionCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30LocalPromotionCreatePostWithHttpInfo(localPromotionCreateV30Request: LocalPromotionCreateV30Request): Promise<ApiResponse<LocalPromotionCreateV30Response>> {
+  async openApiV30LocalPromotionCreatePostWithHttpInfo(request: OpenApiV30LocalPromotionCreatePostRequest): Promise<ApiResponse<LocalPromotionCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<LocalPromotionCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class LocalPromotionCreateV30Api {
       queryParams: [
 
       ],
-      body: localPromotionCreateV30Request
+      body: request.localPromotionCreateV30Request
     });
   }
 }

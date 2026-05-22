@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ClueCouponCodeConsumeV2RequestEmployee } from "../models";
@@ -11,7 +10,7 @@ export interface ClueCouponCodeConsumeV2Request {
   code_id?: string;
   coupon_id?: number;
   employee: ClueCouponCodeConsumeV2RequestEmployee;
-  extra?: unknown;
+  extra?: Record<string, unknown>;
   resource_id?: number;
 }
 

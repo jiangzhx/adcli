@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { SecurityCreateAppealV30Request, SecurityCreateAppealV30Response } from "../models";
 
+
+export interface OpenApiV30SecurityCreateAppealPostRequest {
+  securityCreateAppealV30Request?: SecurityCreateAppealV30Request;
+}
 
 export class SecurityCreateAppealV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class SecurityCreateAppealV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30SecurityCreateAppealPost(securityCreateAppealV30Request: SecurityCreateAppealV30Request): Promise<SecurityCreateAppealV30Response> {
-    const response = await this.openApiV30SecurityCreateAppealPostWithHttpInfo(securityCreateAppealV30Request);
+  async openApiV30SecurityCreateAppealPost(request: OpenApiV30SecurityCreateAppealPostRequest): Promise<SecurityCreateAppealV30Response> {
+    const response = await this.openApiV30SecurityCreateAppealPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30SecurityCreateAppealPostWithHttpInfo(securityCreateAppealV30Request: SecurityCreateAppealV30Request): Promise<ApiResponse<SecurityCreateAppealV30Response>> {
+  async openApiV30SecurityCreateAppealPostWithHttpInfo(request: OpenApiV30SecurityCreateAppealPostRequest): Promise<ApiResponse<SecurityCreateAppealV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<SecurityCreateAppealV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class SecurityCreateAppealV30Api {
       queryParams: [
 
       ],
-      body: securityCreateAppealV30Request
+      body: request.securityCreateAppealV30Request
     });
   }
 }

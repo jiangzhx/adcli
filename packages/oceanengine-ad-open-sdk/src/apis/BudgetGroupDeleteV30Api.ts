@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BudgetGroupDeleteV30Request, BudgetGroupDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30BudgetGroupDeletePostRequest {
+  budgetGroupDeleteV30Request?: BudgetGroupDeleteV30Request;
+}
 
 export class BudgetGroupDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class BudgetGroupDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BudgetGroupDeletePost(budgetGroupDeleteV30Request: BudgetGroupDeleteV30Request): Promise<BudgetGroupDeleteV30Response> {
-    const response = await this.openApiV30BudgetGroupDeletePostWithHttpInfo(budgetGroupDeleteV30Request);
+  async openApiV30BudgetGroupDeletePost(request: OpenApiV30BudgetGroupDeletePostRequest): Promise<BudgetGroupDeleteV30Response> {
+    const response = await this.openApiV30BudgetGroupDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BudgetGroupDeletePostWithHttpInfo(budgetGroupDeleteV30Request: BudgetGroupDeleteV30Request): Promise<ApiResponse<BudgetGroupDeleteV30Response>> {
+  async openApiV30BudgetGroupDeletePostWithHttpInfo(request: OpenApiV30BudgetGroupDeletePostRequest): Promise<ApiResponse<BudgetGroupDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<BudgetGroupDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class BudgetGroupDeleteV30Api {
       queryParams: [
 
       ],
-      body: budgetGroupDeleteV30Request
+      body: request.budgetGroupDeleteV30Request
     });
   }
 }

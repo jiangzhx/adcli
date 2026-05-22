@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StdProjectCreateV30Request, StdProjectCreateV30Response } from "../models";
 
+
+export interface OpenApiV30StdProjectCreatePostRequest {
+  stdProjectCreateV30Request?: StdProjectCreateV30Request;
+}
 
 export class StdProjectCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StdProjectCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30StdProjectCreatePost(stdProjectCreateV30Request: StdProjectCreateV30Request): Promise<StdProjectCreateV30Response> {
-    const response = await this.openApiV30StdProjectCreatePostWithHttpInfo(stdProjectCreateV30Request);
+  async openApiV30StdProjectCreatePost(request: OpenApiV30StdProjectCreatePostRequest): Promise<StdProjectCreateV30Response> {
+    const response = await this.openApiV30StdProjectCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30StdProjectCreatePostWithHttpInfo(stdProjectCreateV30Request: StdProjectCreateV30Request): Promise<ApiResponse<StdProjectCreateV30Response>> {
+  async openApiV30StdProjectCreatePostWithHttpInfo(request: OpenApiV30StdProjectCreatePostRequest): Promise<ApiResponse<StdProjectCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<StdProjectCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StdProjectCreateV30Api {
       queryParams: [
 
       ],
-      body: stdProjectCreateV30Request
+      body: request.stdProjectCreateV30Request
     });
   }
 }

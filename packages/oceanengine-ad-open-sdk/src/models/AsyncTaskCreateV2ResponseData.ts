@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export interface AsyncTaskCreateV2ResponseData {
@@ -9,7 +8,7 @@ export interface AsyncTaskCreateV2ResponseData {
   file_size?: number;
   task_id?: number;
   task_name?: string;
-  task_params?: unknown;
+  task_params?: Record<string, unknown>;
   task_status?: string;
   task_type?: string;
 }

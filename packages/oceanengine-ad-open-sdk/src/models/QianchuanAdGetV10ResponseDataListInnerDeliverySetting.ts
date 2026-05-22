@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAdGetV10DataListDeliverySettingBudgetMode, QianchuanAdGetV10DataListDeliverySettingDeepBidType, QianchuanAdGetV10DataListDeliverySettingDeepExternalAction, QianchuanAdGetV10DataListDeliverySettingExternalAction, QianchuanAdGetV10DataListDeliverySettingQcpxMode, QianchuanAdGetV10DataListDeliverySettingSmartBidType } from "../models";

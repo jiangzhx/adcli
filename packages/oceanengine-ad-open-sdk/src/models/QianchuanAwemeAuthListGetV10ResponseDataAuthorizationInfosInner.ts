@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAwemeAuthListGetV10DataAuthorizationInfosAuthRange, QianchuanAwemeAuthListGetV10DataAuthorizationInfosAuthSource, QianchuanAwemeAuthListGetV10DataAuthorizationInfosAuthStatus, QianchuanAwemeAuthListGetV10DataAuthorizationInfosAuthType, QianchuanAwemeAuthListGetV10ResponseDataAuthorizationInfosInnerAuthVideoInfo } from "../models";

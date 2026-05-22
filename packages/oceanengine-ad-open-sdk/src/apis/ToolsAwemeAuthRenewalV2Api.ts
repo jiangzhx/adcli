@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAwemeAuthRenewalV2Request, ToolsAwemeAuthRenewalV2Response } from "../models";
 
+
+export interface OpenApi2ToolsAwemeAuthRenewalPostRequest {
+  toolsAwemeAuthRenewalV2Request?: ToolsAwemeAuthRenewalV2Request;
+}
 
 export class ToolsAwemeAuthRenewalV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsAwemeAuthRenewalV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsAwemeAuthRenewalPost(toolsAwemeAuthRenewalV2Request: ToolsAwemeAuthRenewalV2Request): Promise<ToolsAwemeAuthRenewalV2Response> {
-    const response = await this.openApi2ToolsAwemeAuthRenewalPostWithHttpInfo(toolsAwemeAuthRenewalV2Request);
+  async openApi2ToolsAwemeAuthRenewalPost(request: OpenApi2ToolsAwemeAuthRenewalPostRequest): Promise<ToolsAwemeAuthRenewalV2Response> {
+    const response = await this.openApi2ToolsAwemeAuthRenewalPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsAwemeAuthRenewalPostWithHttpInfo(toolsAwemeAuthRenewalV2Request: ToolsAwemeAuthRenewalV2Request): Promise<ApiResponse<ToolsAwemeAuthRenewalV2Response>> {
+  async openApi2ToolsAwemeAuthRenewalPostWithHttpInfo(request: OpenApi2ToolsAwemeAuthRenewalPostRequest): Promise<ApiResponse<ToolsAwemeAuthRenewalV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsAwemeAuthRenewalV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsAwemeAuthRenewalV2Api {
       queryParams: [
 
       ],
-      body: toolsAwemeAuthRenewalV2Request
+      body: request.toolsAwemeAuthRenewalV2Request
     });
   }
 }

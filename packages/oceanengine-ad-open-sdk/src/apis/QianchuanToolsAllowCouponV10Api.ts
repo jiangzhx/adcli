@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,16 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanToolsAllowCouponV10CampaignScene, QianchuanToolsAllowCouponV10MarketingGoal, QianchuanToolsAllowCouponV10MarketingScene, QianchuanToolsAllowCouponV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanToolsAllowCouponGetRequest {
+  advertiserId: number;
+  marketingGoal: QianchuanToolsAllowCouponV10MarketingGoal;
+  campaignScene: QianchuanToolsAllowCouponV10CampaignScene;
+  marketingScene: QianchuanToolsAllowCouponV10MarketingScene;
+  awemeIds?: number[];
+  productIds?: number[];
+  isLabAd?: boolean;
+}
 
 export class QianchuanToolsAllowCouponV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,38 +28,38 @@ export class QianchuanToolsAllowCouponV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanToolsAllowCouponGet(advertiserId: number, marketingGoal: QianchuanToolsAllowCouponV10MarketingGoal, campaignScene: QianchuanToolsAllowCouponV10CampaignScene, marketingScene: QianchuanToolsAllowCouponV10MarketingScene, awemeIds: number[], productIds: number[], isLabAd: boolean): Promise<QianchuanToolsAllowCouponV10Response> {
-    const response = await this.openApiV10QianchuanToolsAllowCouponGetWithHttpInfo(advertiserId, marketingGoal, campaignScene, marketingScene, awemeIds, productIds, isLabAd);
+  async openApiV10QianchuanToolsAllowCouponGet(request: OpenApiV10QianchuanToolsAllowCouponGetRequest): Promise<QianchuanToolsAllowCouponV10Response> {
+    const response = await this.openApiV10QianchuanToolsAllowCouponGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanToolsAllowCouponGetWithHttpInfo(advertiserId: number, marketingGoal: QianchuanToolsAllowCouponV10MarketingGoal, campaignScene: QianchuanToolsAllowCouponV10CampaignScene, marketingScene: QianchuanToolsAllowCouponV10MarketingScene, awemeIds: number[], productIds: number[], isLabAd: boolean): Promise<ApiResponse<QianchuanToolsAllowCouponV10Response>> {
-    if (advertiserId == null) {
+  async openApiV10QianchuanToolsAllowCouponGetWithHttpInfo(request: OpenApiV10QianchuanToolsAllowCouponGetRequest): Promise<ApiResponse<QianchuanToolsAllowCouponV10Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsAllowCouponGet");
     }
 
-    if (marketingGoal == null) {
+    if (request.marketingGoal == null) {
       throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanToolsAllowCouponGet");
     }
 
-    if (campaignScene == null) {
+    if (request.campaignScene == null) {
       throw new ApiException("Missing the required parameter 'campaignScene' when calling openApiV10QianchuanToolsAllowCouponGet");
     }
 
-    if (marketingScene == null) {
+    if (request.marketingScene == null) {
       throw new ApiException("Missing the required parameter 'marketingScene' when calling openApiV10QianchuanToolsAllowCouponGet");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanToolsAllowCouponV10Response>({
       method: "GET",
       path: "/open_api/v1.0/qianchuan/tools/allow_coupon/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "marketing_goal", value: marketingGoal },
-        { name: "campaign_scene", value: campaignScene },
-        { name: "marketing_scene", value: marketingScene },
-        { name: "is_lab_ad", value: isLabAd },
-        { name: "aweme_ids", value: awemeIds, collectionFormat: "csv" },
-        { name: "product_ids", value: productIds, collectionFormat: "csv" }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "marketing_goal", value: request.marketingGoal },
+        { name: "campaign_scene", value: request.campaignScene },
+        { name: "marketing_scene", value: request.marketingScene },
+        { name: "aweme_ids", value: request.awemeIds, collectionFormat: "csv" },
+        { name: "product_ids", value: request.productIds, collectionFormat: "csv" },
+        { name: "is_lab_ad", value: request.isLabAd }
       ]
     });
   }

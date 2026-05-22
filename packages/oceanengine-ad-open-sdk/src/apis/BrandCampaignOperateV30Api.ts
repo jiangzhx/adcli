@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandCampaignOperateV30Request, BrandCampaignOperateV30Response } from "../models";
 
+
+export interface OpenApiV30BrandCampaignOperatePostRequest {
+  brandCampaignOperateV30Request?: BrandCampaignOperateV30Request;
+}
 
 export class BrandCampaignOperateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class BrandCampaignOperateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandCampaignOperatePost(brandCampaignOperateV30Request: BrandCampaignOperateV30Request): Promise<BrandCampaignOperateV30Response> {
-    const response = await this.openApiV30BrandCampaignOperatePostWithHttpInfo(brandCampaignOperateV30Request);
+  async openApiV30BrandCampaignOperatePost(request: OpenApiV30BrandCampaignOperatePostRequest): Promise<BrandCampaignOperateV30Response> {
+    const response = await this.openApiV30BrandCampaignOperatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandCampaignOperatePostWithHttpInfo(brandCampaignOperateV30Request: BrandCampaignOperateV30Request): Promise<ApiResponse<BrandCampaignOperateV30Response>> {
+  async openApiV30BrandCampaignOperatePostWithHttpInfo(request: OpenApiV30BrandCampaignOperatePostRequest): Promise<ApiResponse<BrandCampaignOperateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<BrandCampaignOperateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class BrandCampaignOperateV30Api {
       queryParams: [
 
       ],
-      body: brandCampaignOperateV30Request
+      body: request.brandCampaignOperateV30Request
     });
   }
 }

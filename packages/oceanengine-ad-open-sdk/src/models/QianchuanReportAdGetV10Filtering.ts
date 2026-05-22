@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanReportAdGetV10FilteringCampaignScene, QianchuanReportAdGetV10FilteringMarketingGoal, QianchuanReportAdGetV10FilteringMarketingScene, QianchuanReportAdGetV10FilteringOrderPlatform, QianchuanReportAdGetV10FilteringSmartBidType, QianchuanReportAdGetV10FilteringStatus } from "../models";

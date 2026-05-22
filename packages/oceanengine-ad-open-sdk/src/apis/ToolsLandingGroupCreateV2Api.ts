@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsLandingGroupCreateV2Request, ToolsLandingGroupCreateV2Response } from "../models";
 
+
+export interface OpenApi2ToolsLandingGroupCreatePostRequest {
+  xOrangeCaller?: string;
+  toolsLandingGroupCreateV2Request?: ToolsLandingGroupCreateV2Request;
+}
 
 export class ToolsLandingGroupCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +23,12 @@ export class ToolsLandingGroupCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsLandingGroupCreatePost(xOrangeCaller: string, toolsLandingGroupCreateV2Request: ToolsLandingGroupCreateV2Request): Promise<ToolsLandingGroupCreateV2Response> {
-    const response = await this.openApi2ToolsLandingGroupCreatePostWithHttpInfo(xOrangeCaller, toolsLandingGroupCreateV2Request);
+  async openApi2ToolsLandingGroupCreatePost(request: OpenApi2ToolsLandingGroupCreatePostRequest): Promise<ToolsLandingGroupCreateV2Response> {
+    const response = await this.openApi2ToolsLandingGroupCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsLandingGroupCreatePostWithHttpInfo(xOrangeCaller: string, toolsLandingGroupCreateV2Request: ToolsLandingGroupCreateV2Request): Promise<ApiResponse<ToolsLandingGroupCreateV2Response>> {
+  async openApi2ToolsLandingGroupCreatePostWithHttpInfo(request: OpenApi2ToolsLandingGroupCreatePostRequest): Promise<ApiResponse<ToolsLandingGroupCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsLandingGroupCreateV2Response>({
       method: "POST",
@@ -32,7 +36,7 @@ export class ToolsLandingGroupCreateV2Api {
       queryParams: [
 
       ],
-      body: toolsLandingGroupCreateV2Request
+      body: request.toolsLandingGroupCreateV2Request
     });
   }
 }

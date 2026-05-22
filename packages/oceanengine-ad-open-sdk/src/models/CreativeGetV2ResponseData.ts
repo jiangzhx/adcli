@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { CreativeGetV2ResponseDataCursorInfo, CreativeGetV2ResponseDataListInner, CreativeGetV2ResponseDataPageInfo } from "../models";

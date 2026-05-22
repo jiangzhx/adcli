@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,11 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandUploadImageV30Response } from "../models";
 
+
+export interface OpenApiV30BrandUploadImagePostRequest {
+  advertiserId: number;
+  imageFile: File;
+}
 
 export class BrandUploadImageV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,17 +23,17 @@ export class BrandUploadImageV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandUploadImagePost(advertiserId: number, imageFile: File): Promise<BrandUploadImageV30Response> {
-    const response = await this.openApiV30BrandUploadImagePostWithHttpInfo(advertiserId, imageFile);
+  async openApiV30BrandUploadImagePost(request: OpenApiV30BrandUploadImagePostRequest): Promise<BrandUploadImageV30Response> {
+    const response = await this.openApiV30BrandUploadImagePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandUploadImagePostWithHttpInfo(advertiserId: number, imageFile: File): Promise<ApiResponse<BrandUploadImageV30Response>> {
-    if (advertiserId == null) {
+  async openApiV30BrandUploadImagePostWithHttpInfo(request: OpenApiV30BrandUploadImagePostRequest): Promise<ApiResponse<BrandUploadImageV30Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandUploadImagePost");
     }
 
-    if (imageFile == null) {
+    if (request.imageFile == null) {
       throw new ApiException("Missing the required parameter 'imageFile' when calling openApiV30BrandUploadImagePost");
     }
     return this.apiClient.requestWithHttpInfo<BrandUploadImageV30Response>({

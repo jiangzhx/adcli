@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { RejectMaterialAiRepairAcceptTaskCreateV30Request, RejectMaterialAiRepairAcceptTaskCreateV30Response } from "../models";
 
+
+export interface OpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest {
+  rejectMaterialAiRepairAcceptTaskCreateV30Request?: RejectMaterialAiRepairAcceptTaskCreateV30Request;
+}
 
 export class RejectMaterialAiRepairAcceptTaskCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class RejectMaterialAiRepairAcceptTaskCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30RejectMaterialAiRepairAcceptTaskCreatePost(rejectMaterialAiRepairAcceptTaskCreateV30Request: RejectMaterialAiRepairAcceptTaskCreateV30Request): Promise<RejectMaterialAiRepairAcceptTaskCreateV30Response> {
-    const response = await this.openApiV30RejectMaterialAiRepairAcceptTaskCreatePostWithHttpInfo(rejectMaterialAiRepairAcceptTaskCreateV30Request);
+  async openApiV30RejectMaterialAiRepairAcceptTaskCreatePost(request: OpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest): Promise<RejectMaterialAiRepairAcceptTaskCreateV30Response> {
+    const response = await this.openApiV30RejectMaterialAiRepairAcceptTaskCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30RejectMaterialAiRepairAcceptTaskCreatePostWithHttpInfo(rejectMaterialAiRepairAcceptTaskCreateV30Request: RejectMaterialAiRepairAcceptTaskCreateV30Request): Promise<ApiResponse<RejectMaterialAiRepairAcceptTaskCreateV30Response>> {
+  async openApiV30RejectMaterialAiRepairAcceptTaskCreatePostWithHttpInfo(request: OpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest): Promise<ApiResponse<RejectMaterialAiRepairAcceptTaskCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<RejectMaterialAiRepairAcceptTaskCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class RejectMaterialAiRepairAcceptTaskCreateV30Api {
       queryParams: [
 
       ],
-      body: rejectMaterialAiRepairAcceptTaskCreateV30Request
+      body: request.rejectMaterialAiRepairAcceptTaskCreateV30Request
     });
   }
 }

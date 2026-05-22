@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionDeleteV30Request, PromotionDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30PromotionDeletePostRequest {
+  promotionDeleteV30Request?: PromotionDeleteV30Request;
+}
 
 export class PromotionDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class PromotionDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionDeletePost(promotionDeleteV30Request: PromotionDeleteV30Request): Promise<PromotionDeleteV30Response> {
-    const response = await this.openApiV30PromotionDeletePostWithHttpInfo(promotionDeleteV30Request);
+  async openApiV30PromotionDeletePost(request: OpenApiV30PromotionDeletePostRequest): Promise<PromotionDeleteV30Response> {
+    const response = await this.openApiV30PromotionDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionDeletePostWithHttpInfo(promotionDeleteV30Request: PromotionDeleteV30Request): Promise<ApiResponse<PromotionDeleteV30Response>> {
+  async openApiV30PromotionDeletePostWithHttpInfo(request: OpenApiV30PromotionDeletePostRequest): Promise<ApiResponse<PromotionDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<PromotionDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class PromotionDeleteV30Api {
       queryParams: [
 
       ],
-      body: promotionDeleteV30Request
+      body: request.promotionDeleteV30Request
     });
   }
 }

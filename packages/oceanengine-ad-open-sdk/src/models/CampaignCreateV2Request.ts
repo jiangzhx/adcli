@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { CampaignCreateV2BudgetMode, CampaignCreateV2CampaignBudgetOptimization, CampaignCreateV2CampaignType, CampaignCreateV2DedicateType, CampaignCreateV2DeliveryMode, CampaignCreateV2DeliveryRelatedNum, CampaignCreateV2LandingType, CampaignCreateV2MarketingPurpose, CampaignCreateV2MarketingScene, CampaignCreateV2Operation, CampaignCreateV2SmartBidType } from "../models";

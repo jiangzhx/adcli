@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DpaClueProductDetailV2DataProductsAuditStatus, DpaClueProductDetailV2DataProductsCompletionStatus, DpaClueProductDetailV2DataProductsStatus, DpaClueProductDetailV2ResponseDataProductsInnerBrandInfo, DpaClueProductDetailV2ResponseDataProductsInnerCategory, DpaClueProductDetailV2ResponseDataProductsInnerImagesUrlInner, DpaClueProductDetailV2ResponseDataProductsInnerLandingInfo, DpaClueProductDetailV2ResponseDataProductsInnerPriceInfo, DpaClueProductDetailV2ResponseDataProductsInnerShopKeeperInfo, DpaClueProductDetailV2ResponseDataProductsInnerVideosInner } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ClueCouponCreateV2CouponResourceListCodeType, ClueCouponCreateV2CouponResourceListIndustryType, ClueCouponCreateV2CouponResourceListResourceType, ClueCouponCreateV2CouponResourceListUseType, ClueCouponCreateV2RequestCouponResourceListInnerGiftListInner } from "../models";

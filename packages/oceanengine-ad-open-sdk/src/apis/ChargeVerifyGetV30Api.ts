@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,16 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ChargeVerifyGetV30Caller, ChargeVerifyGetV30ChargeSource, ChargeVerifyGetV30ChargeType, ChargeVerifyGetV30Platform, ChargeVerifyGetV30Response } from "../models";
 
+
+export interface OpenApiV30ChargeVerifyGetGetRequest {
+  ccAccountId: number;
+  accountId: number;
+  platform: ChargeVerifyGetV30Platform;
+  requestId: string;
+  chargeType: ChargeVerifyGetV30ChargeType;
+  chargeSource: ChargeVerifyGetV30ChargeSource;
+  caller: ChargeVerifyGetV30Caller;
+}
 
 export class ChargeVerifyGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,50 +28,50 @@ export class ChargeVerifyGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ChargeVerifyGetGet(ccAccountId: number, accountId: number, platform: ChargeVerifyGetV30Platform, requestId: string, chargeType: ChargeVerifyGetV30ChargeType, chargeSource: ChargeVerifyGetV30ChargeSource, caller: ChargeVerifyGetV30Caller): Promise<ChargeVerifyGetV30Response> {
-    const response = await this.openApiV30ChargeVerifyGetGetWithHttpInfo(ccAccountId, accountId, platform, requestId, chargeType, chargeSource, caller);
+  async openApiV30ChargeVerifyGetGet(request: OpenApiV30ChargeVerifyGetGetRequest): Promise<ChargeVerifyGetV30Response> {
+    const response = await this.openApiV30ChargeVerifyGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ChargeVerifyGetGetWithHttpInfo(ccAccountId: number, accountId: number, platform: ChargeVerifyGetV30Platform, requestId: string, chargeType: ChargeVerifyGetV30ChargeType, chargeSource: ChargeVerifyGetV30ChargeSource, caller: ChargeVerifyGetV30Caller): Promise<ApiResponse<ChargeVerifyGetV30Response>> {
-    if (ccAccountId == null) {
+  async openApiV30ChargeVerifyGetGetWithHttpInfo(request: OpenApiV30ChargeVerifyGetGetRequest): Promise<ApiResponse<ChargeVerifyGetV30Response>> {
+    if (request.ccAccountId == null) {
       throw new ApiException("Missing the required parameter 'ccAccountId' when calling openApiV30ChargeVerifyGetGet");
     }
 
-    if (accountId == null) {
+    if (request.accountId == null) {
       throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ChargeVerifyGetGet");
     }
 
-    if (platform == null) {
+    if (request.platform == null) {
       throw new ApiException("Missing the required parameter 'platform' when calling openApiV30ChargeVerifyGetGet");
     }
 
-    if (requestId == null) {
+    if (request.requestId == null) {
       throw new ApiException("Missing the required parameter 'requestId' when calling openApiV30ChargeVerifyGetGet");
     }
 
-    if (chargeType == null) {
+    if (request.chargeType == null) {
       throw new ApiException("Missing the required parameter 'chargeType' when calling openApiV30ChargeVerifyGetGet");
     }
 
-    if (chargeSource == null) {
+    if (request.chargeSource == null) {
       throw new ApiException("Missing the required parameter 'chargeSource' when calling openApiV30ChargeVerifyGetGet");
     }
 
-    if (caller == null) {
+    if (request.caller == null) {
       throw new ApiException("Missing the required parameter 'caller' when calling openApiV30ChargeVerifyGetGet");
     }
     return this.apiClient.requestWithHttpInfo<ChargeVerifyGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/charge/verify/get/",
       queryParams: [
-        { name: "cc_account_id", value: ccAccountId },
-        { name: "account_id", value: accountId },
-        { name: "platform", value: platform },
-        { name: "request_id", value: requestId },
-        { name: "charge_type", value: chargeType },
-        { name: "charge_source", value: chargeSource },
-        { name: "caller", value: caller }
+        { name: "cc_account_id", value: request.ccAccountId },
+        { name: "account_id", value: request.accountId },
+        { name: "platform", value: request.platform },
+        { name: "request_id", value: request.requestId },
+        { name: "charge_type", value: request.chargeType },
+        { name: "charge_source", value: request.chargeSource },
+        { name: "caller", value: request.caller }
       ]
     });
   }

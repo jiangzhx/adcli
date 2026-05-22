@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPromotionRaiseStopV30Request, ToolsPromotionRaiseStopV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsPromotionRaiseStopPostRequest {
+  toolsPromotionRaiseStopV30Request?: ToolsPromotionRaiseStopV30Request;
+}
 
 export class ToolsPromotionRaiseStopV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsPromotionRaiseStopV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsPromotionRaiseStopPost(toolsPromotionRaiseStopV30Request: ToolsPromotionRaiseStopV30Request): Promise<ToolsPromotionRaiseStopV30Response> {
-    const response = await this.openApiV30ToolsPromotionRaiseStopPostWithHttpInfo(toolsPromotionRaiseStopV30Request);
+  async openApiV30ToolsPromotionRaiseStopPost(request: OpenApiV30ToolsPromotionRaiseStopPostRequest): Promise<ToolsPromotionRaiseStopV30Response> {
+    const response = await this.openApiV30ToolsPromotionRaiseStopPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsPromotionRaiseStopPostWithHttpInfo(toolsPromotionRaiseStopV30Request: ToolsPromotionRaiseStopV30Request): Promise<ApiResponse<ToolsPromotionRaiseStopV30Response>> {
+  async openApiV30ToolsPromotionRaiseStopPostWithHttpInfo(request: OpenApiV30ToolsPromotionRaiseStopPostRequest): Promise<ApiResponse<ToolsPromotionRaiseStopV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsPromotionRaiseStopV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsPromotionRaiseStopV30Api {
       queryParams: [
 
       ],
-      body: toolsPromotionRaiseStopV30Request
+      body: request.toolsPromotionRaiseStopV30Request
     });
   }
 }

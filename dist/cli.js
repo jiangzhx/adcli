@@ -1657,16 +1657,16 @@ class Oauth2AdvertiserGetApi {
   setApiClient(apiClient) {
     this.apiClient = apiClient;
   }
-  async openApiOauth2AdvertiserGetGet(accessToken) {
-    const response = await this.openApiOauth2AdvertiserGetGetWithHttpInfo(accessToken);
+  async openApiOauth2AdvertiserGetGet(request) {
+    const response = await this.openApiOauth2AdvertiserGetGetWithHttpInfo(request);
     return response.data;
   }
-  async openApiOauth2AdvertiserGetGetWithHttpInfo(accessToken) {
+  async openApiOauth2AdvertiserGetGetWithHttpInfo(request) {
     return this.apiClient.requestWithHttpInfo({
       method: "GET",
       path: "/open_api/oauth2/advertiser/get/",
       queryParams: [
-        { name: "access_token", value: accessToken }
+        { name: "access_token", value: request.accessToken }
       ]
     });
   }
@@ -1684,23 +1684,23 @@ class ProjectListV30Api {
   setApiClient(apiClient) {
     this.apiClient = apiClient;
   }
-  async openApiV30ProjectListGet(advertiserId, fields, filtering, page, pageSize) {
-    const response = await this.openApiV30ProjectListGetWithHttpInfo(advertiserId, fields, filtering, page, pageSize);
+  async openApiV30ProjectListGet(request) {
+    const response = await this.openApiV30ProjectListGetWithHttpInfo(request);
     return response.data;
   }
-  async openApiV30ProjectListGetWithHttpInfo(advertiserId, fields, filtering, page, pageSize) {
-    if (advertiserId == null) {
+  async openApiV30ProjectListGetWithHttpInfo(request) {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ProjectListGet");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "GET",
       path: "/open_api/v3.0/project/list/",
       queryParams: [
-        { name: "filtering", value: filtering },
-        { name: "advertiser_id", value: advertiserId },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "fields", value: fields, collectionFormat: "csv" }
+        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "filtering", value: request.filtering },
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }
@@ -1718,26 +1718,26 @@ class PromotionListV30Api {
   setApiClient(apiClient) {
     this.apiClient = apiClient;
   }
-  async openApiV30PromotionListGet(advertiserId, filtering, fields, includingMaterialAtrributes, page, pageSize, cursor, count) {
-    const response = await this.openApiV30PromotionListGetWithHttpInfo(advertiserId, filtering, fields, includingMaterialAtrributes, page, pageSize, cursor, count);
+  async openApiV30PromotionListGet(request) {
+    const response = await this.openApiV30PromotionListGetWithHttpInfo(request);
     return response.data;
   }
-  async openApiV30PromotionListGetWithHttpInfo(advertiserId, filtering, fields, includingMaterialAtrributes, page, pageSize, cursor, count) {
-    if (advertiserId == null) {
+  async openApiV30PromotionListGetWithHttpInfo(request) {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30PromotionListGet");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "GET",
       path: "/open_api/v3.0/promotion/list/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "filtering", value: filtering },
-        { name: "including_material_atrributes", value: includingMaterialAtrributes },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "cursor", value: cursor },
-        { name: "count", value: count },
-        { name: "fields", value: fields, collectionFormat: "csv" }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "filtering", value: request.filtering },
+        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "including_material_atrributes", value: request.includingMaterialAtrributes },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize },
+        { name: "cursor", value: request.cursor },
+        { name: "count", value: request.count }
       ]
     });
   }
@@ -1805,11 +1805,17 @@ async function runOceanEngineCommand(argv, options = {}) {
   const token = await resolveAccessToken(args, options);
   const apiClient = new ApiClient({ fetch: options.fetch }).setAccessToken(token);
   if (args.resource === "advertiser" && args.action === "list") {
-    return new Oauth2AdvertiserGetApi(apiClient).openApiOauth2AdvertiserGetGet(token);
+    return new Oauth2AdvertiserGetApi(apiClient).openApiOauth2AdvertiserGetGet({ accessToken: token });
   }
   if (isProjectListCommand(args)) {
     const advertiserId = getRequiredId(args, "advertiser-id");
-    return new ProjectListV30Api(apiClient).openApiV30ProjectListGet(advertiserId, parseCsv(args.flags.fields), parseJsonFlag(args.flags.filtering), parseNumberFlag(args.flags.page), parseNumberFlag(args.flags["page-size"]));
+    return new ProjectListV30Api(apiClient).openApiV30ProjectListGet({
+      advertiserId,
+      fields: parseCsv(args.flags.fields),
+      filtering: parseJsonFlag(args.flags.filtering),
+      page: parseNumberFlag(args.flags.page),
+      pageSize: parseNumberFlag(args.flags["page-size"])
+    });
   }
   if (args.resource === "promotion" && args.action === "list") {
     const advertiserId = getRequiredId(args, "advertiser-id");
@@ -1817,7 +1823,16 @@ async function runOceanEngineCommand(argv, options = {}) {
       ...parseJsonFlag(args.flags.filtering),
       ...parseProjectFilter(args.flags["project-id"])
     };
-    return new PromotionListV30Api(apiClient).openApiV30PromotionListGet(advertiserId, Object.keys(filtering).length > 0 ? filtering : undefined, parseCsv(args.flags.fields), args.flags["including-material-attributes"], parseNumberFlag(args.flags.page), parseNumberFlag(args.flags["page-size"]), parseNumberFlag(args.flags.cursor), parseNumberFlag(args.flags.count));
+    return new PromotionListV30Api(apiClient).openApiV30PromotionListGet({
+      advertiserId,
+      filtering: Object.keys(filtering).length > 0 ? filtering : undefined,
+      fields: parseCsv(args.flags.fields),
+      includingMaterialAtrributes: args.flags["including-material-attributes"],
+      page: parseNumberFlag(args.flags.page),
+      pageSize: parseNumberFlag(args.flags["page-size"]),
+      cursor: parseNumberFlag(args.flags.cursor),
+      count: parseNumberFlag(args.flags.count)
+    });
   }
   throw new Error(`unknown oceanengine command: ${[args.resource, args.action].filter(Boolean).join(" ")}`);
 }
@@ -1905,7 +1920,7 @@ function getRequiredId(args, flag) {
   if (!/^\d+$/.test(value)) {
     throw new Error(`--${flag} must be an integer id`);
   }
-  return value;
+  return Number(value);
 }
 function parseNumberFlag(value) {
   if (value == null || value === true) {

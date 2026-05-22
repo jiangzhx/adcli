@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsCommentTermsBannedDeleteV30Request, ToolsCommentTermsBannedDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsCommentTermsBannedDeletePostRequest {
+  toolsCommentTermsBannedDeleteV30Request?: ToolsCommentTermsBannedDeleteV30Request;
+}
 
 export class ToolsCommentTermsBannedDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsCommentTermsBannedDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsCommentTermsBannedDeletePost(toolsCommentTermsBannedDeleteV30Request: ToolsCommentTermsBannedDeleteV30Request): Promise<ToolsCommentTermsBannedDeleteV30Response> {
-    const response = await this.openApiV30ToolsCommentTermsBannedDeletePostWithHttpInfo(toolsCommentTermsBannedDeleteV30Request);
+  async openApiV30ToolsCommentTermsBannedDeletePost(request: OpenApiV30ToolsCommentTermsBannedDeletePostRequest): Promise<ToolsCommentTermsBannedDeleteV30Response> {
+    const response = await this.openApiV30ToolsCommentTermsBannedDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsCommentTermsBannedDeletePostWithHttpInfo(toolsCommentTermsBannedDeleteV30Request: ToolsCommentTermsBannedDeleteV30Request): Promise<ApiResponse<ToolsCommentTermsBannedDeleteV30Response>> {
+  async openApiV30ToolsCommentTermsBannedDeletePostWithHttpInfo(request: OpenApiV30ToolsCommentTermsBannedDeletePostRequest): Promise<ApiResponse<ToolsCommentTermsBannedDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsCommentTermsBannedDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsCommentTermsBannedDeleteV30Api {
       queryParams: [
 
       ],
-      body: toolsCommentTermsBannedDeleteV30Request
+      body: request.toolsCommentTermsBannedDeleteV30Request
     });
   }
 }

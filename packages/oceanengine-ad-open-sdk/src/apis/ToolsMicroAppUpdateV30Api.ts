@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsMicroAppUpdateV30Request, ToolsMicroAppUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsMicroAppUpdatePostRequest {
+  toolsMicroAppUpdateV30Request?: ToolsMicroAppUpdateV30Request;
+}
 
 export class ToolsMicroAppUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsMicroAppUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsMicroAppUpdatePost(toolsMicroAppUpdateV30Request: ToolsMicroAppUpdateV30Request): Promise<ToolsMicroAppUpdateV30Response> {
-    const response = await this.openApiV30ToolsMicroAppUpdatePostWithHttpInfo(toolsMicroAppUpdateV30Request);
+  async openApiV30ToolsMicroAppUpdatePost(request: OpenApiV30ToolsMicroAppUpdatePostRequest): Promise<ToolsMicroAppUpdateV30Response> {
+    const response = await this.openApiV30ToolsMicroAppUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsMicroAppUpdatePostWithHttpInfo(toolsMicroAppUpdateV30Request: ToolsMicroAppUpdateV30Request): Promise<ApiResponse<ToolsMicroAppUpdateV30Response>> {
+  async openApiV30ToolsMicroAppUpdatePostWithHttpInfo(request: OpenApiV30ToolsMicroAppUpdatePostRequest): Promise<ApiResponse<ToolsMicroAppUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsMicroAppUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsMicroAppUpdateV30Api {
       queryParams: [
 
       ],
-      body: toolsMicroAppUpdateV30Request
+      body: request.toolsMicroAppUpdateV30Request
     });
   }
 }

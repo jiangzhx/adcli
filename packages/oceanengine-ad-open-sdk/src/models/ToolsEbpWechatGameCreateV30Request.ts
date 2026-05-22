@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsEbpWechatGameCreateV30AccountType, ToolsEbpWechatGameCreateV30RequestExtra, ToolsEbpWechatGameCreateV30RequestHead, ToolsEbpWechatGameCreateV30RequestIcon, ToolsEbpWechatGameCreateV30RequestMaterialInner } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpAssetAuthV30Request, ToolsEbpAssetAuthV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsEbpAssetAuthPostRequest {
+  toolsEbpAssetAuthV30Request?: ToolsEbpAssetAuthV30Request;
+}
 
 export class ToolsEbpAssetAuthV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsEbpAssetAuthV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpAssetAuthPost(toolsEbpAssetAuthV30Request: ToolsEbpAssetAuthV30Request): Promise<ToolsEbpAssetAuthV30Response> {
-    const response = await this.openApiV30ToolsEbpAssetAuthPostWithHttpInfo(toolsEbpAssetAuthV30Request);
+  async openApiV30ToolsEbpAssetAuthPost(request: OpenApiV30ToolsEbpAssetAuthPostRequest): Promise<ToolsEbpAssetAuthV30Response> {
+    const response = await this.openApiV30ToolsEbpAssetAuthPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpAssetAuthPostWithHttpInfo(toolsEbpAssetAuthV30Request: ToolsEbpAssetAuthV30Request): Promise<ApiResponse<ToolsEbpAssetAuthV30Response>> {
+  async openApiV30ToolsEbpAssetAuthPostWithHttpInfo(request: OpenApiV30ToolsEbpAssetAuthPostRequest): Promise<ApiResponse<ToolsEbpAssetAuthV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsEbpAssetAuthV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsEbpAssetAuthV30Api {
       queryParams: [
 
       ],
-      body: toolsEbpAssetAuthV30Request
+      body: request.toolsEbpAssetAuthV30Request
     });
   }
 }

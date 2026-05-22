@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsSiteCreateV2RequestBricksInnerSettingAvatar, ToolsSiteCreateV2RequestBricksInnerSettingBackground, ToolsSiteCreateV2RequestBricksInnerSettingButton, ToolsSiteCreateV2RequestBricksInnerSettingImage, ToolsSiteCreateV2RequestBricksInnerSettingLabel, ToolsSiteCreateV2RequestBricksInnerSettingTitle } from "../models";

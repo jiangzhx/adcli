@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanAdScheduleFixedRangeUpdateV10Request, QianchuanAdScheduleFixedRangeUpdateV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest {
+  qianchuanAdScheduleFixedRangeUpdateV10Request?: QianchuanAdScheduleFixedRangeUpdateV10Request;
+}
 
 export class QianchuanAdScheduleFixedRangeUpdateV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanAdScheduleFixedRangeUpdateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanAdScheduleFixedRangeUpdatePost(qianchuanAdScheduleFixedRangeUpdateV10Request: QianchuanAdScheduleFixedRangeUpdateV10Request): Promise<QianchuanAdScheduleFixedRangeUpdateV10Response> {
-    const response = await this.openApiV10QianchuanAdScheduleFixedRangeUpdatePostWithHttpInfo(qianchuanAdScheduleFixedRangeUpdateV10Request);
+  async openApiV10QianchuanAdScheduleFixedRangeUpdatePost(request: OpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest): Promise<QianchuanAdScheduleFixedRangeUpdateV10Response> {
+    const response = await this.openApiV10QianchuanAdScheduleFixedRangeUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanAdScheduleFixedRangeUpdatePostWithHttpInfo(qianchuanAdScheduleFixedRangeUpdateV10Request: QianchuanAdScheduleFixedRangeUpdateV10Request): Promise<ApiResponse<QianchuanAdScheduleFixedRangeUpdateV10Response>> {
+  async openApiV10QianchuanAdScheduleFixedRangeUpdatePostWithHttpInfo(request: OpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest): Promise<ApiResponse<QianchuanAdScheduleFixedRangeUpdateV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanAdScheduleFixedRangeUpdateV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanAdScheduleFixedRangeUpdateV10Api {
       queryParams: [
 
       ],
-      body: qianchuanAdScheduleFixedRangeUpdateV10Request
+      body: request.qianchuanAdScheduleFixedRangeUpdateV10Request
     });
   }
 }

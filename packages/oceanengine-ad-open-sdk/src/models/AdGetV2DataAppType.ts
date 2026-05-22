@@ -1,10 +1,9 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const AdGetV2DataAppType = {
-  IOS: "APP_IOS",
-  ANDROID: "APP_ANDROID",
+  APP_IOS: "APP_IOS",
+  APP_ANDROID: "APP_ANDROID",
 } as const;
 
 export type AdGetV2DataAppType = typeof AdGetV2DataAppType[keyof typeof AdGetV2DataAppType];

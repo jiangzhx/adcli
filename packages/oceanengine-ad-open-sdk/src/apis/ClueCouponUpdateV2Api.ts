@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ClueCouponUpdateV2Request, ClueCouponUpdateV2Response } from "../models";
 
+
+export interface OpenApi2ClueCouponUpdatePostRequest {
+  clueCouponUpdateV2Request?: ClueCouponUpdateV2Request;
+}
 
 export class ClueCouponUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ClueCouponUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ClueCouponUpdatePost(clueCouponUpdateV2Request: ClueCouponUpdateV2Request): Promise<ClueCouponUpdateV2Response> {
-    const response = await this.openApi2ClueCouponUpdatePostWithHttpInfo(clueCouponUpdateV2Request);
+  async openApi2ClueCouponUpdatePost(request: OpenApi2ClueCouponUpdatePostRequest): Promise<ClueCouponUpdateV2Response> {
+    const response = await this.openApi2ClueCouponUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ClueCouponUpdatePostWithHttpInfo(clueCouponUpdateV2Request: ClueCouponUpdateV2Request): Promise<ApiResponse<ClueCouponUpdateV2Response>> {
+  async openApi2ClueCouponUpdatePostWithHttpInfo(request: OpenApi2ClueCouponUpdatePostRequest): Promise<ApiResponse<ClueCouponUpdateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ClueCouponUpdateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ClueCouponUpdateV2Api {
       queryParams: [
 
       ],
-      body: clueCouponUpdateV2Request
+      body: request.clueCouponUpdateV2Request
     });
   }
 }

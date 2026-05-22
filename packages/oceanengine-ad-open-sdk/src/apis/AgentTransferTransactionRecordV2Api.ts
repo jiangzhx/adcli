@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,15 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AgentTransferTransactionRecordV2Filtering, AgentTransferTransactionRecordV2Response } from "../models";
 
+
+export interface OpenApi2AgentTransferTransactionRecordGetRequest {
+  agentId: number;
+  startDate: string;
+  endDate: string;
+  filtering?: AgentTransferTransactionRecordV2Filtering;
+  page?: number;
+  pageSize?: number;
+}
 
 export class AgentTransferTransactionRecordV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,33 +27,33 @@ export class AgentTransferTransactionRecordV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AgentTransferTransactionRecordGet(agentId: number, startDate: string, endDate: string, filtering: AgentTransferTransactionRecordV2Filtering, page: number, pageSize: number): Promise<AgentTransferTransactionRecordV2Response> {
-    const response = await this.openApi2AgentTransferTransactionRecordGetWithHttpInfo(agentId, startDate, endDate, filtering, page, pageSize);
+  async openApi2AgentTransferTransactionRecordGet(request: OpenApi2AgentTransferTransactionRecordGetRequest): Promise<AgentTransferTransactionRecordV2Response> {
+    const response = await this.openApi2AgentTransferTransactionRecordGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AgentTransferTransactionRecordGetWithHttpInfo(agentId: number, startDate: string, endDate: string, filtering: AgentTransferTransactionRecordV2Filtering, page: number, pageSize: number): Promise<ApiResponse<AgentTransferTransactionRecordV2Response>> {
-    if (agentId == null) {
+  async openApi2AgentTransferTransactionRecordGetWithHttpInfo(request: OpenApi2AgentTransferTransactionRecordGetRequest): Promise<ApiResponse<AgentTransferTransactionRecordV2Response>> {
+    if (request.agentId == null) {
       throw new ApiException("Missing the required parameter 'agentId' when calling openApi2AgentTransferTransactionRecordGet");
     }
 
-    if (startDate == null) {
+    if (request.startDate == null) {
       throw new ApiException("Missing the required parameter 'startDate' when calling openApi2AgentTransferTransactionRecordGet");
     }
 
-    if (endDate == null) {
+    if (request.endDate == null) {
       throw new ApiException("Missing the required parameter 'endDate' when calling openApi2AgentTransferTransactionRecordGet");
     }
     return this.apiClient.requestWithHttpInfo<AgentTransferTransactionRecordV2Response>({
       method: "GET",
       path: "/open_api/2/agent/transfer/transaction_record/",
       queryParams: [
-        { name: "agent_id", value: agentId },
-        { name: "start_date", value: startDate },
-        { name: "end_date", value: endDate },
-        { name: "filtering", value: filtering },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize }
+        { name: "agent_id", value: request.agentId },
+        { name: "start_date", value: request.startDate },
+        { name: "end_date", value: request.endDate },
+        { name: "filtering", value: request.filtering },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize }
       ]
     });
   }

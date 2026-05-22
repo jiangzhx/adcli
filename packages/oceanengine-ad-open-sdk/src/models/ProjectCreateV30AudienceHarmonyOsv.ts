@@ -1,8 +1,9 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const ProjectCreateV30AudienceHarmonyOsv = {
+  Enum_0_0: "0.0",
+  Enum_5_0: "5.0",
   NONE: "NONE",
 } as const;
 

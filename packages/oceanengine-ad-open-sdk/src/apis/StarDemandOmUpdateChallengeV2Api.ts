@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarDemandOmUpdateChallengeV2Request, StarDemandOmUpdateChallengeV2Response } from "../models";
 
+
+export interface OpenApi2StarDemandOmUpdateChallengePostRequest {
+  starDemandOmUpdateChallengeV2Request?: StarDemandOmUpdateChallengeV2Request;
+}
 
 export class StarDemandOmUpdateChallengeV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarDemandOmUpdateChallengeV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarDemandOmUpdateChallengePost(starDemandOmUpdateChallengeV2Request: StarDemandOmUpdateChallengeV2Request): Promise<StarDemandOmUpdateChallengeV2Response> {
-    const response = await this.openApi2StarDemandOmUpdateChallengePostWithHttpInfo(starDemandOmUpdateChallengeV2Request);
+  async openApi2StarDemandOmUpdateChallengePost(request: OpenApi2StarDemandOmUpdateChallengePostRequest): Promise<StarDemandOmUpdateChallengeV2Response> {
+    const response = await this.openApi2StarDemandOmUpdateChallengePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarDemandOmUpdateChallengePostWithHttpInfo(starDemandOmUpdateChallengeV2Request: StarDemandOmUpdateChallengeV2Request): Promise<ApiResponse<StarDemandOmUpdateChallengeV2Response>> {
+  async openApi2StarDemandOmUpdateChallengePostWithHttpInfo(request: OpenApi2StarDemandOmUpdateChallengePostRequest): Promise<ApiResponse<StarDemandOmUpdateChallengeV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarDemandOmUpdateChallengeV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarDemandOmUpdateChallengeV2Api {
       queryParams: [
 
       ],
-      body: starDemandOmUpdateChallengeV2Request
+      body: request.starDemandOmUpdateChallengeV2Request
     });
   }
 }

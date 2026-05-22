@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { SharedWalletSharedRelationCreateV30AccountPlatformList, SharedWalletSharedRelationCreateV30AccountType, SharedWalletSharedRelationCreateV30RelationChangeMode, SharedWalletSharedRelationCreateV30RequestAdvRangeParameter } from "../models";

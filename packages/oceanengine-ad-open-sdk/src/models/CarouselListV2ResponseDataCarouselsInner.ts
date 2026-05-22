@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { CarouselListV2DataCarouselsSource, CarouselListV2ResponseDataCarouselsInnerAudio, CarouselListV2ResponseDataCarouselsInnerImagesInner } from "../models";

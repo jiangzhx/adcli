@@ -1,9 +1,8 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export interface EbpLevelGetV2ResponseDataSubTeamInner {
-  sub_team?: unknown[];
+  sub_team?: Record<string, unknown>[];
   team_id?: number;
   team_name?: string;
 }

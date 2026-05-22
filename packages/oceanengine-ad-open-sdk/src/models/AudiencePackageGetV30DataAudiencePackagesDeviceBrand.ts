@@ -1,8 +1,8 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const AudiencePackageGetV30DataAudiencePackagesDeviceBrand = {
+  Enum_360: "360",
   APPLE: "APPLE",
   CHINAMOBILE: "CHINAMOBILE",
   COOLPAD: "COOLPAD",

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsClueLiteContactGetV2Request, ToolsClueLiteContactGetV2Response } from "../models";
 
+
+export interface OpenApi2ToolsClueLiteContactGetPostRequest {
+  toolsClueLiteContactGetV2Request?: ToolsClueLiteContactGetV2Request;
+}
 
 export class ToolsClueLiteContactGetV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsClueLiteContactGetV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsClueLiteContactGetPost(toolsClueLiteContactGetV2Request: ToolsClueLiteContactGetV2Request): Promise<ToolsClueLiteContactGetV2Response> {
-    const response = await this.openApi2ToolsClueLiteContactGetPostWithHttpInfo(toolsClueLiteContactGetV2Request);
+  async openApi2ToolsClueLiteContactGetPost(request: OpenApi2ToolsClueLiteContactGetPostRequest): Promise<ToolsClueLiteContactGetV2Response> {
+    const response = await this.openApi2ToolsClueLiteContactGetPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsClueLiteContactGetPostWithHttpInfo(toolsClueLiteContactGetV2Request: ToolsClueLiteContactGetV2Request): Promise<ApiResponse<ToolsClueLiteContactGetV2Response>> {
+  async openApi2ToolsClueLiteContactGetPostWithHttpInfo(request: OpenApi2ToolsClueLiteContactGetPostRequest): Promise<ApiResponse<ToolsClueLiteContactGetV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsClueLiteContactGetV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsClueLiteContactGetV2Api {
       queryParams: [
 
       ],
-      body: toolsClueLiteContactGetV2Request
+      body: request.toolsClueLiteContactGetV2Request
     });
   }
 }

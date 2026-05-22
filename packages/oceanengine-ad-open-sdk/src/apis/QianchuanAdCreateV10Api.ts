@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanAdCreateV10Request, QianchuanAdCreateV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanAdCreatePostRequest {
+  qianchuanAdCreateV10Request?: QianchuanAdCreateV10Request;
+}
 
 export class QianchuanAdCreateV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanAdCreateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanAdCreatePost(qianchuanAdCreateV10Request: QianchuanAdCreateV10Request): Promise<QianchuanAdCreateV10Response> {
-    const response = await this.openApiV10QianchuanAdCreatePostWithHttpInfo(qianchuanAdCreateV10Request);
+  async openApiV10QianchuanAdCreatePost(request: OpenApiV10QianchuanAdCreatePostRequest): Promise<QianchuanAdCreateV10Response> {
+    const response = await this.openApiV10QianchuanAdCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanAdCreatePostWithHttpInfo(qianchuanAdCreateV10Request: QianchuanAdCreateV10Request): Promise<ApiResponse<QianchuanAdCreateV10Response>> {
+  async openApiV10QianchuanAdCreatePostWithHttpInfo(request: OpenApiV10QianchuanAdCreatePostRequest): Promise<ApiResponse<QianchuanAdCreateV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanAdCreateV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanAdCreateV10Api {
       queryParams: [
 
       ],
-      body: qianchuanAdCreateV10Request
+      body: request.qianchuanAdCreateV10Request
     });
   }
 }

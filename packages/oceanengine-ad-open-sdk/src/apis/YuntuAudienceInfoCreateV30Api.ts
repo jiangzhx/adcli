@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { YuntuAudienceInfoCreateV30Request, YuntuAudienceInfoCreateV30Response } from "../models";
 
+
+export interface OpenApiV30YuntuAudienceInfoCreatePostRequest {
+  yuntuAudienceInfoCreateV30Request?: YuntuAudienceInfoCreateV30Request;
+}
 
 export class YuntuAudienceInfoCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class YuntuAudienceInfoCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30YuntuAudienceInfoCreatePost(yuntuAudienceInfoCreateV30Request: YuntuAudienceInfoCreateV30Request): Promise<YuntuAudienceInfoCreateV30Response> {
-    const response = await this.openApiV30YuntuAudienceInfoCreatePostWithHttpInfo(yuntuAudienceInfoCreateV30Request);
+  async openApiV30YuntuAudienceInfoCreatePost(request: OpenApiV30YuntuAudienceInfoCreatePostRequest): Promise<YuntuAudienceInfoCreateV30Response> {
+    const response = await this.openApiV30YuntuAudienceInfoCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30YuntuAudienceInfoCreatePostWithHttpInfo(yuntuAudienceInfoCreateV30Request: YuntuAudienceInfoCreateV30Request): Promise<ApiResponse<YuntuAudienceInfoCreateV30Response>> {
+  async openApiV30YuntuAudienceInfoCreatePostWithHttpInfo(request: OpenApiV30YuntuAudienceInfoCreatePostRequest): Promise<ApiResponse<YuntuAudienceInfoCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<YuntuAudienceInfoCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class YuntuAudienceInfoCreateV30Api {
       queryParams: [
 
       ],
-      body: yuntuAudienceInfoCreateV30Request
+      body: request.yuntuAudienceInfoCreateV30Request
     });
   }
 }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DmpCustomAudiencePushV2V2Request, DmpCustomAudiencePushV2V2Response } from "../models";
 
+
+export interface OpenApi2DmpCustomAudiencePushV2PostRequest {
+  dmpCustomAudiencePushV2V2Request?: DmpCustomAudiencePushV2V2Request;
+}
 
 export class DmpCustomAudiencePushV2V2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class DmpCustomAudiencePushV2V2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2DmpCustomAudiencePushV2Post(dmpCustomAudiencePushV2V2Request: DmpCustomAudiencePushV2V2Request): Promise<DmpCustomAudiencePushV2V2Response> {
-    const response = await this.openApi2DmpCustomAudiencePushV2PostWithHttpInfo(dmpCustomAudiencePushV2V2Request);
+  async openApi2DmpCustomAudiencePushV2Post(request: OpenApi2DmpCustomAudiencePushV2PostRequest): Promise<DmpCustomAudiencePushV2V2Response> {
+    const response = await this.openApi2DmpCustomAudiencePushV2PostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2DmpCustomAudiencePushV2PostWithHttpInfo(dmpCustomAudiencePushV2V2Request: DmpCustomAudiencePushV2V2Request): Promise<ApiResponse<DmpCustomAudiencePushV2V2Response>> {
+  async openApi2DmpCustomAudiencePushV2PostWithHttpInfo(request: OpenApi2DmpCustomAudiencePushV2PostRequest): Promise<ApiResponse<DmpCustomAudiencePushV2V2Response>> {
 
     return this.apiClient.requestWithHttpInfo<DmpCustomAudiencePushV2V2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class DmpCustomAudiencePushV2V2Api {
       queryParams: [
 
       ],
-      body: dmpCustomAudiencePushV2V2Request
+      body: request.dmpCustomAudiencePushV2V2Request
     });
   }
 }

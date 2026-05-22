@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { Oauth2RenewTokenRequest, Oauth2RenewTokenResponse } from "../models";
 
+
+export interface OpenApiOauth2RenewTokenPostRequest {
+  oauth2RenewTokenRequest?: Oauth2RenewTokenRequest;
+}
 
 export class Oauth2RenewTokenApi {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class Oauth2RenewTokenApi {
     this.apiClient = apiClient;
   }
 
-  async openApiOauth2RenewTokenPost(oauth2RenewTokenRequest: Oauth2RenewTokenRequest): Promise<Oauth2RenewTokenResponse> {
-    const response = await this.openApiOauth2RenewTokenPostWithHttpInfo(oauth2RenewTokenRequest);
+  async openApiOauth2RenewTokenPost(request: OpenApiOauth2RenewTokenPostRequest): Promise<Oauth2RenewTokenResponse> {
+    const response = await this.openApiOauth2RenewTokenPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiOauth2RenewTokenPostWithHttpInfo(oauth2RenewTokenRequest: Oauth2RenewTokenRequest): Promise<ApiResponse<Oauth2RenewTokenResponse>> {
+  async openApiOauth2RenewTokenPostWithHttpInfo(request: OpenApiOauth2RenewTokenPostRequest): Promise<ApiResponse<Oauth2RenewTokenResponse>> {
 
     return this.apiClient.requestWithHttpInfo<Oauth2RenewTokenResponse>({
       method: "POST",
@@ -32,7 +35,7 @@ export class Oauth2RenewTokenApi {
       queryParams: [
 
       ],
-      body: oauth2RenewTokenRequest
+      body: request.oauth2RenewTokenRequest
     });
   }
 }

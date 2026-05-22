@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ClueFormCreateV2EnableLayer, ClueFormCreateV2RequestElementsInner, ClueFormCreateV2RequestExtendInfo, ClueFormCreateV2ValidateType } from "../models";

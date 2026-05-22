@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsRtaStatusUpdateV2Request, ToolsRtaStatusUpdateV2Response } from "../models";
 
+
+export interface OpenApi2ToolsRtaStatusUpdatePostRequest {
+  toolsRtaStatusUpdateV2Request?: ToolsRtaStatusUpdateV2Request;
+}
 
 export class ToolsRtaStatusUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsRtaStatusUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsRtaStatusUpdatePost(toolsRtaStatusUpdateV2Request: ToolsRtaStatusUpdateV2Request): Promise<ToolsRtaStatusUpdateV2Response> {
-    const response = await this.openApi2ToolsRtaStatusUpdatePostWithHttpInfo(toolsRtaStatusUpdateV2Request);
+  async openApi2ToolsRtaStatusUpdatePost(request: OpenApi2ToolsRtaStatusUpdatePostRequest): Promise<ToolsRtaStatusUpdateV2Response> {
+    const response = await this.openApi2ToolsRtaStatusUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsRtaStatusUpdatePostWithHttpInfo(toolsRtaStatusUpdateV2Request: ToolsRtaStatusUpdateV2Request): Promise<ApiResponse<ToolsRtaStatusUpdateV2Response>> {
+  async openApi2ToolsRtaStatusUpdatePostWithHttpInfo(request: OpenApi2ToolsRtaStatusUpdatePostRequest): Promise<ApiResponse<ToolsRtaStatusUpdateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsRtaStatusUpdateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsRtaStatusUpdateV2Api {
       queryParams: [
 
       ],
-      body: toolsRtaStatusUpdateV2Request
+      body: request.toolsRtaStatusUpdateV2Request
     });
   }
 }

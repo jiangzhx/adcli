@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanUniPromotionListV10DataAdListAdInfoAdlabScene, QianchuanUniPromotionListV10DataAdListAdInfoBudgetMode, QianchuanUniPromotionListV10DataAdListAdInfoDeepExternalAction, QianchuanUniPromotionListV10DataAdListAdInfoMarketingGoal, QianchuanUniPromotionListV10DataAdListAdInfoMarketingServicesMode, QianchuanUniPromotionListV10DataAdListAdInfoOptStatus, QianchuanUniPromotionListV10DataAdListAdInfoSmartBidType, QianchuanUniPromotionListV10DataAdListAdInfoStatus, QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfoCompensateInfo } from "../models";

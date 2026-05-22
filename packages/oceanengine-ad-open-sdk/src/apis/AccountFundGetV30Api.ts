@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,12 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AccountFundGetV30AccountType, AccountFundGetV30GrantTypeSplit, AccountFundGetV30Response } from "../models";
 
+
+export interface OpenApiV30AccountFundGetGetRequest {
+  accountIds: number[];
+  accountType: AccountFundGetV30AccountType;
+  grantTypeSplit?: AccountFundGetV30GrantTypeSplit;
+}
 
 export class AccountFundGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,26 +24,26 @@ export class AccountFundGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AccountFundGetGet(accountIds: number[], accountType: AccountFundGetV30AccountType, grantTypeSplit: AccountFundGetV30GrantTypeSplit): Promise<AccountFundGetV30Response> {
-    const response = await this.openApiV30AccountFundGetGetWithHttpInfo(accountIds, accountType, grantTypeSplit);
+  async openApiV30AccountFundGetGet(request: OpenApiV30AccountFundGetGetRequest): Promise<AccountFundGetV30Response> {
+    const response = await this.openApiV30AccountFundGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AccountFundGetGetWithHttpInfo(accountIds: number[], accountType: AccountFundGetV30AccountType, grantTypeSplit: AccountFundGetV30GrantTypeSplit): Promise<ApiResponse<AccountFundGetV30Response>> {
-    if (accountIds == null) {
+  async openApiV30AccountFundGetGetWithHttpInfo(request: OpenApiV30AccountFundGetGetRequest): Promise<ApiResponse<AccountFundGetV30Response>> {
+    if (request.accountIds == null) {
       throw new ApiException("Missing the required parameter 'accountIds' when calling openApiV30AccountFundGetGet");
     }
 
-    if (accountType == null) {
+    if (request.accountType == null) {
       throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30AccountFundGetGet");
     }
     return this.apiClient.requestWithHttpInfo<AccountFundGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/account/fund/get/",
       queryParams: [
-        { name: "account_type", value: accountType },
-        { name: "grant_type_split", value: grantTypeSplit },
-        { name: "account_ids", value: accountIds, collectionFormat: "csv" }
+        { name: "account_ids", value: request.accountIds, collectionFormat: "csv" },
+        { name: "account_type", value: request.accountType },
+        { name: "grant_type_split", value: request.grantTypeSplit }
       ]
     });
   }

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoAdSyncConfContentMarketing, StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoAdSyncConfDouPlus, StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoAdSyncConfEcomShop, StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoAdSyncConfLocalPromotion, StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoAdSyncConfOceanEngine, StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoAdSyncConfQianchuan } from "../models";

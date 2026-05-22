@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,13 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanToolsSmartBoostAdBoostVersionGetV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest {
+  advertiserId: number;
+  adId: number;
+  cursor?: number;
+  count?: number;
+}
 
 export class QianchuanToolsSmartBoostAdBoostVersionGetV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,27 +25,27 @@ export class QianchuanToolsSmartBoostAdBoostVersionGetV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGet(advertiserId: number, adId: number, cursor: number, count: number): Promise<QianchuanToolsSmartBoostAdBoostVersionGetV10Response> {
-    const response = await this.openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetWithHttpInfo(advertiserId, adId, cursor, count);
+  async openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGet(request: OpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest): Promise<QianchuanToolsSmartBoostAdBoostVersionGetV10Response> {
+    const response = await this.openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetWithHttpInfo(advertiserId: number, adId: number, cursor: number, count: number): Promise<ApiResponse<QianchuanToolsSmartBoostAdBoostVersionGetV10Response>> {
-    if (advertiserId == null) {
+  async openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetWithHttpInfo(request: OpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest): Promise<ApiResponse<QianchuanToolsSmartBoostAdBoostVersionGetV10Response>> {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGet");
     }
 
-    if (adId == null) {
+    if (request.adId == null) {
       throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGet");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanToolsSmartBoostAdBoostVersionGetV10Response>({
       method: "GET",
       path: "/open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/version/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "ad_id", value: adId },
-        { name: "cursor", value: cursor },
-        { name: "count", value: count }
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "ad_id", value: request.adId },
+        { name: "cursor", value: request.cursor },
+        { name: "count", value: request.count }
       ]
     });
   }

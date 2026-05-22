@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { CreativeProceduralCreativeCreateV2RequestCreativeAbstractMaterialsInner, CreativeProceduralCreativeCreateV2RequestCreativeComponentMaterialsInner, CreativeProceduralCreativeCreateV2RequestCreativeDecorationMaterial, CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInner, CreativeProceduralCreativeCreateV2RequestCreativeSubTitleMaterial, CreativeProceduralCreativeCreateV2RequestCreativeTitleMaterialsInner, CreativeProceduralCreativeCreateV2RequestCreativeVideoMaterialsInner } from "../models";

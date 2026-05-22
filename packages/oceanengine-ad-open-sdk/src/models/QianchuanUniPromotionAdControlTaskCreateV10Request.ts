@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanUniPromotionAdControlTaskCreateV10DeepExternalAction, QianchuanUniPromotionAdControlTaskCreateV10ExternalAction, QianchuanUniPromotionAdControlTaskCreateV10MaterialType, QianchuanUniPromotionAdControlTaskCreateV10RequestAudience, QianchuanUniPromotionAdControlTaskCreateV10Scene, QianchuanUniPromotionAdControlTaskCreateV10SmartBidType } from "../models";

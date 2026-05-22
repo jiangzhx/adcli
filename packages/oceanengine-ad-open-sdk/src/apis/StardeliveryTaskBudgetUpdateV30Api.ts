@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StardeliveryTaskBudgetUpdateV30Request, StardeliveryTaskBudgetUpdateV30Response } from "../models";
 
+
+export interface OpenApiV30StardeliveryTaskBudgetUpdatePostRequest {
+  stardeliveryTaskBudgetUpdateV30Request?: StardeliveryTaskBudgetUpdateV30Request;
+}
 
 export class StardeliveryTaskBudgetUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StardeliveryTaskBudgetUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30StardeliveryTaskBudgetUpdatePost(stardeliveryTaskBudgetUpdateV30Request: StardeliveryTaskBudgetUpdateV30Request): Promise<StardeliveryTaskBudgetUpdateV30Response> {
-    const response = await this.openApiV30StardeliveryTaskBudgetUpdatePostWithHttpInfo(stardeliveryTaskBudgetUpdateV30Request);
+  async openApiV30StardeliveryTaskBudgetUpdatePost(request: OpenApiV30StardeliveryTaskBudgetUpdatePostRequest): Promise<StardeliveryTaskBudgetUpdateV30Response> {
+    const response = await this.openApiV30StardeliveryTaskBudgetUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30StardeliveryTaskBudgetUpdatePostWithHttpInfo(stardeliveryTaskBudgetUpdateV30Request: StardeliveryTaskBudgetUpdateV30Request): Promise<ApiResponse<StardeliveryTaskBudgetUpdateV30Response>> {
+  async openApiV30StardeliveryTaskBudgetUpdatePostWithHttpInfo(request: OpenApiV30StardeliveryTaskBudgetUpdatePostRequest): Promise<ApiResponse<StardeliveryTaskBudgetUpdateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskBudgetUpdateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StardeliveryTaskBudgetUpdateV30Api {
       queryParams: [
 
       ],
-      body: stardeliveryTaskBudgetUpdateV30Request
+      body: request.stardeliveryTaskBudgetUpdateV30Request
     });
   }
 }

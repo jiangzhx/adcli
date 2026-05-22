@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ReportAgentGetV2V2DataListAccountSource, ReportAgentGetV2V2DataListAccountStatus, ReportAgentGetV2V2DataListCustomerType } from "../models";

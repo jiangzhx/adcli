@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandCampaignGetV30DataCampaignsCampaignCategory, BrandCampaignGetV30DataCampaignsCampaignStatus, BrandCampaignGetV30DataCampaignsContractType, BrandCampaignGetV30DataCampaignsMarketingPurpose, BrandCampaignGetV30ResponseDataCampaignsInnerAuthenticationInfo } from "../models";

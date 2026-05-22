@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { NativeAnchorCreateV30RequestAnchorInfoAppEcommerceAnchorAppIcon, NativeAnchorCreateV30RequestAnchorInfoAppEcommerceAnchorOfficialActiBannerImage, NativeAnchorCreateV30RequestAnchorInfoAppEcommerceAnchorOrangeSiteInfo, NativeAnchorCreateV30RequestAnchorInfoAppEcommerceAnchorProductImage, NativeAnchorCreateV30RequestAnchorInfoAppEcommerceAnchorThirdSiteInfo } from "../models";

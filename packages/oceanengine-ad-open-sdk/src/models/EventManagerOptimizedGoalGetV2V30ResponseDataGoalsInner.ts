@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { EventManagerOptimizedGoalGetV2V30DataGoalsAssetTypes, EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction, EventManagerOptimizedGoalGetV2V30DataGoalsValueType, EventManagerOptimizedGoalGetV2V30ResponseDataGoalsInnerDeepGoalsInner } from "../models";

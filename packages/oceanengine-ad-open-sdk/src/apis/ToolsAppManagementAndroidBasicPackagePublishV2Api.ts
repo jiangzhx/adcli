@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAppManagementAndroidBasicPackagePublishV2Request, ToolsAppManagementAndroidBasicPackagePublishV2Response } from "../models";
 
+
+export interface OpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest {
+  toolsAppManagementAndroidBasicPackagePublishV2Request?: ToolsAppManagementAndroidBasicPackagePublishV2Request;
+}
 
 export class ToolsAppManagementAndroidBasicPackagePublishV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsAppManagementAndroidBasicPackagePublishV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsAppManagementAndroidBasicPackagePublishPost(toolsAppManagementAndroidBasicPackagePublishV2Request: ToolsAppManagementAndroidBasicPackagePublishV2Request): Promise<ToolsAppManagementAndroidBasicPackagePublishV2Response> {
-    const response = await this.openApi2ToolsAppManagementAndroidBasicPackagePublishPostWithHttpInfo(toolsAppManagementAndroidBasicPackagePublishV2Request);
+  async openApi2ToolsAppManagementAndroidBasicPackagePublishPost(request: OpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest): Promise<ToolsAppManagementAndroidBasicPackagePublishV2Response> {
+    const response = await this.openApi2ToolsAppManagementAndroidBasicPackagePublishPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsAppManagementAndroidBasicPackagePublishPostWithHttpInfo(toolsAppManagementAndroidBasicPackagePublishV2Request: ToolsAppManagementAndroidBasicPackagePublishV2Request): Promise<ApiResponse<ToolsAppManagementAndroidBasicPackagePublishV2Response>> {
+  async openApi2ToolsAppManagementAndroidBasicPackagePublishPostWithHttpInfo(request: OpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest): Promise<ApiResponse<ToolsAppManagementAndroidBasicPackagePublishV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementAndroidBasicPackagePublishV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsAppManagementAndroidBasicPackagePublishV2Api {
       queryParams: [
 
       ],
-      body: toolsAppManagementAndroidBasicPackagePublishV2Request
+      body: request.toolsAppManagementAndroidBasicPackagePublishV2Request
     });
   }
 }

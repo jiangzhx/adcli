@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsMicroAppListV30DataListAccountType, ToolsMicroAppListV30DataListAuditStatus, ToolsMicroAppListV30DataListMaxPaymentTierRange, ToolsMicroAppListV30DataListMaxRechargeTier, ToolsMicroAppListV30DataListMembershipType, ToolsMicroAppListV30DataListMidPaymentTierRange, ToolsMicroAppListV30DataListMinPaymentTierRange, ToolsMicroAppListV30DataListMinRechargeTier, ToolsMicroAppListV30DataListPaymentForm, ToolsMicroAppListV30DataListRecommendedRechargeTier, ToolsMicroAppListV30DataListRevenueModel } from "../models";

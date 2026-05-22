@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { AgentAdvCostReportListQueryV2FilteringAppName, AgentAdvCostReportListQueryV2FilteringCostSource, AgentAdvCostReportListQueryV2FilteringEcommerceType, AgentAdvCostReportListQueryV2FilteringPricingCategory, AgentAdvCostReportListQueryV2FilteringPromotionType, AgentAdvCostReportListQueryV2FilteringSpuLabelName } from "../models";

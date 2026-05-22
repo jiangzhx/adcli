@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandCampaignRemoveV30Request, BrandCampaignRemoveV30Response } from "../models";
 
+
+export interface OpenApiV30BrandCampaignRemovePostRequest {
+  brandCampaignRemoveV30Request?: BrandCampaignRemoveV30Request;
+}
 
 export class BrandCampaignRemoveV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class BrandCampaignRemoveV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandCampaignRemovePost(brandCampaignRemoveV30Request: BrandCampaignRemoveV30Request): Promise<BrandCampaignRemoveV30Response> {
-    const response = await this.openApiV30BrandCampaignRemovePostWithHttpInfo(brandCampaignRemoveV30Request);
+  async openApiV30BrandCampaignRemovePost(request: OpenApiV30BrandCampaignRemovePostRequest): Promise<BrandCampaignRemoveV30Response> {
+    const response = await this.openApiV30BrandCampaignRemovePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandCampaignRemovePostWithHttpInfo(brandCampaignRemoveV30Request: BrandCampaignRemoveV30Request): Promise<ApiResponse<BrandCampaignRemoveV30Response>> {
+  async openApiV30BrandCampaignRemovePostWithHttpInfo(request: OpenApiV30BrandCampaignRemovePostRequest): Promise<ApiResponse<BrandCampaignRemoveV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<BrandCampaignRemoveV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class BrandCampaignRemoveV30Api {
       queryParams: [
 
       ],
-      body: brandCampaignRemoveV30Request
+      body: request.brandCampaignRemoveV30Request
     });
   }
 }

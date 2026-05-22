@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarChallengeExpandRangeV2Request, StarChallengeExpandRangeV2Response } from "../models";
 
+
+export interface OpenApi2StarChallengeExpandRangePostRequest {
+  starChallengeExpandRangeV2Request?: StarChallengeExpandRangeV2Request;
+}
 
 export class StarChallengeExpandRangeV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarChallengeExpandRangeV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarChallengeExpandRangePost(starChallengeExpandRangeV2Request: StarChallengeExpandRangeV2Request): Promise<StarChallengeExpandRangeV2Response> {
-    const response = await this.openApi2StarChallengeExpandRangePostWithHttpInfo(starChallengeExpandRangeV2Request);
+  async openApi2StarChallengeExpandRangePost(request: OpenApi2StarChallengeExpandRangePostRequest): Promise<StarChallengeExpandRangeV2Response> {
+    const response = await this.openApi2StarChallengeExpandRangePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarChallengeExpandRangePostWithHttpInfo(starChallengeExpandRangeV2Request: StarChallengeExpandRangeV2Request): Promise<ApiResponse<StarChallengeExpandRangeV2Response>> {
+  async openApi2StarChallengeExpandRangePostWithHttpInfo(request: OpenApi2StarChallengeExpandRangePostRequest): Promise<ApiResponse<StarChallengeExpandRangeV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarChallengeExpandRangeV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarChallengeExpandRangeV2Api {
       queryParams: [
 
       ],
-      body: starChallengeExpandRangeV2Request
+      body: request.starChallengeExpandRangeV2Request
     });
   }
 }

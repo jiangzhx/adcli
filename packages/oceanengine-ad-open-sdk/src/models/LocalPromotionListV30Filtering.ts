@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { LocalPromotionListV30FilteringAdType, LocalPromotionListV30FilteringBidType, LocalPromotionListV30FilteringBudgetMode, LocalPromotionListV30FilteringLearningPhase, LocalPromotionListV30FilteringLocalDeliveryScene, LocalPromotionListV30FilteringMarketingGoal, LocalPromotionListV30FilteringPromotionStatusFirst, LocalPromotionListV30FilteringPromotionStatusSecond, LocalPromotionListV30FilteringRejectReasonType } from "../models";

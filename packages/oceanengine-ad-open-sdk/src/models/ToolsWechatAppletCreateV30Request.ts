@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsWechatAppletCreateV30MaxPaymentTierRange, ToolsWechatAppletCreateV30MaxRechargeTier, ToolsWechatAppletCreateV30MembershipType, ToolsWechatAppletCreateV30MidPaymentTierRange, ToolsWechatAppletCreateV30MinPaymentTierRange, ToolsWechatAppletCreateV30MinRechargeTier, ToolsWechatAppletCreateV30PaymentForm, ToolsWechatAppletCreateV30RecommendedRechargeTier, ToolsWechatAppletCreateV30RevenueModel } from "../models";

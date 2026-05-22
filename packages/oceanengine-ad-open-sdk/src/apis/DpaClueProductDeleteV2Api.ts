@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DpaClueProductDeleteV2Request, DpaClueProductDeleteV2Response } from "../models";
 
+
+export interface OpenApi2DpaClueProductDeletePostRequest {
+  dpaClueProductDeleteV2Request?: DpaClueProductDeleteV2Request;
+}
 
 export class DpaClueProductDeleteV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class DpaClueProductDeleteV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2DpaClueProductDeletePost(dpaClueProductDeleteV2Request: DpaClueProductDeleteV2Request): Promise<DpaClueProductDeleteV2Response> {
-    const response = await this.openApi2DpaClueProductDeletePostWithHttpInfo(dpaClueProductDeleteV2Request);
+  async openApi2DpaClueProductDeletePost(request: OpenApi2DpaClueProductDeletePostRequest): Promise<DpaClueProductDeleteV2Response> {
+    const response = await this.openApi2DpaClueProductDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2DpaClueProductDeletePostWithHttpInfo(dpaClueProductDeleteV2Request: DpaClueProductDeleteV2Request): Promise<ApiResponse<DpaClueProductDeleteV2Response>> {
+  async openApi2DpaClueProductDeletePostWithHttpInfo(request: OpenApi2DpaClueProductDeletePostRequest): Promise<ApiResponse<DpaClueProductDeleteV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<DpaClueProductDeleteV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class DpaClueProductDeleteV2Api {
       queryParams: [
 
       ],
-      body: dpaClueProductDeleteV2Request
+      body: request.dpaClueProductDeleteV2Request
     });
   }
 }

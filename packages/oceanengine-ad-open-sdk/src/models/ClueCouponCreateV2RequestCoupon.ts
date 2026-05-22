@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ClueCouponCreateV2CouponNeedPhone, ClueCouponCreateV2CouponNeedSmsVerify, ClueCouponCreateV2RequestCouponGlobalLimit, ClueCouponCreateV2RequestCouponResourceListInner, ClueCouponCreateV2RequestCouponUserLimit } from "../models";

@@ -26,7 +26,7 @@ describe("generated APIs", () => {
       }),
     );
 
-    await api.openApiOauth2AccessTokenPost({ auth_code: "code", secret: "secret" });
+    await api.openApiOauth2AccessTokenPost({ oauth2AccessTokenRequest: { auth_code: "code", secret: "secret" } });
 
     expect(requests[0].method).toBe("POST");
     expect(new URL(requests[0].url).pathname).toBe("/open_api/oauth2/access_token/");
@@ -44,8 +44,11 @@ describe("generated APIs", () => {
       }),
     );
 
-    await expect(api.openApiV30ReportCustomConfigGetGet(undefined as never, [])).rejects.toBeInstanceOf(Error);
-    await api.openApiV30ReportCustomConfigGetGet(123, [ReportCustomConfigGetV30DataTopics.BASIC_DATA]);
+    await expect(api.openApiV30ReportCustomConfigGetGet({ dataTopics: [] } as never)).rejects.toBeInstanceOf(Error);
+    await api.openApiV30ReportCustomConfigGetGet({
+      advertiserId: 123,
+      dataTopics: [ReportCustomConfigGetV30DataTopics.BASIC_DATA],
+    });
 
     const url = new URL(requests[0].url);
     expect(requests[0].method).toBe("GET");
@@ -65,7 +68,7 @@ describe("generated APIs", () => {
       }),
     );
 
-    await api.openApi2AdvertiserFundGetGet(123, "ON");
+    await api.openApi2AdvertiserFundGetGet({ advertiserId: 123, grantTypeSplit: "ON" });
 
     const url = new URL(requests[0].url);
     expect(url.pathname).toBe("/open_api/2/advertiser/fund/get/");

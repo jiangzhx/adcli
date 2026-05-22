@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosImageMode, StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarMaterialPurchaseMethod, StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoDeliveryStatus, StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoReviewResult, StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoStatus, StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosInnerMaterialProperties } from "../models";

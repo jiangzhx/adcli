@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAdRegionUpdateV10District, QianchuanAdRegionUpdateV10ElectricFenceRegion, QianchuanAdRegionUpdateV10ExcludeLimitedRegion, QianchuanAdRegionUpdateV10LocationType } from "../models";

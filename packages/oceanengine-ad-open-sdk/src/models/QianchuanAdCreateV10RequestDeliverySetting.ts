@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAdCreateV10DeliverySettingBudgetMode, QianchuanAdCreateV10DeliverySettingDeepBidType, QianchuanAdCreateV10DeliverySettingDeepExternalAction, QianchuanAdCreateV10DeliverySettingExternalAction, QianchuanAdCreateV10DeliverySettingLiveScheduleType, QianchuanAdCreateV10DeliverySettingQcpxMode, QianchuanAdCreateV10DeliverySettingSmartBidType, QianchuanAdCreateV10DeliverySettingVideoScheduleType } from "../models";

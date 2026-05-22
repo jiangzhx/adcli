@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanAwemeOrderDetailGetV10DataMarketingGoal, QianchuanAwemeOrderDetailGetV10DataStatus, QianchuanAwemeOrderDetailGetV10ResponseDataAddAmountInfo, QianchuanAwemeOrderDetailGetV10ResponseDataAudience, QianchuanAwemeOrderDetailGetV10ResponseDataAuditRecord, QianchuanAwemeOrderDetailGetV10ResponseDataAwemeInfo, QianchuanAwemeOrderDetailGetV10ResponseDataCouponInfo, QianchuanAwemeOrderDetailGetV10ResponseDataCouponInfosInner, QianchuanAwemeOrderDetailGetV10ResponseDataDeliverySetting, QianchuanAwemeOrderDetailGetV10ResponseDataProductInfo, QianchuanAwemeOrderDetailGetV10ResponseDataRoomInfo, QianchuanAwemeOrderDetailGetV10ResponseDataVideoInfo } from "../models";

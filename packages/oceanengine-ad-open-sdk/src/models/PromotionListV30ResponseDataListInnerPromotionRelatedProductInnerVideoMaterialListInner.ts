@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { PromotionListV30DataListPromotionRelatedProductVideoMaterialListImageMode, PromotionListV30DataListPromotionRelatedProductVideoMaterialListIsCarryMaterial, PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialOptStatus, PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialStatus, PromotionListV30DataListPromotionRelatedProductVideoMaterialListVideoHpVisibility } from "../models";

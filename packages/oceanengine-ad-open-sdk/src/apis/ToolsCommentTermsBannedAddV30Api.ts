@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsCommentTermsBannedAddV30Request, ToolsCommentTermsBannedAddV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsCommentTermsBannedAddPostRequest {
+  toolsCommentTermsBannedAddV30Request?: ToolsCommentTermsBannedAddV30Request;
+}
 
 export class ToolsCommentTermsBannedAddV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsCommentTermsBannedAddV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsCommentTermsBannedAddPost(toolsCommentTermsBannedAddV30Request: ToolsCommentTermsBannedAddV30Request): Promise<ToolsCommentTermsBannedAddV30Response> {
-    const response = await this.openApiV30ToolsCommentTermsBannedAddPostWithHttpInfo(toolsCommentTermsBannedAddV30Request);
+  async openApiV30ToolsCommentTermsBannedAddPost(request: OpenApiV30ToolsCommentTermsBannedAddPostRequest): Promise<ToolsCommentTermsBannedAddV30Response> {
+    const response = await this.openApiV30ToolsCommentTermsBannedAddPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsCommentTermsBannedAddPostWithHttpInfo(toolsCommentTermsBannedAddV30Request: ToolsCommentTermsBannedAddV30Request): Promise<ApiResponse<ToolsCommentTermsBannedAddV30Response>> {
+  async openApiV30ToolsCommentTermsBannedAddPostWithHttpInfo(request: OpenApiV30ToolsCommentTermsBannedAddPostRequest): Promise<ApiResponse<ToolsCommentTermsBannedAddV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsCommentTermsBannedAddV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsCommentTermsBannedAddV30Api {
       queryParams: [
 
       ],
-      body: toolsCommentTermsBannedAddV30Request
+      body: request.toolsCommentTermsBannedAddV30Request
     });
   }
 }

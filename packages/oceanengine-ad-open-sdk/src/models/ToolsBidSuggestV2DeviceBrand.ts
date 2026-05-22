@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const ToolsBidSuggestV2DeviceBrand = {
@@ -27,6 +26,7 @@ export const ToolsBidSuggestV2DeviceBrand = {
   OPPO: "OPPO",
   HONOR: "HONOR",
   MOTO: "MOTO",
+  Enum_360: "360",
   LETV: "LETV",
   SMARTISAN: "SMARTISAN",
   HTC: "HTC",

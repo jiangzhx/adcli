@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { QianchuanReportUniPromotionConfigGetV10DataCustomConfigDatasDataTopic, QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerDimensionsInner, QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerMetricsInner, QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerQueryLimit } from "../models";

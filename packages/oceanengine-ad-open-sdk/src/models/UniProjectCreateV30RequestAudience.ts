@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { UniProjectCreateV30AudienceConvertedTimeDuration, UniProjectCreateV30AudienceDistrict, UniProjectCreateV30AudienceGender, UniProjectCreateV30AudienceHideIfConverted, UniProjectCreateV30AudienceLocationType, UniProjectCreateV30AudiencePlatform, UniProjectCreateV30RequestAudienceGeolocationInner } from "../models";

@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarChallengeSyncItemToAdV2Request, StarChallengeSyncItemToAdV2Response } from "../models";
 
+
+export interface OpenApi2StarChallengeSyncItemToAdPostRequest {
+  starChallengeSyncItemToAdV2Request?: StarChallengeSyncItemToAdV2Request;
+}
 
 export class StarChallengeSyncItemToAdV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class StarChallengeSyncItemToAdV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarChallengeSyncItemToAdPost(starChallengeSyncItemToAdV2Request: StarChallengeSyncItemToAdV2Request): Promise<StarChallengeSyncItemToAdV2Response> {
-    const response = await this.openApi2StarChallengeSyncItemToAdPostWithHttpInfo(starChallengeSyncItemToAdV2Request);
+  async openApi2StarChallengeSyncItemToAdPost(request: OpenApi2StarChallengeSyncItemToAdPostRequest): Promise<StarChallengeSyncItemToAdV2Response> {
+    const response = await this.openApi2StarChallengeSyncItemToAdPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarChallengeSyncItemToAdPostWithHttpInfo(starChallengeSyncItemToAdV2Request: StarChallengeSyncItemToAdV2Request): Promise<ApiResponse<StarChallengeSyncItemToAdV2Response>> {
+  async openApi2StarChallengeSyncItemToAdPostWithHttpInfo(request: OpenApi2StarChallengeSyncItemToAdPostRequest): Promise<ApiResponse<StarChallengeSyncItemToAdV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<StarChallengeSyncItemToAdV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class StarChallengeSyncItemToAdV2Api {
       queryParams: [
 
       ],
-      body: starChallengeSyncItemToAdV2Request
+      body: request.starChallengeSyncItemToAdV2Request
     });
   }
 }

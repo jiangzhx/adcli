@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CreateProjectInvoiceV2Request, CreateProjectInvoiceV2Response } from "../models";
 
+
+export interface OpenApi2CreateProjectInvoicePostRequest {
+  createProjectInvoiceV2Request?: CreateProjectInvoiceV2Request;
+}
 
 export class CreateProjectInvoiceV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class CreateProjectInvoiceV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2CreateProjectInvoicePost(createProjectInvoiceV2Request: CreateProjectInvoiceV2Request): Promise<CreateProjectInvoiceV2Response> {
-    const response = await this.openApi2CreateProjectInvoicePostWithHttpInfo(createProjectInvoiceV2Request);
+  async openApi2CreateProjectInvoicePost(request: OpenApi2CreateProjectInvoicePostRequest): Promise<CreateProjectInvoiceV2Response> {
+    const response = await this.openApi2CreateProjectInvoicePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2CreateProjectInvoicePostWithHttpInfo(createProjectInvoiceV2Request: CreateProjectInvoiceV2Request): Promise<ApiResponse<CreateProjectInvoiceV2Response>> {
+  async openApi2CreateProjectInvoicePostWithHttpInfo(request: OpenApi2CreateProjectInvoicePostRequest): Promise<ApiResponse<CreateProjectInvoiceV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<CreateProjectInvoiceV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class CreateProjectInvoiceV2Api {
       queryParams: [
 
       ],
-      body: createProjectInvoiceV2Request
+      body: request.createProjectInvoiceV2Request
     });
   }
 }

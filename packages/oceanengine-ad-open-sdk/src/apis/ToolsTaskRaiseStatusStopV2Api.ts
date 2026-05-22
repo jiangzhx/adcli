@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsTaskRaiseStatusStopV2Request, ToolsTaskRaiseStatusStopV2Response } from "../models";
 
+
+export interface OpenApi2ToolsTaskRaiseStatusStopPostRequest {
+  toolsTaskRaiseStatusStopV2Request?: ToolsTaskRaiseStatusStopV2Request;
+}
 
 export class ToolsTaskRaiseStatusStopV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsTaskRaiseStatusStopV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsTaskRaiseStatusStopPost(toolsTaskRaiseStatusStopV2Request: ToolsTaskRaiseStatusStopV2Request): Promise<ToolsTaskRaiseStatusStopV2Response> {
-    const response = await this.openApi2ToolsTaskRaiseStatusStopPostWithHttpInfo(toolsTaskRaiseStatusStopV2Request);
+  async openApi2ToolsTaskRaiseStatusStopPost(request: OpenApi2ToolsTaskRaiseStatusStopPostRequest): Promise<ToolsTaskRaiseStatusStopV2Response> {
+    const response = await this.openApi2ToolsTaskRaiseStatusStopPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsTaskRaiseStatusStopPostWithHttpInfo(toolsTaskRaiseStatusStopV2Request: ToolsTaskRaiseStatusStopV2Request): Promise<ApiResponse<ToolsTaskRaiseStatusStopV2Response>> {
+  async openApi2ToolsTaskRaiseStatusStopPostWithHttpInfo(request: OpenApi2ToolsTaskRaiseStatusStopPostRequest): Promise<ApiResponse<ToolsTaskRaiseStatusStopV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsTaskRaiseStatusStopV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsTaskRaiseStatusStopV2Api {
       queryParams: [
 
       ],
-      body: toolsTaskRaiseStatusStopV2Request
+      body: request.toolsTaskRaiseStatusStopV2Request
     });
   }
 }

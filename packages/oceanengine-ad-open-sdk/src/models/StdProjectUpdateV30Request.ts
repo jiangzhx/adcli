@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StdProjectUpdateV30AigcDynamicCreativeSwitch, StdProjectUpdateV30AudienceType, StdProjectUpdateV30AutoExtendTraffic, StdProjectUpdateV30DownloadMode, StdProjectUpdateV30IsCommentDisable, StdProjectUpdateV30RequestAudience, StdProjectUpdateV30RequestBrandInfo, StdProjectUpdateV30RequestInternalAdvertiserInfo, StdProjectUpdateV30RequestKeywordsInner, StdProjectUpdateV30RequestProjectMaterials, StdProjectUpdateV30RequestTrackUrlSetting, StdProjectUpdateV30ScheduleType, StdProjectUpdateV30SearchContinueDelivery } from "../models";

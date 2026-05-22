@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,19 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ReportCustomGetV30DataTopic, ReportCustomGetV30FiltersInner, ReportCustomGetV30OrderByInner, ReportCustomGetV30Response } from "../models";
 
+
+export interface OpenApiV30ReportCustomGetGetRequest {
+  dimensions: string[];
+  advertiserId: number;
+  metrics: string[];
+  filters: ReportCustomGetV30FiltersInner[];
+  startTime: string;
+  endTime: string;
+  orderBy: ReportCustomGetV30OrderByInner[];
+  page?: number;
+  pageSize?: number;
+  dataTopic?: ReportCustomGetV30DataTopic;
+}
 
 export class ReportCustomGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,53 +31,53 @@ export class ReportCustomGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ReportCustomGetGet(dimensions: string[], advertiserId: number, metrics: string[], filters: ReportCustomGetV30FiltersInner[], startTime: string, endTime: string, orderBy: ReportCustomGetV30OrderByInner[], page: number, pageSize: number, dataTopic: ReportCustomGetV30DataTopic): Promise<ReportCustomGetV30Response> {
-    const response = await this.openApiV30ReportCustomGetGetWithHttpInfo(dimensions, advertiserId, metrics, filters, startTime, endTime, orderBy, page, pageSize, dataTopic);
+  async openApiV30ReportCustomGetGet(request: OpenApiV30ReportCustomGetGetRequest): Promise<ReportCustomGetV30Response> {
+    const response = await this.openApiV30ReportCustomGetGetWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ReportCustomGetGetWithHttpInfo(dimensions: string[], advertiserId: number, metrics: string[], filters: ReportCustomGetV30FiltersInner[], startTime: string, endTime: string, orderBy: ReportCustomGetV30OrderByInner[], page: number, pageSize: number, dataTopic: ReportCustomGetV30DataTopic): Promise<ApiResponse<ReportCustomGetV30Response>> {
-    if (dimensions == null) {
+  async openApiV30ReportCustomGetGetWithHttpInfo(request: OpenApiV30ReportCustomGetGetRequest): Promise<ApiResponse<ReportCustomGetV30Response>> {
+    if (request.dimensions == null) {
       throw new ApiException("Missing the required parameter 'dimensions' when calling openApiV30ReportCustomGetGet");
     }
 
-    if (advertiserId == null) {
+    if (request.advertiserId == null) {
       throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportCustomGetGet");
     }
 
-    if (metrics == null) {
+    if (request.metrics == null) {
       throw new ApiException("Missing the required parameter 'metrics' when calling openApiV30ReportCustomGetGet");
     }
 
-    if (filters == null) {
+    if (request.filters == null) {
       throw new ApiException("Missing the required parameter 'filters' when calling openApiV30ReportCustomGetGet");
     }
 
-    if (startTime == null) {
+    if (request.startTime == null) {
       throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30ReportCustomGetGet");
     }
 
-    if (endTime == null) {
+    if (request.endTime == null) {
       throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30ReportCustomGetGet");
     }
 
-    if (orderBy == null) {
+    if (request.orderBy == null) {
       throw new ApiException("Missing the required parameter 'orderBy' when calling openApiV30ReportCustomGetGet");
     }
     return this.apiClient.requestWithHttpInfo<ReportCustomGetV30Response>({
       method: "GET",
       path: "/open_api/v3.0/report/custom/get/",
       queryParams: [
-        { name: "advertiser_id", value: advertiserId },
-        { name: "start_time", value: startTime },
-        { name: "end_time", value: endTime },
-        { name: "page", value: page },
-        { name: "page_size", value: pageSize },
-        { name: "data_topic", value: dataTopic },
-        { name: "dimensions", value: dimensions, collectionFormat: "csv" },
-        { name: "metrics", value: metrics, collectionFormat: "csv" },
-        { name: "filters", value: filters, collectionFormat: "multi" },
-        { name: "order_by", value: orderBy, collectionFormat: "multi" }
+        { name: "dimensions", value: request.dimensions, collectionFormat: "csv" },
+        { name: "advertiser_id", value: request.advertiserId },
+        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "filters", value: request.filters, collectionFormat: "csv" },
+        { name: "start_time", value: request.startTime },
+        { name: "end_time", value: request.endTime },
+        { name: "order_by", value: request.orderBy, collectionFormat: "csv" },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize },
+        { name: "data_topic", value: request.dataTopic }
       ]
     });
   }

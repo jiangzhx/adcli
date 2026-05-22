@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanAccountBudgetUpdateV10Request, QianchuanAccountBudgetUpdateV10Response } from "../models";
 
+
+export interface OpenApiV10QianchuanAccountBudgetUpdatePostRequest {
+  qianchuanAccountBudgetUpdateV10Request?: QianchuanAccountBudgetUpdateV10Request;
+}
 
 export class QianchuanAccountBudgetUpdateV10Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class QianchuanAccountBudgetUpdateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanAccountBudgetUpdatePost(qianchuanAccountBudgetUpdateV10Request: QianchuanAccountBudgetUpdateV10Request): Promise<QianchuanAccountBudgetUpdateV10Response> {
-    const response = await this.openApiV10QianchuanAccountBudgetUpdatePostWithHttpInfo(qianchuanAccountBudgetUpdateV10Request);
+  async openApiV10QianchuanAccountBudgetUpdatePost(request: OpenApiV10QianchuanAccountBudgetUpdatePostRequest): Promise<QianchuanAccountBudgetUpdateV10Response> {
+    const response = await this.openApiV10QianchuanAccountBudgetUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanAccountBudgetUpdatePostWithHttpInfo(qianchuanAccountBudgetUpdateV10Request: QianchuanAccountBudgetUpdateV10Request): Promise<ApiResponse<QianchuanAccountBudgetUpdateV10Response>> {
+  async openApiV10QianchuanAccountBudgetUpdatePostWithHttpInfo(request: OpenApiV10QianchuanAccountBudgetUpdatePostRequest): Promise<ApiResponse<QianchuanAccountBudgetUpdateV10Response>> {
 
     return this.apiClient.requestWithHttpInfo<QianchuanAccountBudgetUpdateV10Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class QianchuanAccountBudgetUpdateV10Api {
       queryParams: [
 
       ],
-      body: qianchuanAccountBudgetUpdateV10Request
+      body: request.qianchuanAccountBudgetUpdateV10Request
     });
   }
 }

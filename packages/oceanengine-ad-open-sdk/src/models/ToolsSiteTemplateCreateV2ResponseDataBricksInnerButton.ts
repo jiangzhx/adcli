@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsSiteTemplateCreateV2DataBricksButtonEventType, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonAppointEvent, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonDownloadEvent, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonLinkEvent, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonPhoneEvent } from "../models";

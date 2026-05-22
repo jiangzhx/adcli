@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { LocalFileUploadTaskCreateV30Request, LocalFileUploadTaskCreateV30Response } from "../models";
 
+
+export interface OpenApiV30LocalFileUploadTaskCreatePostRequest {
+  localFileUploadTaskCreateV30Request?: LocalFileUploadTaskCreateV30Request;
+}
 
 export class LocalFileUploadTaskCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class LocalFileUploadTaskCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30LocalFileUploadTaskCreatePost(localFileUploadTaskCreateV30Request: LocalFileUploadTaskCreateV30Request): Promise<LocalFileUploadTaskCreateV30Response> {
-    const response = await this.openApiV30LocalFileUploadTaskCreatePostWithHttpInfo(localFileUploadTaskCreateV30Request);
+  async openApiV30LocalFileUploadTaskCreatePost(request: OpenApiV30LocalFileUploadTaskCreatePostRequest): Promise<LocalFileUploadTaskCreateV30Response> {
+    const response = await this.openApiV30LocalFileUploadTaskCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30LocalFileUploadTaskCreatePostWithHttpInfo(localFileUploadTaskCreateV30Request: LocalFileUploadTaskCreateV30Request): Promise<ApiResponse<LocalFileUploadTaskCreateV30Response>> {
+  async openApiV30LocalFileUploadTaskCreatePostWithHttpInfo(request: OpenApiV30LocalFileUploadTaskCreatePostRequest): Promise<ApiResponse<LocalFileUploadTaskCreateV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<LocalFileUploadTaskCreateV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class LocalFileUploadTaskCreateV30Api {
       queryParams: [
 
       ],
-      body: localFileUploadTaskCreateV30Request
+      body: request.localFileUploadTaskCreateV30Request
     });
   }
 }

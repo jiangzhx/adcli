@@ -1,9 +1,8 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic = {
-
+  Enum_1: 1,
 } as const;
 
 export type QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic = typeof QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic[keyof typeof QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic];

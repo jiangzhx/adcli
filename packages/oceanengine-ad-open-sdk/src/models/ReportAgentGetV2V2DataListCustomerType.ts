@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 export const ReportAgentGetV2V2DataListCustomerType = {
@@ -8,10 +7,10 @@ export const ReportAgentGetV2V2DataListCustomerType = {
   LA: "LA",
   REGION: "REGION",
   DSP: "DSP",
-  I18N_ADV: "I18N_ADV",
+  I18_N_ADV: "I18N_ADV",
   VIRTUAL_CUS: "VIRTUAL_CUS",
   KA: "KA",
-  I18N_AGENT: "I18N_AGENT",
+  I18_N_AGENT: "I18N_AGENT",
   LOCAL: "LOCAL",
   VIRTUAL_SMB: "VIRTUAL_SMB",
   BRANCH: "BRANCH",

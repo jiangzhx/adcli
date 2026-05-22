@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsMicroAppUpdateV30MaxPaymentTierRange, ToolsMicroAppUpdateV30MaxRechargeTier, ToolsMicroAppUpdateV30MembershipType, ToolsMicroAppUpdateV30MidPaymentTierRange, ToolsMicroAppUpdateV30MinPaymentTierRange, ToolsMicroAppUpdateV30MinRechargeTier, ToolsMicroAppUpdateV30PaymentForm, ToolsMicroAppUpdateV30RecommendedRechargeTier, ToolsMicroAppUpdateV30RequestAppPageInner, ToolsMicroAppUpdateV30RevenueModel } from "../models";

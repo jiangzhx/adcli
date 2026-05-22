@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeAfterImage, BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeBeforeImage, BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeImage } from "../models";

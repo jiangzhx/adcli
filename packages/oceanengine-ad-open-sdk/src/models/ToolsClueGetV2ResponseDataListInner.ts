@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ToolsClueGetV2ResponseDataListInnerStore } from "../models";
@@ -30,7 +29,7 @@ export interface ToolsClueGetV2ResponseDataListInner {
   email?: string;
   ext_info?: string;
   external_url?: string;
-  extra_info?: unknown;
+  extra_info?: Record<string, unknown>;
   follow_state_name?: string;
   form_remark?: string;
   gender?: number;
@@ -46,7 +45,7 @@ export interface ToolsClueGetV2ResponseDataListInner {
   province_name?: string;
   qq?: string;
   remark?: string;
-  remark_dict?: unknown;
+  remark_dict?: Record<string, unknown>;
   req_id?: string;
   search_bid_word?: string;
   site_id?: string;

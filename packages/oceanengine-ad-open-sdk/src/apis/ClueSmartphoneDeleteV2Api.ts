@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ClueSmartphoneDeleteV2Request, ClueSmartphoneDeleteV2Response } from "../models";
 
+
+export interface OpenApi2ClueSmartphoneDeletePostRequest {
+  clueSmartphoneDeleteV2Request?: ClueSmartphoneDeleteV2Request;
+}
 
 export class ClueSmartphoneDeleteV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ClueSmartphoneDeleteV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ClueSmartphoneDeletePost(clueSmartphoneDeleteV2Request: ClueSmartphoneDeleteV2Request): Promise<ClueSmartphoneDeleteV2Response> {
-    const response = await this.openApi2ClueSmartphoneDeletePostWithHttpInfo(clueSmartphoneDeleteV2Request);
+  async openApi2ClueSmartphoneDeletePost(request: OpenApi2ClueSmartphoneDeletePostRequest): Promise<ClueSmartphoneDeleteV2Response> {
+    const response = await this.openApi2ClueSmartphoneDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ClueSmartphoneDeletePostWithHttpInfo(clueSmartphoneDeleteV2Request: ClueSmartphoneDeleteV2Request): Promise<ApiResponse<ClueSmartphoneDeleteV2Response>> {
+  async openApi2ClueSmartphoneDeletePostWithHttpInfo(request: OpenApi2ClueSmartphoneDeletePostRequest): Promise<ApiResponse<ClueSmartphoneDeleteV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ClueSmartphoneDeleteV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ClueSmartphoneDeleteV2Api {
       queryParams: [
 
       ],
-      body: clueSmartphoneDeleteV2Request
+      body: request.clueSmartphoneDeleteV2Request
     });
   }
 }

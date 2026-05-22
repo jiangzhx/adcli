@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { StdProjectUpdateV30ProjectMaterialsAnchorRelatedType, StdProjectUpdateV30ProjectMaterialsOriginalVideoTitle, StdProjectUpdateV30ProjectMaterialsUlinkUrlType, StdProjectUpdateV30RequestProjectMaterialsAnchorMaterialListInner, StdProjectUpdateV30RequestProjectMaterialsComponentMaterialListInner, StdProjectUpdateV30RequestProjectMaterialsProductInfo } from "../models";

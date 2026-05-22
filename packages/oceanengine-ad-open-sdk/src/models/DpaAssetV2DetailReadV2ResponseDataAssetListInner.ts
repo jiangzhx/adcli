@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { DpaAssetV2DetailReadV2DataAssetListAssetType, DpaAssetV2DetailReadV2DataAssetListAuditStatus, DpaAssetV2DetailReadV2DataAssetListSource, DpaAssetV2DetailReadV2DataAssetListStatus } from "../models";

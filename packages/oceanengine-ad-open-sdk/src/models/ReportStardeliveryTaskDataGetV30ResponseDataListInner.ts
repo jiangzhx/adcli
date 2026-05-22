@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ReportStardeliveryTaskDataGetV30DataListStarTaskAnchorType, ReportStardeliveryTaskDataGetV30DataListStarTaskCategoryType, ReportStardeliveryTaskDataGetV30DataListStarTaskExternalAction, ReportStardeliveryTaskDataGetV30DataListStarTaskSource, ReportStardeliveryTaskDataGetV30DataListStarTaskStatus } from "../models";

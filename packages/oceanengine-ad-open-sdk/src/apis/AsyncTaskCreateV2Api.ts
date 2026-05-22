@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AsyncTaskCreateV2Request, AsyncTaskCreateV2Response } from "../models";
 
+
+export interface OpenApi2AsyncTaskCreatePostRequest {
+  asyncTaskCreateV2Request?: AsyncTaskCreateV2Request;
+}
 
 export class AsyncTaskCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AsyncTaskCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AsyncTaskCreatePost(asyncTaskCreateV2Request: AsyncTaskCreateV2Request): Promise<AsyncTaskCreateV2Response> {
-    const response = await this.openApi2AsyncTaskCreatePostWithHttpInfo(asyncTaskCreateV2Request);
+  async openApi2AsyncTaskCreatePost(request: OpenApi2AsyncTaskCreatePostRequest): Promise<AsyncTaskCreateV2Response> {
+    const response = await this.openApi2AsyncTaskCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AsyncTaskCreatePostWithHttpInfo(asyncTaskCreateV2Request: AsyncTaskCreateV2Request): Promise<ApiResponse<AsyncTaskCreateV2Response>> {
+  async openApi2AsyncTaskCreatePostWithHttpInfo(request: OpenApi2AsyncTaskCreatePostRequest): Promise<ApiResponse<AsyncTaskCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<AsyncTaskCreateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AsyncTaskCreateV2Api {
       queryParams: [
 
       ],
-      body: asyncTaskCreateV2Request
+      body: request.asyncTaskCreateV2Request
     });
   }
 }

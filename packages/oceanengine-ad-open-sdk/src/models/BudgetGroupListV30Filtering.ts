@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BudgetGroupListV30FilteringAdType, BudgetGroupListV30FilteringBudgetGroupStatusFirst, BudgetGroupListV30FilteringBudgetGroupStatusSecond, BudgetGroupListV30FilteringDeliveryType, BudgetGroupListV30FilteringStatisticsTime } from "../models";

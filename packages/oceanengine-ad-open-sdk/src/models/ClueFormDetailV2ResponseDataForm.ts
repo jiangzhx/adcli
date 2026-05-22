@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { ClueFormDetailV2DataFormEnableLayer, ClueFormDetailV2DataFormFormType, ClueFormDetailV2DataFormIsDel, ClueFormDetailV2DataFormValidateType, ClueFormDetailV2ResponseDataFormElementsInner, ClueFormDetailV2ResponseDataFormExtendInfo } from "../models";

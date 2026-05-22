@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { NativeAnchorGetDetailV30DataListInsuranceEnterpriseAnchorConversionBtn, NativeAnchorGetDetailV30ResponseDataListInnerInsuranceEnterpriseAnchorBannerImage, NativeAnchorGetDetailV30ResponseDataListInnerInsuranceEnterpriseAnchorProductImage, NativeAnchorGetDetailV30ResponseDataListInnerInsuranceEnterpriseAnchorSingleProductInfoInner } from "../models";

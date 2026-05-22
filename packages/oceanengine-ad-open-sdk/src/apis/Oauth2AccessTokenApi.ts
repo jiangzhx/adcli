@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { Oauth2AccessTokenRequest, Oauth2AccessTokenResponse } from "../models";
 
+
+export interface OpenApiOauth2AccessTokenPostRequest {
+  oauth2AccessTokenRequest?: Oauth2AccessTokenRequest;
+}
 
 export class Oauth2AccessTokenApi {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class Oauth2AccessTokenApi {
     this.apiClient = apiClient;
   }
 
-  async openApiOauth2AccessTokenPost(oauth2AccessTokenRequest: Oauth2AccessTokenRequest): Promise<Oauth2AccessTokenResponse> {
-    const response = await this.openApiOauth2AccessTokenPostWithHttpInfo(oauth2AccessTokenRequest);
+  async openApiOauth2AccessTokenPost(request: OpenApiOauth2AccessTokenPostRequest): Promise<Oauth2AccessTokenResponse> {
+    const response = await this.openApiOauth2AccessTokenPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiOauth2AccessTokenPostWithHttpInfo(oauth2AccessTokenRequest: Oauth2AccessTokenRequest): Promise<ApiResponse<Oauth2AccessTokenResponse>> {
+  async openApiOauth2AccessTokenPostWithHttpInfo(request: OpenApiOauth2AccessTokenPostRequest): Promise<ApiResponse<Oauth2AccessTokenResponse>> {
 
     return this.apiClient.requestWithHttpInfo<Oauth2AccessTokenResponse>({
       method: "POST",
@@ -32,7 +35,7 @@ export class Oauth2AccessTokenApi {
       queryParams: [
 
       ],
-      body: oauth2AccessTokenRequest
+      body: request.oauth2AccessTokenRequest
     });
   }
 }

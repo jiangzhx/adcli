@@ -1,12 +1,19 @@
 {
-  "phase": "B",
+  "source": "go",
   "apis": 1136,
-  "specialApis": [
-    {
-      "file": "api/CommonReqApi.java",
-      "coverage": "src/runtime/CommonReqApi.ts"
-    }
-  ],
   "models": 9671,
-  "skipped": []
+  "skipped": [
+    {
+      "file": "api/api_common.go",
+      "reason": "Unable to parse request struct from api_common.go"
+    },
+    {
+      "file": "api/client.go",
+      "reason": "Unable to parse service name from client.go"
+    },
+    {
+      "file": "api/middleware.go",
+      "reason": "Unable to parse service name from middleware.go"
+    }
+  ]
 }

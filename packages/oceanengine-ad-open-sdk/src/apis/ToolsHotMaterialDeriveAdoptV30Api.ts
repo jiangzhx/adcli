@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsHotMaterialDeriveAdoptV30Request, ToolsHotMaterialDeriveAdoptV30Response } from "../models";
 
+
+export interface OpenApiV30ToolsHotMaterialDeriveAdoptPostRequest {
+  toolsHotMaterialDeriveAdoptV30Request?: ToolsHotMaterialDeriveAdoptV30Request;
+}
 
 export class ToolsHotMaterialDeriveAdoptV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsHotMaterialDeriveAdoptV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsHotMaterialDeriveAdoptPost(toolsHotMaterialDeriveAdoptV30Request: ToolsHotMaterialDeriveAdoptV30Request): Promise<ToolsHotMaterialDeriveAdoptV30Response> {
-    const response = await this.openApiV30ToolsHotMaterialDeriveAdoptPostWithHttpInfo(toolsHotMaterialDeriveAdoptV30Request);
+  async openApiV30ToolsHotMaterialDeriveAdoptPost(request: OpenApiV30ToolsHotMaterialDeriveAdoptPostRequest): Promise<ToolsHotMaterialDeriveAdoptV30Response> {
+    const response = await this.openApiV30ToolsHotMaterialDeriveAdoptPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsHotMaterialDeriveAdoptPostWithHttpInfo(toolsHotMaterialDeriveAdoptV30Request: ToolsHotMaterialDeriveAdoptV30Request): Promise<ApiResponse<ToolsHotMaterialDeriveAdoptV30Response>> {
+  async openApiV30ToolsHotMaterialDeriveAdoptPostWithHttpInfo(request: OpenApiV30ToolsHotMaterialDeriveAdoptPostRequest): Promise<ApiResponse<ToolsHotMaterialDeriveAdoptV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsHotMaterialDeriveAdoptV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsHotMaterialDeriveAdoptV30Api {
       queryParams: [
 
       ],
-      body: toolsHotMaterialDeriveAdoptV30Request
+      body: request.toolsHotMaterialDeriveAdoptV30Request
     });
   }
 }

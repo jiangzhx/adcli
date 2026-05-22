@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import type { BrandAdGetV30DataAdsAudienceInfoAcV2, BrandAdGetV30DataAdsAudienceInfoBrandSafety, BrandAdGetV30DataAdsAudienceInfoDistrictSplit, BrandAdGetV30DataAdsAudienceInfoDistrictType, BrandAdGetV30DataAdsAudienceInfoExcludeDistrict, BrandAdGetV30DataAdsAudienceInfoPlatformV2, BrandAdGetV30DataAdsAudienceInfoRetargetingType, BrandAdGetV30ResponseDataAdsInnerAudienceInfoGeolocationInner, BrandAdGetV30ResponseDataAdsInnerAudienceInfoRetargetingTagTypeValue } from "../models";

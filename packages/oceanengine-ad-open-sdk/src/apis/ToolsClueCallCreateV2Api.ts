@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsClueCallCreateV2Request, ToolsClueCallCreateV2Response } from "../models";
 
+
+export interface OpenApi2ToolsClueCallCreatePostRequest {
+  toolsClueCallCreateV2Request?: ToolsClueCallCreateV2Request;
+}
 
 export class ToolsClueCallCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class ToolsClueCallCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsClueCallCreatePost(toolsClueCallCreateV2Request: ToolsClueCallCreateV2Request): Promise<ToolsClueCallCreateV2Response> {
-    const response = await this.openApi2ToolsClueCallCreatePostWithHttpInfo(toolsClueCallCreateV2Request);
+  async openApi2ToolsClueCallCreatePost(request: OpenApi2ToolsClueCallCreatePostRequest): Promise<ToolsClueCallCreateV2Response> {
+    const response = await this.openApi2ToolsClueCallCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsClueCallCreatePostWithHttpInfo(toolsClueCallCreateV2Request: ToolsClueCallCreateV2Request): Promise<ApiResponse<ToolsClueCallCreateV2Response>> {
+  async openApi2ToolsClueCallCreatePostWithHttpInfo(request: OpenApi2ToolsClueCallCreatePostRequest): Promise<ApiResponse<ToolsClueCallCreateV2Response>> {
 
     return this.apiClient.requestWithHttpInfo<ToolsClueCallCreateV2Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class ToolsClueCallCreateV2Api {
       queryParams: [
 
       ],
-      body: toolsClueCallCreateV2Request
+      body: request.toolsClueCallCreateV2Request
     });
   }
 }

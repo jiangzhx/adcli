@@ -1,5 +1,4 @@
-// Generated from oceanengine/ad_open_sdk_java
-// Phase: B
+// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
 
 import { ApiClient } from "../runtime/ApiClient";
@@ -7,6 +6,10 @@ import { ApiException } from "../runtime/ApiException";
 import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AdvertiserDeliveryQualificationDeleteV30Request, AdvertiserDeliveryQualificationDeleteV30Response } from "../models";
 
+
+export interface OpenApiV30AdvertiserDeliveryQualificationDeletePostRequest {
+  advertiserDeliveryQualificationDeleteV30Request?: AdvertiserDeliveryQualificationDeleteV30Request;
+}
 
 export class AdvertiserDeliveryQualificationDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
@@ -19,12 +22,12 @@ export class AdvertiserDeliveryQualificationDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AdvertiserDeliveryQualificationDeletePost(advertiserDeliveryQualificationDeleteV30Request: AdvertiserDeliveryQualificationDeleteV30Request): Promise<AdvertiserDeliveryQualificationDeleteV30Response> {
-    const response = await this.openApiV30AdvertiserDeliveryQualificationDeletePostWithHttpInfo(advertiserDeliveryQualificationDeleteV30Request);
+  async openApiV30AdvertiserDeliveryQualificationDeletePost(request: OpenApiV30AdvertiserDeliveryQualificationDeletePostRequest): Promise<AdvertiserDeliveryQualificationDeleteV30Response> {
+    const response = await this.openApiV30AdvertiserDeliveryQualificationDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AdvertiserDeliveryQualificationDeletePostWithHttpInfo(advertiserDeliveryQualificationDeleteV30Request: AdvertiserDeliveryQualificationDeleteV30Request): Promise<ApiResponse<AdvertiserDeliveryQualificationDeleteV30Response>> {
+  async openApiV30AdvertiserDeliveryQualificationDeletePostWithHttpInfo(request: OpenApiV30AdvertiserDeliveryQualificationDeletePostRequest): Promise<ApiResponse<AdvertiserDeliveryQualificationDeleteV30Response>> {
 
     return this.apiClient.requestWithHttpInfo<AdvertiserDeliveryQualificationDeleteV30Response>({
       method: "POST",
@@ -32,7 +35,7 @@ export class AdvertiserDeliveryQualificationDeleteV30Api {
       queryParams: [
 
       ],
-      body: advertiserDeliveryQualificationDeleteV30Request
+      body: request.advertiserDeliveryQualificationDeleteV30Request
     });
   }
 }
