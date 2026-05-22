@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAipThirdSiteUpdateV2Request, ToolsAipThirdSiteUpdateV2Response } from "../models";
 
 
+export interface OpenApi2ToolsAipThirdSiteUpdatePostRequest {
+  toolsAipThirdSiteUpdateV2Request?: ToolsAipThirdSiteUpdateV2Request;
+}
+
 export class ToolsAipThirdSiteUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsAipThirdSiteUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsAipThirdSiteUpdatePost(request: ToolsAipThirdSiteUpdateV2Request): Promise<ToolsAipThirdSiteUpdateV2Response> {
+  async openApi2ToolsAipThirdSiteUpdatePost(request: OpenApi2ToolsAipThirdSiteUpdatePostRequest): Promise<ToolsAipThirdSiteUpdateV2Response> {
     const response = await this.openApi2ToolsAipThirdSiteUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsAipThirdSiteUpdatePostWithHttpInfo(request: ToolsAipThirdSiteUpdateV2Request): Promise<ApiResponse<ToolsAipThirdSiteUpdateV2Response>> {
+  async openApi2ToolsAipThirdSiteUpdatePostWithHttpInfo(request: OpenApi2ToolsAipThirdSiteUpdatePostRequest): Promise<ApiResponse<ToolsAipThirdSiteUpdateV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsAipThirdSiteUpdateV2Response>({
       method: "POST",
       path: "/open_api/2/tools/aip_third_site/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsAipThirdSiteUpdateV2Request
     });
   }
 }

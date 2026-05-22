@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AssetsCreativeComponentCreateV2Request, AssetsCreativeComponentCreateV2Response } from "../models";
 
 
+export interface OpenApi2AssetsCreativeComponentCreatePostRequest {
+  assetsCreativeComponentCreateV2Request?: AssetsCreativeComponentCreateV2Request;
+}
+
 export class AssetsCreativeComponentCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class AssetsCreativeComponentCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AssetsCreativeComponentCreatePost(request: AssetsCreativeComponentCreateV2Request): Promise<AssetsCreativeComponentCreateV2Response> {
+  async openApi2AssetsCreativeComponentCreatePost(request: OpenApi2AssetsCreativeComponentCreatePostRequest): Promise<AssetsCreativeComponentCreateV2Response> {
     const response = await this.openApi2AssetsCreativeComponentCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AssetsCreativeComponentCreatePostWithHttpInfo(request: AssetsCreativeComponentCreateV2Request): Promise<ApiResponse<AssetsCreativeComponentCreateV2Response>> {
+  async openApi2AssetsCreativeComponentCreatePostWithHttpInfo(request: OpenApi2AssetsCreativeComponentCreatePostRequest): Promise<ApiResponse<AssetsCreativeComponentCreateV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<AssetsCreativeComponentCreateV2Response>({
       method: "POST",
       path: "/open_api/2/assets/creative_component/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.assetsCreativeComponentCreateV2Request
     });
   }
 }

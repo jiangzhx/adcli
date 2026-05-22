@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { KeywordCreateV30Request, KeywordCreateV30Response } from "../models";
 
 
+export interface OpenApiV30KeywordCreatePostRequest {
+  keywordCreateV30Request?: KeywordCreateV30Request;
+}
+
 export class KeywordCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class KeywordCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30KeywordCreatePost(request: KeywordCreateV30Request): Promise<KeywordCreateV30Response> {
+  async openApiV30KeywordCreatePost(request: OpenApiV30KeywordCreatePostRequest): Promise<KeywordCreateV30Response> {
     const response = await this.openApiV30KeywordCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30KeywordCreatePostWithHttpInfo(request: KeywordCreateV30Request): Promise<ApiResponse<KeywordCreateV30Response>> {
+  async openApiV30KeywordCreatePostWithHttpInfo(request: OpenApiV30KeywordCreatePostRequest): Promise<ApiResponse<KeywordCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<KeywordCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/keyword/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.keywordCreateV30Request
     });
   }
 }

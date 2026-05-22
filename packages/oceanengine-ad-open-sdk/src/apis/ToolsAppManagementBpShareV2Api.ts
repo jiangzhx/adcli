@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAppManagementBpShareV2Request, ToolsAppManagementBpShareV2Response } from "../models";
 
 
+export interface OpenApi2ToolsAppManagementBpSharePostRequest {
+  toolsAppManagementBpShareV2Request?: ToolsAppManagementBpShareV2Request;
+}
+
 export class ToolsAppManagementBpShareV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsAppManagementBpShareV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsAppManagementBpSharePost(request: ToolsAppManagementBpShareV2Request): Promise<ToolsAppManagementBpShareV2Response> {
+  async openApi2ToolsAppManagementBpSharePost(request: OpenApi2ToolsAppManagementBpSharePostRequest): Promise<ToolsAppManagementBpShareV2Response> {
     const response = await this.openApi2ToolsAppManagementBpSharePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsAppManagementBpSharePostWithHttpInfo(request: ToolsAppManagementBpShareV2Request): Promise<ApiResponse<ToolsAppManagementBpShareV2Response>> {
+  async openApi2ToolsAppManagementBpSharePostWithHttpInfo(request: OpenApi2ToolsAppManagementBpSharePostRequest): Promise<ApiResponse<ToolsAppManagementBpShareV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementBpShareV2Response>({
       method: "POST",
       path: "/open_api/2/tools/app_management/bp_share/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsAppManagementBpShareV2Request
     });
   }
 }

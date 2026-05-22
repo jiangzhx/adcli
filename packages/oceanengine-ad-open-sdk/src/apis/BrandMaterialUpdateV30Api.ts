@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandMaterialUpdateV30Request, BrandMaterialUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30BrandMaterialUpdatePostRequest {
+  brandMaterialUpdateV30Request?: BrandMaterialUpdateV30Request;
+}
+
 export class BrandMaterialUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class BrandMaterialUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandMaterialUpdatePost(request: BrandMaterialUpdateV30Request): Promise<BrandMaterialUpdateV30Response> {
+  async openApiV30BrandMaterialUpdatePost(request: OpenApiV30BrandMaterialUpdatePostRequest): Promise<BrandMaterialUpdateV30Response> {
     const response = await this.openApiV30BrandMaterialUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandMaterialUpdatePostWithHttpInfo(request: BrandMaterialUpdateV30Request): Promise<ApiResponse<BrandMaterialUpdateV30Response>> {
+  async openApiV30BrandMaterialUpdatePostWithHttpInfo(request: OpenApiV30BrandMaterialUpdatePostRequest): Promise<ApiResponse<BrandMaterialUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<BrandMaterialUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/material/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.brandMaterialUpdateV30Request
     });
   }
 }

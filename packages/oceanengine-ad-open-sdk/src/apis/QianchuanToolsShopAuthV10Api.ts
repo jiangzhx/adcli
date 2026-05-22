@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanToolsShopAuthV10Request, QianchuanToolsShopAuthV10Response } from "../models";
 
 
+export interface OpenApiV10QianchuanToolsShopAuthPostRequest {
+  qianchuanToolsShopAuthV10Request?: QianchuanToolsShopAuthV10Request;
+}
+
 export class QianchuanToolsShopAuthV10Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class QianchuanToolsShopAuthV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanToolsShopAuthPost(request: QianchuanToolsShopAuthV10Request): Promise<QianchuanToolsShopAuthV10Response> {
+  async openApiV10QianchuanToolsShopAuthPost(request: OpenApiV10QianchuanToolsShopAuthPostRequest): Promise<QianchuanToolsShopAuthV10Response> {
     const response = await this.openApiV10QianchuanToolsShopAuthPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanToolsShopAuthPostWithHttpInfo(request: QianchuanToolsShopAuthV10Request): Promise<ApiResponse<QianchuanToolsShopAuthV10Response>> {
+  async openApiV10QianchuanToolsShopAuthPostWithHttpInfo(request: OpenApiV10QianchuanToolsShopAuthPostRequest): Promise<ApiResponse<QianchuanToolsShopAuthV10Response>> {
+
     return this.apiClient.requestWithHttpInfo<QianchuanToolsShopAuthV10Response>({
       method: "POST",
       path: "/open_api/v1.0/qianchuan/tools/shop_auth/",
       queryParams: [
 
       ],
-      body: request
+      body: request.qianchuanToolsShopAuthV10Request
     });
   }
 }

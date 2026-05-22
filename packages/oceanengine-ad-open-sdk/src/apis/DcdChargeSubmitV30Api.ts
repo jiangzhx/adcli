@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DcdChargeSubmitV30Request, DcdChargeSubmitV30Response } from "../models";
 
 
+export interface OpenApiV30DcdChargeSubmitPostRequest {
+  dcdChargeSubmitV30Request?: DcdChargeSubmitV30Request;
+}
+
 export class DcdChargeSubmitV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class DcdChargeSubmitV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30DcdChargeSubmitPost(request: DcdChargeSubmitV30Request): Promise<DcdChargeSubmitV30Response> {
+  async openApiV30DcdChargeSubmitPost(request: OpenApiV30DcdChargeSubmitPostRequest): Promise<DcdChargeSubmitV30Response> {
     const response = await this.openApiV30DcdChargeSubmitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30DcdChargeSubmitPostWithHttpInfo(request: DcdChargeSubmitV30Request): Promise<ApiResponse<DcdChargeSubmitV30Response>> {
+  async openApiV30DcdChargeSubmitPostWithHttpInfo(request: OpenApiV30DcdChargeSubmitPostRequest): Promise<ApiResponse<DcdChargeSubmitV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<DcdChargeSubmitV30Response>({
       method: "POST",
       path: "/open_api/v3.0/dcd/charge/submit/",
       queryParams: [
 
       ],
-      body: request
+      body: request.dcdChargeSubmitV30Request
     });
   }
 }

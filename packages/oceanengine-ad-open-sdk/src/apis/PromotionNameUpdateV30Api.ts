@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionNameUpdateV30Request, PromotionNameUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30PromotionNameUpdatePostRequest {
+  promotionNameUpdateV30Request?: PromotionNameUpdateV30Request;
+}
+
 export class PromotionNameUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class PromotionNameUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionNameUpdatePost(request: PromotionNameUpdateV30Request): Promise<PromotionNameUpdateV30Response> {
+  async openApiV30PromotionNameUpdatePost(request: OpenApiV30PromotionNameUpdatePostRequest): Promise<PromotionNameUpdateV30Response> {
     const response = await this.openApiV30PromotionNameUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionNameUpdatePostWithHttpInfo(request: PromotionNameUpdateV30Request): Promise<ApiResponse<PromotionNameUpdateV30Response>> {
+  async openApiV30PromotionNameUpdatePostWithHttpInfo(request: OpenApiV30PromotionNameUpdatePostRequest): Promise<ApiResponse<PromotionNameUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<PromotionNameUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/promotion_name/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.promotionNameUpdateV30Request
     });
   }
 }

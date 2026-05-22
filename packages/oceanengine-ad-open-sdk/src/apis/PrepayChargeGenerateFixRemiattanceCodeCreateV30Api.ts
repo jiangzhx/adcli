@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PrepayChargeGenerateFixRemiattanceCodeCreateV30Request, PrepayChargeGenerateFixRemiattanceCodeCreateV30Response } from "../models";
 
 
+export interface OpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest {
+  prepayChargeGenerateFixRemiattanceCodeCreateV30Request?: PrepayChargeGenerateFixRemiattanceCodeCreateV30Request;
+}
+
 export class PrepayChargeGenerateFixRemiattanceCodeCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class PrepayChargeGenerateFixRemiattanceCodeCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePost(request: PrepayChargeGenerateFixRemiattanceCodeCreateV30Request): Promise<PrepayChargeGenerateFixRemiattanceCodeCreateV30Response> {
+  async openApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePost(request: OpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest): Promise<PrepayChargeGenerateFixRemiattanceCodeCreateV30Response> {
     const response = await this.openApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostWithHttpInfo(request: PrepayChargeGenerateFixRemiattanceCodeCreateV30Request): Promise<ApiResponse<PrepayChargeGenerateFixRemiattanceCodeCreateV30Response>> {
+  async openApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostWithHttpInfo(request: OpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest): Promise<ApiResponse<PrepayChargeGenerateFixRemiattanceCodeCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<PrepayChargeGenerateFixRemiattanceCodeCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/prepay_charge/generate_fix_remiattance_code/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.prepayChargeGenerateFixRemiattanceCodeCreateV30Request
     });
   }
 }

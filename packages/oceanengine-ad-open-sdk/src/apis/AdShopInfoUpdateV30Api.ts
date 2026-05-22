@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AdShopInfoUpdateV30Request, AdShopInfoUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30AdShopInfoUpdatePostRequest {
+  adShopInfoUpdateV30Request?: AdShopInfoUpdateV30Request;
+}
+
 export class AdShopInfoUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class AdShopInfoUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AdShopInfoUpdatePost(request: AdShopInfoUpdateV30Request): Promise<AdShopInfoUpdateV30Response> {
+  async openApiV30AdShopInfoUpdatePost(request: OpenApiV30AdShopInfoUpdatePostRequest): Promise<AdShopInfoUpdateV30Response> {
     const response = await this.openApiV30AdShopInfoUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AdShopInfoUpdatePostWithHttpInfo(request: AdShopInfoUpdateV30Request): Promise<ApiResponse<AdShopInfoUpdateV30Response>> {
+  async openApiV30AdShopInfoUpdatePostWithHttpInfo(request: OpenApiV30AdShopInfoUpdatePostRequest): Promise<ApiResponse<AdShopInfoUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<AdShopInfoUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/ad/shop_info/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.adShopInfoUpdateV30Request
     });
   }
 }

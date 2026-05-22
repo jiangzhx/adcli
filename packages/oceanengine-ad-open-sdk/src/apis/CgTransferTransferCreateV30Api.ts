@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CgTransferTransferCreateV30Request, CgTransferTransferCreateV30Response } from "../models";
 
 
+export interface OpenApiV30CgTransferTransferCreatePostRequest {
+  cgTransferTransferCreateV30Request?: CgTransferTransferCreateV30Request;
+}
+
 export class CgTransferTransferCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class CgTransferTransferCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30CgTransferTransferCreatePost(request: CgTransferTransferCreateV30Request): Promise<CgTransferTransferCreateV30Response> {
+  async openApiV30CgTransferTransferCreatePost(request: OpenApiV30CgTransferTransferCreatePostRequest): Promise<CgTransferTransferCreateV30Response> {
     const response = await this.openApiV30CgTransferTransferCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30CgTransferTransferCreatePostWithHttpInfo(request: CgTransferTransferCreateV30Request): Promise<ApiResponse<CgTransferTransferCreateV30Response>> {
+  async openApiV30CgTransferTransferCreatePostWithHttpInfo(request: OpenApiV30CgTransferTransferCreatePostRequest): Promise<ApiResponse<CgTransferTransferCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<CgTransferTransferCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/cg_transfer/transfer/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.cgTransferTransferCreateV30Request
     });
   }
 }

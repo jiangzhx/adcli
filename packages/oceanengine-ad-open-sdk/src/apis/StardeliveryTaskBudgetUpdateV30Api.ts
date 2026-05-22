@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StardeliveryTaskBudgetUpdateV30Request, StardeliveryTaskBudgetUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30StardeliveryTaskBudgetUpdatePostRequest {
+  stardeliveryTaskBudgetUpdateV30Request?: StardeliveryTaskBudgetUpdateV30Request;
+}
+
 export class StardeliveryTaskBudgetUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class StardeliveryTaskBudgetUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30StardeliveryTaskBudgetUpdatePost(request: StardeliveryTaskBudgetUpdateV30Request): Promise<StardeliveryTaskBudgetUpdateV30Response> {
+  async openApiV30StardeliveryTaskBudgetUpdatePost(request: OpenApiV30StardeliveryTaskBudgetUpdatePostRequest): Promise<StardeliveryTaskBudgetUpdateV30Response> {
     const response = await this.openApiV30StardeliveryTaskBudgetUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30StardeliveryTaskBudgetUpdatePostWithHttpInfo(request: StardeliveryTaskBudgetUpdateV30Request): Promise<ApiResponse<StardeliveryTaskBudgetUpdateV30Response>> {
+  async openApiV30StardeliveryTaskBudgetUpdatePostWithHttpInfo(request: OpenApiV30StardeliveryTaskBudgetUpdatePostRequest): Promise<ApiResponse<StardeliveryTaskBudgetUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskBudgetUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/stardelivery/task/budget/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.stardeliveryTaskBudgetUpdateV30Request
     });
   }
 }

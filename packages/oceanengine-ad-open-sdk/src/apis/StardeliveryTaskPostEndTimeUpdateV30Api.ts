@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StardeliveryTaskPostEndTimeUpdateV30Request, StardeliveryTaskPostEndTimeUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30StardeliveryTaskPostEndTimeUpdatePostRequest {
+  stardeliveryTaskPostEndTimeUpdateV30Request?: StardeliveryTaskPostEndTimeUpdateV30Request;
+}
+
 export class StardeliveryTaskPostEndTimeUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class StardeliveryTaskPostEndTimeUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30StardeliveryTaskPostEndTimeUpdatePost(request: StardeliveryTaskPostEndTimeUpdateV30Request): Promise<StardeliveryTaskPostEndTimeUpdateV30Response> {
+  async openApiV30StardeliveryTaskPostEndTimeUpdatePost(request: OpenApiV30StardeliveryTaskPostEndTimeUpdatePostRequest): Promise<StardeliveryTaskPostEndTimeUpdateV30Response> {
     const response = await this.openApiV30StardeliveryTaskPostEndTimeUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30StardeliveryTaskPostEndTimeUpdatePostWithHttpInfo(request: StardeliveryTaskPostEndTimeUpdateV30Request): Promise<ApiResponse<StardeliveryTaskPostEndTimeUpdateV30Response>> {
+  async openApiV30StardeliveryTaskPostEndTimeUpdatePostWithHttpInfo(request: OpenApiV30StardeliveryTaskPostEndTimeUpdatePostRequest): Promise<ApiResponse<StardeliveryTaskPostEndTimeUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskPostEndTimeUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/stardelivery/task/post_end_time/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.stardeliveryTaskPostEndTimeUpdateV30Request
     });
   }
 }

@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpMicroAppletCreateV30Request, ToolsEbpMicroAppletCreateV30Response } from "../models";
 
 
+export interface OpenApiV30ToolsEbpMicroAppletCreatePostRequest {
+  toolsEbpMicroAppletCreateV30Request?: ToolsEbpMicroAppletCreateV30Request;
+}
+
 export class ToolsEbpMicroAppletCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsEbpMicroAppletCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpMicroAppletCreatePost(request: ToolsEbpMicroAppletCreateV30Request): Promise<ToolsEbpMicroAppletCreateV30Response> {
+  async openApiV30ToolsEbpMicroAppletCreatePost(request: OpenApiV30ToolsEbpMicroAppletCreatePostRequest): Promise<ToolsEbpMicroAppletCreateV30Response> {
     const response = await this.openApiV30ToolsEbpMicroAppletCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpMicroAppletCreatePostWithHttpInfo(request: ToolsEbpMicroAppletCreateV30Request): Promise<ApiResponse<ToolsEbpMicroAppletCreateV30Response>> {
+  async openApiV30ToolsEbpMicroAppletCreatePostWithHttpInfo(request: OpenApiV30ToolsEbpMicroAppletCreatePostRequest): Promise<ApiResponse<ToolsEbpMicroAppletCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsEbpMicroAppletCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/ebp/micro_applet/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsEbpMicroAppletCreateV30Request
     });
   }
 }

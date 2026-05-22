@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FileRebateMaterialDownloadCreateTaskV2Request, FileRebateMaterialDownloadCreateTaskV2Response } from "../models";
 
 
+export interface OpenApi2FileRebateMaterialDownloadCreateTaskPostRequest {
+  fileRebateMaterialDownloadCreateTaskV2Request?: FileRebateMaterialDownloadCreateTaskV2Request;
+}
+
 export class FileRebateMaterialDownloadCreateTaskV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class FileRebateMaterialDownloadCreateTaskV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2FileRebateMaterialDownloadCreateTaskPost(request: FileRebateMaterialDownloadCreateTaskV2Request): Promise<FileRebateMaterialDownloadCreateTaskV2Response> {
+  async openApi2FileRebateMaterialDownloadCreateTaskPost(request: OpenApi2FileRebateMaterialDownloadCreateTaskPostRequest): Promise<FileRebateMaterialDownloadCreateTaskV2Response> {
     const response = await this.openApi2FileRebateMaterialDownloadCreateTaskPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2FileRebateMaterialDownloadCreateTaskPostWithHttpInfo(request: FileRebateMaterialDownloadCreateTaskV2Request): Promise<ApiResponse<FileRebateMaterialDownloadCreateTaskV2Response>> {
+  async openApi2FileRebateMaterialDownloadCreateTaskPostWithHttpInfo(request: OpenApi2FileRebateMaterialDownloadCreateTaskPostRequest): Promise<ApiResponse<FileRebateMaterialDownloadCreateTaskV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<FileRebateMaterialDownloadCreateTaskV2Response>({
       method: "POST",
       path: "/open_api/2/file/rebate/material_download/create_task/",
       queryParams: [
 
       ],
-      body: request
+      body: request.fileRebateMaterialDownloadCreateTaskV2Request
     });
   }
 }

@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ReportProductAsyncTaskGetV30Request } from "../models";
 
 
+export interface OpenApiV30ReportProductAsyncTaskGetPostRequest {
+  reportProductAsyncTaskGetV30Request?: ReportProductAsyncTaskGetV30Request;
+}
+
 export class ReportProductAsyncTaskGetV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ReportProductAsyncTaskGetV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ReportProductAsyncTaskGetPost(request: ReportProductAsyncTaskGetV30Request): Promise<ArrayBuffer> {
+  async openApiV30ReportProductAsyncTaskGetPost(request: OpenApiV30ReportProductAsyncTaskGetPostRequest): Promise<ArrayBuffer> {
     const response = await this.openApiV30ReportProductAsyncTaskGetPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ReportProductAsyncTaskGetPostWithHttpInfo(request: ReportProductAsyncTaskGetV30Request): Promise<ApiResponse<ArrayBuffer>> {
+  async openApiV30ReportProductAsyncTaskGetPostWithHttpInfo(request: OpenApiV30ReportProductAsyncTaskGetPostRequest): Promise<ApiResponse<ArrayBuffer>> {
+
     return this.apiClient.requestWithHttpInfo<ArrayBuffer>({
       method: "POST",
       path: "/open_api/v3.0/report/product/async_task/get/",
       queryParams: [
 
       ],
-      body: request
+      body: request.reportProductAsyncTaskGetV30Request
     });
   }
 }

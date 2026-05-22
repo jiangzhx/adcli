@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionEasyKeepDeliverySwitchUpdateV30Request, PromotionEasyKeepDeliverySwitchUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest {
+  promotionEasyKeepDeliverySwitchUpdateV30Request?: PromotionEasyKeepDeliverySwitchUpdateV30Request;
+}
+
 export class PromotionEasyKeepDeliverySwitchUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class PromotionEasyKeepDeliverySwitchUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionEasyKeepDeliverySwitchUpdatePost(request: PromotionEasyKeepDeliverySwitchUpdateV30Request): Promise<PromotionEasyKeepDeliverySwitchUpdateV30Response> {
+  async openApiV30PromotionEasyKeepDeliverySwitchUpdatePost(request: OpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest): Promise<PromotionEasyKeepDeliverySwitchUpdateV30Response> {
     const response = await this.openApiV30PromotionEasyKeepDeliverySwitchUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionEasyKeepDeliverySwitchUpdatePostWithHttpInfo(request: PromotionEasyKeepDeliverySwitchUpdateV30Request): Promise<ApiResponse<PromotionEasyKeepDeliverySwitchUpdateV30Response>> {
+  async openApiV30PromotionEasyKeepDeliverySwitchUpdatePostWithHttpInfo(request: OpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest): Promise<ApiResponse<PromotionEasyKeepDeliverySwitchUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<PromotionEasyKeepDeliverySwitchUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/promotion_easy/keep_delivery_switch/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.promotionEasyKeepDeliverySwitchUpdateV30Request
     });
   }
 }

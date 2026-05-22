@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsJointBidUpdateV30Request, ToolsJointBidUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30ToolsJointBidUpdatePostRequest {
+  toolsJointBidUpdateV30Request?: ToolsJointBidUpdateV30Request;
+}
+
 export class ToolsJointBidUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsJointBidUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsJointBidUpdatePost(request: ToolsJointBidUpdateV30Request): Promise<ToolsJointBidUpdateV30Response> {
+  async openApiV30ToolsJointBidUpdatePost(request: OpenApiV30ToolsJointBidUpdatePostRequest): Promise<ToolsJointBidUpdateV30Response> {
     const response = await this.openApiV30ToolsJointBidUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsJointBidUpdatePostWithHttpInfo(request: ToolsJointBidUpdateV30Request): Promise<ApiResponse<ToolsJointBidUpdateV30Response>> {
+  async openApiV30ToolsJointBidUpdatePostWithHttpInfo(request: OpenApiV30ToolsJointBidUpdatePostRequest): Promise<ApiResponse<ToolsJointBidUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsJointBidUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/joint_bid/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsJointBidUpdateV30Request
     });
   }
 }

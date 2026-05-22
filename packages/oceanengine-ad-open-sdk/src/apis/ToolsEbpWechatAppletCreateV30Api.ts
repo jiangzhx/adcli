@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpWechatAppletCreateV30Request, ToolsEbpWechatAppletCreateV30Response } from "../models";
 
 
+export interface OpenApiV30ToolsEbpWechatAppletCreatePostRequest {
+  toolsEbpWechatAppletCreateV30Request?: ToolsEbpWechatAppletCreateV30Request;
+}
+
 export class ToolsEbpWechatAppletCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsEbpWechatAppletCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpWechatAppletCreatePost(request: ToolsEbpWechatAppletCreateV30Request): Promise<ToolsEbpWechatAppletCreateV30Response> {
+  async openApiV30ToolsEbpWechatAppletCreatePost(request: OpenApiV30ToolsEbpWechatAppletCreatePostRequest): Promise<ToolsEbpWechatAppletCreateV30Response> {
     const response = await this.openApiV30ToolsEbpWechatAppletCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpWechatAppletCreatePostWithHttpInfo(request: ToolsEbpWechatAppletCreateV30Request): Promise<ApiResponse<ToolsEbpWechatAppletCreateV30Response>> {
+  async openApiV30ToolsEbpWechatAppletCreatePostWithHttpInfo(request: OpenApiV30ToolsEbpWechatAppletCreatePostRequest): Promise<ApiResponse<ToolsEbpWechatAppletCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsEbpWechatAppletCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/ebp/wechat_applet/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsEbpWechatAppletCreateV30Request
     });
   }
 }

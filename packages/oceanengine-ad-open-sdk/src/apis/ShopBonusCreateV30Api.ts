@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ShopBonusCreateV30Request, ShopBonusCreateV30Response } from "../models";
 
 
+export interface OpenApiV30ShopBonusCreatePostRequest {
+  shopBonusCreateV30Request?: ShopBonusCreateV30Request;
+}
+
 export class ShopBonusCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ShopBonusCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ShopBonusCreatePost(request: ShopBonusCreateV30Request): Promise<ShopBonusCreateV30Response> {
+  async openApiV30ShopBonusCreatePost(request: OpenApiV30ShopBonusCreatePostRequest): Promise<ShopBonusCreateV30Response> {
     const response = await this.openApiV30ShopBonusCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ShopBonusCreatePostWithHttpInfo(request: ShopBonusCreateV30Request): Promise<ApiResponse<ShopBonusCreateV30Response>> {
+  async openApiV30ShopBonusCreatePostWithHttpInfo(request: OpenApiV30ShopBonusCreatePostRequest): Promise<ApiResponse<ShopBonusCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<ShopBonusCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/shop_bonus/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.shopBonusCreateV30Request
     });
   }
 }

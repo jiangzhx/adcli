@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BudgetGroupCreateV30Request, BudgetGroupCreateV30Response } from "../models";
 
 
+export interface OpenApiV30BudgetGroupCreatePostRequest {
+  budgetGroupCreateV30Request?: BudgetGroupCreateV30Request;
+}
+
 export class BudgetGroupCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class BudgetGroupCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BudgetGroupCreatePost(request: BudgetGroupCreateV30Request): Promise<BudgetGroupCreateV30Response> {
+  async openApiV30BudgetGroupCreatePost(request: OpenApiV30BudgetGroupCreatePostRequest): Promise<BudgetGroupCreateV30Response> {
     const response = await this.openApiV30BudgetGroupCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BudgetGroupCreatePostWithHttpInfo(request: BudgetGroupCreateV30Request): Promise<ApiResponse<BudgetGroupCreateV30Response>> {
+  async openApiV30BudgetGroupCreatePostWithHttpInfo(request: OpenApiV30BudgetGroupCreatePostRequest): Promise<ApiResponse<BudgetGroupCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<BudgetGroupCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/budget_group/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.budgetGroupCreateV30Request
     });
   }
 }

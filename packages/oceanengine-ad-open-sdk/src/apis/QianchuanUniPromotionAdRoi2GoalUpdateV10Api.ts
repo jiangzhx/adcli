@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanUniPromotionAdRoi2GoalUpdateV10Request, QianchuanUniPromotionAdRoi2GoalUpdateV10Response } from "../models";
 
 
+export interface OpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest {
+  qianchuanUniPromotionAdRoi2GoalUpdateV10Request?: QianchuanUniPromotionAdRoi2GoalUpdateV10Request;
+}
+
 export class QianchuanUniPromotionAdRoi2GoalUpdateV10Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class QianchuanUniPromotionAdRoi2GoalUpdateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanUniPromotionAdRoi2GoalUpdatePost(request: QianchuanUniPromotionAdRoi2GoalUpdateV10Request): Promise<QianchuanUniPromotionAdRoi2GoalUpdateV10Response> {
+  async openApiV10QianchuanUniPromotionAdRoi2GoalUpdatePost(request: OpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest): Promise<QianchuanUniPromotionAdRoi2GoalUpdateV10Response> {
     const response = await this.openApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostWithHttpInfo(request: QianchuanUniPromotionAdRoi2GoalUpdateV10Request): Promise<ApiResponse<QianchuanUniPromotionAdRoi2GoalUpdateV10Response>> {
+  async openApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostWithHttpInfo(request: OpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest): Promise<ApiResponse<QianchuanUniPromotionAdRoi2GoalUpdateV10Response>> {
+
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionAdRoi2GoalUpdateV10Response>({
       method: "POST",
       path: "/open_api/v1.0/qianchuan/uni_promotion/ad/roi2_goal/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.qianchuanUniPromotionAdRoi2GoalUpdateV10Request
     });
   }
 }

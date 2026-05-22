@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { UniProjectCreateV30Request, UniProjectCreateV30Response } from "../models";
 
 
+export interface OpenApiV30UniProjectCreatePostRequest {
+  uniProjectCreateV30Request?: UniProjectCreateV30Request;
+}
+
 export class UniProjectCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class UniProjectCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30UniProjectCreatePost(request: UniProjectCreateV30Request): Promise<UniProjectCreateV30Response> {
+  async openApiV30UniProjectCreatePost(request: OpenApiV30UniProjectCreatePostRequest): Promise<UniProjectCreateV30Response> {
     const response = await this.openApiV30UniProjectCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30UniProjectCreatePostWithHttpInfo(request: UniProjectCreateV30Request): Promise<ApiResponse<UniProjectCreateV30Response>> {
+  async openApiV30UniProjectCreatePostWithHttpInfo(request: OpenApiV30UniProjectCreatePostRequest): Promise<ApiResponse<UniProjectCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<UniProjectCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/uni_project/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.uniProjectCreateV30Request
     });
   }
 }

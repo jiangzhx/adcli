@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandCreativeCreateV30Request, BrandCreativeCreateV30Response } from "../models";
 
 
+export interface OpenApiV30BrandCreativeCreatePostRequest {
+  brandCreativeCreateV30Request?: BrandCreativeCreateV30Request;
+}
+
 export class BrandCreativeCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class BrandCreativeCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandCreativeCreatePost(request: BrandCreativeCreateV30Request): Promise<BrandCreativeCreateV30Response> {
+  async openApiV30BrandCreativeCreatePost(request: OpenApiV30BrandCreativeCreatePostRequest): Promise<BrandCreativeCreateV30Response> {
     const response = await this.openApiV30BrandCreativeCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandCreativeCreatePostWithHttpInfo(request: BrandCreativeCreateV30Request): Promise<ApiResponse<BrandCreativeCreateV30Response>> {
+  async openApiV30BrandCreativeCreatePostWithHttpInfo(request: OpenApiV30BrandCreativeCreatePostRequest): Promise<ApiResponse<BrandCreativeCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<BrandCreativeCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/creative/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.brandCreativeCreateV30Request
     });
   }
 }

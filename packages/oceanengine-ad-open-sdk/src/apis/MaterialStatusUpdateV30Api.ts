@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { MaterialStatusUpdateV30Request, MaterialStatusUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30MaterialStatusUpdatePostRequest {
+  materialStatusUpdateV30Request?: MaterialStatusUpdateV30Request;
+}
+
 export class MaterialStatusUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class MaterialStatusUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30MaterialStatusUpdatePost(request: MaterialStatusUpdateV30Request): Promise<MaterialStatusUpdateV30Response> {
+  async openApiV30MaterialStatusUpdatePost(request: OpenApiV30MaterialStatusUpdatePostRequest): Promise<MaterialStatusUpdateV30Response> {
     const response = await this.openApiV30MaterialStatusUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30MaterialStatusUpdatePostWithHttpInfo(request: MaterialStatusUpdateV30Request): Promise<ApiResponse<MaterialStatusUpdateV30Response>> {
+  async openApiV30MaterialStatusUpdatePostWithHttpInfo(request: OpenApiV30MaterialStatusUpdatePostRequest): Promise<ApiResponse<MaterialStatusUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<MaterialStatusUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/material/status/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.materialStatusUpdateV30Request
     });
   }
 }

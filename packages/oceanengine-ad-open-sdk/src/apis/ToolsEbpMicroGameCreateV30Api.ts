@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpMicroGameCreateV30Request, ToolsEbpMicroGameCreateV30Response } from "../models";
 
 
+export interface OpenApiV30ToolsEbpMicroGameCreatePostRequest {
+  toolsEbpMicroGameCreateV30Request?: ToolsEbpMicroGameCreateV30Request;
+}
+
 export class ToolsEbpMicroGameCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsEbpMicroGameCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpMicroGameCreatePost(request: ToolsEbpMicroGameCreateV30Request): Promise<ToolsEbpMicroGameCreateV30Response> {
+  async openApiV30ToolsEbpMicroGameCreatePost(request: OpenApiV30ToolsEbpMicroGameCreatePostRequest): Promise<ToolsEbpMicroGameCreateV30Response> {
     const response = await this.openApiV30ToolsEbpMicroGameCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpMicroGameCreatePostWithHttpInfo(request: ToolsEbpMicroGameCreateV30Request): Promise<ApiResponse<ToolsEbpMicroGameCreateV30Response>> {
+  async openApiV30ToolsEbpMicroGameCreatePostWithHttpInfo(request: OpenApiV30ToolsEbpMicroGameCreatePostRequest): Promise<ApiResponse<ToolsEbpMicroGameCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsEbpMicroGameCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/ebp/micro_game/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsEbpMicroGameCreateV30Request
     });
   }
 }

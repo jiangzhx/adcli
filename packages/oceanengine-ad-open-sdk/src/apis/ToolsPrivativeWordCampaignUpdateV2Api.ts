@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPrivativeWordCampaignUpdateV2Request, ToolsPrivativeWordCampaignUpdateV2Response } from "../models";
 
 
+export interface OpenApi2ToolsPrivativeWordCampaignUpdatePostRequest {
+  toolsPrivativeWordCampaignUpdateV2Request?: ToolsPrivativeWordCampaignUpdateV2Request;
+}
+
 export class ToolsPrivativeWordCampaignUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsPrivativeWordCampaignUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsPrivativeWordCampaignUpdatePost(request: ToolsPrivativeWordCampaignUpdateV2Request): Promise<ToolsPrivativeWordCampaignUpdateV2Response> {
+  async openApi2ToolsPrivativeWordCampaignUpdatePost(request: OpenApi2ToolsPrivativeWordCampaignUpdatePostRequest): Promise<ToolsPrivativeWordCampaignUpdateV2Response> {
     const response = await this.openApi2ToolsPrivativeWordCampaignUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsPrivativeWordCampaignUpdatePostWithHttpInfo(request: ToolsPrivativeWordCampaignUpdateV2Request): Promise<ApiResponse<ToolsPrivativeWordCampaignUpdateV2Response>> {
+  async openApi2ToolsPrivativeWordCampaignUpdatePostWithHttpInfo(request: OpenApi2ToolsPrivativeWordCampaignUpdatePostRequest): Promise<ApiResponse<ToolsPrivativeWordCampaignUpdateV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsPrivativeWordCampaignUpdateV2Response>({
       method: "POST",
       path: "/open_api/2/tools/privative_word/campaign/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsPrivativeWordCampaignUpdateV2Request
     });
   }
 }

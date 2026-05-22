@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AgentAdvertiserAssignV2Request, AgentAdvertiserAssignV2Response } from "../models";
 
 
+export interface OpenApi2AgentAdvertiserAssignPostRequest {
+  agentAdvertiserAssignV2Request?: AgentAdvertiserAssignV2Request;
+}
+
 export class AgentAdvertiserAssignV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class AgentAdvertiserAssignV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AgentAdvertiserAssignPost(request: AgentAdvertiserAssignV2Request): Promise<AgentAdvertiserAssignV2Response> {
+  async openApi2AgentAdvertiserAssignPost(request: OpenApi2AgentAdvertiserAssignPostRequest): Promise<AgentAdvertiserAssignV2Response> {
     const response = await this.openApi2AgentAdvertiserAssignPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AgentAdvertiserAssignPostWithHttpInfo(request: AgentAdvertiserAssignV2Request): Promise<ApiResponse<AgentAdvertiserAssignV2Response>> {
+  async openApi2AgentAdvertiserAssignPostWithHttpInfo(request: OpenApi2AgentAdvertiserAssignPostRequest): Promise<ApiResponse<AgentAdvertiserAssignV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<AgentAdvertiserAssignV2Response>({
       method: "POST",
       path: "/open_api/2/agent/advertiser/assign/",
       queryParams: [
 
       ],
-      body: request
+      body: request.agentAdvertiserAssignV2Request
     });
   }
 }

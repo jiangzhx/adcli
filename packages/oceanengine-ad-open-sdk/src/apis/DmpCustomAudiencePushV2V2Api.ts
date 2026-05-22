@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DmpCustomAudiencePushV2V2Request, DmpCustomAudiencePushV2V2Response } from "../models";
 
 
+export interface OpenApi2DmpCustomAudiencePushV2PostRequest {
+  dmpCustomAudiencePushV2V2Request?: DmpCustomAudiencePushV2V2Request;
+}
+
 export class DmpCustomAudiencePushV2V2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class DmpCustomAudiencePushV2V2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2DmpCustomAudiencePushV2Post(request: DmpCustomAudiencePushV2V2Request): Promise<DmpCustomAudiencePushV2V2Response> {
+  async openApi2DmpCustomAudiencePushV2Post(request: OpenApi2DmpCustomAudiencePushV2PostRequest): Promise<DmpCustomAudiencePushV2V2Response> {
     const response = await this.openApi2DmpCustomAudiencePushV2PostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2DmpCustomAudiencePushV2PostWithHttpInfo(request: DmpCustomAudiencePushV2V2Request): Promise<ApiResponse<DmpCustomAudiencePushV2V2Response>> {
+  async openApi2DmpCustomAudiencePushV2PostWithHttpInfo(request: OpenApi2DmpCustomAudiencePushV2PostRequest): Promise<ApiResponse<DmpCustomAudiencePushV2V2Response>> {
+
     return this.apiClient.requestWithHttpInfo<DmpCustomAudiencePushV2V2Response>({
       method: "POST",
       path: "/open_api/2/dmp/custom_audience/push_v2/",
       queryParams: [
 
       ],
-      body: request
+      body: request.dmpCustomAudiencePushV2V2Request
     });
   }
 }

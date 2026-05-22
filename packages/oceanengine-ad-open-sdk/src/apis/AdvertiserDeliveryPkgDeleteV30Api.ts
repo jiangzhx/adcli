@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AdvertiserDeliveryPkgDeleteV30Request, AdvertiserDeliveryPkgDeleteV30Response } from "../models";
 
 
+export interface OpenApiV30AdvertiserDeliveryPkgDeletePostRequest {
+  advertiserDeliveryPkgDeleteV30Request?: AdvertiserDeliveryPkgDeleteV30Request;
+}
+
 export class AdvertiserDeliveryPkgDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class AdvertiserDeliveryPkgDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AdvertiserDeliveryPkgDeletePost(request: AdvertiserDeliveryPkgDeleteV30Request): Promise<AdvertiserDeliveryPkgDeleteV30Response> {
+  async openApiV30AdvertiserDeliveryPkgDeletePost(request: OpenApiV30AdvertiserDeliveryPkgDeletePostRequest): Promise<AdvertiserDeliveryPkgDeleteV30Response> {
     const response = await this.openApiV30AdvertiserDeliveryPkgDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AdvertiserDeliveryPkgDeletePostWithHttpInfo(request: AdvertiserDeliveryPkgDeleteV30Request): Promise<ApiResponse<AdvertiserDeliveryPkgDeleteV30Response>> {
+  async openApiV30AdvertiserDeliveryPkgDeletePostWithHttpInfo(request: OpenApiV30AdvertiserDeliveryPkgDeletePostRequest): Promise<ApiResponse<AdvertiserDeliveryPkgDeleteV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<AdvertiserDeliveryPkgDeleteV30Response>({
       method: "POST",
       path: "/open_api/v3.0/advertiser/delivery_pkg/delete/",
       queryParams: [
 
       ],
-      body: request
+      body: request.advertiserDeliveryPkgDeleteV30Request
     });
   }
 }

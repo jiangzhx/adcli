@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DpaEbpProductStatusBatchUpdateV30Request, DpaEbpProductStatusBatchUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30DpaEbpProductStatusBatchUpdatePostRequest {
+  dpaEbpProductStatusBatchUpdateV30Request?: DpaEbpProductStatusBatchUpdateV30Request;
+}
+
 export class DpaEbpProductStatusBatchUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class DpaEbpProductStatusBatchUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30DpaEbpProductStatusBatchUpdatePost(request: DpaEbpProductStatusBatchUpdateV30Request): Promise<DpaEbpProductStatusBatchUpdateV30Response> {
+  async openApiV30DpaEbpProductStatusBatchUpdatePost(request: OpenApiV30DpaEbpProductStatusBatchUpdatePostRequest): Promise<DpaEbpProductStatusBatchUpdateV30Response> {
     const response = await this.openApiV30DpaEbpProductStatusBatchUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30DpaEbpProductStatusBatchUpdatePostWithHttpInfo(request: DpaEbpProductStatusBatchUpdateV30Request): Promise<ApiResponse<DpaEbpProductStatusBatchUpdateV30Response>> {
+  async openApiV30DpaEbpProductStatusBatchUpdatePostWithHttpInfo(request: OpenApiV30DpaEbpProductStatusBatchUpdatePostRequest): Promise<ApiResponse<DpaEbpProductStatusBatchUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<DpaEbpProductStatusBatchUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/dpa/ebp/product_status/batch_update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.dpaEbpProductStatusBatchUpdateV30Request
     });
   }
 }

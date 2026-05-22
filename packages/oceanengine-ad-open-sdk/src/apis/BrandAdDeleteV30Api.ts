@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandAdDeleteV30Request, BrandAdDeleteV30Response } from "../models";
 
 
+export interface OpenApiV30BrandAdDeletePostRequest {
+  brandAdDeleteV30Request?: BrandAdDeleteV30Request;
+}
+
 export class BrandAdDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class BrandAdDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandAdDeletePost(request: BrandAdDeleteV30Request): Promise<BrandAdDeleteV30Response> {
+  async openApiV30BrandAdDeletePost(request: OpenApiV30BrandAdDeletePostRequest): Promise<BrandAdDeleteV30Response> {
     const response = await this.openApiV30BrandAdDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandAdDeletePostWithHttpInfo(request: BrandAdDeleteV30Request): Promise<ApiResponse<BrandAdDeleteV30Response>> {
+  async openApiV30BrandAdDeletePostWithHttpInfo(request: OpenApiV30BrandAdDeletePostRequest): Promise<ApiResponse<BrandAdDeleteV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<BrandAdDeleteV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/ad/delete/",
       queryParams: [
 
       ],
-      body: request
+      body: request.brandAdDeleteV30Request
     });
   }
 }

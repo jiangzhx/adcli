@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AssetsCreativeComponentUpdateV2Request, AssetsCreativeComponentUpdateV2Response } from "../models";
 
 
+export interface OpenApi2AssetsCreativeComponentUpdatePostRequest {
+  assetsCreativeComponentUpdateV2Request?: AssetsCreativeComponentUpdateV2Request;
+}
+
 export class AssetsCreativeComponentUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class AssetsCreativeComponentUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AssetsCreativeComponentUpdatePost(request: AssetsCreativeComponentUpdateV2Request): Promise<AssetsCreativeComponentUpdateV2Response> {
+  async openApi2AssetsCreativeComponentUpdatePost(request: OpenApi2AssetsCreativeComponentUpdatePostRequest): Promise<AssetsCreativeComponentUpdateV2Response> {
     const response = await this.openApi2AssetsCreativeComponentUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AssetsCreativeComponentUpdatePostWithHttpInfo(request: AssetsCreativeComponentUpdateV2Request): Promise<ApiResponse<AssetsCreativeComponentUpdateV2Response>> {
+  async openApi2AssetsCreativeComponentUpdatePostWithHttpInfo(request: OpenApi2AssetsCreativeComponentUpdatePostRequest): Promise<ApiResponse<AssetsCreativeComponentUpdateV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<AssetsCreativeComponentUpdateV2Response>({
       method: "POST",
       path: "/open_api/2/assets/creative_component/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.assetsCreativeComponentUpdateV2Request
     });
   }
 }

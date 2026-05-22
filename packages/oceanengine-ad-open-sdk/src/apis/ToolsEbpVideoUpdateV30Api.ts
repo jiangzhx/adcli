@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpVideoUpdateV30Request, ToolsEbpVideoUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30ToolsEbpVideoUpdatePostRequest {
+  toolsEbpVideoUpdateV30Request?: ToolsEbpVideoUpdateV30Request;
+}
+
 export class ToolsEbpVideoUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsEbpVideoUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpVideoUpdatePost(request: ToolsEbpVideoUpdateV30Request): Promise<ToolsEbpVideoUpdateV30Response> {
+  async openApiV30ToolsEbpVideoUpdatePost(request: OpenApiV30ToolsEbpVideoUpdatePostRequest): Promise<ToolsEbpVideoUpdateV30Response> {
     const response = await this.openApiV30ToolsEbpVideoUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpVideoUpdatePostWithHttpInfo(request: ToolsEbpVideoUpdateV30Request): Promise<ApiResponse<ToolsEbpVideoUpdateV30Response>> {
+  async openApiV30ToolsEbpVideoUpdatePostWithHttpInfo(request: OpenApiV30ToolsEbpVideoUpdatePostRequest): Promise<ApiResponse<ToolsEbpVideoUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsEbpVideoUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/ebp/video/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsEbpVideoUpdateV30Request
     });
   }
 }

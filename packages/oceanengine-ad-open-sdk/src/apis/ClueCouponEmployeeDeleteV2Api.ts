@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ClueCouponEmployeeDeleteV2Request, ClueCouponEmployeeDeleteV2Response } from "../models";
 
 
+export interface OpenApi2ClueCouponEmployeeDeletePostRequest {
+  clueCouponEmployeeDeleteV2Request?: ClueCouponEmployeeDeleteV2Request;
+}
+
 export class ClueCouponEmployeeDeleteV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ClueCouponEmployeeDeleteV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ClueCouponEmployeeDeletePost(request: ClueCouponEmployeeDeleteV2Request): Promise<ClueCouponEmployeeDeleteV2Response> {
+  async openApi2ClueCouponEmployeeDeletePost(request: OpenApi2ClueCouponEmployeeDeletePostRequest): Promise<ClueCouponEmployeeDeleteV2Response> {
     const response = await this.openApi2ClueCouponEmployeeDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ClueCouponEmployeeDeletePostWithHttpInfo(request: ClueCouponEmployeeDeleteV2Request): Promise<ApiResponse<ClueCouponEmployeeDeleteV2Response>> {
+  async openApi2ClueCouponEmployeeDeletePostWithHttpInfo(request: OpenApi2ClueCouponEmployeeDeletePostRequest): Promise<ApiResponse<ClueCouponEmployeeDeleteV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<ClueCouponEmployeeDeleteV2Response>({
       method: "POST",
       path: "/open_api/2/clue/coupon/employee/delete/",
       queryParams: [
 
       ],
-      body: request
+      body: request.clueCouponEmployeeDeleteV2Request
     });
   }
 }

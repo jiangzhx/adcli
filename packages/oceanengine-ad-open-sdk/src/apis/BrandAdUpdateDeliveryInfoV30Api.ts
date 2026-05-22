@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandAdUpdateDeliveryInfoV30Request, BrandAdUpdateDeliveryInfoV30Response } from "../models";
 
 
+export interface OpenApiV30BrandAdUpdateDeliveryInfoPostRequest {
+  brandAdUpdateDeliveryInfoV30Request?: BrandAdUpdateDeliveryInfoV30Request;
+}
+
 export class BrandAdUpdateDeliveryInfoV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class BrandAdUpdateDeliveryInfoV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandAdUpdateDeliveryInfoPost(request: BrandAdUpdateDeliveryInfoV30Request): Promise<BrandAdUpdateDeliveryInfoV30Response> {
+  async openApiV30BrandAdUpdateDeliveryInfoPost(request: OpenApiV30BrandAdUpdateDeliveryInfoPostRequest): Promise<BrandAdUpdateDeliveryInfoV30Response> {
     const response = await this.openApiV30BrandAdUpdateDeliveryInfoPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandAdUpdateDeliveryInfoPostWithHttpInfo(request: BrandAdUpdateDeliveryInfoV30Request): Promise<ApiResponse<BrandAdUpdateDeliveryInfoV30Response>> {
+  async openApiV30BrandAdUpdateDeliveryInfoPostWithHttpInfo(request: OpenApiV30BrandAdUpdateDeliveryInfoPostRequest): Promise<ApiResponse<BrandAdUpdateDeliveryInfoV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<BrandAdUpdateDeliveryInfoV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/ad/update_delivery_info/",
       queryParams: [
 
       ],
-      body: request
+      body: request.brandAdUpdateDeliveryInfoV30Request
     });
   }
 }

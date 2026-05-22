@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionNewcustomerCreateV30Request, PromotionNewcustomerCreateV30Response } from "../models";
 
 
+export interface OpenApiV30PromotionNewcustomerCreatePostRequest {
+  promotionNewcustomerCreateV30Request?: PromotionNewcustomerCreateV30Request;
+}
+
 export class PromotionNewcustomerCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class PromotionNewcustomerCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionNewcustomerCreatePost(request: PromotionNewcustomerCreateV30Request): Promise<PromotionNewcustomerCreateV30Response> {
+  async openApiV30PromotionNewcustomerCreatePost(request: OpenApiV30PromotionNewcustomerCreatePostRequest): Promise<PromotionNewcustomerCreateV30Response> {
     const response = await this.openApiV30PromotionNewcustomerCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionNewcustomerCreatePostWithHttpInfo(request: PromotionNewcustomerCreateV30Request): Promise<ApiResponse<PromotionNewcustomerCreateV30Response>> {
+  async openApiV30PromotionNewcustomerCreatePostWithHttpInfo(request: OpenApiV30PromotionNewcustomerCreatePostRequest): Promise<ApiResponse<PromotionNewcustomerCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<PromotionNewcustomerCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/promotion_newcustomer/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.promotionNewcustomerCreateV30Request
     });
   }
 }

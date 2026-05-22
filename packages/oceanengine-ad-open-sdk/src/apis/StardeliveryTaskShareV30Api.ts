@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StardeliveryTaskShareV30Request, StardeliveryTaskShareV30Response } from "../models";
 
 
+export interface OpenApiV30StardeliveryTaskSharePostRequest {
+  stardeliveryTaskShareV30Request?: StardeliveryTaskShareV30Request;
+}
+
 export class StardeliveryTaskShareV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class StardeliveryTaskShareV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30StardeliveryTaskSharePost(request: StardeliveryTaskShareV30Request): Promise<StardeliveryTaskShareV30Response> {
+  async openApiV30StardeliveryTaskSharePost(request: OpenApiV30StardeliveryTaskSharePostRequest): Promise<StardeliveryTaskShareV30Response> {
     const response = await this.openApiV30StardeliveryTaskSharePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30StardeliveryTaskSharePostWithHttpInfo(request: StardeliveryTaskShareV30Request): Promise<ApiResponse<StardeliveryTaskShareV30Response>> {
+  async openApiV30StardeliveryTaskSharePostWithHttpInfo(request: OpenApiV30StardeliveryTaskSharePostRequest): Promise<ApiResponse<StardeliveryTaskShareV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskShareV30Response>({
       method: "POST",
       path: "/open_api/v3.0/stardelivery/task/share/",
       queryParams: [
 
       ],
-      body: request
+      body: request.stardeliveryTaskShareV30Request
     });
   }
 }

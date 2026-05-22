@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionScheduleTimeUpdateV30Request, PromotionScheduleTimeUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30PromotionScheduleTimeUpdatePostRequest {
+  promotionScheduleTimeUpdateV30Request?: PromotionScheduleTimeUpdateV30Request;
+}
+
 export class PromotionScheduleTimeUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class PromotionScheduleTimeUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionScheduleTimeUpdatePost(request: PromotionScheduleTimeUpdateV30Request): Promise<PromotionScheduleTimeUpdateV30Response> {
+  async openApiV30PromotionScheduleTimeUpdatePost(request: OpenApiV30PromotionScheduleTimeUpdatePostRequest): Promise<PromotionScheduleTimeUpdateV30Response> {
     const response = await this.openApiV30PromotionScheduleTimeUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionScheduleTimeUpdatePostWithHttpInfo(request: PromotionScheduleTimeUpdateV30Request): Promise<ApiResponse<PromotionScheduleTimeUpdateV30Response>> {
+  async openApiV30PromotionScheduleTimeUpdatePostWithHttpInfo(request: OpenApiV30PromotionScheduleTimeUpdatePostRequest): Promise<ApiResponse<PromotionScheduleTimeUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<PromotionScheduleTimeUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/promotion/schedule_time/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.promotionScheduleTimeUpdateV30Request
     });
   }
 }

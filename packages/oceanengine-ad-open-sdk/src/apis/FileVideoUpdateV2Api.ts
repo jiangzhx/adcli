@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FileVideoUpdateV2Request, FileVideoUpdateV2Response } from "../models";
 
 
+export interface OpenApi2FileVideoUpdatePostRequest {
+  fileVideoUpdateV2Request?: FileVideoUpdateV2Request;
+}
+
 export class FileVideoUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class FileVideoUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2FileVideoUpdatePost(request: FileVideoUpdateV2Request): Promise<FileVideoUpdateV2Response> {
+  async openApi2FileVideoUpdatePost(request: OpenApi2FileVideoUpdatePostRequest): Promise<FileVideoUpdateV2Response> {
     const response = await this.openApi2FileVideoUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2FileVideoUpdatePostWithHttpInfo(request: FileVideoUpdateV2Request): Promise<ApiResponse<FileVideoUpdateV2Response>> {
+  async openApi2FileVideoUpdatePostWithHttpInfo(request: OpenApi2FileVideoUpdatePostRequest): Promise<ApiResponse<FileVideoUpdateV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<FileVideoUpdateV2Response>({
       method: "POST",
       path: "/open_api/2/file/video/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.fileVideoUpdateV2Request
     });
   }
 }

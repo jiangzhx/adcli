@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpWechatGameUpdateV30Request, ToolsEbpWechatGameUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30ToolsEbpWechatGameUpdatePostRequest {
+  toolsEbpWechatGameUpdateV30Request?: ToolsEbpWechatGameUpdateV30Request;
+}
+
 export class ToolsEbpWechatGameUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsEbpWechatGameUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpWechatGameUpdatePost(request: ToolsEbpWechatGameUpdateV30Request): Promise<ToolsEbpWechatGameUpdateV30Response> {
+  async openApiV30ToolsEbpWechatGameUpdatePost(request: OpenApiV30ToolsEbpWechatGameUpdatePostRequest): Promise<ToolsEbpWechatGameUpdateV30Response> {
     const response = await this.openApiV30ToolsEbpWechatGameUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpWechatGameUpdatePostWithHttpInfo(request: ToolsEbpWechatGameUpdateV30Request): Promise<ApiResponse<ToolsEbpWechatGameUpdateV30Response>> {
+  async openApiV30ToolsEbpWechatGameUpdatePostWithHttpInfo(request: OpenApiV30ToolsEbpWechatGameUpdatePostRequest): Promise<ApiResponse<ToolsEbpWechatGameUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsEbpWechatGameUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/ebp/wechat_game/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsEbpWechatGameUpdateV30Request
     });
   }
 }

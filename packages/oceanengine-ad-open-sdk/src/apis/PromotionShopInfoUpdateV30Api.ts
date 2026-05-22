@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionShopInfoUpdateV30Request, PromotionShopInfoUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30PromotionShopInfoUpdatePostRequest {
+  promotionShopInfoUpdateV30Request?: PromotionShopInfoUpdateV30Request;
+}
+
 export class PromotionShopInfoUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class PromotionShopInfoUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionShopInfoUpdatePost(request: PromotionShopInfoUpdateV30Request): Promise<PromotionShopInfoUpdateV30Response> {
+  async openApiV30PromotionShopInfoUpdatePost(request: OpenApiV30PromotionShopInfoUpdatePostRequest): Promise<PromotionShopInfoUpdateV30Response> {
     const response = await this.openApiV30PromotionShopInfoUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionShopInfoUpdatePostWithHttpInfo(request: PromotionShopInfoUpdateV30Request): Promise<ApiResponse<PromotionShopInfoUpdateV30Response>> {
+  async openApiV30PromotionShopInfoUpdatePostWithHttpInfo(request: OpenApiV30PromotionShopInfoUpdatePostRequest): Promise<ApiResponse<PromotionShopInfoUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<PromotionShopInfoUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/promotion/shop_info/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.promotionShopInfoUpdateV30Request
     });
   }
 }

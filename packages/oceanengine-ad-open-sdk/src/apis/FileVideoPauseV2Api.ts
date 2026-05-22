@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FileVideoPauseV2Request, FileVideoPauseV2Response } from "../models";
 
 
+export interface OpenApi2FileVideoPausePostRequest {
+  fileVideoPauseV2Request?: FileVideoPauseV2Request;
+}
+
 export class FileVideoPauseV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class FileVideoPauseV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2FileVideoPausePost(request: FileVideoPauseV2Request): Promise<FileVideoPauseV2Response> {
+  async openApi2FileVideoPausePost(request: OpenApi2FileVideoPausePostRequest): Promise<FileVideoPauseV2Response> {
     const response = await this.openApi2FileVideoPausePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2FileVideoPausePostWithHttpInfo(request: FileVideoPauseV2Request): Promise<ApiResponse<FileVideoPauseV2Response>> {
+  async openApi2FileVideoPausePostWithHttpInfo(request: OpenApi2FileVideoPausePostRequest): Promise<ApiResponse<FileVideoPauseV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<FileVideoPauseV2Response>({
       method: "POST",
       path: "/open_api/2/file/video/pause/",
       queryParams: [
 
       ],
-      body: request
+      body: request.fileVideoPauseV2Request
     });
   }
 }

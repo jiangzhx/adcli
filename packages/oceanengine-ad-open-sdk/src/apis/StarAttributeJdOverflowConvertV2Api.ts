@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarAttributeJdOverflowConvertV2Request, StarAttributeJdOverflowConvertV2Response } from "../models";
 
 
+export interface OpenApi2StarAttributeJdOverflowConvertPostRequest {
+  starAttributeJdOverflowConvertV2Request?: StarAttributeJdOverflowConvertV2Request;
+}
+
 export class StarAttributeJdOverflowConvertV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class StarAttributeJdOverflowConvertV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarAttributeJdOverflowConvertPost(request: StarAttributeJdOverflowConvertV2Request): Promise<StarAttributeJdOverflowConvertV2Response> {
+  async openApi2StarAttributeJdOverflowConvertPost(request: OpenApi2StarAttributeJdOverflowConvertPostRequest): Promise<StarAttributeJdOverflowConvertV2Response> {
     const response = await this.openApi2StarAttributeJdOverflowConvertPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarAttributeJdOverflowConvertPostWithHttpInfo(request: StarAttributeJdOverflowConvertV2Request): Promise<ApiResponse<StarAttributeJdOverflowConvertV2Response>> {
+  async openApi2StarAttributeJdOverflowConvertPostWithHttpInfo(request: OpenApi2StarAttributeJdOverflowConvertPostRequest): Promise<ApiResponse<StarAttributeJdOverflowConvertV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<StarAttributeJdOverflowConvertV2Response>({
       method: "POST",
       path: "/open_api/2/star/attribute/jd_overflow_convert/",
       queryParams: [
 
       ],
-      body: request
+      body: request.starAttributeJdOverflowConvertV2Request
     });
   }
 }

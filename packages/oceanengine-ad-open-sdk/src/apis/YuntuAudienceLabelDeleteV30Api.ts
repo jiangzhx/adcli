@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { YuntuAudienceLabelDeleteV30Request, YuntuAudienceLabelDeleteV30Response } from "../models";
 
 
+export interface OpenApiV30YuntuAudienceLabelDeletePostRequest {
+  yuntuAudienceLabelDeleteV30Request?: YuntuAudienceLabelDeleteV30Request;
+}
+
 export class YuntuAudienceLabelDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class YuntuAudienceLabelDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30YuntuAudienceLabelDeletePost(request: YuntuAudienceLabelDeleteV30Request): Promise<YuntuAudienceLabelDeleteV30Response> {
+  async openApiV30YuntuAudienceLabelDeletePost(request: OpenApiV30YuntuAudienceLabelDeletePostRequest): Promise<YuntuAudienceLabelDeleteV30Response> {
     const response = await this.openApiV30YuntuAudienceLabelDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30YuntuAudienceLabelDeletePostWithHttpInfo(request: YuntuAudienceLabelDeleteV30Request): Promise<ApiResponse<YuntuAudienceLabelDeleteV30Response>> {
+  async openApiV30YuntuAudienceLabelDeletePostWithHttpInfo(request: OpenApiV30YuntuAudienceLabelDeletePostRequest): Promise<ApiResponse<YuntuAudienceLabelDeleteV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<YuntuAudienceLabelDeleteV30Response>({
       method: "POST",
       path: "/open_api/v3.0/yuntu/audience_label/delete/",
       queryParams: [
 
       ],
-      body: request
+      body: request.yuntuAudienceLabelDeleteV30Request
     });
   }
 }

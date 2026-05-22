@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { LocalProjectUpdateV30Request, LocalProjectUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30LocalProjectUpdatePostRequest {
+  localProjectUpdateV30Request?: LocalProjectUpdateV30Request;
+}
+
 export class LocalProjectUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class LocalProjectUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30LocalProjectUpdatePost(request: LocalProjectUpdateV30Request): Promise<LocalProjectUpdateV30Response> {
+  async openApiV30LocalProjectUpdatePost(request: OpenApiV30LocalProjectUpdatePostRequest): Promise<LocalProjectUpdateV30Response> {
     const response = await this.openApiV30LocalProjectUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30LocalProjectUpdatePostWithHttpInfo(request: LocalProjectUpdateV30Request): Promise<ApiResponse<LocalProjectUpdateV30Response>> {
+  async openApiV30LocalProjectUpdatePostWithHttpInfo(request: OpenApiV30LocalProjectUpdatePostRequest): Promise<ApiResponse<LocalProjectUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<LocalProjectUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/local/project/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.localProjectUpdateV30Request
     });
   }
 }

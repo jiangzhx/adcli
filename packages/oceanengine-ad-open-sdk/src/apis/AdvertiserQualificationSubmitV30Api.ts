@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AdvertiserQualificationSubmitV30Request, AdvertiserQualificationSubmitV30Response } from "../models";
 
 
+export interface OpenApiV30AdvertiserQualificationSubmitPostRequest {
+  advertiserQualificationSubmitV30Request?: AdvertiserQualificationSubmitV30Request;
+}
+
 export class AdvertiserQualificationSubmitV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class AdvertiserQualificationSubmitV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AdvertiserQualificationSubmitPost(request: AdvertiserQualificationSubmitV30Request): Promise<AdvertiserQualificationSubmitV30Response> {
+  async openApiV30AdvertiserQualificationSubmitPost(request: OpenApiV30AdvertiserQualificationSubmitPostRequest): Promise<AdvertiserQualificationSubmitV30Response> {
     const response = await this.openApiV30AdvertiserQualificationSubmitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AdvertiserQualificationSubmitPostWithHttpInfo(request: AdvertiserQualificationSubmitV30Request): Promise<ApiResponse<AdvertiserQualificationSubmitV30Response>> {
+  async openApiV30AdvertiserQualificationSubmitPostWithHttpInfo(request: OpenApiV30AdvertiserQualificationSubmitPostRequest): Promise<ApiResponse<AdvertiserQualificationSubmitV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<AdvertiserQualificationSubmitV30Response>({
       method: "POST",
       path: "/open_api/v3.0/advertiser/qualification/submit/",
       queryParams: [
 
       ],
-      body: request
+      body: request.advertiserQualificationSubmitV30Request
     });
   }
 }

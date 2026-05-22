@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandCampaignDeleteV30Request, BrandCampaignDeleteV30Response } from "../models";
 
 
+export interface OpenApiV30BrandCampaignDeletePostRequest {
+  brandCampaignDeleteV30Request?: BrandCampaignDeleteV30Request;
+}
+
 export class BrandCampaignDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class BrandCampaignDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandCampaignDeletePost(request: BrandCampaignDeleteV30Request): Promise<BrandCampaignDeleteV30Response> {
+  async openApiV30BrandCampaignDeletePost(request: OpenApiV30BrandCampaignDeletePostRequest): Promise<BrandCampaignDeleteV30Response> {
     const response = await this.openApiV30BrandCampaignDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandCampaignDeletePostWithHttpInfo(request: BrandCampaignDeleteV30Request): Promise<ApiResponse<BrandCampaignDeleteV30Response>> {
+  async openApiV30BrandCampaignDeletePostWithHttpInfo(request: OpenApiV30BrandCampaignDeletePostRequest): Promise<ApiResponse<BrandCampaignDeleteV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<BrandCampaignDeleteV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/campaign/delete/",
       queryParams: [
 
       ],
-      body: request
+      body: request.brandCampaignDeleteV30Request
     });
   }
 }

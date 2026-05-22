@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StardeliveryTaskUnshareV30Request, StardeliveryTaskUnshareV30Response } from "../models";
 
 
+export interface OpenApiV30StardeliveryTaskUnsharePostRequest {
+  stardeliveryTaskUnshareV30Request?: StardeliveryTaskUnshareV30Request;
+}
+
 export class StardeliveryTaskUnshareV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class StardeliveryTaskUnshareV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30StardeliveryTaskUnsharePost(request: StardeliveryTaskUnshareV30Request): Promise<StardeliveryTaskUnshareV30Response> {
+  async openApiV30StardeliveryTaskUnsharePost(request: OpenApiV30StardeliveryTaskUnsharePostRequest): Promise<StardeliveryTaskUnshareV30Response> {
     const response = await this.openApiV30StardeliveryTaskUnsharePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30StardeliveryTaskUnsharePostWithHttpInfo(request: StardeliveryTaskUnshareV30Request): Promise<ApiResponse<StardeliveryTaskUnshareV30Response>> {
+  async openApiV30StardeliveryTaskUnsharePostWithHttpInfo(request: OpenApiV30StardeliveryTaskUnsharePostRequest): Promise<ApiResponse<StardeliveryTaskUnshareV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskUnshareV30Response>({
       method: "POST",
       path: "/open_api/v3.0/stardelivery/task/unshare/",
       queryParams: [
 
       ],
-      body: request
+      body: request.stardeliveryTaskUnshareV30Request
     });
   }
 }

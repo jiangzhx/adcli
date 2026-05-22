@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsHotMaterialDeriveSubmitV30Request, ToolsHotMaterialDeriveSubmitV30Response } from "../models";
 
 
+export interface OpenApiV30ToolsHotMaterialDeriveSubmitPostRequest {
+  toolsHotMaterialDeriveSubmitV30Request?: ToolsHotMaterialDeriveSubmitV30Request;
+}
+
 export class ToolsHotMaterialDeriveSubmitV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsHotMaterialDeriveSubmitV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsHotMaterialDeriveSubmitPost(request: ToolsHotMaterialDeriveSubmitV30Request): Promise<ToolsHotMaterialDeriveSubmitV30Response> {
+  async openApiV30ToolsHotMaterialDeriveSubmitPost(request: OpenApiV30ToolsHotMaterialDeriveSubmitPostRequest): Promise<ToolsHotMaterialDeriveSubmitV30Response> {
     const response = await this.openApiV30ToolsHotMaterialDeriveSubmitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsHotMaterialDeriveSubmitPostWithHttpInfo(request: ToolsHotMaterialDeriveSubmitV30Request): Promise<ApiResponse<ToolsHotMaterialDeriveSubmitV30Response>> {
+  async openApiV30ToolsHotMaterialDeriveSubmitPostWithHttpInfo(request: OpenApiV30ToolsHotMaterialDeriveSubmitPostRequest): Promise<ApiResponse<ToolsHotMaterialDeriveSubmitV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsHotMaterialDeriveSubmitV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/hot_material_derive/submit/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsHotMaterialDeriveSubmitV30Request
     });
   }
 }

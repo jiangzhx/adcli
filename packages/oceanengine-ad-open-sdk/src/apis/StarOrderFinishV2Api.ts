@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarOrderFinishV2Request, StarOrderFinishV2Response } from "../models";
 
 
+export interface OpenApi2StarOrderFinishPostRequest {
+  starOrderFinishV2Request?: StarOrderFinishV2Request;
+}
+
 export class StarOrderFinishV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class StarOrderFinishV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarOrderFinishPost(request: StarOrderFinishV2Request): Promise<StarOrderFinishV2Response> {
+  async openApi2StarOrderFinishPost(request: OpenApi2StarOrderFinishPostRequest): Promise<StarOrderFinishV2Response> {
     const response = await this.openApi2StarOrderFinishPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarOrderFinishPostWithHttpInfo(request: StarOrderFinishV2Request): Promise<ApiResponse<StarOrderFinishV2Response>> {
+  async openApi2StarOrderFinishPostWithHttpInfo(request: OpenApi2StarOrderFinishPostRequest): Promise<ApiResponse<StarOrderFinishV2Response>> {
+
     return this.apiClient.requestWithHttpInfo<StarOrderFinishV2Response>({
       method: "POST",
       path: "/open_api/2/star/order/finish/",
       queryParams: [
 
       ],
-      body: request
+      body: request.starOrderFinishV2Request
     });
   }
 }

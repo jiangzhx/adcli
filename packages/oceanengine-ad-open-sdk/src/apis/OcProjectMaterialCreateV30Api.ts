@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { OcProjectMaterialCreateV30Request, OcProjectMaterialCreateV30Response } from "../models";
 
 
+export interface OpenApiV30OcProjectMaterialCreatePostRequest {
+  ocProjectMaterialCreateV30Request?: OcProjectMaterialCreateV30Request;
+}
+
 export class OcProjectMaterialCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class OcProjectMaterialCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30OcProjectMaterialCreatePost(request: OcProjectMaterialCreateV30Request): Promise<OcProjectMaterialCreateV30Response> {
+  async openApiV30OcProjectMaterialCreatePost(request: OpenApiV30OcProjectMaterialCreatePostRequest): Promise<OcProjectMaterialCreateV30Response> {
     const response = await this.openApiV30OcProjectMaterialCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30OcProjectMaterialCreatePostWithHttpInfo(request: OcProjectMaterialCreateV30Request): Promise<ApiResponse<OcProjectMaterialCreateV30Response>> {
+  async openApiV30OcProjectMaterialCreatePostWithHttpInfo(request: OpenApiV30OcProjectMaterialCreatePostRequest): Promise<ApiResponse<OcProjectMaterialCreateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<OcProjectMaterialCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/oc_project/material/create/",
       queryParams: [
 
       ],
-      body: request
+      body: request.ocProjectMaterialCreateV30Request
     });
   }
 }

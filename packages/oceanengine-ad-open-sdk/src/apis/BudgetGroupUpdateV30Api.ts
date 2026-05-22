@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BudgetGroupUpdateV30Request, BudgetGroupUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30BudgetGroupUpdatePostRequest {
+  budgetGroupUpdateV30Request?: BudgetGroupUpdateV30Request;
+}
+
 export class BudgetGroupUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class BudgetGroupUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BudgetGroupUpdatePost(request: BudgetGroupUpdateV30Request): Promise<BudgetGroupUpdateV30Response> {
+  async openApiV30BudgetGroupUpdatePost(request: OpenApiV30BudgetGroupUpdatePostRequest): Promise<BudgetGroupUpdateV30Response> {
     const response = await this.openApiV30BudgetGroupUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BudgetGroupUpdatePostWithHttpInfo(request: BudgetGroupUpdateV30Request): Promise<ApiResponse<BudgetGroupUpdateV30Response>> {
+  async openApiV30BudgetGroupUpdatePostWithHttpInfo(request: OpenApiV30BudgetGroupUpdatePostRequest): Promise<ApiResponse<BudgetGroupUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<BudgetGroupUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/budget_group/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.budgetGroupUpdateV30Request
     });
   }
 }

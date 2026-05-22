@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandAdUpdateBaseInfoV30Request, BrandAdUpdateBaseInfoV30Response } from "../models";
 
 
+export interface OpenApiV30BrandAdUpdateBaseInfoPostRequest {
+  brandAdUpdateBaseInfoV30Request?: BrandAdUpdateBaseInfoV30Request;
+}
+
 export class BrandAdUpdateBaseInfoV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class BrandAdUpdateBaseInfoV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandAdUpdateBaseInfoPost(request: BrandAdUpdateBaseInfoV30Request): Promise<BrandAdUpdateBaseInfoV30Response> {
+  async openApiV30BrandAdUpdateBaseInfoPost(request: OpenApiV30BrandAdUpdateBaseInfoPostRequest): Promise<BrandAdUpdateBaseInfoV30Response> {
     const response = await this.openApiV30BrandAdUpdateBaseInfoPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandAdUpdateBaseInfoPostWithHttpInfo(request: BrandAdUpdateBaseInfoV30Request): Promise<ApiResponse<BrandAdUpdateBaseInfoV30Response>> {
+  async openApiV30BrandAdUpdateBaseInfoPostWithHttpInfo(request: OpenApiV30BrandAdUpdateBaseInfoPostRequest): Promise<ApiResponse<BrandAdUpdateBaseInfoV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<BrandAdUpdateBaseInfoV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/ad/update_base_info/",
       queryParams: [
 
       ],
-      body: request
+      body: request.brandAdUpdateBaseInfoV30Request
     });
   }
 }

@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpMicroAppletUpdateV30Request, ToolsEbpMicroAppletUpdateV30Response } from "../models";
 
 
+export interface OpenApiV30ToolsEbpMicroAppletUpdatePostRequest {
+  toolsEbpMicroAppletUpdateV30Request?: ToolsEbpMicroAppletUpdateV30Request;
+}
+
 export class ToolsEbpMicroAppletUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class ToolsEbpMicroAppletUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpMicroAppletUpdatePost(request: ToolsEbpMicroAppletUpdateV30Request): Promise<ToolsEbpMicroAppletUpdateV30Response> {
+  async openApiV30ToolsEbpMicroAppletUpdatePost(request: OpenApiV30ToolsEbpMicroAppletUpdatePostRequest): Promise<ToolsEbpMicroAppletUpdateV30Response> {
     const response = await this.openApiV30ToolsEbpMicroAppletUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpMicroAppletUpdatePostWithHttpInfo(request: ToolsEbpMicroAppletUpdateV30Request): Promise<ApiResponse<ToolsEbpMicroAppletUpdateV30Response>> {
+  async openApiV30ToolsEbpMicroAppletUpdatePostWithHttpInfo(request: OpenApiV30ToolsEbpMicroAppletUpdatePostRequest): Promise<ApiResponse<ToolsEbpMicroAppletUpdateV30Response>> {
+
     return this.apiClient.requestWithHttpInfo<ToolsEbpMicroAppletUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/ebp/micro_applet/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.toolsEbpMicroAppletUpdateV30Request
     });
   }
 }

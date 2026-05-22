@@ -38,31 +38,4 @@ describe("go request object TypeScript emitter", () => {
     expect(output).toContain("if (request.advertiserId == null)");
     expect(output).toContain('{ name: "page", value: request.page }');
   });
-
-  test("flattens single body parameter APIs to the body model type", () => {
-    const output = emitApiClass(
-      {
-        className: "Oauth2AccessTokenApi",
-        methodName: "openApiOauth2AccessTokenPost",
-        httpMethod: "POST",
-        path: "/open_api/oauth2/access_token/",
-        responseType: "Oauth2AccessTokenResponse",
-        params: [{ javaType: "Oauth2AccessTokenRequest", name: "oauth2AccessTokenRequest", required: false }],
-        queryParams: [],
-        formParams: [],
-        authNames: [],
-        accepts: ["application/json"],
-        contentTypes: ["application/json"],
-        bodyParam: "request.oauth2AccessTokenRequest",
-      },
-      { parameterStyle: "requestObject", runtimePrefix: "../runtime", modelsModule: "../models" },
-    );
-
-    expect(output).not.toContain("export interface OpenApiOauth2AccessTokenPostRequest");
-    expect(output).toContain(
-      "async openApiOauth2AccessTokenPost(request: Oauth2AccessTokenRequest): Promise<Oauth2AccessTokenResponse>",
-    );
-    expect(output).toContain("body: request");
-    expect(output).not.toContain("body: request.oauth2AccessTokenRequest");
-  });
 });

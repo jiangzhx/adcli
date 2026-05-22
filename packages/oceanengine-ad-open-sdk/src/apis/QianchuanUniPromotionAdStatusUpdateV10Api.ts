@@ -7,6 +7,10 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanUniPromotionAdStatusUpdateV10Request, QianchuanUniPromotionAdStatusUpdateV10Response } from "../models";
 
 
+export interface OpenApiV10QianchuanUniPromotionAdStatusUpdatePostRequest {
+  qianchuanUniPromotionAdStatusUpdateV10Request?: QianchuanUniPromotionAdStatusUpdateV10Request;
+}
+
 export class QianchuanUniPromotionAdStatusUpdateV10Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -18,19 +22,20 @@ export class QianchuanUniPromotionAdStatusUpdateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanUniPromotionAdStatusUpdatePost(request: QianchuanUniPromotionAdStatusUpdateV10Request): Promise<QianchuanUniPromotionAdStatusUpdateV10Response> {
+  async openApiV10QianchuanUniPromotionAdStatusUpdatePost(request: OpenApiV10QianchuanUniPromotionAdStatusUpdatePostRequest): Promise<QianchuanUniPromotionAdStatusUpdateV10Response> {
     const response = await this.openApiV10QianchuanUniPromotionAdStatusUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanUniPromotionAdStatusUpdatePostWithHttpInfo(request: QianchuanUniPromotionAdStatusUpdateV10Request): Promise<ApiResponse<QianchuanUniPromotionAdStatusUpdateV10Response>> {
+  async openApiV10QianchuanUniPromotionAdStatusUpdatePostWithHttpInfo(request: OpenApiV10QianchuanUniPromotionAdStatusUpdatePostRequest): Promise<ApiResponse<QianchuanUniPromotionAdStatusUpdateV10Response>> {
+
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionAdStatusUpdateV10Response>({
       method: "POST",
       path: "/open_api/v1.0/qianchuan/uni_promotion/ad/status/update/",
       queryParams: [
 
       ],
-      body: request
+      body: request.qianchuanUniPromotionAdStatusUpdateV10Request
     });
   }
 }
