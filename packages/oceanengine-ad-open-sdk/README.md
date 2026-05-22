@@ -8,7 +8,7 @@
 npm install @jiangzhx/oceanengine-ad-open-sdk
 ```
 
-当前 npm `latest` 指向 `1.1.87-port.1`。这个版本对标官方 Go SDK `github.com/oceanengine/ad_open_sdk_go@1.1.87`。
+`npm install` 会安装当前 npm `latest` 版本。本发布线对标官方 Go SDK `github.com/oceanengine/ad_open_sdk_go@1.1.87`。
 
 ## 使用入口
 
