@@ -1,7 +1,16 @@
 {
   "name": "@jiangzhx/tencent-ads-marketing-api-sdk",
-  "version": "1.7.84-port.1",
+  "version": "1.7.84-port.2",
   "description": "TypeScript SDK for Tencent Ads Marketing API.",
+  "homepage": "https://github.com/jiangzhx/adcli/tree/main/packages/tencent-ads-marketing-api-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangzhx/adcli.git",
+    "directory": "packages/tencent-ads-marketing-api-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/jiangzhx/adcli/issues"
+  },
   "type": "module",
   "sideEffects": false,
   "files": [
