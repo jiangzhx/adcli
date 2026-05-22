@@ -38,7 +38,7 @@
     "verify:public": "bun scripts/verify-public.ts",
     "adcli": "bun src/cli.ts",
     "prepack": "bun run build:cli",
-    "test": "bun test tests/**/*.test.ts",
+    "test": "bun test tests",
     "test:all": "bun run test && bun run sdk:test && bun run codegen:test",
     "typecheck": "tsc --noEmit",
     "typecheck:all": "bun run typecheck && bun run sdk:typecheck && bun run codegen:typecheck",
@@ -69,7 +69,7 @@
   },
   "dependencies": {
     "@jiangzhx/oceanengine-ad-open-sdk": "1.1.87-port.7",
-    "@jiangzhx/tencent-ads-marketing-api-sdk": "1.7.84-port.2",
+    "@jiangzhx/tencent-ads-marketing-api-sdk": "1.7.84-port.3",
     "env-paths": "^4.0.0",
     "minisearch": "^7.2.0"
   }

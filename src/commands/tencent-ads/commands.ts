@@ -253,6 +253,9 @@ function formatEntityList(payload: unknown, idHeader: string, idKeys: string[], 
 }
 
 function getPayloadList(payload: unknown): Record<string, unknown>[] {
+  if (isRecord(payload) && Array.isArray(payload.list)) {
+    return payload.list.filter(isRecord);
+  }
   if (!isRecord(payload) || !isRecord(payload.data) || !Array.isArray(payload.data.list)) {
     return [];
   }

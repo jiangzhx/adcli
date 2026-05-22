@@ -147,18 +147,18 @@ ${setUserToken}
   async requestWithHttpInfo<T = unknown>(options: RequestOptions): Promise<ApiResponse<T>> {
     const request = this.buildRequest(options);
     const response = await this.fetchImpl(request);
-    const data = await this.readResponseBody(response, options.responseType);
+    const responseBody = await this.readResponseBody(response, options.responseType);
 
     if (!response.ok) {
       throw new ApiException(\`HTTP \${response.status}\`, {
         statusCode: response.status,
-        responseBody: data,
+        responseBody,
         headers: response.headers,
       });
     }
 
     return {
-      data: data as T,
+      data: this.unwrapResponseData<T>(responseBody, options.responseType),
       statusCode: response.status,
       headers: response.headers,
     };
@@ -168,6 +168,12 @@ ${setUserToken}
     const headers = new Headers(this.defaultHeaders);
     for (const [name, value] of Object.entries(options.headers ?? {})) {
       headers.set(name, value);
+    }
+    if (!headers.has("Accept")) {
+      headers.set("Accept", "application/json");
+    }
+    if (options.contentType && options.contentType !== "multipart/form-data") {
+      headers.set("Content-Type", options.contentType);
     }
 
     let body: BodyInit | undefined;
@@ -231,6 +237,18 @@ ${setUserToken}
       return parseJsonPreservingLargeIntegers(text);
     }
     return text;
+  }
+
+  private unwrapResponseData<T>(responseBody: unknown, responseType: RequestOptions["responseType"] = "json"): T {
+    if (responseType !== "json" || !isRecord(responseBody) || typeof responseBody.code !== "number") {
+      return responseBody as T;
+    }
+    if (responseBody.code !== 0) {
+      throw new ApiException(getApiErrorMessage(responseBody), {
+        responseBody,
+      });
+    }
+    return responseBody.data as T;
   }
 
   private parameterToString(value: unknown) {
@@ -298,6 +316,20 @@ export type FetchLike = (input: Request, init?: RequestInit) => Promise<Response
 
 export function parseJsonPreservingLargeIntegers(text: string): unknown {
   return JSONBigStringParser.parse(text);
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function getApiErrorMessage(responseBody: Record<string, unknown>) {
+  if (typeof responseBody.message === "string" && responseBody.message) {
+    return responseBody.message;
+  }
+  if (typeof responseBody.message_cn === "string" && responseBody.message_cn) {
+    return responseBody.message_cn;
+  }
+  return \`Tencent Ads API error: \${responseBody.code}\`;
 }
 
 function createNonce() {

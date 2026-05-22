@@ -19,6 +19,7 @@ export declare class ApiClient {
     private buildRequest;
     private buildMultipartFormBody;
     private readResponseBody;
+    private unwrapResponseData;
     private parameterToString;
     private applyAuthQueryParams;
 }

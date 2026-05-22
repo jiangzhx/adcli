@@ -117,7 +117,7 @@ describe("tencent ads CLI commands", () => {
     expect(url.searchParams.get("page")).toBe("1");
     expect(url.searchParams.get("page_size")).toBe("100");
     expect(requests[0].headers.get("Access-Token")).toBe("token");
-    expect(output).toEqual({ code: 0, data: { list: [{ account_id: 123, corporation_name: "广告主" }] } });
+    expect(output).toEqual({ list: [{ account_id: 123, corporation_name: "广告主" }] });
   });
 
   test("gets advertiser detail through advertiser get API", async () => {
@@ -146,24 +146,18 @@ describe("tencent ads CLI commands", () => {
     });
 
     expect(output).toEqual({
-      code: 0,
-      data: {
-        list: [
-          { account_id: "9007199254740993", account_name: "广告主" },
-        ],
-      },
+      list: [
+        { account_id: "9007199254740993", account_name: "广告主" },
+      ],
     });
   });
 
   test("formats advertiser list as account id and name by default", () => {
     const payload = {
-      code: 0,
-      data: {
-        list: [
-          { account_id: 3001, account_name: "广告主 A" },
-          { account_id: 3002, corporation_name: "广告主 B" },
-        ],
-      },
+      list: [
+        { account_id: 3001, account_name: "广告主 A" },
+        { account_id: 3002, corporation_name: "广告主 B" },
+      ],
     };
 
     expect(formatTencentAdsOutput(payload, false, ["advertiser", "list"])).toBe([
@@ -225,13 +219,10 @@ describe("tencent ads CLI commands", () => {
 
   test("formats adgroup list as adgroup id and name by default", () => {
     const payload = {
-      code: 0,
-      data: {
-        list: [
-          { adgroup_id: 1001, adgroup_name: "计划 A" },
-          { adgroup_id: 1002, name: "计划 B" },
-        ],
-      },
+      list: [
+        { adgroup_id: 1001, adgroup_name: "计划 A" },
+        { adgroup_id: 1002, name: "计划 B" },
+      ],
     };
 
     expect(formatTencentAdsOutput(payload, false, ["adgroup", "list"])).toBe([
@@ -273,13 +264,10 @@ describe("tencent ads CLI commands", () => {
 
   test("formats dynamic creative list as dynamic creative id and name by default", () => {
     const payload = {
-      code: 0,
-      data: {
-        list: [
-          { dynamic_creative_id: 2001, dynamic_creative_name: "创意 A" },
-          { dynamic_creative_id: 2002, name: "创意 B" },
-        ],
-      },
+      list: [
+        { dynamic_creative_id: 2001, dynamic_creative_name: "创意 A" },
+        { dynamic_creative_id: 2002, name: "创意 B" },
+      ],
     };
 
     expect(formatTencentAdsOutput(payload, false, ["dynamic-creative", "list"])).toBe([
@@ -316,6 +304,23 @@ describe("tencent ads CLI commands", () => {
       code: 40100,
       message: "invalid access token",
       request_id: "request-id",
+    }, null, 2));
+  });
+
+  test("formats Tencent business errors from generated SDK errors", async () => {
+    let thrown: unknown;
+    try {
+      await runTencentAdsCommand(["adgroup", "list", "--access-token", "token", "--account-id", "123"], {
+        fetch: async () => jsonResponse({ code: 11002, message: "Access token is invalid.", message_cn: "您的access_token无效" }),
+      });
+    } catch (error) {
+      thrown = error;
+    }
+
+    expect(formatTencentAdsError(thrown)).toBe(JSON.stringify({
+      code: 11002,
+      message: "Access token is invalid.",
+      message_cn: "您的access_token无效",
     }, null, 2));
   });
 });

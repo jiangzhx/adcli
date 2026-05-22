@@ -10,7 +10,7 @@ describe("tencent ads package shape", () => {
     const pkg = JSON.parse(readFileSync(join(packageRoot, "package.json"), "utf8"));
 
     expect(pkg.name).toBe("@jiangzhx/tencent-ads-marketing-api-sdk");
-    expect(pkg.version).toBe("1.7.84-port.2");
+    expect(pkg.version).toBe("1.7.84-port.3");
     expect(pkg.type).toBe("module");
     expect(pkg.exports["."].import).toBe("./dist/index.js");
     expect(pkg.exports["."].types).toBe("./dist/index.d.ts");

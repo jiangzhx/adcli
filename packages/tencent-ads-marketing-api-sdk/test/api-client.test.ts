@@ -42,6 +42,21 @@ describe("ApiClient", () => {
     expect(requests[0].headers.get("X-Sdk-Version")).toBe(SDK_VERSION);
   });
 
+  test("sets generated GET content negotiation headers", async () => {
+    const requests: Request[] = [];
+    const client = new ApiClient({
+      fetch: async (input) => {
+        requests.push(input as Request);
+        return jsonResponse({ code: 0, data: {} });
+      },
+    });
+
+    await client.request({ method: "GET", path: "/adgroups/get", contentType: "text/plain" });
+
+    expect(requests[0].headers.get("Content-Type")).toBe("text/plain");
+    expect(requests[0].headers.get("Accept")).toBe("application/json");
+  });
+
   test("preserves the v3.0 base path for generated absolute API paths", async () => {
     const requests: Request[] = [];
     const client = new ApiClient({
@@ -93,6 +108,38 @@ describe("ApiClient", () => {
     expect(new URL(requests[0].url).searchParams.get("fields")).toBe('["adgroup_id","adgroup_name"]');
   });
 
+  test("returns Tencent response data like Go SDK", async () => {
+    const client = new ApiClient({
+      fetch: async () => jsonResponse({ code: 0, data: { list: [{ adgroup_id: 123 }] } }),
+    });
+
+    const response = await client.request({ method: "GET", path: "/adgroups/get" });
+    expect(response).toEqual({
+      list: [{ adgroup_id: 123 }],
+    });
+  });
+
+  test("throws ApiException for Tencent business errors like Go SDK", async () => {
+    const client = new ApiClient({
+      fetch: async () => jsonResponse({ code: 11002, message: "Access token is invalid.", message_cn: "您的access_token无效" }),
+    });
+
+    let thrown: unknown;
+    try {
+      await client.request({ method: "GET", path: "/adgroups/get" });
+    } catch (error) {
+      thrown = error;
+    }
+
+    expect(thrown).toBeInstanceOf(ApiException);
+    expect((thrown as Error).message).toBe("Access token is invalid.");
+    expect((thrown as ApiException).responseBody).toEqual({
+      code: 11002,
+      message: "Access token is invalid.",
+      message_cn: "您的access_token无效",
+    });
+  });
+
   test("sends multipart form params and files", async () => {
     const requests: Request[] = [];
     const client = new ApiClient({
@@ -134,12 +181,12 @@ describe("ApiClient", () => {
     });
 
     const response = await client.request<{
-      data: { list: Array<{ account_id: string; adgroup_id: string; safe_count: number }> };
+      list: Array<{ account_id: string; adgroup_id: string; safe_count: number }>;
     }>({ method: "GET", path: "/adgroups/get" });
 
-    expect(response.data.list[0].account_id).toBe("7641898034989400000");
-    expect(response.data.list[0].adgroup_id).toBe("7641894773956215000");
-    expect(response.data.list[0].safe_count).toBe(123);
+    expect(response.list[0].account_id).toBe("7641898034989400000");
+    expect(response.list[0].adgroup_id).toBe("7641894773956215000");
+    expect(response.list[0].safe_count).toBe(123);
   });
 
   test("throws ApiException on non-2xx responses", async () => {

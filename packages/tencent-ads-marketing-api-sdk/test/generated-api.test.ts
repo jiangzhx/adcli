@@ -41,7 +41,7 @@ describe("generated APIs", () => {
     );
 
     await expect(api.get({ fields: ["adgroup_id"] } as never)).rejects.toBeInstanceOf(Error);
-    await api.get({
+    const output = await api.get({
       accountId: "7641898034989400000",
       fields: ["adgroup_id", "adgroup_name"],
       page: 1,
@@ -54,6 +54,9 @@ describe("generated APIs", () => {
     expect(url.searchParams.get("account_id")).toBe("7641898034989400000");
     expect(url.searchParams.get("fields")).toBe('["adgroup_id","adgroup_name"]');
     expect(url.searchParams.get("page_size")).toBe("10");
+    expect(requests[0].headers.get("Content-Type")).toBe("text/plain");
+    expect(requests[0].headers.get("Accept")).toBe("application/json");
+    expect(output).toEqual({});
   });
 
   test("v3 DynamicCreativesApi sends requests to dynamic_creatives/get", async () => {

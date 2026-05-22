@@ -75,16 +75,16 @@ export class ApiClient {
     async requestWithHttpInfo(options) {
         const request = this.buildRequest(options);
         const response = await this.fetchImpl(request);
-        const data = await this.readResponseBody(response, options.responseType);
+        const responseBody = await this.readResponseBody(response, options.responseType);
         if (!response.ok) {
             throw new ApiException(`HTTP ${response.status}`, {
                 statusCode: response.status,
-                responseBody: data,
+                responseBody,
                 headers: response.headers,
             });
         }
         return {
-            data: data,
+            data: this.unwrapResponseData(responseBody, options.responseType),
             statusCode: response.status,
             headers: response.headers,
         };
@@ -93,6 +93,12 @@ export class ApiClient {
         const headers = new Headers(this.defaultHeaders);
         for (const [name, value] of Object.entries(options.headers ?? {})) {
             headers.set(name, value);
+        }
+        if (!headers.has("Accept")) {
+            headers.set("Accept", "application/json");
+        }
+        if (options.contentType && options.contentType !== "multipart/form-data") {
+            headers.set("Content-Type", options.contentType);
         }
         let body;
         if (options.method !== "GET" && (options.formParams || options.files)) {
@@ -156,6 +162,17 @@ export class ApiClient {
         }
         return text;
     }
+    unwrapResponseData(responseBody, responseType = "json") {
+        if (responseType !== "json" || !isRecord(responseBody) || typeof responseBody.code !== "number") {
+            return responseBody;
+        }
+        if (responseBody.code !== 0) {
+            throw new ApiException(getApiErrorMessage(responseBody), {
+                responseBody,
+            });
+        }
+        return responseBody.data;
+    }
     parameterToString(value) {
         if (value instanceof Date) {
             return value.toISOString();
@@ -191,6 +208,18 @@ export class ApiException extends Error {
 }
 export function parseJsonPreservingLargeIntegers(text) {
     return JSONBigStringParser.parse(text);
+}
+function isRecord(value) {
+    return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+function getApiErrorMessage(responseBody) {
+    if (typeof responseBody.message === "string" && responseBody.message) {
+        return responseBody.message;
+    }
+    if (typeof responseBody.message_cn === "string" && responseBody.message_cn) {
+        return responseBody.message_cn;
+    }
+    return `Tencent Ads API error: ${responseBody.code}`;
 }
 function createNonce() {
     return crypto.randomUUID().replaceAll("-", "").slice(0, 20);

@@ -3991,16 +3991,16 @@ class ApiClient2 {
   async requestWithHttpInfo(options) {
     const request = this.buildRequest(options);
     const response = await this.fetchImpl(request);
-    const data = await this.readResponseBody(response, options.responseType);
+    const responseBody = await this.readResponseBody(response, options.responseType);
     if (!response.ok) {
       throw new ApiException2(`HTTP ${response.status}`, {
         statusCode: response.status,
-        responseBody: data,
+        responseBody,
         headers: response.headers
       });
     }
     return {
-      data,
+      data: this.unwrapResponseData(responseBody, options.responseType),
       statusCode: response.status,
       headers: response.headers
     };
@@ -4009,6 +4009,12 @@ class ApiClient2 {
     const headers = new Headers(this.defaultHeaders);
     for (const [name, value] of Object.entries(options.headers ?? {})) {
       headers.set(name, value);
+    }
+    if (!headers.has("Accept")) {
+      headers.set("Accept", "application/json");
+    }
+    if (options.contentType && options.contentType !== "multipart/form-data") {
+      headers.set("Content-Type", options.contentType);
     }
     let body;
     if (options.method !== "GET" && (options.formParams || options.files)) {
@@ -4069,6 +4075,17 @@ class ApiClient2 {
     }
     return text;
   }
+  unwrapResponseData(responseBody, responseType = "json") {
+    if (responseType !== "json" || !isRecord2(responseBody) || typeof responseBody.code !== "number") {
+      return responseBody;
+    }
+    if (responseBody.code !== 0) {
+      throw new ApiException2(getApiErrorMessage(responseBody), {
+        responseBody
+      });
+    }
+    return responseBody.data;
+  }
   parameterToString(value) {
     if (value instanceof Date) {
       return value.toISOString();
@@ -4105,6 +4122,18 @@ class ApiException2 extends Error {
 }
 function parseJsonPreservingLargeIntegers2(text) {
   return JSONBigStringParser2.parse(text);
+}
+function isRecord2(value) {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+function getApiErrorMessage(responseBody) {
+  if (typeof responseBody.message === "string" && responseBody.message) {
+    return responseBody.message;
+  }
+  if (typeof responseBody.message_cn === "string" && responseBody.message_cn) {
+    return responseBody.message_cn;
+  }
+  return `Tencent Ads API error: ${responseBody.code}`;
 }
 function createNonce() {
   return crypto.randomUUID().replaceAll("-", "").slice(0, 20);
@@ -4616,7 +4645,7 @@ function formatTencentAdsOutput(payload, json, argv = []) {
   return JSON.stringify(payload, null, 2);
 }
 function formatTencentAdsError(error) {
-  if (!isRecord2(error) || !("responseBody" in error)) {
+  if (!isRecord3(error) || !("responseBody" in error)) {
     return;
   }
   const responseBody = error.responseBody;
@@ -4738,10 +4767,13 @@ function formatEntityList2(payload, idHeader, idKeys, nameKeys) {
 `);
 }
 function getPayloadList2(payload) {
-  if (!isRecord2(payload) || !isRecord2(payload.data) || !Array.isArray(payload.data.list)) {
+  if (isRecord3(payload) && Array.isArray(payload.list)) {
+    return payload.list.filter(isRecord3);
+  }
+  if (!isRecord3(payload) || !isRecord3(payload.data) || !Array.isArray(payload.data.list)) {
     return [];
   }
-  return payload.data.list.filter(isRecord2);
+  return payload.data.list.filter(isRecord3);
 }
 function getRecordValue2(record, keys) {
   for (const key of keys) {
@@ -4752,11 +4784,11 @@ function getRecordValue2(record, keys) {
   }
   return "";
 }
-function isRecord2(value) {
+function isRecord3(value) {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 function isTencentAdsErrorPayload(payload) {
-  return isRecord2(payload) && typeof payload.code === "number" && payload.code !== 0;
+  return isRecord3(payload) && typeof payload.code === "number" && payload.code !== 0;
 }
 
 // src/cli.ts
