@@ -4,7 +4,7 @@
 import type { QianchuanUniPromotionAdControlTaskBudgetUpdateV10RequestUpdateBudgetInfosInner } from "../models";
 
 export interface QianchuanUniPromotionAdControlTaskBudgetUpdateV10Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   update_budget_infos: QianchuanUniPromotionAdControlTaskBudgetUpdateV10RequestUpdateBudgetInfosInner[];
 }
 

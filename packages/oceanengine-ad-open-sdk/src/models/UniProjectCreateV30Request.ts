@@ -4,7 +4,7 @@
 import type { UniProjectCreateV30AigcDynamicCreativeSwitch, UniProjectCreateV30DeliveryProduct, UniProjectCreateV30MonetizationMode, UniProjectCreateV30RequestAudience, UniProjectCreateV30RequestBrandInfo, UniProjectCreateV30RequestInternalAdvertiserInfo, UniProjectCreateV30RequestPlayletSeriesUrlInfoInner, UniProjectCreateV30RequestProductInfo, UniProjectCreateV30RequestRelatedProduct, UniProjectCreateV30RequestTitleMaterialListInner, UniProjectCreateV30RequestVideoMaterialListInner, UniProjectCreateV30ScheduleType } from "../models";
 
 export interface UniProjectCreateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   aigc_dynamic_creative_switch?: UniProjectCreateV30AigcDynamicCreativeSwitch;
   audience?: UniProjectCreateV30RequestAudience;
   aweme_id?: string;

@@ -4,7 +4,7 @@
 import type { PromotionNewcustomerCreateV30BidType, PromotionNewcustomerCreateV30ExternalAction, PromotionNewcustomerCreateV30RequestAudience, PromotionNewcustomerCreateV30RequestPromotionMaterials, PromotionNewcustomerCreateV30RequestRelatedProductsInner } from "../models";
 
 export interface PromotionNewcustomerCreateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   audience?: PromotionNewcustomerCreateV30RequestAudience;
   aweme_id: string;
   bid_type?: PromotionNewcustomerCreateV30BidType;

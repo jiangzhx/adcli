@@ -5,9 +5,9 @@ import type { PrepayChargeGenerateFixRemiattanceCodeCreateV30Caller, PrepayCharg
 
 export interface PrepayChargeGenerateFixRemiattanceCodeCreateV30Request {
   caller: PrepayChargeGenerateFixRemiattanceCodeCreateV30Caller;
-  cc_account_id: number;
+  cc_account_id: number | string;
   charge_amount: number;
-  charge_target_id: number;
+  charge_target_id: number | string;
   charge_target_type: PrepayChargeGenerateFixRemiattanceCodeCreateV30ChargeTargetType;
   charge_type: PrepayChargeGenerateFixRemiattanceCodeCreateV30ChargeType;
   platform: PrepayChargeGenerateFixRemiattanceCodeCreateV30Platform;

@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface StardeliveryTaskBudgetUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   star_task_budget: number;
-  star_task_id: number;
+  star_task_id: number | string;
 }
 

@@ -3,6 +3,6 @@
 
 export interface LocalImUploadImageV30Request {
   image_file: File;
-  local_account_id: number;
+  local_account_id: number | string;
 }
 

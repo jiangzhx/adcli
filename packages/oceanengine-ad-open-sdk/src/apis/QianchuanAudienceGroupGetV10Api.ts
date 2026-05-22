@@ -8,7 +8,7 @@ import type { QianchuanAudienceGroupGetV10Filtering, QianchuanAudienceGroupGetV1
 
 
 export interface OpenApiV10QianchuanAudienceGroupGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: QianchuanAudienceGroupGetV10Filtering;
 }
 

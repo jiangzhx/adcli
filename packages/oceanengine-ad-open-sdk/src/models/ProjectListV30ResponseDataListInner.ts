@@ -5,7 +5,7 @@ import type { ProjectListV30DataListAdType, ProjectListV30DataListAigcDynamicCre
 
 export interface ProjectListV30ResponseDataListInner {
   ad_type?: ProjectListV30DataListAdType;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   aigc_dynamic_creative_switch?: ProjectListV30DataListAigcDynamicCreativeSwitch;
   app_name?: string;
   app_promotion_type?: ProjectListV30DataListAppPromotionType;
@@ -14,7 +14,7 @@ export interface ProjectListV30ResponseDataListInner {
   audience_extend?: string;
   auto_extend_traffic?: ProjectListV30DataListAutoExtendTraffic;
   blue_flow_package?: ProjectListV30ResponseDataListInnerBlueFlowPackage;
-  budget_group_id?: number;
+  budget_group_id?: number | string;
   delivery_medium?: ProjectListV30DataListDeliveryMedium;
   delivery_mode?: ProjectListV30DataListDeliveryMode;
   delivery_product?: ProjectListV30DataListDeliveryProduct;
@@ -36,7 +36,7 @@ export interface ProjectListV30ResponseDataListInner {
   landing_type?: ProjectListV30DataListLandingType;
   launch_type?: ProjectListV30DataListLaunchType;
   marketing_goal?: ProjectListV30DataListMarketingGoal;
-  micro_app_instance_id?: number;
+  micro_app_instance_id?: number | string;
   micro_promotion_type?: ProjectListV30DataListMicroPromotionType;
   multi_asset_type?: ProjectListV30DataListMultiAssetType;
   multi_delivery_medium?: ProjectListV30DataListMultiDeliveryMedium;
@@ -51,15 +51,15 @@ export interface ProjectListV30ResponseDataListInner {
   package_name?: string;
   pricing?: ProjectListV30DataListPricing;
   project_create_time?: string;
-  project_id?: number;
+  project_id?: number | string;
   project_modify_time?: string;
   promotion_type?: ProjectListV30DataListPromotionType;
-  quick_app_id?: number;
+  quick_app_id?: number | string;
   related_product?: ProjectListV30ResponseDataListInnerRelatedProduct;
   search_bid_ratio?: number;
   star_auto_delivery_switch?: ProjectListV30DataListStarAutoDeliverySwitch;
   star_auto_material_addition_switch?: ProjectListV30DataListStarAutoMaterialAdditionSwitch;
-  star_task_id?: number;
+  star_task_id?: number | string;
   star_task_version?: ProjectListV30DataListStarTaskVersion;
   status?: ProjectListV30DataListStatus;
   status_first?: ProjectListV30DataListStatusFirst;
@@ -69,8 +69,8 @@ export interface ProjectListV30ResponseDataListInner {
   ulink_type?: ProjectListV30DataListUlinkType;
   ulink_url?: string;
   value_optimized_type?: ProjectListV30DataListValueOptimizedType;
-  yuntu_5a_brand_id?: number;
-  yuntu_5a_brand_main_industry_id?: number;
+  yuntu_5a_brand_id?: number | string;
+  yuntu_5a_brand_main_industry_id?: number | string;
   yuntu_5a_brand_name?: string;
   yuntu_5a_industry_name?: string;
 }

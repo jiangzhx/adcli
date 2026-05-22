@@ -4,7 +4,7 @@
 import type { ProjectRoigoalUpdateV30RequestDataInner } from "../models";
 
 export interface ProjectRoigoalUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   data: ProjectRoigoalUpdateV30RequestDataInner[];
 }
 

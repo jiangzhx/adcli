@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarMcnGetAuthorListV2ResponseDataDataInner {
-  author_id?: number;
+  author_id?: number | string;
   author_name?: string;
   is_block?: boolean;
   is_contracted?: boolean;

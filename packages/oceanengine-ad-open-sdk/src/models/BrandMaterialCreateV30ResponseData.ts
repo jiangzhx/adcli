@@ -3,6 +3,6 @@
 
 export interface BrandMaterialCreateV30ResponseData {
   material_id_name_map?: Record<string, string>;
-  material_ids?: number[];
+  material_ids?: number | string[];
 }
 

@@ -4,7 +4,7 @@
 import type { ToolsClueInfoGetV2ResponseDataListInnerRefundTagListInner } from "../models";
 
 export interface ToolsClueInfoGetV2ResponseDataListInner {
-  clue_id?: number;
+  clue_id?: number | string;
   refund_tag_list?: ToolsClueInfoGetV2ResponseDataListInnerRefundTagListInner[];
 }
 

@@ -4,7 +4,7 @@
 import type { ToolsPioneerProgramAttachmentUploadV2DataFileType, ToolsPioneerProgramAttachmentUploadV2Platform } from "../models";
 
 export interface ToolsPioneerProgramAttachmentUploadV2Request {
-  app_id: number;
+  app_id: number | string;
   data_file_type: ToolsPioneerProgramAttachmentUploadV2DataFileType;
   debug_mode?: boolean;
   file_data: File;

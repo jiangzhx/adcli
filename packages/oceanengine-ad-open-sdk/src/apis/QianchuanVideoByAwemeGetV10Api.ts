@@ -8,10 +8,10 @@ import type { QianchuanVideoByAwemeGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanVideoByAwemeGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   awemeItemUrl?: string;
-  awemeItemId?: number;
+  awemeItemId?: number | string;
 }
 
 export class QianchuanVideoByAwemeGetV10Api {

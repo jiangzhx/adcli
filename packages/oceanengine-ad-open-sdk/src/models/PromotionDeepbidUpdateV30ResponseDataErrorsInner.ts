@@ -3,6 +3,6 @@
 
 export interface PromotionDeepbidUpdateV30ResponseDataErrorsInner {
   error_message?: string;
-  promotion_id?: number;
+  promotion_id?: number | string;
 }
 

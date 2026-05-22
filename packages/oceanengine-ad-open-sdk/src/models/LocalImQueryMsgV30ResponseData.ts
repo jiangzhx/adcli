@@ -11,6 +11,6 @@ export interface LocalImQueryMsgV30ResponseData {
   extra: Record<string, string>;
   log_id: string;
   msg_id: string;
-  receive_adv_id?: number;
+  receive_adv_id?: number | string;
 }
 

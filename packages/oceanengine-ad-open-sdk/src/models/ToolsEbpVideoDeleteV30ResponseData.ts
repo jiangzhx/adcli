@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsEbpVideoDeleteV30ResponseData {
-  fail_material_ids?: number[];
+  fail_material_ids?: number | string[];
 }
 

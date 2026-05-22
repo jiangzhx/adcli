@@ -8,10 +8,10 @@ import type { ReportAudienceAgeV2IdType, ReportAudienceAgeV2Response } from "../
 
 
 export interface OpenApi2ReportAudienceAgeGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   endDate?: string;
   idType?: ReportAudienceAgeV2IdType;
-  ids?: number[];
+  ids?: number | string[];
   metrics?: string[];
   startDate?: string;
 }

@@ -8,8 +8,8 @@ export interface KeywordUpdateV2V2ResponseDataErrorListInner {
   bid_type?: KeywordUpdateV2V2DataErrorListBidType;
   error_reason?: string;
   is_pause?: number;
-  keyword_id?: number;
+  keyword_id?: number | string;
   match_type?: KeywordUpdateV2V2DataErrorListMatchType;
-  word_id?: number;
+  word_id?: number | string;
 }
 

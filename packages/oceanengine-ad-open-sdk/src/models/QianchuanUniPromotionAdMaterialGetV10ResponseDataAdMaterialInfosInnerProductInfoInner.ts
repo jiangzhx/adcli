@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerProductInfoInner {
-  product_id?: number;
+  product_id?: number | string;
   product_image?: string;
   product_name?: string;
 }

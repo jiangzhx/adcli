@@ -7,6 +7,6 @@ export interface ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30RequestProject
   delivery_optimization_type: ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ProjectAdjustListDeliveryOptimizationType;
   param_bid_value?: number;
   param_roi_goal_value?: number;
-  project_id: number;
+  project_id: number | string;
 }
 

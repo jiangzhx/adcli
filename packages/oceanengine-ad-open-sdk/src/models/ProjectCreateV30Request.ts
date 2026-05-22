@@ -5,7 +5,7 @@ import type { ProjectCreateV30AdType, ProjectCreateV30AigcDynamicCreativeSwitch,
 
 export interface ProjectCreateV30Request {
   ad_type: ProjectCreateV30AdType;
-  advertiser_id: number;
+  advertiser_id: number | string;
   advertising_volume?: number;
   aigc_dynamic_creative_switch?: ProjectCreateV30AigcDynamicCreativeSwitch;
   app_name?: string;
@@ -15,7 +15,7 @@ export interface ProjectCreateV30Request {
   audience_extend?: ProjectCreateV30AudienceExtend;
   auto_extend_traffic?: ProjectCreateV30AutoExtendTraffic;
   blue_flow_package?: ProjectCreateV30RequestBlueFlowPackage;
-  budget_group_id?: number;
+  budget_group_id?: number | string;
   classify?: ProjectCreateV30Classify;
   delivery_mode?: ProjectCreateV30DeliveryMode;
   delivery_range: ProjectCreateV30RequestDeliveryRange;
@@ -32,7 +32,7 @@ export interface ProjectCreateV30Request {
   landing_type: ProjectCreateV30LandingType;
   launch_type?: ProjectCreateV30LaunchType;
   marketing_goal: ProjectCreateV30MarketingGoal;
-  micro_app_instance_id?: number;
+  micro_app_instance_id?: number | string;
   micro_promotion_type?: ProjectCreateV30MicroPromotionType;
   multi_asset_type?: ProjectCreateV30MultiAssetType;
   name: string;
@@ -44,19 +44,19 @@ export interface ProjectCreateV30Request {
   operation?: ProjectCreateV30Operation;
   optimize_goal?: ProjectCreateV30RequestOptimizeGoal;
   promotion_type?: ProjectCreateV30PromotionType;
-  quick_app_id?: number;
+  quick_app_id?: number | string;
   related_product?: ProjectCreateV30RequestRelatedProduct;
-  rta_id?: number;
+  rta_id?: number | string;
   search_bid_ratio?: number;
   star_auto_delivery_switch?: ProjectCreateV30StarAutoDeliverySwitch;
   star_auto_material_addition_switch?: ProjectCreateV30StarAutoMaterialAdditionSwitch;
-  star_task_id?: number;
+  star_task_id?: number | string;
   subscribe_url?: string;
   track_url_setting?: ProjectCreateV30RequestTrackUrlSetting;
   ulink_url?: string;
   ulink_url_type?: ProjectCreateV30UlinkUrlType;
   value_optimized_type?: ProjectCreateV30ValueOptimizedType;
-  yuntu_5a_brand_id?: number;
-  yuntu_5a_brand_main_industry_id?: number;
+  yuntu_5a_brand_id?: number | string;
+  yuntu_5a_brand_main_industry_id?: number | string;
 }
 

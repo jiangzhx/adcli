@@ -8,7 +8,7 @@ import type { ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Filtering, Re
 
 
 export interface OpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest {
-  organizationId: number;
+  organizationId: number | string;
   startDate: string;
   endDate: string;
   filtering?: ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Filtering;

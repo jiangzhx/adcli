@@ -8,7 +8,7 @@ import type { StarFeCommonServiceTalentDayGetCheckInCodeV2Response } from "../mo
 
 
 export interface OpenApi2StarFeCommonServiceTalentDayGetCheckInCodeGetRequest {
-  sCoreUserId: number;
+  sCoreUserId: number | string;
 }
 
 export class StarFeCommonServiceTalentDayGetCheckInCodeV2Api {

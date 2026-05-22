@@ -5,7 +5,7 @@ import type { ToolsLandingGroupGetV2DataListGroupFlowType, ToolsLandingGroupGetV
 
 export interface ToolsLandingGroupGetV2ResponseDataListInner {
   group_flow_type?: ToolsLandingGroupGetV2DataListGroupFlowType;
-  group_id?: number;
+  group_id?: number | string;
   group_status?: ToolsLandingGroupGetV2DataListGroupStatus;
   group_title?: string;
   group_url?: string;

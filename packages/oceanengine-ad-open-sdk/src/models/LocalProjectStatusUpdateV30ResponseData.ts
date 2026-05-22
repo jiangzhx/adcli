@@ -5,6 +5,6 @@ import type { LocalProjectStatusUpdateV30ResponseDataErrorsInner } from "../mode
 
 export interface LocalProjectStatusUpdateV30ResponseData {
   errors?: LocalProjectStatusUpdateV30ResponseDataErrorsInner[];
-  project_ids?: number[];
+  project_ids?: number | string[];
 }
 

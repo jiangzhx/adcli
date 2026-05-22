@@ -8,8 +8,8 @@ import type { DpaAssetsDetailReadV2Response } from "../models";
 
 
 export interface OpenApi2DpaAssetsDetailReadGetRequest {
-  advertiserId?: number;
-  assetIds?: number[];
+  advertiserId?: number | string;
+  assetIds?: number | string[];
 }
 
 export class DpaAssetsDetailReadV2Api {

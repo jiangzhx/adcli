@@ -8,7 +8,7 @@ import type { ChargeListV30ChargeSourceList, ChargeListV30ChargeStatusList, Char
 
 
 export interface OpenApiV30ChargeListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   chargeTargetType: ChargeListV30ChargeTargetType;
   platformList: ChargeListV30PlatformList[];
   chargeStatusList: ChargeListV30ChargeStatusList[];

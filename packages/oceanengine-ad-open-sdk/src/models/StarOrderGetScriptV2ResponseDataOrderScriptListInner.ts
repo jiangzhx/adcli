@@ -4,7 +4,7 @@
 import type { StarOrderGetScriptV2ResponseDataOrderScriptListInnerScriptListInner } from "../models";
 
 export interface StarOrderGetScriptV2ResponseDataOrderScriptListInner {
-  order_id?: number;
+  order_id?: number | string;
   script_list?: StarOrderGetScriptV2ResponseDataOrderScriptListInnerScriptListInner[];
 }
 

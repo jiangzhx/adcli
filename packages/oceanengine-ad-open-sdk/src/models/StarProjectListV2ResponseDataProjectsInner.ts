@@ -6,7 +6,7 @@ export interface StarProjectListV2ResponseDataProjectsInner {
   end_time?: number;
   first_class_category_name?: string;
   first_promotion_target?: number;
-  id: number;
+  id: number | string;
   jd_project_code?: string;
   jd_project_id?: string;
   marketing_target?: number;

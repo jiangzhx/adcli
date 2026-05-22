@@ -7,7 +7,7 @@ export interface BrandAdGetV30ResponseDataAdsInner {
   ad_id?: string;
   ad_status?: number;
   ad_stock_infos?: BrandAdGetV30ResponseDataAdsInnerAdStockInfosInner[];
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   audience_info?: BrandAdGetV30ResponseDataAdsInnerAudienceInfo;
   budget_info?: BrandAdGetV30ResponseDataAdsInnerBudgetInfo;
   budget_no?: string;
@@ -18,13 +18,13 @@ export interface BrandAdGetV30ResponseDataAdsInner {
   frequency_info?: BrandAdGetV30ResponseDataAdsInnerFrequencyInfo;
   landing_type?: number;
   magazine_price_info?: BrandAdGetV30ResponseDataAdsInnerMagazinePriceInfo;
-  merchant_intention_id?: number;
+  merchant_intention_id?: number | string;
   merchant_intention_name?: string;
   merchant_intention_no?: string;
   name?: string;
   promotions?: BrandAdGetV30ResponseDataAdsInnerPromotionsInner[];
   remark?: string;
   schedule_info?: BrandAdGetV30ResponseDataAdsInnerScheduleInfo;
-  spu_id?: number;
+  spu_id?: number | string;
 }
 

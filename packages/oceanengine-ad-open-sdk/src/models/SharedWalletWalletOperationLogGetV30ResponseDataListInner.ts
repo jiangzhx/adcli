@@ -7,10 +7,10 @@ export interface SharedWalletWalletOperationLogGetV30ResponseDataListInner {
   business_time?: number;
   extra_info?: SharedWalletWalletOperationLogGetV30ResponseDataListInnerExtraInfo;
   operation_detail?: SharedWalletWalletOperationLogGetV30ResponseDataListInnerOperationDetail;
-  operation_id?: number;
+  operation_id?: number | string;
   operator?: string;
   status?: SharedWalletWalletOperationLogGetV30DataListStatus;
-  wallet_id?: number;
+  wallet_id?: number | string;
   wallet_operation_type?: SharedWalletWalletOperationLogGetV30DataListWalletOperationType;
 }
 

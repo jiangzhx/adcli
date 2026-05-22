@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface YuntuBrandInfoGetV30ResponseDataIndustryInfosInner {
-  industry_id?: number;
+  industry_id?: number | string;
   industry_name?: string;
 }
 

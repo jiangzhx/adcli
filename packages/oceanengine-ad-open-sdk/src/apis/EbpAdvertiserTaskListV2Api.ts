@@ -8,8 +8,8 @@ import type { EbpAdvertiserTaskListV2Response } from "../models";
 
 
 export interface OpenApi2EbpAdvertiserTaskListGetRequest {
-  enterpriseOrganizationId: number;
-  taskIds: number[];
+  enterpriseOrganizationId: number | string;
+  taskIds: number | string[];
 }
 
 export class EbpAdvertiserTaskListV2Api {

@@ -8,8 +8,8 @@ import type { ToolsRtaGetInfoV2AccountType, ToolsRtaGetInfoV2Response } from "..
 
 
 export interface OpenApi2ToolsRtaGetInfoGetRequest {
-  advertiserId: number;
-  campaignId?: number;
+  advertiserId: number | string;
+  campaignId?: number | string;
   accountType?: ToolsRtaGetInfoV2AccountType;
 }
 

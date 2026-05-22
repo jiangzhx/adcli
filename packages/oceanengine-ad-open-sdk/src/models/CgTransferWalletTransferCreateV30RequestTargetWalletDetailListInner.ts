@@ -4,7 +4,7 @@
 import type { CgTransferWalletTransferCreateV30RequestTargetWalletDetailListInnerTransferCapitalDetailListInner } from "../models";
 
 export interface CgTransferWalletTransferCreateV30RequestTargetWalletDetailListInner {
-  sub_wallet_id: number;
+  sub_wallet_id: number | string;
   transfer_capital_detail_list: CgTransferWalletTransferCreateV30RequestTargetWalletDetailListInnerTransferCapitalDetailListInner[];
 }
 

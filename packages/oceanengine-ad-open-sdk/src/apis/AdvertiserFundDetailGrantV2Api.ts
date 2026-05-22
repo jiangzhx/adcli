@@ -8,7 +8,7 @@ import type { AdvertiserFundDetailGrantV2Response } from "../models";
 
 
 export interface OpenApi2AdvertiserFundDetailGrantGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate?: string;
   endDate?: string;
   page?: number;

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarOrderFinishV2Request {
-  order_id: number;
-  star_id: number;
+  order_id: number | string;
+  star_id: number | string;
 }
 

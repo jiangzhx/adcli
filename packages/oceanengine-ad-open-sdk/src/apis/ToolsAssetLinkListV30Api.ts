@@ -8,7 +8,7 @@ import type { ToolsAssetLinkListV30Filtering, ToolsAssetLinkListV30Response } fr
 
 
 export interface OpenApiV30ToolsAssetLinkListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering: ToolsAssetLinkListV30Filtering;
   page?: number;
   pageSize?: number;

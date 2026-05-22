@@ -5,8 +5,8 @@ export interface StarAttributeJdOverflowConvertV2Request {
   convert_time: number;
   device_id: string;
   device_type: number;
-  item_id: number;
-  star_id: number;
-  task_id: number;
+  item_id: number | string;
+  star_id: number | string;
+  task_id: number | string;
 }
 

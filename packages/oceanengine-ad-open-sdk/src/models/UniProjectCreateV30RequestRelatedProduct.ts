@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface UniProjectCreateV30RequestRelatedProduct {
-  product_id?: number;
-  product_platform_id?: number;
+  product_id?: number | string;
+  product_platform_id?: number | string;
 }
 

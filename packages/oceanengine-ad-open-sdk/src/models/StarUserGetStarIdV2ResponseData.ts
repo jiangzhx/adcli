@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarUserGetStarIdV2ResponseData {
-  star_id: number;
+  star_id: number | string;
 }
 

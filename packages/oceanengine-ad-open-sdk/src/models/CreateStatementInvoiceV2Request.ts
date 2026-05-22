@@ -4,7 +4,7 @@
 import type { CreateStatementInvoiceV2InvoiceType, CreateStatementInvoiceV2RequestInvoiceBillListInner, CreateStatementInvoiceV2RequestRebateItemListInner } from "../models";
 
 export interface CreateStatementInvoiceV2Request {
-  agent_ids: number[];
+  agent_ids: number | string[];
   customer_address?: string;
   customer_bank?: string;
   customer_bank_account?: string;

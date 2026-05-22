@@ -8,9 +8,9 @@ import type { QueryInvoiceDetailV2Response } from "../models";
 
 
 export interface OpenApi2QueryInvoiceDetailGetRequest {
-  agentIds: number[];
+  agentIds: number | string[];
   invoiceSerial?: string;
-  invoiceId?: number;
+  invoiceId?: number | string;
 }
 
 export class QueryInvoiceDetailV2Api {

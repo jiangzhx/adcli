@@ -8,7 +8,7 @@ import type { DpaEbpLibraryListV30AccountType, DpaEbpLibraryListV30AssetQuerySco
 
 
 export interface OpenApiV30DpaEbpLibraryListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: DpaEbpLibraryListV30AccountType;
   storeType?: number;
   nameOrId?: string;

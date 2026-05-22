@@ -17,7 +17,7 @@ export interface StarDemandCreateChallengeV2RequestDemandInfo {
   demand_name: string;
   expiration_time?: number;
   expiration_time_end?: number;
-  ip_act_id?: number;
+  ip_act_id?: number | string;
   item_show_monitor_url?: string;
   object_field_info?: StarDemandCreateChallengeV2RequestDemandInfoObjectFieldInfo;
   product_category?: string[];
@@ -25,7 +25,7 @@ export interface StarDemandCreateChallengeV2RequestDemandInfo {
   product_information: string;
   product_link?: string;
   product_name: string;
-  project_id?: number;
+  project_id?: number | string;
   promotion_target?: string;
 }
 

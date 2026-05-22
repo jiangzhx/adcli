@@ -4,8 +4,8 @@
 import type { AgentAdvertiserCopyV2ReportType, AgentAdvertiserCopyV2RequestItemInner } from "../models";
 
 export interface AgentAdvertiserCopyV2Request {
-  advertiser_id: number;
-  agent_id: number;
+  advertiser_id: number | string;
+  agent_id: number | string;
   copy_delivery?: boolean;
   copy_tag?: boolean;
   item: AgentAdvertiserCopyV2RequestItemInner[];

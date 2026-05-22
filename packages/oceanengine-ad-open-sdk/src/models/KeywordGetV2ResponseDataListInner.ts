@@ -7,9 +7,9 @@ export interface KeywordGetV2ResponseDataListInner {
   bid?: number;
   bid_type?: KeywordGetV2DataListBidType;
   is_pause?: number;
-  keyword_id?: number;
+  keyword_id?: number | string;
   match_type?: KeywordGetV2DataListMatchType;
   word?: string;
-  word_id?: number;
+  word_id?: number | string;
 }
 

@@ -10,8 +10,8 @@ import type { StarReportOrderUserDistributionGetV2FanType, StarReportOrderUserDi
 export interface OpenApi2StarReportOrderUserDistributionGetGetRequest {
   fanType?: StarReportOrderUserDistributionGetV2FanType;
   interactiveType?: StarReportOrderUserDistributionGetV2InteractiveType;
-  orderId?: number;
-  starId?: number;
+  orderId?: number | string;
+  starId?: number | string;
 }
 
 export class StarReportOrderUserDistributionGetV2Api {

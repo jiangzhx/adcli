@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsSiteUpdateV2RequestBricksInnerFormData {
-  instance_id?: number;
+  instance_id?: number | string;
   name?: string;
   submit_text?: string;
 }

@@ -8,7 +8,7 @@ import type { ToolsEbpWechatGameListV30AccountType, ToolsEbpWechatGameListV30Ass
 
 
 export interface OpenApiV30ToolsEbpWechatGameListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType?: ToolsEbpWechatGameListV30AccountType;
   assetManagementScope?: ToolsEbpWechatGameListV30AssetManagementScope;
   filtering?: ToolsEbpWechatGameListV30Filtering;

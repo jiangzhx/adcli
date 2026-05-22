@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAdCreateV10RequestCreativeListInnerCarouselMaterial {
-  aweme_carousel_id?: number;
-  carousel_id?: number;
+  aweme_carousel_id?: number | string;
+  carousel_id?: number | string;
 }
 

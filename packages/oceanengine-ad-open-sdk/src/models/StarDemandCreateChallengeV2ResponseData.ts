@@ -5,6 +5,6 @@ import type { StarDemandCreateChallengeV2ResponseDataBillInfo } from "../models"
 
 export interface StarDemandCreateChallengeV2ResponseData {
   bill_info?: StarDemandCreateChallengeV2ResponseDataBillInfo;
-  challenge_task_id?: number;
+  challenge_task_id?: number | string;
 }
 

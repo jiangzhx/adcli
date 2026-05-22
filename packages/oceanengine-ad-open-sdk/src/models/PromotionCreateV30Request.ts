@@ -6,13 +6,13 @@ import type { PromotionCreateV30AdDownloadStatus, PromotionCreateV30AutoExtendTr
 export interface PromotionCreateV30Request {
   "7d_retention"?: number;
   ad_download_status?: PromotionCreateV30AdDownloadStatus;
-  advertiser_id: number;
+  advertiser_id: number | string;
   auto_extend_traffic?: PromotionCreateV30AutoExtendTraffic;
   bid?: number;
   brand_info?: PromotionCreateV30RequestBrandInfo;
   budget?: number;
   budget_mode?: PromotionCreateV30BudgetMode;
-  config_id?: number;
+  config_id?: number | string;
   cpa_bid?: number;
   creative_auto_generate_switch?: PromotionCreateV30CreativeAutoGenerateSwitch;
   deep_cpabid?: number;
@@ -23,7 +23,7 @@ export interface PromotionCreateV30Request {
   name: string;
   native_setting?: PromotionCreateV30RequestNativeSetting;
   operation?: PromotionCreateV30Operation;
-  project_id: number;
+  project_id: number | string;
   promotion_materials?: PromotionCreateV30RequestPromotionMaterials;
   promotion_related_product?: PromotionCreateV30RequestPromotionRelatedProductInner[];
   roi_goal?: number;

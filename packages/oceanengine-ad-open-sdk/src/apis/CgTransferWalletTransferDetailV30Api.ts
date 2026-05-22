@@ -8,7 +8,7 @@ import type { CgTransferWalletTransferDetailV30AccountType, CgTransferWalletTran
 
 
 export interface OpenApiV30CgTransferWalletTransferDetailGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: CgTransferWalletTransferDetailV30AccountType;
   bizRequestNo: string;
   transferBizRequestNo?: string;

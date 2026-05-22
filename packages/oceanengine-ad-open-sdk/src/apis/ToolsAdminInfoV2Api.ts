@@ -8,7 +8,7 @@ import type { ToolsAdminInfoV2Language, ToolsAdminInfoV2Response, ToolsAdminInfo
 
 
 export interface OpenApi2ToolsAdminInfoGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   codes: string[];
   language: ToolsAdminInfoV2Language;
   subDistrict: ToolsAdminInfoV2SubDistrict;

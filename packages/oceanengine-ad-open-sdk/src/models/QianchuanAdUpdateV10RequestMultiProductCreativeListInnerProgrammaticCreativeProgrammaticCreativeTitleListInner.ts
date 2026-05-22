@@ -4,7 +4,7 @@
 import type { QianchuanAdUpdateV10MultiProductCreativeListProgrammaticCreativeProgrammaticCreativeTitleListTitleType, QianchuanAdUpdateV10RequestMultiProductCreativeListInnerProgrammaticCreativeProgrammaticCreativeTitleListInnerDynamicWordsInner } from "../models";
 
 export interface QianchuanAdUpdateV10RequestMultiProductCreativeListInnerProgrammaticCreativeProgrammaticCreativeTitleListInner {
-  aweme_carousel_id?: number;
+  aweme_carousel_id?: number | string;
   dynamic_words?: QianchuanAdUpdateV10RequestMultiProductCreativeListInnerProgrammaticCreativeProgrammaticCreativeTitleListInnerDynamicWordsInner[];
   title: string;
   title_type?: QianchuanAdUpdateV10MultiProductCreativeListProgrammaticCreativeProgrammaticCreativeTitleListTitleType;

@@ -8,7 +8,7 @@ import type { ReportCustomAsyncTaskGetV30Filtering, ReportCustomAsyncTaskGetV30R
 
 
 export interface OpenApiV30ReportCustomAsyncTaskGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: ReportCustomAsyncTaskGetV30Filtering;
   page?: number;
   pageSize?: number;

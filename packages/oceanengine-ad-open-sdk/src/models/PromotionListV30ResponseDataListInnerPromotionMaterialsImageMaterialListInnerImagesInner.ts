@@ -5,9 +5,9 @@ import type { PromotionListV30DataListPromotionMaterialsImageMaterialListImagesM
 
 export interface PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInnerImagesInner {
   image_id?: string;
-  material_id?: number;
+  material_id?: number | string;
   material_opt_status?: PromotionListV30DataListPromotionMaterialsImageMaterialListImagesMaterialOptStatus;
   material_status?: PromotionListV30DataListPromotionMaterialsImageMaterialListImagesMaterialStatus;
-  template_id?: number;
+  template_id?: number | string;
 }
 

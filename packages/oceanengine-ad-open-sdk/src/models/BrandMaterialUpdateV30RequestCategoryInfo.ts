@@ -3,11 +3,11 @@
 
 export interface BrandMaterialUpdateV30RequestCategoryInfo {
   ad_keywords?: string[];
-  brand_name_id?: number;
-  cdp_brand_id?: number;
+  brand_name_id?: number | string;
+  cdp_brand_id?: number | string;
   industry_v3: number;
-  sub_brand_name_ids?: number[];
-  yuntu_category_id: number;
+  sub_brand_name_ids?: number | string[];
+  yuntu_category_id: number | string;
   yuntu_spu_id?: string;
 }
 

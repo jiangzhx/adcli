@@ -4,8 +4,8 @@
 import type { QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner, QianchuanUniPromotionAdMaterialAddV10RequestProgrammaticCreativeMediaList } from "../models";
 
 export interface QianchuanUniPromotionAdMaterialAddV10Request {
-  ad_id: number;
-  advertiser_id: number;
+  ad_id: number | string;
+  advertiser_id: number | string;
   multi_product_creative_list?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner[];
   programmatic_creative_media_list?: QianchuanUniPromotionAdMaterialAddV10RequestProgrammaticCreativeMediaList;
 }

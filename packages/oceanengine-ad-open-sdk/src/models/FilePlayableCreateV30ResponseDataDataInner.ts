@@ -3,7 +3,7 @@
 
 export interface FilePlayableCreateV30ResponseDataDataInner {
   app_material_id?: string;
-  material_id?: number;
+  material_id?: number | string;
   signature?: string;
   version?: string;
 }

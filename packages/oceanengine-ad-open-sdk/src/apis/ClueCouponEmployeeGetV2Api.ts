@@ -8,7 +8,7 @@ import type { ClueCouponEmployeeGetV2Response } from "../models";
 
 
 export interface OpenApi2ClueCouponEmployeeGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   page?: number;
   pageSize?: number;
 }

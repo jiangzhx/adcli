@@ -4,8 +4,8 @@
 import type { AicElementDeleteV30AccountType } from "../models";
 
 export interface AicElementDeleteV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: AicElementDeleteV30AccountType;
-  element_id: number;
+  element_id: number | string;
 }
 

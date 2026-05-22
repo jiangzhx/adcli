@@ -27,7 +27,7 @@ export interface QianchuanOrientationPackageGetV10ResponseDataListInner {
   live_platform_tags?: string[];
   location_type?: QianchuanOrientationPackageGetV10DataListLocationType;
   new_customer?: QianchuanOrientationPackageGetV10DataListNewCustomer;
-  orientation_id: number;
+  orientation_id: number | string;
   orientation_info?: string;
   orientation_name: string;
   platform?: QianchuanOrientationPackageGetV10DataListPlatform[];

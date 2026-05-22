@@ -6,6 +6,6 @@ import type { ToolsEbpAppUpdateV30FilesFileTag, ToolsEbpAppUpdateV30FilesFileTyp
 export interface ToolsEbpAppUpdateV30RequestFilesInner {
   file_tag?: ToolsEbpAppUpdateV30FilesFileTag;
   file_type?: ToolsEbpAppUpdateV30FilesFileType;
-  upload_id?: number;
+  upload_id?: number | string;
 }
 

@@ -8,7 +8,7 @@ import type { StarDemanderDemanderGetAuthorBindInfoV2Response } from "../models"
 
 
 export interface OpenApi2StarDemanderDemanderGetAuthorBindInfoGetRequest {
-  starId: number;
+  starId: number | string;
   bizUid?: string[];
   startTime?: number;
   endTime?: number;

@@ -4,7 +4,7 @@
 import type { StdProjectUpdateV30ProjectMaterialsAnchorMaterialListAnchorType } from "../models";
 
 export interface StdProjectUpdateV30RequestProjectMaterialsAnchorMaterialListInner {
-  anchor_id?: number;
+  anchor_id?: number | string;
   anchor_type?: StdProjectUpdateV30ProjectMaterialsAnchorMaterialListAnchorType;
 }
 

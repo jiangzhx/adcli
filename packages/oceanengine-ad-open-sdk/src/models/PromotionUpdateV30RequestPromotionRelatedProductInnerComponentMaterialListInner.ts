@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface PromotionUpdateV30RequestPromotionRelatedProductInnerComponentMaterialListInner {
-  component_id?: number;
+  component_id?: number | string;
 }
 

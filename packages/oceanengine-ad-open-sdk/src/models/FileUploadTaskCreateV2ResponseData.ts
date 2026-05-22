@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface FileUploadTaskCreateV2ResponseData {
-  task_id?: number;
+  task_id?: number | string;
 }
 

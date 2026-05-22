@@ -6,6 +6,6 @@ import type { ReportLiveRoomAnalysisGetV30FilteringFirstFlowCategory } from "../
 export interface ReportLiveRoomAnalysisGetV30Filtering {
   aweme_ids?: string[];
   first_flow_category?: ReportLiveRoomAnalysisGetV30FilteringFirstFlowCategory;
-  room_ids?: number[];
+  room_ids?: number | string[];
 }
 

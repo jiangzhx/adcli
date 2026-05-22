@@ -8,8 +8,8 @@ import type { QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension, Qia
 
 
 export interface OpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   marketingGoal?: QianchuanReportUniPromotionDimensionDataAuthorGetV10MarketingGoal;
   metrics?: QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics[];
   startTime?: string;

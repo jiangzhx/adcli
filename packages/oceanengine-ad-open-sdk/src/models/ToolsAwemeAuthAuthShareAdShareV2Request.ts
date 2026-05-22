@@ -4,10 +4,10 @@
 import type { ToolsAwemeAuthAuthShareAdShareV2AuthType } from "../models";
 
 export interface ToolsAwemeAuthAuthShareAdShareV2Request {
-  advertiser_id: number;
-  advertiser_ids: number[];
+  advertiser_id: number | string;
+  advertiser_ids: number | string[];
   auth_type: ToolsAwemeAuthAuthShareAdShareV2AuthType;
   aweme_id?: string;
-  item_id?: number;
+  item_id?: number | string;
 }
 

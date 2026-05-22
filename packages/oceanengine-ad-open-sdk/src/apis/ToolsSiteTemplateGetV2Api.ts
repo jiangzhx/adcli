@@ -8,7 +8,7 @@ import type { ToolsSiteTemplateGetV2Filter, ToolsSiteTemplateGetV2Response } fro
 
 
 export interface OpenApi2ToolsSiteTemplateGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filter?: ToolsSiteTemplateGetV2Filter;
   page?: number;
   pageSize?: number;

@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface BrandAdDeleteV30Request {
-  ad_ids: number[];
-  advertiser_id?: number;
-  campaign_id: number;
+  ad_ids: number | string[];
+  advertiser_id?: number | string;
+  campaign_id: number | string;
 }
 

@@ -7,8 +7,8 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 
 
 export interface OpenApiV30ReportCustomAsyncTaskDownloadGetRequest {
-  advertiserId: number;
-  taskId: number;
+  advertiserId: number | string;
+  taskId: number | string;
 }
 
 export class ReportCustomAsyncTaskDownloadV30Api {

@@ -8,7 +8,7 @@ import type { EbpAdvertiserListV2AccountSource, EbpAdvertiserListV2Filtering, Eb
 
 
 export interface OpenApi2EbpAdvertiserListGetRequest {
-  enterpriseOrganizationId: number;
+  enterpriseOrganizationId: number | string;
   accountSource: EbpAdvertiserListV2AccountSource;
   filtering?: EbpAdvertiserListV2Filtering;
   page?: number;

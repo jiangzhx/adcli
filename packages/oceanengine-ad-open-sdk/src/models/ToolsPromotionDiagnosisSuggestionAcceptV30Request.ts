@@ -4,9 +4,9 @@
 import type { ToolsPromotionDiagnosisSuggestionAcceptV30RequestToolsInner } from "../models";
 
 export interface ToolsPromotionDiagnosisSuggestionAcceptV30Request {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   diagnosis_id?: string;
-  promotion_id?: number;
+  promotion_id?: number | string;
   tools?: ToolsPromotionDiagnosisSuggestionAcceptV30RequestToolsInner[];
 }
 

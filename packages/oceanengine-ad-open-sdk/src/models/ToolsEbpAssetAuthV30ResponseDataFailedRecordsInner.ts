@@ -8,7 +8,7 @@ export interface ToolsEbpAssetAuthV30ResponseDataFailedRecordsInner {
   account_depth?: number;
   asset_scope: ToolsEbpAssetAuthV30ResponseDataFailedRecordsInnerAssetScope;
   auth_target: ToolsEbpAssetAuthV30ResponseDataFailedRecordsInnerAuthTarget;
-  id?: number;
+  id?: number | string;
   is_default_auth?: boolean;
 }
 

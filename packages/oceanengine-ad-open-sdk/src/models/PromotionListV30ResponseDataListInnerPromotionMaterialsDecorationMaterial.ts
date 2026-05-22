@@ -6,6 +6,6 @@ import type { PromotionListV30DataListPromotionMaterialsDecorationMaterialImageM
 export interface PromotionListV30ResponseDataListInnerPromotionMaterialsDecorationMaterial {
   activity_id?: string;
   image_mode?: PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode;
-  material_id?: number;
+  material_id?: number | string;
 }
 

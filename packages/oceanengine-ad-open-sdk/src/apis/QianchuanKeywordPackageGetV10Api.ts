@@ -8,9 +8,9 @@ import type { QianchuanKeywordPackageGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanKeywordPackageGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
-  productId?: number;
+  advertiserId: number | string;
+  awemeId: number | string;
+  productId?: number | string;
 }
 
 export class QianchuanKeywordPackageGetV10Api {

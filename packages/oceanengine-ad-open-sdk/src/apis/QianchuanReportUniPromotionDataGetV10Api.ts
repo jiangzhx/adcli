@@ -8,7 +8,7 @@ import type { QianchuanReportUniPromotionDataGetV10DataTopic, QianchuanReportUni
 
 
 export interface OpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   dataTopic: QianchuanReportUniPromotionDataGetV10DataTopic;
   dimensions: string[];
   metrics: string[];

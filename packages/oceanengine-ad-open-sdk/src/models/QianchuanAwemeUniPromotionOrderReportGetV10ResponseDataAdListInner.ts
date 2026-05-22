@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAwemeUniPromotionOrderReportGetV10ResponseDataAdListInner {
-  ad_id: number;
+  ad_id: number | string;
   start_date_time?: string;
   stat_cost_for_roi2?: number;
   total_cost_per_pay_order_settle_for_roi2_1h?: number;

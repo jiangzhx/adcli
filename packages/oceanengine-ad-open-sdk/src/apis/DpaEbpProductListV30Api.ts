@@ -8,9 +8,9 @@ import type { DpaEbpProductListV30AccountType, DpaEbpProductListV30Filtering, Dp
 
 
 export interface OpenApiV30DpaEbpProductListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: DpaEbpProductListV30AccountType;
-  productPlatformId: number;
+  productPlatformId: number | string;
   filtering?: DpaEbpProductListV30Filtering;
   page?: number;
   pageSize?: number;

@@ -8,8 +8,8 @@ import type { SvipChargeVerifyGetV30Caller, SvipChargeVerifyGetV30ChargeSource, 
 
 
 export interface OpenApiV30SvipChargeVerifyGetGetRequest {
-  ccAccountId: number;
-  accountId: number;
+  ccAccountId: number | string;
+  accountId: number | string;
   platform: SvipChargeVerifyGetV30Platform;
   requestId: string;
   chargeType: SvipChargeVerifyGetV30ChargeType;

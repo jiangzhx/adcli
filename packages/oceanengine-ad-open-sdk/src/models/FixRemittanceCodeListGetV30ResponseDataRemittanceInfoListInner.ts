@@ -6,7 +6,7 @@ import type { FixRemittanceCodeListGetV30DataRemittanceInfoListPlatform, FixRemi
 export interface FixRemittanceCodeListGetV30ResponseDataRemittanceInfoListInner {
   charge_amount?: number;
   charge_finish_time?: string;
-  charge_target_id?: number;
+  charge_target_id?: number | string;
   code_create_time?: string;
   contract_serial?: string;
   fail_reason?: string;

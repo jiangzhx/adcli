@@ -8,9 +8,9 @@ import type { QianchuanToolsGrayV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanToolsGrayGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   grayKeys: string[];
-  awemeIds?: number[];
+  awemeIds?: number | string[];
 }
 
 export class QianchuanToolsGrayV10Api {

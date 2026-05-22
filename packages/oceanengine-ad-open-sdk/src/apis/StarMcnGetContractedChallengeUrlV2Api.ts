@@ -8,10 +8,10 @@ import type { StarMcnGetContractedChallengeUrlV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnGetContractedChallengeUrlGetRequest {
-  starId: number;
-  demandId: number;
+  starId: number | string;
+  demandId: number | string;
   channelId?: string;
-  developerId?: number;
+  developerId?: number | string;
 }
 
 export class StarMcnGetContractedChallengeUrlV2Api {

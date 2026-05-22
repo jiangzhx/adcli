@@ -8,7 +8,7 @@ import type { LocalProjectListV30Filtering, LocalProjectListV30Response } from "
 
 
 export interface OpenApiV30LocalProjectListGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   filtering?: LocalProjectListV30Filtering;
   page?: number;
   pageSize?: number;

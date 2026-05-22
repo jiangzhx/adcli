@@ -6,6 +6,6 @@ import type { UniProjectMonetizationModeUpdateV30ProjectListMonetizationMode } f
 export interface UniProjectMonetizationModeUpdateV30RequestProjectListInner {
   monetization_mode: UniProjectMonetizationModeUpdateV30ProjectListMonetizationMode;
   playlet_series_url?: string;
-  project_id: number;
+  project_id: number | string;
 }
 

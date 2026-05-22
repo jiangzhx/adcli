@@ -3,7 +3,7 @@
 
 export interface ToolsSuggestBudgetGetV30ResponseDataListInner {
   promotion_budget?: number;
-  promotion_id?: number;
+  promotion_id?: number | string;
   suggest_budget?: number;
 }
 

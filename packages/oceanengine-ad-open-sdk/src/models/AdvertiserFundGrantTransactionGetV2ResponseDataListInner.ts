@@ -4,7 +4,7 @@
 import type { AdvertiserFundGrantTransactionGetV2DataListGrantType, AdvertiserFundGrantTransactionGetV2DataListTransactionType } from "../models";
 
 export interface AdvertiserFundGrantTransactionGetV2ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   amount?: number;
   create_time?: string;
   grant_type?: AdvertiserFundGrantTransactionGetV2DataListGrantType;

@@ -8,7 +8,7 @@ import type { FileVideoAwemeGetV2Filtering, FileVideoAwemeGetV2Response } from "
 
 
 export interface OpenApi2FileVideoAwemeGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   awemeId: string;
   filtering?: FileVideoAwemeGetV2Filtering;
   page?: number;

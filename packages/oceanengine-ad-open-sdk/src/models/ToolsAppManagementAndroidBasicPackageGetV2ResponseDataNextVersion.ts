@@ -6,7 +6,7 @@ import type { ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionGameIpTyp
 export interface ToolsAppManagementAndroidBasicPackageGetV2ResponseDataNextVersion {
   app_name?: string;
   art_style?: string;
-  audit_id?: number;
+  audit_id?: number | string;
   audit_message?: string;
   discount_rate?: number;
   feature_tags?: string[];

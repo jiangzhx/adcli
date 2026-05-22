@@ -4,7 +4,7 @@
 import type { FileAutoGenerateSourceGetV2MaterialsMaterialType } from "../models";
 
 export interface FileAutoGenerateSourceGetV2MaterialsInner {
-  material_id: number;
+  material_id: number | string;
   material_type: FileAutoGenerateSourceGetV2MaterialsMaterialType;
 }
 

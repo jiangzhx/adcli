@@ -5,7 +5,7 @@ import type { QianchuanKeywordPackageGetV10DataWordPackageInfosKeywordInfosKeywo
 
 export interface QianchuanKeywordPackageGetV10ResponseDataWordPackageInfosInnerKeywordInfosInner {
   degree?: number;
-  keyword_id?: number;
+  keyword_id?: number | string;
   keyword_match_type?: QianchuanKeywordPackageGetV10DataWordPackageInfosKeywordInfosKeywordMatchType;
   keyword_name: string;
   search_sum?: number;

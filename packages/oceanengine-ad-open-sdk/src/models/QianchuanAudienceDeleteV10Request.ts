@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAudienceDeleteV10Request {
-  advertiser_id: number;
-  audience_id: number;
+  advertiser_id: number | string;
+  audience_id: number | string;
 }
 

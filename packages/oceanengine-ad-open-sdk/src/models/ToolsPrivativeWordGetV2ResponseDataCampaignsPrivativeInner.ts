@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsPrivativeWordGetV2ResponseDataCampaignsPrivativeInner {
-  campaign_id?: number;
+  campaign_id?: number | string;
   phrase_words?: string[];
   precise_words?: string[];
 }

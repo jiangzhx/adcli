@@ -8,7 +8,7 @@ import type { LocalReportAudienceGetV30AudienceDimension, LocalReportAudienceGet
 
 
 export interface OpenApiV30LocalReportAudienceGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   startDate: string;
   endDate: string;
   audienceDimension: LocalReportAudienceGetV30AudienceDimension;

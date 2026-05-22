@@ -3,7 +3,7 @@
 
 export interface QianchuanShopAuthorizedGetV10ResponseDataShopListInner {
   shop_avatar?: string[];
-  shop_id?: number;
+  shop_id?: number | string;
   shop_name?: string;
 }
 

@@ -8,7 +8,7 @@ import type { LocalActionCategoryV30Response } from "../models";
 
 
 export interface OpenApiV30LocalActionCategoryGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
 }
 
 export class LocalActionCategoryV30Api {

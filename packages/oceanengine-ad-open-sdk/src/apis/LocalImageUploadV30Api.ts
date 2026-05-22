@@ -8,7 +8,7 @@ import type { LocalImageUploadV30Response, LocalImageUploadV30UploadType } from 
 
 
 export interface OpenApiV30LocalImageUploadPostRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   imageFile?: File;
   imageSignature?: string;
   isAigc?: boolean;

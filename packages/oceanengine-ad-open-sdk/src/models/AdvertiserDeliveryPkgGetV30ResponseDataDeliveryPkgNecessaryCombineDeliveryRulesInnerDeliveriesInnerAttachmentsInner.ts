@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgNecessaryCombineDeliveryRulesInnerDeliveriesInnerAttachmentsInner {
-  attachment_id: number;
+  attachment_id: number | string;
   picture_url?: string;
 }
 

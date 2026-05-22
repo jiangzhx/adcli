@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanKeywordCheckV10Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   keywords: string[];
 }
 

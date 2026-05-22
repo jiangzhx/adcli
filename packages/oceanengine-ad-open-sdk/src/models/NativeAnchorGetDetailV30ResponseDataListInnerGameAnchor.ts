@@ -19,7 +19,7 @@ export interface NativeAnchorGetDetailV30ResponseDataListInnerGameAnchor {
   harmony_download_url?: string;
   head_image_list?: NativeAnchorGetDetailV30ResponseDataListInnerGameAnchorHeadImageListInner[];
   icon_images?: NativeAnchorGetDetailV30ResponseDataListInnerGameAnchorIconImagesInner[];
-  instance_id?: number;
+  instance_id?: number | string;
   ios_anchor_title?: string;
   ios_download_url?: string;
   micro_app_name?: string;

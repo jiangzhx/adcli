@@ -3,8 +3,8 @@
 
 export interface KeywordUpdateV30ResponseDataErrorListInner {
   error_reason?: string;
-  keyword_id?: number;
+  keyword_id?: number | string;
   word?: string;
-  word_id?: number;
+  word_id?: number | string;
 }
 

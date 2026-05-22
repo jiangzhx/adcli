@@ -8,8 +8,8 @@ import type { QianchuanAwemeOrderDetailGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanAwemeOrderDetailGetGetRequest {
-  orderId: number;
-  advertiserId: number;
+  orderId: number | string;
+  advertiserId: number | string;
 }
 
 export class QianchuanAwemeOrderDetailGetV10Api {

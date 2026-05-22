@@ -8,8 +8,8 @@ import type { CreativeRejectReasonV2Response } from "../models";
 
 
 export interface OpenApi2CreativeRejectReasonGetRequest {
-  advertiserId?: number;
-  creativeIds?: number[];
+  advertiserId?: number | string;
+  creativeIds?: number | string[];
 }
 
 export class CreativeRejectReasonV2Api {

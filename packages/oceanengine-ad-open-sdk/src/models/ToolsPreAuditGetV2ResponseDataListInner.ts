@@ -6,7 +6,7 @@ import type { ToolsPreAuditGetV2DataListMaterialType, ToolsPreAuditGetV2DataList
 export interface ToolsPreAuditGetV2ResponseDataListInner {
   content?: string;
   material_type?: ToolsPreAuditGetV2DataListMaterialType;
-  pre_audit_id?: number;
+  pre_audit_id?: number | string;
   reject_reason?: string;
   status?: ToolsPreAuditGetV2DataListStatus;
 }

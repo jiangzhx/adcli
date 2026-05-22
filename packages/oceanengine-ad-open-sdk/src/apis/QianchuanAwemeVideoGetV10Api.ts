@@ -8,8 +8,8 @@ import type { QianchuanAwemeVideoGetV10MarketingGoal, QianchuanAwemeVideoGetV10R
 
 
 export interface OpenApiV10QianchuanAwemeVideoGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   marketingGoal: QianchuanAwemeVideoGetV10MarketingGoal;
   cursor?: number;
   count?: number;

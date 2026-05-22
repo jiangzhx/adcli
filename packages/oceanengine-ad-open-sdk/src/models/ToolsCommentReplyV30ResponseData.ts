@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsCommentReplyV30ResponseData {
-  success_comment_ids: number[];
+  success_comment_ids: number | string[];
 }
 

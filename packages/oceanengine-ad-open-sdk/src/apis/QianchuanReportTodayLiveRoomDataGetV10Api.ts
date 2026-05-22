@@ -8,7 +8,7 @@ import type { QianchuanReportTodayLiveRoomDataGetV10DataTopic, QianchuanReportTo
 
 
 export interface OpenApiV10QianchuanReportTodayLiveRoomDataGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   dataTopic: QianchuanReportTodayLiveRoomDataGetV10DataTopic;
   dimensions: string[];
   metrics: string[];

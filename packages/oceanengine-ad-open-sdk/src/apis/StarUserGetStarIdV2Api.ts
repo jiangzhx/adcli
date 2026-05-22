@@ -8,8 +8,8 @@ import type { StarUserGetStarIdV2Response } from "../models";
 
 
 export interface OpenApi2StarUserGetStarIdGetRequest {
-  starId: number;
-  awemeAuthorId: number;
+  starId: number | string;
+  awemeAuthorId: number | string;
 }
 
 export class StarUserGetStarIdV2Api {

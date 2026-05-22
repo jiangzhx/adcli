@@ -8,8 +8,8 @@ import type { QianchuanAwemeSuggestRoiGoalV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanAwemeSuggestRoiGoalGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
 }
 
 export class QianchuanAwemeSuggestRoiGoalV10Api {

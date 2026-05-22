@@ -8,8 +8,8 @@ import type { LocalMultiPoiIdPoiIdsGetV30Response } from "../models";
 
 
 export interface OpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest {
-  localAccountId: number;
-  multiPoiIds: number[];
+  localAccountId: number | string;
+  multiPoiIds: number | string[];
   needEnable?: boolean;
 }
 

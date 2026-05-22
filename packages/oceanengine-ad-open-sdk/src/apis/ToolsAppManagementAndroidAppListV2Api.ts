@@ -8,7 +8,7 @@ import type { ToolsAppManagementAndroidAppListV2AccountAssetQueryScope, ToolsApp
 
 
 export interface OpenApi2ToolsAppManagementAndroidAppListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsAppManagementAndroidAppListV2AccountType;
   page?: number;
   pageSize?: number;

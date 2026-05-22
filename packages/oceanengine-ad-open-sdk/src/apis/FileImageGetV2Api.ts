@@ -8,7 +8,7 @@ import type { FileImageGetV2Filtering, FileImageGetV2Response } from "../models"
 
 
 export interface OpenApi2FileImageGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: FileImageGetV2Filtering;
   page?: number;
   pageSize?: number;

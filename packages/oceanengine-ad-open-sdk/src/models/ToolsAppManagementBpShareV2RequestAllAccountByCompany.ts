@@ -5,6 +5,6 @@ import type { ToolsAppManagementBpShareV2AllAccountByCompanyAccountType } from "
 
 export interface ToolsAppManagementBpShareV2RequestAllAccountByCompany {
   account_type: ToolsAppManagementBpShareV2AllAccountByCompanyAccountType[];
-  company_id: number;
+  company_id: number | string;
 }
 

@@ -8,8 +8,8 @@ import type { StarOrderGetVideoV2Response } from "../models";
 
 
 export interface OpenApi2StarOrderGetVideoGetRequest {
-  starId: number;
-  orderIds: number[];
+  starId: number | string;
+  orderIds: number | string[];
 }
 
 export class StarOrderGetVideoV2Api {

@@ -5,6 +5,6 @@ import type { ToolsBpAssetManagementShareCancelV30DataErrorListAllAccountsByComp
 
 export interface ToolsBpAssetManagementShareCancelV30ResponseDataErrorListInnerAllAccountsByCompany {
   account_type?: ToolsBpAssetManagementShareCancelV30DataErrorListAllAccountsByCompanyAccountType;
-  company_id?: number;
+  company_id?: number | string;
 }
 

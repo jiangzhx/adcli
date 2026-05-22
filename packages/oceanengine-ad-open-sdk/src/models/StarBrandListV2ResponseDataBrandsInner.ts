@@ -4,9 +4,9 @@
 import type { StarBrandListV2ResponseDataBrandsInnerYuntuIndustryInner } from "../models";
 
 export interface StarBrandListV2ResponseDataBrandsInner {
-  brand_id: number;
+  brand_id: number | string;
   brand_name: string;
-  yuntu_brand_id?: number;
+  yuntu_brand_id?: number | string;
   yuntu_industry?: StarBrandListV2ResponseDataBrandsInnerYuntuIndustryInner[];
 }
 

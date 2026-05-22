@@ -8,14 +8,14 @@ import type { ReportRubeexGetV2Filtering, ReportRubeexGetV2Order, ReportRubeexGe
 
 
 export interface OpenApi2ReportRubeexGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   dimensions?: string[];
   filtering?: ReportRubeexGetV2Filtering;
   metrics?: string[];
   order?: ReportRubeexGetV2Order;
   page?: number;
   pageSize?: number;
-  projectId?: number;
+  projectId?: number | string;
   statTimeDay?: string[];
 }
 

@@ -9,7 +9,7 @@ export interface ClueFormDetailV2ResponseDataForm {
   enable_layer?: ClueFormDetailV2DataFormEnableLayer;
   extend_info?: ClueFormDetailV2ResponseDataFormExtendInfo;
   form_type?: ClueFormDetailV2DataFormFormType;
-  instance_id?: number;
+  instance_id?: number | string;
   is_del?: ClueFormDetailV2DataFormIsDel;
   layer_submit_text?: string;
   name?: string;

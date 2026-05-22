@@ -4,10 +4,10 @@
 import type { SharedWalletBudgetSubmitV30AccountType, SharedWalletBudgetSubmitV30EffectiveMode, SharedWalletBudgetSubmitV30RequestBudget } from "../models";
 
 export interface SharedWalletBudgetSubmitV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: SharedWalletBudgetSubmitV30AccountType;
   budget: SharedWalletBudgetSubmitV30RequestBudget;
   effective_mode: SharedWalletBudgetSubmitV30EffectiveMode;
-  sub_wallet_id: number;
+  sub_wallet_id: number | string;
 }
 

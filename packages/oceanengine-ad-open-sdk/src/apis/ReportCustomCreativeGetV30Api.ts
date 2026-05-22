@@ -9,7 +9,7 @@ import type { ReportCustomCreativeGetV30FiltersInner, ReportCustomCreativeGetV30
 
 export interface OpenApiV30ReportCustomCreativeGetGetRequest {
   dimensions: string[];
-  advertiserId: number;
+  advertiserId: number | string;
   metrics: string[];
   filters: ReportCustomCreativeGetV30FiltersInner[];
   startTime: string;

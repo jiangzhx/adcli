@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanRoiGoalUpdateV10RequestRoiGoalUpdatesInner {
-  ad_id: number;
+  ad_id: number | string;
   roi_goal: number;
 }
 

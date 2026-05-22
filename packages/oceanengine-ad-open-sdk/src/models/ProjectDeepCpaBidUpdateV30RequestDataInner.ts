@@ -3,6 +3,6 @@
 
 export interface ProjectDeepCpaBidUpdateV30RequestDataInner {
   deepbid: number;
-  project_id: number;
+  project_id: number | string;
 }
 

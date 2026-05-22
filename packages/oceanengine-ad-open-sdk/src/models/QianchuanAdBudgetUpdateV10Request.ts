@@ -4,7 +4,7 @@
 import type { QianchuanAdBudgetUpdateV10RequestDataInner } from "../models";
 
 export interface QianchuanAdBudgetUpdateV10Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   data: QianchuanAdBudgetUpdateV10RequestDataInner[];
 }
 

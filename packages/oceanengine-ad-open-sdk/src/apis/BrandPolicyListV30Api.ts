@@ -8,7 +8,7 @@ import type { BrandPolicyListV30AdForm, BrandPolicyListV30AppOrigin, BrandPolicy
 
 
 export interface OpenApiV30BrandPolicyListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   classify: BrandPolicyListV30Classify;
   proType: BrandPolicyListV30ProType;
   adForm: BrandPolicyListV30AdForm;

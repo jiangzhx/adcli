@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarVasSubmitExportBoostItemGroupDataV2ResponseData {
-  ticket_id: number;
+  ticket_id: number | string;
 }
 

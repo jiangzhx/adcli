@@ -5,7 +5,7 @@ import type { ClueWechatInstanceDetailV2DataSubType, ClueWechatInstanceDetailV2D
 
 export interface ClueWechatInstanceDetailV2ResponseData {
   create_time?: string;
-  instance_id?: number;
+  instance_id?: number | string;
   mod_time?: string;
   name?: string;
   sub_type?: ClueWechatInstanceDetailV2DataSubType;

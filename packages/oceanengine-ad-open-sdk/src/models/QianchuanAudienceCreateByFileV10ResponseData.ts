@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanAudienceCreateByFileV10ResponseData {
-  audience_id?: number;
+  audience_id?: number | string;
 }
 

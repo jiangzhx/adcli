@@ -9,7 +9,7 @@ export interface FileVideoMaterialClearTaskCreateV2RequestClearTaskParams {
   cost?: number;
   create_time_upper?: string;
   end_time?: string;
-  material_ids?: number[];
+  material_ids?: number | string[];
   material_source: FileVideoMaterialClearTaskCreateV2ClearTaskParamsMaterialSource;
   start_time?: string;
 }

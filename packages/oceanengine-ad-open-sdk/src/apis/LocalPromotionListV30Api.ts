@@ -8,7 +8,7 @@ import type { LocalPromotionListV30Filtering, LocalPromotionListV30Response } fr
 
 
 export interface OpenApiV30LocalPromotionListGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   filtering?: LocalPromotionListV30Filtering;
   page?: number;
   pageSize?: number;

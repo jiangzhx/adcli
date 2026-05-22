@@ -8,7 +8,7 @@ import type { ToolsHotMaterialDeriveListV30Filtering, ToolsHotMaterialDeriveList
 
 
 export interface OpenApiV30ToolsHotMaterialDeriveListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   pageSize: number;
   filtering?: ToolsHotMaterialDeriveListV30Filtering;

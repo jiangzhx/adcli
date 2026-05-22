@@ -8,7 +8,7 @@ import type { StardeliveryTaskListV30Filtering, StardeliveryTaskListV30Response 
 
 
 export interface OpenApiV30StardeliveryTaskListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   starTaskVersion?: string;
   filtering?: StardeliveryTaskListV30Filtering;
   page?: number;

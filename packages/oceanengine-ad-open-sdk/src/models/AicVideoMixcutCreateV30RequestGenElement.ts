@@ -2,9 +2,9 @@
 // Do not edit manually.
 
 export interface AicVideoMixcutCreateV30RequestGenElement {
-  background_element_id?: number;
-  foreground_element_id?: number;
-  post_video_element_ids?: number[];
-  pre_video_element_ids?: number[];
+  background_element_id?: number | string;
+  foreground_element_id?: number | string;
+  post_video_element_ids?: number | string[];
+  pre_video_element_ids?: number | string[];
 }
 

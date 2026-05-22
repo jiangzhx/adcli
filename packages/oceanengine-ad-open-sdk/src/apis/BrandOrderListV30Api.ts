@@ -8,7 +8,7 @@ import type { BrandOrderListV30CampaignFilter, BrandOrderListV30Filter, BrandOrd
 
 
 export interface OpenApiV30BrandOrderListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filter?: BrandOrderListV30Filter;
   campaignFilter?: BrandOrderListV30CampaignFilter;
   pageInfo?: BrandOrderListV30PageInfo;

@@ -8,8 +8,8 @@ import type { StarDemandGetEpisodeLimitV2Response } from "../models";
 
 
 export interface OpenApi2StarDemandGetEpisodeLimitGetRequest {
-  starId: number;
-  albumId: number;
+  starId: number | string;
+  albumId: number | string;
 }
 
 export class StarDemandGetEpisodeLimitV2Api {

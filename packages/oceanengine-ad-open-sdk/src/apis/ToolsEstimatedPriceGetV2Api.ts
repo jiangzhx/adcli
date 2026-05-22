@@ -8,7 +8,7 @@ import type { ToolsEstimatedPriceGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsEstimatedPriceGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
 }
 
 export class ToolsEstimatedPriceGetV2Api {

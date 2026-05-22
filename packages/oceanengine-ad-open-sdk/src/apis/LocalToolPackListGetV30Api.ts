@@ -8,11 +8,11 @@ import type { LocalToolPackListGetV30DeliveryGoal, LocalToolPackListGetV30Intell
 
 
 export interface OpenApiV30LocalToolPackListGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   deliveryGoal: LocalToolPackListGetV30DeliveryGoal;
   intelligentSelectionMode: LocalToolPackListGetV30IntelligentSelectionMode;
-  poiIds?: number[];
-  productIds?: number[];
+  poiIds?: number | string[];
+  productIds?: number | string[];
   page?: number;
   pageSize?: number;
 }

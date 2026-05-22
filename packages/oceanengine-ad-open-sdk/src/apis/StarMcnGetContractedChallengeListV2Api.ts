@@ -8,7 +8,7 @@ import type { StarMcnGetContractedChallengeListV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnGetContractedChallengeListGetRequest {
-  starId: number;
+  starId: number | string;
   page?: number;
   pageSize?: number;
   payType?: number;
@@ -17,7 +17,7 @@ export interface OpenApi2StarMcnGetContractedChallengeListGetRequest {
   challengeStatus?: number;
   minCreateTimeStamp?: number;
   maxCreateTimeStamp?: number;
-  developerId?: number;
+  developerId?: number | string;
 }
 
 export class StarMcnGetContractedChallengeListV2Api {

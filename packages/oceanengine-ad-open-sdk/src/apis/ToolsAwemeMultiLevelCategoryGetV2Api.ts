@@ -8,7 +8,7 @@ import type { ToolsAwemeMultiLevelCategoryGetV2Behaviors, ToolsAwemeMultiLevelCa
 
 
 export interface OpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   behaviors?: ToolsAwemeMultiLevelCategoryGetV2Behaviors[];
 }
 

@@ -7,7 +7,7 @@ export interface KeywordCreateV2V2ResponseDataSuccessListInner {
   bid?: number;
   bid_type?: KeywordCreateV2V2DataSuccessListBidType;
   is_pause?: number;
-  keyword_id?: number;
+  keyword_id?: number | string;
   match_type?: KeywordCreateV2V2DataSuccessListMatchType;
   word: string;
 }

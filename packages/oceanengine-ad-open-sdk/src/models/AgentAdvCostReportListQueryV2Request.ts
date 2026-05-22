@@ -4,7 +4,7 @@
 import type { AgentAdvCostReportListQueryV2CostAggType, AgentAdvCostReportListQueryV2OrderType, AgentAdvCostReportListQueryV2RequestFiltering } from "../models";
 
 export interface AgentAdvCostReportListQueryV2Request {
-  agent_id: number;
+  agent_id: number | string;
   cost_agg_type?: AgentAdvCostReportListQueryV2CostAggType;
   end_date: string;
   filtering?: AgentAdvCostReportListQueryV2RequestFiltering;

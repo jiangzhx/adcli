@@ -26,9 +26,9 @@ export interface DpaEbpProductListV30ResponseDataListInner {
   offline_time?: number;
   online_time?: number;
   outer_id?: string;
-  platform_id?: number;
+  platform_id?: number | string;
   price_info?: DpaEbpProductListV30ResponseDataListInnerPriceInfo;
-  product_id?: number;
+  product_id?: number | string;
   profession?: Record<string, string>;
   province?: string[];
   shop_keeper_info?: DpaEbpProductListV30ResponseDataListInnerShopKeeperInfo;

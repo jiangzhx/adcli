@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface SubscribeAccountsAddV30ResponseData {
-  failed_advertiser_ids?: number[];
+  failed_advertiser_ids?: number | string[];
   failed_reason?: string;
 }
 

@@ -3,6 +3,6 @@
 
 export interface QianchuanToolsAllowCouponV10ResponseDataAwemeAllowCouponInner {
   allow_coupon?: boolean;
-  aweme_id?: number;
+  aweme_id?: number | string;
 }
 

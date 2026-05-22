@@ -8,11 +8,11 @@ import type { ToolsAdPreviewQrcodeGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsAdPreviewQrcodeGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   idType: string;
-  promotionId?: number;
-  materialId?: number;
-  projectId?: number;
+  promotionId?: number | string;
+  materialId?: number | string;
+  projectId?: number | string;
 }
 
 export class ToolsAdPreviewQrcodeGetV30Api {

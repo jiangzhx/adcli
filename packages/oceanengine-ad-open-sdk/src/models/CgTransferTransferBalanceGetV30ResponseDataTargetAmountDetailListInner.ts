@@ -6,7 +6,7 @@ import type { CgTransferTransferBalanceGetV30ResponseDataTargetAmountDetailListI
 export interface CgTransferTransferBalanceGetV30ResponseDataTargetAmountDetailListInner {
   capital_detail_list: CgTransferTransferBalanceGetV30ResponseDataTargetAmountDetailListInnerCapitalDetailListInner[];
   deposit_amount: number;
-  target_id: number;
+  target_id: number | string;
   total_transfer_amount: number;
 }
 

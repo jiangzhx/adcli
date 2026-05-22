@@ -7,7 +7,7 @@ export interface ToolsAwemeInfoSearchV2ResponseDataListInnerCategoriesInner {
   children?: ToolsAwemeInfoSearchV2ResponseDataListInnerCategoriesInnerChildrenInner[];
   cover_num_str?: string;
   fans_num_str?: string;
-  id?: number;
+  id?: number | string;
   value?: string;
 }
 

@@ -5,7 +5,7 @@ import type { PromotionAidGetV30DataPromotionMapDataAdsCreativesVideoMaterialIma
 
 export interface PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerVideoMaterial {
   image_mode?: PromotionAidGetV30DataPromotionMapDataAdsCreativesVideoMaterialImageMode;
-  material_id?: number;
+  material_id?: number | string;
   video_id?: string;
 }
 

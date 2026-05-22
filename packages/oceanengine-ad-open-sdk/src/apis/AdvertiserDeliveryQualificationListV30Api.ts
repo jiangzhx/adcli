@@ -8,7 +8,7 @@ import type { AdvertiserDeliveryQualificationListV30QualificationType, Advertise
 
 
 export interface OpenApiV30AdvertiserDeliveryQualificationListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   pageSize: number;
   qualificationType?: AdvertiserDeliveryQualificationListV30QualificationType;

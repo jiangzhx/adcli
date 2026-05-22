@@ -8,7 +8,7 @@ import type { ToolsEbpAppListV30AccountType, ToolsEbpAppListV30AssetManagementSc
 
 
 export interface OpenApiV30ToolsEbpAppListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsEbpAppListV30AccountType;
   assetManagementScope?: ToolsEbpAppListV30AssetManagementScope;
   filtering?: ToolsEbpAppListV30Filtering;

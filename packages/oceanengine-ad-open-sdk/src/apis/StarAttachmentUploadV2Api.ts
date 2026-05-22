@@ -10,7 +10,7 @@ import type { StarAttachmentUploadV2Response } from "../models";
 export interface OpenApi2StarAttachmentUploadPostRequest {
   file: File;
   fileName: string;
-  starId: number;
+  starId: number | string;
 }
 
 export class StarAttachmentUploadV2Api {

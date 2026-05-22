@@ -6,7 +6,7 @@ import type { CreativeCustomCreativeCreateV2CreativeListDerivePosterCid, Creativ
 export interface CreativeCustomCreativeCreateV2RequestCreativeListInner {
   abstract_materials?: CreativeCustomCreativeCreateV2RequestCreativeListInnerAbstractMaterialsInner[];
   component_materials?: CreativeCustomCreativeCreateV2RequestCreativeListInnerComponentMaterialsInner[];
-  creative_id?: number;
+  creative_id?: number | string;
   decoration_material?: CreativeCustomCreativeCreateV2RequestCreativeListInnerDecorationMaterial;
   derive_poster_cid?: CreativeCustomCreativeCreateV2CreativeListDerivePosterCid;
   image_materials?: CreativeCustomCreativeCreateV2RequestCreativeListInnerImageMaterialsInner[];

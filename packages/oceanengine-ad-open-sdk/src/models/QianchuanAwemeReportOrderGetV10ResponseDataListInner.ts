@@ -4,8 +4,8 @@
 import type { QianchuanAwemeReportOrderGetV10DataListMarketingGoal } from "../models";
 
 export interface QianchuanAwemeReportOrderGetV10ResponseDataListInner {
-  ad_id?: number;
-  advertiser_id?: number;
+  ad_id?: number | string;
+  advertiser_id?: number | string;
   average_live_watch_time?: number;
   click_cnt?: number;
   click_product?: number;
@@ -31,7 +31,7 @@ export interface QianchuanAwemeReportOrderGetV10ResponseDataListInner {
   luban_live_share_cnt?: number;
   luban_live_slidecart_click_cnt?: number;
   marketing_goal?: QianchuanAwemeReportOrderGetV10DataListMarketingGoal;
-  order_id?: number;
+  order_id?: number | string;
   pay_order_amount?: number;
   pay_order_count?: number;
   play_duration_5s_rate?: number;

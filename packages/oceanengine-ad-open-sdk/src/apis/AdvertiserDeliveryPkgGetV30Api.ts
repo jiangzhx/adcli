@@ -8,8 +8,8 @@ import type { AdvertiserDeliveryPkgGetV30Response } from "../models";
 
 
 export interface OpenApiV30AdvertiserDeliveryPkgGetGetRequest {
-  advertiserId: number;
-  pkgId: number;
+  advertiserId: number | string;
+  pkgId: number | string;
 }
 
 export class AdvertiserDeliveryPkgGetV30Api {

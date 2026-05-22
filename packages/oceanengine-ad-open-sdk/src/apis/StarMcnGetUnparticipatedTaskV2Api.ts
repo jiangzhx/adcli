@@ -8,7 +8,7 @@ import type { StarMcnGetUnparticipatedTaskV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnGetUnparticipatedTaskGetRequest {
-  starId: number;
+  starId: number | string;
   page: number;
   pageSize: number;
   payType?: number;
@@ -25,7 +25,7 @@ export interface OpenApi2StarMcnGetUnparticipatedTaskGetRequest {
   playletFirstWeek?: number;
   playletSecondWeek?: number;
   highProfitChallenge?: number;
-  developerId?: number;
+  developerId?: number | string;
 }
 
 export class StarMcnGetUnparticipatedTaskV2Api {

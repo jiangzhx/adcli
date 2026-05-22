@@ -3,6 +3,6 @@
 
 export interface QianchuanUniPromotionAdControlTaskDurationUpdateV10RequestUpdateDurationInfosInner {
   duration: number;
-  task_id: number;
+  task_id: number | string;
 }
 

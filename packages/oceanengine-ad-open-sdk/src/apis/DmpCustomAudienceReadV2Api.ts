@@ -8,8 +8,8 @@ import type { DmpCustomAudienceReadV2Response } from "../models";
 
 
 export interface OpenApi2DmpCustomAudienceReadGetRequest {
-  advertiserId: number;
-  customAudienceIds: number[];
+  advertiserId: number | string;
+  customAudienceIds: number | string[];
 }
 
 export class DmpCustomAudienceReadV2Api {

@@ -4,7 +4,7 @@
 export interface QianchuanUniPromotionBlockMaterialGetV10ResponseDataCarouselListInnerImagesInner {
   height?: number;
   image_id?: string;
-  material_id?: number;
+  material_id?: number | string;
   ratio?: number;
   url?: string;
   width?: number;

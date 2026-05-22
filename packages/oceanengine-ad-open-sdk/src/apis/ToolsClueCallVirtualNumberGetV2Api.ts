@@ -8,8 +8,8 @@ import type { ToolsClueCallVirtualNumberGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsClueCallVirtualNumberGetGetRequest {
-  advertiserId: number;
-  clueId: number;
+  advertiserId: number | string;
+  clueId: number | string;
   callerNumber: string;
   calleeNumber: string;
 }

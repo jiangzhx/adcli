@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface ToolsCommentReplyV30Request {
-  advertiser_id: number;
-  comment_ids: number[];
+  advertiser_id: number | string;
+  comment_ids: number | string[];
   reply_text: string;
 }
 

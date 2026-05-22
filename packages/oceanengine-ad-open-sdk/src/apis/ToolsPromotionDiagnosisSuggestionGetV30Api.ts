@@ -8,8 +8,8 @@ import type { ToolsPromotionDiagnosisSuggestionGetV30Response, ToolsPromotionDia
 
 
 export interface OpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest {
-  advertiserId: number;
-  promotionIds: number[];
+  advertiserId: number | string;
+  promotionIds: number | string[];
   scenes: ToolsPromotionDiagnosisSuggestionGetV30Scenes[];
 }
 

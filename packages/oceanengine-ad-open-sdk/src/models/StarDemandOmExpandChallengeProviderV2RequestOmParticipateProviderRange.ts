@@ -5,6 +5,6 @@ import type { StarDemandOmExpandChallengeProviderV2OmParticipateProviderRangeOpe
 
 export interface StarDemandOmExpandChallengeProviderV2RequestOmParticipateProviderRange {
   operation_type?: StarDemandOmExpandChallengeProviderV2OmParticipateProviderRangeOperationType;
-  provider_ids?: number[];
+  provider_ids?: number | string[];
 }
 

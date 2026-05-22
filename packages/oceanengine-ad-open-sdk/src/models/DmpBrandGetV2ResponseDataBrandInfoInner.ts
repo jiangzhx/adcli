@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface DmpBrandGetV2ResponseDataBrandInfoInner {
-  brand_id?: number;
+  brand_id?: number | string;
   brand_name?: string;
-  virtual_adv_id?: number;
+  virtual_adv_id?: number | string;
 }
 

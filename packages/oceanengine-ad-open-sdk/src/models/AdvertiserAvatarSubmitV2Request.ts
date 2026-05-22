@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdvertiserAvatarSubmitV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   image_id: string;
   source_info?: string;
 }

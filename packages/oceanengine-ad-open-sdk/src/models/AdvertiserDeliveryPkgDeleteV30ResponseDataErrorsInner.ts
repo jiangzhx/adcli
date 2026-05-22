@@ -3,6 +3,6 @@
 
 export interface AdvertiserDeliveryPkgDeleteV30ResponseDataErrorsInner {
   error_message?: string;
-  pkg_id?: number;
+  pkg_id?: number | string;
 }
 

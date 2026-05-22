@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface EventManagerAuthEnableV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
 }
 

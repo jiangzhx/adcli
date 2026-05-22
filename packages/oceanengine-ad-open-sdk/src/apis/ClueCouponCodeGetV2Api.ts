@@ -8,13 +8,13 @@ import type { ClueCouponCodeGetV2Response, ClueCouponCodeGetV2Status } from "../
 
 
 export interface OpenApi2ClueCouponCodeGetGetRequest {
-  activityId?: number;
-  advertiserId?: number;
-  couponId?: number;
+  activityId?: number | string;
+  advertiserId?: number | string;
+  couponId?: number | string;
   endTime?: string;
   page?: number;
   pageSize?: number;
-  resourceId?: number;
+  resourceId?: number | string;
   startTime?: string;
   status?: ClueCouponCodeGetV2Status;
 }

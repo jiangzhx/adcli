@@ -4,10 +4,10 @@
 import type { CreativeGetV2FilteringImageMode, CreativeGetV2FilteringLandingType, CreativeGetV2FilteringPricing } from "../models";
 
 export interface CreativeGetV2Filtering {
-  ad_id?: number;
-  campaign_id?: number;
+  ad_id?: number | string;
+  campaign_id?: number | string;
   creative_create_time?: string;
-  creative_ids?: number[];
+  creative_ids?: number | string[];
   creative_modify_time?: string;
   creative_title?: string;
   image_mode?: CreativeGetV2FilteringImageMode;

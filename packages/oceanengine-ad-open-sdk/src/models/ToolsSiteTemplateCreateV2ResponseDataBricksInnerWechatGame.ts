@@ -3,7 +3,7 @@
 
 export interface ToolsSiteTemplateCreateV2ResponseDataBricksInnerWechatGame {
   game_path?: string;
-  instance_id?: number;
+  instance_id?: number | string;
   introduction?: string;
   items?: string[];
   logo?: string;

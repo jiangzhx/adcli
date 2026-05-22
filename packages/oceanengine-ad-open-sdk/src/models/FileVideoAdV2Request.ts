@@ -4,7 +4,7 @@
 import type { FileVideoAdV2UploadType } from "../models";
 
 export interface FileVideoAdV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   filename?: string;
   is_aigc?: boolean;
   is_guide_video?: boolean;

@@ -8,8 +8,8 @@ import type { ClueWechatInstanceDetailV2Response } from "../models";
 
 
 export interface OpenApi2ClueWechatInstanceDetailGetRequest {
-  advertiserId: number;
-  instanceId: number;
+  advertiserId: number | string;
+  instanceId: number | string;
 }
 
 export class ClueWechatInstanceDetailV2Api {

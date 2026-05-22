@@ -8,7 +8,7 @@ import type { ToolsClueRefundReportGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsClueRefundReportGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   month: string;
 }
 

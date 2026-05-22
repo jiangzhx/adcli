@@ -4,7 +4,7 @@
 import type { StdProjectUpdateV30AigcDynamicCreativeSwitch, StdProjectUpdateV30AudienceType, StdProjectUpdateV30AutoExtendTraffic, StdProjectUpdateV30DownloadMode, StdProjectUpdateV30IsCommentDisable, StdProjectUpdateV30RequestAudience, StdProjectUpdateV30RequestBrandInfo, StdProjectUpdateV30RequestInternalAdvertiserInfo, StdProjectUpdateV30RequestKeywordsInner, StdProjectUpdateV30RequestProjectMaterials, StdProjectUpdateV30RequestTrackUrlSetting, StdProjectUpdateV30ScheduleType, StdProjectUpdateV30SearchContinueDelivery } from "../models";
 
 export interface StdProjectUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   aigc_dynamic_creative_switch?: StdProjectUpdateV30AigcDynamicCreativeSwitch;
   audience?: StdProjectUpdateV30RequestAudience;
   audience_type?: StdProjectUpdateV30AudienceType;
@@ -22,7 +22,7 @@ export interface StdProjectUpdateV30Request {
   is_comment_disable?: StdProjectUpdateV30IsCommentDisable;
   keywords?: StdProjectUpdateV30RequestKeywordsInner[];
   name?: string;
-  project_id?: number;
+  project_id?: number | string;
   project_materials?: StdProjectUpdateV30RequestProjectMaterials;
   roi_goal?: number;
   schedule_time?: string;

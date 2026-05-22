@@ -5,6 +5,6 @@ import type { CreativeCustomCreativeUpdateV2RequestCreativeListInnerImageMateria
 
 export interface CreativeCustomCreativeUpdateV2RequestCreativeListInnerImageMaterialsInnerTemplateImage {
   template_data_list?: CreativeCustomCreativeUpdateV2RequestCreativeListInnerImageMaterialsInnerTemplateImageTemplateDataListInner[];
-  template_id: number;
+  template_id: number | string;
 }
 

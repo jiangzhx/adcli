@@ -7,7 +7,7 @@ export interface LocalFileVideoGetV30ResponseDataVideoListInner {
   create_time?: string;
   duration?: number;
   image_mode?: LocalFileVideoGetV30DataVideoListImageMode;
-  material_id?: number;
+  material_id?: number | string;
   material_properties?: LocalFileVideoGetV30DataVideoListMaterialProperties[];
   poster_url?: string;
   signature?: string;

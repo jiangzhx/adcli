@@ -5,7 +5,7 @@ import type { PromotionNewcustomerCreateV30PromotionMaterialsVideoMaterialListIm
 
 export interface PromotionNewcustomerCreateV30RequestPromotionMaterialsVideoMaterialListInner {
   image_mode?: PromotionNewcustomerCreateV30PromotionMaterialsVideoMaterialListImageMode;
-  item_id?: number;
+  item_id?: number | string;
   video_cover_uri?: string;
   video_id?: string;
 }

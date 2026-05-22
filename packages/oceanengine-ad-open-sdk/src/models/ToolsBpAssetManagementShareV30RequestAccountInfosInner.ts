@@ -4,7 +4,7 @@
 import type { ToolsBpAssetManagementShareV30AccountInfosAccountType } from "../models";
 
 export interface ToolsBpAssetManagementShareV30RequestAccountInfosInner {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsBpAssetManagementShareV30AccountInfosAccountType;
 }
 

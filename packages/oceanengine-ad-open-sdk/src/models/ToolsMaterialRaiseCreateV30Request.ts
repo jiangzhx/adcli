@@ -4,9 +4,9 @@
 import type { ToolsMaterialRaiseCreateV30RequestRaiseInfo } from "../models";
 
 export interface ToolsMaterialRaiseCreateV30Request {
-  advertiser_id: number;
-  material_ids?: number[];
-  project_id: number;
+  advertiser_id: number | string;
+  material_ids?: number | string[];
+  project_id: number | string;
   raise_info: ToolsMaterialRaiseCreateV30RequestRaiseInfo;
 }
 

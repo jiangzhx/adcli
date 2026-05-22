@@ -4,7 +4,7 @@
 import type { ToolsEbpWechatAppletCreateV30AccountType, ToolsEbpWechatAppletCreateV30RequestExtra, ToolsEbpWechatAppletCreateV30RequestHead, ToolsEbpWechatAppletCreateV30RequestIcon, ToolsEbpWechatAppletCreateV30RequestMaterialInner } from "../models";
 
 export interface ToolsEbpWechatAppletCreateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpWechatAppletCreateV30AccountType;
   data?: Record<string, string>;
   extra?: ToolsEbpWechatAppletCreateV30RequestExtra;

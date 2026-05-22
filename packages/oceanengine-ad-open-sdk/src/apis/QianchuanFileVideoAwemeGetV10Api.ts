@@ -8,9 +8,9 @@ import type { QianchuanFileVideoAwemeGetV10Filtering, QianchuanFileVideoAwemeGet
 
 
 export interface OpenApiV10QianchuanFileVideoAwemeGetGetRequest {
-  advertiserId: number;
-  awemeId?: number;
-  adBindAwemeId?: number;
+  advertiserId: number | string;
+  awemeId?: number | string;
+  adBindAwemeId?: number | string;
   pullAwemeExcellentVideo?: boolean;
   filtering?: QianchuanFileVideoAwemeGetV10Filtering;
   cursor?: number;

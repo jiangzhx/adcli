@@ -4,7 +4,7 @@
 import type { QianchuanToolsSmartBoostAdBoostStatusGetV10DataRaiseDetailsStatus } from "../models";
 
 export interface QianchuanToolsSmartBoostAdBoostStatusGetV10ResponseDataRaiseDetailsInner {
-  ad_id?: number;
+  ad_id?: number | string;
   budget?: number;
   raise_duration?: number;
   raise_time?: string;

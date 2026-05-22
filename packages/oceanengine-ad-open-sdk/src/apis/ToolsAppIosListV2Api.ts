@@ -8,7 +8,7 @@ import type { ToolsAppIosListV2Filtering, ToolsAppIosListV2Response } from "../m
 
 
 export interface OpenApi2ToolsAppIosListGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: ToolsAppIosListV2Filtering;
   page?: number;
   pageSize?: number;

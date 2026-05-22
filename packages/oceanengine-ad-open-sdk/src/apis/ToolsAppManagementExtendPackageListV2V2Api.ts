@@ -8,7 +8,7 @@ import type { ToolsAppManagementExtendPackageListV2V2AccountType, ToolsAppManage
 
 
 export interface OpenApi2ToolsAppManagementExtendPackageListV2GetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsAppManagementExtendPackageListV2V2AccountType;
   packageId: string;
   page?: number;

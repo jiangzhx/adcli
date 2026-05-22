@@ -9,7 +9,7 @@ export interface AgentCompanyBiddingListQueryV2ResponseDataDataInner {
   company_audit_adv_cnt?: number;
   company_balance?: number;
   company_grant_balance?: number;
-  company_id?: number;
+  company_id?: number | string;
   company_last_renew_date?: string;
   company_name?: string;
   company_non_grant_balance?: number;

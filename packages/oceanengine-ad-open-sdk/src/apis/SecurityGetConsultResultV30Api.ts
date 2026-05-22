@@ -8,8 +8,8 @@ import type { SecurityGetConsultResultV30Response } from "../models";
 
 
 export interface OpenApiV30SecurityGetConsultResultGetRequest {
-  advertiserId: number;
-  appealTrackIds: number[];
+  advertiserId: number | string;
+  appealTrackIds: number | string[];
 }
 
 export class SecurityGetConsultResultV30Api {

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface UploadStatementV2Request {
-  agent_id: number;
+  agent_id: number | string;
   file: File;
 }
 

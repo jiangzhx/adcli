@@ -8,7 +8,7 @@ import type { AicMixcutTaskResultGetV30AccountType, AicMixcutTaskResultGetV30Res
 
 
 export interface OpenApiV30AicMixcutTaskResultGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: AicMixcutTaskResultGetV30AccountType;
   taskId: string;
 }

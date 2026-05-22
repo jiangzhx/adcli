@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface BrandActionCategoryV30ResponseDataActionCategoryListInnerChildrenInner {
-  id?: number;
+  id?: number | string;
   name?: string;
 }
 

@@ -8,7 +8,7 @@ import type { CreativeGetV2Filtering, CreativeGetV2Response } from "../models";
 
 
 export interface OpenApi2CreativeGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: CreativeGetV2Filtering;
   fields?: string[];
   page?: number;

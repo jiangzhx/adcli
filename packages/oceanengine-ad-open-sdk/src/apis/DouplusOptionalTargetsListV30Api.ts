@@ -9,7 +9,7 @@ import type { DouplusOptionalTargetsListV30Response } from "../models";
 
 export interface OpenApiV30DouplusOptionalTargetsListGetRequest {
   awemeSecUid?: string;
-  itemId?: number;
+  itemId?: number | string;
   liveAwemeId?: string;
 }
 

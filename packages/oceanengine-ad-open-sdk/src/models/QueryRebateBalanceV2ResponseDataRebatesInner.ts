@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QueryRebateBalanceV2ResponseDataRebatesInner {
-  agent_id?: number;
+  agent_id?: number | string;
   agent_name?: string;
   amount?: number;
   archive_status?: number;
@@ -23,7 +23,7 @@ export interface QueryRebateBalanceV2ResponseDataRebatesInner {
   month_quarter_name?: string;
   platform?: number;
   platform_name?: string;
-  rebate_balance_id?: number;
+  rebate_balance_id?: number | string;
   rebate_balance_serial?: string;
   stamp_status?: number;
   stamp_status_name?: string;

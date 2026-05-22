@@ -7,7 +7,7 @@ export interface FileVideoAdGetV2ResponseDataListInner {
   format?: string;
   height?: number;
   id?: string;
-  material_id?: number;
+  material_id?: number | string;
   poster_url?: string;
   signature?: string;
   size?: number;

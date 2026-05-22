@@ -8,8 +8,8 @@ import type { StarDemanderQueryCpsTaskSalesV2Response } from "../models";
 
 
 export interface OpenApi2StarDemanderQueryCpsTaskSalesGetRequest {
-  starId: number;
-  taskId: number;
+  starId: number | string;
+  taskId: number | string;
   page: number;
   limit: number;
 }

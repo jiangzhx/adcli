@@ -9,7 +9,7 @@ export interface ToolsClueContactLogListV2ResponseDataListInner {
   call_duration?: number;
   callee_number?: string;
   caller_number?: string;
-  clue_id?: number;
+  clue_id?: number | string;
   contact_id?: string;
   contact_type?: number;
   duration?: number;
@@ -17,7 +17,7 @@ export interface ToolsClueContactLogListV2ResponseDataListInner {
   end_state_show_msg?: string;
   end_time?: string;
   start_time?: string;
-  user_id?: number;
+  user_id?: number | string;
   virtual_number?: string;
 }
 

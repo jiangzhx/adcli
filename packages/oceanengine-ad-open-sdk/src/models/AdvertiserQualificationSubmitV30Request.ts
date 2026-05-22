@@ -4,7 +4,7 @@
 import type { AdvertiserQualificationSubmitV30RequestSubject } from "../models";
 
 export interface AdvertiserQualificationSubmitV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   subject: AdvertiserQualificationSubmitV30RequestSubject;
 }
 

@@ -4,7 +4,7 @@
 import type { ToolsEbpVideoUpdateV30DataVideosStatusCode } from "../models";
 
 export interface ToolsEbpVideoUpdateV30ResponseDataVideosInner {
-  material_id?: number;
+  material_id?: number | string;
   status_code?: ToolsEbpVideoUpdateV30DataVideosStatusCode;
 }
 

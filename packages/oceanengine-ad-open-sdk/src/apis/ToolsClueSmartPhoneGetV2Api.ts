@@ -8,7 +8,7 @@ import type { ToolsClueSmartPhoneGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsClueSmartPhoneGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
 }

@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanReportVideoUserLoseGetV10Filtering {
-  material_id: number;
+  material_id: number | string;
 }
 

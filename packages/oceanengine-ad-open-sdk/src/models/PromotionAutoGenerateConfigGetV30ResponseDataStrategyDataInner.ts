@@ -5,7 +5,7 @@ import type { PromotionAutoGenerateConfigGetV30DataStrategyDataType, PromotionAu
 
 export interface PromotionAutoGenerateConfigGetV30ResponseDataStrategyDataInner {
   info?: PromotionAutoGenerateConfigGetV30ResponseDataStrategyDataInnerInfo;
-  strategy_id: number;
+  strategy_id: number | string;
   strategy_name?: string;
   strategy_state?: PromotionAutoGenerateConfigGetV30ResponseDataStrategyDataInnerStrategyStateInner[];
   type: PromotionAutoGenerateConfigGetV30DataStrategyDataType;

@@ -8,8 +8,8 @@ import type { ToolsSearchBidRatioGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsSearchBidRatioGetGetRequest {
-  advertiserId: number;
-  adId?: number;
+  advertiserId: number | string;
+  adId?: number | string;
 }
 
 export class ToolsSearchBidRatioGetV2Api {

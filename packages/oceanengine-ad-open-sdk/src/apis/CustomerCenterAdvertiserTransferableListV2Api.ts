@@ -8,7 +8,7 @@ import type { CustomerCenterAdvertiserTransferableListV2Response, CustomerCenter
 
 
 export interface OpenApi2CustomerCenterAdvertiserTransferableListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   transferAccountType?: CustomerCenterAdvertiserTransferableListV2TransferAccountType;
   page?: number;
   pageSize?: number;

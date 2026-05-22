@@ -11,12 +11,12 @@ export interface OpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest {
   landingType: ToolsEventConvertOptimizedGoalGetV30LandingType;
   marketingPurpose: ToolsEventConvertOptimizedGoalGetV30MarketingPurpose;
   assetType: ToolsEventConvertOptimizedGoalGetV30AssetType;
-  advertiserId?: number;
-  siteId?: number;
+  advertiserId?: number | string;
+  siteId?: number | string;
   miniProgramId?: string;
-  assetId?: number;
+  assetId?: number | string;
   campaignType?: ToolsEventConvertOptimizedGoalGetV30CampaignType;
-  microAppInstanceId?: number;
+  microAppInstanceId?: number | string;
 }
 
 export class ToolsEventConvertOptimizedGoalGetV30Api {

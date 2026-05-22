@@ -5,8 +5,8 @@ import type { ToolsJointBidGetV30DataJointBidMode, ToolsJointBidGetV30ResponseDa
 
 export interface ToolsJointBidGetV30ResponseData {
   joint_bid_mode?: ToolsJointBidGetV30DataJointBidMode;
-  joint_id?: number;
+  joint_id?: number | string;
   joint_scope_info?: ToolsJointBidGetV30ResponseDataJointScopeInfo;
-  rta_id?: number[];
+  rta_id?: number | string[];
 }
 

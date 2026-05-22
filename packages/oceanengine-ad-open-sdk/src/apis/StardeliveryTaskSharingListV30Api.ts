@@ -8,8 +8,8 @@ import type { StardeliveryTaskSharingListV30Response } from "../models";
 
 
 export interface OpenApiV30StardeliveryTaskSharingListGetRequest {
-  advertiserId: number;
-  starTaskId: number;
+  advertiserId: number | string;
+  starTaskId: number | string;
   page?: number;
   pageSize?: number;
 }

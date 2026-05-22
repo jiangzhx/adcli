@@ -4,7 +4,7 @@
 import type { ClueCouponDetailV2DataCouponNeedPhone, ClueCouponDetailV2DataCouponNeedSmsVerify, ClueCouponDetailV2DataCouponStatus, ClueCouponDetailV2ResponseDataCouponGlobalLimit, ClueCouponDetailV2ResponseDataCouponResourceListInner, ClueCouponDetailV2ResponseDataCouponUserLimit } from "../models";
 
 export interface ClueCouponDetailV2ResponseDataCoupon {
-  coupon_id?: number;
+  coupon_id?: number | string;
   create_time?: string;
   deliver_end?: string;
   deliver_start?: string;

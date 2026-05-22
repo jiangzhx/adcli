@@ -8,7 +8,7 @@ import type { ToolsEbpVideoAttributesListV30AccountType, ToolsEbpVideoAttributes
 
 
 export interface OpenApiV30ToolsEbpVideoAttributesListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType?: ToolsEbpVideoAttributesListV30AccountType;
   filtering?: ToolsEbpVideoAttributesListV30Filtering;
   returnLowqualitySuggestions?: boolean;

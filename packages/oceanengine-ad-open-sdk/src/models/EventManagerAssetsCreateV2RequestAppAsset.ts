@@ -5,7 +5,7 @@ import type { EventManagerAssetsCreateV2AppAssetAppCreateType, EventManagerAsset
 
 export interface EventManagerAssetsCreateV2RequestAppAsset {
   app_create_type?: EventManagerAssetsCreateV2AppAssetAppCreateType;
-  app_id?: number;
+  app_id?: number | string;
   app_type: EventManagerAssetsCreateV2AppAssetAppType;
   download_url: string;
   name: string;

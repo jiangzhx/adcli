@@ -8,9 +8,9 @@ import type { QianchuanUniPromotionAdControlTaskListV10Fields, QianchuanUniPromo
 
 
 export interface OpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   marketingGoal: QianchuanUniPromotionAdControlTaskListV10MarketingGoal;
-  adId: number;
+  adId: number | string;
   startTime: string;
   endTime: string;
   scene: QianchuanUniPromotionAdControlTaskListV10Scene;

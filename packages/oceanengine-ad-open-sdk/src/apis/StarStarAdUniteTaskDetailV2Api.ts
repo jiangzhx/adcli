@@ -8,8 +8,8 @@ import type { StarStarAdUniteTaskDetailV2Response } from "../models";
 
 
 export interface OpenApi2StarStarAdUniteTaskDetailGetRequest {
-  starId: number;
-  demandId: number;
+  starId: number | string;
+  demandId: number | string;
   statStartDate: string;
   statEndDate: string;
 }

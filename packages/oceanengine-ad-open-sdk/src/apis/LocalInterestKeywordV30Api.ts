@@ -8,7 +8,7 @@ import type { LocalInterestKeywordV30Response } from "../models";
 
 
 export interface OpenApiV30LocalInterestKeywordGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   queryWords: string;
 }
 

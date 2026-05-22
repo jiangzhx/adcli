@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface SecurityOpenMaterialAuditV30ResponseData {
-  object_id: number;
+  object_id: number | string;
   result: boolean;
-  task_id: number;
+  task_id: number | string;
 }
 

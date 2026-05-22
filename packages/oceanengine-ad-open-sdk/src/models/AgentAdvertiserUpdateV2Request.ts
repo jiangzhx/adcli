@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AgentAdvertiserUpdateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   contacter?: string;
   email?: string;
   name?: string;

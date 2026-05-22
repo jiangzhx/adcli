@@ -5,6 +5,6 @@ import type { DpaClueProductDeleteV2ResponseDataDataErrorsInner } from "../model
 
 export interface DpaClueProductDeleteV2ResponseDataData {
   errors?: DpaClueProductDeleteV2ResponseDataDataErrorsInner[];
-  product_ids?: number[];
+  product_ids?: number | string[];
 }
 

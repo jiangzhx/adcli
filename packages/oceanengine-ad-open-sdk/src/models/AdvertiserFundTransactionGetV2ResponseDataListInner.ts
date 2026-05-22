@@ -4,7 +4,7 @@
 import type { AdvertiserFundTransactionGetV2DataListTransactionType } from "../models";
 
 export interface AdvertiserFundTransactionGetV2ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   amount?: number;
   cash?: number;
   create_time?: string;

@@ -8,7 +8,7 @@ import type { QianchuanCarouselGetV10Filtering, QianchuanCarouselGetV10OrderType
 
 
 export interface OpenApiV10QianchuanCarouselGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: QianchuanCarouselGetV10Filtering;
   orderField?: string;
   orderType?: QianchuanCarouselGetV10OrderType;

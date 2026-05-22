@@ -8,8 +8,8 @@ import type { FileQualityGetV30Response } from "../models";
 
 
 export interface OpenApiV30FileQualityGetGetRequest {
-  advertiserId: number;
-  materialIds: number[];
+  advertiserId: number | string;
+  materialIds: number | string[];
 }
 
 export class FileQualityGetV30Api {

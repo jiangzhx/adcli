@@ -7,11 +7,11 @@ export interface DouplusOrderListV30ResponseDataOrderListInnerOrder {
   budget?: number;
   live_scene?: DouplusOrderListV30DataOrderListOrderLiveScene;
   order_create_time?: string;
-  order_id?: number;
+  order_id?: number | string;
   renew_count?: number;
-  rta_id?: number;
+  rta_id?: number | string;
   scene_type?: DouplusOrderListV30DataOrderListOrderSceneType;
-  task_id?: number;
+  task_id?: number | string;
   task_status?: DouplusOrderListV30DataOrderListOrderTaskStatus;
 }
 

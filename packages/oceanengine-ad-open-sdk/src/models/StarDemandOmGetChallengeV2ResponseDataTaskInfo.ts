@@ -5,7 +5,7 @@ import type { StarDemandOmGetChallengeV2ResponseDataTaskInfoChallengeInfo, StarD
 
 export interface StarDemandOmGetChallengeV2ResponseDataTaskInfo {
   challenge_info?: StarDemandOmGetChallengeV2ResponseDataTaskInfoChallengeInfo;
-  challenge_task_id?: number;
+  challenge_task_id?: number | string;
   demand_info?: StarDemandOmGetChallengeV2ResponseDataTaskInfoDemandInfo;
 }
 

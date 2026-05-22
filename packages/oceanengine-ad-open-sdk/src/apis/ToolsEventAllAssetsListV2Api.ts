@@ -8,7 +8,7 @@ import type { ToolsEventAllAssetsListV2Filtering, ToolsEventAllAssetsListV2Respo
 
 
 export interface OpenApi2ToolsEventAllAssetsListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: ToolsEventAllAssetsListV2Filtering;
   page?: number;
   pageSize?: number;

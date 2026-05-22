@@ -5,6 +5,6 @@ import type { DpaEbpClueProductDeleteV30ResponseDataDataErrorsInner } from "../m
 
 export interface DpaEbpClueProductDeleteV30ResponseDataData {
   errors?: DpaEbpClueProductDeleteV30ResponseDataDataErrorsInner[];
-  product_ids?: number[];
+  product_ids?: number | string[];
 }
 

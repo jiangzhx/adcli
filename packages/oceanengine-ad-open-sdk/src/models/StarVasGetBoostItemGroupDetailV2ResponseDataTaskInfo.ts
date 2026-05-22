@@ -12,9 +12,9 @@ export interface StarVasGetBoostItemGroupDetailV2ResponseDataTaskInfo {
   boost_hours?: number;
   boost_type: StarVasGetBoostItemGroupDetailV2DataTaskInfoBoostType;
   create_time: number;
-  pack_id?: number;
+  pack_id?: number | string;
   status: StarVasGetBoostItemGroupDetailV2DataTaskInfoStatus;
-  task_id: number;
+  task_id: number | string;
   task_name: string;
 }
 

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsAipThirdSiteCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   name?: string;
   url: string;
 }

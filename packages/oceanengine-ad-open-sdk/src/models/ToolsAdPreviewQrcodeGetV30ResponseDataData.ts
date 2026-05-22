@@ -4,12 +4,12 @@
 import type { ToolsAdPreviewQrcodeGetV30DataDataGenerate } from "../models";
 
 export interface ToolsAdPreviewQrcodeGetV30ResponseDataData {
-  advertiser_id: number;
+  advertiser_id: number | string;
   generate?: ToolsAdPreviewQrcodeGetV30DataDataGenerate;
   id_type: string;
-  material_id?: number;
-  project_id?: number;
-  promotion_id: number;
+  material_id?: number | string;
+  project_id?: number | string;
+  promotion_id: number | string;
   qrcode_msg_url: string;
 }
 

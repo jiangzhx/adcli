@@ -8,15 +8,15 @@ import type { CgTransferWalletTransferListV30AccountType, CgTransferWalletTransf
 
 
 export interface OpenApiV30CgTransferWalletTransferListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: CgTransferWalletTransferListV30AccountType;
   bizRequestNo: string;
   queryBeginTime: string;
   queryEndTime: string;
   queryWalletIdList: number[];
   pageInfo: CgTransferWalletTransferListV30PageInfo;
-  payeeId?: number;
-  remitterId?: number;
+  payeeId?: number | string;
+  remitterId?: number | string;
 }
 
 export class CgTransferWalletTransferListV30Api {

@@ -8,8 +8,8 @@ import type { ToolsEventAllAssetsDetailV2Response } from "../models";
 
 
 export interface OpenApi2ToolsEventAllAssetsDetailGetRequest {
-  advertiserId: number;
-  assetIds: number[];
+  advertiserId: number | string;
+  assetIds: number | string[];
 }
 
 export class ToolsEventAllAssetsDetailV2Api {

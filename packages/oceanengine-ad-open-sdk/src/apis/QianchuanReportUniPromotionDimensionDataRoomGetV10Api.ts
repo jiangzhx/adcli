@@ -8,8 +8,8 @@ import type { QianchuanReportUniPromotionDimensionDataRoomGetV10Dimension, Qianc
 
 
 export interface OpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
-  advertiserId: number;
-  roomId: number;
+  advertiserId: number | string;
+  roomId: number | string;
   startTime?: string;
   endTime?: string;
   dimension?: QianchuanReportUniPromotionDimensionDataRoomGetV10Dimension;

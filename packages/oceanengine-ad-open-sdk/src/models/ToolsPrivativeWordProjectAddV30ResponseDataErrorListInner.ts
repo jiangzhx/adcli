@@ -7,6 +7,6 @@ export interface ToolsPrivativeWordProjectAddV30ResponseDataErrorListInner {
   error_message?: string;
   fail_phrase_words?: ToolsPrivativeWordProjectAddV30ResponseDataErrorListInnerFailPhraseWordsInner[];
   fail_precise_words?: ToolsPrivativeWordProjectAddV30ResponseDataErrorListInnerFailPreciseWordsInner[];
-  project_id?: number;
+  project_id?: number | string;
 }
 

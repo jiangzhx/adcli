@@ -5,7 +5,7 @@ import type { DmpCustomAudienceSelectV2DataCustomAudienceListDeliveryStatus, Dmp
 
 export interface DmpCustomAudienceSelectV2ResponseDataCustomAudienceListInner {
   cover_num?: number;
-  custom_audience_id?: number;
+  custom_audience_id?: number | string;
   data_source_id?: string;
   delivery_status?: DmpCustomAudienceSelectV2DataCustomAudienceListDeliveryStatus;
   isdel?: number;

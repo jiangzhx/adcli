@@ -4,9 +4,9 @@
 import type { QianchuanUniPromotionAuthorizationApplyV10MarketingGoal } from "../models";
 
 export interface QianchuanUniPromotionAuthorizationApplyV10Request {
-  advertiser_id: number;
-  aweme_ids: number[];
+  advertiser_id: number | string;
+  aweme_ids: number | string[];
   marketing_goal: QianchuanUniPromotionAuthorizationApplyV10MarketingGoal;
-  shop_id?: number;
+  shop_id?: number | string;
 }
 

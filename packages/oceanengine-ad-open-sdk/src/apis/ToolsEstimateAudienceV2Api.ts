@@ -14,14 +14,14 @@ export interface OpenApi2ToolsEstimateAudienceGetRequest {
   actionWords?: number[];
   activateType?: ToolsEstimateAudienceV2ActivateType[];
   adTag?: number[];
-  advertiserId?: number;
+  advertiserId?: number | string;
   age?: ToolsEstimateAudienceV2Age[];
   androidOsv?: ToolsEstimateAudienceV2AndroidOsv;
   appBehaviorTarget?: ToolsEstimateAudienceV2AppBehaviorTarget;
   appCategory?: number[];
-  appIds?: number[];
+  appIds?: number | string[];
   articleCategory?: ToolsEstimateAudienceV2ArticleCategory[];
-  audiencePackageId?: number;
+  audiencePackageId?: number | string;
   autoExtendEnabled?: ToolsEstimateAudienceV2AutoExtendEnabled;
   autoExtendTargets?: ToolsEstimateAudienceV2AutoExtendTargets[];
   awemeFansNumbers?: number[];

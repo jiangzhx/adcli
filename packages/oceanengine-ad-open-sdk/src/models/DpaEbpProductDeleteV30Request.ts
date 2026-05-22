@@ -4,9 +4,9 @@
 import type { DpaEbpProductDeleteV30AccountType } from "../models";
 
 export interface DpaEbpProductDeleteV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: DpaEbpProductDeleteV30AccountType;
-  platform_id: number;
-  product_id: number;
+  platform_id: number | string;
+  product_id: number | string;
 }
 

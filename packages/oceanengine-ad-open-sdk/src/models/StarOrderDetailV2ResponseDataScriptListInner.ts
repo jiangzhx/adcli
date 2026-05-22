@@ -9,7 +9,7 @@ export interface StarOrderDetailV2ResponseDataScriptListInner {
   detail_audit_info?: StarOrderDetailV2ResponseDataScriptListInnerDetailAuditInfoInner[];
   resource_content?: string;
   resource_filename?: string;
-  resource_id?: number;
+  resource_id?: number | string;
   resource_title?: string;
   status?: number;
 }

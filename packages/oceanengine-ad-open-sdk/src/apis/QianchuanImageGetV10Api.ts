@@ -8,7 +8,7 @@ import type { QianchuanImageGetV10Filtering, QianchuanImageGetV10Response } from
 
 
 export interface OpenApiV10QianchuanImageGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: QianchuanImageGetV10Filtering;
   page?: number;
   pageSize?: number;

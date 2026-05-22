@@ -8,7 +8,7 @@ import type { StarCampaignListV2Response } from "../models";
 
 
 export interface OpenApi2StarCampaignListGetRequest {
-  starId: number;
+  starId: number | string;
   searchName?: string;
   page?: number;
   limit?: number;

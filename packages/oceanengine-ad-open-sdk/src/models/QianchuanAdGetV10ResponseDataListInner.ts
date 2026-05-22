@@ -5,10 +5,10 @@ import type { QianchuanAdGetV10DataListCampaignScene, QianchuanAdGetV10DataListL
 
 export interface QianchuanAdGetV10ResponseDataListInner {
   ad_create_time?: string;
-  ad_id?: number;
+  ad_id?: number | string;
   ad_modify_time?: string;
   aweme_info?: QianchuanAdGetV10ResponseDataListInnerAwemeInfoInner[];
-  campaign_id?: number;
+  campaign_id?: number | string;
   campaign_scene?: QianchuanAdGetV10DataListCampaignScene;
   delivery_setting?: QianchuanAdGetV10ResponseDataListInnerDeliverySetting;
   grab_first_screen_bid_adjust_rate?: number;

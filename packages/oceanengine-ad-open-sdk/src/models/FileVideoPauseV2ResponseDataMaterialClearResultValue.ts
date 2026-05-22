@@ -5,7 +5,7 @@ export interface FileVideoPauseV2ResponseDataMaterialClearResultValue {
   creative_failure_list?: number[];
   creative_success_list?: number[];
   is_cleared: boolean;
-  material_id: number;
+  material_id: number | string;
   msg?: string;
   promotion_failure_list?: number[];
   promotion_success_list?: number[];

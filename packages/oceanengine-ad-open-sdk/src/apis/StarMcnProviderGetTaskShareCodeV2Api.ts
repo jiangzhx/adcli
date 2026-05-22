@@ -8,8 +8,8 @@ import type { StarMcnProviderGetTaskShareCodeV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnProviderGetTaskShareCodeGetRequest {
-  starId: number;
-  taskId: number;
+  starId: number | string;
+  taskId: number | string;
   channelId?: string;
 }
 

@@ -8,7 +8,7 @@ import type { QianchuanAdRecommendKeywordsGetV10Filtering, QianchuanAdRecommendK
 
 
 export interface OpenApiV10QianchuanAdRecommendKeywordsGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering: QianchuanAdRecommendKeywordsGetV10Filtering;
   orderField?: QianchuanAdRecommendKeywordsGetV10OrderField;
   orderType?: QianchuanAdRecommendKeywordsGetV10OrderType;

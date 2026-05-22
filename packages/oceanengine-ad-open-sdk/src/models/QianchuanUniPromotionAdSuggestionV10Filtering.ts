@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanUniPromotionAdSuggestionV10Filtering {
-  material_ids?: number[];
-  product_ids?: number[];
+  material_ids?: number | string[];
+  product_ids?: number | string[];
 }
 

@@ -4,7 +4,7 @@
 import type { AdRejectReasonV2ResponseDataListInnerCreativeRejectInnerMaterialRejectInner, AdRejectReasonV2ResponseDataListInnerCreativeRejectInnerRejectDataInner } from "../models";
 
 export interface AdRejectReasonV2ResponseDataListInnerCreativeRejectInner {
-  creative_id?: number;
+  creative_id?: number | string;
   material_reject?: AdRejectReasonV2ResponseDataListInnerCreativeRejectInnerMaterialRejectInner[];
   reject_data?: AdRejectReasonV2ResponseDataListInnerCreativeRejectInnerRejectDataInner[];
 }

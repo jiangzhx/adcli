@@ -6,7 +6,7 @@ export interface StarAttributeUserInfoFeedbackV2Request {
   game_name?: string;
   group_tag?: number;
   oaid?: string;
-  star_id: number;
+  star_id: number | string;
   user_tag?: number;
 }
 

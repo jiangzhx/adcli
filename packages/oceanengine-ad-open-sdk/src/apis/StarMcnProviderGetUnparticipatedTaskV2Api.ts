@@ -8,7 +8,7 @@ import type { StarMcnProviderGetUnparticipatedTaskV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
-  starId: number;
+  starId: number | string;
   page: number;
   pageSize: number;
   payType?: number;
@@ -19,12 +19,12 @@ export interface OpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
   productCategory?: number;
   appId?: string;
   appName?: string;
-  demandId?: number;
+  demandId?: number | string;
   gameType?: number;
   componentType?: number;
   searchTags?: number[];
-  firstCategoryId?: number;
-  secondCategoryId?: number;
+  firstCategoryId?: number | string;
+  secondCategoryId?: number | string;
 }
 
 export class StarMcnProviderGetUnparticipatedTaskV2Api {

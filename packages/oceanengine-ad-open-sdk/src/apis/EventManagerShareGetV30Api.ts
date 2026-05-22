@@ -8,8 +8,8 @@ import type { EventManagerShareGetV30Response } from "../models";
 
 
 export interface OpenApiV30EventManagerShareGetGetRequest {
-  organizationId: number;
-  assetId: number;
+  organizationId: number | string;
+  assetId: number | string;
   page?: number;
   pageSize?: number;
 }

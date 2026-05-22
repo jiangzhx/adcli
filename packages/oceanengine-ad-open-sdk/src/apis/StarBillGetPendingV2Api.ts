@@ -8,9 +8,9 @@ import type { StarBillGetPendingV2Response } from "../models";
 
 
 export interface OpenApi2StarBillGetPendingGetRequest {
-  starId: number;
-  campaignId?: number;
-  orderId?: number;
+  starId: number | string;
+  campaignId?: number | string;
+  orderId?: number | string;
 }
 
 export class StarBillGetPendingV2Api {

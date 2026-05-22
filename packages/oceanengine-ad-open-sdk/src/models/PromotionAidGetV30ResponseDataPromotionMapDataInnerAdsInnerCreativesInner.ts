@@ -4,7 +4,7 @@
 import type { PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerImageMaterials, PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerTitleMaterial, PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerVideoMaterial } from "../models";
 
 export interface PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInner {
-  creative_id?: number;
+  creative_id?: number | string;
   image_materials?: PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerImageMaterials;
   title_material?: PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerTitleMaterial;
   video_material?: PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerVideoMaterial;

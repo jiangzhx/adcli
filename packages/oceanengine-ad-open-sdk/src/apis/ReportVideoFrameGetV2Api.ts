@@ -8,7 +8,7 @@ import type { ReportVideoFrameGetV2Filtering, ReportVideoFrameGetV2Metrics, Repo
 
 
 export interface OpenApi2ReportVideoFrameGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   endDate?: string;
   filtering?: ReportVideoFrameGetV2Filtering;
   metrics?: ReportVideoFrameGetV2Metrics[];

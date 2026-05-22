@@ -5,12 +5,12 @@ import type { PromotionUpdateV30AutoExtendTraffic, PromotionUpdateV30CreativeAut
 
 export interface PromotionUpdateV30Request {
   "7d_retention"?: number;
-  advertiser_id: number;
+  advertiser_id: number | string;
   auto_extend_traffic?: PromotionUpdateV30AutoExtendTraffic;
   bid?: number;
   brand_info?: PromotionUpdateV30RequestBrandInfo;
   budget?: number;
-  config_id?: number;
+  config_id?: number | string;
   cpa_bid?: number;
   creative_auto_generate_switch?: PromotionUpdateV30CreativeAutoGenerateSwitch;
   deep_cpabid?: number;
@@ -20,7 +20,7 @@ export interface PromotionUpdateV30Request {
   materials_type?: PromotionUpdateV30MaterialsType;
   name: string;
   native_setting?: PromotionUpdateV30RequestNativeSetting;
-  promotion_id: number;
+  promotion_id: number | string;
   promotion_materials?: PromotionUpdateV30RequestPromotionMaterials;
   promotion_related_product?: PromotionUpdateV30RequestPromotionRelatedProductInner[];
   roi_goal?: number;

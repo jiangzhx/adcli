@@ -8,7 +8,7 @@ import type { BrandQueryStockV30AdForm, BrandQueryStockV30AppOrigin, BrandQueryS
 
 
 export interface OpenApiV30BrandQueryStockGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   classify: BrandQueryStockV30Classify;
   landingType: BrandQueryStockV30LandingType;
   appOrigin: BrandQueryStockV30AppOrigin;

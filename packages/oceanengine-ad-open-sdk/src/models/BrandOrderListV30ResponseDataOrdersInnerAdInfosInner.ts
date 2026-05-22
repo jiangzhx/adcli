@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface BrandOrderListV30ResponseDataOrdersInnerAdInfosInner {
-  ad_id?: number;
+  ad_id?: number | string;
   date?: string;
 }
 

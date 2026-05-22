@@ -5,6 +5,6 @@ import type { ToolsAppManagementShareAccountListV2DataListAllAccountByCompanyAcc
 
 export interface ToolsAppManagementShareAccountListV2ResponseDataListInnerAllAccountByCompany {
   account_type?: ToolsAppManagementShareAccountListV2DataListAllAccountByCompanyAccountType;
-  company_id?: number;
+  company_id?: number | string;
 }
 

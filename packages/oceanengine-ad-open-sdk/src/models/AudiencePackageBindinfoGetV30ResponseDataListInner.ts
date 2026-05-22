@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AudiencePackageBindinfoGetV30ResponseDataListInner {
-  project_id: number;
+  project_id: number | string;
   project_name?: string;
 }
 

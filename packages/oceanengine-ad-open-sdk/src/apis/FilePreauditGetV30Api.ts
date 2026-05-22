@@ -8,7 +8,7 @@ import type { FilePreauditGetV30Filtering, FilePreauditGetV30Response } from "..
 
 
 export interface OpenApiV30FilePreauditGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: FilePreauditGetV30Filtering;
   page?: number;
   pageSize?: number;

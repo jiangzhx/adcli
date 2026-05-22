@@ -8,7 +8,7 @@ import type { QianchuanReportCustomConfigGetV10DataTopics, QianchuanReportCustom
 
 
 export interface OpenApiV10QianchuanReportCustomConfigGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   dataTopics: QianchuanReportCustomConfigGetV10DataTopics[];
 }
 

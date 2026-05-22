@@ -11,7 +11,7 @@ export interface SharedWalletDailyStatGetV30ResponseDataResultsInner {
   incomes?: number;
   preloan_balance?: number;
   prepay_balance?: number;
-  shared_wallet_id?: number;
+  shared_wallet_id?: number | string;
   shared_wallet_name?: string;
   transaction_date?: string;
   wallet_type?: SharedWalletDailyStatGetV30DataResultsWalletType;

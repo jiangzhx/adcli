@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface EventManagerAssetsCreateV2ResponseData {
-  asset_id?: number;
+  asset_id?: number | string;
 }
 

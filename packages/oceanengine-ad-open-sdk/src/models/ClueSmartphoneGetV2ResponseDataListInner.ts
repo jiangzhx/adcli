@@ -6,7 +6,7 @@ import type { ClueSmartphoneGetV2DataListValidateType, ClueSmartphoneGetV2Respon
 export interface ClueSmartphoneGetV2ResponseDataListInner {
   call_display?: number;
   create_time?: string;
-  instance_id?: number;
+  instance_id?: number | string;
   name?: string;
   no_disturb_times?: ClueSmartphoneGetV2ResponseDataListInnerNoDisturbTimesInner[];
   phone_number?: string;

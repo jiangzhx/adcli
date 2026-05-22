@@ -8,7 +8,7 @@ import type { AdvertiserFundGetV2GrantTypeSplit, AdvertiserFundGetV2Response } f
 
 
 export interface OpenApi2AdvertiserFundGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   grantTypeSplit?: AdvertiserFundGetV2GrantTypeSplit;
 }
 

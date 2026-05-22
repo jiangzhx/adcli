@@ -4,7 +4,7 @@
 import type { SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfoMainSharedRange } from "../models";
 
 export interface SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfo {
-  company_id?: number;
+  company_id?: number | string;
   main_shared_range?: SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfoMainSharedRange;
 }
 

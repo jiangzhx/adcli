@@ -6,7 +6,7 @@ import type { StarDemandListV2DataListComponentType, StarDemandListV2DataListTas
 export interface StarDemandListV2ResponseDataListInner {
   component_type?: StarDemandListV2DataListComponentType;
   create_time?: string;
-  demand_id?: number;
+  demand_id?: number | string;
   demand_name?: string;
   task_category?: StarDemandListV2DataListTaskCategory;
   universal_settlement_type?: StarDemandListV2DataListUniversalSettlementType;

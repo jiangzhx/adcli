@@ -3,6 +3,6 @@
 
 export interface AdvertiserDeliveryQualificationDeleteV30ResponseDataErrorsInner {
   error_message?: string;
-  qualification_id?: number;
+  qualification_id?: number | string;
 }
 

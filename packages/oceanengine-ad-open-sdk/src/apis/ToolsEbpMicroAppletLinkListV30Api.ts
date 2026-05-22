@@ -8,9 +8,9 @@ import type { ToolsEbpMicroAppletLinkListV30AccountType, ToolsEbpMicroAppletLink
 
 
 export interface OpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsEbpMicroAppletLinkListV30AccountType;
-  instanceId?: number;
+  instanceId?: number | string;
   appId?: string;
   createTime?: ToolsEbpMicroAppletLinkListV30CreateTime;
   page?: number;

@@ -5,9 +5,9 @@ import type { ToolsRtaSetScopeV2AccountType, ToolsRtaSetScopeV2TargetType } from
 
 export interface ToolsRtaSetScopeV2Request {
   account_type?: ToolsRtaSetScopeV2AccountType;
-  advertiser_id: number;
-  rta_id: number;
-  target_ids?: number[];
+  advertiser_id: number | string;
+  rta_id: number | string;
+  target_ids?: number | string[];
   target_type?: ToolsRtaSetScopeV2TargetType;
 }
 

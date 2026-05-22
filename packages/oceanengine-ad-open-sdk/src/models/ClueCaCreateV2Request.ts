@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ClueCaCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   corp_id?: string;
   name: string;
   user_ids: string[];

@@ -8,7 +8,7 @@ import type { AgentCompanyBiddingListQueryV2Filtering, AgentCompanyBiddingListQu
 
 
 export interface OpenApi2AgentCompanyBiddingListQueryGetRequest {
-  agentId: number;
+  agentId: number | string;
   startDate: string;
   endDate: string;
   filtering: AgentCompanyBiddingListQueryV2Filtering;

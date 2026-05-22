@@ -4,7 +4,7 @@
 import type { ToolsPreAuditSendV2RequestPreAuditMaterialsInner } from "../models";
 
 export interface ToolsPreAuditSendV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   pre_audit_materials: ToolsPreAuditSendV2RequestPreAuditMaterialsInner[];
 }
 

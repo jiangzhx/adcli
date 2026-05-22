@@ -7,7 +7,7 @@ export interface AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgUnnecessaryCo
   attachments: AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgUnnecessaryCombinesInnerDeliveryRulesInnerDeliveriesInnerAttachmentsInner[];
   qual_type: number;
   qual_type_name: string;
-  qualification_id?: number;
+  qualification_id?: number | string;
   reject_reason?: string;
   status: AdvertiserDeliveryPkgGetV30DataDeliveryPkgUnnecessaryCombinesDeliveryRulesDeliveriesStatus;
 }

@@ -8,7 +8,7 @@ import type { FileImageAdvertiserV2Response, FileImageAdvertiserV2UploadTo, File
 
 
 export interface OpenApi2FileImageAdvertiserPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   uploadTo: FileImageAdvertiserV2UploadTo;
   imageFile?: File;
   imageSignature?: string;

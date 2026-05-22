@@ -8,7 +8,7 @@ import type { FundSharedWalletBalanceGetV2Response } from "../models";
 
 
 export interface OpenApi2FundSharedWalletBalanceGetGetRequest {
-  advertiserIds?: number[];
+  advertiserIds?: number | string[];
 }
 
 export class FundSharedWalletBalanceGetV2Api {

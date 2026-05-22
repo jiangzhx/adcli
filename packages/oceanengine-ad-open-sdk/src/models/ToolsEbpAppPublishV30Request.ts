@@ -4,7 +4,7 @@
 import type { ToolsEbpAppPublishV30AccountType } from "../models";
 
 export interface ToolsEbpAppPublishV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpAppPublishV30AccountType;
   package_id: string;
 }

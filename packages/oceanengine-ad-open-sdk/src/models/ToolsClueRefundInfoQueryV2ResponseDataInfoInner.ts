@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsClueRefundInfoQueryV2ResponseDataInfoInner {
-  clue_id?: number;
+  clue_id?: number | string;
   has_qualification?: number;
   is_finished?: number;
   overdue_timestamps?: number[];

@@ -7,7 +7,7 @@ export interface FileVideoUploadTaskListV2ResponseDataListInner {
   create_time?: string;
   error_msg?: string;
   status?: FileVideoUploadTaskListV2DataListStatus;
-  task_id?: number;
+  task_id?: number | string;
   video_info?: FileVideoUploadTaskListV2ResponseDataListInnerVideoInfo;
 }
 

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuSubBrandInfoValueInner {
-  id?: number;
+  id?: number | string;
   name?: string;
 }
 

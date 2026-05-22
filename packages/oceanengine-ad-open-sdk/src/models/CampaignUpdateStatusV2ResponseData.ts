@@ -4,7 +4,7 @@
 import type { CampaignUpdateStatusV2ResponseDataErrorsInner } from "../models";
 
 export interface CampaignUpdateStatusV2ResponseData {
-  campaign_ids?: number[];
+  campaign_ids?: number | string[];
   errors?: CampaignUpdateStatusV2ResponseDataErrorsInner[];
 }
 

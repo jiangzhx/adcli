@@ -8,7 +8,7 @@ import type { ToolsCommentMetricsGetV30Filtering, ToolsCommentMetricsGetV30Respo
 
 
 export interface OpenApiV30ToolsCommentMetricsGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startTime: string;
   endTime: string;
   filtering?: ToolsCommentMetricsGetV30Filtering;

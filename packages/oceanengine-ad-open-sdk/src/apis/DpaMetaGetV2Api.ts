@@ -8,8 +8,8 @@ import type { DpaMetaGetV2Response } from "../models";
 
 
 export interface OpenApi2DpaMetaGetGetRequest {
-  advertiserId: number;
-  platformId: number;
+  advertiserId: number | string;
+  platformId: number | string;
   indexable?: number;
   extractable?: number;
   industry?: number;

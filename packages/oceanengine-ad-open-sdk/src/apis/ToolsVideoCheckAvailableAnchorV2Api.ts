@@ -8,8 +8,8 @@ import type { ToolsVideoCheckAvailableAnchorV2ExternalAction, ToolsVideoCheckAva
 
 
 export interface OpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
-  advertiserId: number;
-  itemIds: number[];
+  advertiserId: number | string;
+  itemIds: number | string[];
   landingType: ToolsVideoCheckAvailableAnchorV2LandingType;
   externalAction: ToolsVideoCheckAvailableAnchorV2ExternalAction;
 }

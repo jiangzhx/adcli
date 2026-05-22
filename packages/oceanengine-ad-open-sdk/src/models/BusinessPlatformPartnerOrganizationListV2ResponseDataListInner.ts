@@ -4,7 +4,7 @@
 import type { BusinessPlatformPartnerOrganizationListV2DataListStatus } from "../models";
 
 export interface BusinessPlatformPartnerOrganizationListV2ResponseDataListInner {
-  partner_organization_id?: number;
+  partner_organization_id?: number | string;
   remark?: string;
   status?: BusinessPlatformPartnerOrganizationListV2DataListStatus;
 }

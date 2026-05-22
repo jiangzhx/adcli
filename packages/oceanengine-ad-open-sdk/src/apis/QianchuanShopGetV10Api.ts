@@ -8,7 +8,7 @@ import type { QianchuanShopGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanShopGetGetRequest {
-  shopIds: number[];
+  shopIds: number | string[];
 }
 
 export class QianchuanShopGetV10Api {

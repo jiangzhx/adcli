@@ -8,7 +8,7 @@ import type { CreativeStrategyListV2Response, CreativeStrategyListV2StrategyType
 
 
 export interface OpenApi2CreativeStrategyListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   strategyTypes?: CreativeStrategyListV2StrategyTypes[];
   page?: number;
   pageSize?: number;

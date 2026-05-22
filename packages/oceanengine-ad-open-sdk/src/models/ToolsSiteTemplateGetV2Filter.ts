@@ -3,7 +3,7 @@
 
 export interface ToolsSiteTemplateGetV2Filter {
   keyword_of_name?: string;
-  site_ids?: number[];
-  template_ids?: number[];
+  site_ids?: number | string[];
+  template_ids?: number | string[];
 }
 

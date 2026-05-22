@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdUpdateBidV2RequestDataInner {
-  ad_id: number;
+  ad_id: number | string;
   bid: number;
 }
 

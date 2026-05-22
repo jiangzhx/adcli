@@ -9,10 +9,10 @@ export interface QianchuanAdGetV10Filtering {
   ad_modify_time?: string;
   ad_name?: string;
   auto_manage_filter?: QianchuanAdGetV10FilteringAutoManageFilter;
-  aweme_id?: number;
-  campaign_id?: number;
+  aweme_id?: number | string;
+  campaign_id?: number | string;
   campaign_scene?: QianchuanAdGetV10FilteringCampaignScene[];
-  ids?: number[];
+  ids?: number | string[];
   marketing_goal: QianchuanAdGetV10FilteringMarketingGoal;
   marketing_scene?: QianchuanAdGetV10FilteringMarketingScene;
   status?: QianchuanAdGetV10FilteringStatus;

@@ -6,7 +6,7 @@ import type { CreativeStrategyListV2DataStrategyModelsType, CreativeStrategyList
 export interface CreativeStrategyListV2ResponseDataStrategyModelsInner {
   info?: CreativeStrategyListV2ResponseDataStrategyModelsInnerInfo;
   state_list?: CreativeStrategyListV2ResponseDataStrategyModelsInnerStateListInner[];
-  strategy_id: number;
+  strategy_id: number | string;
   strategy_name?: string;
   type: CreativeStrategyListV2DataStrategyModelsType;
 }

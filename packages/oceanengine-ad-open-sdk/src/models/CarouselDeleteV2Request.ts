@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface CarouselDeleteV2Request {
-  advertiser_id: number;
-  carousel_ids: number[];
+  advertiser_id: number | string;
+  carousel_ids: number | string[];
 }
 

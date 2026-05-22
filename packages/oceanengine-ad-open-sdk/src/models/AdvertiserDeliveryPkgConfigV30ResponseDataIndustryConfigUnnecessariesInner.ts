@@ -4,7 +4,7 @@
 import type { AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInnerRulesInner } from "../models";
 
 export interface AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInner {
-  combine_id: number;
+  combine_id: number | string;
   description?: string;
   rules?: AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInnerRulesInner[];
 }

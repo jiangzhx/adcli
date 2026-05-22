@@ -5,12 +5,12 @@ import type { StdProjectCreateV30AdType, StdProjectCreateV30AigcDynamicCreativeS
 
 export interface StdProjectCreateV30Request {
   ad_type: StdProjectCreateV30AdType;
-  advertiser_id: number;
+  advertiser_id: number | string;
   aigc_dynamic_creative_switch?: StdProjectCreateV30AigcDynamicCreativeSwitch;
   app_name?: string;
   app_promotion_type?: StdProjectCreateV30AppPromotionType;
   app_type?: StdProjectCreateV30AppType;
-  asset_id?: number;
+  asset_id?: number | string;
   audience?: StdProjectCreateV30RequestAudience;
   audience_type: StdProjectCreateV30AudienceType;
   auto_extend_traffic?: StdProjectCreateV30AutoExtendTraffic;
@@ -43,8 +43,8 @@ export interface StdProjectCreateV30Request {
   name: string;
   native_type: StdProjectCreateV30NativeType;
   pricing: StdProjectCreateV30Pricing;
-  product_id?: number;
-  product_platform_id?: number;
+  product_id?: number | string;
+  product_platform_id?: number | string;
   project_materials?: StdProjectCreateV30RequestProjectMaterials;
   roi_goal?: number;
   schedule_time?: string;
@@ -55,6 +55,6 @@ export interface StdProjectCreateV30Request {
   start_time?: string;
   subscribe_url?: string;
   track_url_setting?: StdProjectCreateV30RequestTrackUrlSetting;
-  unique_product_id?: number;
+  unique_product_id?: number | string;
 }
 

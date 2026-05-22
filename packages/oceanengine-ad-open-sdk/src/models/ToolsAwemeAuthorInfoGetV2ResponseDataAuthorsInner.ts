@@ -6,7 +6,7 @@ export interface ToolsAwemeAuthorInfoGetV2ResponseDataAuthorsInner {
   avatar?: string;
   aweme_id?: string;
   cover_num_str?: string;
-  label_id?: number;
+  label_id?: number | string;
   total_fans_num_str?: string;
 }
 

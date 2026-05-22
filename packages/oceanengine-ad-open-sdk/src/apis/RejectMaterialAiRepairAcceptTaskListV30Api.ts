@@ -8,8 +8,8 @@ import type { RejectMaterialAiRepairAcceptTaskListV30Response } from "../models"
 
 
 export interface OpenApiV30RejectMaterialAiRepairAcceptTaskListGetRequest {
-  advertiserId: number;
-  aiRepairIds: number[];
+  advertiserId: number | string;
+  aiRepairIds: number | string[];
 }
 
 export class RejectMaterialAiRepairAcceptTaskListV30Api {

@@ -8,7 +8,7 @@ import type { LocalAdvertiserBudgetGetV30Response } from "../models";
 
 
 export interface OpenApiV30LocalAdvertiserBudgetGetGetRequest {
-  localAccountId: number[];
+  localAccountId: number | string[];
 }
 
 export class LocalAdvertiserBudgetGetV30Api {

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsCommentHideV30Request {
-  advertiser_id: number;
-  comment_ids: number[];
+  advertiser_id: number | string;
+  comment_ids: number | string[];
 }
 

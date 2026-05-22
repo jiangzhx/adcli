@@ -5,6 +5,6 @@ import type { LocalProjectWeekScheduleUpdateV30ResponseDataErrorInner } from "..
 
 export interface LocalProjectWeekScheduleUpdateV30ResponseData {
   error?: LocalProjectWeekScheduleUpdateV30ResponseDataErrorInner[];
-  project_ids?: number[];
+  project_ids?: number | string[];
 }
 

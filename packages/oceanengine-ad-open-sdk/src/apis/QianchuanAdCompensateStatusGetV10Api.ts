@@ -8,8 +8,8 @@ import type { QianchuanAdCompensateStatusGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanAdCompensateStatusGetGetRequest {
-  advertiserId: number;
-  adIds: number[];
+  advertiserId: number | string;
+  adIds: number | string[];
 }
 
 export class QianchuanAdCompensateStatusGetV10Api {

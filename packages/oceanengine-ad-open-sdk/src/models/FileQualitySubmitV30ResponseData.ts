@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface FileQualitySubmitV30ResponseData {
-  material_id: number;
+  material_id: number | string;
 }
 

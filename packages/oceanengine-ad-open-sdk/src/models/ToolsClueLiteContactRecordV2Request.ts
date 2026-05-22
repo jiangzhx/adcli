@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface ToolsClueLiteContactRecordV2Request {
-  advertiser_id?: number;
-  clue_id?: number;
+  advertiser_id?: number | string;
+  clue_id?: number | string;
   contact_id?: string;
 }
 

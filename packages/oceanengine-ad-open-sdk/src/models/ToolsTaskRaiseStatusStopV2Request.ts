@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsTaskRaiseStatusStopV2Request {
-  advertiser_id: number;
-  report_id: number;
+  advertiser_id: number | string;
+  report_id: number | string;
 }
 

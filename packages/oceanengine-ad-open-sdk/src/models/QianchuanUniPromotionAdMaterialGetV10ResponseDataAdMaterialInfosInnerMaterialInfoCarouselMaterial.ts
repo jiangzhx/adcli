@@ -6,7 +6,7 @@ import type { QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosIn
 export interface QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoCarouselMaterial {
   description?: string;
   image?: QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoCarouselMaterialImageInner[];
-  material_id?: number;
+  material_id?: number | string;
   music_url?: string;
   title?: string;
 }

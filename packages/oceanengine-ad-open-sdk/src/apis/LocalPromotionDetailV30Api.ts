@@ -8,8 +8,8 @@ import type { LocalPromotionDetailV30Response } from "../models";
 
 
 export interface OpenApiV30LocalPromotionDetailGetRequest {
-  localAccountId: number;
-  promotionId: number;
+  localAccountId: number | string;
+  promotionId: number | string;
 }
 
 export class LocalPromotionDetailV30Api {

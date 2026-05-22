@@ -4,8 +4,8 @@
 import type { ToolsPromotionRaiseSetV30RequestRaiseInfoInner } from "../models";
 
 export interface ToolsPromotionRaiseSetV30Request {
-  advertiser_id: number;
-  promotion_id: number;
+  advertiser_id: number | string;
+  promotion_id: number | string;
   raise_info: ToolsPromotionRaiseSetV30RequestRaiseInfoInner[];
 }
 

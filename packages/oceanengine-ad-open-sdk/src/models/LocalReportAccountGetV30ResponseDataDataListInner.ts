@@ -47,7 +47,7 @@ export interface LocalReportAccountGetV30ResponseDataDataListInner {
   live_oto_pay_order_roi?: number;
   live_oto_pay_order_stat_amount?: number;
   live_watch_one_minute_count?: number;
-  local_account_id?: number;
+  local_account_id?: number | string;
   luban_live_comment_cnt?: number;
   luban_live_enter_cnt?: number;
   luban_live_share_cnt?: number;

@@ -4,7 +4,7 @@
 export interface StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfLocalPromotion {
   ad_sync?: number;
   ad_sync_origin?: number;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   auto_sync?: number;
   product_link?: string;
   product_pics?: string[];

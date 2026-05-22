@@ -2,9 +2,9 @@
 // Do not edit manually.
 
 export interface ToolsEventAssetsGetV2ResponseDataMiniProgramInner {
-  asset_id?: number;
+  asset_id?: number | string;
   asset_name?: string;
-  instance_id?: number;
+  instance_id?: number | string;
   mini_program_id?: string;
 }
 

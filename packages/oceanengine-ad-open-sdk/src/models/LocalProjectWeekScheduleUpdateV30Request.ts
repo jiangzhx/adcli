@@ -5,6 +5,6 @@ import type { LocalProjectWeekScheduleUpdateV30RequestDataInner } from "../model
 
 export interface LocalProjectWeekScheduleUpdateV30Request {
   data?: LocalProjectWeekScheduleUpdateV30RequestDataInner[];
-  local_account_id: number;
+  local_account_id: number | string;
 }
 

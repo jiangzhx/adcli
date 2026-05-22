@@ -8,8 +8,8 @@ import type { StarBrandCategoryListV2Response } from "../models";
 
 
 export interface OpenApi2StarBrandCategoryListGetRequest {
-  starId: number;
-  brandId: number;
+  starId: number | string;
+  brandId: number | string;
   industry: string[];
 }
 

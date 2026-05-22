@@ -8,7 +8,7 @@ import type { ToolsMicroAppListV30AccountAssetQueryScope, ToolsMicroAppListV30Fi
 
 
 export interface OpenApiV30ToolsMicroAppListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: ToolsMicroAppListV30Filtering;
   page?: number;
   pageSize?: number;

@@ -8,8 +8,8 @@ import type { StarChallengeInfoV2Response } from "../models";
 
 
 export interface OpenApi2StarChallengeInfoGetRequest {
-  starId: number;
-  challengeTaskIds: number[];
+  starId: number | string;
+  challengeTaskIds: number | string[];
 }
 
 export class StarChallengeInfoV2Api {

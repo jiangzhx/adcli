@@ -8,8 +8,8 @@ import type { ReportRtaExpLocalHourlyGetV30Response } from "../models";
 
 
 export interface OpenApiV30ReportRtaExpLocalHourlyGetGetRequest {
-  rtaId: number;
-  advertiserId: number;
+  rtaId: number | string;
+  advertiserId: number | string;
   startDate: string;
   endDate: string;
   vid?: number;

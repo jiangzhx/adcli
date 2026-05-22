@@ -6,7 +6,7 @@ export interface StarAttributeUserEventFeedbackV2Request {
   event_type: number;
   game_name?: string;
   oaid?: string;
-  star_id: number;
+  star_id: number | string;
   time_stamp?: number;
 }
 

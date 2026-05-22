@@ -4,7 +4,7 @@
 import type { ToolsMicroGameUpdateV30AgeLimit, ToolsMicroGameUpdateV30MaxPaymentTierRange, ToolsMicroGameUpdateV30MidPaymentTierRange, ToolsMicroGameUpdateV30MinPaymentTierRange, ToolsMicroGameUpdateV30RequestGameLinkInner, ToolsMicroGameUpdateV30RevenueModel, ToolsMicroGameUpdateV30ScheduleCards } from "../models";
 
 export interface ToolsMicroGameUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   age_limit: ToolsMicroGameUpdateV30AgeLimit;
   art_style: string;
   discount_rate?: number;
@@ -12,7 +12,7 @@ export interface ToolsMicroGameUpdateV30Request {
   game_link: ToolsMicroGameUpdateV30RequestGameLinkInner[];
   has_discount?: boolean;
   has_online_earning?: boolean;
-  instance_id: number;
+  instance_id: number | string;
   introduction: string;
   max_payment_tier_range?: ToolsMicroGameUpdateV30MaxPaymentTierRange;
   mid_payment_tier_range?: ToolsMicroGameUpdateV30MidPaymentTierRange;

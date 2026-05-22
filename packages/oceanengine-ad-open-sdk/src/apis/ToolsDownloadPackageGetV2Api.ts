@@ -8,7 +8,7 @@ import type { ToolsDownloadPackageGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsDownloadPackageGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   eventId?: string;
 }
 

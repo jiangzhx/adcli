@@ -8,7 +8,7 @@ import type { EventManagerAuthGetAllPublicKeysV2Response } from "../models";
 
 
 export interface OpenApi2EventManagerAuthGetAllPublicKeysGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class EventManagerAuthGetAllPublicKeysV2Api {

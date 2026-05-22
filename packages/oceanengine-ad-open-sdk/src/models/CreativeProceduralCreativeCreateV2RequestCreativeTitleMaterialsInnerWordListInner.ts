@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface CreativeProceduralCreativeCreateV2RequestCreativeTitleMaterialsInnerWordListInner {
-  word_id: number;
+  word_id: number | string;
 }
 

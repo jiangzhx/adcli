@@ -5,6 +5,6 @@ import type { ToolsAssetLinkListV30FilteringCreateTime } from "../models";
 
 export interface ToolsAssetLinkListV30Filtering {
   create_time?: ToolsAssetLinkListV30FilteringCreateTime;
-  instance_id: number;
+  instance_id: number | string;
 }
 

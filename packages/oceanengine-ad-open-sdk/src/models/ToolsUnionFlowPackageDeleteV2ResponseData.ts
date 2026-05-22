@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsUnionFlowPackageDeleteV2ResponseData {
-  flow_package_id?: number;
+  flow_package_id?: number | string;
 }
 

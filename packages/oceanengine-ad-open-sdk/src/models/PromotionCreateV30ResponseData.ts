@@ -5,6 +5,6 @@ import type { PromotionCreateV30ResponseDataErrorKeywordsListInner } from "../mo
 
 export interface PromotionCreateV30ResponseData {
   error_keywords_list?: PromotionCreateV30ResponseDataErrorKeywordsListInner[];
-  promotion_id?: number;
+  promotion_id?: number | string;
 }
 

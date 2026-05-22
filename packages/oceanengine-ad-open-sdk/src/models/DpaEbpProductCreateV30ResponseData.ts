@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface DpaEbpProductCreateV30ResponseData {
-  product_id?: number;
+  product_id?: number | string;
   warning?: string;
 }
 

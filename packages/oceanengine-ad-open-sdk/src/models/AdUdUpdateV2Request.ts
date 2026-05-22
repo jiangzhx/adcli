@@ -4,8 +4,8 @@
 import type { AdUdUpdateV2RequestUdShop } from "../models";
 
 export interface AdUdUpdateV2Request {
-  ad_id: number;
-  advertiser_id: number;
+  ad_id: number | string;
+  advertiser_id: number | string;
   ud_shop: AdUdUpdateV2RequestUdShop;
 }
 

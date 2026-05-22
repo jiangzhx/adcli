@@ -4,7 +4,7 @@
 import type { QianchuanUniPromotionAdStatusUpdateV10ResponseDataResultsInnerError } from "../models";
 
 export interface QianchuanUniPromotionAdStatusUpdateV10ResponseDataResultsInner {
-  ad_id?: number;
+  ad_id?: number | string;
   error?: QianchuanUniPromotionAdStatusUpdateV10ResponseDataResultsInnerError;
   flag?: boolean;
 }

@@ -8,7 +8,7 @@ import type { QueryInvoiceSelfV2DifferenceInvoice, QueryInvoiceSelfV2InvoiceType
 
 
 export interface OpenApi2QueryInvoiceSelfGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   pageSize: number;
   page: number;
   statementSerials?: string[];

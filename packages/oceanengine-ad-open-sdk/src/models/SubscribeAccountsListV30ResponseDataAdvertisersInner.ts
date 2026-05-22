@@ -5,8 +5,8 @@ import type { SubscribeAccountsListV30DataAdvertisersAccountType, SubscribeAccou
 
 export interface SubscribeAccountsListV30ResponseDataAdvertisersInner {
   account_type?: SubscribeAccountsListV30DataAdvertisersAccountType;
-  advertiser_id: number;
-  core_user_id: number;
+  advertiser_id: number | string;
+  core_user_id: number | string;
   created_time?: string;
   event?: string;
   reason?: string;

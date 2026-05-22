@@ -8,7 +8,7 @@ import type { AccountFundGetV30AccountType, AccountFundGetV30GrantTypeSplit, Acc
 
 
 export interface OpenApiV30AccountFundGetGetRequest {
-  accountIds: number[];
+  accountIds: number | string[];
   accountType: AccountFundGetV30AccountType;
   grantTypeSplit?: AccountFundGetV30GrantTypeSplit;
 }

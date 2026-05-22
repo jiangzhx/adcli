@@ -8,7 +8,7 @@ export interface ToolsClueLiteContactGetV2ResponseDataListInner {
   call_duration?: number;
   callee_number?: string;
   caller_number?: string;
-  clue_id?: number;
+  clue_id?: number | string;
   contact_id?: string;
   duration?: number;
   end_state_show_code?: number;

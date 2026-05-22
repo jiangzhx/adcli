@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface CustomerCenterAdvertiserTransferableListV2ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   is_enabled?: boolean;
 }
 

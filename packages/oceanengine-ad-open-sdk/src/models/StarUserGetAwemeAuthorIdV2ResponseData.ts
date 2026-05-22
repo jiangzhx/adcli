@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarUserGetAwemeAuthorIdV2ResponseData {
-  aweme_author_id: number;
+  aweme_author_id: number | string;
 }
 

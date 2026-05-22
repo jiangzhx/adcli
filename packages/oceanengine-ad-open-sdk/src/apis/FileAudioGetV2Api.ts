@@ -8,7 +8,7 @@ import type { FileAudioGetV2Filtering, FileAudioGetV2Response } from "../models"
 
 
 export interface OpenApi2FileAudioGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: FileAudioGetV2Filtering;
   page?: number;
   pageSize?: number;

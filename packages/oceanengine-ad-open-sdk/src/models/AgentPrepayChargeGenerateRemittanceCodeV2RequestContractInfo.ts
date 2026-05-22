@@ -4,7 +4,7 @@
 import type { AgentPrepayChargeGenerateRemittanceCodeV2ContractInfoDeliveryType } from "../models";
 
 export interface AgentPrepayChargeGenerateRemittanceCodeV2RequestContractInfo {
-  contract_id: number;
+  contract_id: number | string;
   delivery_type: AgentPrepayChargeGenerateRemittanceCodeV2ContractInfoDeliveryType;
 }
 

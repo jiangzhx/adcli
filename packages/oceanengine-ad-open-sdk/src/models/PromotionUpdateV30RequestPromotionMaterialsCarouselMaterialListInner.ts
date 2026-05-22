@@ -5,7 +5,7 @@ import type { PromotionUpdateV30PromotionMaterialsCarouselMaterialListVideoHpVis
 
 export interface PromotionUpdateV30RequestPromotionMaterialsCarouselMaterialListInner {
   carousel_id?: string;
-  item_id?: number;
+  item_id?: number | string;
   video_hp_visibility?: PromotionUpdateV30PromotionMaterialsCarouselMaterialListVideoHpVisibility;
 }
 

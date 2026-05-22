@@ -8,7 +8,7 @@ import type { LocalReportProjectGetV30Filtering, LocalReportProjectGetV30OrderTy
 
 
 export interface OpenApiV30LocalReportProjectGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   startDate: string;
   endDate: string;
   metrics: string[];

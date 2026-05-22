@@ -6,6 +6,6 @@ import type { ToolsAppManagementAndroidBasicPackageUpdateV2FilesFileTag, ToolsAp
 export interface ToolsAppManagementAndroidBasicPackageUpdateV2RequestFilesInner {
   file_tag?: ToolsAppManagementAndroidBasicPackageUpdateV2FilesFileTag;
   file_type: ToolsAppManagementAndroidBasicPackageUpdateV2FilesFileType;
-  upload_id: number;
+  upload_id: number | string;
 }
 

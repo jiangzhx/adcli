@@ -3,7 +3,7 @@
 
 export interface StarDataTaskTimelineReportV2ResponseDataTaskDataValue {
   comment_cnt?: number;
-  item_id?: number;
+  item_id?: number | string;
   like_cnt?: number;
   play_cnt?: number;
   share_cnt?: number;

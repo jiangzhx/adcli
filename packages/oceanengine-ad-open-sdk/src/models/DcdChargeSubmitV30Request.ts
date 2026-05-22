@@ -4,7 +4,7 @@
 import type { DcdChargeSubmitV30Platform, DcdChargeSubmitV30RequestPayInfo } from "../models";
 
 export interface DcdChargeSubmitV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   charge_amount: number;
   charge_request_id: string;
   pay_info: DcdChargeSubmitV30RequestPayInfo;

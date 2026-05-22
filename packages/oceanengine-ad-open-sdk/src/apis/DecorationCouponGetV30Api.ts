@@ -8,7 +8,7 @@ import type { DecorationCouponGetV30Filtering, DecorationCouponGetV30Response } 
 
 
 export interface OpenApiV30DecorationCouponGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: DecorationCouponGetV30Filtering;
   page?: number;
   pageSize?: number;

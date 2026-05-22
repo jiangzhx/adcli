@@ -18,7 +18,7 @@ export interface QianchuanReportAdvertiserGetV10ResponseDataListInner {
   ad_order_gmv_refund_rate_7d?: number;
   ad_order_refund_rate_14d?: number;
   ad_order_refund_rate_7d?: number;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   all_order_create_roi_7days?: number;
   all_order_pay_count_7days?: number;
   all_order_pay_gmv_7days?: number;

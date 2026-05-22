@@ -2,17 +2,17 @@
 // Do not edit manually.
 
 export interface RejectMaterialAiRepairGetV30ResponseDataRepairMaterialInfoInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   ai_repair_content?: string[];
-  ai_repair_id?: number;
+  ai_repair_id?: number | string;
   ai_repair_preview_url?: string;
   ai_repair_time?: string;
   ai_repair_video_cover_id?: string;
   ai_repair_video_cover_url?: string;
   ai_repair_video_id?: string;
-  material_id?: number;
+  material_id?: number | string;
   preview_url?: string;
-  promotion_id?: number;
+  promotion_id?: number | string;
   video_id?: string;
 }
 

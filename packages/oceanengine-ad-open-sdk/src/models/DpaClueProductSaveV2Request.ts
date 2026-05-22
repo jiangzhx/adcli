@@ -4,7 +4,7 @@
 import type { DpaClueProductSaveV2RequestProduct } from "../models";
 
 export interface DpaClueProductSaveV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   product: DpaClueProductSaveV2RequestProduct;
 }
 

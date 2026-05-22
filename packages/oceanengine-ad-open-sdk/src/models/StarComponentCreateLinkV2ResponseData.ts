@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarComponentCreateLinkV2ResponseData {
-  link_component_id?: number;
+  link_component_id?: number | string;
 }
 

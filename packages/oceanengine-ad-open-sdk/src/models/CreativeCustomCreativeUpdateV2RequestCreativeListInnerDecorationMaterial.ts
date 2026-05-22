@@ -4,7 +4,7 @@
 import type { CreativeCustomCreativeUpdateV2CreativeListDecorationMaterialImageMode } from "../models";
 
 export interface CreativeCustomCreativeUpdateV2RequestCreativeListInnerDecorationMaterial {
-  activity_id?: number;
+  activity_id?: number | string;
   image_mode?: CreativeCustomCreativeUpdateV2CreativeListDecorationMaterialImageMode;
 }
 

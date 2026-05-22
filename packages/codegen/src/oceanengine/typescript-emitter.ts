@@ -225,6 +225,8 @@ function toTypeScriptType(javaType: string): string {
     case "Double":
     case "BigDecimal":
       return "number";
+    case "LongString":
+      return "number | string";
     case "Boolean":
       return "boolean";
     case "Object":
@@ -249,7 +251,11 @@ function extractModelTypes(javaType: string): string[] {
   if (normalized.startsWith("JsonNullable<") && normalized.endsWith(">")) {
     return extractModelTypes(normalized.slice("JsonNullable<".length, -1));
   }
-  if (["String", "Integer", "Long", "Float", "Double", "BigDecimal", "Boolean", "Object", "File", "byte[]"].includes(normalized)) {
+  if (
+    ["String", "Integer", "Long", "LongString", "Float", "Double", "BigDecimal", "Boolean", "Object", "File", "byte[]"].includes(
+      normalized,
+    )
+  ) {
     return [];
   }
   return [normalized];

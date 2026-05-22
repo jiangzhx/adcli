@@ -5,8 +5,8 @@ import type { CreativeProceduralCreativeUpdateV2RequestAdData, CreativeProcedura
 
 export interface CreativeProceduralCreativeUpdateV2Request {
   ad_data: CreativeProceduralCreativeUpdateV2RequestAdData;
-  ad_id: number;
-  advertiser_id: number;
+  ad_id: number | string;
+  advertiser_id: number | string;
   creative: CreativeProceduralCreativeUpdateV2RequestCreative;
 }
 

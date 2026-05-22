@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AgentAdvertiserInfoQueryV2ResponseDataAccountDetailListInnerBrandCollaboratorsInner {
-  employe_id?: number;
+  employe_id?: number | string;
   employee_name?: string;
 }
 

@@ -8,7 +8,7 @@ import type { OpenMaterialAuditProGetV30Response } from "../models";
 
 
 export interface OpenApiV30OpenMaterialAuditProGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   runId: string;
 }
 

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsEventAssetsGetV2FilteringLandingPage {
-  asset_id?: number;
+  asset_id?: number | string;
   asset_name?: string;
 }
 

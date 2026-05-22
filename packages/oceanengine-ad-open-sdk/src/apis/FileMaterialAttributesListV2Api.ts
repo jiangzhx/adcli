@@ -8,7 +8,7 @@ import type { FileMaterialAttributesListV2AccountType, FileMaterialAttributesLis
 
 
 export interface OpenApi2FileMaterialAttributesListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: FileMaterialAttributesListV2AccountType;
   pageSize: number;
   page: number;

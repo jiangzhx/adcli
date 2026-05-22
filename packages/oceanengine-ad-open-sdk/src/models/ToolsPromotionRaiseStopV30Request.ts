@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsPromotionRaiseStopV30Request {
-  advertiser_id: number;
-  promotion_ids: number[];
+  advertiser_id: number | string;
+  promotion_ids: number | string[];
 }
 

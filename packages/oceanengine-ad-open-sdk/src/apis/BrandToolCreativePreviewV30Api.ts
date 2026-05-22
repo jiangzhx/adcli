@@ -8,8 +8,8 @@ import type { BrandToolCreativePreviewV30Response } from "../models";
 
 
 export interface OpenApiV30BrandToolCreativePreviewGetRequest {
-  advertiserId: number;
-  creativeId: number;
+  advertiserId: number | string;
+  creativeId: number | string;
 }
 
 export class BrandToolCreativePreviewV30Api {

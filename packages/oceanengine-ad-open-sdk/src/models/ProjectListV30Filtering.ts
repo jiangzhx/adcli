@@ -7,10 +7,10 @@ export interface ProjectListV30Filtering {
   ad_type?: ProjectListV30FilteringAdType;
   app_promotion_type?: ProjectListV30FilteringAppPromotionType;
   blue_flow_package_setting?: ProjectListV30FilteringBlueFlowPackageSetting;
-  budget_group_id?: number;
+  budget_group_id?: number | string;
   delivery_mode?: ProjectListV30FilteringDeliveryMode;
   delivery_type?: ProjectListV30FilteringDeliveryType;
-  ids?: number[];
+  ids?: number | string[];
   inventory_type?: ProjectListV30FilteringInventoryType;
   landing_type?: ProjectListV30FilteringLandingType;
   marketing_goal?: ProjectListV30FilteringMarketingGoal;

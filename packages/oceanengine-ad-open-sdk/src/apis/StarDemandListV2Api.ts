@@ -8,7 +8,7 @@ import type { StarDemandListV2Filtering, StarDemandListV2Response } from "../mod
 
 
 export interface OpenApi2StarDemandListGetRequest {
-  starId: number;
+  starId: number | string;
   filtering?: StarDemandListV2Filtering;
   page?: number;
   pageSize?: number;

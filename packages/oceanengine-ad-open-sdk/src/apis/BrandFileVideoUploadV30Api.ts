@@ -8,7 +8,7 @@ import type { BrandFileVideoUploadV30Response } from "../models";
 
 
 export interface OpenApiV30BrandFileVideoUploadPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   videoFile: File;
 }
 

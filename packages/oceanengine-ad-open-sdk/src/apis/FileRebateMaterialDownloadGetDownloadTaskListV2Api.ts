@@ -8,7 +8,7 @@ import type { FileRebateMaterialDownloadGetDownloadTaskListV2Response } from "..
 
 
 export interface OpenApi2FileRebateMaterialDownloadGetDownloadTaskListGetRequest {
-  agentId: number;
+  agentId: number | string;
   queryId?: string;
 }
 

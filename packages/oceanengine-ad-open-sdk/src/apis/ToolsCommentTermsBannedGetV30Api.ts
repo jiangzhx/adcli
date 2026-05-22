@@ -8,7 +8,7 @@ import type { ToolsCommentTermsBannedGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsCommentTermsBannedGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
   awemeId?: string;

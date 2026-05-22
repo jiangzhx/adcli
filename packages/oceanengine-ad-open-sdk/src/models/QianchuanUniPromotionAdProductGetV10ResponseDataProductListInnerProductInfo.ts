@@ -5,7 +5,7 @@ import type { QianchuanUniPromotionAdProductGetV10DataProductListProductInfoAudi
 
 export interface QianchuanUniPromotionAdProductGetV10ResponseDataProductListInnerProductInfo {
   audit_status: QianchuanUniPromotionAdProductGetV10DataProductListProductInfoAuditStatus;
-  product_id: number;
+  product_id: number | string;
   product_image: string;
   product_name: string;
   product_tag: string[];

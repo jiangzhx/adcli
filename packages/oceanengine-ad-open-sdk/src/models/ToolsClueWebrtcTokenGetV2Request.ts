@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsClueWebrtcTokenGetV2Request {
-  advertiser_id: number;
-  user_id: number;
+  advertiser_id: number | string;
+  user_id: number | string;
 }
 

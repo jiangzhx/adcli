@@ -8,7 +8,7 @@ import type { ReportBrandAgentDataV30DataReportType, ReportBrandAgentDataV30Filt
 
 
 export interface OpenApiV30ReportBrandAgentDataGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   dataReportType: ReportBrandAgentDataV30DataReportType;
   startTime: string;
   endTime: string;

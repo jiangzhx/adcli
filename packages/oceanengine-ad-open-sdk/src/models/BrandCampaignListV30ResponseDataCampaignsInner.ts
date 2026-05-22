@@ -4,12 +4,12 @@
 import type { BrandCampaignListV30DataCampaignsCampaignStatus } from "../models";
 
 export interface BrandCampaignListV30ResponseDataCampaignsInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   advertiser_name?: string;
-  campaign_id?: number;
+  campaign_id?: number | string;
   campaign_name?: string;
   campaign_status?: BrandCampaignListV30DataCampaignsCampaignStatus;
-  cart_id?: number;
+  cart_id?: number | string;
   create_time?: string;
   end_time?: string;
   main_contract_id?: string;

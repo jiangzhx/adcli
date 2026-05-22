@@ -8,8 +8,8 @@ import type { QianchuanEstimateEffectV10BudgetMode, QianchuanEstimateEffectV10De
 
 
 export interface OpenApiV10QianchuanEstimateEffectGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   externalAction: QianchuanEstimateEffectV10ExternalAction;
   budgetMode: QianchuanEstimateEffectV10BudgetMode;
   budget: number;

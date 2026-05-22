@@ -8,8 +8,8 @@ import type { BrandToolMaterialPreviewV30Response } from "../models";
 
 
 export interface OpenApiV30BrandToolMaterialPreviewGetRequest {
-  advertiserId: number;
-  materialId: number;
+  advertiserId: number | string;
+  materialId: number | string;
 }
 
 export class BrandToolMaterialPreviewV30Api {

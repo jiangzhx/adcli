@@ -8,7 +8,7 @@ import type { QianchuanFinanceDetailGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanFinanceDetailGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate?: string;
   endDate?: string;
   page?: number;

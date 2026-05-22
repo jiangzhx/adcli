@@ -8,7 +8,7 @@ import type { AdBillingUniqueIdGetV30Response, AdBillingUniqueIdGetV30UniqueIdTy
 
 
 export interface OpenApiV30AdBillingUniqueIdGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   count: number;
   uniqueIdType: AdBillingUniqueIdGetV30UniqueIdType;
 }

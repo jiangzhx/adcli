@@ -7,10 +7,10 @@ export interface ToolsHotMaterialDeriveListV30ResponseDataDataInner {
   create_time?: string;
   derive_materials?: ToolsHotMaterialDeriveListV30ResponseDataDataInnerDeriveMaterialsInner[];
   modify_time?: string;
-  origin_material_id: number;
+  origin_material_id: number | string;
   status: ToolsHotMaterialDeriveListV30DataDataStatus;
   status_code?: number;
   status_message?: string;
-  task_id: number;
+  task_id: number | string;
 }
 

@@ -5,6 +5,6 @@ import type { StarComponentCreateCommonComponentV2RequestCommonComponent } from 
 
 export interface StarComponentCreateCommonComponentV2Request {
   common_component: StarComponentCreateCommonComponentV2RequestCommonComponent;
-  star_id: number;
+  star_id: number | string;
 }
 

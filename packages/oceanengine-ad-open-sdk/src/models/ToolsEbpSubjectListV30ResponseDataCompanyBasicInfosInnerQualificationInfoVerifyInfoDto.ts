@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoVerifyInfoDto {
-  account_id: number;
+  account_id: number | string;
   platform: number;
   verify_check_type: number;
   verify_expire_time: string;

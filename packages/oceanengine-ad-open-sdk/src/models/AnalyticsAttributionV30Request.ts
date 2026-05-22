@@ -4,7 +4,7 @@
 import type { AnalyticsAttributionV30RequestContext, AnalyticsAttributionV30RequestProperties } from "../models";
 
 export interface AnalyticsAttributionV30Request {
-  app_id: number;
+  app_id: number | string;
   attribute_label?: string;
   biz_type?: number;
   context?: AnalyticsAttributionV30RequestContext;

@@ -4,7 +4,7 @@
 import type { ToolsTaskRaiseCreateV2BudgetMode, ToolsTaskRaiseCreateV2RaiseMode } from "../models";
 
 export interface ToolsTaskRaiseCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   allocated_budget?: number;
   budget_mode: ToolsTaskRaiseCreateV2BudgetMode;
   end_time?: string;

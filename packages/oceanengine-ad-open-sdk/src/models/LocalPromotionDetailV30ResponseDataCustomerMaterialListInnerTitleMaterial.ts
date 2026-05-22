@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface LocalPromotionDetailV30ResponseDataCustomerMaterialListInnerTitleMaterial {
-  lego_material_id?: number;
-  material_id?: number;
+  lego_material_id?: number | string;
+  material_id?: number | string;
   title?: string;
 }
 

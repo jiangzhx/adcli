@@ -5,6 +5,6 @@ import type { LocalProductGetV30ResponseDataProductsInnerBindMarketPageInfosInne
 
 export interface LocalProductGetV30ResponseDataProductsInnerBindMarketPageInfosInner {
   bind_tool_pack_info?: LocalProductGetV30ResponseDataProductsInnerBindMarketPageInfosInnerBindToolPackInfo;
-  market_page_id?: number;
+  market_page_id?: number | string;
 }
 

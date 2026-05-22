@@ -8,7 +8,7 @@ import type { FileAutoGenerateSourceGetV2MaterialsInner, FileAutoGenerateSourceG
 
 
 export interface OpenApi2FileAutoGenerateSourceGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   materials?: FileAutoGenerateSourceGetV2MaterialsInner[];
 }
 

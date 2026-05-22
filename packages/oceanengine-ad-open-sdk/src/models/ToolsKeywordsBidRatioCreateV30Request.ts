@@ -4,10 +4,10 @@
 import type { ToolsKeywordsBidRatioCreateV30Dimension } from "../models";
 
 export interface ToolsKeywordsBidRatioCreateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   bid_ratio: number;
   dimension: ToolsKeywordsBidRatioCreateV30Dimension;
-  project_ids?: number[];
+  project_ids?: number | string[];
   word_list: string[];
 }
 

@@ -4,7 +4,7 @@
 import type { QianchuanAdStatusUpdateV10ResponseDataErrorsInner } from "../models";
 
 export interface QianchuanAdStatusUpdateV10ResponseData {
-  ad_ids?: number[];
+  ad_ids?: number | string[];
   errors?: QianchuanAdStatusUpdateV10ResponseDataErrorsInner[];
 }
 

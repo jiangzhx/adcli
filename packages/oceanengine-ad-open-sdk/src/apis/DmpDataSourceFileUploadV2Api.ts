@@ -8,7 +8,7 @@ import type { DmpDataSourceFileUploadV2Response } from "../models";
 
 
 export interface OpenApi2DmpDataSourceFileUploadPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   file: File;
   fileSignature?: string;
 }

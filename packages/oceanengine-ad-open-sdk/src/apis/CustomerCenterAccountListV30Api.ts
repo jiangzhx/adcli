@@ -8,7 +8,7 @@ import type { CustomerCenterAccountListV30Filter, CustomerCenterAccountListV30Re
 
 
 export interface OpenApiV30CustomerCenterAccountListGetRequest {
-  accountId: number;
+  accountId: number | string;
   filter: CustomerCenterAccountListV30Filter;
   page?: number;
   pageSize?: number;

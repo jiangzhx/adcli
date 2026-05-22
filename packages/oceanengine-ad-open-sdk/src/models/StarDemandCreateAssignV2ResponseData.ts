@@ -5,7 +5,7 @@ import type { StarDemandCreateAssignV2ResponseDataBillInfo } from "../models";
 
 export interface StarDemandCreateAssignV2ResponseData {
   bill_info?: StarDemandCreateAssignV2ResponseDataBillInfo;
-  campaign_id?: number;
-  order_ids?: number[];
+  campaign_id?: number | string;
+  order_ids?: number | string[];
 }
 

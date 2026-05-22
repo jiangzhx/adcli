@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface CreativeDetailGetV30ResponseDataCreativeTitleMaterialsInnerDpaWordListInner {
-  word_id?: number;
+  word_id?: number | string;
 }
 

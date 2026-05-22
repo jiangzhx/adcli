@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface PromotionNameUpdateV30Request {
-  advertiser_id: number;
-  promotion_id: number;
+  advertiser_id: number | string;
+  promotion_id: number | string;
   promotion_name: string;
 }
 

@@ -8,7 +8,7 @@ import type { DmpCustomAudienceSelectV2Response, DmpCustomAudienceSelectV2Select
 
 
 export interface OpenApi2DmpCustomAudienceSelectGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   selectType?: DmpCustomAudienceSelectV2SelectType;
   offset?: number;
   limit?: number;

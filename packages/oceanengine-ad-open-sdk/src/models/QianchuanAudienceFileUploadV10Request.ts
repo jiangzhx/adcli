@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAudienceFileUploadV10Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   file: File;
 }
 

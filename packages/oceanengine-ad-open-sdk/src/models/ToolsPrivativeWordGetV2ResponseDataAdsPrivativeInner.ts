@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsPrivativeWordGetV2ResponseDataAdsPrivativeInner {
-  ad_id?: number;
+  ad_id?: number | string;
   phrase_words?: string[];
   precise_words?: string[];
 }

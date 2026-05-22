@@ -4,8 +4,8 @@
 import type { ToolsPlayableCreateV2RequestSchemaDataInner } from "../models";
 
 export interface ToolsPlayableCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   schema_data: ToolsPlayableCreateV2RequestSchemaDataInner[];
-  template_id: number;
+  template_id: number | string;
 }
 

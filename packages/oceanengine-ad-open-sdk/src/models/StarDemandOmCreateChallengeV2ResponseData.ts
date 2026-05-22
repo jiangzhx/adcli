@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarDemandOmCreateChallengeV2ResponseData {
-  challenge_task_id?: number;
+  challenge_task_id?: number | string;
 }
 

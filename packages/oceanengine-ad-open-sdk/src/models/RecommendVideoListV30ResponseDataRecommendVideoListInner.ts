@@ -7,8 +7,8 @@ export interface RecommendVideoListV30ResponseDataRecommendVideoListInner {
   aweme_id?: string[];
   duration?: number;
   image_mode?: RecommendVideoListV30DataRecommendVideoListImageMode;
-  item_id?: number;
-  material_id?: number;
+  item_id?: number | string;
+  material_id?: number | string;
   title?: string;
   video_cover_id?: string;
   video_cover_url?: string;

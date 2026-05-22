@@ -8,7 +8,7 @@ import type { AdvertiserVerifyInfoGetV30Response } from "../models";
 
 
 export interface OpenApiV30AdvertiserVerifyInfoGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class AdvertiserVerifyInfoGetV30Api {

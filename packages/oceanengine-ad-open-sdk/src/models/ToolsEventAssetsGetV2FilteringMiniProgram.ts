@@ -3,6 +3,6 @@
 
 export interface ToolsEventAssetsGetV2FilteringMiniProgram {
   asset_name?: string;
-  instance_id?: number;
+  instance_id?: number | string;
 }
 

@@ -8,7 +8,7 @@ export interface StarOrderGetScriptV2ResponseDataOrderScriptListInnerScriptListI
   create_time?: number;
   detail_audit_info?: StarOrderGetScriptV2ResponseDataOrderScriptListInnerScriptListInnerDetailAuditInfoInner[];
   resource_filename?: string;
-  resource_id?: number;
+  resource_id?: number | string;
   resource_url?: string;
   status?: number;
 }

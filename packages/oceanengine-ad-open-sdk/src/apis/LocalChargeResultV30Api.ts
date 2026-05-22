@@ -8,8 +8,8 @@ import type { LocalChargeResultV30Response } from "../models";
 
 
 export interface OpenApiV30LocalChargeResultGetRequest {
-  localAccountId: number;
-  chargeOrderId: number;
+  localAccountId: number | string;
+  chargeOrderId: number | string;
 }
 
 export class LocalChargeResultV30Api {

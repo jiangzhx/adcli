@@ -2,9 +2,9 @@
 // Do not edit manually.
 
 export interface ToolsClueBridgeCallCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   callee_number: string;
   caller_number: string;
-  clue_id: number;
+  clue_id: number | string;
 }
 

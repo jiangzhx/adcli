@@ -8,7 +8,7 @@ import type { StarBrandListV2Response } from "../models";
 
 
 export interface OpenApi2StarBrandListGetRequest {
-  starId: number;
+  starId: number | string;
 }
 
 export class StarBrandListV2Api {

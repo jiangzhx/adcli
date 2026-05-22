@@ -8,7 +8,7 @@ export interface QianchuanDmpAudiencesGetV10ResponseDataRetargetingTagsInner {
   has_offline_tag?: QianchuanDmpAudiencesGetV10DataRetargetingTagsHasOfflineTag;
   is_common?: QianchuanDmpAudiencesGetV10DataRetargetingTagsIsCommon;
   name?: string;
-  retargeting_tags_id?: number;
+  retargeting_tags_id?: number | string;
   retargeting_tags_op?: QianchuanDmpAudiencesGetV10DataRetargetingTagsRetargetingTagsOp;
   retargeting_tags_tip?: string;
   source?: QianchuanDmpAudiencesGetV10DataRetargetingTagsSource;

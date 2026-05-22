@@ -4,7 +4,7 @@
 import type { ToolsRubeexPlayableAdListV2ResponseDataPageInfo } from "../models";
 
 export interface ToolsRubeexPlayableAdListV2ResponseData {
-  ad_ids?: number[];
+  ad_ids?: number | string[];
   page_info?: ToolsRubeexPlayableAdListV2ResponseDataPageInfo;
 }
 

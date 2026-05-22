@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface DmpCustomAudienceCopyV2Request {
-  advertiser_id: number;
-  custom_audience_id: number;
-  to_advertiser_id: number;
+  advertiser_id: number | string;
+  custom_audience_id: number | string;
+  to_advertiser_id: number | string;
 }
 

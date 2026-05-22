@@ -9,7 +9,7 @@ import type { ServeMarketActiveFuncGetV10Response } from "../models";
 
 export interface OpenApiV10ServeMarketActiveFuncGetGetRequest {
   useUid: number;
-  appId: number;
+  appId: number | string;
   page: number;
   pageSize: number;
   funcKeys?: string[];

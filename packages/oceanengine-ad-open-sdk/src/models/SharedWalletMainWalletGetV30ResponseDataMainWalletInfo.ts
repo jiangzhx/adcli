@@ -5,7 +5,7 @@ import type { SharedWalletMainWalletGetV30ResponseDataMainWalletInfoAllocatedBal
 
 export interface SharedWalletMainWalletGetV30ResponseDataMainWalletInfo {
   allocated_balance?: SharedWalletMainWalletGetV30ResponseDataMainWalletInfoAllocatedBalance;
-  main_wallet_id?: number;
+  main_wallet_id?: number | string;
   total_balance?: number;
   unallocated_balance?: SharedWalletMainWalletGetV30ResponseDataMainWalletInfoUnallocatedBalance;
   wallet_description?: string;

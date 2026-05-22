@@ -7,7 +7,7 @@ export interface StardeliveryTaskAuthorVideoDetailV30Filtering {
   aweme_ids?: string[];
   exclude_aweme_ids?: string[];
   exclude_material_assessment?: StardeliveryTaskAuthorVideoDetailV30FilteringExcludeMaterialAssessment[];
-  material_ids?: number[];
+  material_ids?: number | string[];
   star_material_purchase_method?: StardeliveryTaskAuthorVideoDetailV30FilteringStarMaterialPurchaseMethod;
   star_video_delivery_status?: StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoDeliveryStatus;
   star_video_material_assessment?: StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoMaterialAssessment[];

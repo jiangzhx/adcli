@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface QianchuanQianchuanVideoStarGetV10ResponseDataVideoListInner {
-  aweme_id?: number;
-  aweme_item_id?: number;
+  aweme_id?: number | string;
+  aweme_item_id?: number | string;
   comment_cnt?: number;
   duration?: number;
   height?: number;

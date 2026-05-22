@@ -8,9 +8,9 @@ import type { ToolsAwemeCategoryTopAuthorGetV2Behaviors, ToolsAwemeCategoryTopAu
 
 
 export interface OpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   behaviors?: ToolsAwemeCategoryTopAuthorGetV2Behaviors[];
-  categoryId?: number;
+  categoryId?: number | string;
 }
 
 export class ToolsAwemeCategoryTopAuthorGetV2Api {

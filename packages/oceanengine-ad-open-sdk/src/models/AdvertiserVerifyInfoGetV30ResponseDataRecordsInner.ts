@@ -4,7 +4,7 @@
 import type { AdvertiserVerifyInfoGetV30DataRecordsCheckType, AdvertiserVerifyInfoGetV30DataRecordsPlatform, AdvertiserVerifyInfoGetV30DataRecordsStatus, AdvertiserVerifyInfoGetV30DataRecordsVerifyType } from "../models";
 
 export interface AdvertiserVerifyInfoGetV30ResponseDataRecordsInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   auth_time?: string;
   check_type?: AdvertiserVerifyInfoGetV30DataRecordsCheckType;
   expire_time?: string;

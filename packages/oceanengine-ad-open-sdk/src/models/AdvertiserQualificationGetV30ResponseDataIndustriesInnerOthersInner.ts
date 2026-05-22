@@ -6,7 +6,7 @@ import type { AdvertiserQualificationGetV30DataIndustriesOthersStatus } from "..
 export interface AdvertiserQualificationGetV30ResponseDataIndustriesInnerOthersInner {
   attachment_id?: string;
   picture_url?: string;
-  qualification_id?: number;
+  qualification_id?: number | string;
   reject_reason?: string;
   status?: AdvertiserQualificationGetV30DataIndustriesOthersStatus;
 }

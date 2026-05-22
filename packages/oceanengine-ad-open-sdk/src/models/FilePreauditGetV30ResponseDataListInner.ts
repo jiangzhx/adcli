@@ -7,7 +7,7 @@ export interface FilePreauditGetV30ResponseDataListInner {
   errmsg: string;
   material_channel: FilePreauditGetV30DataListMaterialChannel;
   material_type: FilePreauditGetV30DataListMaterialType;
-  preaudit_id: number;
+  preaudit_id: number | string;
   status: FilePreauditGetV30DataListStatus;
   video_url: string;
 }

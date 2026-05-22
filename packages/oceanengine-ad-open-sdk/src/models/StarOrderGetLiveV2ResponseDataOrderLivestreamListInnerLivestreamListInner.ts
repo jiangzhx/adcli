@@ -3,9 +3,9 @@
 
 export interface StarOrderGetLiveV2ResponseDataOrderLivestreamListInnerLivestreamListInner {
   duration?: number;
-  item_id?: number;
+  item_id?: number | string;
   live_start_time?: number;
-  resource_id?: number;
+  resource_id?: number | string;
   resource_url?: string;
 }
 

@@ -8,7 +8,7 @@ import type { ToolsLandingGroupGetV2Filtering, ToolsLandingGroupGetV2Response } 
 
 
 export interface OpenApi2ToolsLandingGroupGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: ToolsLandingGroupGetV2Filtering;
   page?: number;
   pageSize?: number;

@@ -5,6 +5,6 @@ import type { ToolsAppManagementBpShareV2DataSuccessListAllAccountByCompanyAccou
 
 export interface ToolsAppManagementBpShareV2ResponseDataSuccessListInnerAllAccountByCompany {
   account_type?: ToolsAppManagementBpShareV2DataSuccessListAllAccountByCompanyAccountType;
-  company_id?: number;
+  company_id?: number | string;
 }
 

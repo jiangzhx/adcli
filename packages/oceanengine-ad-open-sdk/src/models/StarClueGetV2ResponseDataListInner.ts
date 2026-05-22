@@ -13,12 +13,12 @@ export interface StarClueGetV2ResponseDataListInner {
   city?: string;
   component_type: StarClueGetV2DataListComponentType;
   create_time: string;
-  demand_id: number;
-  item_id: number;
+  demand_id: number | string;
+  item_id: number | string;
   name?: string;
-  order_id: number;
+  order_id: number | string;
   phone?: string;
   province?: string;
-  star_id: number;
+  star_id: number | string;
 }
 

@@ -4,8 +4,8 @@
 import type { ToolsLandingGroupSiteOptStatusUpdateV2RequestDataInner } from "../models";
 
 export interface ToolsLandingGroupSiteOptStatusUpdateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   data: ToolsLandingGroupSiteOptStatusUpdateV2RequestDataInner[];
-  group_id: number;
+  group_id: number | string;
 }
 

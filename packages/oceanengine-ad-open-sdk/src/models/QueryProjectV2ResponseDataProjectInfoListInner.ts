@@ -3,20 +3,20 @@
 
 export interface QueryProjectV2ResponseDataProjectInfoListInner {
   adc_serial?: string;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   advertiser_name?: string;
-  agent_id?: number;
+  agent_id?: number | string;
   agent_name?: string;
   amount?: string;
   confirm_status?: number;
   confirm_status_name?: string;
   contract_serial?: string;
   credit_cost?: string;
-  customer_id?: number;
+  customer_id?: number | string;
   customer_name?: string;
   deadline?: string;
   grant_cost?: string;
-  id?: number;
+  id?: number | string;
   invoice_amount?: string;
   name?: string;
   pay_method_name?: string;

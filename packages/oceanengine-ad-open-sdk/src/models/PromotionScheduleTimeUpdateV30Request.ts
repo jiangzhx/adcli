@@ -4,7 +4,7 @@
 import type { PromotionScheduleTimeUpdateV30RequestDataInner } from "../models";
 
 export interface PromotionScheduleTimeUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   data: PromotionScheduleTimeUpdateV30RequestDataInner[];
 }
 

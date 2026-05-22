@@ -8,8 +8,8 @@ import type { DpaCategoryGetV2Response } from "../models";
 
 
 export interface OpenApi2DpaCategoryGetGetRequest {
-  advertiserId: number;
-  platformId: number;
+  advertiserId: number | string;
+  platformId: number | string;
 }
 
 export class DpaCategoryGetV2Api {

@@ -8,7 +8,7 @@ import type { ToolsBlueFlowPackageListV30Filtering, ToolsBlueFlowPackageListV30R
 
 
 export interface OpenApiV30ToolsBlueFlowPackageListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: ToolsBlueFlowPackageListV30Filtering;
 }
 

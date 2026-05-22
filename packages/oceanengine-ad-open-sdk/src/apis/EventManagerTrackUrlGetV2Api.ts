@@ -8,11 +8,11 @@ import type { EventManagerTrackUrlGetV2Response } from "../models";
 
 
 export interface OpenApi2EventManagerTrackUrlGetGetRequest {
-  advertiserId: number;
-  assetId: number;
+  advertiserId: number | string;
+  assetId: number | string;
   downloadUrl?: string;
   trackUrlGroupName?: string;
-  trackUrlGroupId?: number;
+  trackUrlGroupId?: number | string;
   page?: number;
   pageSize?: number;
 }

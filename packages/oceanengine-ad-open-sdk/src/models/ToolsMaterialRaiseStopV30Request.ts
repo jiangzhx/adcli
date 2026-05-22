@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsMaterialRaiseStopV30Request {
-  advertiser_id: number;
-  record_id: number;
+  advertiser_id: number | string;
+  record_id: number | string;
 }
 

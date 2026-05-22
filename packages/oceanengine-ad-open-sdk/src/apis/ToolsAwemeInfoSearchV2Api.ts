@@ -8,7 +8,7 @@ import type { ToolsAwemeInfoSearchV2Behaviors, ToolsAwemeInfoSearchV2Response } 
 
 
 export interface OpenApi2ToolsAwemeInfoSearchGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   queryWord: string;
   behaviors?: ToolsAwemeInfoSearchV2Behaviors[];
 }

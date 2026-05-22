@@ -4,12 +4,12 @@
 import type { ReportAdGetV2FilteringCampaignTypes, ReportAdGetV2FilteringCreativeMaterialModes, ReportAdGetV2FilteringDeliveryMode, ReportAdGetV2FilteringImageModes, ReportAdGetV2FilteringInventoryTypes, ReportAdGetV2FilteringLandingType, ReportAdGetV2FilteringLandingTypes, ReportAdGetV2FilteringPricing, ReportAdGetV2FilteringPricingCategories, ReportAdGetV2FilteringPricings, ReportAdGetV2FilteringStatus } from "../models";
 
 export interface ReportAdGetV2Filtering {
-  ad_ids?: number[];
+  ad_ids?: number | string[];
   ad_name?: string;
-  campaign_id?: number;
-  campaign_ids?: number[];
+  campaign_id?: number | string;
+  campaign_ids?: number | string[];
   campaign_types?: ReportAdGetV2FilteringCampaignTypes[];
-  creative_ids?: number[];
+  creative_ids?: number | string[];
   creative_material_modes?: ReportAdGetV2FilteringCreativeMaterialModes[];
   delivery_mode?: ReportAdGetV2FilteringDeliveryMode[];
   image_modes?: ReportAdGetV2FilteringImageModes[];

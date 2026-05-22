@@ -5,6 +5,6 @@ import type { ProjectStatusUpdateV30DataOptStatus } from "../models";
 
 export interface ProjectStatusUpdateV30RequestDataInner {
   opt_status: ProjectStatusUpdateV30DataOptStatus;
-  project_id: number;
+  project_id: number | string;
 }
 

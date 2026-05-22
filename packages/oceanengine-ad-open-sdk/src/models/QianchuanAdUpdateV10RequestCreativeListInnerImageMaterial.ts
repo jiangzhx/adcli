@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAdUpdateV10RequestCreativeListInnerImageMaterial {
-  id?: number;
+  id?: number | string;
   image_ids?: string[];
 }
 

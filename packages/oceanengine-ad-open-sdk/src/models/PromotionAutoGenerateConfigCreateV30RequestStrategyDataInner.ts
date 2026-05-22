@@ -4,7 +4,7 @@
 import type { PromotionAutoGenerateConfigCreateV30RequestStrategyDataInnerStrategyStateInner } from "../models";
 
 export interface PromotionAutoGenerateConfigCreateV30RequestStrategyDataInner {
-  strategy_id: number;
+  strategy_id: number | string;
   strategy_state?: PromotionAutoGenerateConfigCreateV30RequestStrategyDataInnerStrategyStateInner[];
 }
 

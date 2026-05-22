@@ -4,11 +4,11 @@
 import type { YuntuAudienceInfoCreateV30RequestCalculatePoolsInner } from "../models";
 
 export interface YuntuAudienceInfoCreateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   calculate_pools: YuntuAudienceInfoCreateV30RequestCalculatePoolsInner[];
   expire_date: string;
   name: string;
-  service_provider_id: number;
-  yuntu_brand_id: number;
+  service_provider_id: number | string;
+  yuntu_brand_id: number | string;
 }
 

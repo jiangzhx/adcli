@@ -2,11 +2,11 @@
 // Do not edit manually.
 
 export interface StdProjectUpdateV30RequestBrandInfo {
-  brand_name_id?: number;
-  cdp_brand_id?: number;
+  brand_name_id?: number | string;
+  cdp_brand_id?: number | string;
   cdp_brand_name?: string;
   sub_brand_name_ids?: string[];
   sub_brand_names?: string[];
-  yuntu_category_id?: number;
+  yuntu_category_id?: number | string;
 }
 

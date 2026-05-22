@@ -11,7 +11,7 @@ describe("go request object TypeScript emitter", () => {
         path: "/open_api/v3.0/report/custom/config/get/",
         responseType: "ReportCustomConfigGetV30Response",
         params: [
-          { javaType: "Long", name: "advertiserId", required: true },
+          { javaType: "LongString", name: "advertiserId", required: true },
           { javaType: "List<ReportCustomConfigGetV30DataTopics>", name: "dataTopics", required: true },
           { javaType: "Integer", name: "page", required: false },
         ],
@@ -29,7 +29,7 @@ describe("go request object TypeScript emitter", () => {
     );
 
     expect(output).toContain("export interface OpenApiV30ReportCustomConfigGetGetRequest");
-    expect(output).toContain("advertiserId: number;");
+    expect(output).toContain("advertiserId: number | string;");
     expect(output).toContain("dataTopics: ReportCustomConfigGetV30DataTopics[];");
     expect(output).toContain("page?: number;");
     expect(output).toContain(

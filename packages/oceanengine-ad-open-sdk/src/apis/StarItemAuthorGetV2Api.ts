@@ -8,8 +8,8 @@ import type { StarItemAuthorGetV2Response } from "../models";
 
 
 export interface OpenApi2StarItemAuthorGetGetRequest {
-  starId: number;
-  itemIds: number[];
+  starId: number | string;
+  itemIds: number | string[];
 }
 
 export class StarItemAuthorGetV2Api {

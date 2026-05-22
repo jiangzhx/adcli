@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AgentAdvertiserUpdateV2ResponseData {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   need_audit?: number;
 }
 

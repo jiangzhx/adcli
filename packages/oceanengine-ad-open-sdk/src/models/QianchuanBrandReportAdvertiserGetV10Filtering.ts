@@ -4,7 +4,7 @@
 import type { QianchuanBrandReportAdvertiserGetV10FilteringCampaignScene, QianchuanBrandReportAdvertiserGetV10FilteringMarketingGoal, QianchuanBrandReportAdvertiserGetV10FilteringMarketingScene, QianchuanBrandReportAdvertiserGetV10FilteringSmartBidType, QianchuanBrandReportAdvertiserGetV10FilteringStatus } from "../models";
 
 export interface QianchuanBrandReportAdvertiserGetV10Filtering {
-  aweme_ids?: number[];
+  aweme_ids?: number | string[];
   campaign_scene?: QianchuanBrandReportAdvertiserGetV10FilteringCampaignScene;
   marketing_goal: QianchuanBrandReportAdvertiserGetV10FilteringMarketingGoal;
   marketing_scene?: QianchuanBrandReportAdvertiserGetV10FilteringMarketingScene;

@@ -8,7 +8,7 @@ import type { ToolsInterestActionActionKeywordV2ActionDays, ToolsInterestActionA
 
 
 export interface OpenApi2ToolsInterestActionActionKeywordGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   queryWords: string;
   actionDays?: ToolsInterestActionActionKeywordV2ActionDays;
 }

@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanCampaignCreateV10ResponseData {
-  campaign_id?: number;
+  campaign_id?: number | string;
 }
 

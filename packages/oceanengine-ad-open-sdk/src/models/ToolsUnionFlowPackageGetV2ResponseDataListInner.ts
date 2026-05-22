@@ -4,7 +4,7 @@
 import type { ToolsUnionFlowPackageGetV2DataListFlowPackageType, ToolsUnionFlowPackageGetV2DataListStatus } from "../models";
 
 export interface ToolsUnionFlowPackageGetV2ResponseDataListInner {
-  flow_package_id?: number;
+  flow_package_id?: number | string;
   flow_package_type?: ToolsUnionFlowPackageGetV2DataListFlowPackageType;
   name?: string;
   rit?: number[];

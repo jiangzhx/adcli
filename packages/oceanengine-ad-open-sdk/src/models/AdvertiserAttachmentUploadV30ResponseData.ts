@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface AdvertiserAttachmentUploadV30ResponseData {
-  attachment_id?: number;
+  attachment_id?: number | string;
 }
 

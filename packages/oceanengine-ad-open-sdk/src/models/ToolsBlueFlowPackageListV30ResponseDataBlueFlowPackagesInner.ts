@@ -5,7 +5,7 @@ import type { ToolsBlueFlowPackageListV30ResponseDataBlueFlowPackagesInnerBlueFl
 
 export interface ToolsBlueFlowPackageListV30ResponseDataBlueFlowPackagesInner {
   blue_flow_keyword?: ToolsBlueFlowPackageListV30ResponseDataBlueFlowPackagesInnerBlueFlowKeywordInner[];
-  blue_flow_package_id?: number;
+  blue_flow_package_id?: number | string;
   blue_flow_package_name?: string;
   estimated_cost_range?: number[];
   estimated_reach_traffic_range?: number[];

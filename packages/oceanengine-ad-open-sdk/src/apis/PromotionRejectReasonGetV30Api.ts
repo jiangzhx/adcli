@@ -8,8 +8,8 @@ import type { PromotionRejectReasonGetV30DeliveryMode, PromotionRejectReasonGetV
 
 
 export interface OpenApiV30PromotionRejectReasonGetGetRequest {
-  advertiserId: number;
-  promotionIds: number[];
+  advertiserId: number | string;
+  promotionIds: number | string[];
   deliveryMode?: PromotionRejectReasonGetV30DeliveryMode;
   needMaterialLegoMid?: boolean;
 }

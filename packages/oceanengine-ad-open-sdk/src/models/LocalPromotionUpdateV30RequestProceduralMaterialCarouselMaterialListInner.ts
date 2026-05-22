@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface LocalPromotionUpdateV30RequestProceduralMaterialCarouselMaterialListInner {
-  carousel_id: number;
+  carousel_id: number | string;
 }
 

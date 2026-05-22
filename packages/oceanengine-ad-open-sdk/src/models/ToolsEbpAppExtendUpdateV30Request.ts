@@ -4,7 +4,7 @@
 import type { ToolsEbpAppExtendUpdateV30AccountType, ToolsEbpAppExtendUpdateV30Mode, ToolsEbpAppExtendUpdateV30RequestChannelInfoListInner } from "../models";
 
 export interface ToolsEbpAppExtendUpdateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpAppExtendUpdateV30AccountType;
   channel_info_list?: ToolsEbpAppExtendUpdateV30RequestChannelInfoListInner[];
   mode: ToolsEbpAppExtendUpdateV30Mode;

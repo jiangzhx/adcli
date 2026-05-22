@@ -2,13 +2,13 @@
 // Do not edit manually.
 
 export interface ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Filtering {
-  advertiser_id?: number[];
+  advertiser_id?: number | string[];
   advertiser_name?: string;
-  item_id?: number;
-  material_ids?: number[];
-  star_task_album_id?: number[];
+  item_id?: number | string;
+  material_ids?: number | string[];
+  star_task_album_id?: number | string[];
   star_task_album_name?: string;
-  star_task_id?: number[];
+  star_task_id?: number | string[];
   star_task_name?: string;
 }
 

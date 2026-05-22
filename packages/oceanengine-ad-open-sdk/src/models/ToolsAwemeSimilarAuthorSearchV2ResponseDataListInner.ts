@@ -7,7 +7,7 @@ export interface ToolsAwemeSimilarAuthorSearchV2ResponseDataListInner {
   aweme_id?: string;
   category_name?: string;
   cover_num_str?: string;
-  label_id?: number;
+  label_id?: number | string;
   total_fans_num_str?: string;
 }
 

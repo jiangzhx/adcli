@@ -10,7 +10,7 @@ export interface ProjectCreateV30RequestAudience {
   action_words?: number[];
   age?: string[];
   android_osv?: ProjectCreateV30AudienceAndroidOsv;
-  audience_package_id?: number;
+  audience_package_id?: number | string;
   auto_extend_targets?: ProjectCreateV30AudienceAutoExtendTargets[];
   aweme_fan_accounts?: number[];
   aweme_fan_behaviors?: ProjectCreateV30AudienceAwemeFanBehaviors[];
@@ -49,7 +49,7 @@ export interface ProjectCreateV30RequestAudience {
   region_version?: string;
   retargeting_tags_exclude?: number[];
   retargeting_tags_include?: number[];
-  rta_id?: number;
+  rta_id?: number | string;
   smart_extend?: ProjectCreateV30AudienceSmartExtend;
   superior_popularity_type?: ProjectCreateV30AudienceSuperiorPopularityType;
 }

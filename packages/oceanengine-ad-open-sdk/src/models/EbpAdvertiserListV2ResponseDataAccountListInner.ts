@@ -4,7 +4,7 @@
 import type { EbpAdvertiserListV2DataAccountListAccountType } from "../models";
 
 export interface EbpAdvertiserListV2ResponseDataAccountListInner {
-  account_id?: number;
+  account_id?: number | string;
   account_name?: string;
   account_type?: EbpAdvertiserListV2DataAccountListAccountType;
 }

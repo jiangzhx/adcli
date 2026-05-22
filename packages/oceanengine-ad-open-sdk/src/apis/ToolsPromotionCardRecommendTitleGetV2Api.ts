@@ -8,11 +8,11 @@ import type { ToolsPromotionCardRecommendTitleGetV2ContentType, ToolsPromotionCa
 
 
 export interface OpenApi2ToolsPromotionCardRecommendTitleGetGetRequest {
-  adId?: number;
-  advertiserId?: number;
+  adId?: number | string;
+  advertiserId?: number | string;
   contentType?: ToolsPromotionCardRecommendTitleGetV2ContentType;
   externalUrl?: string;
-  industryId?: number;
+  industryId?: number | string;
   textType?: ToolsPromotionCardRecommendTitleGetV2TextType;
 }
 

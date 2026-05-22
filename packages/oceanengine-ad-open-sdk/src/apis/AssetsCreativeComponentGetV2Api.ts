@@ -8,7 +8,7 @@ import type { AssetsCreativeComponentGetV2Filtering, AssetsCreativeComponentGetV
 
 
 export interface OpenApi2AssetsCreativeComponentGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
   filtering?: AssetsCreativeComponentGetV2Filtering;

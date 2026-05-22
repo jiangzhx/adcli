@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AgentCompanyBrandListQueryV2ResponseDataDataInnerOptimizersInner {
-  optimizer_id?: number;
+  optimizer_id?: number | string;
   optimizer_name?: string;
 }
 

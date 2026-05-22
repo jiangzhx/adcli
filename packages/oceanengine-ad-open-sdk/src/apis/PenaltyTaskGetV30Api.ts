@@ -8,8 +8,8 @@ import type { PenaltyTaskGetV30Response } from "../models";
 
 
 export interface OpenApiV30PenaltyTaskGetGetRequest {
-  advertiserIds: number[];
-  customerIds?: number[];
+  advertiserIds: number | string[];
+  customerIds?: number | string[];
   disposalStartTime?: string;
   disposalEndTime?: string;
   page?: number;

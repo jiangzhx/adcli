@@ -7,6 +7,6 @@ export interface ShopBonusSuccessGetV30ResponseData {
   coupon_infos?: ShopBonusSuccessGetV30ResponseDataCouponInfosInner[];
   coupon_type?: string[];
   enable_coupon?: boolean;
-  promotion_id?: number;
+  promotion_id?: number | string;
 }
 

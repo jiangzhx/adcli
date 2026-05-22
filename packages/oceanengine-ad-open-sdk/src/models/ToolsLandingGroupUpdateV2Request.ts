@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsLandingGroupUpdateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   append_sites: string[];
   group_id: string;
   group_title: string;

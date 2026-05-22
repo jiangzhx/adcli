@@ -15,7 +15,7 @@ export interface OpenApiV10QianchuanReportCustomGetGetRequest {
   startTime: string;
   endTime: string;
   orderBy: QianchuanReportCustomGetV10OrderByInner[];
-  advertiserId?: number;
+  advertiserId?: number | string;
   page?: number;
   pageSize?: number;
 }

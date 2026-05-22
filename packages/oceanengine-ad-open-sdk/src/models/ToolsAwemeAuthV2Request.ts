@@ -4,7 +4,7 @@
 import type { ToolsAwemeAuthV2AuthType } from "../models";
 
 export interface ToolsAwemeAuthV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   auth_type: ToolsAwemeAuthV2AuthType;
   aweme_id: string;
   code: string;

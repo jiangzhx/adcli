@@ -6,7 +6,7 @@ import type { QianchuanAwemeSuggestBidV10AudienceAge, QianchuanAwemeSuggestBidV1
 export interface QianchuanAwemeSuggestBidV10Audience {
   age?: QianchuanAwemeSuggestBidV10AudienceAge[];
   audience_mode: QianchuanAwemeSuggestBidV10AudienceAudienceMode;
-  author_ids?: number[];
+  author_ids?: number | string[];
   city?: number[];
   district?: QianchuanAwemeSuggestBidV10AudienceDistrict;
   exclude_limited_region?: QianchuanAwemeSuggestBidV10AudienceExcludeLimitedRegion;

@@ -8,12 +8,12 @@ import type { ToolsEbpSubjectListV30FilterStatus, ToolsEbpSubjectListV30Paginati
 
 
 export interface OpenApiV30ToolsEbpSubjectListGetRequest {
-  enterpriseOrganizationId: number;
+  enterpriseOrganizationId: number | string;
   queryTypes: ToolsEbpSubjectListV30QueryTypes[];
   pagination: ToolsEbpSubjectListV30Pagination;
-  filterCompanyId?: number[];
+  filterCompanyId?: number | string[];
   filterStatus?: ToolsEbpSubjectListV30FilterStatus[];
-  filterAccountIds?: number[];
+  filterAccountIds?: number | string[];
 }
 
 export class ToolsEbpSubjectListV30Api {

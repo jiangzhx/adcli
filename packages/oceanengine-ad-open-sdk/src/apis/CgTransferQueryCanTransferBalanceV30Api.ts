@@ -9,8 +9,8 @@ import type { CgTransferQueryCanTransferBalanceV30Response, CgTransferQueryCanTr
 
 export interface OpenApiV30CgTransferQueryCanTransferBalanceGetRequest {
   bizRequestNo: string;
-  agentId: number;
-  accountId: number;
+  agentId: number | string;
+  accountId: number | string;
   targetAccountIdList: number[];
   transferDirection: CgTransferQueryCanTransferBalanceV30TransferDirection;
 }

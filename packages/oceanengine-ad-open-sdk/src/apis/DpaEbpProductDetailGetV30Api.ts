@@ -8,9 +8,9 @@ import type { DpaEbpProductDetailGetV30AccountType, DpaEbpProductDetailGetV30Fil
 
 
 export interface OpenApiV30DpaEbpProductDetailGetGetRequest {
-  accountId?: number;
+  accountId?: number | string;
   accountType?: DpaEbpProductDetailGetV30AccountType;
-  platformId?: number;
+  platformId?: number | string;
   filtering?: DpaEbpProductDetailGetV30Filtering;
   page?: number;
   pageSize?: number;

@@ -2,9 +2,9 @@
 // Do not edit manually.
 
 export interface ToolsKeywordsBidRatioUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   bid_ratio?: number;
-  project_ids?: number[];
+  project_ids?: number | string[];
   promotion_word_id: string;
 }
 

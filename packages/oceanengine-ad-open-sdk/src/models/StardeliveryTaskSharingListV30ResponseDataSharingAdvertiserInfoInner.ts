@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StardeliveryTaskSharingListV30ResponseDataSharingAdvertiserInfoInner {
-  sharing_advertiser_id?: number;
+  sharing_advertiser_id?: number | string;
   sharing_advertiser_name?: string;
 }
 

@@ -8,8 +8,8 @@ import type { StarMcnProviderGetTaskItemListV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnProviderGetTaskItemListGetRequest {
-  starId: number;
-  taskId: number;
+  starId: number | string;
+  taskId: number | string;
   page: number;
   limit: number;
   providerConfirming?: boolean;

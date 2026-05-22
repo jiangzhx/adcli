@@ -8,7 +8,7 @@ import type { AicElementUploadV30AccountType, AicElementUploadV30ElementType, Ai
 
 
 export interface OpenApiV30AicElementUploadPostRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: AicElementUploadV30AccountType;
   elementType: AicElementUploadV30ElementType;
   elementName?: string;

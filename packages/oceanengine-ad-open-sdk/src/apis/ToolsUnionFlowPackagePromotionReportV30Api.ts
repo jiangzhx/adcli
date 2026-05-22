@@ -8,7 +8,7 @@ import type { ToolsUnionFlowPackagePromotionReportV30Filter, ToolsUnionFlowPacka
 
 
 export interface OpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filter: ToolsUnionFlowPackagePromotionReportV30Filter;
   orderField?: string;
   orderType?: ToolsUnionFlowPackagePromotionReportV30OrderType;

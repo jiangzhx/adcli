@@ -4,12 +4,12 @@
 import type { AicImageMixcutCreateV30AccountType, AicImageMixcutCreateV30RequestAudioOption, AicImageMixcutCreateV30RequestGenElement, AicImageMixcutCreateV30RequestProductInfo, AicImageMixcutCreateV30RequestRenderOption, AicImageMixcutCreateV30RequestSubtitleStyle } from "../models";
 
 export interface AicImageMixcutCreateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: AicImageMixcutCreateV30AccountType;
   audio_option?: AicImageMixcutCreateV30RequestAudioOption;
   count?: number;
   gen_element?: AicImageMixcutCreateV30RequestGenElement;
-  image_element_ids: number[];
+  image_element_ids: number | string[];
   is_auto_save_all_result?: boolean;
   product_info?: AicImageMixcutCreateV30RequestProductInfo;
   render_option?: AicImageMixcutCreateV30RequestRenderOption;

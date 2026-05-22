@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanUniPromotionAdBudgetUpdateV10RequestUpdateBudgetInfosInner {
-  ad_id: number;
+  ad_id: number | string;
   budget: number;
   estimate_convert?: number;
   estimate_roi_goal?: number;

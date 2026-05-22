@@ -8,7 +8,7 @@ import type { LocalAwemeAuthorizedGetV30Filtering, LocalAwemeAuthorizedGetV30Mar
 
 
 export interface OpenApiV30LocalAwemeAuthorizedGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   marketingGoal: LocalAwemeAuthorizedGetV30MarketingGoal;
   filtering?: LocalAwemeAuthorizedGetV30Filtering;
   page?: number;

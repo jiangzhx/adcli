@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsAwemeAuthAuthShareAdShareV2ResponseDataErrorListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   error_message?: string;
 }
 

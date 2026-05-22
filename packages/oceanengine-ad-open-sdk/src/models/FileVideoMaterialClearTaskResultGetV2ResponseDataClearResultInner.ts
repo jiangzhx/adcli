@@ -8,7 +8,7 @@ export interface FileVideoMaterialClearTaskResultGetV2ResponseDataClearResultInn
   clear_result?: FileVideoMaterialClearTaskResultGetV2DataClearResultClearResult;
   creative_fail_count?: number;
   creative_success_count?: number;
-  material_id?: number;
+  material_id?: number | string;
   promotion_fail_count?: number;
   promotion_success_count?: number;
 }

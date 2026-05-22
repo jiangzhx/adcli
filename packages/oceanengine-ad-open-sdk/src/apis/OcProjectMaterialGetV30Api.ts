@@ -8,8 +8,8 @@ import type { OcProjectMaterialGetV30Filtering, OcProjectMaterialGetV30Response 
 
 
 export interface OpenApiV30OcProjectMaterialGetGetRequest {
-  advertiserId: number;
-  projectId: number;
+  advertiserId: number | string;
+  projectId: number | string;
   filtering: OcProjectMaterialGetV30Filtering;
   page?: number;
   pageSize?: number;

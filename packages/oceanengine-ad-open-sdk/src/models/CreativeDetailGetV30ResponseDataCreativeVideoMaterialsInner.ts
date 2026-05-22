@@ -4,7 +4,7 @@
 import type { CreativeDetailGetV30DataCreativeVideoMaterialsDpaVideoTemplateType, CreativeDetailGetV30DataCreativeVideoMaterialsImageMode, CreativeDetailGetV30ResponseDataCreativeVideoMaterialsInnerImageInfo, CreativeDetailGetV30ResponseDataCreativeVideoMaterialsInnerVideoInfo } from "../models";
 
 export interface CreativeDetailGetV30ResponseDataCreativeVideoMaterialsInner {
-  aweme_item_id?: number;
+  aweme_item_id?: number | string;
   dpa_video_task_ids?: string[];
   dpa_video_template_type?: CreativeDetailGetV30DataCreativeVideoMaterialsDpaVideoTemplateType;
   image_info?: CreativeDetailGetV30ResponseDataCreativeVideoMaterialsInnerImageInfo;

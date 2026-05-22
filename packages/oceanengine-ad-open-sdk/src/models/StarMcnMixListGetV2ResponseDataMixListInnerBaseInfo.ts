@@ -4,7 +4,7 @@
 export interface StarMcnMixListGetV2ResponseDataMixListInnerBaseInfo {
   create_time?: number;
   mix_aweme_status?: number;
-  mix_id?: number;
+  mix_id?: number | string;
   title?: string;
 }
 

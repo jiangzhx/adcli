@@ -4,6 +4,6 @@
 export interface StarDemanderUploadCpsTaskSalesV2RequestSalesInner {
   amount?: number;
   bill_time?: number;
-  content_id?: number;
+  content_id?: number | string;
 }
 

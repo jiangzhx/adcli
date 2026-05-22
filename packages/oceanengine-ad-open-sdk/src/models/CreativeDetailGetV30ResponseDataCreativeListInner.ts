@@ -5,7 +5,7 @@ import type { CreativeDetailGetV30DataCreativeListImageMode, CreativeDetailGetV3
 
 export interface CreativeDetailGetV30ResponseDataCreativeListInner {
   abstract_materials?: CreativeDetailGetV30ResponseDataCreativeListInnerAbstractMaterialsInner[];
-  creative_id?: number;
+  creative_id?: number | string;
   decoration_material?: CreativeDetailGetV30ResponseDataCreativeListInnerDecorationMaterial;
   image_materials?: CreativeDetailGetV30ResponseDataCreativeListInnerImageMaterialsInner[];
   image_mode?: CreativeDetailGetV30DataCreativeListImageMode;

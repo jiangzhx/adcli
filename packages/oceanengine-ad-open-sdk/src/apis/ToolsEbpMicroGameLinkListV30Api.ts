@@ -8,9 +8,9 @@ import type { ToolsEbpMicroGameLinkListV30AccountType, ToolsEbpMicroGameLinkList
 
 
 export interface OpenApiV30ToolsEbpMicroGameLinkListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsEbpMicroGameLinkListV30AccountType;
-  instanceId?: number;
+  instanceId?: number | string;
   appId?: string;
   createTime?: ToolsEbpMicroGameLinkListV30CreateTime;
   page?: number;

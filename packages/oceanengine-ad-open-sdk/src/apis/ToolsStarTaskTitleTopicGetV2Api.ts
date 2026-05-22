@@ -8,7 +8,7 @@ import type { ToolsStarTaskTitleTopicGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsStarTaskTitleTopicGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   titleSpecifiesTopicItem: string;
 }
 

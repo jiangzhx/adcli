@@ -7,7 +7,7 @@ export interface LocalFileVideoAwemeGetV30Filtering {
   anchor_info: LocalFileVideoAwemeGetV30FilteringAnchorInfo;
   aweme_ids?: string[];
   end_time?: string;
-  item_ids?: number[];
+  item_ids?: number | string[];
   item_status?: LocalFileVideoAwemeGetV30FilteringItemStatus;
   start_time?: string;
 }

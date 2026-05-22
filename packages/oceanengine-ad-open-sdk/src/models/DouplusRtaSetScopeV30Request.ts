@@ -5,8 +5,8 @@ import type { DouplusRtaSetScopeV30TargetType } from "../models";
 
 export interface DouplusRtaSetScopeV30Request {
   aweme_sec_uid: string;
-  rta_id: number;
-  target_ids?: number[];
+  rta_id: number | string;
+  target_ids?: number | string[];
   target_type: DouplusRtaSetScopeV30TargetType;
 }
 

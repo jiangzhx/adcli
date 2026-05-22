@@ -5,20 +5,20 @@ import type { QianchuanAdDetailGetV10DataCampaignScene, QianchuanAdDetailGetV10D
 
 export interface QianchuanAdDetailGetV10ResponseData {
   ad_create_time?: string;
-  ad_id?: number;
+  ad_id?: number | string;
   ad_keywords?: string[];
   ad_modify_time?: string;
   audience?: QianchuanAdDetailGetV10ResponseDataAudience;
   aweme_info?: QianchuanAdDetailGetV10ResponseDataAwemeInfoInner[];
   brand_info?: QianchuanAdDetailGetV10ResponseDataBrandInfo;
-  campaign_id?: number;
+  campaign_id?: number | string;
   campaign_scene?: QianchuanAdDetailGetV10DataCampaignScene;
   creative_auto_generate?: QianchuanAdDetailGetV10DataCreativeAutoGenerate;
   creative_list?: QianchuanAdDetailGetV10ResponseDataCreativeListInner[];
   creative_material_mode?: QianchuanAdDetailGetV10DataCreativeMaterialMode;
   delivery_setting?: QianchuanAdDetailGetV10ResponseDataDeliverySetting;
   dynamic_creative?: QianchuanAdDetailGetV10DataDynamicCreative;
-  first_industry_id?: number;
+  first_industry_id?: number | string;
   is_homepage_hide?: QianchuanAdDetailGetV10DataIsHomepageHide;
   is_intelligent?: QianchuanAdDetailGetV10DataIsIntelligent;
   keywords?: QianchuanAdDetailGetV10ResponseDataKeywordsInner[];
@@ -34,10 +34,10 @@ export interface QianchuanAdDetailGetV10ResponseData {
   programmatic_creative_media_list?: QianchuanAdDetailGetV10ResponseDataProgrammaticCreativeMediaListInner[];
   programmatic_creative_title_list?: QianchuanAdDetailGetV10ResponseDataProgrammaticCreativeTitleListInner[];
   room_info?: QianchuanAdDetailGetV10ResponseDataRoomInfoInner[];
-  second_industry_id?: number;
+  second_industry_id?: number | string;
   shop_info?: QianchuanAdDetailGetV10ResponseDataShopInfo;
   status?: QianchuanAdDetailGetV10DataStatus;
-  third_industry_id?: number;
+  third_industry_id?: number | string;
   track_url?: QianchuanAdDetailGetV10ResponseDataTrackUrl;
 }
 

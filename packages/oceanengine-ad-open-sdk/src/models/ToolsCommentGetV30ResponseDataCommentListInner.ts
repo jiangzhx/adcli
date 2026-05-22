@@ -6,7 +6,7 @@ import type { ToolsCommentGetV30DataCommentListCommentPermission, ToolsCommentGe
 export interface ToolsCommentGetV30ResponseDataCommentListInner {
   aweme_id?: string;
   aweme_name?: string;
-  comment_id?: number;
+  comment_id?: number | string;
   comment_images?: string[];
   comment_permission?: ToolsCommentGetV30DataCommentListCommentPermission;
   comment_type?: ToolsCommentGetV30DataCommentListCommentType;
@@ -14,12 +14,12 @@ export interface ToolsCommentGetV30ResponseDataCommentListInner {
   emotion_type?: ToolsCommentGetV30DataCommentListEmotionType;
   hide_status?: ToolsCommentGetV30DataCommentListHideStatus;
   is_stick?: number;
-  item_id?: number;
+  item_id?: number | string;
   item_title?: string;
   level_type?: ToolsCommentGetV30DataCommentListLevelType;
   like_count?: number;
-  material_id?: number;
-  promotion_id?: number;
+  material_id?: number | string;
+  promotion_id?: number | string;
   reply_count?: number;
   text?: string;
 }

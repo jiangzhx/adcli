@@ -3,7 +3,7 @@
 
 export interface BrandOperationLogQueryV30ResponseDataLogListInner {
   content?: string[];
-  object_id?: number;
+  object_id?: number | string;
   object_type?: string;
   operator?: string;
   opt_ip?: string;

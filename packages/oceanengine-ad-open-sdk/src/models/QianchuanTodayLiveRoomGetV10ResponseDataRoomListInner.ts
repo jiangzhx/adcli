@@ -15,7 +15,7 @@ export interface QianchuanTodayLiveRoomGetV10ResponseDataRoomListInner {
   ad_live_pay_order_rate?: number;
   ad_live_prepay_and_pay_order_gmv_roi?: number;
   aweme_avatar?: string[];
-  aweme_id?: number;
+  aweme_id?: number | string;
   aweme_name?: string;
   click_cnt?: number;
   convert_cnt?: number;
@@ -60,7 +60,7 @@ export interface QianchuanTodayLiveRoomGetV10ResponseDataRoomListInner {
   qualification_stat_cost?: number;
   room_cover?: string[];
   room_delivery?: number;
-  room_id?: number;
+  room_id?: number | string;
   room_status?: QianchuanTodayLiveRoomGetV10DataRoomListRoomStatus;
   room_title?: string;
   start_time?: string;

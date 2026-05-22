@@ -8,7 +8,7 @@ export interface PromotionCostProtectStatusGetV30ResponseDataCompensateStatusInf
   compensate_status?: PromotionCostProtectStatusGetV30DataCompensateStatusInfoListCompensateStatus;
   end_reasons?: Record<string, string>;
   invalid_reasons?: Record<string, string>;
-  query_id?: number;
+  query_id?: number | string;
   status?: PromotionCostProtectStatusGetV30DataCompensateStatusInfoListStatus;
   url?: string;
 }

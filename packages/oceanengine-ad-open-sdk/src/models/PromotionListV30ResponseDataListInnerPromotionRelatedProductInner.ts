@@ -15,7 +15,7 @@ export interface PromotionListV30ResponseDataListInnerPromotionRelatedProductInn
   title_material_list?: PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerTitleMaterialListInner[];
   ulink?: string;
   ulink_type?: PromotionListV30DataListPromotionRelatedProductUlinkType;
-  unique_product_id?: number;
+  unique_product_id?: number | string;
   video_material_list?: PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerVideoMaterialListInner[];
 }
 

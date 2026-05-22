@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsSiteUpdateStatusV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   site_ids: string[];
   status: string;
 }

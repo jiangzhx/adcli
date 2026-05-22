@@ -8,8 +8,8 @@ import type { QianchuanSuggestBudgetV10LiveScheduleType, QianchuanSuggestBudgetV
 
 
 export interface OpenApiV10QianchuanSuggestBudgetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   liveScheduleType: QianchuanSuggestBudgetV10LiveScheduleType;
   startTime?: string;
   endTime?: string;

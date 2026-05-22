@@ -8,8 +8,8 @@ import type { WalletChargeVerifyGetV30ChargeType, WalletChargeVerifyGetV30Respon
 
 
 export interface OpenApiV30WalletChargeVerifyGetGetRequest {
-  accountId: number;
-  walletId: number;
+  accountId: number | string;
+  walletId: number | string;
   chargeType: WalletChargeVerifyGetV30ChargeType;
 }
 

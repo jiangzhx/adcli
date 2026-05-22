@@ -4,7 +4,7 @@
 import type { PrepayChargeGenerateRemittanceCodeCreateV30ContractInfoDeliveryType } from "../models";
 
 export interface PrepayChargeGenerateRemittanceCodeCreateV30RequestContractInfo {
-  contract_id?: number;
+  contract_id?: number | string;
   delivery_type?: PrepayChargeGenerateRemittanceCodeCreateV30ContractInfoDeliveryType;
 }
 

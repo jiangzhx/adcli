@@ -4,7 +4,7 @@
 import type { QianchuanAwemeUniPromotionOrderDetailV10DataMarketingGoal, QianchuanAwemeUniPromotionOrderDetailV10DataStatus, QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAddAmountInfo, QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAuditRecord, QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAwemeInfo, QianchuanAwemeUniPromotionOrderDetailV10ResponseDataCouponInfosInner, QianchuanAwemeUniPromotionOrderDetailV10ResponseDataDeliverySetting, QianchuanAwemeUniPromotionOrderDetailV10ResponseDataProductInfo } from "../models";
 
 export interface QianchuanAwemeUniPromotionOrderDetailV10ResponseData {
-  ad_id?: number;
+  ad_id?: number | string;
   add_amount_info?: QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAddAmountInfo;
   audit_record?: QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAuditRecord;
   aweme_info?: QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAwemeInfo;
@@ -12,7 +12,7 @@ export interface QianchuanAwemeUniPromotionOrderDetailV10ResponseData {
   delivery_setting?: QianchuanAwemeUniPromotionOrderDetailV10ResponseDataDeliverySetting;
   marketing_goal?: QianchuanAwemeUniPromotionOrderDetailV10DataMarketingGoal;
   order_create_time?: string;
-  order_id: number;
+  order_id: number | string;
   product_info?: QianchuanAwemeUniPromotionOrderDetailV10ResponseDataProductInfo;
   status?: QianchuanAwemeUniPromotionOrderDetailV10DataStatus;
 }

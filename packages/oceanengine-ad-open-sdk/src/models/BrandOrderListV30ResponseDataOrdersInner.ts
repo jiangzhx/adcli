@@ -7,13 +7,13 @@ export interface BrandOrderListV30ResponseDataOrdersInner {
   ad_form?: BrandOrderListV30DataOrdersAdForm;
   ad_infos?: BrandOrderListV30ResponseDataOrdersInnerAdInfosInner[];
   advanced_creative_type?: BrandOrderListV30DataOrdersAdvancedCreativeType;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   app_origin?: BrandOrderListV30DataOrdersAppOrigin;
   audience_info?: BrandOrderListV30ResponseDataOrdersInnerAudienceInfo;
   audit_status?: BrandOrderListV30DataOrdersAuditStatus;
   booking_quantity_info?: BrandOrderListV30ResponseDataOrdersInnerBookingQuantityInfo;
   budget?: string;
-  campaign_id?: number;
+  campaign_id?: number | string;
   campaign_name?: string;
   classify?: BrandOrderListV30DataOrdersClassify;
   create_time?: string;
@@ -23,7 +23,7 @@ export interface BrandOrderListV30ResponseDataOrdersInner {
   gd_send_type?: BrandOrderListV30DataOrdersGdSendType;
   magazine_price_info?: BrandOrderListV30ResponseDataOrdersInnerMagazinePriceInfo;
   merchant_intention?: BrandOrderListV30ResponseDataOrdersInnerMerchantIntention;
-  order_id?: number;
+  order_id?: number | string;
   order_name?: string;
   policy?: BrandOrderListV30ResponseDataOrdersInnerPolicy;
   pricing_type?: BrandOrderListV30DataOrdersPricingType;

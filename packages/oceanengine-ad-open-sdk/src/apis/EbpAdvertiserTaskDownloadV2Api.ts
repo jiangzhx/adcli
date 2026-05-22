@@ -7,8 +7,8 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 
 
 export interface OpenApi2EbpAdvertiserTaskDownloadGetRequest {
-  enterpriseOrganizationId: number;
-  taskId?: number;
+  enterpriseOrganizationId: number | string;
+  taskId?: number | string;
 }
 
 export class EbpAdvertiserTaskDownloadV2Api {

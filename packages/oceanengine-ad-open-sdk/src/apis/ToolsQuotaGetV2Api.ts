@@ -8,7 +8,7 @@ import type { ToolsQuotaGetV2CampaignType, ToolsQuotaGetV2DeliveryRange, ToolsQu
 
 
 export interface OpenApi2ToolsQuotaGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   campaignType: ToolsQuotaGetV2CampaignType;
   deliveryRange?: ToolsQuotaGetV2DeliveryRange;
 }

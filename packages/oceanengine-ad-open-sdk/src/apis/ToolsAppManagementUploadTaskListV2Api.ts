@@ -8,7 +8,7 @@ import type { ToolsAppManagementUploadTaskListV2AccountType, ToolsAppManagementU
 
 
 export interface OpenApi2ToolsAppManagementUploadTaskListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsAppManagementUploadTaskListV2AccountType;
   filtering: ToolsAppManagementUploadTaskListV2Filtering;
 }

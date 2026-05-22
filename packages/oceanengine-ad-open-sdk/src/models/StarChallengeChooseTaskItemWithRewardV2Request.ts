@@ -4,8 +4,8 @@
 import type { StarChallengeChooseTaskItemWithRewardV2RequestItemRewardsInner } from "../models";
 
 export interface StarChallengeChooseTaskItemWithRewardV2Request {
-  challenge_task_id: number;
+  challenge_task_id: number | string;
   item_rewards: StarChallengeChooseTaskItemWithRewardV2RequestItemRewardsInner[];
-  star_id: number;
+  star_id: number | string;
 }
 

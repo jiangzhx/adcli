@@ -12,7 +12,7 @@ export interface ProjectListV30ResponseDataListInnerAudience {
   activate_type?: ProjectListV30DataListAudienceActivateType[];
   age?: string[];
   android_osv?: ProjectListV30DataListAudienceAndroidOsv;
-  audience_package_id?: number;
+  audience_package_id?: number | string;
   auto_extend_targets?: ProjectListV30DataListAudienceAutoExtendTargets[];
   aweme_fan_accounts?: number[];
   aweme_fan_behaviors?: ProjectListV30DataListAudienceAwemeFanBehaviors[];

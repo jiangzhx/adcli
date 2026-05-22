@@ -8,7 +8,7 @@ import type { EventManagerAuthGetAuthStatusV2Response } from "../models";
 
 
 export interface OpenApi2EventManagerAuthGetAuthStatusGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class EventManagerAuthGetAuthStatusV2Api {

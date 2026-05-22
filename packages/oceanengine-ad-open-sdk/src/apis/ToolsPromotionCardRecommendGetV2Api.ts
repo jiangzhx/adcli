@@ -8,9 +8,9 @@ import type { ToolsPromotionCardRecommendGetV2AdvancedCreativeType, ToolsPromoti
 
 
 export interface OpenApi2ToolsPromotionCardRecommendGetGetRequest {
-  adId?: number;
+  adId?: number | string;
   advancedCreativeType?: ToolsPromotionCardRecommendGetV2AdvancedCreativeType;
-  advertiserId?: number;
+  advertiserId?: number | string;
   downloadType?: ToolsPromotionCardRecommendGetV2DownloadType;
   recommendType?: ToolsPromotionCardRecommendGetV2RecommendType;
   titleList?: ToolsPromotionCardRecommendGetV2TitleListInner[];

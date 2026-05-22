@@ -8,8 +8,8 @@ import type { QueryBookingBusinessEntityIdGetV2Response } from "../models";
 
 
 export interface OpenApi2QueryBookingBusinessEntityIdGetGetRequest {
-  agentId: number;
-  orderIds: number[];
+  agentId: number | string;
+  orderIds: number | string[];
 }
 
 export class QueryBookingBusinessEntityIdGetV2Api {

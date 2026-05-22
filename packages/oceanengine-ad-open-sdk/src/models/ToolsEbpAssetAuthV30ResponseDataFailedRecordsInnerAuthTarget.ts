@@ -6,7 +6,7 @@ import type { ToolsEbpAssetAuthV30DataFailedRecordsAuthTargetAuthTargetType } fr
 export interface ToolsEbpAssetAuthV30ResponseDataFailedRecordsInnerAuthTarget {
   auth_target_type: ToolsEbpAssetAuthV30DataFailedRecordsAuthTargetAuthTargetType;
   depth?: number;
-  target_id: number;
+  target_id: number | string;
   target_name?: string;
 }
 

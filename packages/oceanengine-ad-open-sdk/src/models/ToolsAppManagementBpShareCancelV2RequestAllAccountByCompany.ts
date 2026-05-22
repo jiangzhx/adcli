@@ -5,6 +5,6 @@ import type { ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType } 
 
 export interface ToolsAppManagementBpShareCancelV2RequestAllAccountByCompany {
   account_type: ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType[];
-  company_id: number;
+  company_id: number | string;
 }
 

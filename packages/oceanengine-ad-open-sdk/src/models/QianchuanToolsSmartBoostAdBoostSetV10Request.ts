@@ -4,8 +4,8 @@
 import type { QianchuanToolsSmartBoostAdBoostSetV10OptType } from "../models";
 
 export interface QianchuanToolsSmartBoostAdBoostSetV10Request {
-  ad_id: number;
-  advertiser_id: number;
+  ad_id: number | string;
+  advertiser_id: number | string;
   budget?: number;
   opt_type: QianchuanToolsSmartBoostAdBoostSetV10OptType;
   raise_duration?: number;

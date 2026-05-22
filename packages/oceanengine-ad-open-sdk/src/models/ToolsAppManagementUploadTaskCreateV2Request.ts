@@ -4,7 +4,7 @@
 import type { ToolsAppManagementUploadTaskCreateV2AccountType, ToolsAppManagementUploadTaskCreateV2FileType } from "../models";
 
 export interface ToolsAppManagementUploadTaskCreateV2Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsAppManagementUploadTaskCreateV2AccountType;
   download_url: string;
   file_type: ToolsAppManagementUploadTaskCreateV2FileType;

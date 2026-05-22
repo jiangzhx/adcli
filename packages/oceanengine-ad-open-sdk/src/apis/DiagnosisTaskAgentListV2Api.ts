@@ -8,7 +8,7 @@ import type { DiagnosisTaskAgentListV2Response, DiagnosisTaskAgentListV2Results,
 
 
 export interface OpenApi2DiagnosisTaskAgentListGetRequest {
-  agentId: number;
+  agentId: number | string;
   results?: DiagnosisTaskAgentListV2Results[];
   status?: DiagnosisTaskAgentListV2Status[];
   startTime?: string;

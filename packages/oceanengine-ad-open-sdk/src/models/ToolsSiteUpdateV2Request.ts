@@ -4,7 +4,7 @@
 import type { ToolsSiteUpdateV2RequestBricksInner } from "../models";
 
 export interface ToolsSiteUpdateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   bricks: ToolsSiteUpdateV2RequestBricksInner[];
   name?: string;
   site_id: string;

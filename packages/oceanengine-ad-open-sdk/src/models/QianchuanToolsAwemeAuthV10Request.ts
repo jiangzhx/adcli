@@ -4,7 +4,7 @@
 import type { QianchuanToolsAwemeAuthV10AuthType } from "../models";
 
 export interface QianchuanToolsAwemeAuthV10Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   auth_type: QianchuanToolsAwemeAuthV10AuthType;
   aweme_id?: string;
   aweme_show_id?: string;

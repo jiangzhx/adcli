@@ -5,7 +5,7 @@ import type { QianchuanAdUpdateV10CreativeListImageMode, QianchuanAdUpdateV10Req
 
 export interface QianchuanAdUpdateV10RequestCreativeListInner {
   carousel_material?: QianchuanAdUpdateV10RequestCreativeListInnerCarouselMaterial;
-  creative_id?: number;
+  creative_id?: number | string;
   image_material?: QianchuanAdUpdateV10RequestCreativeListInnerImageMaterial;
   image_mode: QianchuanAdUpdateV10CreativeListImageMode;
   promotion_card_material?: QianchuanAdUpdateV10RequestCreativeListInnerPromotionCardMaterial;

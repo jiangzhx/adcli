@@ -8,7 +8,7 @@ import type { ReportBrandAdvertiserGetV30LandingType, ReportBrandAdvertiserGetV3
 
 
 export interface OpenApiV30ReportBrandAdvertiserGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startTime: string;
   endTime: string;
   page: number;

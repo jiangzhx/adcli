@@ -7,7 +7,7 @@ export interface QianchuanUniAwemeAuthorizedGetV10ResponseDataAwemeIdListInner {
   anchor_forbidden?: boolean;
   auth_type?: QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListAuthType[];
   aweme_avatar?: string;
-  aweme_id?: number;
+  aweme_id?: number | string;
   aweme_name?: string;
   aweme_show_id?: string;
   can_apply_uniprom?: boolean;

@@ -9,7 +9,7 @@ export interface StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerStarAdUni
   est_real_time_total_cost?: number;
   high_potential_author?: boolean;
   item_status?: number;
-  material_id?: number;
+  material_id?: number | string;
   provider_settled_reward?: number;
 }
 

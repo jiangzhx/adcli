@@ -8,7 +8,7 @@ export interface CreativeProceduralCreativeUpdateV2RequestCreativeVideoMaterials
   dpa_video_template_type?: CreativeProceduralCreativeUpdateV2CreativeVideoMaterialsDpaVideoTemplateType;
   image_info?: CreativeProceduralCreativeUpdateV2RequestCreativeVideoMaterialsInnerImageInfo;
   image_mode?: CreativeProceduralCreativeUpdateV2CreativeVideoMaterialsImageMode;
-  material_id?: number;
+  material_id?: number | string;
   video_info?: CreativeProceduralCreativeUpdateV2RequestCreativeVideoMaterialsInnerVideoInfo;
 }
 

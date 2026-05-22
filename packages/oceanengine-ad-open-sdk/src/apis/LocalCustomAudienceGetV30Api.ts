@@ -8,7 +8,7 @@ import type { LocalCustomAudienceGetV30Response, LocalCustomAudienceGetV30TagsTy
 
 
 export interface OpenApiV30LocalCustomAudienceGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   tagsType?: LocalCustomAudienceGetV30TagsType;
   page?: number;
   pageSize?: number;

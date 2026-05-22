@@ -4,7 +4,7 @@
 import type { QianchuanUniAwemeAdCreateV10ProgrammaticCreativeMediaListVideoMaterialImageMode, QianchuanUniAwemeAdCreateV10ProgrammaticCreativeMediaListVideoMaterialStarTraffic } from "../models";
 
 export interface QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaListVideoMaterialInner {
-  aweme_item_id?: number;
+  aweme_item_id?: number | string;
   image_mode?: QianchuanUniAwemeAdCreateV10ProgrammaticCreativeMediaListVideoMaterialImageMode;
   star_traffic?: QianchuanUniAwemeAdCreateV10ProgrammaticCreativeMediaListVideoMaterialStarTraffic;
   video_cover_id?: string;

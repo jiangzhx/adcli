@@ -8,11 +8,11 @@ import type { StarDemandMixListGetV2Response } from "../models";
 
 
 export interface OpenApi2StarDemandMixListGetGetRequest {
-  starId: number;
-  demandId: number;
+  starId: number | string;
+  demandId: number | string;
   page?: number;
   pageSize?: number;
-  developerId?: number;
+  developerId?: number | string;
 }
 
 export class StarDemandMixListGetV2Api {

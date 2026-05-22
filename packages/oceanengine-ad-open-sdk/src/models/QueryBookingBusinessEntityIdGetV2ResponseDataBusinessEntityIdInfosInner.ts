@@ -3,8 +3,8 @@
 
 export interface QueryBookingBusinessEntityIdGetV2ResponseDataBusinessEntityIdInfosInner {
   business_entity_id?: string;
-  cart_id?: number;
+  cart_id?: number | string;
   cart_name?: string;
-  order_id?: number;
+  order_id?: number | string;
 }
 

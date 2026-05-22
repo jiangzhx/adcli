@@ -4,7 +4,7 @@
 import type { PromotionAutoGenerateConfigGetV30DataTemplatesTemplateType, PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInnerTemplateImgSchemaInner, PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInnerTemplateTextSchemaInner } from "../models";
 
 export interface PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInner {
-  template_id: number;
+  template_id: number | string;
   template_img_schema?: PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInnerTemplateImgSchemaInner[];
   template_text_schema?: PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInnerTemplateTextSchemaInner[];
   template_type: PromotionAutoGenerateConfigGetV30DataTemplatesTemplateType;

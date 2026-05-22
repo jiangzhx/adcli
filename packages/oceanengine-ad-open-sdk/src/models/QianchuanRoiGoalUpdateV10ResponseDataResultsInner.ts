@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanRoiGoalUpdateV10ResponseDataResultsInner {
-  ad_id?: number;
+  ad_id?: number | string;
   error_message?: string;
   flag: boolean;
 }

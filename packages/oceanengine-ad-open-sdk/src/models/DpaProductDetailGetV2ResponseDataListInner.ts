@@ -12,8 +12,8 @@ export interface DpaProductDetailGetV2ResponseDataListInner {
   name?: string;
   offline_time?: string;
   online_time?: string;
-  platform_id?: number;
-  product_id?: number;
+  platform_id?: number | string;
+  product_id?: number | string;
   sub_category?: string;
   tags?: string[];
   third_category?: string;

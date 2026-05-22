@@ -4,8 +4,8 @@
 import type { QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10OptType } from "../models";
 
 export interface QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request {
-  ad_id: number;
-  advertiser_id: number;
+  ad_id: number | string;
+  advertiser_id: number | string;
   opt_type: QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10OptType;
 }
 

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsEventAssetsGetV2ResponseDataLandingPagesInner {
-  asset_id?: number;
+  asset_id?: number | string;
   asset_name?: string;
 }
 

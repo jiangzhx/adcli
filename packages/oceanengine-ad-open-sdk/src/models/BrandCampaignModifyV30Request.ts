@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface BrandCampaignModifyV30Request {
-  advertiser_id: number;
-  campaign_id?: number;
+  advertiser_id: number | string;
+  campaign_id?: number | string;
 }
 

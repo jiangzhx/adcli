@@ -8,8 +8,8 @@ import type { QianchuanCarouselAwemeGetV10Filtering, QianchuanCarouselAwemeGetV1
 
 
 export interface OpenApiV10QianchuanCarouselAwemeGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   filtering?: QianchuanCarouselAwemeGetV10Filtering;
   cursor?: number;
   count?: number;

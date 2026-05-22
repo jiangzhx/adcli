@@ -9,7 +9,7 @@ import type { LocalFileVideoUploadV30RequestVideoFile, LocalFileVideoUploadV30Re
 
 export interface OpenApiV30LocalFileVideoUploadPostRequest {
   filename: string;
-  localAccountId: number;
+  localAccountId: number | string;
   videoFile: LocalFileVideoUploadV30RequestVideoFile;
   videoSignature: string;
 }

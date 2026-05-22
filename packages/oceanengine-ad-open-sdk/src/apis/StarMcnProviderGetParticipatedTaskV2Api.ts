@@ -8,7 +8,7 @@ import type { StarMcnProviderGetParticipatedTaskV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnProviderGetParticipatedTaskGetRequest {
-  starId: number;
+  starId: number | string;
   page: number;
   pageSize: number;
   providerOrderTaskStatus?: number;

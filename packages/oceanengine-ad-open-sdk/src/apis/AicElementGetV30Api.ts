@@ -8,7 +8,7 @@ import type { AicElementGetV30AccountType, AicElementGetV30Filtering, AicElement
 
 
 export interface OpenApiV30AicElementGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: AicElementGetV30AccountType;
   filtering?: AicElementGetV30Filtering;
   page?: number;

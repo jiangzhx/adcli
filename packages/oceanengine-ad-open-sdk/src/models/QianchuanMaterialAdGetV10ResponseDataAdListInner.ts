@@ -4,7 +4,7 @@
 import type { QianchuanMaterialAdGetV10ResponseDataAdListInnerMetrics } from "../models";
 
 export interface QianchuanMaterialAdGetV10ResponseDataAdListInner {
-  ad_id?: number;
+  ad_id?: number | string;
   ad_name?: string;
   metrics?: QianchuanMaterialAdGetV10ResponseDataAdListInnerMetrics;
 }

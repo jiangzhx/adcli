@@ -8,7 +8,7 @@ import type { SpiTaskGetV2Response, SpiTaskGetV2Status } from "../models";
 
 
 export interface OpenApi2SpiTaskGetGetRequest {
-  appId?: number;
+  appId?: number | string;
   count?: number;
   cursor?: number;
   endDate?: string;
@@ -17,7 +17,7 @@ export interface OpenApi2SpiTaskGetGetRequest {
   serviceLabel?: string;
   startDate?: string;
   status?: SpiTaskGetV2Status;
-  subscribeId?: number;
+  subscribeId?: number | string;
 }
 
 export class SpiTaskGetV2Api {

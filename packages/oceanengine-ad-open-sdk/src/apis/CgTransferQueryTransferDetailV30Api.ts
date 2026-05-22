@@ -9,7 +9,7 @@ import type { CgTransferQueryTransferDetailV30Response } from "../models";
 
 export interface OpenApiV30CgTransferQueryTransferDetailGetRequest {
   bizRequestNo: string;
-  agentId: number;
+  agentId: number | string;
   transferBizRequestNo?: string;
   transferSerial?: string;
 }

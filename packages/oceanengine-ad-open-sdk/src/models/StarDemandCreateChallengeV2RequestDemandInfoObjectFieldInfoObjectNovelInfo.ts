@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarDemandCreateChallengeV2RequestDemandInfoObjectFieldInfoObjectNovelInfo {
-  novel_id?: number;
+  novel_id?: number | string;
 }
 

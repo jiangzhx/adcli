@@ -8,7 +8,7 @@ import type { StarVasGetBoostGroupOptionsV2Response } from "../models";
 
 
 export interface OpenApi2StarVasGetBoostGroupOptionsGetRequest {
-  starId: number;
+  starId: number | string;
 }
 
 export class StarVasGetBoostGroupOptionsV2Api {

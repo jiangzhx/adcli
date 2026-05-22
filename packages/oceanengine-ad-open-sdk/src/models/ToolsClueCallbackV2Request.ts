@@ -4,7 +4,7 @@
 import type { ToolsClueCallbackV2RequestEventData } from "../models";
 
 export interface ToolsClueCallbackV2Request {
-  advertiser_ids: number[];
+  advertiser_ids: number | string[];
   click_id?: string;
   clue_convert_state: number;
   clue_id?: string;

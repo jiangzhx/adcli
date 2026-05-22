@@ -8,8 +8,8 @@ import type { ClueFormDetailV2Response } from "../models";
 
 
 export interface OpenApi2ClueFormDetailGetRequest {
-  advertiserId?: number;
-  instanceId?: number;
+  advertiserId?: number | string;
+  instanceId?: number | string;
 }
 
 export class ClueFormDetailV2Api {

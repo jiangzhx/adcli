@@ -9,7 +9,7 @@ export interface PromotionListV30ResponseDataListInnerPromotionMaterialsTrialPla
   file_name?: string;
   guide_video_id?: string;
   image_mode?: PromotionListV30DataListPromotionMaterialsTrialPlayMaterialListImageMode;
-  material_id?: number;
+  material_id?: number | string;
   material_opt_status?: PromotionListV30DataListPromotionMaterialsTrialPlayMaterialListMaterialOptStatus;
   material_status?: PromotionListV30DataListPromotionMaterialsTrialPlayMaterialListMaterialStatus;
 }

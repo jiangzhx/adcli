@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarDemanderGetCarBrandListV2ResponseDataCarBrandListInnerCarSeriesListInner {
-  series_id?: number;
+  series_id?: number | string;
   series_name?: string;
 }
 

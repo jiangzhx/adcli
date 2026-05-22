@@ -6,7 +6,7 @@ import type { QianchuanAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMater
 export interface QianchuanAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterial {
   cover_image?: QianchuanAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterialCoverImage;
   image_mode?: QianchuanAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialImageMode;
-  material_id?: number;
+  material_id?: number | string;
   source?: QianchuanAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialSource;
   title?: string;
   video_duration?: number;

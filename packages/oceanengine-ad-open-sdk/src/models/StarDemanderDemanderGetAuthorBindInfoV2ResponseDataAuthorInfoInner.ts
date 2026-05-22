@@ -5,6 +5,6 @@ export interface StarDemanderDemanderGetAuthorBindInfoV2ResponseDataAuthorInfoIn
   biz_uid?: string;
   douyin_id?: string;
   nick_name?: string;
-  star_id?: number;
+  star_id?: number | string;
 }
 

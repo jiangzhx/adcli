@@ -4,7 +4,7 @@
 import type { AicMaterialGetV30ResponseDataMaterialsInnerVideoInfo } from "../models";
 
 export interface AicMaterialGetV30ResponseDataMaterialsInner {
-  material_id?: number;
+  material_id?: number | string;
   material_name?: string;
   video_info?: AicMaterialGetV30ResponseDataMaterialsInnerVideoInfo;
 }

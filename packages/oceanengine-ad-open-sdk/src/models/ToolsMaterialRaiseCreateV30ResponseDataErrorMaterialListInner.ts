@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsMaterialRaiseCreateV30ResponseDataErrorMaterialListInner {
-  error_material_id?: number;
+  error_material_id?: number | string;
   error_message?: string;
 }
 

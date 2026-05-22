@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface CarouselDeleteV2ResponseData {
-  failed_ids?: number[];
+  failed_ids?: number | string[];
   success_list?: number[];
 }
 

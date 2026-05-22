@@ -3,7 +3,7 @@
 
 export interface DmpDataSourceReadV2ResponseDataDataListInnerChangeLogsInner {
   action?: number;
-  change_log_id?: number;
+  change_log_id?: number | string;
   create_time?: string;
   file_paths?: string[];
   message?: string;

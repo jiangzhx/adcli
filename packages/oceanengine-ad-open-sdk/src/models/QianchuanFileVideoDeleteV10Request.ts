@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanFileVideoDeleteV10Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   video_ids: string[];
 }
 

@@ -8,7 +8,7 @@ import type { ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope, ToolsApp
 
 
 export interface OpenApi2ToolsAppManagementHarmonyAppListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsAppManagementHarmonyAppListV2AccountType;
   page?: number;
   pageSize?: number;

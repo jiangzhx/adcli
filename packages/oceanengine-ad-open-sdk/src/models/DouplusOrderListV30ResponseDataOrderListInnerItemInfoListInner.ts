@@ -6,7 +6,7 @@ export interface DouplusOrderListV30ResponseDataOrderListInnerItemInfoListInner 
   aweme_author_name?: string;
   aweme_author_unique_id?: string;
   aweme_item_cover?: string[];
-  aweme_item_id?: number;
+  aweme_item_id?: number | string;
   aweme_item_title?: string;
 }
 

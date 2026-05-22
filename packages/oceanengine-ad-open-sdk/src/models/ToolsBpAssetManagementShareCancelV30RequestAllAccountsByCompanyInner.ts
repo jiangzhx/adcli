@@ -5,6 +5,6 @@ import type { ToolsBpAssetManagementShareCancelV30AllAccountsByCompanyAccountTyp
 
 export interface ToolsBpAssetManagementShareCancelV30RequestAllAccountsByCompanyInner {
   account_type: ToolsBpAssetManagementShareCancelV30AllAccountsByCompanyAccountType;
-  company_id: number;
+  company_id: number | string;
 }
 

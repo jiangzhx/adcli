@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsClueRefundReportGetV2ResponseData {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   advertiser_name?: string;
   call_clue_cnt?: number;
   call_duration_all?: number;

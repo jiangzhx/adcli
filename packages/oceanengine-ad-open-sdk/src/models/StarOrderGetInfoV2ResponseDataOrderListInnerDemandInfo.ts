@@ -18,14 +18,14 @@ export interface StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfo {
   expiration_time?: number;
   expiration_time_end?: number;
   ignore_script?: number;
-  ip_act_id?: number;
+  ip_act_id?: number | string;
   product_industry?: string[];
   product_information?: string;
   product_link?: string;
   product_name?: string;
-  project_id?: number;
+  project_id?: number | string;
   xingzhitou_pre_audit?: number;
-  yuntu_industry_ids?: number[];
+  yuntu_industry_ids?: number | string[];
   yuntu_main_brand?: number;
 }
 

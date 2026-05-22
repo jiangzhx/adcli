@@ -22,7 +22,7 @@ export interface QianchuanTodayLiveRoomProductListGetV10ResponseDataListInner {
   live_product_price?: number;
   luban_live_pay_order_count?: number;
   luban_live_pay_order_gmv?: number;
-  productId?: number;
+  productId?: number | string;
   product_click_pay_ucnt_ratio?: number;
   title?: string;
   total_live_pay_order_gpm_ecom?: number;

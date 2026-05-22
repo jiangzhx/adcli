@@ -8,7 +8,7 @@ import type { QianchuanLqAdGetV10Filtering, QianchuanLqAdGetV10Response } from "
 
 
 export interface OpenApiV10QianchuanLqAdGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: QianchuanLqAdGetV10Filtering;
 }
 

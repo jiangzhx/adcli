@@ -3,7 +3,7 @@
 
 export interface QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoImageMaterialImagesInner {
   height?: number;
-  id?: number;
+  id?: number | string;
   image_url?: string;
   width?: number;
 }

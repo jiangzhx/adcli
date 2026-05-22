@@ -2,9 +2,9 @@
 // Do not edit manually.
 
 export interface ToolsEventAssetsGetV2ResponseDataQuickAppInner {
-  asset_id?: number;
+  asset_id?: number | string;
   asset_name?: string;
   package_name?: string;
-  quick_app_id?: number;
+  quick_app_id?: number | string;
 }
 

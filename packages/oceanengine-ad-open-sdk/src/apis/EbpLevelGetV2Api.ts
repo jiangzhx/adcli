@@ -8,7 +8,7 @@ import type { EbpLevelGetV2Response } from "../models";
 
 
 export interface OpenApi2EbpLevelGetGetRequest {
-  enterpriseOrganizationId: number;
+  enterpriseOrganizationId: number | string;
 }
 
 export class EbpLevelGetV2Api {

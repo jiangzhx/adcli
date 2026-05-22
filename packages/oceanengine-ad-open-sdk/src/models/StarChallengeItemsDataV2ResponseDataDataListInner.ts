@@ -12,14 +12,14 @@ export interface StarChallengeItemsDataV2ResponseDataDataListInner {
   iaa_bill?: number;
   iap_bill?: number;
   ios_activate_cnt?: number;
-  item_id?: number;
+  item_id?: number | string;
   like_cnt?: number;
   link?: string;
   mid?: number;
   native_playlet_album_id?: string;
   pay_amount_estimated?: number;
   play_vv?: number;
-  playlet_id?: number;
+  playlet_id?: number | string;
   playlet_name?: string;
   promote_cnt?: number;
   release_time?: number;

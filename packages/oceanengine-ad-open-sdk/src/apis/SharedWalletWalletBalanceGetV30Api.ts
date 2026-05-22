@@ -8,7 +8,7 @@ import type { SharedWalletWalletBalanceGetV30AccountType, SharedWalletWalletBala
 
 
 export interface OpenApiV30SharedWalletWalletBalanceGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: SharedWalletWalletBalanceGetV30AccountType;
   walletIdList: number[];
   walletBalanceFilters?: SharedWalletWalletBalanceGetV30WalletBalanceFilters;

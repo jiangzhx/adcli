@@ -4,7 +4,7 @@
 import type { ToolsEbpMicroAppletCreateV30AccountType, ToolsEbpMicroAppletCreateV30RequestSchemaInfoInner } from "../models";
 
 export interface ToolsEbpMicroAppletCreateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpMicroAppletCreateV30AccountType;
   app_id: string;
   data: Record<string, string>;

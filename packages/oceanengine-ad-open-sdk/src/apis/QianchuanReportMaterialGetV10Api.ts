@@ -10,7 +10,7 @@ import type { QianchuanReportMaterialGetV10Filtering, QianchuanReportMaterialGet
 export interface OpenApiV10QianchuanReportMaterialGetGetRequest {
   startDate: string;
   endDate: string;
-  advertiserId: number;
+  advertiserId: number | string;
   fields: string[];
   orderType?: QianchuanReportMaterialGetV10OrderType;
   orderField?: string;

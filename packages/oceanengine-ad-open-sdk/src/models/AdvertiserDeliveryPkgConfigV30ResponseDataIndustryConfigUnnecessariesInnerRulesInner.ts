@@ -6,7 +6,7 @@ import type { AdvertiserDeliveryPkgConfigV30DataIndustryConfigUnnecessariesRules
 export interface AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInnerRulesInner {
   description: string;
   qual_types: AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInnerRulesInnerQualTypesInner[];
-  rule_id: number;
+  rule_id: number | string;
   type: AdvertiserDeliveryPkgConfigV30DataIndustryConfigUnnecessariesRulesType;
 }
 

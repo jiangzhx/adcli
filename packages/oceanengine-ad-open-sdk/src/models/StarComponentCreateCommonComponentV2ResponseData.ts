@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarComponentCreateCommonComponentV2ResponseData {
-  common_component_id?: number;
+  common_component_id?: number | string;
 }
 

@@ -4,8 +4,8 @@
 import type { EventManagerTrackUrlCreateV2RequestTrackUrlGroupsInner } from "../models";
 
 export interface EventManagerTrackUrlCreateV2Request {
-  advertiser_id: number;
-  assets_id: number;
+  advertiser_id: number | string;
+  assets_id: number | string;
   download_url?: string;
   track_url_groups: EventManagerTrackUrlCreateV2RequestTrackUrlGroupsInner[];
 }

@@ -6,7 +6,7 @@ import type { BudgetGroupListV30DataBudgetGroupsAdType, BudgetGroupListV30DataBu
 export interface BudgetGroupListV30ResponseDataBudgetGroupsInner {
   ad_type?: BudgetGroupListV30DataBudgetGroupsAdType;
   budget_group_budget?: number;
-  budget_group_id?: number;
+  budget_group_id?: number | string;
   budget_group_name?: string;
   budget_group_status_first?: BudgetGroupListV30DataBudgetGroupsBudgetGroupStatusFirst;
   budget_group_status_second?: BudgetGroupListV30DataBudgetGroupsBudgetGroupStatusSecond[];

@@ -8,7 +8,7 @@ import type { ToolsWechatAppletListV30AccountAssetQueryScope, ToolsWechatAppletL
 
 
 export interface OpenApiV30ToolsWechatAppletListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: ToolsWechatAppletListV30Filtering;
   page?: number;
   pageSize?: number;

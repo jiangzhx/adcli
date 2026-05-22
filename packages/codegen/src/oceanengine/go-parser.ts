@@ -66,7 +66,7 @@ function parseRequestFields(fieldsSource: string) {
       }
       return {
         name: match[1],
-        javaType: toJavaLikeType(match[2].trim()),
+        javaType: toJavaLikeType(match[2].trim(), match[1]),
       };
     });
 }
@@ -88,7 +88,7 @@ function parseModelFields(fieldsSource: string) {
       return {
         jsonName,
         javaName: lowerFirst(match[1]),
-        javaType: toJavaLikeType(match[2].trim()),
+        javaType: toJavaLikeType(match[2].trim(), jsonName),
         required: !tagOptions.includes("omitempty"),
       };
     })
@@ -128,7 +128,7 @@ function parseStringArray(source: string, pattern: RegExp): string[] {
   return [...match[1].matchAll(/"([^"]+)"/g)].map((item) => item[1]);
 }
 
-function toJavaLikeType(goType: string): string {
+function toJavaLikeType(goType: string, nameHint?: string): string {
   let normalized = goType.trim();
   normalized = normalized.replace(/^&/, "");
   while (normalized.startsWith("*")) {
@@ -138,7 +138,7 @@ function toJavaLikeType(goType: string): string {
     return "byte[]";
   }
   if (normalized.startsWith("[]")) {
-    return `List<${toJavaLikeType(normalized.slice(2))}>`;
+    return `List<${toJavaLikeType(normalized.slice(2), nameHint)}>`;
   }
   if (normalized.startsWith("map[string]")) {
     return `Map<String, ${toJavaLikeType(normalized.slice("map[string]".length))}>`;
@@ -150,7 +150,7 @@ function toJavaLikeType(goType: string): string {
     case "int32":
       return "Integer";
     case "int64":
-      return "Long";
+      return isUnsafeIntegerName(nameHint) ? "LongString" : "Long";
     case "float32":
       return "Float";
     case "float64":
@@ -168,6 +168,13 @@ function toJavaLikeType(goType: string): string {
     default:
       return normalized;
   }
+}
+
+function isUnsafeIntegerName(name?: string) {
+  if (!name) {
+    return false;
+  }
+  return /^(?:id|ids)$/i.test(name) || /[_-]ids?$/i.test(name) || /Ids?$/.test(name);
 }
 
 function stripEnumSuffix(key: string, enumName: string) {

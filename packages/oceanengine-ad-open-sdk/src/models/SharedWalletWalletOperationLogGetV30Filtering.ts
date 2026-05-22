@@ -4,7 +4,7 @@
 import type { SharedWalletWalletOperationLogGetV30FilteringOperationTypeList, SharedWalletWalletOperationLogGetV30FilteringStatusFilter } from "../models";
 
 export interface SharedWalletWalletOperationLogGetV30Filtering {
-  operation_id?: number;
+  operation_id?: number | string;
   operation_type_list?: SharedWalletWalletOperationLogGetV30FilteringOperationTypeList[];
   status_filter?: SharedWalletWalletOperationLogGetV30FilteringStatusFilter;
 }

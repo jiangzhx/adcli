@@ -4,8 +4,8 @@
 import type { ToolsJointBidUpdateV30RequestJointScopeInfo } from "../models";
 
 export interface ToolsJointBidUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   joint_scope_info?: ToolsJointBidUpdateV30RequestJointScopeInfo;
-  rta_id?: number[];
+  rta_id?: number | string[];
 }
 

@@ -3,6 +3,6 @@
 
 export interface PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerTitleMaterial {
   content?: string;
-  material_id?: number;
+  material_id?: number | string;
 }
 

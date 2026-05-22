@@ -17,9 +17,9 @@ export interface ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner {
   in_app_stat_cost_range_t1?: number[];
   install_finish_cnt?: number;
   ios_convert_cnt?: number;
-  isv_id?: number;
+  isv_id?: number | string;
   isv_name?: string;
-  material_id?: number;
+  material_id?: number | string;
   non_ad_stat_cost?: number;
   star_active_count?: number;
   star_active_pay_count?: number;
@@ -37,7 +37,7 @@ export interface ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner {
   star_material_type?: ReportStardeliveryTaskVideoDataGetV30DataListStarMaterialType;
   star_sale_material_stat_cost?: number;
   star_stat_cost?: number;
-  star_task_id?: number;
+  star_task_id?: number | string;
   star_video_material_assessment?: ReportStardeliveryTaskVideoDataGetV30DataListStarVideoMaterialAssessment[];
   star_video_relate_promotion_count?: number;
   star_video_status?: ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus;

@@ -5,6 +5,6 @@ import type { AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgNecessaryCombine
 
 export interface AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgNecessaryCombineDeliveryRulesInner {
   deliveries: AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgNecessaryCombineDeliveryRulesInnerDeliveriesInner[];
-  rule_id: number;
+  rule_id: number | string;
 }
 

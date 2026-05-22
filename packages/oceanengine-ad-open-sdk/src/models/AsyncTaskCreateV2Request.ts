@@ -4,7 +4,7 @@
 import type { AsyncTaskCreateV2RequestTaskParams, AsyncTaskCreateV2TaskType } from "../models";
 
 export interface AsyncTaskCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   force?: boolean;
   task_name: string;
   task_params: AsyncTaskCreateV2RequestTaskParams;

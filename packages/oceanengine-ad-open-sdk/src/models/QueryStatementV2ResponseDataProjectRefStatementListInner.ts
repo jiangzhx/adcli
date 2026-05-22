@@ -7,11 +7,11 @@ export interface QueryStatementV2ResponseDataProjectRefStatementListInner {
   archive_status?: number;
   archive_status_name?: string;
   attach_list?: QueryStatementV2ResponseDataProjectRefStatementListInnerAttachListInner[];
-  project_id?: number;
+  project_id?: number | string;
   ref_statement_amount?: string;
   stamp_status?: number;
   stamp_status_name?: string;
-  statement_id?: number;
+  statement_id?: number | string;
   statement_serial?: string;
   status?: number;
   status_name?: string;

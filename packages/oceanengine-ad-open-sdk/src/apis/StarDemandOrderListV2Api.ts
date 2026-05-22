@@ -8,8 +8,8 @@ import type { StarDemandOrderListV2Filtering, StarDemandOrderListV2Response } fr
 
 
 export interface OpenApi2StarDemandOrderListGetRequest {
-  starId: number;
-  demandId: number;
+  starId: number | string;
+  demandId: number | string;
   filtering?: StarDemandOrderListV2Filtering;
   page?: number;
   pageSize?: number;

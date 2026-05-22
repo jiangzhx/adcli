@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarBillGetPendingV2ResponseDataOrderBillListInner {
-  order_id?: number;
+  order_id?: number | string;
   platform_fee?: number;
   precise_platform_fee?: number;
   precise_remaining?: number;

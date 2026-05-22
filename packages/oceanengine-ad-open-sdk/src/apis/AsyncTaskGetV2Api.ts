@@ -8,7 +8,7 @@ import type { AsyncTaskGetV2Filtering, AsyncTaskGetV2Response } from "../models"
 
 
 export interface OpenApi2AsyncTaskGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: AsyncTaskGetV2Filtering;
   page?: number;
   pageSize?: number;

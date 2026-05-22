@@ -8,13 +8,13 @@ import type { StarVasGetBoostGroupListV2Response, StarVasGetBoostGroupListV2Stat
 
 
 export interface OpenApi2StarVasGetBoostGroupListGetRequest {
-  starId: number;
+  starId: number | string;
   page: number;
   limit: number;
   status?: StarVasGetBoostGroupListV2Status;
   ltCreateTime?: number;
   gtCreateTime?: number;
-  itemOrderId?: number;
+  itemOrderId?: number | string;
 }
 
 export class StarVasGetBoostGroupListV2Api {

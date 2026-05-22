@@ -4,10 +4,10 @@
 import type { ToolsEventAssetsGetV2DataAppAppType, ToolsEventAssetsGetV2DataAppRole } from "../models";
 
 export interface ToolsEventAssetsGetV2ResponseDataAppInner {
-  app_id?: number;
+  app_id?: number | string;
   app_name?: string;
   app_type?: ToolsEventAssetsGetV2DataAppAppType;
-  asset_id?: number;
+  asset_id?: number | string;
   asset_name?: string;
   download_url?: string;
   package_id?: string;

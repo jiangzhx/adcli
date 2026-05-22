@@ -4,7 +4,7 @@
 import type { EventManagerAssetsCreateV2AssetType, EventManagerAssetsCreateV2RequestAppAsset, EventManagerAssetsCreateV2RequestMiniProgramAsset, EventManagerAssetsCreateV2RequestQuickAppAsset, EventManagerAssetsCreateV2RequestSiteAsset, EventManagerAssetsCreateV2RequestThirdPartAsset } from "../models";
 
 export interface EventManagerAssetsCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   app_asset?: EventManagerAssetsCreateV2RequestAppAsset;
   asset_type: EventManagerAssetsCreateV2AssetType;
   mini_program_asset?: EventManagerAssetsCreateV2RequestMiniProgramAsset;

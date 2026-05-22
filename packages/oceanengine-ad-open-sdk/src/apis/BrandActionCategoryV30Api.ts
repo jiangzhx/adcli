@@ -8,7 +8,7 @@ import type { BrandActionCategoryV30Response } from "../models";
 
 
 export interface OpenApiV30BrandActionCategoryGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class BrandActionCategoryV30Api {

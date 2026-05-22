@@ -5,8 +5,8 @@ import type { ToolsSiteTemplateGetV2ResponseDataListInnerBricksInner } from "../
 
 export interface ToolsSiteTemplateGetV2ResponseDataListInner {
   bricks?: ToolsSiteTemplateGetV2ResponseDataListInnerBricksInner[];
-  site_id?: number;
-  template_id?: number;
+  site_id?: number | string;
+  template_id?: number | string;
   template_name?: string;
 }
 

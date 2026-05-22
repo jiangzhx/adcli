@@ -5,7 +5,7 @@ import type { BrandActionCategoryV30ResponseDataActionCategoryListInnerChildrenI
 
 export interface BrandActionCategoryV30ResponseDataActionCategoryListInner {
   children?: BrandActionCategoryV30ResponseDataActionCategoryListInnerChildrenInner[];
-  id?: number;
+  id?: number | string;
   name?: string;
 }
 

@@ -8,7 +8,7 @@ import type { GameplayListV30AccountType, GameplayListV30AssetType, GameplayList
 
 
 export interface OpenApiV30GameplayListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: GameplayListV30AccountType;
   assetId: string;
   assetType: GameplayListV30AssetType;

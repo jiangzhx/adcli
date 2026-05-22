@@ -8,8 +8,8 @@ import type { ToolsClueInfoGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsClueInfoGetGetRequest {
-  advertiserIds: number[];
-  clueIds: number[];
+  advertiserIds: number | string[];
+  clueIds: number | string[];
 }
 
 export class ToolsClueInfoGetV2Api {

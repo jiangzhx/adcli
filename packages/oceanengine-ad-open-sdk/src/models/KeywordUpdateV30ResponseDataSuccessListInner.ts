@@ -7,9 +7,9 @@ export interface KeywordUpdateV30ResponseDataSuccessListInner {
   bid?: number;
   bid_type?: KeywordUpdateV30DataSuccessListBidType;
   is_pause?: number;
-  keyword_id?: number;
+  keyword_id?: number | string;
   match_type?: KeywordUpdateV30DataSuccessListMatchType;
   word?: string;
-  word_id?: number;
+  word_id?: number | string;
 }
 

@@ -4,7 +4,7 @@
 import type { AssetsCreativeComponentCreateV2RequestComponentInfo } from "../models";
 
 export interface AssetsCreativeComponentCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   component_info: AssetsCreativeComponentCreateV2RequestComponentInfo;
 }
 

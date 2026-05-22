@@ -7,7 +7,7 @@ export interface SharedWalletWalletInfoGetV30ResponseDataWalletInfoInner {
   common_wallet_info?: SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerCommonWalletInfo;
   main_wallet_info?: SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfo;
   sub_wallet_info?: SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfo;
-  wallet_id?: number;
+  wallet_id?: number | string;
   wallet_type?: SharedWalletWalletInfoGetV30DataWalletInfoWalletType;
 }
 

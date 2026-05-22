@@ -8,7 +8,7 @@ import type { ServeMarketOrderGetV10Filtering, ServeMarketOrderGetV10Response } 
 
 
 export interface OpenApiV10ServeMarketOrderGetGetRequest {
-  appId?: number;
+  appId?: number | string;
   filtering?: ServeMarketOrderGetV10Filtering;
   page?: number;
   pageSize?: number;

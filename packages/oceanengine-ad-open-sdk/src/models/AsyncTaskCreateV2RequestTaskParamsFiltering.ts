@@ -2,12 +2,12 @@
 // Do not edit manually.
 
 export interface AsyncTaskCreateV2RequestTaskParamsFiltering {
-  ad_id?: number[];
+  ad_id?: number | string[];
   bidword?: string[];
-  campaign_id?: number[];
+  campaign_id?: number | string[];
   campaign_type?: string[];
   convert_type?: string[];
-  creative_id?: number[];
+  creative_id?: number | string[];
   creative_material_mode?: string[];
   image_mode?: string[];
   inventory_type?: string[];

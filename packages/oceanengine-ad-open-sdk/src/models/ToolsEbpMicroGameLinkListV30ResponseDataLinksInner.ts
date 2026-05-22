@@ -9,12 +9,12 @@ export interface ToolsEbpMicroGameLinkListV30ResponseDataLinksInner {
   audit_status?: ToolsEbpMicroGameLinkListV30DataLinksAuditStatus;
   create_time?: string;
   icon?: string;
-  instance_id?: number;
+  instance_id?: number | string;
   is_ebp_asset?: boolean;
   link?: string;
-  link_id?: number;
+  link_id?: number | string;
   modify_time?: string;
-  owner_account_id?: number;
+  owner_account_id?: number | string;
   owner_account_type?: ToolsEbpMicroGameLinkListV30DataLinksOwnerAccountType;
   remark?: string;
   start_page?: string;

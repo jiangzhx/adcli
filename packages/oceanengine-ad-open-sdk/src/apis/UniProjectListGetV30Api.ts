@@ -8,7 +8,7 @@ import type { UniProjectListGetV30Filtering, UniProjectListGetV30Response } from
 
 
 export interface OpenApiV30UniProjectListGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: UniProjectListGetV30Filtering;
   page?: number;
   pageSize?: number;

@@ -4,7 +4,7 @@
 import type { ToolsAwemeBannedDeleteV30BannedType } from "../models";
 
 export interface ToolsAwemeBannedDeleteV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   aweme_id?: string;
   aweme_user_ids?: string[];
   banned_type: ToolsAwemeBannedDeleteV30BannedType;

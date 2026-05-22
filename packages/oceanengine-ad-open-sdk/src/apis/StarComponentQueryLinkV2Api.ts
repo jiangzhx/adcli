@@ -8,11 +8,11 @@ import type { StarComponentQueryLinkV2Response } from "../models";
 
 
 export interface OpenApi2StarComponentQueryLinkGetRequest {
-  starId: number;
+  starId: number | string;
   componentStatus?: number;
   page?: number;
   limit?: number;
-  linkIds?: number[];
+  linkIds?: number | string[];
   linkType?: number;
 }
 

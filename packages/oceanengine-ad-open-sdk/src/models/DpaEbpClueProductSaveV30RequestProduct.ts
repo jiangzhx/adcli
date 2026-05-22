@@ -7,10 +7,10 @@ export interface DpaEbpClueProductSaveV30RequestProduct {
   age?: number[];
   bought?: number;
   brand_info?: DpaEbpClueProductSaveV30RequestProductBrandInfo;
-  category_id: number;
+  category_id: number | string;
   city?: string[];
   comments?: number;
-  company_id: number;
+  company_id: number | string;
   description?: string;
   feature?: string;
   image_url?: string;
@@ -24,7 +24,7 @@ export interface DpaEbpClueProductSaveV30RequestProduct {
   outer_id?: string;
   poi_id?: string;
   price_info?: DpaEbpClueProductSaveV30RequestProductPriceInfo;
-  product_id?: number;
+  product_id?: number | string;
   profession?: Record<string, string>;
   province?: string[];
   shop_keeper_info?: DpaEbpClueProductSaveV30RequestProductShopKeeperInfo;

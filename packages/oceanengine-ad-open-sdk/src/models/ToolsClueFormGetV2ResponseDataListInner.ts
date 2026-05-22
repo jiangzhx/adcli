@@ -4,12 +4,12 @@
 import type { ToolsClueFormGetV2DataListContainPhone, ToolsClueFormGetV2DataListFormType, ToolsClueFormGetV2DataListSubType } from "../models";
 
 export interface ToolsClueFormGetV2ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   contain_phone?: ToolsClueFormGetV2DataListContainPhone;
   create_time?: string;
   enable_layer?: boolean;
   form_type?: ToolsClueFormGetV2DataListFormType;
-  instance_id?: number;
+  instance_id?: number | string;
   is_del?: number;
   lighting_page_url?: string;
   name?: string;

@@ -7,8 +7,8 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 
 
 export interface OpenApi2AsyncTaskDownloadGetRequest {
-  advertiserId: number;
-  taskId: number;
+  advertiserId: number | string;
+  taskId: number | string;
   rangeFrom?: number;
   rangeTo?: number;
 }

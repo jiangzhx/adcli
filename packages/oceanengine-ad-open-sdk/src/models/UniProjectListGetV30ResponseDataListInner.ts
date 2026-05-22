@@ -4,7 +4,7 @@
 import type { UniProjectListGetV30DataListAigcDynamicCreativeSwitch, UniProjectListGetV30DataListMonetizationMode, UniProjectListGetV30DataListPricing, UniProjectListGetV30DataListScheduleType, UniProjectListGetV30DataListStatusFirst, UniProjectListGetV30DataListStatusSecond, UniProjectListGetV30ResponseDataListInnerAudience, UniProjectListGetV30ResponseDataListInnerBrandInfo, UniProjectListGetV30ResponseDataListInnerRelatedProduct } from "../models";
 
 export interface UniProjectListGetV30ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   aigc_dynamic_creative_switch?: UniProjectListGetV30DataListAigcDynamicCreativeSwitch;
   audience?: UniProjectListGetV30ResponseDataListInnerAudience;
   aweme_id?: string;
@@ -14,7 +14,7 @@ export interface UniProjectListGetV30ResponseDataListInner {
   monetization_mode?: UniProjectListGetV30DataListMonetizationMode;
   name?: string;
   pricing?: UniProjectListGetV30DataListPricing;
-  project_id?: number;
+  project_id?: number | string;
   related_product?: UniProjectListGetV30ResponseDataListInnerRelatedProduct;
   schedule_time?: string;
   schedule_type?: UniProjectListGetV30DataListScheduleType;

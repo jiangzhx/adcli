@@ -3,7 +3,7 @@
 
 export interface StarOrderGetComponentV2ResponseDataOrderComponentListInnerLinkComponentListInner {
   audit_reject_reason?: string;
-  component_id?: number;
+  component_id?: number | string;
   download_url_android?: string;
   download_url_ios?: string;
   landing_url_android?: string;

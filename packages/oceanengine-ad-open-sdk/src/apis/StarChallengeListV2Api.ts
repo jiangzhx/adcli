@@ -8,7 +8,7 @@ import type { StarChallengeListV2Response } from "../models";
 
 
 export interface OpenApi2StarChallengeListGetRequest {
-  starId: number;
+  starId: number | string;
   page?: number;
   limit?: number;
 }

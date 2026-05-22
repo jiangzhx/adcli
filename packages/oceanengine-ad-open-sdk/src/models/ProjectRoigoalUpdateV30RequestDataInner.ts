@@ -4,7 +4,7 @@
 import type { ProjectRoigoalUpdateV30RequestDataInnerShopMultiRoiGoalsInner } from "../models";
 
 export interface ProjectRoigoalUpdateV30RequestDataInner {
-  project_id: number;
+  project_id: number | string;
   roi_goal?: number;
   shop_multi_roi_goals?: ProjectRoigoalUpdateV30RequestDataInnerShopMultiRoiGoalsInner[];
 }

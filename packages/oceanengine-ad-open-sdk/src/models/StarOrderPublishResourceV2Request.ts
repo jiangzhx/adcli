@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface StarOrderPublishResourceV2Request {
-  order_id: number;
+  order_id: number | string;
   schedule_time?: number;
-  star_id: number;
+  star_id: number | string;
 }
 

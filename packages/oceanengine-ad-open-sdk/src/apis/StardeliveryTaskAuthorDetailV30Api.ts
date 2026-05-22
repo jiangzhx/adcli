@@ -8,8 +8,8 @@ import type { StardeliveryTaskAuthorDetailV30Filtering, StardeliveryTaskAuthorDe
 
 
 export interface OpenApiV30StardeliveryTaskAuthorDetailGetRequest {
-  advertiserId: number;
-  starTaskId: number;
+  advertiserId: number | string;
+  starTaskId: number | string;
   page?: number;
   pageSize?: number;
   filtering?: StardeliveryTaskAuthorDetailV30Filtering;

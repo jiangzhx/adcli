@@ -2,10 +2,10 @@
 // Do not edit manually.
 
 export interface FileMaterialBindV2ResponseDataFailListInner {
-  carousel_id?: number;
+  carousel_id?: number | string;
   fail_reason?: string;
   image_id?: string;
-  target_advertiser_id?: number;
+  target_advertiser_id?: number | string;
   video_id?: string;
 }
 

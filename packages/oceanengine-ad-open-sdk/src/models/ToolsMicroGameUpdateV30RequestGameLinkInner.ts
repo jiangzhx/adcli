@@ -4,7 +4,7 @@
 import type { ToolsMicroGameUpdateV30GameLinkOperateType } from "../models";
 
 export interface ToolsMicroGameUpdateV30RequestGameLinkInner {
-  id?: number;
+  id?: number | string;
   link: string;
   operate_type: ToolsMicroGameUpdateV30GameLinkOperateType;
   remark: string;

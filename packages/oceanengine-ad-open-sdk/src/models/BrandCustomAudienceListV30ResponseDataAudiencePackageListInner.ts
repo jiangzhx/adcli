@@ -6,7 +6,7 @@ import type { BrandCustomAudienceListV30DataAudiencePackageListCategory } from "
 export interface BrandCustomAudienceListV30ResponseDataAudiencePackageListInner {
   category?: BrandCustomAudienceListV30DataAudiencePackageListCategory;
   expire_time: number;
-  id: number;
+  id: number | string;
   name: string;
 }
 

@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface BrandToolMaterialPreviewV30ResponseData {
-  advertiser_id?: number;
-  material_id?: number;
+  advertiser_id?: number | string;
+  material_id?: number | string;
   preview_url?: string;
 }
 

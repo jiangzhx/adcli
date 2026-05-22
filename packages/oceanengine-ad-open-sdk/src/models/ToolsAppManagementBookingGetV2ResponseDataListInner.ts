@@ -4,13 +4,13 @@
 import type { ToolsAppManagementBookingGetV2DataListAccountType, ToolsAppManagementBookingGetV2DataListHistoryAccountType } from "../models";
 
 export interface ToolsAppManagementBookingGetV2ResponseDataListInner {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: ToolsAppManagementBookingGetV2DataListAccountType;
-  app_cloud_id?: number;
+  app_cloud_id?: number | string;
   app_name?: string;
   create_time?: string;
   download_url?: string;
-  history_account_id?: number;
+  history_account_id?: number | string;
   history_account_type?: ToolsAppManagementBookingGetV2DataListHistoryAccountType;
   icon_url?: string;
   is_ebp_asset?: boolean;

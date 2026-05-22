@@ -8,10 +8,10 @@ import type { YuntuAudienceInfoGetV30Response } from "../models";
 
 
 export interface OpenApiV30YuntuAudienceInfoGetGetRequest {
-  yuntuBrandId: number;
-  serviceProviderId: number;
-  advertiserId: number;
-  customAudienceId: number;
+  yuntuBrandId: number | string;
+  serviceProviderId: number | string;
+  advertiserId: number | string;
+  customAudienceId: number | string;
 }
 
 export class YuntuAudienceInfoGetV30Api {

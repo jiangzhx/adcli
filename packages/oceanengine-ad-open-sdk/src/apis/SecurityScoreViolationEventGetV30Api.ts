@@ -8,7 +8,7 @@ import type { SecurityScoreViolationEventGetV30BusinessLine, SecurityScoreViolat
 
 
 export interface OpenApiV30SecurityScoreViolationEventGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   businessLine: SecurityScoreViolationEventGetV30BusinessLine;
   filtering?: SecurityScoreViolationEventGetV30Filtering;
   page?: number;

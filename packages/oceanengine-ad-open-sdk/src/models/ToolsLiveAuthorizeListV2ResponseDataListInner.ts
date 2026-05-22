@@ -4,7 +4,7 @@
 import type { ToolsLiveAuthorizeListV2DataListStatus, ToolsLiveAuthorizeListV2ResponseDataListInnerLimitedPromotionTypesInner } from "../models";
 
 export interface ToolsLiveAuthorizeListV2ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   authorize_end_time?: string;
   authorize_start_time?: string;
   create_time?: string;

@@ -28,7 +28,7 @@ export interface CreativeCustomCreativeCreateV2RequestAdData {
   source?: string;
   sub_link_id_list?: number[];
   supplements?: CreativeCustomCreativeCreateV2RequestAdDataSupplementsInner[];
-  third_industry_id?: number;
+  third_industry_id?: number | string;
   web_url?: string;
 }
 

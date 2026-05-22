@@ -8,7 +8,7 @@ import type { SecurityScoreTotalGetV30BusinessLine, SecurityScoreTotalGetV30Filt
 
 
 export interface OpenApiV30SecurityScoreTotalGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   businessLine: SecurityScoreTotalGetV30BusinessLine;
   page?: number;
   pageSize?: number;

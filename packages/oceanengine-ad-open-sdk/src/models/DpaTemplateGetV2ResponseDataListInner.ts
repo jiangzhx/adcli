@@ -7,7 +7,7 @@ export interface DpaTemplateGetV2ResponseDataListInner {
   industry?: number;
   is_public?: boolean;
   template_data_list?: DpaTemplateGetV2ResponseDataListInnerTemplateDataListInner[];
-  template_id?: number;
+  template_id?: number | string;
   template_mode?: DpaTemplateGetV2DataListTemplateMode;
   template_name?: string;
 }

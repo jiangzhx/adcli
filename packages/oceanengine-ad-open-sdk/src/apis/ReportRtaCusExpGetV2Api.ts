@@ -8,9 +8,9 @@ import type { ReportRtaCusExpGetV2Response } from "../models";
 
 
 export interface OpenApi2ReportRtaCusExpGetGetRequest {
-  advertiserId: number;
-  rtaInterfaceId: number;
-  rtaId: number;
+  advertiserId: number | string;
+  rtaInterfaceId: number | string;
+  rtaId: number | string;
   rtaVid: string;
   startTime: string;
   endTime: string;

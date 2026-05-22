@@ -19,7 +19,7 @@ export interface StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo {
   create_time: string;
   demand_desc?: string;
   demand_icon?: string;
-  demand_id: number;
+  demand_id: number | string;
   demand_name: string;
   demander_name?: string;
   evaluate_type?: number;

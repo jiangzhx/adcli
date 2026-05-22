@@ -15,7 +15,7 @@ export interface StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequireme
   specified_isv_detail?: StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirementsSpecifiedIsvDetailInner[];
   title_mentions_aweme_id?: string;
   title_requirement?: string;
-  title_specifies_topic_ids?: number[];
+  title_specifies_topic_ids?: number | string[];
   video_reviewer?: StardeliveryTaskDetailV30DataStarTaskMaterialsRequirementsVideoReviewer;
   video_standards?: string;
   vo_requirement?: string;

@@ -8,8 +8,8 @@ import type { DpaClueProductDetailV2Response } from "../models";
 
 
 export interface OpenApi2DpaClueProductDetailGetRequest {
-  advertiserId: number;
-  productIds: number[];
+  advertiserId: number | string;
+  productIds: number | string[];
 }
 
 export class DpaClueProductDetailV2Api {

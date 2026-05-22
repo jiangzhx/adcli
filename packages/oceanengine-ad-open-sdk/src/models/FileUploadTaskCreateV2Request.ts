@@ -4,7 +4,7 @@
 import type { FileUploadTaskCreateV2AccountType } from "../models";
 
 export interface FileUploadTaskCreateV2Request {
-  account_id: number;
+  account_id: number | string;
   account_type: FileUploadTaskCreateV2AccountType;
   filename: string;
   is_aigc?: boolean;

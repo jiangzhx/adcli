@@ -4,7 +4,7 @@
 import type { QianchuanAdRejectReasonV10ResponseDataListInnerAuditRecordsInner } from "../models";
 
 export interface QianchuanAdRejectReasonV10ResponseDataListInner {
-  ad_id?: number;
+  ad_id?: number | string;
   audit_records?: QianchuanAdRejectReasonV10ResponseDataListInnerAuditRecordsInner[];
 }
 

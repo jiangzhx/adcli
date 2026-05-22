@@ -8,7 +8,7 @@ import type { AicMaterialGetV30AccountType, AicMaterialGetV30Filtering, AicMater
 
 
 export interface OpenApiV30AicMaterialGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: AicMaterialGetV30AccountType;
   filtering?: AicMaterialGetV30Filtering;
   page?: number;

@@ -8,7 +8,7 @@ import type { ReportSitePageV2InventoryType, ReportSitePageV2Response, ReportSit
 
 
 export interface OpenApi2ReportSitePageGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   inventoryType?: ReportSitePageV2InventoryType;
   siteId?: string;
   timeDuration?: ReportSitePageV2TimeDuration;

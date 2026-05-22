@@ -4,7 +4,7 @@
 import type { FileImageAdvertiserV2UploadTo, FileImageAdvertiserV2UploadType } from "../models";
 
 export interface FileImageAdvertiserV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   image_file?: File;
   image_signature?: string;
   image_url?: string;

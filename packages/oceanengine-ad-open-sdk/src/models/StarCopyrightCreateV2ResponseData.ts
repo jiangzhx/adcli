@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarCopyrightCreateV2ResponseData {
-  copyright_id?: number;
+  copyright_id?: number | string;
 }
 

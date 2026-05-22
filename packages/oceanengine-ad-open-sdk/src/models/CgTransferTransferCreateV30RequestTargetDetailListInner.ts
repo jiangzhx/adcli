@@ -4,7 +4,7 @@
 import type { CgTransferTransferCreateV30RequestTargetDetailListInnerTransferCapitalDetailListInner } from "../models";
 
 export interface CgTransferTransferCreateV30RequestTargetDetailListInner {
-  target_id: number;
+  target_id: number | string;
   transfer_capital_detail_list: CgTransferTransferCreateV30RequestTargetDetailListInnerTransferCapitalDetailListInner[];
 }
 

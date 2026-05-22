@@ -5,7 +5,7 @@ import type { UniProjectCreateV30VideoMaterialListImageMode, UniProjectCreateV30
 
 export interface UniProjectCreateV30RequestVideoMaterialListInner {
   image_mode: UniProjectCreateV30VideoMaterialListImageMode;
-  item_id?: number;
+  item_id?: number | string;
   video_cover_id?: string;
   video_hp_visibility?: UniProjectCreateV30VideoMaterialListVideoHpVisibility;
   video_id?: string;

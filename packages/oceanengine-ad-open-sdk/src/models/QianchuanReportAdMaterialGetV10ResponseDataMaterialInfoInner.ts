@@ -4,8 +4,8 @@
 import type { QianchuanReportAdMaterialGetV10ResponseDataMaterialInfoInnerMetrics } from "../models";
 
 export interface QianchuanReportAdMaterialGetV10ResponseDataMaterialInfoInner {
-  aweme_id?: number;
-  material_id?: number;
+  aweme_id?: number | string;
+  material_id?: number | string;
   metrics?: QianchuanReportAdMaterialGetV10ResponseDataMaterialInfoInnerMetrics;
 }
 

@@ -4,9 +4,9 @@
 import type { QianchuanReportSearchWordGetV10DataListKeywordMatchType } from "../models";
 
 export interface QianchuanReportSearchWordGetV10ResponseDataListInner {
-  ad_id?: number;
+  ad_id?: number | string;
   ad_name?: string;
-  campaign_id?: number;
+  campaign_id?: number | string;
   campaign_name?: string;
   click_cnt?: number;
   cpm_platform?: number;

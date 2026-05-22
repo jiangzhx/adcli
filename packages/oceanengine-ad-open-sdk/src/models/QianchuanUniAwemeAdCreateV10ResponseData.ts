@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanUniAwemeAdCreateV10ResponseData {
-  ad_id?: number;
+  ad_id?: number | string;
 }
 

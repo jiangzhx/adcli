@@ -5,6 +5,6 @@ import type { ToolsAppManagementBpShareCancelV2DataErrorListAllAccountByCompanyA
 
 export interface ToolsAppManagementBpShareCancelV2ResponseDataErrorListInnerAllAccountByCompany {
   account_type?: ToolsAppManagementBpShareCancelV2DataErrorListAllAccountByCompanyAccountType;
-  company_id?: number;
+  company_id?: number | string;
 }
 

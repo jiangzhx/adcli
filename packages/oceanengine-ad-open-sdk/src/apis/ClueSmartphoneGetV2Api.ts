@@ -8,9 +8,9 @@ import type { ClueSmartphoneGetV2IsDel, ClueSmartphoneGetV2Response } from "../m
 
 
 export interface OpenApi2ClueSmartphoneGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   endTime?: string;
-  instanceIds?: number[];
+  instanceIds?: number | string[];
   isDel?: ClueSmartphoneGetV2IsDel;
   page?: number;
   pageSize?: number;

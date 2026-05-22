@@ -8,7 +8,7 @@ import type { QianchuanAudienceFilePartUploadV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanAudienceFilePartUploadPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   file: File;
   isFinished: number;
   partNum: number;

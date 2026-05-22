@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsUnionFlowPackageDeleteV2Request {
-  advertiser_id: number;
-  flow_package_id: number;
+  advertiser_id: number | string;
+  flow_package_id: number | string;
 }
 

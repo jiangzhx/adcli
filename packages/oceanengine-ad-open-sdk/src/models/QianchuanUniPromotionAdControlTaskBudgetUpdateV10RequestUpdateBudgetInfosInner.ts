@@ -3,6 +3,6 @@
 
 export interface QianchuanUniPromotionAdControlTaskBudgetUpdateV10RequestUpdateBudgetInfosInner {
   budget: number;
-  task_id: number;
+  task_id: number | string;
 }
 

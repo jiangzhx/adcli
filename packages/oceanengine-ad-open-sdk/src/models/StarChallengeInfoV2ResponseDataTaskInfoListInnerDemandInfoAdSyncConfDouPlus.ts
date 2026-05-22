@@ -3,7 +3,7 @@
 
 export interface StarChallengeInfoV2ResponseDataTaskInfoListInnerDemandInfoAdSyncConfDouPlus {
   ad_sync_origin?: number;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   auto_sync?: number;
   dou_plus_uid?: number;
   product_link?: string;

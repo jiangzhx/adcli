@@ -8,10 +8,10 @@ import type { ToolsCommentMid2itemIdV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsCommentMid2itemIdGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startTime: string;
   endTime: string;
-  materialId: number;
+  materialId: number | string;
   page?: number;
   pageSize?: number;
 }

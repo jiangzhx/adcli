@@ -8,13 +8,13 @@ import type { AgentAdvRechargeRechargeRecordV2Filtering, AgentAdvRechargeRecharg
 
 
 export interface OpenApi2AgentAdvRechargeRechargeRecordGetRequest {
-  agentIds: number[];
+  agentIds: number | string[];
   startTime: string;
   endTime: string;
   page: number;
   pageSize: number;
   filtering?: AgentAdvRechargeRechargeRecordV2Filtering;
-  agentCompanyId?: number;
+  agentCompanyId?: number | string;
 }
 
 export class AgentAdvRechargeRechargeRecordV2Api {

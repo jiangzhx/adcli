@@ -5,6 +5,6 @@ import type { PromotionStatusUpdateV30DataOptStatus } from "../models";
 
 export interface PromotionStatusUpdateV30RequestDataInner {
   opt_status: PromotionStatusUpdateV30DataOptStatus;
-  promotion_id: number;
+  promotion_id: number | string;
 }
 

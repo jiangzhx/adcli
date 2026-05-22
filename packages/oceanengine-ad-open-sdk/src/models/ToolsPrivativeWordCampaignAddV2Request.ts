@@ -4,7 +4,7 @@
 import type { ToolsPrivativeWordCampaignAddV2RequestCampaignListInner } from "../models";
 
 export interface ToolsPrivativeWordCampaignAddV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   campaign_list: ToolsPrivativeWordCampaignAddV2RequestCampaignListInner[];
 }
 

@@ -8,8 +8,8 @@ import type { QianchuanToolsSmartBoostAdBoostStatusGetV10Response } from "../mod
 
 
 export interface OpenApiV10QianchuanToolsSmartBoostAdBoostStatusGetGetRequest {
-  advertiserId: number;
-  adIds: number[];
+  advertiserId: number | string;
+  adIds: number | string[];
 }
 
 export class QianchuanToolsSmartBoostAdBoostStatusGetV10Api {

@@ -5,7 +5,7 @@ import type { ToolsPreAuditSendV2DataListType } from "../models";
 
 export interface ToolsPreAuditSendV2ResponseDataListInner {
   content?: string;
-  pre_audit_id?: number;
+  pre_audit_id?: number | string;
   type?: ToolsPreAuditSendV2DataListType;
 }
 

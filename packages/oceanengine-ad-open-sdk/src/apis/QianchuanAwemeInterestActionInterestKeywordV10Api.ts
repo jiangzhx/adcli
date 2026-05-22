@@ -8,7 +8,7 @@ import type { QianchuanAwemeInterestActionInterestKeywordV10Response } from "../
 
 
 export interface OpenApiV10QianchuanAwemeInterestActionInterestKeywordGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class QianchuanAwemeInterestActionInterestKeywordV10Api {

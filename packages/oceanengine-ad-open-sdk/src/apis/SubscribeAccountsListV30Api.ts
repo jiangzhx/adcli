@@ -9,11 +9,11 @@ import type { SubscribeAccountsListV30AccountType, SubscribeAccountsListV30Respo
 
 export interface OpenApiV30SubscribeAccountsListGetRequest {
   aPPAccessToken: string;
-  appId: number;
-  subscribeTaskId?: number;
+  appId: number | string;
+  subscribeTaskId?: number | string;
   events?: string[];
-  coreUserId?: number;
-  advertiserIds?: number[];
+  coreUserId?: number | string;
+  advertiserIds?: number | string[];
   statuses?: SubscribeAccountsListV30Statuses[];
   cursor?: number;
   count?: number;

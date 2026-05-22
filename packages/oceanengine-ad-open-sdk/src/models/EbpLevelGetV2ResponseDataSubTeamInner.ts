@@ -3,7 +3,7 @@
 
 export interface EbpLevelGetV2ResponseDataSubTeamInner {
   sub_team?: Record<string, unknown>[];
-  team_id?: number;
+  team_id?: number | string;
   team_name?: string;
 }
 

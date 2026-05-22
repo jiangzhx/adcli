@@ -8,7 +8,7 @@ import type { PromotionNewcustomerTypeGetV30Response } from "../models";
 
 
 export interface OpenApiV30PromotionNewcustomerTypeGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
 }
 
 export class PromotionNewcustomerTypeGetV30Api {

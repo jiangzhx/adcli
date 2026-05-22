@@ -8,8 +8,8 @@ import type { StarMcnProviderGetTagOnTaskV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnProviderGetTagOnTaskGetRequest {
-  starId: number;
-  taskId: number;
+  starId: number | string;
+  taskId: number | string;
 }
 
 export class StarMcnProviderGetTagOnTaskV2Api {

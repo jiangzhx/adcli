@@ -8,7 +8,7 @@ import type { BrandCustomAudienceListV30Response } from "../models";
 
 
 export interface OpenApiV30BrandCustomAudienceListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class BrandCustomAudienceListV30Api {

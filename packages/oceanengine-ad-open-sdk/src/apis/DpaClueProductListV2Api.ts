@@ -8,7 +8,7 @@ import type { DpaClueProductListV2Filtering, DpaClueProductListV2Response } from
 
 
 export interface OpenApi2DpaClueProductListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   pageSize: number;
   filtering?: DpaClueProductListV2Filtering;

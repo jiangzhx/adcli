@@ -5,6 +5,6 @@ import type { DouplusOptionalTargetsListV30DataItemRecommendEasExternalActions }
 
 export interface DouplusOptionalTargetsListV30ResponseDataItemRecommendEasInner {
   external_actions: DouplusOptionalTargetsListV30DataItemRecommendEasExternalActions[];
-  item_id: number;
+  item_id: number | string;
 }
 

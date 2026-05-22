@@ -4,7 +4,7 @@
 import type { ToolsEbpMicroGameUpdateV30SchemaInfoOperateType } from "../models";
 
 export interface ToolsEbpMicroGameUpdateV30RequestSchemaInfoInner {
-  id?: number;
+  id?: number | string;
   link?: string;
   operate_type: ToolsEbpMicroGameUpdateV30SchemaInfoOperateType;
   remark: string;

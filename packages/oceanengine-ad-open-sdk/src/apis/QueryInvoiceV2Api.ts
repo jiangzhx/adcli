@@ -8,7 +8,7 @@ import type { QueryInvoiceV2Filtering, QueryInvoiceV2Response } from "../models"
 
 
 export interface OpenApi2QueryInvoiceGetRequest {
-  agentId: number;
+  agentId: number | string;
   filtering?: QueryInvoiceV2Filtering;
   pageSize?: number;
   page?: number;

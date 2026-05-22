@@ -3,7 +3,7 @@
 
 export interface AicMaterialPushV30ResponseDataFailResultsInner {
   reason?: string;
-  target_advertiser_id?: number;
+  target_advertiser_id?: number | string;
   video_id?: string;
 }
 

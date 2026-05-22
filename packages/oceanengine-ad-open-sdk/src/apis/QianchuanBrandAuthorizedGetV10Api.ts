@@ -8,7 +8,7 @@ import type { QianchuanBrandAuthorizedGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanBrandAuthorizedGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class QianchuanBrandAuthorizedGetV10Api {

@@ -8,8 +8,8 @@ import type { QianchuanTodayLiveV2RoomUserGetV10ActionEvent, QianchuanTodayLiveV
 
 
 export interface OpenApiV10QianchuanTodayLiveV2RoomUserGetGetRequest {
-  advertiserId: number;
-  roomId: number;
+  advertiserId: number | string;
+  roomId: number | string;
   actionEvent: QianchuanTodayLiveV2RoomUserGetV10ActionEvent;
   dimension: QianchuanTodayLiveV2RoomUserGetV10Dimension[];
   flowSource: QianchuanTodayLiveV2RoomUserGetV10FlowSource;

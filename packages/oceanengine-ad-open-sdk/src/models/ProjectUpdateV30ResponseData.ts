@@ -5,6 +5,6 @@ import type { ProjectUpdateV30ResponseDataErrorListInner } from "../models";
 
 export interface ProjectUpdateV30ResponseData {
   error_list?: ProjectUpdateV30ResponseDataErrorListInner[];
-  project_id?: number;
+  project_id?: number | string;
 }
 

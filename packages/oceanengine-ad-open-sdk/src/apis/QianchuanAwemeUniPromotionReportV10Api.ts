@@ -8,7 +8,7 @@ import type { QianchuanAwemeUniPromotionReportV10MarketingGoal, QianchuanAwemeUn
 
 
 export interface OpenApiV10QianchuanAwemeUniPromotionReportGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   marketingGoal: QianchuanAwemeUniPromotionReportV10MarketingGoal;
   startDate: string;
   endDate: string;

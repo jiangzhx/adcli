@@ -6,14 +6,14 @@ import type { StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner
 export interface StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner {
   android_convert_count?: number;
   author_amount?: number;
-  author_id?: number;
+  author_id?: number | string;
   author_name?: string;
   bill_detail?: string;
   channel_id?: string;
   clue_cnt?: number;
   cover_url?: string;
   create_time?: number;
-  demand_id: number;
+  demand_id: number | string;
   demand_name: string;
   douyin_id?: string;
   est_ad_share_amount?: number;
@@ -31,7 +31,7 @@ export interface StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataIn
   item_comment?: number;
   item_feel_good?: number;
   item_forward?: number;
-  item_id?: number;
+  item_id?: number | string;
   item_info_daily_list?: StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoDailyListInner[];
   item_interact_rate?: number;
   item_url?: string;

@@ -4,8 +4,8 @@
 import type { ClueCouponEmployeeCreateV2DataSuccessListUserType } from "../models";
 
 export interface ClueCouponEmployeeCreateV2ResponseDataSuccessListInner {
-  store_id?: number;
-  user_id?: number;
+  store_id?: number | string;
+  user_id?: number | string;
   user_type?: ClueCouponEmployeeCreateV2DataSuccessListUserType;
 }
 

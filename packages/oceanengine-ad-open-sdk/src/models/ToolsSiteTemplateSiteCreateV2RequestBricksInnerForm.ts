@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsSiteTemplateSiteCreateV2RequestBricksInnerForm {
-  instance_id: number;
+  instance_id: number | string;
 }
 

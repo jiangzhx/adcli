@@ -8,11 +8,11 @@ import type { QianchuanUniAwemeSuggestBudgetV10MarketingGoal, QianchuanUniAwemeS
 
 
 export interface OpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   marketingGoal: QianchuanUniAwemeSuggestBudgetV10MarketingGoal;
-  productIds?: number[];
-  adId?: number;
+  productIds?: number | string[];
+  adId?: number | string;
 }
 
 export class QianchuanUniAwemeSuggestBudgetV10Api {

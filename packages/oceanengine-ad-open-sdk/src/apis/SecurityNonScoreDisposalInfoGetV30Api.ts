@@ -8,7 +8,7 @@ import type { SecurityNonScoreDisposalInfoGetV30BusinessLine, SecurityNonScoreDi
 
 
 export interface OpenApiV30SecurityNonScoreDisposalInfoGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   businessLine: SecurityNonScoreDisposalInfoGetV30BusinessLine;
   timeRange?: SecurityNonScoreDisposalInfoGetV30TimeRange;
   page?: number;

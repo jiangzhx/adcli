@@ -3,8 +3,8 @@
 
 export interface ToolsClueRefundDetailGetV2ResponseDataRefundDetailListInner {
   ad_create_clue_date?: string;
-  ad_id?: number;
-  advertiser_id?: number;
+  ad_id?: number | string;
+  advertiser_id?: number | string;
   advertiser_name?: string;
   month?: string;
   participate_refund_clue_cnt?: number;

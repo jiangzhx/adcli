@@ -6,6 +6,6 @@ import type { SharedWalletWalletRelationGetV30ResponseDataPageInfo, SharedWallet
 export interface SharedWalletWalletRelationGetV30ResponseData {
   page_info?: SharedWalletWalletRelationGetV30ResponseDataPageInfo;
   results?: SharedWalletWalletRelationGetV30ResponseDataResultsInner[];
-  shared_wallet_id?: number;
+  shared_wallet_id?: number | string;
 }
 

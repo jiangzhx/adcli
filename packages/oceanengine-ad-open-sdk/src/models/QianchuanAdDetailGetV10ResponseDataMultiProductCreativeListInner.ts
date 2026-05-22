@@ -6,7 +6,7 @@ import type { QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMateria
 export interface QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInner {
   creative_material_mode?: QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMaterialMode;
   creative_setting?: QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerCreativeSetting;
-  product_id?: number;
+  product_id?: number | string;
   programmatic_creative?: QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerProgrammaticCreative;
 }
 

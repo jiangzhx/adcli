@@ -6,7 +6,7 @@ import type { ToolsEbpMicroGameListV30FilteringAssetOwnership, ToolsEbpMicroGame
 export interface ToolsEbpMicroGameListV30Filtering {
   asset_ownership?: ToolsEbpMicroGameListV30FilteringAssetOwnership;
   audit_status?: ToolsEbpMicroGameListV30FilteringAuditStatus;
-  instance_ids?: number[];
+  instance_ids?: number | string[];
   search_key?: string;
 }
 

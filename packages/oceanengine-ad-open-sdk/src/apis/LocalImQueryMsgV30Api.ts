@@ -8,7 +8,7 @@ import type { LocalImQueryMsgV30Response } from "../models";
 
 
 export interface OpenApiV30LocalImQueryMsgGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   msgId: string;
 }
 

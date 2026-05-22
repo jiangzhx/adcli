@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerCoupon {
-  activity_id: number;
+  activity_id: number | string;
 }
 

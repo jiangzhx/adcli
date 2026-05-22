@@ -5,7 +5,7 @@ import type { OcProjectMaterialStatusUpdateV30ResponseDataErrorsInner } from "..
 
 export interface OcProjectMaterialStatusUpdateV30ResponseData {
   errors?: OcProjectMaterialStatusUpdateV30ResponseDataErrorsInner[];
-  material_ids?: number[];
-  project_id?: number;
+  material_ids?: number | string[];
+  project_id?: number | string;
 }
 

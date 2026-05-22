@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerCreativeSettingCreativeCategory {
-  first_category_id?: number;
-  second_industry_id?: number;
-  third_industry_id?: number;
+  first_category_id?: number | string;
+  second_industry_id?: number | string;
+  third_industry_id?: number | string;
 }
 

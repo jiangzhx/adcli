@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsPrivativeWordGetV2Filtering {
-  ad_ids?: number[];
-  campaign_ids?: number[];
+  ad_ids?: number | string[];
+  campaign_ids?: number | string[];
 }
 

@@ -8,8 +8,8 @@ import type { QianchuanAwemeUniPromotionAdMaterialGetV10Filter, QianchuanAwemeUn
 
 
 export interface OpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
-  advertiserId: number;
-  orderId: number;
+  advertiserId: number | string;
+  orderId: number | string;
   filter: QianchuanAwemeUniPromotionAdMaterialGetV10Filter;
   orderType?: QianchuanAwemeUniPromotionAdMaterialGetV10OrderType;
   orderField?: QianchuanAwemeUniPromotionAdMaterialGetV10OrderField;

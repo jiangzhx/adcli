@@ -8,8 +8,8 @@ import type { AdRejectReasonV2Response } from "../models";
 
 
 export interface OpenApi2AdRejectReasonGetRequest {
-  adIds?: number[];
-  advertiserId?: number;
+  adIds?: number | string[];
+  advertiserId?: number | string;
 }
 
 export class AdRejectReasonV2Api {

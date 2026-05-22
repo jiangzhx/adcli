@@ -5,7 +5,7 @@ import type { QianchuanAwemeOrderGetV10DataListRoomInfoRoomStatus } from "../mod
 
 export interface QianchuanAwemeOrderGetV10ResponseDataListInnerRoomInfo {
   room_cover?: string;
-  room_id?: number;
+  room_id?: number | string;
   room_status?: QianchuanAwemeOrderGetV10DataListRoomInfoRoomStatus;
   room_title?: string;
 }

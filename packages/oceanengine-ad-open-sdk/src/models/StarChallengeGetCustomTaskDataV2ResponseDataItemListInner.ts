@@ -9,7 +9,7 @@ export interface StarChallengeGetCustomTaskDataV2ResponseDataItemListInner {
   channel_id?: string;
   comment?: number;
   component_click_count?: number;
-  contract_mcn_id?: number;
+  contract_mcn_id?: number | string;
   contract_mcn_name?: string;
   convert_count?: number;
   cover_url?: string;
@@ -17,7 +17,7 @@ export interface StarChallengeGetCustomTaskDataV2ResponseDataItemListInner {
   invalid_android_convert_count?: number;
   invalid_ios_convert_count?: number;
   ios_convert_count?: number;
-  item_id?: number;
+  item_id?: number | string;
   like_cnt?: number;
   live_acu?: number;
   live_duration?: number;

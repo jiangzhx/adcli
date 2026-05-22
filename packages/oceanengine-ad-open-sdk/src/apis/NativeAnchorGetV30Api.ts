@@ -8,7 +8,7 @@ import type { NativeAnchorGetV30Filtering, NativeAnchorGetV30Response } from "..
 
 
 export interface OpenApiV30NativeAnchorGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
   filtering?: NativeAnchorGetV30Filtering;

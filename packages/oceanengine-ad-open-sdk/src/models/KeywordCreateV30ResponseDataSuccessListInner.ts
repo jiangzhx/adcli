@@ -6,7 +6,7 @@ import type { KeywordCreateV30DataSuccessListBidType, KeywordCreateV30DataSucces
 export interface KeywordCreateV30ResponseDataSuccessListInner {
   bid?: number;
   bid_type?: KeywordCreateV30DataSuccessListBidType;
-  keyword_id?: number;
+  keyword_id?: number | string;
   match_type?: KeywordCreateV30DataSuccessListMatchType;
   status?: KeywordCreateV30DataSuccessListStatus;
   word?: string;

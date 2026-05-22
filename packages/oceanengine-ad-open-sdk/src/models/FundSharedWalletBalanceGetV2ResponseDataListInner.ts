@@ -4,7 +4,7 @@
 import type { FundSharedWalletBalanceGetV2ResponseDataListInnerBalanceDetailInner } from "../models";
 
 export interface FundSharedWalletBalanceGetV2ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   balance_detail?: FundSharedWalletBalanceGetV2ResponseDataListInnerBalanceDetailInner[];
   status?: string;
   status_message?: string;

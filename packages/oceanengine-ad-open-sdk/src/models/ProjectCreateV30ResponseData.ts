@@ -7,7 +7,7 @@ export interface ProjectCreateV30ResponseData {
   auto_duration_project_count?: number;
   auto_project_count?: number;
   error_keywords_list?: ProjectCreateV30ResponseDataErrorKeywordsListInner[];
-  project_id?: number;
+  project_id?: number | string;
   supplementary_agreement_info?: string;
 }
 

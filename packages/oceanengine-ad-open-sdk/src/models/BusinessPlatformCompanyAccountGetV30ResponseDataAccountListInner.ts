@@ -4,7 +4,7 @@
 import type { BusinessPlatformCompanyAccountGetV30DataAccountListAccountType } from "../models";
 
 export interface BusinessPlatformCompanyAccountGetV30ResponseDataAccountListInner {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: BusinessPlatformCompanyAccountGetV30DataAccountListAccountType;
 }
 

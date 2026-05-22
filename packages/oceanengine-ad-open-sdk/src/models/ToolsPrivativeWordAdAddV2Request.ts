@@ -5,6 +5,6 @@ import type { ToolsPrivativeWordAdAddV2RequestAdListInner } from "../models";
 
 export interface ToolsPrivativeWordAdAddV2Request {
   ad_list: ToolsPrivativeWordAdAddV2RequestAdListInner[];
-  advertiser_id: number;
+  advertiser_id: number | string;
 }
 

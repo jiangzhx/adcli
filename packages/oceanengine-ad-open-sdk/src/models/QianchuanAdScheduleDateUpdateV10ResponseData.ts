@@ -4,7 +4,7 @@
 import type { QianchuanAdScheduleDateUpdateV10ResponseDataErrorsInner } from "../models";
 
 export interface QianchuanAdScheduleDateUpdateV10ResponseData {
-  ad_ids?: number[];
+  ad_ids?: number | string[];
   errors?: QianchuanAdScheduleDateUpdateV10ResponseDataErrorsInner[];
 }
 

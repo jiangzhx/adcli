@@ -8,7 +8,7 @@ import type { AdvertiserAttachmentUploadV30AttachmentType, AdvertiserAttachmentU
 
 
 export interface OpenApiV30AdvertiserAttachmentUploadPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   attachmentType: AdvertiserAttachmentUploadV30AttachmentType;
   filename: string;
   imageData: File;

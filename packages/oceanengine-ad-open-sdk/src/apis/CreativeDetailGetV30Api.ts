@@ -8,8 +8,8 @@ import type { CreativeDetailGetV30Response } from "../models";
 
 
 export interface OpenApiV30CreativeDetailGetGetRequest {
-  advertiserId: number;
-  adId: number;
+  advertiserId: number | string;
+  adId: number | string;
 }
 
 export class CreativeDetailGetV30Api {

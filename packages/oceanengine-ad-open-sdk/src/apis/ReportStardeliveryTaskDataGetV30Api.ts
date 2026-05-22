@@ -8,7 +8,7 @@ import type { ReportStardeliveryTaskDataGetV30Filtering, ReportStardeliveryTaskD
 
 
 export interface OpenApiV30ReportStardeliveryTaskDataGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate: string;
   endDate: string;
   starTaskVersion?: string;

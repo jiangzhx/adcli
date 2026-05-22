@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarChallengeGetCustomTaskDataV2ResponseDataItemListInnerAuthorInfo {
-  author_id?: number;
+  author_id?: number | string;
   author_name?: string;
   douyin_id?: string;
 }

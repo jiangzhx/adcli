@@ -2,13 +2,13 @@
 // Do not edit manually.
 
 export interface StarUpdateProjectV2Request {
-  demander_id: number;
+  demander_id: number | string;
   first_class_category_name?: string;
-  project_id: number;
+  project_id: number | string;
   project_name?: string;
   second_class_category_name?: string;
   star_brand_name?: string;
-  star_id: number;
+  star_id: number | string;
   star_sub_brand_name?: string;
 }
 

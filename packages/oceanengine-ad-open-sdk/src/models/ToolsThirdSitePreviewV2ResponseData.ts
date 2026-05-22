@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsThirdSitePreviewV2ResponseData {
-  site_id?: number;
+  site_id?: number | string;
   url?: string;
 }
 

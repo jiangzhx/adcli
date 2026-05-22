@@ -8,9 +8,9 @@ import type { CgTransferCanTransferBalanceGetV30Platform, CgTransferCanTransferB
 
 
 export interface OpenApiV30CgTransferCanTransferBalanceGetGetRequest {
-  organizationId: number;
+  organizationId: number | string;
   bizRequestNo: string;
-  opponentTargetId: number;
+  opponentTargetId: number | string;
   targetIdList: number[];
   transferDirection: CgTransferCanTransferBalanceGetV30TransferDirection;
   platform: CgTransferCanTransferBalanceGetV30Platform;

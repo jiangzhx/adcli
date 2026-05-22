@@ -4,7 +4,7 @@
 import type { ClueFormCreateV2EnableLayer, ClueFormCreateV2RequestElementsInner, ClueFormCreateV2RequestExtendInfo, ClueFormCreateV2ValidateType } from "../models";
 
 export interface ClueFormCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   elements: ClueFormCreateV2RequestElementsInner[];
   enable_layer?: ClueFormCreateV2EnableLayer;
   extend_info?: ClueFormCreateV2RequestExtendInfo;

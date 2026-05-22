@@ -5,12 +5,12 @@ import type { QianchuanTodayLiveRoomDetailGetV10DataRoomStatus } from "../models
 
 export interface QianchuanTodayLiveRoomDetailGetV10ResponseData {
   aweme_avatar?: string[];
-  aweme_id?: number;
+  aweme_id?: number | string;
   aweme_name?: string;
   end_time?: string;
   room_cover?: string[];
   room_delivery?: number;
-  room_id?: number;
+  room_id?: number | string;
   room_status?: QianchuanTodayLiveRoomDetailGetV10DataRoomStatus;
   room_title?: string;
   start_time?: string;

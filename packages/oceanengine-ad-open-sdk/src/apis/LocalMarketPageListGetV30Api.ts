@@ -8,10 +8,10 @@ import type { LocalMarketPageListGetV30DeliveryGoal, LocalMarketPageListGetV30Re
 
 
 export interface OpenApiV30LocalMarketPageListGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   deliveryGoal: LocalMarketPageListGetV30DeliveryGoal;
-  poiIds?: number[];
-  productIds?: number[];
+  poiIds?: number | string[];
+  productIds?: number | string[];
   page?: number;
   pageSize?: number;
 }

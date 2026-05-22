@@ -8,7 +8,7 @@ import type { ToolsJointBidGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsJointBidGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class ToolsJointBidGetV30Api {

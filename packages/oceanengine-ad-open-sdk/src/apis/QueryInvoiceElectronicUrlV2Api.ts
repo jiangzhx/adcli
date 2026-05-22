@@ -9,7 +9,7 @@ import type { QueryInvoiceElectronicUrlV2Response } from "../models";
 
 export interface OpenApi2QueryInvoiceElectronicUrlGetRequest {
   invoiceSerial: string;
-  agentIds?: number[];
+  agentIds?: number | string[];
 }
 
 export class QueryInvoiceElectronicUrlV2Api {

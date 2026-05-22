@@ -7,8 +7,8 @@ export interface ToolsAppIosListV2ResponseDataListInner {
   app_name?: string;
   download_url?: string;
   icon_url?: string;
-  itunes_id?: number;
-  package_id?: number;
+  itunes_id?: number | string;
+  package_id?: number | string;
   package_name?: string;
   status?: ToolsAppIosListV2DataListStatus;
   version?: string;

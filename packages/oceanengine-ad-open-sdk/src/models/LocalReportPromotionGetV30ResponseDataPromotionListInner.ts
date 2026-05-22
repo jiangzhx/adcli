@@ -65,9 +65,9 @@ export interface LocalReportPromotionGetV30ResponseDataPromotionListInner {
   play_over?: number;
   play_over_rate?: number;
   poi_recommend_count?: number;
-  project_id?: number;
+  project_id?: number | string;
   project_name?: string;
-  promotion_id?: number;
+  promotion_id?: number | string;
   promotion_name?: string;
   show_cnt?: number;
   stat_cost?: number;

@@ -8,7 +8,7 @@ import type { FileCarouselAwemeGetV30Filtering, FileCarouselAwemeGetV30Response 
 
 
 export interface OpenApiV30FileCarouselAwemeGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   awemeId: string;
   filtering?: FileCarouselAwemeGetV30Filtering;
   cursor?: string;

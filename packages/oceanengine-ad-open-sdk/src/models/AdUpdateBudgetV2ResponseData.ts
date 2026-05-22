@@ -4,7 +4,7 @@
 import type { AdUpdateBudgetV2ResponseDataErrorsInner } from "../models";
 
 export interface AdUpdateBudgetV2ResponseData {
-  ad_ids?: number[];
+  ad_ids?: number | string[];
   errors?: AdUpdateBudgetV2ResponseDataErrorsInner[];
 }
 

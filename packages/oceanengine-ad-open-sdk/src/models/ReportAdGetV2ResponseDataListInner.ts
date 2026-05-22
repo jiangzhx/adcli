@@ -13,7 +13,7 @@ export interface ReportAdGetV2ResponseDataListInner {
   active_rate?: number;
   active_register_cost?: number;
   active_register_rate?: number;
-  ad_id?: number;
+  ad_id?: number | string;
   ad_name?: string;
   ad_tag?: string;
   advanced_creative_counsel_click?: number;
@@ -21,7 +21,7 @@ export interface ReportAdGetV2ResponseDataListInner {
   advanced_creative_form_click?: number;
   advanced_creative_form_submit?: number;
   advanced_creative_phone_click?: number;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   age?: string;
   approval_count?: number;
   attribution_active_pay_7d_cost?: number;
@@ -100,9 +100,9 @@ export interface ReportAdGetV2ResponseDataListInner {
   avg_rank?: number;
   avg_show_cost?: number;
   bidword?: string;
-  bidword_id?: number;
+  bidword_id?: number | string;
   button?: number;
-  campaign_id?: number;
+  campaign_id?: number | string;
   campaign_name?: string;
   campaign_type?: ReportAdGetV2DataListCampaignType;
   card_show?: number;
@@ -128,7 +128,7 @@ export interface ReportAdGetV2ResponseDataListInner {
   cpa?: number;
   cpc?: number;
   cpm?: number;
-  creative_id?: number;
+  creative_id?: number | string;
   creative_material_mode?: ReportAdGetV2DataListCreativeMaterialMode;
   ctr?: number;
   customer_effective?: number;
@@ -155,7 +155,7 @@ export interface ReportAdGetV2ResponseDataListInner {
   game_pay_count?: number;
   gender?: ReportAdGetV2DataListGender;
   home_visited?: number;
-  id?: number;
+  id?: number | string;
   ies_challenge_click?: number;
   ies_music_click?: number;
   image_mode?: ReportAdGetV2DataListImageMode;
@@ -199,7 +199,7 @@ export interface ReportAdGetV2ResponseDataListInner {
   luban_order_roi?: number;
   luban_order_stat_amount?: number;
   map_search?: number;
-  material_id?: number;
+  material_id?: number | string;
   message?: number;
   message_action?: number;
   next_day_open?: number;
@@ -231,7 +231,7 @@ export interface ReportAdGetV2ResponseDataListInner {
   play_duration_sum?: number;
   play_over?: number;
   play_over_rate?: number;
-  playable_id?: number;
+  playable_id?: number | string;
   playable_name?: string;
   playable_orientation?: string;
   playable_preview_url?: string;

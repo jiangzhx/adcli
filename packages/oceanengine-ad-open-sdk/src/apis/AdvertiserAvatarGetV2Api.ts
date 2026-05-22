@@ -8,7 +8,7 @@ import type { AdvertiserAvatarGetV2Response } from "../models";
 
 
 export interface OpenApi2AdvertiserAvatarGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class AdvertiserAvatarGetV2Api {

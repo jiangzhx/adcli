@@ -8,8 +8,8 @@ import type { ToolsLogSearchV2Response } from "../models";
 
 
 export interface OpenApi2ToolsLogSearchGetRequest {
-  advertiserId: number;
-  objectId?: number[];
+  advertiserId: number | string;
+  objectId?: number | string[];
   startTime?: string;
   endTime?: string;
   page?: number;

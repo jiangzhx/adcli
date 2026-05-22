@@ -14,12 +14,12 @@ export interface QianchuanReportAdGetV10ResponseDataListInner {
   ad_all_order_settle_count_7d?: number;
   ad_all_order_settle_roi_14d?: number;
   ad_all_order_settle_roi_7d?: number;
-  ad_id?: number;
+  ad_id?: number | string;
   ad_order_gmv_refund_rate_14d?: number;
   ad_order_gmv_refund_rate_7d?: number;
   ad_order_refund_rate_14d?: number;
   ad_order_refund_rate_7d?: number;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   all_order_create_roi_7days?: number;
   all_order_pay_count_7days?: number;
   all_order_pay_gmv_7days?: number;

@@ -9,8 +9,8 @@ export interface PromotionListV30ResponseDataListInnerPromotionMaterialsVideoMat
   guide_video_id?: string;
   image_mode?: PromotionListV30DataListPromotionMaterialsVideoMaterialListImageMode;
   is_carry_material?: PromotionListV30DataListPromotionMaterialsVideoMaterialListIsCarryMaterial;
-  item_id?: number;
-  material_id?: number;
+  item_id?: number | string;
+  material_id?: number | string;
   material_opt_status?: PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialOptStatus;
   material_status?: PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus;
   video_cover_id?: string;

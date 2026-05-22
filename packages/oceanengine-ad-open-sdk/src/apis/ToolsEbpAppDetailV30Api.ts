@@ -8,7 +8,7 @@ import type { ToolsEbpAppDetailV30AccountType, ToolsEbpAppDetailV30Response } fr
 
 
 export interface OpenApiV30ToolsEbpAppDetailGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsEbpAppDetailV30AccountType;
   packageId: string;
 }

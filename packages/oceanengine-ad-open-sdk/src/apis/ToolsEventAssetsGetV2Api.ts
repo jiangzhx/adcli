@@ -8,7 +8,7 @@ import type { ToolsEventAssetsGetV2AssetType, ToolsEventAssetsGetV2Filtering, To
 
 
 export interface OpenApi2ToolsEventAssetsGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   assetType: ToolsEventAssetsGetV2AssetType;
   filtering?: ToolsEventAssetsGetV2Filtering;
   sortType?: ToolsEventAssetsGetV2SortType;

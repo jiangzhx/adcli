@@ -8,7 +8,7 @@ import type { StarMcnRecuritProviderGetTaskOrderListGetV2Response } from "../mod
 
 
 export interface OpenApi2StarMcnRecuritProviderGetTaskOrderListGetGetRequest {
-  starId: number;
+  starId: number | string;
   providerOrderTaskStatus?: number;
   page?: number;
   pageSize?: number;

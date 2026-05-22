@@ -11,7 +11,7 @@ export interface StarOrderDetailV2ResponseData {
   component_info?: StarOrderDetailV2ResponseDataComponentInfoInner[];
   create_time?: number;
   finish_time?: number;
-  order_id?: number;
+  order_id?: number | string;
   payment_info?: StarOrderDetailV2ResponseDataPaymentInfo;
   script_list?: StarOrderDetailV2ResponseDataScriptListInner[];
   status?: number;

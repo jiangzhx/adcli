@@ -6,7 +6,7 @@ import type { LocalPoiGetV30DataPoiListBindMarketPageInfosBindToolPackInfoToolPa
 export interface LocalPoiGetV30ResponseDataPoiListInnerBindMarketPageInfosInnerBindToolPackInfo {
   enable?: boolean;
   enable_intelligent_selection?: boolean;
-  tool_pack_id?: number;
+  tool_pack_id?: number | string;
   tool_pack_name?: string;
   tool_pack_types?: LocalPoiGetV30DataPoiListBindMarketPageInfosBindToolPackInfoToolPackTypes[];
 }

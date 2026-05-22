@@ -4,7 +4,7 @@
 import type { ClueCouponEmployeeCreateV2RequestListInner } from "../models";
 
 export interface ClueCouponEmployeeCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   list: ClueCouponEmployeeCreateV2RequestListInner[];
 }
 

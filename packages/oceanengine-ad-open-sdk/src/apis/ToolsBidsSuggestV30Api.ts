@@ -8,10 +8,10 @@ import type { ToolsBidsSuggestV30CampaignType, ToolsBidsSuggestV30DeepBidType, T
 
 
 export interface OpenApiV30ToolsBidsSuggestGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   pricing: ToolsBidsSuggestV30Pricing;
   externalAction: ToolsBidsSuggestV30ExternalAction;
-  projectId?: number;
+  projectId?: number | string;
   deepExternalAction?: ToolsBidsSuggestV30DeepExternalAction;
   deepBidType?: ToolsBidsSuggestV30DeepBidType;
   platform?: ToolsBidsSuggestV30Platform[];

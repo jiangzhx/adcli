@@ -13,7 +13,7 @@ export interface StarOrderGetInfoV2ResponseDataOrderListInner {
   demand_info?: StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfo;
   finish_time?: number;
   item_show_monitor_url?: string;
-  order_id?: number;
+  order_id?: number | string;
   order_item_info?: StarOrderGetInfoV2ResponseDataOrderListInnerOrderItemInfo;
   payment_info?: StarOrderGetInfoV2ResponseDataOrderListInnerPaymentInfo;
   release_time?: number;

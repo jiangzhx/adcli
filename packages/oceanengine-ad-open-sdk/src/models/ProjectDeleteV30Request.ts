@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ProjectDeleteV30Request {
-  advertiser_id: number;
-  project_ids: number[];
+  advertiser_id: number | string;
+  project_ids: number | string[];
 }
 

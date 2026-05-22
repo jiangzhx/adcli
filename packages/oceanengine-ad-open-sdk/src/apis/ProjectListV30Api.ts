@@ -8,7 +8,7 @@ import type { ProjectListV30Filtering, ProjectListV30Response } from "../models"
 
 
 export interface OpenApiV30ProjectListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   fields?: string[];
   filtering?: ProjectListV30Filtering;
   page?: number;

@@ -8,9 +8,9 @@ import type { QianchuanUniPromotionProductGetV10Filtering, QianchuanUniPromotion
 
 
 export interface OpenApiV10QianchuanUniPromotionProductGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering: QianchuanUniPromotionProductGetV10Filtering;
-  awemeId?: number;
+  awemeId?: number | string;
   orderField?: QianchuanUniPromotionProductGetV10OrderField;
   orderType?: QianchuanUniPromotionProductGetV10OrderType;
   page?: number;

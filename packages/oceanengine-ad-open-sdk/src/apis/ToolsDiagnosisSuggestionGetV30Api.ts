@@ -8,8 +8,8 @@ import type { ToolsDiagnosisSuggestionGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsDiagnosisSuggestionGetGetRequest {
-  promotionIds: number[];
-  advertiserId: number;
+  promotionIds: number | string[];
+  advertiserId: number | string;
 }
 
 export class ToolsDiagnosisSuggestionGetV30Api {

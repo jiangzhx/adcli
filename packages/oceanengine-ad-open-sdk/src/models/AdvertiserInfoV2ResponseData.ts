@@ -9,7 +9,7 @@ export interface AdvertiserInfoV2ResponseData {
   company?: string;
   create_time?: string;
   first_industry_name?: string;
-  id?: number;
+  id?: number | string;
   industry?: string;
   license_city?: string;
   license_no?: string;

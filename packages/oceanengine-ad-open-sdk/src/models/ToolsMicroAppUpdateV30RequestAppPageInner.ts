@@ -4,7 +4,7 @@
 import type { ToolsMicroAppUpdateV30AppPageOperateType } from "../models";
 
 export interface ToolsMicroAppUpdateV30RequestAppPageInner {
-  id?: number;
+  id?: number | string;
   link: string;
   operate_type: ToolsMicroAppUpdateV30AppPageOperateType;
   remark: string;

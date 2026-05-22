@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsClueRobotTaskCancelV2Request {
-  advertiser_id: number;
-  task_id: number;
+  advertiser_id: number | string;
+  task_id: number | string;
 }
 

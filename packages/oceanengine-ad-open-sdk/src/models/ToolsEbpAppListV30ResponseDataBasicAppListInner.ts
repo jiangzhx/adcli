@@ -13,13 +13,13 @@ export interface ToolsEbpAppListV30ResponseDataBasicAppListInner {
   app_name_en: string;
   authority_level?: number;
   basic_package_id: string;
-  basic_package_int_id: number;
+  basic_package_int_id: number | string;
   create_time?: string;
   download_url?: string;
   firstscheduled_publish_time: string;
   has_extend_package?: boolean;
   has_package: number;
-  history_account_id?: number;
+  history_account_id?: number | string;
   history_account_name?: string;
   history_account_type?: ToolsEbpAppListV30DataBasicAppListHistoryAccountType;
   is_ebp_asset?: boolean;

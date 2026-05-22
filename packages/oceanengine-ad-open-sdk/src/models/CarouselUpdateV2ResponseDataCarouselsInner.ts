@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface CarouselUpdateV2ResponseDataCarouselsInner {
-  id?: number;
+  id?: number | string;
   message?: string;
   status_code?: number;
 }

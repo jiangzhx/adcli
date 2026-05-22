@@ -8,13 +8,13 @@ export interface QueryInvoiceSelfV2ResponseDataInvoiceInfoListInner {
   contract_name?: string;
   contract_serial?: string;
   contract_subject_name?: string;
-  customer_id?: number;
+  customer_id?: number | string;
   customer_name?: string;
   customer_subject_name?: string;
   difference_invoice_name?: string;
   invoice_amount?: number;
   invoice_codes?: string[];
-  invoice_id: number;
+  invoice_id: number | string;
   invoice_nos?: string[];
   invoice_object_name?: string;
   invoice_project_list?: string[];

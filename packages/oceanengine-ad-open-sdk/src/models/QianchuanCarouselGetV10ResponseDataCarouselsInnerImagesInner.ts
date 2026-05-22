@@ -4,7 +4,7 @@
 export interface QianchuanCarouselGetV10ResponseDataCarouselsInnerImagesInner {
   height?: number;
   image_id?: string;
-  image_material_id?: number;
+  image_material_id?: number | string;
   ratio?: number;
   url?: string;
   width?: number;

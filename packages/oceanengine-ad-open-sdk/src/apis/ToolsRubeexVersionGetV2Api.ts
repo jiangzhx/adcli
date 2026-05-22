@@ -8,7 +8,7 @@ import type { ToolsRubeexVersionGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsRubeexVersionGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   projectId: number;
 }
 

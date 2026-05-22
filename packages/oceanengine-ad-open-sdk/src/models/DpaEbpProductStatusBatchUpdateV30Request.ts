@@ -4,10 +4,10 @@
 import type { DpaEbpProductStatusBatchUpdateV30AccountType, DpaEbpProductStatusBatchUpdateV30OptStatus } from "../models";
 
 export interface DpaEbpProductStatusBatchUpdateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: DpaEbpProductStatusBatchUpdateV30AccountType;
   opt_status: DpaEbpProductStatusBatchUpdateV30OptStatus;
-  platform_id: number;
-  product_ids: number[];
+  platform_id: number | string;
+  product_ids: number | string[];
 }
 

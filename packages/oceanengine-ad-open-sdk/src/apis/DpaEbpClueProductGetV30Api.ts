@@ -8,9 +8,9 @@ import type { DpaEbpClueProductGetV30AccountType, DpaEbpClueProductGetV30Respons
 
 
 export interface OpenApiV30DpaEbpClueProductGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: DpaEbpClueProductGetV30AccountType;
-  productIds: number[];
+  productIds: number | string[];
 }
 
 export class DpaEbpClueProductGetV30Api {

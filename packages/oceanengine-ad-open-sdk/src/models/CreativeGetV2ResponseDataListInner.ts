@@ -4,13 +4,13 @@
 import type { CreativeGetV2DataListImageMode, CreativeGetV2DataListOptStatus, CreativeGetV2DataListStatus, CreativeGetV2ResponseDataListInnerMaterialsInner } from "../models";
 
 export interface CreativeGetV2ResponseDataListInner {
-  ad_id?: number;
-  advertiser_id?: number;
-  aweme_item_id?: number;
+  ad_id?: number | string;
+  advertiser_id?: number | string;
+  aweme_item_id?: number | string;
   creative_create_time?: string;
-  creative_id?: number;
+  creative_id?: number | string;
   creative_modify_time?: string;
-  creative_word_ids?: number[];
+  creative_word_ids?: number | string[];
   image_id?: string;
   image_ids?: string[];
   image_mode?: CreativeGetV2DataListImageMode;

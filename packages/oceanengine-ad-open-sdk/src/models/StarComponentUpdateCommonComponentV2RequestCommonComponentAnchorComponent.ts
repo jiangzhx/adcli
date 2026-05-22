@@ -3,7 +3,7 @@
 
 export interface StarComponentUpdateCommonComponentV2RequestCommonComponentAnchorComponent {
   anchor_title: string;
-  id: number;
+  id: number | string;
   micro_app_id: string;
   micro_app_name: string;
   start_path: string;

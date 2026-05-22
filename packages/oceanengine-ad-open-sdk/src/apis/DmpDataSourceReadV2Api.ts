@@ -8,7 +8,7 @@ import type { DmpDataSourceReadV2Response } from "../models";
 
 
 export interface OpenApi2DmpDataSourceReadGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   dataSourceIdList?: string[];
 }
 

@@ -4,7 +4,7 @@
 import type { DouplusOrderListV30DataOrderListAdListAdStatus, DouplusOrderListV30DataOrderListAdListBidMode, DouplusOrderListV30ResponseDataOrderListInnerAdListInnerAudience } from "../models";
 
 export interface DouplusOrderListV30ResponseDataOrderListInnerAdListInner {
-  ad_id?: number;
+  ad_id?: number | string;
   ad_status?: DouplusOrderListV30DataOrderListAdListAdStatus;
   audience?: DouplusOrderListV30ResponseDataOrderListInnerAdListInnerAudience;
   bid_mode?: DouplusOrderListV30DataOrderListAdListBidMode;

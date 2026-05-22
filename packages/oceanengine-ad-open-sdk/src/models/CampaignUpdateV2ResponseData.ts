@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface CampaignUpdateV2ResponseData {
-  campaign_id?: number;
+  campaign_id?: number | string;
   data?: Record<string, unknown>;
 }
 

@@ -8,7 +8,7 @@ export interface EventManagerEventConfigsGetV2ResponseDataEventConfigsInner {
   create_time?: string;
   debugging_status?: EventManagerEventConfigsGetV2DataEventConfigsDebuggingStatus;
   event_cn_name?: string;
-  event_id?: number;
+  event_id?: number | string;
   event_type?: string;
   properties?: EventManagerEventConfigsGetV2ResponseDataEventConfigsInnerPropertiesInner[];
   track_types?: EventManagerEventConfigsGetV2DataEventConfigsTrackTypes[];

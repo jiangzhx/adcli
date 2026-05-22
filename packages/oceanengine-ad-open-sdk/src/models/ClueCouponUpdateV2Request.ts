@@ -4,8 +4,8 @@
 import type { ClueCouponUpdateV2RequestGlobalLimit, ClueCouponUpdateV2RequestUserLimit, ClueCouponUpdateV2Status } from "../models";
 
 export interface ClueCouponUpdateV2Request {
-  activity_id: number;
-  advertiser_id: number;
+  activity_id: number | string;
+  advertiser_id: number | string;
   deliver_end?: string | null;
   deliver_start?: string | null;
   global_limit?: ClueCouponUpdateV2RequestGlobalLimit;

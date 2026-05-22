@@ -5,7 +5,7 @@ import type { ToolsDiagnosisSuggestionGetV30ResponseDataPromotionSuggestionsInne
 
 export interface ToolsDiagnosisSuggestionGetV30ResponseDataPromotionSuggestionsInner {
   hit_scenes?: string[];
-  promotion_id?: number;
+  promotion_id?: number | string;
   rec_suggestions?: ToolsDiagnosisSuggestionGetV30ResponseDataPromotionSuggestionsInnerRecSuggestionsInner[];
 }
 

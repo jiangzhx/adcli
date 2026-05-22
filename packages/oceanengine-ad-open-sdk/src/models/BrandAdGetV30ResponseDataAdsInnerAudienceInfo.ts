@@ -11,7 +11,7 @@ export interface BrandAdGetV30ResponseDataAdsInnerAudienceInfo {
   ad_tag?: number[];
   age?: number[][];
   brand_safety?: BrandAdGetV30DataAdsAudienceInfoBrandSafety;
-  business_ids?: number[];
+  business_ids?: number | string[];
   city?: number[];
   content_key_words?: string[];
   display_retargeting_tags?: number[];
@@ -30,7 +30,7 @@ export interface BrandAdGetV30ResponseDataAdsInnerAudienceInfo {
   retargeting_tags?: number[];
   retargeting_type?: BrandAdGetV30DataAdsAudienceInfoRetargetingType;
   search_keyword?: string[];
-  word_bag_ids?: number[];
+  word_bag_ids?: number | string[];
   word_list?: string[];
 }
 

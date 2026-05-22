@@ -3,7 +3,7 @@
 
 export interface ToolsClueRobotScriptQueryV2ResponseDataDataInner {
   call_times?: number;
-  id?: number;
+  id?: number | string;
   name?: string;
   script_variables?: string[];
 }

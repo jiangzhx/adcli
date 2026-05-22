@@ -4,9 +4,9 @@
 import type { ReportAudienceAwemeListV2FilteringAudienceLevel, ReportAudienceAwemeListV2FilteringBehaviors } from "../models";
 
 export interface ReportAudienceAwemeListV2Filtering {
-  ad_ids?: number[];
+  ad_ids?: number | string[];
   audience_level?: ReportAudienceAwemeListV2FilteringAudienceLevel;
   behaviors?: ReportAudienceAwemeListV2FilteringBehaviors[];
-  campaign_ids?: number[];
+  campaign_ids?: number | string[];
 }
 

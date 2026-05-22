@@ -8,8 +8,8 @@ import type { DownloadStatementEsignFileV2Response } from "../models";
 
 
 export interface OpenApi2DownloadStatementEsignFileGetRequest {
-  agentId: number;
-  statementId: number;
+  agentId: number | string;
+  statementId: number | string;
 }
 
 export class DownloadStatementEsignFileV2Api {

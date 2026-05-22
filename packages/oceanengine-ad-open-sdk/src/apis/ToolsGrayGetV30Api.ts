@@ -8,7 +8,7 @@ import type { ToolsGrayGetV30Response, ToolsGrayGetV30Version } from "../models"
 
 
 export interface OpenApiV30ToolsGrayGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   grayKeys: string[];
   version?: ToolsGrayGetV30Version;
 }

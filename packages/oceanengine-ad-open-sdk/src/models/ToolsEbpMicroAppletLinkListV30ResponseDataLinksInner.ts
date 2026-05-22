@@ -8,12 +8,12 @@ export interface ToolsEbpMicroAppletLinkListV30ResponseDataLinksInner {
   app_id?: string;
   audit_status?: ToolsEbpMicroAppletLinkListV30DataLinksAuditStatus;
   create_time?: string;
-  instance_id?: number;
+  instance_id?: number | string;
   is_ebp_asset?: boolean;
   link?: string;
-  link_id?: number;
+  link_id?: number | string;
   modify_time?: string;
-  owner_account_id?: number;
+  owner_account_id?: number | string;
   owner_account_type?: ToolsEbpMicroAppletLinkListV30DataLinksOwnerAccountType;
   remark?: string;
   start_page?: string;

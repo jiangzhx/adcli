@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AgentAdvertiserUnassignV2ResponseDataResultsInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   err_msg?: string;
   success: boolean;
 }

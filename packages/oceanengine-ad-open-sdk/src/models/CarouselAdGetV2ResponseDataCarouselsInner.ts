@@ -7,7 +7,7 @@ export interface CarouselAdGetV2ResponseDataCarouselsInner {
   audio?: CarouselAdGetV2ResponseDataCarouselsInnerAudio;
   carousel_type?: number;
   file_name?: string;
-  id?: number;
+  id?: number | string;
   images?: CarouselAdGetV2ResponseDataCarouselsInnerImagesInner[];
   uri?: string;
 }

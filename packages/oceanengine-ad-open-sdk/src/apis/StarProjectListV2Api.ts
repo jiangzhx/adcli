@@ -8,7 +8,7 @@ import type { StarProjectListV2Response } from "../models";
 
 
 export interface OpenApi2StarProjectListGetRequest {
-  starId: number;
+  starId: number | string;
   page: number;
   limit: number;
   searchName?: string;

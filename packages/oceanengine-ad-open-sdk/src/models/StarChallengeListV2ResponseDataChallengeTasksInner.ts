@@ -4,7 +4,7 @@
 export interface StarChallengeListV2ResponseDataChallengeTasksInner {
   author_task_name?: string;
   challenge_audit_status?: number;
-  challenge_task_id?: number;
+  challenge_task_id?: number | string;
   challenge_task_status?: number;
   create_time?: number;
   demand_name?: string;

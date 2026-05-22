@@ -5,8 +5,8 @@ import type { StdProjectUpdateV30ResponseDataErrorKeywordsListInner } from "../m
 
 export interface StdProjectUpdateV30ResponseData {
   error_keywords_list?: StdProjectUpdateV30ResponseDataErrorKeywordsListInner[];
-  project_id?: number;
+  project_id?: number | string;
   supplementary_agreement_info?: string;
-  task_id?: number;
+  task_id?: number | string;
 }
 

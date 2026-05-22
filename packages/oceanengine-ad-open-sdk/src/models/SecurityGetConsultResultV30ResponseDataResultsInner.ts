@@ -4,7 +4,7 @@
 import type { SecurityGetConsultResultV30DataResultsResult } from "../models";
 
 export interface SecurityGetConsultResultV30ResponseDataResultsInner {
-  appeal_track_id?: number;
+  appeal_track_id?: number | string;
   create_time?: string;
   finish_time?: string;
   result?: SecurityGetConsultResultV30DataResultsResult;

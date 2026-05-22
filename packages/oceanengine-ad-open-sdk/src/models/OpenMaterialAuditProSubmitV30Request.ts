@@ -4,7 +4,7 @@
 import type { OpenMaterialAuditProSubmitV30BusinessType, OpenMaterialAuditProSubmitV30RequestInput } from "../models";
 
 export interface OpenMaterialAuditProSubmitV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   business_type: OpenMaterialAuditProSubmitV30BusinessType;
   input: OpenMaterialAuditProSubmitV30RequestInput;
 }

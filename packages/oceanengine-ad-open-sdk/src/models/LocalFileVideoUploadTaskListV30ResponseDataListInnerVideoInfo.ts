@@ -4,7 +4,7 @@
 export interface LocalFileVideoUploadTaskListV30ResponseDataListInnerVideoInfo {
   duration?: number;
   height?: number;
-  material_id?: number;
+  material_id?: number | string;
   size?: number;
   video_id?: string;
   video_signature?: string;

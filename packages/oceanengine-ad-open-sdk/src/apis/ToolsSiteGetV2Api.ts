@@ -8,7 +8,7 @@ import type { ToolsSiteGetV2Filtering, ToolsSiteGetV2Response, ToolsSiteGetV2Sha
 
 
 export interface OpenApi2ToolsSiteGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   xOrangeCaller?: string;
   page?: number;
   pageSize?: number;

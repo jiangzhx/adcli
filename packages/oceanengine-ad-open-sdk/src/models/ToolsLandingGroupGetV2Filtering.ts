@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsLandingGroupGetV2Filtering {
-  group_id?: number;
+  group_id?: number | string;
 }
 

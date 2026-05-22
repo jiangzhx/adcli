@@ -4,11 +4,11 @@
 import type { DiagnosisTaskAgentCreateV2RequestDiagnoseConfig } from "../models";
 
 export interface DiagnosisTaskAgentCreateV2Request {
-  advertiser_id: number;
-  agent_id: number;
+  advertiser_id: number | string;
+  agent_id: number | string;
   diagnose_config?: DiagnosisTaskAgentCreateV2RequestDiagnoseConfig;
-  ref_ad_id?: number;
-  ref_promotion_id?: number;
+  ref_ad_id?: number | string;
+  ref_promotion_id?: number | string;
   video_ids?: string[];
 }
 

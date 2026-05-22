@@ -8,8 +8,8 @@ import type { FileVideoMaterialClearTaskResultGetV2Response } from "../models";
 
 
 export interface OpenApi2FileVideoMaterialClearTaskResultGetGetRequest {
-  advertiserId: number;
-  clearId: number;
+  advertiserId: number | string;
+  clearId: number | string;
   page?: number;
   pageSize?: number;
 }

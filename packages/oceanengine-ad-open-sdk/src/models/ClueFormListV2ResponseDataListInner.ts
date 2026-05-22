@@ -7,7 +7,7 @@ export interface ClueFormListV2ResponseDataListInner {
   create_time?: string;
   enable_layer?: ClueFormListV2DataListEnableLayer;
   form_type?: ClueFormListV2DataListFormType;
-  instance_id?: number;
+  instance_id?: number | string;
   is_del?: ClueFormListV2DataListIsDel;
   name?: string;
   update_time?: string;

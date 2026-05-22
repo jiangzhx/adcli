@@ -8,8 +8,8 @@ import type { QianchuanAdMaterialGetV10Filtering, QianchuanAdMaterialGetV10Order
 
 
 export interface OpenApiV10QianchuanAdMaterialGetGetRequest {
-  advertiserId: number;
-  adId: number;
+  advertiserId: number | string;
+  adId: number | string;
   filtering: QianchuanAdMaterialGetV10Filtering;
   page?: number;
   pageSize?: QianchuanAdMaterialGetV10PageSize;

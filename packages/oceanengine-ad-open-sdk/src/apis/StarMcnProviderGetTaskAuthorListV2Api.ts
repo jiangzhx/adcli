@@ -8,8 +8,8 @@ import type { StarMcnProviderGetTaskAuthorListV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnProviderGetTaskAuthorListGetRequest {
-  starId: number;
-  taskId: number;
+  starId: number | string;
+  taskId: number | string;
   page: number;
   limit: number;
   authorOrderStatus?: number;

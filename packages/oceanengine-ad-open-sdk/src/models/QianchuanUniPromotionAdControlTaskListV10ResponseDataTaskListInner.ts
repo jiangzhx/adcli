@@ -11,7 +11,7 @@ export interface QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListIn
   deep_external_action_name?: string;
   duration?: number;
   external_action_name?: string;
-  id?: number;
+  id?: number | string;
   material_list?: QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMaterialListInner[];
   metrics?: QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMetrics;
   name?: string;

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanShopGetV10ResponseDataListInner {
-  shop_id?: number;
+  shop_id?: number | string;
   shop_name?: string;
 }
 

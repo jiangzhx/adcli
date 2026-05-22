@@ -5,7 +5,7 @@ import type { OcProjectMaterialCreateV30VideoMaterialListImageMode, OcProjectMat
 
 export interface OcProjectMaterialCreateV30RequestVideoMaterialListInner {
   image_mode?: OcProjectMaterialCreateV30VideoMaterialListImageMode;
-  item_id?: number;
+  item_id?: number | string;
   video_cover_id?: string;
   video_hp_visibility?: OcProjectMaterialCreateV30VideoMaterialListVideoHpVisibility;
   video_id?: string;

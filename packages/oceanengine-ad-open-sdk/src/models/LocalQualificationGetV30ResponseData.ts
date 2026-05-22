@@ -4,7 +4,7 @@
 import type { LocalQualificationGetV30DataIndustryQuaStatus, LocalQualificationGetV30DataStatus, LocalQualificationGetV30ResponseDataIndustriesInner, LocalQualificationGetV30ResponseDataSubject } from "../models";
 
 export interface LocalQualificationGetV30ResponseData {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   industries?: LocalQualificationGetV30ResponseDataIndustriesInner[];
   industry_qua_status?: LocalQualificationGetV30DataIndustryQuaStatus;
   reject_reason?: string;

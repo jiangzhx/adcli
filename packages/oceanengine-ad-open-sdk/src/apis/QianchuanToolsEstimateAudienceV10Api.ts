@@ -8,11 +8,11 @@ import type { QianchuanToolsEstimateAudienceV10Audience, QianchuanToolsEstimateA
 
 
 export interface OpenApiV10QianchuanToolsEstimateAudienceGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   marketingGoal: QianchuanToolsEstimateAudienceV10MarketingGoal;
   externalAction: QianchuanToolsEstimateAudienceV10ExternalAction;
-  productId?: number;
-  awemeId?: number;
+  productId?: number | string;
+  awemeId?: number | string;
   audience?: QianchuanToolsEstimateAudienceV10Audience;
 }
 

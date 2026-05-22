@@ -9,7 +9,7 @@ import type { NativeAnchorGetDetailV30AnchorType, NativeAnchorGetDetailV30Respon
 
 export interface OpenApiV30NativeAnchorGetDetailGetRequest {
   anchorIds: string[];
-  advertiserId: number;
+  advertiserId: number | string;
   anchorType: NativeAnchorGetDetailV30AnchorType;
 }
 

@@ -4,7 +4,7 @@
 import type { ToolsWechatAppletUpdateV30MaxPaymentTierRange, ToolsWechatAppletUpdateV30MaxRechargeTier, ToolsWechatAppletUpdateV30MembershipType, ToolsWechatAppletUpdateV30MidPaymentTierRange, ToolsWechatAppletUpdateV30MinPaymentTierRange, ToolsWechatAppletUpdateV30MinRechargeTier, ToolsWechatAppletUpdateV30PaymentForm, ToolsWechatAppletUpdateV30RecommendedRechargeTier, ToolsWechatAppletUpdateV30RevenueModel } from "../models";
 
 export interface ToolsWechatAppletUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   discount_rate?: number;
   guide_text?: string;
   has_discount?: boolean;
@@ -13,7 +13,7 @@ export interface ToolsWechatAppletUpdateV30Request {
   icon_image_url?: string;
   images_horizontal_url?: string[];
   images_vertical_url?: string[];
-  instance_id: number;
+  instance_id: number | string;
   introduction?: string;
   labels?: string[];
   max_payment_tier_range?: ToolsWechatAppletUpdateV30MaxPaymentTierRange;

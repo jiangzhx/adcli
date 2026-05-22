@@ -4,7 +4,7 @@
 import type { BrandAwemeListV30DataAwemeUserInfoListAppName, BrandAwemeListV30DataAwemeUserInfoListAuthStatus, BrandAwemeListV30DataAwemeUserInfoListAuthType, BrandAwemeListV30DataAwemeUserInfoListOperatePlatform } from "../models";
 
 export interface BrandAwemeListV30ResponseDataAwemeUserInfoListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   advertiser_name?: string;
   app_name?: BrandAwemeListV30DataAwemeUserInfoListAppName;
   auth_status?: BrandAwemeListV30DataAwemeUserInfoListAuthStatus;

@@ -8,8 +8,8 @@ import type { QianchuanTodayLiveRoomDetailGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanTodayLiveRoomDetailGetGetRequest {
-  advertiserId: number;
-  roomId: number;
+  advertiserId: number | string;
+  roomId: number | string;
 }
 
 export class QianchuanTodayLiveRoomDetailGetV10Api {

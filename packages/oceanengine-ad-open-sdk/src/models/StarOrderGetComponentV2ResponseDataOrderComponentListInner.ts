@@ -6,10 +6,10 @@ import type { StarOrderGetComponentV2ResponseDataOrderComponentListInnerEcomInfo
 export interface StarOrderGetComponentV2ResponseDataOrderComponentListInner {
   cocreate_douyin_id?: string;
   ecom_info?: StarOrderGetComponentV2ResponseDataOrderComponentListInnerEcomInfoInner[];
-  industry_component_id?: number;
+  industry_component_id?: number | string;
   link_component_list?: StarOrderGetComponentV2ResponseDataOrderComponentListInnerLinkComponentListInner[];
-  live_attract_component_id?: number;
-  order_id?: number;
+  live_attract_component_id?: number | string;
+  order_id?: number | string;
   search_word?: string;
 }
 

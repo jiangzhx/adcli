@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsThirdSiteDeleteV2Request {
-  advertiser_id: number;
-  site_id: number;
+  advertiser_id: number | string;
+  site_id: number | string;
 }
 

@@ -6,7 +6,7 @@ import type { EventManagerAvailableEventsGetV2DataEventConfigsTrackTypes, EventM
 export interface EventManagerAvailableEventsGetV2ResponseDataEventConfigsInner {
   description?: string;
   event_cn_name?: string;
-  event_id?: number;
+  event_id?: number | string;
   event_type?: string;
   properties?: EventManagerAvailableEventsGetV2ResponseDataEventConfigsInnerPropertiesInner[];
   track_types?: EventManagerAvailableEventsGetV2DataEventConfigsTrackTypes[];

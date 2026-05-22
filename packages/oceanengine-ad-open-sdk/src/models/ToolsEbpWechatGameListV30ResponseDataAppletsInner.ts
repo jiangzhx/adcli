@@ -4,7 +4,7 @@
 import type { ToolsEbpWechatGameListV30DataAppletsAccountType, ToolsEbpWechatGameListV30DataAppletsAuditStatus, ToolsEbpWechatGameListV30ResponseDataAppletsInnerExtra, ToolsEbpWechatGameListV30ResponseDataAppletsInnerHead, ToolsEbpWechatGameListV30ResponseDataAppletsInnerIcon, ToolsEbpWechatGameListV30ResponseDataAppletsInnerMaterialInner } from "../models";
 
 export interface ToolsEbpWechatGameListV30ResponseDataAppletsInner {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpWechatGameListV30DataAppletsAccountType;
   audit_status?: ToolsEbpWechatGameListV30DataAppletsAuditStatus;
   data?: Record<string, string>;
@@ -12,7 +12,7 @@ export interface ToolsEbpWechatGameListV30ResponseDataAppletsInner {
   guide_copy?: string;
   head?: ToolsEbpWechatGameListV30ResponseDataAppletsInnerHead;
   icon?: ToolsEbpWechatGameListV30ResponseDataAppletsInnerIcon;
-  instance_id: number;
+  instance_id: number | string;
   introduction?: string;
   is_ebp_asset?: boolean;
   label?: string[];

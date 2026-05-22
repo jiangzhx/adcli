@@ -8,8 +8,8 @@ import type { ProjectCostProtectStatusGetV30Response } from "../models";
 
 
 export interface OpenApiV30ProjectCostProtectStatusGetGetRequest {
-  advertiserId: number;
-  projectIds: number[];
+  advertiserId: number | string;
+  projectIds: number | string[];
 }
 
 export class ProjectCostProtectStatusGetV30Api {

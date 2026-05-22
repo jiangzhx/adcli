@@ -4,7 +4,7 @@
 import type { EventManagerShareCancelV30DataErrorListAccountInfoAccountType } from "../models";
 
 export interface EventManagerShareCancelV30ResponseDataErrorListInnerAccountInfo {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: EventManagerShareCancelV30DataErrorListAccountInfoAccountType;
 }
 

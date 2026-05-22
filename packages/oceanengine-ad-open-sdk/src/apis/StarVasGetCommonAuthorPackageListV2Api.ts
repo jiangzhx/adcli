@@ -8,7 +8,7 @@ import type { StarVasGetCommonAuthorPackageListV2Response } from "../models";
 
 
 export interface OpenApi2StarVasGetCommonAuthorPackageListGetRequest {
-  starId: number;
+  starId: number | string;
 }
 
 export class StarVasGetCommonAuthorPackageListV2Api {

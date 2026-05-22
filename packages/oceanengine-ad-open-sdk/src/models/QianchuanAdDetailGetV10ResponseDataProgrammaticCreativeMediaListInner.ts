@@ -4,11 +4,11 @@
 import type { QianchuanAdDetailGetV10DataProgrammaticCreativeMediaListImageMode, QianchuanAdDetailGetV10ResponseDataProgrammaticCreativeMediaListInnerCarouselAudio, QianchuanAdDetailGetV10ResponseDataProgrammaticCreativeMediaListInnerCarouselImagesInner } from "../models";
 
 export interface QianchuanAdDetailGetV10ResponseDataProgrammaticCreativeMediaListInner {
-  aweme_carousel_id?: number;
-  aweme_item_id?: number;
+  aweme_carousel_id?: number | string;
+  aweme_item_id?: number | string;
   carousel_audio?: QianchuanAdDetailGetV10ResponseDataProgrammaticCreativeMediaListInnerCarouselAudio;
   carousel_description?: string;
-  carousel_id?: number;
+  carousel_id?: number | string;
   carousel_images?: QianchuanAdDetailGetV10ResponseDataProgrammaticCreativeMediaListInnerCarouselImagesInner[];
   image_ids?: string[];
   image_mode?: QianchuanAdDetailGetV10DataProgrammaticCreativeMediaListImageMode;

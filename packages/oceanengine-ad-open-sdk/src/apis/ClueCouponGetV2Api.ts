@@ -8,9 +8,9 @@ import type { ClueCouponGetV2ActivityTypes, ClueCouponGetV2IsDel, ClueCouponGetV
 
 
 export interface OpenApi2ClueCouponGetGetRequest {
-  activityIds?: number[];
+  activityIds?: number | string[];
   activityTypes?: ClueCouponGetV2ActivityTypes[];
-  advertiserId?: number;
+  advertiserId?: number | string;
   endTime?: string;
   isDel?: ClueCouponGetV2IsDel;
   page?: number;

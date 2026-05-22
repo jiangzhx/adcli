@@ -4,7 +4,7 @@
 import type { DpaEbpClueProductSaveV30AccountType, DpaEbpClueProductSaveV30RequestProduct } from "../models";
 
 export interface DpaEbpClueProductSaveV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: DpaEbpClueProductSaveV30AccountType;
   product: DpaEbpClueProductSaveV30RequestProduct;
 }

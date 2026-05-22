@@ -8,7 +8,7 @@ import type { DpaProductAvailablesV2Response } from "../models";
 
 
 export interface OpenApi2DpaProductAvailablesGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class DpaProductAvailablesV2Api {

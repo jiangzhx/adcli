@@ -3,7 +3,7 @@
 
 export interface StarDemandCreateChallengeV2RequestDemandInfoComponentInfoPaidContentComponent {
   douyin_id: string;
-  product_id?: number;
-  series_id: number;
+  product_id?: number | string;
+  series_id: number | string;
 }
 

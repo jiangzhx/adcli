@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface ToolsThirdSiteUpdateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   name: string;
-  site_id: number;
+  site_id: number | string;
 }
 

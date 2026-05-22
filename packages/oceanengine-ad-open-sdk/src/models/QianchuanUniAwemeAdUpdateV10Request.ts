@@ -4,8 +4,8 @@
 import type { QianchuanUniAwemeAdUpdateV10RequestCreativeSetting, QianchuanUniAwemeAdUpdateV10RequestDeliverySetting, QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInner, QianchuanUniAwemeAdUpdateV10RequestProductChannelInfoInner, QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaList } from "../models";
 
 export interface QianchuanUniAwemeAdUpdateV10Request {
-  ad_id: number;
-  advertiser_id: number;
+  ad_id: number | string;
+  advertiser_id: number | string;
   creative_setting?: QianchuanUniAwemeAdUpdateV10RequestCreativeSetting;
   delivery_setting?: QianchuanUniAwemeAdUpdateV10RequestDeliverySetting;
   multi_product_creative_list?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInner[];

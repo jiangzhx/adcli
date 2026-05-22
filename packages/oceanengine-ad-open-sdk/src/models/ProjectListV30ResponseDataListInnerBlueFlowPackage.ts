@@ -5,7 +5,7 @@ import type { ProjectListV30DataListBlueFlowPackageBlueFlowPackageSetting } from
 
 export interface ProjectListV30ResponseDataListInnerBlueFlowPackage {
   blue_flow_keyword_name?: string[];
-  blue_flow_package_id?: number;
+  blue_flow_package_id?: number | string;
   blue_flow_package_setting?: ProjectListV30DataListBlueFlowPackageBlueFlowPackageSetting;
 }
 

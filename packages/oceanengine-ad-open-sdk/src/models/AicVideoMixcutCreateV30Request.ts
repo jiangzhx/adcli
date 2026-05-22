@@ -4,7 +4,7 @@
 import type { AicVideoMixcutCreateV30AccountType, AicVideoMixcutCreateV30RequestAudioOption, AicVideoMixcutCreateV30RequestGenElement, AicVideoMixcutCreateV30RequestProductInfo, AicVideoMixcutCreateV30RequestRenderOption, AicVideoMixcutCreateV30RequestSubtitleStyle } from "../models";
 
 export interface AicVideoMixcutCreateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: AicVideoMixcutCreateV30AccountType;
   audio_option?: AicVideoMixcutCreateV30RequestAudioOption;
   count?: number;
@@ -14,6 +14,6 @@ export interface AicVideoMixcutCreateV30Request {
   render_option?: AicVideoMixcutCreateV30RequestRenderOption;
   subtitle_style?: AicVideoMixcutCreateV30RequestSubtitleStyle;
   task_name?: string;
-  video_element_ids: number[];
+  video_element_ids: number | string[];
 }
 

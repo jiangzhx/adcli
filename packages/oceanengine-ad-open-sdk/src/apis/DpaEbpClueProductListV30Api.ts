@@ -8,14 +8,14 @@ import type { DpaEbpClueProductListV30AccountType, DpaEbpClueProductListV30Asset
 
 
 export interface OpenApiV30DpaEbpClueProductListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: DpaEbpClueProductListV30AccountType;
   offset: number;
   limit: number;
-  productIds?: number[];
+  productIds?: number | string[];
   productName?: string;
   auditStatus?: DpaEbpClueProductListV30AuditStatus[];
-  categoryIds?: number[];
+  categoryIds?: number | string[];
   productIdOrNameSearch?: string;
   statuses?: DpaEbpClueProductListV30Statuses[];
   assetQueryScope?: DpaEbpClueProductListV30AssetQueryScope;

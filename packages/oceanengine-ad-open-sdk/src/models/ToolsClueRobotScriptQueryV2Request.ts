@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsClueRobotScriptQueryV2Request {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   page_number?: number;
   page_size?: number;
 }

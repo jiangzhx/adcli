@@ -8,7 +8,7 @@ import type { FileAudioAdV2Response, FileAudioAdV2UploadType } from "../models";
 
 
 export interface OpenApi2FileAudioAdPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   uploadType: FileAudioAdV2UploadType;
   audioFile?: File;
   audioSignature?: string;

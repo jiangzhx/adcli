@@ -4,7 +4,7 @@
 import type { QianchuanAdLearingStatusGetV10DataListStatus } from "../models";
 
 export interface QianchuanAdLearingStatusGetV10ResponseDataListInner {
-  ad_id?: number;
+  ad_id?: number | string;
   status?: QianchuanAdLearingStatusGetV10DataListStatus;
 }
 

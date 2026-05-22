@@ -8,7 +8,7 @@ import type { ToolsAppManagementBookingRecordsGetV2CreateTime, ToolsAppManagemen
 
 
 export interface OpenApi2ToolsAppManagementBookingRecordsGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   packageId: string;
   hostType: ToolsAppManagementBookingRecordsGetV2HostType;
   page?: number;

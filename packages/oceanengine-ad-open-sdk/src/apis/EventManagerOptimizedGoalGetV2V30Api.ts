@@ -8,22 +8,22 @@ import type { EventManagerOptimizedGoalGetV2V30AdType, EventManagerOptimizedGoal
 
 
 export interface OpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   landingType: EventManagerOptimizedGoalGetV2V30LandingType;
   adType: EventManagerOptimizedGoalGetV2V30AdType;
   assetType?: EventManagerOptimizedGoalGetV2V30AssetType;
   multiAssetType?: EventManagerOptimizedGoalGetV2V30MultiAssetType;
-  assetId?: number;
+  assetId?: number | string;
   packageName?: string;
   appType?: EventManagerOptimizedGoalGetV2V30AppType;
   appPromotionType?: EventManagerOptimizedGoalGetV2V30AppPromotionType;
   marketingGoal?: EventManagerOptimizedGoalGetV2V30MarketingGoal;
-  quickAppId?: number;
+  quickAppId?: number | string;
   deliveryMode?: EventManagerOptimizedGoalGetV2V30DeliveryMode;
   miniProgramId?: string;
   dpaAdtype?: EventManagerOptimizedGoalGetV2V30DpaAdtype;
   microPromotionType?: EventManagerOptimizedGoalGetV2V30MicroPromotionType;
-  microAppInstanceId?: number;
+  microAppInstanceId?: number | string;
   deliveryType?: EventManagerOptimizedGoalGetV2V30DeliveryType;
 }
 

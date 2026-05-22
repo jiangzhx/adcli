@@ -3,6 +3,6 @@
 
 export interface PromotionDeepbidUpdateV30RequestDataInner {
   deepbid: number;
-  promotion_id: number;
+  promotion_id: number | string;
 }
 

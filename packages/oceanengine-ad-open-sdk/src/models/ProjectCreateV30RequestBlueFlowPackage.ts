@@ -5,7 +5,7 @@ import type { ProjectCreateV30BlueFlowPackageBlueFlowPackageSetting } from "../m
 
 export interface ProjectCreateV30RequestBlueFlowPackage {
   blue_flow_keyword_name?: string[];
-  blue_flow_package_id?: number;
+  blue_flow_package_id?: number | string;
   blue_flow_package_setting?: ProjectCreateV30BlueFlowPackageBlueFlowPackageSetting;
 }
 

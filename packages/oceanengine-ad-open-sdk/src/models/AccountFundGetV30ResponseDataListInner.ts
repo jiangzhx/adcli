@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AccountFundGetV30ResponseDataListInner {
-  account_id?: number;
+  account_id?: number | string;
   balance?: number;
   bidding_cash?: number;
   bidding_credit_balance?: number;
@@ -52,7 +52,7 @@ export interface AccountFundGetV30ResponseDataListInner {
   valid_cash?: number;
   valid_grant?: number;
   valid_return_goods_abs?: number;
-  wallet_id?: number;
+  wallet_id?: number | string;
   wallet_total_balance_valid?: number;
 }
 

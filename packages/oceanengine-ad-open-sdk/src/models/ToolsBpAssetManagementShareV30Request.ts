@@ -8,8 +8,8 @@ export interface ToolsBpAssetManagementShareV30Request {
   all_accounts_by_bp?: ToolsBpAssetManagementShareV30AllAccountsByBp[];
   all_accounts_by_company?: ToolsBpAssetManagementShareV30RequestAllAccountsByCompanyInner[];
   asset_type: ToolsBpAssetManagementShareV30AssetType;
-  instance_id: number;
-  organization_id: number;
+  instance_id: number | string;
+  organization_id: number | string;
   share_mode: ToolsBpAssetManagementShareV30ShareMode;
 }
 

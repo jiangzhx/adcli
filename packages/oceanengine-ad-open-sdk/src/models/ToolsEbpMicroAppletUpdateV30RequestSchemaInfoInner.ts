@@ -4,7 +4,7 @@
 import type { ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType } from "../models";
 
 export interface ToolsEbpMicroAppletUpdateV30RequestSchemaInfoInner {
-  id?: number;
+  id?: number | string;
   link?: string;
   operate_type: ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType;
   remark: string;

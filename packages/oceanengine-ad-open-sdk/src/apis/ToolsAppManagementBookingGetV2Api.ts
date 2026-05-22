@@ -8,7 +8,7 @@ import type { ToolsAppManagementBookingGetV2AccountAssetQueryScope, ToolsAppMana
 
 
 export interface OpenApi2ToolsAppManagementBookingGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
   searchKey?: string;

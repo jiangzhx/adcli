@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanAwemeUniPromotionOrderCreateV10ResponseData {
-  order_id: number;
+  order_id: number | string;
 }
 

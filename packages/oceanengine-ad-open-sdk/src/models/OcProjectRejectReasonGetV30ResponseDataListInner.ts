@@ -5,7 +5,7 @@ import type { OcProjectRejectReasonGetV30ResponseDataListInnerMaterialRejectInne
 
 export interface OcProjectRejectReasonGetV30ResponseDataListInner {
   material_reject?: OcProjectRejectReasonGetV30ResponseDataListInnerMaterialRejectInner[];
-  project_id?: number;
+  project_id?: number | string;
   project_reject?: OcProjectRejectReasonGetV30ResponseDataListInnerProjectRejectInner[];
 }
 

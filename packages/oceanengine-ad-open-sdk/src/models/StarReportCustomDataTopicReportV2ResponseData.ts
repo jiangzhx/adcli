@@ -5,7 +5,7 @@ import type { StarReportCustomDataTopicReportV2ResponseDataDataInner } from "../
 
 export interface StarReportCustomDataTopicReportV2ResponseData {
   data?: StarReportCustomDataTopicReportV2ResponseDataDataInner[];
-  demand_id: number;
-  item_id: number;
+  demand_id: number | string;
+  item_id: number | string;
 }
 

@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface QianchuanAdDetailGetV10ResponseDataCreativeListInnerVideoMaterial {
-  aweme_item_id?: number;
-  id?: number;
+  aweme_item_id?: number | string;
+  id?: number | string;
   is_auto_generate?: number;
   poster_url?: string;
   url?: string;

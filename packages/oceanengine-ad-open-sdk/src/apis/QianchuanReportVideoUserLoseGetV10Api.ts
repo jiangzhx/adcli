@@ -12,7 +12,7 @@ export interface OpenApiV10QianchuanReportVideoUserLoseGetGetRequest {
   startDate: string;
   endDate: string;
   filtering: QianchuanReportVideoUserLoseGetV10Filtering;
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class QianchuanReportVideoUserLoseGetV10Api {

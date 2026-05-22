@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface LocalInterestCategoryV30ResponseDataCategoryInnerChildrenInnerChildrenInnerChildrenInner {
-  id?: number;
+  id?: number | string;
   value?: string;
 }
 

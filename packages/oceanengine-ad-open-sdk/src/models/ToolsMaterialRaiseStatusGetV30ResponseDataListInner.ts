@@ -4,6 +4,6 @@
 export interface ToolsMaterialRaiseStatusGetV30ResponseDataListInner {
   can_raise?: boolean;
   is_raising?: boolean;
-  project_id?: number;
+  project_id?: number | string;
 }
 

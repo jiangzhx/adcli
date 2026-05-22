@@ -8,7 +8,7 @@ import type { LocalInterestCategoryV30Response } from "../models";
 
 
 export interface OpenApiV30LocalInterestCategoryGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
 }
 
 export class LocalInterestCategoryV30Api {

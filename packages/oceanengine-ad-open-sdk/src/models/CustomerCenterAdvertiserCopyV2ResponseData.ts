@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface CustomerCenterAdvertiserCopyV2ResponseData {
-  advertiser_id: number;
+  advertiser_id: number | string;
 }
 

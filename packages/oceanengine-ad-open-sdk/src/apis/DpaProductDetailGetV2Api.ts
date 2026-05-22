@@ -8,11 +8,11 @@ import type { DpaProductDetailGetV2Filtering, DpaProductDetailGetV2Response } fr
 
 
 export interface OpenApi2DpaProductDetailGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: DpaProductDetailGetV2Filtering;
   page?: number;
   pageSize?: number;
-  platformId?: number;
+  platformId?: number | string;
 }
 
 export class DpaProductDetailGetV2Api {

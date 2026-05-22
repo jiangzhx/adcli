@@ -8,8 +8,8 @@ import type { ClueCouponDetailV2Response } from "../models";
 
 
 export interface OpenApi2ClueCouponDetailGetRequest {
-  activityId?: number;
-  advertiserId?: number;
+  activityId?: number | string;
+  advertiserId?: number | string;
 }
 
 export class ClueCouponDetailV2Api {

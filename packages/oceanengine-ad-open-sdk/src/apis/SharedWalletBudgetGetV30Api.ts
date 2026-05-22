@@ -8,9 +8,9 @@ import type { SharedWalletBudgetGetV30AccountType, SharedWalletBudgetGetV30Respo
 
 
 export interface OpenApiV30SharedWalletBudgetGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: SharedWalletBudgetGetV30AccountType;
-  subWalletId: number;
+  subWalletId: number | string;
 }
 
 export class SharedWalletBudgetGetV30Api {

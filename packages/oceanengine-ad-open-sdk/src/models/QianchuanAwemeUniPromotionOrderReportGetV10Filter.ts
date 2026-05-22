@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanAwemeUniPromotionOrderReportGetV10Filter {
-  ad_id?: number[];
+  ad_id?: number | string[];
 }
 

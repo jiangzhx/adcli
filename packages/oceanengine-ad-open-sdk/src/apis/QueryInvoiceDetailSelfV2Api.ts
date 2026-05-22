@@ -8,9 +8,9 @@ import type { QueryInvoiceDetailSelfV2Response } from "../models";
 
 
 export interface OpenApi2QueryInvoiceDetailSelfGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   invoiceSerial?: string;
-  invoiceId?: number;
+  invoiceId?: number | string;
 }
 
 export class QueryInvoiceDetailSelfV2Api {

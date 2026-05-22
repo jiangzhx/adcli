@@ -8,7 +8,7 @@ import type { StarDataTaskTimelineReportV2Response } from "../models";
 
 
 export interface OpenApi2StarDataTaskTimelineReportGetRequest {
-  starId: number;
+  starId: number | string;
   partition: string;
   outerProjectIdList?: string[];
   outerTaskIdList?: string[];

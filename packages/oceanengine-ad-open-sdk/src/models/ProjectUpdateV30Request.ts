@@ -4,7 +4,7 @@
 import type { ProjectUpdateV30AigcDynamicCreativeSwitch, ProjectUpdateV30AudienceExtend, ProjectUpdateV30AutoExtendTraffic, ProjectUpdateV30DownloadMode, ProjectUpdateV30RequestAudience, ProjectUpdateV30RequestBlueFlowPackage, ProjectUpdateV30RequestDeliverySetting, ProjectUpdateV30RequestDpaProductTargetInner, ProjectUpdateV30RequestKeywordsInner, ProjectUpdateV30RequestRelatedProduct, ProjectUpdateV30RequestTrackUrlSetting, ProjectUpdateV30StarAutoDeliverySwitch, ProjectUpdateV30StarAutoMaterialAdditionSwitch, ProjectUpdateV30UlinkUrlType } from "../models";
 
 export interface ProjectUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   aigc_dynamic_creative_switch?: ProjectUpdateV30AigcDynamicCreativeSwitch;
   audience?: ProjectUpdateV30RequestAudience;
   audience_extend?: ProjectUpdateV30AudienceExtend;
@@ -18,7 +18,7 @@ export interface ProjectUpdateV30Request {
   open_url?: string;
   open_url_field?: string;
   open_url_params?: string;
-  project_id: number;
+  project_id: number | string;
   related_product?: ProjectUpdateV30RequestRelatedProduct;
   search_bid_ratio?: number;
   star_auto_delivery_switch?: ProjectUpdateV30StarAutoDeliverySwitch;

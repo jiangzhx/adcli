@@ -8,7 +8,7 @@ export interface FileQualityGetV30ResponseDataListInner {
   is_first_publish_material?: boolean;
   is_similar_expected_queue_material?: boolean;
   is_similar_queue_material?: boolean;
-  material_id: number;
+  material_id: number | string;
   status: FileQualityGetV30DataListStatus;
 }
 

@@ -5,12 +5,12 @@ import type { AgentInfoV2DataAccountStatus, AgentInfoV2DataRole } from "../model
 
 export interface AgentInfoV2ResponseData {
   account_status?: AgentInfoV2DataAccountStatus;
-  agent_id?: number;
+  agent_id?: number | string;
   agent_name?: string;
-  company_id?: number;
+  company_id?: number | string;
   company_name?: string;
   create_time?: string;
-  customer_id?: number;
+  customer_id?: number | string;
   customer_name?: string;
   role?: AgentInfoV2DataRole;
 }

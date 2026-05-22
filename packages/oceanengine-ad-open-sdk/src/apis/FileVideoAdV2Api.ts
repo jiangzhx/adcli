@@ -8,7 +8,7 @@ import type { FileVideoAdV2Response, FileVideoAdV2UploadType } from "../models";
 
 
 export interface OpenApi2FileVideoAdPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filename?: string;
   isAigc?: boolean;
   isGuideVideo?: boolean;

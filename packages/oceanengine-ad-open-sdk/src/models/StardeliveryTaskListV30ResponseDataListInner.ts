@@ -7,12 +7,12 @@ export interface StardeliveryTaskListV30ResponseDataListInner {
   star_account_name?: string;
   star_ad_cost_divide_ratio?: number;
   star_author_pending?: number;
-  star_id?: number;
+  star_id?: number | string;
   star_material_bid?: number;
   star_material_bid_range?: number[];
   star_pending_confirm_count?: number;
   star_sale_cost_end_time?: string;
-  star_task_album_id?: number;
+  star_task_album_id?: number | string;
   star_task_album_name?: string;
   star_task_anchor_type?: StardeliveryTaskListV30DataListStarTaskAnchorType;
   star_task_bid?: number;
@@ -24,7 +24,7 @@ export interface StardeliveryTaskListV30ResponseDataListInner {
   star_task_category_type?: StardeliveryTaskListV30DataListStarTaskCategoryType;
   star_task_create_time?: string;
   star_task_external_action?: StardeliveryTaskListV30DataListStarTaskExternalAction;
-  star_task_id?: number;
+  star_task_id?: number | string;
   star_task_material_purchase_method?: StardeliveryTaskListV30DataListStarTaskMaterialPurchaseMethod;
   star_task_modify_time?: string;
   star_task_name?: string;

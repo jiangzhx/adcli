@@ -5,10 +5,10 @@ import type { QianchuanAdDetailGetV10ResponseDataCreativeListInnerCarouselMateri
 
 export interface QianchuanAdDetailGetV10ResponseDataCreativeListInnerCarouselMaterial {
   audio?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerCarouselMaterialAudio;
-  aweme_carousel_id?: number;
-  carousel_id?: number;
+  aweme_carousel_id?: number | string;
+  carousel_id?: number | string;
   description?: string;
-  id?: number;
+  id?: number | string;
   images?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerCarouselMaterialImagesInner[];
   is_auto_generate?: number;
 }

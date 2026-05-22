@@ -6,10 +6,10 @@ import type { QianchuanUniPromotionProductGetV10DataProductListChannelType, Qian
 export interface QianchuanUniPromotionProductGetV10ResponseDataProductListInner {
   audit_time?: string;
   category_name?: string;
-  channel_id?: number;
+  channel_id?: number | string;
   channel_type?: QianchuanUniPromotionProductGetV10DataProductListChannelType;
   gray_reason?: string[];
-  id?: number;
+  id?: number | string;
   img?: string;
   name?: string;
   sell_num?: number;

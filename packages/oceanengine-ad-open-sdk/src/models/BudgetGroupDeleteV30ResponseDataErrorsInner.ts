@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface BudgetGroupDeleteV30ResponseDataErrorsInner {
-  budget_group_id?: number;
+  budget_group_id?: number | string;
   error_message?: string;
 }
 

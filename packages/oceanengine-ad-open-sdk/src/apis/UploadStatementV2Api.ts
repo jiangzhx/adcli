@@ -8,7 +8,7 @@ import type { UploadStatementV2Response } from "../models";
 
 
 export interface OpenApi2UploadStatementPostRequest {
-  agentId: number;
+  agentId: number | string;
   file: File;
 }
 

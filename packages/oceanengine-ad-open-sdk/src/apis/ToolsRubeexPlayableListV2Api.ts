@@ -9,7 +9,7 @@ import type { ToolsRubeexPlayableListV2Filtering, ToolsRubeexPlayableListV2Respo
 
 export interface OpenApi2ToolsRubeexPlayableListGetRequest {
   projectId: number;
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
   filtering?: ToolsRubeexPlayableListV2Filtering;

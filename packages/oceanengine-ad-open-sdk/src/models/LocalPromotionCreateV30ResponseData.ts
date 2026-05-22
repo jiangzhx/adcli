@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface LocalPromotionCreateV30ResponseData {
-  promotion_id?: number;
+  promotion_id?: number | string;
 }
 

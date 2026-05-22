@@ -8,9 +8,9 @@ import type { SharedWalletWalletAdvOperationLogGetV30AccountType, SharedWalletWa
 
 
 export interface OpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: SharedWalletWalletAdvOperationLogGetV30AccountType;
-  walletId: number;
+  walletId: number | string;
   filtering: SharedWalletWalletAdvOperationLogGetV30Filtering;
   page: number;
   pageSize: number;

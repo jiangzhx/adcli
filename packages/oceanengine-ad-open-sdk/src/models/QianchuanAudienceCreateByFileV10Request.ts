@@ -4,7 +4,7 @@
 import type { QianchuanAudienceCreateByFileV10MatchType } from "../models";
 
 export interface QianchuanAudienceCreateByFileV10Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   audience_group: string;
   audience_name: string;
   data_type: number;

@@ -5,7 +5,7 @@ import type { ReportCustomAsyncTaskCreateV30DataTaskStatus } from "../models";
 
 export interface ReportCustomAsyncTaskCreateV30ResponseData {
   create_time?: string;
-  task_id?: number;
+  task_id?: number | string;
   task_name?: string;
   task_status?: ReportCustomAsyncTaskCreateV30DataTaskStatus;
 }

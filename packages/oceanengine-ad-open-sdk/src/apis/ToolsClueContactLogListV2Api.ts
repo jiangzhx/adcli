@@ -8,8 +8,8 @@ import type { ToolsClueContactLogListV2Filter, ToolsClueContactLogListV2Response
 
 
 export interface OpenApi2ToolsClueContactLogListGetRequest {
-  advertiserId: number;
-  clueId: number;
+  advertiserId: number | string;
+  clueId: number | string;
   filter?: ToolsClueContactLogListV2Filter;
 }
 

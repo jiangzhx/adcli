@@ -12,11 +12,11 @@ export interface ToolsEbpAppGameBookListV30ResponseDataBasicAppListInner {
   app_name: string;
   app_name_en: string;
   auth_detail?: boolean;
-  basic_package_int_id: number;
+  basic_package_int_id: number | string;
   create_time?: string;
   download_url?: string;
   has_extend_package?: boolean;
-  history_account_id?: number;
+  history_account_id?: number | string;
   history_account_name?: string;
   history_account_type?: number;
   package_id: string;

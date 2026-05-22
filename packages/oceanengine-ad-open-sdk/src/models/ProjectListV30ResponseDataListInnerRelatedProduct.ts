@@ -5,9 +5,9 @@ import type { ProjectListV30DataListRelatedProductProductSetting, ProjectListV30
 
 export interface ProjectListV30ResponseDataListInnerRelatedProduct {
   product_id?: string;
-  product_platform_id?: number;
+  product_platform_id?: number | string;
   product_setting?: ProjectListV30DataListRelatedProductProductSetting;
   products?: ProjectListV30ResponseDataListInnerRelatedProductProductsInner[];
-  unique_product_id?: number;
+  unique_product_id?: number | string;
 }
 

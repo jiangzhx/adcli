@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface LocalMultiPoiIdPoiIdsGetV30ResponseDataMultiPoiInfoInner {
-  multi_poi_id?: number;
-  poi_ids?: number[];
+  multi_poi_id?: number | string;
+  poi_ids?: number | string[];
 }
 

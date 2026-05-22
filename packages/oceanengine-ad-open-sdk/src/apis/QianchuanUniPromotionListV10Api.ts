@@ -8,7 +8,7 @@ import type { QianchuanUniPromotionListV10AdlabScene, QianchuanUniPromotionListV
 
 
 export interface OpenApiV10QianchuanUniPromotionListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startTime: string;
   endTime: string;
   marketingGoal: QianchuanUniPromotionListV10MarketingGoal;

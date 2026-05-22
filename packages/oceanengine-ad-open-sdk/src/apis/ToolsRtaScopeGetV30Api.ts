@@ -8,8 +8,8 @@ import type { ToolsRtaScopeGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsRtaScopeGetGetRequest {
-  advertiserId: number;
-  rtaId: number;
+  advertiserId: number | string;
+  rtaId: number | string;
 }
 
 export class ToolsRtaScopeGetV30Api {

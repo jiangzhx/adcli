@@ -6,7 +6,7 @@ import type { ToolsEbpSubjectListV30DataCompanyBasicInfosStatus, ToolsEbpSubject
 export interface ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInner {
   account_param: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerAccountParam;
   company_basic_info?: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerCompanyBasicInfo;
-  group_id: number;
+  group_id: number | string;
   qualification_info?: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfo;
   qualification_type: number;
   status: ToolsEbpSubjectListV30DataCompanyBasicInfosStatus;

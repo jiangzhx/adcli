@@ -8,7 +8,7 @@ import type { PromotionListV30Filtering, PromotionListV30IncludingMaterialAtrrib
 
 
 export interface OpenApiV30PromotionListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: PromotionListV30Filtering;
   fields?: string[];
   includingMaterialAtrributes?: PromotionListV30IncludingMaterialAtrributes;

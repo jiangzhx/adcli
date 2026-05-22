@@ -8,7 +8,7 @@ import type { ToolsAppManagementExtendPackageListV2Filtering, ToolsAppManagement
 
 
 export interface OpenApi2ToolsAppManagementExtendPackageListGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: ToolsAppManagementExtendPackageListV2Filtering;
   packageId?: string;
   page?: number;

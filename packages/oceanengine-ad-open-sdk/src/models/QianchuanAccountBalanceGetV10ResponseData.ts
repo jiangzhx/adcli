@@ -14,7 +14,7 @@ export interface QianchuanAccountBalanceGetV10ResponseData {
   account_general_valid?: number;
   account_total?: number;
   account_valid?: number;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   share_grant_total?: number;
   share_wallet_bidding_valid?: number;
   share_wallet_brand_valid?: number;

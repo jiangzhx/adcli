@@ -8,7 +8,7 @@ import type { ToolsEbpMaterialAuthListV30AccountType, ToolsEbpMaterialAuthListV3
 
 
 export interface OpenApiV30ToolsEbpMaterialAuthListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType?: ToolsEbpMaterialAuthListV30AccountType;
   materialType?: ToolsEbpMaterialAuthListV30MaterialType;
   page?: number;

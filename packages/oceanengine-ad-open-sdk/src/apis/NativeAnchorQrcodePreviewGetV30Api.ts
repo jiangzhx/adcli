@@ -8,7 +8,7 @@ import type { NativeAnchorQrcodePreviewGetV30AnchorType, NativeAnchorQrcodePrevi
 
 
 export interface OpenApiV30NativeAnchorQrcodePreviewGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   anchorIds: string[];
   anchorType: NativeAnchorQrcodePreviewGetV30AnchorType;
 }

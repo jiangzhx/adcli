@@ -8,8 +8,8 @@ import type { ReportJointGrowthGetV30Response } from "../models";
 
 
 export interface OpenApiV30ReportJointGrowthGetGetRequest {
-  advertiserId: number;
-  rtaId: number;
+  advertiserId: number | string;
+  rtaId: number | string;
   startTime: string;
   endTime: string;
   page?: number;

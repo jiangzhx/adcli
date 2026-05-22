@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsClueInfoUpdateV2RequestUpdateInfoInner {
-  clue_id: number;
+  clue_id: number | string;
   fields?: Record<string, string>;
 }
 

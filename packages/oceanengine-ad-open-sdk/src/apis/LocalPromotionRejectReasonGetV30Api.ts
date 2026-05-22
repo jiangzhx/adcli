@@ -8,8 +8,8 @@ import type { LocalPromotionRejectReasonGetV30Response } from "../models";
 
 
 export interface OpenApiV30LocalPromotionRejectReasonGetGetRequest {
-  localAccountId: number;
-  promotionIds: number[];
+  localAccountId: number | string;
+  promotionIds: number | string[];
 }
 
 export class LocalPromotionRejectReasonGetV30Api {

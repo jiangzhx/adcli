@@ -4,12 +4,12 @@
 import type { ToolsAipThirdSiteGetV2DataAuditStatus, ToolsAipThirdSiteGetV2DataValidateStatus } from "../models";
 
 export interface ToolsAipThirdSiteGetV2ResponseData {
-  adveriser_id?: number;
+  adveriser_id?: number | string;
   audit_message?: string;
   audit_status?: ToolsAipThirdSiteGetV2DataAuditStatus;
   create_time?: string;
   name?: string;
-  site_id?: number;
+  site_id?: number | string;
   update_time?: string;
   url?: string;
   validate_message?: string;

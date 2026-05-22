@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsSiteTemplateCreateV2ResponseDataBricksInnerWechatApplet {
-  instance_id?: number;
+  instance_id?: number | string;
   introduction?: string;
   items?: string[];
   logo?: string;

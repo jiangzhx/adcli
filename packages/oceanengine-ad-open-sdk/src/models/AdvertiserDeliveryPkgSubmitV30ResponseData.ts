@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdvertiserDeliveryPkgSubmitV30ResponseData {
-  pkg_id?: number;
-  qualification_ids?: number[];
+  pkg_id?: number | string;
+  qualification_ids?: number | string[];
 }
 

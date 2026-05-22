@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface CgTransferCanTransferTargetListV30ResponseDataCanTransferTargetListInner {
-  target_id?: number;
+  target_id?: number | string;
 }
 

@@ -8,7 +8,7 @@ import type { CustomerCenterAccountOfflineListV30Filter, CustomerCenterAccountOf
 
 
 export interface OpenApiV30CustomerCenterAccountOfflineListGetRequest {
-  accountId: number;
+  accountId: number | string;
   filter: CustomerCenterAccountOfflineListV30Filter;
 }
 

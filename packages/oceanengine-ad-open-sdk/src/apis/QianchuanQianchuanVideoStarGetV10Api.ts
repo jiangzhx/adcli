@@ -8,7 +8,7 @@ import type { QianchuanQianchuanVideoStarGetV10Filtering, QianchuanQianchuanVide
 
 
 export interface OpenApiV10QianchuanQianchuanVideoStarGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: QianchuanQianchuanVideoStarGetV10Filtering;
   orderField?: QianchuanQianchuanVideoStarGetV10OrderField;
   cursor?: number;

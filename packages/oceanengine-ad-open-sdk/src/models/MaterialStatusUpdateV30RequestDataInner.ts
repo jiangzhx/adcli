@@ -4,7 +4,7 @@
 import type { MaterialStatusUpdateV30DataOptStatus } from "../models";
 
 export interface MaterialStatusUpdateV30RequestDataInner {
-  material_id: number;
+  material_id: number | string;
   opt_status: MaterialStatusUpdateV30DataOptStatus;
 }
 

@@ -19,7 +19,7 @@ export interface NativeAnchorUpdateV30RequestAnchorInfoGameAnchor {
   harmony_download_url?: string;
   head_image_list?: NativeAnchorUpdateV30RequestAnchorInfoGameAnchorHeadImageListInner[];
   icon_images?: NativeAnchorUpdateV30RequestAnchorInfoGameAnchorIconImagesInner[];
-  instance_id?: number;
+  instance_id?: number | string;
   ios_anchor_title?: string;
   ios_download_url?: string;
   other_description?: string;

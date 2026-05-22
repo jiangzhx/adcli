@@ -4,7 +4,7 @@
 import type { DouplusRtaGetInfoV30DataRtaListTargetType } from "../models";
 
 export interface DouplusRtaGetInfoV30ResponseDataRtaListInner {
-  id?: number;
+  id?: number | string;
   remark?: string;
   status?: number;
   target_type?: DouplusRtaGetInfoV30DataRtaListTargetType;

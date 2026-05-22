@@ -2,9 +2,9 @@
 // Do not edit manually.
 
 export interface ToolsHotMaterialDeriveSubmitV30ResponseDataTasksInner {
-  material_id?: number;
+  material_id?: number | string;
   status_code: number;
   status_message: string;
-  task_id?: number;
+  task_id?: number | string;
 }
 

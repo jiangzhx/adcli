@@ -8,7 +8,7 @@ import type { ToolsEbpVideoUploadV30AccountType, ToolsEbpVideoUploadV30Response,
 
 
 export interface OpenApiV30ToolsEbpVideoUploadPostRequest {
-  accountId: number;
+  accountId: number | string;
   accountType?: ToolsEbpVideoUploadV30AccountType;
   fileName?: string;
   isAigc?: boolean;

@@ -4,7 +4,7 @@
 import type { EventManagerShareGetV30DataListAccountInfoAccountType } from "../models";
 
 export interface EventManagerShareGetV30ResponseDataListInnerAccountInfo {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: EventManagerShareGetV30DataListAccountInfoAccountType;
 }
 

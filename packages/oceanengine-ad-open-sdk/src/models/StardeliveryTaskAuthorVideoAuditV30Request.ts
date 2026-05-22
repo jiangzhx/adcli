@@ -4,10 +4,10 @@
 import type { StardeliveryTaskAuthorVideoAuditV30OptStatus } from "../models";
 
 export interface StardeliveryTaskAuthorVideoAuditV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   ban_reason?: string;
-  material_id: number;
+  material_id: number | string;
   opt_status: StardeliveryTaskAuthorVideoAuditV30OptStatus;
-  star_task_id: number;
+  star_task_id: number | string;
 }
 

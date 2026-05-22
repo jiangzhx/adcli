@@ -5,6 +5,6 @@ import type { PromotionBudgetUpdateV30ResponseDataErrorsInner } from "../models"
 
 export interface PromotionBudgetUpdateV30ResponseData {
   errors?: PromotionBudgetUpdateV30ResponseDataErrorsInner[];
-  promotion_ids?: number[];
+  promotion_ids?: number | string[];
 }
 

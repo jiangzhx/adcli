@@ -8,8 +8,8 @@ import type { ToolsPromotionRaiseVersionGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsPromotionRaiseVersionGetGetRequest {
-  advertiserId: number;
-  promotionId: number;
+  advertiserId: number | string;
+  promotionId: number | string;
   page?: number;
   pageSize?: number;
 }

@@ -24,22 +24,22 @@ export interface LocalProjectDetailV30ResponseData {
   high_budget_rate?: number;
   intelligent_selection_mode?: LocalProjectDetailV30DataIntelligentSelectionMode;
   is_set_peak_budget?: boolean;
-  local_account_id?: number;
+  local_account_id?: number | string;
   local_asset_type?: LocalProjectDetailV30DataLocalAssetType;
   local_delivery_scene?: LocalProjectDetailV30DataLocalDeliveryScene;
-  market_page_ids?: number[];
+  market_page_ids?: number | string[];
   marketing_goal?: LocalProjectDetailV30DataMarketingGoal;
-  multi_poi_id?: number;
+  multi_poi_id?: number | string;
   name?: string;
   peak_holidays?: LocalProjectDetailV30DataPeakHolidays[];
   peak_week_days?: LocalProjectDetailV30DataPeakWeekDays[];
-  poi_id?: number;
-  product_id?: number;
-  project_id?: number;
+  poi_id?: number | string;
+  product_id?: number | string;
+  project_id?: number | string;
   schedule_fixed_seconds?: number;
   schedule_time?: string;
   schedule_type?: LocalProjectDetailV30DataScheduleType;
   start_time?: string;
-  tool_pack_id?: number;
+  tool_pack_id?: number | string;
 }
 

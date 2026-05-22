@@ -9,8 +9,8 @@ import type { ToolsBpAssetManagementShareGetV30AssetType, ToolsBpAssetManagement
 
 export interface OpenApiV30ToolsBpAssetManagementShareGetGetRequest {
   assetType: ToolsBpAssetManagementShareGetV30AssetType;
-  instanceId: number;
-  organizationId?: number;
+  instanceId: number | string;
+  organizationId?: number | string;
   page?: number;
   pageSize?: number;
   shareType?: ToolsBpAssetManagementShareGetV30ShareType;

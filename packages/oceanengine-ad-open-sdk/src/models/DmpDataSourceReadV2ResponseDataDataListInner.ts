@@ -11,7 +11,7 @@ export interface DmpDataSourceReadV2ResponseDataDataListInner {
   data_source_type?: DmpDataSourceReadV2DataDataListDataSourceType;
   default_audience?: DmpDataSourceReadV2ResponseDataDataListInnerDefaultAudience;
   description?: string;
-  lastest_published_change_log_id?: number;
+  lastest_published_change_log_id?: number | string;
   lastest_published_time?: string;
   modify_time?: string;
   name?: string;

@@ -10,7 +10,7 @@ export interface ToolsEbpWechatAppletListV30ResponseDataAppletsInnerQualificatio
   image_list?: string[];
   name?: string;
   own_type?: number;
-  qualification_id: number;
+  qualification_id: number | string;
   qualification_id_type?: number;
   qualification_show_name?: string;
   qualification_type: number;

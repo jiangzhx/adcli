@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface StarChallengeInfoV2ResponseDataTaskInfoListInnerDemandInfoComponentInfo {
-  industry_component_id?: number;
-  link_component_ids?: number[];
-  live_attract_component_id?: number;
+  industry_component_id?: number | string;
+  link_component_ids?: number | string[];
+  live_attract_component_id?: number | string;
 }
 

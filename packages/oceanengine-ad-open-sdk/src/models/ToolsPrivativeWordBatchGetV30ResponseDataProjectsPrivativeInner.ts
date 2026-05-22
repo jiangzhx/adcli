@@ -4,6 +4,6 @@
 export interface ToolsPrivativeWordBatchGetV30ResponseDataProjectsPrivativeInner {
   phrase_words?: string[];
   precise_words?: string[];
-  project_id?: number;
+  project_id?: number | string;
 }
 

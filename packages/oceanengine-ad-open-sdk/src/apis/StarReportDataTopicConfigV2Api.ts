@@ -8,9 +8,9 @@ import type { StarReportDataTopicConfigV2Response, StarReportDataTopicConfigV2To
 
 
 export interface OpenApi2StarReportDataTopicConfigGetRequest {
-  starId: number;
-  workId: number;
-  demandId: number;
+  starId: number | string;
+  workId: number | string;
+  demandId: number | string;
   topics: StarReportDataTopicConfigV2Topics[];
 }
 

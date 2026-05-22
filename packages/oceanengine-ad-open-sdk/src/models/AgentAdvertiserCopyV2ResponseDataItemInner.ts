@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AgentAdvertiserCopyV2ResponseDataItemInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   error_msg?: string;
   name: string;
   success: boolean;

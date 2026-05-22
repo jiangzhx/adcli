@@ -4,12 +4,12 @@
 import type { ClueCouponCodeGetV2DataListStatus } from "../models";
 
 export interface ClueCouponCodeGetV2ResponseDataListInner {
-  activity_id?: number;
+  activity_id?: number | string;
   code?: string;
   code_id?: string;
-  coupon_id?: number;
+  coupon_id?: number | string;
   create_time?: string;
-  resource_id?: number;
+  resource_id?: number | string;
   resource_title?: string;
   status?: ClueCouponCodeGetV2DataListStatus;
   update_time?: string;

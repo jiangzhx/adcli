@@ -3,7 +3,7 @@
 
 export interface BrandMaterialListV30ResponseDataMaterialsInnerCreativeDataInner {
   end_time?: string;
-  id?: number;
+  id?: number | string;
   start_time?: string;
 }
 

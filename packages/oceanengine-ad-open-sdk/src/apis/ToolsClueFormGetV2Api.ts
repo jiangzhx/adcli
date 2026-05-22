@@ -8,12 +8,12 @@ import type { ToolsClueFormGetV2FormType, ToolsClueFormGetV2Response } from "../
 
 
 export interface OpenApi2ToolsClueFormGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
   startTime?: string;
   endTime?: string;
-  instanceId?: number;
+  instanceId?: number | string;
   name?: string;
   isDel?: number;
   formType?: ToolsClueFormGetV2FormType;

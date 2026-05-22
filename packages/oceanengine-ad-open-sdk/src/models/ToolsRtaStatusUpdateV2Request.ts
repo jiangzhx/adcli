@@ -5,8 +5,8 @@ import type { ToolsRtaStatusUpdateV2AccountType, ToolsRtaStatusUpdateV2Status } 
 
 export interface ToolsRtaStatusUpdateV2Request {
   account_type?: ToolsRtaStatusUpdateV2AccountType;
-  advertiser_id: number;
-  rta_ids: number[];
+  advertiser_id: number | string;
+  rta_ids: number | string[];
   status: ToolsRtaStatusUpdateV2Status;
 }
 

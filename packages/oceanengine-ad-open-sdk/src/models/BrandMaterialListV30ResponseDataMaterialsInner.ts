@@ -13,10 +13,10 @@ export interface BrandMaterialListV30ResponseDataMaterialsInner {
   date?: string[];
   end_time?: string;
   material_component?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponent;
-  material_id?: number;
+  material_id?: number | string;
   material_name?: string;
   material_status?: BrandMaterialListV30DataMaterialsMaterialStatus;
-  order_id?: number;
+  order_id?: number | string;
   start_time?: string;
   track_url_group_infos?: BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlGroupInfosInner[];
   track_url_info?: BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlInfo;

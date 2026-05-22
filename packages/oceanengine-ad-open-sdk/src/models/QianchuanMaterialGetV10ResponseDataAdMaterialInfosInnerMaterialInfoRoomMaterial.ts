@@ -3,7 +3,7 @@
 
 export interface QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoRoomMaterial {
   aweme_avatar?: string;
-  aweme_id: number;
+  aweme_id: number | string;
   aweme_name?: string;
 }
 

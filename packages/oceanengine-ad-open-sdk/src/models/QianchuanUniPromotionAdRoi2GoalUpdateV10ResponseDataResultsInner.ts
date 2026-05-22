@@ -4,7 +4,7 @@
 import type { QianchuanUniPromotionAdRoi2GoalUpdateV10DataResultsStatus } from "../models";
 
 export interface QianchuanUniPromotionAdRoi2GoalUpdateV10ResponseDataResultsInner {
-  ad_id?: number;
+  ad_id?: number | string;
   error_message?: string;
   status?: QianchuanUniPromotionAdRoi2GoalUpdateV10DataResultsStatus;
 }

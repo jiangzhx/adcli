@@ -5,11 +5,11 @@ import type { FilePlayableListV30FilteringAuditStatus, FilePlayableListV30Filter
 
 export interface FilePlayableListV30Filtering {
   app_ids?: string[];
-  app_material_ids?: number[];
+  app_material_ids?: number | string[];
   audit_status?: FilePlayableListV30FilteringAuditStatus;
   end_time?: string;
   keyword?: string;
-  material_ids?: number[];
+  material_ids?: number | string[];
   signatures?: string[];
   start_time?: string;
   status?: FilePlayableListV30FilteringStatus;

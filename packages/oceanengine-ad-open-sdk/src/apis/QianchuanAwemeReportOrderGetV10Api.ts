@@ -8,7 +8,7 @@ import type { QianchuanAwemeReportOrderGetV10Filtering, QianchuanAwemeReportOrde
 
 
 export interface OpenApiV10QianchuanAwemeReportOrderGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate: string;
   endDate: string;
   filtering: QianchuanAwemeReportOrderGetV10Filtering;

@@ -6,7 +6,7 @@ import type { StarDemanderQueryCpsTaskSalesV2ResponseDataSalesInner } from "../m
 export interface StarDemanderQueryCpsTaskSalesV2ResponseData {
   has_more: boolean;
   sales: StarDemanderQueryCpsTaskSalesV2ResponseDataSalesInner[];
-  star_id: number;
-  task_id: number;
+  star_id: number | string;
+  task_id: number | string;
 }
 

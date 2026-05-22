@@ -8,7 +8,7 @@ import type { ReportBrandCampaignGetV30LandingType, ReportBrandCampaignGetV30Pri
 
 
 export interface OpenApiV30ReportBrandCampaignGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   size: number;
   landingType?: ReportBrandCampaignGetV30LandingType;

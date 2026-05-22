@@ -8,7 +8,7 @@ import type { ToolsAdvertiserStoreSearchV2Response, ToolsAdvertiserStoreSearchV2
 
 
 export interface OpenApi2ToolsAdvertiserStoreSearchGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   page?: number;
   pageSize?: number;
   type_?: ToolsAdvertiserStoreSearchV2Type;

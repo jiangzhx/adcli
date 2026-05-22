@@ -10,8 +10,8 @@ export interface LocalPromotionDetailV30ResponseDataProceduralMaterialVideoMater
   cover_web_url?: string;
   image_mode: LocalPromotionDetailV30DataProceduralMaterialVideoMaterialListImageMode;
   is_ff_see_setting: LocalPromotionDetailV30DataProceduralMaterialVideoMaterialListIsFfSeeSetting;
-  lego_material_id?: number;
-  material_id?: number;
+  lego_material_id?: number | string;
+  material_id?: number | string;
   video_duration?: number;
   video_height?: number;
   video_id: string;

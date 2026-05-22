@@ -51,7 +51,7 @@ func (a *ReportCustomConfigGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCu
     expect(api.path).toBe("/open_api/v3.0/report/custom/config/get/");
     expect(api.responseType).toBe("ReportCustomConfigGetV30Response");
     expect(api.params).toEqual([
-      { javaType: "Long", name: "advertiserId", required: true },
+      { javaType: "LongString", name: "advertiserId", required: true },
       { javaType: "List<ReportCustomConfigGetV30DataTopics>", name: "dataTopics", required: true },
       { javaType: "Integer", name: "page", required: false },
     ]);
@@ -111,7 +111,7 @@ type Oauth2AccessTokenRequest struct {
       kind: "interface",
       name: "Oauth2AccessTokenRequest",
       fields: [
-        { jsonName: "app_id", javaName: "appId", javaType: "Long", required: false },
+        { jsonName: "app_id", javaName: "appId", javaType: "LongString", required: false },
         { jsonName: "auth_code", javaName: "authCode", javaType: "String", required: true },
         { jsonName: "deliver_end", javaName: "deliverEnd", javaType: "JsonNullable<String>", required: false },
         { jsonName: "tags", javaName: "tags", javaType: "List<ReportCustomConfigGetV30DataTopics>", required: false },
@@ -176,6 +176,29 @@ const (
       values: [
         { key: "Enum_10", value: 10 },
         { key: "Enum_20", value: 20 },
+      ],
+    });
+  });
+
+  test("keeps non-ID int64 fields as numbers", () => {
+    const structSource = `
+package models
+
+type ReportStat struct {
+	PromotionId *int64 \`json:"promotion_id,omitempty"\`
+	Bid *int64 \`json:"bid,omitempty"\`
+	CreateTime *int64 \`json:"create_time,omitempty"\`
+	Count *int64 \`json:"count,omitempty"\`
+}`;
+
+    expect(parseGoModelSource(structSource, "model_report_stat.go")).toEqual({
+      kind: "interface",
+      name: "ReportStat",
+      fields: [
+        { jsonName: "promotion_id", javaName: "promotionId", javaType: "LongString", required: false },
+        { jsonName: "bid", javaName: "bid", javaType: "Long", required: false },
+        { jsonName: "create_time", javaName: "createTime", javaType: "Long", required: false },
+        { jsonName: "count", javaName: "count", javaType: "Long", required: false },
       ],
     });
   });

@@ -8,7 +8,7 @@ import type { AudiencePackageGetV30Filtering, AudiencePackageGetV30Response } fr
 
 
 export interface OpenApiV30AudiencePackageGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: AudiencePackageGetV30Filtering;
   page?: number;
   pageSize?: number;

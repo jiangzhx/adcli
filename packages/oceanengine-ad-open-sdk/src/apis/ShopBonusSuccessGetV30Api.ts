@@ -8,8 +8,8 @@ import type { ShopBonusSuccessGetV30Response } from "../models";
 
 
 export interface OpenApiV30ShopBonusSuccessGetGetRequest {
-  advertiserId: number;
-  promotionId: number;
+  advertiserId: number | string;
+  promotionId: number | string;
 }
 
 export class ShopBonusSuccessGetV30Api {

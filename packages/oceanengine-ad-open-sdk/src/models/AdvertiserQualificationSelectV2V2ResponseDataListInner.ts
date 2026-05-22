@@ -7,7 +7,7 @@ export interface AdvertiserQualificationSelectV2V2ResponseDataListInner {
   audit_time: string;
   image_list?: AdvertiserQualificationSelectV2V2ResponseDataListInnerImageListInner[];
   picture_preview_url: string;
-  qualification_id: number;
+  qualification_id: number | string;
   qualification_type?: number;
   reject_reason: string;
   status: number;

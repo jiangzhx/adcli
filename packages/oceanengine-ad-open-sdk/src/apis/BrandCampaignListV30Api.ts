@@ -8,7 +8,7 @@ import type { BrandCampaignListV30Filter, BrandCampaignListV30PageInfo, BrandCam
 
 
 export interface OpenApiV30BrandCampaignListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filter?: BrandCampaignListV30Filter;
   pageInfo?: BrandCampaignListV30PageInfo;
 }

@@ -5,6 +5,6 @@ import type { ToolsBpAssetManagementShareV30AllAccountsByCompanyAccountType } fr
 
 export interface ToolsBpAssetManagementShareV30RequestAllAccountsByCompanyInner {
   account_type: ToolsBpAssetManagementShareV30AllAccountsByCompanyAccountType;
-  company_id: number;
+  company_id: number | string;
 }
 

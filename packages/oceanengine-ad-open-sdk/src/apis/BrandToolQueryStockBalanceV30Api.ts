@@ -8,7 +8,7 @@ import type { BrandToolQueryStockBalanceV30AdForm, BrandToolQueryStockBalanceV30
 
 
 export interface OpenApiV30BrandToolQueryStockBalanceGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   classify: BrandToolQueryStockBalanceV30Classify;
   proType: BrandToolQueryStockBalanceV30ProType;
   adForm: BrandToolQueryStockBalanceV30AdForm;

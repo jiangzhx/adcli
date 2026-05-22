@@ -8,7 +8,7 @@ import type { ToolsThirdSiteGetV2Filtering, ToolsThirdSiteGetV2Response } from "
 
 
 export interface OpenApi2ToolsThirdSiteGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: ToolsThirdSiteGetV2Filtering;
   page?: number;
   pageSize?: number;

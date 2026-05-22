@@ -9,6 +9,6 @@ export interface ProjectCostProtectStatusGetV30ResponseDataCompensateStatusInfoL
   compensate_invalid_reasons?: ProjectCostProtectStatusGetV30DataCompensateStatusInfoListCompensateInvalidReasons[];
   compensate_status?: ProjectCostProtectStatusGetV30DataCompensateStatusInfoListCompensateStatus;
   compensate_url?: string;
-  project_id?: number;
+  project_id?: number | string;
 }
 

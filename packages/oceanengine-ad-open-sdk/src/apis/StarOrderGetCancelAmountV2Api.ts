@@ -8,8 +8,8 @@ import type { StarOrderGetCancelAmountV2Response } from "../models";
 
 
 export interface OpenApi2StarOrderGetCancelAmountGetRequest {
-  starId: number;
-  orderId: number;
+  starId: number | string;
+  orderId: number | string;
 }
 
 export class StarOrderGetCancelAmountV2Api {

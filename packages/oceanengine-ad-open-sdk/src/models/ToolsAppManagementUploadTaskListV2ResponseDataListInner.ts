@@ -6,6 +6,6 @@ import type { ToolsAppManagementUploadTaskListV2DataListStatus } from "../models
 export interface ToolsAppManagementUploadTaskListV2ResponseDataListInner {
   message?: string;
   status?: ToolsAppManagementUploadTaskListV2DataListStatus;
-  upload_id?: number;
+  upload_id?: number | string;
 }
 

@@ -6,7 +6,7 @@ import type { ClueFormDetailV2DataFormElementsAllowEmpty, ClueFormDetailV2DataFo
 export interface ClueFormDetailV2ResponseDataFormElementsInner {
   allow_empty?: ClueFormDetailV2DataFormElementsAllowEmpty;
   default_value?: number;
-  element_id?: number;
+  element_id?: number | string;
   element_type?: ClueFormDetailV2DataFormElementsElementType;
   is_unique?: ClueFormDetailV2DataFormElementsIsUnique;
   label?: string;

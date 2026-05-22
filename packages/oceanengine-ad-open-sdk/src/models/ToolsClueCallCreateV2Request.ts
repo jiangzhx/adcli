@@ -2,11 +2,11 @@
 // Do not edit manually.
 
 export interface ToolsClueCallCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   call_type: number;
   callee_number: string;
   caller_number?: string;
-  clue_id: number;
-  user_id: number;
+  clue_id: number | string;
+  user_id: number | string;
 }
 

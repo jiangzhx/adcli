@@ -4,11 +4,11 @@
 import type { ToolsMaterialRaiseGetV30DataListStatus, ToolsMaterialRaiseGetV30ResponseDataListInnerMaterialListInner, ToolsMaterialRaiseGetV30ResponseDataListInnerRaiseInfo } from "../models";
 
 export interface ToolsMaterialRaiseGetV30ResponseDataListInner {
-  material_ids?: number[];
+  material_ids?: number | string[];
   material_list?: ToolsMaterialRaiseGetV30ResponseDataListInnerMaterialListInner[];
-  project_id?: number;
+  project_id?: number | string;
   raise_info?: ToolsMaterialRaiseGetV30ResponseDataListInnerRaiseInfo;
-  schedule_id?: number;
+  schedule_id?: number | string;
   status?: ToolsMaterialRaiseGetV30DataListStatus;
 }
 

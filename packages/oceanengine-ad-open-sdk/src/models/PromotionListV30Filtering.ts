@@ -7,10 +7,10 @@ export interface PromotionListV30Filtering {
   blue_flow_package_setting?: PromotionListV30FilteringBlueFlowPackageSetting;
   delivery_mode?: PromotionListV30FilteringDeliveryMode;
   has_carry_material?: PromotionListV30FilteringHasCarryMaterial;
-  ids?: number[];
+  ids?: number | string[];
   learning_phase?: PromotionListV30FilteringLearningPhase[];
   name?: string;
-  project_id?: number;
+  project_id?: number | string;
   promotion_create_time?: string;
   promotion_modify_end_time?: string;
   promotion_modify_start_time?: string;

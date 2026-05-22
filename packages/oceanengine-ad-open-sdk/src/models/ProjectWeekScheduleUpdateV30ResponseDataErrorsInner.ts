@@ -3,6 +3,6 @@
 
 export interface ProjectWeekScheduleUpdateV30ResponseDataErrorsInner {
   error_message?: string;
-  project_id?: number;
+  project_id?: number | string;
 }
 

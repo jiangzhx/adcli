@@ -13,7 +13,7 @@ export interface QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo {
   deep_external_action?: QianchuanUniPromotionListV10DataAdListAdInfoDeepExternalAction;
   delivery_seconds?: number;
   end_time?: string;
-  id?: number;
+  id?: number | string;
   marketing_goal?: QianchuanUniPromotionListV10DataAdListAdInfoMarketingGoal;
   marketing_services_mode?: QianchuanUniPromotionListV10DataAdListAdInfoMarketingServicesMode;
   modify_time?: string;

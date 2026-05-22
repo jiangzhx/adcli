@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AgentCompanyBiddingListQueryV2ResponseDataDataInnerOptimizerDepartmentsInner {
-  optimizer_department_id?: number;
+  optimizer_department_id?: number | string;
   optimizer_department_name?: string;
 }
 

@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface ClueCaUpdateV2Request {
-  advertiser_id: number;
-  instance_id: number;
+  advertiser_id: number | string;
+  instance_id: number | string;
   name: string;
   user_ids: string[];
 }

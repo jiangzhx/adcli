@@ -8,8 +8,8 @@ import type { RejectMaterialAiRepairCrossAccountGetV30Response } from "../models
 
 
 export interface OpenApiV30RejectMaterialAiRepairCrossAccountGetGetRequest {
-  advertiserId: number;
-  materialId: number;
+  advertiserId: number | string;
+  materialId: number | string;
 }
 
 export class RejectMaterialAiRepairCrossAccountGetV30Api {

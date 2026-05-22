@@ -8,7 +8,7 @@ import type { DpaBrandFuzzyGetV30AccountType, DpaBrandFuzzyGetV30Response } from
 
 
 export interface OpenApiV30DpaBrandFuzzyGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: DpaBrandFuzzyGetV30AccountType;
   brandName: string;
   page?: number;

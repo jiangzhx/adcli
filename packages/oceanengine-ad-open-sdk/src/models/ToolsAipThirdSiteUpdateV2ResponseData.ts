@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsAipThirdSiteUpdateV2ResponseData {
-  site_id?: number;
+  site_id?: number | string;
   success?: boolean;
 }
 

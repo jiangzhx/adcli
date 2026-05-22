@@ -6,6 +6,6 @@ import type { PromotionAidGetV30DataPromotionMapDataAdsCreativesImageMaterialsIm
 export interface PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerImageMaterials {
   image_mode?: PromotionAidGetV30DataPromotionMapDataAdsCreativesImageMaterialsImageMode;
   image_uris?: string[];
-  material_id?: number;
+  material_id?: number | string;
 }
 

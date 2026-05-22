@@ -7,7 +7,7 @@ export interface ToolsAppManagementBpShareCancelV2Request {
   account_infos?: ToolsAppManagementBpShareCancelV2RequestAccountInfosInner[];
   all_account_by_company?: ToolsAppManagementBpShareCancelV2RequestAllAccountByCompany;
   all_accounts?: ToolsAppManagementBpShareCancelV2RequestAllAccountsInner[];
-  organization_id: number;
+  organization_id: number | string;
   package_id: string;
   share_mode: ToolsAppManagementBpShareCancelV2ShareMode;
 }

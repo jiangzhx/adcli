@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAdCreateV10RequestCreativeListInnerVideoMaterial {
-  aweme_item_id?: number;
+  aweme_item_id?: number | string;
   video_cover_id?: string;
   video_id?: string;
 }

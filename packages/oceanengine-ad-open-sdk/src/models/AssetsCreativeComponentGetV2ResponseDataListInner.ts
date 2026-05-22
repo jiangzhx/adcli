@@ -5,7 +5,7 @@ import type { AssetsCreativeComponentGetV2DataListComponentType, AssetsCreativeC
 
 export interface AssetsCreativeComponentGetV2ResponseDataListInner {
   component_data?: Record<string, unknown>;
-  component_id?: number;
+  component_id?: number | string;
   component_name?: string;
   component_type?: AssetsCreativeComponentGetV2DataListComponentType;
   create_time?: string;

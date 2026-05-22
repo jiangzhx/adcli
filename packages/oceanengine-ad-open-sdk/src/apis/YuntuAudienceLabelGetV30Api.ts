@@ -8,9 +8,9 @@ import type { YuntuAudienceLabelGetV30Response } from "../models";
 
 
 export interface OpenApiV30YuntuAudienceLabelGetGetRequest {
-  yuntuBrandId: number;
-  serviceProviderId: number;
-  labelId: number;
+  yuntuBrandId: number | string;
+  serviceProviderId: number | string;
+  labelId: number | string;
 }
 
 export class YuntuAudienceLabelGetV30Api {

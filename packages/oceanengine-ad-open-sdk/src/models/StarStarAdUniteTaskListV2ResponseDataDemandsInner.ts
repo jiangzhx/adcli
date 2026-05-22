@@ -3,7 +3,7 @@
 
 export interface StarStarAdUniteTaskListV2ResponseDataDemandsInner {
   create_time?: string;
-  demand_id?: number;
+  demand_id?: number | string;
   demand_name?: string;
 }
 

@@ -8,7 +8,7 @@ import type { DmpBrandGetV2Response } from "../models";
 
 
 export interface OpenApi2DmpBrandGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
 }
 
 export class DmpBrandGetV2Api {

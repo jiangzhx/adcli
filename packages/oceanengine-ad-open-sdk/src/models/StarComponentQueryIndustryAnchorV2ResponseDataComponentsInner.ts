@@ -7,7 +7,7 @@ export interface StarComponentQueryIndustryAnchorV2ResponseDataComponentsInner {
   anchor_title?: string;
   anchor_type?: number;
   audit_reject_reason?: string;
-  industry_anchor_id?: number;
+  industry_anchor_id?: number | string;
   preview_url?: string;
 }
 

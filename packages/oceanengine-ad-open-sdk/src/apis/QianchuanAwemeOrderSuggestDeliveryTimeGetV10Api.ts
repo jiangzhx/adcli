@@ -8,8 +8,8 @@ import type { QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response } from "../mo
 
 
 export interface OpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetRequest {
-  advertiserId: number;
-  orderId: number;
+  advertiserId: number | string;
+  orderId: number | string;
   addAmount: number;
 }
 

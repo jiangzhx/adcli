@@ -8,10 +8,10 @@ import type { AdvertiserDeliveryPkgConfigV30Response } from "../models";
 
 
 export interface OpenApiV30AdvertiserDeliveryPkgConfigGetRequest {
-  firstIndustryId: number;
-  secondIndustryId: number;
-  thirdIndustryId: number;
-  advertiserId?: number;
+  firstIndustryId: number | string;
+  secondIndustryId: number | string;
+  thirdIndustryId: number | string;
+  advertiserId?: number | string;
 }
 
 export class AdvertiserDeliveryPkgConfigV30Api {

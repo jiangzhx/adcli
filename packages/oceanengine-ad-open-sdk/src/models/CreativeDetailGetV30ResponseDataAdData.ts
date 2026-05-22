@@ -27,7 +27,7 @@ export interface CreativeDetailGetV30ResponseDataAdData {
   priority_trial?: CreativeDetailGetV30DataAdDataPriorityTrial;
   source?: string;
   supplements?: CreativeDetailGetV30ResponseDataAdDataSupplementsInner[];
-  third_industry_id?: number;
+  third_industry_id?: number | string;
   web_url?: string;
 }
 

@@ -4,7 +4,7 @@
 import type { StarDemanderGetCarBrandListV2ResponseDataCarBrandListInnerCarSeriesListInner } from "../models";
 
 export interface StarDemanderGetCarBrandListV2ResponseDataCarBrandListInner {
-  car_brand_id?: number;
+  car_brand_id?: number | string;
   car_brand_name?: string;
   car_series_list?: StarDemanderGetCarBrandListV2ResponseDataCarBrandListInnerCarSeriesListInner[];
 }

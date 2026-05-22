@@ -4,16 +4,16 @@
 import type { ToolsMicroAppListV30DataListAccountType, ToolsMicroAppListV30DataListAuditStatus, ToolsMicroAppListV30DataListMaxPaymentTierRange, ToolsMicroAppListV30DataListMaxRechargeTier, ToolsMicroAppListV30DataListMembershipType, ToolsMicroAppListV30DataListMidPaymentTierRange, ToolsMicroAppListV30DataListMinPaymentTierRange, ToolsMicroAppListV30DataListMinRechargeTier, ToolsMicroAppListV30DataListPaymentForm, ToolsMicroAppListV30DataListRecommendedRechargeTier, ToolsMicroAppListV30DataListRevenueModel } from "../models";
 
 export interface ToolsMicroAppListV30ResponseDataListInner {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: ToolsMicroAppListV30DataListAccountType;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   app_id?: string;
   audit_status?: ToolsMicroAppListV30DataListAuditStatus;
   create_time?: string;
   discount_rate?: number;
   has_discount?: boolean;
   has_online_earning?: boolean;
-  instance_id?: number;
+  instance_id?: number | string;
   is_ebp_asset?: boolean;
   max_payment_tier_range?: ToolsMicroAppListV30DataListMaxPaymentTierRange;
   max_recharge_tier?: ToolsMicroAppListV30DataListMaxRechargeTier;

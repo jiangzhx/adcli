@@ -4,7 +4,7 @@
 import type { ToolsBpAssetManagementShareGetV30DataSharedAccountsAccountInfoAccountType } from "../models";
 
 export interface ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInnerAccountInfo {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: ToolsBpAssetManagementShareGetV30DataSharedAccountsAccountInfoAccountType;
 }
 

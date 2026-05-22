@@ -8,8 +8,8 @@ import type { ToolsAdRaiseStatusGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsAdRaiseStatusGetGetRequest {
-  adIds?: number[];
-  advertiserId?: number;
+  adIds?: number | string[];
+  advertiserId?: number | string;
 }
 
 export class ToolsAdRaiseStatusGetV2Api {

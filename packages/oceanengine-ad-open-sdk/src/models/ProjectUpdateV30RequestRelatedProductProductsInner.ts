@@ -3,7 +3,7 @@
 
 export interface ProjectUpdateV30RequestRelatedProductProductsInner {
   product_id?: string;
-  product_platform_id?: number;
-  unique_product_id?: number;
+  product_platform_id?: number | string;
+  unique_product_id?: number | string;
 }
 

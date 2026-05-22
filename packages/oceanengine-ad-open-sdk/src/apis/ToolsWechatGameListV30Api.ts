@@ -8,7 +8,7 @@ import type { ToolsWechatGameListV30AccountAssetQueryScope, ToolsWechatGameListV
 
 
 export interface OpenApiV30ToolsWechatGameListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsWechatGameListV30AccountType;
   page?: number;
   pageSize?: number;

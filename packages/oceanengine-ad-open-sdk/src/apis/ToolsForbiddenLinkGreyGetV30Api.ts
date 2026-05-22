@@ -8,7 +8,7 @@ import type { ToolsForbiddenLinkGreyGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsForbiddenLinkGreyGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
 }
 
 export class ToolsForbiddenLinkGreyGetV30Api {

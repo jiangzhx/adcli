@@ -8,7 +8,7 @@ import type { AdvertiserQualificationSelectV2V2Response } from "../models";
 
 
 export interface OpenApi2AdvertiserQualificationSelectV2GetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class AdvertiserQualificationSelectV2V2Api {

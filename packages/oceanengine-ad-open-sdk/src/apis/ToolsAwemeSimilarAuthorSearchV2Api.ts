@@ -8,7 +8,7 @@ import type { ToolsAwemeSimilarAuthorSearchV2Behaviors, ToolsAwemeSimilarAuthorS
 
 
 export interface OpenApi2ToolsAwemeSimilarAuthorSearchGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   awemeId: string;
   behaviors?: ToolsAwemeSimilarAuthorSearchV2Behaviors[];
 }

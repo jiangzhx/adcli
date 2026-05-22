@@ -6,8 +6,8 @@ import type { PromotionListV30DataListPromotionRelatedProductVideoMaterialListIm
 export interface PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerVideoMaterialListInner {
   image_mode?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListImageMode;
   is_carry_material?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListIsCarryMaterial;
-  item_id?: number;
-  material_id?: number;
+  item_id?: number | string;
+  material_id?: number | string;
   material_opt_status?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialOptStatus;
   material_status?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialStatus;
   video_cover_id?: string;

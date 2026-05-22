@@ -8,8 +8,8 @@ import type { QianchuanMaterialAdGetV10MarketingGoal, QianchuanMaterialAdGetV10M
 
 
 export interface OpenApiV10QianchuanMaterialAdGetGetRequest {
-  advertiserId: number;
-  materialId: number;
+  advertiserId: number | string;
+  materialId: number | string;
   materialType: QianchuanMaterialAdGetV10MaterialType;
   marketingScene: QianchuanMaterialAdGetV10MarketingScene;
   marketingGoal: QianchuanMaterialAdGetV10MarketingGoal;

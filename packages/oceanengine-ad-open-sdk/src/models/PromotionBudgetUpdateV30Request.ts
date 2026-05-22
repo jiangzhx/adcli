@@ -4,7 +4,7 @@
 import type { PromotionBudgetUpdateV30RequestDataInner } from "../models";
 
 export interface PromotionBudgetUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   data: PromotionBudgetUpdateV30RequestDataInner[];
 }
 

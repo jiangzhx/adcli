@@ -3,6 +3,6 @@
 
 export interface DpaEbpProductStatusBatchUpdateV30ResponseDataErrorListInner {
   error_msg?: string;
-  product_id?: number;
+  product_id?: number | string;
 }
 

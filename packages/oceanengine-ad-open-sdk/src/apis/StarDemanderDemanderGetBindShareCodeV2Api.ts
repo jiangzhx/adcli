@@ -8,7 +8,7 @@ import type { StarDemanderDemanderGetBindShareCodeV2Response } from "../models";
 
 
 export interface OpenApi2StarDemanderDemanderGetBindShareCodeGetRequest {
-  starId: number;
+  starId: number | string;
   bizUid: string;
 }
 

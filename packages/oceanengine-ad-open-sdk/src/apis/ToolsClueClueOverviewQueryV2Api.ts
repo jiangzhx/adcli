@@ -8,7 +8,7 @@ import type { ToolsClueClueOverviewQueryV2Response } from "../models";
 
 
 export interface OpenApi2ToolsClueClueOverviewQueryGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startTime: number;
   endTime: number;
 }

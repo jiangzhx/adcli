@@ -7,6 +7,6 @@ export interface LocalImAccountGetV30ResponseDataLifeAccountInfoListInner {
   account_name?: string;
   account_type?: LocalImAccountGetV30DataLifeAccountInfoListAccountType;
   advertiser_info?: LocalImAccountGetV30ResponseDataLifeAccountInfoListInnerAdvertiserInfo;
-  life_account_id?: number;
+  life_account_id?: number | string;
 }
 

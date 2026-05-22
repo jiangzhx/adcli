@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AicMixcutTaskSaveV30ResponseDataResultsInner {
-  material_id?: number;
+  material_id?: number | string;
   reason?: string;
   status: boolean;
   video_id?: string;

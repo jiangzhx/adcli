@@ -4,7 +4,7 @@
 import type { ProjectWeekScheduleUpdateV30DataScheduleScene } from "../models";
 
 export interface ProjectWeekScheduleUpdateV30RequestDataInner {
-  project_id: number;
+  project_id: number | string;
   schedule_scene: ProjectWeekScheduleUpdateV30DataScheduleScene;
   schedule_time: string;
 }

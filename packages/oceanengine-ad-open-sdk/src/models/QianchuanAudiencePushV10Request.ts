@@ -5,9 +5,9 @@ import type { QianchuanAudiencePushV10AccountType } from "../models";
 
 export interface QianchuanAudiencePushV10Request {
   account_type: QianchuanAudiencePushV10AccountType;
-  adv_ids?: number[];
-  advertiser_id: number;
-  audience_id: number;
+  adv_ids?: number | string[];
+  advertiser_id: number | string;
+  audience_id: number | string;
   is_for_brand?: number;
 }
 

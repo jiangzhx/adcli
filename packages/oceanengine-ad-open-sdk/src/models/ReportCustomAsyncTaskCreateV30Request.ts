@@ -4,7 +4,7 @@
 import type { ReportCustomAsyncTaskCreateV30DataTopic, ReportCustomAsyncTaskCreateV30RequestFiltersInner, ReportCustomAsyncTaskCreateV30RequestOrderByInner } from "../models";
 
 export interface ReportCustomAsyncTaskCreateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   data_topic: ReportCustomAsyncTaskCreateV30DataTopic;
   dimensions: string[];
   end_time: string;

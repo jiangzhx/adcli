@@ -5,10 +5,10 @@ import type { QianchuanUniPromotionProductAwemeGetV10DataProductListChannelType,
 
 export interface QianchuanUniPromotionProductAwemeGetV10ResponseDataProductListInner {
   category_name?: string;
-  channel_id?: number;
+  channel_id?: number | string;
   channel_type?: QianchuanUniPromotionProductAwemeGetV10DataProductListChannelType;
   gray_reason?: string[];
-  id?: number;
+  id?: number | string;
   img?: string;
   name?: string;
   sell_num?: number;

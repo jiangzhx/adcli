@@ -5,7 +5,7 @@ import type { QianchuanAdDetailGetV10DataCreativeListTitleMaterialTitleType, Qia
 
 export interface QianchuanAdDetailGetV10ResponseDataCreativeListInnerTitleMaterial {
   dynamic_words?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerTitleMaterialDynamicWordsInner[];
-  id?: number;
+  id?: number | string;
   title?: string;
   title_type?: QianchuanAdDetailGetV10DataCreativeListTitleMaterialTitleType;
 }

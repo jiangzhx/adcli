@@ -8,8 +8,8 @@ import type { StarVasGetBoostItemGroupDetailV2Response } from "../models";
 
 
 export interface OpenApi2StarVasGetBoostItemGroupDetailGetRequest {
-  starId: number;
-  taskId: number;
+  starId: number | string;
+  taskId: number | string;
 }
 
 export class StarVasGetBoostItemGroupDetailV2Api {

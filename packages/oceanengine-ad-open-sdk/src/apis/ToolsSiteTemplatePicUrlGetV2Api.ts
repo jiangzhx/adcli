@@ -8,9 +8,9 @@ import type { ToolsSiteTemplatePicUrlGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsSiteTemplatePicUrlGetGetRequest {
-  advertiserId: number;
-  siteId?: number;
-  templateId?: number;
+  advertiserId: number | string;
+  siteId?: number | string;
+  templateId?: number | string;
 }
 
 export class ToolsSiteTemplatePicUrlGetV2Api {

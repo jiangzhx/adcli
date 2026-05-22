@@ -8,8 +8,8 @@ import type { QianchuanTodayLiveRoomGetV10AdStatus, QianchuanTodayLiveRoomGetV10
 
 
 export interface OpenApiV10QianchuanTodayLiveRoomGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   dateTime: string;
   fields: string[];
   roomStatus?: QianchuanTodayLiveRoomGetV10RoomStatus;

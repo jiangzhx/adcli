@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarItemAuthorGetV2ResponseDataItemInfosInner {
-  item_id?: number;
+  item_id?: number | string;
   uid?: number;
 }
 

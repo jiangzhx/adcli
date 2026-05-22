@@ -3,6 +3,6 @@
 
 export interface PromotionNewcustomerCreateV30RequestPromotionMaterialsCarouselMaterialListInner {
   carousel_id?: string;
-  item_id?: number;
+  item_id?: number | string;
 }
 

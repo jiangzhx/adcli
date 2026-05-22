@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarDemanderGetRegisteredIpActsV2ResponseDataIpActivityListInner {
-  ip_act_id: number;
+  ip_act_id: number | string;
   name: string;
 }
 

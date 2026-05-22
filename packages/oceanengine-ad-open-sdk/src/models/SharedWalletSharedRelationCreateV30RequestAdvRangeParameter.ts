@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface SharedWalletSharedRelationCreateV30RequestAdvRangeParameter {
-  adv_ids?: number[];
-  self_company_ids?: number[];
+  adv_ids?: number | string[];
+  self_company_ids?: number | string[];
 }
 

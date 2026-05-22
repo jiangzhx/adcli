@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface SharedWalletAccountRelationGetV30ResponseData {
-  company_id?: number;
-  main_wallet_id?: number;
-  sub_wallet_ids?: number[];
+  company_id?: number | string;
+  main_wallet_id?: number | string;
+  sub_wallet_ids?: number | string[];
 }
 

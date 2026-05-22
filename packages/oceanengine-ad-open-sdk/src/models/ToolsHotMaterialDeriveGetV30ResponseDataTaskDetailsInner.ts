@@ -5,10 +5,10 @@ import type { ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus, ToolsHotMateria
 
 export interface ToolsHotMaterialDeriveGetV30ResponseDataTaskDetailsInner {
   derive_materials?: ToolsHotMaterialDeriveGetV30ResponseDataTaskDetailsInnerDeriveMaterialsInner[];
-  origin_material_id: number;
+  origin_material_id: number | string;
   status: ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus;
   status_code?: number;
   status_message?: string;
-  task_id: number;
+  task_id: number | string;
 }
 

@@ -8,8 +8,8 @@ import type { QianchuanToolsSmartBoostAdBoostReportGetV10OrderType, QianchuanToo
 
 
 export interface OpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest {
-  advertiserId: number;
-  adId: number;
+  advertiserId: number | string;
+  adId: number | string;
   adRaiseVersion: number;
   startTime: string;
   endTime: string;

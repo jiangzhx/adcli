@@ -9,7 +9,7 @@ import type { DpaAlbumStatusGetV30Response } from "../models";
 
 export interface OpenApiV30DpaAlbumStatusGetGetRequest {
   albumId: string;
-  appId: number;
+  appId: number | string;
 }
 
 export class DpaAlbumStatusGetV30Api {

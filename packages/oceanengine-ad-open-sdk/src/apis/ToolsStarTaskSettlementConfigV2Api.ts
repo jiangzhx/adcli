@@ -8,9 +8,9 @@ import type { ToolsStarTaskSettlementConfigV2Response, ToolsStarTaskSettlementCo
 
 
 export interface OpenApi2ToolsStarTaskSettlementConfigGetRequest {
-  advertiserId: number;
-  firstIndustryId: number;
-  secondIndustryId: number;
+  advertiserId: number | string;
+  firstIndustryId: number | string;
+  secondIndustryId: number | string;
   starMaterialFirstType: number;
   starMaterialSecondType: number;
   starTaskExternalAction: ToolsStarTaskSettlementConfigV2StarTaskExternalAction;

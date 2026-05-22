@@ -8,8 +8,8 @@ import type { ToolsAipThirdSiteGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsAipThirdSiteGetGetRequest {
-  advertiserId: number;
-  siteId: number;
+  advertiserId: number | string;
+  siteId: number | string;
 }
 
 export class ToolsAipThirdSiteGetV2Api {

@@ -13,9 +13,9 @@ export interface BrandCreativeCreateV30RequestCreativeListInner {
   external_url?: string;
   external_url_is_download?: boolean;
   external_url_title?: string;
-  ies_core_user_id?: number;
-  item_id?: number;
-  material_package_id?: number;
+  ies_core_user_id?: number | string;
+  item_id?: number | string;
+  material_package_id?: number | string;
   open_url?: string;
   title?: string;
   video_id?: string;

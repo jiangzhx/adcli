@@ -8,7 +8,7 @@ import type { LocalProductGetV30Filtering, LocalProductGetV30LocalDeliveryScene,
 
 
 export interface OpenApiV30LocalProductGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   localDeliveryScene: LocalProductGetV30LocalDeliveryScene;
   filtering?: LocalProductGetV30Filtering;
   page?: number;

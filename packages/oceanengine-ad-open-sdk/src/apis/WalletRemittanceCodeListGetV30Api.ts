@@ -8,8 +8,8 @@ import type { WalletRemittanceCodeListGetV30ChargeTargetType, WalletRemittanceCo
 
 
 export interface OpenApiV30WalletRemittanceCodeListGetGetRequest {
-  accountId: number;
-  chargeTargetId: number;
+  accountId: number | string;
+  chargeTargetId: number | string;
   chargeTargetType: WalletRemittanceCodeListGetV30ChargeTargetType;
   remittanceCodeList: string[];
   page?: number;

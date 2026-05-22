@@ -4,7 +4,7 @@
 import type { AssetsCreativeComponentGetV2FilteringComponentTypes, AssetsCreativeComponentGetV2FilteringStatus } from "../models";
 
 export interface AssetsCreativeComponentGetV2Filtering {
-  component_id?: number;
+  component_id?: number | string;
   component_name?: string;
   component_types?: AssetsCreativeComponentGetV2FilteringComponentTypes[];
   skin_types?: string[];

@@ -8,7 +8,7 @@ import type { LocalActionKeywordV30ActionDays, LocalActionKeywordV30Response } f
 
 
 export interface OpenApiV30LocalActionKeywordGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   queryWords: string;
   actionDays: LocalActionKeywordV30ActionDays;
 }

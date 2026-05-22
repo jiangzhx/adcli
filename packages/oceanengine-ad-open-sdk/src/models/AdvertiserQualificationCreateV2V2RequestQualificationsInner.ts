@@ -5,6 +5,6 @@ import type { AdvertiserQualificationCreateV2V2QualificationsAdQualificationType
 
 export interface AdvertiserQualificationCreateV2V2RequestQualificationsInner {
   ad_qualification_type?: AdvertiserQualificationCreateV2V2QualificationsAdQualificationType;
-  qualification_img_id?: number;
+  qualification_img_id?: number | string;
 }
 

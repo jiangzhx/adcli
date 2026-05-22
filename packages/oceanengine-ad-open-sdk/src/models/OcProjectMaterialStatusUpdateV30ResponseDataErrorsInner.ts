@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface OcProjectMaterialStatusUpdateV30ResponseDataErrorsInner {
-  material_id?: number;
+  material_id?: number | string;
   message?: string;
 }
 

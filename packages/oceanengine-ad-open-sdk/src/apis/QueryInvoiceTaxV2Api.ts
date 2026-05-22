@@ -8,7 +8,7 @@ import type { QueryInvoiceTaxV2Filtering, QueryInvoiceTaxV2Response } from "../m
 
 
 export interface OpenApi2QueryInvoiceTaxGetRequest {
-  agentId: number;
+  agentId: number | string;
   filtering: QueryInvoiceTaxV2Filtering;
 }
 

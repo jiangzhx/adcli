@@ -8,7 +8,7 @@ import type { LocalFileVideoGetV30Filtering, LocalFileVideoGetV30OrderField, Loc
 
 
 export interface OpenApiV30LocalFileVideoGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   filtering?: LocalFileVideoGetV30Filtering;
   orderField?: LocalFileVideoGetV30OrderField;
   orderType?: LocalFileVideoGetV30OrderType;

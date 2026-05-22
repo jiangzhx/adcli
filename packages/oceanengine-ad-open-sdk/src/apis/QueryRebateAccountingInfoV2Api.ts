@@ -8,7 +8,7 @@ import type { QueryRebateAccountingInfoV2Filtering, QueryRebateAccountingInfoV2R
 
 
 export interface OpenApi2QueryRebateAccountingInfoGetRequest {
-  agentId: number;
+  agentId: number | string;
   filtering?: QueryRebateAccountingInfoV2Filtering;
   page?: number;
   pageSize?: number;

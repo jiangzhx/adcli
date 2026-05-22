@@ -12,7 +12,7 @@ export interface LocalFileVideoAwemeGetV30ResponseDataVideoListInner {
   duration: string;
   image_mode: LocalFileVideoAwemeGetV30DataVideoListImageMode;
   item_id: string;
-  lego_material_id?: number;
+  lego_material_id?: number | string;
   not_delivery_reason?: string[];
   title: string;
   video_heigh?: number;

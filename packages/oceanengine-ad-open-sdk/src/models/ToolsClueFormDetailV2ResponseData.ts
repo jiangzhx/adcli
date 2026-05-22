@@ -4,9 +4,9 @@
 import type { ToolsClueFormDetailV2ResponseDataElementsInner } from "../models";
 
 export interface ToolsClueFormDetailV2ResponseData {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   elements?: ToolsClueFormDetailV2ResponseDataElementsInner[];
-  instance_id?: number;
+  instance_id?: number | string;
   name?: string;
   sub_title?: string;
   submit_text?: string;

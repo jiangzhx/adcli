@@ -4,7 +4,7 @@
 import type { ToolsEbpMicroGameCreateV30AccountType, ToolsEbpMicroGameCreateV30RequestSchemaInfoInner } from "../models";
 
 export interface ToolsEbpMicroGameCreateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpMicroGameCreateV30AccountType;
   app_id: string;
   data?: Record<string, string>;

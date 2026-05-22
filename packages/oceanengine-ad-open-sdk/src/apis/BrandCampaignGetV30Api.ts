@@ -8,7 +8,7 @@ import type { BrandCampaignGetV30CampaignStatus, BrandCampaignGetV30Response } f
 
 
 export interface OpenApiV30BrandCampaignGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   size: number;
   campaignIds?: string[];

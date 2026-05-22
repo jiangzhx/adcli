@@ -15,7 +15,7 @@ export interface PromotionCreateV30RequestPromotionRelatedProductInner {
   title_material_list?: PromotionCreateV30RequestPromotionRelatedProductInnerTitleMaterialListInner[];
   ulink_type?: PromotionCreateV30PromotionRelatedProductUlinkType;
   ulink_url?: string;
-  unique_product_id: number;
+  unique_product_id: number | string;
   video_material_list?: PromotionCreateV30RequestPromotionRelatedProductInnerVideoMaterialListInner[];
 }
 

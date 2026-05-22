@@ -4,7 +4,7 @@
 import type { QianchuanAwemeVideoGetV10DataVideoListIsImage, QianchuanAwemeVideoGetV10DataVideoListIsRecommend, QianchuanAwemeVideoGetV10ResponseDataVideoListInnerProductInfo } from "../models";
 
 export interface QianchuanAwemeVideoGetV10ResponseDataVideoListInner {
-  aweme_item_id?: number;
+  aweme_item_id?: number | string;
   comment_cnt?: number;
   create_time?: string;
   duration?: number;

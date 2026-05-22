@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface PromotionAutoGenerateConfigCreateV30ResponseData {
-  config_id?: number;
+  config_id?: number | string;
 }
 

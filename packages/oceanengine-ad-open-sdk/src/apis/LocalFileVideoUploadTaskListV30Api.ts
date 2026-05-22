@@ -8,8 +8,8 @@ import type { LocalFileVideoUploadTaskListV30Response } from "../models";
 
 
 export interface OpenApiV30LocalFileVideoUploadTaskListGetRequest {
-  localAccountId: number;
-  taskIds: number[];
+  localAccountId: number | string;
+  taskIds: number | string[];
 }
 
 export class LocalFileVideoUploadTaskListV30Api {

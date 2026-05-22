@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface ToolsPlayableSaveV2Request {
-  advertiser_id: number;
-  playable_id: number;
+  advertiser_id: number | string;
+  playable_id: number | string;
   playable_name: string;
 }
 

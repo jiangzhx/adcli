@@ -8,7 +8,7 @@ import type { DpaVideoGetV2Filtering, DpaVideoGetV2Response } from "../models";
 
 
 export interface OpenApi2DpaVideoGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: DpaVideoGetV2Filtering;
   page?: number;
   pageSize?: number;

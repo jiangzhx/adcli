@@ -8,8 +8,8 @@ import type { QianchuanUniPromotionAuthorizableShopListV10Filter, QianchuanUniPr
 
 
 export interface OpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest {
-  advertiserId: number;
-  awemeId?: number;
+  advertiserId: number | string;
+  awemeId?: number | string;
   filter?: QianchuanUniPromotionAuthorizableShopListV10Filter;
   page?: number;
   pageSize?: number;

@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsMicroGameCreateV30ResponseData {
-  instance_id?: number;
+  instance_id?: number | string;
 }
 

@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarDemandOmGetDemandListV2ResponseDataDemandsInner {
-  demand_id?: number;
+  demand_id?: number | string;
 }
 

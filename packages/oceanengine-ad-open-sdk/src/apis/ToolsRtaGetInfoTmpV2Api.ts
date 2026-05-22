@@ -8,8 +8,8 @@ import type { ToolsRtaGetInfoTmpV2Response } from "../models";
 
 
 export interface OpenApi2ToolsRtaGetInfoTmpGetRequest {
-  advertiserId: number;
-  campaignId?: number;
+  advertiserId: number | string;
+  campaignId?: number | string;
 }
 
 export class ToolsRtaGetInfoTmpV2Api {

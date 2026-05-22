@@ -8,8 +8,8 @@ import type { FileMaterialDetailV2Response } from "../models";
 
 
 export interface OpenApi2FileMaterialDetailGetRequest {
-  advertiserId: number;
-  materialIds: number[];
+  advertiserId: number | string;
+  materialIds: number | string[];
 }
 
 export class FileMaterialDetailV2Api {

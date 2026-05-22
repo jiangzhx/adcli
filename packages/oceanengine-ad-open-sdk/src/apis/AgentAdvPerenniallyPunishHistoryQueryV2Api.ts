@@ -8,8 +8,8 @@ import type { AgentAdvPerenniallyPunishHistoryQueryV2Response } from "../models"
 
 
 export interface OpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest {
-  agentId: number;
-  advertiserIds: number[];
+  agentId: number | string;
+  advertiserIds: number | string[];
 }
 
 export class AgentAdvPerenniallyPunishHistoryQueryV2Api {

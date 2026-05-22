@@ -6,9 +6,9 @@ import type { ReportAgentGetV2V2DataListAccountSource, ReportAgentGetV2V2DataLis
 export interface ReportAgentGetV2V2ResponseDataListInner {
   account_source?: ReportAgentGetV2V2DataListAccountSource;
   account_status?: ReportAgentGetV2V2DataListAccountStatus;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   advertiser_name?: string;
-  agent_id?: number;
+  agent_id?: number | string;
   agent_name?: string;
   arpu_3cd?: number;
   audit_pass_time?: string;
@@ -17,7 +17,7 @@ export interface ReportAgentGetV2V2ResponseDataListInner {
   cash_balance?: number;
   cash_cost?: number;
   click?: number;
-  company_id?: number;
+  company_id?: number | string;
   company_name?: string;
   cost?: number;
   cpa_cost?: number;

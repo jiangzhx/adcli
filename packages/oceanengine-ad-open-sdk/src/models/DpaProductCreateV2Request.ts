@@ -4,8 +4,8 @@
 import type { DpaProductCreateV2RequestProductInfo } from "../models";
 
 export interface DpaProductCreateV2Request {
-  advertiser_id: number;
-  platform_id: number;
+  advertiser_id: number | string;
+  platform_id: number | string;
   product_info: DpaProductCreateV2RequestProductInfo;
 }
 

@@ -8,8 +8,8 @@ import type { ToolsHotMaterialDeriveGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsHotMaterialDeriveGetGetRequest {
-  advertiserId: number;
-  taskIds: number[];
+  advertiserId: number | string;
+  taskIds: number | string[];
 }
 
 export class ToolsHotMaterialDeriveGetV30Api {

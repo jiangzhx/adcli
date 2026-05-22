@@ -8,7 +8,7 @@ import type { ToolsKeywordsProjectInfoGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsKeywordsProjectInfoGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   promotionWordId: string;
 }
 

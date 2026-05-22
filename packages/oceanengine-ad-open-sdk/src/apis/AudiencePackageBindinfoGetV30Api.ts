@@ -8,8 +8,8 @@ import type { AudiencePackageBindinfoGetV30Response } from "../models";
 
 
 export interface OpenApiV30AudiencePackageBindinfoGetGetRequest {
-  advertiserId: number;
-  audiencePackageId: number;
+  advertiserId: number | string;
+  audiencePackageId: number | string;
   page: number;
   pageSize: number;
 }

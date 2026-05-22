@@ -4,14 +4,14 @@
 import type { ToolsWechatGameCreateV30AccountType, ToolsWechatGameCreateV30AgeLimit, ToolsWechatGameCreateV30MaxPaymentTierRange, ToolsWechatGameCreateV30MidPaymentTierRange, ToolsWechatGameCreateV30MinPaymentTierRange, ToolsWechatGameCreateV30RequestAnchorList, ToolsWechatGameCreateV30RevenueModel, ToolsWechatGameCreateV30ScheduleCards } from "../models";
 
 export interface ToolsWechatGameCreateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsWechatGameCreateV30AccountType;
   age_limit: ToolsWechatGameCreateV30AgeLimit;
   age_remind_url: string;
   anchor_list: ToolsWechatGameCreateV30RequestAnchorList;
   anti_addiction_url: string;
   art_style: string;
-  company_id?: number;
+  company_id?: number | string;
   discount_rate?: number;
   feature_tags: string[];
   has_discount?: boolean;

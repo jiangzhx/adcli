@@ -9,7 +9,7 @@ export interface StarStarAdUniteTaskItemListV2ResponseDataStatInfoInner {
   active_pay_rate?: number;
   ad_click_rate?: number;
   ad_cost?: number;
-  author_id: number;
+  author_id: number | string;
   author_nick_name: string;
   avtive_rate?: number;
   click?: number;
@@ -22,11 +22,11 @@ export interface StarStarAdUniteTaskItemListV2ResponseDataStatInfoInner {
   cost_per_next_day_open?: number;
   cost_per_pay?: number;
   cost_per_register?: number;
-  demand_id: number;
+  demand_id: number | string;
   install_finish_cnt?: number;
   interact?: number;
   interact_rate?: number;
-  item_id: number;
+  item_id: number | string;
   item_status: StarStarAdUniteTaskItemListV2DataStatInfoItemStatus;
   item_title: string;
   item_url: string;
@@ -53,7 +53,7 @@ export interface StarStarAdUniteTaskItemListV2ResponseDataStatInfoInner {
   settled_cost: number;
   share?: number;
   show?: number;
-  star_id: number;
+  star_id: number | string;
   stat_date: string;
 }
 

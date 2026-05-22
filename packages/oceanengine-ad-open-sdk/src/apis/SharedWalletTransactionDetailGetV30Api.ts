@@ -8,9 +8,9 @@ import type { SharedWalletTransactionDetailGetV30AccountType, SharedWalletTransa
 
 
 export interface OpenApiV30SharedWalletTransactionDetailGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: SharedWalletTransactionDetailGetV30AccountType;
-  sharedWalletId: number;
+  sharedWalletId: number | string;
   startDate: string;
   endDate: string;
   page?: number;

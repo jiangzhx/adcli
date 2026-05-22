@@ -8,8 +8,8 @@ import type { ToolsBlueFlowKeywordListV30Filtering, ToolsBlueFlowKeywordListV30R
 
 
 export interface OpenApiV30ToolsBlueFlowKeywordListGetRequest {
-  advertiserId: number;
-  projectId: number;
+  advertiserId: number | string;
+  projectId: number | string;
   filtering?: ToolsBlueFlowKeywordListV30Filtering;
 }
 

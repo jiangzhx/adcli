@@ -9,7 +9,7 @@ export interface AudiencePackageCreateV2Request {
   action_days?: AudiencePackageCreateV2ActionDays;
   action_words?: number[];
   ad_type?: AudiencePackageCreateV2AdType;
-  advertiser_id: number;
+  advertiser_id: number | string;
   age?: AudiencePackageCreateV2Age[];
   android_osv?: AudiencePackageCreateV2AndroidOsv;
   auto_extend_targets?: AudiencePackageCreateV2AutoExtendTargets[];
@@ -18,7 +18,7 @@ export interface AudiencePackageCreateV2Request {
   aweme_fan_categories?: number[];
   aweme_fan_time_scope?: AudiencePackageCreateV2AwemeFanTimeScope;
   aweme_fans_numbers?: number[];
-  business_ids?: number[];
+  business_ids?: number | string[];
   carrier?: AudiencePackageCreateV2Carrier[];
   carrier_region_optimize?: AudiencePackageCreateV2CarrierRegionOptimize;
   city?: number[];

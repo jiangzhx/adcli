@@ -8,7 +8,7 @@ import type { StarComponentQueryIndustryAnchorV2Response } from "../models";
 
 
 export interface OpenApi2StarComponentQueryIndustryAnchorGetRequest {
-  starId: number;
+  starId: number | string;
   anchorStatus?: number;
   anchorType?: number;
   page?: number;

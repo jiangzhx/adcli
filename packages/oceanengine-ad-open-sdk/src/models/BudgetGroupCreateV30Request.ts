@@ -4,7 +4,7 @@
 import type { BudgetGroupCreateV30CampaignType, BudgetGroupCreateV30DeliveryMode } from "../models";
 
 export interface BudgetGroupCreateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   budget_group_budget: number;
   budget_group_name: string;
   campaign_type: BudgetGroupCreateV30CampaignType;

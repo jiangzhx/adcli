@@ -6,7 +6,7 @@ import type { StarMcnProviderGetParticipatedTaskV2ResponseDataDataInnerQuotaInfo
 export interface StarMcnProviderGetParticipatedTaskV2ResponseDataDataInner {
   challenge_status?: number;
   create_time: string;
-  demand_id: number;
+  demand_id: number | string;
   demand_name: string;
   pay_type?: number;
   provider_order_task_status?: number;

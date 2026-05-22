@@ -8,8 +8,8 @@ import type { StardeliveryTaskAuthorVideoDetailV30Filtering, StardeliveryTaskAut
 
 
 export interface OpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest {
-  advertiserId: number;
-  starTaskId: number;
+  advertiserId: number | string;
+  starTaskId: number | string;
   awemeId?: string;
   starTaskVideoRange?: StardeliveryTaskAuthorVideoDetailV30StarTaskVideoRange;
   filtering?: StardeliveryTaskAuthorVideoDetailV30Filtering;

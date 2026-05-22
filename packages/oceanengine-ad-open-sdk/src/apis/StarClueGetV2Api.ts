@@ -8,9 +8,9 @@ import type { StarClueGetV2Response } from "../models";
 
 
 export interface OpenApi2StarClueGetGetRequest {
-  starId: number;
-  demandId?: number;
-  orderId?: number;
+  starId: number | string;
+  demandId?: number | string;
+  orderId?: number | string;
   page?: number;
   pageSize?: number;
 }

@@ -8,8 +8,8 @@ import type { ToolsPromotionRaiseStatusGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsPromotionRaiseStatusGetGetRequest {
-  advertiserId: number;
-  promotionIds: number[];
+  advertiserId: number | string;
+  promotionIds: number | string[];
 }
 
 export class ToolsPromotionRaiseStatusGetV30Api {

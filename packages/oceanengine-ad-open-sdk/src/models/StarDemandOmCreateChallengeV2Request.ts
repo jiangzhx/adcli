@@ -6,7 +6,7 @@ import type { StarDemandOmCreateChallengeV2RequestChallengeInfo, StarDemandOmCre
 export interface StarDemandOmCreateChallengeV2Request {
   challenge_info: StarDemandOmCreateChallengeV2RequestChallengeInfo;
   demand_info: StarDemandOmCreateChallengeV2RequestDemandInfo;
-  developer_id?: number;
-  star_id: number;
+  developer_id?: number | string;
+  star_id: number | string;
 }
 

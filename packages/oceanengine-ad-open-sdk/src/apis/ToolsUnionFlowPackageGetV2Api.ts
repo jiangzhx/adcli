@@ -8,7 +8,7 @@ import type { ToolsUnionFlowPackageGetV2Filtering, ToolsUnionFlowPackageGetV2Res
 
 
 export interface OpenApi2ToolsUnionFlowPackageGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: ToolsUnionFlowPackageGetV2Filtering;
   page?: number;
   pageSize?: number;

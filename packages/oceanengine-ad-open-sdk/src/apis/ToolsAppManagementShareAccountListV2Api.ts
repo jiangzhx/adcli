@@ -8,7 +8,7 @@ import type { ToolsAppManagementShareAccountListV2Response, ToolsAppManagementSh
 
 
 export interface OpenApi2ToolsAppManagementShareAccountListGetRequest {
-  organizationId?: number;
+  organizationId?: number | string;
   packageId?: string;
   page?: number;
   pageSize?: number;

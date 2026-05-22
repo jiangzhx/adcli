@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface YuntuAudienceInfoCreateV30ResponseData {
-  custom_audience_id: number;
+  custom_audience_id: number | string;
 }
 

@@ -4,7 +4,7 @@
 import type { QianchuanUniPromotionAdScheduleDateUpdateV10DataResultsStatus } from "../models";
 
 export interface QianchuanUniPromotionAdScheduleDateUpdateV10ResponseDataResultsInner {
-  ad_id?: number;
+  ad_id?: number | string;
   error_message?: string;
   status?: QianchuanUniPromotionAdScheduleDateUpdateV10DataResultsStatus;
 }

@@ -5,6 +5,6 @@ import type { ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ResponseDataError
 
 export interface ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ResponseData {
   error?: ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ResponseDataErrorInner[];
-  ids?: number[];
+  ids?: number | string[];
 }
 

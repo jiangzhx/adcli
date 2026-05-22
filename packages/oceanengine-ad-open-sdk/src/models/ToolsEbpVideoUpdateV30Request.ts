@@ -4,7 +4,7 @@
 import type { ToolsEbpVideoUpdateV30AccountType, ToolsEbpVideoUpdateV30RequestVideosInner } from "../models";
 
 export interface ToolsEbpVideoUpdateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type?: ToolsEbpVideoUpdateV30AccountType;
   videos?: ToolsEbpVideoUpdateV30RequestVideosInner[];
 }

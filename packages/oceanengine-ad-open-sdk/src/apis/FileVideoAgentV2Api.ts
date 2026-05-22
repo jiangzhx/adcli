@@ -8,7 +8,7 @@ import type { FileVideoAgentV2Response, FileVideoAgentV2UploadType } from "../mo
 
 
 export interface OpenApi2FileVideoAgentPostRequest {
-  agentId: number;
+  agentId: number | string;
   fileName: string;
   isNeedAuth: boolean;
   isAigc?: boolean;

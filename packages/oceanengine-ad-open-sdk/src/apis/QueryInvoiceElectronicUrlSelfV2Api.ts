@@ -8,7 +8,7 @@ import type { QueryInvoiceElectronicUrlSelfV2Response } from "../models";
 
 
 export interface OpenApi2QueryInvoiceElectronicUrlSelfGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   invoiceSerial: string;
 }
 

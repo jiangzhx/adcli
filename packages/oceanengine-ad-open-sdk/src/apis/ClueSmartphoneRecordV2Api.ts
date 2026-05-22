@@ -8,11 +8,11 @@ import type { ClueSmartphoneRecordV2Response } from "../models";
 
 
 export interface OpenApi2ClueSmartphoneRecordGetRequest {
-  advertiserId: number;
-  instanceIds?: number[];
-  clueIds?: number[];
-  siteIds?: number[];
-  adIds?: number[];
+  advertiserId: number | string;
+  instanceIds?: number | string[];
+  clueIds?: number | string[];
+  siteIds?: number | string[];
+  adIds?: number | string[];
   startTime?: string;
   endTime?: string;
   page?: number;

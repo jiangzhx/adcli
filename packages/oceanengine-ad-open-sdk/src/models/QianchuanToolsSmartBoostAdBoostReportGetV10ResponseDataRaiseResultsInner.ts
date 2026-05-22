@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface QianchuanToolsSmartBoostAdBoostReportGetV10ResponseDataRaiseResultsInner {
-  ad_id?: number;
-  advertiser_id?: number;
+  ad_id?: number | string;
+  advertiser_id?: number | string;
   click_cnt?: number;
   convert_cnt?: number;
   convert_rate?: number;

@@ -8,7 +8,7 @@ import type { DpaTemplateGetV2Response } from "../models";
 
 
 export interface OpenApi2DpaTemplateGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
 }

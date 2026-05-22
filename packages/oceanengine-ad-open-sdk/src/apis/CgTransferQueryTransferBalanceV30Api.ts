@@ -9,7 +9,7 @@ import type { CgTransferQueryTransferBalanceV30Response } from "../models";
 
 export interface OpenApiV30CgTransferQueryTransferBalanceGetRequest {
   bizRequestNo: string;
-  agentId: number;
+  agentId: number | string;
   accountIdList: number[];
 }
 

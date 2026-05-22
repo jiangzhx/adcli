@@ -2,9 +2,9 @@
 // Do not edit manually.
 
 export interface ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoSubjectQualification {
-  account_id: number;
+  account_id: number | string;
   check_type?: number;
-  company_id?: number;
+  company_id?: number | string;
   company_name: string;
   company_type: number;
   expire_time?: string;

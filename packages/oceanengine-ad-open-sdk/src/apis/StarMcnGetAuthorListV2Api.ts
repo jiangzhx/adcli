@@ -8,11 +8,11 @@ import type { StarMcnGetAuthorListV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnGetAuthorListGetRequest {
-  starId: number;
-  authorId?: number;
+  starId: number | string;
+  authorId?: number | string;
   page?: number;
   pageSize?: number;
-  developerId?: number;
+  developerId?: number | string;
 }
 
 export class StarMcnGetAuthorListV2Api {

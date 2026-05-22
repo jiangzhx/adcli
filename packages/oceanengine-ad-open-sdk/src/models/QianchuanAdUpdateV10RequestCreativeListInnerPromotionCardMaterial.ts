@@ -6,8 +6,8 @@ import type { QianchuanAdUpdateV10CreativeListPromotionCardMaterialButtonSmartOp
 export interface QianchuanAdUpdateV10RequestCreativeListInnerPromotionCardMaterial {
   action_button?: string;
   button_smart_optimization?: QianchuanAdUpdateV10CreativeListPromotionCardMaterialButtonSmartOptimization;
-  component_id?: number;
-  id?: number;
+  component_id?: number | string;
+  id?: number | string;
   image_id?: string;
   selling_points?: string[];
   title?: string;

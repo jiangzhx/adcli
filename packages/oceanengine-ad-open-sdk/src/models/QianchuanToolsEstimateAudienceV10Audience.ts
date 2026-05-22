@@ -27,7 +27,7 @@ export interface QianchuanToolsEstimateAudienceV10Audience {
   live_platform_tags?: QianchuanToolsEstimateAudienceV10AudienceLivePlatformTags[];
   location_type?: QianchuanToolsEstimateAudienceV10AudienceLocationType;
   new_customer?: QianchuanToolsEstimateAudienceV10AudienceNewCustomer;
-  orientation_id?: number;
+  orientation_id?: number | string;
   platform?: QianchuanToolsEstimateAudienceV10AudiencePlatform[];
   retargeting_tags_exclude?: number[];
   retargeting_tags_include?: number[];

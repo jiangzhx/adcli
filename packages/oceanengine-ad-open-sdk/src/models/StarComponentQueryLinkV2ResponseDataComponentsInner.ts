@@ -5,7 +5,7 @@ import type { StarComponentQueryLinkV2ResponseDataComponentsInnerLiveAttractComp
 
 export interface StarComponentQueryLinkV2ResponseDataComponentsInner {
   audit_ban_reason?: string;
-  component_id?: number;
+  component_id?: number | string;
   link_android?: string;
   link_android_download?: string;
   link_ios?: string;

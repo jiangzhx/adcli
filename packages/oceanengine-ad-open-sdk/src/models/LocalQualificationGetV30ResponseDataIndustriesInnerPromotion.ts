@@ -5,7 +5,7 @@ import type { LocalQualificationGetV30DataIndustriesPromotionStatus } from "../m
 
 export interface LocalQualificationGetV30ResponseDataIndustriesInnerPromotion {
   content?: string;
-  qualification_id?: number;
+  qualification_id?: number | string;
   reject_reason?: string;
   status?: LocalQualificationGetV30DataIndustriesPromotionStatus;
 }

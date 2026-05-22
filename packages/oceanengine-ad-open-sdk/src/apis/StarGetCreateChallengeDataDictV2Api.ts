@@ -8,7 +8,7 @@ import type { StarGetCreateChallengeDataDictV2Response } from "../models";
 
 
 export interface OpenApi2StarGetCreateChallengeDataDictGetRequest {
-  starId: number;
+  starId: number | string;
 }
 
 export class StarGetCreateChallengeDataDictV2Api {

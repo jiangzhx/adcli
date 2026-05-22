@@ -8,7 +8,7 @@ import type { ToolsInterestActionInterestKeywordV2Response } from "../models";
 
 
 export interface OpenApi2ToolsInterestActionInterestKeywordGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   queryWords: string;
 }
 

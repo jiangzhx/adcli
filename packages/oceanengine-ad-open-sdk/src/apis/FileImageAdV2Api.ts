@@ -8,7 +8,7 @@ import type { FileImageAdV2Response, FileImageAdV2UploadType } from "../models";
 
 
 export interface OpenApi2FileImageAdPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filename?: string;
   imageFile?: File;
   imageSignature?: string;

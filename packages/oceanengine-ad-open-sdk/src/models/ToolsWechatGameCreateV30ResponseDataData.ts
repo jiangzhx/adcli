@@ -3,7 +3,7 @@
 
 export interface ToolsWechatGameCreateV30ResponseDataData {
   error_message?: string;
-  instance_id?: number;
+  instance_id?: number | string;
   user_name?: string;
 }
 

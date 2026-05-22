@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface ToolsUnionFlowPackageReportV2Filter {
-  ad_ids?: number[];
-  campaign_ids?: number[];
+  ad_ids?: number | string[];
+  campaign_ids?: number | string[];
   end_time?: string;
   rits?: number[];
   start_time?: string;

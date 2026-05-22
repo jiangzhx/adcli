@@ -8,7 +8,7 @@ import type { RemittanceCodeListV30Response } from "../models";
 
 
 export interface OpenApiV30RemittanceCodeListGetRequest {
-  agentId: number;
+  agentId: number | string;
   page?: number;
   pageSize?: number;
   remittanceCodeList?: string[];

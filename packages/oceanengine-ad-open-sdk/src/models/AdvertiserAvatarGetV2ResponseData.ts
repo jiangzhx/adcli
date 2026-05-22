@@ -4,7 +4,7 @@
 import type { AdvertiserAvatarGetV2DataAvatarStatus, AdvertiserAvatarGetV2DataSourceStatus, AdvertiserAvatarGetV2ResponseDataAvatarInfo } from "../models";
 
 export interface AdvertiserAvatarGetV2ResponseData {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   avatar_info?: AdvertiserAvatarGetV2ResponseDataAvatarInfo;
   avatar_reason?: string;
   avatar_status?: AdvertiserAvatarGetV2DataAvatarStatus;

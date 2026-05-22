@@ -23,20 +23,20 @@ export interface LocalProjectCreateV30Request {
   high_budget_rate?: number;
   intelligent_selection_mode?: LocalProjectCreateV30IntelligentSelectionMode;
   is_set_peak_budget?: boolean;
-  local_account_id: number;
+  local_account_id: number | string;
   local_asset_type?: LocalProjectCreateV30LocalAssetType;
   local_delivery_scene: LocalProjectCreateV30LocalDeliveryScene;
-  market_page_ids?: number[];
+  market_page_ids?: number | string[];
   marketing_goal: LocalProjectCreateV30MarketingGoal;
   name: string;
   peak_holidays?: LocalProjectCreateV30PeakHolidays[];
   peak_week_days?: LocalProjectCreateV30PeakWeekDays[];
-  product_id?: number;
-  promotion_poi_ids?: number[];
+  product_id?: number | string;
+  promotion_poi_ids?: number | string[];
   schedule_fixed_seconds?: number;
   schedule_time?: string;
   schedule_type: LocalProjectCreateV30ScheduleType;
   start_time?: string;
-  tool_pack_id?: number;
+  tool_pack_id?: number | string;
 }
 

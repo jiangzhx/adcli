@@ -10,7 +10,7 @@ export interface StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfo 
   create_time?: number;
   data?: StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoData;
   duration?: number;
-  item_id?: number;
+  item_id?: number | string;
   lego_mid?: number;
   release_time?: number;
   title?: string;

@@ -6,9 +6,9 @@ import type { ReportAudienceInterestActionListV2FilteringActionDays, ReportAudie
 export interface ReportAudienceInterestActionListV2Filtering {
   action_days?: ReportAudienceInterestActionListV2FilteringActionDays;
   action_scene?: ReportAudienceInterestActionListV2FilteringActionScene[];
-  ad_ids?: number[];
+  ad_ids?: number | string[];
   audience_level?: ReportAudienceInterestActionListV2FilteringAudienceLevel;
-  campaign_ids?: number[];
+  campaign_ids?: number | string[];
   interest_action_type?: ReportAudienceInterestActionListV2FilteringInterestActionType;
 }
 

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AudiencePackageDeleteV2Request {
-  advertiser_id: number;
-  audience_package_id: number;
+  advertiser_id: number | string;
+  audience_package_id: number | string;
 }
 

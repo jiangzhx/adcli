@@ -8,8 +8,8 @@ import type { QianchuanUniPromotionProductAwemeGetV10Filtering, QianchuanUniProm
 
 
 export interface OpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   filtering: QianchuanUniPromotionProductAwemeGetV10Filtering;
   cursor?: number;
   platform?: QianchuanUniPromotionProductAwemeGetV10Platform;

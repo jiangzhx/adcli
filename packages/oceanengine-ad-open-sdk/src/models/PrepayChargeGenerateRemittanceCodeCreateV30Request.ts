@@ -5,9 +5,9 @@ import type { PrepayChargeGenerateRemittanceCodeCreateV30Caller, PrepayChargeGen
 
 export interface PrepayChargeGenerateRemittanceCodeCreateV30Request {
   caller: PrepayChargeGenerateRemittanceCodeCreateV30Caller;
-  cc_account_id: number;
+  cc_account_id: number | string;
   charge_amount: number;
-  charge_target_id: number;
+  charge_target_id: number | string;
   charge_target_type: PrepayChargeGenerateRemittanceCodeCreateV30ChargeTargetType;
   charge_type: PrepayChargeGenerateRemittanceCodeCreateV30ChargeType;
   contract_info?: PrepayChargeGenerateRemittanceCodeCreateV30RequestContractInfo;

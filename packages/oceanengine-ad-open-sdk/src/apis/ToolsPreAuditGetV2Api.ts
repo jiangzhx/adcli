@@ -8,7 +8,7 @@ import type { ToolsPreAuditGetV2Filter, ToolsPreAuditGetV2Response } from "../mo
 
 
 export interface OpenApi2ToolsPreAuditGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filter?: ToolsPreAuditGetV2Filter;
   page?: number;
   pageSize?: number;

@@ -8,8 +8,8 @@ import type { SecurityAuditResultsV30Response } from "../models";
 
 
 export interface OpenApiV30SecurityAuditResultsGetRequest {
-  accountId: number;
-  objectId: number;
+  accountId: number | string;
+  objectId: number | string;
 }
 
 export class SecurityAuditResultsV30Api {

@@ -6,7 +6,7 @@ import type { CreativeProceduralCreativeUpdateV2RequestCreativeTitleMaterialsInn
 export interface CreativeProceduralCreativeUpdateV2RequestCreativeTitleMaterialsInner {
   bidword_list?: CreativeProceduralCreativeUpdateV2RequestCreativeTitleMaterialsInnerBidwordListInner[];
   dpa_word_list?: CreativeProceduralCreativeUpdateV2RequestCreativeTitleMaterialsInnerDpaWordListInner[];
-  material_id?: number;
+  material_id?: number | string;
   title: string;
   word_list?: CreativeProceduralCreativeUpdateV2RequestCreativeTitleMaterialsInnerWordListInner[];
 }

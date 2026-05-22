@@ -3,7 +3,7 @@
 
 export interface BrandRegionGetV30ResponseDataRegionsInnerSubRegionsInner {
   full_name?: string;
-  id?: number;
+  id?: number | string;
   name?: string;
 }
 

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsPlayableCreateV2ResponseData {
-  playable_id?: number;
+  playable_id?: number | string;
   playable_url?: string;
 }
 

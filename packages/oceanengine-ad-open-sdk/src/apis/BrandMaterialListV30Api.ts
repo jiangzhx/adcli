@@ -8,8 +8,8 @@ import type { BrandMaterialListV30CampaignFilter, BrandMaterialListV30MaterialSt
 
 
 export interface OpenApiV30BrandMaterialListGetRequest {
-  advertiserId: number;
-  materialIds?: number[];
+  advertiserId: number | string;
+  materialIds?: number | string[];
   materialName?: string;
   materialStatus?: BrandMaterialListV30MaterialStatus[];
   iesCoreUserId?: string;

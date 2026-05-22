@@ -8,8 +8,8 @@ import type { LocalToolPackDetailV30Response } from "../models";
 
 
 export interface OpenApiV30LocalToolPackDetailGetRequest {
-  localAccountId: number;
-  toolPackId: number;
+  localAccountId: number | string;
+  toolPackId: number | string;
 }
 
 export class LocalToolPackDetailV30Api {

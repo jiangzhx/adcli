@@ -8,7 +8,7 @@ import type { ToolsAppManagementAndroidBasicPackageGetV2AccountType, ToolsAppMan
 
 
 export interface OpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsAppManagementAndroidBasicPackageGetV2AccountType;
   packageId: string;
 }

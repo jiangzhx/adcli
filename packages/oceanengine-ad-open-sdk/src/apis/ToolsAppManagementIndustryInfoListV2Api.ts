@@ -8,7 +8,7 @@ import type { ToolsAppManagementIndustryInfoListV2AccountType, ToolsAppManagemen
 
 
 export interface OpenApi2ToolsAppManagementIndustryInfoListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsAppManagementIndustryInfoListV2AccountType;
 }
 

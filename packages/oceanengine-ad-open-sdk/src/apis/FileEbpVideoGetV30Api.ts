@@ -8,7 +8,7 @@ import type { FileEbpVideoGetV30Filtering, FileEbpVideoGetV30Response } from "..
 
 
 export interface OpenApiV30FileEbpVideoGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: FileEbpVideoGetV30Filtering;
   page?: number;
   pageSize?: number;

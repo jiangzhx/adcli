@@ -10,10 +10,10 @@ export interface LocalPromotionListV30Filtering {
   learning_phase?: LocalPromotionListV30FilteringLearningPhase;
   local_delivery_scene?: LocalPromotionListV30FilteringLocalDeliveryScene;
   marketing_goal?: LocalPromotionListV30FilteringMarketingGoal;
-  project_id?: number;
+  project_id?: number | string;
   promotion_create_time_end?: string;
   promotion_create_time_start?: string;
-  promotion_ids?: number[];
+  promotion_ids?: number | string[];
   promotion_modify_time_end?: string;
   promotion_modify_time_start?: string;
   promotion_name?: string;

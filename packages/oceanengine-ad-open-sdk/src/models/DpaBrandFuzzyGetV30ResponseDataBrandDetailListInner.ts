@@ -5,7 +5,7 @@ import type { DpaBrandFuzzyGetV30DataBrandDetailListBrandType, DpaBrandFuzzyGetV
 
 export interface DpaBrandFuzzyGetV30ResponseDataBrandDetailListInner {
   brand_full_name?: string;
-  brand_id?: number;
+  brand_id?: number | string;
   brand_name_cn?: string;
   brand_name_en?: string;
   brand_trademark_list?: DpaBrandFuzzyGetV30ResponseDataBrandDetailListInnerBrandTrademarkListInner[];

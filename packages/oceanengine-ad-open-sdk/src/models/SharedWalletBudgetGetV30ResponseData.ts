@@ -7,6 +7,6 @@ export interface SharedWalletBudgetGetV30ResponseData {
   budget_info?: Record<string, SharedWalletBudgetGetV30ResponseDataBudgetInfoValue>;
   budget_lower_limit?: number;
   budget_upper_limit?: number;
-  sub_wallet_id?: number;
+  sub_wallet_id?: number | string;
 }
 

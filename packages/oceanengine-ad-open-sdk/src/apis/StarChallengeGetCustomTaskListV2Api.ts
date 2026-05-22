@@ -8,7 +8,7 @@ import type { StarChallengeGetCustomTaskListV2Response } from "../models";
 
 
 export interface OpenApi2StarChallengeGetCustomTaskListGetRequest {
-  starId: number;
+  starId: number | string;
   taskCategory: number;
   page: number;
   pageSize: number;

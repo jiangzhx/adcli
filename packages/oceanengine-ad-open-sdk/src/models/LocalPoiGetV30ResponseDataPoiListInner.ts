@@ -9,7 +9,7 @@ export interface LocalPoiGetV30ResponseDataPoiListInner {
   district?: string;
   exists_product?: boolean;
   poi_address?: string;
-  poi_id?: number;
+  poi_id?: number | string;
   poi_name?: string;
   province?: string;
 }

@@ -8,7 +8,7 @@ import type { BudgetGroupListV30Filtering, BudgetGroupListV30Response } from "..
 
 
 export interface OpenApiV30BudgetGroupListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   pageSize: number;
   filtering?: BudgetGroupListV30Filtering;

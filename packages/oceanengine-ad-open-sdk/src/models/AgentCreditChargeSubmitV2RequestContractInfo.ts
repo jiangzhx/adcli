@@ -4,7 +4,7 @@
 import type { AgentCreditChargeSubmitV2ContractInfoDeliveryType } from "../models";
 
 export interface AgentCreditChargeSubmitV2RequestContractInfo {
-  contract_id: number;
+  contract_id: number | string;
   delivery_type: AgentCreditChargeSubmitV2ContractInfoDeliveryType;
 }
 

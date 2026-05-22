@@ -8,7 +8,7 @@ import type { ToolsClueCallVirtualNumberRefundDetailGetV2Response } from "../mod
 
 
 export interface OpenApi2ToolsClueCallVirtualNumberRefundDetailGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   month: string;
   page?: number;
   pageSize?: number;

@@ -9,9 +9,9 @@ export interface StarOrderGetVideoV2ResponseDataOrderVideoListInnerVideoListInne
   create_time?: number;
   detail_audit_info?: StarOrderGetVideoV2ResponseDataOrderVideoListInnerVideoListInnerDetailAuditInfoInner[];
   duration?: number;
-  item_id?: number;
+  item_id?: number | string;
   online_status?: number;
-  resource_id?: number;
+  resource_id?: number | string;
   resource_url?: string;
   status?: number;
   title?: string;

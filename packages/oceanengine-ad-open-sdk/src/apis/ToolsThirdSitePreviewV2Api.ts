@@ -8,8 +8,8 @@ import type { ToolsThirdSitePreviewV2Response } from "../models";
 
 
 export interface OpenApi2ToolsThirdSitePreviewGetRequest {
-  advertiserId: number;
-  siteId: number;
+  advertiserId: number | string;
+  siteId: number | string;
 }
 
 export class ToolsThirdSitePreviewV2Api {

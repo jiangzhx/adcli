@@ -7,7 +7,7 @@ export interface QianchuanAwemeAuthListGetV10Filtering {
   auth_range?: QianchuanAwemeAuthListGetV10FilteringAuthRange;
   auth_status?: QianchuanAwemeAuthListGetV10FilteringAuthStatus;
   auth_type?: QianchuanAwemeAuthListGetV10FilteringAuthType;
-  aweme_id?: number[];
+  aweme_id?: number | string[];
   aweme_name?: string;
   aweme_show_id?: string[];
   is_cancellation_progress?: boolean;

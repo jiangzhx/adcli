@@ -11,7 +11,7 @@ export interface QianchuanImageGetV10ResponseDataListInner {
   id?: string;
   image_mode?: QianchuanImageGetV10DataListImageMode;
   is_ai_create?: boolean;
-  material_id?: number;
+  material_id?: number | string;
   signature?: string;
   size?: number;
   source?: QianchuanImageGetV10DataListSource;

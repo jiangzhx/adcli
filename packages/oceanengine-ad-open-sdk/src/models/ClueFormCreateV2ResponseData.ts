@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ClueFormCreateV2ResponseData {
-  instance_id?: number;
+  instance_id?: number | string;
 }
 

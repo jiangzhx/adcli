@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ClueFormDeleteV2Request {
-  advertiser_id: number;
-  instance_id: number;
+  advertiser_id: number | string;
+  instance_id: number | string;
 }
 

@@ -8,7 +8,7 @@ import type { ToolsCommentGetV30Filtering, ToolsCommentGetV30OrderField, ToolsCo
 
 
 export interface OpenApiV30ToolsCommentGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startTime: string;
   endTime: string;
   orderField?: ToolsCommentGetV30OrderField;

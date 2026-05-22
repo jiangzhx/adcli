@@ -5,6 +5,6 @@ import type { QianchuanAdMaterialSuggestionV10ResponseDataListInnerAuditRecords 
 
 export interface QianchuanAdMaterialSuggestionV10ResponseDataListInner {
   audit_records?: QianchuanAdMaterialSuggestionV10ResponseDataListInnerAuditRecords;
-  material_id?: number;
+  material_id?: number | string;
 }
 

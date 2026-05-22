@@ -8,9 +8,9 @@ import type { SharedWalletDailyStatGetV30AccountType, SharedWalletDailyStatGetV3
 
 
 export interface OpenApiV30SharedWalletDailyStatGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: SharedWalletDailyStatGetV30AccountType;
-  sharedWalletId: number;
+  sharedWalletId: number | string;
   startDate?: string;
   endDate?: string;
   page?: number;

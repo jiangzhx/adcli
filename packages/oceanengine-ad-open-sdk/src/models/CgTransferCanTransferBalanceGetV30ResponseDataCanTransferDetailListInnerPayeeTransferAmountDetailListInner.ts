@@ -5,6 +5,6 @@ import type { CgTransferCanTransferBalanceGetV30ResponseDataCanTransferDetailLis
 
 export interface CgTransferCanTransferBalanceGetV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInner {
   capital_detail_list: CgTransferCanTransferBalanceGetV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInnerCapitalDetailListInner[];
-  payee_target_id: number;
+  payee_target_id: number | string;
 }
 

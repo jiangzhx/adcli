@@ -7,7 +7,7 @@ export interface ToolsEbpMicroGameListV30ResponseDataAppletsInner {
   app_id?: string;
   audit_status?: ToolsEbpMicroGameListV30DataAppletsAuditStatus;
   data?: Record<string, string>;
-  instance_id?: number;
+  instance_id?: number | string;
   is_ebp_asset?: boolean;
   name?: string;
   reason?: string;

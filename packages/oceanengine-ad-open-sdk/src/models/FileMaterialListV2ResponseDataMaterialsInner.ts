@@ -4,8 +4,8 @@
 import type { FileMaterialListV2DataMaterialsMaterialProperties } from "../models";
 
 export interface FileMaterialListV2ResponseDataMaterialsInner {
-  material_id?: number;
+  material_id?: number | string;
   material_properties?: FileMaterialListV2DataMaterialsMaterialProperties[];
-  matetrial_id?: number;
+  matetrial_id?: number | string;
 }
 

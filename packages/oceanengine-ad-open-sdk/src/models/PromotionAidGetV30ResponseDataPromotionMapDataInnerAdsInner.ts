@@ -4,7 +4,7 @@
 import type { PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInner } from "../models";
 
 export interface PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInner {
-  ad_id?: number;
+  ad_id?: number | string;
   creatives?: PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInner[];
 }
 

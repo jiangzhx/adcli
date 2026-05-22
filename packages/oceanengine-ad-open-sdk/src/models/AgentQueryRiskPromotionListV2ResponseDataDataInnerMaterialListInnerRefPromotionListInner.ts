@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface AgentQueryRiskPromotionListV2ResponseDataDataInnerMaterialListInnerRefPromotionListInner {
-  advertiser_id?: number;
-  agent_id?: number;
-  promotion_id?: number;
+  advertiser_id?: number | string;
+  agent_id?: number | string;
+  promotion_id?: number | string;
 }
 

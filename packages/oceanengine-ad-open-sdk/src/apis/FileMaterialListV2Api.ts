@@ -8,7 +8,7 @@ import type { FileMaterialListV2MaterialSource, FileMaterialListV2PropertiesFilt
 
 
 export interface OpenApi2FileMaterialListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   materialSource: FileMaterialListV2MaterialSource;
   propertiesFilter?: FileMaterialListV2PropertiesFilter[];
   startTime?: string;

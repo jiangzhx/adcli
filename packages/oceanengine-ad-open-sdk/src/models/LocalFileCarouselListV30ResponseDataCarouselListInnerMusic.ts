@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface LocalFileCarouselListV30ResponseDataCarouselListInnerMusic {
-  music_id?: number;
+  music_id?: number | string;
   music_url?: string;
   music_vid?: string;
 }

@@ -7,7 +7,7 @@ export interface ToolsKeywordsBidRatioCreateV30ResponseDataConflictInner {
   advName?: string;
   bidCoefs: number[];
   dimension: ToolsKeywordsBidRatioCreateV30DataConflictDimension;
-  projectId?: number;
+  projectId?: number | string;
   projectName?: string;
   word: string;
 }

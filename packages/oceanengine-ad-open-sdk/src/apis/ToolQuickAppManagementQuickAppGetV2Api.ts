@@ -8,13 +8,13 @@ import type { ToolQuickAppManagementQuickAppGetV2Response, ToolQuickAppManagemen
 
 
 export interface OpenApi2ToolQuickAppManagementQuickAppGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   status?: ToolQuickAppManagementQuickAppGetV2Status[];
   page?: number;
   pageSize?: number;
   updateTime?: ToolQuickAppManagementQuickAppGetV2UpdateTime;
   searchKey?: string;
-  quickAppIds?: number[];
+  quickAppIds?: number | string[];
 }
 
 export class ToolQuickAppManagementQuickAppGetV2Api {

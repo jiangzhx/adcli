@@ -8,7 +8,7 @@ import type { AgentInfoV2Fields, AgentInfoV2Response } from "../models";
 
 
 export interface OpenApi2AgentInfoGetRequest {
-  advertiserIds?: number[];
+  advertiserIds?: number | string[];
   fields?: AgentInfoV2Fields[];
 }
 

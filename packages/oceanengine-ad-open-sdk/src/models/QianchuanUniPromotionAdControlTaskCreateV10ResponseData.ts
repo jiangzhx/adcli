@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanUniPromotionAdControlTaskCreateV10ResponseData {
-  id?: number;
+  id?: number | string;
 }
 

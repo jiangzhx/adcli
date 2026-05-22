@@ -8,7 +8,7 @@ import type { AdvertiserTransferableFundGetV2Response } from "../models";
 
 
 export interface OpenApi2AdvertiserTransferableFundGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
 }
 
 export class AdvertiserTransferableFundGetV2Api {

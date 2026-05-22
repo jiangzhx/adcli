@@ -8,9 +8,9 @@ import type { FileVideoUploadTaskListV2AccountType, FileVideoUploadTaskListV2Res
 
 
 export interface OpenApi2FileVideoUploadTaskListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: FileVideoUploadTaskListV2AccountType;
-  taskIds: number[];
+  taskIds: number | string[];
 }
 
 export class FileVideoUploadTaskListV2Api {

@@ -6,7 +6,7 @@ export interface QianchuanToolsLogSearchV10ResponseDataLogsInnerSubLogsInner {
   content_title?: string;
   create_time?: string;
   log_id?: string;
-  object_id?: number;
+  object_id?: number | string;
   object_name?: string;
   object_type?: string;
   operator_id?: string;

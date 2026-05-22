@@ -5,7 +5,7 @@ import type { AicElementGetV30DataElementsElementType, AicElementGetV30DataEleme
 
 export interface AicElementGetV30ResponseDataElementsInner {
   create_time?: string;
-  element_id: number;
+  element_id: number | string;
   element_name: string;
   element_type?: AicElementGetV30DataElementsElementType;
   element_url?: string;

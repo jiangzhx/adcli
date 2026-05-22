@@ -8,10 +8,10 @@ import type { ReportAudienceProvinceV2IdType, ReportAudienceProvinceV2Response }
 
 
 export interface OpenApi2ReportAudienceProvinceGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   endDate?: string;
   idType?: ReportAudienceProvinceV2IdType;
-  ids?: number[];
+  ids?: number | string[];
   metrics?: string[];
   startDate?: string;
 }

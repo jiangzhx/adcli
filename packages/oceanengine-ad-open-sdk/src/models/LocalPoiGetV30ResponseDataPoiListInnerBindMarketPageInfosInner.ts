@@ -5,6 +5,6 @@ import type { LocalPoiGetV30ResponseDataPoiListInnerBindMarketPageInfosInnerBind
 
 export interface LocalPoiGetV30ResponseDataPoiListInnerBindMarketPageInfosInner {
   bind_tool_pack_info?: LocalPoiGetV30ResponseDataPoiListInnerBindMarketPageInfosInnerBindToolPackInfo;
-  market_page_id?: number;
+  market_page_id?: number | string;
 }
 

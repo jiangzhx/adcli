@@ -8,9 +8,9 @@ import type { DpaEbpMetaGetV30AccountType, DpaEbpMetaGetV30Response } from "../m
 
 
 export interface OpenApiV30DpaEbpMetaGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: DpaEbpMetaGetV30AccountType;
-  platformId: number;
+  platformId: number | string;
   indexable?: number;
   extractable?: number;
   industry?: number;

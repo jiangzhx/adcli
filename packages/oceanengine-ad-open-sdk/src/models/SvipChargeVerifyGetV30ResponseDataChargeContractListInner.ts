@@ -7,7 +7,7 @@ export interface SvipChargeVerifyGetV30ResponseDataChargeContractListInner {
   allow_delivery_type_list?: SvipChargeVerifyGetV30DataChargeContractListAllowDeliveryTypeList[];
   cont_begin_date?: string;
   cont_end_date?: string;
-  contract_id?: number;
+  contract_id?: number | string;
   contract_name?: string;
   contract_serial?: string;
   customer_name?: string;

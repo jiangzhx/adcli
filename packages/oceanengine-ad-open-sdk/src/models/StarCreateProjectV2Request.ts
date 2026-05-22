@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarCreateProjectV2Request {
-  demander_id: number;
+  demander_id: number | string;
   end_time?: number;
   first_class_category_name?: string;
   first_promotion_target?: number;
@@ -14,7 +14,7 @@ export interface StarCreateProjectV2Request {
   promotion_indicator_type?: number;
   second_class_category_name?: string;
   star_brand_name?: string;
-  star_id: number;
+  star_id: number | string;
   star_sub_brand_name?: string;
   start_time?: number;
   taobao_project_code?: string;

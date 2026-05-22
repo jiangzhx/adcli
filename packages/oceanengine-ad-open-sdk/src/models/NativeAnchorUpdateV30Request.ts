@@ -4,7 +4,7 @@
 import type { NativeAnchorUpdateV30RequestAnchorInfo } from "../models";
 
 export interface NativeAnchorUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   anchor_info: NativeAnchorUpdateV30RequestAnchorInfo;
 }
 

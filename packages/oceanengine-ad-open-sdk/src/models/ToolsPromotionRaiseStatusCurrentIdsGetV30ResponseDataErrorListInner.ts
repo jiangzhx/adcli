@@ -3,6 +3,6 @@
 
 export interface ToolsPromotionRaiseStatusCurrentIdsGetV30ResponseDataErrorListInner {
   error_reason?: string;
-  promotion_id?: number;
+  promotion_id?: number | string;
 }
 

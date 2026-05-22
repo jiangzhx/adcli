@@ -4,7 +4,7 @@
 import type { ToolsAppManagementBpShareCancelV2AccountInfosAccountType } from "../models";
 
 export interface ToolsAppManagementBpShareCancelV2RequestAccountInfosInner {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsAppManagementBpShareCancelV2AccountInfosAccountType;
 }
 

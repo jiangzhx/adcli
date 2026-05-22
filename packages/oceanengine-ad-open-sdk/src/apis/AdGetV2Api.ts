@@ -8,7 +8,7 @@ import type { AdGetV2Filtering, AdGetV2Response } from "../models";
 
 
 export interface OpenApi2AdGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   fields?: string[];
   filtering?: AdGetV2Filtering;
   page?: number;

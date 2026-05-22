@@ -21,7 +21,7 @@ export interface ReportStardeliveryTaskDataGetV30ResponseDataListInner {
   star_material_stat_cost?: number;
   star_sale_material_stat_cost?: number;
   star_stat_cost?: number;
-  star_task_album_id?: number;
+  star_task_album_id?: number | string;
   star_task_album_name?: string;
   star_task_anchor_type?: ReportStardeliveryTaskDataGetV30DataListStarTaskAnchorType;
   star_task_approaching_budget_limit_isv_count?: number;
@@ -31,7 +31,7 @@ export interface ReportStardeliveryTaskDataGetV30ResponseDataListInner {
   star_task_category_name?: string;
   star_task_category_type?: ReportStardeliveryTaskDataGetV30DataListStarTaskCategoryType;
   star_task_external_action?: ReportStardeliveryTaskDataGetV30DataListStarTaskExternalAction;
-  star_task_id?: number;
+  star_task_id?: number | string;
   star_task_lock_amount?: number;
   star_task_name?: string;
   star_task_post_item_count?: number;

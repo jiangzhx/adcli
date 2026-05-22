@@ -22,11 +22,11 @@ export interface ClueCouponDetailV2ResponseDataCouponResourceListInner {
   min_amount?: number;
   notification?: string;
   relief_amount?: number;
-  resource_id?: number;
+  resource_id?: number | string;
   resource_type?: ClueCouponDetailV2DataCouponResourceListResourceType;
   service_num?: string;
   stock?: number;
-  store_ids?: number[];
+  store_ids?: number | string[];
   title?: string;
   use_type?: string;
   valid_days?: number;

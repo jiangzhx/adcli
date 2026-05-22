@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface BudgetGroupUpdateV30ResponseData {
-  budget_group_id: number;
+  budget_group_id: number | string;
 }
 

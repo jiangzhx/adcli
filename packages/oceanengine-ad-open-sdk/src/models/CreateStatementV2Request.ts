@@ -4,10 +4,10 @@
 import type { CreateStatementV2Platform, CreateStatementV2TemplateType } from "../models";
 
 export interface CreateStatementV2Request {
-  account_id?: number;
-  agent_ids: number[];
+  account_id?: number | string;
+  agent_ids: number | string[];
   contract_serial: string;
-  file_id?: number;
+  file_id?: number | string;
   name?: string;
   platform: CreateStatementV2Platform;
   project_serial_list: string[];

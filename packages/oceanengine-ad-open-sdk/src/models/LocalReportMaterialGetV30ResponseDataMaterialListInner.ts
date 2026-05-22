@@ -52,7 +52,7 @@ export interface LocalReportMaterialGetV30ResponseDataMaterialListInner {
   luban_live_comment_cnt?: number;
   luban_live_enter_cnt?: number;
   luban_live_share_cnt?: number;
-  material_id?: number;
+  material_id?: number | string;
   material_name?: string;
   material_type?: LocalReportMaterialGetV30DataMaterialListMaterialType;
   message_action_cnt?: number;

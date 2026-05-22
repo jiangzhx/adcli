@@ -4,10 +4,10 @@
 import type { ToolsEbpMicroGameUpdateV30AccountType, ToolsEbpMicroGameUpdateV30RequestSchemaInfoInner } from "../models";
 
 export interface ToolsEbpMicroGameUpdateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpMicroGameUpdateV30AccountType;
   data?: Record<string, string>;
-  instance_id: number;
+  instance_id: number | string;
   remark?: string;
   schema_info?: ToolsEbpMicroGameUpdateV30RequestSchemaInfoInner[];
 }

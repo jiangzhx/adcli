@@ -4,8 +4,8 @@
 import type { ProjectCreateV30OptimizeGoalDeepExternalAction, ProjectCreateV30OptimizeGoalExternalAction } from "../models";
 
 export interface ProjectCreateV30RequestOptimizeGoal {
-  asset_ids?: number[];
-  convert_id?: number;
+  asset_ids?: number | string[];
+  convert_id?: number | string;
   deep_external_action?: ProjectCreateV30OptimizeGoalDeepExternalAction;
   external_action?: ProjectCreateV30OptimizeGoalExternalAction;
   game_addiction_id?: string;

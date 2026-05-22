@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdvertiserFundGetV2ResponseData {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   balance?: number;
   cash?: number;
   common_grant?: number;

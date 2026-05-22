@@ -8,7 +8,7 @@ import type { AdvertiserBudgetGetV2Response } from "../models";
 
 
 export interface OpenApi2AdvertiserBudgetGetGetRequest {
-  advertiserIds: number[];
+  advertiserIds: number | string[];
 }
 
 export class AdvertiserBudgetGetV2Api {

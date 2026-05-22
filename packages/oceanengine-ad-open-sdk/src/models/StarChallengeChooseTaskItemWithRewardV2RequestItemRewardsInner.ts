@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarChallengeChooseTaskItemWithRewardV2RequestItemRewardsInner {
-  item_id: number;
+  item_id: number | string;
   reward_amount: number;
 }
 

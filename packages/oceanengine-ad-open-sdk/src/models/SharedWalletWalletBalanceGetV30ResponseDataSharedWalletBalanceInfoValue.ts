@@ -6,6 +6,6 @@ import type { SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfo
 export interface SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValue {
   basic_balance_info?: SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValueBasicBalanceInfo;
   general_balance_info?: SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValueGeneralBalanceInfo;
-  wallet_id?: number;
+  wallet_id?: number | string;
 }
 

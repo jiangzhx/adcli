@@ -5,7 +5,7 @@ import type { LocalInterestCategoryV30ResponseDataCategoryInnerChildrenInnerChil
 
 export interface LocalInterestCategoryV30ResponseDataCategoryInnerChildrenInner {
   children?: LocalInterestCategoryV30ResponseDataCategoryInnerChildrenInnerChildrenInner[];
-  id?: number;
+  id?: number | string;
   value?: string;
 }
 

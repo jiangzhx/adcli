@@ -3,6 +3,6 @@
 
 export interface ToolsRtaGetV2ResponseDataListInner {
   remark?: string;
-  rta_id?: number;
+  rta_id?: number | string;
 }
 

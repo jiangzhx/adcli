@@ -10,7 +10,7 @@ export interface ToolsTaskRaiseGetV2ResponseDataReportsInner {
   increased_cost?: number;
   name?: string;
   raise_mode?: ToolsTaskRaiseGetV2DataReportsRaiseMode;
-  report_id?: number;
+  report_id?: number | string;
   start_time?: string;
   status?: ToolsTaskRaiseGetV2DataReportsStatus;
 }

@@ -4,14 +4,14 @@
 import type { LocalPromotionDetailV30DataCustomerMaterialListVideoMaterialImageMode } from "../models";
 
 export interface LocalPromotionDetailV30ResponseDataCustomerMaterialListInnerVideoMaterial {
-  aweme_item_id?: number;
+  aweme_item_id?: number | string;
   cover_image_height?: number;
   cover_image_width?: number;
   cover_web_uri?: string;
   cover_web_url?: string;
   image_mode?: LocalPromotionDetailV30DataCustomerMaterialListVideoMaterialImageMode;
-  lego_material_id?: number;
-  material_id?: number;
+  lego_material_id?: number | string;
+  material_id?: number | string;
   video_duration?: number;
   video_height?: number;
   video_id?: string;

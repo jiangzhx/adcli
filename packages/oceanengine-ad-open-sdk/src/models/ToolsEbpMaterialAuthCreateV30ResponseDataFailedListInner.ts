@@ -5,7 +5,7 @@ import type { ToolsEbpMaterialAuthCreateV30DataFailedListTargetEbpRange } from "
 
 export interface ToolsEbpMaterialAuthCreateV30ResponseDataFailedListInner {
   fail_reason?: string;
-  target_ebp_id?: number;
+  target_ebp_id?: number | string;
   target_ebp_range?: ToolsEbpMaterialAuthCreateV30DataFailedListTargetEbpRange;
 }
 

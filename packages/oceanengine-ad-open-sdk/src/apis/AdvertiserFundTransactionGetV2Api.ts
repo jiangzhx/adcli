@@ -8,7 +8,7 @@ import type { AdvertiserFundTransactionGetV2Response, AdvertiserFundTransactionG
 
 
 export interface OpenApi2AdvertiserFundTransactionGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate: string;
   endDate: string;
   transactionType: AdvertiserFundTransactionGetV2TransactionType;

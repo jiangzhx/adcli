@@ -8,7 +8,7 @@ import type { ReportLiveRoomAnalysisGetV30Filtering, ReportLiveRoomAnalysisGetV3
 
 
 export interface OpenApiV30ReportLiveRoomAnalysisGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering: ReportLiveRoomAnalysisGetV30Filtering;
   startTime?: string;
   endTime?: string;

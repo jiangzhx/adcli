@@ -8,12 +8,12 @@ import type { QianchuanToolsAllowCouponV10CampaignScene, QianchuanToolsAllowCoup
 
 
 export interface OpenApiV10QianchuanToolsAllowCouponGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   marketingGoal: QianchuanToolsAllowCouponV10MarketingGoal;
   campaignScene: QianchuanToolsAllowCouponV10CampaignScene;
   marketingScene: QianchuanToolsAllowCouponV10MarketingScene;
-  awemeIds?: number[];
-  productIds?: number[];
+  awemeIds?: number | string[];
+  productIds?: number | string[];
   isLabAd?: boolean;
 }
 

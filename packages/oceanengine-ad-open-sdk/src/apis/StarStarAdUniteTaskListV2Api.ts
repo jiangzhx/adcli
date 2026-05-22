@@ -8,7 +8,7 @@ import type { StarStarAdUniteTaskListV2Filtering, StarStarAdUniteTaskListV2Respo
 
 
 export interface OpenApi2StarStarAdUniteTaskListGetRequest {
-  starId: number;
+  starId: number | string;
   page?: number;
   pageSize?: number;
   filtering?: StarStarAdUniteTaskListV2Filtering;

@@ -8,7 +8,7 @@ import type { BrandQueryYuntu5aBrandCategoryV30Response } from "../models";
 
 
 export interface OpenApiV30BrandQueryYuntu5aBrandCategoryGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class BrandQueryYuntu5aBrandCategoryV30Api {

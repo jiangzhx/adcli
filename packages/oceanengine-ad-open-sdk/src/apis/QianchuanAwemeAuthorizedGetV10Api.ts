@@ -8,7 +8,7 @@ import type { QianchuanAwemeAuthorizedGetV10Filtering, QianchuanAwemeAuthorizedG
 
 
 export interface OpenApiV10QianchuanAwemeAuthorizedGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: QianchuanAwemeAuthorizedGetV10Filtering;
   page?: number;
   pageSize?: number;

@@ -8,8 +8,8 @@ import type { LocalProductGetByPoiidsV30LocalDeliveryScene, LocalProductGetByPoi
 
 
 export interface OpenApiV30LocalProductGetByPoiidsGetRequest {
-  localAccountId: number;
-  poiIds: number[];
+  localAccountId: number | string;
+  poiIds: number | string[];
   localDeliveryScene?: LocalProductGetByPoiidsV30LocalDeliveryScene;
 }
 

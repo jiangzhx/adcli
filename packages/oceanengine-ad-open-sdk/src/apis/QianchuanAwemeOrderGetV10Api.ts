@@ -8,7 +8,7 @@ import type { QianchuanAwemeOrderGetV10Count, QianchuanAwemeOrderGetV10Filtering
 
 
 export interface OpenApiV10QianchuanAwemeOrderGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering: QianchuanAwemeOrderGetV10Filtering;
   cursor?: number;
   count?: QianchuanAwemeOrderGetV10Count;

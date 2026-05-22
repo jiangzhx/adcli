@@ -3,7 +3,7 @@
 
 export interface DouplusOrderCloseV30Request {
   aweme_sec_uid: string;
-  order_ids?: number[];
-  task_ids?: number[];
+  order_ids?: number | string[];
+  task_ids?: number | string[];
 }
 

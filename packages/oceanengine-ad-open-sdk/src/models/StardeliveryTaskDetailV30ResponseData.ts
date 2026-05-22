@@ -11,7 +11,7 @@ export interface StardeliveryTaskDetailV30ResponseData {
   author_submit_frequency?: number;
   author_task_name?: string;
   brief_type?: StardeliveryTaskDetailV30DataBriefType;
-  first_industry_id?: number;
+  first_industry_id?: number | string;
   first_industry_name?: string;
   ios_app_package_name?: string;
   ios_download_url?: string;
@@ -23,15 +23,15 @@ export interface StardeliveryTaskDetailV30ResponseData {
   product_additional_introduction?: StardeliveryTaskDetailV30ResponseDataProductAdditionalIntroduction;
   product_introduction?: string;
   product_name?: string;
-  second_industry_id?: number;
+  second_industry_id?: number | string;
   second_industry_name?: string;
   star_account_name?: string;
   star_ad_cost_divide_ratio?: number;
-  star_id?: number;
+  star_id?: number | string;
   star_material_bid?: number;
   star_material_bid_range?: number[];
   star_task_album_micro_app_info?: StardeliveryTaskDetailV30ResponseDataStarTaskAlbumMicroAppInfo;
-  star_task_anchor_id?: number;
+  star_task_anchor_id?: number | string;
   star_task_anchor_type?: StardeliveryTaskDetailV30DataStarTaskAnchorType;
   star_task_asset_info?: StardeliveryTaskDetailV30ResponseDataStarTaskAssetInfo;
   star_task_ban_reason_detail?: string;
@@ -42,7 +42,7 @@ export interface StardeliveryTaskDetailV30ResponseData {
   star_task_create_time?: string;
   star_task_delayed_post_end_time?: string;
   star_task_external_action?: StardeliveryTaskDetailV30DataStarTaskExternalAction;
-  star_task_id?: number;
+  star_task_id?: number | string;
   star_task_introduction_text?: string;
   star_task_material_purchase_method?: StardeliveryTaskDetailV30DataStarTaskMaterialPurchaseMethod;
   star_task_materials_requirements?: StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirements;

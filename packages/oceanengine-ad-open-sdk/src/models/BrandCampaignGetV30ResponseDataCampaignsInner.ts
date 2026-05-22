@@ -5,13 +5,13 @@ import type { BrandCampaignGetV30DataCampaignsCampaignCategory, BrandCampaignGet
 
 export interface BrandCampaignGetV30ResponseDataCampaignsInner {
   ads_budget?: number;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   authentication_info?: BrandCampaignGetV30ResponseDataCampaignsInnerAuthenticationInfo;
   campaign_category?: BrandCampaignGetV30DataCampaignsCampaignCategory;
-  campaign_id?: number;
+  campaign_id?: number | string;
   campaign_name?: string;
   campaign_status?: BrandCampaignGetV30DataCampaignsCampaignStatus;
-  cart_id?: number;
+  cart_id?: number | string;
   contract_type?: BrandCampaignGetV30DataCampaignsContractType;
   create_time?: string;
   end_time?: string;

@@ -4,7 +4,7 @@
 import type { ToolsMicroGameCreateV30AgeLimit, ToolsMicroGameCreateV30MaxPaymentTierRange, ToolsMicroGameCreateV30MidPaymentTierRange, ToolsMicroGameCreateV30MinPaymentTierRange, ToolsMicroGameCreateV30RequestGameLink, ToolsMicroGameCreateV30RevenueModel, ToolsMicroGameCreateV30ScheduleCards } from "../models";
 
 export interface ToolsMicroGameCreateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   age_limit: ToolsMicroGameCreateV30AgeLimit;
   app_id: string;
   art_style: string;

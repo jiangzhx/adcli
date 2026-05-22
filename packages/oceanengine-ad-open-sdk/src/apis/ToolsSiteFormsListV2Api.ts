@@ -8,8 +8,8 @@ import type { ToolsSiteFormsListV2Response } from "../models";
 
 
 export interface OpenApi2ToolsSiteFormsListGetRequest {
-  advertiserId?: number;
-  siteId?: number;
+  advertiserId?: number | string;
+  siteId?: number | string;
 }
 
 export class ToolsSiteFormsListV2Api {

@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface CreativeDetailGetV30ResponseDataCreativeImageMaterialsInnerTemplateImage {
-  template_id?: number;
+  template_id?: number | string;
 }
 

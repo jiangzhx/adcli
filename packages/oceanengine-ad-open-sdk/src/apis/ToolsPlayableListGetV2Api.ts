@@ -8,7 +8,7 @@ import type { ToolsPlayableListGetV2PlayableSource, ToolsPlayableListGetV2Respon
 
 
 export interface OpenApi2ToolsPlayableListGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   page?: number;
   pageSize?: number;
   playableSource?: ToolsPlayableListGetV2PlayableSource;

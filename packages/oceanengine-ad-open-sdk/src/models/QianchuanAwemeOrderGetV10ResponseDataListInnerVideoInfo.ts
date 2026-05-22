@@ -5,7 +5,7 @@ import type { QianchuanAwemeOrderGetV10DataListVideoInfoItemType } from "../mode
 
 export interface QianchuanAwemeOrderGetV10ResponseDataListInnerVideoInfo {
   aweme_item_cover?: string;
-  aweme_item_id?: number;
+  aweme_item_id?: number | string;
   aweme_item_title?: string;
   item_type?: QianchuanAwemeOrderGetV10DataListVideoInfoItemType;
 }

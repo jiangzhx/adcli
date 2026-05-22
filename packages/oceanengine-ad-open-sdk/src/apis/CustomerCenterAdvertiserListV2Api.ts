@@ -9,7 +9,7 @@ import type { CustomerCenterAdvertiserListV2AccountSource, CustomerCenterAdverti
 
 export interface OpenApi2CustomerCenterAdvertiserListGetRequest {
   accountSource?: CustomerCenterAdvertiserListV2AccountSource;
-  ccAccountId?: number;
+  ccAccountId?: number | string;
   filtering?: CustomerCenterAdvertiserListV2Filtering;
   page?: number;
   pageSize?: number;

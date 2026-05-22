@@ -8,8 +8,8 @@ import type { ToolsSiteTemplatePreviewV2Response } from "../models";
 
 
 export interface OpenApi2ToolsSiteTemplatePreviewGetRequest {
-  advertiserId: number;
-  templateId: number;
+  advertiserId: number | string;
+  templateId: number | string;
 }
 
 export class ToolsSiteTemplatePreviewV2Api {

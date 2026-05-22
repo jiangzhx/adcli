@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdUpdateBudgetV2RequestDataInner {
-  ad_id: number;
+  ad_id: number | string;
   budget: number;
 }
 

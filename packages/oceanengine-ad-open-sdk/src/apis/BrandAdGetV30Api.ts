@@ -8,7 +8,7 @@ import type { BrandAdGetV30AdForm, BrandAdGetV30AdStatus, BrandAdGetV30AppOrigin
 
 
 export interface OpenApiV30BrandAdGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   size: number;
   adIds?: string[];

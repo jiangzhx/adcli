@@ -5,7 +5,7 @@ import type { ServeMarketOrderGetV10DataOrderListOrderStatus, ServeMarketOrderGe
 
 export interface ServeMarketOrderGetV10ResponseDataOrderListInner {
   app_active_days?: number;
-  app_available_user_ids?: number[];
+  app_available_user_ids?: number | string[];
   app_limit_user_count?: number;
   begin_time?: number;
   create_time?: number;
@@ -13,13 +13,13 @@ export interface ServeMarketOrderGetV10ResponseDataOrderListInner {
   fee?: number;
   function?: ServeMarketOrderGetV10ResponseDataOrderListInnerFunction;
   is_func?: boolean;
-  order_id?: number;
+  order_id?: number | string;
   order_status?: ServeMarketOrderGetV10DataOrderListOrderStatus;
   origin_price?: number;
-  paid_user_id?: number;
+  paid_user_id?: number | string;
   pay_time?: number;
   sku_description?: string;
-  sku_id?: number;
+  sku_id?: number | string;
   sku_type?: ServeMarketOrderGetV10DataOrderListSkuType;
   specs?: ServeMarketOrderGetV10ResponseDataOrderListInnerSpecsInner[];
 }

@@ -4,7 +4,7 @@
 import type { EventManagerAssetsCreateV2MiniProgramAssetMiniProgramType } from "../models";
 
 export interface EventManagerAssetsCreateV2RequestMiniProgramAsset {
-  instance_id: number;
+  instance_id: number | string;
   mini_program_id: string;
   mini_program_name: string;
   mini_program_type: EventManagerAssetsCreateV2MiniProgramAssetMiniProgramType;

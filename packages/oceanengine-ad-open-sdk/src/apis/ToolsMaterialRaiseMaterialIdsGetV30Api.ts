@@ -8,8 +8,8 @@ import type { ToolsMaterialRaiseMaterialIdsGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsMaterialRaiseMaterialIdsGetGetRequest {
-  advertiserId: number;
-  scheduleId: number;
+  advertiserId: number | string;
+  scheduleId: number | string;
 }
 
 export class ToolsMaterialRaiseMaterialIdsGetV30Api {

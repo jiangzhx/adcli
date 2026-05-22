@@ -8,9 +8,9 @@ import type { QianchuanAwemeUniPromotionSuggestV10BidType, QianchuanAwemeUniProm
 
 
 export interface OpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest {
-  advertiserId: number;
-  awemeId: number;
-  productId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
+  productId: number | string;
   bidType: QianchuanAwemeUniPromotionSuggestV10BidType;
 }
 

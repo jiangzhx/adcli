@@ -3,7 +3,7 @@
 
 export interface StarChallengeAddBudgetV2Request {
   add_budget: number;
-  challenge_task_id: number;
-  star_id: number;
+  challenge_task_id: number | string;
+  star_id: number | string;
 }
 

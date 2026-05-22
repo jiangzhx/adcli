@@ -4,8 +4,8 @@
 import type { SecurityCreateAppealV30AppealIdType, SecurityCreateAppealV30QuestionType } from "../models";
 
 export interface SecurityCreateAppealV30Request {
-  advertiser_id: number;
-  appeal_id: number;
+  advertiser_id: number | string;
+  appeal_id: number | string;
   appeal_id_type: SecurityCreateAppealV30AppealIdType;
   mids?: number[];
   question_desc?: string;

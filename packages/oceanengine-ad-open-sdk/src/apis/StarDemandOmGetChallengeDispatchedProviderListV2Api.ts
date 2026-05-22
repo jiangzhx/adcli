@@ -8,8 +8,8 @@ import type { StarDemandOmGetChallengeDispatchedProviderListV2Response } from ".
 
 
 export interface OpenApi2StarDemandOmGetChallengeDispatchedProviderListGetRequest {
-  starId: number;
-  challengeTaskId: number;
+  starId: number | string;
+  challengeTaskId: number | string;
   page: number;
   limit: number;
 }

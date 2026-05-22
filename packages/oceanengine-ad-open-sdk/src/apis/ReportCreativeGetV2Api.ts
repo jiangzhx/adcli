@@ -8,7 +8,7 @@ import type { ReportCreativeGetV2Filtering, ReportCreativeGetV2GroupBy, ReportCr
 
 
 export interface OpenApi2ReportCreativeGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   endDate?: string;
   fields?: string[];
   filtering?: ReportCreativeGetV2Filtering;

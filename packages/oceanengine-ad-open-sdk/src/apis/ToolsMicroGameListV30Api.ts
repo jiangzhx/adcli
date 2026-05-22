@@ -8,7 +8,7 @@ import type { ToolsMicroGameListV30AccountAssetQueryScope, ToolsMicroGameListV30
 
 
 export interface OpenApiV30ToolsMicroGameListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: ToolsMicroGameListV30Filtering;
   page?: number;
   pageSize?: number;

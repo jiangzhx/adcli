@@ -8,7 +8,7 @@ import type { QianchuanDmpAudiencesGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanDmpAudiencesGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   retargetingTagsType: number;
   offset?: number;
   limit?: number;

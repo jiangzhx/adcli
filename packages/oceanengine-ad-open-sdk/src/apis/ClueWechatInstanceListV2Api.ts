@@ -8,7 +8,7 @@ import type { ClueWechatInstanceListV2Filter, ClueWechatInstanceListV2Response }
 
 
 export interface OpenApi2ClueWechatInstanceListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filter?: ClueWechatInstanceListV2Filter;
 }
 

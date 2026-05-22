@@ -5,7 +5,7 @@ import type { RejectMaterialAiRepairAcceptTaskListV30DataResultListAiRepairStatu
 
 export interface RejectMaterialAiRepairAcceptTaskListV30ResponseDataResultListInner {
   ai_repair_error_message?: string;
-  ai_repair_id?: number;
+  ai_repair_id?: number | string;
   ai_repair_status?: RejectMaterialAiRepairAcceptTaskListV30DataResultListAiRepairStatus;
 }
 

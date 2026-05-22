@@ -7,7 +7,7 @@ export interface ToolsAwemeMultiLevelCategoryGetV2ResponseDataCategoriesInner {
   children?: ToolsAwemeMultiLevelCategoryGetV2ResponseDataCategoriesInnerChildrenInner[];
   cover_num_str?: string;
   fans_num_str?: string;
-  id?: number;
+  id?: number | string;
   value?: string;
 }
 

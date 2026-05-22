@@ -4,7 +4,7 @@
 import type { ProjectCpaBidUpdateV30RequestDataInner } from "../models";
 
 export interface ProjectCpaBidUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   data: ProjectCpaBidUpdateV30RequestDataInner[];
 }
 

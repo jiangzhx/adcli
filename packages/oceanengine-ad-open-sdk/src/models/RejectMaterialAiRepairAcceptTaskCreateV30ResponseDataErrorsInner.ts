@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface RejectMaterialAiRepairAcceptTaskCreateV30ResponseDataErrorsInner {
-  ai_repair_id?: number;
+  ai_repair_id?: number | string;
   error_messge?: string;
 }
 

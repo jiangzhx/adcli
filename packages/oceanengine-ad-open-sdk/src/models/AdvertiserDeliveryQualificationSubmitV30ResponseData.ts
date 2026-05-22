@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface AdvertiserDeliveryQualificationSubmitV30ResponseData {
-  qualification_ids?: number[];
+  qualification_ids?: number | string[];
 }
 

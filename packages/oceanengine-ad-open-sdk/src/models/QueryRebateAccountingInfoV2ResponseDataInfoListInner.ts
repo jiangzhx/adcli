@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QueryRebateAccountingInfoV2ResponseDataInfoListInner {
-  agent_id?: number;
+  agent_id?: number | string;
   agent_name?: string;
   amount?: number;
   contract_serial?: string;
@@ -17,9 +17,9 @@ export interface QueryRebateAccountingInfoV2ResponseDataInfoListInner {
   performance_amount?: number;
   platform?: number;
   platform_name?: string;
-  rebate_accounting_info_id?: number;
+  rebate_accounting_info_id?: number | string;
   rebate_accounting_info_serial?: string;
-  rebate_balance_id?: number;
+  rebate_balance_id?: number | string;
   rebate_balance_serial?: string;
   recheck?: number;
   recheck_name?: string;

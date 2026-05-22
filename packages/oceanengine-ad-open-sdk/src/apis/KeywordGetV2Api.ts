@@ -8,7 +8,7 @@ import type { KeywordGetV2Filtering, KeywordGetV2Response } from "../models";
 
 
 export interface OpenApi2KeywordGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: KeywordGetV2Filtering;
 }
 

@@ -11,7 +11,7 @@ export interface DpaEbpClueProductGetV30ResponseDataProductsInner {
   category?: DpaEbpClueProductGetV30ResponseDataProductsInnerCategory;
   city?: string[];
   comments?: number;
-  company_id?: number;
+  company_id?: number | string;
   completion_status?: DpaEbpClueProductGetV30DataProductsCompletionStatus;
   description?: string;
   feature?: string;
@@ -27,7 +27,7 @@ export interface DpaEbpClueProductGetV30ResponseDataProductsInner {
   outer_id?: string;
   poi_id?: string;
   price_info?: DpaEbpClueProductGetV30ResponseDataProductsInnerPriceInfo;
-  product_id?: number;
+  product_id?: number | string;
   profession?: Record<string, string>;
   province?: string[];
   shop_keeper_info?: DpaEbpClueProductGetV30ResponseDataProductsInnerShopKeeperInfo;

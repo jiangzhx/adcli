@@ -3,7 +3,7 @@
 
 export interface YuntuAudienceLabelGetV30ResponseDataLabelInfo {
   cover_num?: number;
-  label_id?: number;
+  label_id?: number | string;
   name?: string;
   status?: number;
 }

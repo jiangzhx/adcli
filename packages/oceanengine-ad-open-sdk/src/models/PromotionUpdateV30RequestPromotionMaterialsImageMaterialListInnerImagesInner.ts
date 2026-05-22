@@ -6,6 +6,6 @@ import type { PromotionUpdateV30RequestPromotionMaterialsImageMaterialListInnerI
 export interface PromotionUpdateV30RequestPromotionMaterialsImageMaterialListInnerImagesInner {
   image_id?: string;
   template_data_list?: PromotionUpdateV30RequestPromotionMaterialsImageMaterialListInnerImagesInnerTemplateDataListInner[];
-  template_id?: number;
+  template_id?: number | string;
 }
 

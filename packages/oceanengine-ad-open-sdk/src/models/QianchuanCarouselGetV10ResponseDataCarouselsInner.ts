@@ -10,7 +10,7 @@ export interface QianchuanCarouselGetV10ResponseDataCarouselsInner {
   filename?: string;
   image_mode?: QianchuanCarouselGetV10DataCarouselsImageMode;
   images?: QianchuanCarouselGetV10ResponseDataCarouselsInnerImagesInner[];
-  material_id?: number;
+  material_id?: number | string;
   source?: QianchuanCarouselGetV10DataCarouselsSource;
 }
 

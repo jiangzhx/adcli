@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface ToolsPrivativeWordAdUpdateV2Request {
-  ad_id: number;
-  advertiser_id: number;
+  ad_id: number | string;
+  advertiser_id: number | string;
   phrase_words?: string[];
   precise_words?: string[];
 }

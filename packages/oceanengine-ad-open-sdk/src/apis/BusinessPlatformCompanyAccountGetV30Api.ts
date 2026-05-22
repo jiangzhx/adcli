@@ -8,8 +8,8 @@ import type { BusinessPlatformCompanyAccountGetV30AccountType, BusinessPlatformC
 
 
 export interface OpenApiV30BusinessPlatformCompanyAccountGetGetRequest {
-  organizationId: number;
-  companyId: number;
+  organizationId: number | string;
+  companyId: number | string;
   accountType: BusinessPlatformCompanyAccountGetV30AccountType[];
   page?: number;
   pageSize?: number;

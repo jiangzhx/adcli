@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsUnionFlowPackageCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   name: string;
   rit: number[];
 }

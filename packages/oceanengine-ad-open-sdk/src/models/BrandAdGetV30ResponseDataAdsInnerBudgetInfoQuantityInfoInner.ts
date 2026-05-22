@@ -4,7 +4,7 @@
 import type { BrandAdGetV30ResponseDataAdsInnerBudgetInfoQuantityInfoInnerGeolocation } from "../models";
 
 export interface BrandAdGetV30ResponseDataAdsInnerBudgetInfoQuantityInfoInner {
-  business_id?: number;
+  business_id?: number | string;
   city?: number;
   date?: string;
   geolocation?: BrandAdGetV30ResponseDataAdsInnerBudgetInfoQuantityInfoInnerGeolocation;

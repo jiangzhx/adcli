@@ -4,8 +4,8 @@
 import type { QueryProjectV30FilteringPlatformList, QueryProjectV30FilteringProjectStatusList, QueryProjectV30FilteringReceiptStatusList, QueryProjectV30FilteringServingTypeList } from "../models";
 
 export interface QueryProjectV30Filtering {
-  advertiser_id?: number;
-  cost_customer_id?: number;
+  advertiser_id?: number | string;
+  cost_customer_id?: number | string;
   deadline_begin?: string;
   deadline_end?: string;
   platform_list?: QueryProjectV30FilteringPlatformList[];

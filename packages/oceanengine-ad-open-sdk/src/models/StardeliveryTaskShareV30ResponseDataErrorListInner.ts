@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StardeliveryTaskShareV30ResponseDataErrorListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   error_message?: string;
 }
 

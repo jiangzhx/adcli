@@ -8,8 +8,8 @@ import type { ReportRtaExpGetV2Response } from "../models";
 
 
 export interface OpenApi2ReportRtaExpGetGetRequest {
-  advertiserId: number;
-  rtaId: number;
+  advertiserId: number | string;
+  rtaId: number | string;
   startDate: string;
   endDate: string;
   strategy: number;

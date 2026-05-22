@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsThirdSiteDeleteV2ResponseData {
-  site_id?: number;
+  site_id?: number | string;
 }
 

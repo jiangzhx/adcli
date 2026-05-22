@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsDownloadPackageParseV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   download_url: string;
 }
 

@@ -9,12 +9,12 @@ export interface StarMcnProviderGetUnparticipatedTaskV2ResponseDataDataInner {
   component_type?: number;
   create_time: string;
   demand_icon?: string;
-  demand_id: number;
+  demand_id: number | string;
   demand_name: string;
   evaluate_type?: number;
   expiration_time?: string;
   expiration_time_end?: string;
-  first_category_id?: number;
+  first_category_id?: number | string;
   first_class_category?: number;
   participate_cope?: number;
   pay_type?: number;

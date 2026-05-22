@@ -6,6 +6,6 @@ import type { CgTransferWalletTransferCanTransferBalanceV30ResponseDataCanTransf
 export interface CgTransferWalletTransferCanTransferBalanceV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInner {
   capital_detail_list?: CgTransferWalletTransferCanTransferBalanceV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInnerCapitalDetailListInner[];
   non_brand_min_transfer_balance?: number;
-  payee_wallet_id?: number;
+  payee_wallet_id?: number | string;
 }
 

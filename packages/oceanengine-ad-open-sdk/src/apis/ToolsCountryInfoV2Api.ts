@@ -8,7 +8,7 @@ import type { ToolsCountryInfoV2Language, ToolsCountryInfoV2Response } from "../
 
 
 export interface OpenApi2ToolsCountryInfoGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   language: ToolsCountryInfoV2Language;
 }
 

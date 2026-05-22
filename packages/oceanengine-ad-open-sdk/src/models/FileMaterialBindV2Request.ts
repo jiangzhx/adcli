@@ -2,10 +2,10 @@
 // Do not edit manually.
 
 export interface FileMaterialBindV2Request {
-  advertiser_id: number;
-  carousel_ids?: number[];
+  advertiser_id: number | string;
+  carousel_ids?: number | string[];
   image_ids?: string[];
-  target_advertiser_ids: number[];
+  target_advertiser_ids: number | string[];
   video_ids?: string[];
 }
 

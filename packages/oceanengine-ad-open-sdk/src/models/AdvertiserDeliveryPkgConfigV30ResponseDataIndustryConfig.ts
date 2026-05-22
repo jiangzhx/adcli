@@ -4,8 +4,8 @@
 import type { AdvertiserDeliveryPkgConfigV30DataIndustryConfigIndustryStatus, AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigNecessariesInner, AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInner } from "../models";
 
 export interface AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfig {
-  config_id: number;
-  industry_ids: number[];
+  config_id: number | string;
+  industry_ids: number | string[];
   industry_names: string[];
   industry_status: AdvertiserDeliveryPkgConfigV30DataIndustryConfigIndustryStatus;
   necessaries?: AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigNecessariesInner[];

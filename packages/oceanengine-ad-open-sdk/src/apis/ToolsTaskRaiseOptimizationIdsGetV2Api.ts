@@ -8,7 +8,7 @@ import type { ToolsTaskRaiseOptimizationIdsGetV2PlatformVersion, ToolsTaskRaiseO
 
 
 export interface OpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   platformVersion?: ToolsTaskRaiseOptimizationIdsGetV2PlatformVersion;
 }
 

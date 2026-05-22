@@ -8,7 +8,7 @@ import type { ToolsAdvertiserDiagnosisSuggestionGetV30Filtering, ToolsAdvertiser
 
 
 export interface OpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: ToolsAdvertiserDiagnosisSuggestionGetV30Filtering;
 }
 

@@ -4,8 +4,8 @@
 import type { QianchuanUniPromotionAdDetailV10DataProductInfosChannelType } from "../models";
 
 export interface QianchuanUniPromotionAdDetailV10ResponseDataProductInfosInner {
-  channel_id?: number;
+  channel_id?: number | string;
   channel_type?: QianchuanUniPromotionAdDetailV10DataProductInfosChannelType;
-  product_id?: number;
+  product_id?: number | string;
 }
 

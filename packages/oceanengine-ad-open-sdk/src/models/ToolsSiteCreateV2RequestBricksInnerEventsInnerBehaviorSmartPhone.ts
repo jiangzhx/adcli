@@ -3,7 +3,7 @@
 
 export interface ToolsSiteCreateV2RequestBricksInnerEventsInnerBehaviorSmartPhone {
   call_display?: number;
-  instance_id?: number;
+  instance_id?: number | string;
   name?: string;
   phone_number?: number;
 }

@@ -3,7 +3,7 @@
 
 export interface LocalPoiGetV30Filtering {
   city?: number[];
-  product_id?: number;
+  product_id?: number | string;
   province?: number[];
   search_key_word?: string;
 }

@@ -8,7 +8,7 @@ import type { AdvertiserAvatarUploadV2Response } from "../models";
 
 
 export interface OpenApi2AdvertiserAvatarUploadPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   imageFile: File;
 }
 

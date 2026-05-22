@@ -10,7 +10,7 @@ export interface QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInne
   creative_type?: QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeType;
   hide_in_aweme?: boolean;
   image_material?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerImageMaterialInner[];
-  product_id?: number;
+  product_id?: number | string;
   title_material?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerTitleMaterialInner[];
   video_material?: QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInnerVideoMaterialInner[];
 }

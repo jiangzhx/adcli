@@ -8,7 +8,7 @@ export interface ToolQuickAppManagementQuickAppGetV2ResponseDataQuickAppInfoInne
   homepage_url: string;
   name: string;
   package_name: string;
-  quick_app_id: number;
+  quick_app_id: number | string;
   status: ToolQuickAppManagementQuickAppGetV2DataQuickAppInfoStatus;
   update_time: string;
 }

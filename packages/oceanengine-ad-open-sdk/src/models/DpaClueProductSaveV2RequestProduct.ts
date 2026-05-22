@@ -7,7 +7,7 @@ export interface DpaClueProductSaveV2RequestProduct {
   age?: number[];
   bought?: number;
   brand_info?: DpaClueProductSaveV2RequestProductBrandInfo;
-  category_id: number;
+  category_id: number | string;
   city?: string[];
   comments?: number;
   description?: string;
@@ -23,7 +23,7 @@ export interface DpaClueProductSaveV2RequestProduct {
   outer_id?: string;
   poi_id?: string;
   price_info?: DpaClueProductSaveV2RequestProductPriceInfo;
-  product_id?: number;
+  product_id?: number | string;
   profession?: Record<string, string>;
   province?: string[];
   shop_keeper_info?: DpaClueProductSaveV2RequestProductShopKeeperInfo;

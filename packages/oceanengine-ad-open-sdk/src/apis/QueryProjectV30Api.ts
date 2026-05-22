@@ -8,7 +8,7 @@ import type { QueryProjectV30Filtering, QueryProjectV30Response } from "../model
 
 
 export interface OpenApiV30QueryProjectGetRequest {
-  agentId: number;
+  agentId: number | string;
   count: number;
   cursor: number;
   filtering?: QueryProjectV30Filtering;

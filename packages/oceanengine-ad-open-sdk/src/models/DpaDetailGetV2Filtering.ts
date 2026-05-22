@@ -7,7 +7,7 @@ export interface DpaDetailGetV2Filtering {
   audit_status?: DpaDetailGetV2FilteringAuditStatus;
   dpa_categories?: number[];
   is_recommend?: DpaDetailGetV2FilteringIsRecommend;
-  product_id?: number;
+  product_id?: number | string;
   product_name?: string;
   spu_id?: string;
   status?: DpaDetailGetV2FilteringStatus;

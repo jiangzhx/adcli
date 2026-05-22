@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface RejectMaterialAiRepairAcceptTaskCreateV30Request {
-  advertiser_id: number;
-  ai_repair_ids: number[];
+  advertiser_id: number | string;
+  ai_repair_ids: number | string[];
 }
 

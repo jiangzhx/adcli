@@ -8,7 +8,7 @@ import type { FilePlayableListV30Filtering, FilePlayableListV30MaterialType, Fil
 
 
 export interface OpenApiV30FilePlayableListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   materialType: FilePlayableListV30MaterialType;
   filtering?: FilePlayableListV30Filtering;
   pageSize?: number;

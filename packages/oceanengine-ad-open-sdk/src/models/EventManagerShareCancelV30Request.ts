@@ -6,8 +6,8 @@ import type { EventManagerShareCancelV30AllAccountType, EventManagerShareCancelV
 export interface EventManagerShareCancelV30Request {
   account_infos?: EventManagerShareCancelV30RequestAccountInfosInner[];
   all_account_type?: EventManagerShareCancelV30AllAccountType[];
-  asset_id: number;
-  organization_id: number;
+  asset_id: number | string;
+  organization_id: number | string;
   share_mode: EventManagerShareCancelV30ShareMode;
 }
 

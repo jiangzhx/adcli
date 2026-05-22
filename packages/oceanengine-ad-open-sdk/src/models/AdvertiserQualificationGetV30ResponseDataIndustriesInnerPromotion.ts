@@ -5,7 +5,7 @@ import type { AdvertiserQualificationGetV30DataIndustriesPromotionStatus } from 
 
 export interface AdvertiserQualificationGetV30ResponseDataIndustriesInnerPromotion {
   content?: string;
-  qualification_id?: number;
+  qualification_id?: number | string;
   reject_reason?: string;
   status?: AdvertiserQualificationGetV30DataIndustriesPromotionStatus;
 }

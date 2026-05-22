@@ -6,7 +6,7 @@ import type { QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeLi
 export interface QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner {
   carousel_material?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerCarouselMaterialInner[];
   image_material?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerImageMaterialInner[];
-  product_id?: number;
+  product_id?: number | string;
   title_material?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerTitleMaterialInner[];
   video_material?: QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerVideoMaterialInner[];
 }

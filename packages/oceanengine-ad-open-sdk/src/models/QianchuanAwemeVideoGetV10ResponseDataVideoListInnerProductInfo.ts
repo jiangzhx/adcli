@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAwemeVideoGetV10ResponseDataVideoListInnerProductInfo {
-  id?: number;
+  id?: number | string;
   img?: string;
   name?: string;
 }

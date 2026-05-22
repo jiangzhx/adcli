@@ -4,8 +4,8 @@
 import type { ToolsPlayableListGetV2DataListPlayableOrientation, ToolsPlayableListGetV2DataListStatus } from "../models";
 
 export interface ToolsPlayableListGetV2ResponseDataListInner {
-  advertiser_id?: number;
-  playable_id?: number;
+  advertiser_id?: number | string;
+  playable_id?: number | string;
   playable_name?: string;
   playable_orientation?: ToolsPlayableListGetV2DataListPlayableOrientation;
   playable_url?: string;

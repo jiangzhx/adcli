@@ -8,7 +8,7 @@ import type { QianchuanAwemeSuggestBidV10Audience, QianchuanAwemeSuggestBidV10De
 
 
 export interface OpenApiV10QianchuanAwemeSuggestBidGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   deliverySetting: QianchuanAwemeSuggestBidV10DeliverySetting;
   audience?: QianchuanAwemeSuggestBidV10Audience;
 }

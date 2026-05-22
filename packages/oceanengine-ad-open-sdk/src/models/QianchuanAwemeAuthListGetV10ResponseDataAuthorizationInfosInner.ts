@@ -10,7 +10,7 @@ export interface QianchuanAwemeAuthListGetV10ResponseDataAuthorizationInfosInner
   auth_type?: QianchuanAwemeAuthListGetV10DataAuthorizationInfosAuthType[];
   auth_video_info?: QianchuanAwemeAuthListGetV10ResponseDataAuthorizationInfosInnerAuthVideoInfo;
   aweme_avatar?: string;
-  aweme_id?: number;
+  aweme_id?: number | string;
   aweme_name?: string;
   aweme_show_id?: string;
   create_time?: string;

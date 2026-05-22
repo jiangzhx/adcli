@@ -4,7 +4,7 @@
 import type { ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30RequestProjectAdjustListInner } from "../models";
 
 export interface ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   project_adjust_list?: ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30RequestProjectAdjustListInner[];
   suggest_id: string;
 }

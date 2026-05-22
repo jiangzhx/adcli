@@ -8,8 +8,8 @@ export interface ToolsBpAssetManagementShareCancelV30Request {
   all_accounts_by_bp?: ToolsBpAssetManagementShareCancelV30AllAccountsByBp[];
   all_accounts_by_company?: ToolsBpAssetManagementShareCancelV30RequestAllAccountsByCompanyInner[];
   asset_type: ToolsBpAssetManagementShareCancelV30AssetType;
-  instance_id: number;
-  organization_id: number;
+  instance_id: number | string;
+  organization_id: number | string;
   share_mode: ToolsBpAssetManagementShareCancelV30ShareMode;
 }
 

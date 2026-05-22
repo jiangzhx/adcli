@@ -8,7 +8,7 @@ import type { ReportAudienceInterestActionListV2Filtering, ReportAudienceInteres
 
 
 export interface OpenApi2ReportAudienceInterestActionListGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   endDate?: string;
   filtering?: ReportAudienceInterestActionListV2Filtering;
   metrics?: string[];

@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface AudiencePackageCreateV2ResponseData {
-  audience_package_id?: number;
+  audience_package_id?: number | string;
 }
 

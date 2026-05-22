@@ -6,7 +6,7 @@ import type { PromotionListV30ResponseDataListInnerPromotionMaterialsTitleMateri
 export interface PromotionListV30ResponseDataListInnerPromotionMaterialsTitleMaterialListInner {
   bidword_list?: PromotionListV30ResponseDataListInnerPromotionMaterialsTitleMaterialListInnerBidwordListInner[];
   dpa_word_list?: number[];
-  material_id?: number;
+  material_id?: number | string;
   title?: string;
   word_list?: number[];
 }

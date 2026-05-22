@@ -4,7 +4,7 @@
 import type { ToolsEbpAppDetailV30ResponseDataCurrentVersion, ToolsEbpAppDetailV30ResponseDataNextVersion } from "../models";
 
 export interface ToolsEbpAppDetailV30ResponseData {
-  category_id?: number;
+  category_id?: number | string;
   current_version?: ToolsEbpAppDetailV30ResponseDataCurrentVersion;
   next_version?: ToolsEbpAppDetailV30ResponseDataNextVersion;
 }

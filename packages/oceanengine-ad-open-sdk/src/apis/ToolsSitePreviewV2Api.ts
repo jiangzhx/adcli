@@ -8,7 +8,7 @@ import type { ToolsSitePreviewV2Response } from "../models";
 
 
 export interface OpenApi2ToolsSitePreviewGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   siteId: string;
   xOrangeCaller?: string;
 }

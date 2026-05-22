@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListBlockVideoMaterialInner {
-  aweme_item_id: number;
+  aweme_item_id: number | string;
 }
 

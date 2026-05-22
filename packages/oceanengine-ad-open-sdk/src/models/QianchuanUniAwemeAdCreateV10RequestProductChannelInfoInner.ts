@@ -4,8 +4,8 @@
 import type { QianchuanUniAwemeAdCreateV10ProductChannelInfoChannelType } from "../models";
 
 export interface QianchuanUniAwemeAdCreateV10RequestProductChannelInfoInner {
-  channel_id?: number;
+  channel_id?: number | string;
   channel_type?: QianchuanUniAwemeAdCreateV10ProductChannelInfoChannelType;
-  product_id?: number;
+  product_id?: number | string;
 }
 

@@ -6,6 +6,6 @@ import type { StarDemandCreateAssignV2RequestDemandInfo, StarDemandCreateAssignV
 export interface StarDemandCreateAssignV2Request {
   demand_info: StarDemandCreateAssignV2RequestDemandInfo;
   order_item_info: StarDemandCreateAssignV2RequestOrderItemInfo;
-  star_id: number;
+  star_id: number | string;
 }
 

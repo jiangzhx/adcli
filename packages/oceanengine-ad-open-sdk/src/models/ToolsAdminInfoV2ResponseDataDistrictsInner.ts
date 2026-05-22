@@ -5,7 +5,7 @@ import type { ToolsAdminInfoV2DataDistrictsLevel, ToolsAdminInfoV2ResponseDataDi
 
 export interface ToolsAdminInfoV2ResponseDataDistrictsInner {
   code?: string;
-  geoname_id?: number;
+  geoname_id?: number | string;
   level?: ToolsAdminInfoV2DataDistrictsLevel;
   name?: string;
   sub_districts?: ToolsAdminInfoV2ResponseDataDistrictsInnerSubDistrictsInner[];

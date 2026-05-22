@@ -8,7 +8,7 @@ import type { AgentChargeVerifyV2ChargeType, AgentChargeVerifyV2Response } from 
 
 
 export interface OpenApi2AgentChargeVerifyGetRequest {
-  agentId: number;
+  agentId: number | string;
   chargeType: AgentChargeVerifyV2ChargeType;
 }
 

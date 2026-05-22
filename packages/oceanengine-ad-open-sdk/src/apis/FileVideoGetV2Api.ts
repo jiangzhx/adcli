@@ -8,7 +8,7 @@ import type { FileVideoGetV2Filtering, FileVideoGetV2Response } from "../models"
 
 
 export interface OpenApi2FileVideoGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: FileVideoGetV2Filtering;
   page?: number;
   pageSize?: number;

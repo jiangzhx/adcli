@@ -8,7 +8,7 @@ import type { AdvertiserFundDailyStatV2AccountType, AdvertiserFundDailyStatV2Res
 
 
 export interface OpenApi2AdvertiserFundDailyStatGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate?: string;
   endDate?: string;
   page?: number;

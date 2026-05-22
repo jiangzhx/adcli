@@ -16,7 +16,7 @@ export interface NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchor {
   harmony_download_url?: string;
   head_image_list?: NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchorHeadImageListInner[];
   icon_images?: NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchorIconImagesInner[];
-  instance_id?: number;
+  instance_id?: number | string;
   ios_anchor_title?: string;
   ios_download_url?: string;
   micro_app_name?: string;
@@ -26,8 +26,8 @@ export interface NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchor {
   novel_chapter?: string;
   path_param?: string;
   platform_type?: number;
-  quick_app_id?: number;
+  quick_app_id?: number | string;
   wechat_external_url?: string;
-  wechat_package_id?: number;
+  wechat_package_id?: number | string;
 }
 

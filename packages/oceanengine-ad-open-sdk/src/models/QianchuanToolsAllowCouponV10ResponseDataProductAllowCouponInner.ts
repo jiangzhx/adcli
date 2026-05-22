@@ -3,6 +3,6 @@
 
 export interface QianchuanToolsAllowCouponV10ResponseDataProductAllowCouponInner {
   allow_coupon?: boolean;
-  product_id?: number;
+  product_id?: number | string;
 }
 

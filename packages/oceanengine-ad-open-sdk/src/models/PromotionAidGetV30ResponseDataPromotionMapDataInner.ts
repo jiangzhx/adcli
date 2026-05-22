@@ -5,6 +5,6 @@ import type { PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInner } from
 
 export interface PromotionAidGetV30ResponseDataPromotionMapDataInner {
   ads?: PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInner[];
-  promotion_id?: number;
+  promotion_id?: number | string;
 }
 

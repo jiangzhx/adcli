@@ -5,7 +5,7 @@ import type { ToolsCreativeWordSelectV2DataCreativeWordContentType, ToolsCreativ
 
 export interface ToolsCreativeWordSelectV2ResponseDataCreativeWordInner {
   content_type?: ToolsCreativeWordSelectV2DataCreativeWordContentType;
-  creative_word_id?: number;
+  creative_word_id?: number | string;
   default_word?: string;
   max_word_len?: number;
   min_word_len?: number;

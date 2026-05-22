@@ -10,7 +10,7 @@ export interface FileEbpVideoGetV30ResponseDataListInner {
   file_name?: string;
   height?: number;
   image_mode?: FileEbpVideoGetV30DataListImageMode;
-  material_id?: number;
+  material_id?: number | string;
   material_properties?: FileEbpVideoGetV30ResponseDataListInnerMaterialProperties;
   poster_url?: string;
   signature?: string;

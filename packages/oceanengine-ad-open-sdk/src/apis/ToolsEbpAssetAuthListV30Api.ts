@@ -8,7 +8,7 @@ import type { ToolsEbpAssetAuthListV30AccountType, ToolsEbpAssetAuthListV30Asset
 
 
 export interface OpenApiV30ToolsEbpAssetAuthListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsEbpAssetAuthListV30AccountType;
   assetType: ToolsEbpAssetAuthListV30AssetType;
   assetScope?: number;

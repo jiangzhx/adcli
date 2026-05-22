@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface KeywordGetV2Filtering {
-  ad_id: number;
+  ad_id: number | string;
 }
 

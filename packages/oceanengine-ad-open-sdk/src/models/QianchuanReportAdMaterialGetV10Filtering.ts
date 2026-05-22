@@ -5,6 +5,6 @@ import type { QianchuanReportAdMaterialGetV10FilteringMaterialType } from "../mo
 
 export interface QianchuanReportAdMaterialGetV10Filtering {
   material_type: QianchuanReportAdMaterialGetV10FilteringMaterialType;
-  object_ids: number[];
+  object_ids: number | string[];
 }
 

@@ -6,7 +6,7 @@ import type { LocalQualificationGetV30DataIndustriesOthersStatus } from "../mode
 export interface LocalQualificationGetV30ResponseDataIndustriesInnerOthersInner {
   attachment_id?: string;
   picture_url?: string;
-  qualification_id?: number;
+  qualification_id?: number | string;
   reject_reason?: string;
   status?: LocalQualificationGetV30DataIndustriesOthersStatus;
 }

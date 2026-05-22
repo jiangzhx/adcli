@@ -7,7 +7,7 @@ export interface QianchuanAdMaterialGetV10ResponseDataAdMaterialInfosInnerMateri
   description?: string;
   image_mode?: QianchuanAdMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialImageMode;
   images?: QianchuanAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoImageMaterialImagesInner[];
-  material_id?: number;
+  material_id?: number | string;
   music_url?: string;
   source?: QianchuanAdMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialSource;
   title?: string;

@@ -5,6 +5,6 @@ import type { ToolsBpAssetManagementShareV30DataErrorListAllAccountsByCompanyAcc
 
 export interface ToolsBpAssetManagementShareV30ResponseDataErrorListInnerAllAccountsByCompany {
   account_type?: ToolsBpAssetManagementShareV30DataErrorListAllAccountsByCompanyAccountType;
-  company_id?: number;
+  company_id?: number | string;
 }
 

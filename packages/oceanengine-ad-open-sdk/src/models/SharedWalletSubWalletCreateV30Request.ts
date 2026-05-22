@@ -4,12 +4,12 @@
 import type { SharedWalletSubWalletCreateV30AccountType, SharedWalletSubWalletCreateV30RequestSharedRange } from "../models";
 
 export interface SharedWalletSubWalletCreateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: SharedWalletSubWalletCreateV30AccountType;
-  main_wallet_id: number;
+  main_wallet_id: number | string;
   shared_range: SharedWalletSubWalletCreateV30RequestSharedRange;
   wallet_description?: string;
-  wallet_id: number;
+  wallet_id: number | string;
   wallet_label?: string[];
   wallet_name: string;
 }

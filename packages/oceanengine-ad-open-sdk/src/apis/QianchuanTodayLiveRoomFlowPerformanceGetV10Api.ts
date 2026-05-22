@@ -8,8 +8,8 @@ import type { QianchuanTodayLiveRoomFlowPerformanceGetV10FlowSource, QianchuanTo
 
 
 export interface OpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest {
-  advertiserId: number;
-  roomId: number;
+  advertiserId: number | string;
+  roomId: number | string;
   flowSource?: QianchuanTodayLiveRoomFlowPerformanceGetV10FlowSource;
 }
 

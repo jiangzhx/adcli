@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface AgentCreditChargeSubmitV2ResponseDataChargeCommitResult {
-  charge_order_id: number;
+  charge_order_id: number | string;
 }
 

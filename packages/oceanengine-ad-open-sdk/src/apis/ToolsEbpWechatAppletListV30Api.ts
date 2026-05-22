@@ -8,7 +8,7 @@ import type { ToolsEbpWechatAppletListV30AccountType, ToolsEbpWechatAppletListV3
 
 
 export interface OpenApiV30ToolsEbpWechatAppletListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsEbpWechatAppletListV30AccountType;
   assetManagementScope?: ToolsEbpWechatAppletListV30AssetManagementScope;
   filtering?: ToolsEbpWechatAppletListV30Filtering;

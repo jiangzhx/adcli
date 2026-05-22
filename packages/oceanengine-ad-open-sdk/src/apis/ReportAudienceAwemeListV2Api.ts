@@ -8,7 +8,7 @@ import type { ReportAudienceAwemeListV2Filtering, ReportAudienceAwemeListV2Respo
 
 
 export interface OpenApi2ReportAudienceAwemeListGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   endDate?: string;
   filtering?: ReportAudienceAwemeListV2Filtering;
   metrics?: string[];

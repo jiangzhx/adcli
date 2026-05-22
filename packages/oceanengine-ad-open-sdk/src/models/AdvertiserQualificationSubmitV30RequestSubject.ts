@@ -13,7 +13,7 @@ export interface AdvertiserQualificationSubmitV30RequestSubject {
   has_effective_date: boolean;
   proprietor_name: string;
   qualification_code: string;
-  qualification_id?: number;
+  qualification_id?: number | string;
   qualification_type: AdvertiserQualificationSubmitV30SubjectQualificationType;
   registered_city_name?: string;
   registered_nation_name: string;

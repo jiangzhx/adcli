@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdvertiserDeliveryQualificationDeleteV30Request {
-  advertiser_id: number;
-  qualification_ids: number[];
+  advertiser_id: number | string;
+  qualification_ids: number | string[];
 }
 

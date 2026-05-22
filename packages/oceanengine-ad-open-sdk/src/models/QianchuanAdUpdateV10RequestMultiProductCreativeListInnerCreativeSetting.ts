@@ -5,7 +5,7 @@ import type { QianchuanAdUpdateV10MultiProductCreativeListCreativeSettingCreativ
 
 export interface QianchuanAdUpdateV10RequestMultiProductCreativeListInnerCreativeSetting {
   ad_keywords?: string[];
-  aweme_id?: number;
+  aweme_id?: number | string;
   creative_auto_generate?: QianchuanAdUpdateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate;
   creative_category?: QianchuanAdUpdateV10RequestMultiProductCreativeListInnerCreativeSettingCreativeCategory;
   dynamic_creative?: QianchuanAdUpdateV10MultiProductCreativeListCreativeSettingDynamicCreative;

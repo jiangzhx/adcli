@@ -4,9 +4,9 @@
 import type { ToolsAppManagementAppGetV2DataListAccountType } from "../models";
 
 export interface ToolsAppManagementAppGetV2ResponseDataListInner {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: ToolsAppManagementAppGetV2DataListAccountType;
-  app_cloud_id?: number;
+  app_cloud_id?: number | string;
   app_name?: string;
   create_time?: string;
   download_url?: string;

@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface FileVideoMaterialClearTaskCreateV2ResponseData {
-  clear_id?: number;
+  clear_id?: number | string;
 }
 

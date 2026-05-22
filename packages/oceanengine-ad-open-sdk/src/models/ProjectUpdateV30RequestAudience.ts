@@ -11,7 +11,7 @@ export interface ProjectUpdateV30RequestAudience {
   action_words?: number[];
   age?: string[];
   android_osv?: ProjectUpdateV30AudienceAndroidOsv;
-  audience_package_id?: number;
+  audience_package_id?: number | string;
   auto_extend_targets?: ProjectUpdateV30AudienceAutoExtendTargets[];
   aweme_fan_accounts?: number[];
   aweme_fan_behaviors?: ProjectUpdateV30AudienceAwemeFanBehaviors[];

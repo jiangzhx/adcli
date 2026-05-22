@@ -4,8 +4,8 @@
 import type { ClueCouponEmployeeDeleteV2ListUserType } from "../models";
 
 export interface ClueCouponEmployeeDeleteV2RequestListInner {
-  store_id?: number;
-  user_id?: number;
+  store_id?: number | string;
+  user_id?: number | string;
   user_type?: ClueCouponEmployeeDeleteV2ListUserType;
 }
 

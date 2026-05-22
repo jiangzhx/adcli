@@ -8,11 +8,11 @@ export interface LocalPromotionListV30ResponseDataPromotionListInner {
   aweme_id?: string;
   aweme_name?: string;
   learning_phase?: LocalPromotionListV30DataPromotionListLearningPhase;
-  local_account_id?: number;
+  local_account_id?: number | string;
   local_delivery_scene?: LocalPromotionListV30DataPromotionListLocalDeliveryScene;
-  project_id?: number;
+  project_id?: number | string;
   promotion_create_time?: string;
-  promotion_id?: number;
+  promotion_id?: number | string;
   promotion_modify_time?: string;
   promotion_name?: string;
   promotion_status_first?: LocalPromotionListV30DataPromotionListPromotionStatusFirst;

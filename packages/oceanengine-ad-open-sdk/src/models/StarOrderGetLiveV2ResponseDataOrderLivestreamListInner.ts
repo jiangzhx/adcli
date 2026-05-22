@@ -5,7 +5,7 @@ import type { StarOrderGetLiveV2ResponseDataOrderLivestreamListInnerLivestreamLi
 
 export interface StarOrderGetLiveV2ResponseDataOrderLivestreamListInner {
   livestream_list?: StarOrderGetLiveV2ResponseDataOrderLivestreamListInnerLivestreamListInner[];
-  order_id?: number;
+  order_id?: number | string;
   total_duration?: number;
 }
 

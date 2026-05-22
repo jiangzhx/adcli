@@ -5,7 +5,7 @@ import type { ProjectScheduleTimeUpdateV30DataScheduleType } from "../models";
 
 export interface ProjectScheduleTimeUpdateV30RequestDataInner {
   end_time?: number;
-  project_id: number;
+  project_id: number | string;
   schedule_type: ProjectScheduleTimeUpdateV30DataScheduleType;
 }
 

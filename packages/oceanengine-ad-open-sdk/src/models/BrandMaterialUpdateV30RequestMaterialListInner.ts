@@ -7,7 +7,7 @@ export interface BrandMaterialUpdateV30RequestMaterialListInner {
   creative_is_aigc?: boolean;
   creative_template: BrandMaterialUpdateV30MaterialListCreativeTemplate;
   material_component: BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponent;
-  material_id?: number;
+  material_id?: number | string;
   material_name: string;
 }
 

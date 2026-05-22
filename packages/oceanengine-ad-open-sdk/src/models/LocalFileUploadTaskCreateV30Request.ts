@@ -3,7 +3,7 @@
 
 export interface LocalFileUploadTaskCreateV30Request {
   filename: string;
-  local_account_id: number;
+  local_account_id: number | string;
   video_url: string;
 }
 

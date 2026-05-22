@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarVasGetCommonAuthorPackageListV2ResponseDataPacksInner {
-  pack_id: number;
+  pack_id: number | string;
   pack_name: string;
 }
 

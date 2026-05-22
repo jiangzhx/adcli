@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAwemeInterestActionInterestKeywordV10ResponseDataListInner {
-  id?: number;
+  id?: number | string;
   name?: string;
 }
 

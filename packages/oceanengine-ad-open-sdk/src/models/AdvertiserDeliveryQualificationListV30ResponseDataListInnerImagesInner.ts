@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdvertiserDeliveryQualificationListV30ResponseDataListInnerImagesInner {
-  attachment_id: number;
+  attachment_id: number | string;
   image_download_url: string;
   image_preview_url?: string;
 }

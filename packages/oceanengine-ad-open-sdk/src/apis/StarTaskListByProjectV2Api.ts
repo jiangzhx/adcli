@@ -8,8 +8,8 @@ import type { StarTaskListByProjectV2Response } from "../models";
 
 
 export interface OpenApi2StarTaskListByProjectGetRequest {
-  starId: number;
-  projectId: number;
+  starId: number | string;
+  projectId: number | string;
   page: number;
   limit: number;
 }

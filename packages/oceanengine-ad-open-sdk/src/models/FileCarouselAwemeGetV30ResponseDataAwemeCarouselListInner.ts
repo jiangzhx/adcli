@@ -8,7 +8,7 @@ export interface FileCarouselAwemeGetV30ResponseDataAwemeCarouselListInner {
   carousel_play_url?: string;
   carousel_title?: string;
   images?: FileCarouselAwemeGetV30ResponseDataAwemeCarouselListInnerImagesInner[];
-  item_id?: number;
-  material_id?: number;
+  item_id?: number | string;
+  material_id?: number | string;
 }
 

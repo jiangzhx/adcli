@@ -8,10 +8,10 @@ import type { DpaEbpPlayletAuthGetV30AccountType, DpaEbpPlayletAuthGetV30Respons
 
 
 export interface OpenApiV30DpaEbpPlayletAuthGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: DpaEbpPlayletAuthGetV30AccountType;
-  platformId: number;
-  productId: number;
+  platformId: number | string;
+  productId: number | string;
 }
 
 export class DpaEbpPlayletAuthGetV30Api {

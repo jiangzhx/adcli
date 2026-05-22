@@ -4,7 +4,7 @@
 import type { FileRebateMaterialDownloadCreateTaskV2FilteringIsAccumulation, FileRebateMaterialDownloadCreateTaskV2FilteringIsLiveRebateType, FileRebateMaterialDownloadCreateTaskV2FilteringIsValidMaterial, FileRebateMaterialDownloadCreateTaskV2FilteringMaterialIsEffective, FileRebateMaterialDownloadCreateTaskV2FilteringMaterialTag, FileRebateMaterialDownloadCreateTaskV2FilteringOperatorTag, FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcPolicyType, FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcSettlementStatsType } from "../models";
 
 export interface FileRebateMaterialDownloadCreateTaskV2RequestFiltering {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   customer_name?: string;
   first_effective_period?: string;
   is_accumulation?: FileRebateMaterialDownloadCreateTaskV2FilteringIsAccumulation;

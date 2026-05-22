@@ -3,7 +3,7 @@
 
 export interface StarChallengeSyncItemToAdV2ResponseDataSyncDetailsInner {
   fail_reasons?: string[];
-  item_id: number;
+  item_id: number | string;
   success: boolean;
 }
 

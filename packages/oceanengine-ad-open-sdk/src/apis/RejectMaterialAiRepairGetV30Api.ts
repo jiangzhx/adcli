@@ -8,7 +8,7 @@ import type { RejectMaterialAiRepairGetV30Filtering, RejectMaterialAiRepairGetV3
 
 
 export interface OpenApiV30RejectMaterialAiRepairGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: RejectMaterialAiRepairGetV30Filtering;
   page?: number;
   pageSize?: number;

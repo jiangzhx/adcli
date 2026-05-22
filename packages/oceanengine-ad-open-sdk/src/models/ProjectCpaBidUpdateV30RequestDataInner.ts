@@ -3,6 +3,6 @@
 
 export interface ProjectCpaBidUpdateV30RequestDataInner {
   cpa_bid: number;
-  project_id: number;
+  project_id: number | string;
 }
 

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerAccountParam {
-  account_id: number;
+  account_id: number | string;
   account_type: number;
 }
 

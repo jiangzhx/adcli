@@ -8,7 +8,7 @@ import type { ReportReportLiveRoomAudiencePortraitGetV30Dimension, ReportReportL
 
 
 export interface OpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   dimension: ReportReportLiveRoomAudiencePortraitGetV30Dimension;
   filtering: ReportReportLiveRoomAudiencePortraitGetV30Filtering;
   startTime?: string;

@@ -8,8 +8,8 @@ import type { ReportStardeliveryTaskVideoDataGetV30Filtering, ReportStardelivery
 
 
 export interface OpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest {
-  advertiserId: number;
-  starTaskId: number;
+  advertiserId: number | string;
+  starTaskId: number | string;
   startDate: string;
   endDate: string;
   filtering?: ReportStardeliveryTaskVideoDataGetV30Filtering;

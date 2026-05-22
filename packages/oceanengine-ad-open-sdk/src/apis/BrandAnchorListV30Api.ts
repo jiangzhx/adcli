@@ -8,7 +8,7 @@ import type { BrandAnchorListV30Page, BrandAnchorListV30Response } from "../mode
 
 
 export interface OpenApiV30BrandAnchorListGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   page?: BrandAnchorListV30Page;
 }
 

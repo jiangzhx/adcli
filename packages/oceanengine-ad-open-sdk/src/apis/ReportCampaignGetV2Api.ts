@@ -8,7 +8,7 @@ import type { ReportCampaignGetV2Filtering, ReportCampaignGetV2GroupBy, ReportCa
 
 
 export interface OpenApi2ReportCampaignGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   endDate?: string;
   fields?: string[];
   filtering?: ReportCampaignGetV2Filtering;

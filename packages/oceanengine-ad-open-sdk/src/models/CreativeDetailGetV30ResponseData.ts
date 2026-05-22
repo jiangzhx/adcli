@@ -5,8 +5,8 @@ import type { CreativeDetailGetV30ResponseDataAdData, CreativeDetailGetV30Respon
 
 export interface CreativeDetailGetV30ResponseData {
   ad_data?: CreativeDetailGetV30ResponseDataAdData;
-  ad_id?: number;
-  advertiser_id?: number;
+  ad_id?: number | string;
+  advertiser_id?: number | string;
   creative?: CreativeDetailGetV30ResponseDataCreative;
   creative_list?: CreativeDetailGetV30ResponseDataCreativeListInner[];
 }

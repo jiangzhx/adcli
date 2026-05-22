@@ -8,7 +8,7 @@ import type { DiagnosisTaskAdvListV2Response, DiagnosisTaskAdvListV2Results, Dia
 
 
 export interface OpenApi2DiagnosisTaskAdvListGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   results?: DiagnosisTaskAdvListV2Results[];
   status?: DiagnosisTaskAdvListV2Status[];
   startTime?: number;

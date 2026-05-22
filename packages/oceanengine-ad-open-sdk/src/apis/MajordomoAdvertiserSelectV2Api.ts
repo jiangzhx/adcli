@@ -8,7 +8,7 @@ import type { MajordomoAdvertiserSelectV2Response } from "../models";
 
 
 export interface OpenApi2MajordomoAdvertiserSelectGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class MajordomoAdvertiserSelectV2Api {

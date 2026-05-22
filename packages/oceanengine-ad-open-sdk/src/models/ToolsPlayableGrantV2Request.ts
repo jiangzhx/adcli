@@ -2,9 +2,9 @@
 // Do not edit manually.
 
 export interface ToolsPlayableGrantV2Request {
-  advertiser_id: number;
-  granted_ids: number[];
-  playable_id?: number;
+  advertiser_id: number | string;
+  granted_ids: number | string[];
+  playable_id?: number | string;
   playable_url?: string;
 }
 

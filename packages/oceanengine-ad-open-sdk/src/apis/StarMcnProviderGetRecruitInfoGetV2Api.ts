@@ -8,8 +8,8 @@ import type { StarMcnProviderGetRecruitInfoGetV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnProviderGetRecruitInfoGetGetRequest {
-  starId: number;
-  taskId: number;
+  starId: number | string;
+  taskId: number | string;
 }
 
 export class StarMcnProviderGetRecruitInfoGetV2Api {

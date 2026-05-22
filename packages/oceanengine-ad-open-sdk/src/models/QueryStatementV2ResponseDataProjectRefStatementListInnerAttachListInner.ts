@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QueryStatementV2ResponseDataProjectRefStatementListInnerAttachListInner {
-  attach_id?: number;
+  attach_id?: number | string;
   file_name?: string;
 }
 

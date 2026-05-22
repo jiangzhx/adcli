@@ -3,6 +3,6 @@
 
 export interface PromotionBidUpdateV30RequestDataInner {
   bid: number;
-  promotion_id: number;
+  promotion_id: number | string;
 }
 

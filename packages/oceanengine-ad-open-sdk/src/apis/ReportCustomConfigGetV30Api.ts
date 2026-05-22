@@ -8,7 +8,7 @@ import type { ReportCustomConfigGetV30DataTopics, ReportCustomConfigGetV30Respon
 
 
 export interface OpenApiV30ReportCustomConfigGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   dataTopics: ReportCustomConfigGetV30DataTopics[];
 }
 

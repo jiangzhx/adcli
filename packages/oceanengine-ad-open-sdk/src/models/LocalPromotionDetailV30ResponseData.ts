@@ -10,7 +10,7 @@ export interface LocalPromotionDetailV30ResponseData {
   live_material_type?: LocalPromotionDetailV30DataLiveMaterialType;
   procedural_material?: LocalPromotionDetailV30ResponseDataProceduralMaterial;
   promotion_card_info?: LocalPromotionDetailV30ResponseDataPromotionCardInfo;
-  promotion_id?: number;
+  promotion_id?: number | string;
   video_hp_visibility?: LocalPromotionDetailV30DataVideoHpVisibility;
 }
 

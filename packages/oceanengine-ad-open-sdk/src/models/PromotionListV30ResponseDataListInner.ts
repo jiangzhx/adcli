@@ -6,7 +6,7 @@ import type { PromotionListV30DataListAdDownloadStatus, PromotionListV30DataList
 export interface PromotionListV30ResponseDataListInner {
   "7d_retention"?: number;
   ad_download_status?: PromotionListV30DataListAdDownloadStatus;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   aigc_dynamic_creative_switch?: PromotionListV30DataListAigcDynamicCreativeSwitch;
   auto_extend_traffic?: PromotionListV30DataListAutoExtendTraffic;
   bid?: number;
@@ -14,7 +14,7 @@ export interface PromotionListV30ResponseDataListInner {
   brand_info?: PromotionListV30ResponseDataListInnerBrandInfo;
   budget?: number;
   budget_mode?: PromotionListV30DataListBudgetMode;
-  config_id?: number;
+  config_id?: number | string;
   cpa_bid?: number;
   creative_auto_generate_switch?: PromotionListV30DataListCreativeAutoGenerateSwitch;
   deep_cpabid?: number;
@@ -28,9 +28,9 @@ export interface PromotionListV30ResponseDataListInner {
   materials_type?: PromotionListV30DataListMaterialsType;
   native_setting?: PromotionListV30ResponseDataListInnerNativeSetting;
   opt_status?: PromotionListV30DataListOptStatus;
-  project_id?: number;
+  project_id?: number | string;
   promotion_create_time?: string;
-  promotion_id?: number;
+  promotion_id?: number | string;
   promotion_materials?: PromotionListV30ResponseDataListInnerPromotionMaterials;
   promotion_modify_time?: string;
   promotion_name?: string;
@@ -41,7 +41,7 @@ export interface PromotionListV30ResponseDataListInner {
   source?: string;
   star_auto_delivery_switch?: PromotionListV30DataListStarAutoDeliverySwitch;
   star_auto_material_addition_switch?: PromotionListV30DataListStarAutoMaterialAdditionSwitch;
-  star_task_id?: number;
+  star_task_id?: number | string;
   star_task_version?: PromotionListV30DataListStarTaskVersion;
   status?: PromotionListV30DataListStatus;
   status_first?: PromotionListV30DataListStatusFirst;

@@ -8,7 +8,7 @@ import type { ToolsClueContactLogOverviewQueryV2Response } from "../models";
 
 
 export interface OpenApi2ToolsClueContactLogOverviewQueryGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startTime: number;
   endTime: number;
 }

@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface QianchuanReportUniPromotionDimensionDataAuthorGetV10ResponseDataListInner {
-  advertiser_id?: number;
-  aweme_id?: number;
+  advertiser_id?: number | string;
+  aweme_id?: number | string;
   no_refund_ecom_coupon_amount_for_roi2?: number;
   no_refund_ecom_platform_subsidy_amount_for_roi2?: number;
   stat_cost?: number;

@@ -10,7 +10,7 @@ export interface FileVideoGetV2ResponseDataListInner {
   height?: number;
   id?: string;
   labels?: string[];
-  material_id?: number;
+  material_id?: number | string;
   organization_tags?: string[];
   poster_url?: string;
   signature?: string;

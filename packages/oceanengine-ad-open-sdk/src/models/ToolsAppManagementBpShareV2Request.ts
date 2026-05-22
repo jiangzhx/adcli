@@ -7,7 +7,7 @@ export interface ToolsAppManagementBpShareV2Request {
   account_infos?: ToolsAppManagementBpShareV2RequestAccountInfosInner[];
   all_account_by_company?: ToolsAppManagementBpShareV2RequestAllAccountByCompany;
   all_accounts?: ToolsAppManagementBpShareV2RequestAllAccountsInner[];
-  organization_id: number;
+  organization_id: number | string;
   package_id: string;
   share_mode: ToolsAppManagementBpShareV2ShareMode;
 }

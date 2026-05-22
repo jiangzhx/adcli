@@ -8,9 +8,9 @@ import type { QianchuanAwemeUniPromotionEstimateEffectV10Response } from "../mod
 
 
 export interface OpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest {
-  advertiserId: number;
-  awemeId: number;
-  productId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
+  productId: number | string;
   deliveryTime: number;
   amount: number;
   addAmount?: number;

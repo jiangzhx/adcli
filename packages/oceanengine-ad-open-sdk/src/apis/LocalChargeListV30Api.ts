@@ -8,7 +8,7 @@ import type { LocalChargeListV30ChargeMethods, LocalChargeListV30Response } from
 
 
 export interface OpenApiV30LocalChargeListGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   startTime: string;
   endTime: string;
   chargeMethods?: LocalChargeListV30ChargeMethods[];

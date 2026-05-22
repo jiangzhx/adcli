@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarBrandListV2ResponseDataBrandsInnerYuntuIndustryInner {
-  id?: number;
+  id?: number | string;
   name?: string;
 }
 

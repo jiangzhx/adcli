@@ -8,9 +8,9 @@ import type { DpaEbpDictGetV30AccountType, DpaEbpDictGetV30Response } from "../m
 
 
 export interface OpenApiV30DpaEbpDictGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: DpaEbpDictGetV30AccountType;
-  platformId: number;
+  platformId: number | string;
 }
 
 export class DpaEbpDictGetV30Api {

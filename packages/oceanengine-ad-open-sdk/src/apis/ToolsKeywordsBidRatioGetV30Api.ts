@@ -8,7 +8,7 @@ import type { ToolsKeywordsBidRatioGetV30Filtering, ToolsKeywordsBidRatioGetV30R
 
 
 export interface OpenApiV30ToolsKeywordsBidRatioGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: ToolsKeywordsBidRatioGetV30Filtering;
 }
 

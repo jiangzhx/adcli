@@ -8,7 +8,7 @@ import type { ToolsOrangeSiteGetV30Filtering, ToolsOrangeSiteGetV30MultiAssetTyp
 
 
 export interface OpenApiV30ToolsOrangeSiteGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   pageSize: number;
   optimizeGoal: ToolsOrangeSiteGetV30OptimizeGoal;

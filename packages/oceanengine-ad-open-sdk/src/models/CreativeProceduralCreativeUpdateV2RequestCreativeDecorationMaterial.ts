@@ -4,7 +4,7 @@
 import type { CreativeProceduralCreativeUpdateV2CreativeDecorationMaterialImageMode } from "../models";
 
 export interface CreativeProceduralCreativeUpdateV2RequestCreativeDecorationMaterial {
-  activity_id?: number;
+  activity_id?: number | string;
   image_mode?: CreativeProceduralCreativeUpdateV2CreativeDecorationMaterialImageMode;
 }
 

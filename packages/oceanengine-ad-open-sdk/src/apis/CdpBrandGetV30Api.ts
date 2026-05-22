@@ -8,7 +8,7 @@ import type { CdpBrandGetV30Response } from "../models";
 
 
 export interface OpenApiV30CdpBrandGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
 }
 
 export class CdpBrandGetV30Api {

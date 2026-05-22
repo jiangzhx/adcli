@@ -40,7 +40,7 @@ export interface ToolsClueGetV2ResponseDataListInner {
   module_name?: string;
   name?: string;
   project_id?: string;
-  promotion_id?: number;
+  promotion_id?: number | string;
   promotion_name?: string;
   province_name?: string;
   qq?: string;

@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface FileVideoDeleteV2Request {
-  advertiser_id?: number;
-  material_ids?: number[];
+  advertiser_id?: number | string;
+  material_ids?: number | string[];
   video_ids?: string[];
 }
 

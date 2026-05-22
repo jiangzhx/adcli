@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorBaseInfo {
-  author_id: number;
+  author_id: number | string;
   nick_name: string;
 }
 

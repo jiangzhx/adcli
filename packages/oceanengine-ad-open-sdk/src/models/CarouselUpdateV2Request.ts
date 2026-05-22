@@ -4,7 +4,7 @@
 import type { CarouselUpdateV2RequestCarouselsInner } from "../models";
 
 export interface CarouselUpdateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   carousels: CarouselUpdateV2RequestCarouselsInner[];
 }
 

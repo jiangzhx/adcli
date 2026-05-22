@@ -8,7 +8,7 @@ import type { QianchuanAwemeEstimateProfitV10Audience, QianchuanAwemeEstimatePro
 
 
 export interface OpenApiV10QianchuanAwemeEstimateProfitGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   marketingGoal: QianchuanAwemeEstimateProfitV10MarketingGoal;
   deliverySetting: QianchuanAwemeEstimateProfitV10DeliverySetting;
   audience?: QianchuanAwemeEstimateProfitV10Audience;

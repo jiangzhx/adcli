@@ -8,7 +8,7 @@ import type { ToolsPioneerProgramAttachmentUploadV2DataFileType, ToolsPioneerPro
 
 
 export interface OpenApi2ToolsPioneerProgramAttachmentUploadPostRequest {
-  appId: number;
+  appId: number | string;
   dataFileType: ToolsPioneerProgramAttachmentUploadV2DataFileType;
   fileData: File;
   fileIndex: number;

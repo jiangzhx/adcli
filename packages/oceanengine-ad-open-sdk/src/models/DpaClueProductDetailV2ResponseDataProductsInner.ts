@@ -26,7 +26,7 @@ export interface DpaClueProductDetailV2ResponseDataProductsInner {
   outer_id?: string;
   poi_id?: string;
   price_info?: DpaClueProductDetailV2ResponseDataProductsInnerPriceInfo;
-  product_id?: number;
+  product_id?: number | string;
   profession?: Record<string, string>;
   province?: string[];
   shop_keeper_info?: DpaClueProductDetailV2ResponseDataProductsInnerShopKeeperInfo;

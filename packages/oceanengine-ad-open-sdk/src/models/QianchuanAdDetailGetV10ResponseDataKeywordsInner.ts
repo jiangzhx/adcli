@@ -5,12 +5,12 @@ import type { QianchuanAdDetailGetV10DataKeywordsMatchType, QianchuanAdDetailGet
 
 export interface QianchuanAdDetailGetV10ResponseDataKeywordsInner {
   grab_first_screen_switch?: boolean;
-  id?: number;
+  id?: number | string;
   match_type?: QianchuanAdDetailGetV10DataKeywordsMatchType;
   status?: QianchuanAdDetailGetV10DataKeywordsStatus;
   word?: string;
-  word_id?: number;
-  word_package_id?: number;
+  word_id?: number | string;
+  word_package_id?: number | string;
   word_package_name?: string;
 }
 

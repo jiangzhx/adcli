@@ -5,8 +5,8 @@ import type { CreativeCustomCreativeCreateV2RequestAdData, CreativeCustomCreativ
 
 export interface CreativeCustomCreativeCreateV2Request {
   ad_data: CreativeCustomCreativeCreateV2RequestAdData;
-  ad_id: number;
-  advertiser_id: number;
+  ad_id: number | string;
+  advertiser_id: number | string;
   creative_list: CreativeCustomCreativeCreateV2RequestCreativeListInner[];
 }
 

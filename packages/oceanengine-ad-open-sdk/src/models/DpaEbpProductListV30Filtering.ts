@@ -7,7 +7,7 @@ export interface DpaEbpProductListV30Filtering {
   audit_status?: DpaEbpProductListV30FilteringAuditStatus;
   dpa_categories?: number[];
   is_recommend?: DpaEbpProductListV30FilteringIsRecommend;
-  product_id?: number;
+  product_id?: number | string;
   product_name?: string;
   spu_id?: string;
   status?: DpaEbpProductListV30FilteringStatus;

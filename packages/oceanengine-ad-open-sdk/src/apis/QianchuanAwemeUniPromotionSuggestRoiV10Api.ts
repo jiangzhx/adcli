@@ -8,9 +8,9 @@ import type { QianchuanAwemeUniPromotionSuggestRoiV10Response } from "../models"
 
 
 export interface OpenApiV10QianchuanAwemeUniPromotionSuggestRoiGetRequest {
-  advertiserId: number;
-  awemeId: number;
-  productId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
+  productId: number | string;
 }
 
 export class QianchuanAwemeUniPromotionSuggestRoiV10Api {

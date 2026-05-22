@@ -8,7 +8,7 @@ import type { SharedWalletAccountRelationGetV30AccountType, SharedWalletAccountR
 
 
 export interface OpenApiV30SharedWalletAccountRelationGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: SharedWalletAccountRelationGetV30AccountType;
 }
 

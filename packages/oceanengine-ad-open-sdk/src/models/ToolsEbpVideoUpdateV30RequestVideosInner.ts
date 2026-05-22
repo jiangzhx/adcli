@@ -3,6 +3,6 @@
 
 export interface ToolsEbpVideoUpdateV30RequestVideosInner {
   file_name?: string;
-  material_id?: number;
+  material_id?: number | string;
 }
 

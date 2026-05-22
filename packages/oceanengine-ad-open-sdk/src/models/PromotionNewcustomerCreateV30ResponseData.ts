@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface PromotionNewcustomerCreateV30ResponseData {
-  project_id?: number;
-  promotion_id?: number;
+  project_id?: number | string;
+  promotion_id?: number | string;
 }
 

@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface RecommendVideoListV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   aweme_id?: string[];
-  project_id: number;
+  project_id: number | string;
 }
 

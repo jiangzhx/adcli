@@ -4,7 +4,7 @@
 import type { AdvertiserDeliveryPkgSubmitV30RequestDeliveryPkg } from "../models";
 
 export interface AdvertiserDeliveryPkgSubmitV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   delivery_pkg: AdvertiserDeliveryPkgSubmitV30RequestDeliveryPkg;
 }
 

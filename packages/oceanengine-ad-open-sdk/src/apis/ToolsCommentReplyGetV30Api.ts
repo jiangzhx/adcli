@@ -8,8 +8,8 @@ import type { ToolsCommentReplyGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsCommentReplyGetGetRequest {
-  advertiserId: number;
-  commentId: number;
+  advertiserId: number | string;
+  commentId: number | string;
   page?: number;
   pageSize?: number;
 }

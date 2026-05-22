@@ -4,8 +4,8 @@
 import type { ToolsEbpMaterialAuthListV30DataAuthListTargetEbpRange } from "../models";
 
 export interface ToolsEbpMaterialAuthListV30ResponseDataAuthListInner {
-  auth_id?: number;
-  target_ebp_id?: number;
+  auth_id?: number | string;
+  target_ebp_id?: number | string;
   target_ebp_range?: ToolsEbpMaterialAuthListV30DataAuthListTargetEbpRange;
 }
 

@@ -4,7 +4,7 @@
 import type { ToolsPrivativeWordAdAddV2ResponseDataAdListInnerDuplicateWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLengthWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLimitWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerHasEmojiWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerSuccessWords } from "../models";
 
 export interface ToolsPrivativeWordAdAddV2ResponseDataAdListInner {
-  ad_id?: number;
+  ad_id?: number | string;
   duplicate_words?: ToolsPrivativeWordAdAddV2ResponseDataAdListInnerDuplicateWords;
   exceed_length_words?: ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLengthWords;
   exceed_limit_words?: ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLimitWords;

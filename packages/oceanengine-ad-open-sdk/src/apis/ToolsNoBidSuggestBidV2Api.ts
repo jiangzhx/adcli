@@ -8,7 +8,7 @@ import type { ToolsNoBidSuggestBidV2BudgetMode, ToolsNoBidSuggestBidV2ExternalAc
 
 
 export interface OpenApi2ToolsNoBidSuggestBidGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   budget?: number;
   budgetMode?: ToolsNoBidSuggestBidV2BudgetMode;
   externalAction?: ToolsNoBidSuggestBidV2ExternalAction;

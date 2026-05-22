@@ -6,7 +6,7 @@ export interface ToolsHotMaterialDeriveAdoptV30ResponseDataResultsInnerMaterialI
   duration: number;
   file_name: string;
   image_mode: number;
-  material_id: number;
+  material_id: number | string;
   pre_video_url: string;
   video_id: string;
   video_url?: string;

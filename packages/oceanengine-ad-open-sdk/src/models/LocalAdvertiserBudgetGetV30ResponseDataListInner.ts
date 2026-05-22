@@ -4,7 +4,7 @@
 import type { LocalAdvertiserBudgetGetV30DataListBudgetMode } from "../models";
 
 export interface LocalAdvertiserBudgetGetV30ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   budget?: number;
   budget_mode?: LocalAdvertiserBudgetGetV30DataListBudgetMode;
 }

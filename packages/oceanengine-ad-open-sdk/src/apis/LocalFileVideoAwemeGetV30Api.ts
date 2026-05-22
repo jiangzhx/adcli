@@ -8,7 +8,7 @@ import type { LocalFileVideoAwemeGetV30ExternalAction, LocalFileVideoAwemeGetV30
 
 
 export interface OpenApiV30LocalFileVideoAwemeGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   cursor: string;
   filtering?: LocalFileVideoAwemeGetV30Filtering;
   orderFiled?: LocalFileVideoAwemeGetV30OrderFiled;

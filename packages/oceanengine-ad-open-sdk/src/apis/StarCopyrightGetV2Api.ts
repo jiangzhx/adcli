@@ -8,7 +8,7 @@ import type { StarCopyrightGetV2Response } from "../models";
 
 
 export interface OpenApi2StarCopyrightGetGetRequest {
-  starId: number;
+  starId: number | string;
   page: number;
   limit: number;
 }

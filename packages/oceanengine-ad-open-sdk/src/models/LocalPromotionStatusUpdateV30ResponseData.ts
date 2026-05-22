@@ -5,6 +5,6 @@ import type { LocalPromotionStatusUpdateV30ResponseDataErrorsInner } from "../mo
 
 export interface LocalPromotionStatusUpdateV30ResponseData {
   errors?: LocalPromotionStatusUpdateV30ResponseDataErrorsInner[];
-  promotion_ids?: number[];
+  promotion_ids?: number | string[];
 }
 

@@ -8,7 +8,7 @@ import type { ToolsMicroGameConvertWindowGetV30AccountType, ToolsMicroGameConver
 
 
 export interface OpenApiV30ToolsMicroGameConvertWindowGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsMicroGameConvertWindowGetV30AccountType;
   assetId: string;
   assetType: ToolsMicroGameConvertWindowGetV30AssetType;

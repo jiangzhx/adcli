@@ -5,7 +5,7 @@ export interface FileVideoGetV2Filtering {
   end_time?: string;
   height?: number;
   labels?: string[];
-  material_ids?: number[];
+  material_ids?: number | string[];
   ratio?: number[];
   signatures?: string[];
   source?: string[];

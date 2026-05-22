@@ -7,6 +7,6 @@ export interface ToolsPrivativeWordPromotionUpdateV30ResponseDataErrorListInner 
   error_message?: string;
   fail_phrase_words?: ToolsPrivativeWordPromotionUpdateV30ResponseDataErrorListInnerFailPhraseWordsInner[];
   fail_precise_words?: ToolsPrivativeWordPromotionUpdateV30ResponseDataErrorListInnerFailPreciseWordsInner[];
-  promotion_id?: number;
+  promotion_id?: number | string;
 }
 

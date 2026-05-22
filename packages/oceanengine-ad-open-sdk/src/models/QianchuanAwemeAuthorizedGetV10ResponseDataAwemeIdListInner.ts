@@ -9,7 +9,7 @@ export interface QianchuanAwemeAuthorizedGetV10ResponseDataAwemeIdListInner {
   aweme_has_publish_permission?: boolean;
   aweme_has_uni_prom?: boolean;
   aweme_has_video_permission?: boolean;
-  aweme_id?: number;
+  aweme_id?: number | string;
   aweme_name?: string;
   aweme_show_id?: string;
   aweme_status?: QianchuanAwemeAuthorizedGetV10DataAwemeIdListAwemeStatus;

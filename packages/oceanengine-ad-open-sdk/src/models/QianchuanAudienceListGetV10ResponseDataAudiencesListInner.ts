@@ -5,7 +5,7 @@ import type { QianchuanAudienceListGetV10DataAudiencesListAudienceSource, Qianch
 
 export interface QianchuanAudienceListGetV10ResponseDataAudiencesListInner {
   audience_group?: string;
-  audience_id?: number;
+  audience_id?: number | string;
   audience_name?: string;
   audience_source?: QianchuanAudienceListGetV10DataAudiencesListAudienceSource;
   audience_type?: QianchuanAudienceListGetV10DataAudiencesListAudienceType;

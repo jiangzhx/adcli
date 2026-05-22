@@ -8,8 +8,8 @@ import type { ToolsPlayableValidateV2Response } from "../models";
 
 
 export interface OpenApi2ToolsPlayableValidateGetRequest {
-  advertiserId: number;
-  playableId: number;
+  advertiserId: number | string;
+  playableId: number | string;
 }
 
 export class ToolsPlayableValidateV2Api {

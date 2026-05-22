@@ -5,7 +5,7 @@ import type { BrandRegionGetV30ResponseDataRegionsInnerSubRegionsInner } from ".
 
 export interface BrandRegionGetV30ResponseDataRegionsInner {
   full_name?: string;
-  id?: number;
+  id?: number | string;
   name?: string;
   sub_regions?: BrandRegionGetV30ResponseDataRegionsInnerSubRegionsInner[];
 }

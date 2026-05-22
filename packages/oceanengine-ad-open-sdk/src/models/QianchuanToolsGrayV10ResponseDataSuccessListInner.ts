@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanToolsGrayV10ResponseDataSuccessListInner {
-  aweme_ids?: number[];
+  aweme_ids?: number | string[];
   gray_key: string;
   in_gray?: boolean;
   in_whitelist?: boolean;

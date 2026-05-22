@@ -8,7 +8,7 @@ import type { QueryStatementV2Response } from "../models";
 
 
 export interface OpenApi2QueryStatementGetRequest {
-  agentId: number;
+  agentId: number | string;
   projectIdList: number[];
 }
 

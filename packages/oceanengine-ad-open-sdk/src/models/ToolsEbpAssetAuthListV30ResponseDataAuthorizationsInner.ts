@@ -7,7 +7,7 @@ export interface ToolsEbpAssetAuthListV30ResponseDataAuthorizationsInner {
   account: ToolsEbpAssetAuthListV30ResponseDataAuthorizationsInnerAccount;
   account_depth?: number;
   auth_target: ToolsEbpAssetAuthListV30ResponseDataAuthorizationsInnerAuthTarget;
-  id?: number;
+  id?: number | string;
   is_default_auth?: boolean;
 }
 

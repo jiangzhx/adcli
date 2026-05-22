@@ -8,8 +8,8 @@ import type { OcProjectRejectReasonGetV30Response } from "../models";
 
 
 export interface OpenApiV30OcProjectRejectReasonGetGetRequest {
-  advertiserId: number;
-  projectId: number;
+  advertiserId: number | string;
+  projectId: number | string;
   page?: number;
   pageSize?: number;
 }

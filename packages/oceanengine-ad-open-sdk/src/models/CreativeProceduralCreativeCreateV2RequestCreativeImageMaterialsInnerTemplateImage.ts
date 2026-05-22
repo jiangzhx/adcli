@@ -5,6 +5,6 @@ import type { CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInn
 
 export interface CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInnerTemplateImage {
   template_data_list?: CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInnerTemplateImageTemplateDataListInner[];
-  template_id: number;
+  template_id: number | string;
 }
 

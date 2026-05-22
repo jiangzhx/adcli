@@ -8,8 +8,8 @@ import type { ToolsLogSearchDetailGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsLogSearchDetailGetGetRequest {
-  advertiserId: number;
-  secondLogId: number;
+  advertiserId: number | string;
+  secondLogId: number | string;
 }
 
 export class ToolsLogSearchDetailGetV2Api {

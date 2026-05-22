@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanAdDetailGetV10ResponseDataShopInfo {
-  shop_id?: number;
+  shop_id?: number | string;
 }
 

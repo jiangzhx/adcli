@@ -5,12 +5,12 @@ import type { ToolsEventConvertOptimizedGoalGetV30DataGoalsAssetTypes, ToolsEven
 
 export interface ToolsEventConvertOptimizedGoalGetV30ResponseDataGoalsInner {
   asset_types?: ToolsEventConvertOptimizedGoalGetV30DataGoalsAssetTypes[];
-  assets_id?: number;
+  assets_id?: number | string;
   deepGoals?: ToolsEventConvertOptimizedGoalGetV30ResponseDataGoalsInnerDeepGoalsInner[];
   external_action?: ToolsEventConvertOptimizedGoalGetV30DataGoalsExternalAction;
   history_back?: boolean;
   optimization_name?: string;
-  spare_assets_id?: number;
+  spare_assets_id?: number | string;
   twenty_four_hour_back?: boolean;
   value_type?: ToolsEventConvertOptimizedGoalGetV30DataGoalsValueType;
 }

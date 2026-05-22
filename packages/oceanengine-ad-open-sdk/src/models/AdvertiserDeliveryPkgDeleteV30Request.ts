@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdvertiserDeliveryPkgDeleteV30Request {
-  advertiser_id: number;
-  pkg_ids: number[];
+  advertiser_id: number | string;
+  pkg_ids: number | string[];
 }
 

@@ -8,7 +8,7 @@ import type { AgentTransferTransactionRecordV2Filtering, AgentTransferTransactio
 
 
 export interface OpenApi2AgentTransferTransactionRecordGetRequest {
-  agentId: number;
+  agentId: number | string;
   startDate: string;
   endDate: string;
   filtering?: AgentTransferTransactionRecordV2Filtering;

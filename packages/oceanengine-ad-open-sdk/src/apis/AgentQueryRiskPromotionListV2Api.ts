@@ -8,7 +8,7 @@ import type { AgentQueryRiskPromotionListV2BusinessType, AgentQueryRiskPromotion
 
 
 export interface OpenApi2AgentQueryRiskPromotionListGetRequest {
-  agentId: number;
+  agentId: number | string;
   businessType: AgentQueryRiskPromotionListV2BusinessType;
   startDate: string;
   endDate: string;

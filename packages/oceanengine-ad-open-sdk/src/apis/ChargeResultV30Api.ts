@@ -8,8 +8,8 @@ import type { ChargeResultV30Response } from "../models";
 
 
 export interface OpenApiV30ChargeResultGetRequest {
-  advertiserId: number;
-  chargeOrderId: number;
+  advertiserId: number | string;
+  chargeOrderId: number | string;
 }
 
 export class ChargeResultV30Api {

@@ -3,6 +3,6 @@
 
 export interface KeywordDeleteV30ResponseDataErrorListInner {
   error_reason?: string;
-  keyword_id?: number;
+  keyword_id?: number | string;
 }
 

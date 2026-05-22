@@ -8,7 +8,7 @@ export interface ClueCouponDetailV2ResponseDataForm {
   enable_layer?: ClueCouponDetailV2DataFormEnableLayer;
   extend_info?: ClueCouponDetailV2ResponseDataFormExtendInfo;
   form_type?: ClueCouponDetailV2DataFormFormType;
-  instance_id?: number;
+  instance_id?: number | string;
   layer_submit_text?: string;
   name?: string;
   submit_text?: string;

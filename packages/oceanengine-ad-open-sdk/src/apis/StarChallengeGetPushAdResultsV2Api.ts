@@ -8,9 +8,9 @@ import type { StarChallengeGetPushAdResultsV2Response } from "../models";
 
 
 export interface OpenApi2StarChallengeGetPushAdResultsGetRequest {
-  starId: number;
-  challengeTaskId: number;
-  itemIds: number[];
+  starId: number | string;
+  challengeTaskId: number | string;
+  itemIds: number | string[];
 }
 
 export class StarChallengeGetPushAdResultsV2Api {

@@ -5,7 +5,7 @@ import type { QianchuanUniPromotionAuthorizationApplyV10DataApplyResultApplyStat
 
 export interface QianchuanUniPromotionAuthorizationApplyV10ResponseDataApplyResultInner {
   apply_status?: QianchuanUniPromotionAuthorizationApplyV10DataApplyResultApplyStatus;
-  aweme_id?: number;
+  aweme_id?: number | string;
   err_msg?: string;
 }
 

@@ -2,10 +2,10 @@
 // Do not edit manually.
 
 export interface StarMcnContractChallengeV2Request {
-  demand_id: number;
-  developer_id?: number;
+  demand_id: number | string;
+  developer_id?: number | string;
   mcn_profit_rate: number;
   profit_rate_channel?: Record<string, number>;
-  star_id: number;
+  star_id: number | string;
 }
 

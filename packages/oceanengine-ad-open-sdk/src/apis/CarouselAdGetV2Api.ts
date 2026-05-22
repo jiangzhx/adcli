@@ -8,8 +8,8 @@ import type { CarouselAdGetV2Response } from "../models";
 
 
 export interface OpenApi2CarouselAdGetGetRequest {
-  advertiserId: number;
-  carouselIds: number[];
+  advertiserId: number | string;
+  carouselIds: number | string[];
 }
 
 export class CarouselAdGetV2Api {

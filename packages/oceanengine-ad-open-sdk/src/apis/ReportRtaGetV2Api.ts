@@ -8,7 +8,7 @@ import type { ReportRtaGetV2OrderType, ReportRtaGetV2Response } from "../models"
 
 
 export interface OpenApi2ReportRtaGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate: string;
   endDate: string;
   reportType: string;

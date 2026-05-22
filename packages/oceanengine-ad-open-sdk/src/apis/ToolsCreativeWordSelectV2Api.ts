@@ -8,8 +8,8 @@ import type { ToolsCreativeWordSelectV2Response } from "../models";
 
 
 export interface OpenApi2ToolsCreativeWordSelectGetRequest {
-  advertiserId: number;
-  creativeWordIds?: number[];
+  advertiserId: number | string;
+  creativeWordIds?: number | string[];
 }
 
 export class ToolsCreativeWordSelectV2Api {

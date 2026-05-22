@@ -5,7 +5,7 @@ import type { PromotionUpdateV30PromotionRelatedProductVideoMaterialListImageMod
 
 export interface PromotionUpdateV30RequestPromotionRelatedProductInnerVideoMaterialListInner {
   image_mode: PromotionUpdateV30PromotionRelatedProductVideoMaterialListImageMode;
-  item_id?: number;
+  item_id?: number | string;
   video_cover_id?: string;
   video_hp_visibility?: PromotionUpdateV30PromotionRelatedProductVideoMaterialListVideoHpVisibility;
   video_id?: string;

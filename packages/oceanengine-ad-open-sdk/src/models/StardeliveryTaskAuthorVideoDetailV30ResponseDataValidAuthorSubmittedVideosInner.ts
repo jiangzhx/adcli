@@ -8,10 +8,10 @@ export interface StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubm
   aweme_name?: string;
   duration?: number;
   image_mode?: StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosImageMode;
-  isv_id?: number;
+  isv_id?: number | string;
   isv_name?: string;
-  item_id?: number;
-  material_id?: number;
+  item_id?: number | string;
+  material_id?: number | string;
   material_properties?: StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosInnerMaterialProperties;
   star_material_creative_orient?: string;
   star_material_display_format?: string;

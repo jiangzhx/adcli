@@ -4,10 +4,10 @@
 import type { ToolsAwemeAuthRenewalV2AuthType } from "../models";
 
 export interface ToolsAwemeAuthRenewalV2Request {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   auth_type: ToolsAwemeAuthRenewalV2AuthType;
   aweme_id?: string;
   end_time: string;
-  item_id?: number;
+  item_id?: number | string;
 }
 

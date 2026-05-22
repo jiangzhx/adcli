@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsSiteTemplateSiteCreateV2RequestBricksInnerCoupon {
-  activity_id: number;
+  activity_id: number | string;
 }
 

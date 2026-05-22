@@ -4,6 +4,6 @@
 export interface QianchuanAdCreateV10RequestMultiProductCreativeListInnerProgrammaticCreativeProgrammaticCreativeTitleListInnerDynamicWordsInner {
   default_word?: string;
   dict_name?: string;
-  word_id: number;
+  word_id: number | string;
 }
 

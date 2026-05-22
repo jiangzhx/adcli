@@ -9,8 +9,8 @@ import type { ToolsInterestActionId2wordV2ActionDays, ToolsInterestActionId2word
 
 export interface OpenApi2ToolsInterestActionId2wordGetRequest {
   actionDays?: ToolsInterestActionId2wordV2ActionDays;
-  advertiserId?: number;
-  ids?: number[];
+  advertiserId?: number | string;
+  ids?: number | string[];
   tagType?: ToolsInterestActionId2wordV2TagType;
   targetingType?: ToolsInterestActionId2wordV2TargetingType;
 }

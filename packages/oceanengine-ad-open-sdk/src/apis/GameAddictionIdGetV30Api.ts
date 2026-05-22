@@ -8,8 +8,8 @@ import type { GameAddictionIdGetV30Response } from "../models";
 
 
 export interface OpenApiV30GameAddictionIdGetGetRequest {
-  advertiserId: number;
-  assetId: number;
+  advertiserId: number | string;
+  assetId: number | string;
 }
 
 export class GameAddictionIdGetV30Api {

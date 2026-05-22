@@ -8,7 +8,7 @@ import type { ReportAgentGetV2V2Filtering, ReportAgentGetV2V2Response } from "..
 
 
 export interface OpenApi2ReportAgentGetV2GetRequest {
-  agentId?: number;
+  agentId?: number | string;
   cursor?: number;
   cursorSize?: number;
   endDate?: string;

@@ -8,7 +8,7 @@ import type { FileVideoAgentGetV2Filtering, FileVideoAgentGetV2Response } from "
 
 
 export interface OpenApi2FileVideoAgentGetGetRequest {
-  agentId: number;
+  agentId: number | string;
   filtering?: FileVideoAgentGetV2Filtering;
   page?: number;
   pageSize?: number;

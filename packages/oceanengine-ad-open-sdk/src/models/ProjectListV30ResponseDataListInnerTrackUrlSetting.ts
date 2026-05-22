@@ -8,7 +8,7 @@ export interface ProjectListV30ResponseDataListInnerTrackUrlSetting {
   active_track_url?: string[];
   send_type?: ProjectListV30DataListTrackUrlSettingSendType;
   track_url?: string[];
-  track_url_group_id?: number;
+  track_url_group_id?: number | string;
   track_url_type?: ProjectListV30DataListTrackUrlSettingTrackUrlType;
   video_play_done_track_url?: string[];
   video_play_effective_track_url?: string[];

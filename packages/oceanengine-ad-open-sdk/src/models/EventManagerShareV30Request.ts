@@ -6,8 +6,8 @@ import type { EventManagerShareV30AllAccountType, EventManagerShareV30RequestAcc
 export interface EventManagerShareV30Request {
   account_infos?: EventManagerShareV30RequestAccountInfosInner[];
   all_account_type?: EventManagerShareV30AllAccountType[];
-  asset_id: number;
-  organization_id: number;
+  asset_id: number | string;
+  organization_id: number | string;
   share_mode: EventManagerShareV30ShareMode;
 }
 

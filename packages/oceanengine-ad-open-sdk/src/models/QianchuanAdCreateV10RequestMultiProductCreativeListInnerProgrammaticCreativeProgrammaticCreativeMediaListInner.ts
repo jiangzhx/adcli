@@ -4,9 +4,9 @@
 import type { QianchuanAdCreateV10MultiProductCreativeListProgrammaticCreativeProgrammaticCreativeMediaListImageMode } from "../models";
 
 export interface QianchuanAdCreateV10RequestMultiProductCreativeListInnerProgrammaticCreativeProgrammaticCreativeMediaListInner {
-  aweme_carousel_id?: number;
-  aweme_item_id?: number;
-  carousel_id?: number;
+  aweme_carousel_id?: number | string;
+  aweme_item_id?: number | string;
+  carousel_id?: number | string;
   image_ids?: string[];
   image_mode?: QianchuanAdCreateV10MultiProductCreativeListProgrammaticCreativeProgrammaticCreativeMediaListImageMode;
   video_cover_id?: string;

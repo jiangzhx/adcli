@@ -8,7 +8,7 @@ import type { QianchuanOrientationPackageGetV10Filtering, QianchuanOrientationPa
 
 
 export interface OpenApiV10QianchuanOrientationPackageGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: QianchuanOrientationPackageGetV10Filtering;
   page?: number;
   pageSize?: number;

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsMaterialRaiseGetV30ResponseDataListInnerMaterialListInner {
-  material_id?: number;
+  material_id?: number | string;
   material_name?: string;
   material_type?: string;
 }

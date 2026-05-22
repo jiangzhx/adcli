@@ -8,10 +8,10 @@ import type { CgTransferWalletTransferCanTransferBalanceV30AccountType, CgTransf
 
 
 export interface OpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: CgTransferWalletTransferCanTransferBalanceV30AccountType;
   bizRequestNo: string;
-  mainWalletId: number;
+  mainWalletId: number | string;
   subWalletList: number[];
   transferDirection: CgTransferWalletTransferCanTransferBalanceV30TransferDirection;
 }

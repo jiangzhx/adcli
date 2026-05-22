@@ -4,6 +4,6 @@
 export interface SpiTaskGetV2ResponseDataListInner {
   data?: string;
   status?: string;
-  task_id?: number;
+  task_id?: number | string;
 }
 

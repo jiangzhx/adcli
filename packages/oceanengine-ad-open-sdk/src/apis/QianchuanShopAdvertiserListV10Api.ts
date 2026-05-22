@@ -8,7 +8,7 @@ import type { QianchuanShopAdvertiserListV10Permission, QianchuanShopAdvertiserL
 
 
 export interface OpenApiV10QianchuanShopAdvertiserListGetRequest {
-  shopId: number;
+  shopId: number | string;
   permission?: QianchuanShopAdvertiserListV10Permission[];
   page?: number;
   pageSize?: number;

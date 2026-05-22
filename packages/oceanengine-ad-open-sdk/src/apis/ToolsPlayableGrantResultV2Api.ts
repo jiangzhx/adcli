@@ -8,8 +8,8 @@ import type { ToolsPlayableGrantResultV2Response } from "../models";
 
 
 export interface OpenApi2ToolsPlayableGrantResultGetRequest {
-  advertiserId: number;
-  taskIds?: number[];
+  advertiserId: number | string;
+  taskIds?: number | string[];
   startTime?: string;
   endTime?: string;
   page?: number;

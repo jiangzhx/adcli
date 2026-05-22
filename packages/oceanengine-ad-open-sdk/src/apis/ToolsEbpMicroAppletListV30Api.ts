@@ -8,7 +8,7 @@ import type { ToolsEbpMicroAppletListV30AccountType, ToolsEbpMicroAppletListV30A
 
 
 export interface OpenApiV30ToolsEbpMicroAppletListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsEbpMicroAppletListV30AccountType;
   assetManagementScope: ToolsEbpMicroAppletListV30AssetManagementScope;
   filtering?: ToolsEbpMicroAppletListV30Filtering;

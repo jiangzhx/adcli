@@ -8,9 +8,9 @@ import type { StarReportCustomDataTopicDailyReportV2Response, StarReportCustomDa
 
 
 export interface OpenApi2StarReportCustomDataTopicDailyReportGetRequest {
-  starId: number;
-  workId: number;
-  demandId: number;
+  starId: number | string;
+  workId: number | string;
+  demandId: number | string;
   topics: StarReportCustomDataTopicDailyReportV2Topics[];
   startTime: string;
   endTime: string;

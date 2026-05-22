@@ -31,7 +31,7 @@ export interface ToolsSiteCreateV2RequestBricksInner {
   ic_id?: string;
   icon?: string;
   image_url?: string;
-  instance_id?: number;
+  instance_id?: number | string;
   is_cover?: number;
   letter_spacing?: number;
   line_height?: number;

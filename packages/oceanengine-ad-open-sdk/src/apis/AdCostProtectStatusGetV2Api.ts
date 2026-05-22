@@ -8,8 +8,8 @@ import type { AdCostProtectStatusGetV2Response } from "../models";
 
 
 export interface OpenApi2AdCostProtectStatusGetGetRequest {
-  advertiserId: number;
-  adIds: number[];
+  advertiserId: number | string;
+  adIds: number | string[];
 }
 
 export class AdCostProtectStatusGetV2Api {

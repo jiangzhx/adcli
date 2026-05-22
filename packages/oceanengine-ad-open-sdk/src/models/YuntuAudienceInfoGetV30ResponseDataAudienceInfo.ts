@@ -3,7 +3,7 @@
 
 export interface YuntuAudienceInfoGetV30ResponseDataAudienceInfo {
   cover_num: number;
-  custom_audience_id: number;
+  custom_audience_id: number | string;
   name: string;
   status: number;
 }

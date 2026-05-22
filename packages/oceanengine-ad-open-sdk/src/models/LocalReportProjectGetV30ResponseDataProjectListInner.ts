@@ -65,7 +65,7 @@ export interface LocalReportProjectGetV30ResponseDataProjectListInner {
   play_over?: number;
   play_over_rate?: number;
   poi_recommend_count?: number;
-  project_id?: number;
+  project_id?: number | string;
   project_name?: string;
   show_cnt?: number;
   stat_cost?: number;

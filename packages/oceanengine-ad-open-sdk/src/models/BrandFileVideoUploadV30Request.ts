@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface BrandFileVideoUploadV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   video_file: File;
 }
 

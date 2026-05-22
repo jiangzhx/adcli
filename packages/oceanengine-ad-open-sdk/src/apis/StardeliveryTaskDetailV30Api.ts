@@ -8,8 +8,8 @@ import type { StardeliveryTaskDetailV30Response } from "../models";
 
 
 export interface OpenApiV30StardeliveryTaskDetailGetRequest {
-  advertiserId: number;
-  starTaskId: number;
+  advertiserId: number | string;
+  starTaskId: number | string;
 }
 
 export class StardeliveryTaskDetailV30Api {

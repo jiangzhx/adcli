@@ -16,15 +16,15 @@ export interface NativeAnchorCreateV30RequestAnchorInfoNetServiceAnchor {
   harmony_download_url?: string;
   head_image_list?: NativeAnchorCreateV30RequestAnchorInfoNetServiceAnchorHeadImageListInner[];
   icon_images?: NativeAnchorCreateV30RequestAnchorInfoNetServiceAnchorIconImagesInner[];
-  instance_id?: number;
+  instance_id?: number | string;
   ios_anchor_title?: string;
   ios_download_url?: string;
   net_service_type?: NativeAnchorCreateV30AnchorInfoNetServiceAnchorNetServiceType;
   novel_chapter?: string;
   path_param?: string;
   platform_type?: number;
-  quick_app_id?: number;
+  quick_app_id?: number | string;
   wechat_external_url?: string;
-  wechat_package_id?: number;
+  wechat_package_id?: number | string;
 }
 

@@ -4,9 +4,9 @@
 import type { AicElementUpdateV30AccountType } from "../models";
 
 export interface AicElementUpdateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: AicElementUpdateV30AccountType;
-  element_id: number;
+  element_id: number | string;
   element_name?: string;
   path_name?: string;
 }

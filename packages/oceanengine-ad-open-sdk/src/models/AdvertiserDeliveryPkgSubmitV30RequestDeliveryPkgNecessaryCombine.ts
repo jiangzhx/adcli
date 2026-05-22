@@ -4,7 +4,7 @@
 import type { AdvertiserDeliveryPkgSubmitV30RequestDeliveryPkgNecessaryCombineDeliveryRulesInner } from "../models";
 
 export interface AdvertiserDeliveryPkgSubmitV30RequestDeliveryPkgNecessaryCombine {
-  combine_id: number;
+  combine_id: number | string;
   delivery_rules: AdvertiserDeliveryPkgSubmitV30RequestDeliveryPkgNecessaryCombineDeliveryRulesInner[];
 }
 

@@ -8,8 +8,8 @@ import type { QianchuanReportLiveGetV10Response, QianchuanReportLiveGetV10StatsA
 
 
 export interface OpenApiV10QianchuanReportLiveGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   startTime: string;
   endTime: string;
   fields: string[];

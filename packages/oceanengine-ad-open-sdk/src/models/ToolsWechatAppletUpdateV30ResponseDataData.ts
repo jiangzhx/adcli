@@ -3,6 +3,6 @@
 
 export interface ToolsWechatAppletUpdateV30ResponseDataData {
   error_message?: string;
-  instance_id?: number;
+  instance_id?: number | string;
 }
 

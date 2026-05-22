@@ -4,7 +4,7 @@
 import type { QianchuanUniPromotionAdScheduleDateUpdateV10UpdateScheduleInfosScheduleType } from "../models";
 
 export interface QianchuanUniPromotionAdScheduleDateUpdateV10RequestUpdateScheduleInfosInner {
-  ad_id: number;
+  ad_id: number | string;
   end_time?: string;
   schedule_type: QianchuanUniPromotionAdScheduleDateUpdateV10UpdateScheduleInfosScheduleType;
 }

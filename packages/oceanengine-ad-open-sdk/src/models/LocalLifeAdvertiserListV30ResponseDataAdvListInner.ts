@@ -5,7 +5,7 @@ import type { LocalLifeAdvertiserListV30DataAdvListAccountMainCopyTag, LocalLife
 
 export interface LocalLifeAdvertiserListV30ResponseDataAdvListInner {
   account_main_copy_tag?: LocalLifeAdvertiserListV30DataAdvListAccountMainCopyTag;
-  local_account_id?: number;
+  local_account_id?: number | string;
   local_account_role?: LocalLifeAdvertiserListV30DataAdvListLocalAccountRole;
 }
 

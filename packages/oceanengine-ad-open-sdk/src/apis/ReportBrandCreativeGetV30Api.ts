@@ -8,7 +8,7 @@ import type { ReportBrandCreativeGetV30Response } from "../models";
 
 
 export interface OpenApiV30ReportBrandCreativeGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   size: number;
   landingType?: number;

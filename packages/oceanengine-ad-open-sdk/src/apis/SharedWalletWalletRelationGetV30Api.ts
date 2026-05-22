@@ -8,8 +8,8 @@ import type { SharedWalletWalletRelationGetV30AccountType, SharedWalletWalletRel
 
 
 export interface OpenApiV30SharedWalletWalletRelationGetGetRequest {
-  accountId: number;
-  sharedWalletId: number;
+  accountId: number | string;
+  sharedWalletId: number | string;
   accountType: SharedWalletWalletRelationGetV30AccountType;
   page?: number;
   pageSize?: number;

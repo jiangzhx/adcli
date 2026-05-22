@@ -4,6 +4,6 @@
 export interface QianchuanUniPromotionAdControlTaskBudgetUpdateV10ResponseDataResultsInner {
   error_message?: string;
   status?: boolean;
-  task_id?: number;
+  task_id?: number | string;
 }
 

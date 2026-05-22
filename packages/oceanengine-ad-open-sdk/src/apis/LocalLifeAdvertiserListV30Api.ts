@@ -8,7 +8,7 @@ import type { LocalLifeAdvertiserListV30Filtering, LocalLifeAdvertiserListV30Res
 
 
 export interface OpenApiV30LocalLifeAdvertiserListGetRequest {
-  lifeAccountId: number;
+  lifeAccountId: number | string;
   filtering?: LocalLifeAdvertiserListV30Filtering;
   page?: number;
   pageSize?: number;

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdvertiserFundDailyStatV2ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   balance?: number;
   cash_cost?: number;
   company_wallet_cost?: number;

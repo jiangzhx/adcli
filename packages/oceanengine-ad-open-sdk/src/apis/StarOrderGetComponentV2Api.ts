@@ -8,8 +8,8 @@ import type { StarOrderGetComponentV2Response } from "../models";
 
 
 export interface OpenApi2StarOrderGetComponentGetRequest {
-  starId: number;
-  orderIds: number[];
+  starId: number | string;
+  orderIds: number | string[];
 }
 
 export class StarOrderGetComponentV2Api {

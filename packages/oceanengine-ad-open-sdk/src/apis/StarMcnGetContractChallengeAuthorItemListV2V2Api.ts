@@ -8,11 +8,11 @@ import type { StarMcnGetContractChallengeAuthorItemListV2V2Response } from "../m
 
 
 export interface OpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequest {
-  starId: number;
-  demandId: number;
+  starId: number | string;
+  demandId: number | string;
   page: number;
   pageSize: number;
-  developerId?: number;
+  developerId?: number | string;
 }
 
 export class StarMcnGetContractChallengeAuthorItemListV2V2Api {

@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface DpaEbpProductUpdateV30ResponseData {
-  product_id?: number;
+  product_id?: number | string;
 }
 

@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarCreateProjectV2ResponseData {
-  project_id?: number;
+  project_id?: number | string;
 }
 

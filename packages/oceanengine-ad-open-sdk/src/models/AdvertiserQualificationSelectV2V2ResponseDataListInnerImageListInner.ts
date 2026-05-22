@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdvertiserQualificationSelectV2V2ResponseDataListInnerImageListInner {
-  attachment_id: number;
+  attachment_id: number | string;
   image_url?: string;
 }
 

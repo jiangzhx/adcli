@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarDemandCreateAssignV2ResponseDataBillInfoOrderBillListInner {
-  order_id?: number;
+  order_id?: number | string;
   platform_fee?: number;
   precise_platform_fee?: number;
   precise_remaining?: number;

@@ -8,8 +8,8 @@ import type { StarMcnProviderGetTaskDetailV2Response } from "../models";
 
 
 export interface OpenApi2StarMcnProviderGetTaskDetailGetRequest {
-  starId: number;
-  taskId: number;
+  starId: number | string;
+  taskId: number | string;
 }
 
 export class StarMcnProviderGetTaskDetailV2Api {

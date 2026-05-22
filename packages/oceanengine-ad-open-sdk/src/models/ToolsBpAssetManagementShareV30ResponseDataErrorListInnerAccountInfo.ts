@@ -4,7 +4,7 @@
 import type { ToolsBpAssetManagementShareV30DataErrorListAccountInfoAccountType } from "../models";
 
 export interface ToolsBpAssetManagementShareV30ResponseDataErrorListInnerAccountInfo {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: ToolsBpAssetManagementShareV30DataErrorListAccountInfoAccountType;
 }
 

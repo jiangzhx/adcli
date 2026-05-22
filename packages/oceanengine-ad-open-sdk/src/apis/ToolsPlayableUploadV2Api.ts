@@ -8,7 +8,7 @@ import type { ToolsPlayableUploadV2Response } from "../models";
 
 
 export interface OpenApi2ToolsPlayableUploadPostRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   playablePackage: File;
 }
 

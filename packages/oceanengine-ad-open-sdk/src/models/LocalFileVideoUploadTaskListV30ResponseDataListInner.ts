@@ -7,7 +7,7 @@ export interface LocalFileVideoUploadTaskListV30ResponseDataListInner {
   create_time?: string;
   error_msg?: string;
   status?: LocalFileVideoUploadTaskListV30DataListStatus;
-  task_id?: number;
+  task_id?: number | string;
   video_info?: LocalFileVideoUploadTaskListV30ResponseDataListInnerVideoInfo;
 }
 

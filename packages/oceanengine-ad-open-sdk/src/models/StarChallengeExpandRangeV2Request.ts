@@ -5,9 +5,9 @@ import type { StarChallengeExpandRangeV2RequestParticipateAuthorRange } from "..
 
 export interface StarChallengeExpandRangeV2Request {
   challenge_end_time?: number;
-  challenge_task_id: number;
-  developer_id?: number;
+  challenge_task_id: number | string;
+  developer_id?: number | string;
   participate_author_range?: StarChallengeExpandRangeV2RequestParticipateAuthorRange;
-  star_id: number;
+  star_id: number | string;
 }
 

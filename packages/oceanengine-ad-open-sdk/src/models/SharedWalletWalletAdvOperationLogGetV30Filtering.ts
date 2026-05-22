@@ -4,8 +4,8 @@
 import type { SharedWalletWalletAdvOperationLogGetV30FilteringStatusFilter } from "../models";
 
 export interface SharedWalletWalletAdvOperationLogGetV30Filtering {
-  adv_id?: number;
-  operation_id?: number;
+  adv_id?: number | string;
+  operation_id?: number | string;
   status_filter?: SharedWalletWalletAdvOperationLogGetV30FilteringStatusFilter;
 }
 

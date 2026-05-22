@@ -5,7 +5,7 @@ import type { SecurityScoreViolationEventGetV30FilteringIllegalType, SecuritySco
 
 export interface SecurityScoreViolationEventGetV30Filtering {
   end_time?: string;
-  event_id?: number;
+  event_id?: number | string;
   illegal_type?: SecurityScoreViolationEventGetV30FilteringIllegalType;
   start_time?: string;
   status?: SecurityScoreViolationEventGetV30FilteringStatus;

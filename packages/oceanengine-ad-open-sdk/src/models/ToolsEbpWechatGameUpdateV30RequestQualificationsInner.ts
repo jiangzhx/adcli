@@ -11,7 +11,7 @@ export interface ToolsEbpWechatGameUpdateV30RequestQualificationsInner {
   name?: string;
   own_type?: number;
   qualification_combined_transport_type?: number;
-  qualification_id: number;
+  qualification_id: number | string;
   qualification_id_type?: number;
   qualification_sharing_percent?: number;
   qualification_show_name?: string;

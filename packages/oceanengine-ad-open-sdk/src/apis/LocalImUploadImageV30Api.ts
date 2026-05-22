@@ -9,7 +9,7 @@ import type { LocalImUploadImageV30Response } from "../models";
 
 export interface OpenApiV30LocalImUploadImagePostRequest {
   imageFile: File;
-  localAccountId: number;
+  localAccountId: number | string;
 }
 
 export class LocalImUploadImageV30Api {

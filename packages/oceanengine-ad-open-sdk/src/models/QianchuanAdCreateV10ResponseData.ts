@@ -4,7 +4,7 @@
 import type { QianchuanAdCreateV10ResponseDataNoticeInfosInner } from "../models";
 
 export interface QianchuanAdCreateV10ResponseData {
-  ad_id?: number;
+  ad_id?: number | string;
   notice_infos?: QianchuanAdCreateV10ResponseDataNoticeInfosInner[];
 }
 

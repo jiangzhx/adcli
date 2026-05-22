@@ -8,8 +8,8 @@ import type { ReportRtaExpLocalDailyGetV30Filtering, ReportRtaExpLocalDailyGetV3
 
 
 export interface OpenApiV30ReportRtaExpLocalDailyGetGetRequest {
-  rtaId: number;
-  advertiserId: number;
+  rtaId: number | string;
+  advertiserId: number | string;
   startDate: string;
   endDate: string;
   vid?: number;

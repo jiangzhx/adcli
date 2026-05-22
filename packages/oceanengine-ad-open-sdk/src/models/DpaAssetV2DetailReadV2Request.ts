@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface DpaAssetV2DetailReadV2Request {
-  advertiser_id: number;
-  asset_ids: number[];
-  unique_product_ids: number[];
+  advertiser_id: number | string;
+  asset_ids: number | string[];
+  unique_product_ids: number | string[];
 }
 

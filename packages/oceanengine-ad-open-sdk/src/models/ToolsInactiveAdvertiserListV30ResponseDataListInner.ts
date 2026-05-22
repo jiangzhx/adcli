@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsInactiveAdvertiserListV30ResponseDataListInner {
-  advertiser_id: number;
+  advertiser_id: number | string;
   last_request_date: string;
 }
 

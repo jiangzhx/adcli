@@ -8,8 +8,8 @@ import type { QianchuanAwemeProductAvailableGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanAwemeProductAvailableGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   cursor?: number;
 }
 

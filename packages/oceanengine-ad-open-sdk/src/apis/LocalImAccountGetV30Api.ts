@@ -8,7 +8,7 @@ import type { LocalImAccountGetV30QueryLifeAccountType, LocalImAccountGetV30Resp
 
 
 export interface OpenApiV30LocalImAccountGetGetRequest {
-  lifeAccountId: number;
+  lifeAccountId: number | string;
   queryLifeAccountType?: LocalImAccountGetV30QueryLifeAccountType;
   page?: number;
   pageSize?: number;

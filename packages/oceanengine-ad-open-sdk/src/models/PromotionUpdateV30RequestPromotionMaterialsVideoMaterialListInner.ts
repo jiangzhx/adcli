@@ -6,7 +6,7 @@ import type { PromotionUpdateV30PromotionMaterialsVideoMaterialListImageMode, Pr
 export interface PromotionUpdateV30RequestPromotionMaterialsVideoMaterialListInner {
   guide_video_id?: string;
   image_mode: PromotionUpdateV30PromotionMaterialsVideoMaterialListImageMode;
-  item_id?: number;
+  item_id?: number | string;
   video_cover_id?: string;
   video_hp_visibility?: PromotionUpdateV30PromotionMaterialsVideoMaterialListVideoHpVisibility;
   video_id?: string;

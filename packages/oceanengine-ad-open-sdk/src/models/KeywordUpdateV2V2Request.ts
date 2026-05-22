@@ -4,8 +4,8 @@
 import type { KeywordUpdateV2V2RequestKeywordsInner } from "../models";
 
 export interface KeywordUpdateV2V2Request {
-  ad_id: number;
-  advertiser_id: number;
+  ad_id: number | string;
+  advertiser_id: number | string;
   keywords: KeywordUpdateV2V2RequestKeywordsInner[];
 }
 

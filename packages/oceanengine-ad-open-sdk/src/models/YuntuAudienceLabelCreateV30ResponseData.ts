@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface YuntuAudienceLabelCreateV30ResponseData {
-  label_id?: number;
+  label_id?: number | string;
 }
 

@@ -8,8 +8,8 @@ import type { ToolsMaterialRaiseRecordsGetV30Response, ToolsMaterialRaiseRecords
 
 
 export interface OpenApiV30ToolsMaterialRaiseRecordsGetGetRequest {
-  advertiserId: number;
-  projectIds: number[];
+  advertiserId: number | string;
+  projectIds: number | string[];
   status?: ToolsMaterialRaiseRecordsGetV30Status[];
   page?: number;
   pageSize?: number;

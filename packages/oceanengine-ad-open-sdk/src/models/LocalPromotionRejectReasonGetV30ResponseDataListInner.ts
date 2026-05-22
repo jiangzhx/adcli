@@ -5,6 +5,6 @@ import type { LocalPromotionRejectReasonGetV30ResponseDataListInnerMaterialRejec
 
 export interface LocalPromotionRejectReasonGetV30ResponseDataListInner {
   material_reject?: LocalPromotionRejectReasonGetV30ResponseDataListInnerMaterialRejectInner[];
-  promotion_id?: number;
+  promotion_id?: number | string;
 }
 

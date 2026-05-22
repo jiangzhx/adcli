@@ -5,7 +5,7 @@ import type { AgentAdvRechargeRechargeRecordV2FilteringAccountType, AgentAdvRech
 
 export interface AgentAdvRechargeRechargeRecordV2Filtering {
   account_type?: AgentAdvRechargeRechargeRecordV2FilteringAccountType;
-  adv_ids?: number[];
+  adv_ids?: number | string[];
   platform?: AgentAdvRechargeRechargeRecordV2FilteringPlatform;
   recharge_type?: AgentAdvRechargeRechargeRecordV2FilteringRechargeType;
 }

@@ -3,7 +3,7 @@
 
 export interface ToolsAdvertiserStoreSearchV2ResponseDataListInner {
   address?: string;
-  id?: number;
+  id?: number | string;
   name?: string;
   type?: number;
   web_url?: string;

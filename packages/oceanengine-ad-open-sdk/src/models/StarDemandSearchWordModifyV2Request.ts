@@ -3,7 +3,7 @@
 
 export interface StarDemandSearchWordModifyV2Request {
   new_search_word: string;
-  order_id: number;
-  star_id: number;
+  order_id: number | string;
+  star_id: number | string;
 }
 

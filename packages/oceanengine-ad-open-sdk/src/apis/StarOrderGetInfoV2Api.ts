@@ -8,8 +8,8 @@ import type { StarOrderGetInfoV2Response } from "../models";
 
 
 export interface OpenApi2StarOrderGetInfoGetRequest {
-  starId: number;
-  orderIds?: number[];
+  starId: number | string;
+  orderIds?: number | string[];
 }
 
 export class StarOrderGetInfoV2Api {

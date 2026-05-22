@@ -8,7 +8,7 @@ import type { ToolsIsSupportUniversalGetV2DeepBidType, ToolsIsSupportUniversalGe
 
 
 export interface OpenApi2ToolsIsSupportUniversalGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   landingType: ToolsIsSupportUniversalGetV2LandingType;
   externalAction: ToolsIsSupportUniversalGetV2ExternalAction;
   deepExternalAction?: ToolsIsSupportUniversalGetV2DeepExternalAction;

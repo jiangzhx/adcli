@@ -5,7 +5,7 @@ import type { FileVideoAgentGetV2FilteringSource } from "../models";
 
 export interface FileVideoAgentGetV2Filtering {
   end_time?: string;
-  material_ids?: number[];
+  material_ids?: number | string[];
   signatures?: string[];
   source?: FileVideoAgentGetV2FilteringSource[];
   start_time?: string;

@@ -4,9 +4,9 @@
 import type { ToolsWechatAppletListV30DataListAccountType, ToolsWechatAppletListV30DataListAuditStatus, ToolsWechatAppletListV30DataListMaxPaymentTierRange, ToolsWechatAppletListV30DataListMaxRechargeTier, ToolsWechatAppletListV30DataListMembershipType, ToolsWechatAppletListV30DataListMidPaymentTierRange, ToolsWechatAppletListV30DataListMinPaymentTierRange, ToolsWechatAppletListV30DataListMinRechargeTier, ToolsWechatAppletListV30DataListPaymentForm, ToolsWechatAppletListV30DataListRecommendedRechargeTier, ToolsWechatAppletListV30DataListRevenueModel } from "../models";
 
 export interface ToolsWechatAppletListV30ResponseDataListInner {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: ToolsWechatAppletListV30DataListAccountType;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   audit_status?: ToolsWechatAppletListV30DataListAuditStatus;
   create_time?: string;
   discount_rate?: number;
@@ -17,7 +17,7 @@ export interface ToolsWechatAppletListV30ResponseDataListInner {
   icon_image_url?: string;
   images_horizontal_url?: string[];
   images_vertical_url?: string[];
-  instance_id?: number;
+  instance_id?: number | string;
   introduction?: string;
   is_ebp_asset?: boolean;
   labels?: string[];

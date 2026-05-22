@@ -8,8 +8,8 @@ import type { YuntuBrandInfoGetV30Response } from "../models";
 
 
 export interface OpenApiV30YuntuBrandInfoGetGetRequest {
-  yuntuBrandId: number;
-  serviceProviderId: number;
+  yuntuBrandId: number | string;
+  serviceProviderId: number | string;
 }
 
 export class YuntuBrandInfoGetV30Api {

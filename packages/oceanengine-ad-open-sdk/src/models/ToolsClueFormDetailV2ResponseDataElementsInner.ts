@@ -5,7 +5,7 @@ import type { ToolsClueFormDetailV2DataElementsAllowEmpty, ToolsClueFormDetailV2
 
 export interface ToolsClueFormDetailV2ResponseDataElementsInner {
   allow_empty?: ToolsClueFormDetailV2DataElementsAllowEmpty;
-  element_id?: number;
+  element_id?: number | string;
   is_unique?: ToolsClueFormDetailV2DataElementsIsUnique;
   label?: string;
   type?: ToolsClueFormDetailV2DataElementsType;

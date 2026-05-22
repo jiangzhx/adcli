@@ -12,12 +12,12 @@ export interface LocalProjectUpdateV30Request {
   end_time?: string;
   high_budget_rate?: number;
   is_set_peak_budget?: boolean;
-  local_account_id: number;
-  market_page_ids?: number[];
+  local_account_id: number | string;
+  market_page_ids?: number | string[];
   name?: string;
   peak_holidays?: LocalProjectUpdateV30PeakHolidays[];
   peak_week_days?: LocalProjectUpdateV30PeakWeekDays[];
-  project_id: number;
+  project_id: number | string;
   schedule_fixed_seconds?: number;
   schedule_time?: string;
   schedule_type?: LocalProjectUpdateV30ScheduleType;

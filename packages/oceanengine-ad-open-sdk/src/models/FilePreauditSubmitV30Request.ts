@@ -4,7 +4,7 @@
 import type { FilePreauditSubmitV30MaterialChannel, FilePreauditSubmitV30MaterialType } from "../models";
 
 export interface FilePreauditSubmitV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   material_channel: FilePreauditSubmitV30MaterialChannel;
   material_type: FilePreauditSubmitV30MaterialType;
   video_url?: string;

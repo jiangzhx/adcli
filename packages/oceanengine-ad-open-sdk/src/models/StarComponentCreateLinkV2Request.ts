@@ -5,6 +5,6 @@ import type { StarComponentCreateLinkV2RequestLinkComponentInfo } from "../model
 
 export interface StarComponentCreateLinkV2Request {
   link_component_info?: StarComponentCreateLinkV2RequestLinkComponentInfo;
-  star_id: number;
+  star_id: number | string;
 }
 

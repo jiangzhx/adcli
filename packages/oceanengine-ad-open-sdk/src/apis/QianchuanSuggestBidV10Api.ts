@@ -8,15 +8,15 @@ import type { QianchuanSuggestBidV10CampaignScene, QianchuanSuggestBidV10EcomGue
 
 
 export interface OpenApiV10QianchuanSuggestBidGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   marketingGoal: QianchuanSuggestBidV10MarketingGoal;
   externalAction: QianchuanSuggestBidV10ExternalAction;
-  awemeId?: number;
-  productId?: number;
+  awemeId?: number | string;
+  productId?: number | string;
   campaignScene?: QianchuanSuggestBidV10CampaignScene;
   ecomGuestType?: QianchuanSuggestBidV10EcomGuestType;
-  shopId?: number;
-  brandId?: number;
+  shopId?: number | string;
+  brandId?: number | string;
 }
 
 export class QianchuanSuggestBidV10Api {

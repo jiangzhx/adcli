@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface LocalLifeAdvertiserCreateV30Request {
-  life_account_id: number;
+  life_account_id: number | string;
 }
 

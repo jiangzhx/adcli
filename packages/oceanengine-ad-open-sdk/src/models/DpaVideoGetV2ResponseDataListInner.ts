@@ -8,8 +8,8 @@ export interface DpaVideoGetV2ResponseDataListInner {
   image_info?: DpaVideoGetV2ResponseDataListInnerImageInfo;
   name?: string;
   package_id?: string;
-  product_id?: number;
-  product_platform_id?: number;
+  product_id?: number | string;
+  product_platform_id?: number | string;
   video_info?: DpaVideoGetV2ResponseDataListInnerVideoInfo;
 }
 

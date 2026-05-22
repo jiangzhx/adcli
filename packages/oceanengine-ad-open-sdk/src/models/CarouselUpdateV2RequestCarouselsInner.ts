@@ -3,6 +3,6 @@
 
 export interface CarouselUpdateV2RequestCarouselsInner {
   file_name?: string;
-  id: number;
+  id: number | string;
 }
 

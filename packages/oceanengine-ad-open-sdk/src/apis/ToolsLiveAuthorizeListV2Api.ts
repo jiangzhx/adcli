@@ -8,7 +8,7 @@ import type { ToolsLiveAuthorizeListV2Response, ToolsLiveAuthorizeListV2Status }
 
 
 export interface OpenApi2ToolsLiveAuthorizeListGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   page?: number;
   pageSize?: number;
   status?: ToolsLiveAuthorizeListV2Status[];

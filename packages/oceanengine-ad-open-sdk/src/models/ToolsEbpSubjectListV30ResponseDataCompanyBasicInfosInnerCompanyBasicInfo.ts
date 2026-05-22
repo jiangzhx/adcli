@@ -5,7 +5,7 @@ import type { ToolsEbpSubjectListV30DataCompanyBasicInfosCompanyBasicInfoStatus 
 
 export interface ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerCompanyBasicInfo {
   check_type: number;
-  company_id: number;
+  company_id: number | string;
   company_name: string;
   qualification_serial: string;
   qualification_type: number;

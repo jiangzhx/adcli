@@ -8,7 +8,7 @@ import type { QianchuanQianchuanReportTodayLiveRoomConfigGetV10DataTopics, Qianc
 
 
 export interface OpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   dataTopics: QianchuanQianchuanReportTodayLiveRoomConfigGetV10DataTopics[];
 }
 

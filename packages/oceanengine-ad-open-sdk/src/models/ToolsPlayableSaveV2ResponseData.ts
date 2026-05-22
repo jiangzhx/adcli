@@ -4,7 +4,7 @@
 import type { ToolsPlayableSaveV2DataPlayableOrientation, ToolsPlayableSaveV2DataStatus } from "../models";
 
 export interface ToolsPlayableSaveV2ResponseData {
-  playable_id?: number;
+  playable_id?: number | string;
   playable_name?: string;
   playable_orientation?: ToolsPlayableSaveV2DataPlayableOrientation;
   playable_url?: string;

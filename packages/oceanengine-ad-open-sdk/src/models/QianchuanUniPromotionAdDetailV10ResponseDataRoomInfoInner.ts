@@ -3,7 +3,7 @@
 
 export interface QianchuanUniPromotionAdDetailV10ResponseDataRoomInfoInner {
   anchor_avatar?: string;
-  anchor_id?: number;
+  anchor_id?: number | string;
   anchor_name?: string;
 }
 

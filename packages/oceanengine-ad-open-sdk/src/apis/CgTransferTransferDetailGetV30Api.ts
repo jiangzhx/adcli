@@ -8,7 +8,7 @@ import type { CgTransferTransferDetailGetV30Platform, CgTransferTransferDetailGe
 
 
 export interface OpenApiV30CgTransferTransferDetailGetGetRequest {
-  organizationId: number;
+  organizationId: number | string;
   bizRequestNo: string;
   platform: CgTransferTransferDetailGetV30Platform;
   transferBizRequestNo?: string;

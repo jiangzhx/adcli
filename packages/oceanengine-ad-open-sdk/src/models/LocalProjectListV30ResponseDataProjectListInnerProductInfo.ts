@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface LocalProjectListV30ResponseDataProjectListInnerProductInfo {
-  product_id?: number;
+  product_id?: number | string;
   product_image_url?: string;
   product_name?: string;
 }

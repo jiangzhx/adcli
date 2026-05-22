@@ -4,12 +4,12 @@
 import type { ToolsMicroAppUpdateV30MaxPaymentTierRange, ToolsMicroAppUpdateV30MaxRechargeTier, ToolsMicroAppUpdateV30MembershipType, ToolsMicroAppUpdateV30MidPaymentTierRange, ToolsMicroAppUpdateV30MinPaymentTierRange, ToolsMicroAppUpdateV30MinRechargeTier, ToolsMicroAppUpdateV30PaymentForm, ToolsMicroAppUpdateV30RecommendedRechargeTier, ToolsMicroAppUpdateV30RequestAppPageInner, ToolsMicroAppUpdateV30RevenueModel } from "../models";
 
 export interface ToolsMicroAppUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   app_page: ToolsMicroAppUpdateV30RequestAppPageInner[];
   discount_rate?: number;
   has_discount?: boolean;
   has_online_earning?: boolean;
-  instance_id: number;
+  instance_id: number | string;
   max_payment_tier_range?: ToolsMicroAppUpdateV30MaxPaymentTierRange;
   max_recharge_tier?: ToolsMicroAppUpdateV30MaxRechargeTier;
   membership_type?: ToolsMicroAppUpdateV30MembershipType;

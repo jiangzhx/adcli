@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsPlayableUploadV2ResponseData {
-  playable_id?: number;
+  playable_id?: number | string;
 }
 

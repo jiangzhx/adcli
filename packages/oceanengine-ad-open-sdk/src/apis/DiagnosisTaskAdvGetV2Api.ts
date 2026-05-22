@@ -8,8 +8,8 @@ import type { DiagnosisTaskAdvGetV2Response } from "../models";
 
 
 export interface OpenApi2DiagnosisTaskAdvGetGetRequest {
-  advertiserId?: number;
-  taskIds?: number[];
+  advertiserId?: number | string;
+  taskIds?: number | string[];
 }
 
 export class DiagnosisTaskAdvGetV2Api {

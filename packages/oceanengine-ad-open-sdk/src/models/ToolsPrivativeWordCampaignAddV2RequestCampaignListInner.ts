@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsPrivativeWordCampaignAddV2RequestCampaignListInner {
-  campaign_id: number;
+  campaign_id: number | string;
   phrase_words?: string[];
   precise_words?: string[];
 }

@@ -6,7 +6,7 @@ import type { CreativeProceduralCreativeCreateV2CreativeImageMaterialsImageMode,
 export interface CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInner {
   image_info?: CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInnerImageInfoInner[];
   image_mode?: CreativeProceduralCreativeCreateV2CreativeImageMaterialsImageMode;
-  material_id?: number;
+  material_id?: number | string;
   template_image?: CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInnerTemplateImage;
 }
 

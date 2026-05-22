@@ -4,7 +4,7 @@
 import type { LocalFileCarouselListV30ResponseDataCarouselListInnerImageListInner, LocalFileCarouselListV30ResponseDataCarouselListInnerMusic } from "../models";
 
 export interface LocalFileCarouselListV30ResponseDataCarouselListInner {
-  carousel_id?: number;
+  carousel_id?: number | string;
   create_time?: string;
   image_list?: LocalFileCarouselListV30ResponseDataCarouselListInnerImageListInner[];
   music?: LocalFileCarouselListV30ResponseDataCarouselListInnerMusic;

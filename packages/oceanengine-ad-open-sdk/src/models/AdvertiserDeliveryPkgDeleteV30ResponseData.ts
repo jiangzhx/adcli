@@ -5,6 +5,6 @@ import type { AdvertiserDeliveryPkgDeleteV30ResponseDataErrorsInner } from "../m
 
 export interface AdvertiserDeliveryPkgDeleteV30ResponseData {
   errors?: AdvertiserDeliveryPkgDeleteV30ResponseDataErrorsInner[];
-  pkg_ids?: number[];
+  pkg_ids?: number | string[];
 }
 

@@ -8,9 +8,9 @@ import type { QianchuanAdMaterialSuggestionV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanAdMaterialSuggestionGetRequest {
-  advertiserId: number;
-  adId: number;
-  materialIds: number[];
+  advertiserId: number | string;
+  adId: number | string;
+  materialIds: number | string[];
 }
 
 export class QianchuanAdMaterialSuggestionV10Api {

@@ -10,10 +10,10 @@ export interface StarVasCreateBoostItemGroupV2Request {
   boost_hours?: number;
   boost_type: StarVasCreateBoostItemGroupV2BoostType;
   custom_audience_tag?: StarVasCreateBoostItemGroupV2RequestCustomAudienceTag;
-  item_ids?: number[];
+  item_ids?: number | string[];
   name: string;
-  order_ids?: number[];
-  pack_id?: number;
-  star_id: number;
+  order_ids?: number | string[];
+  pack_id?: number | string;
+  star_id: number | string;
 }
 

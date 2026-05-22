@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface LocalLifeAdvertiserCreateV30ResponseData {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
 }
 

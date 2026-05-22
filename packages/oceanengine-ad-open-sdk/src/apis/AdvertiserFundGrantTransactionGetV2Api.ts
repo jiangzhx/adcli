@@ -8,7 +8,7 @@ import type { AdvertiserFundGrantTransactionGetV2Response } from "../models";
 
 
 export interface OpenApi2AdvertiserFundGrantTransactionGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startTime: string;
   endTime: string;
   page?: string;

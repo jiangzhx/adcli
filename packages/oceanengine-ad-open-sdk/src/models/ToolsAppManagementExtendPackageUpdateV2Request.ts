@@ -4,7 +4,7 @@
 import type { ToolsAppManagementExtendPackageUpdateV2Mode, ToolsAppManagementExtendPackageUpdateV2RequestChannelListInner } from "../models";
 
 export interface ToolsAppManagementExtendPackageUpdateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   channel_list?: ToolsAppManagementExtendPackageUpdateV2RequestChannelListInner[];
   mode?: ToolsAppManagementExtendPackageUpdateV2Mode;
   package_id: string;

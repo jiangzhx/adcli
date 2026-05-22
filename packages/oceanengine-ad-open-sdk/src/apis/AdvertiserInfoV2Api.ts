@@ -8,7 +8,7 @@ import type { AdvertiserInfoV2Response } from "../models";
 
 
 export interface OpenApi2AdvertiserInfoGetRequest {
-  advertiserIds?: number[];
+  advertiserIds?: number | string[];
   fields?: string[];
 }
 

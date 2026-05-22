@@ -2,9 +2,9 @@
 // Do not edit manually.
 
 export interface BudgetGroupUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   budget_group_budget?: number;
-  budget_group_id: number;
+  budget_group_id: number | string;
   budget_group_name?: string;
 }
 

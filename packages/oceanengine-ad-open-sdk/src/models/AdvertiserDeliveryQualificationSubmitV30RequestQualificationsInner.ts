@@ -4,8 +4,8 @@
 import type { AdvertiserDeliveryQualificationSubmitV30QualificationsQualificationType } from "../models";
 
 export interface AdvertiserDeliveryQualificationSubmitV30RequestQualificationsInner {
-  attachment_ids: number[];
-  qualification_id?: number;
+  attachment_ids: number | string[];
+  qualification_id?: number | string;
   qualification_type: AdvertiserDeliveryQualificationSubmitV30QualificationsQualificationType;
 }
 

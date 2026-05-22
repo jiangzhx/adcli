@@ -3,7 +3,7 @@
 
 export interface LocalCustomAudienceGetV30ResponseDataCustomAudienceListInner {
   create_time?: string;
-  custom_audience_id?: number;
+  custom_audience_id?: number | string;
   name?: string;
   tags_type?: string;
 }

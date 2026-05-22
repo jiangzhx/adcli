@@ -6,6 +6,6 @@ import type { ToolsEbpAssetAuthV30AuthTargetsAuthTargetType, ToolsEbpAssetAuthV3
 export interface ToolsEbpAssetAuthV30RequestAuthTargetsInner {
   auth_target_type: ToolsEbpAssetAuthV30AuthTargetsAuthTargetType;
   sub_target?: ToolsEbpAssetAuthV30AuthTargetsSubTarget[];
-  target_id: number;
+  target_id: number | string;
 }
 

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface SharedWalletWalletRelationGetV30ResponseDataResultsInner {
-  advertiser_id?: number;
-  shared_wallet_id?: number;
+  advertiser_id?: number | string;
+  shared_wallet_id?: number | string;
 }
 

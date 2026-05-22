@@ -8,9 +8,9 @@ import type { DownloadStatementV2Response } from "../models";
 
 
 export interface OpenApi2DownloadStatementGetRequest {
-  agentId: number;
-  attachId: number;
-  statementId: number;
+  agentId: number | string;
+  attachId: number | string;
+  statementId: number | string;
 }
 
 export class DownloadStatementV2Api {

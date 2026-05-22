@@ -8,7 +8,7 @@ import type { QueryRebateBalanceV2Filtering, QueryRebateBalanceV2Response } from
 
 
 export interface OpenApi2QueryRebateBalanceGetRequest {
-  agentId: number;
+  agentId: number | string;
   filtering?: QueryRebateBalanceV2Filtering;
   page?: number;
   pageSize?: number;

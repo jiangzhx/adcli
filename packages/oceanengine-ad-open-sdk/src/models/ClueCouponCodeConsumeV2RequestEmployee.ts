@@ -4,8 +4,8 @@
 import type { ClueCouponCodeConsumeV2EmployeeUserType } from "../models";
 
 export interface ClueCouponCodeConsumeV2RequestEmployee {
-  store_id?: number;
-  user_id: number;
+  store_id?: number | string;
+  user_id: number | string;
   user_type: ClueCouponCodeConsumeV2EmployeeUserType;
 }
 

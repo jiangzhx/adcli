@@ -8,7 +8,7 @@ import type { ToolsAwemeBannedListV30BannedType, ToolsAwemeBannedListV30Response
 
 
 export interface OpenApiV30ToolsAwemeBannedListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   bannedType?: ToolsAwemeBannedListV30BannedType;
   awemeId?: string;
   isApplyToAdv?: boolean;

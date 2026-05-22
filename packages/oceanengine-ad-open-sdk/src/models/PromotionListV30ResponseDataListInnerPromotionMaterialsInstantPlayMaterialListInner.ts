@@ -9,7 +9,7 @@ export interface PromotionListV30ResponseDataListInnerPromotionMaterialsInstantP
   cover_uri?: string;
   file_name?: string;
   image_mode?: PromotionListV30DataListPromotionMaterialsInstantPlayMaterialListImageMode;
-  material_id?: number;
+  material_id?: number | string;
   material_opt_status?: PromotionListV30DataListPromotionMaterialsInstantPlayMaterialListMaterialOptStatus;
   material_status?: PromotionListV30DataListPromotionMaterialsInstantPlayMaterialListMaterialStatus;
 }

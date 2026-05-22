@@ -8,7 +8,7 @@ import type { QianchuanTrackUrlCheckV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanTrackUrlCheckGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   trackUrl: string[];
 }
 

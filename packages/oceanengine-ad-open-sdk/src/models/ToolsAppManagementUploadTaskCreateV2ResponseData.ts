@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsAppManagementUploadTaskCreateV2ResponseData {
-  upload_id?: number;
+  upload_id?: number | string;
 }
 

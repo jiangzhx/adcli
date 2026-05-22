@@ -5,7 +5,7 @@ import type { CarouselCreateV2ResponseDataCarouselAudio, CarouselCreateV2Respons
 
 export interface CarouselCreateV2ResponseDataCarousel {
   audio?: CarouselCreateV2ResponseDataCarouselAudio;
-  carousel_id?: number;
+  carousel_id?: number | string;
   file_name?: string;
   images?: CarouselCreateV2ResponseDataCarouselImagesInner[];
   uri?: string;

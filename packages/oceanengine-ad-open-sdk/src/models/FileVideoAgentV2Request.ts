@@ -4,7 +4,7 @@
 import type { FileVideoAgentV2UploadType } from "../models";
 
 export interface FileVideoAgentV2Request {
-  agent_id: number;
+  agent_id: number | string;
   file_name: string;
   is_aigc?: boolean;
   is_need_auth: boolean;

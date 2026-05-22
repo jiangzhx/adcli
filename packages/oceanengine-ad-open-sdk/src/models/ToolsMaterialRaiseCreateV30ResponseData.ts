@@ -5,6 +5,6 @@ import type { ToolsMaterialRaiseCreateV30ResponseDataErrorMaterialListInner } fr
 
 export interface ToolsMaterialRaiseCreateV30ResponseData {
   error_material_list?: ToolsMaterialRaiseCreateV30ResponseDataErrorMaterialListInner[];
-  schedule_id: number;
+  schedule_id: number | string;
 }
 

@@ -8,8 +8,8 @@ import type { KeywordFeedadsSuggestV2Response } from "../models";
 
 
 export interface OpenApi2KeywordFeedadsSuggestGetRequest {
-  adId?: number;
-  advertiserId?: number;
+  adId?: number | string;
+  advertiserId?: number | string;
   reqKeywordType?: number;
 }
 

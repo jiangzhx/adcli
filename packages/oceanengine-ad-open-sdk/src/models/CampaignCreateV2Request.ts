@@ -4,7 +4,7 @@
 import type { CampaignCreateV2BudgetMode, CampaignCreateV2CampaignBudgetOptimization, CampaignCreateV2CampaignType, CampaignCreateV2DedicateType, CampaignCreateV2DeliveryMode, CampaignCreateV2DeliveryRelatedNum, CampaignCreateV2LandingType, CampaignCreateV2MarketingPurpose, CampaignCreateV2MarketingScene, CampaignCreateV2Operation, CampaignCreateV2SmartBidType } from "../models";
 
 export interface CampaignCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   budget?: number;
   budget_mode: CampaignCreateV2BudgetMode;
   campaign_budget_optimization?: CampaignCreateV2CampaignBudgetOptimization;

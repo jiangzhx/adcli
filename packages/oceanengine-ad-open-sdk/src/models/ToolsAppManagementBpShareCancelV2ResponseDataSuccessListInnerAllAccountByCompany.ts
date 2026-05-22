@@ -5,6 +5,6 @@ import type { ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountByCompan
 
 export interface ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAllAccountByCompany {
   account_type?: ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountByCompanyAccountType;
-  company_id?: number;
+  company_id?: number | string;
 }
 

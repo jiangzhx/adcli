@@ -8,11 +8,11 @@ import type { EventManagerDeepBidTypeGetV30AdType, EventManagerDeepBidTypeGetV30
 
 
 export interface OpenApiV30EventManagerDeepBidTypeGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   externalAction: EventManagerDeepBidTypeGetV30ExternalAction;
-  assetId?: number;
+  assetId?: number | string;
   deepExternalAction?: EventManagerDeepBidTypeGetV30DeepExternalAction;
-  convertId?: number;
+  convertId?: number | string;
   deliveryMode?: EventManagerDeepBidTypeGetV30DeliveryMode;
   landingType?: EventManagerDeepBidTypeGetV30LandingType;
   adType?: EventManagerDeepBidTypeGetV30AdType;

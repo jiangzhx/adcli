@@ -8,10 +8,10 @@ import type { LocalConsultAwameListGetV30DeliveryGoal, LocalConsultAwameListGetV
 
 
 export interface OpenApiV30LocalConsultAwameListGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   deliveryGoal: LocalConsultAwameListGetV30DeliveryGoal;
-  poiIds?: number[];
-  productIds?: number[];
+  poiIds?: number | string[];
+  productIds?: number | string[];
   filtering?: LocalConsultAwameListGetV30Filtering;
   page?: number;
   pageSize?: number;

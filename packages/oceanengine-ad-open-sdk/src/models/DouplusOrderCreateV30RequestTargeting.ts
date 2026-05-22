@@ -6,8 +6,8 @@ import type { DouplusOrderCreateV30TargetingAge, DouplusOrderCreateV30TargetingA
 export interface DouplusOrderCreateV30RequestTargeting {
   age?: DouplusOrderCreateV30TargetingAge[];
   audience_mode: DouplusOrderCreateV30TargetingAudienceMode;
-  audience_pkg_id?: number;
-  dmp_pkg_ids?: number[];
+  audience_pkg_id?: number | string;
+  dmp_pkg_ids?: number | string[];
   gender?: DouplusOrderCreateV30TargetingGender;
 }
 

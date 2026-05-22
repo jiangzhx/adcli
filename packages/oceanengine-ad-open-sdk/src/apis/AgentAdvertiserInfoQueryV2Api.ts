@@ -8,7 +8,7 @@ import type { AgentAdvertiserInfoQueryV2Response } from "../models";
 
 
 export interface OpenApi2AgentAdvertiserInfoQueryGetRequest {
-  accountIds: number[];
+  accountIds: number | string[];
 }
 
 export class AgentAdvertiserInfoQueryV2Api {

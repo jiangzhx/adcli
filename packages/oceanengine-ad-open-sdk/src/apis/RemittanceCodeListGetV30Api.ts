@@ -8,8 +8,8 @@ import type { RemittanceCodeListGetV30Response } from "../models";
 
 
 export interface OpenApiV30RemittanceCodeListGetGetRequest {
-  ccAccountId: number;
-  accountId: number;
+  ccAccountId: number | string;
+  accountId: number | string;
   page: number;
   pageSize: number;
   remittanceCodeList: string[];

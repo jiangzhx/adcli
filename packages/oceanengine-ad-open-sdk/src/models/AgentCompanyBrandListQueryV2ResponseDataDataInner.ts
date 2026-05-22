@@ -9,7 +9,7 @@ export interface AgentCompanyBrandListQueryV2ResponseDataDataInner {
   collaborators?: AgentCompanyBrandListQueryV2ResponseDataDataInnerCollaboratorsInner[];
   company_balance?: number;
   company_grant_balance?: number;
-  company_id?: number;
+  company_id?: number | string;
   company_name?: string;
   company_non_grant_balance?: number;
   company_valid_balance?: number;

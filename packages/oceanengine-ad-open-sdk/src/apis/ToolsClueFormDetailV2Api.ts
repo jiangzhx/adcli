@@ -8,8 +8,8 @@ import type { ToolsClueFormDetailV2Response } from "../models";
 
 
 export interface OpenApi2ToolsClueFormDetailGetRequest {
-  advertiserId: number;
-  instanceId: number;
+  advertiserId: number | string;
+  instanceId: number | string;
 }
 
 export class ToolsClueFormDetailV2Api {

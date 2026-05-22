@@ -8,7 +8,7 @@ import type { StarDemandOmGetDemandListV2Response, StarDemandOmGetDemandListV2Un
 
 
 export interface OpenApi2StarDemandOmGetDemandListGetRequest {
-  starId: number;
+  starId: number | string;
   pageNo: number;
   pageSize: number;
   createStartTime: number;

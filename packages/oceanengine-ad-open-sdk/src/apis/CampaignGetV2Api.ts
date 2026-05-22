@@ -8,7 +8,7 @@ import type { CampaignGetV2Filtering, CampaignGetV2Response } from "../models";
 
 
 export interface OpenApi2CampaignGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   fields?: string[];
   filtering?: CampaignGetV2Filtering;
   page?: number;

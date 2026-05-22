@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAwemeOrderCreateV10ResponseData {
-  ad_id?: number;
-  order_id: number;
+  ad_id?: number | string;
+  order_id: number | string;
 }
 

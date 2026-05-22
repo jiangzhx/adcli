@@ -8,7 +8,7 @@ import type { QianchuanReportLongTransferOrderGetV10Filtering, QianchuanReportLo
 
 
 export interface OpenApiV10QianchuanReportLongTransferOrderGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate: string;
   endDate: string;
   optimizationTimeScope: QianchuanReportLongTransferOrderGetV10OptimizationTimeScope;

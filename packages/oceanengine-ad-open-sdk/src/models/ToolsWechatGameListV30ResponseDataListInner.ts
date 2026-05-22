@@ -4,7 +4,7 @@
 import type { ToolsWechatGameListV30DataListAccountType, ToolsWechatGameListV30DataListAgeLimit, ToolsWechatGameListV30DataListAuditStatus, ToolsWechatGameListV30DataListAuthorizationStatus, ToolsWechatGameListV30DataListHistoryAccountType, ToolsWechatGameListV30DataListMaxPaymentTierRange, ToolsWechatGameListV30DataListMidPaymentTierRange, ToolsWechatGameListV30DataListMinPaymentTierRange, ToolsWechatGameListV30DataListRevenueModel, ToolsWechatGameListV30DataListScheduleCards } from "../models";
 
 export interface ToolsWechatGameListV30ResponseDataListInner {
-  account_id?: number;
+  account_id?: number | string;
   account_type?: ToolsWechatGameListV30DataListAccountType;
   age_limit?: ToolsWechatGameListV30DataListAgeLimit;
   age_remind_url?: string;
@@ -17,9 +17,9 @@ export interface ToolsWechatGameListV30ResponseDataListInner {
   feature_tags?: string[];
   has_discount?: boolean;
   has_online_earning?: boolean;
-  history_account_id?: number;
+  history_account_id?: number | string;
   history_account_type?: ToolsWechatGameListV30DataListHistoryAccountType;
-  instance_id?: number;
+  instance_id?: number | string;
   is_ebp_asset?: boolean;
   max_payment_tier_range?: ToolsWechatGameListV30DataListMaxPaymentTierRange;
   mid_payment_tier_range?: ToolsWechatGameListV30DataListMidPaymentTierRange;

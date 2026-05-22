@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsClueRefundInfoQueryV2Request {
-  advertiser_id?: number;
-  clue_ids: number[];
+  advertiser_id?: number | string;
+  clue_ids: number | string[];
 }
 

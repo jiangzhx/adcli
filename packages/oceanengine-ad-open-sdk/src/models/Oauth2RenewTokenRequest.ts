@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface Oauth2RenewTokenRequest {
-  app_id: number;
+  app_id: number | string;
   refresh_token: string;
   secret: string;
 }

@@ -7,7 +7,7 @@ export interface QianchuanCampaignListGetV10ResponseDataListInner {
   budget?: number;
   budget_mode: QianchuanCampaignListGetV10DataListBudgetMode;
   create_date?: string;
-  id: number;
+  id: number | string;
   marketing_goal: QianchuanCampaignListGetV10DataListMarketingGoal;
   marketing_scene?: QianchuanCampaignListGetV10DataListMarketingScene;
   name: string;

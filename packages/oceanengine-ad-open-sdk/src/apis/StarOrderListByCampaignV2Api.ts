@@ -8,8 +8,8 @@ import type { StarOrderListByCampaignV2Response } from "../models";
 
 
 export interface OpenApi2StarOrderListByCampaignGetRequest {
-  starId: number;
-  campaignIds: number[];
+  starId: number | string;
+  campaignIds: number | string[];
   page?: number;
   limit?: number;
 }

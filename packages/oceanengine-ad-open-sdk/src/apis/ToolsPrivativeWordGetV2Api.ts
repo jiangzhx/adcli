@@ -8,7 +8,7 @@ import type { ToolsPrivativeWordGetV2Filtering, ToolsPrivativeWordGetV2Response 
 
 
 export interface OpenApi2ToolsPrivativeWordGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: ToolsPrivativeWordGetV2Filtering;
 }
 

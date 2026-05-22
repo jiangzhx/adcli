@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanAwemeUniPromotionOrderDetailV10ResponseDataProductInfo {
-  id: number;
+  id: number | string;
   img?: string;
   name?: string;
 }

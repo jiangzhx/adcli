@@ -5,8 +5,8 @@ import type { ClueCouponCreateV2ActivityType, ClueCouponCreateV2RequestCoupon } 
 
 export interface ClueCouponCreateV2Request {
   activity_type: ClueCouponCreateV2ActivityType;
-  advertiser_id: number;
-  bind_form_id?: number;
+  advertiser_id: number | string;
+  bind_form_id?: number | string;
   coupon?: ClueCouponCreateV2RequestCoupon;
 }
 

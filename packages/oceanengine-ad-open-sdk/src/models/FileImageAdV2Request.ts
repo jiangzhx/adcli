@@ -4,7 +4,7 @@
 import type { FileImageAdV2UploadType } from "../models";
 
 export interface FileImageAdV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   filename?: string;
   image_file?: File;
   image_signature?: string;

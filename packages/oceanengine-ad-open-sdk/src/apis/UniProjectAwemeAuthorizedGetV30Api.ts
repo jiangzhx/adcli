@@ -8,8 +8,8 @@ import type { UniProjectAwemeAuthorizedGetV30Response } from "../models";
 
 
 export interface OpenApiV30UniProjectAwemeAuthorizedGetGetRequest {
-  advertiserId: number;
-  playletId: number;
+  advertiserId: number | string;
+  playletId: number | string;
   page?: number;
 }
 

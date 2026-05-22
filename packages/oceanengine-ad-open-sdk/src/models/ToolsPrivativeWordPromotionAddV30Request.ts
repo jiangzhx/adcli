@@ -4,7 +4,7 @@
 import type { ToolsPrivativeWordPromotionAddV30RequestPromotionListInner } from "../models";
 
 export interface ToolsPrivativeWordPromotionAddV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   promotion_list: ToolsPrivativeWordPromotionAddV30RequestPromotionListInner[];
 }
 

@@ -8,7 +8,7 @@ import type { ToolsPlayableCloudGameListV2Filtering, ToolsPlayableCloudGameListV
 
 
 export interface OpenApi2ToolsPlayableCloudGameListGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   filtering?: ToolsPlayableCloudGameListV2Filtering;
   page?: number;
   pageSize?: number;

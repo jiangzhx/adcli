@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsPlayableUploadV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   playable_package: File;
 }
 

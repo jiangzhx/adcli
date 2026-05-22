@@ -3,6 +3,6 @@
 
 export interface FileAutoGenerateSourceGetV2ResponseDataErrorsInner {
   error_message?: string;
-  material_id?: number;
+  material_id?: number | string;
 }
 

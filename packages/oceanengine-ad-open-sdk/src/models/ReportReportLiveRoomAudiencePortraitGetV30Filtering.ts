@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ReportReportLiveRoomAudiencePortraitGetV30Filtering {
-  room_id: number;
+  room_id: number | string;
 }
 

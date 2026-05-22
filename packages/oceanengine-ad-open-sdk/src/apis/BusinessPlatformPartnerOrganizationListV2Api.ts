@@ -8,7 +8,7 @@ import type { BusinessPlatformPartnerOrganizationListV2Filtering, BusinessPlatfo
 
 
 export interface OpenApi2BusinessPlatformPartnerOrganizationListGetRequest {
-  organizationId: number;
+  organizationId: number | string;
   page?: number;
   pageSize?: number;
   filtering?: BusinessPlatformPartnerOrganizationListV2Filtering;

@@ -5,7 +5,7 @@ import type { DouplusOrderListV30DataOrderListLiveRoomInfoRoomStatus } from "../
 
 export interface DouplusOrderListV30ResponseDataOrderListInnerLiveRoomInfo {
   room_cover?: string[];
-  room_id?: number;
+  room_id?: number | string;
   room_status?: DouplusOrderListV30DataOrderListLiveRoomInfoRoomStatus;
   room_title?: string;
 }

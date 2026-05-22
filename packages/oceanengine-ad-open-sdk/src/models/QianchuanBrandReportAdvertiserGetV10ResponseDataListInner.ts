@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanBrandReportAdvertiserGetV10ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   all_order_create_roi_7days?: number;
   all_order_pay_count_7days?: number;
   all_order_pay_gmv_7days?: number;

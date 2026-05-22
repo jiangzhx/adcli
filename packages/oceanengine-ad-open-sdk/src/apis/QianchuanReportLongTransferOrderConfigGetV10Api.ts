@@ -8,7 +8,7 @@ import type { QianchuanReportLongTransferOrderConfigGetV10DataTopics, QianchuanR
 
 
 export interface OpenApiV10QianchuanReportLongTransferOrderConfigGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   dataTopics: QianchuanReportLongTransferOrderConfigGetV10DataTopics[];
 }
 

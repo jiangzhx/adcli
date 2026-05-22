@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsJointBidUpdateV30ResponseData {
-  joint_id?: number;
+  joint_id?: number | string;
 }
 

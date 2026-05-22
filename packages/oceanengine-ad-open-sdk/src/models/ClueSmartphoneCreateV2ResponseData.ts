@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ClueSmartphoneCreateV2ResponseData {
-  instance_id?: number;
+  instance_id?: number | string;
   key?: string;
 }
 

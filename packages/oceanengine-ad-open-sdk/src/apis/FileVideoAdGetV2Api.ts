@@ -8,7 +8,7 @@ import type { FileVideoAdGetV2Response } from "../models";
 
 
 export interface OpenApi2FileVideoAdGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   videoIds: string[];
 }
 

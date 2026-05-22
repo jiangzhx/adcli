@@ -4,10 +4,10 @@
 import type { DpaAssetV2ListV2RequestFiltering } from "../models";
 
 export interface DpaAssetV2ListV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   filtering?: DpaAssetV2ListV2RequestFiltering;
   page?: number;
   page_size?: number;
-  unique_product_ids: number[];
+  unique_product_ids: number | string[];
 }
 

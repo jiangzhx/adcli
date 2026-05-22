@@ -8,7 +8,7 @@ import type { LocalQualificationGetV30Response } from "../models";
 
 
 export interface OpenApiV30LocalQualificationGetGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
 }
 
 export class LocalQualificationGetV30Api {

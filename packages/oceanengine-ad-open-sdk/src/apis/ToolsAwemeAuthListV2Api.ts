@@ -8,7 +8,7 @@ import type { ToolsAwemeAuthListV2Filtering, ToolsAwemeAuthListV2Response } from
 
 
 export interface OpenApi2ToolsAwemeAuthListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: ToolsAwemeAuthListV2Filtering;
   page?: number;
   pageSize?: number;

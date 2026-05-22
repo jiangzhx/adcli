@@ -8,13 +8,13 @@ import type { QianchuanUniAwemeSuggestRoiV10DeepExternalAction, QianchuanUniAwem
 
 
 export interface OpenApiV10QianchuanUniAwemeSuggestRoiGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   marketingGoal: QianchuanUniAwemeSuggestRoiV10MarketingGoal;
-  awemeId: number;
+  awemeId: number | string;
   deepExternalAction: QianchuanUniAwemeSuggestRoiV10DeepExternalAction;
-  productIds?: number[];
-  adId?: number;
-  taskId?: number;
+  productIds?: number | string[];
+  adId?: number | string;
+  taskId?: number | string;
   scene?: QianchuanUniAwemeSuggestRoiV10Scene;
 }
 

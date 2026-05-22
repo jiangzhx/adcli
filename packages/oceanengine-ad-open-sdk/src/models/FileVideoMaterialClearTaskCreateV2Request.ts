@@ -4,7 +4,7 @@
 import type { FileVideoMaterialClearTaskCreateV2RequestClearTaskParams } from "../models";
 
 export interface FileVideoMaterialClearTaskCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   clear_task_params: FileVideoMaterialClearTaskCreateV2RequestClearTaskParams;
 }
 

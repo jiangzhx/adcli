@@ -8,7 +8,7 @@ import type { QianchuanBrandReportAdGetV10Filtering, QianchuanBrandReportAdGetV1
 
 
 export interface OpenApiV10QianchuanBrandReportAdGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate: string;
   endDate: string;
   fields: string[];

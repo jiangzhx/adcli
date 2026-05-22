@@ -3,7 +3,7 @@
 
 export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentCoupon {
   button_name?: string;
-  coupon_id?: number;
+  coupon_id?: number | string;
   form_url?: string;
   times?: number;
 }

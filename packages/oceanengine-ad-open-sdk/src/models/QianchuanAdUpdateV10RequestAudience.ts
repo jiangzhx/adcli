@@ -28,7 +28,7 @@ export interface QianchuanAdUpdateV10RequestAudience {
   live_platform_tags?: QianchuanAdUpdateV10AudienceLivePlatformTags[];
   location_type?: QianchuanAdUpdateV10AudienceLocationType;
   new_customer?: QianchuanAdUpdateV10AudienceNewCustomer;
-  orientation_id?: number;
+  orientation_id?: number | string;
   platform?: QianchuanAdUpdateV10AudiencePlatform[];
   region_version?: string;
   retargeting_tags_exclude?: number[];

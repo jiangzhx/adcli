@@ -9,10 +9,10 @@ export interface AudiencePackageGetV30ResponseDataAudiencePackagesInner {
   action_days?: number;
   action_words?: number[];
   ad_type?: AudiencePackageGetV30DataAudiencePackagesAdType;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   age?: AudiencePackageGetV30DataAudiencePackagesAge[];
   android_osv?: AudiencePackageGetV30DataAudiencePackagesAndroidOsv;
-  audience_package_id?: number;
+  audience_package_id?: number | string;
   auto_extend_targets?: AudiencePackageGetV30DataAudiencePackagesAutoExtendTargets[];
   aweme_fan_accounts?: string[];
   aweme_fan_behaviors?: AudiencePackageGetV30DataAudiencePackagesAwemeFanBehaviors[];

@@ -8,8 +8,8 @@ import type { ToolsTaskRaiseDataGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsTaskRaiseDataGetGetRequest {
-  advertiserId: number;
-  reportId: number;
+  advertiserId: number | string;
+  reportId: number | string;
 }
 
 export class ToolsTaskRaiseDataGetV2Api {

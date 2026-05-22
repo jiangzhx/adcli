@@ -5,14 +5,14 @@ import type { FilePlayableListV30DataMaterialsAuditStatus, FilePlayableListV30Da
 
 export interface FilePlayableListV30ResponseDataMaterialsInner {
   app_id?: string;
-  app_material_id?: number;
+  app_material_id?: number | string;
   app_play_uri?: string;
   audit_reason?: string;
   audit_status?: FilePlayableListV30DataMaterialsAuditStatus;
   cover_url?: string;
   create_time?: string;
   image_mode?: FilePlayableListV30DataMaterialsImageMode;
-  material_id?: number;
+  material_id?: number | string;
   qr_image_url?: string;
   signature?: string;
   status?: FilePlayableListV30DataMaterialsStatus;

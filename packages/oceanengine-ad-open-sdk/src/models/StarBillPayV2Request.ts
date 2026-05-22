@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface StarBillPayV2Request {
-  campaign_id?: number;
-  order_id?: number;
-  star_id: number;
+  campaign_id?: number | string;
+  order_id?: number | string;
+  star_id: number | string;
 }
 

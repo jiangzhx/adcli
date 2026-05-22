@@ -4,14 +4,14 @@
 import type { ToolsAppManagementAndroidBasicPackageUpdateV2AccountType, ToolsAppManagementAndroidBasicPackageUpdateV2FileOption, ToolsAppManagementAndroidBasicPackageUpdateV2GameIpType, ToolsAppManagementAndroidBasicPackageUpdateV2MaxPaymentTierRange, ToolsAppManagementAndroidBasicPackageUpdateV2MaxRechargeTier, ToolsAppManagementAndroidBasicPackageUpdateV2MembershipType, ToolsAppManagementAndroidBasicPackageUpdateV2MidPaymentTierRange, ToolsAppManagementAndroidBasicPackageUpdateV2MinPaymentTierRange, ToolsAppManagementAndroidBasicPackageUpdateV2MinRechargeTier, ToolsAppManagementAndroidBasicPackageUpdateV2PaymentType, ToolsAppManagementAndroidBasicPackageUpdateV2RecommendedRechargeTier, ToolsAppManagementAndroidBasicPackageUpdateV2RequestFilesInner, ToolsAppManagementAndroidBasicPackageUpdateV2RevenueModel, ToolsAppManagementAndroidBasicPackageUpdateV2ScheduleCards } from "../models";
 
 export interface ToolsAppManagementAndroidBasicPackageUpdateV2Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsAppManagementAndroidBasicPackageUpdateV2AccountType;
   app_description: string;
   app_developer_name: string;
   app_name: string;
   art_style?: string;
   auto_publish: boolean;
-  category_id?: number;
+  category_id?: number | string;
   discount_rate?: number;
   feature_tags?: string[];
   file_option: ToolsAppManagementAndroidBasicPackageUpdateV2FileOption;

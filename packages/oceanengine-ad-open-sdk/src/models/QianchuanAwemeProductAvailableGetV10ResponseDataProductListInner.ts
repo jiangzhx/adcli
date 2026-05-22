@@ -5,11 +5,11 @@ import type { QianchuanAwemeProductAvailableGetV10DataProductListChannelType } f
 
 export interface QianchuanAwemeProductAvailableGetV10ResponseDataProductListInner {
   category_name?: string;
-  channel_id?: number;
+  channel_id?: number | string;
   channel_type?: QianchuanAwemeProductAvailableGetV10DataProductListChannelType;
   discount_higher_price?: number;
   discount_lower_price?: number;
-  id: number;
+  id: number | string;
   img: string;
   inventory?: number;
   marketing_price?: number;

@@ -4,7 +4,7 @@
 import type { ToolsPrivativeWordProjectUpdateV30RequestProjectListInner } from "../models";
 
 export interface ToolsPrivativeWordProjectUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   project_list: ToolsPrivativeWordProjectUpdateV30RequestProjectListInner[];
 }
 

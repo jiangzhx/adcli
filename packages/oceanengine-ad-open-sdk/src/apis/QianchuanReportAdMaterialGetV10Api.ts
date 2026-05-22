@@ -8,8 +8,8 @@ import type { QianchuanReportAdMaterialGetV10Filtering, QianchuanReportAdMateria
 
 
 export interface OpenApiV10QianchuanReportAdMaterialGetGetRequest {
-  advertiserId: number;
-  adId: number;
+  advertiserId: number | string;
+  adId: number | string;
   startDate: string;
   endDate: string;
   fields: string[];

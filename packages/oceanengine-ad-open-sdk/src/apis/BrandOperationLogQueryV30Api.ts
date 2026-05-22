@@ -8,8 +8,8 @@ import type { BrandOperationLogQueryV30Fields, BrandOperationLogQueryV30ObjectTy
 
 
 export interface OpenApiV30BrandOperationLogQueryGetRequest {
-  advertiserId: number;
-  objectId: number;
+  advertiserId: number | string;
+  objectId: number | string;
   objectType: BrandOperationLogQueryV30ObjectType;
   fields?: BrandOperationLogQueryV30Fields[];
   startDate?: string;

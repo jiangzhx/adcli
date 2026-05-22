@@ -8,7 +8,7 @@ import type { ToolsEbpMicroGameListV30AccountType, ToolsEbpMicroGameListV30Asset
 
 
 export interface OpenApiV30ToolsEbpMicroGameListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsEbpMicroGameListV30AccountType;
   assetManagementScope?: ToolsEbpMicroGameListV30AssetManagementScope;
   filtering?: ToolsEbpMicroGameListV30Filtering;

@@ -8,7 +8,7 @@ import type { KeywordListV30Filtering, KeywordListV30Response } from "../models"
 
 
 export interface OpenApiV30KeywordListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering: KeywordListV30Filtering;
 }
 

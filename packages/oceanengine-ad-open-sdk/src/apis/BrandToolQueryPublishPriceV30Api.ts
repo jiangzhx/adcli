@@ -8,7 +8,7 @@ import type { BrandToolQueryPublishPriceV30AdForm, BrandToolQueryPublishPriceV30
 
 
 export interface OpenApiV30BrandToolQueryPublishPriceGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   classify: BrandToolQueryPublishPriceV30Classify;
   proType: BrandToolQueryPublishPriceV30ProType;
   adForm: BrandToolQueryPublishPriceV30AdForm;

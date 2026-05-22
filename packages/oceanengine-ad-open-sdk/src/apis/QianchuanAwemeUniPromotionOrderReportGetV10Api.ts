@@ -8,7 +8,7 @@ import type { QianchuanAwemeUniPromotionOrderReportGetV10Filter, QianchuanAwemeU
 
 
 export interface OpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   startDate: string;
   endDate: string;
   timeGranularity?: QianchuanAwemeUniPromotionOrderReportGetV10TimeGranularity;

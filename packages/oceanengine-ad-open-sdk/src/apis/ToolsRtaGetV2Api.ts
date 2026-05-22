@@ -8,7 +8,7 @@ import type { ToolsRtaGetV2AccountType, ToolsRtaGetV2Response } from "../models"
 
 
 export interface OpenApi2ToolsRtaGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   accountType?: ToolsRtaGetV2AccountType;
 }
 

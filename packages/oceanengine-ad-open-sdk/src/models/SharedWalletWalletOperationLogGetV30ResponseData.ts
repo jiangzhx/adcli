@@ -6,6 +6,6 @@ import type { SharedWalletWalletOperationLogGetV30ResponseDataListInner, SharedW
 export interface SharedWalletWalletOperationLogGetV30ResponseData {
   list?: SharedWalletWalletOperationLogGetV30ResponseDataListInner[];
   page_info?: SharedWalletWalletOperationLogGetV30ResponseDataPageInfo;
-  wallet_id?: number;
+  wallet_id?: number | string;
 }
 

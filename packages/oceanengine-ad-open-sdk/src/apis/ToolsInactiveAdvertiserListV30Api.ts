@@ -8,7 +8,7 @@ import type { ToolsInactiveAdvertiserListV30AdvertiserType, ToolsInactiveAdverti
 
 
 export interface OpenApiV30ToolsInactiveAdvertiserListGetRequest {
-  appId: number;
+  appId: number | string;
   cursor?: number;
   count?: number;
   advertiserType?: ToolsInactiveAdvertiserListV30AdvertiserType;

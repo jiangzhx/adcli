@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface PromotionAidGetV30ResponseDataErrorListInner {
-  promotion_id?: number;
+  promotion_id?: number | string;
   reason?: string;
 }
 

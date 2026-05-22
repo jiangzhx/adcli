@@ -4,25 +4,25 @@
 import type { AgentQueryRiskPromotionListV2DataDataBusinessType, AgentQueryRiskPromotionListV2DataDataFinalOperatorTag, AgentQueryRiskPromotionListV2DataDataPromotionStatus, AgentQueryRiskPromotionListV2ResponseDataDataInnerMaterialListInner } from "../models";
 
 export interface AgentQueryRiskPromotionListV2ResponseDataDataInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   advertiser_name?: string;
-  agent_company_id?: number;
+  agent_company_id?: number | string;
   agent_company_name?: string;
-  agent_id?: number;
+  agent_id?: number | string;
   agent_name?: string;
   business_type?: AgentQueryRiskPromotionListV2DataDataBusinessType;
-  collaborator_ids?: number[];
+  collaborator_ids?: number | string[];
   collaborator_names?: string[];
-  company_id?: number;
+  company_id?: number | string;
   company_name?: string;
   final_operator_tag?: AgentQueryRiskPromotionListV2DataDataFinalOperatorTag;
-  first_agent_company_id?: number;
+  first_agent_company_id?: number | string;
   first_agent_company_name?: string;
-  id?: number;
+  id?: number | string;
   material_list?: AgentQueryRiskPromotionListV2ResponseDataDataInnerMaterialListInner[];
-  optimizer_id?: number;
+  optimizer_id?: number | string;
   optimizer_name?: string;
-  promotion_id?: number;
+  promotion_id?: number | string;
   promotion_name?: string;
   promotion_status?: AgentQueryRiskPromotionListV2DataDataPromotionStatus;
   send_time?: string;

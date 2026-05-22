@@ -8,9 +8,9 @@ import type { DpaPlayletAuthGetV2Response } from "../models";
 
 
 export interface OpenApi2DpaPlayletAuthGetGetRequest {
-  advertiserId: number;
-  platformId: number;
-  productId: number;
+  advertiserId: number | string;
+  platformId: number | string;
+  productId: number | string;
 }
 
 export class DpaPlayletAuthGetV2Api {

@@ -8,7 +8,7 @@ import type { StarDemanderGetRegisteredIpActsV2Response } from "../models";
 
 
 export interface OpenApi2StarDemanderGetRegisteredIpActsGetRequest {
-  starId: number;
+  starId: number | string;
 }
 
 export class StarDemanderGetRegisteredIpActsV2Api {

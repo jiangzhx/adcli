@@ -16,7 +16,7 @@ export interface StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelatio
   novel_attachment_comment?: string;
   novel_attachment_list?: StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationObjectInfoInnerObjectFieldInfoObjectNovelInfoNovelAttachmentListInner[];
   novel_cover_url?: string;
-  novel_id?: number;
+  novel_id?: number | string;
   novel_intro?: string;
   novel_name?: string;
   total_word_count?: number;

@@ -6,7 +6,7 @@ import type { LocalImSendMsgV30Scene, LocalImSendMsgV30SourceName } from "../mod
 export interface LocalImSendMsgV30Request {
   content: string;
   conversation_id: string;
-  local_account_id: number;
+  local_account_id: number | string;
   scene: LocalImSendMsgV30Scene;
   source_name: LocalImSendMsgV30SourceName;
 }

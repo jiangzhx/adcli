@@ -8,7 +8,7 @@ export interface FileAudioGetV2ResponseDataListInner {
   audio_url?: string;
   duration?: number;
   file_name?: string;
-  material_id?: number;
+  material_id?: number | string;
   signature?: string;
   source?: FileAudioGetV2DataListSource;
 }

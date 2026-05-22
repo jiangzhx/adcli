@@ -3,6 +3,6 @@
 
 export interface QianchuanUniPromotionAdControlTaskStatusUpdateV10ResponseDataErrorsInner {
   error_message?: string;
-  task_id?: number;
+  task_id?: number | string;
 }
 

@@ -8,8 +8,8 @@ import type { QianchuanAdRejectReasonV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanAdRejectReasonGetRequest {
-  adIds?: number[];
-  advertiserId?: number;
+  adIds?: number | string[];
+  advertiserId?: number | string;
 }
 
 export class QianchuanAdRejectReasonV10Api {

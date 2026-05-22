@@ -8,8 +8,8 @@ import type { DpaDetailGetV2Filtering, DpaDetailGetV2Response } from "../models"
 
 
 export interface OpenApi2DpaDetailGetGetRequest {
-  advertiserId: number;
-  productPlatformId: number;
+  advertiserId: number | string;
+  productPlatformId: number | string;
   filtering?: DpaDetailGetV2Filtering;
   page?: number;
   pageSize?: number;

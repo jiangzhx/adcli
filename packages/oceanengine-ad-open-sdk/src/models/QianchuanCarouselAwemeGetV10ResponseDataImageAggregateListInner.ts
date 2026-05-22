@@ -8,7 +8,7 @@ export interface QianchuanCarouselAwemeGetV10ResponseDataImageAggregateListInner
   aweme_carousel_id?: string;
   description?: string;
   images?: QianchuanCarouselAwemeGetV10ResponseDataImageAggregateListInnerImagesInner[];
-  material_id?: number;
+  material_id?: number | string;
   metrics?: QianchuanCarouselAwemeGetV10ResponseDataImageAggregateListInnerMetrics;
   music_id?: string;
   music_url?: string;

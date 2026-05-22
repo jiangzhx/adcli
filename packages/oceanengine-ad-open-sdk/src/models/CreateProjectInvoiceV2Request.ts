@@ -14,7 +14,7 @@ export interface CreateProjectInvoiceV2Request {
   customer_tax_no: string;
   invoice_bill_list: CreateProjectInvoiceV2RequestInvoiceBillListInner[];
   invoice_type: CreateProjectInvoiceV2InvoiceType;
-  local_account_id: number;
+  local_account_id: number | string;
   project_serial_list: string[];
   select_address_and_phone?: boolean;
   select_bank_and_account?: boolean;

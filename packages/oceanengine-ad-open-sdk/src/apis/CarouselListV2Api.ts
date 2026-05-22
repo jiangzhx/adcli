@@ -8,7 +8,7 @@ import type { CarouselListV2Filtering, CarouselListV2Response } from "../models"
 
 
 export interface OpenApi2CarouselListGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   filtering?: CarouselListV2Filtering;
   pageSize?: number;
   page?: number;

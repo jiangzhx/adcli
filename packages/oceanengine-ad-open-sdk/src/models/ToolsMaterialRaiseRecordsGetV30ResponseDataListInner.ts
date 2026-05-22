@@ -4,9 +4,9 @@
 import type { ToolsMaterialRaiseRecordsGetV30DataListStatus, ToolsMaterialRaiseRecordsGetV30ResponseDataListInnerRaiseInfo } from "../models";
 
 export interface ToolsMaterialRaiseRecordsGetV30ResponseDataListInner {
-  project_id?: number;
+  project_id?: number | string;
   raise_info?: ToolsMaterialRaiseRecordsGetV30ResponseDataListInnerRaiseInfo;
-  record_id?: number;
+  record_id?: number | string;
   status?: ToolsMaterialRaiseRecordsGetV30DataListStatus;
   version?: number;
 }

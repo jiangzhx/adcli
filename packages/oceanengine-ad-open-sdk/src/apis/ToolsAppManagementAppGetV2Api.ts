@@ -8,7 +8,7 @@ import type { ToolsAppManagementAppGetV2AccountAssetQueryScope, ToolsAppManageme
 
 
 export interface OpenApi2ToolsAppManagementAppGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
   searchKey?: string;

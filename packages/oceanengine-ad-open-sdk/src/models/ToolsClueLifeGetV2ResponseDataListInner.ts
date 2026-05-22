@@ -15,7 +15,7 @@ export interface ToolsClueLifeGetV2ResponseDataListInner {
   author_role?: string;
   auto_city_name?: string;
   auto_province_name?: string;
-  carousel_id?: number;
+  carousel_id?: number | string;
   city_name?: string;
   clue_id?: string;
   clue_intention?: string;
@@ -45,12 +45,12 @@ export interface ToolsClueLifeGetV2ResponseDataListInner {
   local_account_id?: string;
   modify_time?: string;
   name?: string;
-  order_id?: number;
+  order_id?: number | string;
   order_status?: string;
   product_id?: string;
   product_name?: string;
   product_type?: ToolsClueLifeGetV2DataListProductType;
-  promotion_id?: number;
+  promotion_id?: number | string;
   promotion_name?: string;
   province_name?: string;
   qcpx_ticket_info?: string;
@@ -67,9 +67,9 @@ export interface ToolsClueLifeGetV2ResponseDataListInner {
   system_tags?: string[];
   tags?: string[];
   telephone?: string;
-  title_id?: number;
+  title_id?: number | string;
   tool_id?: string;
-  video_id?: number;
+  video_id?: number | string;
   weixin?: string;
 }
 

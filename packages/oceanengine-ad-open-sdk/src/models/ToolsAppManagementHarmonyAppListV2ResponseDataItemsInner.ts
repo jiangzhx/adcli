@@ -10,7 +10,7 @@ export interface ToolsAppManagementHarmonyAppListV2ResponseDataItemsInner {
   package_name: string;
   publish_time?: string;
   status: string;
-  version_id: number;
+  version_id: number | string;
   version_name: string;
 }
 

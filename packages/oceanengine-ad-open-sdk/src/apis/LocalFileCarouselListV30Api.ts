@@ -8,9 +8,9 @@ import type { LocalFileCarouselListV30Order, LocalFileCarouselListV30Response } 
 
 
 export interface OpenApiV30LocalFileCarouselListGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   keyword?: string;
-  carouselIds?: number[];
+  carouselIds?: number | string[];
   startTime?: string;
   endTime?: string;
   order?: LocalFileCarouselListV30Order;

@@ -4,7 +4,7 @@
 import type { ToolsEbpAssetAuthListV30DataAuthorizationsAccountAccountType } from "../models";
 
 export interface ToolsEbpAssetAuthListV30ResponseDataAuthorizationsInnerAccount {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpAssetAuthListV30DataAuthorizationsAccountAccountType;
 }
 

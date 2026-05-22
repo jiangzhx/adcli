@@ -4,14 +4,14 @@
 import type { ToolsEbpAppUpdateV30AccountType, ToolsEbpAppUpdateV30FileOption, ToolsEbpAppUpdateV30GameIpType, ToolsEbpAppUpdateV30MaxPaymentTierRange, ToolsEbpAppUpdateV30MaxRechargeTier, ToolsEbpAppUpdateV30MembershipType, ToolsEbpAppUpdateV30MidPaymentTierRange, ToolsEbpAppUpdateV30MinPaymentTierRange, ToolsEbpAppUpdateV30MinRechargeTier, ToolsEbpAppUpdateV30PaymentType, ToolsEbpAppUpdateV30RecommendedRechargeTier, ToolsEbpAppUpdateV30RequestFilesInner, ToolsEbpAppUpdateV30RevenueModel, ToolsEbpAppUpdateV30ScheduleCards } from "../models";
 
 export interface ToolsEbpAppUpdateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpAppUpdateV30AccountType;
   app_description?: string;
   app_name?: string;
   art_style?: string;
   auto_publish?: boolean;
   basic_package_id?: string;
-  category_id?: number;
+  category_id?: number | string;
   developer_name?: string;
   discount_rate?: number;
   feature_tags?: string[];

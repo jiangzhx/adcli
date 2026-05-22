@@ -8,9 +8,9 @@ import type { SharedWalletWatchRuleGetV30AccountType, SharedWalletWatchRuleGetV3
 
 
 export interface OpenApiV30SharedWalletWatchRuleGetGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: SharedWalletWatchRuleGetV30AccountType;
-  subWalletId: number;
+  subWalletId: number | string;
 }
 
 export class SharedWalletWatchRuleGetV30Api {

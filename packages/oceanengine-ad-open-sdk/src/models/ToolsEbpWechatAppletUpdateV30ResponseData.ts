@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsEbpWechatAppletUpdateV30ResponseData {
-  instance_id?: number;
+  instance_id?: number | string;
 }
 

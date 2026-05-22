@@ -21,7 +21,7 @@ export interface StarDemandCreateAssignV2RequestDemandInfo {
   expiration_time: number;
   expiration_time_end: number;
   ignore_script?: number;
-  ip_act_id?: number;
+  ip_act_id?: number | string;
   item_show_monitor_url?: string;
   livestream_deadline?: number;
   product_category?: string[];
@@ -29,9 +29,9 @@ export interface StarDemandCreateAssignV2RequestDemandInfo {
   product_information: string;
   product_link?: string;
   product_name: string;
-  project_id?: number;
+  project_id?: number | string;
   xingzhitou_pre_audit?: number;
-  yuntu_industry_ids?: number[];
+  yuntu_industry_ids?: number | string[];
   yuntu_main_brand?: number;
 }
 

@@ -4,12 +4,12 @@
 import type { FileVideoAwemeGetV2DataListImageMode } from "../models";
 
 export interface FileVideoAwemeGetV2ResponseDataListInner {
-  album_id?: number;
+  album_id?: number | string;
   aweme_play_url?: string;
   duration?: number;
   if_album?: string;
   image_mode?: FileVideoAwemeGetV2DataListImageMode;
-  item_id?: number;
+  item_id?: number | string;
   mid?: number;
   title?: string;
   video_cover_id?: string;

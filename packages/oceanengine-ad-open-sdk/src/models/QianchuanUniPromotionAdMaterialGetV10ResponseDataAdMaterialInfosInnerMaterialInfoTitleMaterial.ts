@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoTitleMaterial {
-  material_id?: number;
+  material_id?: number | string;
   title?: string;
 }
 

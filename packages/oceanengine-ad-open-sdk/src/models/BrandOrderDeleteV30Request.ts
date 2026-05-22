@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface BrandOrderDeleteV30Request {
-  advertiser_id: number;
-  order_id?: number;
+  advertiser_id: number | string;
+  order_id?: number | string;
 }
 

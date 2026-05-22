@@ -4,7 +4,7 @@
 import type { ToolsPromotionDiagnosisSuggestionGetV30ResponseDataSuggestionListInnerSceneListInner } from "../models";
 
 export interface ToolsPromotionDiagnosisSuggestionGetV30ResponseDataSuggestionListInner {
-  promotion_id?: number;
+  promotion_id?: number | string;
   scene_list?: ToolsPromotionDiagnosisSuggestionGetV30ResponseDataSuggestionListInnerSceneListInner[];
 }
 

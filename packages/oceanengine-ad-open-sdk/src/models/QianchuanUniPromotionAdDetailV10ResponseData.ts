@@ -4,8 +4,8 @@
 import type { QianchuanUniPromotionAdDetailV10DataMarketingGoal, QianchuanUniPromotionAdDetailV10DataOptStatus, QianchuanUniPromotionAdDetailV10DataStatus, QianchuanUniPromotionAdDetailV10ResponseDataCreativeSetting, QianchuanUniPromotionAdDetailV10ResponseDataDeliverySetting, QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInner, QianchuanUniPromotionAdDetailV10ResponseDataProductInfosInner, QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaList, QianchuanUniPromotionAdDetailV10ResponseDataRoomInfoInner } from "../models";
 
 export interface QianchuanUniPromotionAdDetailV10ResponseData {
-  ad_id?: number;
-  aweme_id?: number;
+  ad_id?: number | string;
+  aweme_id?: number | string;
   create_time?: string;
   creative_setting?: QianchuanUniPromotionAdDetailV10ResponseDataCreativeSetting;
   delivery_setting?: QianchuanUniPromotionAdDetailV10ResponseDataDeliverySetting;

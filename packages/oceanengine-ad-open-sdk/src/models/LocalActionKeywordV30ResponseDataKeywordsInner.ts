@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface LocalActionKeywordV30ResponseDataKeywordsInner {
-  id?: number;
+  id?: number | string;
   name?: string;
   num?: string;
 }

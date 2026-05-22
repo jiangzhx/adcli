@@ -7,7 +7,7 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 
 
 export interface OpenApi2FileRebateMaterialDownloadDownloadFileGetRequest {
-  agentId: number;
+  agentId: number | string;
   taskId: string;
 }
 

@@ -29,7 +29,7 @@ export interface QianchuanAdDetailGetV10ResponseDataAudience {
   live_platform_tags?: string[];
   location_type?: QianchuanAdDetailGetV10DataAudienceLocationType;
   new_customer?: QianchuanAdDetailGetV10DataAudienceNewCustomer;
-  orientation_id?: number;
+  orientation_id?: number | string;
   platform?: QianchuanAdDetailGetV10DataAudiencePlatform[];
   region_version?: string;
   retargeting_tags_exclude?: number[];

@@ -8,8 +8,8 @@ import type { PromotionAutoGenerateConfigGetV30Response } from "../models";
 
 
 export interface OpenApiV30PromotionAutoGenerateConfigGetGetRequest {
-  advertiserId: number;
-  configId: number;
+  advertiserId: number | string;
+  configId: number | string;
 }
 
 export class PromotionAutoGenerateConfigGetV30Api {

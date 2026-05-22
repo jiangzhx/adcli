@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface CustomerCenterFundTransferSeqCommitV2Request {
-  advertiser_id: number;
-  target_advertiser_id: number;
+  advertiser_id: number | string;
+  target_advertiser_id: number | string;
   transaction_seq: number;
 }
 

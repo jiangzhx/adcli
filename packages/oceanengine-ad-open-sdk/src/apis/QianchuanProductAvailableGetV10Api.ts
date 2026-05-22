@@ -8,8 +8,8 @@ import type { QianchuanProductAvailableGetV10CampaignScene, QianchuanProductAvai
 
 
 export interface OpenApiV10QianchuanProductAvailableGetGetRequest {
-  advertiserId: number;
-  awemeId?: number;
+  advertiserId: number | string;
+  awemeId?: number | string;
   filter?: QianchuanProductAvailableGetV10Filter;
   campaignScene?: QianchuanProductAvailableGetV10CampaignScene;
   page?: number;

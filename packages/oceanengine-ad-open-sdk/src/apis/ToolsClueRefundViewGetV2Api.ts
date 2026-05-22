@@ -8,8 +8,8 @@ import type { ToolsClueRefundViewGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsClueRefundViewGetGetRequest {
-  advertiserId: number;
-  clueId: number;
+  advertiserId: number | string;
+  clueId: number | string;
 }
 
 export class ToolsClueRefundViewGetV2Api {

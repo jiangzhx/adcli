@@ -13,7 +13,7 @@ export interface QianchuanVideoGetV10ResponseDataListInner {
   id?: string;
   image_mode?: QianchuanVideoGetV10DataListImageMode;
   is_ai_create?: boolean;
-  material_id?: number;
+  material_id?: number | string;
   poster_url?: string;
   signature?: string;
   size?: number;

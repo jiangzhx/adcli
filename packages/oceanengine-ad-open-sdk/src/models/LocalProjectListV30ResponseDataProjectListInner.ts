@@ -11,7 +11,7 @@ export interface LocalProjectListV30ResponseDataProjectListInner {
   delivery_package?: LocalProjectListV30DataProjectListDeliveryPackage;
   end_time?: string;
   external_action?: LocalProjectListV30DataProjectListExternalAction;
-  local_account_id?: number;
+  local_account_id?: number | string;
   local_delivery_scene?: LocalProjectListV30DataProjectListLocalDeliveryScene;
   marketing_goal?: LocalProjectListV30DataProjectListMarketingGoal;
   name?: string;
@@ -21,7 +21,7 @@ export interface LocalProjectListV30ResponseDataProjectListInner {
   project_budget?: string;
   project_budget_mode?: LocalProjectListV30DataProjectListProjectBudgetMode;
   project_create_time?: string;
-  project_id?: number;
+  project_id?: number | string;
   project_modify_time?: string;
   project_status_first?: LocalProjectListV30DataProjectListProjectStatusFirst;
   project_status_second?: LocalProjectListV30DataProjectListProjectStatusSecond[];

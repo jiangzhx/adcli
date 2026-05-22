@@ -4,8 +4,8 @@
 export interface StarDemandCreateAssignV2RequestDemandInfoAdSyncConfOceanEngine {
   ad_sync?: number;
   ad_sync_origin?: number;
-  advertiser_id?: number;
-  advertiser_ids?: number[];
+  advertiser_id?: number | string;
+  advertiser_ids?: number | string[];
   auto_sync?: number;
   product_link?: string;
   product_pics?: string[];

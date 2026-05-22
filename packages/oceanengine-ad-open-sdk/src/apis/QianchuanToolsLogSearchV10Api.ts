@@ -8,10 +8,10 @@ import type { QianchuanToolsLogSearchV10ObjectType, QianchuanToolsLogSearchV10Re
 
 
 export interface OpenApiV10QianchuanToolsLogSearchGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   objectType: QianchuanToolsLogSearchV10ObjectType;
-  objectId?: number;
-  operatorId?: number[];
+  objectId?: number | string;
+  operatorId?: number | string[];
   startTime?: string;
   endTime?: string;
   page?: number;

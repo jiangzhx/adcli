@@ -8,8 +8,8 @@ import type { EventManagerAvailableEventsGetV2Response } from "../models";
 
 
 export interface OpenApi2EventManagerAvailableEventsGetGetRequest {
-  advertiserId: number;
-  assetId: number;
+  advertiserId: number | string;
+  assetId: number | string;
 }
 
 export class EventManagerAvailableEventsGetV2Api {

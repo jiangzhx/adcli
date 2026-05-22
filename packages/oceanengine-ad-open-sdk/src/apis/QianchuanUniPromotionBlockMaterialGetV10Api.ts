@@ -8,11 +8,11 @@ import type { QianchuanUniPromotionBlockMaterialGetV10Filtering, QianchuanUniPro
 
 
 export interface OpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
-  advertiserId: number;
-  awemeId: number;
+  advertiserId: number | string;
+  awemeId: number | string;
   marketingGoal: QianchuanUniPromotionBlockMaterialGetV10MarketingGoal;
   mediaType?: QianchuanUniPromotionBlockMaterialGetV10MediaType;
-  productId?: number[];
+  productId?: number | string[];
   filtering?: QianchuanUniPromotionBlockMaterialGetV10Filtering;
   orderField?: QianchuanUniPromotionBlockMaterialGetV10OrderField;
   cursor?: number;

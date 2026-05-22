@@ -5,7 +5,7 @@ import type { AicElementUploadV30DataElementListElementType, AicElementUploadV30
 
 export interface AicElementUploadV30ResponseDataElementList {
   create_time?: string;
-  element_id: number;
+  element_id: number | string;
   element_name: string;
   element_type?: AicElementUploadV30DataElementListElementType;
   element_url?: string;

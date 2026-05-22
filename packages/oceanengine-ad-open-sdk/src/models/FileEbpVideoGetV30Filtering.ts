@@ -7,7 +7,7 @@ export interface FileEbpVideoGetV30Filtering {
   evaluate_types?: FileEbpVideoGetV30FilteringEvaluateTypes[];
   file_name?: string;
   image_modes?: FileEbpVideoGetV30FilteringImageModes[];
-  material_ids?: number[];
-  sub_ebp_id?: number[];
+  material_ids?: number | string[];
+  sub_ebp_id?: number | string[];
 }
 

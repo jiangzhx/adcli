@@ -8,8 +8,8 @@ import type { LocalProjectDetailV30Response } from "../models";
 
 
 export interface OpenApiV30LocalProjectDetailGetRequest {
-  localAccountId: number;
-  projectId: number;
+  localAccountId: number | string;
+  projectId: number | string;
 }
 
 export class LocalProjectDetailV30Api {

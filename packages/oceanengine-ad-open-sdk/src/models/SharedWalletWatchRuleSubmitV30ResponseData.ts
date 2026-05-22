@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface SharedWalletWatchRuleSubmitV30ResponseData {
-  operation_id?: number;
-  sub_wallet_id?: number;
+  operation_id?: number | string;
+  sub_wallet_id?: number | string;
 }
 

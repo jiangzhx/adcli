@@ -4,9 +4,9 @@
 import type { QianchuanToolsShopAuthV10ShopAuthTimeType } from "../models";
 
 export interface QianchuanToolsShopAuthV10Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   end_time?: string;
   shop_auth_time_type: QianchuanToolsShopAuthV10ShopAuthTimeType;
-  shop_id: number;
+  shop_id: number | string;
 }
 

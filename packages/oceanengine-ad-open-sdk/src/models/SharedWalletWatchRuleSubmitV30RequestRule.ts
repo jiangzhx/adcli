@@ -8,6 +8,6 @@ export interface SharedWalletWatchRuleSubmitV30RequestRule {
   balance_alert_rules: SharedWalletWatchRuleSubmitV30RequestRuleBalanceAlertRulesInner[];
   budget_alert_rules: SharedWalletWatchRuleSubmitV30RequestRuleBudgetAlertRulesInner[];
   budget_usage_alert_rules: SharedWalletWatchRuleSubmitV30RequestRuleBudgetUsageAlertRulesInner[];
-  wallet_id: number;
+  wallet_id: number | string;
 }
 

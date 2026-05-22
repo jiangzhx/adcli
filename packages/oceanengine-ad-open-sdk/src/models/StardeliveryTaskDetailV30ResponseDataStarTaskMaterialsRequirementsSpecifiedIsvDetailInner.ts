@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirementsSpecifiedIsvDetailInner {
-  isv_id?: number;
+  isv_id?: number | string;
   isv_name?: string;
 }
 

@@ -5,12 +5,12 @@ import type { WalletChargeVerifyGetV30DataAllowDeliveryTypeList } from "../model
 
 export interface WalletChargeVerifyGetV30ResponseData {
   allow_delivery_type_list?: WalletChargeVerifyGetV30DataAllowDeliveryTypeList[];
-  company_id?: number;
+  company_id?: number | string;
   company_name?: string;
-  customer_id?: number;
+  customer_id?: number | string;
   customer_name?: string;
   subject_name?: string;
-  wallet_id?: number;
+  wallet_id?: number | string;
   wallet_name?: string;
 }
 

@@ -8,7 +8,7 @@ import type { LocalDeliveryQualificationListV30QualificationType, LocalDeliveryQ
 
 
 export interface OpenApiV30LocalDeliveryQualificationListGetRequest {
-  localAccountId: number;
+  localAccountId: number | string;
   page: number;
   pageSize: number;
   qualificationType?: LocalDeliveryQualificationListV30QualificationType;

@@ -5,7 +5,7 @@ import type { SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletIn
 
 export interface SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfo {
   adv_cnt?: number;
-  main_wallet_id?: number;
+  main_wallet_id?: number | string;
   sub_shared_range?: SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfoSubSharedRange;
 }
 

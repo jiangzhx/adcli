@@ -14,7 +14,7 @@ export interface LocalQualificationGetV30ResponseDataSubject {
   picture_url?: string;
   proprietor_name?: string;
   qualification_code?: string;
-  qualification_id?: number;
+  qualification_id?: number | string;
   qualification_type?: LocalQualificationGetV30DataSubjectQualificationType;
   registered_city_name?: string;
   registered_nation_name?: string;

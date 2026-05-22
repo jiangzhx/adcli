@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanBrandAuthorizedGetV10ResponseDataBrandInfosInner {
-  brand_id?: number;
+  brand_id?: number | string;
   brand_logo?: string;
   brand_name?: string;
 }

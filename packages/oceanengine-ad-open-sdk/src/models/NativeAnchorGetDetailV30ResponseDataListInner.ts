@@ -4,7 +4,7 @@
 import type { NativeAnchorGetDetailV30DataListAnchorType, NativeAnchorGetDetailV30DataListSource, NativeAnchorGetDetailV30ResponseDataListInnerAppEcommerceAnchor, NativeAnchorGetDetailV30ResponseDataListInnerGameAnchor, NativeAnchorGetDetailV30ResponseDataListInnerInsuranceEnterpriseAnchor, NativeAnchorGetDetailV30ResponseDataListInnerMicroAppAnchor, NativeAnchorGetDetailV30ResponseDataListInnerMicroGameAnchor, NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchor, NativeAnchorGetDetailV30ResponseDataListInnerPrivateChatAnchor, NativeAnchorGetDetailV30ResponseDataListInnerShoppingCartAnchor } from "../models";
 
 export interface NativeAnchorGetDetailV30ResponseDataListInner {
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   anchor_id?: string;
   anchor_type?: NativeAnchorGetDetailV30DataListAnchorType;
   app_ecommerce_anchor?: NativeAnchorGetDetailV30ResponseDataListInnerAppEcommerceAnchor;

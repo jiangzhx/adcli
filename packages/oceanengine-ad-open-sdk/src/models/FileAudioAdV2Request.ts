@@ -4,7 +4,7 @@
 import type { FileAudioAdV2UploadType } from "../models";
 
 export interface FileAudioAdV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   audio_file?: File;
   audio_signature?: string;
   audio_url?: string;

@@ -5,7 +5,7 @@ import type { DouplusOrderCreateV30ObjectInfosMarketingGoal } from "../models";
 
 export interface DouplusOrderCreateV30RequestObjectInfosInner {
   aweme_id?: string;
-  item_id?: number;
+  item_id?: number | string;
   marketing_goal: DouplusOrderCreateV30ObjectInfosMarketingGoal;
 }
 

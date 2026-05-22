@@ -4,8 +4,8 @@
 import type { MaterialStatusUpdateV30RequestDataInner } from "../models";
 
 export interface MaterialStatusUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   data: MaterialStatusUpdateV30RequestDataInner[];
-  promotion_id: number;
+  promotion_id: number | string;
 }
 

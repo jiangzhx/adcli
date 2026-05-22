@@ -4,7 +4,7 @@
 import type { AicElementUploadV30AccountType, AicElementUploadV30ElementType, AicElementUploadV30UseAs } from "../models";
 
 export interface AicElementUploadV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: AicElementUploadV30AccountType;
   element_name?: string;
   element_type: AicElementUploadV30ElementType;

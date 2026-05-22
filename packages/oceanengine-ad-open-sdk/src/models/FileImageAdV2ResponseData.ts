@@ -5,7 +5,7 @@ export interface FileImageAdV2ResponseData {
   format?: string;
   height?: number;
   id?: string;
-  material_id?: number;
+  material_id?: number | string;
   signature?: string;
   size?: number;
   url?: string;

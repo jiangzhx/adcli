@@ -8,7 +8,7 @@ import type { ToolsEbpAppGameBookListV30AccountType, ToolsEbpAppGameBookListV30A
 
 
 export interface OpenApiV30ToolsEbpAppGameBookListGetRequest {
-  accountId: number;
+  accountId: number | string;
   accountType: ToolsEbpAppGameBookListV30AccountType;
   assetOwnership: ToolsEbpAppGameBookListV30AssetOwnership;
   assetManagementScope?: ToolsEbpAppGameBookListV30AssetManagementScope;

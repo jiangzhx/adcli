@@ -12,7 +12,7 @@ export interface DouplusOrderCreateV30Request {
   external_action: DouplusOrderCreateV30ExternalAction;
   liveroom_heat_mode?: DouplusOrderCreateV30LiveroomHeatMode[];
   object_infos: DouplusOrderCreateV30RequestObjectInfosInner[];
-  rta_id?: number;
+  rta_id?: number | string;
   targeting?: DouplusOrderCreateV30RequestTargeting;
 }
 

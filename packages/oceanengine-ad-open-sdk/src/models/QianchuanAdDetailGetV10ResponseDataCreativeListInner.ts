@@ -6,7 +6,7 @@ import type { QianchuanAdDetailGetV10DataCreativeListImageMode, QianchuanAdDetai
 export interface QianchuanAdDetailGetV10ResponseDataCreativeListInner {
   carousel_material?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerCarouselMaterial;
   creative_create_time?: string;
-  creative_id?: number;
+  creative_id?: number | string;
   creative_modify_time?: string;
   image_material?: QianchuanAdDetailGetV10ResponseDataCreativeListInnerImageMaterial;
   image_mode?: QianchuanAdDetailGetV10DataCreativeListImageMode;

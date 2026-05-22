@@ -5,7 +5,7 @@ import type { StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationOb
 
 export interface StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationObjectInfoInner {
   object_field_info?: StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationObjectInfoInnerObjectFieldInfo;
-  object_id?: number;
+  object_id?: number | string;
   star_object_type?: number;
 }
 

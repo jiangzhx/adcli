@@ -3,6 +3,6 @@
 
 export interface ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ResponseDataErrorInner {
   fail_reason?: string;
-  project_id?: number;
+  project_id?: number | string;
 }
 

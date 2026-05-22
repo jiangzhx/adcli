@@ -6,13 +6,13 @@ import type { QianchuanProductAvailableGetV10DataProductListChannelType, Qianchu
 export interface QianchuanProductAvailableGetV10ResponseDataProductListInner {
   benefits?: string[];
   category_name?: string;
-  channel_id?: number;
+  channel_id?: number | string;
   channel_type?: QianchuanProductAvailableGetV10DataProductListChannelType;
   discount_higher_price?: number;
   discount_lower_price?: number;
   discount_price?: number;
   first_on_shelf_time?: number;
-  id?: number;
+  id?: number | string;
   img?: string;
   img_list?: QianchuanProductAvailableGetV10ResponseDataProductListInnerImgListInner[];
   inventory?: number;

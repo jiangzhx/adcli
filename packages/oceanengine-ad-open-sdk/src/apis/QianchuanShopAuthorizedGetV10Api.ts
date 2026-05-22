@@ -8,7 +8,7 @@ import type { QianchuanShopAuthorizedGetV10Response } from "../models";
 
 
 export interface OpenApiV10QianchuanShopAuthorizedGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
 }

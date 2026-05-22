@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface DmpDataSourceFileUploadV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   file: File;
   file_signature?: string;
 }

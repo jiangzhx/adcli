@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface KeywordDeleteV30Request {
-  advertiser_id: number;
-  keyword_ids: number[];
+  advertiser_id: number | string;
+  keyword_ids: number | string[];
 }
 

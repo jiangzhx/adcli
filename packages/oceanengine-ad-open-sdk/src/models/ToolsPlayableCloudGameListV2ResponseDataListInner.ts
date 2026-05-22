@@ -5,12 +5,12 @@ import type { ToolsPlayableCloudGameListV2DataListAdStatus, ToolsPlayableCloudGa
 
 export interface ToolsPlayableCloudGameListV2ResponseDataListInner {
   ad_status?: ToolsPlayableCloudGameListV2DataListAdStatus;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   create_time?: string;
   effective_time_end?: string;
   effective_time_start?: string;
   game_id?: string;
-  id?: number;
+  id?: number | string;
   modify_time?: string;
   name?: string;
   orientation?: ToolsPlayableCloudGameListV2DataListOrientation;

@@ -5,23 +5,23 @@ import type { AgentAdvBiddingListQueryV2DataDataAccountStatus } from "../models"
 
 export interface AgentAdvBiddingListQueryV2ResponseDataDataInner {
   account_status?: AgentAdvBiddingListQueryV2DataDataAccountStatus;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   advertiser_name?: string;
-  agent_id?: number;
+  agent_id?: number | string;
   agent_name?: string;
   agent_trans_amount?: number;
   agent_trans_num?: number;
   cash_cost?: number;
-  company_id?: number;
+  company_id?: number | string;
   company_name?: string;
-  first_industry_id?: number;
+  first_industry_id?: number | string;
   first_industry_name?: string;
   grant_balance?: number;
   grant_cost?: number;
   non_grant_balance_valid?: number;
   register_time?: string;
   roi2_cost?: number;
-  second_industry_id?: number;
+  second_industry_id?: number | string;
   second_industry_name?: string;
   stat_cost?: number;
   today_dth_cost?: number;

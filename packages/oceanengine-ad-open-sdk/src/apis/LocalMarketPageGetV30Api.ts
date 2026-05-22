@@ -8,8 +8,8 @@ import type { LocalMarketPageGetV30Response } from "../models";
 
 
 export interface OpenApiV30LocalMarketPageGetGetRequest {
-  localAccountId: number;
-  marketPageIds: number[];
+  localAccountId: number | string;
+  marketPageIds: number | string[];
 }
 
 export class LocalMarketPageGetV30Api {

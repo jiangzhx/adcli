@@ -4,7 +4,7 @@
 import type { ToolsEbpVideoUploadV30AccountType, ToolsEbpVideoUploadV30UploadType } from "../models";
 
 export interface ToolsEbpVideoUploadV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type?: ToolsEbpVideoUploadV30AccountType;
   file_name?: string;
   is_aigc?: boolean;

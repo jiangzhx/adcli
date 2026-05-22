@@ -2,8 +2,8 @@
 // Do not edit manually.
 
 export interface QianchuanUniPromotionAdProductDeleteV10Request {
-  ad_id: number;
-  advertiser_id: number;
-  product_ids: number[];
+  ad_id: number | string;
+  advertiser_id: number | string;
+  product_ids: number | string[];
 }
 

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarOrderGetInfoV2ResponseDataOrderListInnerOrderItemInfoAuthorListInner {
-  author_id?: number;
+  author_id?: number | string;
   cnt?: number;
   video_type?: number;
 }

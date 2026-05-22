@@ -8,7 +8,7 @@ import type { BusinessPlatformCompanyInfoGetV30Response } from "../models";
 
 
 export interface OpenApiV30BusinessPlatformCompanyInfoGetGetRequest {
-  organizationId: number;
+  organizationId: number | string;
   page?: number;
   pageSize?: number;
 }

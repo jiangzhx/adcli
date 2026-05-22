@@ -19,6 +19,6 @@ export interface FileMaterialAttributesListV2ResponseDataMaterialsInner {
   is_similar_material?: boolean;
   is_similar_queue_material?: boolean;
   local_low_quality_suggestions?: string[];
-  material_id: number;
+  material_id: number | string;
 }
 

@@ -4,7 +4,7 @@
 import type { CarouselCreateV2RequestImagesInner } from "../models";
 
 export interface CarouselCreateV2Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   audio_id?: string;
   description?: string;
   file_name?: string;

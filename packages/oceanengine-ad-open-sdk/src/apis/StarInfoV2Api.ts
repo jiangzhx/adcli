@@ -8,7 +8,7 @@ import type { StarInfoV2Response } from "../models";
 
 
 export interface OpenApi2StarInfoGetRequest {
-  starIds: number[];
+  starIds: number | string[];
 }
 
 export class StarInfoV2Api {

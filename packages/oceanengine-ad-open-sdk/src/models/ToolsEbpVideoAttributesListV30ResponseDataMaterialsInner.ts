@@ -10,6 +10,6 @@ export interface ToolsEbpVideoAttributesListV30ResponseDataMaterialsInner {
   is_ecp_low_quality_material?: boolean;
   is_first_publish_material?: boolean;
   is_inefficient_material?: boolean;
-  material_id: number;
+  material_id: number | string;
 }
 

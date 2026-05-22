@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface CreativeCustomCreativeUpdateV2RequestCreativeListInnerInteractiveMaterial {
-  playable_id: number;
+  playable_id: number | string;
 }
 

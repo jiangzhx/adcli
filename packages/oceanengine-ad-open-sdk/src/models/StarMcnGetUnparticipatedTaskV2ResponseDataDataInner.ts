@@ -10,7 +10,7 @@ export interface StarMcnGetUnparticipatedTaskV2ResponseDataDataInner {
   commission_rate_iaap?: string;
   create_time: string;
   demand_icon?: string;
-  demand_id: number;
+  demand_id: number | string;
   demand_name: string;
   evaluate_type?: number;
   expiration_time?: string;

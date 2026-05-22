@@ -4,7 +4,7 @@
 import type { CustomerCenterAccountListV30FilterAccountType } from "../models";
 
 export interface CustomerCenterAccountListV30Filter {
-  account_ids?: number[];
+  account_ids?: number | string[];
   account_name?: string;
   account_tag?: string;
   account_type: CustomerCenterAccountListV30FilterAccountType;

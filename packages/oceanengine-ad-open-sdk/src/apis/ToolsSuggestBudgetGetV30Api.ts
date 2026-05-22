@@ -8,8 +8,8 @@ import type { ToolsSuggestBudgetGetV30Response } from "../models";
 
 
 export interface OpenApiV30ToolsSuggestBudgetGetGetRequest {
-  advertiserId: number;
-  promotionIds: number[];
+  advertiserId: number | string;
+  promotionIds: number | string[];
 }
 
 export class ToolsSuggestBudgetGetV30Api {

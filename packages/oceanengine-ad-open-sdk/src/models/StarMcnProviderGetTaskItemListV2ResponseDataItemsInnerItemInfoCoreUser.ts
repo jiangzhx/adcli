@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoCoreUser {
-  id?: number;
+  id?: number | string;
   nick_name?: string;
 }
 

@@ -5,9 +5,9 @@ import type { StarDemandOmExpandChallengeV2RequestOmParticipateAuthorRange } fro
 
 export interface StarDemandOmExpandChallengeV2Request {
   challenge_end_time?: number;
-  challenge_task_id: number;
-  developer_id?: number;
+  challenge_task_id: number | string;
+  developer_id?: number | string;
   om_participate_author_range?: StarDemandOmExpandChallengeV2RequestOmParticipateAuthorRange;
-  star_id: number;
+  star_id: number | string;
 }
 

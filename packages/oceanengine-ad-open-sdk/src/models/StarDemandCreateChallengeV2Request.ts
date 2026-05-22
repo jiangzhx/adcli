@@ -6,6 +6,6 @@ import type { StarDemandCreateChallengeV2RequestChallengeInfo, StarDemandCreateC
 export interface StarDemandCreateChallengeV2Request {
   challenge_info: StarDemandCreateChallengeV2RequestChallengeInfo;
   demand_info: StarDemandCreateChallengeV2RequestDemandInfo;
-  star_id: number;
+  star_id: number | string;
 }
 

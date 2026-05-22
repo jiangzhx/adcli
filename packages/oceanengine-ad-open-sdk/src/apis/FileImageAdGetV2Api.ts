@@ -8,7 +8,7 @@ import type { FileImageAdGetV2Response } from "../models";
 
 
 export interface OpenApi2FileImageAdGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   imageIds: string[];
 }
 

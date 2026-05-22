@@ -3,6 +3,6 @@
 
 export interface LocalChargeSubmitV30ResponseData {
   cashier_url?: string;
-  charge_order_id?: number;
+  charge_order_id?: number | string;
 }
 

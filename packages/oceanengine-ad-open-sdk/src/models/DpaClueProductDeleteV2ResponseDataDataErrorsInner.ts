@@ -3,6 +3,6 @@
 
 export interface DpaClueProductDeleteV2ResponseDataDataErrorsInner {
   error_message?: string;
-  product_id?: number;
+  product_id?: number | string;
 }
 

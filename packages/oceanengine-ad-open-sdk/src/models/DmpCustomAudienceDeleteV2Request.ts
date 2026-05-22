@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface DmpCustomAudienceDeleteV2Request {
-  advertiser_id: number;
-  custom_audience_id: number;
+  advertiser_id: number | string;
+  custom_audience_id: number | string;
 }
 

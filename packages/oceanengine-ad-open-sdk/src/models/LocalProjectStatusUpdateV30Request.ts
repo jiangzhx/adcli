@@ -5,6 +5,6 @@ import type { LocalProjectStatusUpdateV30RequestDataInner } from "../models";
 
 export interface LocalProjectStatusUpdateV30Request {
   data: LocalProjectStatusUpdateV30RequestDataInner[];
-  local_account_id: number;
+  local_account_id: number | string;
 }
 

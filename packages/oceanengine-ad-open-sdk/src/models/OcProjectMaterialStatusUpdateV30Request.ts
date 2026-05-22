@@ -4,8 +4,8 @@
 import type { OcProjectMaterialStatusUpdateV30RequestDataInner } from "../models";
 
 export interface OcProjectMaterialStatusUpdateV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   data: OcProjectMaterialStatusUpdateV30RequestDataInner[];
-  project_id: number;
+  project_id: number | string;
 }
 

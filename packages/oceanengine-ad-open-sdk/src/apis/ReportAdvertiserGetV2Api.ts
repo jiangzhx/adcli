@@ -8,7 +8,7 @@ import type { ReportAdvertiserGetV2Filtering, ReportAdvertiserGetV2GroupBy, Repo
 
 
 export interface OpenApi2ReportAdvertiserGetGetRequest {
-  advertiserId?: number;
+  advertiserId?: number | string;
   endDate?: string;
   fields?: string[];
   filtering?: ReportAdvertiserGetV2Filtering;

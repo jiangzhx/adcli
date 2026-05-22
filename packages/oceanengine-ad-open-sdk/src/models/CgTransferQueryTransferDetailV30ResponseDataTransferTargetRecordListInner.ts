@@ -4,8 +4,8 @@
 import type { CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferStatus, CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInnerTransferCapitalRecordListInner } from "../models";
 
 export interface CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInner {
-  account_id?: number;
-  target_account_id?: number;
+  account_id?: number | string;
+  target_account_id?: number | string;
   target_transfer_serial?: string;
   transfer_amount?: number;
   transfer_capital_record_list?: CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInnerTransferCapitalRecordListInner[];

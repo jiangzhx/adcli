@@ -8,8 +8,8 @@ import type { ToolsInterestActionKeywordSuggestV2ActionDays, ToolsInterestAction
 
 
 export interface OpenApi2ToolsInterestActionKeywordSuggestGetRequest {
-  advertiserId: number;
-  id: number;
+  advertiserId: number | string;
+  id: number | string;
   tagType: ToolsInterestActionKeywordSuggestV2TagType;
   targetingType: ToolsInterestActionKeywordSuggestV2TargetingType;
   actionDays?: ToolsInterestActionKeywordSuggestV2ActionDays;

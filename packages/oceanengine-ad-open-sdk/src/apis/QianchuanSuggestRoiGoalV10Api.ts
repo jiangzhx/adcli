@@ -8,19 +8,19 @@ import type { QianchuanSuggestRoiGoalV10CampaignScene, QianchuanSuggestRoiGoalV1
 
 
 export interface OpenApiV10QianchuanSuggestRoiGoalGetRequest {
-  advertiserId: number;
-  awemeId?: number;
+  advertiserId: number | string;
+  awemeId?: number | string;
   marketingScene?: QianchuanSuggestRoiGoalV10MarketingScene;
   marketingGoal?: QianchuanSuggestRoiGoalV10MarketingGoal;
-  productId?: number;
+  productId?: number | string;
   productNewOpen?: boolean;
   externalAction?: QianchuanSuggestRoiGoalV10ExternalAction;
   campaignScene?: QianchuanSuggestRoiGoalV10CampaignScene;
   deepExternalAction?: QianchuanSuggestRoiGoalV10DeepExternalAction;
   deepBidType?: QianchuanSuggestRoiGoalV10DeepBidType;
   ecomGuestType?: QianchuanSuggestRoiGoalV10EcomGuestType;
-  shopId?: number;
-  brandId?: number;
+  shopId?: number | string;
+  brandId?: number | string;
 }
 
 export class QianchuanSuggestRoiGoalV10Api {

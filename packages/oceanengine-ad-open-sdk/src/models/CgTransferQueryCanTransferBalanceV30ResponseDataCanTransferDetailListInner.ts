@@ -6,6 +6,6 @@ import type { CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailL
 export interface CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInner {
   capital_detail_list?: CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerCapitalDetailListInner[];
   payee_transfer_amount_detail_list?: CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInner[];
-  remitter_account_id?: number;
+  remitter_account_id?: number | string;
 }
 

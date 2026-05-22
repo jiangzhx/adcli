@@ -9,8 +9,8 @@ export interface StarOrderDetailV2ResponseDataVideoListInner {
   create_time?: number;
   detail_audit_info?: StarOrderDetailV2ResponseDataVideoListInnerDetailAuditInfoInner[];
   duration?: number;
-  item_id?: number;
-  resource_id?: number;
+  item_id?: number | string;
+  resource_id?: number | string;
   resource_url?: string;
   status?: number;
 }

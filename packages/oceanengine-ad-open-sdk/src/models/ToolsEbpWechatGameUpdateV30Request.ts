@@ -4,14 +4,14 @@
 import type { ToolsEbpWechatGameUpdateV30AccountType, ToolsEbpWechatGameUpdateV30RequestExtra, ToolsEbpWechatGameUpdateV30RequestHead, ToolsEbpWechatGameUpdateV30RequestIcon, ToolsEbpWechatGameUpdateV30RequestMaterialInner, ToolsEbpWechatGameUpdateV30RequestQualificationsInner, ToolsEbpWechatGameUpdateV30RequestSubject } from "../models";
 
 export interface ToolsEbpWechatGameUpdateV30Request {
-  account_id: number;
+  account_id: number | string;
   account_type: ToolsEbpWechatGameUpdateV30AccountType;
   data: Record<string, unknown>;
   extra: ToolsEbpWechatGameUpdateV30RequestExtra;
   guide_copy: string;
   head: ToolsEbpWechatGameUpdateV30RequestHead;
   icon: ToolsEbpWechatGameUpdateV30RequestIcon;
-  instance_id: number;
+  instance_id: number | string;
   introduction: string;
   label: string[];
   material: ToolsEbpWechatGameUpdateV30RequestMaterialInner[];

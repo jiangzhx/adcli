@@ -5,7 +5,7 @@ import type { ToolsEventAllAssetsListV2DataAssetListAssetType, ToolsEventAllAsse
 
 export interface ToolsEventAllAssetsListV2ResponseDataAssetListInner {
   app_force_info?: string;
-  asset_id?: number;
+  asset_id?: number | string;
   asset_name?: string;
   asset_type?: ToolsEventAllAssetsListV2DataAssetListAssetType;
   create_time?: string;

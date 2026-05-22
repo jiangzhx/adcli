@@ -8,12 +8,12 @@ import type { ToolsClueGetV2Response } from "../models";
 
 
 export interface OpenApi2ToolsClueGetGetRequest {
-  advertiserIds?: number[];
+  advertiserIds?: number | string[];
   startTime?: string;
   endTime?: string;
   page?: number;
   pageSize?: number;
-  clueIds?: number[];
+  clueIds?: number | string[];
   encryptSensitiveFields?: boolean;
 }
 

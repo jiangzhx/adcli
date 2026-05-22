@@ -5,7 +5,7 @@ import type { StarReportOrderOverviewV2ResponseDataBaseStatsInnerConvertStat, St
 
 export interface StarReportOrderOverviewV2ResponseDataBaseStatsInner {
   convert_stat?: StarReportOrderOverviewV2ResponseDataBaseStatsInnerConvertStat;
-  order_id?: number;
+  order_id?: number | string;
   seed_stat?: StarReportOrderOverviewV2ResponseDataBaseStatsInnerSeedStat;
   spread_stat?: StarReportOrderOverviewV2ResponseDataBaseStatsInnerSpreadStat;
   worth_score_stat?: StarReportOrderOverviewV2ResponseDataBaseStatsInnerWorthScoreStat;

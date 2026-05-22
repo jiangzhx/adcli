@@ -9,7 +9,7 @@ import type { ToolsRubeexPlayableAdListV2Response } from "../models";
 
 export interface OpenApi2ToolsRubeexPlayableAdListGetRequest {
   playableId: number;
-  advertiserId: number;
+  advertiserId: number | string;
   page?: number;
   pageSize?: number;
 }

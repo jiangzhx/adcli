@@ -4,7 +4,7 @@
 import type { CarouselAdGetV2ResponseDataCarouselsInner } from "../models";
 
 export interface CarouselAdGetV2ResponseData {
-  advertiser_id: number;
+  advertiser_id: number | string;
   carousels?: CarouselAdGetV2ResponseDataCarouselsInner[];
 }
 

@@ -8,7 +8,7 @@ import type { BrandCreativeGetV30CreativeStatus, BrandCreativeGetV30Response } f
 
 
 export interface OpenApiV30BrandCreativeGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   page: number;
   size: number;
   adIds?: string[];

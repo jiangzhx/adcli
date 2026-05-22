@@ -8,8 +8,8 @@ import type { EventManagerEventConfigsGetV2Response, EventManagerEventConfigsGet
 
 
 export interface OpenApi2EventManagerEventConfigsGetGetRequest {
-  advertiserId: number;
-  assetId: number;
+  advertiserId: number | string;
+  assetId: number | string;
   sortType?: EventManagerEventConfigsGetV2SortType;
 }
 

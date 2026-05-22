@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ClueCouponCreateV2ResponseData {
-  activity_id?: number;
+  activity_id?: number | string;
 }
 

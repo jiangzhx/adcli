@@ -8,7 +8,7 @@ import type { ToolsVideoCoverSuggestV2Response } from "../models";
 
 
 export interface OpenApi2ToolsVideoCoverSuggestGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   videoId: string;
 }
 

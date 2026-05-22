@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsTaskRaiseCreateV2ResponseData {
-  report_id?: number;
+  report_id?: number | string;
 }
 

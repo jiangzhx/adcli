@@ -4,7 +4,7 @@
 export interface StarDemandCreateAssignV2RequestDemandInfoAdSyncConfContentMarketing {
   ad_sync?: number;
   ad_sync_origin?: number;
-  advertiser_id?: number;
+  advertiser_id?: number | string;
   auto_sync?: number;
   auto_sync_specify_material_platforms?: number[];
   product_link?: string;

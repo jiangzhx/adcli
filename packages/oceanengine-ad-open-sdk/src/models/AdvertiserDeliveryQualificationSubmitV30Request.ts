@@ -4,7 +4,7 @@
 import type { AdvertiserDeliveryQualificationSubmitV30RequestQualificationsInner } from "../models";
 
 export interface AdvertiserDeliveryQualificationSubmitV30Request {
-  advertiser_id: number;
+  advertiser_id: number | string;
   qualifications: AdvertiserDeliveryQualificationSubmitV30RequestQualificationsInner[];
 }
 

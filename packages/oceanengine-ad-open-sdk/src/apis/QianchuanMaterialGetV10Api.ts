@@ -8,7 +8,7 @@ import type { QianchuanMaterialGetV10CampaignScene, QianchuanMaterialGetV10Filte
 
 
 export interface OpenApiV10QianchuanMaterialGetGetRequest {
-  advertiserId: number;
+  advertiserId: number | string;
   marketingGoal: QianchuanMaterialGetV10MarketingGoal;
   marketingScene: QianchuanMaterialGetV10MarketingScene;
   filtering: QianchuanMaterialGetV10Filtering;
