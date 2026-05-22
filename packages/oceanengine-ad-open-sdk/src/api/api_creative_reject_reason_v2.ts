@@ -33,7 +33,7 @@ export class CreativeRejectReasonV2Api {
       path: "/open_api/2/creative/reject_reason/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "creative_ids", value: request.creativeIds, collectionFormat: "csv" }
+        { name: "creative_ids", value: request.creativeIds }
       ]
     });
   }

@@ -38,7 +38,7 @@ export class ReportVideoFrameGetV2Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "end_date", value: request.endDate },
         { name: "filtering", value: request.filtering },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "metrics", value: request.metrics },
         { name: "start_date", value: request.startDate }
       ]
     });

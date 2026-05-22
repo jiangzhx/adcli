@@ -45,7 +45,7 @@ export class DpaEbpClueProductGetV30Api {
       queryParams: [
         { name: "account_id", value: request.accountId },
         { name: "account_type", value: request.accountType },
-        { name: "product_ids", value: request.productIds, collectionFormat: "csv" }
+        { name: "product_ids", value: request.productIds }
       ]
     });
   }

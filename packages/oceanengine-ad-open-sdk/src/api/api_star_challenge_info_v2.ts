@@ -39,7 +39,7 @@ export class StarChallengeInfoV2Api {
       path: "/open_api/2/star/challenge/info/",
       queryParams: [
         { name: "star_id", value: request.starId },
-        { name: "challenge_task_ids", value: request.challengeTaskIds, collectionFormat: "csv" }
+        { name: "challenge_task_ids", value: request.challengeTaskIds }
       ]
     });
   }

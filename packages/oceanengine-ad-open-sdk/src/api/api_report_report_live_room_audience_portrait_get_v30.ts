@@ -54,7 +54,7 @@ export class ReportReportLiveRoomAudiencePortraitGetV30Api {
         { name: "dimension", value: request.dimension },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "filtering", value: request.filtering },
         { name: "order_field", value: request.orderField },
         { name: "order_type", value: request.orderType },

@@ -41,7 +41,7 @@ export class ToolsPromotionCardRecommendGetV2Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "download_type", value: request.downloadType },
         { name: "recommend_type", value: request.recommendType },
-        { name: "title_list", value: request.titleList, collectionFormat: "csv" }
+        { name: "title_list", value: request.titleList }
       ]
     });
   }

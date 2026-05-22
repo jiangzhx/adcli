@@ -61,7 +61,7 @@ export class QianchuanReportAdGetV10Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "start_date", value: request.startDate },
         { name: "end_date", value: request.endDate },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "filtering", value: request.filtering },
         { name: "time_granularity", value: request.timeGranularity },
         { name: "order_field", value: request.orderField },

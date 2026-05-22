@@ -71,7 +71,7 @@ export class StarMcnProviderGetUnparticipatedTaskV2Api {
         { name: "demand_id", value: request.demandId },
         { name: "game_type", value: request.gameType },
         { name: "component_type", value: request.componentType },
-        { name: "search_tags", value: request.searchTags, collectionFormat: "csv" },
+        { name: "search_tags", value: request.searchTags },
         { name: "first_category_id", value: request.firstCategoryId },
         { name: "second_category_id", value: request.secondCategoryId }
       ]

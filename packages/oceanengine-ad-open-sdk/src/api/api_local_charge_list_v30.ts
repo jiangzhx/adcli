@@ -49,7 +49,7 @@ export class LocalChargeListV30Api {
         { name: "local_account_id", value: request.localAccountId },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
-        { name: "charge_methods", value: request.chargeMethods, collectionFormat: "csv" },
+        { name: "charge_methods", value: request.chargeMethods },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }
       ]

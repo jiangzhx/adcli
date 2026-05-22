@@ -49,7 +49,7 @@ export class ToolsVideoCheckAvailableAnchorV2Api {
       path: "/open_api/2/tools/video/check_available_anchor/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "item_ids", value: request.itemIds, collectionFormat: "csv" },
+        { name: "item_ids", value: request.itemIds },
         { name: "landing_type", value: request.landingType },
         { name: "external_action", value: request.externalAction }
       ]

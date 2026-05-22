@@ -62,7 +62,7 @@ export class CgTransferWalletTransferCanTransferBalanceV30Api {
         { name: "account_type", value: request.accountType },
         { name: "biz_request_no", value: request.bizRequestNo },
         { name: "main_wallet_id", value: request.mainWalletId },
-        { name: "sub_wallet_list", value: request.subWalletList, collectionFormat: "csv" },
+        { name: "sub_wallet_list", value: request.subWalletList },
         { name: "transfer_direction", value: request.transferDirection }
       ]
     });

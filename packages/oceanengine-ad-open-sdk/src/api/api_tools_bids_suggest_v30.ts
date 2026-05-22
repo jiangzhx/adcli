@@ -58,7 +58,7 @@ export class ToolsBidsSuggestV30Api {
         { name: "external_action", value: request.externalAction },
         { name: "deep_external_action", value: request.deepExternalAction },
         { name: "deep_bid_type", value: request.deepBidType },
-        { name: "platform", value: request.platform, collectionFormat: "csv" },
+        { name: "platform", value: request.platform },
         { name: "marketing_goal", value: request.marketingGoal },
         { name: "campaign_type", value: request.campaignType },
         { name: "package_name", value: request.packageName },

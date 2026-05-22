@@ -56,7 +56,7 @@ export class QianchuanTodayLiveV2RoomUserGetV10Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "room_id", value: request.roomId },
         { name: "action_event", value: request.actionEvent },
-        { name: "dimension", value: request.dimension, collectionFormat: "csv" },
+        { name: "dimension", value: request.dimension },
         { name: "flow_source", value: request.flowSource }
       ]
     });

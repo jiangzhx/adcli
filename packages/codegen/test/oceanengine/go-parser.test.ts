@@ -57,7 +57,7 @@ func (a *ReportCustomConfigGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCu
     ]);
     expect(api.queryParams).toEqual([
       { name: "advertiser_id", source: "request.advertiserId" },
-      { name: "data_topics", source: "request.dataTopics", collectionFormat: "csv" },
+      { name: "data_topics", source: "request.dataTopics" },
     ]);
     expect(api.contentTypes).toEqual([]);
     expect(api.bodyParam).toBeUndefined();

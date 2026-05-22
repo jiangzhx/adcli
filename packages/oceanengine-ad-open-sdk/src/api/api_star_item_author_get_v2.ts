@@ -39,7 +39,7 @@ export class StarItemAuthorGetV2Api {
       path: "/open_api/2/star/item/author/get/",
       queryParams: [
         { name: "star_id", value: request.starId },
-        { name: "item_ids", value: request.itemIds, collectionFormat: "csv" }
+        { name: "item_ids", value: request.itemIds }
       ]
     });
   }

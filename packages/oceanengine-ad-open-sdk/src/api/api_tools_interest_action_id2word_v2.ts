@@ -37,7 +37,7 @@ export class ToolsInterestActionId2wordV2Api {
       queryParams: [
         { name: "action_days", value: request.actionDays },
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "ids", value: request.ids, collectionFormat: "csv" },
+        { name: "ids", value: request.ids },
         { name: "tag_type", value: request.tagType },
         { name: "targeting_type", value: request.targetingType }
       ]

@@ -33,7 +33,7 @@ export class StarInfoV2Api {
       method: "GET",
       path: "/open_api/2/star/info/",
       queryParams: [
-        { name: "star_ids", value: request.starIds, collectionFormat: "csv" }
+        { name: "star_ids", value: request.starIds }
       ]
     });
   }

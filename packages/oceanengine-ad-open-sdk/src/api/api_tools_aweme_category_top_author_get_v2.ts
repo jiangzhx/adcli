@@ -34,7 +34,7 @@ export class ToolsAwemeCategoryTopAuthorGetV2Api {
       path: "/open_api/2/tools/aweme_category_top_author/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "behaviors", value: request.behaviors, collectionFormat: "csv" },
+        { name: "behaviors", value: request.behaviors },
         { name: "category_id", value: request.categoryId }
       ]
     });

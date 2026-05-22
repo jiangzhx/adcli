@@ -50,7 +50,7 @@ export class CgTransferTransferBalanceGetV30Api {
       queryParams: [
         { name: "organization_id", value: request.organizationId },
         { name: "biz_request_no", value: request.bizRequestNo },
-        { name: "target_id_list", value: request.targetIdList, collectionFormat: "csv" },
+        { name: "target_id_list", value: request.targetIdList },
         { name: "platform", value: request.platform }
       ]
     });

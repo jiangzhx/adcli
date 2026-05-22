@@ -45,7 +45,7 @@ export class QianchuanAdMaterialSuggestionV10Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "ad_id", value: request.adId },
-        { name: "material_ids", value: request.materialIds, collectionFormat: "csv" }
+        { name: "material_ids", value: request.materialIds }
       ]
     });
   }

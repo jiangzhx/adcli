@@ -39,7 +39,7 @@ export class LocalFileVideoUploadTaskListV30Api {
       path: "/open_api/v3.0/local/file/video/upload_task/list/",
       queryParams: [
         { name: "local_account_id", value: request.localAccountId },
-        { name: "task_ids", value: request.taskIds, collectionFormat: "csv" }
+        { name: "task_ids", value: request.taskIds }
       ]
     });
   }

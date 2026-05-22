@@ -57,12 +57,12 @@ export class DpaEbpClueProductListV30Api {
       queryParams: [
         { name: "account_id", value: request.accountId },
         { name: "account_type", value: request.accountType },
-        { name: "product_ids", value: request.productIds, collectionFormat: "csv" },
+        { name: "product_ids", value: request.productIds },
         { name: "product_name", value: request.productName },
-        { name: "audit_status", value: request.auditStatus, collectionFormat: "csv" },
-        { name: "category_ids", value: request.categoryIds, collectionFormat: "csv" },
+        { name: "audit_status", value: request.auditStatus },
+        { name: "category_ids", value: request.categoryIds },
         { name: "product_id_or_name_search", value: request.productIdOrNameSearch },
-        { name: "statuses", value: request.statuses, collectionFormat: "csv" },
+        { name: "statuses", value: request.statuses },
         { name: "asset_query_scope", value: request.assetQueryScope },
         { name: "offset", value: request.offset },
         { name: "limit", value: request.limit }

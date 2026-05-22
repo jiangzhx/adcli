@@ -54,9 +54,9 @@ export class BrandAdGetV30Api {
       path: "/open_api/v3.0/brand/ad/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "ad_ids", value: request.adIds, collectionFormat: "csv" },
-        { name: "ad_names", value: request.adNames, collectionFormat: "csv" },
-        { name: "campaign_ids", value: request.campaignIds, collectionFormat: "csv" },
+        { name: "ad_ids", value: request.adIds },
+        { name: "ad_names", value: request.adNames },
+        { name: "campaign_ids", value: request.campaignIds },
         { name: "app_origin", value: request.appOrigin },
         { name: "ad_form", value: request.adForm },
         { name: "ad_status", value: request.adStatus },

@@ -52,7 +52,7 @@ export class QianchuanReportUniPromotionDimensionDataRoomGetV10Api {
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "dimension", value: request.dimension },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "metrics", value: request.metrics },
         { name: "order_field", value: request.orderField },
         { name: "order_type", value: request.orderType },
         { name: "page", value: request.page },

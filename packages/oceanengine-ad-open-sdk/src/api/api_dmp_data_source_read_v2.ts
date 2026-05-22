@@ -33,7 +33,7 @@ export class DmpDataSourceReadV2Api {
       path: "/open_api/2/dmp/data_source/read/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "data_source_id_list", value: request.dataSourceIdList, collectionFormat: "csv" }
+        { name: "data_source_id_list", value: request.dataSourceIdList }
       ]
     });
   }

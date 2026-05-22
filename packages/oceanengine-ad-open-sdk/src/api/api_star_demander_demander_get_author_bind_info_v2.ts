@@ -39,7 +39,7 @@ export class StarDemanderDemanderGetAuthorBindInfoV2Api {
       path: "/open_api/2/star/demander/demander_get_author_bind_info/",
       queryParams: [
         { name: "star_id", value: request.starId },
-        { name: "biz_uid", value: request.bizUid, collectionFormat: "csv" },
+        { name: "biz_uid", value: request.bizUid },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "page", value: request.page },

@@ -51,7 +51,7 @@ export class ReportBrandAdGetV30Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "landing_type", value: request.landingType },
         { name: "pricing_type", value: request.pricingType },
-        { name: "ad_ids", value: request.adIds, collectionFormat: "csv" },
+        { name: "ad_ids", value: request.adIds },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "page", value: request.page },

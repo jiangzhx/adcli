@@ -43,9 +43,9 @@ export class ReportAdvertiserGetV2Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "end_date", value: request.endDate },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "filtering", value: request.filtering },
-        { name: "group_by", value: request.groupBy, collectionFormat: "csv" },
+        { name: "group_by", value: request.groupBy },
         { name: "order_field", value: request.orderField },
         { name: "order_type", value: request.orderType },
         { name: "page", value: request.page },

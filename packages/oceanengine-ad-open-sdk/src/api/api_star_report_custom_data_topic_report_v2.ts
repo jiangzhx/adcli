@@ -51,7 +51,7 @@ export class StarReportCustomDataTopicReportV2Api {
         { name: "star_id", value: request.starId },
         { name: "work_id", value: request.workId },
         { name: "demand_id", value: request.demandId },
-        { name: "topics", value: request.topics, collectionFormat: "csv" }
+        { name: "topics", value: request.topics }
       ]
     });
   }

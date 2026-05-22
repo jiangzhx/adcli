@@ -33,7 +33,7 @@ export class QianchuanAdvertiserTypeGetV10Api {
       method: "GET",
       path: "/open_api/v1.0/qianchuan/advertiser/type/get/",
       queryParams: [
-        { name: "advertiser_ids", value: request.advertiserIds, collectionFormat: "csv" }
+        { name: "advertiser_ids", value: request.advertiserIds }
       ]
     });
   }

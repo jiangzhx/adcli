@@ -33,7 +33,7 @@ export class AgentAdvertiserInfoQueryV2Api {
       method: "GET",
       path: "/open_api/2/agent/advertiser_info/query/",
       queryParams: [
-        { name: "account_ids", value: request.accountIds, collectionFormat: "csv" }
+        { name: "account_ids", value: request.accountIds }
       ]
     });
   }

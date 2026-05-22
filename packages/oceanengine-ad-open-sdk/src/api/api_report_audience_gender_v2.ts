@@ -39,8 +39,8 @@ export class ReportAudienceGenderV2Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "end_date", value: request.endDate },
         { name: "id_type", value: request.idType },
-        { name: "ids", value: request.ids, collectionFormat: "csv" },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "ids", value: request.ids },
+        { name: "metrics", value: request.metrics },
         { name: "start_date", value: request.startDate }
       ]
     });

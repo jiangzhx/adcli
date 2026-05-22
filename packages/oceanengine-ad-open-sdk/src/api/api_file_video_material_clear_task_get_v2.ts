@@ -37,7 +37,7 @@ export class FileVideoMaterialClearTaskGetV2Api {
       path: "/open_api/2/file/video/material/clear_task/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "clear_ids", value: request.clearIds, collectionFormat: "csv" },
+        { name: "clear_ids", value: request.clearIds },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }
       ]

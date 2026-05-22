@@ -41,7 +41,7 @@ export class CreativeGetV2Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "filtering", value: request.filtering },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
         { name: "cursor", value: request.cursor },

@@ -39,7 +39,7 @@ export class StarReportOrderOverviewV2Api {
       path: "/open_api/2/star/report/order_overview/",
       queryParams: [
         { name: "star_id", value: request.starId },
-        { name: "order_ids", value: request.orderIds, collectionFormat: "csv" }
+        { name: "order_ids", value: request.orderIds }
       ]
     });
   }

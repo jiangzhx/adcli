@@ -38,7 +38,7 @@ export class AgentAdvertiserSelectV2Api {
       path: "/open_api/2/agent/advertiser/select/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "company_ids", value: request.companyIds, collectionFormat: "csv" },
+        { name: "company_ids", value: request.companyIds },
         { name: "count", value: request.count },
         { name: "cursor", value: request.cursor },
         { name: "filtering", value: request.filtering },

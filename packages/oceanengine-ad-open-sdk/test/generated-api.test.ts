@@ -33,7 +33,7 @@ describe("generated APIs", () => {
     expect(await requests[0].text()).toBe(JSON.stringify({ auth_code: "code", secret: "secret" }));
   });
 
-  test("ReportCustomConfigGetV30Api sends csv query and validates required params", async () => {
+  test("ReportCustomConfigGetV30Api sends Go-compatible JSON array query and validates required params", async () => {
     const requests: Request[] = [];
     const api = new ReportCustomConfigGetV30Api(
       new ApiClient({
@@ -54,7 +54,7 @@ describe("generated APIs", () => {
     expect(requests[0].method).toBe("GET");
     expect(url.pathname).toBe("/open_api/v3.0/report/custom/config/get/");
     expect(url.searchParams.get("advertiser_id")).toBe("123");
-    expect(url.searchParams.get("data_topics")).toBe("BASIC_DATA");
+    expect(url.searchParams.get("data_topics")).toBe(JSON.stringify([ReportCustomConfigGetV30DataTopics.BASIC_DATA]));
   });
 
   test("AdvertiserFundGetV2Api sends scalar query params", async () => {

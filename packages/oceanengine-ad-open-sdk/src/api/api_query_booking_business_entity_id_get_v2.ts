@@ -39,7 +39,7 @@ export class QueryBookingBusinessEntityIdGetV2Api {
       path: "/open_api/2/query/booking/business_entity_id/get/",
       queryParams: [
         { name: "agent_id", value: request.agentId },
-        { name: "order_ids", value: request.orderIds, collectionFormat: "csv" }
+        { name: "order_ids", value: request.orderIds }
       ]
     });
   }

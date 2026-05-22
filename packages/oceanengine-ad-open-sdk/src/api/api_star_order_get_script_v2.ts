@@ -39,7 +39,7 @@ export class StarOrderGetScriptV2Api {
       path: "/open_api/2/star/order/get_script/",
       queryParams: [
         { name: "star_id", value: request.starId },
-        { name: "order_ids", value: request.orderIds, collectionFormat: "csv" }
+        { name: "order_ids", value: request.orderIds }
       ]
     });
   }

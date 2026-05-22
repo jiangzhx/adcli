@@ -33,7 +33,7 @@ export class FileAutoGenerateSourceGetV2Api {
       path: "/open_api/2/file/auto_generate_source/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "materials", value: request.materials, collectionFormat: "csv" }
+        { name: "materials", value: request.materials }
       ]
     });
   }

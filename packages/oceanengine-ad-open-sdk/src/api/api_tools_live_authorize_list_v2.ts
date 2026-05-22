@@ -37,7 +37,7 @@ export class ToolsLiveAuthorizeListV2Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
-        { name: "status", value: request.status, collectionFormat: "csv" }
+        { name: "status", value: request.status }
       ]
     });
   }

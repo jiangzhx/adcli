@@ -39,7 +39,7 @@ export class PromotionCostProtectStatusGetV30Api {
       path: "/open_api/v3.0/promotion/cost_protect_status/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "promotion_ids", value: request.promotionIds, collectionFormat: "csv" }
+        { name: "promotion_ids", value: request.promotionIds }
       ]
     });
   }

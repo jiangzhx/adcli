@@ -73,7 +73,7 @@ export class QianchuanToolsSmartBoostAdBoostReportGetV10Api {
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "time_granularity", value: request.timeGranularity },
-        { name: "filed", value: request.filed, collectionFormat: "csv" },
+        { name: "filed", value: request.filed },
         { name: "order_field", value: request.orderField },
         { name: "order_type", value: request.orderType },
         { name: "page", value: request.page },

@@ -35,7 +35,7 @@ export class DiagnosisTaskAgentGetV2Api {
       path: "/open_api/2/diagnosis_task/agent/get/",
       queryParams: [
         { name: "agent_id", value: request.agentId },
-        { name: "task_ids", value: request.taskIds, collectionFormat: "csv" }
+        { name: "task_ids", value: request.taskIds }
       ]
     });
   }

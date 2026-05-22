@@ -55,7 +55,7 @@ export class QianchuanReportUniPromotionGetV10Api {
         { name: "end_date", value: request.endDate },
         { name: "marketing_goal", value: request.marketingGoal },
         { name: "order_platform", value: request.orderPlatform },
-        { name: "fields", value: request.fields, collectionFormat: "csv" }
+        { name: "fields", value: request.fields }
       ]
     });
   }

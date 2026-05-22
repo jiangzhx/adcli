@@ -40,8 +40,8 @@ export class QianchuanToolsGrayV10Api {
       path: "/open_api/v1.0/qianchuan/tools/gray/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "gray_keys", value: request.grayKeys, collectionFormat: "csv" },
-        { name: "aweme_ids", value: request.awemeIds, collectionFormat: "csv" }
+        { name: "gray_keys", value: request.grayKeys },
+        { name: "aweme_ids", value: request.awemeIds }
       ]
     });
   }

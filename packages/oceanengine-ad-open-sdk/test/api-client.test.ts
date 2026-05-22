@@ -58,7 +58,7 @@ describe("ApiClient", () => {
     expect(requests[0].headers.get("Access-Token")).toBe("token-123");
   });
 
-  test("serializes scalar and csv query params like Java ApiClient", async () => {
+  test("serializes scalar and array query params like Go ApiClient", async () => {
     const requests: Request[] = [];
     const client = new ApiClient({
       fetch: async (input) => {
@@ -72,14 +72,39 @@ describe("ApiClient", () => {
       path: "/open_api/v3.0/report/custom/config/get/",
       queryParams: [
         { name: "advertiser_id", value: 123 },
-        { name: "data_topics", value: ["BASIC_DATA", "CREATIVE_DATA"], collectionFormat: "csv" },
+        { name: "data_topics", value: ["BASIC_DATA", "CREATIVE_DATA"] },
       ],
     });
 
     const url = new URL(requests[0].url);
     expect(url.pathname).toBe("/open_api/v3.0/report/custom/config/get/");
     expect(url.searchParams.get("advertiser_id")).toBe("123");
-    expect(url.searchParams.get("data_topics")).toBe("BASIC_DATA,CREATIVE_DATA");
+    expect(url.searchParams.get("data_topics")).toBe(JSON.stringify(["BASIC_DATA", "CREATIVE_DATA"]));
+  });
+
+  test("serializes array object query params as JSON arrays like Go ApiClient", async () => {
+    const requests: Request[] = [];
+    const client = new ApiClient({
+      fetch: async (input) => {
+        requests.push(input as Request);
+        return jsonResponse({ ok: true });
+      },
+    });
+
+    await client.request({
+      method: "GET",
+      path: "/open_api/v3.0/report/custom/get/",
+      queryParams: [
+        {
+          name: "filters",
+          value: [{ field: "stat_cost", type: 1, operator: 7, values: ["0"] }],
+        },
+      ],
+    });
+
+    expect(new URL(requests[0].url).searchParams.get("filters")).toBe(
+      JSON.stringify([{ field: "stat_cost", type: 1, operator: 7, values: ["0"] }]),
+    );
   });
 
   test("serializes multi query params as repeated keys", async () => {

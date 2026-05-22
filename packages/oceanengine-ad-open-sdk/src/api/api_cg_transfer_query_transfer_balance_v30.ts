@@ -45,7 +45,7 @@ export class CgTransferQueryTransferBalanceV30Api {
       queryParams: [
         { name: "biz_request_no", value: request.bizRequestNo },
         { name: "agent_id", value: request.agentId },
-        { name: "account_id_list", value: request.accountIdList, collectionFormat: "csv" }
+        { name: "account_id_list", value: request.accountIdList }
       ]
     });
   }

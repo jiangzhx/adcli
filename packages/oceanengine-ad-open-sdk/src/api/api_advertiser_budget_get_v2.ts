@@ -33,7 +33,7 @@ export class AdvertiserBudgetGetV2Api {
       method: "GET",
       path: "/open_api/2/advertiser/budget/get/",
       queryParams: [
-        { name: "advertiser_ids", value: request.advertiserIds, collectionFormat: "csv" }
+        { name: "advertiser_ids", value: request.advertiserIds }
       ]
     });
   }

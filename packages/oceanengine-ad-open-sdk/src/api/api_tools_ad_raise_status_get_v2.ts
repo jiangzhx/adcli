@@ -32,7 +32,7 @@ export class ToolsAdRaiseStatusGetV2Api {
       method: "GET",
       path: "/open_api/2/tools/ad_raise_status/get/",
       queryParams: [
-        { name: "ad_ids", value: request.adIds, collectionFormat: "csv" },
+        { name: "ad_ids", value: request.adIds },
         { name: "advertiser_id", value: request.advertiserId }
       ]
     });

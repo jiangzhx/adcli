@@ -67,7 +67,7 @@ export class QianchuanReportSearchWordGetV10Api {
         { name: "start_date", value: request.startDate },
         { name: "end_date", value: request.endDate },
         { name: "time_granularity", value: request.timeGranularity },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "word_type", value: request.wordType },
         { name: "filtering", value: request.filtering },
         { name: "order_field", value: request.orderField },

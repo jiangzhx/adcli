@@ -39,7 +39,7 @@ export class ToolsSuggestBudgetGetV30Api {
       path: "/open_api/v3.0/tools/suggest_budget/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "promotion_ids", value: request.promotionIds, collectionFormat: "csv" }
+        { name: "promotion_ids", value: request.promotionIds }
       ]
     });
   }

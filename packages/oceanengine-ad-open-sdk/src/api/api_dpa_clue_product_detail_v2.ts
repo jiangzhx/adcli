@@ -39,7 +39,7 @@ export class DpaClueProductDetailV2Api {
       path: "/open_api/2/dpa/clue_product/detail/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "product_ids", value: request.productIds, collectionFormat: "csv" }
+        { name: "product_ids", value: request.productIds }
       ]
     });
   }

@@ -39,7 +39,7 @@ export class FileVideoAdGetV2Api {
       path: "/open_api/2/file/video/ad/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "video_ids", value: request.videoIds, collectionFormat: "csv" }
+        { name: "video_ids", value: request.videoIds }
       ]
     });
   }

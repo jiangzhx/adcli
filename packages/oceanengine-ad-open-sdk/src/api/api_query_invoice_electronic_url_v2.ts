@@ -34,7 +34,7 @@ export class QueryInvoiceElectronicUrlV2Api {
       method: "GET",
       path: "/open_api/2/query/invoice_electronic_url/",
       queryParams: [
-        { name: "agent_ids", value: request.agentIds, collectionFormat: "csv" },
+        { name: "agent_ids", value: request.agentIds },
         { name: "invoice_serial", value: request.invoiceSerial }
       ]
     });

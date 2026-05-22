@@ -39,7 +39,7 @@ export class ReportCustomConfigGetV30Api {
       path: "/open_api/v3.0/report/custom/config/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "data_topics", value: request.dataTopics, collectionFormat: "csv" }
+        { name: "data_topics", value: request.dataTopics }
       ]
     });
   }

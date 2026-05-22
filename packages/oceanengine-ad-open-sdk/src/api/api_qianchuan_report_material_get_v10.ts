@@ -59,7 +59,7 @@ export class QianchuanReportMaterialGetV10Api {
         { name: "order_field", value: request.orderField },
         { name: "advertiser_id", value: request.advertiserId },
         { name: "filtering", value: request.filtering },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }
       ]

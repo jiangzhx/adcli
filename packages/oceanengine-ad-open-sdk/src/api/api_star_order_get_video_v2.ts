@@ -39,7 +39,7 @@ export class StarOrderGetVideoV2Api {
       path: "/open_api/2/star/order/get_video/",
       queryParams: [
         { name: "star_id", value: request.starId },
-        { name: "order_ids", value: request.orderIds, collectionFormat: "csv" }
+        { name: "order_ids", value: request.orderIds }
       ]
     });
   }

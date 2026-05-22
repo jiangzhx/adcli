@@ -39,7 +39,7 @@ export class AdCostProtectStatusGetV2Api {
       path: "/open_api/2/ad/cost_protect_status/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "ad_ids", value: request.adIds, collectionFormat: "csv" }
+        { name: "ad_ids", value: request.adIds }
       ]
     });
   }

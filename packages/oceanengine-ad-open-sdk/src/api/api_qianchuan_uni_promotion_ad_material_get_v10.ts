@@ -51,7 +51,7 @@ export class QianchuanUniPromotionAdMaterialGetV10Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "ad_id", value: request.adId },
         { name: "filtering", value: request.filtering },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "order_type", value: request.orderType },
         { name: "order_field", value: request.orderField },
         { name: "page", value: request.page },

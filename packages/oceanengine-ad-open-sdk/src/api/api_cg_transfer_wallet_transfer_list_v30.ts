@@ -70,7 +70,7 @@ export class CgTransferWalletTransferListV30Api {
         { name: "biz_request_no", value: request.bizRequestNo },
         { name: "query_begin_time", value: request.queryBeginTime },
         { name: "query_end_time", value: request.queryEndTime },
-        { name: "query_wallet_id_list", value: request.queryWalletIdList, collectionFormat: "csv" },
+        { name: "query_wallet_id_list", value: request.queryWalletIdList },
         { name: "payee_id", value: request.payeeId },
         { name: "remitter_id", value: request.remitterId },
         { name: "page_info", value: request.pageInfo }

@@ -88,10 +88,11 @@ export class ApiClient {
           }
           continue;
         }
-        if (param.collectionFormat !== "csv") {
-          throw new ApiException(\`Unsupported collection format for query parameter '\${param.name}'\`);
+        if (param.collectionFormat === "csv") {
+          url.searchParams.append(param.name, param.value.map((value) => this.parameterToString(value)).join(","));
+          continue;
         }
-        url.searchParams.append(param.name, param.value.map((value) => this.parameterToString(value)).join(","));
+        url.searchParams.append(param.name, this.parameterToString(param.value));
         continue;
       }
       url.searchParams.append(param.name, this.parameterToString(param.value));

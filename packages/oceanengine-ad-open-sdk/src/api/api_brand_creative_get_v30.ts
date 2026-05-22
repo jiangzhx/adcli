@@ -52,9 +52,9 @@ export class BrandCreativeGetV30Api {
       path: "/open_api/v3.0/brand/creative/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "ad_ids", value: request.adIds, collectionFormat: "csv" },
-        { name: "campaign_ids", value: request.campaignIds, collectionFormat: "csv" },
-        { name: "creative_ids", value: request.creativeIds, collectionFormat: "csv" },
+        { name: "ad_ids", value: request.adIds },
+        { name: "campaign_ids", value: request.campaignIds },
+        { name: "creative_ids", value: request.creativeIds },
         { name: "creative_status", value: request.creativeStatus },
         { name: "create_start_time", value: request.createStartTime },
         { name: "create_end_time", value: request.createEndTime },

@@ -3409,10 +3409,11 @@ class ApiClient {
           }
           continue;
         }
-        if (param.collectionFormat !== "csv") {
-          throw new ApiException(`Unsupported collection format for query parameter '${param.name}'`);
+        if (param.collectionFormat === "csv") {
+          url.searchParams.append(param.name, param.value.map((value) => this.parameterToString(value)).join(","));
+          continue;
         }
-        url.searchParams.append(param.name, param.value.map((value) => this.parameterToString(value)).join(","));
+        url.searchParams.append(param.name, this.parameterToString(param.value));
         continue;
       }
       url.searchParams.append(param.name, this.parameterToString(param.value));
@@ -3582,7 +3583,7 @@ class ProjectListV30Api {
       method: "GET",
       path: "/open_api/v3.0/project/list/",
       queryParams: [
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "filtering", value: request.filtering },
         { name: "advertiser_id", value: request.advertiserId },
         { name: "page", value: request.page },
@@ -3618,7 +3619,7 @@ class PromotionListV30Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "filtering", value: request.filtering },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "including_material_atrributes", value: request.includingMaterialAtrributes },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },

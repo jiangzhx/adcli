@@ -44,7 +44,7 @@ export class SharedWalletWalletInfoGetV30Api {
       path: "/open_api/v3.0/shared_wallet/wallet_info/get/",
       queryParams: [
         { name: "account_id", value: request.accountId },
-        { name: "wallet_id_list", value: request.walletIdList, collectionFormat: "csv" },
+        { name: "wallet_id_list", value: request.walletIdList },
         { name: "account_type", value: request.accountType }
       ]
     });

@@ -44,7 +44,7 @@ export class NativeAnchorQrcodePreviewGetV30Api {
       path: "/open_api/v3.0/native_anchor/qrcode_preview/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "anchor_ids", value: request.anchorIds, collectionFormat: "csv" },
+        { name: "anchor_ids", value: request.anchorIds },
         { name: "anchor_type", value: request.anchorType }
       ]
     });

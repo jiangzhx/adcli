@@ -34,8 +34,8 @@ export class ToolsAwemeAuthorInfoGetV2Api {
       path: "/open_api/2/tools/aweme_author_info/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "behaviors", value: request.behaviors, collectionFormat: "csv" },
-        { name: "label_ids", value: request.labelIds, collectionFormat: "csv" }
+        { name: "behaviors", value: request.behaviors },
+        { name: "label_ids", value: request.labelIds }
       ]
     });
   }

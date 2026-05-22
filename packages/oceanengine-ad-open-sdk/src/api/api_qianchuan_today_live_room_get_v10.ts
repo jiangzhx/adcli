@@ -57,7 +57,7 @@ export class QianchuanTodayLiveRoomGetV10Api {
         { name: "date_time", value: request.dateTime },
         { name: "room_status", value: request.roomStatus },
         { name: "ad_status", value: request.adStatus },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }
       ]

@@ -39,7 +39,7 @@ export class QianchuanToolsSmartBoostAdBoostStatusGetV10Api {
       path: "/open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/status/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "ad_ids", value: request.adIds, collectionFormat: "csv" }
+        { name: "ad_ids", value: request.adIds }
       ]
     });
   }

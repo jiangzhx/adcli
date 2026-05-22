@@ -37,7 +37,7 @@ export class CreativeStrategyListV2Api {
       path: "/open_api/2/creative/strategy/list/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "strategy_types", value: request.strategyTypes, collectionFormat: "csv" },
+        { name: "strategy_types", value: request.strategyTypes },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }
       ]

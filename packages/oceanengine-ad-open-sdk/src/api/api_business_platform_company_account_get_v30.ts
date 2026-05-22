@@ -47,7 +47,7 @@ export class BusinessPlatformCompanyAccountGetV30Api {
       queryParams: [
         { name: "organization_id", value: request.organizationId },
         { name: "company_id", value: request.companyId },
-        { name: "account_type", value: request.accountType, collectionFormat: "csv" },
+        { name: "account_type", value: request.accountType },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }
       ]

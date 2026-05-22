@@ -45,7 +45,7 @@ export class FileVideoUploadTaskListV2Api {
       queryParams: [
         { name: "account_id", value: request.accountId },
         { name: "account_type", value: request.accountType },
-        { name: "task_ids", value: request.taskIds, collectionFormat: "csv" }
+        { name: "task_ids", value: request.taskIds }
       ]
     });
   }

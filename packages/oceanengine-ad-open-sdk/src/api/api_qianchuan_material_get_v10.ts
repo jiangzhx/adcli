@@ -60,10 +60,10 @@ export class QianchuanMaterialGetV10Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "marketing_goal", value: request.marketingGoal },
-        { name: "campaign_scene", value: request.campaignScene, collectionFormat: "csv" },
+        { name: "campaign_scene", value: request.campaignScene },
         { name: "marketing_scene", value: request.marketingScene },
         { name: "filtering", value: request.filtering },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
         { name: "order_type", value: request.orderType },

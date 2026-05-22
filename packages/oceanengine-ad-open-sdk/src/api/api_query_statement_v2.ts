@@ -39,7 +39,7 @@ export class QueryStatementV2Api {
       path: "/open_api/2/query/statement/",
       queryParams: [
         { name: "agent_id", value: request.agentId },
-        { name: "project_id_list", value: request.projectIdList, collectionFormat: "csv" }
+        { name: "project_id_list", value: request.projectIdList }
       ]
     });
   }

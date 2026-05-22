@@ -53,7 +53,7 @@ export class QianchuanReportVideoUserLoseGetV10Api {
       method: "GET",
       path: "/open_api/v1.0/qianchuan/report/video_user_lose/get/",
       queryParams: [
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "start_date", value: request.startDate },
         { name: "end_date", value: request.endDate },
         { name: "filtering", value: request.filtering },

@@ -39,7 +39,7 @@ export class QianchuanReportUniPromotionConfigGetV10Api {
       path: "/open_api/v1.0/qianchuan/report/uni_promotion/config/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "data_topics", value: request.dataTopics, collectionFormat: "csv" }
+        { name: "data_topics", value: request.dataTopics }
       ]
     });
   }

@@ -38,8 +38,8 @@ export class ClueCouponGetV2Api {
       method: "GET",
       path: "/open_api/2/clue/coupon/get/",
       queryParams: [
-        { name: "activity_ids", value: request.activityIds, collectionFormat: "csv" },
-        { name: "activity_types", value: request.activityTypes, collectionFormat: "csv" },
+        { name: "activity_ids", value: request.activityIds },
+        { name: "activity_types", value: request.activityTypes },
         { name: "advertiser_id", value: request.advertiserId },
         { name: "end_time", value: request.endTime },
         { name: "is_del", value: request.isDel },

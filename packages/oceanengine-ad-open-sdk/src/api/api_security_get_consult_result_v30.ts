@@ -39,7 +39,7 @@ export class SecurityGetConsultResultV30Api {
       path: "/open_api/v3.0/security/get_consult_result/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "appeal_track_ids", value: request.appealTrackIds, collectionFormat: "csv" }
+        { name: "appeal_track_ids", value: request.appealTrackIds }
       ]
     });
   }

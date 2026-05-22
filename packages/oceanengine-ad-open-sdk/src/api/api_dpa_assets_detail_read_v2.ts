@@ -33,7 +33,7 @@ export class DpaAssetsDetailReadV2Api {
       path: "/open_api/2/dpa/assets/detail/read/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "asset_ids", value: request.assetIds, collectionFormat: "csv" }
+        { name: "asset_ids", value: request.assetIds }
       ]
     });
   }

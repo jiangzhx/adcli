@@ -33,7 +33,7 @@ export class LocalAdvertiserBudgetGetV30Api {
       method: "GET",
       path: "/open_api/v3.0/local/advertiser/budget/get/",
       queryParams: [
-        { name: "local_account_id", value: request.localAccountId, collectionFormat: "csv" }
+        { name: "local_account_id", value: request.localAccountId }
       ]
     });
   }

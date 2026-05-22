@@ -31,7 +31,7 @@ export class AdvertiserPublicInfoV2Api {
       method: "GET",
       path: "/open_api/2/advertiser/public_info/",
       queryParams: [
-        { name: "advertiser_ids", value: request.advertiserIds, collectionFormat: "csv" }
+        { name: "advertiser_ids", value: request.advertiserIds }
       ]
     });
   }

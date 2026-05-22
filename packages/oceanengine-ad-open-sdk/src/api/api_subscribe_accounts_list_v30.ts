@@ -50,10 +50,10 @@ export class SubscribeAccountsListV30Api {
       queryParams: [
         { name: "app_id", value: request.appId },
         { name: "subscribe_task_id", value: request.subscribeTaskId },
-        { name: "events", value: request.events, collectionFormat: "csv" },
+        { name: "events", value: request.events },
         { name: "core_user_id", value: request.coreUserId },
-        { name: "advertiser_ids", value: request.advertiserIds, collectionFormat: "csv" },
-        { name: "statuses", value: request.statuses, collectionFormat: "csv" },
+        { name: "advertiser_ids", value: request.advertiserIds },
+        { name: "statuses", value: request.statuses },
         { name: "cursor", value: request.cursor },
         { name: "count", value: request.count },
         { name: "subscribe_package_type", value: request.subscribePackageType },

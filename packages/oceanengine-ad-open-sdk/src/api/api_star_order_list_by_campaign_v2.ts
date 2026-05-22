@@ -41,7 +41,7 @@ export class StarOrderListByCampaignV2Api {
       path: "/open_api/2/star/order/list_by_campaign/",
       queryParams: [
         { name: "star_id", value: request.starId },
-        { name: "campaign_ids", value: request.campaignIds, collectionFormat: "csv" },
+        { name: "campaign_ids", value: request.campaignIds },
         { name: "page", value: request.page },
         { name: "limit", value: request.limit }
       ]

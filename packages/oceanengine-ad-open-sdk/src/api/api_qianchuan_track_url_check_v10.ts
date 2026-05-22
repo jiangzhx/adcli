@@ -39,7 +39,7 @@ export class QianchuanTrackUrlCheckV10Api {
       path: "/open_api/v1.0/qianchuan/track_url/check/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "track_url", value: request.trackUrl, collectionFormat: "csv" }
+        { name: "track_url", value: request.trackUrl }
       ]
     });
   }

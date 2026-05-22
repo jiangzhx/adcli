@@ -44,8 +44,8 @@ export class ToolsPromotionDiagnosisSuggestionGetV30Api {
       path: "/open_api/v3.0/tools/promotion_diagnosis/suggestion/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "promotion_ids", value: request.promotionIds, collectionFormat: "csv" },
-        { name: "scenes", value: request.scenes, collectionFormat: "csv" }
+        { name: "promotion_ids", value: request.promotionIds },
+        { name: "scenes", value: request.scenes }
       ]
     });
   }

@@ -37,7 +37,7 @@ export class QianchuanShopAdvertiserListV10Api {
       path: "/open_api/v1.0/qianchuan/shop/advertiser/list/",
       queryParams: [
         { name: "shop_id", value: request.shopId },
-        { name: "permission", value: request.permission, collectionFormat: "csv" },
+        { name: "permission", value: request.permission },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }
       ]

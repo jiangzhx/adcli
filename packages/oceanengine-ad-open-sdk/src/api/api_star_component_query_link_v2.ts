@@ -42,7 +42,7 @@ export class StarComponentQueryLinkV2Api {
         { name: "component_status", value: request.componentStatus },
         { name: "page", value: request.page },
         { name: "limit", value: request.limit },
-        { name: "link_ids", value: request.linkIds, collectionFormat: "csv" },
+        { name: "link_ids", value: request.linkIds },
         { name: "link_type", value: request.linkType }
       ]
     });

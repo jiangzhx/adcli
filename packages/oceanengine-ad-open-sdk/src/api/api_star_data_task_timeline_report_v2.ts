@@ -41,8 +41,8 @@ export class StarDataTaskTimelineReportV2Api {
       path: "/open_api/2/star/data/task_timeline_report/",
       queryParams: [
         { name: "star_id", value: request.starId },
-        { name: "outer_project_id_list", value: request.outerProjectIdList, collectionFormat: "csv" },
-        { name: "outer_task_id_list", value: request.outerTaskIdList, collectionFormat: "csv" },
+        { name: "outer_project_id_list", value: request.outerProjectIdList },
+        { name: "outer_task_id_list", value: request.outerTaskIdList },
         { name: "partition", value: request.partition }
       ]
     });

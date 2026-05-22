@@ -41,7 +41,7 @@ export class ToolsMaterialRaiseGetV30Api {
       path: "/open_api/v3.0/tools/material_raise/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "project_ids", value: request.projectIds, collectionFormat: "csv" },
+        { name: "project_ids", value: request.projectIds },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }
       ]

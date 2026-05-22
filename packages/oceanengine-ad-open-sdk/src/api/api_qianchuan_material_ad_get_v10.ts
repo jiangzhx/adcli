@@ -79,7 +79,7 @@ export class QianchuanMaterialAdGetV10Api {
         { name: "marketing_goal", value: request.marketingGoal },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "order_field", value: request.orderField },
         { name: "order_type", value: request.orderType },
         { name: "page", value: request.page },

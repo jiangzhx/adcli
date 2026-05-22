@@ -47,7 +47,7 @@ export class QianchuanToolsLogSearchV10Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "object_id", value: request.objectId },
         { name: "object_type", value: request.objectType },
-        { name: "operator_id", value: request.operatorId, collectionFormat: "csv" },
+        { name: "operator_id", value: request.operatorId },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "page", value: request.page },

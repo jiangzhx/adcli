@@ -39,7 +39,7 @@ export class AccountFundGetV30Api {
       method: "GET",
       path: "/open_api/v3.0/account/fund/get/",
       queryParams: [
-        { name: "account_ids", value: request.accountIds, collectionFormat: "csv" },
+        { name: "account_ids", value: request.accountIds },
         { name: "account_type", value: request.accountType },
         { name: "grant_type_split", value: request.grantTypeSplit }
       ]

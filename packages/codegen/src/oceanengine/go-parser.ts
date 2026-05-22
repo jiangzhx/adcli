@@ -99,13 +99,10 @@ function parseModelFields(fieldsSource: string) {
 }
 
 function parseQueryParams(source: string, params: Array<{ javaType: string; name: string }>) {
-  const paramsByName = new Map(params.map((param) => [param.name, param]));
   return [...source.matchAll(/parameterAddToHeaderOrQuery\(localVarQueryParams,\s*"([^"]+)",\s*r\.(\w+)\)/g)].map((match) => {
-    const param = paramsByName.get(match[2]);
     return {
       name: match[1],
       source: `request.${match[2]}`,
-      ...(param?.javaType.startsWith("List<") ? { collectionFormat: "csv" as const } : {}),
     };
   });
 }

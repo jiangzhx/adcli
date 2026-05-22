@@ -45,7 +45,7 @@ export class StarChallengeGetPushAdResultsV2Api {
       queryParams: [
         { name: "star_id", value: request.starId },
         { name: "challenge_task_id", value: request.challengeTaskId },
-        { name: "item_ids", value: request.itemIds, collectionFormat: "csv" }
+        { name: "item_ids", value: request.itemIds }
       ]
     });
   }

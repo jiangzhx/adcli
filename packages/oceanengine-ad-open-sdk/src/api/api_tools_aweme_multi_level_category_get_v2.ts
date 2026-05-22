@@ -33,7 +33,7 @@ export class ToolsAwemeMultiLevelCategoryGetV2Api {
       path: "/open_api/2/tools/aweme_multi_level_category/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "behaviors", value: request.behaviors, collectionFormat: "csv" }
+        { name: "behaviors", value: request.behaviors }
       ]
     });
   }

@@ -39,7 +39,7 @@ export class LocalPromotionRejectReasonGetV30Api {
       path: "/open_api/v3.0/local/promotion/reject_reason/get/",
       queryParams: [
         { name: "local_account_id", value: request.localAccountId },
-        { name: "promotion_ids", value: request.promotionIds, collectionFormat: "csv" }
+        { name: "promotion_ids", value: request.promotionIds }
       ]
     });
   }

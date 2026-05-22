@@ -39,7 +39,7 @@ export class RemittanceCodeListV30Api {
         { name: "agent_id", value: request.agentId },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
-        { name: "remittance_code_list", value: request.remittanceCodeList, collectionFormat: "csv" }
+        { name: "remittance_code_list", value: request.remittanceCodeList }
       ]
     });
   }

@@ -55,7 +55,7 @@ export class WalletRemittanceCodeListGetV30Api {
         { name: "charge_target_type", value: request.chargeTargetType },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
-        { name: "remittance_code_list", value: request.remittanceCodeList, collectionFormat: "csv" }
+        { name: "remittance_code_list", value: request.remittanceCodeList }
       ]
     });
   }

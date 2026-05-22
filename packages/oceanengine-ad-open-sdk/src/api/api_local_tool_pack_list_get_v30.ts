@@ -49,8 +49,8 @@ export class LocalToolPackListGetV30Api {
       queryParams: [
         { name: "local_account_id", value: request.localAccountId },
         { name: "delivery_goal", value: request.deliveryGoal },
-        { name: "poi_ids", value: request.poiIds, collectionFormat: "csv" },
-        { name: "product_ids", value: request.productIds, collectionFormat: "csv" },
+        { name: "poi_ids", value: request.poiIds },
+        { name: "product_ids", value: request.productIds },
         { name: "intelligent_selection_mode", value: request.intelligentSelectionMode },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }

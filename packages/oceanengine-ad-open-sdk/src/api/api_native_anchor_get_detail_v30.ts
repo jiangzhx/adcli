@@ -43,7 +43,7 @@ export class NativeAnchorGetDetailV30Api {
       method: "GET",
       path: "/open_api/v3.0/native_anchor/get/detail/",
       queryParams: [
-        { name: "anchor_ids", value: request.anchorIds, collectionFormat: "csv" },
+        { name: "anchor_ids", value: request.anchorIds },
         { name: "advertiser_id", value: request.advertiserId },
         { name: "anchor_type", value: request.anchorType }
       ]

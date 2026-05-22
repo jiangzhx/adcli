@@ -63,7 +63,7 @@ export class QianchuanUniPromotionAdProductGetV10Api {
         { name: "start_date", value: request.startDate },
         { name: "end_date", value: request.endDate },
         { name: "filtering", value: request.filtering },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "order_type", value: request.orderType },
         { name: "order_field", value: request.orderField },
         { name: "page", value: request.page },

@@ -66,13 +66,13 @@ export class ReportCustomGetV30Api {
       method: "GET",
       path: "/open_api/v3.0/report/custom/get/",
       queryParams: [
-        { name: "dimensions", value: request.dimensions, collectionFormat: "csv" },
+        { name: "dimensions", value: request.dimensions },
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
-        { name: "filters", value: request.filters, collectionFormat: "csv" },
+        { name: "metrics", value: request.metrics },
+        { name: "filters", value: request.filters },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
-        { name: "order_by", value: request.orderBy, collectionFormat: "csv" },
+        { name: "order_by", value: request.orderBy },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
         { name: "data_topic", value: request.dataTopic }

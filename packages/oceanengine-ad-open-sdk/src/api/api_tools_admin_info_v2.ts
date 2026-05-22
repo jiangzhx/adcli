@@ -50,7 +50,7 @@ export class ToolsAdminInfoV2Api {
       path: "/open_api/2/tools/admin/info/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "codes", value: request.codes, collectionFormat: "csv" },
+        { name: "codes", value: request.codes },
         { name: "language", value: request.language },
         { name: "sub_district", value: request.subDistrict },
         { name: "version", value: request.version }

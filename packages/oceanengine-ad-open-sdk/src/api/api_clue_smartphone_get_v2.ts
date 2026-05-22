@@ -39,7 +39,7 @@ export class ClueSmartphoneGetV2Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "end_time", value: request.endTime },
-        { name: "instance_ids", value: request.instanceIds, collectionFormat: "csv" },
+        { name: "instance_ids", value: request.instanceIds },
         { name: "is_del", value: request.isDel },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },

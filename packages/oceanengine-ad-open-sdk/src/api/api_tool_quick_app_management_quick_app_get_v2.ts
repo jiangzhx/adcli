@@ -40,12 +40,12 @@ export class ToolQuickAppManagementQuickAppGetV2Api {
       path: "/open_api/2/tool/quick_app_management/quick_app/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "status", value: request.status, collectionFormat: "csv" },
+        { name: "status", value: request.status },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
         { name: "update_time", value: request.updateTime },
         { name: "search_key", value: request.searchKey },
-        { name: "quick_app_ids", value: request.quickAppIds, collectionFormat: "csv" }
+        { name: "quick_app_ids", value: request.quickAppIds }
       ]
     });
   }

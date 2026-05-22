@@ -38,8 +38,8 @@ export class PenaltyTaskGetV30Api {
       method: "GET",
       path: "/open_api/v3.0/penalty_task/get/",
       queryParams: [
-        { name: "advertiser_ids", value: request.advertiserIds, collectionFormat: "csv" },
-        { name: "customer_ids", value: request.customerIds, collectionFormat: "csv" },
+        { name: "advertiser_ids", value: request.advertiserIds },
+        { name: "customer_ids", value: request.customerIds },
         { name: "disposal_start_time", value: request.disposalStartTime },
         { name: "disposal_end_time", value: request.disposalEndTime },
         { name: "page", value: request.page },

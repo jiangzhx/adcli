@@ -32,7 +32,7 @@ export class QianchuanAdRejectReasonV10Api {
       method: "GET",
       path: "/open_api/v1.0/qianchuan/ad/reject_reason/",
       queryParams: [
-        { name: "ad_ids", value: request.adIds, collectionFormat: "csv" },
+        { name: "ad_ids", value: request.adIds },
         { name: "advertiser_id", value: request.advertiserId }
       ]
     });

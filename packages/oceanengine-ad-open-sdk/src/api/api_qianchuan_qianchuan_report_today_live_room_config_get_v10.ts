@@ -39,7 +39,7 @@ export class QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api {
       path: "/open_api/v1.0/qianchuan/qianchuan/report/today_live/room/config/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "data_topics", value: request.dataTopics, collectionFormat: "csv" }
+        { name: "data_topics", value: request.dataTopics }
       ]
     });
   }

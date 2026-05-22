@@ -42,8 +42,8 @@ export class DiagnosisTaskAgentListV2Api {
       path: "/open_api/2/diagnosis_task/agent/list/",
       queryParams: [
         { name: "agent_id", value: request.agentId },
-        { name: "results", value: request.results, collectionFormat: "csv" },
-        { name: "status", value: request.status, collectionFormat: "csv" },
+        { name: "results", value: request.results },
+        { name: "status", value: request.status },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "page", value: request.page },

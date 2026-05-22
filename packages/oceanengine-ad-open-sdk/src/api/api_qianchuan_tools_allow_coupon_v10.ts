@@ -55,8 +55,8 @@ export class QianchuanToolsAllowCouponV10Api {
         { name: "marketing_goal", value: request.marketingGoal },
         { name: "campaign_scene", value: request.campaignScene },
         { name: "marketing_scene", value: request.marketingScene },
-        { name: "aweme_ids", value: request.awemeIds, collectionFormat: "csv" },
-        { name: "product_ids", value: request.productIds, collectionFormat: "csv" },
+        { name: "aweme_ids", value: request.awemeIds },
+        { name: "product_ids", value: request.productIds },
         { name: "is_lab_ad", value: request.isLabAd }
       ]
     });

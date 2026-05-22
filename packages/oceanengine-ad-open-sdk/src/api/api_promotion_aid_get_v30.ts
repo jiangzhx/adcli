@@ -39,7 +39,7 @@ export class PromotionAidGetV30Api {
       path: "/open_api/v3.0/promotion/aid/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "promotion_ids", value: request.promotionIds, collectionFormat: "csv" }
+        { name: "promotion_ids", value: request.promotionIds }
       ]
     });
   }

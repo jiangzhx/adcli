@@ -17,7 +17,7 @@ describe("typescript emitter", () => {
       ],
       queryParams: [
         { name: "advertiser_id", source: "request.advertiserId" },
-        { name: "data_topics", source: "request.dataTopics", collectionFormat: "csv" },
+        { name: "data_topics", source: "request.dataTopics" },
         { name: "page", source: "request.page" },
       ],
       formParams: [],
@@ -43,7 +43,7 @@ describe("typescript emitter", () => {
     expect(output).toContain("if (request.advertiserId == null)");
     expect(output).toContain("Missing the required parameter 'advertiserId'");
     expect(output).toContain('path: "/open_api/v3.0/report/custom/config/get/"');
-    expect(output).toContain('{ name: "data_topics", value: request.dataTopics, collectionFormat: "csv" }');
+    expect(output).toContain('{ name: "data_topics", value: request.dataTopics }');
     expect(output).toContain('{ name: "page", value: request.page }');
   });
 

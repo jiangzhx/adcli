@@ -40,14 +40,14 @@ export class ReportRubeexGetV2Api {
       path: "/open_api/2/report/rubeex/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "dimensions", value: request.dimensions, collectionFormat: "csv" },
+        { name: "dimensions", value: request.dimensions },
         { name: "filtering", value: request.filtering },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "metrics", value: request.metrics },
         { name: "order", value: request.order },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
         { name: "project_id", value: request.projectId },
-        { name: "stat_time_day", value: request.statTimeDay, collectionFormat: "csv" }
+        { name: "stat_time_day", value: request.statTimeDay }
       ]
     });
   }

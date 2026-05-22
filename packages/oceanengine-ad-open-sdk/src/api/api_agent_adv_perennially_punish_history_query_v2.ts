@@ -39,7 +39,7 @@ export class AgentAdvPerenniallyPunishHistoryQueryV2Api {
       path: "/open_api/2/agent/adv/perennially/punish_history/query/",
       queryParams: [
         { name: "agent_id", value: request.agentId },
-        { name: "advertiser_ids", value: request.advertiserIds, collectionFormat: "csv" }
+        { name: "advertiser_ids", value: request.advertiserIds }
       ]
     });
   }

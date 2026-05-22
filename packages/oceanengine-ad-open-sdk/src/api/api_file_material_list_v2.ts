@@ -45,7 +45,7 @@ export class FileMaterialListV2Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "material_source", value: request.materialSource },
-        { name: "properties_filter", value: request.propertiesFilter, collectionFormat: "csv" },
+        { name: "properties_filter", value: request.propertiesFilter },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "page", value: request.page },

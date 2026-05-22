@@ -61,7 +61,7 @@ export class CgTransferCanTransferBalanceGetV30Api {
         { name: "organization_id", value: request.organizationId },
         { name: "biz_request_no", value: request.bizRequestNo },
         { name: "opponent_target_id", value: request.opponentTargetId },
-        { name: "target_id_list", value: request.targetIdList, collectionFormat: "csv" },
+        { name: "target_id_list", value: request.targetIdList },
         { name: "transfer_direction", value: request.transferDirection },
         { name: "platform", value: request.platform }
       ]

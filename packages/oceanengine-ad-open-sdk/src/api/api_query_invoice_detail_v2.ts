@@ -35,7 +35,7 @@ export class QueryInvoiceDetailV2Api {
       method: "GET",
       path: "/open_api/2/query/invoice_detail/",
       queryParams: [
-        { name: "agent_ids", value: request.agentIds, collectionFormat: "csv" },
+        { name: "agent_ids", value: request.agentIds },
         { name: "invoice_serial", value: request.invoiceSerial },
         { name: "invoice_id", value: request.invoiceId }
       ]

@@ -39,7 +39,7 @@ export class ToolsLogSearchV2Api {
       path: "/open_api/2/tools/log_search/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "object_id", value: request.objectId, collectionFormat: "csv" },
+        { name: "object_id", value: request.objectId },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "page", value: request.page },

@@ -66,7 +66,7 @@ export class QianchuanUniPromotionListV10Api {
         { name: "marketing_goal", value: request.marketingGoal },
         { name: "filtering", value: request.filtering },
         { name: "need_compensate_info", value: request.needCompensateInfo },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "order_type", value: request.orderType },
         { name: "order_field", value: request.orderField },
         { name: "page", value: request.page },

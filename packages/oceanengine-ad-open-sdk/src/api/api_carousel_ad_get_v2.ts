@@ -39,7 +39,7 @@ export class CarouselAdGetV2Api {
       path: "/open_api/2/carousel/ad/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "carousel_ids", value: request.carouselIds, collectionFormat: "csv" }
+        { name: "carousel_ids", value: request.carouselIds }
       ]
     });
   }

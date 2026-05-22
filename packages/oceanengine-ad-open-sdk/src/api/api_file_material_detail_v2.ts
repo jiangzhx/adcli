@@ -39,7 +39,7 @@ export class FileMaterialDetailV2Api {
       path: "/open_api/2/file/material/detail/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "material_ids", value: request.materialIds, collectionFormat: "csv" }
+        { name: "material_ids", value: request.materialIds }
       ]
     });
   }

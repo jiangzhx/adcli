@@ -39,7 +39,7 @@ export class QianchuanAdCompensateStatusGetV10Api {
       path: "/open_api/v1.0/qianchuan/ad/compensate_status/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "ad_ids", value: request.adIds, collectionFormat: "csv" }
+        { name: "ad_ids", value: request.adIds }
       ]
     });
   }

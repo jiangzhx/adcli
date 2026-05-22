@@ -32,8 +32,8 @@ export class AgentInfoV2Api {
       method: "GET",
       path: "/open_api/2/agent/info/",
       queryParams: [
-        { name: "advertiser_ids", value: request.advertiserIds, collectionFormat: "csv" },
-        { name: "fields", value: request.fields, collectionFormat: "csv" }
+        { name: "advertiser_ids", value: request.advertiserIds },
+        { name: "fields", value: request.fields }
       ]
     });
   }

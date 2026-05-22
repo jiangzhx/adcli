@@ -40,7 +40,7 @@ export class LocalProductGetByPoiidsV30Api {
       path: "/open_api/v3.0/local/product/get_by_poiids/",
       queryParams: [
         { name: "local_account_id", value: request.localAccountId },
-        { name: "poi_ids", value: request.poiIds, collectionFormat: "csv" },
+        { name: "poi_ids", value: request.poiIds },
         { name: "local_delivery_scene", value: request.localDeliveryScene }
       ]
     });

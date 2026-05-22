@@ -41,7 +41,7 @@ export class ToolsAwemeInfoSearchV2Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "query_word", value: request.queryWord },
-        { name: "behaviors", value: request.behaviors, collectionFormat: "csv" }
+        { name: "behaviors", value: request.behaviors }
       ]
     });
   }

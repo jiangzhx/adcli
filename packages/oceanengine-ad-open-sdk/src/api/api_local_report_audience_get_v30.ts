@@ -64,7 +64,7 @@ export class LocalReportAudienceGetV30Api {
         { name: "end_date", value: request.endDate },
         { name: "audience_dimension", value: request.audienceDimension },
         { name: "data_dimension", value: request.dataDimension },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "order_type", value: request.orderType },
         { name: "order_field", value: request.orderField },
         { name: "filtering", value: request.filtering },

@@ -69,7 +69,7 @@ export class StarMcnGetUnparticipatedTaskV2Api {
         { name: "keyword", value: request.keyword },
         { name: "settlement_type", value: request.settlementType },
         { name: "playlet_category", value: request.playletCategory },
-        { name: "playlet_theme", value: request.playletTheme, collectionFormat: "csv" },
+        { name: "playlet_theme", value: request.playletTheme },
         { name: "playlet_gender", value: request.playletGender },
         { name: "playlet_hot", value: request.playletHot },
         { name: "playlet_first_week", value: request.playletFirstWeek },

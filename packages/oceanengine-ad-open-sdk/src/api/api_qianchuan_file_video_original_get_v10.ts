@@ -39,7 +39,7 @@ export class QianchuanFileVideoOriginalGetV10Api {
       path: "/open_api/v1.0/qianchuan/file/video/original/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "material_ids", value: request.materialIds, collectionFormat: "csv" }
+        { name: "material_ids", value: request.materialIds }
       ]
     });
   }

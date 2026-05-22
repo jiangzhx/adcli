@@ -66,7 +66,7 @@ export class QianchuanReportAdMaterialGetV10Api {
         { name: "order_field", value: request.orderField },
         { name: "start_date", value: request.startDate },
         { name: "end_date", value: request.endDate },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "filtering", value: request.filtering }
       ]
     });

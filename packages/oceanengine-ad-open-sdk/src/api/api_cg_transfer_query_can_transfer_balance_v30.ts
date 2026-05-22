@@ -56,7 +56,7 @@ export class CgTransferQueryCanTransferBalanceV30Api {
         { name: "biz_request_no", value: request.bizRequestNo },
         { name: "agent_id", value: request.agentId },
         { name: "account_id", value: request.accountId },
-        { name: "target_account_id_list", value: request.targetAccountIdList, collectionFormat: "csv" },
+        { name: "target_account_id_list", value: request.targetAccountIdList },
         { name: "transfer_direction", value: request.transferDirection }
       ]
     });

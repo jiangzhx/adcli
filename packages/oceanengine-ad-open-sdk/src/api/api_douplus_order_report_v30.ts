@@ -38,7 +38,7 @@ export class DouplusOrderReportV30Api {
       queryParams: [
         { name: "aweme_sec_uid", value: request.awemeSecUid },
         { name: "stat_time", value: request.statTime },
-        { name: "group_by", value: request.groupBy, collectionFormat: "csv" },
+        { name: "group_by", value: request.groupBy },
         { name: "filter", value: request.filter },
         { name: "page_size", value: request.pageSize },
         { name: "page", value: request.page }

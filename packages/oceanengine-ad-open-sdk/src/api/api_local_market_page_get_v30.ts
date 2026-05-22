@@ -39,7 +39,7 @@ export class LocalMarketPageGetV30Api {
       path: "/open_api/v3.0/local/market_page/get/",
       queryParams: [
         { name: "local_account_id", value: request.localAccountId },
-        { name: "market_page_ids", value: request.marketPageIds, collectionFormat: "csv" }
+        { name: "market_page_ids", value: request.marketPageIds }
       ]
     });
   }

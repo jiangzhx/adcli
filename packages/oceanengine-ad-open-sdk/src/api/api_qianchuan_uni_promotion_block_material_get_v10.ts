@@ -52,7 +52,7 @@ export class QianchuanUniPromotionBlockMaterialGetV10Api {
         { name: "aweme_id", value: request.awemeId },
         { name: "marketing_goal", value: request.marketingGoal },
         { name: "media_type", value: request.mediaType },
-        { name: "product_id", value: request.productId, collectionFormat: "csv" },
+        { name: "product_id", value: request.productId },
         { name: "filtering", value: request.filtering },
         { name: "order_field", value: request.orderField },
         { name: "cursor", value: request.cursor }

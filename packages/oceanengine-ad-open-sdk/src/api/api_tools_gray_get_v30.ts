@@ -40,7 +40,7 @@ export class ToolsGrayGetV30Api {
       path: "/open_api/v3.0/tools/gray/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "gray_keys", value: request.grayKeys, collectionFormat: "csv" },
+        { name: "gray_keys", value: request.grayKeys },
         { name: "version", value: request.version }
       ]
     });

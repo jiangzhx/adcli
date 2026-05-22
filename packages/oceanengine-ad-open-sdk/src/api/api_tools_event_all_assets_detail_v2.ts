@@ -39,7 +39,7 @@ export class ToolsEventAllAssetsDetailV2Api {
       path: "/open_api/2/tools/event/all_assets/detail/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "asset_ids", value: request.assetIds, collectionFormat: "csv" }
+        { name: "asset_ids", value: request.assetIds }
       ]
     });
   }

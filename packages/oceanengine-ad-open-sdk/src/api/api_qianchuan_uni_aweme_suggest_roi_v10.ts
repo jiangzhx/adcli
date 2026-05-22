@@ -56,7 +56,7 @@ export class QianchuanUniAwemeSuggestRoiV10Api {
         { name: "marketing_goal", value: request.marketingGoal },
         { name: "aweme_id", value: request.awemeId },
         { name: "deep_external_action", value: request.deepExternalAction },
-        { name: "product_ids", value: request.productIds, collectionFormat: "csv" },
+        { name: "product_ids", value: request.productIds },
         { name: "ad_id", value: request.adId },
         { name: "task_id", value: request.taskId },
         { name: "scene", value: request.scene }

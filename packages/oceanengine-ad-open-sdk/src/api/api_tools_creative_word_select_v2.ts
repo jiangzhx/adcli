@@ -35,7 +35,7 @@ export class ToolsCreativeWordSelectV2Api {
       path: "/open_api/2/tools/creative_word/select/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "creative_word_ids", value: request.creativeWordIds, collectionFormat: "csv" }
+        { name: "creative_word_ids", value: request.creativeWordIds }
       ]
     });
   }

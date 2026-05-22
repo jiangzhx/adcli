@@ -39,7 +39,7 @@ export class FileQualityGetV30Api {
       path: "/open_api/v3.0/file/quality/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "material_ids", value: request.materialIds, collectionFormat: "csv" }
+        { name: "material_ids", value: request.materialIds }
       ]
     });
   }

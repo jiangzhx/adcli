@@ -42,7 +42,7 @@ export class LocalFileCarouselListV30Api {
       queryParams: [
         { name: "local_account_id", value: request.localAccountId },
         { name: "keyword", value: request.keyword },
-        { name: "carousel_ids", value: request.carouselIds, collectionFormat: "csv" },
+        { name: "carousel_ids", value: request.carouselIds },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "order", value: request.order },

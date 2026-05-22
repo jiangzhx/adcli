@@ -39,7 +39,7 @@ export class EbpAdvertiserTaskListV2Api {
       path: "/open_api/2/ebp/advertiser/task/list/",
       queryParams: [
         { name: "enterprise_organization_id", value: request.enterpriseOrganizationId },
-        { name: "task_ids", value: request.taskIds, collectionFormat: "csv" }
+        { name: "task_ids", value: request.taskIds }
       ]
     });
   }

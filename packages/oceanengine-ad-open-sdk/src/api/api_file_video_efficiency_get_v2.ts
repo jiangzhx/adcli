@@ -39,7 +39,7 @@ export class FileVideoEfficiencyGetV2Api {
       path: "/open_api/2/file/video/efficiency/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "material_ids", value: request.materialIds, collectionFormat: "csv" }
+        { name: "material_ids", value: request.materialIds }
       ]
     });
   }

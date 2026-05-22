@@ -39,7 +39,7 @@ export class DmpCustomAudienceReadV2Api {
       path: "/open_api/2/dmp/custom_audience/read/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "custom_audience_ids", value: request.customAudienceIds, collectionFormat: "csv" }
+        { name: "custom_audience_ids", value: request.customAudienceIds }
       ]
     });
   }

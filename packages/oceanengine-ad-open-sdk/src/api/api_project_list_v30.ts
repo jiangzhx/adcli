@@ -37,7 +37,7 @@ export class ProjectListV30Api {
       method: "GET",
       path: "/open_api/v3.0/project/list/",
       queryParams: [
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "filtering", value: request.filtering },
         { name: "advertiser_id", value: request.advertiserId },
         { name: "page", value: request.page },

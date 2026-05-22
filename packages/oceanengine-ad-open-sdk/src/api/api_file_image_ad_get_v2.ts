@@ -39,7 +39,7 @@ export class FileImageAdGetV2Api {
       path: "/open_api/2/file/image/ad/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "image_ids", value: request.imageIds, collectionFormat: "csv" }
+        { name: "image_ids", value: request.imageIds }
       ]
     });
   }

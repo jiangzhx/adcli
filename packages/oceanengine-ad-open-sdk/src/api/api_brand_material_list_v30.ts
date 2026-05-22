@@ -43,9 +43,9 @@ export class BrandMaterialListV30Api {
       path: "/open_api/v3.0/brand/material/list/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "material_ids", value: request.materialIds, collectionFormat: "csv" },
+        { name: "material_ids", value: request.materialIds },
         { name: "material_name", value: request.materialName },
-        { name: "material_status", value: request.materialStatus, collectionFormat: "csv" },
+        { name: "material_status", value: request.materialStatus },
         { name: "ies_core_user_id", value: request.iesCoreUserId },
         { name: "order_filter", value: request.orderFilter },
         { name: "start_time", value: request.startTime },

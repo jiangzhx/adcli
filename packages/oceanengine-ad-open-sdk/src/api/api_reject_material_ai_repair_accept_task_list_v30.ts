@@ -39,7 +39,7 @@ export class RejectMaterialAiRepairAcceptTaskListV30Api {
       path: "/open_api/v3.0/reject_material/ai_repair_accept_task/list/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "ai_repair_ids", value: request.aiRepairIds, collectionFormat: "csv" }
+        { name: "ai_repair_ids", value: request.aiRepairIds }
       ]
     });
   }

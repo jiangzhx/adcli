@@ -45,7 +45,7 @@ export class StarBrandCategoryListV2Api {
       queryParams: [
         { name: "star_id", value: request.starId },
         { name: "brand_id", value: request.brandId },
-        { name: "industry", value: request.industry, collectionFormat: "csv" }
+        { name: "industry", value: request.industry }
       ]
     });
   }

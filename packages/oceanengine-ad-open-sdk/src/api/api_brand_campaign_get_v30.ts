@@ -51,8 +51,8 @@ export class BrandCampaignGetV30Api {
       path: "/open_api/v3.0/brand/campaign/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "campaign_ids", value: request.campaignIds, collectionFormat: "csv" },
-        { name: "campaign_names", value: request.campaignNames, collectionFormat: "csv" },
+        { name: "campaign_ids", value: request.campaignIds },
+        { name: "campaign_names", value: request.campaignNames },
         { name: "campaign_status", value: request.campaignStatus },
         { name: "create_start_time", value: request.createStartTime },
         { name: "create_end_time", value: request.createEndTime },

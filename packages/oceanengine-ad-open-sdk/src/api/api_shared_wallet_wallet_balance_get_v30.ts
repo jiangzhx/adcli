@@ -46,7 +46,7 @@ export class SharedWalletWalletBalanceGetV30Api {
       queryParams: [
         { name: "account_id", value: request.accountId },
         { name: "account_type", value: request.accountType },
-        { name: "wallet_id_list", value: request.walletIdList, collectionFormat: "csv" },
+        { name: "wallet_id_list", value: request.walletIdList },
         { name: "wallet_balance_filters", value: request.walletBalanceFilters }
       ]
     });

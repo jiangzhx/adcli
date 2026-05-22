@@ -49,7 +49,7 @@ export class FixRemittanceCodeListGetV30Api {
         { name: "account_id", value: request.accountId },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
-        { name: "remittance_code_list", value: request.remittanceCodeList, collectionFormat: "csv" }
+        { name: "remittance_code_list", value: request.remittanceCodeList }
       ]
     });
   }

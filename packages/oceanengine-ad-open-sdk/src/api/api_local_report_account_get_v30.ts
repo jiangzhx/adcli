@@ -58,7 +58,7 @@ export class LocalReportAccountGetV30Api {
         { name: "time_granularity", value: request.timeGranularity },
         { name: "start_date", value: request.startDate },
         { name: "end_date", value: request.endDate },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "metrics", value: request.metrics },
         { name: "order_type", value: request.orderType },
         { name: "order_field", value: request.orderField },
         { name: "filtering", value: request.filtering },

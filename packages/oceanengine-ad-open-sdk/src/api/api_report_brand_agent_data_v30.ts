@@ -60,7 +60,7 @@ export class ReportBrandAgentDataV30Api {
         { name: "time_dimension", value: request.timeDimension },
         { name: "page_type", value: request.pageType },
         { name: "filter", value: request.filter },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "metrics", value: request.metrics },
         { name: "page", value: request.page }
       ]
     });

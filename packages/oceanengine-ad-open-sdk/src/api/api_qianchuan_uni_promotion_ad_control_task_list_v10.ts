@@ -69,7 +69,7 @@ export class QianchuanUniPromotionAdControlTaskListV10Api {
         { name: "ad_id", value: request.adId },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "scene", value: request.scene },
         { name: "filtering", value: request.filtering },
         { name: "order_type", value: request.orderType },

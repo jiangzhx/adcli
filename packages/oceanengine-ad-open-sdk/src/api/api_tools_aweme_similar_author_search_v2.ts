@@ -41,7 +41,7 @@ export class ToolsAwemeSimilarAuthorSearchV2Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "aweme_id", value: request.awemeId },
-        { name: "behaviors", value: request.behaviors, collectionFormat: "csv" }
+        { name: "behaviors", value: request.behaviors }
       ]
     });
   }

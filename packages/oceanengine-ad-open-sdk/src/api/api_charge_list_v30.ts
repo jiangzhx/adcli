@@ -61,12 +61,12 @@ export class ChargeListV30Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "charge_target_type", value: request.chargeTargetType },
-        { name: "platform_list", value: request.platformList, collectionFormat: "csv" },
-        { name: "charge_status_list", value: request.chargeStatusList, collectionFormat: "csv" },
-        { name: "charge_source_list", value: request.chargeSourceList, collectionFormat: "csv" },
+        { name: "platform_list", value: request.platformList },
+        { name: "charge_status_list", value: request.chargeStatusList },
+        { name: "charge_source_list", value: request.chargeSourceList },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
-        { name: "charge_type_list", value: request.chargeTypeList, collectionFormat: "csv" },
+        { name: "charge_type_list", value: request.chargeTypeList },
         { name: "need_total_amount", value: request.needTotalAmount },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }

@@ -33,7 +33,7 @@ export class QianchuanShopGetV10Api {
       method: "GET",
       path: "/open_api/v1.0/qianchuan/shop/get/",
       queryParams: [
-        { name: "shop_ids", value: request.shopIds, collectionFormat: "csv" }
+        { name: "shop_ids", value: request.shopIds }
       ]
     });
   }

@@ -41,7 +41,7 @@ export class PromotionRejectReasonGetV30Api {
       path: "/open_api/v3.0/promotion/reject_reason/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "promotion_ids", value: request.promotionIds, collectionFormat: "csv" },
+        { name: "promotion_ids", value: request.promotionIds },
         { name: "delivery_mode", value: request.deliveryMode },
         { name: "need_material_lego_mid", value: request.needMaterialLegoMid }
       ]

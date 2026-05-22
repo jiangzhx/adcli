@@ -40,7 +40,7 @@ export class LocalMultiPoiIdPoiIdsGetV30Api {
       path: "/open_api/v3.0/local/multi_poi_id/poi_ids/get/",
       queryParams: [
         { name: "local_account_id", value: request.localAccountId },
-        { name: "multi_poi_ids", value: request.multiPoiIds, collectionFormat: "csv" },
+        { name: "multi_poi_ids", value: request.multiPoiIds },
         { name: "need_enable", value: request.needEnable }
       ]
     });

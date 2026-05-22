@@ -58,7 +58,7 @@ export class GameplayListV30Api {
         { name: "account_type", value: request.accountType },
         { name: "asset_id", value: request.assetId },
         { name: "asset_type", value: request.assetType },
-        { name: "filter_play_names", value: request.filterPlayNames, collectionFormat: "csv" },
+        { name: "filter_play_names", value: request.filterPlayNames },
         { name: "page_info", value: request.pageInfo }
       ]
     });

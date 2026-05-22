@@ -57,10 +57,10 @@ export class QueryInvoiceSelfV2Api {
       path: "/open_api/2/query/invoice/self/",
       queryParams: [
         { name: "local_account_id", value: request.localAccountId },
-        { name: "statement_serials", value: request.statementSerials, collectionFormat: "csv" },
-        { name: "project_serials", value: request.projectSerials, collectionFormat: "csv" },
-        { name: "invoice_statuses", value: request.invoiceStatuses, collectionFormat: "csv" },
-        { name: "invoice_serial_list", value: request.invoiceSerialList, collectionFormat: "csv" },
+        { name: "statement_serials", value: request.statementSerials },
+        { name: "project_serials", value: request.projectSerials },
+        { name: "invoice_statuses", value: request.invoiceStatuses },
+        { name: "invoice_serial_list", value: request.invoiceSerialList },
         { name: "contract_serial", value: request.contractSerial },
         { name: "submit_start_time", value: request.submitStartTime },
         { name: "submit_end_time", value: request.submitEndTime },
@@ -68,7 +68,7 @@ export class QueryInvoiceSelfV2Api {
         { name: "invoice_end_date", value: request.invoiceEndDate },
         { name: "invoice_type", value: request.invoiceType },
         { name: "difference_invoice", value: request.differenceInvoice },
-        { name: "revert_status_list", value: request.revertStatusList, collectionFormat: "csv" },
+        { name: "revert_status_list", value: request.revertStatusList },
         { name: "platform", value: request.platform },
         { name: "page_size", value: request.pageSize },
         { name: "page", value: request.page }

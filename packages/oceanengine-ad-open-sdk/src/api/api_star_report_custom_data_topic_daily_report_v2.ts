@@ -61,7 +61,7 @@ export class StarReportCustomDataTopicDailyReportV2Api {
         { name: "star_id", value: request.starId },
         { name: "work_id", value: request.workId },
         { name: "demand_id", value: request.demandId },
-        { name: "topics", value: request.topics, collectionFormat: "csv" },
+        { name: "topics", value: request.topics },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime }
       ]

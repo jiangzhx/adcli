@@ -60,7 +60,7 @@ export class LocalReportPromotionGetV30Api {
         { name: "end_date", value: request.endDate },
         { name: "order_type", value: request.orderType },
         { name: "order_field", value: request.orderField },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "metrics", value: request.metrics },
         { name: "filtering", value: request.filtering },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }

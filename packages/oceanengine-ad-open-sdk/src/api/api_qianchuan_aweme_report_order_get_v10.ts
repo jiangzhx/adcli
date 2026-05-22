@@ -56,7 +56,7 @@ export class QianchuanAwemeReportOrderGetV10Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "start_date", value: request.startDate },
         { name: "end_date", value: request.endDate },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "order_field", value: request.orderField },
         { name: "order_type", value: request.orderType },
         { name: "filtering", value: request.filtering },

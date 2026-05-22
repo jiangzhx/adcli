@@ -51,7 +51,7 @@ export class ServeMarketActiveFuncGetV10Api {
       queryParams: [
         { name: "use_uid", value: request.useUid },
         { name: "app_id", value: request.appId },
-        { name: "func_keys", value: request.funcKeys, collectionFormat: "csv" },
+        { name: "func_keys", value: request.funcKeys },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }
       ]

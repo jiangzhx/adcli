@@ -40,7 +40,7 @@ export class ReportAudienceAwemeListV2Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "end_date", value: request.endDate },
         { name: "filtering", value: request.filtering },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "metrics", value: request.metrics },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
         { name: "start_date", value: request.startDate }

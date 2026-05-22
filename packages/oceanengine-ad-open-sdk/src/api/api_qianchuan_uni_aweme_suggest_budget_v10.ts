@@ -48,7 +48,7 @@ export class QianchuanUniAwemeSuggestBudgetV10Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "aweme_id", value: request.awemeId },
         { name: "marketing_goal", value: request.marketingGoal },
-        { name: "product_ids", value: request.productIds, collectionFormat: "csv" },
+        { name: "product_ids", value: request.productIds },
         { name: "ad_id", value: request.adId }
       ]
     });

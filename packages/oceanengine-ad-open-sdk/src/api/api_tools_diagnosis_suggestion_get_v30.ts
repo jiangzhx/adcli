@@ -38,7 +38,7 @@ export class ToolsDiagnosisSuggestionGetV30Api {
       method: "GET",
       path: "/open_api/v3.0/tools/diagnosis/suggestion/get/",
       queryParams: [
-        { name: "promotion_ids", value: request.promotionIds, collectionFormat: "csv" },
+        { name: "promotion_ids", value: request.promotionIds },
         { name: "advertiser_id", value: request.advertiserId }
       ]
     });

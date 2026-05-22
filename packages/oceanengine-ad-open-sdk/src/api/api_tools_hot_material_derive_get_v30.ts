@@ -39,7 +39,7 @@ export class ToolsHotMaterialDeriveGetV30Api {
       path: "/open_api/v3.0/tools/hot_material_derive/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "task_ids", value: request.taskIds, collectionFormat: "csv" }
+        { name: "task_ids", value: request.taskIds }
       ]
     });
   }

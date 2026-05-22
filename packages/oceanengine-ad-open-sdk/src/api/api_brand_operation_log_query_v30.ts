@@ -50,7 +50,7 @@ export class BrandOperationLogQueryV30Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "object_id", value: request.objectId },
         { name: "object_type", value: request.objectType },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "start_date", value: request.startDate },
         { name: "end_date", value: request.endDate },
         { name: "page", value: request.page }

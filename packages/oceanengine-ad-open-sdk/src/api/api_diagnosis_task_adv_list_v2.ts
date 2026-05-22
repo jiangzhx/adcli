@@ -38,8 +38,8 @@ export class DiagnosisTaskAdvListV2Api {
       path: "/open_api/2/diagnosis_task/adv/list/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "results", value: request.results, collectionFormat: "csv" },
-        { name: "status", value: request.status, collectionFormat: "csv" },
+        { name: "results", value: request.results },
+        { name: "status", value: request.status },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "page", value: request.page },

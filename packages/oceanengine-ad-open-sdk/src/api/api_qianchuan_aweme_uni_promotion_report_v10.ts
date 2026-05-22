@@ -53,7 +53,7 @@ export class QianchuanAwemeUniPromotionReportV10Api {
         { name: "marketing_goal", value: request.marketingGoal },
         { name: "start_date", value: request.startDate },
         { name: "end_date", value: request.endDate },
-        { name: "fields", value: request.fields, collectionFormat: "csv" }
+        { name: "fields", value: request.fields }
       ]
     });
   }

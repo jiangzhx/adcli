@@ -38,8 +38,8 @@ export class ToolsClueInfoGetV2Api {
       method: "GET",
       path: "/open_api/2/tools/clue_info/get/",
       queryParams: [
-        { name: "advertiser_ids", value: request.advertiserIds, collectionFormat: "csv" },
-        { name: "clue_ids", value: request.clueIds, collectionFormat: "csv" }
+        { name: "advertiser_ids", value: request.advertiserIds },
+        { name: "clue_ids", value: request.clueIds }
       ]
     });
   }

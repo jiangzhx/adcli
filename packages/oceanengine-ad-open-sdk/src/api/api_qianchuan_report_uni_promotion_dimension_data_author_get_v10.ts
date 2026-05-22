@@ -51,7 +51,7 @@ export class QianchuanReportUniPromotionDimensionDataAuthorGetV10Api {
         { name: "advertiser_id", value: request.advertiserId },
         { name: "marketing_goal", value: request.marketingGoal },
         { name: "aweme_id", value: request.awemeId },
-        { name: "metrics", value: request.metrics, collectionFormat: "csv" },
+        { name: "metrics", value: request.metrics },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "dimension", value: request.dimension },

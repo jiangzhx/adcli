@@ -36,7 +36,7 @@ export class CampaignGetV2Api {
       path: "/open_api/2/campaign/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "fields", value: request.fields, collectionFormat: "csv" },
+        { name: "fields", value: request.fields },
         { name: "filtering", value: request.filtering },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize }

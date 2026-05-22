@@ -37,12 +37,12 @@ export class ToolsClueGetV2Api {
       method: "GET",
       path: "/open_api/2/tools/clue/get/",
       queryParams: [
-        { name: "advertiser_ids", value: request.advertiserIds, collectionFormat: "csv" },
+        { name: "advertiser_ids", value: request.advertiserIds },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
-        { name: "clue_ids", value: request.clueIds, collectionFormat: "csv" },
+        { name: "clue_ids", value: request.clueIds },
         { name: "encrypt_sensitive_fields", value: request.encryptSensitiveFields }
       ]
     });

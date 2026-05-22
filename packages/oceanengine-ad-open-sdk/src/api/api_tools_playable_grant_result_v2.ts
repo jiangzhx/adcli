@@ -39,7 +39,7 @@ export class ToolsPlayableGrantResultV2Api {
       path: "/open_api/2/tools/playable/grant/result/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "task_ids", value: request.taskIds, collectionFormat: "csv" },
+        { name: "task_ids", value: request.taskIds },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "page", value: request.page },

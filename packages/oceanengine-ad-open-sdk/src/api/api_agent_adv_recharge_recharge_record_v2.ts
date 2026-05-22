@@ -55,7 +55,7 @@ export class AgentAdvRechargeRechargeRecordV2Api {
       method: "GET",
       path: "/open_api/2/agent/adv/recharge/recharge_record/",
       queryParams: [
-        { name: "agent_ids", value: request.agentIds, collectionFormat: "csv" },
+        { name: "agent_ids", value: request.agentIds },
         { name: "start_time", value: request.startTime },
         { name: "end_time", value: request.endTime },
         { name: "filtering", value: request.filtering },
