@@ -1,6 +1,6 @@
 {
   "name": "@jiangzhx/oceanengine-ad-open-sdk",
-  "version": "1.1.87-port.3",
+  "version": "1.1.87-port.4",
   "description": "TypeScript SDK for OceanEngine Ads Open Platform OpenAPI.",
   "type": "module",
   "sideEffects": false,
