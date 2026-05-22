@@ -82,7 +82,7 @@ adcli prompt
 | 命令 | 作用 | 默认输出 |
 | --- | --- | --- |
 | `adcli oceanengine auth <token>` | 保存巨量引擎 access token | 保存结果 |
-| `adcli oceanengine advertiser list` | 拉取当前 token 授权的广告主列表 | 原始 JSON |
+| `adcli oceanengine advertiser list` | 拉取当前 token 授权的广告主列表 | `advertiser_id`、`name` |
 | `adcli oceanengine project list --advertiser-id <id>` | 拉取广告主下的项目列表 | `project_id`、`name` |
 | `adcli oceanengine promotion list --advertiser-id <id>` | 拉取广告主下的广告列表 | `promotion_id`、`name` |
 

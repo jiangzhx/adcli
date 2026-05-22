@@ -138,6 +138,7 @@ token 优先级：
 ### `adcli oceanengine advertiser list`
 
 通过当前仓库内的巨量引擎 Node.js SDK 拉取授权广告主列表。
+默认输出 `advertiser_id` 和 `name` 两列；需要完整响应时加 `--json`。
 
 ```bash
 adcli oceanengine advertiser list --access-token <token>

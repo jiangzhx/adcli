@@ -83,6 +83,9 @@ export function formatOceanEngineOutput(payload: unknown, json: boolean, argv: s
   if (isOceanEngineErrorPayload(payload)) {
     return JSON.stringify(payload, null, 2);
   }
+  if (argv[0] === "advertiser" && argv[1] === "list") {
+    return formatEntityList(payload, "advertiser_id", ["advertiser_id", "id"], ["advertiser_name", "name"]);
+  }
   if (argv[0] === "project" && argv[1] === "list") {
     return formatEntityList(payload, "project_id", ["project_id", "id"], ["name", "project_name"]);
   }

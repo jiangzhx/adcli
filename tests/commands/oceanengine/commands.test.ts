@@ -136,6 +136,24 @@ describe("oceanengine CLI commands", () => {
     });
   });
 
+  test("formats advertiser list as advertiser id and name by default", () => {
+    const payload = {
+      code: 0,
+      data: {
+        list: [
+          { advertiser_id: 3001, advertiser_name: "广告主 A", status: "STATUS_ENABLE" },
+          { advertiser_id: 3002, name: "广告主 B", status: "STATUS_DISABLE" },
+        ],
+      },
+    };
+
+    expect(formatOceanEngineOutput(payload, false, ["advertiser", "list"])).toBe([
+      "advertiser_id\tname",
+      "3001\t广告主 A",
+      "3002\t广告主 B",
+    ].join("\n"));
+  });
+
   test("lists OceanEngine projects through generated SDK", async () => {
     const requests: Request[] = [];
     await runOceanEngineCommand(
