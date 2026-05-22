@@ -183,7 +183,7 @@ function getRequiredId(args: OceanEngineArgs, flag: string) {
   if (!/^\d+$/.test(value)) {
     throw new Error(`--${flag} must be an integer id`);
   }
-  return Number(value);
+  return value;
 }
 
 function parseNumberFlag(value: string | boolean | undefined) {

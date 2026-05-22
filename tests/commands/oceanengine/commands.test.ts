@@ -263,7 +263,7 @@ describe("oceanengine CLI commands", () => {
 
   test("preserves unsafe integer advertiser id flags as query strings", async () => {
     const requests: Request[] = [];
-    const advertiserId = "7641898034989400000";
+    const advertiserId = "7641894773956215123";
     await runOceanEngineCommand(["project", "list", "--access-token", "token", "--advertiser-id", advertiserId], {
       fetch: async (input) => {
         requests.push(input as Request);
