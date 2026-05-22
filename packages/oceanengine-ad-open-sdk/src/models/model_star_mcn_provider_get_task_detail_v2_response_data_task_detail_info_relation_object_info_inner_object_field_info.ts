@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_star_mcn_provider_get_task_detail_v2_response_data_task_detail_info_relation_object_info_inner_object_field_info.go
+// Do not edit manually.
+
+import type { StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationObjectInfoInnerObjectFieldInfoObjectNovelInfo } from "../models/index";
+
+export interface StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationObjectInfoInnerObjectFieldInfo {
+  object_novel_info?: StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationObjectInfoInnerObjectFieldInfoObjectNovelInfo;
+  star_object_type?: number;
+}
+

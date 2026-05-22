@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_micro_app_create_v3_0_membership_type.go
+// Do not edit manually.
+
+export const ToolsMicroAppCreateV30MembershipType = {
+  ANNUAL: "ANNUAL",
+  LIFETIME: "LIFETIME",
+  MONTHLY: "MONTHLY",
+  NONE: "NONE",
+  WEEKLY_DAILY: "WEEKLY_DAILY",
+} as const;
+
+export type ToolsMicroAppCreateV30MembershipType = typeof ToolsMicroAppCreateV30MembershipType[keyof typeof ToolsMicroAppCreateV30MembershipType];
+

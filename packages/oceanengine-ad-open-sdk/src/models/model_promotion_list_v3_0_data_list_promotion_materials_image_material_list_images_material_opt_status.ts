@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_materials_image_material_list_images_material_opt_status.go
+// Do not edit manually.
+
+export const PromotionListV30DataListPromotionMaterialsImageMaterialListImagesMaterialOptStatus = {
+  DISABLE: "DISABLE",
+  ENABLE: "ENABLE",
+} as const;
+
+export type PromotionListV30DataListPromotionMaterialsImageMaterialListImagesMaterialOptStatus = typeof PromotionListV30DataListPromotionMaterialsImageMaterialListImagesMaterialOptStatus[keyof typeof PromotionListV30DataListPromotionMaterialsImageMaterialListImagesMaterialOptStatus];
+

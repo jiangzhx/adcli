@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_data_programmatic_creative_card_promotion_card_button_smart_optimization.go
+// Do not edit manually.
+
+export const QianchuanAdDetailGetV10DataProgrammaticCreativeCardPromotionCardButtonSmartOptimization = {
+  Enum_0: 0,
+  Enum_1: 1,
+} as const;
+
+export type QianchuanAdDetailGetV10DataProgrammaticCreativeCardPromotionCardButtonSmartOptimization = typeof QianchuanAdDetailGetV10DataProgrammaticCreativeCardPromotionCardButtonSmartOptimization[keyof typeof QianchuanAdDetailGetV10DataProgrammaticCreativeCardPromotionCardButtonSmartOptimization];
+

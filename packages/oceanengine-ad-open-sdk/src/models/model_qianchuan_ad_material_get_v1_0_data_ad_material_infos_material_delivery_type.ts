@@ -1,0 +1,36 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_material_get_v1_0_data_ad_material_infos_material_delivery_type.go
+// Do not edit manually.
+
+export const QianchuanAdMaterialGetV10DataAdMaterialInfosMaterialDeliveryType = {
+  ADVERTISER_OFFLINE_BUDGET: "ADVERTISER_OFFLINE_BUDGET",
+  ADVERTISER_PRE_OFFLINE_BUDGET: "ADVERTISER_PRE_OFFLINE_BUDGET",
+  AD_AUDIT: "AD_AUDIT",
+  AD_DISABLE: "AD_DISABLE",
+  AD_EXTERNAL_URL_DISABLE: "AD_EXTERNAL_URL_DISABLE",
+  AD_OFFLINE_AUDIT: "AD_OFFLINE_AUDIT",
+  AD_OFFLINE_BUDGET: "AD_OFFLINE_BUDGET",
+  AD_PRE_OFFLINE_BUDGET: "AD_PRE_OFFLINE_BUDGET",
+  AD_REAUDIT: "AD_REAUDIT",
+  AUDIT: "AUDIT",
+  AWEME_ITEM_DISABLED: "AWEME_ITEM_DISABLED",
+  CAMPAIGN_DISABLE: "CAMPAIGN_DISABLE",
+  CAMPAIGN_OFFLINE_BUDGET: "CAMPAIGN_OFFLINE_BUDGET",
+  CAMPAIGN_PRE_OFFLINE_BUDGET: "CAMPAIGN_PRE_OFFLINE_BUDGET",
+  CREATE: "CREATE",
+  DELETE: "DELETE",
+  DELIVERY_OK: "DELIVERY_OK",
+  DISABLE: "DISABLE",
+  ERROR: "ERROR",
+  FROZEN: "FROZEN",
+  LIVE_CAN_NOT_LAUNCH: "LIVE_CAN_NOT_LAUNCH",
+  NO_SCHEDULE: "NO_SCHEDULE",
+  OFFLINE_AUDIT: "OFFLINE_AUDIT",
+  OFFLINE_BALANCE: "OFFLINE_BALANCE",
+  PRE_ONLINE: "PRE_ONLINE",
+  REAUDIT: "REAUDIT",
+  TIME_DONE: "TIME_DONE",
+  TIME_NO_REACH: "TIME_NO_REACH",
+} as const;
+
+export type QianchuanAdMaterialGetV10DataAdMaterialInfosMaterialDeliveryType = typeof QianchuanAdMaterialGetV10DataAdMaterialInfosMaterialDeliveryType[keyof typeof QianchuanAdMaterialGetV10DataAdMaterialInfosMaterialDeliveryType];
+

@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_create_v3_0_material_list_material_component_common_external_micro_app_open_url_type.go
+// Do not edit manually.
+
+export const BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType = {
+  DEFAULT: "DEFAULT",
+  WECHAT: "WECHAT",
+} as const;
+
+export type BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType = typeof BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType[keyof typeof BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType];
+

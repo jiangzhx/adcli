@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_creative_custom_creative_create_v2_request_creative_list_inner_title_material.go
+// Do not edit manually.
+
+import type { CreativeCustomCreativeCreateV2RequestCreativeListInnerTitleMaterialBidwordListInner, CreativeCustomCreativeCreateV2RequestCreativeListInnerTitleMaterialDpaWordListInner, CreativeCustomCreativeCreateV2RequestCreativeListInnerTitleMaterialWordListInner } from "../models/index";
+
+export interface CreativeCustomCreativeCreateV2RequestCreativeListInnerTitleMaterial {
+  bidword_list?: CreativeCustomCreativeCreateV2RequestCreativeListInnerTitleMaterialBidwordListInner[];
+  dpa_word_list?: CreativeCustomCreativeCreateV2RequestCreativeListInnerTitleMaterialDpaWordListInner[];
+  title: string;
+  word_list?: CreativeCustomCreativeCreateV2RequestCreativeListInnerTitleMaterialWordListInner[];
+}
+

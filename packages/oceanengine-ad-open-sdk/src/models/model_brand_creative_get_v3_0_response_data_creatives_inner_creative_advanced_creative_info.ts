@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_creative_get_v3_0_response_data_creatives_inner_creative_advanced_creative_info.go
+// Do not edit manually.
+
+import type { BrandCreativeGetV30DataCreativesCreativeAdvancedCreativeInfoAdvancedCreativeType, BrandCreativeGetV30ResponseDataCreativesInnerCreativeAdvancedCreativeInfoCard, BrandCreativeGetV30ResponseDataCreativesInnerCreativeAdvancedCreativeInfoLiveCard } from "../models/index";
+
+export interface BrandCreativeGetV30ResponseDataCreativesInnerCreativeAdvancedCreativeInfo {
+  advanced_creative_type?: BrandCreativeGetV30DataCreativesCreativeAdvancedCreativeInfoAdvancedCreativeType;
+  card?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeAdvancedCreativeInfoCard;
+  live_card?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeAdvancedCreativeInfoLiveCard;
+}
+

@@ -1,0 +1,9 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_material_get_v1_0_data_ad_material_infos_material_info_video_material_star_traffic.go
+// Do not edit manually.
+
+export const QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialStarTraffic = {
+  Enum_1: 1,
+} as const;
+
+export type QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialStarTraffic = typeof QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialStarTraffic[keyof typeof QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialStarTraffic];
+

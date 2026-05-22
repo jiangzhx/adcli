@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_local_life_advertiser_list_v3_0_filtering_local_account_role.go
+// Do not edit manually.
+
+export const LocalLifeAdvertiserListV30FilteringLocalAccountRole = {
+  ALL: "ALL",
+  DIRECT_ACCOUNT: "DIRECT_ACCOUNT",
+  VIRTUAL_ACCOUNT: "VIRTUAL_ACCOUNT",
+} as const;
+
+export type LocalLifeAdvertiserListV30FilteringLocalAccountRole = typeof LocalLifeAdvertiserListV30FilteringLocalAccountRole[keyof typeof LocalLifeAdvertiserListV30FilteringLocalAccountRole];
+

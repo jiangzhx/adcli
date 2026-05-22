@@ -1,0 +1,23 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_creative_get_v3_0_response_data_creatives_inner_creative.go
+// Do not edit manually.
+
+import type { BrandCreativeGetV30ResponseDataCreativesInnerCreativeAdvancedCreativeInfo, BrandCreativeGetV30ResponseDataCreativesInnerCreativeAvatarIcon, BrandCreativeGetV30ResponseDataCreativesInnerCreativeAwemeItemInfo, BrandCreativeGetV30ResponseDataCreativesInnerCreativeBusinessInfo, BrandCreativeGetV30ResponseDataCreativesInnerCreativeCreativeInfo, BrandCreativeGetV30ResponseDataCreativesInnerCreativeExternalInfo, BrandCreativeGetV30ResponseDataCreativesInnerCreativeInteractiveModule, BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreative } from "../models/index";
+
+export interface BrandCreativeGetV30ResponseDataCreativesInnerCreative {
+  advanced_creative_info?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeAdvancedCreativeInfo;
+  avatar_icon?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeAvatarIcon;
+  aweme_item_info?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeAwemeItemInfo;
+  business_info?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeBusinessInfo;
+  creative_id?: string;
+  creative_info?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeCreativeInfo;
+  external_info?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeExternalInfo;
+  group_id?: string;
+  ies_core_user_id?: string;
+  interactive_module?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeInteractiveModule;
+  source?: string;
+  splash_button_text?: string;
+  splash_creative?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreative;
+  title?: string;
+  video_theme_color?: string;
+}
+

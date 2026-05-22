@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_create_challenge_v2_request_demand_info_ad_sync_conf.go
+// Do not edit manually.
+
+import type { StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfDouPlus, StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfLocalPromotion, StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfOceanEngine } from "../models/index";
+
+export interface StarDemandCreateChallengeV2RequestDemandInfoAdSyncConf {
+  dou_plus?: StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfDouPlus;
+  local_promotion?: StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfLocalPromotion;
+  ocean_engine?: StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfOceanEngine;
+}
+

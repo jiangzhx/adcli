@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_response_data_list_inner_promotion_materials_image_material_list_inner.go
+// Do not edit manually.
+
+import type { PromotionListV30DataListPromotionMaterialsImageMaterialListImageMode, PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInnerImagesInner } from "../models/index";
+
+export interface PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInner {
+  create_time?: string;
+  image_mode?: PromotionListV30DataListPromotionMaterialsImageMaterialListImageMode;
+  images?: PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInnerImagesInner[];
+}
+

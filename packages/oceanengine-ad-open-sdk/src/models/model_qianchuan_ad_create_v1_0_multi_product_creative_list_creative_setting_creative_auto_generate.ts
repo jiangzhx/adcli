@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_multi_product_creative_list_creative_setting_creative_auto_generate.go
+// Do not edit manually.
+
+export const QianchuanAdCreateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate = {
+  Enum_0: 0,
+  Enum_1: 1,
+} as const;
+
+export type QianchuanAdCreateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate = typeof QianchuanAdCreateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate[keyof typeof QianchuanAdCreateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate];
+

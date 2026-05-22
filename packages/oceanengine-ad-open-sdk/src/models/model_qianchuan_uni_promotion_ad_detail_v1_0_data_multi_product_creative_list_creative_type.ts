@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_detail_v1_0_data_multi_product_creative_list_creative_type.go
+// Do not edit manually.
+
+export const QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListCreativeType = {
+  CUSTOM_CREATIVE: "CUSTOM_CREATIVE",
+  PROGRAMMATIC_CREATIVE: "PROGRAMMATIC_CREATIVE",
+} as const;
+
+export type QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListCreativeType = typeof QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListCreativeType[keyof typeof QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListCreativeType];
+

@@ -1,9 +1,0 @@
-// Generated from oceanengine/ad_open_sdk_go
-// Do not edit manually.
-
-import type { ToolsClueLiteContactRecordV2ResponseDataListInner } from "../models";
-
-export interface ToolsClueLiteContactRecordV2ResponseData {
-  list?: ToolsClueLiteContactRecordV2ResponseDataListInner[];
-}
-

@@ -1,0 +1,26 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_comment_get_v3_0_response_data_comment_list_inner.go
+// Do not edit manually.
+
+import type { ToolsCommentGetV30DataCommentListCommentPermission, ToolsCommentGetV30DataCommentListCommentType, ToolsCommentGetV30DataCommentListEmotionType, ToolsCommentGetV30DataCommentListHideStatus, ToolsCommentGetV30DataCommentListLevelType } from "../models/index";
+
+export interface ToolsCommentGetV30ResponseDataCommentListInner {
+  aweme_id?: string;
+  aweme_name?: string;
+  comment_id?: number | string;
+  comment_images?: string[];
+  comment_permission?: ToolsCommentGetV30DataCommentListCommentPermission;
+  comment_type?: ToolsCommentGetV30DataCommentListCommentType;
+  create_time?: string;
+  emotion_type?: ToolsCommentGetV30DataCommentListEmotionType;
+  hide_status?: ToolsCommentGetV30DataCommentListHideStatus;
+  is_stick?: number;
+  item_id?: number | string;
+  item_title?: string;
+  level_type?: ToolsCommentGetV30DataCommentListLevelType;
+  like_count?: number;
+  material_id?: number | string;
+  promotion_id?: number | string;
+  reply_count?: number;
+  text?: string;
+}
+

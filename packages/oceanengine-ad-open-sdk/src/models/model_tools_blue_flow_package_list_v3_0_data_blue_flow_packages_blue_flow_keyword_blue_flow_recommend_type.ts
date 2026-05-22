@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_blue_flow_package_list_v3_0_data_blue_flow_packages_blue_flow_keyword_blue_flow_recommend_type.go
+// Do not edit manually.
+
+export const ToolsBlueFlowPackageListV30DataBlueFlowPackagesBlueFlowKeywordBlueFlowRecommendType = {
+  ORDINARY: "ORDINARY",
+  PREFERRED: "PREFERRED",
+} as const;
+
+export type ToolsBlueFlowPackageListV30DataBlueFlowPackagesBlueFlowKeywordBlueFlowRecommendType = typeof ToolsBlueFlowPackageListV30DataBlueFlowPackagesBlueFlowKeywordBlueFlowRecommendType[keyof typeof ToolsBlueFlowPackageListV30DataBlueFlowPackagesBlueFlowKeywordBlueFlowRecommendType];
+

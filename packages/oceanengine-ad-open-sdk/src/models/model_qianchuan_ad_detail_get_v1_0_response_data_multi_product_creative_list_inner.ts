@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_response_data_multi_product_creative_list_inner.go
+// Do not edit manually.
+
+import type { QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMaterialMode, QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerCreativeSetting, QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerProgrammaticCreative } from "../models/index";
+
+export interface QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInner {
+  creative_material_mode?: QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMaterialMode;
+  creative_setting?: QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerCreativeSetting;
+  product_id?: number | string;
+  programmatic_creative?: QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerProgrammaticCreative;
+}
+

@@ -1,0 +1,9 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_info_get_v3_0_response_data_wallet_info_inner_sub_wallet_info_sub_shared_range.go
+// Do not edit manually.
+
+import type { SharedWalletWalletInfoGetV30DataWalletInfoSubWalletInfoSubSharedRangeAccountPlatformList } from "../models/index";
+
+export interface SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfoSubSharedRange {
+  account_platform_list?: SharedWalletWalletInfoGetV30DataWalletInfoSubWalletInfoSubSharedRangeAccountPlatformList[];
+}
+

@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_creative_procedural_creative_create_v2_creative_video_materials_dpa_video_template_type.go
+// Do not edit manually.
+
+export const CreativeProceduralCreativeCreateV2CreativeVideoMaterialsDpaVideoTemplateType = {
+  DPA_VIDEO_TEMPLATE_DEPRECATED: "DPA_VIDEO_TEMPLATE_DEPRECATED",
+  DPA_VIDEO_TEMPLATE_SMART: "DPA_VIDEO_TEMPLATE_SMART",
+  DPA_VIDEO_TEMPLATE_CUSTOM: "DPA_VIDEO_TEMPLATE_CUSTOM",
+} as const;
+
+export type CreativeProceduralCreativeCreateV2CreativeVideoMaterialsDpaVideoTemplateType = typeof CreativeProceduralCreativeCreateV2CreativeVideoMaterialsDpaVideoTemplateType[keyof typeof CreativeProceduralCreativeCreateV2CreativeVideoMaterialsDpaVideoTemplateType];
+

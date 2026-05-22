@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_creative_custom_creative_update_v2_request_creative_list_inner_video_material.go
+// Do not edit manually.
+
+import type { CreativeCustomCreativeUpdateV2CreativeListVideoMaterialDpaVideoTemplateType, CreativeCustomCreativeUpdateV2RequestCreativeListInnerVideoMaterialImageInfo, CreativeCustomCreativeUpdateV2RequestCreativeListInnerVideoMaterialVideoInfo } from "../models/index";
+
+export interface CreativeCustomCreativeUpdateV2RequestCreativeListInnerVideoMaterial {
+  aweme_item_id?: number | string;
+  dpa_video_task_ids?: string[];
+  dpa_video_template_type?: CreativeCustomCreativeUpdateV2CreativeListVideoMaterialDpaVideoTemplateType;
+  image_info?: CreativeCustomCreativeUpdateV2RequestCreativeListInnerVideoMaterialImageInfo;
+  video_info?: CreativeCustomCreativeUpdateV2RequestCreativeListInnerVideoMaterialVideoInfo;
+}
+

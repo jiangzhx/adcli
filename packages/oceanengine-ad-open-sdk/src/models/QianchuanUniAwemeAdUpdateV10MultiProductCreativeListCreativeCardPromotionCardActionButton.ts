@@ -1,9 +1,0 @@
-// Generated from oceanengine/ad_open_sdk_go
-// Do not edit manually.
-
-export const QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeCardPromotionCardActionButton = {
-
-} as const;
-
-export type QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeCardPromotionCardActionButton = typeof QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeCardPromotionCardActionButton[keyof typeof QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeCardPromotionCardActionButton];
-

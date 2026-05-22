@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_star_report_custom_data_topic_daily_report_v2_response_data_stats_inner_data_inner.go
+// Do not edit manually.
+
+import type { StarReportCustomDataTopicDailyReportV2DataStatsDataDataTopic, StarReportCustomDataTopicDailyReportV2ResponseDataStatsInnerDataInnerMetricsInner } from "../models/index";
+
+export interface StarReportCustomDataTopicDailyReportV2ResponseDataStatsInnerDataInner {
+  data_topic: StarReportCustomDataTopicDailyReportV2DataStatsDataDataTopic;
+  metrics: StarReportCustomDataTopicDailyReportV2ResponseDataStatsInnerDataInnerMetricsInner[];
+}
+

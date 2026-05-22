@@ -1,7 +1,11 @@
 import type { ApiSpec, ModelSpec } from "./spec";
 
 export interface ApiEmitOptions {
-  runtimePrefix?: string;
+  clientModule?: string;
+  modelsModule?: string;
+}
+
+export interface ModelEmitOptions {
   modelsModule?: string;
 }
 
@@ -20,21 +24,20 @@ ${specs.map((spec) => emitApiClassBody(spec)).join("\n")}
 }
 
 function emitApiHeader(specs: ApiSpec[], options: ApiEmitOptions = {}) {
-  const runtimePrefix = options.runtimePrefix ?? "../runtime";
+  const clientModule = options.clientModule ?? "./client";
   const modelsModule = options.modelsModule ?? "./models";
   const modelImports = [
     ...new Set(specs.flatMap((spec) => [...extractModelTypes(spec.responseType), ...spec.params.flatMap((param) => extractModelTypes(param.javaType))])),
   ].sort();
   const modelImportLine = modelImports.length > 0 ? `\nimport type { ${modelImports.join(", ")} } from "${modelsModule}";` : "";
 
-  return `import { ApiClient } from "${runtimePrefix}/ApiClient";
-import { ApiException } from "${runtimePrefix}/ApiException";
-import type { ApiResponse } from "${runtimePrefix}/ApiResponse";${modelImportLine}`;
+  return `import { ApiClient, ApiException, type ApiResponse } from "${clientModule}";${modelImportLine}`;
 }
 
-export function emitModelModule(spec: ModelSpec) {
+export function emitModelModule(spec: ModelSpec, options: ModelEmitOptions = {}) {
+  const modelsModule = options.modelsModule ?? "../models/index";
   const modelImports = extractModelImports(spec);
-  const importLine = modelImports.length > 0 ? `import type { ${modelImports.join(", ")} } from "../models";\n\n` : "";
+  const importLine = modelImports.length > 0 ? `import type { ${modelImports.join(", ")} } from "${modelsModule}";\n\n` : "";
   return `${importLine}${emitModel(spec)}`;
 }
 
@@ -50,7 +53,7 @@ function extractModelImports(spec: ModelSpec) {
 
 function emitApiClassBody(spec: ApiSpec) {
   const responseType = toTypeScriptType(spec.responseType);
-  const requestType = `${upperFirst(spec.methodName)}Request`;
+  const requestType = requestTypeName(spec);
   const fields = spec.params
     .map((param) => `  ${param.name}${param.required ? "" : "?"}: ${toTypeScriptType(param.javaType)};`)
     .join("\n");
@@ -157,6 +160,10 @@ function upperFirst(value: string) {
   return value ? value[0].toUpperCase() + value.slice(1) : value;
 }
 
+function requestTypeName(spec: ApiSpec) {
+  return `${spec.className}${upperFirst(spec.methodName)}Request`;
+}
+
 function toTypeScriptType(javaType: string): string {
   const normalized = javaType.trim();
   const listMatch = normalized.match(/^List<(.+)>$/);
@@ -189,7 +196,7 @@ function toTypeScriptType(javaType: string): string {
     case "Object":
       return "unknown";
     case "File":
-      return "File";
+      return "Blob";
     default:
       return normalized;
   }

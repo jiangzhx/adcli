@@ -1,0 +1,17 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_star_vas_get_boost_item_group_detail_v2_response_data_order_stat_info_inner_all_flow_stat_info.go
+// Do not edit manually.
+
+export interface StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInnerAllFlowStatInfo {
+  comment: number;
+  component_click_pv?: number;
+  component_ctr?: number;
+  convert_count?: number;
+  finished_watcher_uv?: number;
+  like: number;
+  play: number;
+  play_rate_with5s: number;
+  share: number;
+  target_watcher_uv?: number;
+  total_watcher_uv?: number;
+}
+

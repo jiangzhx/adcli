@@ -1,0 +1,56 @@
+// Generated from oceanengine/ad_open_sdk_go api/api_tools_bp_asset_management_share_get_v30.go
+// Do not edit manually.
+
+import { ApiClient, ApiException, type ApiResponse } from "./client";
+import type { ToolsBpAssetManagementShareGetV30AssetType, ToolsBpAssetManagementShareGetV30Response, ToolsBpAssetManagementShareGetV30ShareType } from "../models/index";
+
+
+export interface ToolsBpAssetManagementShareGetV30ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest {
+  assetType: ToolsBpAssetManagementShareGetV30AssetType;
+  instanceId: number | string;
+  organizationId?: number | string;
+  page?: number;
+  pageSize?: number;
+  shareType?: ToolsBpAssetManagementShareGetV30ShareType;
+}
+
+export class ToolsBpAssetManagementShareGetV30Api {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async openApiV30ToolsBpAssetManagementShareGetGet(request: ToolsBpAssetManagementShareGetV30ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest): Promise<ToolsBpAssetManagementShareGetV30Response> {
+    const response = await this.openApiV30ToolsBpAssetManagementShareGetGetWithHttpInfo(request);
+    return response.data;
+  }
+
+  async openApiV30ToolsBpAssetManagementShareGetGetWithHttpInfo(request: ToolsBpAssetManagementShareGetV30ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest): Promise<ApiResponse<ToolsBpAssetManagementShareGetV30Response>> {
+    if (request.assetType == null) {
+      throw new ApiException("Missing the required parameter 'assetType' when calling openApiV30ToolsBpAssetManagementShareGetGet");
+    }
+
+    if (request.instanceId == null) {
+      throw new ApiException("Missing the required parameter 'instanceId' when calling openApiV30ToolsBpAssetManagementShareGetGet");
+    }
+    return this.apiClient.requestWithHttpInfo<ToolsBpAssetManagementShareGetV30Response>({
+      method: "GET",
+      path: "/open_api/v3.0/tools/bp_asset_management/share/get/",
+      queryParams: [
+        { name: "organization_id", value: request.organizationId },
+        { name: "asset_type", value: request.assetType },
+        { name: "instance_id", value: request.instanceId },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize },
+        { name: "share_type", value: request.shareType }
+      ]
+    });
+  }
+}
+
+

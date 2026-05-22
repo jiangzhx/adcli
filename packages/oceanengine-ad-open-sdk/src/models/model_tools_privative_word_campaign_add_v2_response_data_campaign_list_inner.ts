@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_privative_word_campaign_add_v2_response_data_campaign_list_inner.go
+// Do not edit manually.
+
+import type { ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerDuplicateWords, ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerExceedLengthWords, ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerExceedLimitWords, ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerHasEmojiWords, ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerSuccessWords } from "../models/index";
+
+export interface ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInner {
+  campaign_id?: number | string;
+  duplicate_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerDuplicateWords;
+  exceed_length_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerExceedLengthWords;
+  exceed_limit_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerExceedLimitWords;
+  has_emoji_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerHasEmojiWords;
+  status?: string;
+  success_words?: ToolsPrivativeWordCampaignAddV2ResponseDataCampaignListInnerSuccessWords;
+}
+

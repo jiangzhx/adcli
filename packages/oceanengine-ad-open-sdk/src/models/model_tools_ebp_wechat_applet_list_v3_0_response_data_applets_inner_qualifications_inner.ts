@@ -1,0 +1,21 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_wechat_applet_list_v3_0_response_data_applets_inner_qualifications_inner.go
+// Do not edit manually.
+
+export interface ToolsEbpWechatAppletListV30ResponseDataAppletsInnerQualificationsInner {
+  abbr?: string;
+  app_qualification_type?: number;
+  authorized_image_url?: string[];
+  copyright_image_url?: string[];
+  copyright_owner?: string;
+  image_list?: string[];
+  name?: string;
+  own_type?: number;
+  qualification_id: number | string;
+  qualification_id_type?: number;
+  qualification_show_name?: string;
+  qualification_type: number;
+  regist_no?: string;
+  status?: number;
+  version?: number;
+}
+

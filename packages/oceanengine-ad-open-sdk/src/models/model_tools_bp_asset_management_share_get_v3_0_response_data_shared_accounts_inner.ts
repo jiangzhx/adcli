@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_get_v3_0_response_data_shared_accounts_inner.go
+// Do not edit manually.
+
+import type { ToolsBpAssetManagementShareGetV30DataSharedAccountsAllAccountsByBp, ToolsBpAssetManagementShareGetV30DataSharedAccountsShareMode, ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInnerAccountInfo, ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInnerAllAccountsByCompany } from "../models/index";
+
+export interface ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInner {
+  account_info?: ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInnerAccountInfo;
+  all_accounts_by_bp?: ToolsBpAssetManagementShareGetV30DataSharedAccountsAllAccountsByBp;
+  all_accounts_by_company?: ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInnerAllAccountsByCompany;
+  share_mode: ToolsBpAssetManagementShareGetV30DataSharedAccountsShareMode;
+}
+

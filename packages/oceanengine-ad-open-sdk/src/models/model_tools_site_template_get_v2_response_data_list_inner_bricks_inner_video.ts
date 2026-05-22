@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_site_template_get_v2_response_data_list_inner_bricks_inner_video.go
+// Do not edit manually.
+
+import type { ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerVideoLocalVideo, ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerVideoOnlineVideo } from "../models/index";
+
+export interface ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerVideo {
+  local_video?: ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerVideoLocalVideo;
+  online_video?: ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerVideoOnlineVideo;
+}
+

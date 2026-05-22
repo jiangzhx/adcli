@@ -1,0 +1,22 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_ad_get_v2_data_deep_bid_type.go
+// Do not edit manually.
+
+export const AdGetV2DataDeepBidType = {
+  ROI_PACING: "ROI_PACING",
+  PACING_SECOND_STAGE: "PACING_SECOND_STAGE",
+  DEEP_BID_DEFAULT: "DEEP_BID_DEFAULT",
+  ROI_DIRECT_MAIL: "ROI_DIRECT_MAIL",
+  ROI_COEFFICIENT: "ROI_COEFFICIENT",
+  DEEP_BID_MIN: "DEEP_BID_MIN",
+  DEEP_BID_TYPE_RETENTION_DAYS: "DEEP_BID_TYPE_RETENTION_DAYS",
+  AUTO_MIN_SECOND_STAGE: "AUTO_MIN_SECOND_STAGE",
+  SOCIAL_ROI: "SOCIAL_ROI",
+  ALI_FL: "ALI_FL",
+  DEEP_BID_PACING: "DEEP_BID_PACING",
+  MIN_SECOND_STAGE: "MIN_SECOND_STAGE",
+  BID_PER_ACTION: "BID_PER_ACTION",
+  SMARTBID: "SMARTBID",
+} as const;
+
+export type AdGetV2DataDeepBidType = typeof AdGetV2DataDeepBidType[keyof typeof AdGetV2DataDeepBidType];
+

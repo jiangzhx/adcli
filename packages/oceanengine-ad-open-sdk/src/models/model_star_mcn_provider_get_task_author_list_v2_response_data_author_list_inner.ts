@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_star_mcn_provider_get_task_author_list_v2_response_data_author_list_inner.go
+// Do not edit manually.
+
+import type { StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorBaseInfo, StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorInvitaionInfo, StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorOrderInfo } from "../models/index";
+
+export interface StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInner {
+  author_base_info: StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorBaseInfo;
+  author_invitaion_info?: StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorInvitaionInfo;
+  author_order_info: StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorOrderInfo;
+}
+

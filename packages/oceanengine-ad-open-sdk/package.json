@@ -13,13 +13,17 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./apis": {
-      "types": "./dist/apis.d.ts",
-      "import": "./dist/apis.js"
+    "./api": {
+      "types": "./dist/api/index.d.ts",
+      "import": "./dist/api/index.js"
     },
     "./models": {
-      "types": "./dist/models.d.ts",
-      "import": "./dist/models.js"
+      "types": "./dist/models/index.d.ts",
+      "import": "./dist/models/index.js"
+    },
+    "./config": {
+      "types": "./dist/config/configuration.d.ts",
+      "import": "./dist/config/configuration.js"
     },
     "./package.json": "./package.json"
   },

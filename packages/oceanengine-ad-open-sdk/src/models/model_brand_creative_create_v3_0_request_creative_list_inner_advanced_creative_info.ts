@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_creative_create_v3_0_request_creative_list_inner_advanced_creative_info.go
+// Do not edit manually.
+
+import type { BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoCard, BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoExploreOneTimeComponent, BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoSearchComponent } from "../models/index";
+
+export interface BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfo {
+  advanced_creative_type?: number;
+  card?: BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoCard;
+  explore_one_time_component?: BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoExploreOneTimeComponent;
+  search_component?: BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoSearchComponent;
+}
+

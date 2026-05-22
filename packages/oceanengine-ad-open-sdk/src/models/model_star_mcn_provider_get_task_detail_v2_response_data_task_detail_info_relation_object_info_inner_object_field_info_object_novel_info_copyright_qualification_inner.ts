@@ -1,0 +1,8 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_star_mcn_provider_get_task_detail_v2_response_data_task_detail_info_relation_object_info_inner_object_field_info_object_novel_info_copyright_qualification_inner.go
+// Do not edit manually.
+
+export interface StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationObjectInfoInnerObjectFieldInfoObjectNovelInfoCopyrightQualificationInner {
+  file_name?: string;
+  file_uri?: string;
+}
+

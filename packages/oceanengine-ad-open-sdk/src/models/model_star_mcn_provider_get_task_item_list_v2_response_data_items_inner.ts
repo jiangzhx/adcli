@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_star_mcn_provider_get_task_item_list_v2_response_data_items_inner.go
+// Do not edit manually.
+
+import type { StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerExtraItemInfo, StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfo, StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerStarAdUniteItemInfo } from "../models/index";
+
+export interface StarMcnProviderGetTaskItemListV2ResponseDataItemsInner {
+  extra_item_info?: StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerExtraItemInfo;
+  item_info: StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfo;
+  star_ad_unite_item_info?: StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerStarAdUniteItemInfo;
+}
+

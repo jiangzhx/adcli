@@ -1,0 +1,22 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_detail_v1_0_response_data_delivery_setting.go
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdDetailV10DataDeliverySettingBudgetMode, QianchuanUniPromotionAdDetailV10DataDeliverySettingDeepBidType, QianchuanUniPromotionAdDetailV10DataDeliverySettingDeepExternalAction, QianchuanUniPromotionAdDetailV10DataDeliverySettingExternalAction, QianchuanUniPromotionAdDetailV10DataDeliverySettingLiveScheduleType, QianchuanUniPromotionAdDetailV10DataDeliverySettingPricingType, QianchuanUniPromotionAdDetailV10DataDeliverySettingQcpxMode, QianchuanUniPromotionAdDetailV10DataDeliverySettingSmartBidType, QianchuanUniPromotionAdDetailV10DataDeliverySettingVideoScheduleType } from "../models/index";
+
+export interface QianchuanUniPromotionAdDetailV10ResponseDataDeliverySetting {
+  budget?: number;
+  budget_mode?: QianchuanUniPromotionAdDetailV10DataDeliverySettingBudgetMode;
+  daily_delivery_time?: number;
+  deep_bid_type?: QianchuanUniPromotionAdDetailV10DataDeliverySettingDeepBidType;
+  deep_external_action?: QianchuanUniPromotionAdDetailV10DataDeliverySettingDeepExternalAction;
+  end_time?: string;
+  external_action?: QianchuanUniPromotionAdDetailV10DataDeliverySettingExternalAction;
+  live_schedule_type?: QianchuanUniPromotionAdDetailV10DataDeliverySettingLiveScheduleType;
+  pricing_type?: QianchuanUniPromotionAdDetailV10DataDeliverySettingPricingType;
+  qcpx_mode?: QianchuanUniPromotionAdDetailV10DataDeliverySettingQcpxMode;
+  roi2_goal?: number;
+  smart_bid_type?: QianchuanUniPromotionAdDetailV10DataDeliverySettingSmartBidType;
+  start_time?: string;
+  video_schedule_type?: QianchuanUniPromotionAdDetailV10DataDeliverySettingVideoScheduleType;
+}
+

@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_create_v3_0_request_material_list_inner_material_component_common_external.go
+// Do not edit manually.
+
+import type { BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType, BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExternalMicroAppInfo, BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExternalWechatMicroAppInfo } from "../models/index";
+
+export interface BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExternal {
+  external_url?: string;
+  external_url_is_download?: number;
+  micro_app_info?: BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExternalMicroAppInfo;
+  micro_app_open_url_type?: BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType;
+  open_url?: string;
+  wechat_micro_app_info?: BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExternalWechatMicroAppInfo;
+}
+

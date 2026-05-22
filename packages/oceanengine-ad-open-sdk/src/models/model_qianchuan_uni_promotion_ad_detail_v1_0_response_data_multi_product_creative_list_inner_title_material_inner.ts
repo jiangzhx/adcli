@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_detail_v1_0_response_data_multi_product_creative_list_inner_title_material_inner.go
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListTitleMaterialTitleType, QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerTitleMaterialInnerDynamicWordsInner } from "../models/index";
+
+export interface QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerTitleMaterialInner {
+  dynamic_words?: QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerTitleMaterialInnerDynamicWordsInner[];
+  title?: string;
+  title_type?: QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListTitleMaterialTitleType;
+}
+

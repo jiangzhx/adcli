@@ -30,7 +30,7 @@ describe("typescript emitter", () => {
     const output = emitApiClass(spec);
 
     expect(output).toContain("export class ReportCustomConfigGetV30Api");
-    expect(output).toContain("export interface OpenApiV30ReportCustomConfigGetGetRequest");
+    expect(output).toContain("export interface ReportCustomConfigGetV30ApiOpenApiV30ReportCustomConfigGetGetRequest");
     expect(output).toContain("ReportCustomConfigGetV30DataTopics");
     expect(output).toContain("ReportCustomConfigGetV30Response");
     expect(output).toContain("openApiV30ReportCustomConfigGetGet(request:");
@@ -38,7 +38,7 @@ describe("typescript emitter", () => {
     expect(output).toContain("dataTopics: ReportCustomConfigGetV30DataTopics[]");
     expect(output).toContain("page?: number;");
     expect(output).toContain(
-      "async openApiV30ReportCustomConfigGetGet(request: OpenApiV30ReportCustomConfigGetGetRequest): Promise<ReportCustomConfigGetV30Response>",
+      "async openApiV30ReportCustomConfigGetGet(request: ReportCustomConfigGetV30ApiOpenApiV30ReportCustomConfigGetGetRequest): Promise<ReportCustomConfigGetV30Response>",
     );
     expect(output).toContain("if (request.advertiserId == null)");
     expect(output).toContain("Missing the required parameter 'advertiserId'");

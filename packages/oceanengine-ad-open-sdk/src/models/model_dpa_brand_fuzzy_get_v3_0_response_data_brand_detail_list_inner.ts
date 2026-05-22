@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_dpa_brand_fuzzy_get_v3_0_response_data_brand_detail_list_inner.go
+// Do not edit manually.
+
+import type { DpaBrandFuzzyGetV30DataBrandDetailListBrandType, DpaBrandFuzzyGetV30ResponseDataBrandDetailListInnerBrandTrademarkListInner } from "../models/index";
+
+export interface DpaBrandFuzzyGetV30ResponseDataBrandDetailListInner {
+  brand_full_name?: string;
+  brand_id?: number | string;
+  brand_name_cn?: string;
+  brand_name_en?: string;
+  brand_trademark_list?: DpaBrandFuzzyGetV30ResponseDataBrandDetailListInnerBrandTrademarkListInner[];
+  brand_type?: DpaBrandFuzzyGetV30DataBrandDetailListBrandType;
+}
+

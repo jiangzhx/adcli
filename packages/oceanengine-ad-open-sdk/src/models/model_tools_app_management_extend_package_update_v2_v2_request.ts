@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_management_extend_package_update_v2_v2_request.go
+// Do not edit manually.
+
+import type { ToolsAppManagementExtendPackageUpdateV2V2AccountType, ToolsAppManagementExtendPackageUpdateV2V2Mode, ToolsAppManagementExtendPackageUpdateV2V2RequestChannelInfoListInner } from "../models/index";
+
+export interface ToolsAppManagementExtendPackageUpdateV2V2Request {
+  account_id: number | string;
+  account_type: ToolsAppManagementExtendPackageUpdateV2V2AccountType;
+  channel_info_list?: ToolsAppManagementExtendPackageUpdateV2V2RequestChannelInfoListInner[];
+  mode: ToolsAppManagementExtendPackageUpdateV2V2Mode;
+  package_id: string;
+}
+

@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_subject_list_v3_0_response_data_company_basic_infos_inner_qualification_info.go
+// Do not edit manually.
+
+import type { ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoSubjectQualification, ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoVerifyInfoDto } from "../models/index";
+
+export interface ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfo {
+  query_type: number;
+  subject_qualification: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoSubjectQualification;
+  verify_info_dto?: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfoVerifyInfoDto;
+}
+

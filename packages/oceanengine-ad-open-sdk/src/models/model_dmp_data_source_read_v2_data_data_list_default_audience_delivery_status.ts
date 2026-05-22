@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_dmp_data_source_read_v2_data_data_list_default_audience_delivery_status.go
+// Do not edit manually.
+
+export const DmpDataSourceReadV2DataDataListDefaultAudienceDeliveryStatus = {
+  CUSTOM_AUDIENCE_DELIVERY_STATUS_AVAILABLE: "CUSTOM_AUDIENCE_DELIVERY_STATUS_AVAILABLE",
+  CUSTOM_AUDIENCE_DELIVERY_STATUS_NEED_PUSH: "CUSTOM_AUDIENCE_DELIVERY_STATUS_NEED_PUSH",
+  CUSTOM_AUDIENCE_DELIVERY_STATUS_NEED_PUBLISH: "CUSTOM_AUDIENCE_DELIVERY_STATUS_NEED_PUBLISH",
+  CUSTOM_AUDIENCE_DELIVERY_STATUS_UNAVAILABLE: "CUSTOM_AUDIENCE_DELIVERY_STATUS_UNAVAILABLE",
+} as const;
+
+export type DmpDataSourceReadV2DataDataListDefaultAudienceDeliveryStatus = typeof DmpDataSourceReadV2DataDataListDefaultAudienceDeliveryStatus[keyof typeof DmpDataSourceReadV2DataDataListDefaultAudienceDeliveryStatus];
+

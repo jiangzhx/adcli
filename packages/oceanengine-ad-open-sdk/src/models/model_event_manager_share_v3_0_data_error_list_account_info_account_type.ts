@@ -1,0 +1,9 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_event_manager_share_v3_0_data_error_list_account_info_account_type.go
+// Do not edit manually.
+
+export const EventManagerShareV30DataErrorListAccountInfoAccountType = {
+  AD: "AD",
+} as const;
+
+export type EventManagerShareV30DataErrorListAccountInfoAccountType = typeof EventManagerShareV30DataErrorListAccountInfoAccountType[keyof typeof EventManagerShareV30DataErrorListAccountInfoAccountType];
+

@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_detail_v3_0_response_data_promotion_card_info.go
+// Do not edit manually.
+
+import type { LocalPromotionDetailV30ResponseDataPromotionCardInfoCallToActionsInner, LocalPromotionDetailV30ResponseDataPromotionCardInfoProductImagesInner, LocalPromotionDetailV30ResponseDataPromotionCardInfoProductSellingPointsInner } from "../models/index";
+
+export interface LocalPromotionDetailV30ResponseDataPromotionCardInfo {
+  call_to_actions: LocalPromotionDetailV30ResponseDataPromotionCardInfoCallToActionsInner[];
+  enable_personal_call_to_action: boolean;
+  product_images: LocalPromotionDetailV30ResponseDataPromotionCardInfoProductImagesInner[];
+  product_name: string;
+  product_selling_points: LocalPromotionDetailV30ResponseDataPromotionCardInfoProductSellingPointsInner[];
+}
+

@@ -1,0 +1,18 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_control_task_list_v1_0_response_data_task_list_inner_audience.go
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAge, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAwemeFanBehaviors, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAwemeFanBehaviorsDays, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceDistrict, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceGender, QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceLocationType } from "../models/index";
+
+export interface QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerAudience {
+  age?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAge[];
+  aweme_fan_accounts?: number[];
+  aweme_fan_behaviors?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAwemeFanBehaviors[];
+  aweme_fan_behaviors_days?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceAwemeFanBehaviorsDays;
+  aweme_fan_categories?: number[];
+  city?: number[];
+  district?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceDistrict;
+  district_type?: boolean;
+  gender?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceGender;
+  location_type?: QianchuanUniPromotionAdControlTaskListV10DataTaskListAudienceLocationType;
+}
+

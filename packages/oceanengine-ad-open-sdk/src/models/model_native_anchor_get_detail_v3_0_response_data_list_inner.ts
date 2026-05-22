@@ -1,0 +1,23 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_native_anchor_get_detail_v3_0_response_data_list_inner.go
+// Do not edit manually.
+
+import type { NativeAnchorGetDetailV30DataListAnchorType, NativeAnchorGetDetailV30DataListSource, NativeAnchorGetDetailV30ResponseDataListInnerAppEcommerceAnchor, NativeAnchorGetDetailV30ResponseDataListInnerGameAnchor, NativeAnchorGetDetailV30ResponseDataListInnerInsuranceEnterpriseAnchor, NativeAnchorGetDetailV30ResponseDataListInnerMicroAppAnchor, NativeAnchorGetDetailV30ResponseDataListInnerMicroGameAnchor, NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchor, NativeAnchorGetDetailV30ResponseDataListInnerPrivateChatAnchor, NativeAnchorGetDetailV30ResponseDataListInnerShoppingCartAnchor } from "../models/index";
+
+export interface NativeAnchorGetDetailV30ResponseDataListInner {
+  advertiser_id?: number | string;
+  anchor_id?: string;
+  anchor_type?: NativeAnchorGetDetailV30DataListAnchorType;
+  app_ecommerce_anchor?: NativeAnchorGetDetailV30ResponseDataListInnerAppEcommerceAnchor;
+  create_time?: string;
+  game_anchor?: NativeAnchorGetDetailV30ResponseDataListInnerGameAnchor;
+  insurance_enterprise_anchor?: NativeAnchorGetDetailV30ResponseDataListInnerInsuranceEnterpriseAnchor;
+  micro_app_anchor?: NativeAnchorGetDetailV30ResponseDataListInnerMicroAppAnchor;
+  micro_game_anchor?: NativeAnchorGetDetailV30ResponseDataListInnerMicroGameAnchor;
+  modify_time?: string;
+  net_service_anchor?: NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchor;
+  private_chat_anchor?: NativeAnchorGetDetailV30ResponseDataListInnerPrivateChatAnchor;
+  shopping_cart_anchor?: NativeAnchorGetDetailV30ResponseDataListInnerShoppingCartAnchor;
+  source?: NativeAnchorGetDetailV30DataListSource;
+  tool_title?: string;
+}
+

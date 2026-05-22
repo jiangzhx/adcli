@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_report_business_platform_stardelivery_task_video_data_get_v3_0_response_data.go
+// Do not edit manually.
+
+import type { ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ResponseDataListInner, ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ResponseDataPageInfo } from "../models/index";
+
+export interface ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ResponseData {
+  list?: ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ResponseDataListInner[];
+  page_info?: ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ResponseDataPageInfo;
+}
+

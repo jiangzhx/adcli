@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_materials_video_material_list_video_template_type.go
+// Do not edit manually.
+
+export const PromotionListV30DataListPromotionMaterialsVideoMaterialListVideoTemplateType = {
+  DPA_VIDEO_TEMPLATE_CUSTOM: "DPA_VIDEO_TEMPLATE_CUSTOM",
+  DPA_VIDEO_TEMPLATE_DEPRECATED: "DPA_VIDEO_TEMPLATE_DEPRECATED",
+  DPA_VIDEO_TEMPLATE_SMART: "DPA_VIDEO_TEMPLATE_SMART",
+} as const;
+
+export type PromotionListV30DataListPromotionMaterialsVideoMaterialListVideoTemplateType = typeof PromotionListV30DataListPromotionMaterialsVideoMaterialListVideoTemplateType[keyof typeof PromotionListV30DataListPromotionMaterialsVideoMaterialListVideoTemplateType];
+

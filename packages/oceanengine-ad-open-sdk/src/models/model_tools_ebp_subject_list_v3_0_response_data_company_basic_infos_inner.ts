@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_subject_list_v3_0_response_data_company_basic_infos_inner.go
+// Do not edit manually.
+
+import type { ToolsEbpSubjectListV30DataCompanyBasicInfosStatus, ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerAccountParam, ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerCompanyBasicInfo, ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfo } from "../models/index";
+
+export interface ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInner {
+  account_param: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerAccountParam;
+  company_basic_info?: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerCompanyBasicInfo;
+  group_id: number | string;
+  qualification_info?: ToolsEbpSubjectListV30ResponseDataCompanyBasicInfosInnerQualificationInfo;
+  qualification_type: number;
+  status: ToolsEbpSubjectListV30DataCompanyBasicInfosStatus;
+}
+

@@ -1,0 +1,18 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_dpa_asset_v2_list_v2_response_data_asset_list_inner.go
+// Do not edit manually.
+
+import type { DpaAssetV2ListV2DataAssetListAssetType, DpaAssetV2ListV2DataAssetListAuditStatus, DpaAssetV2ListV2DataAssetListSource, DpaAssetV2ListV2DataAssetListStatus } from "../models/index";
+
+export interface DpaAssetV2ListV2ResponseDataAssetListInner {
+  advertiser_id: number | string;
+  asset_create_time: string;
+  asset_id: number | string;
+  asset_modify_time: string;
+  asset_name: string;
+  asset_type: DpaAssetV2ListV2DataAssetListAssetType;
+  audit_status: DpaAssetV2ListV2DataAssetListAuditStatus;
+  source: DpaAssetV2ListV2DataAssetListSource;
+  status: DpaAssetV2ListV2DataAssetListStatus;
+  unique_product_id: number | string;
+}
+

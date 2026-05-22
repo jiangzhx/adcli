@@ -1,0 +1,33 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_event_manager_deep_bid_type_get_v3_0_data_deep_bid_type_detail_deep_bid_type.go
+// Do not edit manually.
+
+export const EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = {
+  ALI_FL: "ALI_FL",
+  AUTO_MIN_SECOND_STAGE: "AUTO_MIN_SECOND_STAGE",
+  BID_PER_ACTION: "BID_PER_ACTION",
+  DEEP_BID_DEFAULT: "DEEP_BID_DEFAULT",
+  DEEP_BID_MIN: "DEEP_BID_MIN",
+  DEEP_BID_PACING: "DEEP_BID_PACING",
+  DEEP_BID_TYPE_RETENTION_DAYS: "DEEP_BID_TYPE_RETENTION_DAYS",
+  FIRST_AND_SEVEN_PAY_ROI: "FIRST_AND_SEVEN_PAY_ROI",
+  FORM_BID: "FORM_BID",
+  IAAP_ROI_24_H_AND_7_D: "IAAP_ROI_24H_AND_7D",
+  IAAP_SEVEN_ROI_COEFFICIENT: "IAAP_SEVEN_ROI_COEFFICIENT",
+  LOAN_ROI: "LOAN_ROI",
+  MIN_SECOND_STAGE: "MIN_SECOND_STAGE",
+  NET_ORDER: "NET_ORDER",
+  NET_ORDER_ROI: "NET_ORDER_ROI",
+  PACING_SECOND_STAGE: "PACING_SECOND_STAGE",
+  PER_AND_SEVEN_PAY_ROI: "PER_AND_SEVEN_PAY_ROI",
+  PHONE_CONNECT_BID: "PHONE_CONNECT_BID",
+  ROI_COEFFICIENT: "ROI_COEFFICIENT",
+  ROI_DIRECT_MAIL: "ROI_DIRECT_MAIL",
+  ROI_PACING: "ROI_PACING",
+  RTA_DOUBLE_BID: "RTA_DOUBLE_BID",
+  SEVEN_ROI_COEFFICIENT: "SEVEN_ROI_COEFFICIENT",
+  SMARTBID: "SMARTBID",
+  SOCIAL_ROI: "SOCIAL_ROI",
+} as const;
+
+export type EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = typeof EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType[keyof typeof EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType];
+

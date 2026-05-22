@@ -1,0 +1,18 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_response_data_list_inner_promotion_related_product_inner_video_material_list_inner.go
+// Do not edit manually.
+
+import type { PromotionListV30DataListPromotionRelatedProductVideoMaterialListImageMode, PromotionListV30DataListPromotionRelatedProductVideoMaterialListIsCarryMaterial, PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialOptStatus, PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialStatus, PromotionListV30DataListPromotionRelatedProductVideoMaterialListVideoHpVisibility } from "../models/index";
+
+export interface PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerVideoMaterialListInner {
+  image_mode?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListImageMode;
+  is_carry_material?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListIsCarryMaterial;
+  item_id?: number | string;
+  material_id?: number | string;
+  material_opt_status?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialOptStatus;
+  material_status?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListMaterialStatus;
+  video_cover_id?: string;
+  video_hp_visibility?: PromotionListV30DataListPromotionRelatedProductVideoMaterialListVideoHpVisibility;
+  video_id?: string;
+  visible_end_date?: string;
+}
+

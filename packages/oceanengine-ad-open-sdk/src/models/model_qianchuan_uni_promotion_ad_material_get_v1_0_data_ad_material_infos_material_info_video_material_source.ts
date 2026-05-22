@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_material_get_v1_0_data_ad_material_infos_material_info_video_material_source.go
+// Do not edit manually.
+
+export const QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialSource = {
+  AD: "AD",
+  AWEME_VIDEO: "AWEME_VIDEO",
+} as const;
+
+export type QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialSource = typeof QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialSource[keyof typeof QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialSource];
+

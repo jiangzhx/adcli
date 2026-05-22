@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_cancel_v3_0_response_data_error_list_inner.go
+// Do not edit manually.
+
+import type { ToolsBpAssetManagementShareCancelV30DataErrorListAllAccountsByBp, ToolsBpAssetManagementShareCancelV30DataErrorListShareMode, ToolsBpAssetManagementShareCancelV30ResponseDataErrorListInnerAccountInfo, ToolsBpAssetManagementShareCancelV30ResponseDataErrorListInnerAllAccountsByCompany } from "../models/index";
+
+export interface ToolsBpAssetManagementShareCancelV30ResponseDataErrorListInner {
+  account_info?: ToolsBpAssetManagementShareCancelV30ResponseDataErrorListInnerAccountInfo;
+  all_accounts_by_bp?: ToolsBpAssetManagementShareCancelV30DataErrorListAllAccountsByBp;
+  all_accounts_by_company?: ToolsBpAssetManagementShareCancelV30ResponseDataErrorListInnerAllAccountsByCompany;
+  error_message?: string;
+  share_mode?: ToolsBpAssetManagementShareCancelV30DataErrorListShareMode;
+}
+

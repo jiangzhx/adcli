@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_easy_update_v3_0_promotion_materials_video_material_list_image_mode.go
+// Do not edit manually.
+
+export const PromotionEasyUpdateV30PromotionMaterialsVideoMaterialListImageMode = {
+  CREATIVE_IMAGE_MODE_VIDEO: "CREATIVE_IMAGE_MODE_VIDEO",
+  CREATIVE_IMAGE_MODE_VIDEO_VERTICAL: "CREATIVE_IMAGE_MODE_VIDEO_VERTICAL",
+} as const;
+
+export type PromotionEasyUpdateV30PromotionMaterialsVideoMaterialListImageMode = typeof PromotionEasyUpdateV30PromotionMaterialsVideoMaterialListImageMode[keyof typeof PromotionEasyUpdateV30PromotionMaterialsVideoMaterialListImageMode];
+

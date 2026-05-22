@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_response_data_creative_abstract_materials_inner_text_abstract_info.go
+// Do not edit manually.
+
+import type { CreativeDetailGetV30ResponseDataCreativeAbstractMaterialsInnerTextAbstractInfoBidwordListInner, CreativeDetailGetV30ResponseDataCreativeAbstractMaterialsInnerTextAbstractInfoWordListInner } from "../models/index";
+
+export interface CreativeDetailGetV30ResponseDataCreativeAbstractMaterialsInnerTextAbstractInfo {
+  abstract_text?: string;
+  bidword_list?: CreativeDetailGetV30ResponseDataCreativeAbstractMaterialsInnerTextAbstractInfoBidwordListInner[];
+  word_list?: CreativeDetailGetV30ResponseDataCreativeAbstractMaterialsInnerTextAbstractInfoWordListInner[];
+}
+

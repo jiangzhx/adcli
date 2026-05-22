@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_management_bp_share_cancel_v2_response_data_error_list_inner.go
+// Do not edit manually.
+
+import type { ToolsAppManagementBpShareCancelV2DataErrorListShareMode, ToolsAppManagementBpShareCancelV2ResponseDataErrorListInnerAccountInfo, ToolsAppManagementBpShareCancelV2ResponseDataErrorListInnerAllAccount, ToolsAppManagementBpShareCancelV2ResponseDataErrorListInnerAllAccountByCompany } from "../models/index";
+
+export interface ToolsAppManagementBpShareCancelV2ResponseDataErrorListInner {
+  account_info?: ToolsAppManagementBpShareCancelV2ResponseDataErrorListInnerAccountInfo;
+  all_account?: ToolsAppManagementBpShareCancelV2ResponseDataErrorListInnerAllAccount;
+  all_account_by_company?: ToolsAppManagementBpShareCancelV2ResponseDataErrorListInnerAllAccountByCompany;
+  error_message?: string;
+  share_mode?: ToolsAppManagementBpShareCancelV2DataErrorListShareMode;
+}
+

@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_data_materials_track_url_group_infos_track_url_info_track_url_send_type.go
+// Do not edit manually.
+
+export const BrandMaterialListV30DataMaterialsTrackUrlGroupInfosTrackUrlInfoTrackUrlSendType = {
+  CLIENT: "CLIENT",
+  SERVER: "SERVER",
+} as const;
+
+export type BrandMaterialListV30DataMaterialsTrackUrlGroupInfosTrackUrlInfoTrackUrlSendType = typeof BrandMaterialListV30DataMaterialsTrackUrlGroupInfosTrackUrlInfoTrackUrlSendType[keyof typeof BrandMaterialListV30DataMaterialsTrackUrlGroupInfosTrackUrlInfoTrackUrlSendType];
+

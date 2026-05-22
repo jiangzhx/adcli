@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_response_data_creative_list_inner_image_materials_inner.go
+// Do not edit manually.
+
+import type { CreativeDetailGetV30ResponseDataCreativeListInnerImageMaterialsInnerImageInfoInner, CreativeDetailGetV30ResponseDataCreativeListInnerImageMaterialsInnerTemplateImage } from "../models/index";
+
+export interface CreativeDetailGetV30ResponseDataCreativeListInnerImageMaterialsInner {
+  image_info?: CreativeDetailGetV30ResponseDataCreativeListInnerImageMaterialsInnerImageInfoInner[];
+  template_image?: CreativeDetailGetV30ResponseDataCreativeListInnerImageMaterialsInnerTemplateImage;
+}
+

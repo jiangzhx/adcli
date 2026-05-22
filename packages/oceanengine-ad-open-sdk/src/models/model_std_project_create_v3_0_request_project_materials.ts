@@ -1,0 +1,24 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_request_project_materials.go
+// Do not edit manually.
+
+import type { StdProjectCreateV30ProjectMaterialsAnchorRelatedType, StdProjectCreateV30ProjectMaterialsOriginalVideoTitle, StdProjectCreateV30ProjectMaterialsUlinkUrlType, StdProjectCreateV30RequestProjectMaterialsAnchorMaterialListInner, StdProjectCreateV30RequestProjectMaterialsCarouselMaterialListInner, StdProjectCreateV30RequestProjectMaterialsComponentMaterialListInner, StdProjectCreateV30RequestProjectMaterialsImageMaterialListInner, StdProjectCreateV30RequestProjectMaterialsProductInfo, StdProjectCreateV30RequestProjectMaterialsTitleMaterialListInner, StdProjectCreateV30RequestProjectMaterialsTrialPlayMaterialListInner, StdProjectCreateV30RequestProjectMaterialsVideoMaterialListInner } from "../models/index";
+
+export interface StdProjectCreateV30RequestProjectMaterials {
+  anchor_material_list?: StdProjectCreateV30RequestProjectMaterialsAnchorMaterialListInner[];
+  anchor_related_type?: StdProjectCreateV30ProjectMaterialsAnchorRelatedType;
+  call_to_action_buttons?: string[];
+  carousel_material_list?: StdProjectCreateV30RequestProjectMaterialsCarouselMaterialListInner[];
+  component_material_list?: StdProjectCreateV30RequestProjectMaterialsComponentMaterialListInner[];
+  external_url_material_list?: string[];
+  image_material_list?: StdProjectCreateV30RequestProjectMaterialsImageMaterialListInner[];
+  open_url?: string;
+  original_video_title?: StdProjectCreateV30ProjectMaterialsOriginalVideoTitle;
+  product_info?: StdProjectCreateV30RequestProjectMaterialsProductInfo;
+  title_material_list?: StdProjectCreateV30RequestProjectMaterialsTitleMaterialListInner[];
+  trial_play_material_list?: StdProjectCreateV30RequestProjectMaterialsTrialPlayMaterialListInner[];
+  ulink_url?: string;
+  ulink_url_type?: StdProjectCreateV30ProjectMaterialsUlinkUrlType;
+  video_material_list?: StdProjectCreateV30RequestProjectMaterialsVideoMaterialListInner[];
+  web_url_material_list?: string[];
+}
+

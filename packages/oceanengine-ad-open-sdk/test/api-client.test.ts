@@ -1,6 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { ApiClient, SDK_VERSION } from "../src/runtime/ApiClient";
-import { ApiException } from "../src/runtime/ApiException";
+import { ApiClient, ApiException, SDK_VERSION } from "../src/api/client";
 
 function jsonResponse(body: unknown, init: ResponseInit = {}) {
   const headers = new Headers(init.headers);

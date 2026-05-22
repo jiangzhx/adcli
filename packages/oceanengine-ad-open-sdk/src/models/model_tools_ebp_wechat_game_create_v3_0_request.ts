@@ -1,0 +1,25 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_wechat_game_create_v3_0_request.go
+// Do not edit manually.
+
+import type { ToolsEbpWechatGameCreateV30AccountType, ToolsEbpWechatGameCreateV30RequestExtra, ToolsEbpWechatGameCreateV30RequestHead, ToolsEbpWechatGameCreateV30RequestIcon, ToolsEbpWechatGameCreateV30RequestMaterialInner } from "../models/index";
+
+export interface ToolsEbpWechatGameCreateV30Request {
+  account_id: number | string;
+  account_type: ToolsEbpWechatGameCreateV30AccountType;
+  data?: Record<string, string>;
+  extra?: ToolsEbpWechatGameCreateV30RequestExtra;
+  guide_copy?: string;
+  head?: ToolsEbpWechatGameCreateV30RequestHead;
+  icon?: ToolsEbpWechatGameCreateV30RequestIcon;
+  instance_id?: number | string;
+  introduction?: string;
+  label?: string[];
+  material?: ToolsEbpWechatGameCreateV30RequestMaterialInner[];
+  name: string;
+  path: string;
+  remark?: string;
+  tag_info?: string;
+  unite_flag?: boolean;
+  username: string;
+}
+

@@ -1,0 +1,20 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_file_material_attributes_list_v2_filtering_material_properties.go
+// Do not edit manually.
+
+export const FileMaterialAttributesListV2FilteringMaterialProperties = {
+  AD_HIGH_QUALITY_MATERIAL: "AD_HIGH_QUALITY_MATERIAL",
+  AD_LOW_QUALITY_MATERIAL: "AD_LOW_QUALITY_MATERIAL",
+  AIGC: "AIGC",
+  CARRY_MATERIAL: "CARRY_MATERIAL",
+  ECP_HIGH_QUALITY_MATERIAL: "ECP_HIGH_QUALITY_MATERIAL",
+  ECP_LOW_QUALITY_MATERIAL: "ECP_LOW_QUALITY_MATERIAL",
+  FIRST_PUBLISH_MATERIAL: "FIRST_PUBLISH_MATERIAL",
+  INEFFICIENT_MATERIAL: "INEFFICIENT_MATERIAL",
+  LOCAL_HIGH_QUALITY_MATERIAL: "LOCAL_HIGH_QUALITY_MATERIAL",
+  LOCAL_LOW_QUALITY_MATERIAL: "LOCAL_LOW_QUALITY_MATERIAL",
+  SIMILAR_MATERIAL: "SIMILAR_MATERIAL",
+  SIMILAR_QUEUE_MATERIAL: "SIMILAR_QUEUE_MATERIAL",
+} as const;
+
+export type FileMaterialAttributesListV2FilteringMaterialProperties = typeof FileMaterialAttributesListV2FilteringMaterialProperties[keyof typeof FileMaterialAttributesListV2FilteringMaterialProperties];
+

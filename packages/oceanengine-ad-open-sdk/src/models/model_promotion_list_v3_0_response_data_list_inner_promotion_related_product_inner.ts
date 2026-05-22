@@ -1,0 +1,21 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_response_data_list_inner_promotion_related_product_inner.go
+// Do not edit manually.
+
+import type { PromotionListV30DataListPromotionRelatedProductAnchorRelatedType, PromotionListV30DataListPromotionRelatedProductIntelligentGeneration, PromotionListV30DataListPromotionRelatedProductUlinkType, PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerAnchorMaterialListInner, PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerComponentMaterialListInner, PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerImageMaterialListInner, PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerTitleMaterialListInner, PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerVideoMaterialListInner } from "../models/index";
+
+export interface PromotionListV30ResponseDataListInnerPromotionRelatedProductInner {
+  anchor_material_list?: PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerAnchorMaterialListInner[];
+  anchor_related_type?: PromotionListV30DataListPromotionRelatedProductAnchorRelatedType;
+  call_to_action_buttons?: string[];
+  component_material_list?: PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerComponentMaterialListInner[];
+  external_url_material_list?: string[];
+  image_material_list?: PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerImageMaterialListInner[];
+  intelligent_generation?: PromotionListV30DataListPromotionRelatedProductIntelligentGeneration;
+  open_url?: string;
+  title_material_list?: PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerTitleMaterialListInner[];
+  ulink?: string;
+  ulink_type?: PromotionListV30DataListPromotionRelatedProductUlinkType;
+  unique_product_id?: number | string;
+  video_material_list?: PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerVideoMaterialListInner[];
+}
+

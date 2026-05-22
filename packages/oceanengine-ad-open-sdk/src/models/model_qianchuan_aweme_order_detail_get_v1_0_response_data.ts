@@ -1,0 +1,23 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_detail_get_v1_0_response_data.go
+// Do not edit manually.
+
+import type { QianchuanAwemeOrderDetailGetV10DataMarketingGoal, QianchuanAwemeOrderDetailGetV10DataStatus, QianchuanAwemeOrderDetailGetV10ResponseDataAddAmountInfo, QianchuanAwemeOrderDetailGetV10ResponseDataAudience, QianchuanAwemeOrderDetailGetV10ResponseDataAuditRecord, QianchuanAwemeOrderDetailGetV10ResponseDataAwemeInfo, QianchuanAwemeOrderDetailGetV10ResponseDataCouponInfo, QianchuanAwemeOrderDetailGetV10ResponseDataCouponInfosInner, QianchuanAwemeOrderDetailGetV10ResponseDataDeliverySetting, QianchuanAwemeOrderDetailGetV10ResponseDataProductInfo, QianchuanAwemeOrderDetailGetV10ResponseDataRoomInfo, QianchuanAwemeOrderDetailGetV10ResponseDataVideoInfo } from "../models/index";
+
+export interface QianchuanAwemeOrderDetailGetV10ResponseData {
+  ad_id?: number | string;
+  add_amount_info?: QianchuanAwemeOrderDetailGetV10ResponseDataAddAmountInfo;
+  audience?: QianchuanAwemeOrderDetailGetV10ResponseDataAudience;
+  audit_record?: QianchuanAwemeOrderDetailGetV10ResponseDataAuditRecord;
+  aweme_info?: QianchuanAwemeOrderDetailGetV10ResponseDataAwemeInfo;
+  coupon_info?: QianchuanAwemeOrderDetailGetV10ResponseDataCouponInfo;
+  coupon_infos?: QianchuanAwemeOrderDetailGetV10ResponseDataCouponInfosInner[];
+  delivery_setting?: QianchuanAwemeOrderDetailGetV10ResponseDataDeliverySetting;
+  marketing_goal?: QianchuanAwemeOrderDetailGetV10DataMarketingGoal;
+  order_create_time?: string;
+  order_id?: number | string;
+  product_info?: QianchuanAwemeOrderDetailGetV10ResponseDataProductInfo;
+  room_info?: QianchuanAwemeOrderDetailGetV10ResponseDataRoomInfo;
+  status?: QianchuanAwemeOrderDetailGetV10DataStatus;
+  video_info?: QianchuanAwemeOrderDetailGetV10ResponseDataVideoInfo;
+}
+

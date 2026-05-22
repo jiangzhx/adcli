@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_creative_get_v3_0_response_data_creatives_inner_creative_external_info.go
+// Do not edit manually.
+
+import type { BrandCreativeGetV30DataCreativesCreativeExternalInfoExternalUrlType, BrandCreativeGetV30ResponseDataCreativesInnerCreativeExternalInfoNormalExternalInfo } from "../models/index";
+
+export interface BrandCreativeGetV30ResponseDataCreativesInnerCreativeExternalInfo {
+  external_url_type?: BrandCreativeGetV30DataCreativesCreativeExternalInfoExternalUrlType;
+  normal_external_info?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeExternalInfoNormalExternalInfo;
+}
+

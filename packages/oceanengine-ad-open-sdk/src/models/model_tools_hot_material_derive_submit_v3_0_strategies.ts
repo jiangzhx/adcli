@@ -1,0 +1,19 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_hot_material_derive_submit_v3_0_strategies.go
+// Do not edit manually.
+
+export const ToolsHotMaterialDeriveSubmitV30Strategies = {
+  AIGC_HUMAN_REPLACE: "AIGC_HUMAN_REPLACE",
+  AIGC_PRE_VIDEO: "AIGC_PRE_VIDEO",
+  CLIP_REPLACE: "CLIP_REPLACE",
+  DERIVE_FROM_CHOSEN_HOT_MID: "DERIVE_FROM_CHOSEN_HOT_MID",
+  DERIVE_FROM_INDUSTRY_HOT_PATTERN: "DERIVE_FROM_INDUSTRY_HOT_PATTERN",
+  HOT_PRE_VIDEO: "HOT_PRE_VIDEO",
+  MIX_CUT: "MIX_CUT",
+  PRE_VIDEO_CLIP_REPLACE: "PRE_VIDEO_CLIP_REPLACE",
+  RAW_MATERIAL_REPLACE: "RAW_MATERIAL_REPLACE",
+  ROBOT_REPLACE: "ROBOT_REPLACE",
+  SMART_REPLACE: "SMART_REPLACE",
+} as const;
+
+export type ToolsHotMaterialDeriveSubmitV30Strategies = typeof ToolsHotMaterialDeriveSubmitV30Strategies[keyof typeof ToolsHotMaterialDeriveSubmitV30Strategies];
+

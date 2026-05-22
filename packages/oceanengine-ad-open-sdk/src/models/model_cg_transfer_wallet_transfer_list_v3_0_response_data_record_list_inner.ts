@@ -1,0 +1,21 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_wallet_transfer_list_v3_0_response_data_record_list_inner.go
+// Do not edit manually.
+
+import type { CgTransferWalletTransferListV30DataRecordListPayeeCategory, CgTransferWalletTransferListV30DataRecordListRemitterCategory, CgTransferWalletTransferListV30DataRecordListTransferTargetStatus, CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInner } from "../models/index";
+
+export interface CgTransferWalletTransferListV30ResponseDataRecordListInner {
+  biz_request_no?: string;
+  payee_category?: CgTransferWalletTransferListV30DataRecordListPayeeCategory;
+  payee_id?: number | string;
+  remark?: string;
+  remitter_category?: CgTransferWalletTransferListV30DataRecordListRemitterCategory;
+  remitter_id?: number | string;
+  transfer_capital_record_list?: CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInner[];
+  transfer_order_serial?: string;
+  transfer_target_amount?: number;
+  transfer_target_create_time?: string;
+  transfer_target_finish_time?: string;
+  transfer_target_serial?: string;
+  transfer_target_status?: CgTransferWalletTransferListV30DataRecordListTransferTargetStatus;
+}
+

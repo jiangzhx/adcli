@@ -1,9 +1,0 @@
-// Generated from oceanengine/ad_open_sdk_go
-// Do not edit manually.
-
-export const AdvertiserQualificationCreateV2V2QualificationType = {
-  QUALIFICATION_AD: "QUALIFICATION_AD",
-} as const;
-
-export type AdvertiserQualificationCreateV2V2QualificationType = typeof AdvertiserQualificationCreateV2V2QualificationType[keyof typeof AdvertiserQualificationCreateV2V2QualificationType];
-

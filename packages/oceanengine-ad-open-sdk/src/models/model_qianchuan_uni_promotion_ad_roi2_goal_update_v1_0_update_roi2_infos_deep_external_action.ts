@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_roi2_goal_update_v1_0_update_roi2_infos_deep_external_action.go
+// Do not edit manually.
+
+export const QianchuanUniPromotionAdRoi2GoalUpdateV10UpdateRoi2InfosDeepExternalAction = {
+  AD_CONVERT_TYPE_LIVE_PAY_ROI: "AD_CONVERT_TYPE_LIVE_PAY_ROI",
+  AD_CONVERT_TYPE_LIVE_PURE_PAY_ROI: "AD_CONVERT_TYPE_LIVE_PURE_PAY_ROI",
+} as const;
+
+export type QianchuanUniPromotionAdRoi2GoalUpdateV10UpdateRoi2InfosDeepExternalAction = typeof QianchuanUniPromotionAdRoi2GoalUpdateV10UpdateRoi2InfosDeepExternalAction[keyof typeof QianchuanUniPromotionAdRoi2GoalUpdateV10UpdateRoi2InfosDeepExternalAction];
+

@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_detail_v1_0_response_data_programmatic_creative_media_list.go
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListBlockVideoMaterialInner, QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListTitleMaterialInner, QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListVideoMaterialInner } from "../models/index";
+
+export interface QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaList {
+  block_video_material?: QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListBlockVideoMaterialInner[];
+  title_material?: QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListTitleMaterialInner[];
+  video_material?: QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListVideoMaterialInner[];
+}
+

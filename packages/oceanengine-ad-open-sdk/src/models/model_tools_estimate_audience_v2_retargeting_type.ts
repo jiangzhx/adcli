@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_estimate_audience_v2_retargeting_type.go
+// Do not edit manually.
+
+export const ToolsEstimateAudienceV2RetargetingType = {
+  NONE: "NONE",
+  RETARGETING_INCLUDE: "RETARGETING_INCLUDE",
+  RETARGETING_EXCLUDE: "RETARGETING_EXCLUDE",
+  RETARGETING_NONE: "RETARGETING_NONE",
+} as const;
+
+export type ToolsEstimateAudienceV2RetargetingType = typeof ToolsEstimateAudienceV2RetargetingType[keyof typeof ToolsEstimateAudienceV2RetargetingType];
+

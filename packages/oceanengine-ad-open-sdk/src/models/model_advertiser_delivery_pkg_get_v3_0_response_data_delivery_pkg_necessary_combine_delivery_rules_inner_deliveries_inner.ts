@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_get_v3_0_response_data_delivery_pkg_necessary_combine_delivery_rules_inner_deliveries_inner.go
+// Do not edit manually.
+
+import type { AdvertiserDeliveryPkgGetV30DataDeliveryPkgNecessaryCombineDeliveryRulesDeliveriesStatus, AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgNecessaryCombineDeliveryRulesInnerDeliveriesInnerAttachmentsInner } from "../models/index";
+
+export interface AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgNecessaryCombineDeliveryRulesInnerDeliveriesInner {
+  attachments: AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgNecessaryCombineDeliveryRulesInnerDeliveriesInnerAttachmentsInner[];
+  qual_type: number;
+  qual_type_name: string;
+  qualification_id?: number | string;
+  reject_reason?: string;
+  status: AdvertiserDeliveryPkgGetV30DataDeliveryPkgNecessaryCombineDeliveryRulesDeliveriesStatus;
+}
+

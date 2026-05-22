@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_creative_get_v3_0_response_data_creatives_inner_creative_creative_info_variable_image_video.go
+// Do not edit manually.
+
+import type { BrandCreativeGetV30ResponseDataCreativesInnerCreativeCreativeInfoVariableImageVideoImage, BrandCreativeGetV30ResponseDataCreativesInnerCreativeCreativeInfoVariableImageVideoVideo } from "../models/index";
+
+export interface BrandCreativeGetV30ResponseDataCreativesInnerCreativeCreativeInfoVariableImageVideo {
+  image?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeCreativeInfoVariableImageVideoImage;
+  title?: string;
+  video?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeCreativeInfoVariableImageVideoVideo;
+}
+

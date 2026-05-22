@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_info_get_v3_0_response_data_wallet_info_inner_main_wallet_info_main_shared_range_items_inner.go
+// Do not edit manually.
+
+import type { SharedWalletWalletInfoGetV30DataWalletInfoMainWalletInfoMainSharedRangeItemsAccountPlatform, SharedWalletWalletInfoGetV30DataWalletInfoMainWalletInfoMainSharedRangeItemsCustomerCategory } from "../models/index";
+
+export interface SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfoMainSharedRangeItemsInner {
+  account_platform?: SharedWalletWalletInfoGetV30DataWalletInfoMainWalletInfoMainSharedRangeItemsAccountPlatform;
+  customer_category?: SharedWalletWalletInfoGetV30DataWalletInfoMainWalletInfoMainSharedRangeItemsCustomerCategory;
+}
+

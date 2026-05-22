@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_qianchuan_report_today_live_room_config_get_v1_0_response_data_custom_config_datas_inner.go
+// Do not edit manually.
+
+import type { QianchuanQianchuanReportTodayLiveRoomConfigGetV10ResponseDataCustomConfigDatasInnerDimensionsInner, QianchuanQianchuanReportTodayLiveRoomConfigGetV10ResponseDataCustomConfigDatasInnerMetricsInner } from "../models/index";
+
+export interface QianchuanQianchuanReportTodayLiveRoomConfigGetV10ResponseDataCustomConfigDatasInner {
+  data_topic?: string;
+  dimensions?: QianchuanQianchuanReportTodayLiveRoomConfigGetV10ResponseDataCustomConfigDatasInnerDimensionsInner[];
+  metrics?: QianchuanQianchuanReportTodayLiveRoomConfigGetV10ResponseDataCustomConfigDatasInnerMetricsInner[];
+}
+

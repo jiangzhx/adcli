@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_query_transfer_balance_v3_0_response_data_accont_amount_detail_list_inner_capital_detail_list_inner.go
+// Do not edit manually.
+
+import type { CgTransferQueryTransferBalanceV30DataAccontAmountDetailListCapitalDetailListCapitalType, CgTransferQueryTransferBalanceV30ResponseDataAccontAmountDetailListInnerCapitalDetailListInnerCapitalSubDetailsInner } from "../models/index";
+
+export interface CgTransferQueryTransferBalanceV30ResponseDataAccontAmountDetailListInnerCapitalDetailListInner {
+  capital_sub_details?: CgTransferQueryTransferBalanceV30ResponseDataAccontAmountDetailListInnerCapitalDetailListInnerCapitalSubDetailsInner[];
+  capital_type: CgTransferQueryTransferBalanceV30DataAccontAmountDetailListCapitalDetailListCapitalType;
+  transfer_balance: number;
+}
+

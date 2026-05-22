@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_update_v3_0_request_material_list_inner_material_component_explore_one_time.go
+// Do not edit manually.
+
+import type { BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeAfterImage, BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeBeforeImage, BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeImage } from "../models/index";
+
+export interface BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExploreOneTime {
+  advanced_duration?: number;
+  wipe_after_image?: BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeAfterImage;
+  wipe_before_image?: BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeBeforeImage;
+  wipe_image?: BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExploreOneTimeWipeImage;
+  wipe_text?: string;
+}
+

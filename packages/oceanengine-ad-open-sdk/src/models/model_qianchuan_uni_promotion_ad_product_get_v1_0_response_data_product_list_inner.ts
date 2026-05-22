@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_product_get_v1_0_response_data_product_list_inner.go
+// Do not edit manually.
+
+import type { QianchuanUniPromotionAdProductGetV10ResponseDataProductListInnerProductInfo, QianchuanUniPromotionAdProductGetV10ResponseDataProductListInnerStatsInfo } from "../models/index";
+
+export interface QianchuanUniPromotionAdProductGetV10ResponseDataProductListInner {
+  is_del: boolean;
+  product_info: QianchuanUniPromotionAdProductGetV10ResponseDataProductListInnerProductInfo;
+  stats_info: QianchuanUniPromotionAdProductGetV10ResponseDataProductListInnerStatsInfo;
+}
+

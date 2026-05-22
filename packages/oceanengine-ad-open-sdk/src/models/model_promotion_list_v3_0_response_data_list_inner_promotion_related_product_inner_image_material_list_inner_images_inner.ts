@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_response_data_list_inner_promotion_related_product_inner_image_material_list_inner_images_inner.go
+// Do not edit manually.
+
+import type { PromotionListV30DataListPromotionRelatedProductImageMaterialListImagesMaterialOptStatus, PromotionListV30DataListPromotionRelatedProductImageMaterialListImagesMaterialStatus } from "../models/index";
+
+export interface PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerImageMaterialListInnerImagesInner {
+  image_id?: string;
+  material_id?: number | string;
+  material_opt_status?: PromotionListV30DataListPromotionRelatedProductImageMaterialListImagesMaterialOptStatus;
+  material_status?: PromotionListV30DataListPromotionRelatedProductImageMaterialListImagesMaterialStatus;
+}
+

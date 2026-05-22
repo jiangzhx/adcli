@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_management_share_account_list_v2_response_data_list_inner.go
+// Do not edit manually.
+
+import type { ToolsAppManagementShareAccountListV2DataListShareMode, ToolsAppManagementShareAccountListV2ResponseDataListInnerAccountInfo, ToolsAppManagementShareAccountListV2ResponseDataListInnerAllAccount, ToolsAppManagementShareAccountListV2ResponseDataListInnerAllAccountByCompany } from "../models/index";
+
+export interface ToolsAppManagementShareAccountListV2ResponseDataListInner {
+  account_info?: ToolsAppManagementShareAccountListV2ResponseDataListInnerAccountInfo;
+  all_account?: ToolsAppManagementShareAccountListV2ResponseDataListInnerAllAccount;
+  all_account_by_company?: ToolsAppManagementShareAccountListV2ResponseDataListInnerAllAccountByCompany;
+  share_mode?: ToolsAppManagementShareAccountListV2DataListShareMode;
+}
+

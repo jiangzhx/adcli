@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_tools_estimate_audience_v1_0_audience_auto_extend_targets.go
+// Do not edit manually.
+
+export const QianchuanToolsEstimateAudienceV10AudienceAutoExtendTargets = {
+  AGE: "AGE",
+  CUSTOM_AUDIENCE: "CUSTOM_AUDIENCE",
+  GENDER: "GENDER",
+  INTEREST_ACTION: "INTEREST_ACTION",
+  REGION: "REGION",
+} as const;
+
+export type QianchuanToolsEstimateAudienceV10AudienceAutoExtendTargets = typeof QianchuanToolsEstimateAudienceV10AudienceAutoExtendTargets[keyof typeof QianchuanToolsEstimateAudienceV10AudienceAutoExtendTargets];
+

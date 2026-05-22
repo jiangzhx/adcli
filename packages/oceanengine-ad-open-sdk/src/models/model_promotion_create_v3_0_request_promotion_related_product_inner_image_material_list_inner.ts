@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_create_v3_0_request_promotion_related_product_inner_image_material_list_inner.go
+// Do not edit manually.
+
+import type { PromotionCreateV30PromotionRelatedProductImageMaterialListImageMode, PromotionCreateV30RequestPromotionRelatedProductInnerImageMaterialListInnerImagesInner } from "../models/index";
+
+export interface PromotionCreateV30RequestPromotionRelatedProductInnerImageMaterialListInner {
+  image_mode: PromotionCreateV30PromotionRelatedProductImageMaterialListImageMode;
+  images: PromotionCreateV30RequestPromotionRelatedProductInnerImageMaterialListInnerImagesInner[];
+}
+

@@ -1,0 +1,42 @@
+// Generated from oceanengine/ad_open_sdk_go api/api_dpa_ebp_product_create_v30.go
+// Do not edit manually.
+
+import { ApiClient, ApiException, type ApiResponse } from "./client";
+import type { DpaEbpProductCreateV30Request, DpaEbpProductCreateV30Response } from "../models/index";
+
+
+export interface DpaEbpProductCreateV30ApiOpenApiV30DpaEbpProductCreatePostRequest {
+  dpaEbpProductCreateV30Request?: DpaEbpProductCreateV30Request;
+}
+
+export class DpaEbpProductCreateV30Api {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async openApiV30DpaEbpProductCreatePost(request: DpaEbpProductCreateV30ApiOpenApiV30DpaEbpProductCreatePostRequest): Promise<DpaEbpProductCreateV30Response> {
+    const response = await this.openApiV30DpaEbpProductCreatePostWithHttpInfo(request);
+    return response.data;
+  }
+
+  async openApiV30DpaEbpProductCreatePostWithHttpInfo(request: DpaEbpProductCreateV30ApiOpenApiV30DpaEbpProductCreatePostRequest): Promise<ApiResponse<DpaEbpProductCreateV30Response>> {
+
+    return this.apiClient.requestWithHttpInfo<DpaEbpProductCreateV30Response>({
+      method: "POST",
+      path: "/open_api/v3.0/dpa/ebp/product/create/",
+      queryParams: [
+
+      ],
+      contentType: "application/json",
+      body: request.dpaEbpProductCreateV30Request
+    });
+  }
+}
+
+

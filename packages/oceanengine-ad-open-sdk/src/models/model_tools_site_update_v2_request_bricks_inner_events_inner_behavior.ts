@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_site_update_v2_request_bricks_inner_events_inner_behavior.go
+// Do not edit manually.
+
+import type { ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorAndroidLink, ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorIosLink, ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorLink, ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorSmartPhone } from "../models/index";
+
+export interface ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehavior {
+  android_link?: ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorAndroidLink;
+  ios_link?: ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorIosLink;
+  link?: ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorLink;
+  name?: string;
+  smart_phone?: ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorSmartPhone;
+}
+

@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_info_get_v3_0_response_data_wallet_info_inner.go
+// Do not edit manually.
+
+import type { SharedWalletWalletInfoGetV30DataWalletInfoWalletType, SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerCommonWalletInfo, SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfo, SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfo } from "../models/index";
+
+export interface SharedWalletWalletInfoGetV30ResponseDataWalletInfoInner {
+  common_wallet_info?: SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerCommonWalletInfo;
+  main_wallet_info?: SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfo;
+  sub_wallet_info?: SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfo;
+  wallet_id?: number | string;
+  wallet_type?: SharedWalletWalletInfoGetV30DataWalletInfoWalletType;
+}
+

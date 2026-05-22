@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_update_v1_0_request_multi_product_creative_list_inner_creative_setting.go
+// Do not edit manually.
+
+import type { QianchuanAdUpdateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate, QianchuanAdUpdateV10MultiProductCreativeListCreativeSettingDynamicCreative, QianchuanAdUpdateV10MultiProductCreativeListCreativeSettingIsHomepageHide, QianchuanAdUpdateV10RequestMultiProductCreativeListInnerCreativeSettingCreativeCategory } from "../models/index";
+
+export interface QianchuanAdUpdateV10RequestMultiProductCreativeListInnerCreativeSetting {
+  ad_keywords?: string[];
+  aweme_id?: number | string;
+  creative_auto_generate?: QianchuanAdUpdateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate;
+  creative_category?: QianchuanAdUpdateV10RequestMultiProductCreativeListInnerCreativeSettingCreativeCategory;
+  dynamic_creative?: QianchuanAdUpdateV10MultiProductCreativeListCreativeSettingDynamicCreative;
+  is_homepage_hide?: QianchuanAdUpdateV10MultiProductCreativeListCreativeSettingIsHomepageHide;
+}
+

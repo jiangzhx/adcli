@@ -1,8 +1,0 @@
-// Generated from oceanengine/ad_open_sdk_go
-// Do not edit manually.
-
-export interface StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoComponentInfoEcomCartInner {
-  product_link?: string;
-  title?: string;
-}
-

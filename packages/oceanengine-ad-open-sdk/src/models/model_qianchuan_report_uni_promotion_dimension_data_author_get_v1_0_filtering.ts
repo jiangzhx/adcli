@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_uni_promotion_dimension_data_author_get_v1_0_filtering.go
+// Do not edit manually.
+
+import type { QianchuanReportUniPromotionDimensionDataAuthorGetV10FilteringOrderPlatform, QianchuanReportUniPromotionDimensionDataAuthorGetV10FilteringSmartBidType } from "../models/index";
+
+export interface QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering {
+  order_platform?: QianchuanReportUniPromotionDimensionDataAuthorGetV10FilteringOrderPlatform;
+  smart_bid_type?: QianchuanReportUniPromotionDimensionDataAuthorGetV10FilteringSmartBidType;
+}
+

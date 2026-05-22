@@ -1,0 +1,17 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_response_data_creative_list_inner.go
+// Do not edit manually.
+
+import type { CreativeDetailGetV30DataCreativeListImageMode, CreativeDetailGetV30ResponseDataCreativeListInnerAbstractMaterialsInner, CreativeDetailGetV30ResponseDataCreativeListInnerDecorationMaterial, CreativeDetailGetV30ResponseDataCreativeListInnerImageMaterialsInner, CreativeDetailGetV30ResponseDataCreativeListInnerInteractiveMaterial, CreativeDetailGetV30ResponseDataCreativeListInnerPlayableMaterial, CreativeDetailGetV30ResponseDataCreativeListInnerTitleMaterial, CreativeDetailGetV30ResponseDataCreativeListInnerVideoMaterial } from "../models/index";
+
+export interface CreativeDetailGetV30ResponseDataCreativeListInner {
+  abstract_materials?: CreativeDetailGetV30ResponseDataCreativeListInnerAbstractMaterialsInner[];
+  creative_id?: number | string;
+  decoration_material?: CreativeDetailGetV30ResponseDataCreativeListInnerDecorationMaterial;
+  image_materials?: CreativeDetailGetV30ResponseDataCreativeListInnerImageMaterialsInner[];
+  image_mode?: CreativeDetailGetV30DataCreativeListImageMode;
+  interactive_material?: CreativeDetailGetV30ResponseDataCreativeListInnerInteractiveMaterial;
+  playable_material?: CreativeDetailGetV30ResponseDataCreativeListInnerPlayableMaterial;
+  title_material?: CreativeDetailGetV30ResponseDataCreativeListInnerTitleMaterial;
+  video_material?: CreativeDetailGetV30ResponseDataCreativeListInnerVideoMaterial;
+}
+

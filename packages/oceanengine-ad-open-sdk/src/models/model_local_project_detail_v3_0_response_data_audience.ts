@@ -1,0 +1,23 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_response_data_audience.go
+// Do not edit manually.
+
+import type { LocalProjectDetailV30DataAudienceAge, LocalProjectDetailV30DataAudienceConvertedTimeDuration, LocalProjectDetailV30DataAudienceCustomizedInterestAction, LocalProjectDetailV30DataAudienceDistrict, LocalProjectDetailV30DataAudienceFilterAwemeAbnormalActive, LocalProjectDetailV30DataAudienceFilterAwemeFansCount, LocalProjectDetailV30DataAudienceGender, LocalProjectDetailV30DataAudienceHideIfConverted, LocalProjectDetailV30ResponseDataAudienceActionConfig, LocalProjectDetailV30ResponseDataAudienceCustomAreaInner, LocalProjectDetailV30ResponseDataAudienceInterestConfig, LocalProjectDetailV30ResponseDataAudiencePoiAround, LocalProjectDetailV30ResponseDataAudienceRegion } from "../models/index";
+
+export interface LocalProjectDetailV30ResponseDataAudience {
+  action_config?: LocalProjectDetailV30ResponseDataAudienceActionConfig;
+  age?: LocalProjectDetailV30DataAudienceAge[];
+  converted_time_duration?: LocalProjectDetailV30DataAudienceConvertedTimeDuration;
+  custom_area?: LocalProjectDetailV30ResponseDataAudienceCustomAreaInner[];
+  customized_interest_action?: LocalProjectDetailV30DataAudienceCustomizedInterestAction;
+  district?: LocalProjectDetailV30DataAudienceDistrict;
+  filter_aweme_abnormal_active?: LocalProjectDetailV30DataAudienceFilterAwemeAbnormalActive;
+  filter_aweme_fans_count?: LocalProjectDetailV30DataAudienceFilterAwemeFansCount;
+  gender?: LocalProjectDetailV30DataAudienceGender;
+  hide_if_converted?: LocalProjectDetailV30DataAudienceHideIfConverted;
+  interest_config?: LocalProjectDetailV30ResponseDataAudienceInterestConfig;
+  poi_around?: LocalProjectDetailV30ResponseDataAudiencePoiAround;
+  region?: LocalProjectDetailV30ResponseDataAudienceRegion;
+  retargeting_tags?: number[];
+  retargeting_tags_exclude?: number[];
+}
+

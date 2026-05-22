@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_create_transfer_v3_0_request_target_account_detail_list_inner_transfer_capital_detail_list_inner.go
+// Do not edit manually.
+
+import type { CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalSubType, CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalType } from "../models/index";
+
+export interface CgTransferCreateTransferV30RequestTargetAccountDetailListInnerTransferCapitalDetailListInner {
+  capital_sub_type?: CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalSubType;
+  capital_type: CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalType;
+  transfer_amount: number;
+}
+

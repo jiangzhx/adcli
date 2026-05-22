@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner_material_component_app_download.go
+// Do not edit manually.
+
+import type { BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAppDownloadAndroidApp, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAppDownloadAvatar, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAppDownloadIosApp } from "../models/index";
+
+export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAppDownload {
+  android_app?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAppDownloadAndroidApp;
+  avatar?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAppDownloadAvatar;
+  desc?: string;
+  ios_app?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAppDownloadIosApp;
+  name?: string;
+}
+

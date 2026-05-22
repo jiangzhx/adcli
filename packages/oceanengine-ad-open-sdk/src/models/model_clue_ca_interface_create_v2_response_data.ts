@@ -1,0 +1,7 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_clue_ca_interface_create_v2_response_data.go
+// Do not edit manually.
+
+export interface ClueCaInterfaceCreateV2ResponseData {
+  instance_id?: number | string;
+}
+

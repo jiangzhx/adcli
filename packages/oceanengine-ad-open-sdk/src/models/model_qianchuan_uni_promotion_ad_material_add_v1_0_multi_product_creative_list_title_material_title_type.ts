@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_material_add_v1_0_multi_product_creative_list_title_material_title_type.go
+// Do not edit manually.
+
+export const QianchuanUniPromotionAdMaterialAddV10MultiProductCreativeListTitleMaterialTitleType = {
+  COMMODITY_CARD: "COMMODITY_CARD",
+  CUSTOM: "CUSTOM",
+} as const;
+
+export type QianchuanUniPromotionAdMaterialAddV10MultiProductCreativeListTitleMaterialTitleType = typeof QianchuanUniPromotionAdMaterialAddV10MultiProductCreativeListTitleMaterialTitleType[keyof typeof QianchuanUniPromotionAdMaterialAddV10MultiProductCreativeListTitleMaterialTitleType];
+

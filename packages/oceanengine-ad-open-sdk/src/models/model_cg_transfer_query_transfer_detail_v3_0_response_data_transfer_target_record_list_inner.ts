@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_query_transfer_detail_v3_0_response_data_transfer_target_record_list_inner.go
+// Do not edit manually.
+
+import type { CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferStatus, CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInnerTransferCapitalRecordListInner } from "../models/index";
+
+export interface CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInner {
+  account_id?: number | string;
+  target_account_id?: number | string;
+  target_transfer_serial?: string;
+  transfer_amount?: number;
+  transfer_capital_record_list?: CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInnerTransferCapitalRecordListInner[];
+  transfer_status?: CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferStatus;
+}
+

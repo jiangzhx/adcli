@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_app_update_v3_0_membership_type.go
+// Do not edit manually.
+
+export const ToolsEbpAppUpdateV30MembershipType = {
+  ANNUAL: "ANNUAL",
+  LIFETIME: "LIFETIME",
+  MONTHLY: "MONTHLY",
+  NONE: "NONE",
+  WEEKLY_DAILY: "WEEKLY_DAILY",
+} as const;
+
+export type ToolsEbpAppUpdateV30MembershipType = typeof ToolsEbpAppUpdateV30MembershipType[keyof typeof ToolsEbpAppUpdateV30MembershipType];
+

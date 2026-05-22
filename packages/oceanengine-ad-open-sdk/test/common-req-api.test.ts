@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
-import { CommonReqApi } from "../src/runtime/CommonReqApi";
-import { ApiClient } from "../src/runtime/ApiClient";
+import { ApiClient } from "../src/api/client";
+import { CommonApi } from "../src/api/api_common";
 
 function jsonResponse(body: unknown) {
   return new Response(JSON.stringify(body), {
@@ -9,10 +9,10 @@ function jsonResponse(body: unknown) {
   });
 }
 
-describe("CommonReqApi", () => {
+describe("CommonApi", () => {
   test("sends GET query params through ApiClient", async () => {
     const requests: Request[] = [];
-    const api = new CommonReqApi(
+    const api = new CommonApi(
       new ApiClient({
         fetch: async (input) => {
           requests.push(input as Request);
@@ -21,7 +21,7 @@ describe("CommonReqApi", () => {
       }),
     );
 
-    const response = await api.commonReq("GET", "/open_api/custom/", undefined, [{ name: "advertiser_id", value: 123 }]);
+    const response = await api.get({ path: "/open_api/custom/", requestQuery: { advertiser_id: 123 } });
 
     expect((response.data as { ok: boolean }).ok).toBe(true);
     expect(requests[0].method).toBe("GET");
@@ -30,7 +30,7 @@ describe("CommonReqApi", () => {
 
   test("sends POST body and content type", async () => {
     const requests: Request[] = [];
-    const api = new CommonReqApi(
+    const api = new CommonApi(
       new ApiClient({
         fetch: async (input) => {
           requests.push(input as Request);
@@ -39,15 +39,15 @@ describe("CommonReqApi", () => {
       }),
     );
 
-    await api.commonReq("POST", "/open_api/custom/", "application/json", undefined, undefined, { name: "demo" });
+    await api.post({ path: "/open_api/custom/", requestBody: { name: "demo" } });
 
     expect(requests[0].headers.get("Content-Type")).toBe("application/json");
     expect(await requests[0].text()).toBe(JSON.stringify({ name: "demo" }));
   });
 
-  test("sends urlencoded form params", async () => {
+  test("sends POST requestForm as JSON body", async () => {
     const requests: Request[] = [];
-    const api = new CommonReqApi(
+    const api = new CommonApi(
       new ApiClient({
         fetch: async (input) => {
           requests.push(input as Request);
@@ -56,21 +56,15 @@ describe("CommonReqApi", () => {
       }),
     );
 
-    await api.commonReq(
-      "POST",
-      "/open_api/custom/",
-      "application/x-www-form-urlencoded",
-      undefined,
-      { advertiser_id: 123, name: "demo" },
-    );
+    await api.post({ path: "/open_api/custom/", requestForm: { advertiser_id: 123, name: "demo" } });
 
-    expect(requests[0].headers.get("Content-Type")).toBe("application/x-www-form-urlencoded");
-    expect(await requests[0].text()).toBe("advertiser_id=123&name=demo");
+    expect(requests[0].headers.get("Content-Type")).toBe("application/json");
+    expect(await requests[0].text()).toBe(JSON.stringify({ advertiser_id: 123, name: "demo" }));
   });
 
   test("sends multipart files", async () => {
     const requests: Request[] = [];
-    const api = new CommonReqApi(
+    const api = new CommonApi(
       new ApiClient({
         fetch: async (input) => {
           requests.push(input as Request);
@@ -79,15 +73,11 @@ describe("CommonReqApi", () => {
       }),
     );
 
-    await api.commonReq(
-      "POST",
-      "/open_api/2/file/video/agent/",
-      "multipart/form-data",
-      undefined,
-      { agent_id: "1860166068834571" },
-      undefined,
-      { video_file: new File(["video-bytes"], "video.mp4") },
-    );
+    await api.postMultipart({
+      path: "/open_api/2/file/video/agent/",
+      requestForm: { agent_id: "1860166068834571" },
+      requestFile: { video_file: new File(["video-bytes"], "video.mp4") },
+    });
 
     const form = await requests[0].formData();
     expect(form.get("agent_id")).toBe("1860166068834571");
@@ -95,13 +85,13 @@ describe("CommonReqApi", () => {
   });
 
   test("returns http info variant", async () => {
-    const api = new CommonReqApi(
+    const api = new CommonApi(
       new ApiClient({
         fetch: async () => jsonResponse({ code: 0, data: { ok: true } }),
       }),
     );
 
-    const response = await api.commonReqWithHttpInfo("GET", "/open_api/custom/");
+    const response = await api.getWithHttpInfo({ path: "/open_api/custom/" });
 
     expect(response.statusCode).toBe(200);
     expect(response.headers.get("x-trace-id")).toBe("trace-common");

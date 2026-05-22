@@ -1,0 +1,22 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_aweme_auth_list_v2_data_list_sub_status.go
+// Do not edit manually.
+
+export const ToolsAwemeAuthListV2DataListSubStatus = {
+  AWEME_REVOKE_REQUEST: "AWEME_REVOKE_REQUEST",
+  CONFIRM_REVOKE_REQUEST: "CONFIRM_REVOKE_REQUEST",
+  ENTERPRISE_AUTH_RELEASE: "ENTERPRISE_AUTH_RELEASE",
+  INVALID_CANCEL: "INVALID_CANCEL",
+  INVALID_EXPIRED: "INVALID_EXPIRED",
+  INVALID_FAILED_BY_AWEME: "INVALID_FAILED_BY_AWEME",
+  INVALID_PROCESS_TIME_OUT: "INVALID_PROCESS_TIME_OUT",
+  INVALID_REJECT: "INVALID_REJECT",
+  INVALID_TIME_OUT: "INVALID_TIME_OUT",
+  RENEWING: "RENEWING",
+  RENEW_FAIL: "RENEW_FAIL",
+  RENEW_FAILED_BY_AWEME: "RENEW_FAILED_BY_AWEME",
+  RENEW_SUCCESS: "RENEW_SUCCESS",
+  UNQUALIFIED_AUTO_RELEASE: "UNQUALIFIED_AUTO_RELEASE",
+} as const;
+
+export type ToolsAwemeAuthListV2DataListSubStatus = typeof ToolsAwemeAuthListV2DataListSubStatus[keyof typeof ToolsAwemeAuthListV2DataListSubStatus];
+

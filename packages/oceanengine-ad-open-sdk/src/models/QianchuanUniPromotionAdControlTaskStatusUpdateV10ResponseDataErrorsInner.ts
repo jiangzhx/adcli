@@ -1,8 +1,0 @@
-// Generated from oceanengine/ad_open_sdk_go
-// Do not edit manually.
-
-export interface QianchuanUniPromotionAdControlTaskStatusUpdateV10ResponseDataErrorsInner {
-  error_message?: string;
-  task_id?: number | string;
-}
-

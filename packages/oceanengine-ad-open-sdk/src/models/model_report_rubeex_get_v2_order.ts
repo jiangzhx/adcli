@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_report_rubeex_get_v2_order.go
+// Do not edit manually.
+
+export const ReportRubeexGetV2Order = {
+  ASC: "ASC",
+  DESC: "DESC",
+} as const;
+
+export type ReportRubeexGetV2Order = typeof ReportRubeexGetV2Order[keyof typeof ReportRubeexGetV2Order];
+

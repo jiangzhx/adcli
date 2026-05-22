@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_clue_refund_view_get_v2_response_data_show_outer_stages_inner.go
+// Do not edit manually.
+
+import type { ToolsClueRefundViewGetV2ResponseDataShowOuterStagesInnerCallCountDetail, ToolsClueRefundViewGetV2ResponseDataShowOuterStagesInnerRefundCallListInner, ToolsClueRefundViewGetV2ResponseDataShowOuterStagesInnerShowInnerStagesInner } from "../models/index";
+
+export interface ToolsClueRefundViewGetV2ResponseDataShowOuterStagesInner {
+  call_count_detail?: ToolsClueRefundViewGetV2ResponseDataShowOuterStagesInnerCallCountDetail;
+  refund_call_list?: ToolsClueRefundViewGetV2ResponseDataShowOuterStagesInnerRefundCallListInner[];
+  show_inner_stages?: ToolsClueRefundViewGetV2ResponseDataShowOuterStagesInnerShowInnerStagesInner[];
+  title?: string;
+}
+

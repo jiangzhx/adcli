@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_creative_procedural_creative_create_v2_request_creative_image_materials_inner.go
+// Do not edit manually.
+
+import type { CreativeProceduralCreativeCreateV2CreativeImageMaterialsImageMode, CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInnerImageInfoInner, CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInnerTemplateImage } from "../models/index";
+
+export interface CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInner {
+  image_info?: CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInnerImageInfoInner[];
+  image_mode?: CreativeProceduralCreativeCreateV2CreativeImageMaterialsImageMode;
+  material_id?: number | string;
+  template_image?: CreativeProceduralCreativeCreateV2RequestCreativeImageMaterialsInnerTemplateImage;
+}
+

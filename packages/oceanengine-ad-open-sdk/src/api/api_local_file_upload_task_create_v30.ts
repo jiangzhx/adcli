@@ -1,0 +1,42 @@
+// Generated from oceanengine/ad_open_sdk_go api/api_local_file_upload_task_create_v30.go
+// Do not edit manually.
+
+import { ApiClient, ApiException, type ApiResponse } from "./client";
+import type { LocalFileUploadTaskCreateV30Request, LocalFileUploadTaskCreateV30Response } from "../models/index";
+
+
+export interface LocalFileUploadTaskCreateV30ApiOpenApiV30LocalFileUploadTaskCreatePostRequest {
+  localFileUploadTaskCreateV30Request?: LocalFileUploadTaskCreateV30Request;
+}
+
+export class LocalFileUploadTaskCreateV30Api {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async openApiV30LocalFileUploadTaskCreatePost(request: LocalFileUploadTaskCreateV30ApiOpenApiV30LocalFileUploadTaskCreatePostRequest): Promise<LocalFileUploadTaskCreateV30Response> {
+    const response = await this.openApiV30LocalFileUploadTaskCreatePostWithHttpInfo(request);
+    return response.data;
+  }
+
+  async openApiV30LocalFileUploadTaskCreatePostWithHttpInfo(request: LocalFileUploadTaskCreateV30ApiOpenApiV30LocalFileUploadTaskCreatePostRequest): Promise<ApiResponse<LocalFileUploadTaskCreateV30Response>> {
+
+    return this.apiClient.requestWithHttpInfo<LocalFileUploadTaskCreateV30Response>({
+      method: "POST",
+      path: "/open_api/v3.0/local/file/upload_task/create/",
+      queryParams: [
+
+      ],
+      contentType: "application/json",
+      body: request.localFileUploadTaskCreateV30Request
+    });
+  }
+}
+
+

@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_local_product_get_v3_0_data_products_bind_market_page_infos_bind_tool_pack_info_tool_pack_types.go
+// Do not edit manually.
+
+export const LocalProductGetV30DataProductsBindMarketPageInfosBindToolPackInfoToolPackTypes = {
+  TOOL_TYPE_CONSULT: "TOOL_TYPE_CONSULT",
+  TOOL_TYPE_FORM: "TOOL_TYPE_FORM",
+  TOOL_TYPE_PHONE_SMART: "TOOL_TYPE_PHONE_SMART",
+} as const;
+
+export type LocalProductGetV30DataProductsBindMarketPageInfosBindToolPackInfoToolPackTypes = typeof LocalProductGetV30DataProductsBindMarketPageInfosBindToolPackInfoToolPackTypes[keyof typeof LocalProductGetV30DataProductsBindMarketPageInfosBindToolPackInfoToolPackTypes];
+

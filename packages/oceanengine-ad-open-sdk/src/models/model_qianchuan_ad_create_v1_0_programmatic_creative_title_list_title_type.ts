@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_programmatic_creative_title_list_title_type.go
+// Do not edit manually.
+
+export const QianchuanAdCreateV10ProgrammaticCreativeTitleListTitleType = {
+  AWEME_CAROUSEL: "AWEME_CAROUSEL",
+  COMMODITY_CARD: "COMMODITY_CARD",
+  CUSTOM: "CUSTOM",
+} as const;
+
+export type QianchuanAdCreateV10ProgrammaticCreativeTitleListTitleType = typeof QianchuanAdCreateV10ProgrammaticCreativeTitleListTitleType[keyof typeof QianchuanAdCreateV10ProgrammaticCreativeTitleListTitleType];
+

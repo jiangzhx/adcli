@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_query_can_transfer_balance_v3_0_response_data_can_transfer_detail_list_inner_capital_detail_list_inner_capital_sub_details_inner.go
+// Do not edit manually.
+
+import type { CgTransferQueryCanTransferBalanceV30DataCanTransferDetailListCapitalDetailListCapitalSubDetailsCapitalSubType } from "../models/index";
+
+export interface CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerCapitalDetailListInnerCapitalSubDetailsInner {
+  capital_sub_type?: CgTransferQueryCanTransferBalanceV30DataCanTransferDetailListCapitalDetailListCapitalSubDetailsCapitalSubType;
+  transfer_balance?: number;
+}
+

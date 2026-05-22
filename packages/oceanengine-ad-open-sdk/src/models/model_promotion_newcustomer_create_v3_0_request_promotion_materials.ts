@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_newcustomer_create_v3_0_request_promotion_materials.go
+// Do not edit manually.
+
+import type { PromotionNewcustomerCreateV30RequestPromotionMaterialsCarouselMaterialListInner, PromotionNewcustomerCreateV30RequestPromotionMaterialsExternalUrlMaterialListInner, PromotionNewcustomerCreateV30RequestPromotionMaterialsTitleMaterialListInner, PromotionNewcustomerCreateV30RequestPromotionMaterialsVideoMaterialListInner } from "../models/index";
+
+export interface PromotionNewcustomerCreateV30RequestPromotionMaterials {
+  carousel_material_list?: PromotionNewcustomerCreateV30RequestPromotionMaterialsCarouselMaterialListInner[];
+  external_url_material_list?: PromotionNewcustomerCreateV30RequestPromotionMaterialsExternalUrlMaterialListInner[];
+  title_material_list: PromotionNewcustomerCreateV30RequestPromotionMaterialsTitleMaterialListInner[];
+  video_material_list?: PromotionNewcustomerCreateV30RequestPromotionMaterialsVideoMaterialListInner[];
+}
+

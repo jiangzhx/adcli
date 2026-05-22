@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_config_v3_0_response_data_industry_config_unnecessaries_inner_rules_inner.go
+// Do not edit manually.
+
+import type { AdvertiserDeliveryPkgConfigV30DataIndustryConfigUnnecessariesRulesType, AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInnerRulesInnerQualTypesInner } from "../models/index";
+
+export interface AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInnerRulesInner {
+  description: string;
+  qual_types: AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInnerRulesInnerQualTypesInner[];
+  rule_id: number | string;
+  type: AdvertiserDeliveryPkgConfigV30DataIndustryConfigUnnecessariesRulesType;
+}
+

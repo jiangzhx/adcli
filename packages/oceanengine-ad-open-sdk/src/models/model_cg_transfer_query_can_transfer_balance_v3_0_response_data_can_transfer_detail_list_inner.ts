@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_query_can_transfer_balance_v3_0_response_data_can_transfer_detail_list_inner.go
+// Do not edit manually.
+
+import type { CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerCapitalDetailListInner, CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInner } from "../models/index";
+
+export interface CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInner {
+  capital_detail_list?: CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerCapitalDetailListInner[];
+  payee_transfer_amount_detail_list?: CgTransferQueryCanTransferBalanceV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInner[];
+  remitter_account_id?: number | string;
+}
+

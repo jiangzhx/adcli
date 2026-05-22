@@ -1,0 +1,48 @@
+// Generated from oceanengine/ad_open_sdk_go api/api_query_booking_business_entity_id_get_v2.go
+// Do not edit manually.
+
+import { ApiClient, ApiException, type ApiResponse } from "./client";
+import type { QueryBookingBusinessEntityIdGetV2Response } from "../models/index";
+
+
+export interface QueryBookingBusinessEntityIdGetV2ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest {
+  agentId: number | string;
+  orderIds: number | string[];
+}
+
+export class QueryBookingBusinessEntityIdGetV2Api {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async openApi2QueryBookingBusinessEntityIdGetGet(request: QueryBookingBusinessEntityIdGetV2ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest): Promise<QueryBookingBusinessEntityIdGetV2Response> {
+    const response = await this.openApi2QueryBookingBusinessEntityIdGetGetWithHttpInfo(request);
+    return response.data;
+  }
+
+  async openApi2QueryBookingBusinessEntityIdGetGetWithHttpInfo(request: QueryBookingBusinessEntityIdGetV2ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest): Promise<ApiResponse<QueryBookingBusinessEntityIdGetV2Response>> {
+    if (request.agentId == null) {
+      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2QueryBookingBusinessEntityIdGetGet");
+    }
+
+    if (request.orderIds == null) {
+      throw new ApiException("Missing the required parameter 'orderIds' when calling openApi2QueryBookingBusinessEntityIdGetGet");
+    }
+    return this.apiClient.requestWithHttpInfo<QueryBookingBusinessEntityIdGetV2Response>({
+      method: "GET",
+      path: "/open_api/2/query/booking/business_entity_id/get/",
+      queryParams: [
+        { name: "agent_id", value: request.agentId },
+        { name: "order_ids", value: request.orderIds, collectionFormat: "csv" }
+      ]
+    });
+  }
+}
+
+

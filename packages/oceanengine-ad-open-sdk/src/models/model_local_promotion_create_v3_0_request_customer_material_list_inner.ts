@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_create_v3_0_request_customer_material_list_inner.go
+// Do not edit manually.
+
+import type { LocalPromotionCreateV30CustomerMaterialListImageMode, LocalPromotionCreateV30RequestCustomerMaterialListInnerTitleMaterial, LocalPromotionCreateV30RequestCustomerMaterialListInnerVideoMaterial } from "../models/index";
+
+export interface LocalPromotionCreateV30RequestCustomerMaterialListInner {
+  image_mode: LocalPromotionCreateV30CustomerMaterialListImageMode;
+  title_material?: LocalPromotionCreateV30RequestCustomerMaterialListInnerTitleMaterial;
+  video_material?: LocalPromotionCreateV30RequestCustomerMaterialListInnerVideoMaterial;
+}
+

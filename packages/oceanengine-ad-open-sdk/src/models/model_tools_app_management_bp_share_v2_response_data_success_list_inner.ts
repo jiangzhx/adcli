@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_management_bp_share_v2_response_data_success_list_inner.go
+// Do not edit manually.
+
+import type { ToolsAppManagementBpShareV2DataSuccessListShareMode, ToolsAppManagementBpShareV2ResponseDataSuccessListInnerAccountInfo, ToolsAppManagementBpShareV2ResponseDataSuccessListInnerAllAccount, ToolsAppManagementBpShareV2ResponseDataSuccessListInnerAllAccountByCompany } from "../models/index";
+
+export interface ToolsAppManagementBpShareV2ResponseDataSuccessListInner {
+  account_info?: ToolsAppManagementBpShareV2ResponseDataSuccessListInnerAccountInfo;
+  all_account?: ToolsAppManagementBpShareV2ResponseDataSuccessListInnerAllAccount;
+  all_account_by_company?: ToolsAppManagementBpShareV2ResponseDataSuccessListInnerAllAccountByCompany;
+  share_mode?: ToolsAppManagementBpShareV2DataSuccessListShareMode;
+}
+

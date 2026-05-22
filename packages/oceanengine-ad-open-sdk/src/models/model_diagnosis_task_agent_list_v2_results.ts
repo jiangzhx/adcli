@@ -1,0 +1,16 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_diagnosis_task_agent_list_v2_results.go
+// Do not edit manually.
+
+export const DiagnosisTaskAgentListV2Results = {
+  AD_HIGH_QUALITY_MATERIAL: "AD_HIGH_QUALITY_MATERIAL",
+  ECP_HIGH_QUALITY_MATERIAL: "ECP_HIGH_QUALITY_MATERIAL",
+  FIRST_PUBLISH_MATERIAL: "FIRST_PUBLISH_MATERIAL",
+  INEFFICIENT_MATERIAL: "INEFFICIENT_MATERIAL",
+  NON_AD_HIGH_QUALITY_MATERIAL: "NON_AD_HIGH_QUALITY_MATERIAL",
+  NON_ECP_HIGH_QUALITY_MATERIAL: "NON_ECP_HIGH_QUALITY_MATERIAL",
+  NON_FIRST_PUBLISH_MATERIAL: "NON_FIRST_PUBLISH_MATERIAL",
+  NON_INEFFICIENT_MATERIAL: "NON_INEFFICIENT_MATERIAL",
+} as const;
+
+export type DiagnosisTaskAgentListV2Results = typeof DiagnosisTaskAgentListV2Results[keyof typeof DiagnosisTaskAgentListV2Results];
+

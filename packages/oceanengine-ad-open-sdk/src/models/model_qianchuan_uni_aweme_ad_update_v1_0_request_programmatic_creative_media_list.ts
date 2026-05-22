@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_request_programmatic_creative_media_list.go
+// Do not edit manually.
+
+import type { QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaListBlockVideoMaterialInner, QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaListTitleMaterialInner, QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaListVideoMaterialInner } from "../models/index";
+
+export interface QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaList {
+  block_video_material?: QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaListBlockVideoMaterialInner[];
+  title_material?: QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaListTitleMaterialInner[];
+  video_material?: QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaListVideoMaterialInner[];
+}
+

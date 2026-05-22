@@ -1,0 +1,8 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_star_report_order_overview_v2_response_data_base_stats_inner_seed_stat_hot_keywords_inner_all_inner.go
+// Do not edit manually.
+
+export interface StarReportOrderOverviewV2ResponseDataBaseStatsInnerSeedStatHotKeywordsInnerAllInner {
+  name?: string;
+  value?: number;
+}
+

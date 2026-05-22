@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_balance_get_v3_0_response_data_shared_wallet_balance_info_value.go
+// Do not edit manually.
+
+import type { SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValueBasicBalanceInfo, SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValueGeneralBalanceInfo } from "../models/index";
+
+export interface SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValue {
+  basic_balance_info?: SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValueBasicBalanceInfo;
+  general_balance_info?: SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValueGeneralBalanceInfo;
+  wallet_id?: number | string;
+}
+

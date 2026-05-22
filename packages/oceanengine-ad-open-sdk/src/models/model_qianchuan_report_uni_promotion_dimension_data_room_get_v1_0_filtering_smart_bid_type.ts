@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_uni_promotion_dimension_data_room_get_v1_0_filtering_smart_bid_type.go
+// Do not edit manually.
+
+export const QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringSmartBidType = {
+  SMART_BID_CONSERVATIVE: "SMART_BID_CONSERVATIVE",
+  SMART_BID_CUSTOM: "SMART_BID_CUSTOM",
+} as const;
+
+export type QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringSmartBidType = typeof QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringSmartBidType[keyof typeof QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringSmartBidType];
+

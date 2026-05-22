@@ -1,0 +1,9 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_create_v1_0_programmatic_creative_media_list_video_material_star_traffic.go
+// Do not edit manually.
+
+export const QianchuanUniAwemeAdCreateV10ProgrammaticCreativeMediaListVideoMaterialStarTraffic = {
+  Enum_1: 1,
+} as const;
+
+export type QianchuanUniAwemeAdCreateV10ProgrammaticCreativeMediaListVideoMaterialStarTraffic = typeof QianchuanUniAwemeAdCreateV10ProgrammaticCreativeMediaListVideoMaterialStarTraffic[keyof typeof QianchuanUniAwemeAdCreateV10ProgrammaticCreativeMediaListVideoMaterialStarTraffic];
+

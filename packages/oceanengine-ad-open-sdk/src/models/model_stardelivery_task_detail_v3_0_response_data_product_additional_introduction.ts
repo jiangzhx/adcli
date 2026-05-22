@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_stardelivery_task_detail_v3_0_response_data_product_additional_introduction.go
+// Do not edit manually.
+
+import type { StardeliveryTaskDetailV30ResponseDataProductAdditionalIntroductionGamePromotionEvent, StardeliveryTaskDetailV30ResponseDataProductAdditionalIntroductionGameSellingPointsInner } from "../models/index";
+
+export interface StardeliveryTaskDetailV30ResponseDataProductAdditionalIntroduction {
+  game_promotion_event?: StardeliveryTaskDetailV30ResponseDataProductAdditionalIntroductionGamePromotionEvent;
+  game_selling_points?: StardeliveryTaskDetailV30ResponseDataProductAdditionalIntroductionGameSellingPointsInner[];
+  game_type?: string;
+}
+

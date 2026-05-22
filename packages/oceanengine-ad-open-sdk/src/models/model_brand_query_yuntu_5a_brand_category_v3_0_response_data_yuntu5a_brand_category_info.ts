@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_query_yuntu_5a_brand_category_v3_0_response_data_yuntu5a_brand_category_info.go
+// Do not edit manually.
+
+import type { BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoBrandNameListInner, BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuCategory, BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuSubBrandInfoValueInner } from "../models/index";
+
+export interface BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfo {
+  brand_name_list?: BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoBrandNameListInner[];
+  yuntu_category?: BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuCategory;
+  yuntu_sub_brand_info?: Record<string, BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuSubBrandInfoValueInner[]>;
+}
+

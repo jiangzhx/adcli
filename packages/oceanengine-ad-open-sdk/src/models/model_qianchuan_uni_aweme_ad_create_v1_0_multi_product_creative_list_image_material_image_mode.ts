@@ -1,0 +1,9 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_create_v1_0_multi_product_creative_list_image_material_image_mode.go
+// Do not edit manually.
+
+export const QianchuanUniAwemeAdCreateV10MultiProductCreativeListImageMaterialImageMode = {
+  SQUARE: "SQUARE",
+} as const;
+
+export type QianchuanUniAwemeAdCreateV10MultiProductCreativeListImageMaterialImageMode = typeof QianchuanUniAwemeAdCreateV10MultiProductCreativeListImageMaterialImageMode[keyof typeof QianchuanUniAwemeAdCreateV10MultiProductCreativeListImageMaterialImageMode];
+

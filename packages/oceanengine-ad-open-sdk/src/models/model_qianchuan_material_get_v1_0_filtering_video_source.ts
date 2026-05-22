@@ -1,0 +1,20 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_material_get_v1_0_filtering_video_source.go
+// Do not edit manually.
+
+export const QianchuanMaterialGetV10FilteringVideoSource = {
+  ARTHUR: "ARTHUR",
+  AWEME: "AWEME",
+  BP: "BP",
+  CREATIVE_CENTER: "CREATIVE_CENTER",
+  E_COMMERCE: "E_COMMERCE",
+  JIANYING: "JIANYING",
+  JI_CHUANG: "JI_CHUANG",
+  LIVE_HIGHLIGHT: "LIVE_HIGHLIGHT",
+  QUNFENG: "QUNFENG",
+  STAR: "STAR",
+  TADA: "TADA",
+  VIDEO_CAPTURE: "VIDEO_CAPTURE",
+} as const;
+
+export type QianchuanMaterialGetV10FilteringVideoSource = typeof QianchuanMaterialGetV10FilteringVideoSource[keyof typeof QianchuanMaterialGetV10FilteringVideoSource];
+

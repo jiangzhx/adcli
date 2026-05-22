@@ -1,9 +1,0 @@
-// Generated from oceanengine/ad_open_sdk_go
-// Do not edit manually.
-
-import type { ClueFormDetailV2DataFormExtendInfoSignUpConfigSignType } from "../models";
-
-export interface ClueFormDetailV2ResponseDataFormExtendInfoSignUpConfig {
-  sign_type?: ClueFormDetailV2DataFormExtendInfoSignUpConfigSignType;
-}
-

@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_wallet_transfer_list_v3_0_response_data_record_list_inner_transfer_capital_record_list_inner.go
+// Do not edit manually.
+
+import type { CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListPlatform, CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListTransferCapital, CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListTransferStatus, CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInnerCapitalSubDetailListInner } from "../models/index";
+
+export interface CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInner {
+  capital_sub_detail_list?: CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInnerCapitalSubDetailListInner[];
+  create_time?: string;
+  finish_time?: string;
+  platform?: CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListPlatform;
+  transfer_amount?: number;
+  transfer_capital?: CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListTransferCapital;
+  transfer_status?: CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListTransferStatus;
+}
+

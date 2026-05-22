@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_creative_custom_creative_create_v2_request_creative_list_inner_abstract_materials_inner.go
+// Do not edit manually.
+
+import type { CreativeCustomCreativeCreateV2RequestCreativeListInnerAbstractMaterialsInnerStructAbstractInfo, CreativeCustomCreativeCreateV2RequestCreativeListInnerAbstractMaterialsInnerTextAbstractInfo } from "../models/index";
+
+export interface CreativeCustomCreativeCreateV2RequestCreativeListInnerAbstractMaterialsInner {
+  struct_abstract_info?: CreativeCustomCreativeCreateV2RequestCreativeListInnerAbstractMaterialsInnerStructAbstractInfo;
+  text_abstract_info?: CreativeCustomCreativeCreateV2RequestCreativeListInnerAbstractMaterialsInnerTextAbstractInfo;
+}
+

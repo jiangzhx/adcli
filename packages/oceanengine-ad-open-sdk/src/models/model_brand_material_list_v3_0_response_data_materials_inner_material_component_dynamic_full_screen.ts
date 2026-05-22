@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner_material_component_dynamic_full_screen.go
+// Do not edit manually.
+
+import type { BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreenImageInfoBkListInner, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreenImageInfoListInner } from "../models/index";
+
+export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreen {
+  image_info_bk_list?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreenImageInfoBkListInner[];
+  image_info_list?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreenImageInfoListInner[];
+}
+

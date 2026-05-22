@@ -3308,33 +3308,59 @@ function compact(value) {
   return value.toLowerCase().replace(/\s+/g, "");
 }
 
-// packages/oceanengine-ad-open-sdk/dist/runtime/ApiException.js
-class ApiException extends Error {
-  statusCode;
-  responseBody;
-  headers;
-  constructor(message, options = {}) {
-    super(message);
-    this.name = "ApiException";
-    this.statusCode = options.statusCode;
-    this.responseBody = options.responseBody;
-    this.headers = options.headers;
+// packages/oceanengine-ad-open-sdk/dist/api/client.js
+var import_json_bigint = __toESM(require_json_bigint(), 1);
+
+// packages/oceanengine-ad-open-sdk/dist/config/configuration.js
+class Configuration {
+  host = "api.oceanengine.com";
+  scheme = "https";
+  defaultHeaders = new Map;
+  userAgent = "Bytedance Ads Openapi SDK";
+  debug = false;
+  logEnable = false;
+  useLogMw = true;
+  constructor(options = {}) {
+    if (options.host) {
+      this.host = options.host;
+    }
+    if (options.scheme) {
+      this.scheme = options.scheme;
+    }
+    if (options.userAgent) {
+      this.userAgent = options.userAgent;
+    }
+    if (options.debug != null) {
+      this.debug = options.debug;
+    }
+    if (options.logEnable != null) {
+      this.logEnable = options.logEnable;
+    }
+    if (options.useLogMw != null) {
+      this.useLogMw = options.useLogMw;
+    }
+    for (const [name, value] of Object.entries(options.defaultHeaders ?? {})) {
+      this.defaultHeaders.set(name, value);
+    }
+  }
+  addDefaultHeader(name, value) {
+    this.defaultHeaders.set(name, value);
+  }
+  getBasePath() {
+    return `${this.scheme}://${this.host}`;
   }
 }
-
-// packages/oceanengine-ad-open-sdk/dist/runtime/json.js
-var import_json_bigint = __toESM(require_json_bigint(), 1);
-var JSONBigStringParser = import_json_bigint.default({ storeAsString: true });
-function parseJsonPreservingLargeIntegers(text) {
-  return JSONBigStringParser.parse(text);
+function NewConfiguration() {
+  return new Configuration;
 }
+var DefaultConfiguration = NewConfiguration();
 
-// packages/oceanengine-ad-open-sdk/dist/runtime/sdk-version.js
+// packages/oceanengine-ad-open-sdk/dist/api/client.js
+var JSONBigStringParser = import_json_bigint.default({ storeAsString: true });
 var SDK_VERSION = "1.1.87";
 
-// packages/oceanengine-ad-open-sdk/dist/runtime/ApiClient.js
 class ApiClient {
-  basePath = "https://api.oceanengine.com";
+  basePath = DefaultConfiguration.getBasePath();
   fetchImpl;
   defaultHeaders = new Headers;
   constructor(options = {}) {
@@ -3342,9 +3368,12 @@ class ApiClient {
     if (options.basePath) {
       this.basePath = options.basePath;
     }
-    this.setUserAgent("Bytedance Ads Openapi SDK");
+    this.setUserAgent(DefaultConfiguration.userAgent);
     this.addDefaultHeader("X-Sdk-Language", "node");
     this.addDefaultHeader("X-Sdk-Version", SDK_VERSION);
+    for (const [name, value] of DefaultConfiguration.defaultHeaders) {
+      this.addDefaultHeader(name, value);
+    }
   }
   getBasePath() {
     return this.basePath;
@@ -3366,7 +3395,9 @@ class ApiClient {
     return this;
   }
   buildUrl(path3, queryParams = []) {
-    const url = new URL(path3, this.basePath);
+    const basePath = this.basePath.endsWith("/") ? this.basePath : `${this.basePath}/`;
+    const relativePath = path3.startsWith("/") ? path3.slice(1) : path3;
+    const url = new URL(relativePath, basePath);
     for (const param of queryParams) {
       if (param.value == null) {
         continue;
@@ -3483,7 +3514,24 @@ class ApiClient {
     return String(value);
   }
 }
-// packages/oceanengine-ad-open-sdk/dist/apis/Oauth2AdvertiserGetApi.js
+
+class ApiException extends Error {
+  statusCode;
+  responseBody;
+  headers;
+  constructor(message, options = {}) {
+    super(message);
+    this.name = "ApiException";
+    this.statusCode = options.statusCode;
+    this.responseBody = options.responseBody;
+    this.headers = options.headers;
+  }
+}
+function parseJsonPreservingLargeIntegers(text) {
+  return JSONBigStringParser.parse(text);
+}
+
+// packages/oceanengine-ad-open-sdk/dist/api/api_oauth2_advertiser_get.js
 class Oauth2AdvertiserGetApi {
   apiClient;
   constructor(apiClient = new ApiClient) {
@@ -3510,7 +3558,7 @@ class Oauth2AdvertiserGetApi {
   }
 }
 
-// packages/oceanengine-ad-open-sdk/dist/apis/ProjectListV30Api.js
+// packages/oceanengine-ad-open-sdk/dist/api/api_project_list_v30.js
 class ProjectListV30Api {
   apiClient;
   constructor(apiClient = new ApiClient) {
@@ -3544,7 +3592,7 @@ class ProjectListV30Api {
   }
 }
 
-// packages/oceanengine-ad-open-sdk/dist/apis/PromotionListV30Api.js
+// packages/oceanengine-ad-open-sdk/dist/api/api_promotion_list_v30.js
 class PromotionListV30Api {
   apiClient;
   constructor(apiClient = new ApiClient) {
@@ -3580,6 +3628,7 @@ class PromotionListV30Api {
     });
   }
 }
+
 // src/commands/oceanengine/config.ts
 import { chmod, mkdir as mkdir2, readFile as readFile2, rename as rename2, writeFile as writeFile2 } from "node:fs/promises";
 import path3 from "node:path";
@@ -3839,7 +3888,7 @@ function isOceanEngineErrorPayload(payload) {
 var import_json_bigint2 = __toESM(require_json_bigint(), 1);
 
 // packages/tencent-ads-marketing-api-sdk/dist/config/v3/configuration.js
-class Configuration {
+class Configuration2 {
   basePath = "https://api.e.qq.com/v3.0";
   defaultHeaders = new Map;
   userAgent = "Tencent Ads Marketing API SDK";
@@ -3858,17 +3907,17 @@ class Configuration {
     this.defaultHeaders.set(name, value);
   }
 }
-function NewConfiguration() {
-  return new Configuration;
+function NewConfiguration2() {
+  return new Configuration2;
 }
-var DefaultConfiguration = NewConfiguration();
+var DefaultConfiguration2 = NewConfiguration2();
 
 // packages/tencent-ads-marketing-api-sdk/dist/api/v3/client.js
 var JSONBigStringParser2 = import_json_bigint2.default({ storeAsString: true });
 var SDK_VERSION2 = "1.7.84";
 
 class ApiClient2 {
-  basePath = DefaultConfiguration.basePath;
+  basePath = DefaultConfiguration2.basePath;
   fetchImpl;
   accessToken;
   userToken;
@@ -3921,7 +3970,7 @@ class ApiClient2 {
           continue;
         }
         if (param.collectionFormat !== "csv") {
-          throw new ApiException3(`Unsupported collection format for query parameter '${param.name}'`);
+          throw new ApiException2(`Unsupported collection format for query parameter '${param.name}'`);
         }
         url.searchParams.append(param.name, param.value.map((value) => this.parameterToString(value)).join(","));
         continue;
@@ -3940,7 +3989,7 @@ class ApiClient2 {
     const response = await this.fetchImpl(request);
     const data = await this.readResponseBody(response, options.responseType);
     if (!response.ok) {
-      throw new ApiException3(`HTTP ${response.status}`, {
+      throw new ApiException2(`HTTP ${response.status}`, {
         statusCode: response.status,
         responseBody: data,
         headers: response.headers
@@ -3972,7 +4021,7 @@ class ApiClient2 {
         }
         body = formBody;
       } else {
-        throw new ApiException3(`Unsupported form content type '${contentType}'`);
+        throw new ApiException2(`Unsupported form content type '${contentType}'`);
       }
     } else if (options.method !== "GET" && options.body != null) {
       const contentType = options.contentType ?? "application/json";
@@ -4038,7 +4087,7 @@ class ApiClient2 {
   }
 }
 
-class ApiException3 extends Error {
+class ApiException2 extends Error {
   statusCode;
   responseBody;
   headers;
@@ -4075,11 +4124,11 @@ class AdgroupsApi {
   }
   async addWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling add");
+      throw new ApiException2("Missing the required parameter 'data' when calling add");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/adgroups/add",
       queryParams: [],
       contentType: "application/json",
@@ -4092,11 +4141,11 @@ class AdgroupsApi {
   }
   async deleteWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling delete");
+      throw new ApiException2("Missing the required parameter 'data' when calling delete");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/adgroups/delete",
       queryParams: [],
       contentType: "application/json",
@@ -4109,11 +4158,11 @@ class AdgroupsApi {
   }
   async getWithHttpInfo(request) {
     if (request.accountId == null) {
-      throw new ApiException3("Missing the required parameter 'accountId' when calling get");
+      throw new ApiException2("Missing the required parameter 'accountId' when calling get");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "GET",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/adgroups/get",
       queryParams: [
         { name: "account_id", value: request.accountId },
@@ -4134,11 +4183,11 @@ class AdgroupsApi {
   }
   async updateWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling update");
+      throw new ApiException2("Missing the required parameter 'data' when calling update");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/adgroups/update",
       queryParams: [],
       contentType: "application/json",
@@ -4151,11 +4200,11 @@ class AdgroupsApi {
   }
   async updateBidAmountWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling updateBidAmount");
+      throw new ApiException2("Missing the required parameter 'data' when calling updateBidAmount");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/adgroups/update_bid_amount",
       queryParams: [],
       contentType: "application/json",
@@ -4168,11 +4217,11 @@ class AdgroupsApi {
   }
   async updateConfiguredStatusWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling updateConfiguredStatus");
+      throw new ApiException2("Missing the required parameter 'data' when calling updateConfiguredStatus");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/adgroups/update_configured_status",
       queryParams: [],
       contentType: "application/json",
@@ -4185,11 +4234,11 @@ class AdgroupsApi {
   }
   async updateDailyBudgetWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling updateDailyBudget");
+      throw new ApiException2("Missing the required parameter 'data' when calling updateDailyBudget");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/adgroups/update_daily_budget",
       queryParams: [],
       contentType: "application/json",
@@ -4202,11 +4251,11 @@ class AdgroupsApi {
   }
   async updateDatetimeWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling updateDatetime");
+      throw new ApiException2("Missing the required parameter 'data' when calling updateDatetime");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/adgroups/update_datetime",
       queryParams: [],
       contentType: "application/json",
@@ -4233,11 +4282,11 @@ class AdvertiserApi {
   }
   async addWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling add");
+      throw new ApiException2("Missing the required parameter 'data' when calling add");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/advertiser/add",
       queryParams: [],
       contentType: "application/json",
@@ -4250,17 +4299,17 @@ class AdvertiserApi {
   }
   async getWithHttpInfo(request) {
     if (request.fields == null) {
-      throw new ApiException3("Missing the required parameter 'fields' when calling get");
+      throw new ApiException2("Missing the required parameter 'fields' when calling get");
     }
     if (request.paginationMode == null) {
-      throw new ApiException3("Missing the required parameter 'paginationMode' when calling get");
+      throw new ApiException2("Missing the required parameter 'paginationMode' when calling get");
     }
     if (request.pageSize == null) {
-      throw new ApiException3("Missing the required parameter 'pageSize' when calling get");
+      throw new ApiException2("Missing the required parameter 'pageSize' when calling get");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "GET",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/advertiser/get",
       queryParams: [
         { name: "agency_id", value: request.agencyId },
@@ -4281,11 +4330,11 @@ class AdvertiserApi {
   }
   async updateWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling update");
+      throw new ApiException2("Missing the required parameter 'data' when calling update");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/advertiser/update",
       queryParams: [],
       contentType: "application/json",
@@ -4298,11 +4347,11 @@ class AdvertiserApi {
   }
   async updateDailyBudgetWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling updateDailyBudget");
+      throw new ApiException2("Missing the required parameter 'data' when calling updateDailyBudget");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/advertiser/update_daily_budget",
       queryParams: [],
       contentType: "application/json",
@@ -4329,11 +4378,11 @@ class DynamicCreativesApi {
   }
   async addWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling add");
+      throw new ApiException2("Missing the required parameter 'data' when calling add");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/dynamic_creatives/add",
       queryParams: [],
       contentType: "application/json",
@@ -4346,11 +4395,11 @@ class DynamicCreativesApi {
   }
   async deleteWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling delete");
+      throw new ApiException2("Missing the required parameter 'data' when calling delete");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/dynamic_creatives/delete",
       queryParams: [],
       contentType: "application/json",
@@ -4363,11 +4412,11 @@ class DynamicCreativesApi {
   }
   async getWithHttpInfo(request) {
     if (request.accountId == null) {
-      throw new ApiException3("Missing the required parameter 'accountId' when calling get");
+      throw new ApiException2("Missing the required parameter 'accountId' when calling get");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "GET",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/dynamic_creatives/get",
       queryParams: [
         { name: "account_id", value: request.accountId },
@@ -4388,11 +4437,11 @@ class DynamicCreativesApi {
   }
   async updateWithHttpInfo(request) {
     if (request.data == null) {
-      throw new ApiException3("Missing the required parameter 'data' when calling update");
+      throw new ApiException2("Missing the required parameter 'data' when calling update");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "POST",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/dynamic_creatives/update",
       queryParams: [],
       contentType: "application/json",
@@ -4419,11 +4468,11 @@ class OrganizationAccountRelationApi {
   }
   async getWithHttpInfo(request) {
     if (request.paginationMode == null) {
-      throw new ApiException3("Missing the required parameter 'paginationMode' when calling get");
+      throw new ApiException2("Missing the required parameter 'paginationMode' when calling get");
     }
     return this.apiClient.requestWithHttpInfo({
       method: "GET",
-      basePath: DefaultConfiguration.basePath,
+      basePath: DefaultConfiguration2.basePath,
       path: "/organization_account_relation/get",
       queryParams: [
         { name: "account_id", value: request.accountId },

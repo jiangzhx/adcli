@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_privative_word_ad_add_v2_response_data_ad_list_inner.go
+// Do not edit manually.
+
+import type { ToolsPrivativeWordAdAddV2ResponseDataAdListInnerDuplicateWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLengthWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLimitWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerHasEmojiWords, ToolsPrivativeWordAdAddV2ResponseDataAdListInnerSuccessWords } from "../models/index";
+
+export interface ToolsPrivativeWordAdAddV2ResponseDataAdListInner {
+  ad_id?: number | string;
+  duplicate_words?: ToolsPrivativeWordAdAddV2ResponseDataAdListInnerDuplicateWords;
+  exceed_length_words?: ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLengthWords;
+  exceed_limit_words?: ToolsPrivativeWordAdAddV2ResponseDataAdListInnerExceedLimitWords;
+  has_emoji_words?: ToolsPrivativeWordAdAddV2ResponseDataAdListInnerHasEmojiWords;
+  status?: string;
+  success_words?: ToolsPrivativeWordAdAddV2ResponseDataAdListInnerSuccessWords;
+}
+

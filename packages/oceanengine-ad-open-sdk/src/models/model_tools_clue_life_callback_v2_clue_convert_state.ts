@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_clue_life_callback_v2_clue_convert_state.go
+// Do not edit manually.
+
+export const ToolsClueLifeCallbackV2ClueConvertState = {
+  ARRIVAL: "ARRIVAL",
+  CLUE_CONFIRM: "CLUE_CONFIRM",
+  CLUE_HIGH_INTENTION: "CLUE_HIGH_INTENTION",
+  CONVERSION_CLASS: "CONVERSION_CLASS",
+  INVALID_EVENT: "INVALID_EVENT",
+} as const;
+
+export type ToolsClueLifeCallbackV2ClueConvertState = typeof ToolsClueLifeCallbackV2ClueConvertState[keyof typeof ToolsClueLifeCallbackV2ClueConvertState];
+

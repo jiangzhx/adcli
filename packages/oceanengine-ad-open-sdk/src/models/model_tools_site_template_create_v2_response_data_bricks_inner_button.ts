@@ -1,0 +1,14 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_site_template_create_v2_response_data_bricks_inner_button.go
+// Do not edit manually.
+
+import type { ToolsSiteTemplateCreateV2DataBricksButtonEventType, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonAppointEvent, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonDownloadEvent, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonLinkEvent, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonPhoneEvent } from "../models/index";
+
+export interface ToolsSiteTemplateCreateV2ResponseDataBricksInnerButton {
+  appoint_event?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonAppointEvent;
+  bg_image_url?: string;
+  download_event?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonDownloadEvent;
+  event_type: ToolsSiteTemplateCreateV2DataBricksButtonEventType;
+  link_event?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonLinkEvent;
+  phone_event?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerButtonPhoneEvent;
+}
+

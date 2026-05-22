@@ -1,9 +1,0 @@
-// Generated from oceanengine/ad_open_sdk_go
-// Do not edit manually.
-
-export const QianchuanUniPromotionAdDetailV10DataProgrammaticCreativeMediaListVideoMaterialStarTraffic = {
-  Enum_1: 1,
-} as const;
-
-export type QianchuanUniPromotionAdDetailV10DataProgrammaticCreativeMediaListVideoMaterialStarTraffic = typeof QianchuanUniPromotionAdDetailV10DataProgrammaticCreativeMediaListVideoMaterialStarTraffic[keyof typeof QianchuanUniPromotionAdDetailV10DataProgrammaticCreativeMediaListVideoMaterialStarTraffic];
-

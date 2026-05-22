@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_materials_video_material_list_auto_material_source.go
+// Do not edit manually.
+
+export const PromotionListV30DataListPromotionMaterialsVideoMaterialListAutoMaterialSource = {
+  MANUAL_ADD: "MANUAL_ADD",
+  SYSTEM_RECOMMEND: "SYSTEM_RECOMMEND",
+} as const;
+
+export type PromotionListV30DataListPromotionMaterialsVideoMaterialListAutoMaterialSource = typeof PromotionListV30DataListPromotionMaterialsVideoMaterialListAutoMaterialSource[keyof typeof PromotionListV30DataListPromotionMaterialsVideoMaterialListAutoMaterialSource];
+

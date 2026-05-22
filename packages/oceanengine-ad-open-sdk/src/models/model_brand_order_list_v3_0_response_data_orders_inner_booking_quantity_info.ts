@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_order_list_v3_0_response_data_orders_inner_booking_quantity_info.go
+// Do not edit manually.
+
+import type { BrandOrderListV30DataOrdersBookingQuantityInfoStockIncreasePackageType, BrandOrderListV30ResponseDataOrdersInnerBookingQuantityInfoDailyQuantityInner } from "../models/index";
+
+export interface BrandOrderListV30ResponseDataOrdersInnerBookingQuantityInfo {
+  daily_quantity?: BrandOrderListV30ResponseDataOrdersInnerBookingQuantityInfoDailyQuantityInner[];
+  stock_increase_package_type?: BrandOrderListV30DataOrdersBookingQuantityInfoStockIncreasePackageType;
+}
+

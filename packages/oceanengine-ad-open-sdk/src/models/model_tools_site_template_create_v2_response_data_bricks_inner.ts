@@ -1,0 +1,19 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_site_template_create_v2_response_data_bricks_inner.go
+// Do not edit manually.
+
+import type { ToolsSiteTemplateCreateV2DataBricksType, ToolsSiteTemplateCreateV2ResponseDataBricksInnerButton, ToolsSiteTemplateCreateV2ResponseDataBricksInnerCoupon, ToolsSiteTemplateCreateV2ResponseDataBricksInnerForm, ToolsSiteTemplateCreateV2ResponseDataBricksInnerPicture, ToolsSiteTemplateCreateV2ResponseDataBricksInnerPictureGroup, ToolsSiteTemplateCreateV2ResponseDataBricksInnerText, ToolsSiteTemplateCreateV2ResponseDataBricksInnerVideo, ToolsSiteTemplateCreateV2ResponseDataBricksInnerWechatApplet, ToolsSiteTemplateCreateV2ResponseDataBricksInnerWechatGame } from "../models/index";
+
+export interface ToolsSiteTemplateCreateV2ResponseDataBricksInner {
+  button?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerButton;
+  coupon?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerCoupon;
+  form?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerForm;
+  index: string;
+  picture?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerPicture;
+  picture_group?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerPictureGroup;
+  text?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerText;
+  type: ToolsSiteTemplateCreateV2DataBricksType;
+  video?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerVideo;
+  wechat_applet?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerWechatApplet;
+  wechat_game?: ToolsSiteTemplateCreateV2ResponseDataBricksInnerWechatGame;
+}
+

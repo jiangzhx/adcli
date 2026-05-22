@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_schedule_date_update_v1_0_update_schedule_infos_schedule_type.go
+// Do not edit manually.
+
+export const QianchuanUniPromotionAdScheduleDateUpdateV10UpdateScheduleInfosScheduleType = {
+  SCHEDULE_FROM_NOW: "SCHEDULE_FROM_NOW",
+  SCHEDULE_START_END: "SCHEDULE_START_END",
+} as const;
+
+export type QianchuanUniPromotionAdScheduleDateUpdateV10UpdateScheduleInfosScheduleType = typeof QianchuanUniPromotionAdScheduleDateUpdateV10UpdateScheduleInfosScheduleType[keyof typeof QianchuanUniPromotionAdScheduleDateUpdateV10UpdateScheduleInfosScheduleType];
+

@@ -1,4 +1,4 @@
-import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { mkdir, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -24,21 +24,30 @@ describe("go generation workflow", () => {
       expect(result.apis).toBe(1);
       expect(result.models).toBe(2);
       expect(result.skipped).toEqual([]);
-      expect(readFileSync(join(outDir, "apis.ts"), "utf8")).toContain('export * from "./apis/ReportCustomConfigGetV30Api";');
-      const apiOutput = readFileSync(join(outDir, "apis", "ReportCustomConfigGetV30Api.ts"), "utf8");
-      expect(apiOutput).toContain("Generated from oceanengine/ad_open_sdk_go");
-      expect(apiOutput).toContain("export interface OpenApiV30ReportCustomConfigGetGetRequest");
+      expect(readFileSync(join(outDir, "api", "index.ts"), "utf8")).toContain('export * from "./api_report_custom_config_get_v30";');
+      expect(readFileSync(join(outDir, "api", "client.ts"), "utf8")).toContain(
+        "Generated from oceanengine/ad_open_sdk_go api/client.go",
+      );
+      expect(readFileSync(join(outDir, "api", "api_common.ts"), "utf8")).toContain(
+        "Generated from oceanengine/ad_open_sdk_go api/api_common.go",
+      );
+      expect(readFileSync(join(outDir, "config", "configuration.ts"), "utf8")).toContain('host = "api.oceanengine.com"');
+      const apiOutput = readFileSync(join(outDir, "api", "api_report_custom_config_get_v30.ts"), "utf8");
+      expect(apiOutput).toContain("Generated from oceanengine/ad_open_sdk_go api/api_report_custom_config_get_v30.go");
+      expect(apiOutput).toContain("export interface ReportCustomConfigGetV30ApiOpenApiV30ReportCustomConfigGetGetRequest");
       expect(apiOutput).toContain("page?: number;");
       expect(apiOutput).toContain("async openApiV30ReportCustomConfigGetGet(request:");
-      expect(readFileSync(join(outDir, "models.ts"), "utf8")).toContain(
-        'export * from "./models/ReportCustomConfigGetV30DataTopics";',
+      expect(readFileSync(join(outDir, "models", "index.ts"), "utf8")).toContain(
+        'export * from "./model_report_custom_config_get_v3_0_data_topics";',
       );
+      expect(readFileSync(join(outDir, "index.ts"), "utf8")).toContain('export * from "./api/index";');
       const manifest = JSON.parse(readFileSync(join(outDir, "manifest.json"), "utf8")) as Record<string, unknown>;
       expect(manifest.source).toBe("go");
       expect(manifest.sourceVersion).toBe("1.1.87");
       expect("goSdkRoot" in manifest).toBe(false);
-      expect(readFileSync(join(outDir, "runtime", "sdk-version.ts"), "utf8")).toContain('export const SDK_VERSION = "1.1.87";');
-      expect(readFileSync(join(outDir, "apis", "ReportCustomConfigGetV30Api.ts"), "utf8")).not.toContain(root);
+      expect(existsSync(join(outDir, "runtime"))).toBe(false);
+      expect(existsSync(join(outDir, "apis.ts"))).toBe(false);
+      expect(readFileSync(join(outDir, "api", "api_report_custom_config_get_v30.ts"), "utf8")).not.toContain(root);
     } finally {
       await rm(root, { recursive: true, force: true });
       await rm(outDir, { recursive: true, force: true });
@@ -51,6 +60,21 @@ function goConfigSource() {
 package config
 
 const Version = "1.1.87"
+
+type Configuration struct {
+  Host string
+  Scheme string
+  UserAgent string
+}
+
+func NewConfiguration() *Configuration {
+  cfg := &Configuration{
+    UserAgent: "Bytedance Ads Openapi SDK",
+    Host: "api.oceanengine.com",
+    Scheme: "https",
+  }
+  return cfg
+}
 `;
 }
 

@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_tools_estimate_audience_v1_0_audience_action_days.go
+// Do not edit manually.
+
+export const QianchuanToolsEstimateAudienceV10AudienceActionDays = {
+  Enum_7: 7,
+  Enum_15: 15,
+  Enum_30: 30,
+  Enum_60: 60,
+  Enum_90: 90,
+  Enum_180: 180,
+  Enum_365: 365,
+} as const;
+
+export type QianchuanToolsEstimateAudienceV10AudienceActionDays = typeof QianchuanToolsEstimateAudienceV10AudienceActionDays[keyof typeof QianchuanToolsEstimateAudienceV10AudienceActionDays];
+

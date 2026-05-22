@@ -13,10 +13,12 @@ describe("oceanengine package shape", () => {
     expect(pkg.type).toBe("module");
     expect(pkg.exports["."].import).toBe("./dist/index.js");
     expect(pkg.exports["."].types).toBe("./dist/index.d.ts");
-    expect(pkg.exports["./apis"].import).toBe("./dist/apis.js");
-    expect(pkg.exports["./apis"].types).toBe("./dist/apis.d.ts");
-    expect(pkg.exports["./models"].import).toBe("./dist/models.js");
-    expect(pkg.exports["./models"].types).toBe("./dist/models.d.ts");
+    expect(pkg.exports["./api"].import).toBe("./dist/api/index.js");
+    expect(pkg.exports["./api"].types).toBe("./dist/api/index.d.ts");
+    expect(pkg.exports["./models"].import).toBe("./dist/models/index.js");
+    expect(pkg.exports["./models"].types).toBe("./dist/models/index.d.ts");
+    expect(pkg.exports["./config"].import).toBe("./dist/config/configuration.js");
+    expect(pkg.exports["./config"].types).toBe("./dist/config/configuration.d.ts");
     expect(pkg.files).toEqual([
       "dist",
       "README.md",

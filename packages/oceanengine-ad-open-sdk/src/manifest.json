@@ -1,20 +1,13 @@
 {
   "source": "go",
+  "sourceModule": "github.com/oceanengine/ad_open_sdk_go",
   "sourceVersion": "1.1.87",
+  "configuration": {
+    "host": "api.oceanengine.com",
+    "scheme": "https",
+    "userAgent": "Bytedance Ads Openapi SDK"
+  },
   "apis": 1136,
   "models": 9671,
-  "skipped": [
-    {
-      "file": "api/api_common.go",
-      "reason": "Unable to parse request struct from api_common.go"
-    },
-    {
-      "file": "api/client.go",
-      "reason": "Unable to parse service name from client.go"
-    },
-    {
-      "file": "api/middleware.go",
-      "reason": "Unable to parse service name from middleware.go"
-    }
-  ]
+  "skipped": []
 }

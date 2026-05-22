@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_stardelivery_task_author_video_detail_v3_0_data_valid_author_submitted_videos_star_video_review_result.go
+// Do not edit manually.
+
+export const StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoReviewResult = {
+  STATUS_PENDING_CONFIRM: "STATUS_PENDING_CONFIRM",
+  STATUS_CONFIRM: "STATUS_CONFIRM",
+  STATUS_CONFIRM_FAIL: "STATUS_CONFIRM_FAIL",
+} as const;
+
+export type StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoReviewResult = typeof StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoReviewResult[keyof typeof StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoReviewResult];
+

@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_long_transfer_order_config_get_v1_0_response_data_custom_config_datas_inner.go
+// Do not edit manually.
+
+import type { QianchuanReportLongTransferOrderConfigGetV10ResponseDataCustomConfigDatasInnerDimensionsInner, QianchuanReportLongTransferOrderConfigGetV10ResponseDataCustomConfigDatasInnerMetricsInner } from "../models/index";
+
+export interface QianchuanReportLongTransferOrderConfigGetV10ResponseDataCustomConfigDatasInner {
+  data_topic?: string;
+  dimensions?: QianchuanReportLongTransferOrderConfigGetV10ResponseDataCustomConfigDatasInnerDimensionsInner[];
+  metrics?: QianchuanReportLongTransferOrderConfigGetV10ResponseDataCustomConfigDatasInnerMetricsInner[];
+}
+

@@ -1,0 +1,32 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_long_transfer_order_get_v1_0_data_list_order_flow_source.go
+// Do not edit manually.
+
+export const QianchuanReportLongTransferOrderGetV10DataListOrderFlowSource = {
+  ACTIVITY: "ACTIVITY",
+  DOUYIN_SHOPPING_CENTER: "DOUYIN_SHOPPING_CENTER",
+  GENERAL_SEARCH: "GENERAL_SEARCH",
+  GUESS_YOU_LIKE: "GUESS_YOU_LIKE",
+  HOMEPAGE_FOLLOW: "HOMEPAGE_FOLLOW",
+  LIVE: "LIVE",
+  LIVE_OTHER: "LIVE_OTHER",
+  OTHERS_HOMEPAGE: "OTHERS_HOMEPAGE",
+  OTHER_PROFILE: "OTHER_PROFILE",
+  PRODUCT_CARD: "PRODUCT_CARD",
+  PRODUCT_CARD_GENERAL_SEARCH: "PRODUCT_CARD_GENERAL_SEARCH",
+  PRODUCT_CARD_OTHER: "PRODUCT_CARD_OTHER",
+  QIANCHUAN_PROMOTE: "QIANCHUAN_PROMOTE",
+  RECOMMEND_LIVE: "RECOMMEND_LIVE",
+  RECOMMEND_PRODUCT: "RECOMMEND_PRODUCT",
+  RECOMMEND_VIDEO: "RECOMMEND_VIDEO",
+  SHOP_WINDOW: "SHOP_WINDOW",
+  UNKNOWN: "UNKNOWN",
+  VIDEO: "VIDEO",
+  VIDEO_ACTIVITY: "VIDEO_ACTIVITY",
+  VIDEO_GENERAL_SEARCH: "VIDEO_GENERAL_SEARCH",
+  VIDEO_HOMEPAGE_FOLLOW: "VIDEO_HOMEPAGE_FOLLOW",
+  VIDEO_OTHER: "VIDEO_OTHER",
+  VIDEO_TO_LIVE: "VIDEO_TO_LIVE",
+} as const;
+
+export type QianchuanReportLongTransferOrderGetV10DataListOrderFlowSource = typeof QianchuanReportLongTransferOrderGetV10DataListOrderFlowSource[keyof typeof QianchuanReportLongTransferOrderGetV10DataListOrderFlowSource];
+

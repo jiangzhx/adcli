@@ -1,9 +1,0 @@
-// Generated from oceanengine/ad_open_sdk_go
-// Do not edit manually.
-
-export const ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSuggestionType = {
-  SEVEN_DAYS_ROI_SUGGESTION: "SEVEN_DAYS_ROI_SUGGESTION",
-} as const;
-
-export type ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSuggestionType = typeof ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSuggestionType[keyof typeof ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSuggestionType];
-

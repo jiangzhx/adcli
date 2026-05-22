@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_data_multi_product_creative_list_creative_material_mode.go
+// Do not edit manually.
+
+export const QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMaterialMode = {
+  CUSTOM_CREATIVE: "CUSTOM_CREATIVE",
+  PROGRAMMATIC_CREATIVE: "PROGRAMMATIC_CREATIVE",
+} as const;
+
+export type QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMaterialMode = typeof QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMaterialMode[keyof typeof QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeMaterialMode];
+

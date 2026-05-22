@@ -1,9 +1,0 @@
-// Generated from oceanengine/ad_open_sdk_go
-// Do not edit manually.
-
-export interface QianchuanAdQuotaGetV10ResponseDataQuotaSearchStageInfo {
-  end_day?: string;
-  is_primary?: number;
-  start_day?: string;
-}
-

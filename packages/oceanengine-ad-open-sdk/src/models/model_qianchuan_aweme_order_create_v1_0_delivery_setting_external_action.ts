@@ -1,0 +1,17 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_create_v1_0_delivery_setting_external_action.go
+// Do not edit manually.
+
+export const QianchuanAwemeOrderCreateV10DeliverySettingExternalAction = {
+  AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION: "AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION",
+  AD_CONVERT_TYPE_LIVE_HEAT: "AD_CONVERT_TYPE_LIVE_HEAT",
+  AD_CONVERT_TYPE_LIVE_ROI: "AD_CONVERT_TYPE_LIVE_ROI",
+  AD_CONVERT_TYPE_LIVE_SUCCESSORDER_ACTION: "AD_CONVERT_TYPE_LIVE_SUCCESSORDER_ACTION",
+  AD_CONVERT_TYPE_LIVE_SUCCESSORDER_PAY: "AD_CONVERT_TYPE_LIVE_SUCCESSORDER_PAY",
+  AD_CONVERT_TYPE_NEW_FOLLOW_ACTION: "AD_CONVERT_TYPE_NEW_FOLLOW_ACTION",
+  AD_CONVERT_TYPE_QC_FOLLOW_ACTION: "AD_CONVERT_TYPE_QC_FOLLOW_ACTION",
+  AD_CONVERT_TYPE_QC_MUST_BUY: "AD_CONVERT_TYPE_QC_MUST_BUY",
+  AD_CONVERT_TYPE_SHOPPING: "AD_CONVERT_TYPE_SHOPPING",
+} as const;
+
+export type QianchuanAwemeOrderCreateV10DeliverySettingExternalAction = typeof QianchuanAwemeOrderCreateV10DeliverySettingExternalAction[keyof typeof QianchuanAwemeOrderCreateV10DeliverySettingExternalAction];
+

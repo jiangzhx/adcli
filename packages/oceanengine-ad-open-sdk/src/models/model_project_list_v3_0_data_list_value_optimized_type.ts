@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_project_list_v3_0_data_list_value_optimized_type.go
+// Do not edit manually.
+
+export const ProjectListV30DataListValueOptimizedType = {
+  ACTION: "ACTION",
+  OFF: "OFF",
+  VALUE: "VALUE",
+} as const;
+
+export type ProjectListV30DataListValueOptimizedType = typeof ProjectListV30DataListValueOptimizedType[keyof typeof ProjectListV30DataListValueOptimizedType];
+

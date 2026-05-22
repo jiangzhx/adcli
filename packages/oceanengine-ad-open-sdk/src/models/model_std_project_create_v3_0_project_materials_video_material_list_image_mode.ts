@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_project_materials_video_material_list_image_mode.go
+// Do not edit manually.
+
+export const StdProjectCreateV30ProjectMaterialsVideoMaterialListImageMode = {
+  CREATIVE_IMAGE_MODE_VIDEO: "CREATIVE_IMAGE_MODE_VIDEO",
+  CREATIVE_IMAGE_MODE_VIDEO_VERTICAL: "CREATIVE_IMAGE_MODE_VIDEO_VERTICAL",
+} as const;
+
+export type StdProjectCreateV30ProjectMaterialsVideoMaterialListImageMode = typeof StdProjectCreateV30ProjectMaterialsVideoMaterialListImageMode[keyof typeof StdProjectCreateV30ProjectMaterialsVideoMaterialListImageMode];
+

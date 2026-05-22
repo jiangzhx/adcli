@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_creative_procedural_creative_create_v2_request_creative_title_materials_inner.go
+// Do not edit manually.
+
+import type { CreativeProceduralCreativeCreateV2RequestCreativeTitleMaterialsInnerBidwordListInner, CreativeProceduralCreativeCreateV2RequestCreativeTitleMaterialsInnerDpaWordListInner, CreativeProceduralCreativeCreateV2RequestCreativeTitleMaterialsInnerWordListInner } from "../models/index";
+
+export interface CreativeProceduralCreativeCreateV2RequestCreativeTitleMaterialsInner {
+  bidword_list?: CreativeProceduralCreativeCreateV2RequestCreativeTitleMaterialsInnerBidwordListInner[];
+  dpa_word_list?: CreativeProceduralCreativeCreateV2RequestCreativeTitleMaterialsInnerDpaWordListInner[];
+  material_id?: number | string;
+  title: string;
+  word_list?: CreativeProceduralCreativeCreateV2RequestCreativeTitleMaterialsInnerWordListInner[];
+}
+

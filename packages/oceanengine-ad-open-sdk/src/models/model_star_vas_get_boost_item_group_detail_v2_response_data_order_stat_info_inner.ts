@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_star_vas_get_boost_item_group_detail_v2_response_data_order_stat_info_inner.go
+// Do not edit manually.
+
+import type { StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInnerAllFlowStatInfo, StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInnerBoostFlowStatInfo, StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInnerOrderInfo } from "../models/index";
+
+export interface StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInner {
+  all_flow_stat_info: StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInnerAllFlowStatInfo;
+  boost_flow_stat_info: StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInnerBoostFlowStatInfo;
+  order_info: StarVasGetBoostItemGroupDetailV2ResponseDataOrderStatInfoInnerOrderInfo;
+}
+

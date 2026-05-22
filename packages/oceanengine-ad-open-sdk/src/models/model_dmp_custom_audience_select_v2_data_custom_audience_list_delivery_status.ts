@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_dmp_custom_audience_select_v2_data_custom_audience_list_delivery_status.go
+// Do not edit manually.
+
+export const DmpCustomAudienceSelectV2DataCustomAudienceListDeliveryStatus = {
+  CUSTOM_AUDIENCE_DELIVERY_STATUS_AVAILABLE: "CUSTOM_AUDIENCE_DELIVERY_STATUS_AVAILABLE",
+  CUSTOM_AUDIENCE_DELIVERY_STATUS_NEED_PUBLISH: "CUSTOM_AUDIENCE_DELIVERY_STATUS_NEED_PUBLISH",
+  CUSTOM_AUDIENCE_DELIVERY_STATUS_NEED_PUSH: "CUSTOM_AUDIENCE_DELIVERY_STATUS_NEED_PUSH",
+  CUSTOM_AUDIENCE_DELIVERY_STATUS_UNAVAILABLE: "CUSTOM_AUDIENCE_DELIVERY_STATUS_UNAVAILABLE",
+} as const;
+
+export type DmpCustomAudienceSelectV2DataCustomAudienceListDeliveryStatus = typeof DmpCustomAudienceSelectV2DataCustomAudienceListDeliveryStatus[keyof typeof DmpCustomAudienceSelectV2DataCustomAudienceListDeliveryStatus];
+

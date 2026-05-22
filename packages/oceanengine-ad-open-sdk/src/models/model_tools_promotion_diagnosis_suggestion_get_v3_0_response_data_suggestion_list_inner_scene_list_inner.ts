@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_promotion_diagnosis_suggestion_get_v3_0_response_data_suggestion_list_inner_scene_list_inner.go
+// Do not edit manually.
+
+import type { ToolsPromotionDiagnosisSuggestionGetV30DataSuggestionListSceneListScene, ToolsPromotionDiagnosisSuggestionGetV30ResponseDataSuggestionListInnerSceneListInnerSuggestionsInner } from "../models/index";
+
+export interface ToolsPromotionDiagnosisSuggestionGetV30ResponseDataSuggestionListInnerSceneListInner {
+  scene?: ToolsPromotionDiagnosisSuggestionGetV30DataSuggestionListSceneListScene;
+  suggestions?: ToolsPromotionDiagnosisSuggestionGetV30ResponseDataSuggestionListInnerSceneListInnerSuggestionsInner[];
+}
+

@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_promotion_auto_generate_config_get_v3_0_response_data_templates_inner.go
+// Do not edit manually.
+
+import type { PromotionAutoGenerateConfigGetV30DataTemplatesTemplateType, PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInnerTemplateImgSchemaInner, PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInnerTemplateTextSchemaInner } from "../models/index";
+
+export interface PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInner {
+  template_id: number | string;
+  template_img_schema?: PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInnerTemplateImgSchemaInner[];
+  template_text_schema?: PromotionAutoGenerateConfigGetV30ResponseDataTemplatesInnerTemplateTextSchemaInner[];
+  template_type: PromotionAutoGenerateConfigGetV30DataTemplatesTemplateType;
+}
+

@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_query_transfer_balance_v3_0_data_accont_amount_detail_list_capital_detail_list_capital_sub_details_capital_sub_type.go
+// Do not edit manually.
+
+export const CgTransferQueryTransferBalanceV30DataAccontAmountDetailListCapitalDetailListCapitalSubDetailsCapitalSubType = {
+  NORMAL: "NORMAL",
+  PRELOAN: "PRELOAN",
+} as const;
+
+export type CgTransferQueryTransferBalanceV30DataAccontAmountDetailListCapitalDetailListCapitalSubDetailsCapitalSubType = typeof CgTransferQueryTransferBalanceV30DataAccontAmountDetailListCapitalDetailListCapitalSubDetailsCapitalSubType[keyof typeof CgTransferQueryTransferBalanceV30DataAccontAmountDetailListCapitalDetailListCapitalSubDetailsCapitalSubType];
+

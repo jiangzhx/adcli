@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_detail_v3_0_response_data_procedural_material_carousel_material_list_inner.go
+// Do not edit manually.
+
+import type { LocalPromotionDetailV30ResponseDataProceduralMaterialCarouselMaterialListInnerImageListInner, LocalPromotionDetailV30ResponseDataProceduralMaterialCarouselMaterialListInnerMusic } from "../models/index";
+
+export interface LocalPromotionDetailV30ResponseDataProceduralMaterialCarouselMaterialListInner {
+  carousel_id: number | string;
+  image_list?: LocalPromotionDetailV30ResponseDataProceduralMaterialCarouselMaterialListInnerImageListInner[];
+  music?: LocalPromotionDetailV30ResponseDataProceduralMaterialCarouselMaterialListInnerMusic;
+}
+

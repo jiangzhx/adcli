@@ -1,0 +1,9 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_info_get_v3_0_data_wallet_info_common_wallet_info_shared_wallet_status.go
+// Do not edit manually.
+
+export const SharedWalletWalletInfoGetV30DataWalletInfoCommonWalletInfoSharedWalletStatus = {
+  DEFUALT: "DEFUALT",
+} as const;
+
+export type SharedWalletWalletInfoGetV30DataWalletInfoCommonWalletInfoSharedWalletStatus = typeof SharedWalletWalletInfoGetV30DataWalletInfoCommonWalletInfoSharedWalletStatus[keyof typeof SharedWalletWalletInfoGetV30DataWalletInfoCommonWalletInfoSharedWalletStatus];
+

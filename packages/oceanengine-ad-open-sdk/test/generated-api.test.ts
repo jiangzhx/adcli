@@ -1,11 +1,11 @@
 import { describe, expect, test } from "bun:test";
-import { ApiClient } from "../src/runtime/ApiClient";
+import { ApiClient } from "../src/api/client";
 import {
   AdvertiserFundGetV2Api,
   Oauth2AccessTokenApi,
   ReportCustomConfigGetV30Api,
-} from "../src/apis";
-import { ReportCustomConfigGetV30DataTopics } from "../src/models";
+} from "../src/api/index";
+import { ReportCustomConfigGetV30DataTopics } from "../src/models/index";
 
 function jsonResponse(body: unknown) {
   return new Response(JSON.stringify(body), {

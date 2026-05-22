@@ -1,0 +1,9 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_get_v3_0_data_shared_accounts_all_accounts_by_company_account_type.go
+// Do not edit manually.
+
+export const ToolsBpAssetManagementShareGetV30DataSharedAccountsAllAccountsByCompanyAccountType = {
+  AD: "AD",
+} as const;
+
+export type ToolsBpAssetManagementShareGetV30DataSharedAccountsAllAccountsByCompanyAccountType = typeof ToolsBpAssetManagementShareGetV30DataSharedAccountsAllAccountsByCompanyAccountType[keyof typeof ToolsBpAssetManagementShareGetV30DataSharedAccountsAllAccountsByCompanyAccountType];
+

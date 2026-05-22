@@ -1,0 +1,13 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_material_get_v1_0_response_data_ad_material_infos_inner_material_info_image_material.go
+// Do not edit manually.
+
+import type { QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialImageMode, QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialSource, QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoImageMaterialImagesInner } from "../models/index";
+
+export interface QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoImageMaterial {
+  image_mode?: QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialImageMode;
+  images?: QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoImageMaterialImagesInner[];
+  material_id?: number | string;
+  source?: QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialSource;
+  title?: string;
+}
+

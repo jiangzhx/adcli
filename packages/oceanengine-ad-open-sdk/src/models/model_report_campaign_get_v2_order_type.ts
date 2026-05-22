@@ -1,0 +1,10 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_report_campaign_get_v2_order_type.go
+// Do not edit manually.
+
+export const ReportCampaignGetV2OrderType = {
+  ASC: "ASC",
+  DESC: "DESC",
+} as const;
+
+export type ReportCampaignGetV2OrderType = typeof ReportCampaignGetV2OrderType[keyof typeof ReportCampaignGetV2OrderType];
+

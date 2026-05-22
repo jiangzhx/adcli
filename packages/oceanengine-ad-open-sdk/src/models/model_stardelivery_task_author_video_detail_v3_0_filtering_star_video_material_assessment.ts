@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_stardelivery_task_author_video_detail_v3_0_filtering_star_video_material_assessment.go
+// Do not edit manually.
+
+export const StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoMaterialAssessment = {
+  FIRST_PUBLISH_MATERIAL: "FIRST_PUBLISH_MATERIAL",
+  HIGH_QUALITY_MATERIAL: "HIGH_QUALITY_MATERIAL",
+  FIRST_PUBLISH_HIGH_QUALITY_MATERIAL: "FIRST_PUBLISH_HIGH_QUALITY_MATERIAL",
+} as const;
+
+export type StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoMaterialAssessment = typeof StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoMaterialAssessment[keyof typeof StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoMaterialAssessment];
+

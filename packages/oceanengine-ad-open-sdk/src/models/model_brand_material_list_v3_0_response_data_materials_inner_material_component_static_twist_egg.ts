@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner_material_component_static_twist_egg.go
+// Do not edit manually.
+
+import type { BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticTwistEggFarImage, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticTwistEggMediumImage, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticTwistEggNearImage } from "../models/index";
+
+export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticTwistEgg {
+  enable?: boolean;
+  far_image?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticTwistEggFarImage;
+  medium_image?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticTwistEggMediumImage;
+  near_image?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticTwistEggNearImage;
+}
+

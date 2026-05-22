@@ -1,0 +1,12 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_management_bp_share_cancel_v2_response_data_success_list_inner.go
+// Do not edit manually.
+
+import type { ToolsAppManagementBpShareCancelV2DataSuccessListShareMode, ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAccountInfo, ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAllAccount, ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAllAccountByCompany } from "../models/index";
+
+export interface ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInner {
+  account_info?: ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAccountInfo;
+  all_account?: ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAllAccount;
+  all_account_by_company?: ToolsAppManagementBpShareCancelV2ResponseDataSuccessListInnerAllAccountByCompany;
+  share_mode?: ToolsAppManagementBpShareCancelV2DataSuccessListShareMode;
+}
+

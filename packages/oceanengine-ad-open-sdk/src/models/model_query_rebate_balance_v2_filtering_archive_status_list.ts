@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_query_rebate_balance_v2_filtering_archive_status_list.go
+// Do not edit manually.
+
+export const QueryRebateBalanceV2FilteringArchiveStatusList = {
+  NO_RETRIEVE: "NO_RETRIEVE",
+  RETRIEVED: "RETRIEVED",
+  ARCHIVED: "ARCHIVED",
+} as const;
+
+export type QueryRebateBalanceV2FilteringArchiveStatusList = typeof QueryRebateBalanceV2FilteringArchiveStatusList[keyof typeof QueryRebateBalanceV2FilteringArchiveStatusList];
+

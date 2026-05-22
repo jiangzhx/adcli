@@ -1,0 +1,11 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_tools_advertiser_diagnosis_suggestion_get_v3_0_response_data_suggestion_info_list_inner_seven_days_roi_suggestion_package_suggestion_inner_adjust_info_inner.go
+// Do not edit manually.
+
+import type { ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSevenDaysRoiSuggestionPackageSuggestionAdjustInfoDeliveryOptimizationType } from "../models/index";
+
+export interface ToolsAdvertiserDiagnosisSuggestionGetV30ResponseDataSuggestionInfoListInnerSevenDaysRoiSuggestionPackageSuggestionInnerAdjustInfoInner {
+  adjust_bid_rate?: number;
+  adjust_roi_goal_rate?: number;
+  delivery_optimization_type?: ToolsAdvertiserDiagnosisSuggestionGetV30DataSuggestionInfoListSevenDaysRoiSuggestionPackageSuggestionAdjustInfoDeliveryOptimizationType;
+}
+

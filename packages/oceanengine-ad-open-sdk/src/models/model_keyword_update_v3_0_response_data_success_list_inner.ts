@@ -1,0 +1,15 @@
+// Generated from oceanengine/ad_open_sdk_go models/model_keyword_update_v3_0_response_data_success_list_inner.go
+// Do not edit manually.
+
+import type { KeywordUpdateV30DataSuccessListBidType, KeywordUpdateV30DataSuccessListMatchType } from "../models/index";
+
+export interface KeywordUpdateV30ResponseDataSuccessListInner {
+  bid?: number;
+  bid_type?: KeywordUpdateV30DataSuccessListBidType;
+  is_pause?: number;
+  keyword_id?: number | string;
+  match_type?: KeywordUpdateV30DataSuccessListMatchType;
+  word?: string;
+  word_id?: number | string;
+}
+
