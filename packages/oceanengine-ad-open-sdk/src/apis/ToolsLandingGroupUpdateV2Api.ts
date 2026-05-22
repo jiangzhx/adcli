@@ -36,6 +36,7 @@ export class ToolsLandingGroupUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsLandingGroupUpdateV2Request
     });
   }

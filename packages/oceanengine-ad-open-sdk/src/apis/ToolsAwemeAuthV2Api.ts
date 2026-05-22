@@ -35,6 +35,7 @@ export class ToolsAwemeAuthV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAwemeAuthV2Request
     });
   }

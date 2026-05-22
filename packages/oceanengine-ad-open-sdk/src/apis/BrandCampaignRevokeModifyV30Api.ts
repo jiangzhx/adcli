@@ -35,6 +35,7 @@ export class BrandCampaignRevokeModifyV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandCampaignRevokeModifyV30Request
     });
   }

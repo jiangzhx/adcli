@@ -35,6 +35,7 @@ export class DpaClueProductSaveV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dpaClueProductSaveV2Request
     });
   }

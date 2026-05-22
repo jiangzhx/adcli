@@ -35,6 +35,7 @@ export class AgentAdvertiserCopyV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.agentAdvertiserCopyV2Request
     });
   }

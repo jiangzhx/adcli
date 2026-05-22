@@ -35,6 +35,7 @@ export class StarVasSubmitExportBoostItemGroupDataV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starVasSubmitExportBoostItemGroupDataV2Request
     });
   }

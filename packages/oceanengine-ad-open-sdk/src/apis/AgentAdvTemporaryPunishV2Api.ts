@@ -35,6 +35,7 @@ export class AgentAdvTemporaryPunishV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.agentAdvTemporaryPunishV2Request
     });
   }

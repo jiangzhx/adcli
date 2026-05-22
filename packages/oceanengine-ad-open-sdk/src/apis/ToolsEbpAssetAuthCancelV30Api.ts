@@ -35,6 +35,7 @@ export class ToolsEbpAssetAuthCancelV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpAssetAuthCancelV30Request
     });
   }

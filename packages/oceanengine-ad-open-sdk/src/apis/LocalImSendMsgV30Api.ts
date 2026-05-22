@@ -35,6 +35,7 @@ export class LocalImSendMsgV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.localImSendMsgV30Request
     });
   }

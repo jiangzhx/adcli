@@ -35,6 +35,7 @@ export class SecurityCreateAppealV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.securityCreateAppealV30Request
     });
   }

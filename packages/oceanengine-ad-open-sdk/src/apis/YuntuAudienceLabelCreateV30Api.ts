@@ -35,6 +35,7 @@ export class YuntuAudienceLabelCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.yuntuAudienceLabelCreateV30Request
     });
   }

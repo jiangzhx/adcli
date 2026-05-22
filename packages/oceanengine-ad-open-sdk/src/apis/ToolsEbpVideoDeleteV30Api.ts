@@ -35,6 +35,7 @@ export class ToolsEbpVideoDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpVideoDeleteV30Request
     });
   }

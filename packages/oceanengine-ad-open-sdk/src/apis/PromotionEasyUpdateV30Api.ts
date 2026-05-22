@@ -35,6 +35,7 @@ export class PromotionEasyUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.promotionEasyUpdateV30Request
     });
   }

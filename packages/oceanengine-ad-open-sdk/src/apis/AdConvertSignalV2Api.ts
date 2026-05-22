@@ -35,7 +35,9 @@ export class AdConvertSignalV2Api {
       queryParams: [
 
       ],
-      body: request.adConvertSignalV2Request
+      contentType: "application/json",
+      body: request.adConvertSignalV2Request,
+      responseType: "arrayBuffer"
     });
   }
 }

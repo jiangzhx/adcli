@@ -35,6 +35,7 @@ export class ToolsMicroGameConvertWindowUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsMicroGameConvertWindowUpdateV30Request
     });
   }

@@ -35,6 +35,7 @@ export class YuntuAudienceLabelDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.yuntuAudienceLabelDeleteV30Request
     });
   }

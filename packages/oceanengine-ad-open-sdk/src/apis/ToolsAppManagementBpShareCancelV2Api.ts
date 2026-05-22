@@ -35,6 +35,7 @@ export class ToolsAppManagementBpShareCancelV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAppManagementBpShareCancelV2Request
     });
   }

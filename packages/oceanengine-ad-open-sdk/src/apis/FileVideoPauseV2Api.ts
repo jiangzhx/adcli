@@ -35,6 +35,7 @@ export class FileVideoPauseV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.fileVideoPauseV2Request
     });
   }

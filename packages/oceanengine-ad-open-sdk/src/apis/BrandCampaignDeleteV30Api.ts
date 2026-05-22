@@ -35,6 +35,7 @@ export class BrandCampaignDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandCampaignDeleteV30Request
     });
   }

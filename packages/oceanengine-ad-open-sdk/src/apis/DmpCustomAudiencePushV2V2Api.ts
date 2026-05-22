@@ -35,6 +35,7 @@ export class DmpCustomAudiencePushV2V2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dmpCustomAudiencePushV2V2Request
     });
   }

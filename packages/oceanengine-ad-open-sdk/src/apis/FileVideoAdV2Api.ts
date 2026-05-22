@@ -44,7 +44,21 @@ export class FileVideoAdV2Api {
       path: "/open_api/2/file/video/ad/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId,
+        filename: request.filename,
+        is_aigc: request.isAigc,
+        is_guide_video: request.isGuideVideo,
+        labels: request.labels,
+        upload_type: request.uploadType,
+        video_signature: request.videoSignature,
+        video_url: request.videoUrl
+      },
+      files: {
+        video_file: request.videoFile
+      }
     });
   }
 }

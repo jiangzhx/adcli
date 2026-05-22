@@ -35,6 +35,7 @@ export class AgentAdvAdvertiserUpdateSaleV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.agentAdvAdvertiserUpdateSaleV2Request
     });
   }

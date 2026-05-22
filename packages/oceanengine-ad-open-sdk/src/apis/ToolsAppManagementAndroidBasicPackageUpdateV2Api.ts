@@ -35,6 +35,7 @@ export class ToolsAppManagementAndroidBasicPackageUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAppManagementAndroidBasicPackageUpdateV2Request
     });
   }

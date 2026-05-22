@@ -96,6 +96,53 @@ func (a *Oauth2AccessTokenApiService) postExecute(r *ApiOpenApiOauth2AccessToken
     expect(api.bodyParam).toBe("request.oauth2AccessTokenRequest");
   });
 
+  test("extracts multipart form and file params from Go source", () => {
+    const source = `
+package api
+
+type FileVideoAgentV2ApiService service
+
+type ApiOpenApi2FileVideoAgentPostRequest struct {
+	ctx        context.Context
+	ApiService *FileVideoAgentV2ApiService
+	agentId   *int64
+	fileName  *string
+	videoFile *FormFileInfo
+}
+
+func (a *FileVideoAgentV2ApiService) postExecute(r *ApiOpenApi2FileVideoAgentPostRequest) (*FileVideoAgentV2Response, *http.Response, error) {
+	localVarHTTPMethod := http.MethodPost
+	localBasePath := a.client.Cfg.GetBasePath()
+	localVarPath := localBasePath + "/open_api/2/file/video/agent/"
+	localVarFormParams := url.Values{}
+	formFiles = make(map[string]*FormFileInfo)
+	if r.agentId == nil {
+		return localVarReturnValue, nil, ReportError("agentId is required and must be specified")
+	}
+	localVarHTTPContentTypes := []string{"multipart/form-data"}
+	parameterAddToHeaderOrQuery(localVarFormParams, "agent_id", r.agentId)
+	parameterAddToHeaderOrQuery(localVarFormParams, "file_name", r.fileName)
+	if r.videoFile != nil {
+		formFiles["video_file"] = r.videoFile
+	}
+	return localVarReturnValue, localVarHTTPResponse, nil
+}`;
+
+    const api = parseGoApiSource(source, "api_file_video_agent_v2.go");
+
+    expect(api.params).toEqual([
+      { javaType: "LongString", name: "agentId", required: true },
+      { javaType: "String", name: "fileName", required: false },
+      { javaType: "File", name: "videoFile", required: false },
+    ]);
+    expect(api.formParams).toEqual([
+      { name: "agent_id", source: "request.agentId" },
+      { name: "file_name", source: "request.fileName" },
+    ]);
+    expect(api.fileParams).toEqual([{ name: "video_file", source: "request.videoFile" }]);
+    expect(api.contentTypes).toEqual(["multipart/form-data"]);
+  });
+
   test("extracts model fields and enum values from Go source", () => {
     const structSource = `
 package models

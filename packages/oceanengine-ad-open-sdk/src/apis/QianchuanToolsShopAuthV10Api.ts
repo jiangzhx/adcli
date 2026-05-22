@@ -35,6 +35,7 @@ export class QianchuanToolsShopAuthV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanToolsShopAuthV10Request
     });
   }

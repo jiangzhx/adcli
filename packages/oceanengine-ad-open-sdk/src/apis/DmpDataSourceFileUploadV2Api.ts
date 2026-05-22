@@ -42,7 +42,15 @@ export class DmpDataSourceFileUploadV2Api {
       path: "/open_api/2/dmp/data_source/file/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId,
+        file_signature: request.fileSignature
+      },
+      files: {
+        file: request.file
+      }
     });
   }
 }

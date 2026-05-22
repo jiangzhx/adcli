@@ -140,6 +140,58 @@ describe("ApiClient", () => {
     expect(await requests[0].text()).toBe(JSON.stringify({ auth_code: "code", secret: "secret" }));
   });
 
+  test("sends multipart form params and files", async () => {
+    const requests: Request[] = [];
+    const client = new ApiClient({
+      fetch: async (input) => {
+        requests.push(input as Request);
+        return jsonResponse({ ok: true });
+      },
+    });
+
+    await client.request({
+      method: "POST",
+      path: "/open_api/2/file/video/agent/",
+      contentType: "multipart/form-data",
+      formParams: {
+        agent_id: "1860166068834571",
+        file_name: "video.mp4",
+        is_need_auth: true,
+      },
+      files: {
+        video_file: new File(["video-bytes"], "video.mp4", { type: "video/mp4" }),
+      },
+    });
+
+    expect(requests[0].headers.get("Content-Type")?.startsWith("multipart/form-data; boundary=")).toBe(true);
+    const form = await requests[0].formData();
+    expect(form.get("agent_id")).toBe("1860166068834571");
+    expect(form.get("file_name")).toBe("video.mp4");
+    expect(form.get("is_need_auth")).toBe("true");
+    const file = form.get("video_file");
+    expect(file).toBeInstanceOf(File);
+    expect((file as File).name).toBe("video.mp4");
+    expect(await (file as File).text()).toBe("video-bytes");
+  });
+
+  test("returns ArrayBuffer responses when requested", async () => {
+    const client = new ApiClient({
+      fetch: async () =>
+        new Response(new Uint8Array([1, 2, 3]), {
+          headers: { "Content-Type": "application/octet-stream" },
+        }),
+    });
+
+    const response = await client.request<ArrayBuffer>({
+      method: "GET",
+      path: "/open_api/2/async_task/download/",
+      responseType: "arrayBuffer",
+    });
+
+    expect(response).toBeInstanceOf(ArrayBuffer);
+    expect([...new Uint8Array(response)]).toEqual([1, 2, 3]);
+  });
+
   test("returns response data with http info", async () => {
     const client = new ApiClient({
       fetch: async () => jsonResponse({ code: 0, message: "OK", data: { id: 1 } }, { headers: { "x-trace-id": "trace-1" } }),

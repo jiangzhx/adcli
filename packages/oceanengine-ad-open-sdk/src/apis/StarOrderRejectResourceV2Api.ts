@@ -35,6 +35,7 @@ export class StarOrderRejectResourceV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starOrderRejectResourceV2Request
     });
   }

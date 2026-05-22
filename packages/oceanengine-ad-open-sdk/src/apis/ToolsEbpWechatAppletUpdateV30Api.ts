@@ -35,6 +35,7 @@ export class ToolsEbpWechatAppletUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpWechatAppletUpdateV30Request
     });
   }

@@ -35,6 +35,7 @@ export class ToolsClueLiteContactRecordV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueLiteContactRecordV2Request
     });
   }

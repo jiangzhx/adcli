@@ -42,7 +42,19 @@ export class FileImageAdV2Api {
       path: "/open_api/2/file/image/ad/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId,
+        filename: request.filename,
+        image_signature: request.imageSignature,
+        image_url: request.imageUrl,
+        is_aigc: request.isAigc,
+        upload_type: request.uploadType
+      },
+      files: {
+        image_file: request.imageFile
+      }
     });
   }
 }

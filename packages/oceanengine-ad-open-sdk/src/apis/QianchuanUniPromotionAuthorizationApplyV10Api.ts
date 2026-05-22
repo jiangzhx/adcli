@@ -35,6 +35,7 @@ export class QianchuanUniPromotionAuthorizationApplyV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanUniPromotionAuthorizationApplyV10Request
     });
   }

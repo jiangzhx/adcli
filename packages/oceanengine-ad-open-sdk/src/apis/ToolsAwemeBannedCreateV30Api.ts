@@ -35,6 +35,7 @@ export class ToolsAwemeBannedCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAwemeBannedCreateV30Request
     });
   }

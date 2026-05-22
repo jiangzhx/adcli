@@ -35,6 +35,7 @@ export class ProjectCpaBidUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.projectCpaBidUpdateV30Request
     });
   }

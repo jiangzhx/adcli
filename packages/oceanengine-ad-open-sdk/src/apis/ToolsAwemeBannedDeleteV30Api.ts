@@ -35,6 +35,7 @@ export class ToolsAwemeBannedDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAwemeBannedDeleteV30Request
     });
   }

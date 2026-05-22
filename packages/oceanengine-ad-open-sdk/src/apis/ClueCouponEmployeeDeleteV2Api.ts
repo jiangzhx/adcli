@@ -35,6 +35,7 @@ export class ClueCouponEmployeeDeleteV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.clueCouponEmployeeDeleteV2Request
     });
   }

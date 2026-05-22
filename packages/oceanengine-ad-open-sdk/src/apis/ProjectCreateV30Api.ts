@@ -35,6 +35,7 @@ export class ProjectCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.projectCreateV30Request
     });
   }

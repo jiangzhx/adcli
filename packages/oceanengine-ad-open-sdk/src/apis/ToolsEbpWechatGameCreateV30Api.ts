@@ -35,6 +35,7 @@ export class ToolsEbpWechatGameCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpWechatGameCreateV30Request
     });
   }

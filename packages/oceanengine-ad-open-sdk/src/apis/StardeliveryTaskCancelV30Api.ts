@@ -35,6 +35,7 @@ export class StardeliveryTaskCancelV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.stardeliveryTaskCancelV30Request
     });
   }

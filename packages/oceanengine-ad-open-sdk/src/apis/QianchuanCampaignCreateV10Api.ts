@@ -35,6 +35,7 @@ export class QianchuanCampaignCreateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanCampaignCreateV10Request
     });
   }

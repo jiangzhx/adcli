@@ -35,6 +35,7 @@ export class QianchuanBatchCampaignStatusUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanBatchCampaignStatusUpdateV10Request
     });
   }

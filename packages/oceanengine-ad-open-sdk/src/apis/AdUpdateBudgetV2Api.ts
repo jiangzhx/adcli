@@ -35,6 +35,7 @@ export class AdUpdateBudgetV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.adUpdateBudgetV2Request
     });
   }

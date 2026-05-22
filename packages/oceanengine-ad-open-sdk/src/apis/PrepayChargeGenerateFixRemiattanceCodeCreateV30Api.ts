@@ -35,6 +35,7 @@ export class PrepayChargeGenerateFixRemiattanceCodeCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.prepayChargeGenerateFixRemiattanceCodeCreateV30Request
     });
   }

@@ -35,6 +35,7 @@ export class NativeAnchorDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.nativeAnchorDeleteV30Request
     });
   }

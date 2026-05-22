@@ -35,6 +35,7 @@ export class StardeliveryTaskShareV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.stardeliveryTaskShareV30Request
     });
   }

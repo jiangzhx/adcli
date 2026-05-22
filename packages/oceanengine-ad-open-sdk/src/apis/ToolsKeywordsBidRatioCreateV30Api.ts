@@ -35,6 +35,7 @@ export class ToolsKeywordsBidRatioCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsKeywordsBidRatioCreateV30Request
     });
   }

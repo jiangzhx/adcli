@@ -35,6 +35,7 @@ export class ToolsEbpVideoUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpVideoUpdateV30Request
     });
   }

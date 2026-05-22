@@ -35,6 +35,7 @@ export class StarDemandSearchWordModifyV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starDemandSearchWordModifyV2Request
     });
   }

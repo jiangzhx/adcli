@@ -35,6 +35,7 @@ export class AdShopInfoUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.adShopInfoUpdateV30Request
     });
   }

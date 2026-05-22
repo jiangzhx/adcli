@@ -35,6 +35,7 @@ export class MaterialStatusUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.materialStatusUpdateV30Request
     });
   }

@@ -35,6 +35,7 @@ export class ToolsClueBridgeCallCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueBridgeCallCreateV2Request
     });
   }

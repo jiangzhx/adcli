@@ -35,6 +35,7 @@ export class ClueFormCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.clueFormCreateV2Request
     });
   }

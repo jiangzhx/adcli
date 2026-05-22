@@ -35,6 +35,7 @@ export class ToolsAwemeAuthRenewalV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAwemeAuthRenewalV2Request
     });
   }

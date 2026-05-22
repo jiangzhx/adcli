@@ -35,6 +35,7 @@ export class EventManagerEventsCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.eventManagerEventsCreateV2Request
     });
   }

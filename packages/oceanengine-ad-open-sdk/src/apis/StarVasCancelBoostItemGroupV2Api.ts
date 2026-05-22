@@ -35,6 +35,7 @@ export class StarVasCancelBoostItemGroupV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starVasCancelBoostItemGroupV2Request
     });
   }

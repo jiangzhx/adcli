@@ -35,6 +35,7 @@ export class StarMcnProviderUploadSearchItemV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starMcnProviderUploadSearchItemV2Request
     });
   }

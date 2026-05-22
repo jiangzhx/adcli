@@ -35,6 +35,7 @@ export class BudgetGroupCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.budgetGroupCreateV30Request
     });
   }

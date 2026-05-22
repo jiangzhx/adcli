@@ -35,6 +35,7 @@ export class LocalProjectUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.localProjectUpdateV30Request
     });
   }

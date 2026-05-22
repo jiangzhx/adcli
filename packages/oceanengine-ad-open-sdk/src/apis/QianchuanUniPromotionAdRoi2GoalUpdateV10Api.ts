@@ -35,6 +35,7 @@ export class QianchuanUniPromotionAdRoi2GoalUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanUniPromotionAdRoi2GoalUpdateV10Request
     });
   }

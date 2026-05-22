@@ -35,6 +35,7 @@ export class ClueFormDeleteV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.clueFormDeleteV2Request
     });
   }

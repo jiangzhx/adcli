@@ -35,6 +35,7 @@ export class LocalFileUploadTaskCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.localFileUploadTaskCreateV30Request
     });
   }

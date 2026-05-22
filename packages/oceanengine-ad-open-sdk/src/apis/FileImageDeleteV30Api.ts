@@ -35,6 +35,7 @@ export class FileImageDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.fileImageDeleteV30Request
     });
   }

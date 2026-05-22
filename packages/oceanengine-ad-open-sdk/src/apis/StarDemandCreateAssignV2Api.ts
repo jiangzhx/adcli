@@ -35,6 +35,7 @@ export class StarDemandCreateAssignV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starDemandCreateAssignV2Request
     });
   }

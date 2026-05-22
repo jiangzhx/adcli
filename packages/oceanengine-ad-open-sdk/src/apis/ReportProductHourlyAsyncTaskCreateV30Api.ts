@@ -35,7 +35,9 @@ export class ReportProductHourlyAsyncTaskCreateV30Api {
       queryParams: [
 
       ],
-      body: request.reportProductHourlyAsyncTaskCreateV30Request
+      contentType: "application/json",
+      body: request.reportProductHourlyAsyncTaskCreateV30Request,
+      responseType: "arrayBuffer"
     });
   }
 }

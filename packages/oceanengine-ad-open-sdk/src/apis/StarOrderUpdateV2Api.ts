@@ -35,6 +35,7 @@ export class StarOrderUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starOrderUpdateV2Request
     });
   }

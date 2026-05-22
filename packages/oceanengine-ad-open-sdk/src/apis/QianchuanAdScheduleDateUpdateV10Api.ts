@@ -35,6 +35,7 @@ export class QianchuanAdScheduleDateUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAdScheduleDateUpdateV10Request
     });
   }

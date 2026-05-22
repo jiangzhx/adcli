@@ -35,6 +35,7 @@ export class ProjectBudgetUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.projectBudgetUpdateV30Request
     });
   }

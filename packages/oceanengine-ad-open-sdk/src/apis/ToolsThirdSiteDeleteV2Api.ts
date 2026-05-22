@@ -35,6 +35,7 @@ export class ToolsThirdSiteDeleteV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsThirdSiteDeleteV2Request
     });
   }

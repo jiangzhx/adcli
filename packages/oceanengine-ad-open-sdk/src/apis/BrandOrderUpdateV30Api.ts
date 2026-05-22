@@ -35,6 +35,7 @@ export class BrandOrderUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandOrderUpdateV30Request
     });
   }

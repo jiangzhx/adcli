@@ -35,6 +35,7 @@ export class AdvertiserQualificationCreateV2V2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.advertiserQualificationCreateV2V2Request
     });
   }

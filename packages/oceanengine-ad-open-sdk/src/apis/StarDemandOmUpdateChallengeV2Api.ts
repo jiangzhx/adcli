@@ -35,6 +35,7 @@ export class StarDemandOmUpdateChallengeV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starDemandOmUpdateChallengeV2Request
     });
   }

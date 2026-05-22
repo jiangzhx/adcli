@@ -35,6 +35,7 @@ export class BrandCreativeUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandCreativeUpdateV30Request
     });
   }

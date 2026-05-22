@@ -35,6 +35,7 @@ export class FileVideoMaterialClearTaskCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.fileVideoMaterialClearTaskCreateV2Request
     });
   }

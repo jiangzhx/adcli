@@ -35,6 +35,7 @@ export class EbpAdvertiserTaskCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.ebpAdvertiserTaskCreateV2Request
     });
   }

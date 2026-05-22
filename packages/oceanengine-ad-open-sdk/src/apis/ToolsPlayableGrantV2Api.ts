@@ -35,6 +35,7 @@ export class ToolsPlayableGrantV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsPlayableGrantV2Request
     });
   }

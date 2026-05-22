@@ -35,6 +35,7 @@ export class ToolsMaterialRaiseCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsMaterialRaiseCreateV30Request
     });
   }

@@ -41,7 +41,14 @@ export class BrandUploadImageV30Api {
       path: "/open_api/v3.0/brand/upload_image/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId
+      },
+      files: {
+        image_file: request.imageFile
+      }
     });
   }
 }

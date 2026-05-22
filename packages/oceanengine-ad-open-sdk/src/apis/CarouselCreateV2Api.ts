@@ -35,6 +35,7 @@ export class CarouselCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.carouselCreateV2Request
     });
   }

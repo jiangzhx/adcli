@@ -11,16 +11,20 @@ describe("oceanengine package shape", () => {
 
     expect(pkg.name).toBe("@jiangzhx/oceanengine-ad-open-sdk");
     expect(pkg.type).toBe("module");
-    expect(pkg.exports["."].import).toBe("./src/index.ts");
-    expect(pkg.exports["."].types).toBe("./src/index.ts");
-    expect(pkg.exports["./apis"].import).toBe("./src/apis.ts");
-    expect(pkg.exports["./models"].import).toBe("./src/models.ts");
+    expect(pkg.exports["."].import).toBe("./dist/index.js");
+    expect(pkg.exports["."].types).toBe("./dist/index.d.ts");
+    expect(pkg.exports["./apis"].import).toBe("./dist/apis.js");
+    expect(pkg.exports["./apis"].types).toBe("./dist/apis.d.ts");
+    expect(pkg.exports["./models"].import).toBe("./dist/models.js");
+    expect(pkg.exports["./models"].types).toBe("./dist/models.d.ts");
     expect(pkg.files).toEqual([
-      "src",
+      "dist",
       "README.md",
     ]);
     expect(pkg.scripts.typecheck).toBe("tsc -p tsconfig.json --noEmit");
     expect(pkg.scripts.test).toBe("bun test test/*.test.ts");
+    expect(pkg.scripts.build).toBe("bun scripts/build.ts");
+    expect(pkg.scripts.prepack).toBe("bun run build");
     expect(pkg.scripts.generate).toBeUndefined();
   });
 });

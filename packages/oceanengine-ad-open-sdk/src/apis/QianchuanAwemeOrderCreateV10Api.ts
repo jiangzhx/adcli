@@ -35,6 +35,7 @@ export class QianchuanAwemeOrderCreateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAwemeOrderCreateV10Request
     });
   }

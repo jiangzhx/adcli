@@ -35,6 +35,7 @@ export class StarAttributeJdOverflowConvertV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starAttributeJdOverflowConvertV2Request
     });
   }

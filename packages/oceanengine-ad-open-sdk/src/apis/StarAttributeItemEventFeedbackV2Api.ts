@@ -35,6 +35,7 @@ export class StarAttributeItemEventFeedbackV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starAttributeItemEventFeedbackV2Request
     });
   }

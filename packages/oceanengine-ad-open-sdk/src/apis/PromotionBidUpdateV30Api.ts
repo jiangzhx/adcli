@@ -35,6 +35,7 @@ export class PromotionBidUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.promotionBidUpdateV30Request
     });
   }

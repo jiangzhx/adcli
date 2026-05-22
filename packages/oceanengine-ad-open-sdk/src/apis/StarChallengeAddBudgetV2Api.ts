@@ -35,6 +35,7 @@ export class StarChallengeAddBudgetV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starChallengeAddBudgetV2Request
     });
   }

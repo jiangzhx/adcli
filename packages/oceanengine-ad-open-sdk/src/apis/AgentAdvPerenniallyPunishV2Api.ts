@@ -35,6 +35,7 @@ export class AgentAdvPerenniallyPunishV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.agentAdvPerenniallyPunishV2Request
     });
   }

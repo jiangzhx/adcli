@@ -35,6 +35,7 @@ export class StarOrderDemanderCancelV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starOrderDemanderCancelV2Request
     });
   }

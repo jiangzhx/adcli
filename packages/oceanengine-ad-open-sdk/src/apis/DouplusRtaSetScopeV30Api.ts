@@ -35,6 +35,7 @@ export class DouplusRtaSetScopeV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.douplusRtaSetScopeV30Request
     });
   }

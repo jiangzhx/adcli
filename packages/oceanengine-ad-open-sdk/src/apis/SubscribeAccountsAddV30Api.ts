@@ -38,6 +38,7 @@ export class SubscribeAccountsAddV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.subscribeAccountsAddV30Request
     });
   }

@@ -35,6 +35,7 @@ export class AdvertiserAvatarSubmitV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.advertiserAvatarSubmitV2Request
     });
   }

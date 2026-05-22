@@ -35,6 +35,7 @@ export class ToolsWechatGameCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsWechatGameCreateV30Request
     });
   }

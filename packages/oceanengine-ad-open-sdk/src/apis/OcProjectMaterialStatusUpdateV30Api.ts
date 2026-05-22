@@ -35,6 +35,7 @@ export class OcProjectMaterialStatusUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.ocProjectMaterialStatusUpdateV30Request
     });
   }

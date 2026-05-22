@@ -35,6 +35,7 @@ export class KeywordDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.keywordDeleteV30Request
     });
   }

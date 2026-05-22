@@ -11,6 +11,8 @@ export function parseGoApiSource(source: string, filename: string): ApiSpec {
   const params = parseRequestFields(requestMatch[2]);
   const required = new Set([...source.matchAll(/if\s+r\.(\w+)\s*==\s*nil\s*\{/g)].map((match) => match[1]));
   const queryParams = parseQueryParams(source, params);
+  const formParams = parseFormParams(source);
+  const fileParams = parseFileParams(source);
   const bodyParam = source.match(/localVarPostBody\s*=\s*r\.(\w+)/)?.[1];
 
   return {
@@ -21,7 +23,8 @@ export function parseGoApiSource(source: string, filename: string): ApiSpec {
     responseType: parseResponseType(source, filename),
     params: params.map((param) => ({ ...param, required: required.has(param.name) })),
     queryParams,
-    formParams: [],
+    formParams,
+    fileParams,
     authNames: ["ApiKeyAuth"],
     accepts: [],
     contentTypes: parseStringArray(source, /localVarHTTPContentTypes\s*:=\s*\[\]string\s*\{([^}]*)\}/),
@@ -105,6 +108,20 @@ function parseQueryParams(source: string, params: Array<{ javaType: string; name
       ...(param?.javaType.startsWith("List<") ? { collectionFormat: "csv" as const } : {}),
     };
   });
+}
+
+function parseFormParams(source: string) {
+  return [...source.matchAll(/parameterAddToHeaderOrQuery\(localVarFormParams,\s*"([^"]+)",\s*r\.(\w+)\)/g)].map((match) => ({
+    name: match[1],
+    source: `request.${match[2]}`,
+  }));
+}
+
+function parseFileParams(source: string) {
+  return [...source.matchAll(/formFiles\["([^"]+)"\]\s*=\s*r\.(\w+)/g)].map((match) => ({
+    name: match[1],
+    source: `request.${match[2]}`,
+  }));
 }
 
 function parseHttpMethod(source: string, filename: string) {

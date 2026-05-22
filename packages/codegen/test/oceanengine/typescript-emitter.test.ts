@@ -21,6 +21,7 @@ describe("typescript emitter", () => {
         { name: "page", source: "request.page" },
       ],
       formParams: [],
+      fileParams: [],
       authNames: ["ApiKeyAuth"],
       accepts: ["application/json"],
       contentTypes: [],
@@ -103,12 +104,45 @@ describe("typescript emitter", () => {
       params: [],
       queryParams: [],
       formParams: [],
+      fileParams: [],
       authNames: ["ApiKeyAuth"],
       accepts: ["application/octet-stream"],
       contentTypes: [],
     });
 
     expect(output).toContain("Promise<ArrayBuffer>");
+    expect(output).toContain('responseType: "arrayBuffer"');
     expect(output).not.toContain("byte[]");
+  });
+
+  test("emits multipart form and file request options", () => {
+    const output = emitApiClass({
+      className: "FileVideoAgentV2Api",
+      methodName: "openApi2FileVideoAgentPost",
+      httpMethod: "POST",
+      path: "/open_api/2/file/video/agent/",
+      responseType: "FileVideoAgentV2Response",
+      params: [
+        { javaType: "LongString", name: "agentId", required: true },
+        { javaType: "String", name: "fileName", required: true },
+        { javaType: "File", name: "videoFile", required: false },
+      ],
+      queryParams: [],
+      formParams: [
+        { name: "agent_id", source: "request.agentId" },
+        { name: "file_name", source: "request.fileName" },
+      ],
+      fileParams: [{ name: "video_file", source: "request.videoFile" }],
+      authNames: ["ApiKeyAuth"],
+      accepts: ["application/json"],
+      contentTypes: ["multipart/form-data"],
+    });
+
+    expect(output).toContain('contentType: "multipart/form-data"');
+    expect(output).toContain('formParams: {');
+    expect(output).toContain('agent_id: request.agentId');
+    expect(output).toContain('file_name: request.fileName');
+    expect(output).toContain('files: {');
+    expect(output).toContain('video_file: request.videoFile');
   });
 });

@@ -35,6 +35,7 @@ export class ToolsPrivativeWordAdUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsPrivativeWordAdUpdateV2Request
     });
   }

@@ -67,6 +67,10 @@ function emitApiClassBody(spec: ApiSpec) {
       return `        { name: "${param.name}", value: ${param.source}${collection} }`;
     })
     .join(",\n");
+  const formParams = emitNamedRequestObject("formParams", spec.formParams);
+  const fileParams = emitNamedRequestObject("files", spec.fileParams);
+  const contentType = spec.contentTypes[0] ? `,\n      contentType: "${spec.contentTypes[0]}"` : "";
+  const responseTypeOption = spec.responseType === "byte[]" ? `,\n      responseType: "arrayBuffer"` : "";
   const body = spec.bodyParam ? `,\n      body: ${spec.bodyParam}` : "";
 
   return `
@@ -97,11 +101,19 @@ ${checks}
       path: "${spec.path}",
       queryParams: [
 ${queryParams}
-      ]${body}
+      ]${contentType}${formParams}${fileParams}${body}${responseTypeOption}
     });
   }
 }
 `;
+}
+
+function emitNamedRequestObject(name: "formParams" | "files", params: Array<{ name: string; source: string }>) {
+  if (params.length === 0) {
+    return "";
+  }
+  const fields = params.map((param) => `        ${toPropertyKey(param.name)}: ${param.source}`).join(",\n");
+  return `,\n      ${name}: {\n${fields}\n      }`;
 }
 
 export function emitModelFile(specs: ModelSpec[]) {

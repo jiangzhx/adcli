@@ -35,6 +35,7 @@ export class ToolsAppManagementExtendPackageCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAppManagementExtendPackageCreateV2Request
     });
   }

@@ -36,6 +36,7 @@ export class ToolsLandingGroupSiteOptStatusUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsLandingGroupSiteOptStatusUpdateV2Request
     });
   }

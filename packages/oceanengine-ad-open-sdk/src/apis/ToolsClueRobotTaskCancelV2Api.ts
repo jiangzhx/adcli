@@ -35,6 +35,7 @@ export class ToolsClueRobotTaskCancelV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueRobotTaskCancelV2Request
     });
   }

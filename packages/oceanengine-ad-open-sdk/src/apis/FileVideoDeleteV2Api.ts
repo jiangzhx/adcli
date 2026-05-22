@@ -35,6 +35,7 @@ export class FileVideoDeleteV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.fileVideoDeleteV2Request
     });
   }

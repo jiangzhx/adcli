@@ -35,6 +35,7 @@ export class CgTransferWalletTransferCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.cgTransferWalletTransferCreateV30Request
     });
   }

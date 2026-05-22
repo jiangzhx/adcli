@@ -40,7 +40,17 @@ export class LocalImageUploadV30Api {
       path: "/open_api/v3.0/local/image/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        image_signature: request.imageSignature,
+        is_aigc: request.isAigc,
+        local_account_id: request.localAccountId,
+        upload_type: request.uploadType
+      },
+      files: {
+        image_file: request.imageFile
+      }
     });
   }
 }

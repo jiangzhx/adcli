@@ -35,6 +35,7 @@ export class ToolsClueWebrtcCreateV2V30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueWebrtcCreateV2V30Request
     });
   }

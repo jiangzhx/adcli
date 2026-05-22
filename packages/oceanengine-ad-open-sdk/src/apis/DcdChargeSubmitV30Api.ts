@@ -35,6 +35,7 @@ export class DcdChargeSubmitV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dcdChargeSubmitV30Request
     });
   }

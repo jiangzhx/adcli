@@ -35,6 +35,7 @@ export class ToolsClueRobotTaskCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueRobotTaskCreateV2Request
     });
   }

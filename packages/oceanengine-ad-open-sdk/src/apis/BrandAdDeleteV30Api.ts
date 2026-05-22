@@ -35,6 +35,7 @@ export class BrandAdDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandAdDeleteV30Request
     });
   }

@@ -35,6 +35,7 @@ export class ToolsAppManagementUpdateAuthorizationV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAppManagementUpdateAuthorizationV2Request
     });
   }

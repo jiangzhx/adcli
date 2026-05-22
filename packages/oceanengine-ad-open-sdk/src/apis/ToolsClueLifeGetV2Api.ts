@@ -35,6 +35,7 @@ export class ToolsClueLifeGetV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueLifeGetV2Request
     });
   }

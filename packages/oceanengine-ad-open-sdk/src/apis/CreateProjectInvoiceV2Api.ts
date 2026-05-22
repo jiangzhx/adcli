@@ -35,6 +35,7 @@ export class CreateProjectInvoiceV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.createProjectInvoiceV2Request
     });
   }

@@ -35,6 +35,7 @@ export class DouplusOrderRenewV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.douplusOrderRenewV30Request
     });
   }

@@ -35,6 +35,7 @@ export class CustomerCenterFundTransferSeqCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.customerCenterFundTransferSeqCreateV2Request
     });
   }

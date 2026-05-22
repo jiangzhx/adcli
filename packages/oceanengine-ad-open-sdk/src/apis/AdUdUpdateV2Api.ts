@@ -35,6 +35,7 @@ export class AdUdUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.adUdUpdateV2Request
     });
   }

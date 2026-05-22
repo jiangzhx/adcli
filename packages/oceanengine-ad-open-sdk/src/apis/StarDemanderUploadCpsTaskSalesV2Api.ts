@@ -35,6 +35,7 @@ export class StarDemanderUploadCpsTaskSalesV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starDemanderUploadCpsTaskSalesV2Request
     });
   }

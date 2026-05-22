@@ -38,6 +38,7 @@ export class SubscribeAccountsRemoveV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.subscribeAccountsRemoveV30Request
     });
   }

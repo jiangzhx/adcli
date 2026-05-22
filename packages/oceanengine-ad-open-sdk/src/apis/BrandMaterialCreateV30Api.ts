@@ -35,6 +35,7 @@ export class BrandMaterialCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandMaterialCreateV30Request
     });
   }

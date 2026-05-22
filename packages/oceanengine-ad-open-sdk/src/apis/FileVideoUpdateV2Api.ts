@@ -35,6 +35,7 @@ export class FileVideoUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.fileVideoUpdateV2Request
     });
   }

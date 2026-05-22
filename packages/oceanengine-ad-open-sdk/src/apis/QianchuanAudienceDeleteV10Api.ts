@@ -35,6 +35,7 @@ export class QianchuanAudienceDeleteV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAudienceDeleteV10Request
     });
   }

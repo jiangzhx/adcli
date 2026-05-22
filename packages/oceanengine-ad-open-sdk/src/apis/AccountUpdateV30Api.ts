@@ -35,6 +35,7 @@ export class AccountUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.accountUpdateV30Request
     });
   }

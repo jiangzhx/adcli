@@ -50,7 +50,19 @@ export class AicElementUploadV30Api {
       path: "/open_api/v3.0/aic/element/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        account_id: request.accountId,
+        account_type: request.accountType,
+        element_name: request.elementName,
+        element_type: request.elementType,
+        path_name: request.pathName,
+        use_as: request.useAs
+      },
+      files: {
+        file: request.file
+      }
     });
   }
 }

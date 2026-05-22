@@ -35,6 +35,7 @@ export class PrepayChargeGenerateRemittanceCodeCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.prepayChargeGenerateRemittanceCodeCreateV30Request
     });
   }

@@ -35,6 +35,7 @@ export class ToolsClueCallCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueCallCreateV2Request
     });
   }

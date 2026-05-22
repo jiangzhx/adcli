@@ -41,7 +41,14 @@ export class QianchuanAudienceFileUploadV10Api {
       path: "/open_api/v1.0/qianchuan/audience_file/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId
+      },
+      files: {
+        file: request.file
+      }
     });
   }
 }

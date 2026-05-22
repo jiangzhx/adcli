@@ -35,6 +35,7 @@ export class StarMcnProviderHandleJoinedAuthorV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starMcnProviderHandleJoinedAuthorV2Request
     });
   }

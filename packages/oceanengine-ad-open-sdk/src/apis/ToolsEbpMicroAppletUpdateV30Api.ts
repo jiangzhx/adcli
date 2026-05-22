@@ -35,6 +35,7 @@ export class ToolsEbpMicroAppletUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpMicroAppletUpdateV30Request
     });
   }

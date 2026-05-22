@@ -35,6 +35,7 @@ export class StarCopyrightCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starCopyrightCreateV2Request
     });
   }

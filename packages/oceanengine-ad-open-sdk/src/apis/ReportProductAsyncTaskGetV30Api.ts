@@ -35,7 +35,9 @@ export class ReportProductAsyncTaskGetV30Api {
       queryParams: [
 
       ],
-      body: request.reportProductAsyncTaskGetV30Request
+      contentType: "application/json",
+      body: request.reportProductAsyncTaskGetV30Request,
+      responseType: "arrayBuffer"
     });
   }
 }

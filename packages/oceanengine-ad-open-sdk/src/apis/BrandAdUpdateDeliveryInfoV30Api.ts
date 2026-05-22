@@ -35,6 +35,7 @@ export class BrandAdUpdateDeliveryInfoV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandAdUpdateDeliveryInfoV30Request
     });
   }

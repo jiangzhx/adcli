@@ -35,6 +35,7 @@ export class ToolsCommentReplyV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsCommentReplyV30Request
     });
   }

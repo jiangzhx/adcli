@@ -35,6 +35,7 @@ export class ToolsJointBidUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsJointBidUpdateV30Request
     });
   }

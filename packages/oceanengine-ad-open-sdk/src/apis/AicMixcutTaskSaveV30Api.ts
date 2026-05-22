@@ -35,6 +35,7 @@ export class AicMixcutTaskSaveV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.aicMixcutTaskSaveV30Request
     });
   }

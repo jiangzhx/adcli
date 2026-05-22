@@ -35,6 +35,7 @@ export class OcProjectMaterialDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.ocProjectMaterialDeleteV30Request
     });
   }

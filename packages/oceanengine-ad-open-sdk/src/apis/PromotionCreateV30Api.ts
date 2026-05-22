@@ -35,6 +35,7 @@ export class PromotionCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.promotionCreateV30Request
     });
   }

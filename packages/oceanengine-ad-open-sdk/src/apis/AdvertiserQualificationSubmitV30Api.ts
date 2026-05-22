@@ -35,6 +35,7 @@ export class AdvertiserQualificationSubmitV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.advertiserQualificationSubmitV30Request
     });
   }

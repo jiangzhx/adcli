@@ -35,6 +35,7 @@ export class ToolsAppManagementBpShareV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAppManagementBpShareV2Request
     });
   }

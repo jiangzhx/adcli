@@ -35,6 +35,7 @@ export class KeywordCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.keywordCreateV30Request
     });
   }

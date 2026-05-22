@@ -35,6 +35,7 @@ export class DiagnosisTaskAgentCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.diagnosisTaskAgentCreateV2Request
     });
   }

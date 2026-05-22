@@ -35,6 +35,7 @@ export class ToolsKeywordsBidRatioDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsKeywordsBidRatioDeleteV30Request
     });
   }

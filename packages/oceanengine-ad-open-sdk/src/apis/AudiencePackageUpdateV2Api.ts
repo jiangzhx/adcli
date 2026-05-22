@@ -35,6 +35,7 @@ export class AudiencePackageUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.audiencePackageUpdateV2Request
     });
   }

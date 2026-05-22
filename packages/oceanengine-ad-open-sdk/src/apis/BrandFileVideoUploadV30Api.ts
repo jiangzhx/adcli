@@ -41,7 +41,14 @@ export class BrandFileVideoUploadV30Api {
       path: "/open_api/v3.0/brand/file/video/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId
+      },
+      files: {
+        video_file: request.videoFile
+      }
     });
   }
 }

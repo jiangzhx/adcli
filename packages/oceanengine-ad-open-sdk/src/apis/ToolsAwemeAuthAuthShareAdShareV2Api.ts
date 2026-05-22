@@ -35,6 +35,7 @@ export class ToolsAwemeAuthAuthShareAdShareV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAwemeAuthAuthShareAdShareV2Request
     });
   }

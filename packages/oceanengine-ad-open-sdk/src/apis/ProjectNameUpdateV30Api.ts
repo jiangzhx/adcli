@@ -35,6 +35,7 @@ export class ProjectNameUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.projectNameUpdateV30Request
     });
   }

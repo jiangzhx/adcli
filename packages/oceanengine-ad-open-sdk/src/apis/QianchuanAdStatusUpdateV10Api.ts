@@ -35,6 +35,7 @@ export class QianchuanAdStatusUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAdStatusUpdateV10Request
     });
   }

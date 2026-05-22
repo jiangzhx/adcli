@@ -35,6 +35,7 @@ export class ProjectRoigoalUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.projectRoigoalUpdateV30Request
     });
   }

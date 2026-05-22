@@ -41,7 +41,14 @@ export class UploadStatementV2Api {
       path: "/open_api/2/upload/statement/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        agent_id: request.agentId
+      },
+      files: {
+        file: request.file
+      }
     });
   }
 }

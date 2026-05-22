@@ -35,6 +35,7 @@ export class StarChallengeCancelV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starChallengeCancelV2Request
     });
   }

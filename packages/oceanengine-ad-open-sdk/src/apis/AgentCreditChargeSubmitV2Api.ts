@@ -35,6 +35,7 @@ export class AgentCreditChargeSubmitV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.agentCreditChargeSubmitV2Request
     });
   }

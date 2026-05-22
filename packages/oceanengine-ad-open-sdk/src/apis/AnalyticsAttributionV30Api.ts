@@ -35,6 +35,7 @@ export class AnalyticsAttributionV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.analyticsAttributionV30Request
     });
   }

@@ -35,6 +35,7 @@ export class ToolsEbpAppExtendCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpAppExtendCreateV30Request
     });
   }

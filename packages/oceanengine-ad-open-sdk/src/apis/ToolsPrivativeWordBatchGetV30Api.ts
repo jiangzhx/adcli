@@ -35,6 +35,7 @@ export class ToolsPrivativeWordBatchGetV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsPrivativeWordBatchGetV30Request
     });
   }

@@ -35,6 +35,7 @@ export class ToolsPromotionRaiseSetV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsPromotionRaiseSetV30Request
     });
   }

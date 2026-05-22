@@ -35,6 +35,7 @@ export class QianchuanAdScheduleFixedRangeUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAdScheduleFixedRangeUpdateV10Request
     });
   }

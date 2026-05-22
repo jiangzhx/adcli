@@ -35,6 +35,7 @@ export class QianchuanUniPromotionAdScheduleDateUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanUniPromotionAdScheduleDateUpdateV10Request
     });
   }

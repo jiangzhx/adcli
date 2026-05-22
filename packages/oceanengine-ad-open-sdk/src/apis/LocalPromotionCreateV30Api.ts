@@ -35,6 +35,7 @@ export class LocalPromotionCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.localPromotionCreateV30Request
     });
   }

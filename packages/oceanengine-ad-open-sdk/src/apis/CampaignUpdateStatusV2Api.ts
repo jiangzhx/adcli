@@ -35,6 +35,7 @@ export class CampaignUpdateStatusV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.campaignUpdateStatusV2Request
     });
   }

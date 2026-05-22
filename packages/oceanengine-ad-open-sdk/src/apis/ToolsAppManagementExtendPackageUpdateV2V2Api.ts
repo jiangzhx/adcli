@@ -35,6 +35,7 @@ export class ToolsAppManagementExtendPackageUpdateV2V2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAppManagementExtendPackageUpdateV2V2Request
     });
   }

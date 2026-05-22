@@ -35,6 +35,7 @@ export class ToolsUnionFlowPackageUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsUnionFlowPackageUpdateV2Request
     });
   }

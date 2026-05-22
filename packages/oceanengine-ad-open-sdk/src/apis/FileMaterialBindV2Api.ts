@@ -35,6 +35,7 @@ export class FileMaterialBindV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.fileMaterialBindV2Request
     });
   }

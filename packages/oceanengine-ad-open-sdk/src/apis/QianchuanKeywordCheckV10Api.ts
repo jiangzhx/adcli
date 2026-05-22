@@ -35,6 +35,7 @@ export class QianchuanKeywordCheckV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanKeywordCheckV10Request
     });
   }

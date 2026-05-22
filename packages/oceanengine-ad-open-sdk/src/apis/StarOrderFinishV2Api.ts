@@ -35,6 +35,7 @@ export class StarOrderFinishV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starOrderFinishV2Request
     });
   }

@@ -41,7 +41,8 @@ export class FileRebateCommonDownloadDownloadFileV2Api {
       queryParams: [
         { name: "agent_id", value: request.agentId },
         { name: "task_id", value: request.taskId }
-      ]
+      ],
+      responseType: "arrayBuffer"
     });
   }
 }

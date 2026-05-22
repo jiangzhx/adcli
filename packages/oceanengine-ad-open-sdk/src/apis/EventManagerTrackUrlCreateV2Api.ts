@@ -35,6 +35,7 @@ export class EventManagerTrackUrlCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.eventManagerTrackUrlCreateV2Request
     });
   }

@@ -35,6 +35,7 @@ export class CreativeCustomCreativeCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.creativeCustomCreativeCreateV2Request
     });
   }

@@ -35,6 +35,7 @@ export class BudgetGroupDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.budgetGroupDeleteV30Request
     });
   }

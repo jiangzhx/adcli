@@ -41,7 +41,14 @@ export class AdvertiserAvatarUploadV2Api {
       path: "/open_api/2/advertiser/avatar/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId
+      },
+      files: {
+        image_file: request.imageFile
+      }
     });
   }
 }

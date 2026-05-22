@@ -35,6 +35,7 @@ export class ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request
     });
   }

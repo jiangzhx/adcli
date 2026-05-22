@@ -35,6 +35,7 @@ export class ShopBonusCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.shopBonusCreateV30Request
     });
   }

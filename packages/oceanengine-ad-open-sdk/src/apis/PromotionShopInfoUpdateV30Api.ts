@@ -35,6 +35,7 @@ export class PromotionShopInfoUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.promotionShopInfoUpdateV30Request
     });
   }

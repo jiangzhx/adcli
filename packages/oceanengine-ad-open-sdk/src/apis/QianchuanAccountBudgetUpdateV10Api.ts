@@ -35,6 +35,7 @@ export class QianchuanAccountBudgetUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAccountBudgetUpdateV10Request
     });
   }

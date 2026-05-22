@@ -35,6 +35,7 @@ export class StarMcnContractChallengeV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starMcnContractChallengeV2Request
     });
   }

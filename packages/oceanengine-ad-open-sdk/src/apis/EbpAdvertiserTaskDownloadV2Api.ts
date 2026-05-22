@@ -37,7 +37,8 @@ export class EbpAdvertiserTaskDownloadV2Api {
       queryParams: [
         { name: "enterprise_organization_id", value: request.enterpriseOrganizationId },
         { name: "task_id", value: request.taskId }
-      ]
+      ],
+      responseType: "arrayBuffer"
     });
   }
 }

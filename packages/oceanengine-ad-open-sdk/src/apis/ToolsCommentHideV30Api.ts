@@ -35,6 +35,7 @@ export class ToolsCommentHideV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsCommentHideV30Request
     });
   }

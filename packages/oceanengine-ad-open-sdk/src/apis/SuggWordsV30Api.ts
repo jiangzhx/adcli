@@ -35,6 +35,7 @@ export class SuggWordsV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.suggWordsV30Request
     });
   }

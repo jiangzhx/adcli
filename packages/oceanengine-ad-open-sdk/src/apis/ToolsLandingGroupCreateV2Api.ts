@@ -36,6 +36,7 @@ export class ToolsLandingGroupCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsLandingGroupCreateV2Request
     });
   }

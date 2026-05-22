@@ -35,6 +35,7 @@ export class RejectMaterialAiRepairAcceptTaskCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.rejectMaterialAiRepairAcceptTaskCreateV30Request
     });
   }

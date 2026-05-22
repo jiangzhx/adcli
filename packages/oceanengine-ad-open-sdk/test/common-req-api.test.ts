@@ -68,6 +68,32 @@ describe("CommonReqApi", () => {
     expect(await requests[0].text()).toBe("advertiser_id=123&name=demo");
   });
 
+  test("sends multipart files", async () => {
+    const requests: Request[] = [];
+    const api = new CommonReqApi(
+      new ApiClient({
+        fetch: async (input) => {
+          requests.push(input as Request);
+          return jsonResponse({ code: 0, data: { ok: true } });
+        },
+      }),
+    );
+
+    await api.commonReq(
+      "POST",
+      "/open_api/2/file/video/agent/",
+      "multipart/form-data",
+      undefined,
+      { agent_id: "1860166068834571" },
+      undefined,
+      { video_file: new File(["video-bytes"], "video.mp4") },
+    );
+
+    const form = await requests[0].formData();
+    expect(form.get("agent_id")).toBe("1860166068834571");
+    expect(form.get("video_file")).toBeInstanceOf(File);
+  });
+
   test("returns http info variant", async () => {
     const api = new CommonReqApi(
       new ApiClient({

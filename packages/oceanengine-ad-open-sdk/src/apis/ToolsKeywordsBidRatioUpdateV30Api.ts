@@ -35,6 +35,7 @@ export class ToolsKeywordsBidRatioUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsKeywordsBidRatioUpdateV30Request
     });
   }

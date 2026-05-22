@@ -35,6 +35,7 @@ export class KeywordUpdateV2V2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.keywordUpdateV2V2Request
     });
   }

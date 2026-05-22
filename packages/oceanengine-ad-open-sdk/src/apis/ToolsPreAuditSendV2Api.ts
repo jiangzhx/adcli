@@ -35,6 +35,7 @@ export class ToolsPreAuditSendV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsPreAuditSendV2Request
     });
   }

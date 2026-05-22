@@ -35,6 +35,7 @@ export class QianchuanToolsAwemeAuthV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanToolsAwemeAuthV10Request
     });
   }

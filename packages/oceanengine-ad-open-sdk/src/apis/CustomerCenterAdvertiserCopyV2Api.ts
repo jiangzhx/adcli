@@ -35,6 +35,7 @@ export class CustomerCenterAdvertiserCopyV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.customerCenterAdvertiserCopyV2Request
     });
   }

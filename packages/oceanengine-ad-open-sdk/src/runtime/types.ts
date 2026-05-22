@@ -13,7 +13,9 @@ export interface RequestOptions {
   headers?: Record<string, string>;
   body?: unknown;
   formParams?: Record<string, unknown>;
+  files?: Record<string, Blob | undefined | null>;
   contentType?: string;
+  responseType?: "json" | "text" | "arrayBuffer";
 }
 
 export type FetchLike = (input: Request, init?: RequestInit) => Promise<Response>;

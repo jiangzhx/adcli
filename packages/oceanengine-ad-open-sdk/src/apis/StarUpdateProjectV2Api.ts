@@ -35,6 +35,7 @@ export class StarUpdateProjectV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starUpdateProjectV2Request
     });
   }

@@ -35,6 +35,7 @@ export class ClueSmartphoneDeleteV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.clueSmartphoneDeleteV2Request
     });
   }

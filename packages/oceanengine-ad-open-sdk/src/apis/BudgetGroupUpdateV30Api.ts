@@ -35,6 +35,7 @@ export class BudgetGroupUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.budgetGroupUpdateV30Request
     });
   }

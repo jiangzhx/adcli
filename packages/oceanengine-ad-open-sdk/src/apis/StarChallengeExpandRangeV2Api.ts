@@ -35,6 +35,7 @@ export class StarChallengeExpandRangeV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starChallengeExpandRangeV2Request
     });
   }

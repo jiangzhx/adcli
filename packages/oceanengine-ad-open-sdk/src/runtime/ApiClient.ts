@@ -77,7 +77,7 @@ export class ApiClient {
   async requestWithHttpInfo<T = unknown>(options: RequestOptions): Promise<ApiResponse<T>> {
     const request = this.buildRequest(options);
     const response = await this.fetchImpl(request);
-    const data = await this.readResponseBody(response);
+    const data = await this.readResponseBody(response, options.responseType);
 
     if (!response.ok) {
       throw new ApiException(`HTTP ${response.status}`, {
@@ -101,19 +101,22 @@ export class ApiClient {
     }
 
     let body: BodyInit | undefined;
-    if (options.method !== "GET" && options.formParams) {
+    if (options.method !== "GET" && (options.formParams || options.files)) {
       const contentType = options.contentType ?? "application/x-www-form-urlencoded";
-      headers.set("Content-Type", contentType);
-      if (contentType !== "application/x-www-form-urlencoded") {
+      if (contentType === "multipart/form-data") {
+        body = this.buildMultipartFormBody(options.formParams, options.files);
+      } else if (contentType === "application/x-www-form-urlencoded") {
+        headers.set("Content-Type", contentType);
+        const formBody = new URLSearchParams();
+        for (const [name, value] of Object.entries(options.formParams ?? {})) {
+          if (value != null) {
+            formBody.append(name, this.parameterToString(value));
+          }
+        }
+        body = formBody;
+      } else {
         throw new ApiException(`Unsupported form content type '${contentType}'`);
       }
-      const formBody = new URLSearchParams();
-      for (const [name, value] of Object.entries(options.formParams)) {
-        if (value != null) {
-          formBody.append(name, this.parameterToString(value));
-        }
-      }
-      body = formBody;
     } else if (options.method !== "GET" && options.body != null) {
       const contentType = options.contentType ?? "application/json";
       headers.set("Content-Type", contentType);
@@ -127,10 +130,31 @@ export class ApiClient {
     });
   }
 
-  private async readResponseBody(response: Response) {
+  private buildMultipartFormBody(formParams: Record<string, unknown> = {}, files: Record<string, Blob | undefined | null> = {}) {
+    const formBody = new FormData();
+    for (const [name, value] of Object.entries(formParams)) {
+      if (value != null) {
+        formBody.append(name, this.parameterToString(value));
+      }
+    }
+    for (const [name, value] of Object.entries(files)) {
+      if (value != null) {
+        formBody.append(name, value);
+      }
+    }
+    return formBody;
+  }
+
+  private async readResponseBody(response: Response, responseType: RequestOptions["responseType"] = "json") {
+    if (responseType === "arrayBuffer") {
+      return response.arrayBuffer();
+    }
     const text = await response.text();
     if (!text) {
       return undefined;
+    }
+    if (responseType === "text") {
+      return text;
     }
     const contentType = response.headers.get("Content-Type") ?? "";
     if (contentType.includes("application/json")) {

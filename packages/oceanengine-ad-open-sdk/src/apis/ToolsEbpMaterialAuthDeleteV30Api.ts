@@ -35,6 +35,7 @@ export class ToolsEbpMaterialAuthDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpMaterialAuthDeleteV30Request
     });
   }

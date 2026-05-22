@@ -35,6 +35,7 @@ export class SharedWalletBudgetSubmitV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.sharedWalletBudgetSubmitV30Request
     });
   }

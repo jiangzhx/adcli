@@ -41,7 +41,14 @@ export class LocalImUploadImageV30Api {
       path: "/open_api/v3.0/local/im/upload/image/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        local_account_id: request.localAccountId
+      },
+      files: {
+        image_file: request.imageFile
+      }
     });
   }
 }

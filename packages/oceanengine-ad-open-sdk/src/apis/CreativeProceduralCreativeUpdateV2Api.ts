@@ -35,6 +35,7 @@ export class CreativeProceduralCreativeUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.creativeProceduralCreativeUpdateV2Request
     });
   }

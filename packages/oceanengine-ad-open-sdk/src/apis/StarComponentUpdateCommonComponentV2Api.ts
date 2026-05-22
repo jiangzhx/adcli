@@ -35,6 +35,7 @@ export class StarComponentUpdateCommonComponentV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starComponentUpdateCommonComponentV2Request
     });
   }

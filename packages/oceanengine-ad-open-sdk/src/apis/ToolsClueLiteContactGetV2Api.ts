@@ -35,6 +35,7 @@ export class ToolsClueLiteContactGetV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueLiteContactGetV2Request
     });
   }

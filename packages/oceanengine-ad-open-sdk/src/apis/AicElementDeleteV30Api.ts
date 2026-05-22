@@ -35,6 +35,7 @@ export class AicElementDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.aicElementDeleteV30Request
     });
   }

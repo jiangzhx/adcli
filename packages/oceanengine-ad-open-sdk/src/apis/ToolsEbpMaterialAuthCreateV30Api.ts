@@ -35,6 +35,7 @@ export class ToolsEbpMaterialAuthCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpMaterialAuthCreateV30Request
     });
   }

@@ -35,6 +35,7 @@ export class QianchuanAwemeUniPromotionOrderBudgetAddV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAwemeUniPromotionOrderBudgetAddV10Request
     });
   }

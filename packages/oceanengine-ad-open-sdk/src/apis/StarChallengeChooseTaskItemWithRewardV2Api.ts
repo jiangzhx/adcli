@@ -35,6 +35,7 @@ export class StarChallengeChooseTaskItemWithRewardV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starChallengeChooseTaskItemWithRewardV2Request
     });
   }

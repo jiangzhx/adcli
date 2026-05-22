@@ -35,6 +35,7 @@ export class LocalLifeAdvertiserCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.localLifeAdvertiserCreateV30Request
     });
   }

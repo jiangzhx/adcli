@@ -35,6 +35,7 @@ export class CampaignCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.campaignCreateV2Request
     });
   }

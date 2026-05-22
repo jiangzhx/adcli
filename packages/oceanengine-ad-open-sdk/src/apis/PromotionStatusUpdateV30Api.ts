@@ -35,6 +35,7 @@ export class PromotionStatusUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.promotionStatusUpdateV30Request
     });
   }

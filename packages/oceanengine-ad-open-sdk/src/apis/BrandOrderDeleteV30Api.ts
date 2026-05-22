@@ -35,6 +35,7 @@ export class BrandOrderDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandOrderDeleteV30Request
     });
   }

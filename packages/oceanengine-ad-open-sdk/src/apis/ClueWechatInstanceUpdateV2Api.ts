@@ -35,6 +35,7 @@ export class ClueWechatInstanceUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.clueWechatInstanceUpdateV2Request
     });
   }

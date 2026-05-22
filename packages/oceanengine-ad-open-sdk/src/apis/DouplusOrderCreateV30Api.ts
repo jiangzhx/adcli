@@ -35,6 +35,7 @@ export class DouplusOrderCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.douplusOrderCreateV30Request
     });
   }

@@ -35,6 +35,7 @@ export class ToolsAwemeAuthCancelV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAwemeAuthCancelV2Request
     });
   }

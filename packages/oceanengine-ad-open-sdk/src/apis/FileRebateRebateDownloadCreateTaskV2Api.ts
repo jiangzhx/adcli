@@ -35,6 +35,7 @@ export class FileRebateRebateDownloadCreateTaskV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.fileRebateRebateDownloadCreateTaskV2Request
     });
   }

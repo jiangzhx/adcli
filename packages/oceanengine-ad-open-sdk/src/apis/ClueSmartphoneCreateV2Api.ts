@@ -35,6 +35,7 @@ export class ClueSmartphoneCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.clueSmartphoneCreateV2Request
     });
   }

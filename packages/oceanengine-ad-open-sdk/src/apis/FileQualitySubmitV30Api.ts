@@ -35,6 +35,7 @@ export class FileQualitySubmitV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.fileQualitySubmitV30Request
     });
   }

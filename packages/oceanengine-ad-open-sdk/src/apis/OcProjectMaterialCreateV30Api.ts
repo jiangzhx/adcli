@@ -35,6 +35,7 @@ export class OcProjectMaterialCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.ocProjectMaterialCreateV30Request
     });
   }

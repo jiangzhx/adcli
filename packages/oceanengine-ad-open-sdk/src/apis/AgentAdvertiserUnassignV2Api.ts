@@ -35,6 +35,7 @@ export class AgentAdvertiserUnassignV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.agentAdvertiserUnassignV2Request
     });
   }

@@ -35,6 +35,7 @@ export class QianchuanToolsSmartBoostAdBoostSetV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanToolsSmartBoostAdBoostSetV10Request
     });
   }

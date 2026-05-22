@@ -35,6 +35,7 @@ export class Oauth2RenewTokenApi {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.oauth2RenewTokenRequest
     });
   }

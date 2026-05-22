@@ -35,6 +35,7 @@ export class ProjectDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.projectDeleteV30Request
     });
   }

@@ -35,6 +35,7 @@ export class PromotionDeepbidUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.promotionDeepbidUpdateV30Request
     });
   }

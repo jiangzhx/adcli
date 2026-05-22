@@ -35,6 +35,7 @@ export class LocalChargeSubmitV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.localChargeSubmitV30Request
     });
   }

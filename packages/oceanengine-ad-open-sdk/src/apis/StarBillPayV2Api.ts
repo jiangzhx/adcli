@@ -35,6 +35,7 @@ export class StarBillPayV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starBillPayV2Request
     });
   }

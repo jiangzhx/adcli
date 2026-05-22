@@ -35,6 +35,7 @@ export class StardeliveryTaskAuthorVideoAuditV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.stardeliveryTaskAuthorVideoAuditV30Request
     });
   }

@@ -35,6 +35,7 @@ export class LocalProjectCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.localProjectCreateV30Request
     });
   }

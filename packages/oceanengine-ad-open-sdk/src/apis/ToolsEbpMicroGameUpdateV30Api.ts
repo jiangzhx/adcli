@@ -35,6 +35,7 @@ export class ToolsEbpMicroGameUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpMicroGameUpdateV30Request
     });
   }

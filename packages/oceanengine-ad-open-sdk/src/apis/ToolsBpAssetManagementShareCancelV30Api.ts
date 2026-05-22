@@ -35,6 +35,7 @@ export class ToolsBpAssetManagementShareCancelV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsBpAssetManagementShareCancelV30Request
     });
   }

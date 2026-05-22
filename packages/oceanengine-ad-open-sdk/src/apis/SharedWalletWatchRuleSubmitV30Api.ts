@@ -35,6 +35,7 @@ export class SharedWalletWatchRuleSubmitV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.sharedWalletWatchRuleSubmitV30Request
     });
   }

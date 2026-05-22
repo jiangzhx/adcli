@@ -51,7 +51,14 @@ export class LocalFileVideoUploadV30Api {
       path: "/open_api/v3.0/local/file/video/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        filename: request.filename,
+        local_account_id: request.localAccountId,
+        video_file: request.videoFile,
+        video_signature: request.videoSignature
+      }
     });
   }
 }

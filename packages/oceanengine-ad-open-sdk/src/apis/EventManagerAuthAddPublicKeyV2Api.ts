@@ -35,6 +35,7 @@ export class EventManagerAuthAddPublicKeyV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.eventManagerAuthAddPublicKeyV2Request
     });
   }

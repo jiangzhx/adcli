@@ -35,6 +35,7 @@ export class ToolsTaskRaiseCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsTaskRaiseCreateV2Request
     });
   }

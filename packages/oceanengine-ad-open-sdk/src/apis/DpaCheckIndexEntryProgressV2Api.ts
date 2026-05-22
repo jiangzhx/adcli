@@ -35,6 +35,7 @@ export class DpaCheckIndexEntryProgressV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dpaCheckIndexEntryProgressV2Request
     });
   }

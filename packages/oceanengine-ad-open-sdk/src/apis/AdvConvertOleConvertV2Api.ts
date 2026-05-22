@@ -35,6 +35,7 @@ export class AdvConvertOleConvertV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.advConvertOleConvertV2Request
     });
   }

@@ -35,6 +35,7 @@ export class NativeAnchorCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.nativeAnchorCreateV30Request
     });
   }

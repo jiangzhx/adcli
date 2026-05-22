@@ -35,6 +35,7 @@ export class ToolsClueRefundInfoQueryV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueRefundInfoQueryV2Request
     });
   }

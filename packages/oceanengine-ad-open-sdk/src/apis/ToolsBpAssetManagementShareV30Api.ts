@@ -35,6 +35,7 @@ export class ToolsBpAssetManagementShareV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsBpAssetManagementShareV30Request
     });
   }

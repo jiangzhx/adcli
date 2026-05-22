@@ -45,7 +45,8 @@ export class AsyncTaskDownloadV2Api {
         { name: "task_id", value: request.taskId },
         { name: "range_from", value: request.rangeFrom },
         { name: "range_to", value: request.rangeTo }
-      ]
+      ],
+      responseType: "arrayBuffer"
     });
   }
 }

@@ -35,6 +35,7 @@ export class ProjectWeekScheduleUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.projectWeekScheduleUpdateV30Request
     });
   }

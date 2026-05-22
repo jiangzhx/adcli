@@ -35,6 +35,7 @@ export class ReportCustomAsyncTaskCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.reportCustomAsyncTaskCreateV30Request
     });
   }

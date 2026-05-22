@@ -35,6 +35,7 @@ export class StarVasCreateBoostItemGroupV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starVasCreateBoostItemGroupV2Request
     });
   }

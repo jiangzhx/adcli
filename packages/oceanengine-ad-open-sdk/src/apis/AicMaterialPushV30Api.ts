@@ -35,6 +35,7 @@ export class AicMaterialPushV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.aicMaterialPushV30Request
     });
   }

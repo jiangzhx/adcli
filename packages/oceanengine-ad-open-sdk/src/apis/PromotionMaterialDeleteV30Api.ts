@@ -35,6 +35,7 @@ export class PromotionMaterialDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.promotionMaterialDeleteV30Request
     });
   }

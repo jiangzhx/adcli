@@ -35,6 +35,7 @@ export class ToolsMicroAppCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsMicroAppCreateV30Request
     });
   }

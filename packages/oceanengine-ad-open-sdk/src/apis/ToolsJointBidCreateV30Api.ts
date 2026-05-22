@@ -35,6 +35,7 @@ export class ToolsJointBidCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsJointBidCreateV30Request
     });
   }

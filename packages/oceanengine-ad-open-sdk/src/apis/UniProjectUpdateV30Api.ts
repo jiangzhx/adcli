@@ -35,6 +35,7 @@ export class UniProjectUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.uniProjectUpdateV30Request
     });
   }

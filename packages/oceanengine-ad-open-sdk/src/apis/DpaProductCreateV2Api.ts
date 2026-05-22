@@ -35,6 +35,7 @@ export class DpaProductCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dpaProductCreateV2Request
     });
   }

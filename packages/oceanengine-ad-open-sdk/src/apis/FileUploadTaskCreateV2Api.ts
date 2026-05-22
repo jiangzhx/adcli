@@ -35,6 +35,7 @@ export class FileUploadTaskCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.fileUploadTaskCreateV2Request
     });
   }

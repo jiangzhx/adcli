@@ -35,6 +35,7 @@ export class AicVideoMixcutCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.aicVideoMixcutCreateV30Request
     });
   }

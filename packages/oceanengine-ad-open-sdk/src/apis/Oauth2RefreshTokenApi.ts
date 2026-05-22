@@ -35,6 +35,7 @@ export class Oauth2RefreshTokenApi {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.oauth2RefreshTokenRequest
     });
   }

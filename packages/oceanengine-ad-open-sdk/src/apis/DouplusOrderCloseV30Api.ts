@@ -35,6 +35,7 @@ export class DouplusOrderCloseV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.douplusOrderCloseV30Request
     });
   }

@@ -51,7 +51,20 @@ export class FileVideoAgentV2Api {
       path: "/open_api/2/file/video/agent/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        agent_id: request.agentId,
+        file_name: request.fileName,
+        is_aigc: request.isAigc,
+        is_need_auth: request.isNeedAuth,
+        upload_type: request.uploadType,
+        video_signature: request.videoSignature,
+        video_url: request.videoUrl
+      },
+      files: {
+        video_file: request.videoFile
+      }
     });
   }
 }

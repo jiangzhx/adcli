@@ -36,6 +36,7 @@ export class ToolsSiteHandselV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsSiteHandselV2Request
     });
   }

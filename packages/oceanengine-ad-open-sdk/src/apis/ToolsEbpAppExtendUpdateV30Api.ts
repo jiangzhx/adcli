@@ -35,6 +35,7 @@ export class ToolsEbpAppExtendUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpAppExtendUpdateV30Request
     });
   }

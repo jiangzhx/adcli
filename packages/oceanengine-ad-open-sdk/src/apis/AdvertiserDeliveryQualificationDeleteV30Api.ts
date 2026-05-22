@@ -35,6 +35,7 @@ export class AdvertiserDeliveryQualificationDeleteV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.advertiserDeliveryQualificationDeleteV30Request
     });
   }

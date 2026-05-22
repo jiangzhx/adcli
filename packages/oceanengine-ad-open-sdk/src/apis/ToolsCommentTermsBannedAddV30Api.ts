@@ -35,6 +35,7 @@ export class ToolsCommentTermsBannedAddV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsCommentTermsBannedAddV30Request
     });
   }

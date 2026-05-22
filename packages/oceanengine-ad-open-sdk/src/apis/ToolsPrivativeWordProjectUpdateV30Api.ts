@@ -35,6 +35,7 @@ export class ToolsPrivativeWordProjectUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsPrivativeWordProjectUpdateV30Request
     });
   }

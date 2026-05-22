@@ -35,6 +35,7 @@ export class DmpDataSourceCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dmpDataSourceCreateV2Request
     });
   }

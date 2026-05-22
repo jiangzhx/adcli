@@ -35,6 +35,7 @@ export class ToolsEbpAssetAuthV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsEbpAssetAuthV30Request
     });
   }

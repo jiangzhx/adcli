@@ -35,6 +35,7 @@ export class UniProjectMonetizationModeUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.uniProjectMonetizationModeUpdateV30Request
     });
   }

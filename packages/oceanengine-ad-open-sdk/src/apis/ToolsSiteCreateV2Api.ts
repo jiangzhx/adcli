@@ -36,6 +36,7 @@ export class ToolsSiteCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsSiteCreateV2Request
     });
   }

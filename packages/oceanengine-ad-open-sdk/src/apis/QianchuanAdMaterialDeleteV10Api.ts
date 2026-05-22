@@ -35,6 +35,7 @@ export class QianchuanAdMaterialDeleteV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAdMaterialDeleteV10Request
     });
   }

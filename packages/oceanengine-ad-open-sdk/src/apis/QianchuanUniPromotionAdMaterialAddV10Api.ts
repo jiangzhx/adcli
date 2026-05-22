@@ -35,6 +35,7 @@ export class QianchuanUniPromotionAdMaterialAddV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanUniPromotionAdMaterialAddV10Request
     });
   }

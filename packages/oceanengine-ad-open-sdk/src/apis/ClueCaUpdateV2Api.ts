@@ -35,6 +35,7 @@ export class ClueCaUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.clueCaUpdateV2Request
     });
   }

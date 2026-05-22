@@ -35,6 +35,7 @@ export class QianchuanAwemeOrderTerminateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAwemeOrderTerminateV10Request
     });
   }

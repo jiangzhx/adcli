@@ -35,6 +35,7 @@ export class AgentAdvertiserAssignV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.agentAdvertiserAssignV2Request
     });
   }

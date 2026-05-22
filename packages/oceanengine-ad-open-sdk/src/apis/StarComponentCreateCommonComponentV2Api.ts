@@ -35,6 +35,7 @@ export class StarComponentCreateCommonComponentV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starComponentCreateCommonComponentV2Request
     });
   }

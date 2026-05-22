@@ -35,6 +35,7 @@ export class AdvertiserDeliveryPkgSubmitV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.advertiserDeliveryPkgSubmitV30Request
     });
   }

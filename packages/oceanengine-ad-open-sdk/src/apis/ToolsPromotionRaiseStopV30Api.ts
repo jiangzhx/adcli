@@ -35,6 +35,7 @@ export class ToolsPromotionRaiseStopV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsPromotionRaiseStopV30Request
     });
   }

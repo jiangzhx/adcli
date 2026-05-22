@@ -44,7 +44,21 @@ export class ToolsEbpVideoUploadV30Api {
       path: "/open_api/v3.0/tools/ebp/video/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        account_id: request.accountId,
+        account_type: request.accountType,
+        file_name: request.fileName,
+        is_aigc: request.isAigc,
+        labels: request.labels,
+        upload_type: request.uploadType,
+        video_signature: request.videoSignature,
+        video_url: request.videoUrl
+      },
+      files: {
+        video_file: request.videoFile
+      }
     });
   }
 }

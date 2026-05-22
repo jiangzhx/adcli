@@ -35,6 +35,7 @@ export class QianchuanUniAwemeAdUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanUniAwemeAdUpdateV10Request
     });
   }

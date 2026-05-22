@@ -35,6 +35,7 @@ export class CreateStatementInvoiceV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.createStatementInvoiceV2Request
     });
   }

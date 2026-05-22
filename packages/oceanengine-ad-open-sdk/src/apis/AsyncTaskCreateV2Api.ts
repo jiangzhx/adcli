@@ -35,6 +35,7 @@ export class AsyncTaskCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.asyncTaskCreateV2Request
     });
   }

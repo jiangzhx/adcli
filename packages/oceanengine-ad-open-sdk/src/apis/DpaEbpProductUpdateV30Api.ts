@@ -35,6 +35,7 @@ export class DpaEbpProductUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dpaEbpProductUpdateV30Request
     });
   }

@@ -35,6 +35,7 @@ export class AgentAdvCostReportListQueryV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.agentAdvCostReportListQueryV2Request
     });
   }

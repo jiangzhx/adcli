@@ -35,6 +35,7 @@ export class ToolsMaterialRaiseStopV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsMaterialRaiseStopV30Request
     });
   }

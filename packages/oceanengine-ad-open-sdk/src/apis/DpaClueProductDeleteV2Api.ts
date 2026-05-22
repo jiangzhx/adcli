@@ -35,6 +35,7 @@ export class DpaClueProductDeleteV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dpaClueProductDeleteV2Request
     });
   }

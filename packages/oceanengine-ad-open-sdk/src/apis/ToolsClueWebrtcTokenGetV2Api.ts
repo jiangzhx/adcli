@@ -35,6 +35,7 @@ export class ToolsClueWebrtcTokenGetV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueWebrtcTokenGetV2Request
     });
   }

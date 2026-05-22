@@ -35,6 +35,7 @@ export class BrandMaterialUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandMaterialUpdateV30Request
     });
   }

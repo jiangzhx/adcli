@@ -35,6 +35,7 @@ export class QianchuanAudiencePushV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAudiencePushV10Request
     });
   }

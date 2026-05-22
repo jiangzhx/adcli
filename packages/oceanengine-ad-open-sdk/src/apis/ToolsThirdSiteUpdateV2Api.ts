@@ -35,6 +35,7 @@ export class ToolsThirdSiteUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsThirdSiteUpdateV2Request
     });
   }

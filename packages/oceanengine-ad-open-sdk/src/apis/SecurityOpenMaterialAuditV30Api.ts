@@ -35,6 +35,7 @@ export class SecurityOpenMaterialAuditV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.securityOpenMaterialAuditV30Request
     });
   }

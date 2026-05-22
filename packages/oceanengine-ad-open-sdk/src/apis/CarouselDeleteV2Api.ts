@@ -35,6 +35,7 @@ export class CarouselDeleteV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.carouselDeleteV2Request
     });
   }

@@ -35,6 +35,7 @@ export class EventManagerAuthDelPublicKeyV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.eventManagerAuthDelPublicKeyV2Request
     });
   }

@@ -35,6 +35,7 @@ export class EventManagerAuthDisableV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.eventManagerAuthDisableV2Request
     });
   }

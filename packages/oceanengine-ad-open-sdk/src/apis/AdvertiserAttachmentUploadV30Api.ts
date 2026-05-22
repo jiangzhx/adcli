@@ -51,7 +51,16 @@ export class AdvertiserAttachmentUploadV30Api {
       path: "/open_api/v3.0/advertiser/attachment/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId,
+        attachment_type: request.attachmentType,
+        filename: request.filename
+      },
+      files: {
+        image_data: request.imageData
+      }
     });
   }
 }

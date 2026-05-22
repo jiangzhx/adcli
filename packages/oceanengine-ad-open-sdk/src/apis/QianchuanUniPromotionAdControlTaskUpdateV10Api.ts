@@ -35,6 +35,7 @@ export class QianchuanUniPromotionAdControlTaskUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanUniPromotionAdControlTaskUpdateV10Request
     });
   }

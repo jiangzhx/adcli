@@ -35,6 +35,7 @@ export class RecommendVideoListV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.recommendVideoListV30Request
     });
   }

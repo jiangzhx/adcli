@@ -35,6 +35,7 @@ export class ToolsCluePrivateMessageCallbackV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsCluePrivateMessageCallbackV2Request
     });
   }

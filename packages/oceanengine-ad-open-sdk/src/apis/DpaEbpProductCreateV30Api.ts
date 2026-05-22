@@ -35,6 +35,7 @@ export class DpaEbpProductCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dpaEbpProductCreateV30Request
     });
   }

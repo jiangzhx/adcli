@@ -18,7 +18,8 @@ export interface ApiSpec {
   responseType: string;
   params: ApiParamSpec[];
   queryParams: ApiQueryParamSpec[];
-  formParams: string[];
+  formParams: ApiQueryParamSpec[];
+  fileParams: ApiQueryParamSpec[];
   authNames: string[];
   accepts: string[];
   contentTypes: string[];

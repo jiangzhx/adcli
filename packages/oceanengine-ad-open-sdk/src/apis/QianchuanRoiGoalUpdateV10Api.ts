@@ -35,6 +35,7 @@ export class QianchuanRoiGoalUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanRoiGoalUpdateV10Request
     });
   }

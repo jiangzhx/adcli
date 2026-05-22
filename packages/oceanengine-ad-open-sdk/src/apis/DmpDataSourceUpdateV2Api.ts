@@ -35,6 +35,7 @@ export class DmpDataSourceUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dmpDataSourceUpdateV2Request
     });
   }

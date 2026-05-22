@@ -35,6 +35,7 @@ export class ToolsAppManagementUploadTaskCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAppManagementUploadTaskCreateV2Request
     });
   }

@@ -35,6 +35,7 @@ export class StardeliveryTaskPostEndTimeUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.stardeliveryTaskPostEndTimeUpdateV30Request
     });
   }

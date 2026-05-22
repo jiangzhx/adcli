@@ -35,6 +35,7 @@ export class ToolsClueExtInfoCallbackV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueExtInfoCallbackV2Request
     });
   }

@@ -35,6 +35,7 @@ export class AudiencePackageDeleteV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.audiencePackageDeleteV2Request
     });
   }

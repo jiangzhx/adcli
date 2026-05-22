@@ -35,6 +35,7 @@ export class Oauth2AppAccessTokenApi {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.oauth2AppAccessTokenRequest
     });
   }

@@ -35,6 +35,7 @@ export class AicElementUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.aicElementUpdateV30Request
     });
   }

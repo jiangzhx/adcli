@@ -35,6 +35,7 @@ export class QianchuanUniPromotionAdProductDeleteV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanUniPromotionAdProductDeleteV10Request
     });
   }

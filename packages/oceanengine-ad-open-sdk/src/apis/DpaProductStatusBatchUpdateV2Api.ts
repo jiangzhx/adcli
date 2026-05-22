@@ -35,6 +35,7 @@ export class DpaProductStatusBatchUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dpaProductStatusBatchUpdateV2Request
     });
   }

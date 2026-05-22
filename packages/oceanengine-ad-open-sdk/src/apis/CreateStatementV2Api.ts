@@ -35,6 +35,7 @@ export class CreateStatementV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.createStatementV2Request
     });
   }

@@ -36,6 +36,7 @@ export class ToolsSiteCopyV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsSiteCopyV2Request
     });
   }

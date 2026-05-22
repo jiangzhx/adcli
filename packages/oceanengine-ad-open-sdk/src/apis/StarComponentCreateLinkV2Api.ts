@@ -35,6 +35,7 @@ export class StarComponentCreateLinkV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starComponentCreateLinkV2Request
     });
   }

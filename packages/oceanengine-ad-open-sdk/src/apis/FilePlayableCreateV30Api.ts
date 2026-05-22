@@ -35,6 +35,7 @@ export class FilePlayableCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.filePlayableCreateV30Request
     });
   }

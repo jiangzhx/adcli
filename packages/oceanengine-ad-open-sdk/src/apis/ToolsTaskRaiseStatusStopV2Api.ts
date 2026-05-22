@@ -35,6 +35,7 @@ export class ToolsTaskRaiseStatusStopV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsTaskRaiseStatusStopV2Request
     });
   }

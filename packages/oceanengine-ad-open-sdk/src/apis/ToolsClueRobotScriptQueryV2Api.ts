@@ -35,6 +35,7 @@ export class ToolsClueRobotScriptQueryV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsClueRobotScriptQueryV2Request
     });
   }

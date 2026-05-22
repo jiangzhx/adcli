@@ -35,6 +35,7 @@ export class CgTransferCreateTransferV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.cgTransferCreateTransferV30Request
     });
   }

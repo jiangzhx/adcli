@@ -35,6 +35,7 @@ export class SharedWalletSubWalletCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.sharedWalletSubWalletCreateV30Request
     });
   }

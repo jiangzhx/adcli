@@ -35,6 +35,7 @@ export class ToolsUnionFlowPackageDeleteV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsUnionFlowPackageDeleteV2Request
     });
   }

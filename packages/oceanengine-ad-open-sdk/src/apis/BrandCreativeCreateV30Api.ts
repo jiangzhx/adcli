@@ -35,6 +35,7 @@ export class BrandCreativeCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandCreativeCreateV30Request
     });
   }

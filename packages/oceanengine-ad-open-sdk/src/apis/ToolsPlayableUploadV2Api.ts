@@ -41,7 +41,14 @@ export class ToolsPlayableUploadV2Api {
       path: "/open_api/2/tools/playable/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId
+      },
+      files: {
+        playable_package: request.playablePackage
+      }
     });
   }
 }

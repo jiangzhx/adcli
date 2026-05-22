@@ -35,6 +35,7 @@ export class DiagnosisTaskAdvCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.diagnosisTaskAdvCreateV2Request
     });
   }

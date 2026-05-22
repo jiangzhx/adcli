@@ -35,6 +35,7 @@ export class AssetsCreativeComponentUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.assetsCreativeComponentUpdateV2Request
     });
   }

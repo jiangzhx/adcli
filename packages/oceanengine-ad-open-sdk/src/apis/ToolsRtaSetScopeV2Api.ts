@@ -35,6 +35,7 @@ export class ToolsRtaSetScopeV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsRtaSetScopeV2Request
     });
   }

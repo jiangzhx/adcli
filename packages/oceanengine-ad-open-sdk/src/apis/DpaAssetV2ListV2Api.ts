@@ -35,6 +35,7 @@ export class DpaAssetV2ListV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dpaAssetV2ListV2Request
     });
   }

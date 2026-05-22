@@ -67,7 +67,20 @@ export class ToolsPioneerProgramAttachmentUploadV2Api {
       path: "/open_api/2/tools/pioneer_program/attachment/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        app_id: request.appId,
+        data_file_type: request.dataFileType,
+        debug_mode: request.debugMode,
+        file_index: request.fileIndex,
+        file_total_num: request.fileTotalNum,
+        p_date: request.pDate,
+        platform: request.platform
+      },
+      files: {
+        file_data: request.fileData
+      }
     });
   }
 }

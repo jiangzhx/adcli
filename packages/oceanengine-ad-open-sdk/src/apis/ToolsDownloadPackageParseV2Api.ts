@@ -35,6 +35,7 @@ export class ToolsDownloadPackageParseV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsDownloadPackageParseV2Request
     });
   }

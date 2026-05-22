@@ -35,6 +35,7 @@ export class QianchuanAudienceCreateByFileV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanAudienceCreateByFileV10Request
     });
   }

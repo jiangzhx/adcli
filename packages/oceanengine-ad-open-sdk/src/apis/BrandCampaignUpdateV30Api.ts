@@ -35,6 +35,7 @@ export class BrandCampaignUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.brandCampaignUpdateV30Request
     });
   }

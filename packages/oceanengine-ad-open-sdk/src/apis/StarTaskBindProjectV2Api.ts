@@ -35,6 +35,7 @@ export class StarTaskBindProjectV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starTaskBindProjectV2Request
     });
   }

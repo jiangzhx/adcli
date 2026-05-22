@@ -26,8 +26,9 @@ export class CommonReqApi {
     queryParams?: QueryParam[],
     formParams?: Record<string, unknown>,
     requestBody?: unknown,
+    files?: Record<string, Blob | undefined | null>,
   ): Promise<CommonResponse> {
-    const response = await this.commonReqWithHttpInfo(method, path, contentType, queryParams, formParams, requestBody);
+    const response = await this.commonReqWithHttpInfo(method, path, contentType, queryParams, formParams, requestBody, files);
     return response.data;
   }
 
@@ -38,6 +39,7 @@ export class CommonReqApi {
     queryParams?: QueryParam[],
     formParams?: Record<string, unknown>,
     requestBody?: unknown,
+    files?: Record<string, Blob | undefined | null>,
   ): Promise<ApiResponse<CommonResponse>> {
     return this.apiClient.requestWithHttpInfo<CommonResponse>({
       method,
@@ -46,6 +48,7 @@ export class CommonReqApi {
       queryParams,
       formParams,
       body: requestBody,
+      files,
     });
   }
 }

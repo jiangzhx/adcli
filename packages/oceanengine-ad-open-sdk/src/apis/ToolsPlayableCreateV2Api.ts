@@ -35,6 +35,7 @@ export class ToolsPlayableCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsPlayableCreateV2Request
     });
   }

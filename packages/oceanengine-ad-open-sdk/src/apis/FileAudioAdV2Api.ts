@@ -44,7 +44,17 @@ export class FileAudioAdV2Api {
       path: "/open_api/2/file/audio/ad/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        advertiser_id: request.advertiserId,
+        audio_signature: request.audioSignature,
+        audio_url: request.audioUrl,
+        upload_type: request.uploadType
+      },
+      files: {
+        audio_file: request.audioFile
+      }
     });
   }
 }

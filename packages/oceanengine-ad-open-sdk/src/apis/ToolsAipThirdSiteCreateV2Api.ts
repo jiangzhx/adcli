@@ -35,6 +35,7 @@ export class ToolsAipThirdSiteCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsAipThirdSiteCreateV2Request
     });
   }

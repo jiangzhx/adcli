@@ -41,7 +41,8 @@ export class ReportCustomAsyncTaskDownloadV30Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "task_id", value: request.taskId }
-      ]
+      ],
+      responseType: "arrayBuffer"
     });
   }
 }

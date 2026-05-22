@@ -35,6 +35,7 @@ export class FilePreauditSubmitV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.filePreauditSubmitV30Request
     });
   }

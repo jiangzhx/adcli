@@ -35,6 +35,7 @@ export class StarChallengePushItemsToAdV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.starChallengePushItemsToAdV2Request
     });
   }

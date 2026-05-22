@@ -35,6 +35,7 @@ export class LocalPromotionStatusUpdateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.localPromotionStatusUpdateV30Request
     });
   }

@@ -35,6 +35,7 @@ export class ToolsHotMaterialDeriveAdoptV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsHotMaterialDeriveAdoptV30Request
     });
   }

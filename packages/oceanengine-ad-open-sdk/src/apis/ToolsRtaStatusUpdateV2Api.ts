@@ -35,6 +35,7 @@ export class ToolsRtaStatusUpdateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.toolsRtaStatusUpdateV2Request
     });
   }

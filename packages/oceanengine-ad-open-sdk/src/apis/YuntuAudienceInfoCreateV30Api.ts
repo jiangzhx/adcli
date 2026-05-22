@@ -35,6 +35,7 @@ export class YuntuAudienceInfoCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.yuntuAudienceInfoCreateV30Request
     });
   }

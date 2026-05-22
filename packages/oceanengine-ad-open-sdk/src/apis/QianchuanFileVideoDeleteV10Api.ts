@@ -35,6 +35,7 @@ export class QianchuanFileVideoDeleteV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanFileVideoDeleteV10Request
     });
   }

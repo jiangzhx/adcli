@@ -35,6 +35,7 @@ export class QianchuanUniPromotionAdNameUpdateV10Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.qianchuanUniPromotionAdNameUpdateV10Request
     });
   }

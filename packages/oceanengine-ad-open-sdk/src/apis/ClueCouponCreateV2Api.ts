@@ -35,6 +35,7 @@ export class ClueCouponCreateV2Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.clueCouponCreateV2Request
     });
   }

@@ -35,6 +35,7 @@ export class DpaAlbumCreateV30Api {
       queryParams: [
 
       ],
+      contentType: "application/json",
       body: request.dpaAlbumCreateV30Request
     });
   }

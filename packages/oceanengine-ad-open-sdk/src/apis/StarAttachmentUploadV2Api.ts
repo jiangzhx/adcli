@@ -46,7 +46,15 @@ export class StarAttachmentUploadV2Api {
       path: "/open_api/2/star/attachment/upload/",
       queryParams: [
 
-      ]
+      ],
+      contentType: "multipart/form-data",
+      formParams: {
+        file_name: request.fileName,
+        star_id: request.starId
+      },
+      files: {
+        file: request.file
+      }
     });
   }
 }
