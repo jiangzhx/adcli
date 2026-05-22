@@ -4,7 +4,7 @@
 import type { ToolsMaterialRaiseMaterialIdsGetV30ResponseDataMaterialListInner } from "../models/index";
 
 export interface ToolsMaterialRaiseMaterialIdsGetV30ResponseData {
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
   material_list?: ToolsMaterialRaiseMaterialIdsGetV30ResponseDataMaterialListInner[];
 }
 

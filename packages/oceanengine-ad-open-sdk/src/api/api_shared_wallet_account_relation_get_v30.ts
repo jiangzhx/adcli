@@ -28,11 +28,11 @@ export class SharedWalletAccountRelationGetV30Api {
 
   async openApiV30SharedWalletAccountRelationGetGetWithHttpInfo(request: SharedWalletAccountRelationGetV30ApiOpenApiV30SharedWalletAccountRelationGetGetRequest): Promise<ApiResponse<SharedWalletAccountRelationGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30SharedWalletAccountRelationGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30SharedWalletAccountRelationGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SharedWalletAccountRelationGetV30Response>({
       method: "GET",

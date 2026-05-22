@@ -28,11 +28,11 @@ export class QueryInvoiceElectronicUrlSelfV2Api {
 
   async openApi2QueryInvoiceElectronicUrlSelfGetWithHttpInfo(request: QueryInvoiceElectronicUrlSelfV2ApiOpenApi2QueryInvoiceElectronicUrlSelfGetRequest): Promise<ApiResponse<QueryInvoiceElectronicUrlSelfV2Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApi2QueryInvoiceElectronicUrlSelfGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.invoiceSerial == null) {
-      throw new ApiException("Missing the required parameter 'invoiceSerial' when calling openApi2QueryInvoiceElectronicUrlSelfGet");
+      throw new ApiException("invoiceSerial is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryInvoiceElectronicUrlSelfV2Response>({
       method: "GET",

@@ -29,7 +29,11 @@ export class AgentChildAgentSelectV2Api {
 
   async openApi2AgentChildAgentSelectGetWithHttpInfo(request: AgentChildAgentSelectV2ApiOpenApi2AgentChildAgentSelectGetRequest): Promise<ApiResponse<AgentChildAgentSelectV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AgentChildAgentSelectGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<AgentChildAgentSelectV2Response>({
       method: "GET",

@@ -32,7 +32,7 @@ export class QianchuanCarouselGetV10Api {
 
   async openApiV10QianchuanCarouselGetGetWithHttpInfo(request: QianchuanCarouselGetV10ApiOpenApiV10QianchuanCarouselGetGetRequest): Promise<ApiResponse<QianchuanCarouselGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanCarouselGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanCarouselGetV10Response>({
       method: "GET",

@@ -33,15 +33,27 @@ export class StarVasGetBoostGroupListV2Api {
 
   async openApi2StarVasGetBoostGroupListGetWithHttpInfo(request: StarVasGetBoostGroupListV2ApiOpenApi2StarVasGetBoostGroupListGetRequest): Promise<ApiResponse<StarVasGetBoostGroupListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarVasGetBoostGroupListGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarVasGetBoostGroupListGet");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
     }
 
     if (request.limit == null) {
-      throw new ApiException("Missing the required parameter 'limit' when calling openApi2StarVasGetBoostGroupListGet");
+      throw new ApiException("limit is required and must be specified");
+    }
+
+    if (request.limit != null && Number(request.limit) < 1) {
+      throw new ApiException("limit must be greater than 1");
+    }
+
+    if (request.limit != null && Number(request.limit) > 30) {
+      throw new ApiException("limit must be less than 30");
     }
     return this.apiClient.requestWithHttpInfo<StarVasGetBoostGroupListV2Response>({
       method: "GET",

@@ -32,19 +32,19 @@ export class StarStarAdUniteTaskItemListV2Api {
 
   async openApi2StarStarAdUniteTaskItemListGetWithHttpInfo(request: StarStarAdUniteTaskItemListV2ApiOpenApi2StarStarAdUniteTaskItemListGetRequest): Promise<ApiResponse<StarStarAdUniteTaskItemListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarStarAdUniteTaskItemListGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.statStartDate == null) {
-      throw new ApiException("Missing the required parameter 'statStartDate' when calling openApi2StarStarAdUniteTaskItemListGet");
+      throw new ApiException("statStartDate is required and must be specified");
     }
 
     if (request.statEndDate == null) {
-      throw new ApiException("Missing the required parameter 'statEndDate' when calling openApi2StarStarAdUniteTaskItemListGet");
+      throw new ApiException("statEndDate is required and must be specified");
     }
 
     if (request.demandId == null) {
-      throw new ApiException("Missing the required parameter 'demandId' when calling openApi2StarStarAdUniteTaskItemListGet");
+      throw new ApiException("demandId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarStarAdUniteTaskItemListV2Response>({
       method: "GET",

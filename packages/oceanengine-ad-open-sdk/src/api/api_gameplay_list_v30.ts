@@ -32,23 +32,23 @@ export class GameplayListV30Api {
 
   async openApiV30GameplayListGetWithHttpInfo(request: GameplayListV30ApiOpenApiV30GameplayListGetRequest): Promise<ApiResponse<GameplayListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30GameplayListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30GameplayListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.assetId == null) {
-      throw new ApiException("Missing the required parameter 'assetId' when calling openApiV30GameplayListGet");
+      throw new ApiException("assetId is required and must be specified");
     }
 
     if (request.assetType == null) {
-      throw new ApiException("Missing the required parameter 'assetType' when calling openApiV30GameplayListGet");
+      throw new ApiException("assetType is required and must be specified");
     }
 
     if (request.pageInfo == null) {
-      throw new ApiException("Missing the required parameter 'pageInfo' when calling openApiV30GameplayListGet");
+      throw new ApiException("pageInfo is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<GameplayListV30Response>({
       method: "GET",

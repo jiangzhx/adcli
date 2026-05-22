@@ -6,7 +6,7 @@ import type { AicMaterialPushV30AccountType, AicMaterialPushV30BussinessType, Ai
 export interface AicMaterialPushV30Request {
   account_id: number | string;
   account_type: AicMaterialPushV30AccountType;
-  advertiser_ids: number | string[];
+  advertiser_ids: (number | string)[];
   bussiness_type: AicMaterialPushV30BussinessType;
   videos: AicMaterialPushV30RequestVideosInner[];
 }

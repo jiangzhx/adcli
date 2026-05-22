@@ -29,15 +29,23 @@ export class NativeAnchorQrcodePreviewGetV30Api {
 
   async openApiV30NativeAnchorQrcodePreviewGetGetWithHttpInfo(request: NativeAnchorQrcodePreviewGetV30ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest): Promise<ApiResponse<NativeAnchorQrcodePreviewGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30NativeAnchorQrcodePreviewGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.anchorIds == null) {
-      throw new ApiException("Missing the required parameter 'anchorIds' when calling openApiV30NativeAnchorQrcodePreviewGetGet");
+      throw new ApiException("anchorIds is required and must be specified");
+    }
+
+    if (request.anchorIds != null && request.anchorIds.length < 1) {
+      throw new ApiException("anchorIds must have at least 1 elements");
+    }
+
+    if (request.anchorIds != null && request.anchorIds.length > 10) {
+      throw new ApiException("anchorIds must have less than 10 elements");
     }
 
     if (request.anchorType == null) {
-      throw new ApiException("Missing the required parameter 'anchorType' when calling openApiV30NativeAnchorQrcodePreviewGetGet");
+      throw new ApiException("anchorType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<NativeAnchorQrcodePreviewGetV30Response>({
       method: "GET",

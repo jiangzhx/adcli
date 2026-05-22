@@ -33,31 +33,31 @@ export class ChargeVerifyGetV30Api {
 
   async openApiV30ChargeVerifyGetGetWithHttpInfo(request: ChargeVerifyGetV30ApiOpenApiV30ChargeVerifyGetGetRequest): Promise<ApiResponse<ChargeVerifyGetV30Response>> {
     if (request.ccAccountId == null) {
-      throw new ApiException("Missing the required parameter 'ccAccountId' when calling openApiV30ChargeVerifyGetGet");
+      throw new ApiException("ccAccountId is required and must be specified");
     }
 
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ChargeVerifyGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.platform == null) {
-      throw new ApiException("Missing the required parameter 'platform' when calling openApiV30ChargeVerifyGetGet");
+      throw new ApiException("platform is required and must be specified");
     }
 
     if (request.requestId == null) {
-      throw new ApiException("Missing the required parameter 'requestId' when calling openApiV30ChargeVerifyGetGet");
+      throw new ApiException("requestId is required and must be specified");
     }
 
     if (request.chargeType == null) {
-      throw new ApiException("Missing the required parameter 'chargeType' when calling openApiV30ChargeVerifyGetGet");
+      throw new ApiException("chargeType is required and must be specified");
     }
 
     if (request.chargeSource == null) {
-      throw new ApiException("Missing the required parameter 'chargeSource' when calling openApiV30ChargeVerifyGetGet");
+      throw new ApiException("chargeSource is required and must be specified");
     }
 
     if (request.caller == null) {
-      throw new ApiException("Missing the required parameter 'caller' when calling openApiV30ChargeVerifyGetGet");
+      throw new ApiException("caller is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ChargeVerifyGetV30Response>({
       method: "GET",

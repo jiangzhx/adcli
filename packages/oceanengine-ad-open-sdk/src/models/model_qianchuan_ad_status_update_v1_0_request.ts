@@ -4,7 +4,7 @@
 import type { QianchuanAdStatusUpdateV10OptStatus } from "../models/index";
 
 export interface QianchuanAdStatusUpdateV10Request {
-  ad_ids: number | string[];
+  ad_ids: (number | string)[];
   advertiser_id: number | string;
   budget?: number;
   opt_status: QianchuanAdStatusUpdateV10OptStatus;

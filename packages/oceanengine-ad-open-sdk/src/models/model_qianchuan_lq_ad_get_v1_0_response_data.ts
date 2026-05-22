@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface QianchuanLqAdGetV10ResponseData {
-  ad_ids?: number | string[];
+  ad_ids?: (number | string)[];
 }
 

@@ -31,19 +31,27 @@ export class QianchuanAudienceFilePartUploadV10Api {
 
   async openApiV10QianchuanAudienceFilePartUploadPostWithHttpInfo(request: QianchuanAudienceFilePartUploadV10ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest): Promise<ApiResponse<QianchuanAudienceFilePartUploadV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAudienceFilePartUploadPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.file == null) {
-      throw new ApiException("Missing the required parameter 'file' when calling openApiV10QianchuanAudienceFilePartUploadPost");
+      throw new ApiException("file is required and must be specified");
     }
 
     if (request.isFinished == null) {
-      throw new ApiException("Missing the required parameter 'isFinished' when calling openApiV10QianchuanAudienceFilePartUploadPost");
+      throw new ApiException("isFinished is required and must be specified");
+    }
+
+    if (request.isFinished != null && Number(request.isFinished) < 0) {
+      throw new ApiException("isFinished must be greater than 0");
+    }
+
+    if (request.isFinished != null && Number(request.isFinished) > 1) {
+      throw new ApiException("isFinished must be less than 1");
     }
 
     if (request.partNum == null) {
-      throw new ApiException("Missing the required parameter 'partNum' when calling openApiV10QianchuanAudienceFilePartUploadPost");
+      throw new ApiException("partNum is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAudienceFilePartUploadV10Response>({
       method: "POST",

@@ -36,31 +36,31 @@ export class ReportCustomGetV30Api {
 
   async openApiV30ReportCustomGetGetWithHttpInfo(request: ReportCustomGetV30ApiOpenApiV30ReportCustomGetGetRequest): Promise<ApiResponse<ReportCustomGetV30Response>> {
     if (request.dimensions == null) {
-      throw new ApiException("Missing the required parameter 'dimensions' when calling openApiV30ReportCustomGetGet");
+      throw new ApiException("dimensions is required and must be specified");
     }
 
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportCustomGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.metrics == null) {
-      throw new ApiException("Missing the required parameter 'metrics' when calling openApiV30ReportCustomGetGet");
+      throw new ApiException("metrics is required and must be specified");
     }
 
     if (request.filters == null) {
-      throw new ApiException("Missing the required parameter 'filters' when calling openApiV30ReportCustomGetGet");
+      throw new ApiException("filters is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30ReportCustomGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30ReportCustomGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
 
     if (request.orderBy == null) {
-      throw new ApiException("Missing the required parameter 'orderBy' when calling openApiV30ReportCustomGetGet");
+      throw new ApiException("orderBy is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ReportCustomGetV30Response>({
       method: "GET",

@@ -6,7 +6,7 @@ import type { QianchuanShopGetV10Response } from "../models/index";
 
 
 export interface QianchuanShopGetV10ApiOpenApiV10QianchuanShopGetGetRequest {
-  shopIds: number | string[];
+  shopIds: (number | string)[];
 }
 
 export class QianchuanShopGetV10Api {
@@ -27,7 +27,15 @@ export class QianchuanShopGetV10Api {
 
   async openApiV10QianchuanShopGetGetWithHttpInfo(request: QianchuanShopGetV10ApiOpenApiV10QianchuanShopGetGetRequest): Promise<ApiResponse<QianchuanShopGetV10Response>> {
     if (request.shopIds == null) {
-      throw new ApiException("Missing the required parameter 'shopIds' when calling openApiV10QianchuanShopGetGet");
+      throw new ApiException("shopIds is required and must be specified");
+    }
+
+    if (request.shopIds != null && request.shopIds.length < 1) {
+      throw new ApiException("shopIds must have at least 1 elements");
+    }
+
+    if (request.shopIds != null && request.shopIds.length > 10) {
+      throw new ApiException("shopIds must have less than 10 elements");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanShopGetV10Response>({
       method: "GET",

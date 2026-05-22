@@ -32,11 +32,11 @@ export class ToolsUnionFlowPackagePromotionReportV30Api {
 
   async openApiV30ToolsUnionFlowPackagePromotionReportGetWithHttpInfo(request: ToolsUnionFlowPackagePromotionReportV30ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest): Promise<ApiResponse<ToolsUnionFlowPackagePromotionReportV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsUnionFlowPackagePromotionReportGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.filter == null) {
-      throw new ApiException("Missing the required parameter 'filter' when calling openApiV30ToolsUnionFlowPackagePromotionReportGet");
+      throw new ApiException("filter is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsUnionFlowPackagePromotionReportV30Response>({
       method: "GET",

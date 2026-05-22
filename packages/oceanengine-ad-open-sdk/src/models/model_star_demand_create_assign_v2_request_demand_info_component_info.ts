@@ -6,10 +6,10 @@ import type { StarDemandCreateAssignV2RequestDemandInfoComponentInfoCommentCompo
 export interface StarDemandCreateAssignV2RequestDemandInfoComponentInfo {
   cocreate_douyin_id?: string;
   comment_component_info?: StarDemandCreateAssignV2RequestDemandInfoComponentInfoCommentComponentInfo;
-  common_component_ids?: number | string[];
+  common_component_ids?: (number | string)[];
   ecom_cart?: StarDemandCreateAssignV2RequestDemandInfoComponentInfoEcomCartInner[];
   industry_component_id?: number | string;
-  link_component_ids?: number | string[];
+  link_component_ids?: (number | string)[];
   live_attract_component_id?: number | string;
   search_word?: string;
 }

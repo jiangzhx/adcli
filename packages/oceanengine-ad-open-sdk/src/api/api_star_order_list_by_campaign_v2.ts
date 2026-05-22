@@ -7,7 +7,7 @@ import type { StarOrderListByCampaignV2Response } from "../models/index";
 
 export interface StarOrderListByCampaignV2ApiOpenApi2StarOrderListByCampaignGetRequest {
   starId: number | string;
-  campaignIds: number | string[];
+  campaignIds: (number | string)[];
   page?: number;
   limit?: number;
 }
@@ -30,11 +30,11 @@ export class StarOrderListByCampaignV2Api {
 
   async openApi2StarOrderListByCampaignGetWithHttpInfo(request: StarOrderListByCampaignV2ApiOpenApi2StarOrderListByCampaignGetRequest): Promise<ApiResponse<StarOrderListByCampaignV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarOrderListByCampaignGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.campaignIds == null) {
-      throw new ApiException("Missing the required parameter 'campaignIds' when calling openApi2StarOrderListByCampaignGet");
+      throw new ApiException("campaignIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarOrderListByCampaignV2Response>({
       method: "GET",

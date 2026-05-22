@@ -28,11 +28,11 @@ export class QianchuanReportLongTransferOrderConfigGetV10Api {
 
   async openApiV10QianchuanReportLongTransferOrderConfigGetGetWithHttpInfo(request: QianchuanReportLongTransferOrderConfigGetV10ApiOpenApiV10QianchuanReportLongTransferOrderConfigGetGetRequest): Promise<ApiResponse<QianchuanReportLongTransferOrderConfigGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanReportLongTransferOrderConfigGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.dataTopics == null) {
-      throw new ApiException("Missing the required parameter 'dataTopics' when calling openApiV10QianchuanReportLongTransferOrderConfigGetGet");
+      throw new ApiException("dataTopics is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanReportLongTransferOrderConfigGetV10Response>({
       method: "GET",

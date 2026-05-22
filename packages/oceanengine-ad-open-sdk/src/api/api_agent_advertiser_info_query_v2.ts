@@ -6,7 +6,7 @@ import type { AgentAdvertiserInfoQueryV2Response } from "../models/index";
 
 
 export interface AgentAdvertiserInfoQueryV2ApiOpenApi2AgentAdvertiserInfoQueryGetRequest {
-  accountIds: number | string[];
+  accountIds: (number | string)[];
 }
 
 export class AgentAdvertiserInfoQueryV2Api {
@@ -27,7 +27,15 @@ export class AgentAdvertiserInfoQueryV2Api {
 
   async openApi2AgentAdvertiserInfoQueryGetWithHttpInfo(request: AgentAdvertiserInfoQueryV2ApiOpenApi2AgentAdvertiserInfoQueryGetRequest): Promise<ApiResponse<AgentAdvertiserInfoQueryV2Response>> {
     if (request.accountIds == null) {
-      throw new ApiException("Missing the required parameter 'accountIds' when calling openApi2AgentAdvertiserInfoQueryGet");
+      throw new ApiException("accountIds is required and must be specified");
+    }
+
+    if (request.accountIds != null && request.accountIds.length < 1) {
+      throw new ApiException("accountIds must have at least 1 elements");
+    }
+
+    if (request.accountIds != null && request.accountIds.length > 50) {
+      throw new ApiException("accountIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<AgentAdvertiserInfoQueryV2Response>({
       method: "GET",

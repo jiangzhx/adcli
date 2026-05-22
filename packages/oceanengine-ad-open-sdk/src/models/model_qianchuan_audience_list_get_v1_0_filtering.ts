@@ -4,7 +4,7 @@
 import type { QianchuanAudienceListGetV10FilteringAudienceType } from "../models/index";
 
 export interface QianchuanAudienceListGetV10Filtering {
-  audience_id?: number | string[];
+  audience_id?: (number | string)[];
   audience_name?: string;
   audience_type?: QianchuanAudienceListGetV10FilteringAudienceType[];
   end_time?: string;

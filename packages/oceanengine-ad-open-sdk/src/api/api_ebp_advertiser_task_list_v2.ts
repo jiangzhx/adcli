@@ -7,7 +7,7 @@ import type { EbpAdvertiserTaskListV2Response } from "../models/index";
 
 export interface EbpAdvertiserTaskListV2ApiOpenApi2EbpAdvertiserTaskListGetRequest {
   enterpriseOrganizationId: number | string;
-  taskIds: number | string[];
+  taskIds: (number | string)[];
 }
 
 export class EbpAdvertiserTaskListV2Api {
@@ -28,11 +28,19 @@ export class EbpAdvertiserTaskListV2Api {
 
   async openApi2EbpAdvertiserTaskListGetWithHttpInfo(request: EbpAdvertiserTaskListV2ApiOpenApi2EbpAdvertiserTaskListGetRequest): Promise<ApiResponse<EbpAdvertiserTaskListV2Response>> {
     if (request.enterpriseOrganizationId == null) {
-      throw new ApiException("Missing the required parameter 'enterpriseOrganizationId' when calling openApi2EbpAdvertiserTaskListGet");
+      throw new ApiException("enterpriseOrganizationId is required and must be specified");
     }
 
     if (request.taskIds == null) {
-      throw new ApiException("Missing the required parameter 'taskIds' when calling openApi2EbpAdvertiserTaskListGet");
+      throw new ApiException("taskIds is required and must be specified");
+    }
+
+    if (request.taskIds != null && request.taskIds.length < 1) {
+      throw new ApiException("taskIds must have at least 1 elements");
+    }
+
+    if (request.taskIds != null && request.taskIds.length > 10) {
+      throw new ApiException("taskIds must have less than 10 elements");
     }
     return this.apiClient.requestWithHttpInfo<EbpAdvertiserTaskListV2Response>({
       method: "GET",

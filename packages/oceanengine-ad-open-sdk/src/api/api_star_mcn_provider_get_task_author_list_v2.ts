@@ -31,19 +31,27 @@ export class StarMcnProviderGetTaskAuthorListV2Api {
 
   async openApi2StarMcnProviderGetTaskAuthorListGetWithHttpInfo(request: StarMcnProviderGetTaskAuthorListV2ApiOpenApi2StarMcnProviderGetTaskAuthorListGetRequest): Promise<ApiResponse<StarMcnProviderGetTaskAuthorListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarMcnProviderGetTaskAuthorListGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.taskId == null) {
-      throw new ApiException("Missing the required parameter 'taskId' when calling openApi2StarMcnProviderGetTaskAuthorListGet");
+      throw new ApiException("taskId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarMcnProviderGetTaskAuthorListGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.limit == null) {
-      throw new ApiException("Missing the required parameter 'limit' when calling openApi2StarMcnProviderGetTaskAuthorListGet");
+      throw new ApiException("limit is required and must be specified");
+    }
+
+    if (request.limit != null && Number(request.limit) < 1) {
+      throw new ApiException("limit must be greater than 1");
+    }
+
+    if (request.limit != null && Number(request.limit) > 50) {
+      throw new ApiException("limit must be less than 50");
     }
     return this.apiClient.requestWithHttpInfo<StarMcnProviderGetTaskAuthorListV2Response>({
       method: "GET",

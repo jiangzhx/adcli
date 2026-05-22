@@ -43,15 +43,23 @@ export class StarMcnProviderGetUnparticipatedTaskV2Api {
 
   async openApi2StarMcnProviderGetUnparticipatedTaskGetWithHttpInfo(request: StarMcnProviderGetUnparticipatedTaskV2ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest): Promise<ApiResponse<StarMcnProviderGetUnparticipatedTaskV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarMcnProviderGetUnparticipatedTaskGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarMcnProviderGetUnparticipatedTaskGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApi2StarMcnProviderGetUnparticipatedTaskGet");
+      throw new ApiException("pageSize is required and must be specified");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) < 1) {
+      throw new ApiException("pageSize must be greater than 1");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) > 10) {
+      throw new ApiException("pageSize must be less than 10");
     }
     return this.apiClient.requestWithHttpInfo<StarMcnProviderGetUnparticipatedTaskV2Response>({
       method: "GET",

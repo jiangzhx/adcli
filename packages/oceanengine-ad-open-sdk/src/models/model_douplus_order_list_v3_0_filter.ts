@@ -5,9 +5,9 @@ import type { DouplusOrderListV30FilterOrderCreateTime, DouplusOrderListV30Filte
 
 export interface DouplusOrderListV30Filter {
   order_create_time?: DouplusOrderListV30FilterOrderCreateTime;
-  order_id?: number | string[];
+  order_id?: (number | string)[];
   scene_type?: DouplusOrderListV30FilterSceneType;
   status?: DouplusOrderListV30FilterStatus[];
-  task_id?: number | string[];
+  task_id?: (number | string)[];
 }
 

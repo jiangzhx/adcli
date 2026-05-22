@@ -28,11 +28,15 @@ export class LocalToolPackDetailV30Api {
 
   async openApiV30LocalToolPackDetailGetWithHttpInfo(request: LocalToolPackDetailV30ApiOpenApiV30LocalToolPackDetailGetRequest): Promise<ApiResponse<LocalToolPackDetailV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalToolPackDetailGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.toolPackId == null) {
-      throw new ApiException("Missing the required parameter 'toolPackId' when calling openApiV30LocalToolPackDetailGet");
+      throw new ApiException("toolPackId is required and must be specified");
+    }
+
+    if (request.toolPackId != null && Number(request.toolPackId) < 1) {
+      throw new ApiException("toolPackId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<LocalToolPackDetailV30Response>({
       method: "GET",

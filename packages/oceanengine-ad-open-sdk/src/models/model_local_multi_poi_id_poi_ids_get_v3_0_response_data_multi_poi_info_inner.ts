@@ -3,6 +3,6 @@
 
 export interface LocalMultiPoiIdPoiIdsGetV30ResponseDataMultiPoiInfoInner {
   multi_poi_id?: number | string;
-  poi_ids?: number | string[];
+  poi_ids?: (number | string)[];
 }
 

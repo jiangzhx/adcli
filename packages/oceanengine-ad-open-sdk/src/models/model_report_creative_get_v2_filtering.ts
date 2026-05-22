@@ -5,12 +5,12 @@ import type { ReportCreativeGetV2FilteringCampaignTypes, ReportCreativeGetV2Filt
 
 export interface ReportCreativeGetV2Filtering {
   ad_id?: number | string;
-  ad_ids?: number | string[];
+  ad_ids?: (number | string)[];
   ad_name?: string;
   campaign_id?: number | string;
-  campaign_ids?: number | string[];
+  campaign_ids?: (number | string)[];
   campaign_types?: ReportCreativeGetV2FilteringCampaignTypes[];
-  creative_ids?: number | string[];
+  creative_ids?: (number | string)[];
   creative_material_modes?: ReportCreativeGetV2FilteringCreativeMaterialModes[];
   creative_title?: string;
   delivery_mode?: ReportCreativeGetV2FilteringDeliveryMode[];

@@ -35,7 +35,7 @@ export class ToolsAppManagementBookingGetV2Api {
 
   async openApi2ToolsAppManagementBookingGetGetWithHttpInfo(request: ToolsAppManagementBookingGetV2ApiOpenApi2ToolsAppManagementBookingGetGetRequest): Promise<ApiResponse<ToolsAppManagementBookingGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsAppManagementBookingGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementBookingGetV2Response>({
       method: "GET",

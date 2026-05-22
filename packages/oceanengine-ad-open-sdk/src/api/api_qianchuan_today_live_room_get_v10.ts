@@ -34,19 +34,19 @@ export class QianchuanTodayLiveRoomGetV10Api {
 
   async openApiV10QianchuanTodayLiveRoomGetGetWithHttpInfo(request: QianchuanTodayLiveRoomGetV10ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest): Promise<ApiResponse<QianchuanTodayLiveRoomGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanTodayLiveRoomGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanTodayLiveRoomGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
 
     if (request.dateTime == null) {
-      throw new ApiException("Missing the required parameter 'dateTime' when calling openApiV10QianchuanTodayLiveRoomGetGet");
+      throw new ApiException("dateTime is required and must be specified");
     }
 
     if (request.fields == null) {
-      throw new ApiException("Missing the required parameter 'fields' when calling openApiV10QianchuanTodayLiveRoomGetGet");
+      throw new ApiException("fields is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanTodayLiveRoomGetV10Response>({
       method: "GET",

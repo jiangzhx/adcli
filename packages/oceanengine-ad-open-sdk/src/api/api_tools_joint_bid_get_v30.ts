@@ -27,7 +27,7 @@ export class ToolsJointBidGetV30Api {
 
   async openApiV30ToolsJointBidGetGetWithHttpInfo(request: ToolsJointBidGetV30ApiOpenApiV30ToolsJointBidGetGetRequest): Promise<ApiResponse<ToolsJointBidGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsJointBidGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsJointBidGetV30Response>({
       method: "GET",

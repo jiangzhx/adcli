@@ -5,7 +5,7 @@ export interface FileImageGetV2Filtering {
   end_time?: string;
   height?: number;
   image_ids?: string[];
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
   ratio?: number[];
   signatures?: string[];
   start_time?: string;

@@ -28,7 +28,7 @@ export class ToolsKeywordsBidRatioGetV30Api {
 
   async openApiV30ToolsKeywordsBidRatioGetGetWithHttpInfo(request: ToolsKeywordsBidRatioGetV30ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest): Promise<ApiResponse<ToolsKeywordsBidRatioGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsKeywordsBidRatioGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsKeywordsBidRatioGetV30Response>({
       method: "GET",

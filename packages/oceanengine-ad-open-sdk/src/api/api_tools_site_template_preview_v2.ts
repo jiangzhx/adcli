@@ -28,11 +28,11 @@ export class ToolsSiteTemplatePreviewV2Api {
 
   async openApi2ToolsSiteTemplatePreviewGetWithHttpInfo(request: ToolsSiteTemplatePreviewV2ApiOpenApi2ToolsSiteTemplatePreviewGetRequest): Promise<ApiResponse<ToolsSiteTemplatePreviewV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsSiteTemplatePreviewGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.templateId == null) {
-      throw new ApiException("Missing the required parameter 'templateId' when calling openApi2ToolsSiteTemplatePreviewGet");
+      throw new ApiException("templateId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsSiteTemplatePreviewV2Response>({
       method: "GET",

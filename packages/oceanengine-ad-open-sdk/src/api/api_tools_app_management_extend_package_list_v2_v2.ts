@@ -32,15 +32,15 @@ export class ToolsAppManagementExtendPackageListV2V2Api {
 
   async openApi2ToolsAppManagementExtendPackageListV2GetWithHttpInfo(request: ToolsAppManagementExtendPackageListV2V2ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest): Promise<ApiResponse<ToolsAppManagementExtendPackageListV2V2Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApi2ToolsAppManagementExtendPackageListV2Get");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApi2ToolsAppManagementExtendPackageListV2Get");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.packageId == null) {
-      throw new ApiException("Missing the required parameter 'packageId' when calling openApi2ToolsAppManagementExtendPackageListV2Get");
+      throw new ApiException("packageId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementExtendPackageListV2V2Response>({
       method: "GET",

@@ -6,6 +6,6 @@ import type { StarDemandCreateAssignV2ResponseDataBillInfo } from "../models/ind
 export interface StarDemandCreateAssignV2ResponseData {
   bill_info?: StarDemandCreateAssignV2ResponseDataBillInfo;
   campaign_id?: number | string;
-  order_ids?: number | string[];
+  order_ids?: (number | string)[];
 }
 

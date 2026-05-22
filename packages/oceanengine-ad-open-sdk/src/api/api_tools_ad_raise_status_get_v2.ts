@@ -6,7 +6,7 @@ import type { ToolsAdRaiseStatusGetV2Response } from "../models/index";
 
 
 export interface ToolsAdRaiseStatusGetV2ApiOpenApi2ToolsAdRaiseStatusGetGetRequest {
-  adIds?: number | string[];
+  adIds?: (number | string)[];
   advertiserId?: number | string;
 }
 

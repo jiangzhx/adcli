@@ -4,7 +4,7 @@
 export interface ServeMarketOrderGetV10Filtering {
   create_time_max?: number;
   create_time_min?: number;
-  order_id?: number | string[];
+  order_id?: (number | string)[];
   use_uid?: number;
 }
 

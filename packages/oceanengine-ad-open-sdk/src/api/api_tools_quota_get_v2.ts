@@ -29,11 +29,11 @@ export class ToolsQuotaGetV2Api {
 
   async openApi2ToolsQuotaGetGetWithHttpInfo(request: ToolsQuotaGetV2ApiOpenApi2ToolsQuotaGetGetRequest): Promise<ApiResponse<ToolsQuotaGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsQuotaGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.campaignType == null) {
-      throw new ApiException("Missing the required parameter 'campaignType' when calling openApi2ToolsQuotaGetGet");
+      throw new ApiException("campaignType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsQuotaGetV2Response>({
       method: "GET",

@@ -38,27 +38,35 @@ export class QianchuanEstimateEffectV10Api {
 
   async openApiV10QianchuanEstimateEffectGetWithHttpInfo(request: QianchuanEstimateEffectV10ApiOpenApiV10QianchuanEstimateEffectGetRequest): Promise<ApiResponse<QianchuanEstimateEffectV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanEstimateEffectGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanEstimateEffectGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
 
     if (request.externalAction == null) {
-      throw new ApiException("Missing the required parameter 'externalAction' when calling openApiV10QianchuanEstimateEffectGet");
+      throw new ApiException("externalAction is required and must be specified");
     }
 
     if (request.budgetMode == null) {
-      throw new ApiException("Missing the required parameter 'budgetMode' when calling openApiV10QianchuanEstimateEffectGet");
+      throw new ApiException("budgetMode is required and must be specified");
     }
 
     if (request.budget == null) {
-      throw new ApiException("Missing the required parameter 'budget' when calling openApiV10QianchuanEstimateEffectGet");
+      throw new ApiException("budget is required and must be specified");
+    }
+
+    if (request.budget != null && Number(request.budget) < 300.0) {
+      throw new ApiException("budget must be greater than 300.0");
+    }
+
+    if (request.budget != null && Number(request.budget) > 9999999.99) {
+      throw new ApiException("budget must be less than 9999999.99");
     }
 
     if (request.liveScheduleType == null) {
-      throw new ApiException("Missing the required parameter 'liveScheduleType' when calling openApiV10QianchuanEstimateEffectGet");
+      throw new ApiException("liveScheduleType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanEstimateEffectV10Response>({
       method: "GET",

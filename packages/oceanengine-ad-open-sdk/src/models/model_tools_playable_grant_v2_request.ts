@@ -3,7 +3,7 @@
 
 export interface ToolsPlayableGrantV2Request {
   advertiser_id: number | string;
-  granted_ids: number | string[];
+  granted_ids: (number | string)[];
   playable_id?: number | string;
   playable_url?: string;
 }

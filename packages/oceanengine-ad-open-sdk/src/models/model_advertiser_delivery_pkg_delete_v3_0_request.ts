@@ -3,6 +3,6 @@
 
 export interface AdvertiserDeliveryPkgDeleteV30Request {
   advertiser_id: number | string;
-  pkg_ids: number | string[];
+  pkg_ids: (number | string)[];
 }
 

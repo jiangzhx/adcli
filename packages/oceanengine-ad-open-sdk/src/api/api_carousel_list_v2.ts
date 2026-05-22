@@ -30,7 +30,7 @@ export class CarouselListV2Api {
 
   async openApi2CarouselListGetWithHttpInfo(request: CarouselListV2ApiOpenApi2CarouselListGetRequest): Promise<ApiResponse<CarouselListV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2CarouselListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CarouselListV2Response>({
       method: "GET",

@@ -33,15 +33,15 @@ export class SecurityScoreDisposalInfoGetV30Api {
 
   async openApiV30SecurityScoreDisposalInfoGetGetWithHttpInfo(request: SecurityScoreDisposalInfoGetV30ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest): Promise<ApiResponse<SecurityScoreDisposalInfoGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30SecurityScoreDisposalInfoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.businessLine == null) {
-      throw new ApiException("Missing the required parameter 'businessLine' when calling openApiV30SecurityScoreDisposalInfoGetGet");
+      throw new ApiException("businessLine is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV30SecurityScoreDisposalInfoGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SecurityScoreDisposalInfoGetV30Response>({
       method: "GET",

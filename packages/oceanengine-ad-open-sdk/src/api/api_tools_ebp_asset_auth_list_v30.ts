@@ -33,15 +33,15 @@ export class ToolsEbpAssetAuthListV30Api {
 
   async openApiV30ToolsEbpAssetAuthListGetWithHttpInfo(request: ToolsEbpAssetAuthListV30ApiOpenApiV30ToolsEbpAssetAuthListGetRequest): Promise<ApiResponse<ToolsEbpAssetAuthListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpAssetAuthListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30ToolsEbpAssetAuthListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.assetType == null) {
-      throw new ApiException("Missing the required parameter 'assetType' when calling openApiV30ToolsEbpAssetAuthListGet");
+      throw new ApiException("assetType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpAssetAuthListV30Response>({
       method: "GET",

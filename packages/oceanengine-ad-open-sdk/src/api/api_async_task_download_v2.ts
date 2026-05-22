@@ -29,11 +29,19 @@ export class AsyncTaskDownloadV2Api {
 
   async openApi2AsyncTaskDownloadGetWithHttpInfo(request: AsyncTaskDownloadV2ApiOpenApi2AsyncTaskDownloadGetRequest): Promise<ApiResponse<ArrayBuffer>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AsyncTaskDownloadGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.taskId == null) {
-      throw new ApiException("Missing the required parameter 'taskId' when calling openApi2AsyncTaskDownloadGet");
+      throw new ApiException("taskId is required and must be specified");
+    }
+
+    if (request.taskId != null && Number(request.taskId) < 1) {
+      throw new ApiException("taskId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<ArrayBuffer>({
       method: "GET",

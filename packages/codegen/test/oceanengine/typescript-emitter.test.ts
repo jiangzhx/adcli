@@ -25,6 +25,12 @@ describe("typescript emitter", () => {
       authNames: ["ApiKeyAuth"],
       accepts: ["application/json"],
       contentTypes: [],
+      checks: [
+        { kind: "required", paramName: "advertiserId", message: "advertiserId is required and must be specified" },
+        { kind: "number", paramName: "advertiserId", operator: "<", value: "1", message: "advertiserId must be greater than 1" },
+        { kind: "required", paramName: "dataTopics", message: "dataTopics is required and must be specified" },
+        { kind: "length", paramName: "dataTopics", operator: "<", value: "1", message: "dataTopics must have at least 1 elements" },
+      ],
     };
 
     const output = emitApiClass(spec);
@@ -41,7 +47,11 @@ describe("typescript emitter", () => {
       "async openApiV30ReportCustomConfigGetGet(request: ReportCustomConfigGetV30ApiOpenApiV30ReportCustomConfigGetGetRequest): Promise<ReportCustomConfigGetV30Response>",
     );
     expect(output).toContain("if (request.advertiserId == null)");
-    expect(output).toContain("Missing the required parameter 'advertiserId'");
+    expect(output).toContain("advertiserId is required and must be specified");
+    expect(output).toContain("if (request.advertiserId != null && Number(request.advertiserId) < 1)");
+    expect(output).toContain("advertiserId must be greater than 1");
+    expect(output).toContain("if (request.dataTopics != null && request.dataTopics.length < 1)");
+    expect(output).toContain("dataTopics must have at least 1 elements");
     expect(output).toContain('path: "/open_api/v3.0/report/custom/config/get/"');
     expect(output).toContain('{ name: "data_topics", value: request.dataTopics }');
     expect(output).toContain('{ name: "page", value: request.page }');
@@ -92,6 +102,31 @@ describe("typescript emitter", () => {
     expect(output).toContain("instance?: unknown;");
     expect(output).toContain("is_nullable?: boolean;");
     expect(output).toContain("schema_type?: string;");
+  });
+
+  test("wraps union array element types", () => {
+    const output = emitApiClass({
+      className: "PromotionRejectReasonGetV30Api",
+      methodName: "openApiV30PromotionRejectReasonGetGet",
+      httpMethod: "GET",
+      path: "/open_api/v3.0/promotion/reject_reason/get/",
+      responseType: "PromotionRejectReasonGetV30Response",
+      params: [{ javaType: "List<LongString>", name: "promotionIds", required: true }],
+      queryParams: [{ name: "promotion_ids", source: "request.promotionIds" }],
+      formParams: [],
+      fileParams: [],
+      authNames: ["ApiKeyAuth"],
+      accepts: ["application/json"],
+      contentTypes: [],
+      checks: [
+        { kind: "required", paramName: "promotionIds", message: "promotionIds is required and must be specified" },
+        { kind: "length", paramName: "promotionIds", operator: "<", value: "1", message: "promotionIds must have at least 1 elements" },
+      ],
+    });
+
+    expect(output).toContain("promotionIds: (number | string)[];");
+    expect(output).toContain("request.promotionIds.length < 1");
+    expect(output).not.toContain("promotionIds: number | string[];");
   });
 
   test("maps byte array responses to ArrayBuffer", () => {

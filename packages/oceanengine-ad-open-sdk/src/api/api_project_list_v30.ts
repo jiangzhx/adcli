@@ -31,7 +31,7 @@ export class ProjectListV30Api {
 
   async openApiV30ProjectListGetWithHttpInfo(request: ProjectListV30ApiOpenApiV30ProjectListGetRequest): Promise<ApiResponse<ProjectListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ProjectListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ProjectListV30Response>({
       method: "GET",

@@ -29,11 +29,19 @@ export class ClueWechatDataGetV2Api {
 
   async openApi2ClueWechatDataGetGetWithHttpInfo(request: ClueWechatDataGetV2ApiOpenApi2ClueWechatDataGetGetRequest): Promise<ApiResponse<ClueWechatDataGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ClueWechatDataGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.unionId == null) {
-      throw new ApiException("Missing the required parameter 'unionId' when calling openApi2ClueWechatDataGetGet");
+      throw new ApiException("unionId is required and must be specified");
+    }
+
+    if (request.unionId != null && Array.from(String(request.unionId)).length < 1) {
+      throw new ApiException("unionId must have at least 1 elements");
     }
     return this.apiClient.requestWithHttpInfo<ClueWechatDataGetV2Response>({
       method: "GET",

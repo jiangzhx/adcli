@@ -30,19 +30,19 @@ export class StarReportDataTopicConfigV2Api {
 
   async openApi2StarReportDataTopicConfigGetWithHttpInfo(request: StarReportDataTopicConfigV2ApiOpenApi2StarReportDataTopicConfigGetRequest): Promise<ApiResponse<StarReportDataTopicConfigV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarReportDataTopicConfigGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.workId == null) {
-      throw new ApiException("Missing the required parameter 'workId' when calling openApi2StarReportDataTopicConfigGet");
+      throw new ApiException("workId is required and must be specified");
     }
 
     if (request.demandId == null) {
-      throw new ApiException("Missing the required parameter 'demandId' when calling openApi2StarReportDataTopicConfigGet");
+      throw new ApiException("demandId is required and must be specified");
     }
 
     if (request.topics == null) {
-      throw new ApiException("Missing the required parameter 'topics' when calling openApi2StarReportDataTopicConfigGet");
+      throw new ApiException("topics is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarReportDataTopicConfigV2Response>({
       method: "GET",

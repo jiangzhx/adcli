@@ -3,6 +3,6 @@
 
 export interface ToolsCommentHideV30Request {
   advertiser_id: number | string;
-  comment_ids: number | string[];
+  comment_ids: (number | string)[];
 }
 

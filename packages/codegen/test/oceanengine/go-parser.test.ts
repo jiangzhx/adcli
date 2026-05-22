@@ -37,6 +37,12 @@ func (a *ReportCustomConfigGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCu
 	if r.dataTopics == nil {
 		return localVarReturnValue, nil, ReportError("dataTopics is required and must be specified")
 	}
+	if len(*r.dataTopics) < 1 {
+		return localVarReturnValue, nil, ReportError("dataTopics must have at least 1 elements")
+	}
+	if len(*r.dataTopics) > 10 {
+		return localVarReturnValue, nil, ReportError("dataTopics must have less than 10 elements")
+	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "data_topics", r.dataTopics)
 	localVarHTTPContentTypes := []string{}
@@ -54,6 +60,12 @@ func (a *ReportCustomConfigGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCu
       { javaType: "LongString", name: "advertiserId", required: true },
       { javaType: "List<ReportCustomConfigGetV30DataTopics>", name: "dataTopics", required: true },
       { javaType: "Integer", name: "page", required: false },
+    ]);
+    expect(api.checks).toEqual([
+      { kind: "required", paramName: "advertiserId", message: "advertiserId is required and must be specified" },
+      { kind: "required", paramName: "dataTopics", message: "dataTopics is required and must be specified" },
+      { kind: "length", paramName: "dataTopics", operator: "<", value: "1", message: "dataTopics must have at least 1 elements" },
+      { kind: "length", paramName: "dataTopics", operator: ">", value: "10", message: "dataTopics must have less than 10 elements" },
     ]);
     expect(api.queryParams).toEqual([
       { name: "advertiser_id", source: "request.advertiserId" },

@@ -30,7 +30,11 @@ export class AssetsCreativeComponentGetV2Api {
 
   async openApi2AssetsCreativeComponentGetGetWithHttpInfo(request: AssetsCreativeComponentGetV2ApiOpenApi2AssetsCreativeComponentGetGetRequest): Promise<ApiResponse<AssetsCreativeComponentGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AssetsCreativeComponentGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<AssetsCreativeComponentGetV2Response>({
       method: "GET",

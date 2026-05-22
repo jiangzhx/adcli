@@ -27,7 +27,7 @@ export class StarVasGetCommonAuthorPackageListV2Api {
 
   async openApi2StarVasGetCommonAuthorPackageListGetWithHttpInfo(request: StarVasGetCommonAuthorPackageListV2ApiOpenApi2StarVasGetCommonAuthorPackageListGetRequest): Promise<ApiResponse<StarVasGetCommonAuthorPackageListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarVasGetCommonAuthorPackageListGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarVasGetCommonAuthorPackageListV2Response>({
       method: "GET",

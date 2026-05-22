@@ -5,7 +5,7 @@ import type { AgentQueryRiskPromotionListV2DataDataMaterialListType, AgentQueryR
 
 export interface AgentQueryRiskPromotionListV2ResponseDataDataInnerMaterialListInner {
   id?: number | string;
-  ref_promotion_ids?: number | string[];
+  ref_promotion_ids?: (number | string)[];
   ref_promotion_list?: AgentQueryRiskPromotionListV2ResponseDataDataInnerMaterialListInnerRefPromotionListInner[];
   risk_content?: string[];
   type?: AgentQueryRiskPromotionListV2DataDataMaterialListType;

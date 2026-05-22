@@ -30,7 +30,7 @@ export class StarMcnRecuritProviderGetTaskOrderListGetV2Api {
 
   async openApi2StarMcnRecuritProviderGetTaskOrderListGetGetWithHttpInfo(request: StarMcnRecuritProviderGetTaskOrderListGetV2ApiOpenApi2StarMcnRecuritProviderGetTaskOrderListGetGetRequest): Promise<ApiResponse<StarMcnRecuritProviderGetTaskOrderListGetV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarMcnRecuritProviderGetTaskOrderListGetGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarMcnRecuritProviderGetTaskOrderListGetV2Response>({
       method: "GET",

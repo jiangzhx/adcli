@@ -31,15 +31,31 @@ export class AdvertiserDeliveryQualificationListV30Api {
 
   async openApiV30AdvertiserDeliveryQualificationListGetWithHttpInfo(request: AdvertiserDeliveryQualificationListV30ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest): Promise<ApiResponse<AdvertiserDeliveryQualificationListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30AdvertiserDeliveryQualificationListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV30AdvertiserDeliveryQualificationListGet");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
+    }
+
+    if (request.page != null && Number(request.page) > 10000) {
+      throw new ApiException("page must be less than 10000");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApiV30AdvertiserDeliveryQualificationListGet");
+      throw new ApiException("pageSize is required and must be specified");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) < 1) {
+      throw new ApiException("pageSize must be greater than 1");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) > 100) {
+      throw new ApiException("pageSize must be less than 100");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserDeliveryQualificationListV30Response>({
       method: "GET",

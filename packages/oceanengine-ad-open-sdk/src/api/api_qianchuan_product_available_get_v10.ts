@@ -33,7 +33,11 @@ export class QianchuanProductAvailableGetV10Api {
 
   async openApiV10QianchuanProductAvailableGetGetWithHttpInfo(request: QianchuanProductAvailableGetV10ApiOpenApiV10QianchuanProductAvailableGetGetRequest): Promise<ApiResponse<QianchuanProductAvailableGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanProductAvailableGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 0) {
+      throw new ApiException("advertiserId must be greater than 0");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanProductAvailableGetV10Response>({
       method: "GET",

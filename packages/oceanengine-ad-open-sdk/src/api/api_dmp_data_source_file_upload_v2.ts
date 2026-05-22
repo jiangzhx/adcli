@@ -29,11 +29,11 @@ export class DmpDataSourceFileUploadV2Api {
 
   async openApi2DmpDataSourceFileUploadPostWithHttpInfo(request: DmpDataSourceFileUploadV2ApiOpenApi2DmpDataSourceFileUploadPostRequest): Promise<ApiResponse<DmpDataSourceFileUploadV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DmpDataSourceFileUploadPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.file == null) {
-      throw new ApiException("Missing the required parameter 'file' when calling openApi2DmpDataSourceFileUploadPost");
+      throw new ApiException("file is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DmpDataSourceFileUploadV2Response>({
       method: "POST",

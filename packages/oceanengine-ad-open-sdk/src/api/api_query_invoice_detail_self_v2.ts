@@ -29,7 +29,7 @@ export class QueryInvoiceDetailSelfV2Api {
 
   async openApi2QueryInvoiceDetailSelfGetWithHttpInfo(request: QueryInvoiceDetailSelfV2ApiOpenApi2QueryInvoiceDetailSelfGetRequest): Promise<ApiResponse<QueryInvoiceDetailSelfV2Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApi2QueryInvoiceDetailSelfGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryInvoiceDetailSelfV2Response>({
       method: "GET",

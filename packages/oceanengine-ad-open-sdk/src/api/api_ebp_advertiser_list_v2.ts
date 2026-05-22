@@ -31,11 +31,11 @@ export class EbpAdvertiserListV2Api {
 
   async openApi2EbpAdvertiserListGetWithHttpInfo(request: EbpAdvertiserListV2ApiOpenApi2EbpAdvertiserListGetRequest): Promise<ApiResponse<EbpAdvertiserListV2Response>> {
     if (request.enterpriseOrganizationId == null) {
-      throw new ApiException("Missing the required parameter 'enterpriseOrganizationId' when calling openApi2EbpAdvertiserListGet");
+      throw new ApiException("enterpriseOrganizationId is required and must be specified");
     }
 
     if (request.accountSource == null) {
-      throw new ApiException("Missing the required parameter 'accountSource' when calling openApi2EbpAdvertiserListGet");
+      throw new ApiException("accountSource is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EbpAdvertiserListV2Response>({
       method: "GET",

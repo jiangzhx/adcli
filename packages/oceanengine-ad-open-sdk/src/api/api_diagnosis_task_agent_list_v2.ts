@@ -35,7 +35,7 @@ export class DiagnosisTaskAgentListV2Api {
 
   async openApi2DiagnosisTaskAgentListGetWithHttpInfo(request: DiagnosisTaskAgentListV2ApiOpenApi2DiagnosisTaskAgentListGetRequest): Promise<ApiResponse<DiagnosisTaskAgentListV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2DiagnosisTaskAgentListGet");
+      throw new ApiException("agentId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DiagnosisTaskAgentListV2Response>({
       method: "GET",

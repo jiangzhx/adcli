@@ -6,7 +6,7 @@ import type { FileMaterialAttributesListV2FilteringMaterialProperties } from "..
 export interface FileMaterialAttributesListV2Filtering {
   attributes_modify_time?: string;
   end_time?: string;
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
   material_properties?: FileMaterialAttributesListV2FilteringMaterialProperties[];
   start_time?: string;
 }

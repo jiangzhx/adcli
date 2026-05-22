@@ -3,6 +3,6 @@
 
 export interface FileVideoPauseV2Request {
   advertiser_id?: number | string;
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
 }
 

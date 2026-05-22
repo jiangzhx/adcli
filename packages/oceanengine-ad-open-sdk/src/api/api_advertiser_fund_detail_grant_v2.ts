@@ -31,7 +31,11 @@ export class AdvertiserFundDetailGrantV2Api {
 
   async openApi2AdvertiserFundDetailGrantGetWithHttpInfo(request: AdvertiserFundDetailGrantV2ApiOpenApi2AdvertiserFundDetailGrantGetRequest): Promise<ApiResponse<AdvertiserFundDetailGrantV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AdvertiserFundDetailGrantGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) > -9223372036854775616) {
+      throw new ApiException("advertiserId must be less than -9223372036854775616");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserFundDetailGrantV2Response>({
       method: "GET",

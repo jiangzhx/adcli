@@ -7,7 +7,7 @@ import type { DiagnosisTaskAdvGetV2Response } from "../models/index";
 
 export interface DiagnosisTaskAdvGetV2ApiOpenApi2DiagnosisTaskAdvGetGetRequest {
   advertiserId?: number | string;
-  taskIds?: number | string[];
+  taskIds?: (number | string)[];
 }
 
 export class DiagnosisTaskAdvGetV2Api {

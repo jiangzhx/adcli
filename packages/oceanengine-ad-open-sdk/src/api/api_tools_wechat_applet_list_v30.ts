@@ -33,7 +33,7 @@ export class ToolsWechatAppletListV30Api {
 
   async openApiV30ToolsWechatAppletListGetWithHttpInfo(request: ToolsWechatAppletListV30ApiOpenApiV30ToolsWechatAppletListGetRequest): Promise<ApiResponse<ToolsWechatAppletListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsWechatAppletListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsWechatAppletListV30Response>({
       method: "GET",

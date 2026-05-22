@@ -28,11 +28,11 @@ export class ToolsStarTaskTitleTopicGetV2Api {
 
   async openApi2ToolsStarTaskTitleTopicGetGetWithHttpInfo(request: ToolsStarTaskTitleTopicGetV2ApiOpenApi2ToolsStarTaskTitleTopicGetGetRequest): Promise<ApiResponse<ToolsStarTaskTitleTopicGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsStarTaskTitleTopicGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.titleSpecifiesTopicItem == null) {
-      throw new ApiException("Missing the required parameter 'titleSpecifiesTopicItem' when calling openApi2ToolsStarTaskTitleTopicGetGet");
+      throw new ApiException("titleSpecifiesTopicItem is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsStarTaskTitleTopicGetV2Response>({
       method: "GET",

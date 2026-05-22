@@ -7,6 +7,6 @@ export interface ToolsJointBidGetV30ResponseData {
   joint_bid_mode?: ToolsJointBidGetV30DataJointBidMode;
   joint_id?: number | string;
   joint_scope_info?: ToolsJointBidGetV30ResponseDataJointScopeInfo;
-  rta_id?: number | string[];
+  rta_id?: (number | string)[];
 }
 

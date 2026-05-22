@@ -6,7 +6,7 @@ import type { QianchuanAdvertiserTypeGetV10Response } from "../models/index";
 
 
 export interface QianchuanAdvertiserTypeGetV10ApiOpenApiV10QianchuanAdvertiserTypeGetGetRequest {
-  advertiserIds: number | string[];
+  advertiserIds: (number | string)[];
 }
 
 export class QianchuanAdvertiserTypeGetV10Api {
@@ -27,7 +27,7 @@ export class QianchuanAdvertiserTypeGetV10Api {
 
   async openApiV10QianchuanAdvertiserTypeGetGetWithHttpInfo(request: QianchuanAdvertiserTypeGetV10ApiOpenApiV10QianchuanAdvertiserTypeGetGetRequest): Promise<ApiResponse<QianchuanAdvertiserTypeGetV10Response>> {
     if (request.advertiserIds == null) {
-      throw new ApiException("Missing the required parameter 'advertiserIds' when calling openApiV10QianchuanAdvertiserTypeGetGet");
+      throw new ApiException("advertiserIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdvertiserTypeGetV10Response>({
       method: "GET",

@@ -31,19 +31,31 @@ export class StarMcnGetContractChallengeAuthorItemListV2V2Api {
 
   async openApi2StarMcnGetContractChallengeAuthorItemListV2GetWithHttpInfo(request: StarMcnGetContractChallengeAuthorItemListV2V2ApiOpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequest): Promise<ApiResponse<StarMcnGetContractChallengeAuthorItemListV2V2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarMcnGetContractChallengeAuthorItemListV2Get");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.demandId == null) {
-      throw new ApiException("Missing the required parameter 'demandId' when calling openApi2StarMcnGetContractChallengeAuthorItemListV2Get");
+      throw new ApiException("demandId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarMcnGetContractChallengeAuthorItemListV2Get");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApi2StarMcnGetContractChallengeAuthorItemListV2Get");
+      throw new ApiException("pageSize is required and must be specified");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) < 1) {
+      throw new ApiException("pageSize must be greater than 1");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) > 30) {
+      throw new ApiException("pageSize must be less than 30");
     }
     return this.apiClient.requestWithHttpInfo<StarMcnGetContractChallengeAuthorItemListV2V2Response>({
       method: "GET",

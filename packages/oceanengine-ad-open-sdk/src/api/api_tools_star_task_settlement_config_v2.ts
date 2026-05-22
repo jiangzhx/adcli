@@ -32,27 +32,27 @@ export class ToolsStarTaskSettlementConfigV2Api {
 
   async openApi2ToolsStarTaskSettlementConfigGetWithHttpInfo(request: ToolsStarTaskSettlementConfigV2ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest): Promise<ApiResponse<ToolsStarTaskSettlementConfigV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsStarTaskSettlementConfigGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.firstIndustryId == null) {
-      throw new ApiException("Missing the required parameter 'firstIndustryId' when calling openApi2ToolsStarTaskSettlementConfigGet");
+      throw new ApiException("firstIndustryId is required and must be specified");
     }
 
     if (request.secondIndustryId == null) {
-      throw new ApiException("Missing the required parameter 'secondIndustryId' when calling openApi2ToolsStarTaskSettlementConfigGet");
+      throw new ApiException("secondIndustryId is required and must be specified");
     }
 
     if (request.starMaterialFirstType == null) {
-      throw new ApiException("Missing the required parameter 'starMaterialFirstType' when calling openApi2ToolsStarTaskSettlementConfigGet");
+      throw new ApiException("starMaterialFirstType is required and must be specified");
     }
 
     if (request.starMaterialSecondType == null) {
-      throw new ApiException("Missing the required parameter 'starMaterialSecondType' when calling openApi2ToolsStarTaskSettlementConfigGet");
+      throw new ApiException("starMaterialSecondType is required and must be specified");
     }
 
     if (request.starTaskExternalAction == null) {
-      throw new ApiException("Missing the required parameter 'starTaskExternalAction' when calling openApi2ToolsStarTaskSettlementConfigGet");
+      throw new ApiException("starTaskExternalAction is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsStarTaskSettlementConfigV2Response>({
       method: "GET",

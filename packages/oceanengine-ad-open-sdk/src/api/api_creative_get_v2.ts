@@ -33,7 +33,7 @@ export class CreativeGetV2Api {
 
   async openApi2CreativeGetGetWithHttpInfo(request: CreativeGetV2ApiOpenApi2CreativeGetGetRequest): Promise<ApiResponse<CreativeGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2CreativeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CreativeGetV2Response>({
       method: "GET",

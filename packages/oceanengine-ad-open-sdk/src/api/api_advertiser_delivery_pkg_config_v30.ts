@@ -30,15 +30,15 @@ export class AdvertiserDeliveryPkgConfigV30Api {
 
   async openApiV30AdvertiserDeliveryPkgConfigGetWithHttpInfo(request: AdvertiserDeliveryPkgConfigV30ApiOpenApiV30AdvertiserDeliveryPkgConfigGetRequest): Promise<ApiResponse<AdvertiserDeliveryPkgConfigV30Response>> {
     if (request.firstIndustryId == null) {
-      throw new ApiException("Missing the required parameter 'firstIndustryId' when calling openApiV30AdvertiserDeliveryPkgConfigGet");
+      throw new ApiException("firstIndustryId is required and must be specified");
     }
 
     if (request.secondIndustryId == null) {
-      throw new ApiException("Missing the required parameter 'secondIndustryId' when calling openApiV30AdvertiserDeliveryPkgConfigGet");
+      throw new ApiException("secondIndustryId is required and must be specified");
     }
 
     if (request.thirdIndustryId == null) {
-      throw new ApiException("Missing the required parameter 'thirdIndustryId' when calling openApiV30AdvertiserDeliveryPkgConfigGet");
+      throw new ApiException("thirdIndustryId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserDeliveryPkgConfigV30Response>({
       method: "GET",

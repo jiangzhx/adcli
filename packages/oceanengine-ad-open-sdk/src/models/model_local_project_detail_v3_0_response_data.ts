@@ -27,7 +27,7 @@ export interface LocalProjectDetailV30ResponseData {
   local_account_id?: number | string;
   local_asset_type?: LocalProjectDetailV30DataLocalAssetType;
   local_delivery_scene?: LocalProjectDetailV30DataLocalDeliveryScene;
-  market_page_ids?: number | string[];
+  market_page_ids?: (number | string)[];
   marketing_goal?: LocalProjectDetailV30DataMarketingGoal;
   multi_poi_id?: number | string;
   name?: string;

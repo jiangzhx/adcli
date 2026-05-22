@@ -30,7 +30,11 @@ export class RemittanceCodeListV30Api {
 
   async openApiV30RemittanceCodeListGetWithHttpInfo(request: RemittanceCodeListV30ApiOpenApiV30RemittanceCodeListGetRequest): Promise<ApiResponse<RemittanceCodeListV30Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApiV30RemittanceCodeListGet");
+      throw new ApiException("agentId is required and must be specified");
+    }
+
+    if (request.agentId != null && Number(request.agentId) < 1) {
+      throw new ApiException("agentId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<RemittanceCodeListV30Response>({
       method: "GET",

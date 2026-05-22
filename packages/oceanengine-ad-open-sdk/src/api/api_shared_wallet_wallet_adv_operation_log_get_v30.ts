@@ -32,27 +32,43 @@ export class SharedWalletWalletAdvOperationLogGetV30Api {
 
   async openApiV30SharedWalletWalletAdvOperationLogGetGetWithHttpInfo(request: SharedWalletWalletAdvOperationLogGetV30ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest): Promise<ApiResponse<SharedWalletWalletAdvOperationLogGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30SharedWalletWalletAdvOperationLogGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30SharedWalletWalletAdvOperationLogGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.walletId == null) {
-      throw new ApiException("Missing the required parameter 'walletId' when calling openApiV30SharedWalletWalletAdvOperationLogGetGet");
+      throw new ApiException("walletId is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV30SharedWalletWalletAdvOperationLogGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV30SharedWalletWalletAdvOperationLogGetGet");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
+    }
+
+    if (request.page != null && Number(request.page) > 10000) {
+      throw new ApiException("page must be less than 10000");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApiV30SharedWalletWalletAdvOperationLogGetGet");
+      throw new ApiException("pageSize is required and must be specified");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) < 10) {
+      throw new ApiException("pageSize must be greater than 10");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) > 100) {
+      throw new ApiException("pageSize must be less than 100");
     }
     return this.apiClient.requestWithHttpInfo<SharedWalletWalletAdvOperationLogGetV30Response>({
       method: "GET",

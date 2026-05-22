@@ -29,15 +29,19 @@ export class DpaEbpDictGetV30Api {
 
   async openApiV30DpaEbpDictGetGetWithHttpInfo(request: DpaEbpDictGetV30ApiOpenApiV30DpaEbpDictGetGetRequest): Promise<ApiResponse<DpaEbpDictGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30DpaEbpDictGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30DpaEbpDictGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.platformId == null) {
-      throw new ApiException("Missing the required parameter 'platformId' when calling openApiV30DpaEbpDictGetGet");
+      throw new ApiException("platformId is required and must be specified");
+    }
+
+    if (request.platformId != null && Number(request.platformId) < 1) {
+      throw new ApiException("platformId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<DpaEbpDictGetV30Response>({
       method: "GET",

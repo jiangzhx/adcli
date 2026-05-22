@@ -35,7 +35,7 @@ export class ToolsAppManagementAppGetV2Api {
 
   async openApi2ToolsAppManagementAppGetGetWithHttpInfo(request: ToolsAppManagementAppGetV2ApiOpenApi2ToolsAppManagementAppGetGetRequest): Promise<ApiResponse<ToolsAppManagementAppGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsAppManagementAppGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementAppGetV2Response>({
       method: "GET",

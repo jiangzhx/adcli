@@ -10,8 +10,8 @@ export interface QianchuanToolsAllowCouponV10ApiOpenApiV10QianchuanToolsAllowCou
   marketingGoal: QianchuanToolsAllowCouponV10MarketingGoal;
   campaignScene: QianchuanToolsAllowCouponV10CampaignScene;
   marketingScene: QianchuanToolsAllowCouponV10MarketingScene;
-  awemeIds?: number | string[];
-  productIds?: number | string[];
+  awemeIds?: (number | string)[];
+  productIds?: (number | string)[];
   isLabAd?: boolean;
 }
 
@@ -33,19 +33,19 @@ export class QianchuanToolsAllowCouponV10Api {
 
   async openApiV10QianchuanToolsAllowCouponGetWithHttpInfo(request: QianchuanToolsAllowCouponV10ApiOpenApiV10QianchuanToolsAllowCouponGetRequest): Promise<ApiResponse<QianchuanToolsAllowCouponV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsAllowCouponGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanToolsAllowCouponGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
 
     if (request.campaignScene == null) {
-      throw new ApiException("Missing the required parameter 'campaignScene' when calling openApiV10QianchuanToolsAllowCouponGet");
+      throw new ApiException("campaignScene is required and must be specified");
     }
 
     if (request.marketingScene == null) {
-      throw new ApiException("Missing the required parameter 'marketingScene' when calling openApiV10QianchuanToolsAllowCouponGet");
+      throw new ApiException("marketingScene is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanToolsAllowCouponV10Response>({
       method: "GET",

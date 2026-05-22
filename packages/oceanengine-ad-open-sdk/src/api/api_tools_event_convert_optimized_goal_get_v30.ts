@@ -35,15 +35,15 @@ export class ToolsEventConvertOptimizedGoalGetV30Api {
 
   async openApiV30ToolsEventConvertOptimizedGoalGetGetWithHttpInfo(request: ToolsEventConvertOptimizedGoalGetV30ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest): Promise<ApiResponse<ToolsEventConvertOptimizedGoalGetV30Response>> {
     if (request.landingType == null) {
-      throw new ApiException("Missing the required parameter 'landingType' when calling openApiV30ToolsEventConvertOptimizedGoalGetGet");
+      throw new ApiException("landingType is required and must be specified");
     }
 
     if (request.marketingPurpose == null) {
-      throw new ApiException("Missing the required parameter 'marketingPurpose' when calling openApiV30ToolsEventConvertOptimizedGoalGetGet");
+      throw new ApiException("marketingPurpose is required and must be specified");
     }
 
     if (request.assetType == null) {
-      throw new ApiException("Missing the required parameter 'assetType' when calling openApiV30ToolsEventConvertOptimizedGoalGetGet");
+      throw new ApiException("assetType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEventConvertOptimizedGoalGetV30Response>({
       method: "GET",

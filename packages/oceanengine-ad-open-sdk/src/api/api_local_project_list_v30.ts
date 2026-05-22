@@ -30,7 +30,11 @@ export class LocalProjectListV30Api {
 
   async openApiV30LocalProjectListGetWithHttpInfo(request: LocalProjectListV30ApiOpenApiV30LocalProjectListGetRequest): Promise<ApiResponse<LocalProjectListV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalProjectListGet");
+      throw new ApiException("localAccountId is required and must be specified");
+    }
+
+    if (request.localAccountId != null && Number(request.localAccountId) < 1) {
+      throw new ApiException("localAccountId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<LocalProjectListV30Response>({
       method: "GET",

@@ -32,19 +32,19 @@ export class AgentCompanyBrandListQueryV2Api {
 
   async openApi2AgentCompanyBrandListQueryGetWithHttpInfo(request: AgentCompanyBrandListQueryV2ApiOpenApi2AgentCompanyBrandListQueryGetRequest): Promise<ApiResponse<AgentCompanyBrandListQueryV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2AgentCompanyBrandListQueryGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApi2AgentCompanyBrandListQueryGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApi2AgentCompanyBrandListQueryGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApi2AgentCompanyBrandListQueryGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AgentCompanyBrandListQueryV2Response>({
       method: "GET",

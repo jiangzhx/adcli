@@ -4,7 +4,7 @@
 import type { ReportBrandAgentDataV30FilterSelfServiceSource } from "../models/index";
 
 export interface ReportBrandAgentDataV30Filter {
-  ids?: number | string[];
+  ids?: (number | string)[];
   is_band_ad_overflow?: boolean;
   self_service_source?: ReportBrandAgentDataV30FilterSelfServiceSource;
 }

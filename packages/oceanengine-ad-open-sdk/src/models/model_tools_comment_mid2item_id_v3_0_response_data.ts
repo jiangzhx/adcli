@@ -4,7 +4,7 @@
 import type { ToolsCommentMid2itemIdV30ResponseDataPageInfo } from "../models/index";
 
 export interface ToolsCommentMid2itemIdV30ResponseData {
-  item_ids?: number | string[];
+  item_ids?: (number | string)[];
   page_info: ToolsCommentMid2itemIdV30ResponseDataPageInfo;
 }
 

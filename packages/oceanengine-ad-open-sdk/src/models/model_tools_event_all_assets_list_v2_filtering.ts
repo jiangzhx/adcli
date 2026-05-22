@@ -4,7 +4,7 @@
 import type { ToolsEventAllAssetsListV2FilteringAssetType } from "../models/index";
 
 export interface ToolsEventAllAssetsListV2Filtering {
-  asset_ids?: number | string[];
+  asset_ids?: (number | string)[];
   asset_type?: ToolsEventAllAssetsListV2FilteringAssetType;
   modify_end_time?: string;
   modify_start_time?: string;

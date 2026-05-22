@@ -28,11 +28,27 @@ export class EventManagerAvailableEventsGetV2Api {
 
   async openApi2EventManagerAvailableEventsGetGetWithHttpInfo(request: EventManagerAvailableEventsGetV2ApiOpenApi2EventManagerAvailableEventsGetGetRequest): Promise<ApiResponse<EventManagerAvailableEventsGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2EventManagerAvailableEventsGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) > 9223372036854775807) {
+      throw new ApiException("advertiserId must be less than 9223372036854775807");
     }
 
     if (request.assetId == null) {
-      throw new ApiException("Missing the required parameter 'assetId' when calling openApi2EventManagerAvailableEventsGetGet");
+      throw new ApiException("assetId is required and must be specified");
+    }
+
+    if (request.assetId != null && Number(request.assetId) < 1) {
+      throw new ApiException("assetId must be greater than 1");
+    }
+
+    if (request.assetId != null && Number(request.assetId) > 9223372036854775807) {
+      throw new ApiException("assetId must be less than 9223372036854775807");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerAvailableEventsGetV2Response>({
       method: "GET",

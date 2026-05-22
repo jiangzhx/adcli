@@ -36,31 +36,31 @@ export class QianchuanReportLongTransferOrderDataGetV10Api {
 
   async openApiV10QianchuanReportLongTransferOrderDataGetGetWithHttpInfo(request: QianchuanReportLongTransferOrderDataGetV10ApiOpenApiV10QianchuanReportLongTransferOrderDataGetGetRequest): Promise<ApiResponse<QianchuanReportLongTransferOrderDataGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanReportLongTransferOrderDataGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.dataTopic == null) {
-      throw new ApiException("Missing the required parameter 'dataTopic' when calling openApiV10QianchuanReportLongTransferOrderDataGetGet");
+      throw new ApiException("dataTopic is required and must be specified");
     }
 
     if (request.dimensions == null) {
-      throw new ApiException("Missing the required parameter 'dimensions' when calling openApiV10QianchuanReportLongTransferOrderDataGetGet");
+      throw new ApiException("dimensions is required and must be specified");
     }
 
     if (request.metrics == null) {
-      throw new ApiException("Missing the required parameter 'metrics' when calling openApiV10QianchuanReportLongTransferOrderDataGetGet");
+      throw new ApiException("metrics is required and must be specified");
     }
 
     if (request.filters == null) {
-      throw new ApiException("Missing the required parameter 'filters' when calling openApiV10QianchuanReportLongTransferOrderDataGetGet");
+      throw new ApiException("filters is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV10QianchuanReportLongTransferOrderDataGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV10QianchuanReportLongTransferOrderDataGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanReportLongTransferOrderDataGetV10Response>({
       method: "GET",

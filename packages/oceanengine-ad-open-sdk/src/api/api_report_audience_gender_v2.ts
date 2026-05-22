@@ -9,7 +9,7 @@ export interface ReportAudienceGenderV2ApiOpenApi2ReportAudienceGenderGetRequest
   advertiserId?: number | string;
   endDate?: string;
   idType?: ReportAudienceGenderV2IdType;
-  ids?: number | string[];
+  ids?: (number | string)[];
   metrics?: string[];
   startDate?: string;
 }

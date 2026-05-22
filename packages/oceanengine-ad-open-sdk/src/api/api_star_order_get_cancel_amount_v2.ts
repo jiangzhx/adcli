@@ -28,11 +28,11 @@ export class StarOrderGetCancelAmountV2Api {
 
   async openApi2StarOrderGetCancelAmountGetWithHttpInfo(request: StarOrderGetCancelAmountV2ApiOpenApi2StarOrderGetCancelAmountGetRequest): Promise<ApiResponse<StarOrderGetCancelAmountV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarOrderGetCancelAmountGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.orderId == null) {
-      throw new ApiException("Missing the required parameter 'orderId' when calling openApi2StarOrderGetCancelAmountGet");
+      throw new ApiException("orderId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarOrderGetCancelAmountV2Response>({
       method: "GET",

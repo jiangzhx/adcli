@@ -28,7 +28,7 @@ export class ToolsTaskRaiseOptimizationIdsGetV2Api {
 
   async openApi2ToolsTaskRaiseOptimizationIdsGetGetWithHttpInfo(request: ToolsTaskRaiseOptimizationIdsGetV2ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest): Promise<ApiResponse<ToolsTaskRaiseOptimizationIdsGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsTaskRaiseOptimizationIdsGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsTaskRaiseOptimizationIdsGetV2Response>({
       method: "GET",

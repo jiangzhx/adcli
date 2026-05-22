@@ -5,7 +5,7 @@ import type { QianchuanUniPromotionProductGetV10FilteringTab } from "../models/i
 
 export interface QianchuanUniPromotionProductGetV10Filtering {
   create_roi2_limit_product?: boolean;
-  product_ids?: number | string[];
+  product_ids?: (number | string)[];
   product_name?: string;
   tab?: QianchuanUniPromotionProductGetV10FilteringTab;
 }

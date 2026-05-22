@@ -27,7 +27,7 @@ export class EventManagerAuthGetAllPublicKeysV2Api {
 
   async openApi2EventManagerAuthGetAllPublicKeysGetWithHttpInfo(request: EventManagerAuthGetAllPublicKeysV2ApiOpenApi2EventManagerAuthGetAllPublicKeysGetRequest): Promise<ApiResponse<EventManagerAuthGetAllPublicKeysV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2EventManagerAuthGetAllPublicKeysGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerAuthGetAllPublicKeysV2Response>({
       method: "GET",

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface StarMcnProviderHandleJoinedAuthorV2Request {
-  author_ids: number | string[];
+  author_ids: (number | string)[];
   op_type: number;
   reason_type: number;
   reject_reason_detail?: string;

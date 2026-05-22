@@ -31,15 +31,15 @@ export class DpaBrandFuzzyGetV30Api {
 
   async openApiV30DpaBrandFuzzyGetGetWithHttpInfo(request: DpaBrandFuzzyGetV30ApiOpenApiV30DpaBrandFuzzyGetGetRequest): Promise<ApiResponse<DpaBrandFuzzyGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30DpaBrandFuzzyGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30DpaBrandFuzzyGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.brandName == null) {
-      throw new ApiException("Missing the required parameter 'brandName' when calling openApiV30DpaBrandFuzzyGetGet");
+      throw new ApiException("brandName is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DpaBrandFuzzyGetV30Response>({
       method: "GET",

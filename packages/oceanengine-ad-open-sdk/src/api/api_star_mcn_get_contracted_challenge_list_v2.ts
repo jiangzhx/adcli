@@ -36,7 +36,7 @@ export class StarMcnGetContractedChallengeListV2Api {
 
   async openApi2StarMcnGetContractedChallengeListGetWithHttpInfo(request: StarMcnGetContractedChallengeListV2ApiOpenApi2StarMcnGetContractedChallengeListGetRequest): Promise<ApiResponse<StarMcnGetContractedChallengeListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarMcnGetContractedChallengeListGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarMcnGetContractedChallengeListV2Response>({
       method: "GET",

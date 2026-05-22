@@ -34,7 +34,7 @@ export class ToolsAwemeBannedListV30Api {
 
   async openApiV30ToolsAwemeBannedListGetWithHttpInfo(request: ToolsAwemeBannedListV30ApiOpenApiV30ToolsAwemeBannedListGetRequest): Promise<ApiResponse<ToolsAwemeBannedListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsAwemeBannedListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAwemeBannedListV30Response>({
       method: "GET",

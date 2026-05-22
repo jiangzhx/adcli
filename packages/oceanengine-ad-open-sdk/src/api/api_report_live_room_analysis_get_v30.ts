@@ -35,11 +35,11 @@ export class ReportLiveRoomAnalysisGetV30Api {
 
   async openApiV30ReportLiveRoomAnalysisGetGetWithHttpInfo(request: ReportLiveRoomAnalysisGetV30ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest): Promise<ApiResponse<ReportLiveRoomAnalysisGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportLiveRoomAnalysisGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV30ReportLiveRoomAnalysisGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ReportLiveRoomAnalysisGetV30Response>({
       method: "GET",

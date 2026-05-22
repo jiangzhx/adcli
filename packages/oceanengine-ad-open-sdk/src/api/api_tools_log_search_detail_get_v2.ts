@@ -28,11 +28,15 @@ export class ToolsLogSearchDetailGetV2Api {
 
   async openApi2ToolsLogSearchDetailGetGetWithHttpInfo(request: ToolsLogSearchDetailGetV2ApiOpenApi2ToolsLogSearchDetailGetGetRequest): Promise<ApiResponse<ToolsLogSearchDetailGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsLogSearchDetailGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.secondLogId == null) {
-      throw new ApiException("Missing the required parameter 'secondLogId' when calling openApi2ToolsLogSearchDetailGetGet");
+      throw new ApiException("secondLogId is required and must be specified");
+    }
+
+    if (request.secondLogId != null && Number(request.secondLogId) < 1) {
+      throw new ApiException("secondLogId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<ToolsLogSearchDetailGetV2Response>({
       method: "GET",

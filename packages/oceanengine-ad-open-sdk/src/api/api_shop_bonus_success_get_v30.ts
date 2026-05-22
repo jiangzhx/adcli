@@ -28,11 +28,11 @@ export class ShopBonusSuccessGetV30Api {
 
   async openApiV30ShopBonusSuccessGetGetWithHttpInfo(request: ShopBonusSuccessGetV30ApiOpenApiV30ShopBonusSuccessGetGetRequest): Promise<ApiResponse<ShopBonusSuccessGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ShopBonusSuccessGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.promotionId == null) {
-      throw new ApiException("Missing the required parameter 'promotionId' when calling openApiV30ShopBonusSuccessGetGet");
+      throw new ApiException("promotionId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ShopBonusSuccessGetV30Response>({
       method: "GET",

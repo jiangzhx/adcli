@@ -30,7 +30,7 @@ export class DmpCustomAudienceSelectV2Api {
 
   async openApi2DmpCustomAudienceSelectGetWithHttpInfo(request: DmpCustomAudienceSelectV2ApiOpenApi2DmpCustomAudienceSelectGetRequest): Promise<ApiResponse<DmpCustomAudienceSelectV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DmpCustomAudienceSelectGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DmpCustomAudienceSelectV2Response>({
       method: "GET",

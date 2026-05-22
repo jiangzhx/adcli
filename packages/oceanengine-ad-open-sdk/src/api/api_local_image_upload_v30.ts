@@ -31,7 +31,7 @@ export class LocalImageUploadV30Api {
 
   async openApiV30LocalImageUploadPostWithHttpInfo(request: LocalImageUploadV30ApiOpenApiV30LocalImageUploadPostRequest): Promise<ApiResponse<LocalImageUploadV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalImageUploadPost");
+      throw new ApiException("localAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalImageUploadV30Response>({
       method: "POST",

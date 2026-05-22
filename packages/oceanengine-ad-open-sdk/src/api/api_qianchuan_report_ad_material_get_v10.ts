@@ -34,27 +34,35 @@ export class QianchuanReportAdMaterialGetV10Api {
 
   async openApiV10QianchuanReportAdMaterialGetGetWithHttpInfo(request: QianchuanReportAdMaterialGetV10ApiOpenApiV10QianchuanReportAdMaterialGetGetRequest): Promise<ApiResponse<QianchuanReportAdMaterialGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanReportAdMaterialGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanReportAdMaterialGetGet");
+      throw new ApiException("adId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV10QianchuanReportAdMaterialGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV10QianchuanReportAdMaterialGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.fields == null) {
-      throw new ApiException("Missing the required parameter 'fields' when calling openApiV10QianchuanReportAdMaterialGetGet");
+      throw new ApiException("fields is required and must be specified");
+    }
+
+    if (request.fields != null && request.fields.length < 1) {
+      throw new ApiException("fields must have at least 1 elements");
+    }
+
+    if (request.fields != null && request.fields.length > 150) {
+      throw new ApiException("fields must have less than 150 elements");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanReportAdMaterialGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanReportAdMaterialGetV10Response>({
       method: "GET",

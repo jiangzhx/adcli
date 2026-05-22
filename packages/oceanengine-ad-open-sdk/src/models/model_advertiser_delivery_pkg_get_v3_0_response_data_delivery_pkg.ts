@@ -5,7 +5,7 @@ import type { AdvertiserDeliveryPkgGetV30DataDeliveryPkgStatus, AdvertiserDelive
 
 export interface AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkg {
   config_id: number | string;
-  industry_id: number | string[];
+  industry_id: (number | string)[];
   industry_name: string[];
   necessary_combine?: AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgNecessaryCombine;
   permission: AdvertiserDeliveryPkgGetV30ResponseDataDeliveryPkgPermission;

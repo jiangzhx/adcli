@@ -30,7 +30,7 @@ export class FileAudioGetV2Api {
 
   async openApi2FileAudioGetGetWithHttpInfo(request: FileAudioGetV2ApiOpenApi2FileAudioGetGetRequest): Promise<ApiResponse<FileAudioGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileAudioGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileAudioGetV2Response>({
       method: "GET",

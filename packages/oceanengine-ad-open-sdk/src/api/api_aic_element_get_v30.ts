@@ -33,11 +33,11 @@ export class AicElementGetV30Api {
 
   async openApiV30AicElementGetGetWithHttpInfo(request: AicElementGetV30ApiOpenApiV30AicElementGetGetRequest): Promise<ApiResponse<AicElementGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30AicElementGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30AicElementGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AicElementGetV30Response>({
       method: "GET",

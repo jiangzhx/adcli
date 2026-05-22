@@ -32,19 +32,19 @@ export class ReportRtaExpLocalHourlyGetV30Api {
 
   async openApiV30ReportRtaExpLocalHourlyGetGetWithHttpInfo(request: ReportRtaExpLocalHourlyGetV30ApiOpenApiV30ReportRtaExpLocalHourlyGetGetRequest): Promise<ApiResponse<ReportRtaExpLocalHourlyGetV30Response>> {
     if (request.rtaId == null) {
-      throw new ApiException("Missing the required parameter 'rtaId' when calling openApiV30ReportRtaExpLocalHourlyGetGet");
+      throw new ApiException("rtaId is required and must be specified");
     }
 
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportRtaExpLocalHourlyGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV30ReportRtaExpLocalHourlyGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV30ReportRtaExpLocalHourlyGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ReportRtaExpLocalHourlyGetV30Response>({
       method: "GET",

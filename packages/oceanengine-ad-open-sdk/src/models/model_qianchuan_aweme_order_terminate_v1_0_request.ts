@@ -3,6 +3,6 @@
 
 export interface QianchuanAwemeOrderTerminateV10Request {
   advertiser_id: number | string;
-  order_ids: number | string[];
+  order_ids: (number | string)[];
 }
 

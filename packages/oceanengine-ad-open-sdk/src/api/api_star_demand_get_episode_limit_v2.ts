@@ -28,11 +28,11 @@ export class StarDemandGetEpisodeLimitV2Api {
 
   async openApi2StarDemandGetEpisodeLimitGetWithHttpInfo(request: StarDemandGetEpisodeLimitV2ApiOpenApi2StarDemandGetEpisodeLimitGetRequest): Promise<ApiResponse<StarDemandGetEpisodeLimitV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemandGetEpisodeLimitGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.albumId == null) {
-      throw new ApiException("Missing the required parameter 'albumId' when calling openApi2StarDemandGetEpisodeLimitGet");
+      throw new ApiException("albumId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarDemandGetEpisodeLimitV2Response>({
       method: "GET",

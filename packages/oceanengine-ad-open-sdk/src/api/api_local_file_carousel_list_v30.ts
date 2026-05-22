@@ -8,7 +8,7 @@ import type { LocalFileCarouselListV30Order, LocalFileCarouselListV30Response } 
 export interface LocalFileCarouselListV30ApiOpenApiV30LocalFileCarouselListGetRequest {
   localAccountId: number | string;
   keyword?: string;
-  carouselIds?: number | string[];
+  carouselIds?: (number | string)[];
   startTime?: string;
   endTime?: string;
   order?: LocalFileCarouselListV30Order;
@@ -34,7 +34,7 @@ export class LocalFileCarouselListV30Api {
 
   async openApiV30LocalFileCarouselListGetWithHttpInfo(request: LocalFileCarouselListV30ApiOpenApiV30LocalFileCarouselListGetRequest): Promise<ApiResponse<LocalFileCarouselListV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalFileCarouselListGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalFileCarouselListV30Response>({
       method: "GET",

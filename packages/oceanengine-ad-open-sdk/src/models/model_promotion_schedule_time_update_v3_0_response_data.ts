@@ -5,6 +5,6 @@ import type { PromotionScheduleTimeUpdateV30ResponseDataErrorsInner } from "../m
 
 export interface PromotionScheduleTimeUpdateV30ResponseData {
   errors?: PromotionScheduleTimeUpdateV30ResponseDataErrorsInner[];
-  promotion_ids?: number | string[];
+  promotion_ids?: (number | string)[];
 }
 

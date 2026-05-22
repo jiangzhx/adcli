@@ -31,11 +31,11 @@ export class ToolsRubeexPlayableListV2Api {
 
   async openApi2ToolsRubeexPlayableListGetWithHttpInfo(request: ToolsRubeexPlayableListV2ApiOpenApi2ToolsRubeexPlayableListGetRequest): Promise<ApiResponse<ToolsRubeexPlayableListV2Response>> {
     if (request.projectId == null) {
-      throw new ApiException("Missing the required parameter 'projectId' when calling openApi2ToolsRubeexPlayableListGet");
+      throw new ApiException("projectId is required and must be specified");
     }
 
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsRubeexPlayableListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsRubeexPlayableListV2Response>({
       method: "GET",

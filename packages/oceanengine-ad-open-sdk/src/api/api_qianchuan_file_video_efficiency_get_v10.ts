@@ -28,11 +28,19 @@ export class QianchuanFileVideoEfficiencyGetV10Api {
 
   async openApiV10QianchuanFileVideoEfficiencyGetGetWithHttpInfo(request: QianchuanFileVideoEfficiencyGetV10ApiOpenApiV10QianchuanFileVideoEfficiencyGetGetRequest): Promise<ApiResponse<QianchuanFileVideoEfficiencyGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanFileVideoEfficiencyGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.materialIds == null) {
-      throw new ApiException("Missing the required parameter 'materialIds' when calling openApiV10QianchuanFileVideoEfficiencyGetGet");
+      throw new ApiException("materialIds is required and must be specified");
+    }
+
+    if (request.materialIds != null && request.materialIds.length < 1) {
+      throw new ApiException("materialIds must have at least 1 elements");
+    }
+
+    if (request.materialIds != null && request.materialIds.length > 100) {
+      throw new ApiException("materialIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanFileVideoEfficiencyGetV10Response>({
       method: "GET",

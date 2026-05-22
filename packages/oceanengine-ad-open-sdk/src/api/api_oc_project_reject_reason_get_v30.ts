@@ -30,11 +30,15 @@ export class OcProjectRejectReasonGetV30Api {
 
   async openApiV30OcProjectRejectReasonGetGetWithHttpInfo(request: OcProjectRejectReasonGetV30ApiOpenApiV30OcProjectRejectReasonGetGetRequest): Promise<ApiResponse<OcProjectRejectReasonGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30OcProjectRejectReasonGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.projectId == null) {
-      throw new ApiException("Missing the required parameter 'projectId' when calling openApiV30OcProjectRejectReasonGetGet");
+      throw new ApiException("projectId is required and must be specified");
+    }
+
+    if (request.projectId != null && Number(request.projectId) < 1) {
+      throw new ApiException("projectId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<OcProjectRejectReasonGetV30Response>({
       method: "GET",

@@ -29,15 +29,27 @@ export class QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api {
 
   async openApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGetWithHttpInfo(request: QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiOpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGetRequest): Promise<ApiResponse<QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.orderId == null) {
-      throw new ApiException("Missing the required parameter 'orderId' when calling openApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGet");
+      throw new ApiException("orderId is required and must be specified");
     }
 
     if (request.addAmount == null) {
-      throw new ApiException("Missing the required parameter 'addAmount' when calling openApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGet");
+      throw new ApiException("addAmount is required and must be specified");
+    }
+
+    if (request.addAmount != null && Number(request.addAmount) < 100) {
+      throw new ApiException("addAmount must be greater than 100");
+    }
+
+    if (request.addAmount != null && Number(request.addAmount) > 10000) {
+      throw new ApiException("addAmount must be less than 10000");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Response>({
       method: "GET",

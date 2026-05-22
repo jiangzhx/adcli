@@ -33,11 +33,11 @@ export class ToolsEbpMicroGameLinkListV30Api {
 
   async openApiV30ToolsEbpMicroGameLinkListGetWithHttpInfo(request: ToolsEbpMicroGameLinkListV30ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest): Promise<ApiResponse<ToolsEbpMicroGameLinkListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpMicroGameLinkListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30ToolsEbpMicroGameLinkListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpMicroGameLinkListV30Response>({
       method: "GET",

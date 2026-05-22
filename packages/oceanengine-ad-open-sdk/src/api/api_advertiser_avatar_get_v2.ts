@@ -27,7 +27,11 @@ export class AdvertiserAvatarGetV2Api {
 
   async openApi2AdvertiserAvatarGetGetWithHttpInfo(request: AdvertiserAvatarGetV2ApiOpenApi2AdvertiserAvatarGetGetRequest): Promise<ApiResponse<AdvertiserAvatarGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AdvertiserAvatarGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserAvatarGetV2Response>({
       method: "GET",

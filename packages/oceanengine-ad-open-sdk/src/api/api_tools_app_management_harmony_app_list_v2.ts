@@ -32,11 +32,11 @@ export class ToolsAppManagementHarmonyAppListV2Api {
 
   async openApi2ToolsAppManagementHarmonyAppListGetWithHttpInfo(request: ToolsAppManagementHarmonyAppListV2ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest): Promise<ApiResponse<ToolsAppManagementHarmonyAppListV2Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApi2ToolsAppManagementHarmonyAppListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApi2ToolsAppManagementHarmonyAppListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementHarmonyAppListV2Response>({
       method: "GET",

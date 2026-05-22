@@ -34,15 +34,15 @@ export class ToolsEbpAppGameBookListV30Api {
 
   async openApiV30ToolsEbpAppGameBookListGetWithHttpInfo(request: ToolsEbpAppGameBookListV30ApiOpenApiV30ToolsEbpAppGameBookListGetRequest): Promise<ApiResponse<ToolsEbpAppGameBookListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpAppGameBookListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30ToolsEbpAppGameBookListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.assetOwnership == null) {
-      throw new ApiException("Missing the required parameter 'assetOwnership' when calling openApiV30ToolsEbpAppGameBookListGet");
+      throw new ApiException("assetOwnership is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpAppGameBookListV30Response>({
       method: "GET",

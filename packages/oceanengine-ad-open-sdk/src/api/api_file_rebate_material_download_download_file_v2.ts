@@ -27,11 +27,11 @@ export class FileRebateMaterialDownloadDownloadFileV2Api {
 
   async openApi2FileRebateMaterialDownloadDownloadFileGetWithHttpInfo(request: FileRebateMaterialDownloadDownloadFileV2ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest): Promise<ApiResponse<ArrayBuffer>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2FileRebateMaterialDownloadDownloadFileGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.taskId == null) {
-      throw new ApiException("Missing the required parameter 'taskId' when calling openApi2FileRebateMaterialDownloadDownloadFileGet");
+      throw new ApiException("taskId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ArrayBuffer>({
       method: "GET",

@@ -33,19 +33,19 @@ export class AgentQueryRiskPromotionListV2Api {
 
   async openApi2AgentQueryRiskPromotionListGetWithHttpInfo(request: AgentQueryRiskPromotionListV2ApiOpenApi2AgentQueryRiskPromotionListGetRequest): Promise<ApiResponse<AgentQueryRiskPromotionListV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2AgentQueryRiskPromotionListGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.businessType == null) {
-      throw new ApiException("Missing the required parameter 'businessType' when calling openApi2AgentQueryRiskPromotionListGet");
+      throw new ApiException("businessType is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApi2AgentQueryRiskPromotionListGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApi2AgentQueryRiskPromotionListGet");
+      throw new ApiException("endDate is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AgentQueryRiskPromotionListV2Response>({
       method: "GET",

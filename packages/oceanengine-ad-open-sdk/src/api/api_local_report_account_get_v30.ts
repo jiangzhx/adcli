@@ -36,19 +36,19 @@ export class LocalReportAccountGetV30Api {
 
   async openApiV30LocalReportAccountGetGetWithHttpInfo(request: LocalReportAccountGetV30ApiOpenApiV30LocalReportAccountGetGetRequest): Promise<ApiResponse<LocalReportAccountGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalReportAccountGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV30LocalReportAccountGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV30LocalReportAccountGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.metrics == null) {
-      throw new ApiException("Missing the required parameter 'metrics' when calling openApiV30LocalReportAccountGetGet");
+      throw new ApiException("metrics is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalReportAccountGetV30Response>({
       method: "GET",

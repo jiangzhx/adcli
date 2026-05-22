@@ -28,11 +28,15 @@ export class ToolsClueFormDetailV2Api {
 
   async openApi2ToolsClueFormDetailGetWithHttpInfo(request: ToolsClueFormDetailV2ApiOpenApi2ToolsClueFormDetailGetRequest): Promise<ApiResponse<ToolsClueFormDetailV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsClueFormDetailGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.instanceId == null) {
-      throw new ApiException("Missing the required parameter 'instanceId' when calling openApi2ToolsClueFormDetailGet");
+      throw new ApiException("instanceId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsClueFormDetailV2Response>({
       method: "GET",

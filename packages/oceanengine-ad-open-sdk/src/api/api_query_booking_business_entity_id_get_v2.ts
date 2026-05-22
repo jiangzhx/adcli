@@ -7,7 +7,7 @@ import type { QueryBookingBusinessEntityIdGetV2Response } from "../models/index"
 
 export interface QueryBookingBusinessEntityIdGetV2ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest {
   agentId: number | string;
-  orderIds: number | string[];
+  orderIds: (number | string)[];
 }
 
 export class QueryBookingBusinessEntityIdGetV2Api {
@@ -28,11 +28,11 @@ export class QueryBookingBusinessEntityIdGetV2Api {
 
   async openApi2QueryBookingBusinessEntityIdGetGetWithHttpInfo(request: QueryBookingBusinessEntityIdGetV2ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest): Promise<ApiResponse<QueryBookingBusinessEntityIdGetV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2QueryBookingBusinessEntityIdGetGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.orderIds == null) {
-      throw new ApiException("Missing the required parameter 'orderIds' when calling openApi2QueryBookingBusinessEntityIdGetGet");
+      throw new ApiException("orderIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryBookingBusinessEntityIdGetV2Response>({
       method: "GET",

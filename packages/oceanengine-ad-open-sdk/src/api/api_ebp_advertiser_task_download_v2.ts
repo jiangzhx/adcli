@@ -27,7 +27,7 @@ export class EbpAdvertiserTaskDownloadV2Api {
 
   async openApi2EbpAdvertiserTaskDownloadGetWithHttpInfo(request: EbpAdvertiserTaskDownloadV2ApiOpenApi2EbpAdvertiserTaskDownloadGetRequest): Promise<ApiResponse<ArrayBuffer>> {
     if (request.enterpriseOrganizationId == null) {
-      throw new ApiException("Missing the required parameter 'enterpriseOrganizationId' when calling openApi2EbpAdvertiserTaskDownloadGet");
+      throw new ApiException("enterpriseOrganizationId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ArrayBuffer>({
       method: "GET",

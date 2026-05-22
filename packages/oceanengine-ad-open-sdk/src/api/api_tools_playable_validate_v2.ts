@@ -28,11 +28,11 @@ export class ToolsPlayableValidateV2Api {
 
   async openApi2ToolsPlayableValidateGetWithHttpInfo(request: ToolsPlayableValidateV2ApiOpenApi2ToolsPlayableValidateGetRequest): Promise<ApiResponse<ToolsPlayableValidateV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsPlayableValidateGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.playableId == null) {
-      throw new ApiException("Missing the required parameter 'playableId' when calling openApi2ToolsPlayableValidateGet");
+      throw new ApiException("playableId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPlayableValidateV2Response>({
       method: "GET",

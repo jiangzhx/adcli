@@ -32,11 +32,11 @@ export class FileImageAdvertiserV2Api {
 
   async openApi2FileImageAdvertiserPostWithHttpInfo(request: FileImageAdvertiserV2ApiOpenApi2FileImageAdvertiserPostRequest): Promise<ApiResponse<FileImageAdvertiserV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileImageAdvertiserPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.uploadTo == null) {
-      throw new ApiException("Missing the required parameter 'uploadTo' when calling openApi2FileImageAdvertiserPost");
+      throw new ApiException("uploadTo is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileImageAdvertiserV2Response>({
       method: "POST",

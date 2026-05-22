@@ -27,7 +27,7 @@ export class QianchuanAwemeOrderQuotaGetV10Api {
 
   async openApiV10QianchuanAwemeOrderQuotaGetGetWithHttpInfo(request: QianchuanAwemeOrderQuotaGetV10ApiOpenApiV10QianchuanAwemeOrderQuotaGetGetRequest): Promise<ApiResponse<QianchuanAwemeOrderQuotaGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeOrderQuotaGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeOrderQuotaGetV10Response>({
       method: "GET",

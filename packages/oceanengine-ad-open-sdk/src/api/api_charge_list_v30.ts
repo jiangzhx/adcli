@@ -37,23 +37,27 @@ export class ChargeListV30Api {
 
   async openApiV30ChargeListGetWithHttpInfo(request: ChargeListV30ApiOpenApiV30ChargeListGetRequest): Promise<ApiResponse<ChargeListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ChargeListGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.chargeTargetType == null) {
-      throw new ApiException("Missing the required parameter 'chargeTargetType' when calling openApiV30ChargeListGet");
+      throw new ApiException("chargeTargetType is required and must be specified");
     }
 
     if (request.platformList == null) {
-      throw new ApiException("Missing the required parameter 'platformList' when calling openApiV30ChargeListGet");
+      throw new ApiException("platformList is required and must be specified");
     }
 
     if (request.chargeStatusList == null) {
-      throw new ApiException("Missing the required parameter 'chargeStatusList' when calling openApiV30ChargeListGet");
+      throw new ApiException("chargeStatusList is required and must be specified");
     }
 
     if (request.chargeTypeList == null) {
-      throw new ApiException("Missing the required parameter 'chargeTypeList' when calling openApiV30ChargeListGet");
+      throw new ApiException("chargeTypeList is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ChargeListV30Response>({
       method: "GET",

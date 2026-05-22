@@ -29,15 +29,15 @@ export class LocalActionKeywordV30Api {
 
   async openApiV30LocalActionKeywordGetWithHttpInfo(request: LocalActionKeywordV30ApiOpenApiV30LocalActionKeywordGetRequest): Promise<ApiResponse<LocalActionKeywordV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalActionKeywordGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.queryWords == null) {
-      throw new ApiException("Missing the required parameter 'queryWords' when calling openApiV30LocalActionKeywordGet");
+      throw new ApiException("queryWords is required and must be specified");
     }
 
     if (request.actionDays == null) {
-      throw new ApiException("Missing the required parameter 'actionDays' when calling openApiV30LocalActionKeywordGet");
+      throw new ApiException("actionDays is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalActionKeywordV30Response>({
       method: "GET",

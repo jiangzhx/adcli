@@ -39,7 +39,7 @@ export class QianchuanSuggestRoiGoalV10Api {
 
   async openApiV10QianchuanSuggestRoiGoalGetWithHttpInfo(request: QianchuanSuggestRoiGoalV10ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest): Promise<ApiResponse<QianchuanSuggestRoiGoalV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanSuggestRoiGoalGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanSuggestRoiGoalV10Response>({
       method: "GET",

@@ -7,7 +7,7 @@ import type { FileQualityGetV30Response } from "../models/index";
 
 export interface FileQualityGetV30ApiOpenApiV30FileQualityGetGetRequest {
   advertiserId: number | string;
-  materialIds: number | string[];
+  materialIds: (number | string)[];
 }
 
 export class FileQualityGetV30Api {
@@ -28,11 +28,19 @@ export class FileQualityGetV30Api {
 
   async openApiV30FileQualityGetGetWithHttpInfo(request: FileQualityGetV30ApiOpenApiV30FileQualityGetGetRequest): Promise<ApiResponse<FileQualityGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30FileQualityGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.materialIds == null) {
-      throw new ApiException("Missing the required parameter 'materialIds' when calling openApiV30FileQualityGetGet");
+      throw new ApiException("materialIds is required and must be specified");
+    }
+
+    if (request.materialIds != null && request.materialIds.length < 1) {
+      throw new ApiException("materialIds must have at least 1 elements");
+    }
+
+    if (request.materialIds != null && request.materialIds.length > 50) {
+      throw new ApiException("materialIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<FileQualityGetV30Response>({
       method: "GET",

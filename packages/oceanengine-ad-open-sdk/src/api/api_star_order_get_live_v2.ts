@@ -7,7 +7,7 @@ import type { StarOrderGetLiveV2Response } from "../models/index";
 
 export interface StarOrderGetLiveV2ApiOpenApi2StarOrderGetLiveGetRequest {
   starId: number | string;
-  orderIds: number | string[];
+  orderIds: (number | string)[];
 }
 
 export class StarOrderGetLiveV2Api {
@@ -28,11 +28,11 @@ export class StarOrderGetLiveV2Api {
 
   async openApi2StarOrderGetLiveGetWithHttpInfo(request: StarOrderGetLiveV2ApiOpenApi2StarOrderGetLiveGetRequest): Promise<ApiResponse<StarOrderGetLiveV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarOrderGetLiveGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.orderIds == null) {
-      throw new ApiException("Missing the required parameter 'orderIds' when calling openApi2StarOrderGetLiveGet");
+      throw new ApiException("orderIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarOrderGetLiveV2Response>({
       method: "GET",

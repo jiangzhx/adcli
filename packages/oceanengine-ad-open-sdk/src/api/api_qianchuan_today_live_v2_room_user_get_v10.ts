@@ -31,23 +31,23 @@ export class QianchuanTodayLiveV2RoomUserGetV10Api {
 
   async openApiV10QianchuanTodayLiveV2RoomUserGetGetWithHttpInfo(request: QianchuanTodayLiveV2RoomUserGetV10ApiOpenApiV10QianchuanTodayLiveV2RoomUserGetGetRequest): Promise<ApiResponse<QianchuanTodayLiveV2RoomUserGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanTodayLiveV2RoomUserGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.roomId == null) {
-      throw new ApiException("Missing the required parameter 'roomId' when calling openApiV10QianchuanTodayLiveV2RoomUserGetGet");
+      throw new ApiException("roomId is required and must be specified");
     }
 
     if (request.actionEvent == null) {
-      throw new ApiException("Missing the required parameter 'actionEvent' when calling openApiV10QianchuanTodayLiveV2RoomUserGetGet");
+      throw new ApiException("actionEvent is required and must be specified");
     }
 
     if (request.dimension == null) {
-      throw new ApiException("Missing the required parameter 'dimension' when calling openApiV10QianchuanTodayLiveV2RoomUserGetGet");
+      throw new ApiException("dimension is required and must be specified");
     }
 
     if (request.flowSource == null) {
-      throw new ApiException("Missing the required parameter 'flowSource' when calling openApiV10QianchuanTodayLiveV2RoomUserGetGet");
+      throw new ApiException("flowSource is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanTodayLiveV2RoomUserGetV10Response>({
       method: "GET",

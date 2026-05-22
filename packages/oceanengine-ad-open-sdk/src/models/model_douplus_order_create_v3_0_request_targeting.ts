@@ -7,7 +7,7 @@ export interface DouplusOrderCreateV30RequestTargeting {
   age?: DouplusOrderCreateV30TargetingAge[];
   audience_mode: DouplusOrderCreateV30TargetingAudienceMode;
   audience_pkg_id?: number | string;
-  dmp_pkg_ids?: number | string[];
+  dmp_pkg_ids?: (number | string)[];
   gender?: DouplusOrderCreateV30TargetingGender;
 }
 

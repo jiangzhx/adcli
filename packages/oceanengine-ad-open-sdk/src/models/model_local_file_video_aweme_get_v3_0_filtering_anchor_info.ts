@@ -5,7 +5,7 @@ import type { LocalFileVideoAwemeGetV30FilteringAnchorInfoAnchorTypes } from "..
 
 export interface LocalFileVideoAwemeGetV30FilteringAnchorInfo {
   anchor_types: LocalFileVideoAwemeGetV30FilteringAnchorInfoAnchorTypes[];
-  poi_ids?: number | string[];
-  product_ids?: number | string[];
+  poi_ids?: (number | string)[];
+  product_ids?: (number | string)[];
 }
 

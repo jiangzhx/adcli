@@ -31,15 +31,15 @@ export class LocalDeliveryQualificationListV30Api {
 
   async openApiV30LocalDeliveryQualificationListGetWithHttpInfo(request: LocalDeliveryQualificationListV30ApiOpenApiV30LocalDeliveryQualificationListGetRequest): Promise<ApiResponse<LocalDeliveryQualificationListV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalDeliveryQualificationListGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV30LocalDeliveryQualificationListGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApiV30LocalDeliveryQualificationListGet");
+      throw new ApiException("pageSize is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalDeliveryQualificationListV30Response>({
       method: "GET",

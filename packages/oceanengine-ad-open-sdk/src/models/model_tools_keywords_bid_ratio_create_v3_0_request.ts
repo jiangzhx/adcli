@@ -7,7 +7,7 @@ export interface ToolsKeywordsBidRatioCreateV30Request {
   advertiser_id: number | string;
   bid_ratio: number;
   dimension: ToolsKeywordsBidRatioCreateV30Dimension;
-  project_ids?: number | string[];
+  project_ids?: (number | string)[];
   word_list: string[];
 }
 

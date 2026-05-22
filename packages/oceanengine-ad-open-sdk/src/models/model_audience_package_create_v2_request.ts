@@ -18,7 +18,7 @@ export interface AudiencePackageCreateV2Request {
   aweme_fan_categories?: number[];
   aweme_fan_time_scope?: AudiencePackageCreateV2AwemeFanTimeScope;
   aweme_fans_numbers?: number[];
-  business_ids?: number | string[];
+  business_ids?: (number | string)[];
   carrier?: AudiencePackageCreateV2Carrier[];
   carrier_region_optimize?: AudiencePackageCreateV2CarrierRegionOptimize;
   city?: number[];

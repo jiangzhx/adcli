@@ -27,7 +27,11 @@ export class AdvertiserQualificationSelectV2V2Api {
 
   async openApi2AdvertiserQualificationSelectV2GetWithHttpInfo(request: AdvertiserQualificationSelectV2V2ApiOpenApi2AdvertiserQualificationSelectV2GetRequest): Promise<ApiResponse<AdvertiserQualificationSelectV2V2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AdvertiserQualificationSelectV2Get");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserQualificationSelectV2V2Response>({
       method: "GET",

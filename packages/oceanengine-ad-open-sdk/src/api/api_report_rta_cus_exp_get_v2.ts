@@ -32,27 +32,27 @@ export class ReportRtaCusExpGetV2Api {
 
   async openApi2ReportRtaCusExpGetGetWithHttpInfo(request: ReportRtaCusExpGetV2ApiOpenApi2ReportRtaCusExpGetGetRequest): Promise<ApiResponse<ReportRtaCusExpGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ReportRtaCusExpGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.rtaInterfaceId == null) {
-      throw new ApiException("Missing the required parameter 'rtaInterfaceId' when calling openApi2ReportRtaCusExpGetGet");
+      throw new ApiException("rtaInterfaceId is required and must be specified");
     }
 
     if (request.rtaId == null) {
-      throw new ApiException("Missing the required parameter 'rtaId' when calling openApi2ReportRtaCusExpGetGet");
+      throw new ApiException("rtaId is required and must be specified");
     }
 
     if (request.rtaVid == null) {
-      throw new ApiException("Missing the required parameter 'rtaVid' when calling openApi2ReportRtaCusExpGetGet");
+      throw new ApiException("rtaVid is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApi2ReportRtaCusExpGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApi2ReportRtaCusExpGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ReportRtaCusExpGetV2Response>({
       method: "GET",

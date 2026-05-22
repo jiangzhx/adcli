@@ -28,11 +28,11 @@ export class StarUserGetAwemeAuthorIdV2Api {
 
   async openApi2StarUserGetAwemeAuthorIdGetWithHttpInfo(request: StarUserGetAwemeAuthorIdV2ApiOpenApi2StarUserGetAwemeAuthorIdGetRequest): Promise<ApiResponse<StarUserGetAwemeAuthorIdV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarUserGetAwemeAuthorIdGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.authorStarId == null) {
-      throw new ApiException("Missing the required parameter 'authorStarId' when calling openApi2StarUserGetAwemeAuthorIdGet");
+      throw new ApiException("authorStarId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarUserGetAwemeAuthorIdV2Response>({
       method: "GET",

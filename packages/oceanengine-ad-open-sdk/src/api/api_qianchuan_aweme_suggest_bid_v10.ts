@@ -29,11 +29,11 @@ export class QianchuanAwemeSuggestBidV10Api {
 
   async openApiV10QianchuanAwemeSuggestBidGetWithHttpInfo(request: QianchuanAwemeSuggestBidV10ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest): Promise<ApiResponse<QianchuanAwemeSuggestBidV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeSuggestBidGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.deliverySetting == null) {
-      throw new ApiException("Missing the required parameter 'deliverySetting' when calling openApiV10QianchuanAwemeSuggestBidGet");
+      throw new ApiException("deliverySetting is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeSuggestBidV10Response>({
       method: "GET",

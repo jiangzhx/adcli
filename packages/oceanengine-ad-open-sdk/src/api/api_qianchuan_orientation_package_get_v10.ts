@@ -30,7 +30,7 @@ export class QianchuanOrientationPackageGetV10Api {
 
   async openApiV10QianchuanOrientationPackageGetGetWithHttpInfo(request: QianchuanOrientationPackageGetV10ApiOpenApiV10QianchuanOrientationPackageGetGetRequest): Promise<ApiResponse<QianchuanOrientationPackageGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanOrientationPackageGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanOrientationPackageGetV10Response>({
       method: "GET",

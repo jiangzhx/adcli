@@ -7,7 +7,7 @@ import type { BrandMaterialListV30CampaignFilter, BrandMaterialListV30MaterialSt
 
 export interface BrandMaterialListV30ApiOpenApiV30BrandMaterialListGetRequest {
   advertiserId: number | string;
-  materialIds?: number | string[];
+  materialIds?: (number | string)[];
   materialName?: string;
   materialStatus?: BrandMaterialListV30MaterialStatus[];
   iesCoreUserId?: string;
@@ -36,7 +36,7 @@ export class BrandMaterialListV30Api {
 
   async openApiV30BrandMaterialListGetWithHttpInfo(request: BrandMaterialListV30ApiOpenApiV30BrandMaterialListGetRequest): Promise<ApiResponse<BrandMaterialListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandMaterialListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandMaterialListV30Response>({
       method: "GET",

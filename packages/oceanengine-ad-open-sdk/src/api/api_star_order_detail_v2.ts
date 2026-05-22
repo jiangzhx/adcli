@@ -28,11 +28,11 @@ export class StarOrderDetailV2Api {
 
   async openApi2StarOrderDetailGetWithHttpInfo(request: StarOrderDetailV2ApiOpenApi2StarOrderDetailGetRequest): Promise<ApiResponse<StarOrderDetailV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarOrderDetailGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.orderId == null) {
-      throw new ApiException("Missing the required parameter 'orderId' when calling openApi2StarOrderDetailGet");
+      throw new ApiException("orderId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarOrderDetailV2Response>({
       method: "GET",

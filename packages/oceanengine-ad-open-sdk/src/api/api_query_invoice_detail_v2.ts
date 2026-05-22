@@ -6,7 +6,7 @@ import type { QueryInvoiceDetailV2Response } from "../models/index";
 
 
 export interface QueryInvoiceDetailV2ApiOpenApi2QueryInvoiceDetailGetRequest {
-  agentIds: number | string[];
+  agentIds: (number | string)[];
   invoiceSerial?: string;
   invoiceId?: number | string;
 }
@@ -29,7 +29,7 @@ export class QueryInvoiceDetailV2Api {
 
   async openApi2QueryInvoiceDetailGetWithHttpInfo(request: QueryInvoiceDetailV2ApiOpenApi2QueryInvoiceDetailGetRequest): Promise<ApiResponse<QueryInvoiceDetailV2Response>> {
     if (request.agentIds == null) {
-      throw new ApiException("Missing the required parameter 'agentIds' when calling openApi2QueryInvoiceDetailGet");
+      throw new ApiException("agentIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryInvoiceDetailV2Response>({
       method: "GET",

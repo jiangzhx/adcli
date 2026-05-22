@@ -6,8 +6,8 @@ import type { ToolsClueInfoGetV2Response } from "../models/index";
 
 
 export interface ToolsClueInfoGetV2ApiOpenApi2ToolsClueInfoGetGetRequest {
-  advertiserIds: number | string[];
-  clueIds: number | string[];
+  advertiserIds: (number | string)[];
+  clueIds: (number | string)[];
 }
 
 export class ToolsClueInfoGetV2Api {
@@ -28,11 +28,27 @@ export class ToolsClueInfoGetV2Api {
 
   async openApi2ToolsClueInfoGetGetWithHttpInfo(request: ToolsClueInfoGetV2ApiOpenApi2ToolsClueInfoGetGetRequest): Promise<ApiResponse<ToolsClueInfoGetV2Response>> {
     if (request.advertiserIds == null) {
-      throw new ApiException("Missing the required parameter 'advertiserIds' when calling openApi2ToolsClueInfoGetGet");
+      throw new ApiException("advertiserIds is required and must be specified");
+    }
+
+    if (request.advertiserIds != null && request.advertiserIds.length < 1) {
+      throw new ApiException("advertiserIds must have at least 1 elements");
+    }
+
+    if (request.advertiserIds != null && request.advertiserIds.length > 100) {
+      throw new ApiException("advertiserIds must have less than 100 elements");
     }
 
     if (request.clueIds == null) {
-      throw new ApiException("Missing the required parameter 'clueIds' when calling openApi2ToolsClueInfoGetGet");
+      throw new ApiException("clueIds is required and must be specified");
+    }
+
+    if (request.clueIds != null && request.clueIds.length < 1) {
+      throw new ApiException("clueIds must have at least 1 elements");
+    }
+
+    if (request.clueIds != null && request.clueIds.length > 100) {
+      throw new ApiException("clueIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<ToolsClueInfoGetV2Response>({
       method: "GET",

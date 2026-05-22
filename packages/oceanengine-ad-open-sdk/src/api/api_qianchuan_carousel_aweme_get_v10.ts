@@ -33,11 +33,11 @@ export class QianchuanCarouselAwemeGetV10Api {
 
   async openApiV10QianchuanCarouselAwemeGetGetWithHttpInfo(request: QianchuanCarouselAwemeGetV10ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest): Promise<ApiResponse<QianchuanCarouselAwemeGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanCarouselAwemeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanCarouselAwemeGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanCarouselAwemeGetV10Response>({
       method: "GET",

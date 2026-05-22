@@ -6,6 +6,6 @@ import type { QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType } from ".
 export interface QianchuanUniPromotionAdControlTaskStatusUpdateV10Request {
   advertiser_id: number | string;
   opt_type: QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType;
-  task_ids: number | string[];
+  task_ids: (number | string)[];
 }
 

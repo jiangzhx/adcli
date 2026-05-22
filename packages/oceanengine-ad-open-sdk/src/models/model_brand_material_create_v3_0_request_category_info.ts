@@ -6,7 +6,7 @@ export interface BrandMaterialCreateV30RequestCategoryInfo {
   brand_name_id?: number | string;
   cdp_brand_id?: number | string;
   industry_v3?: number;
-  sub_brand_name_ids?: number | string[];
+  sub_brand_name_ids?: (number | string)[];
   yuntu_category_id?: number | string;
   yuntu_spu_id?: string;
 }

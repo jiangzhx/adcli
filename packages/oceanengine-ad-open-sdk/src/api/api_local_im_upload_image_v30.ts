@@ -28,11 +28,11 @@ export class LocalImUploadImageV30Api {
 
   async openApiV30LocalImUploadImagePostWithHttpInfo(request: LocalImUploadImageV30ApiOpenApiV30LocalImUploadImagePostRequest): Promise<ApiResponse<LocalImUploadImageV30Response>> {
     if (request.imageFile == null) {
-      throw new ApiException("Missing the required parameter 'imageFile' when calling openApiV30LocalImUploadImagePost");
+      throw new ApiException("imageFile is required and must be specified");
     }
 
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalImUploadImagePost");
+      throw new ApiException("localAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalImUploadImageV30Response>({
       method: "POST",

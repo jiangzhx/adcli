@@ -7,7 +7,7 @@ import type { StarOrderGetVideoV2Response } from "../models/index";
 
 export interface StarOrderGetVideoV2ApiOpenApi2StarOrderGetVideoGetRequest {
   starId: number | string;
-  orderIds: number | string[];
+  orderIds: (number | string)[];
 }
 
 export class StarOrderGetVideoV2Api {
@@ -28,11 +28,11 @@ export class StarOrderGetVideoV2Api {
 
   async openApi2StarOrderGetVideoGetWithHttpInfo(request: StarOrderGetVideoV2ApiOpenApi2StarOrderGetVideoGetRequest): Promise<ApiResponse<StarOrderGetVideoV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarOrderGetVideoGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.orderIds == null) {
-      throw new ApiException("Missing the required parameter 'orderIds' when calling openApi2StarOrderGetVideoGet");
+      throw new ApiException("orderIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarOrderGetVideoV2Response>({
       method: "GET",

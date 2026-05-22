@@ -28,11 +28,11 @@ export class BrandUploadImageV30Api {
 
   async openApiV30BrandUploadImagePostWithHttpInfo(request: BrandUploadImageV30ApiOpenApiV30BrandUploadImagePostRequest): Promise<ApiResponse<BrandUploadImageV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandUploadImagePost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.imageFile == null) {
-      throw new ApiException("Missing the required parameter 'imageFile' when calling openApiV30BrandUploadImagePost");
+      throw new ApiException("imageFile is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandUploadImageV30Response>({
       method: "POST",

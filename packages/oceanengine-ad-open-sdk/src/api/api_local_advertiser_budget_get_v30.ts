@@ -6,7 +6,7 @@ import type { LocalAdvertiserBudgetGetV30Response } from "../models/index";
 
 
 export interface LocalAdvertiserBudgetGetV30ApiOpenApiV30LocalAdvertiserBudgetGetGetRequest {
-  localAccountId: number | string[];
+  localAccountId: (number | string)[];
 }
 
 export class LocalAdvertiserBudgetGetV30Api {
@@ -27,7 +27,7 @@ export class LocalAdvertiserBudgetGetV30Api {
 
   async openApiV30LocalAdvertiserBudgetGetGetWithHttpInfo(request: LocalAdvertiserBudgetGetV30ApiOpenApiV30LocalAdvertiserBudgetGetGetRequest): Promise<ApiResponse<LocalAdvertiserBudgetGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalAdvertiserBudgetGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalAdvertiserBudgetGetV30Response>({
       method: "GET",

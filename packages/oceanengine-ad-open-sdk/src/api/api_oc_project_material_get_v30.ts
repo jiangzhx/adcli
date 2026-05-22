@@ -31,15 +31,23 @@ export class OcProjectMaterialGetV30Api {
 
   async openApiV30OcProjectMaterialGetGetWithHttpInfo(request: OcProjectMaterialGetV30ApiOpenApiV30OcProjectMaterialGetGetRequest): Promise<ApiResponse<OcProjectMaterialGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30OcProjectMaterialGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.projectId == null) {
-      throw new ApiException("Missing the required parameter 'projectId' when calling openApiV30OcProjectMaterialGetGet");
+      throw new ApiException("projectId is required and must be specified");
+    }
+
+    if (request.projectId != null && Number(request.projectId) < 1) {
+      throw new ApiException("projectId must be greater than 1");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV30OcProjectMaterialGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<OcProjectMaterialGetV30Response>({
       method: "GET",

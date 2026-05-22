@@ -29,15 +29,19 @@ export class ToolsClueClueOverviewQueryV2Api {
 
   async openApi2ToolsClueClueOverviewQueryGetWithHttpInfo(request: ToolsClueClueOverviewQueryV2ApiOpenApi2ToolsClueClueOverviewQueryGetRequest): Promise<ApiResponse<ToolsClueClueOverviewQueryV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsClueClueOverviewQueryGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApi2ToolsClueClueOverviewQueryGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApi2ToolsClueClueOverviewQueryGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsClueClueOverviewQueryV2Response>({
       method: "GET",

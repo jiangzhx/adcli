@@ -30,7 +30,7 @@ export class UniProjectListGetV30Api {
 
   async openApiV30UniProjectListGetGetWithHttpInfo(request: UniProjectListGetV30ApiOpenApiV30UniProjectListGetGetRequest): Promise<ApiResponse<UniProjectListGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30UniProjectListGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<UniProjectListGetV30Response>({
       method: "GET",

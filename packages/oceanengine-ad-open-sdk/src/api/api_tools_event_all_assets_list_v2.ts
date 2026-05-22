@@ -30,7 +30,7 @@ export class ToolsEventAllAssetsListV2Api {
 
   async openApi2ToolsEventAllAssetsListGetWithHttpInfo(request: ToolsEventAllAssetsListV2ApiOpenApi2ToolsEventAllAssetsListGetRequest): Promise<ApiResponse<ToolsEventAllAssetsListV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsEventAllAssetsListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEventAllAssetsListV2Response>({
       method: "GET",

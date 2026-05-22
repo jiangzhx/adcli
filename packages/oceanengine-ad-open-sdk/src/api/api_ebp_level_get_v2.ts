@@ -27,7 +27,7 @@ export class EbpLevelGetV2Api {
 
   async openApi2EbpLevelGetGetWithHttpInfo(request: EbpLevelGetV2ApiOpenApi2EbpLevelGetGetRequest): Promise<ApiResponse<EbpLevelGetV2Response>> {
     if (request.enterpriseOrganizationId == null) {
-      throw new ApiException("Missing the required parameter 'enterpriseOrganizationId' when calling openApi2EbpLevelGetGet");
+      throw new ApiException("enterpriseOrganizationId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EbpLevelGetV2Response>({
       method: "GET",

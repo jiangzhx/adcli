@@ -31,11 +31,11 @@ export class LocalPoiGetV30Api {
 
   async openApiV30LocalPoiGetGetWithHttpInfo(request: LocalPoiGetV30ApiOpenApiV30LocalPoiGetGetRequest): Promise<ApiResponse<LocalPoiGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalPoiGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.localDeliveryScene == null) {
-      throw new ApiException("Missing the required parameter 'localDeliveryScene' when calling openApiV30LocalPoiGetGet");
+      throw new ApiException("localDeliveryScene is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalPoiGetV30Response>({
       method: "GET",

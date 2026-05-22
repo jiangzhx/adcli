@@ -12,7 +12,7 @@ export interface BrandOrderListV30Filter {
   create_start_time?: string;
   end_time?: string;
   gd_send_type?: BrandOrderListV30FilterGdSendType;
-  order_ids?: number | string[];
+  order_ids?: (number | string)[];
   order_name?: string;
   order_status?: BrandOrderListV30FilterOrderStatus[];
   pro_type?: BrandOrderListV30FilterProType;

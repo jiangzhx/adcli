@@ -33,19 +33,31 @@ export class ToolsOrangeSiteGetV30Api {
 
   async openApiV30ToolsOrangeSiteGetGetWithHttpInfo(request: ToolsOrangeSiteGetV30ApiOpenApiV30ToolsOrangeSiteGetGetRequest): Promise<ApiResponse<ToolsOrangeSiteGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsOrangeSiteGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV30ToolsOrangeSiteGetGet");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApiV30ToolsOrangeSiteGetGet");
+      throw new ApiException("pageSize is required and must be specified");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) < 1) {
+      throw new ApiException("pageSize must be greater than 1");
     }
 
     if (request.optimizeGoal == null) {
-      throw new ApiException("Missing the required parameter 'optimizeGoal' when calling openApiV30ToolsOrangeSiteGetGet");
+      throw new ApiException("optimizeGoal is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsOrangeSiteGetV30Response>({
       method: "GET",

@@ -29,11 +29,11 @@ export class QianchuanAwemeProductAvailableGetV10Api {
 
   async openApiV10QianchuanAwemeProductAvailableGetGetWithHttpInfo(request: QianchuanAwemeProductAvailableGetV10ApiOpenApiV10QianchuanAwemeProductAvailableGetGetRequest): Promise<ApiResponse<QianchuanAwemeProductAvailableGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeProductAvailableGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanAwemeProductAvailableGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeProductAvailableGetV10Response>({
       method: "GET",

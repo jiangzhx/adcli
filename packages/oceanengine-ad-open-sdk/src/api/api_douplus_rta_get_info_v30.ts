@@ -27,7 +27,7 @@ export class DouplusRtaGetInfoV30Api {
 
   async openApiV30DouplusRtaGetInfoGetWithHttpInfo(request: DouplusRtaGetInfoV30ApiOpenApiV30DouplusRtaGetInfoGetRequest): Promise<ApiResponse<DouplusRtaGetInfoV30Response>> {
     if (request.awemeSecUid == null) {
-      throw new ApiException("Missing the required parameter 'awemeSecUid' when calling openApiV30DouplusRtaGetInfoGet");
+      throw new ApiException("awemeSecUid is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DouplusRtaGetInfoV30Response>({
       method: "GET",

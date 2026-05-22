@@ -30,7 +30,11 @@ export class ToolsAwemeAuthListV2Api {
 
   async openApi2ToolsAwemeAuthListGetWithHttpInfo(request: ToolsAwemeAuthListV2ApiOpenApi2ToolsAwemeAuthListGetRequest): Promise<ApiResponse<ToolsAwemeAuthListV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsAwemeAuthListGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAwemeAuthListV2Response>({
       method: "GET",

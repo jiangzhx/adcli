@@ -28,11 +28,11 @@ export class QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api {
 
   async openApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetWithHttpInfo(request: QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest): Promise<ApiResponse<QianchuanQianchuanReportTodayLiveRoomConfigGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.dataTopics == null) {
-      throw new ApiException("Missing the required parameter 'dataTopics' when calling openApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGet");
+      throw new ApiException("dataTopics is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanQianchuanReportTodayLiveRoomConfigGetV10Response>({
       method: "GET",

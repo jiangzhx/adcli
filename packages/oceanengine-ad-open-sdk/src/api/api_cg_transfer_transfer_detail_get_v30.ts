@@ -31,15 +31,15 @@ export class CgTransferTransferDetailGetV30Api {
 
   async openApiV30CgTransferTransferDetailGetGetWithHttpInfo(request: CgTransferTransferDetailGetV30ApiOpenApiV30CgTransferTransferDetailGetGetRequest): Promise<ApiResponse<CgTransferTransferDetailGetV30Response>> {
     if (request.organizationId == null) {
-      throw new ApiException("Missing the required parameter 'organizationId' when calling openApiV30CgTransferTransferDetailGetGet");
+      throw new ApiException("organizationId is required and must be specified");
     }
 
     if (request.bizRequestNo == null) {
-      throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferTransferDetailGetGet");
+      throw new ApiException("bizRequestNo is required and must be specified");
     }
 
     if (request.platform == null) {
-      throw new ApiException("Missing the required parameter 'platform' when calling openApiV30CgTransferTransferDetailGetGet");
+      throw new ApiException("platform is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferTransferDetailGetV30Response>({
       method: "GET",

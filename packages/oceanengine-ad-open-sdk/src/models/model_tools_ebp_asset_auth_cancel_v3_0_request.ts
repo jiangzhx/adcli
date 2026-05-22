@@ -6,6 +6,6 @@ import type { ToolsEbpAssetAuthCancelV30AccountType } from "../models/index";
 export interface ToolsEbpAssetAuthCancelV30Request {
   account_id: number | string;
   account_type: ToolsEbpAssetAuthCancelV30AccountType;
-  opt_ids?: number | string[];
+  opt_ids?: (number | string)[];
 }
 

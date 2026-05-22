@@ -1,4 +1,4 @@
-import type { ApiSpec, ModelSpec } from "./spec";
+import type { ApiCheckSpec, ApiSpec, ModelSpec } from "./spec";
 
 export function parseGoApiSource(source: string, filename: string): ApiSpec {
   const serviceName = requireMatch(source, /type\s+(\w+ApiService)\s+service/, filename, "service name");
@@ -9,7 +9,8 @@ export function parseGoApiSource(source: string, filename: string): ApiSpec {
 
   const requestType = requestMatch[1];
   const params = parseRequestFields(requestMatch[2]);
-  const required = new Set([...source.matchAll(/if\s+r\.(\w+)\s*==\s*nil\s*\{/g)].map((match) => match[1]));
+  const checks = parseChecks(source);
+  const required = new Set(checks.filter((check) => check.kind === "required").map((check) => check.paramName));
   const queryParams = parseQueryParams(source, params);
   const formParams = parseFormParams(source);
   const fileParams = parseFileParams(source);
@@ -22,6 +23,7 @@ export function parseGoApiSource(source: string, filename: string): ApiSpec {
     path: requireMatch(source, /localVarPath\s*:=\s*localBasePath\s*\+\s*"([^"]+)"/, filename, "localVarPath"),
     responseType: parseResponseType(source, filename),
     params: params.map((param) => ({ ...param, required: required.has(param.name) })),
+    checks,
     queryParams,
     formParams,
     fileParams,
@@ -30,6 +32,46 @@ export function parseGoApiSource(source: string, filename: string): ApiSpec {
     contentTypes: parseStringArray(source, /localVarHTTPContentTypes\s*:=\s*\[\]string\s*\{([^}]*)\}/),
     bodyParam: bodyParam ? `request.${bodyParam}` : undefined,
   };
+}
+
+function parseChecks(source: string): ApiCheckSpec[] {
+  return [...source.matchAll(/if\s+([^{\n]+?)\s*\{\s*\n\s*return\s+localVarReturnValue,\s+nil,\s+ReportError\("([^"]+)"\)/g)]
+    .map((match) => parseCheckCondition(match[1].trim(), match[2]))
+    .filter((check): check is ApiCheckSpec => Boolean(check));
+}
+
+function parseCheckCondition(condition: string, message: string): ApiCheckSpec | undefined {
+  const required = condition.match(/^r\.(\w+)\s*==\s*nil$/);
+  if (required) {
+    return { kind: "required", paramName: required[1], message };
+  }
+
+  const number = condition.match(/^\*r\.(\w+)\s*([<>])\s*(-?\d+(?:\.\d+)?(?:e[+-]?\d+)?)$/i);
+  if (number) {
+    return { kind: "number", paramName: number[1], operator: number[2] as "<" | ">", value: normalizeNumberLiteral(number[3]), message };
+  }
+
+  const length = condition.match(/^len\(\*r\.(\w+)\)\s*([<>])\s*(-?\d+(?:\.\d+)?)$/);
+  if (length) {
+    return { kind: "length", paramName: length[1], operator: length[2] as "<" | ">", value: normalizeNumberLiteral(length[3]), message };
+  }
+
+  const stringLength = condition.match(/^strlen\(\*r\.(\w+)\)\s*([<>])\s*(-?\d+(?:\.\d+)?)$/);
+  if (stringLength) {
+    return {
+      kind: "stringLength",
+      paramName: stringLength[1],
+      operator: stringLength[2] as "<" | ">",
+      value: normalizeNumberLiteral(stringLength[3]),
+      message,
+    };
+  }
+
+  return undefined;
+}
+
+function normalizeNumberLiteral(value: string) {
+  return value.replace("E", "e");
 }
 
 export function parseGoModelSource(source: string, filename: string): ModelSpec {

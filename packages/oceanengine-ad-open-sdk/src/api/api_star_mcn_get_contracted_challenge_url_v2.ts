@@ -30,11 +30,11 @@ export class StarMcnGetContractedChallengeUrlV2Api {
 
   async openApi2StarMcnGetContractedChallengeUrlGetWithHttpInfo(request: StarMcnGetContractedChallengeUrlV2ApiOpenApi2StarMcnGetContractedChallengeUrlGetRequest): Promise<ApiResponse<StarMcnGetContractedChallengeUrlV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarMcnGetContractedChallengeUrlGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.demandId == null) {
-      throw new ApiException("Missing the required parameter 'demandId' when calling openApi2StarMcnGetContractedChallengeUrlGet");
+      throw new ApiException("demandId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarMcnGetContractedChallengeUrlV2Response>({
       method: "GET",

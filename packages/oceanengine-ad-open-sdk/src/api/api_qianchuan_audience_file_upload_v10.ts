@@ -28,11 +28,11 @@ export class QianchuanAudienceFileUploadV10Api {
 
   async openApiV10QianchuanAudienceFileUploadPostWithHttpInfo(request: QianchuanAudienceFileUploadV10ApiOpenApiV10QianchuanAudienceFileUploadPostRequest): Promise<ApiResponse<QianchuanAudienceFileUploadV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAudienceFileUploadPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.file == null) {
-      throw new ApiException("Missing the required parameter 'file' when calling openApiV10QianchuanAudienceFileUploadPost");
+      throw new ApiException("file is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAudienceFileUploadV10Response>({
       method: "POST",

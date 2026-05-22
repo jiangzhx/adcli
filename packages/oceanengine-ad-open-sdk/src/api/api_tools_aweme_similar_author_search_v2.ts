@@ -29,11 +29,15 @@ export class ToolsAwemeSimilarAuthorSearchV2Api {
 
   async openApi2ToolsAwemeSimilarAuthorSearchGetWithHttpInfo(request: ToolsAwemeSimilarAuthorSearchV2ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest): Promise<ApiResponse<ToolsAwemeSimilarAuthorSearchV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsAwemeSimilarAuthorSearchGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApi2ToolsAwemeSimilarAuthorSearchGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAwemeSimilarAuthorSearchV2Response>({
       method: "GET",

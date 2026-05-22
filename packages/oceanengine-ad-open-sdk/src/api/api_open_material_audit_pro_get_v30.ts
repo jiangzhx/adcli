@@ -28,11 +28,11 @@ export class OpenMaterialAuditProGetV30Api {
 
   async openApiV30OpenMaterialAuditProGetGetWithHttpInfo(request: OpenMaterialAuditProGetV30ApiOpenApiV30OpenMaterialAuditProGetGetRequest): Promise<ApiResponse<OpenMaterialAuditProGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30OpenMaterialAuditProGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.runId == null) {
-      throw new ApiException("Missing the required parameter 'runId' when calling openApiV30OpenMaterialAuditProGetGet");
+      throw new ApiException("runId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<OpenMaterialAuditProGetV30Response>({
       method: "GET",

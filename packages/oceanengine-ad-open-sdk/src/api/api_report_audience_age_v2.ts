@@ -9,7 +9,7 @@ export interface ReportAudienceAgeV2ApiOpenApi2ReportAudienceAgeGetRequest {
   advertiserId?: number | string;
   endDate?: string;
   idType?: ReportAudienceAgeV2IdType;
-  ids?: number | string[];
+  ids?: (number | string)[];
   metrics?: string[];
   startDate?: string;
 }

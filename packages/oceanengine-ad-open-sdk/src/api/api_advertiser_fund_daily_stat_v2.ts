@@ -32,7 +32,7 @@ export class AdvertiserFundDailyStatV2Api {
 
   async openApi2AdvertiserFundDailyStatGetWithHttpInfo(request: AdvertiserFundDailyStatV2ApiOpenApi2AdvertiserFundDailyStatGetRequest): Promise<ApiResponse<AdvertiserFundDailyStatV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AdvertiserFundDailyStatGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserFundDailyStatV2Response>({
       method: "GET",

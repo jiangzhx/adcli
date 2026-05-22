@@ -5,6 +5,6 @@ import type { PromotionDeleteV30ResponseDataErrorsInner } from "../models/index"
 
 export interface PromotionDeleteV30ResponseData {
   errors?: PromotionDeleteV30ResponseDataErrorsInner[];
-  promotion_ids?: number | string[];
+  promotion_ids?: (number | string)[];
 }
 

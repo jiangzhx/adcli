@@ -6,6 +6,6 @@ import type { ToolsPreAuditGetV2FilterMaterialType } from "../models/index";
 export interface ToolsPreAuditGetV2Filter {
   contents?: string[];
   material_type?: ToolsPreAuditGetV2FilterMaterialType;
-  pre_audit_ids?: number | string[];
+  pre_audit_ids?: (number | string)[];
 }
 

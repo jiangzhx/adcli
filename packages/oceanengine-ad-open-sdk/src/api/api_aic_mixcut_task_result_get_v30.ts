@@ -29,15 +29,15 @@ export class AicMixcutTaskResultGetV30Api {
 
   async openApiV30AicMixcutTaskResultGetGetWithHttpInfo(request: AicMixcutTaskResultGetV30ApiOpenApiV30AicMixcutTaskResultGetGetRequest): Promise<ApiResponse<AicMixcutTaskResultGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30AicMixcutTaskResultGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30AicMixcutTaskResultGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.taskId == null) {
-      throw new ApiException("Missing the required parameter 'taskId' when calling openApiV30AicMixcutTaskResultGetGet");
+      throw new ApiException("taskId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AicMixcutTaskResultGetV30Response>({
       method: "GET",

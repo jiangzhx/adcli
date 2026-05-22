@@ -3,7 +3,7 @@
 
 export interface PromotionMaterialDeleteV30Request {
   advertiser_id: number | string;
-  material_id: number | string[];
+  material_id: (number | string)[];
   promotion_id: number | string;
 }
 

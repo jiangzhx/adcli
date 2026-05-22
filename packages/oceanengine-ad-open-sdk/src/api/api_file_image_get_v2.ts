@@ -30,7 +30,7 @@ export class FileImageGetV2Api {
 
   async openApi2FileImageGetGetWithHttpInfo(request: FileImageGetV2ApiOpenApi2FileImageGetGetRequest): Promise<ApiResponse<FileImageGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileImageGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileImageGetV2Response>({
       method: "GET",

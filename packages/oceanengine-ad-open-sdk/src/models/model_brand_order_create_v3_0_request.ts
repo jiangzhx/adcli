@@ -20,6 +20,6 @@ export interface BrandOrderCreateV30Request {
   pricing_type: BrandOrderCreateV30PricingType;
   pro_type: BrandOrderCreateV30ProType;
   remark?: string;
-  staff_ids?: number | string[];
+  staff_ids?: (number | string)[];
 }
 

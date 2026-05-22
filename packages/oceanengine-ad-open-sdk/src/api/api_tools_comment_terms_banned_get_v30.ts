@@ -31,7 +31,7 @@ export class ToolsCommentTermsBannedGetV30Api {
 
   async openApiV30ToolsCommentTermsBannedGetGetWithHttpInfo(request: ToolsCommentTermsBannedGetV30ApiOpenApiV30ToolsCommentTermsBannedGetGetRequest): Promise<ApiResponse<ToolsCommentTermsBannedGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsCommentTermsBannedGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsCommentTermsBannedGetV30Response>({
       method: "GET",

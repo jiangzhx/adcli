@@ -3,6 +3,6 @@
 
 export interface BudgetGroupDeleteV30Request {
   advertiser_id: number | string;
-  budget_group_ids: number | string[];
+  budget_group_ids: (number | string)[];
 }
 

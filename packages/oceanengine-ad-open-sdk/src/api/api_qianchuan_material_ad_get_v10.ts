@@ -38,35 +38,43 @@ export class QianchuanMaterialAdGetV10Api {
 
   async openApiV10QianchuanMaterialAdGetGetWithHttpInfo(request: QianchuanMaterialAdGetV10ApiOpenApiV10QianchuanMaterialAdGetGetRequest): Promise<ApiResponse<QianchuanMaterialAdGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanMaterialAdGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.materialId == null) {
-      throw new ApiException("Missing the required parameter 'materialId' when calling openApiV10QianchuanMaterialAdGetGet");
+      throw new ApiException("materialId is required and must be specified");
     }
 
     if (request.materialType == null) {
-      throw new ApiException("Missing the required parameter 'materialType' when calling openApiV10QianchuanMaterialAdGetGet");
+      throw new ApiException("materialType is required and must be specified");
     }
 
     if (request.marketingScene == null) {
-      throw new ApiException("Missing the required parameter 'marketingScene' when calling openApiV10QianchuanMaterialAdGetGet");
+      throw new ApiException("marketingScene is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanMaterialAdGetGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV10QianchuanMaterialAdGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV10QianchuanMaterialAdGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
 
     if (request.fields == null) {
-      throw new ApiException("Missing the required parameter 'fields' when calling openApiV10QianchuanMaterialAdGetGet");
+      throw new ApiException("fields is required and must be specified");
+    }
+
+    if (request.fields != null && request.fields.length < 1) {
+      throw new ApiException("fields must have at least 1 elements");
+    }
+
+    if (request.fields != null && request.fields.length > 20) {
+      throw new ApiException("fields must have less than 20 elements");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanMaterialAdGetV10Response>({
       method: "GET",

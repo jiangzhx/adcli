@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface DpaProductDetailGetV2Filtering {
-  product_ids?: number | string[];
+  product_ids?: (number | string)[];
 }
 

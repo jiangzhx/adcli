@@ -28,11 +28,11 @@ export class CustomerCenterAccountOfflineListV30Api {
 
   async openApiV30CustomerCenterAccountOfflineListGetWithHttpInfo(request: CustomerCenterAccountOfflineListV30ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest): Promise<ApiResponse<CustomerCenterAccountOfflineListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30CustomerCenterAccountOfflineListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.filter == null) {
-      throw new ApiException("Missing the required parameter 'filter' when calling openApiV30CustomerCenterAccountOfflineListGet");
+      throw new ApiException("filter is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CustomerCenterAccountOfflineListV30Response>({
       method: "GET",

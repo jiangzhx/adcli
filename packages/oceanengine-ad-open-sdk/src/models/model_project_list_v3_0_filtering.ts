@@ -10,7 +10,7 @@ export interface ProjectListV30Filtering {
   budget_group_id?: number | string;
   delivery_mode?: ProjectListV30FilteringDeliveryMode;
   delivery_type?: ProjectListV30FilteringDeliveryType;
-  ids?: number | string[];
+  ids?: (number | string)[];
   inventory_type?: ProjectListV30FilteringInventoryType;
   landing_type?: ProjectListV30FilteringLandingType;
   marketing_goal?: ProjectListV30FilteringMarketingGoal;

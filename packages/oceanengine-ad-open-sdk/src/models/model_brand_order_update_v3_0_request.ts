@@ -14,6 +14,6 @@ export interface BrandOrderUpdateV30Request {
   order_name?: string;
   policy_no?: string;
   remark?: string;
-  staff_ids?: number | string[];
+  staff_ids?: (number | string)[];
 }
 

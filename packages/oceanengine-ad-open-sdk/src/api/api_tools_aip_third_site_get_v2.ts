@@ -28,11 +28,11 @@ export class ToolsAipThirdSiteGetV2Api {
 
   async openApi2ToolsAipThirdSiteGetGetWithHttpInfo(request: ToolsAipThirdSiteGetV2ApiOpenApi2ToolsAipThirdSiteGetGetRequest): Promise<ApiResponse<ToolsAipThirdSiteGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsAipThirdSiteGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.siteId == null) {
-      throw new ApiException("Missing the required parameter 'siteId' when calling openApi2ToolsAipThirdSiteGetGet");
+      throw new ApiException("siteId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAipThirdSiteGetV2Response>({
       method: "GET",

@@ -30,19 +30,35 @@ export class ToolsClueCallVirtualNumberGetV2Api {
 
   async openApi2ToolsClueCallVirtualNumberGetGetWithHttpInfo(request: ToolsClueCallVirtualNumberGetV2ApiOpenApi2ToolsClueCallVirtualNumberGetGetRequest): Promise<ApiResponse<ToolsClueCallVirtualNumberGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsClueCallVirtualNumberGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.clueId == null) {
-      throw new ApiException("Missing the required parameter 'clueId' when calling openApi2ToolsClueCallVirtualNumberGetGet");
+      throw new ApiException("clueId is required and must be specified");
+    }
+
+    if (request.clueId != null && Number(request.clueId) < 1) {
+      throw new ApiException("clueId must be greater than 1");
     }
 
     if (request.callerNumber == null) {
-      throw new ApiException("Missing the required parameter 'callerNumber' when calling openApi2ToolsClueCallVirtualNumberGetGet");
+      throw new ApiException("callerNumber is required and must be specified");
+    }
+
+    if (request.callerNumber != null && Array.from(String(request.callerNumber)).length < 11) {
+      throw new ApiException("callerNumber must have at least 11 elements");
+    }
+
+    if (request.callerNumber != null && Array.from(String(request.callerNumber)).length > 11) {
+      throw new ApiException("callerNumber must have less than 11 elements");
     }
 
     if (request.calleeNumber == null) {
-      throw new ApiException("Missing the required parameter 'calleeNumber' when calling openApi2ToolsClueCallVirtualNumberGetGet");
+      throw new ApiException("calleeNumber is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsClueCallVirtualNumberGetV2Response>({
       method: "GET",

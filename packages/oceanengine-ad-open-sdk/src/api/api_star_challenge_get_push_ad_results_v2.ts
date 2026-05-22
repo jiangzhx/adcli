@@ -8,7 +8,7 @@ import type { StarChallengeGetPushAdResultsV2Response } from "../models/index";
 export interface StarChallengeGetPushAdResultsV2ApiOpenApi2StarChallengeGetPushAdResultsGetRequest {
   starId: number | string;
   challengeTaskId: number | string;
-  itemIds: number | string[];
+  itemIds: (number | string)[];
 }
 
 export class StarChallengeGetPushAdResultsV2Api {
@@ -29,15 +29,15 @@ export class StarChallengeGetPushAdResultsV2Api {
 
   async openApi2StarChallengeGetPushAdResultsGetWithHttpInfo(request: StarChallengeGetPushAdResultsV2ApiOpenApi2StarChallengeGetPushAdResultsGetRequest): Promise<ApiResponse<StarChallengeGetPushAdResultsV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarChallengeGetPushAdResultsGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.challengeTaskId == null) {
-      throw new ApiException("Missing the required parameter 'challengeTaskId' when calling openApi2StarChallengeGetPushAdResultsGet");
+      throw new ApiException("challengeTaskId is required and must be specified");
     }
 
     if (request.itemIds == null) {
-      throw new ApiException("Missing the required parameter 'itemIds' when calling openApi2StarChallengeGetPushAdResultsGet");
+      throw new ApiException("itemIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarChallengeGetPushAdResultsV2Response>({
       method: "GET",

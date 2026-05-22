@@ -3,6 +3,6 @@
 
 export interface KeywordDeleteV30Request {
   advertiser_id: number | string;
-  keyword_ids: number | string[];
+  keyword_ids: (number | string)[];
 }
 

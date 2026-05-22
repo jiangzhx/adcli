@@ -32,15 +32,15 @@ export class LocalChargeListV30Api {
 
   async openApiV30LocalChargeListGetWithHttpInfo(request: LocalChargeListV30ApiOpenApiV30LocalChargeListGetRequest): Promise<ApiResponse<LocalChargeListV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalChargeListGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30LocalChargeListGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30LocalChargeListGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalChargeListV30Response>({
       method: "GET",

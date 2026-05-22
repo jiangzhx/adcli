@@ -36,23 +36,23 @@ export class QianchuanMaterialGetV10Api {
 
   async openApiV10QianchuanMaterialGetGetWithHttpInfo(request: QianchuanMaterialGetV10ApiOpenApiV10QianchuanMaterialGetGetRequest): Promise<ApiResponse<QianchuanMaterialGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanMaterialGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanMaterialGetGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
 
     if (request.marketingScene == null) {
-      throw new ApiException("Missing the required parameter 'marketingScene' when calling openApiV10QianchuanMaterialGetGet");
+      throw new ApiException("marketingScene is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanMaterialGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
 
     if (request.fields == null) {
-      throw new ApiException("Missing the required parameter 'fields' when calling openApiV10QianchuanMaterialGetGet");
+      throw new ApiException("fields is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanMaterialGetV10Response>({
       method: "GET",

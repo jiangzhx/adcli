@@ -12,7 +12,7 @@ export interface AdGetV2ResponseDataAudience {
   android_osv?: AdGetV2DataAudienceAndroidOsv;
   app_behavior_target?: AdGetV2DataAudienceAppBehaviorTarget;
   app_category?: number[];
-  app_ids?: number | string[];
+  app_ids?: (number | string)[];
   article_category?: AdGetV2DataAudienceArticleCategory[];
   auto_extend_targets?: AdGetV2DataAudienceAutoExtendTargets[];
   aweme_fan_accounts?: number[];
@@ -20,7 +20,7 @@ export interface AdGetV2ResponseDataAudience {
   aweme_fan_categories?: number[];
   aweme_fan_time_scope?: AdGetV2DataAudienceAwemeFanTimeScope;
   aweme_fans_numbers?: number[];
-  business_ids?: number | string[];
+  business_ids?: (number | string)[];
   career?: AdGetV2DataAudienceCareer[];
   carrier?: AdGetV2DataAudienceCarrier[];
   city?: number[];

@@ -28,11 +28,11 @@ export class YuntuBrandInfoGetV30Api {
 
   async openApiV30YuntuBrandInfoGetGetWithHttpInfo(request: YuntuBrandInfoGetV30ApiOpenApiV30YuntuBrandInfoGetGetRequest): Promise<ApiResponse<YuntuBrandInfoGetV30Response>> {
     if (request.yuntuBrandId == null) {
-      throw new ApiException("Missing the required parameter 'yuntuBrandId' when calling openApiV30YuntuBrandInfoGetGet");
+      throw new ApiException("yuntuBrandId is required and must be specified");
     }
 
     if (request.serviceProviderId == null) {
-      throw new ApiException("Missing the required parameter 'serviceProviderId' when calling openApiV30YuntuBrandInfoGetGet");
+      throw new ApiException("serviceProviderId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<YuntuBrandInfoGetV30Response>({
       method: "GET",

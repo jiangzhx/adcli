@@ -30,7 +30,7 @@ export class QueryInvoiceV2Api {
 
   async openApi2QueryInvoiceGetWithHttpInfo(request: QueryInvoiceV2ApiOpenApi2QueryInvoiceGetRequest): Promise<ApiResponse<QueryInvoiceV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2QueryInvoiceGet");
+      throw new ApiException("agentId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryInvoiceV2Response>({
       method: "GET",

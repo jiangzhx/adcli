@@ -36,19 +36,23 @@ export class LocalReportMaterialGetV30Api {
 
   async openApiV30LocalReportMaterialGetGetWithHttpInfo(request: LocalReportMaterialGetV30ApiOpenApiV30LocalReportMaterialGetGetRequest): Promise<ApiResponse<LocalReportMaterialGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalReportMaterialGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV30LocalReportMaterialGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV30LocalReportMaterialGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.metrics == null) {
-      throw new ApiException("Missing the required parameter 'metrics' when calling openApiV30LocalReportMaterialGetGet");
+      throw new ApiException("metrics is required and must be specified");
+    }
+
+    if (request.metrics != null && request.metrics.length < 1) {
+      throw new ApiException("metrics must have at least 1 elements");
     }
     return this.apiClient.requestWithHttpInfo<LocalReportMaterialGetV30Response>({
       method: "GET",

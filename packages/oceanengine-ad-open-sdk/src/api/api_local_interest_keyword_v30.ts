@@ -28,11 +28,11 @@ export class LocalInterestKeywordV30Api {
 
   async openApiV30LocalInterestKeywordGetWithHttpInfo(request: LocalInterestKeywordV30ApiOpenApiV30LocalInterestKeywordGetRequest): Promise<ApiResponse<LocalInterestKeywordV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalInterestKeywordGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.queryWords == null) {
-      throw new ApiException("Missing the required parameter 'queryWords' when calling openApiV30LocalInterestKeywordGet");
+      throw new ApiException("queryWords is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalInterestKeywordV30Response>({
       method: "GET",

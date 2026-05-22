@@ -33,11 +33,11 @@ export class QianchuanAdRecommendKeywordsGetV10Api {
 
   async openApiV10QianchuanAdRecommendKeywordsGetGetWithHttpInfo(request: QianchuanAdRecommendKeywordsGetV10ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest): Promise<ApiResponse<QianchuanAdRecommendKeywordsGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdRecommendKeywordsGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanAdRecommendKeywordsGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdRecommendKeywordsGetV10Response>({
       method: "GET",

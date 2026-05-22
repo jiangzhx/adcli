@@ -5,7 +5,7 @@ import type { QianchuanUniPromotionAuthorizationApplyV10MarketingGoal } from "..
 
 export interface QianchuanUniPromotionAuthorizationApplyV10Request {
   advertiser_id: number | string;
-  aweme_ids: number | string[];
+  aweme_ids: (number | string)[];
   marketing_goal: QianchuanUniPromotionAuthorizationApplyV10MarketingGoal;
   shop_id?: number | string;
 }

@@ -33,15 +33,15 @@ export class AicElementUploadV30Api {
 
   async openApiV30AicElementUploadPostWithHttpInfo(request: AicElementUploadV30ApiOpenApiV30AicElementUploadPostRequest): Promise<ApiResponse<AicElementUploadV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30AicElementUploadPost");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30AicElementUploadPost");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.elementType == null) {
-      throw new ApiException("Missing the required parameter 'elementType' when calling openApiV30AicElementUploadPost");
+      throw new ApiException("elementType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AicElementUploadV30Response>({
       method: "POST",

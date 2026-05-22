@@ -27,7 +27,7 @@ export class StarDemanderGetRegisteredIpActsV2Api {
 
   async openApi2StarDemanderGetRegisteredIpActsGetWithHttpInfo(request: StarDemanderGetRegisteredIpActsV2ApiOpenApi2StarDemanderGetRegisteredIpActsGetRequest): Promise<ApiResponse<StarDemanderGetRegisteredIpActsV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemanderGetRegisteredIpActsGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarDemanderGetRegisteredIpActsV2Response>({
       method: "GET",

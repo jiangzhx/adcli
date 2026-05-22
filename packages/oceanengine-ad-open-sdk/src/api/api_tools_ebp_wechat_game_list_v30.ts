@@ -32,7 +32,7 @@ export class ToolsEbpWechatGameListV30Api {
 
   async openApiV30ToolsEbpWechatGameListGetWithHttpInfo(request: ToolsEbpWechatGameListV30ApiOpenApiV30ToolsEbpWechatGameListGetRequest): Promise<ApiResponse<ToolsEbpWechatGameListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpWechatGameListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpWechatGameListV30Response>({
       method: "GET",

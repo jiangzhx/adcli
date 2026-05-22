@@ -7,7 +7,7 @@ import type { StarOrderGetScriptV2Response } from "../models/index";
 
 export interface StarOrderGetScriptV2ApiOpenApi2StarOrderGetScriptGetRequest {
   starId: number | string;
-  orderIds: number | string[];
+  orderIds: (number | string)[];
 }
 
 export class StarOrderGetScriptV2Api {
@@ -28,11 +28,11 @@ export class StarOrderGetScriptV2Api {
 
   async openApi2StarOrderGetScriptGetWithHttpInfo(request: StarOrderGetScriptV2ApiOpenApi2StarOrderGetScriptGetRequest): Promise<ApiResponse<StarOrderGetScriptV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarOrderGetScriptGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.orderIds == null) {
-      throw new ApiException("Missing the required parameter 'orderIds' when calling openApi2StarOrderGetScriptGet");
+      throw new ApiException("orderIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarOrderGetScriptV2Response>({
       method: "GET",

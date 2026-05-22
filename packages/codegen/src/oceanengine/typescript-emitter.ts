@@ -1,4 +1,4 @@
-import type { ApiSpec, ModelSpec } from "./spec";
+import type { ApiCheckSpec, ApiSpec, ModelSpec } from "./spec";
 
 export interface ApiEmitOptions {
   clientModule?: string;
@@ -57,13 +57,7 @@ function emitApiClassBody(spec: ApiSpec) {
   const fields = spec.params
     .map((param) => `  ${param.name}${param.required ? "" : "?"}: ${toTypeScriptType(param.javaType)};`)
     .join("\n");
-  const checks = spec.params
-    .filter((param) => param.required)
-    .map(
-      (param) =>
-        `    if (request.${param.name} == null) {\n      throw new ApiException("Missing the required parameter '${param.name}' when calling ${spec.methodName}");\n    }`,
-    )
-    .join("\n\n");
+  const checks = emitApiChecks(spec);
   const queryParams = spec.queryParams
     .map((param) => {
       const collection = param.collectionFormat ? `, collectionFormat: "${param.collectionFormat}"` : "";
@@ -109,6 +103,31 @@ ${queryParams}
   }
 }
 `;
+}
+
+function emitApiChecks(spec: ApiSpec) {
+  const checks = spec.checks ?? spec.params
+    .filter((param) => param.required)
+    .map((param) => ({ kind: "required" as const, paramName: param.name, message: `${param.name} is required and must be specified` }));
+  return checks.map(emitApiCheck).join("\n\n");
+}
+
+function emitApiCheck(check: ApiCheckSpec) {
+  const condition = emitCheckCondition(check);
+  return `    if (${condition}) {\n      throw new ApiException(${JSON.stringify(check.message)});\n    }`;
+}
+
+function emitCheckCondition(check: ApiCheckSpec) {
+  switch (check.kind) {
+    case "required":
+      return `request.${check.paramName} == null`;
+    case "number":
+      return `request.${check.paramName} != null && Number(request.${check.paramName}) ${check.operator} ${check.value}`;
+    case "length":
+      return `request.${check.paramName} != null && request.${check.paramName}.length ${check.operator} ${check.value}`;
+    case "stringLength":
+      return `request.${check.paramName} != null && Array.from(String(request.${check.paramName})).length ${check.operator} ${check.value}`;
+  }
 }
 
 function emitNamedRequestObject(name: "formParams" | "files", params: Array<{ name: string; source: string }>) {
@@ -168,7 +187,7 @@ function toTypeScriptType(javaType: string): string {
   const normalized = javaType.trim();
   const listMatch = normalized.match(/^List<(.+)>$/);
   if (listMatch) {
-    return `${toTypeScriptType(listMatch[1])}[]`;
+    return `${toArrayElementType(listMatch[1])}[]`;
   }
   const mapMatch = normalized.match(/^Map<String,\s*(.+)>$/);
   if (mapMatch) {
@@ -200,6 +219,11 @@ function toTypeScriptType(javaType: string): string {
     default:
       return normalized;
   }
+}
+
+function toArrayElementType(javaType: string): string {
+  const type = toTypeScriptType(javaType);
+  return type.includes("|") ? `(${type})` : type;
 }
 
 function extractModelTypes(javaType: string): string[] {

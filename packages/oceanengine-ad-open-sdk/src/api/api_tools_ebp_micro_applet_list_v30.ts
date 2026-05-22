@@ -32,15 +32,15 @@ export class ToolsEbpMicroAppletListV30Api {
 
   async openApiV30ToolsEbpMicroAppletListGetWithHttpInfo(request: ToolsEbpMicroAppletListV30ApiOpenApiV30ToolsEbpMicroAppletListGetRequest): Promise<ApiResponse<ToolsEbpMicroAppletListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpMicroAppletListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30ToolsEbpMicroAppletListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.assetManagementScope == null) {
-      throw new ApiException("Missing the required parameter 'assetManagementScope' when calling openApiV30ToolsEbpMicroAppletListGet");
+      throw new ApiException("assetManagementScope is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpMicroAppletListV30Response>({
       method: "GET",

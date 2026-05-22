@@ -5,7 +5,7 @@ import type { RejectMaterialAiRepairCrossAccountGetV30ResponseDataRejectMaterial
 
 export interface RejectMaterialAiRepairCrossAccountGetV30ResponseData {
   advertiser_id?: number | string;
-  ai_repair_id?: number | string[];
+  ai_repair_id?: (number | string)[];
   material_id?: number | string;
   reject_material_related_repair_tasks?: RejectMaterialAiRepairCrossAccountGetV30ResponseDataRejectMaterialRelatedRepairTasksInner[];
 }

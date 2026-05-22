@@ -5,7 +5,7 @@ import type { ToolsMaterialRaiseCreateV30RequestRaiseInfo } from "../models/inde
 
 export interface ToolsMaterialRaiseCreateV30Request {
   advertiser_id: number | string;
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
   project_id: number | string;
   raise_info: ToolsMaterialRaiseCreateV30RequestRaiseInfo;
 }

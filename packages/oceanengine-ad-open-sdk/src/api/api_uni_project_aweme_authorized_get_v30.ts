@@ -29,11 +29,19 @@ export class UniProjectAwemeAuthorizedGetV30Api {
 
   async openApiV30UniProjectAwemeAuthorizedGetGetWithHttpInfo(request: UniProjectAwemeAuthorizedGetV30ApiOpenApiV30UniProjectAwemeAuthorizedGetGetRequest): Promise<ApiResponse<UniProjectAwemeAuthorizedGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30UniProjectAwemeAuthorizedGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.playletId == null) {
-      throw new ApiException("Missing the required parameter 'playletId' when calling openApiV30UniProjectAwemeAuthorizedGetGet");
+      throw new ApiException("playletId is required and must be specified");
+    }
+
+    if (request.playletId != null && Number(request.playletId) < 1) {
+      throw new ApiException("playletId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<UniProjectAwemeAuthorizedGetV30Response>({
       method: "GET",

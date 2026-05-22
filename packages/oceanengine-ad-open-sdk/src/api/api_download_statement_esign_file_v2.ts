@@ -28,11 +28,11 @@ export class DownloadStatementEsignFileV2Api {
 
   async openApi2DownloadStatementEsignFileGetWithHttpInfo(request: DownloadStatementEsignFileV2ApiOpenApi2DownloadStatementEsignFileGetRequest): Promise<ApiResponse<DownloadStatementEsignFileV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2DownloadStatementEsignFileGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.statementId == null) {
-      throw new ApiException("Missing the required parameter 'statementId' when calling openApi2DownloadStatementEsignFileGet");
+      throw new ApiException("statementId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DownloadStatementEsignFileV2Response>({
       method: "GET",

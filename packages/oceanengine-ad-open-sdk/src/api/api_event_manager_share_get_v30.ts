@@ -30,11 +30,11 @@ export class EventManagerShareGetV30Api {
 
   async openApiV30EventManagerShareGetGetWithHttpInfo(request: EventManagerShareGetV30ApiOpenApiV30EventManagerShareGetGetRequest): Promise<ApiResponse<EventManagerShareGetV30Response>> {
     if (request.organizationId == null) {
-      throw new ApiException("Missing the required parameter 'organizationId' when calling openApiV30EventManagerShareGetGet");
+      throw new ApiException("organizationId is required and must be specified");
     }
 
     if (request.assetId == null) {
-      throw new ApiException("Missing the required parameter 'assetId' when calling openApiV30EventManagerShareGetGet");
+      throw new ApiException("assetId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerShareGetV30Response>({
       method: "GET",

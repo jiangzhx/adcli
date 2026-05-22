@@ -28,11 +28,11 @@ export class FileVideoAdGetV2Api {
 
   async openApi2FileVideoAdGetGetWithHttpInfo(request: FileVideoAdGetV2ApiOpenApi2FileVideoAdGetGetRequest): Promise<ApiResponse<FileVideoAdGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoAdGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.videoIds == null) {
-      throw new ApiException("Missing the required parameter 'videoIds' when calling openApi2FileVideoAdGetGet");
+      throw new ApiException("videoIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoAdGetV2Response>({
       method: "GET",

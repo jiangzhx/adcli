@@ -6,7 +6,7 @@ import type { QianchuanVideoGetV10FilteringImageMode, QianchuanVideoGetV10Filter
 export interface QianchuanVideoGetV10Filtering {
   end_time?: string;
   image_mode?: QianchuanVideoGetV10FilteringImageMode[];
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
   signatures?: string[];
   sources?: QianchuanVideoGetV10FilteringSources[];
   start_time?: string;

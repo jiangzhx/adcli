@@ -28,11 +28,11 @@ export class AdvertiserAvatarUploadV2Api {
 
   async openApi2AdvertiserAvatarUploadPostWithHttpInfo(request: AdvertiserAvatarUploadV2ApiOpenApi2AdvertiserAvatarUploadPostRequest): Promise<ApiResponse<AdvertiserAvatarUploadV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AdvertiserAvatarUploadPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.imageFile == null) {
-      throw new ApiException("Missing the required parameter 'imageFile' when calling openApi2AdvertiserAvatarUploadPost");
+      throw new ApiException("imageFile is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserAvatarUploadV2Response>({
       method: "POST",

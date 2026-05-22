@@ -28,11 +28,19 @@ export class QianchuanTrackUrlCheckV10Api {
 
   async openApiV10QianchuanTrackUrlCheckGetWithHttpInfo(request: QianchuanTrackUrlCheckV10ApiOpenApiV10QianchuanTrackUrlCheckGetRequest): Promise<ApiResponse<QianchuanTrackUrlCheckV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanTrackUrlCheckGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.trackUrl == null) {
-      throw new ApiException("Missing the required parameter 'trackUrl' when calling openApiV10QianchuanTrackUrlCheckGet");
+      throw new ApiException("trackUrl is required and must be specified");
+    }
+
+    if (request.trackUrl != null && request.trackUrl.length < 1) {
+      throw new ApiException("trackUrl must have at least 1 elements");
+    }
+
+    if (request.trackUrl != null && request.trackUrl.length > 5) {
+      throw new ApiException("trackUrl must have less than 5 elements");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanTrackUrlCheckV10Response>({
       method: "GET",

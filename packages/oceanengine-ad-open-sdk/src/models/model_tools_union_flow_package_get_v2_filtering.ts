@@ -4,7 +4,7 @@
 import type { ToolsUnionFlowPackageGetV2FilteringFlowPackageType } from "../models/index";
 
 export interface ToolsUnionFlowPackageGetV2Filtering {
-  flow_package_ids?: number | string[];
+  flow_package_ids?: (number | string)[];
   flow_package_type?: ToolsUnionFlowPackageGetV2FilteringFlowPackageType;
 }
 

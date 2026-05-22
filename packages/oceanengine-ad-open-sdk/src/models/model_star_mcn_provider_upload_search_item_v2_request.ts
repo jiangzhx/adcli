@@ -3,7 +3,7 @@
 
 export interface StarMcnProviderUploadSearchItemV2Request {
   author_search_word: string;
-  item_ids: number | string[];
+  item_ids: (number | string)[];
   star_id: number | string;
   task_id: number | string;
 }

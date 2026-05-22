@@ -28,11 +28,11 @@ export class UploadStatementV2Api {
 
   async openApi2UploadStatementPostWithHttpInfo(request: UploadStatementV2ApiOpenApi2UploadStatementPostRequest): Promise<ApiResponse<UploadStatementV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2UploadStatementPost");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.file == null) {
-      throw new ApiException("Missing the required parameter 'file' when calling openApi2UploadStatementPost");
+      throw new ApiException("file is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<UploadStatementV2Response>({
       method: "POST",

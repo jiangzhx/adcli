@@ -30,11 +30,15 @@ export class QianchuanDmpAudiencesGetV10Api {
 
   async openApiV10QianchuanDmpAudiencesGetGetWithHttpInfo(request: QianchuanDmpAudiencesGetV10ApiOpenApiV10QianchuanDmpAudiencesGetGetRequest): Promise<ApiResponse<QianchuanDmpAudiencesGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanDmpAudiencesGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.retargetingTagsType == null) {
-      throw new ApiException("Missing the required parameter 'retargetingTagsType' when calling openApiV10QianchuanDmpAudiencesGetGet");
+      throw new ApiException("retargetingTagsType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanDmpAudiencesGetV10Response>({
       method: "GET",

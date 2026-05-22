@@ -7,7 +7,7 @@ import type { PromotionCostProtectStatusGetV30Response } from "../models/index";
 
 export interface PromotionCostProtectStatusGetV30ApiOpenApiV30PromotionCostProtectStatusGetGetRequest {
   advertiserId: number | string;
-  promotionIds: number | string[];
+  promotionIds: (number | string)[];
 }
 
 export class PromotionCostProtectStatusGetV30Api {
@@ -28,11 +28,11 @@ export class PromotionCostProtectStatusGetV30Api {
 
   async openApiV30PromotionCostProtectStatusGetGetWithHttpInfo(request: PromotionCostProtectStatusGetV30ApiOpenApiV30PromotionCostProtectStatusGetGetRequest): Promise<ApiResponse<PromotionCostProtectStatusGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30PromotionCostProtectStatusGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.promotionIds == null) {
-      throw new ApiException("Missing the required parameter 'promotionIds' when calling openApiV30PromotionCostProtectStatusGetGet");
+      throw new ApiException("promotionIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<PromotionCostProtectStatusGetV30Response>({
       method: "GET",

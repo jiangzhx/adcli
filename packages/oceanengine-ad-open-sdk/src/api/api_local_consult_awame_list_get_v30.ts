@@ -8,8 +8,8 @@ import type { LocalConsultAwameListGetV30DeliveryGoal, LocalConsultAwameListGetV
 export interface LocalConsultAwameListGetV30ApiOpenApiV30LocalConsultAwameListGetGetRequest {
   localAccountId: number | string;
   deliveryGoal: LocalConsultAwameListGetV30DeliveryGoal;
-  poiIds?: number | string[];
-  productIds?: number | string[];
+  poiIds?: (number | string)[];
+  productIds?: (number | string)[];
   filtering?: LocalConsultAwameListGetV30Filtering;
   page?: number;
   pageSize?: number;
@@ -33,11 +33,11 @@ export class LocalConsultAwameListGetV30Api {
 
   async openApiV30LocalConsultAwameListGetGetWithHttpInfo(request: LocalConsultAwameListGetV30ApiOpenApiV30LocalConsultAwameListGetGetRequest): Promise<ApiResponse<LocalConsultAwameListGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalConsultAwameListGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.deliveryGoal == null) {
-      throw new ApiException("Missing the required parameter 'deliveryGoal' when calling openApiV30LocalConsultAwameListGetGet");
+      throw new ApiException("deliveryGoal is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalConsultAwameListGetV30Response>({
       method: "GET",

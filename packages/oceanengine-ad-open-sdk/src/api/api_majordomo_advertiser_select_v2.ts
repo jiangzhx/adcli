@@ -27,7 +27,11 @@ export class MajordomoAdvertiserSelectV2Api {
 
   async openApi2MajordomoAdvertiserSelectGetWithHttpInfo(request: MajordomoAdvertiserSelectV2ApiOpenApi2MajordomoAdvertiserSelectGetRequest): Promise<ApiResponse<MajordomoAdvertiserSelectV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2MajordomoAdvertiserSelectGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<MajordomoAdvertiserSelectV2Response>({
       method: "GET",

@@ -12,7 +12,7 @@ export interface QianchuanUniPromotionAdControlTaskCreateV10Request {
   deep_external_action?: QianchuanUniPromotionAdControlTaskCreateV10DeepExternalAction;
   duration?: number;
   external_action?: QianchuanUniPromotionAdControlTaskCreateV10ExternalAction;
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
   material_type?: QianchuanUniPromotionAdControlTaskCreateV10MaterialType;
   name?: string;
   roi2_goal?: number;

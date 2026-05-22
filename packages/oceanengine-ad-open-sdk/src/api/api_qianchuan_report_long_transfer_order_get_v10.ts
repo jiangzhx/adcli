@@ -35,27 +35,27 @@ export class QianchuanReportLongTransferOrderGetV10Api {
 
   async openApiV10QianchuanReportLongTransferOrderGetGetWithHttpInfo(request: QianchuanReportLongTransferOrderGetV10ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest): Promise<ApiResponse<QianchuanReportLongTransferOrderGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanReportLongTransferOrderGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV10QianchuanReportLongTransferOrderGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV10QianchuanReportLongTransferOrderGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.optimizationTimeScope == null) {
-      throw new ApiException("Missing the required parameter 'optimizationTimeScope' when calling openApiV10QianchuanReportLongTransferOrderGetGet");
+      throw new ApiException("optimizationTimeScope is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanReportLongTransferOrderGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanReportLongTransferOrderGetGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanReportLongTransferOrderGetV10Response>({
       method: "GET",

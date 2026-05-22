@@ -17,7 +17,7 @@ export interface ToolsEstimateAudienceV2ApiOpenApi2ToolsEstimateAudienceGetReque
   androidOsv?: ToolsEstimateAudienceV2AndroidOsv;
   appBehaviorTarget?: ToolsEstimateAudienceV2AppBehaviorTarget;
   appCategory?: number[];
-  appIds?: number | string[];
+  appIds?: (number | string)[];
   articleCategory?: ToolsEstimateAudienceV2ArticleCategory[];
   audiencePackageId?: number | string;
   autoExtendEnabled?: ToolsEstimateAudienceV2AutoExtendEnabled;

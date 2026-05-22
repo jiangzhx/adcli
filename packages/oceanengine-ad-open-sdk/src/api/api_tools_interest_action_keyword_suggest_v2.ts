@@ -31,19 +31,19 @@ export class ToolsInterestActionKeywordSuggestV2Api {
 
   async openApi2ToolsInterestActionKeywordSuggestGetWithHttpInfo(request: ToolsInterestActionKeywordSuggestV2ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest): Promise<ApiResponse<ToolsInterestActionKeywordSuggestV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsInterestActionKeywordSuggestGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.id == null) {
-      throw new ApiException("Missing the required parameter 'id' when calling openApi2ToolsInterestActionKeywordSuggestGet");
+      throw new ApiException("id is required and must be specified");
     }
 
     if (request.tagType == null) {
-      throw new ApiException("Missing the required parameter 'tagType' when calling openApi2ToolsInterestActionKeywordSuggestGet");
+      throw new ApiException("tagType is required and must be specified");
     }
 
     if (request.targetingType == null) {
-      throw new ApiException("Missing the required parameter 'targetingType' when calling openApi2ToolsInterestActionKeywordSuggestGet");
+      throw new ApiException("targetingType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsInterestActionKeywordSuggestV2Response>({
       method: "GET",

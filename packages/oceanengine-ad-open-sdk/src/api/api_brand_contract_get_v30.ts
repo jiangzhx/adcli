@@ -27,7 +27,7 @@ export class BrandContractGetV30Api {
 
   async openApiV30BrandContractGetGetWithHttpInfo(request: BrandContractGetV30ApiOpenApiV30BrandContractGetGetRequest): Promise<ApiResponse<BrandContractGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandContractGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandContractGetV30Response>({
       method: "GET",

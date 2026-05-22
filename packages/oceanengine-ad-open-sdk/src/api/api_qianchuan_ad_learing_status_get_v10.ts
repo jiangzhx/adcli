@@ -7,7 +7,7 @@ import type { QianchuanAdLearingStatusGetV10Response } from "../models/index";
 
 export interface QianchuanAdLearingStatusGetV10ApiOpenApiV10QianchuanAdLearingStatusGetGetRequest {
   advertiserId: number | string;
-  adIds: number | string[];
+  adIds: (number | string)[];
 }
 
 export class QianchuanAdLearingStatusGetV10Api {
@@ -28,11 +28,11 @@ export class QianchuanAdLearingStatusGetV10Api {
 
   async openApiV10QianchuanAdLearingStatusGetGetWithHttpInfo(request: QianchuanAdLearingStatusGetV10ApiOpenApiV10QianchuanAdLearingStatusGetGetRequest): Promise<ApiResponse<QianchuanAdLearingStatusGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdLearingStatusGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adIds == null) {
-      throw new ApiException("Missing the required parameter 'adIds' when calling openApiV10QianchuanAdLearingStatusGetGet");
+      throw new ApiException("adIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdLearingStatusGetV10Response>({
       method: "GET",

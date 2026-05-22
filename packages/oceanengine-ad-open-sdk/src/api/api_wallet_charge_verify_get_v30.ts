@@ -29,15 +29,15 @@ export class WalletChargeVerifyGetV30Api {
 
   async openApiV30WalletChargeVerifyGetGetWithHttpInfo(request: WalletChargeVerifyGetV30ApiOpenApiV30WalletChargeVerifyGetGetRequest): Promise<ApiResponse<WalletChargeVerifyGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30WalletChargeVerifyGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.walletId == null) {
-      throw new ApiException("Missing the required parameter 'walletId' when calling openApiV30WalletChargeVerifyGetGet");
+      throw new ApiException("walletId is required and must be specified");
     }
 
     if (request.chargeType == null) {
-      throw new ApiException("Missing the required parameter 'chargeType' when calling openApiV30WalletChargeVerifyGetGet");
+      throw new ApiException("chargeType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<WalletChargeVerifyGetV30Response>({
       method: "GET",

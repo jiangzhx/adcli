@@ -7,7 +7,7 @@ import type { ToolsCreativeWordSelectV2Response } from "../models/index";
 
 export interface ToolsCreativeWordSelectV2ApiOpenApi2ToolsCreativeWordSelectGetRequest {
   advertiserId: number | string;
-  creativeWordIds?: number | string[];
+  creativeWordIds?: (number | string)[];
 }
 
 export class ToolsCreativeWordSelectV2Api {
@@ -28,7 +28,7 @@ export class ToolsCreativeWordSelectV2Api {
 
   async openApi2ToolsCreativeWordSelectGetWithHttpInfo(request: ToolsCreativeWordSelectV2ApiOpenApi2ToolsCreativeWordSelectGetRequest): Promise<ApiResponse<ToolsCreativeWordSelectV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsCreativeWordSelectGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsCreativeWordSelectV2Response>({
       method: "GET",

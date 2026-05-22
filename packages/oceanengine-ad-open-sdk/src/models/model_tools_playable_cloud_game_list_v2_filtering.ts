@@ -6,7 +6,7 @@ import type { ToolsPlayableCloudGameListV2FilteringAdStatus, ToolsPlayableCloudG
 export interface ToolsPlayableCloudGameListV2Filtering {
   ad_status?: ToolsPlayableCloudGameListV2FilteringAdStatus[];
   game_ids?: string[];
-  ids?: number | string[];
+  ids?: (number | string)[];
   name?: string;
   orientation?: ToolsPlayableCloudGameListV2FilteringOrientation[];
   status?: ToolsPlayableCloudGameListV2FilteringStatus[];

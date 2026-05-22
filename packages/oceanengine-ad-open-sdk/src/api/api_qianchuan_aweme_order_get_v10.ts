@@ -33,11 +33,11 @@ export class QianchuanAwemeOrderGetV10Api {
 
   async openApiV10QianchuanAwemeOrderGetGetWithHttpInfo(request: QianchuanAwemeOrderGetV10ApiOpenApiV10QianchuanAwemeOrderGetGetRequest): Promise<ApiResponse<QianchuanAwemeOrderGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeOrderGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanAwemeOrderGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeOrderGetV10Response>({
       method: "GET",

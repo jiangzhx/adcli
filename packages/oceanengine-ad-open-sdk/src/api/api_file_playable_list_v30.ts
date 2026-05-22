@@ -31,11 +31,11 @@ export class FilePlayableListV30Api {
 
   async openApiV30FilePlayableListGetWithHttpInfo(request: FilePlayableListV30ApiOpenApiV30FilePlayableListGetRequest): Promise<ApiResponse<FilePlayableListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30FilePlayableListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.materialType == null) {
-      throw new ApiException("Missing the required parameter 'materialType' when calling openApiV30FilePlayableListGet");
+      throw new ApiException("materialType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FilePlayableListV30Response>({
       method: "GET",

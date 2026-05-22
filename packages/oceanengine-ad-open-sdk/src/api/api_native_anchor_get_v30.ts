@@ -30,7 +30,7 @@ export class NativeAnchorGetV30Api {
 
   async openApiV30NativeAnchorGetGetWithHttpInfo(request: NativeAnchorGetV30ApiOpenApiV30NativeAnchorGetGetRequest): Promise<ApiResponse<NativeAnchorGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30NativeAnchorGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<NativeAnchorGetV30Response>({
       method: "GET",

@@ -10,7 +10,7 @@ export interface StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoAdSyncCon
   dou_plus_uid?: number;
   product_link?: string;
   product_pics?: string[];
-  shop_ids?: number | string[];
+  shop_ids?: (number | string)[];
   sync_duration?: number;
 }
 

@@ -7,7 +7,7 @@ import type { LocalProductGetByPoiidsV30LocalDeliveryScene, LocalProductGetByPoi
 
 export interface LocalProductGetByPoiidsV30ApiOpenApiV30LocalProductGetByPoiidsGetRequest {
   localAccountId: number | string;
-  poiIds: number | string[];
+  poiIds: (number | string)[];
   localDeliveryScene?: LocalProductGetByPoiidsV30LocalDeliveryScene;
 }
 
@@ -29,11 +29,11 @@ export class LocalProductGetByPoiidsV30Api {
 
   async openApiV30LocalProductGetByPoiidsGetWithHttpInfo(request: LocalProductGetByPoiidsV30ApiOpenApiV30LocalProductGetByPoiidsGetRequest): Promise<ApiResponse<LocalProductGetByPoiidsV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalProductGetByPoiidsGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.poiIds == null) {
-      throw new ApiException("Missing the required parameter 'poiIds' when calling openApiV30LocalProductGetByPoiidsGet");
+      throw new ApiException("poiIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalProductGetByPoiidsV30Response>({
       method: "GET",

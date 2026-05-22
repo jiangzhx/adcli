@@ -28,11 +28,15 @@ export class DpaCategoryGetV2Api {
 
   async openApi2DpaCategoryGetGetWithHttpInfo(request: DpaCategoryGetV2ApiOpenApi2DpaCategoryGetGetRequest): Promise<ApiResponse<DpaCategoryGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DpaCategoryGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.platformId == null) {
-      throw new ApiException("Missing the required parameter 'platformId' when calling openApi2DpaCategoryGetGet");
+      throw new ApiException("platformId is required and must be specified");
+    }
+
+    if (request.platformId != null && Number(request.platformId) < 1) {
+      throw new ApiException("platformId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<DpaCategoryGetV2Response>({
       method: "GET",

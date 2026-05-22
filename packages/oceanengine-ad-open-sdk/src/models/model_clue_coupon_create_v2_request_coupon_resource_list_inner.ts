@@ -24,7 +24,7 @@ export interface ClueCouponCreateV2RequestCouponResourceListInner {
   resource_type: ClueCouponCreateV2CouponResourceListResourceType;
   service_num: string;
   stock?: number;
-  store_ids?: number | string[];
+  store_ids?: (number | string)[];
   title: string;
   use_type: ClueCouponCreateV2CouponResourceListUseType;
   valid_days?: number;

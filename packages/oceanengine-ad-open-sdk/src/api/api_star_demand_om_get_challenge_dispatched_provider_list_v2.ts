@@ -30,19 +30,23 @@ export class StarDemandOmGetChallengeDispatchedProviderListV2Api {
 
   async openApi2StarDemandOmGetChallengeDispatchedProviderListGetWithHttpInfo(request: StarDemandOmGetChallengeDispatchedProviderListV2ApiOpenApi2StarDemandOmGetChallengeDispatchedProviderListGetRequest): Promise<ApiResponse<StarDemandOmGetChallengeDispatchedProviderListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemandOmGetChallengeDispatchedProviderListGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.challengeTaskId == null) {
-      throw new ApiException("Missing the required parameter 'challengeTaskId' when calling openApi2StarDemandOmGetChallengeDispatchedProviderListGet");
+      throw new ApiException("challengeTaskId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarDemandOmGetChallengeDispatchedProviderListGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.limit == null) {
-      throw new ApiException("Missing the required parameter 'limit' when calling openApi2StarDemandOmGetChallengeDispatchedProviderListGet");
+      throw new ApiException("limit is required and must be specified");
+    }
+
+    if (request.limit != null && Number(request.limit) > 200) {
+      throw new ApiException("limit must be less than 200");
     }
     return this.apiClient.requestWithHttpInfo<StarDemandOmGetChallengeDispatchedProviderListV2Response>({
       method: "GET",

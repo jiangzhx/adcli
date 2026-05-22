@@ -7,7 +7,7 @@ export interface StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoComponent
   cocreate_douyin_id?: string;
   ecom_cart?: StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfoComponentInfoEcomCartInner[];
   industry_component_id?: number | string;
-  link_component_ids?: number | string[];
+  link_component_ids?: (number | string)[];
   live_attract_component_id?: number | string;
   search_word?: string;
 }

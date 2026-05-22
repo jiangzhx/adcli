@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface BrandCreativeCreateV30ResponseData {
-  creative_ids?: number | string[];
+  creative_ids?: (number | string)[];
 }
 

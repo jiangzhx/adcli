@@ -10,7 +10,7 @@ export interface StarComponentQueryLinkV2ApiOpenApi2StarComponentQueryLinkGetReq
   componentStatus?: number;
   page?: number;
   limit?: number;
-  linkIds?: number | string[];
+  linkIds?: (number | string)[];
   linkType?: number;
 }
 
@@ -32,7 +32,7 @@ export class StarComponentQueryLinkV2Api {
 
   async openApi2StarComponentQueryLinkGetWithHttpInfo(request: StarComponentQueryLinkV2ApiOpenApi2StarComponentQueryLinkGetRequest): Promise<ApiResponse<StarComponentQueryLinkV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarComponentQueryLinkGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarComponentQueryLinkV2Response>({
       method: "GET",

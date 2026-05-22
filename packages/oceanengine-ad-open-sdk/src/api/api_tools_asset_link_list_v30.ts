@@ -32,11 +32,11 @@ export class ToolsAssetLinkListV30Api {
 
   async openApiV30ToolsAssetLinkListGetWithHttpInfo(request: ToolsAssetLinkListV30ApiOpenApiV30ToolsAssetLinkListGetRequest): Promise<ApiResponse<ToolsAssetLinkListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsAssetLinkListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV30ToolsAssetLinkListGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAssetLinkListV30Response>({
       method: "GET",

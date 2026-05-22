@@ -30,11 +30,11 @@ export class ToolsCommentReplyGetV30Api {
 
   async openApiV30ToolsCommentReplyGetGetWithHttpInfo(request: ToolsCommentReplyGetV30ApiOpenApiV30ToolsCommentReplyGetGetRequest): Promise<ApiResponse<ToolsCommentReplyGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsCommentReplyGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.commentId == null) {
-      throw new ApiException("Missing the required parameter 'commentId' when calling openApiV30ToolsCommentReplyGetGet");
+      throw new ApiException("commentId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsCommentReplyGetV30Response>({
       method: "GET",

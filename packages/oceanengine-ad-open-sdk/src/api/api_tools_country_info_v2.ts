@@ -28,11 +28,15 @@ export class ToolsCountryInfoV2Api {
 
   async openApi2ToolsCountryInfoGetWithHttpInfo(request: ToolsCountryInfoV2ApiOpenApi2ToolsCountryInfoGetRequest): Promise<ApiResponse<ToolsCountryInfoV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsCountryInfoGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.language == null) {
-      throw new ApiException("Missing the required parameter 'language' when calling openApi2ToolsCountryInfoGet");
+      throw new ApiException("language is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsCountryInfoV2Response>({
       method: "GET",

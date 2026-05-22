@@ -32,19 +32,19 @@ export class AdvertiserFundTransactionGetV2Api {
 
   async openApi2AdvertiserFundTransactionGetGetWithHttpInfo(request: AdvertiserFundTransactionGetV2ApiOpenApi2AdvertiserFundTransactionGetGetRequest): Promise<ApiResponse<AdvertiserFundTransactionGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AdvertiserFundTransactionGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApi2AdvertiserFundTransactionGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApi2AdvertiserFundTransactionGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.transactionType == null) {
-      throw new ApiException("Missing the required parameter 'transactionType' when calling openApi2AdvertiserFundTransactionGetGet");
+      throw new ApiException("transactionType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserFundTransactionGetV2Response>({
       method: "GET",

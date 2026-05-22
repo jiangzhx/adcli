@@ -30,19 +30,31 @@ export class AudiencePackageBindinfoGetV30Api {
 
   async openApiV30AudiencePackageBindinfoGetGetWithHttpInfo(request: AudiencePackageBindinfoGetV30ApiOpenApiV30AudiencePackageBindinfoGetGetRequest): Promise<ApiResponse<AudiencePackageBindinfoGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30AudiencePackageBindinfoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.audiencePackageId == null) {
-      throw new ApiException("Missing the required parameter 'audiencePackageId' when calling openApiV30AudiencePackageBindinfoGetGet");
+      throw new ApiException("audiencePackageId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV30AudiencePackageBindinfoGetGet");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApiV30AudiencePackageBindinfoGetGet");
+      throw new ApiException("pageSize is required and must be specified");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) < 10) {
+      throw new ApiException("pageSize must be greater than 10");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) > 100) {
+      throw new ApiException("pageSize must be less than 100");
     }
     return this.apiClient.requestWithHttpInfo<AudiencePackageBindinfoGetV30Response>({
       method: "GET",

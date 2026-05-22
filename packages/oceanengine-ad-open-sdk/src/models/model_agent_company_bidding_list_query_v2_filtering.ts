@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AgentCompanyBiddingListQueryV2Filtering {
-  company_ids?: number | string[];
+  company_ids?: (number | string)[];
   company_name?: string;
 }
 

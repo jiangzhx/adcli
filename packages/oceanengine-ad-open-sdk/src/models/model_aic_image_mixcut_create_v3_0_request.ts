@@ -9,7 +9,7 @@ export interface AicImageMixcutCreateV30Request {
   audio_option?: AicImageMixcutCreateV30RequestAudioOption;
   count?: number;
   gen_element?: AicImageMixcutCreateV30RequestGenElement;
-  image_element_ids: number | string[];
+  image_element_ids: (number | string)[];
   is_auto_save_all_result?: boolean;
   product_info?: AicImageMixcutCreateV30RequestProductInfo;
   render_option?: AicImageMixcutCreateV30RequestRenderOption;

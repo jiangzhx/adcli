@@ -30,7 +30,7 @@ export class QianchuanUniAwemeAuthorizedGetV10Api {
 
   async openApiV10QianchuanUniAwemeAuthorizedGetGetWithHttpInfo(request: QianchuanUniAwemeAuthorizedGetV10ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest): Promise<ApiResponse<QianchuanUniAwemeAuthorizedGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniAwemeAuthorizedGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniAwemeAuthorizedGetV10Response>({
       method: "GET",

@@ -35,7 +35,7 @@ export class FileVideoAdV2Api {
 
   async openApi2FileVideoAdPostWithHttpInfo(request: FileVideoAdV2ApiOpenApi2FileVideoAdPostRequest): Promise<ApiResponse<FileVideoAdV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoAdPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoAdV2Response>({
       method: "POST",

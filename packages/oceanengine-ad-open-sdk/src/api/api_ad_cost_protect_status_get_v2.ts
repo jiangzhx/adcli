@@ -7,7 +7,7 @@ import type { AdCostProtectStatusGetV2Response } from "../models/index";
 
 export interface AdCostProtectStatusGetV2ApiOpenApi2AdCostProtectStatusGetGetRequest {
   advertiserId: number | string;
-  adIds: number | string[];
+  adIds: (number | string)[];
 }
 
 export class AdCostProtectStatusGetV2Api {
@@ -28,11 +28,15 @@ export class AdCostProtectStatusGetV2Api {
 
   async openApi2AdCostProtectStatusGetGetWithHttpInfo(request: AdCostProtectStatusGetV2ApiOpenApi2AdCostProtectStatusGetGetRequest): Promise<ApiResponse<AdCostProtectStatusGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AdCostProtectStatusGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.adIds == null) {
-      throw new ApiException("Missing the required parameter 'adIds' when calling openApi2AdCostProtectStatusGetGet");
+      throw new ApiException("adIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdCostProtectStatusGetV2Response>({
       method: "GET",

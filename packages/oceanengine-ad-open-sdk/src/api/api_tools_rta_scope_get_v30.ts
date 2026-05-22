@@ -28,11 +28,11 @@ export class ToolsRtaScopeGetV30Api {
 
   async openApiV30ToolsRtaScopeGetGetWithHttpInfo(request: ToolsRtaScopeGetV30ApiOpenApiV30ToolsRtaScopeGetGetRequest): Promise<ApiResponse<ToolsRtaScopeGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsRtaScopeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.rtaId == null) {
-      throw new ApiException("Missing the required parameter 'rtaId' when calling openApiV30ToolsRtaScopeGetGet");
+      throw new ApiException("rtaId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsRtaScopeGetV30Response>({
       method: "GET",

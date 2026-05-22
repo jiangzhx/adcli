@@ -7,7 +7,7 @@ export interface QianchuanReportMaterialGetV10Filtering {
   analysis_type?: QianchuanReportMaterialGetV10FilteringAnalysisType[];
   carousel_source?: QianchuanReportMaterialGetV10FilteringCarouselSource[];
   image_source?: QianchuanReportMaterialGetV10FilteringImageSource[];
-  material_id?: number | string[];
+  material_id?: (number | string)[];
   material_mode?: QianchuanReportMaterialGetV10FilteringMaterialMode[];
   material_type: QianchuanReportMaterialGetV10FilteringMaterialType;
   video_source?: QianchuanReportMaterialGetV10FilteringVideoSource[];

@@ -4,7 +4,7 @@
 import type { AgentAdvertiserSelectV2FilteringCanCopy, AgentAdvertiserSelectV2FilteringCostPeriod } from "../models/index";
 
 export interface AgentAdvertiserSelectV2Filtering {
-  advertiser_ids?: number | string[];
+  advertiser_ids?: (number | string)[];
   can_copy?: AgentAdvertiserSelectV2FilteringCanCopy;
   cost_period?: AgentAdvertiserSelectV2FilteringCostPeriod;
   create_end_time?: string;

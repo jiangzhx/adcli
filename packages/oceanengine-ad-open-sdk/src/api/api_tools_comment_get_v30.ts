@@ -34,15 +34,15 @@ export class ToolsCommentGetV30Api {
 
   async openApiV30ToolsCommentGetGetWithHttpInfo(request: ToolsCommentGetV30ApiOpenApiV30ToolsCommentGetGetRequest): Promise<ApiResponse<ToolsCommentGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsCommentGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30ToolsCommentGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30ToolsCommentGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsCommentGetV30Response>({
       method: "GET",

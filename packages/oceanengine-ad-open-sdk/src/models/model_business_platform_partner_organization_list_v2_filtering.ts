@@ -4,7 +4,7 @@
 import type { BusinessPlatformPartnerOrganizationListV2FilteringStatus } from "../models/index";
 
 export interface BusinessPlatformPartnerOrganizationListV2Filtering {
-  partner_organization_ids?: number | string[];
+  partner_organization_ids?: (number | string)[];
   status?: BusinessPlatformPartnerOrganizationListV2FilteringStatus[];
 }
 

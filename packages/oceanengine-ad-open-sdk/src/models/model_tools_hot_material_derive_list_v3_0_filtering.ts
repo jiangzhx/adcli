@@ -5,9 +5,9 @@ import type { ToolsHotMaterialDeriveListV30FilteringStatuses } from "../models/i
 
 export interface ToolsHotMaterialDeriveListV30Filtering {
   end_time?: string;
-  origin_material_ids?: number | string[];
+  origin_material_ids?: (number | string)[];
   start_time?: string;
   statuses?: ToolsHotMaterialDeriveListV30FilteringStatuses[];
-  task_ids?: number | string[];
+  task_ids?: (number | string)[];
 }
 

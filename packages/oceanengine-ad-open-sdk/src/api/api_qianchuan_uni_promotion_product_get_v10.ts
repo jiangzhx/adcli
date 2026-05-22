@@ -35,11 +35,15 @@ export class QianchuanUniPromotionProductGetV10Api {
 
   async openApiV10QianchuanUniPromotionProductGetGetWithHttpInfo(request: QianchuanUniPromotionProductGetV10ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest): Promise<ApiResponse<QianchuanUniPromotionProductGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniPromotionProductGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 0) {
+      throw new ApiException("advertiserId must be greater than 0");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanUniPromotionProductGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionProductGetV10Response>({
       method: "GET",

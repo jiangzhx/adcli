@@ -30,19 +30,31 @@ export class QianchuanAwemeUniPromotionSuggestV10Api {
 
   async openApiV10QianchuanAwemeUniPromotionSuggestGetWithHttpInfo(request: QianchuanAwemeUniPromotionSuggestV10ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest): Promise<ApiResponse<QianchuanAwemeUniPromotionSuggestV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeUniPromotionSuggestGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 0) {
+      throw new ApiException("advertiserId must be greater than 0");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanAwemeUniPromotionSuggestGet");
+      throw new ApiException("awemeId is required and must be specified");
+    }
+
+    if (request.awemeId != null && Number(request.awemeId) < 0) {
+      throw new ApiException("awemeId must be greater than 0");
     }
 
     if (request.productId == null) {
-      throw new ApiException("Missing the required parameter 'productId' when calling openApiV10QianchuanAwemeUniPromotionSuggestGet");
+      throw new ApiException("productId is required and must be specified");
+    }
+
+    if (request.productId != null && Number(request.productId) < 0) {
+      throw new ApiException("productId must be greater than 0");
     }
 
     if (request.bidType == null) {
-      throw new ApiException("Missing the required parameter 'bidType' when calling openApiV10QianchuanAwemeUniPromotionSuggestGet");
+      throw new ApiException("bidType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeUniPromotionSuggestV10Response>({
       method: "GET",

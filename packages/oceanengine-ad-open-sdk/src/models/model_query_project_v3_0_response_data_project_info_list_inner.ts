@@ -18,7 +18,7 @@ export interface QueryProjectV30ResponseDataProjectInfoListInner {
   id?: number | string;
   invoice_amount?: string;
   name?: string;
-  order_ids?: number | string[];
+  order_ids?: (number | string)[];
   pay_method_name?: string;
   platform?: number;
   platform_name?: string;

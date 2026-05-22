@@ -30,15 +30,23 @@ export class SharedWalletWalletBalanceGetV30Api {
 
   async openApiV30SharedWalletWalletBalanceGetGetWithHttpInfo(request: SharedWalletWalletBalanceGetV30ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest): Promise<ApiResponse<SharedWalletWalletBalanceGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30SharedWalletWalletBalanceGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30SharedWalletWalletBalanceGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.walletIdList == null) {
-      throw new ApiException("Missing the required parameter 'walletIdList' when calling openApiV30SharedWalletWalletBalanceGetGet");
+      throw new ApiException("walletIdList is required and must be specified");
+    }
+
+    if (request.walletIdList != null && request.walletIdList.length < 1) {
+      throw new ApiException("walletIdList must have at least 1 elements");
+    }
+
+    if (request.walletIdList != null && request.walletIdList.length > 200) {
+      throw new ApiException("walletIdList must have less than 200 elements");
     }
     return this.apiClient.requestWithHttpInfo<SharedWalletWalletBalanceGetV30Response>({
       method: "GET",

@@ -5,7 +5,7 @@ import type { ReportCustomAsyncTaskGetV30FilteringDataTopics } from "../models/i
 
 export interface ReportCustomAsyncTaskGetV30Filtering {
   data_topics?: ReportCustomAsyncTaskGetV30FilteringDataTopics[];
-  task_ids?: number | string[];
+  task_ids?: (number | string)[];
   task_name?: string;
 }
 

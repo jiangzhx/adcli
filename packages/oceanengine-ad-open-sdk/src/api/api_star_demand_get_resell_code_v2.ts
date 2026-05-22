@@ -28,11 +28,11 @@ export class StarDemandGetResellCodeV2Api {
 
   async openApi2StarDemandGetResellCodeGetWithHttpInfo(request: StarDemandGetResellCodeV2ApiOpenApi2StarDemandGetResellCodeGetRequest): Promise<ApiResponse<StarDemandGetResellCodeV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemandGetResellCodeGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.taskId == null) {
-      throw new ApiException("Missing the required parameter 'taskId' when calling openApi2StarDemandGetResellCodeGet");
+      throw new ApiException("taskId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarDemandGetResellCodeV2Response>({
       method: "GET",

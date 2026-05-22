@@ -10,7 +10,7 @@ export interface QianchuanUniPromotionBlockMaterialGetV10ApiOpenApiV10QianchuanU
   awemeId: number | string;
   marketingGoal: QianchuanUniPromotionBlockMaterialGetV10MarketingGoal;
   mediaType?: QianchuanUniPromotionBlockMaterialGetV10MediaType;
-  productId?: number | string[];
+  productId?: (number | string)[];
   filtering?: QianchuanUniPromotionBlockMaterialGetV10Filtering;
   orderField?: QianchuanUniPromotionBlockMaterialGetV10OrderField;
   cursor?: number;
@@ -34,15 +34,15 @@ export class QianchuanUniPromotionBlockMaterialGetV10Api {
 
   async openApiV10QianchuanUniPromotionBlockMaterialGetGetWithHttpInfo(request: QianchuanUniPromotionBlockMaterialGetV10ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest): Promise<ApiResponse<QianchuanUniPromotionBlockMaterialGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniPromotionBlockMaterialGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanUniPromotionBlockMaterialGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanUniPromotionBlockMaterialGetGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionBlockMaterialGetV10Response>({
       method: "GET",

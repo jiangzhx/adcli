@@ -16,9 +16,9 @@ export interface QianchuanReportMaterialGetV10ResponseDataListInner {
   material_mode?: QianchuanReportMaterialGetV10DataListMaterialMode;
   material_type: QianchuanReportMaterialGetV10DataListMaterialType;
   related_ad_cnt?: number;
-  related_ad_ids?: number | string[];
+  related_ad_ids?: (number | string)[];
   related_creative_cnt?: number;
-  related_creative_ids?: number | string[];
+  related_creative_ids?: (number | string)[];
   tags?: string;
   video_source?: QianchuanReportMaterialGetV10DataListVideoSource;
 }

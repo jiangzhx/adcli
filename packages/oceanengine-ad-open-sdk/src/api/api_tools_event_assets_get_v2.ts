@@ -32,11 +32,15 @@ export class ToolsEventAssetsGetV2Api {
 
   async openApi2ToolsEventAssetsGetGetWithHttpInfo(request: ToolsEventAssetsGetV2ApiOpenApi2ToolsEventAssetsGetGetRequest): Promise<ApiResponse<ToolsEventAssetsGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsEventAssetsGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) > -9223372036854775616) {
+      throw new ApiException("advertiserId must be less than -9223372036854775616");
     }
 
     if (request.assetType == null) {
-      throw new ApiException("Missing the required parameter 'assetType' when calling openApi2ToolsEventAssetsGetGet");
+      throw new ApiException("assetType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEventAssetsGetV2Response>({
       method: "GET",

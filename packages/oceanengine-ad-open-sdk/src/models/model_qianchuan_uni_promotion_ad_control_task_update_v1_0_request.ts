@@ -9,7 +9,7 @@ export interface QianchuanUniPromotionAdControlTaskUpdateV10Request {
   bid?: number;
   budget?: number;
   duration?: number;
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
   name: string;
   roi2_goal?: number;
   task_id: number | string;

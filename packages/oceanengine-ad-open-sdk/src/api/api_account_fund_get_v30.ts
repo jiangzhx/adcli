@@ -6,7 +6,7 @@ import type { AccountFundGetV30AccountType, AccountFundGetV30GrantTypeSplit, Acc
 
 
 export interface AccountFundGetV30ApiOpenApiV30AccountFundGetGetRequest {
-  accountIds: number | string[];
+  accountIds: (number | string)[];
   accountType: AccountFundGetV30AccountType;
   grantTypeSplit?: AccountFundGetV30GrantTypeSplit;
 }
@@ -29,11 +29,19 @@ export class AccountFundGetV30Api {
 
   async openApiV30AccountFundGetGetWithHttpInfo(request: AccountFundGetV30ApiOpenApiV30AccountFundGetGetRequest): Promise<ApiResponse<AccountFundGetV30Response>> {
     if (request.accountIds == null) {
-      throw new ApiException("Missing the required parameter 'accountIds' when calling openApiV30AccountFundGetGet");
+      throw new ApiException("accountIds is required and must be specified");
+    }
+
+    if (request.accountIds != null && request.accountIds.length < 1) {
+      throw new ApiException("accountIds must have at least 1 elements");
+    }
+
+    if (request.accountIds != null && request.accountIds.length > 50) {
+      throw new ApiException("accountIds must have less than 50 elements");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30AccountFundGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AccountFundGetV30Response>({
       method: "GET",

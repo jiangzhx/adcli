@@ -7,7 +7,7 @@ import type { ToolsPlayableGrantResultV2Response } from "../models/index";
 
 export interface ToolsPlayableGrantResultV2ApiOpenApi2ToolsPlayableGrantResultGetRequest {
   advertiserId: number | string;
-  taskIds?: number | string[];
+  taskIds?: (number | string)[];
   startTime?: string;
   endTime?: string;
   page?: number;
@@ -32,7 +32,11 @@ export class ToolsPlayableGrantResultV2Api {
 
   async openApi2ToolsPlayableGrantResultGetWithHttpInfo(request: ToolsPlayableGrantResultV2ApiOpenApi2ToolsPlayableGrantResultGetRequest): Promise<ApiResponse<ToolsPlayableGrantResultV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsPlayableGrantResultGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPlayableGrantResultV2Response>({
       method: "GET",

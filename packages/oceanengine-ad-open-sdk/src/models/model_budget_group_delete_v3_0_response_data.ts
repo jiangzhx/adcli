@@ -4,7 +4,7 @@
 import type { BudgetGroupDeleteV30ResponseDataErrorsInner } from "../models/index";
 
 export interface BudgetGroupDeleteV30ResponseData {
-  budget_group_ids?: number | string[];
+  budget_group_ids?: (number | string)[];
   errors?: BudgetGroupDeleteV30ResponseDataErrorsInner[];
 }
 

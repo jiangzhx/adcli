@@ -29,15 +29,15 @@ export class CgTransferQueryTransferBalanceV30Api {
 
   async openApiV30CgTransferQueryTransferBalanceGetWithHttpInfo(request: CgTransferQueryTransferBalanceV30ApiOpenApiV30CgTransferQueryTransferBalanceGetRequest): Promise<ApiResponse<CgTransferQueryTransferBalanceV30Response>> {
     if (request.bizRequestNo == null) {
-      throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferQueryTransferBalanceGet");
+      throw new ApiException("bizRequestNo is required and must be specified");
     }
 
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApiV30CgTransferQueryTransferBalanceGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.accountIdList == null) {
-      throw new ApiException("Missing the required parameter 'accountIdList' when calling openApiV30CgTransferQueryTransferBalanceGet");
+      throw new ApiException("accountIdList is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferQueryTransferBalanceV30Response>({
       method: "GET",

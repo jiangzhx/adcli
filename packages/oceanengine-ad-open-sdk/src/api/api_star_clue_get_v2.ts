@@ -31,7 +31,7 @@ export class StarClueGetV2Api {
 
   async openApi2StarClueGetGetWithHttpInfo(request: StarClueGetV2ApiOpenApi2StarClueGetGetRequest): Promise<ApiResponse<StarClueGetV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarClueGetGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarClueGetV2Response>({
       method: "GET",

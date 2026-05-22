@@ -30,19 +30,31 @@ export class DpaEbpPlayletAuthGetV30Api {
 
   async openApiV30DpaEbpPlayletAuthGetGetWithHttpInfo(request: DpaEbpPlayletAuthGetV30ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest): Promise<ApiResponse<DpaEbpPlayletAuthGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30DpaEbpPlayletAuthGetGet");
+      throw new ApiException("accountId is required and must be specified");
+    }
+
+    if (request.accountId != null && Number(request.accountId) < 1) {
+      throw new ApiException("accountId must be greater than 1");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30DpaEbpPlayletAuthGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.platformId == null) {
-      throw new ApiException("Missing the required parameter 'platformId' when calling openApiV30DpaEbpPlayletAuthGetGet");
+      throw new ApiException("platformId is required and must be specified");
+    }
+
+    if (request.platformId != null && Number(request.platformId) < 1) {
+      throw new ApiException("platformId must be greater than 1");
     }
 
     if (request.productId == null) {
-      throw new ApiException("Missing the required parameter 'productId' when calling openApiV30DpaEbpPlayletAuthGetGet");
+      throw new ApiException("productId is required and must be specified");
+    }
+
+    if (request.productId != null && Number(request.productId) < 1) {
+      throw new ApiException("productId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<DpaEbpPlayletAuthGetV30Response>({
       method: "GET",

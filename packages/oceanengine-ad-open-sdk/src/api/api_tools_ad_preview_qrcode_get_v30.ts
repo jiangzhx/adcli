@@ -31,11 +31,11 @@ export class ToolsAdPreviewQrcodeGetV30Api {
 
   async openApiV30ToolsAdPreviewQrcodeGetGetWithHttpInfo(request: ToolsAdPreviewQrcodeGetV30ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest): Promise<ApiResponse<ToolsAdPreviewQrcodeGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsAdPreviewQrcodeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.idType == null) {
-      throw new ApiException("Missing the required parameter 'idType' when calling openApiV30ToolsAdPreviewQrcodeGetGet");
+      throw new ApiException("idType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAdPreviewQrcodeGetV30Response>({
       method: "GET",

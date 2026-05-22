@@ -31,19 +31,19 @@ export class QianchuanTodayLiveRoomUserGetV10Api {
 
   async openApiV10QianchuanTodayLiveRoomUserGetGetWithHttpInfo(request: QianchuanTodayLiveRoomUserGetV10ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest): Promise<ApiResponse<QianchuanTodayLiveRoomUserGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanTodayLiveRoomUserGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.roomId == null) {
-      throw new ApiException("Missing the required parameter 'roomId' when calling openApiV10QianchuanTodayLiveRoomUserGetGet");
+      throw new ApiException("roomId is required and must be specified");
     }
 
     if (request.actionEvent == null) {
-      throw new ApiException("Missing the required parameter 'actionEvent' when calling openApiV10QianchuanTodayLiveRoomUserGetGet");
+      throw new ApiException("actionEvent is required and must be specified");
     }
 
     if (request.dimension == null) {
-      throw new ApiException("Missing the required parameter 'dimension' when calling openApiV10QianchuanTodayLiveRoomUserGetGet");
+      throw new ApiException("dimension is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanTodayLiveRoomUserGetV10Response>({
       method: "GET",

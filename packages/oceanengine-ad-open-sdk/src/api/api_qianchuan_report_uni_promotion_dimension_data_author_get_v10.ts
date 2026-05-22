@@ -38,11 +38,11 @@ export class QianchuanReportUniPromotionDimensionDataAuthorGetV10Api {
 
   async openApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetWithHttpInfo(request: QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest): Promise<ApiResponse<QianchuanReportUniPromotionDimensionDataAuthorGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanReportUniPromotionDimensionDataAuthorGetV10Response>({
       method: "GET",

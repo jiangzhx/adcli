@@ -5,6 +5,6 @@ import type { ProjectScheduleTimeUpdateV30ResponseDataErrorsInner } from "../mod
 
 export interface ProjectScheduleTimeUpdateV30ResponseData {
   errors?: ProjectScheduleTimeUpdateV30ResponseDataErrorsInner[];
-  project_ids?: number | string[];
+  project_ids?: (number | string)[];
 }
 

@@ -30,11 +30,19 @@ export class QianchuanAdDetailGetV10Api {
 
   async openApiV10QianchuanAdDetailGetGetWithHttpInfo(request: QianchuanAdDetailGetV10ApiOpenApiV10QianchuanAdDetailGetGetRequest): Promise<ApiResponse<QianchuanAdDetailGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdDetailGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanAdDetailGetGet");
+      throw new ApiException("adId is required and must be specified");
+    }
+
+    if (request.adId != null && Number(request.adId) < 1) {
+      throw new ApiException("adId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdDetailGetV10Response>({
       method: "GET",

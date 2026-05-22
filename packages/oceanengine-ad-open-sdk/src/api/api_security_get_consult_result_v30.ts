@@ -7,7 +7,7 @@ import type { SecurityGetConsultResultV30Response } from "../models/index";
 
 export interface SecurityGetConsultResultV30ApiOpenApiV30SecurityGetConsultResultGetRequest {
   advertiserId: number | string;
-  appealTrackIds: number | string[];
+  appealTrackIds: (number | string)[];
 }
 
 export class SecurityGetConsultResultV30Api {
@@ -28,11 +28,19 @@ export class SecurityGetConsultResultV30Api {
 
   async openApiV30SecurityGetConsultResultGetWithHttpInfo(request: SecurityGetConsultResultV30ApiOpenApiV30SecurityGetConsultResultGetRequest): Promise<ApiResponse<SecurityGetConsultResultV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30SecurityGetConsultResultGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.appealTrackIds == null) {
-      throw new ApiException("Missing the required parameter 'appealTrackIds' when calling openApiV30SecurityGetConsultResultGet");
+      throw new ApiException("appealTrackIds is required and must be specified");
+    }
+
+    if (request.appealTrackIds != null && request.appealTrackIds.length < 1) {
+      throw new ApiException("appealTrackIds must have at least 1 elements");
+    }
+
+    if (request.appealTrackIds != null && request.appealTrackIds.length > 100) {
+      throw new ApiException("appealTrackIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<SecurityGetConsultResultV30Response>({
       method: "GET",

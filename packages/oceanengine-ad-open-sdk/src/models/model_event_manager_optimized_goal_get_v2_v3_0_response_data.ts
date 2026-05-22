@@ -4,7 +4,7 @@
 import type { EventManagerOptimizedGoalGetV2V30ResponseDataGoalsInner } from "../models/index";
 
 export interface EventManagerOptimizedGoalGetV2V30ResponseData {
-  asset_ids?: number | string[];
+  asset_ids?: (number | string)[];
   goals?: EventManagerOptimizedGoalGetV2V30ResponseDataGoalsInner[];
 }
 

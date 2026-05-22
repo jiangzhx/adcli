@@ -7,7 +7,7 @@ export interface ReportStardeliveryTaskDataGetV30Filtering {
   metric_value_filter?: ReportStardeliveryTaskDataGetV30FilteringMetricValueFilterInner[];
   star_task_category_name?: string;
   star_task_category_type?: ReportStardeliveryTaskDataGetV30FilteringStarTaskCategoryType;
-  star_task_ids?: number | string[];
+  star_task_ids?: (number | string)[];
   star_task_status?: ReportStardeliveryTaskDataGetV30FilteringStarTaskStatus;
 }
 

@@ -4,7 +4,7 @@
 import type { AgentAdvPerenniallyPunishV2PunishReason } from "../models/index";
 
 export interface AgentAdvPerenniallyPunishV2Request {
-  advertiser_ids: number | string[];
+  advertiser_ids: (number | string)[];
   agent_id: number | string;
   punish_reason: AgentAdvPerenniallyPunishV2PunishReason;
 }

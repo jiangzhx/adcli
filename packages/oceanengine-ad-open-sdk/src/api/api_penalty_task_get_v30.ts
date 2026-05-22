@@ -6,8 +6,8 @@ import type { PenaltyTaskGetV30Response } from "../models/index";
 
 
 export interface PenaltyTaskGetV30ApiOpenApiV30PenaltyTaskGetGetRequest {
-  advertiserIds: number | string[];
-  customerIds?: number | string[];
+  advertiserIds: (number | string)[];
+  customerIds?: (number | string)[];
   disposalStartTime?: string;
   disposalEndTime?: string;
   page?: number;
@@ -32,7 +32,15 @@ export class PenaltyTaskGetV30Api {
 
   async openApiV30PenaltyTaskGetGetWithHttpInfo(request: PenaltyTaskGetV30ApiOpenApiV30PenaltyTaskGetGetRequest): Promise<ApiResponse<PenaltyTaskGetV30Response>> {
     if (request.advertiserIds == null) {
-      throw new ApiException("Missing the required parameter 'advertiserIds' when calling openApiV30PenaltyTaskGetGet");
+      throw new ApiException("advertiserIds is required and must be specified");
+    }
+
+    if (request.advertiserIds != null && request.advertiserIds.length < 1) {
+      throw new ApiException("advertiserIds must have at least 1 elements");
+    }
+
+    if (request.advertiserIds != null && request.advertiserIds.length > 20) {
+      throw new ApiException("advertiserIds must have less than 20 elements");
     }
     return this.apiClient.requestWithHttpInfo<PenaltyTaskGetV30Response>({
       method: "GET",

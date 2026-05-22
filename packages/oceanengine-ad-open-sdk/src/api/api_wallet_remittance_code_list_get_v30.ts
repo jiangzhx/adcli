@@ -32,19 +32,19 @@ export class WalletRemittanceCodeListGetV30Api {
 
   async openApiV30WalletRemittanceCodeListGetGetWithHttpInfo(request: WalletRemittanceCodeListGetV30ApiOpenApiV30WalletRemittanceCodeListGetGetRequest): Promise<ApiResponse<WalletRemittanceCodeListGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30WalletRemittanceCodeListGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.chargeTargetId == null) {
-      throw new ApiException("Missing the required parameter 'chargeTargetId' when calling openApiV30WalletRemittanceCodeListGetGet");
+      throw new ApiException("chargeTargetId is required and must be specified");
     }
 
     if (request.chargeTargetType == null) {
-      throw new ApiException("Missing the required parameter 'chargeTargetType' when calling openApiV30WalletRemittanceCodeListGetGet");
+      throw new ApiException("chargeTargetType is required and must be specified");
     }
 
     if (request.remittanceCodeList == null) {
-      throw new ApiException("Missing the required parameter 'remittanceCodeList' when calling openApiV30WalletRemittanceCodeListGetGet");
+      throw new ApiException("remittanceCodeList is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<WalletRemittanceCodeListGetV30Response>({
       method: "GET",

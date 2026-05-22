@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsAppManagementUploadTaskListV2Filtering {
-  upload_ids: number | string[];
+  upload_ids: (number | string)[];
 }
 

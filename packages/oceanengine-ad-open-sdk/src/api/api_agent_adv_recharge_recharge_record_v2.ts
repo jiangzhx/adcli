@@ -6,7 +6,7 @@ import type { AgentAdvRechargeRechargeRecordV2Filtering, AgentAdvRechargeRecharg
 
 
 export interface AgentAdvRechargeRechargeRecordV2ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest {
-  agentIds: number | string[];
+  agentIds: (number | string)[];
   startTime: string;
   endTime: string;
   page: number;
@@ -33,23 +33,31 @@ export class AgentAdvRechargeRechargeRecordV2Api {
 
   async openApi2AgentAdvRechargeRechargeRecordGetWithHttpInfo(request: AgentAdvRechargeRechargeRecordV2ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest): Promise<ApiResponse<AgentAdvRechargeRechargeRecordV2Response>> {
     if (request.agentIds == null) {
-      throw new ApiException("Missing the required parameter 'agentIds' when calling openApi2AgentAdvRechargeRechargeRecordGet");
+      throw new ApiException("agentIds is required and must be specified");
+    }
+
+    if (request.agentIds != null && request.agentIds.length < 1) {
+      throw new ApiException("agentIds must have at least 1 elements");
+    }
+
+    if (request.agentIds != null && request.agentIds.length > 20) {
+      throw new ApiException("agentIds must have less than 20 elements");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApi2AgentAdvRechargeRechargeRecordGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApi2AgentAdvRechargeRechargeRecordGet");
+      throw new ApiException("endTime is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2AgentAdvRechargeRechargeRecordGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApi2AgentAdvRechargeRechargeRecordGet");
+      throw new ApiException("pageSize is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AgentAdvRechargeRechargeRecordV2Response>({
       method: "GET",

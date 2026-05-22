@@ -8,7 +8,7 @@ export interface ToolsUnionFlowPackagePromotionReportV30Filter {
   high_cost?: string;
   landing_type?: ToolsUnionFlowPackagePromotionReportV30FilterLandingType;
   low_cost?: string;
-  promotion_ids?: number | string[];
+  promotion_ids?: (number | string)[];
   rits?: number[];
   start_time?: string;
 }

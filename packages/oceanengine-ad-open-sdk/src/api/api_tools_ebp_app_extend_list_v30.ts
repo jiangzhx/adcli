@@ -33,11 +33,11 @@ export class ToolsEbpAppExtendListV30Api {
 
   async openApiV30ToolsEbpAppExtendListGetWithHttpInfo(request: ToolsEbpAppExtendListV30ApiOpenApiV30ToolsEbpAppExtendListGetRequest): Promise<ApiResponse<ToolsEbpAppExtendListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpAppExtendListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.packageId == null) {
-      throw new ApiException("Missing the required parameter 'packageId' when calling openApiV30ToolsEbpAppExtendListGet");
+      throw new ApiException("packageId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpAppExtendListV30Response>({
       method: "GET",

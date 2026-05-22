@@ -5,7 +5,7 @@ import type { DpaClueProductDeleteV2RequestStoreIdAndOuterId } from "../models/i
 
 export interface DpaClueProductDeleteV2Request {
   advertiser_id: number | string;
-  product_ids?: number | string[];
+  product_ids?: (number | string)[];
   store_id_and_outer_id?: DpaClueProductDeleteV2RequestStoreIdAndOuterId;
 }
 

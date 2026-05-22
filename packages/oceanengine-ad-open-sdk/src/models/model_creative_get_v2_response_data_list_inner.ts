@@ -10,7 +10,7 @@ export interface CreativeGetV2ResponseDataListInner {
   creative_create_time?: string;
   creative_id?: number | string;
   creative_modify_time?: string;
-  creative_word_ids?: number | string[];
+  creative_word_ids?: (number | string)[];
   image_id?: string;
   image_ids?: string[];
   image_mode?: CreativeGetV2DataListImageMode;

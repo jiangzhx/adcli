@@ -29,11 +29,15 @@ export class ToolsAwemeInfoSearchV2Api {
 
   async openApi2ToolsAwemeInfoSearchGetWithHttpInfo(request: ToolsAwemeInfoSearchV2ApiOpenApi2ToolsAwemeInfoSearchGetRequest): Promise<ApiResponse<ToolsAwemeInfoSearchV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsAwemeInfoSearchGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.queryWord == null) {
-      throw new ApiException("Missing the required parameter 'queryWord' when calling openApi2ToolsAwemeInfoSearchGet");
+      throw new ApiException("queryWord is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAwemeInfoSearchV2Response>({
       method: "GET",

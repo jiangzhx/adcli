@@ -13,7 +13,7 @@ export interface LocalPromotionListV30Filtering {
   project_id?: number | string;
   promotion_create_time_end?: string;
   promotion_create_time_start?: string;
-  promotion_ids?: number | string[];
+  promotion_ids?: (number | string)[];
   promotion_modify_time_end?: string;
   promotion_modify_time_start?: string;
   promotion_name?: string;

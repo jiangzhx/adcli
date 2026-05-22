@@ -28,11 +28,11 @@ export class BrandToolCreativePreviewV30Api {
 
   async openApiV30BrandToolCreativePreviewGetWithHttpInfo(request: BrandToolCreativePreviewV30ApiOpenApiV30BrandToolCreativePreviewGetRequest): Promise<ApiResponse<BrandToolCreativePreviewV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandToolCreativePreviewGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.creativeId == null) {
-      throw new ApiException("Missing the required parameter 'creativeId' when calling openApiV30BrandToolCreativePreviewGet");
+      throw new ApiException("creativeId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandToolCreativePreviewV30Response>({
       method: "GET",

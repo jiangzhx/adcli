@@ -31,15 +31,15 @@ export class FixRemittanceCodeListGetV30Api {
 
   async openApiV30FixRemittanceCodeListGetGetWithHttpInfo(request: FixRemittanceCodeListGetV30ApiOpenApiV30FixRemittanceCodeListGetGetRequest): Promise<ApiResponse<FixRemittanceCodeListGetV30Response>> {
     if (request.ccAccountId == null) {
-      throw new ApiException("Missing the required parameter 'ccAccountId' when calling openApiV30FixRemittanceCodeListGetGet");
+      throw new ApiException("ccAccountId is required and must be specified");
     }
 
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30FixRemittanceCodeListGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.remittanceCodeList == null) {
-      throw new ApiException("Missing the required parameter 'remittanceCodeList' when calling openApiV30FixRemittanceCodeListGetGet");
+      throw new ApiException("remittanceCodeList is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FixRemittanceCodeListGetV30Response>({
       method: "GET",

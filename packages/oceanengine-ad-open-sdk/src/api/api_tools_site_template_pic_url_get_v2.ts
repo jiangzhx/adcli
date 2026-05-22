@@ -29,7 +29,7 @@ export class ToolsSiteTemplatePicUrlGetV2Api {
 
   async openApi2ToolsSiteTemplatePicUrlGetGetWithHttpInfo(request: ToolsSiteTemplatePicUrlGetV2ApiOpenApi2ToolsSiteTemplatePicUrlGetGetRequest): Promise<ApiResponse<ToolsSiteTemplatePicUrlGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsSiteTemplatePicUrlGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsSiteTemplatePicUrlGetV2Response>({
       method: "GET",

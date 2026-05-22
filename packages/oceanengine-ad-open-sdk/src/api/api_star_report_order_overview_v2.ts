@@ -7,7 +7,7 @@ import type { StarReportOrderOverviewV2Response } from "../models/index";
 
 export interface StarReportOrderOverviewV2ApiOpenApi2StarReportOrderOverviewGetRequest {
   starId: number | string;
-  orderIds: number | string[];
+  orderIds: (number | string)[];
 }
 
 export class StarReportOrderOverviewV2Api {
@@ -28,11 +28,11 @@ export class StarReportOrderOverviewV2Api {
 
   async openApi2StarReportOrderOverviewGetWithHttpInfo(request: StarReportOrderOverviewV2ApiOpenApi2StarReportOrderOverviewGetRequest): Promise<ApiResponse<StarReportOrderOverviewV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarReportOrderOverviewGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.orderIds == null) {
-      throw new ApiException("Missing the required parameter 'orderIds' when calling openApi2StarReportOrderOverviewGet");
+      throw new ApiException("orderIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarReportOrderOverviewV2Response>({
       method: "GET",

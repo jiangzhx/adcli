@@ -34,15 +34,23 @@ export class ReportBrandAdGetV30Api {
 
   async openApiV30ReportBrandAdGetGetWithHttpInfo(request: ReportBrandAdGetV30ApiOpenApiV30ReportBrandAdGetGetRequest): Promise<ApiResponse<ReportBrandAdGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportBrandAdGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV30ReportBrandAdGetGet");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
     }
 
     if (request.size == null) {
-      throw new ApiException("Missing the required parameter 'size' when calling openApiV30ReportBrandAdGetGet");
+      throw new ApiException("size is required and must be specified");
+    }
+
+    if (request.size != null && Number(request.size) > 100) {
+      throw new ApiException("size must be less than 100");
     }
     return this.apiClient.requestWithHttpInfo<ReportBrandAdGetV30Response>({
       method: "GET",

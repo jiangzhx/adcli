@@ -31,11 +31,15 @@ export class QianchuanAdGetV10Api {
 
   async openApiV10QianchuanAdGetGetWithHttpInfo(request: QianchuanAdGetV10ApiOpenApiV10QianchuanAdGetGetRequest): Promise<ApiResponse<QianchuanAdGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanAdGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdGetV10Response>({
       method: "GET",

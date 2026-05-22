@@ -3,6 +3,6 @@
 
 export interface AdvertiserDeliveryQualificationDeleteV30Request {
   advertiser_id: number | string;
-  qualification_ids: number | string[];
+  qualification_ids: (number | string)[];
 }
 

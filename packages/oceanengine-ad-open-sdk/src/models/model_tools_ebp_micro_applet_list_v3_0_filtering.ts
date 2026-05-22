@@ -6,7 +6,7 @@ import type { ToolsEbpMicroAppletListV30FilteringAssetOwnership, ToolsEbpMicroAp
 export interface ToolsEbpMicroAppletListV30Filtering {
   asset_ownership: ToolsEbpMicroAppletListV30FilteringAssetOwnership;
   audit_status?: ToolsEbpMicroAppletListV30FilteringAuditStatus;
-  instance_ids?: number | string[];
+  instance_ids?: (number | string)[];
   search_key?: string;
 }
 

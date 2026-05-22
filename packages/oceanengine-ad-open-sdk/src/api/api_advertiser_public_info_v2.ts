@@ -6,7 +6,7 @@ import type { AdvertiserPublicInfoV2Response } from "../models/index";
 
 
 export interface AdvertiserPublicInfoV2ApiOpenApi2AdvertiserPublicInfoGetRequest {
-  advertiserIds?: number | string[];
+  advertiserIds?: (number | string)[];
 }
 
 export class AdvertiserPublicInfoV2Api {

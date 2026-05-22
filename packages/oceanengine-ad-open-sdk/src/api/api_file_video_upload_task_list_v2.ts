@@ -8,7 +8,7 @@ import type { FileVideoUploadTaskListV2AccountType, FileVideoUploadTaskListV2Res
 export interface FileVideoUploadTaskListV2ApiOpenApi2FileVideoUploadTaskListGetRequest {
   accountId: number | string;
   accountType: FileVideoUploadTaskListV2AccountType;
-  taskIds: number | string[];
+  taskIds: (number | string)[];
 }
 
 export class FileVideoUploadTaskListV2Api {
@@ -29,15 +29,23 @@ export class FileVideoUploadTaskListV2Api {
 
   async openApi2FileVideoUploadTaskListGetWithHttpInfo(request: FileVideoUploadTaskListV2ApiOpenApi2FileVideoUploadTaskListGetRequest): Promise<ApiResponse<FileVideoUploadTaskListV2Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApi2FileVideoUploadTaskListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApi2FileVideoUploadTaskListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.taskIds == null) {
-      throw new ApiException("Missing the required parameter 'taskIds' when calling openApi2FileVideoUploadTaskListGet");
+      throw new ApiException("taskIds is required and must be specified");
+    }
+
+    if (request.taskIds != null && request.taskIds.length < 1) {
+      throw new ApiException("taskIds must have at least 1 elements");
+    }
+
+    if (request.taskIds != null && request.taskIds.length > 100) {
+      throw new ApiException("taskIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoUploadTaskListV2Response>({
       method: "GET",

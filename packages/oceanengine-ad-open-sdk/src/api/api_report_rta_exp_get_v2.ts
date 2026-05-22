@@ -31,23 +31,23 @@ export class ReportRtaExpGetV2Api {
 
   async openApi2ReportRtaExpGetGetWithHttpInfo(request: ReportRtaExpGetV2ApiOpenApi2ReportRtaExpGetGetRequest): Promise<ApiResponse<ReportRtaExpGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ReportRtaExpGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.rtaId == null) {
-      throw new ApiException("Missing the required parameter 'rtaId' when calling openApi2ReportRtaExpGetGet");
+      throw new ApiException("rtaId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApi2ReportRtaExpGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApi2ReportRtaExpGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.strategy == null) {
-      throw new ApiException("Missing the required parameter 'strategy' when calling openApi2ReportRtaExpGetGet");
+      throw new ApiException("strategy is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ReportRtaExpGetV2Response>({
       method: "GET",

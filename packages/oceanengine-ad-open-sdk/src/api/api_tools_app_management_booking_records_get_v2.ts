@@ -32,15 +32,15 @@ export class ToolsAppManagementBookingRecordsGetV2Api {
 
   async openApi2ToolsAppManagementBookingRecordsGetGetWithHttpInfo(request: ToolsAppManagementBookingRecordsGetV2ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest): Promise<ApiResponse<ToolsAppManagementBookingRecordsGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsAppManagementBookingRecordsGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.packageId == null) {
-      throw new ApiException("Missing the required parameter 'packageId' when calling openApi2ToolsAppManagementBookingRecordsGetGet");
+      throw new ApiException("packageId is required and must be specified");
     }
 
     if (request.hostType == null) {
-      throw new ApiException("Missing the required parameter 'hostType' when calling openApi2ToolsAppManagementBookingRecordsGetGet");
+      throw new ApiException("hostType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementBookingRecordsGetV2Response>({
       method: "GET",

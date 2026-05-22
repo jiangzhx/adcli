@@ -25,7 +25,7 @@ export interface StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfo {
   product_name?: string;
   project_id?: number | string;
   xingzhitou_pre_audit?: number;
-  yuntu_industry_ids?: number | string[];
+  yuntu_industry_ids?: (number | string)[];
   yuntu_main_brand?: number;
 }
 

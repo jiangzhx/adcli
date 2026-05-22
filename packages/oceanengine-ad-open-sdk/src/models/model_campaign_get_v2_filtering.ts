@@ -8,7 +8,7 @@ export interface CampaignGetV2Filtering {
   campaign_create_time?: string;
   campaign_name?: string;
   dedicate_type?: CampaignGetV2FilteringDedicateType;
-  ids?: number | string[];
+  ids?: (number | string)[];
   landing_type?: CampaignGetV2FilteringLandingType;
   smart_bid_type?: CampaignGetV2FilteringSmartBidType;
   status?: CampaignGetV2FilteringStatus;

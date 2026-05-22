@@ -27,7 +27,7 @@ export class EventManagerAuthGetAuthStatusV2Api {
 
   async openApi2EventManagerAuthGetAuthStatusGetWithHttpInfo(request: EventManagerAuthGetAuthStatusV2ApiOpenApi2EventManagerAuthGetAuthStatusGetRequest): Promise<ApiResponse<EventManagerAuthGetAuthStatusV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2EventManagerAuthGetAuthStatusGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerAuthGetAuthStatusV2Response>({
       method: "GET",

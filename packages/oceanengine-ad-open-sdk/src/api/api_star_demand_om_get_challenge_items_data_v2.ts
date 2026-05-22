@@ -31,19 +31,27 @@ export class StarDemandOmGetChallengeItemsDataV2Api {
 
   async openApi2StarDemandOmGetChallengeItemsDataGetWithHttpInfo(request: StarDemandOmGetChallengeItemsDataV2ApiOpenApi2StarDemandOmGetChallengeItemsDataGetRequest): Promise<ApiResponse<StarDemandOmGetChallengeItemsDataV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemandOmGetChallengeItemsDataGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.challengeTaskId == null) {
-      throw new ApiException("Missing the required parameter 'challengeTaskId' when calling openApi2StarDemandOmGetChallengeItemsDataGet");
+      throw new ApiException("challengeTaskId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarDemandOmGetChallengeItemsDataGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.limit == null) {
-      throw new ApiException("Missing the required parameter 'limit' when calling openApi2StarDemandOmGetChallengeItemsDataGet");
+      throw new ApiException("limit is required and must be specified");
+    }
+
+    if (request.limit != null && Number(request.limit) < 0) {
+      throw new ApiException("limit must be greater than 0");
+    }
+
+    if (request.limit != null && Number(request.limit) > 30) {
+      throw new ApiException("limit must be less than 30");
     }
     return this.apiClient.requestWithHttpInfo<StarDemandOmGetChallengeItemsDataV2Response>({
       method: "GET",

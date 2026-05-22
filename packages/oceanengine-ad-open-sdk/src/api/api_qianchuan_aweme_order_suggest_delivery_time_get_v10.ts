@@ -29,15 +29,15 @@ export class QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api {
 
   async openApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetWithHttpInfo(request: QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiOpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetRequest): Promise<ApiResponse<QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.orderId == null) {
-      throw new ApiException("Missing the required parameter 'orderId' when calling openApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGet");
+      throw new ApiException("orderId is required and must be specified");
     }
 
     if (request.addAmount == null) {
-      throw new ApiException("Missing the required parameter 'addAmount' when calling openApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGet");
+      throw new ApiException("addAmount is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response>({
       method: "GET",

@@ -6,6 +6,6 @@ import type { ToolsEbpMaterialAuthDeleteV30AccountType } from "../models/index";
 export interface ToolsEbpMaterialAuthDeleteV30Request {
   account_id: number | string;
   account_type?: ToolsEbpMaterialAuthDeleteV30AccountType;
-  auth_ids: number | string[];
+  auth_ids: (number | string)[];
 }
 

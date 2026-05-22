@@ -28,11 +28,15 @@ export class LocalPromotionDetailV30Api {
 
   async openApiV30LocalPromotionDetailGetWithHttpInfo(request: LocalPromotionDetailV30ApiOpenApiV30LocalPromotionDetailGetRequest): Promise<ApiResponse<LocalPromotionDetailV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalPromotionDetailGet");
+      throw new ApiException("localAccountId is required and must be specified");
+    }
+
+    if (request.localAccountId != null && Number(request.localAccountId) < 1) {
+      throw new ApiException("localAccountId must be greater than 1");
     }
 
     if (request.promotionId == null) {
-      throw new ApiException("Missing the required parameter 'promotionId' when calling openApiV30LocalPromotionDetailGet");
+      throw new ApiException("promotionId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalPromotionDetailV30Response>({
       method: "GET",

@@ -32,11 +32,11 @@ export class LocalFileVideoAwemeGetV30Api {
 
   async openApiV30LocalFileVideoAwemeGetGetWithHttpInfo(request: LocalFileVideoAwemeGetV30ApiOpenApiV30LocalFileVideoAwemeGetGetRequest): Promise<ApiResponse<LocalFileVideoAwemeGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalFileVideoAwemeGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.cursor == null) {
-      throw new ApiException("Missing the required parameter 'cursor' when calling openApiV30LocalFileVideoAwemeGetGet");
+      throw new ApiException("cursor is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalFileVideoAwemeGetV30Response>({
       method: "GET",

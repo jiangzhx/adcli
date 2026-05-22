@@ -28,11 +28,15 @@ export class CreativeDetailGetV30Api {
 
   async openApiV30CreativeDetailGetGetWithHttpInfo(request: CreativeDetailGetV30ApiOpenApiV30CreativeDetailGetGetRequest): Promise<ApiResponse<CreativeDetailGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30CreativeDetailGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV30CreativeDetailGetGet");
+      throw new ApiException("adId is required and must be specified");
+    }
+
+    if (request.adId != null && Number(request.adId) < 1) {
+      throw new ApiException("adId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<CreativeDetailGetV30Response>({
       method: "GET",

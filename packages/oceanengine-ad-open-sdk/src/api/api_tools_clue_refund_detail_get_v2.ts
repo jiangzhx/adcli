@@ -30,11 +30,23 @@ export class ToolsClueRefundDetailGetV2Api {
 
   async openApi2ToolsClueRefundDetailGetGetWithHttpInfo(request: ToolsClueRefundDetailGetV2ApiOpenApi2ToolsClueRefundDetailGetGetRequest): Promise<ApiResponse<ToolsClueRefundDetailGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsClueRefundDetailGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.month == null) {
-      throw new ApiException("Missing the required parameter 'month' when calling openApi2ToolsClueRefundDetailGetGet");
+      throw new ApiException("month is required and must be specified");
+    }
+
+    if (request.month != null && Array.from(String(request.month)).length < 6) {
+      throw new ApiException("month must have at least 6 elements");
+    }
+
+    if (request.month != null && Array.from(String(request.month)).length > 6) {
+      throw new ApiException("month must have less than 6 elements");
     }
     return this.apiClient.requestWithHttpInfo<ToolsClueRefundDetailGetV2Response>({
       method: "GET",

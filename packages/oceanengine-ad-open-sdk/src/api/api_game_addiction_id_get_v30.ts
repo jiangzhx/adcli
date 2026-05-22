@@ -28,11 +28,11 @@ export class GameAddictionIdGetV30Api {
 
   async openApiV30GameAddictionIdGetGetWithHttpInfo(request: GameAddictionIdGetV30ApiOpenApiV30GameAddictionIdGetGetRequest): Promise<ApiResponse<GameAddictionIdGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30GameAddictionIdGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.assetId == null) {
-      throw new ApiException("Missing the required parameter 'assetId' when calling openApiV30GameAddictionIdGetGet");
+      throw new ApiException("assetId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<GameAddictionIdGetV30Response>({
       method: "GET",

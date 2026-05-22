@@ -5,7 +5,7 @@ import type { SubscribeAccountsRemoveV30AccountType, SubscribeAccountsRemoveV30S
 
 export interface SubscribeAccountsRemoveV30Request {
   account_type?: SubscribeAccountsRemoveV30AccountType;
-  advertiser_ids: number | string[];
+  advertiser_ids: (number | string)[];
   app_id: number | string;
   core_user_id: number | string;
   subscribe_package_type?: SubscribeAccountsRemoveV30SubscribePackageType;

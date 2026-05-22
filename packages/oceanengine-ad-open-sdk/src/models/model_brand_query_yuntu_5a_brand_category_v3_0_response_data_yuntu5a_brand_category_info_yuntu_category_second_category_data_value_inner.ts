@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuCategorySecondCategoryDataValueInner {
-  brand_ids?: number | string[];
+  brand_ids?: (number | string)[];
   id?: number | string;
   value?: string;
 }

@@ -7,7 +7,7 @@ import type { QianchuanAdCompensateStatusGetV10Response } from "../models/index"
 
 export interface QianchuanAdCompensateStatusGetV10ApiOpenApiV10QianchuanAdCompensateStatusGetGetRequest {
   advertiserId: number | string;
-  adIds: number | string[];
+  adIds: (number | string)[];
 }
 
 export class QianchuanAdCompensateStatusGetV10Api {
@@ -28,11 +28,11 @@ export class QianchuanAdCompensateStatusGetV10Api {
 
   async openApiV10QianchuanAdCompensateStatusGetGetWithHttpInfo(request: QianchuanAdCompensateStatusGetV10ApiOpenApiV10QianchuanAdCompensateStatusGetGetRequest): Promise<ApiResponse<QianchuanAdCompensateStatusGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdCompensateStatusGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adIds == null) {
-      throw new ApiException("Missing the required parameter 'adIds' when calling openApiV10QianchuanAdCompensateStatusGetGet");
+      throw new ApiException("adIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdCompensateStatusGetV10Response>({
       method: "GET",

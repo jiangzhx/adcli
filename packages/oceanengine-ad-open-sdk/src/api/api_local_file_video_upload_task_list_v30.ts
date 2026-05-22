@@ -7,7 +7,7 @@ import type { LocalFileVideoUploadTaskListV30Response } from "../models/index";
 
 export interface LocalFileVideoUploadTaskListV30ApiOpenApiV30LocalFileVideoUploadTaskListGetRequest {
   localAccountId: number | string;
-  taskIds: number | string[];
+  taskIds: (number | string)[];
 }
 
 export class LocalFileVideoUploadTaskListV30Api {
@@ -28,11 +28,19 @@ export class LocalFileVideoUploadTaskListV30Api {
 
   async openApiV30LocalFileVideoUploadTaskListGetWithHttpInfo(request: LocalFileVideoUploadTaskListV30ApiOpenApiV30LocalFileVideoUploadTaskListGetRequest): Promise<ApiResponse<LocalFileVideoUploadTaskListV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalFileVideoUploadTaskListGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.taskIds == null) {
-      throw new ApiException("Missing the required parameter 'taskIds' when calling openApiV30LocalFileVideoUploadTaskListGet");
+      throw new ApiException("taskIds is required and must be specified");
+    }
+
+    if (request.taskIds != null && request.taskIds.length < 1) {
+      throw new ApiException("taskIds must have at least 1 elements");
+    }
+
+    if (request.taskIds != null && request.taskIds.length > 100) {
+      throw new ApiException("taskIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<LocalFileVideoUploadTaskListV30Response>({
       method: "GET",

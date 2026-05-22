@@ -31,11 +31,11 @@ export class SecurityNonScoreDisposalInfoGetV30Api {
 
   async openApiV30SecurityNonScoreDisposalInfoGetGetWithHttpInfo(request: SecurityNonScoreDisposalInfoGetV30ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest): Promise<ApiResponse<SecurityNonScoreDisposalInfoGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30SecurityNonScoreDisposalInfoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.businessLine == null) {
-      throw new ApiException("Missing the required parameter 'businessLine' when calling openApiV30SecurityNonScoreDisposalInfoGetGet");
+      throw new ApiException("businessLine is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SecurityNonScoreDisposalInfoGetV30Response>({
       method: "GET",

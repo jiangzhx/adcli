@@ -29,15 +29,23 @@ export class AdBillingUniqueIdGetV30Api {
 
   async openApiV30AdBillingUniqueIdGetGetWithHttpInfo(request: AdBillingUniqueIdGetV30ApiOpenApiV30AdBillingUniqueIdGetGetRequest): Promise<ApiResponse<AdBillingUniqueIdGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30AdBillingUniqueIdGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.count == null) {
-      throw new ApiException("Missing the required parameter 'count' when calling openApiV30AdBillingUniqueIdGetGet");
+      throw new ApiException("count is required and must be specified");
+    }
+
+    if (request.count != null && Number(request.count) < 1) {
+      throw new ApiException("count must be greater than 1");
+    }
+
+    if (request.count != null && Number(request.count) > 100) {
+      throw new ApiException("count must be less than 100");
     }
 
     if (request.uniqueIdType == null) {
-      throw new ApiException("Missing the required parameter 'uniqueIdType' when calling openApiV30AdBillingUniqueIdGetGet");
+      throw new ApiException("uniqueIdType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdBillingUniqueIdGetV30Response>({
       method: "GET",

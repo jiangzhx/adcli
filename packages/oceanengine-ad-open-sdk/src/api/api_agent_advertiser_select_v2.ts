@@ -7,7 +7,7 @@ import type { AgentAdvertiserSelectV2Filtering, AgentAdvertiserSelectV2Response 
 
 export interface AgentAdvertiserSelectV2ApiOpenApi2AgentAdvertiserSelectGetRequest {
   advertiserId?: number | string;
-  companyIds?: number | string[];
+  companyIds?: (number | string)[];
   count?: number;
   cursor?: number;
   filtering?: AgentAdvertiserSelectV2Filtering;

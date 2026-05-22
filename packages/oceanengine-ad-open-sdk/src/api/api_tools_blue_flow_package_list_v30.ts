@@ -28,7 +28,7 @@ export class ToolsBlueFlowPackageListV30Api {
 
   async openApiV30ToolsBlueFlowPackageListGetWithHttpInfo(request: ToolsBlueFlowPackageListV30ApiOpenApiV30ToolsBlueFlowPackageListGetRequest): Promise<ApiResponse<ToolsBlueFlowPackageListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsBlueFlowPackageListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsBlueFlowPackageListV30Response>({
       method: "GET",

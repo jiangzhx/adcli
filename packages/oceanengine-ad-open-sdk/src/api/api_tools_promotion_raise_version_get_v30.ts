@@ -30,11 +30,19 @@ export class ToolsPromotionRaiseVersionGetV30Api {
 
   async openApiV30ToolsPromotionRaiseVersionGetGetWithHttpInfo(request: ToolsPromotionRaiseVersionGetV30ApiOpenApiV30ToolsPromotionRaiseVersionGetGetRequest): Promise<ApiResponse<ToolsPromotionRaiseVersionGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsPromotionRaiseVersionGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.promotionId == null) {
-      throw new ApiException("Missing the required parameter 'promotionId' when calling openApiV30ToolsPromotionRaiseVersionGetGet");
+      throw new ApiException("promotionId is required and must be specified");
+    }
+
+    if (request.promotionId != null && Number(request.promotionId) < 1) {
+      throw new ApiException("promotionId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPromotionRaiseVersionGetV30Response>({
       method: "GET",

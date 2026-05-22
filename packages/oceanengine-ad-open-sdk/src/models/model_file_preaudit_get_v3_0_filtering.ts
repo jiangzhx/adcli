@@ -6,7 +6,7 @@ import type { FilePreauditGetV30FilteringMaterialChannel, FilePreauditGetV30Filt
 export interface FilePreauditGetV30Filtering {
   material_channel?: FilePreauditGetV30FilteringMaterialChannel;
   material_type?: FilePreauditGetV30FilteringMaterialType;
-  preaudit_ids?: number | string[];
+  preaudit_ids?: (number | string)[];
   status?: FilePreauditGetV30FilteringStatus;
 }
 

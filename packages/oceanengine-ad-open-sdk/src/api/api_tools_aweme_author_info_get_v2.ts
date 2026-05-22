@@ -8,7 +8,7 @@ import type { ToolsAwemeAuthorInfoGetV2Behaviors, ToolsAwemeAuthorInfoGetV2Respo
 export interface ToolsAwemeAuthorInfoGetV2ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest {
   advertiserId?: number | string;
   behaviors?: ToolsAwemeAuthorInfoGetV2Behaviors[];
-  labelIds?: number | string[];
+  labelIds?: (number | string)[];
 }
 
 export class ToolsAwemeAuthorInfoGetV2Api {

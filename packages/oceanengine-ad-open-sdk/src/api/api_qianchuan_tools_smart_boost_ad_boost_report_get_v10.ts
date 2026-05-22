@@ -37,31 +37,31 @@ export class QianchuanToolsSmartBoostAdBoostReportGetV10Api {
 
   async openApiV10QianchuanToolsSmartBoostAdBoostReportGetGetWithHttpInfo(request: QianchuanToolsSmartBoostAdBoostReportGetV10ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest): Promise<ApiResponse<QianchuanToolsSmartBoostAdBoostReportGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsSmartBoostAdBoostReportGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanToolsSmartBoostAdBoostReportGetGet");
+      throw new ApiException("adId is required and must be specified");
     }
 
     if (request.adRaiseVersion == null) {
-      throw new ApiException("Missing the required parameter 'adRaiseVersion' when calling openApiV10QianchuanToolsSmartBoostAdBoostReportGetGet");
+      throw new ApiException("adRaiseVersion is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV10QianchuanToolsSmartBoostAdBoostReportGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV10QianchuanToolsSmartBoostAdBoostReportGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV10QianchuanToolsSmartBoostAdBoostReportGetGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApiV10QianchuanToolsSmartBoostAdBoostReportGetGet");
+      throw new ApiException("pageSize is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanToolsSmartBoostAdBoostReportGetV10Response>({
       method: "GET",

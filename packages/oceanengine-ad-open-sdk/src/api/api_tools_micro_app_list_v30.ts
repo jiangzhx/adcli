@@ -31,7 +31,7 @@ export class ToolsMicroAppListV30Api {
 
   async openApiV30ToolsMicroAppListGetWithHttpInfo(request: ToolsMicroAppListV30ApiOpenApiV30ToolsMicroAppListGetRequest): Promise<ApiResponse<ToolsMicroAppListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsMicroAppListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsMicroAppListV30Response>({
       method: "GET",

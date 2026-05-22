@@ -33,23 +33,23 @@ export class StarDemandOmGetDemandListV2Api {
 
   async openApi2StarDemandOmGetDemandListGetWithHttpInfo(request: StarDemandOmGetDemandListV2ApiOpenApi2StarDemandOmGetDemandListGetRequest): Promise<ApiResponse<StarDemandOmGetDemandListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemandOmGetDemandListGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.pageNo == null) {
-      throw new ApiException("Missing the required parameter 'pageNo' when calling openApi2StarDemandOmGetDemandListGet");
+      throw new ApiException("pageNo is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApi2StarDemandOmGetDemandListGet");
+      throw new ApiException("pageSize is required and must be specified");
     }
 
     if (request.createStartTime == null) {
-      throw new ApiException("Missing the required parameter 'createStartTime' when calling openApi2StarDemandOmGetDemandListGet");
+      throw new ApiException("createStartTime is required and must be specified");
     }
 
     if (request.createEndTime == null) {
-      throw new ApiException("Missing the required parameter 'createEndTime' when calling openApi2StarDemandOmGetDemandListGet");
+      throw new ApiException("createEndTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarDemandOmGetDemandListV2Response>({
       method: "GET",

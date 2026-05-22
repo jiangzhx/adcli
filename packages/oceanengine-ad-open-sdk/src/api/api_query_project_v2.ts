@@ -30,15 +30,15 @@ export class QueryProjectV2Api {
 
   async openApi2QueryProjectGetWithHttpInfo(request: QueryProjectV2ApiOpenApi2QueryProjectGetRequest): Promise<ApiResponse<QueryProjectV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2QueryProjectGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.count == null) {
-      throw new ApiException("Missing the required parameter 'count' when calling openApi2QueryProjectGet");
+      throw new ApiException("count is required and must be specified");
     }
 
     if (request.cursor == null) {
-      throw new ApiException("Missing the required parameter 'cursor' when calling openApi2QueryProjectGet");
+      throw new ApiException("cursor is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryProjectV2Response>({
       method: "GET",

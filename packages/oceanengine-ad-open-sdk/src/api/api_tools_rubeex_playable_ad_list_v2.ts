@@ -30,11 +30,11 @@ export class ToolsRubeexPlayableAdListV2Api {
 
   async openApi2ToolsRubeexPlayableAdListGetWithHttpInfo(request: ToolsRubeexPlayableAdListV2ApiOpenApi2ToolsRubeexPlayableAdListGetRequest): Promise<ApiResponse<ToolsRubeexPlayableAdListV2Response>> {
     if (request.playableId == null) {
-      throw new ApiException("Missing the required parameter 'playableId' when calling openApi2ToolsRubeexPlayableAdListGet");
+      throw new ApiException("playableId is required and must be specified");
     }
 
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsRubeexPlayableAdListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsRubeexPlayableAdListV2Response>({
       method: "GET",

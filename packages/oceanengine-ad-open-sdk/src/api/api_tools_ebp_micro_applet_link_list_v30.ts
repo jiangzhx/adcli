@@ -33,11 +33,11 @@ export class ToolsEbpMicroAppletLinkListV30Api {
 
   async openApiV30ToolsEbpMicroAppletLinkListGetWithHttpInfo(request: ToolsEbpMicroAppletLinkListV30ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest): Promise<ApiResponse<ToolsEbpMicroAppletLinkListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpMicroAppletLinkListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30ToolsEbpMicroAppletLinkListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpMicroAppletLinkListV30Response>({
       method: "GET",

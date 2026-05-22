@@ -28,11 +28,11 @@ export class QianchuanAwemeSuggestRoiGoalV10Api {
 
   async openApiV10QianchuanAwemeSuggestRoiGoalGetWithHttpInfo(request: QianchuanAwemeSuggestRoiGoalV10ApiOpenApiV10QianchuanAwemeSuggestRoiGoalGetRequest): Promise<ApiResponse<QianchuanAwemeSuggestRoiGoalV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeSuggestRoiGoalGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanAwemeSuggestRoiGoalGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeSuggestRoiGoalV10Response>({
       method: "GET",

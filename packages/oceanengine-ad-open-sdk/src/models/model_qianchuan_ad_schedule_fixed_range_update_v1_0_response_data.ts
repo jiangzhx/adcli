@@ -4,7 +4,7 @@
 import type { QianchuanAdScheduleFixedRangeUpdateV10ResponseDataErrorsInner } from "../models/index";
 
 export interface QianchuanAdScheduleFixedRangeUpdateV10ResponseData {
-  ad_ids?: number | string[];
+  ad_ids?: (number | string)[];
   errors?: QianchuanAdScheduleFixedRangeUpdateV10ResponseDataErrorsInner[];
 }
 

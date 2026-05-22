@@ -6,7 +6,7 @@ import type { StardeliveryTaskListV30FilteringStarTaskCategoryType, Stardelivery
 export interface StardeliveryTaskListV30Filtering {
   star_task_category_name?: string;
   star_task_category_type?: StardeliveryTaskListV30FilteringStarTaskCategoryType;
-  star_task_ids?: number | string[];
+  star_task_ids?: (number | string)[];
   star_task_name?: string;
   star_task_source?: StardeliveryTaskListV30FilteringStarTaskSource;
   star_task_status?: StardeliveryTaskListV30FilteringStarTaskStatus;

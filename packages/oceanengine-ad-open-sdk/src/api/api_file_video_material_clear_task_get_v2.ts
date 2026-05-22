@@ -7,7 +7,7 @@ import type { FileVideoMaterialClearTaskGetV2Response } from "../models/index";
 
 export interface FileVideoMaterialClearTaskGetV2ApiOpenApi2FileVideoMaterialClearTaskGetGetRequest {
   advertiserId: number | string;
-  clearIds?: number | string[];
+  clearIds?: (number | string)[];
   page?: number;
   pageSize?: number;
 }
@@ -30,7 +30,7 @@ export class FileVideoMaterialClearTaskGetV2Api {
 
   async openApi2FileVideoMaterialClearTaskGetGetWithHttpInfo(request: FileVideoMaterialClearTaskGetV2ApiOpenApi2FileVideoMaterialClearTaskGetGetRequest): Promise<ApiResponse<FileVideoMaterialClearTaskGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoMaterialClearTaskGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoMaterialClearTaskGetV2Response>({
       method: "GET",

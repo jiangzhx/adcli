@@ -29,15 +29,15 @@ export class StarAttachmentUploadV2Api {
 
   async openApi2StarAttachmentUploadPostWithHttpInfo(request: StarAttachmentUploadV2ApiOpenApi2StarAttachmentUploadPostRequest): Promise<ApiResponse<StarAttachmentUploadV2Response>> {
     if (request.file == null) {
-      throw new ApiException("Missing the required parameter 'file' when calling openApi2StarAttachmentUploadPost");
+      throw new ApiException("file is required and must be specified");
     }
 
     if (request.fileName == null) {
-      throw new ApiException("Missing the required parameter 'fileName' when calling openApi2StarAttachmentUploadPost");
+      throw new ApiException("fileName is required and must be specified");
     }
 
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarAttachmentUploadPost");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarAttachmentUploadV2Response>({
       method: "POST",

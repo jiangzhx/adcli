@@ -43,15 +43,19 @@ export class EventManagerOptimizedGoalGetV2V30Api {
 
   async openApiV30EventManagerOptimizedGoalGetV2GetWithHttpInfo(request: EventManagerOptimizedGoalGetV2V30ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest): Promise<ApiResponse<EventManagerOptimizedGoalGetV2V30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30EventManagerOptimizedGoalGetV2Get");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.landingType == null) {
-      throw new ApiException("Missing the required parameter 'landingType' when calling openApiV30EventManagerOptimizedGoalGetV2Get");
+      throw new ApiException("landingType is required and must be specified");
     }
 
     if (request.adType == null) {
-      throw new ApiException("Missing the required parameter 'adType' when calling openApiV30EventManagerOptimizedGoalGetV2Get");
+      throw new ApiException("adType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerOptimizedGoalGetV2V30Response>({
       method: "GET",

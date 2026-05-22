@@ -30,7 +30,7 @@ export class FilePreauditGetV30Api {
 
   async openApiV30FilePreauditGetGetWithHttpInfo(request: FilePreauditGetV30ApiOpenApiV30FilePreauditGetGetRequest): Promise<ApiResponse<FilePreauditGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30FilePreauditGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FilePreauditGetV30Response>({
       method: "GET",

@@ -7,7 +7,7 @@ import type { ToolsHotMaterialDeriveGetV30Response } from "../models/index";
 
 export interface ToolsHotMaterialDeriveGetV30ApiOpenApiV30ToolsHotMaterialDeriveGetGetRequest {
   advertiserId: number | string;
-  taskIds: number | string[];
+  taskIds: (number | string)[];
 }
 
 export class ToolsHotMaterialDeriveGetV30Api {
@@ -28,11 +28,19 @@ export class ToolsHotMaterialDeriveGetV30Api {
 
   async openApiV30ToolsHotMaterialDeriveGetGetWithHttpInfo(request: ToolsHotMaterialDeriveGetV30ApiOpenApiV30ToolsHotMaterialDeriveGetGetRequest): Promise<ApiResponse<ToolsHotMaterialDeriveGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsHotMaterialDeriveGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.taskIds == null) {
-      throw new ApiException("Missing the required parameter 'taskIds' when calling openApiV30ToolsHotMaterialDeriveGetGet");
+      throw new ApiException("taskIds is required and must be specified");
+    }
+
+    if (request.taskIds != null && request.taskIds.length < 1) {
+      throw new ApiException("taskIds must have at least 1 elements");
+    }
+
+    if (request.taskIds != null && request.taskIds.length > 50) {
+      throw new ApiException("taskIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<ToolsHotMaterialDeriveGetV30Response>({
       method: "GET",

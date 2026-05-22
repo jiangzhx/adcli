@@ -28,7 +28,7 @@ export class ClueWechatInstanceListV2Api {
 
   async openApi2ClueWechatInstanceListGetWithHttpInfo(request: ClueWechatInstanceListV2ApiOpenApi2ClueWechatInstanceListGetRequest): Promise<ApiResponse<ClueWechatInstanceListV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ClueWechatInstanceListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ClueWechatInstanceListV2Response>({
       method: "GET",

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoBrandNameListInner {
-  first_category_ids?: number | string[];
+  first_category_ids?: (number | string)[];
   label?: string;
   value?: number;
 }

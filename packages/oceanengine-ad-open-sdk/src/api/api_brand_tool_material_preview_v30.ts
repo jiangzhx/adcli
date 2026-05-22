@@ -28,11 +28,11 @@ export class BrandToolMaterialPreviewV30Api {
 
   async openApiV30BrandToolMaterialPreviewGetWithHttpInfo(request: BrandToolMaterialPreviewV30ApiOpenApiV30BrandToolMaterialPreviewGetRequest): Promise<ApiResponse<BrandToolMaterialPreviewV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandToolMaterialPreviewGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.materialId == null) {
-      throw new ApiException("Missing the required parameter 'materialId' when calling openApiV30BrandToolMaterialPreviewGet");
+      throw new ApiException("materialId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandToolMaterialPreviewV30Response>({
       method: "GET",

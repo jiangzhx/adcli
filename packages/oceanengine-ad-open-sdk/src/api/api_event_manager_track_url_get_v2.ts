@@ -33,11 +33,11 @@ export class EventManagerTrackUrlGetV2Api {
 
   async openApi2EventManagerTrackUrlGetGetWithHttpInfo(request: EventManagerTrackUrlGetV2ApiOpenApi2EventManagerTrackUrlGetGetRequest): Promise<ApiResponse<EventManagerTrackUrlGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2EventManagerTrackUrlGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.assetId == null) {
-      throw new ApiException("Missing the required parameter 'assetId' when calling openApi2EventManagerTrackUrlGetGet");
+      throw new ApiException("assetId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerTrackUrlGetV2Response>({
       method: "GET",

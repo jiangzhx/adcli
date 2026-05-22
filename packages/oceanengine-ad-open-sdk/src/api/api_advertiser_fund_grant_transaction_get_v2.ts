@@ -32,15 +32,15 @@ export class AdvertiserFundGrantTransactionGetV2Api {
 
   async openApi2AdvertiserFundGrantTransactionGetGetWithHttpInfo(request: AdvertiserFundGrantTransactionGetV2ApiOpenApi2AdvertiserFundGrantTransactionGetGetRequest): Promise<ApiResponse<AdvertiserFundGrantTransactionGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2AdvertiserFundGrantTransactionGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApi2AdvertiserFundGrantTransactionGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApi2AdvertiserFundGrantTransactionGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserFundGrantTransactionGetV2Response>({
       method: "GET",

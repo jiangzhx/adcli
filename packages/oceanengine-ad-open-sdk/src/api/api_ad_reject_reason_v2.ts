@@ -6,7 +6,7 @@ import type { AdRejectReasonV2Response } from "../models/index";
 
 
 export interface AdRejectReasonV2ApiOpenApi2AdRejectReasonGetRequest {
-  adIds?: number | string[];
+  adIds?: (number | string)[];
   advertiserId?: number | string;
 }
 

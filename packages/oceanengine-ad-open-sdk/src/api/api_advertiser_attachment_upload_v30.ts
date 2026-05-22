@@ -30,19 +30,19 @@ export class AdvertiserAttachmentUploadV30Api {
 
   async openApiV30AdvertiserAttachmentUploadPostWithHttpInfo(request: AdvertiserAttachmentUploadV30ApiOpenApiV30AdvertiserAttachmentUploadPostRequest): Promise<ApiResponse<AdvertiserAttachmentUploadV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30AdvertiserAttachmentUploadPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.attachmentType == null) {
-      throw new ApiException("Missing the required parameter 'attachmentType' when calling openApiV30AdvertiserAttachmentUploadPost");
+      throw new ApiException("attachmentType is required and must be specified");
     }
 
     if (request.filename == null) {
-      throw new ApiException("Missing the required parameter 'filename' when calling openApiV30AdvertiserAttachmentUploadPost");
+      throw new ApiException("filename is required and must be specified");
     }
 
     if (request.imageData == null) {
-      throw new ApiException("Missing the required parameter 'imageData' when calling openApiV30AdvertiserAttachmentUploadPost");
+      throw new ApiException("imageData is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserAttachmentUploadV30Response>({
       method: "POST",

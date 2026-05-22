@@ -7,7 +7,7 @@ import type { DmpCustomAudienceReadV2Response } from "../models/index";
 
 export interface DmpCustomAudienceReadV2ApiOpenApi2DmpCustomAudienceReadGetRequest {
   advertiserId: number | string;
-  customAudienceIds: number | string[];
+  customAudienceIds: (number | string)[];
 }
 
 export class DmpCustomAudienceReadV2Api {
@@ -28,11 +28,15 @@ export class DmpCustomAudienceReadV2Api {
 
   async openApi2DmpCustomAudienceReadGetWithHttpInfo(request: DmpCustomAudienceReadV2ApiOpenApi2DmpCustomAudienceReadGetRequest): Promise<ApiResponse<DmpCustomAudienceReadV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DmpCustomAudienceReadGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.customAudienceIds == null) {
-      throw new ApiException("Missing the required parameter 'customAudienceIds' when calling openApi2DmpCustomAudienceReadGet");
+      throw new ApiException("customAudienceIds is required and must be specified");
+    }
+
+    if (request.customAudienceIds != null && request.customAudienceIds.length > 100) {
+      throw new ApiException("customAudienceIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<DmpCustomAudienceReadV2Response>({
       method: "GET",

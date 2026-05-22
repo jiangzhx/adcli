@@ -8,7 +8,7 @@ import type { ClueFormListV2IsDel, ClueFormListV2Response } from "../models/inde
 export interface ClueFormListV2ApiOpenApi2ClueFormListGetRequest {
   advertiserId?: number | string;
   endTime?: string;
-  instanceIds?: number | string[];
+  instanceIds?: (number | string)[];
   isDel?: ClueFormListV2IsDel;
   page?: number;
   pageSize?: number;

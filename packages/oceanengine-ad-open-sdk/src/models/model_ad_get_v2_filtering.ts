@@ -8,7 +8,7 @@ export interface AdGetV2Filtering {
   ad_modify_time?: string;
   ad_name?: string;
   campaign_id?: number | string;
-  ids?: number | string[];
+  ids?: (number | string)[];
   pricing_list?: string[];
   status?: AdGetV2FilteringStatus;
 }

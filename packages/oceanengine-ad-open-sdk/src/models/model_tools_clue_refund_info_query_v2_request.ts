@@ -3,6 +3,6 @@
 
 export interface ToolsClueRefundInfoQueryV2Request {
   advertiser_id?: number | string;
-  clue_ids: number | string[];
+  clue_ids: (number | string)[];
 }
 

@@ -31,23 +31,31 @@ export class DouplusOptionalItemsListV30Api {
 
   async openApiV30DouplusOptionalItemsListGetWithHttpInfo(request: DouplusOptionalItemsListV30ApiOpenApiV30DouplusOptionalItemsListGetRequest): Promise<ApiResponse<DouplusOptionalItemsListV30Response>> {
     if (request.awemeSecUid == null) {
-      throw new ApiException("Missing the required parameter 'awemeSecUid' when calling openApiV30DouplusOptionalItemsListGet");
+      throw new ApiException("awemeSecUid is required and must be specified");
     }
 
     if (request.externalAction == null) {
-      throw new ApiException("Missing the required parameter 'externalAction' when calling openApiV30DouplusOptionalItemsListGet");
+      throw new ApiException("externalAction is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV30DouplusOptionalItemsListGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
 
     if (request.count == null) {
-      throw new ApiException("Missing the required parameter 'count' when calling openApiV30DouplusOptionalItemsListGet");
+      throw new ApiException("count is required and must be specified");
+    }
+
+    if (request.count != null && Number(request.count) < 1) {
+      throw new ApiException("count must be greater than 1");
+    }
+
+    if (request.count != null && Number(request.count) > 20) {
+      throw new ApiException("count must be less than 20");
     }
 
     if (request.cursor == null) {
-      throw new ApiException("Missing the required parameter 'cursor' when calling openApiV30DouplusOptionalItemsListGet");
+      throw new ApiException("cursor is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DouplusOptionalItemsListV30Response>({
       method: "GET",

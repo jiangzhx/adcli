@@ -6,7 +6,7 @@ import type { AdvertiserInfoV2Response } from "../models/index";
 
 
 export interface AdvertiserInfoV2ApiOpenApi2AdvertiserInfoGetRequest {
-  advertiserIds?: number | string[];
+  advertiserIds?: (number | string)[];
   fields?: string[];
 }
 

@@ -8,6 +8,6 @@ export interface DpaAssetV2ListV2Request {
   filtering?: DpaAssetV2ListV2RequestFiltering;
   page?: number;
   page_size?: number;
-  unique_product_ids: number | string[];
+  unique_product_ids: (number | string)[];
 }
 

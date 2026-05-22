@@ -35,19 +35,19 @@ export class ReportBrandAgentDataV30Api {
 
   async openApiV30ReportBrandAgentDataGetWithHttpInfo(request: ReportBrandAgentDataV30ApiOpenApiV30ReportBrandAgentDataGetRequest): Promise<ApiResponse<ReportBrandAgentDataV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportBrandAgentDataGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.dataReportType == null) {
-      throw new ApiException("Missing the required parameter 'dataReportType' when calling openApiV30ReportBrandAgentDataGet");
+      throw new ApiException("dataReportType is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30ReportBrandAgentDataGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30ReportBrandAgentDataGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ReportBrandAgentDataV30Response>({
       method: "GET",

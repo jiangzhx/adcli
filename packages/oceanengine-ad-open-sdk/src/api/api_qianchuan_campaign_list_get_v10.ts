@@ -30,11 +30,15 @@ export class QianchuanCampaignListGetV10Api {
 
   async openApiV10QianchuanCampaignListGetGetWithHttpInfo(request: QianchuanCampaignListGetV10ApiOpenApiV10QianchuanCampaignListGetGetRequest): Promise<ApiResponse<QianchuanCampaignListGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanCampaignListGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.filter == null) {
-      throw new ApiException("Missing the required parameter 'filter' when calling openApiV10QianchuanCampaignListGetGet");
+      throw new ApiException("filter is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanCampaignListGetV10Response>({
       method: "GET",

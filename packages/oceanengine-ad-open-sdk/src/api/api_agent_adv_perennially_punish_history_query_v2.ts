@@ -7,7 +7,7 @@ import type { AgentAdvPerenniallyPunishHistoryQueryV2Response } from "../models/
 
 export interface AgentAdvPerenniallyPunishHistoryQueryV2ApiOpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest {
   agentId: number | string;
-  advertiserIds: number | string[];
+  advertiserIds: (number | string)[];
 }
 
 export class AgentAdvPerenniallyPunishHistoryQueryV2Api {
@@ -28,11 +28,19 @@ export class AgentAdvPerenniallyPunishHistoryQueryV2Api {
 
   async openApi2AgentAdvPerenniallyPunishHistoryQueryGetWithHttpInfo(request: AgentAdvPerenniallyPunishHistoryQueryV2ApiOpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest): Promise<ApiResponse<AgentAdvPerenniallyPunishHistoryQueryV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2AgentAdvPerenniallyPunishHistoryQueryGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.advertiserIds == null) {
-      throw new ApiException("Missing the required parameter 'advertiserIds' when calling openApi2AgentAdvPerenniallyPunishHistoryQueryGet");
+      throw new ApiException("advertiserIds is required and must be specified");
+    }
+
+    if (request.advertiserIds != null && request.advertiserIds.length < 1) {
+      throw new ApiException("advertiserIds must have at least 1 elements");
+    }
+
+    if (request.advertiserIds != null && request.advertiserIds.length > 100) {
+      throw new ApiException("advertiserIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<AgentAdvPerenniallyPunishHistoryQueryV2Response>({
       method: "GET",

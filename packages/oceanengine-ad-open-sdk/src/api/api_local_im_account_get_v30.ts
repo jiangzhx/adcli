@@ -30,7 +30,7 @@ export class LocalImAccountGetV30Api {
 
   async openApiV30LocalImAccountGetGetWithHttpInfo(request: LocalImAccountGetV30ApiOpenApiV30LocalImAccountGetGetRequest): Promise<ApiResponse<LocalImAccountGetV30Response>> {
     if (request.lifeAccountId == null) {
-      throw new ApiException("Missing the required parameter 'lifeAccountId' when calling openApiV30LocalImAccountGetGet");
+      throw new ApiException("lifeAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalImAccountGetV30Response>({
       method: "GET",

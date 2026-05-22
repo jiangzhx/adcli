@@ -28,11 +28,19 @@ export class FileVideoEfficiencyGetV2Api {
 
   async openApi2FileVideoEfficiencyGetGetWithHttpInfo(request: FileVideoEfficiencyGetV2ApiOpenApi2FileVideoEfficiencyGetGetRequest): Promise<ApiResponse<FileVideoEfficiencyGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoEfficiencyGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.materialIds == null) {
-      throw new ApiException("Missing the required parameter 'materialIds' when calling openApi2FileVideoEfficiencyGetGet");
+      throw new ApiException("materialIds is required and must be specified");
+    }
+
+    if (request.materialIds != null && request.materialIds.length < 1) {
+      throw new ApiException("materialIds must have at least 1 elements");
+    }
+
+    if (request.materialIds != null && request.materialIds.length > 100) {
+      throw new ApiException("materialIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoEfficiencyGetV2Response>({
       method: "GET",

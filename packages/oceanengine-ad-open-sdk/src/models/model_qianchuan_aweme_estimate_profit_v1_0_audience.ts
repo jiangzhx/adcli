@@ -6,7 +6,7 @@ import type { QianchuanAwemeEstimateProfitV10AudienceAge, QianchuanAwemeEstimate
 export interface QianchuanAwemeEstimateProfitV10Audience {
   age?: QianchuanAwemeEstimateProfitV10AudienceAge[];
   audience_mode: QianchuanAwemeEstimateProfitV10AudienceAudienceMode;
-  author_ids?: number | string[];
+  author_ids?: (number | string)[];
   behaviors?: QianchuanAwemeEstimateProfitV10AudienceBehaviors[];
   city?: number[];
   district?: QianchuanAwemeEstimateProfitV10AudienceDistrict;

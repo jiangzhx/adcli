@@ -32,11 +32,11 @@ export class ToolsAppManagementAndroidAppListV2Api {
 
   async openApi2ToolsAppManagementAndroidAppListGetWithHttpInfo(request: ToolsAppManagementAndroidAppListV2ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest): Promise<ApiResponse<ToolsAppManagementAndroidAppListV2Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApi2ToolsAppManagementAndroidAppListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApi2ToolsAppManagementAndroidAppListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementAndroidAppListV2Response>({
       method: "GET",

@@ -36,23 +36,23 @@ export class QianchuanUniPromotionAdProductGetV10Api {
 
   async openApiV10QianchuanUniPromotionAdProductGetGetWithHttpInfo(request: QianchuanUniPromotionAdProductGetV10ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest): Promise<ApiResponse<QianchuanUniPromotionAdProductGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
+      throw new ApiException("adId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.fields == null) {
-      throw new ApiException("Missing the required parameter 'fields' when calling openApiV10QianchuanUniPromotionAdProductGetGet");
+      throw new ApiException("fields is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionAdProductGetV10Response>({
       method: "GET",

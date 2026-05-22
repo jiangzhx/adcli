@@ -27,7 +27,11 @@ export class DpaProductAvailablesV2Api {
 
   async openApi2DpaProductAvailablesGetWithHttpInfo(request: DpaProductAvailablesV2ApiOpenApi2DpaProductAvailablesGetRequest): Promise<ApiResponse<DpaProductAvailablesV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DpaProductAvailablesGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<DpaProductAvailablesV2Response>({
       method: "GET",

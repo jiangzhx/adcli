@@ -5,7 +5,7 @@ import type { ReportBrandDataV30FilterAdForm } from "../models/index";
 
 export interface ReportBrandDataV30Filter {
   ad_form?: ReportBrandDataV30FilterAdForm;
-  ids?: number | string[];
+  ids?: (number | string)[];
   is_band_ad_overflow?: boolean;
 }
 

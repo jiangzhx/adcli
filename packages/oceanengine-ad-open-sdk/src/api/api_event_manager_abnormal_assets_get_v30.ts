@@ -28,7 +28,7 @@ export class EventManagerAbnormalAssetsGetV30Api {
 
   async openApiV30EventManagerAbnormalAssetsGetGetWithHttpInfo(request: EventManagerAbnormalAssetsGetV30ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest): Promise<ApiResponse<EventManagerAbnormalAssetsGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30EventManagerAbnormalAssetsGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerAbnormalAssetsGetV30Response>({
       method: "GET",

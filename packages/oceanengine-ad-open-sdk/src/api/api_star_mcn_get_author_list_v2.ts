@@ -31,7 +31,7 @@ export class StarMcnGetAuthorListV2Api {
 
   async openApi2StarMcnGetAuthorListGetWithHttpInfo(request: StarMcnGetAuthorListV2ApiOpenApi2StarMcnGetAuthorListGetRequest): Promise<ApiResponse<StarMcnGetAuthorListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarMcnGetAuthorListGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarMcnGetAuthorListV2Response>({
       method: "GET",

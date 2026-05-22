@@ -29,11 +29,11 @@ export class ReportProductAsyncTaskDownloadV30Api {
 
   async openApiV30ReportProductAsyncTaskDownloadGetWithHttpInfo(request: ReportProductAsyncTaskDownloadV30ApiOpenApiV30ReportProductAsyncTaskDownloadGetRequest): Promise<ApiResponse<ArrayBuffer>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportProductAsyncTaskDownloadGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.taskId == null) {
-      throw new ApiException("Missing the required parameter 'taskId' when calling openApiV30ReportProductAsyncTaskDownloadGet");
+      throw new ApiException("taskId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ArrayBuffer>({
       method: "GET",

@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface QianchuanOrientationPackageGetV10Filtering {
-  id?: number | string[];
+  id?: (number | string)[];
   name?: string;
 }
 

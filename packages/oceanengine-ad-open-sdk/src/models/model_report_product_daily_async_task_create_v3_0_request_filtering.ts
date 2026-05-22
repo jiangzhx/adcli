@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ReportProductDailyAsyncTaskCreateV30RequestFiltering {
-  ad_ids?: number | string[];
+  ad_ids?: (number | string)[];
   deep_external_action?: string;
   dpa_video_tid?: number;
   external_action?: string;

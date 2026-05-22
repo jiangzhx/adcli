@@ -6,7 +6,7 @@ import type { StarInfoV2Response } from "../models/index";
 
 
 export interface StarInfoV2ApiOpenApi2StarInfoGetRequest {
-  starIds: number | string[];
+  starIds: (number | string)[];
 }
 
 export class StarInfoV2Api {
@@ -27,7 +27,7 @@ export class StarInfoV2Api {
 
   async openApi2StarInfoGetWithHttpInfo(request: StarInfoV2ApiOpenApi2StarInfoGetRequest): Promise<ApiResponse<StarInfoV2Response>> {
     if (request.starIds == null) {
-      throw new ApiException("Missing the required parameter 'starIds' when calling openApi2StarInfoGet");
+      throw new ApiException("starIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarInfoV2Response>({
       method: "GET",

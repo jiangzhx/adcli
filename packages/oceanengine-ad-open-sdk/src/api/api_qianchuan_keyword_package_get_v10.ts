@@ -29,11 +29,15 @@ export class QianchuanKeywordPackageGetV10Api {
 
   async openApiV10QianchuanKeywordPackageGetGetWithHttpInfo(request: QianchuanKeywordPackageGetV10ApiOpenApiV10QianchuanKeywordPackageGetGetRequest): Promise<ApiResponse<QianchuanKeywordPackageGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanKeywordPackageGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanKeywordPackageGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanKeywordPackageGetV10Response>({
       method: "GET",

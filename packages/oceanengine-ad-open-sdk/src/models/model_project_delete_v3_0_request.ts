@@ -3,6 +3,6 @@
 
 export interface ProjectDeleteV30Request {
   advertiser_id: number | string;
-  project_ids: number | string[];
+  project_ids: (number | string)[];
 }
 

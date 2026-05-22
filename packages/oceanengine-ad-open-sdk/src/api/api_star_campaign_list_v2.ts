@@ -30,7 +30,7 @@ export class StarCampaignListV2Api {
 
   async openApi2StarCampaignListGetWithHttpInfo(request: StarCampaignListV2ApiOpenApi2StarCampaignListGetRequest): Promise<ApiResponse<StarCampaignListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarCampaignListGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarCampaignListV2Response>({
       method: "GET",

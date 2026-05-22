@@ -32,7 +32,7 @@ export class LocalFileVideoGetV30Api {
 
   async openApiV30LocalFileVideoGetGetWithHttpInfo(request: LocalFileVideoGetV30ApiOpenApiV30LocalFileVideoGetGetRequest): Promise<ApiResponse<LocalFileVideoGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalFileVideoGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalFileVideoGetV30Response>({
       method: "GET",

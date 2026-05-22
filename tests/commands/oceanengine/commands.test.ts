@@ -15,6 +15,17 @@ function jsonResponse(body: unknown) {
   });
 }
 
+async function expectRejectMessage(promise: Promise<unknown>, message: string) {
+  try {
+    await promise;
+  } catch (error) {
+    expect(error).toBeInstanceOf(Error);
+    expect((error as Error).message).toContain(message);
+    return;
+  }
+  throw new Error("Expected promise to reject");
+}
+
 describe("oceanengine CLI commands", () => {
   test("stores OceanEngine token under the shared adcli cache directory by default", () => {
     expect(getOceanEngineConfigInfo().configPath).toBe(
@@ -250,7 +261,16 @@ describe("oceanengine CLI commands", () => {
     expect(url.pathname).toBe("/open_api/v3.0/promotion/list/");
     expect(url.searchParams.get("advertiser_id")).toBe("7641894773956215123");
     expect(url.searchParams.get("filtering")).toBe(`{"project_id":"${largeProjectId}"}`);
-    expect(url.searchParams.get("fields")).toBe("promotion_id,name,status_first");
+    expect(url.searchParams.get("fields")).toBe(JSON.stringify(["promotion_id", "name", "status_first"]));
+  });
+
+  test("applies generated Go-style validation in OceanEngine promotion list", async () => {
+    await expectRejectMessage(
+      runOceanEngineCommand(["promotion", "list", "--access-token", "token", "--advertiser-id", "0"], {
+        fetch: async () => jsonResponse({ code: 0, data: {} }),
+      }),
+      "advertiserId must be greater than 1",
+    );
   });
 
   test("preserves unsafe integer ids in filtering json flags", async () => {

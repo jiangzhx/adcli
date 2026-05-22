@@ -4,7 +4,7 @@
 import type { ProjectListV30DataListOptimizeGoalDeepExternalAction, ProjectListV30DataListOptimizeGoalExternalAction } from "../models/index";
 
 export interface ProjectListV30ResponseDataListInnerOptimizeGoal {
-  asset_ids?: number | string[];
+  asset_ids?: (number | string)[];
   convert_id?: number | string;
   deep_external_action?: ProjectListV30DataListOptimizeGoalDeepExternalAction;
   external_action?: ProjectListV30DataListOptimizeGoalExternalAction;

@@ -5,7 +5,7 @@ import type { AdvertiserDeliveryPkgConfigV30DataIndustryConfigIndustryStatus, Ad
 
 export interface AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfig {
   config_id: number | string;
-  industry_ids: number | string[];
+  industry_ids: (number | string)[];
   industry_names: string[];
   industry_status: AdvertiserDeliveryPkgConfigV30DataIndustryConfigIndustryStatus;
   necessaries?: AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigNecessariesInner[];

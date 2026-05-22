@@ -27,7 +27,7 @@ export class LocalQualificationGetV30Api {
 
   async openApiV30LocalQualificationGetGetWithHttpInfo(request: LocalQualificationGetV30ApiOpenApiV30LocalQualificationGetGetRequest): Promise<ApiResponse<LocalQualificationGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalQualificationGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalQualificationGetV30Response>({
       method: "GET",

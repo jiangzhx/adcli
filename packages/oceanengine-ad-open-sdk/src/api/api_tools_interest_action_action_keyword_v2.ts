@@ -29,11 +29,11 @@ export class ToolsInterestActionActionKeywordV2Api {
 
   async openApi2ToolsInterestActionActionKeywordGetWithHttpInfo(request: ToolsInterestActionActionKeywordV2ApiOpenApi2ToolsInterestActionActionKeywordGetRequest): Promise<ApiResponse<ToolsInterestActionActionKeywordV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsInterestActionActionKeywordGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.queryWords == null) {
-      throw new ApiException("Missing the required parameter 'queryWords' when calling openApi2ToolsInterestActionActionKeywordGet");
+      throw new ApiException("queryWords is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsInterestActionActionKeywordV2Response>({
       method: "GET",

@@ -28,11 +28,11 @@ export class QueryStatementV2Api {
 
   async openApi2QueryStatementGetWithHttpInfo(request: QueryStatementV2ApiOpenApi2QueryStatementGetRequest): Promise<ApiResponse<QueryStatementV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2QueryStatementGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.projectIdList == null) {
-      throw new ApiException("Missing the required parameter 'projectIdList' when calling openApi2QueryStatementGet");
+      throw new ApiException("projectIdList is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryStatementV2Response>({
       method: "GET",

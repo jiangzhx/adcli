@@ -8,7 +8,7 @@ import type { QianchuanAdMaterialSuggestionV10Response } from "../models/index";
 export interface QianchuanAdMaterialSuggestionV10ApiOpenApiV10QianchuanAdMaterialSuggestionGetRequest {
   advertiserId: number | string;
   adId: number | string;
-  materialIds: number | string[];
+  materialIds: (number | string)[];
 }
 
 export class QianchuanAdMaterialSuggestionV10Api {
@@ -29,15 +29,23 @@ export class QianchuanAdMaterialSuggestionV10Api {
 
   async openApiV10QianchuanAdMaterialSuggestionGetWithHttpInfo(request: QianchuanAdMaterialSuggestionV10ApiOpenApiV10QianchuanAdMaterialSuggestionGetRequest): Promise<ApiResponse<QianchuanAdMaterialSuggestionV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdMaterialSuggestionGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanAdMaterialSuggestionGet");
+      throw new ApiException("adId is required and must be specified");
     }
 
     if (request.materialIds == null) {
-      throw new ApiException("Missing the required parameter 'materialIds' when calling openApiV10QianchuanAdMaterialSuggestionGet");
+      throw new ApiException("materialIds is required and must be specified");
+    }
+
+    if (request.materialIds != null && request.materialIds.length < 1) {
+      throw new ApiException("materialIds must have at least 1 elements");
+    }
+
+    if (request.materialIds != null && request.materialIds.length > 50) {
+      throw new ApiException("materialIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdMaterialSuggestionV10Response>({
       method: "GET",

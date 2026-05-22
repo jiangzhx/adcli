@@ -29,7 +29,7 @@ export class BusinessPlatformCompanyInfoGetV30Api {
 
   async openApiV30BusinessPlatformCompanyInfoGetGetWithHttpInfo(request: BusinessPlatformCompanyInfoGetV30ApiOpenApiV30BusinessPlatformCompanyInfoGetGetRequest): Promise<ApiResponse<BusinessPlatformCompanyInfoGetV30Response>> {
     if (request.organizationId == null) {
-      throw new ApiException("Missing the required parameter 'organizationId' when calling openApiV30BusinessPlatformCompanyInfoGetGet");
+      throw new ApiException("organizationId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BusinessPlatformCompanyInfoGetV30Response>({
       method: "GET",

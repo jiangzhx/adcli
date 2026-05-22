@@ -7,7 +7,7 @@ import type { StarItemAuthorGetV2Response } from "../models/index";
 
 export interface StarItemAuthorGetV2ApiOpenApi2StarItemAuthorGetGetRequest {
   starId: number | string;
-  itemIds: number | string[];
+  itemIds: (number | string)[];
 }
 
 export class StarItemAuthorGetV2Api {
@@ -28,11 +28,11 @@ export class StarItemAuthorGetV2Api {
 
   async openApi2StarItemAuthorGetGetWithHttpInfo(request: StarItemAuthorGetV2ApiOpenApi2StarItemAuthorGetGetRequest): Promise<ApiResponse<StarItemAuthorGetV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarItemAuthorGetGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.itemIds == null) {
-      throw new ApiException("Missing the required parameter 'itemIds' when calling openApi2StarItemAuthorGetGet");
+      throw new ApiException("itemIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarItemAuthorGetV2Response>({
       method: "GET",

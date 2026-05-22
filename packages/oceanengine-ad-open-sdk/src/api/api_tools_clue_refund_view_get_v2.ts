@@ -28,11 +28,19 @@ export class ToolsClueRefundViewGetV2Api {
 
   async openApi2ToolsClueRefundViewGetGetWithHttpInfo(request: ToolsClueRefundViewGetV2ApiOpenApi2ToolsClueRefundViewGetGetRequest): Promise<ApiResponse<ToolsClueRefundViewGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsClueRefundViewGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.clueId == null) {
-      throw new ApiException("Missing the required parameter 'clueId' when calling openApi2ToolsClueRefundViewGetGet");
+      throw new ApiException("clueId is required and must be specified");
+    }
+
+    if (request.clueId != null && Number(request.clueId) < 1) {
+      throw new ApiException("clueId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<ToolsClueRefundViewGetV2Response>({
       method: "GET",

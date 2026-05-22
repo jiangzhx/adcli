@@ -29,11 +29,11 @@ export class EventManagerEventConfigsGetV2Api {
 
   async openApi2EventManagerEventConfigsGetGetWithHttpInfo(request: EventManagerEventConfigsGetV2ApiOpenApi2EventManagerEventConfigsGetGetRequest): Promise<ApiResponse<EventManagerEventConfigsGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2EventManagerEventConfigsGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.assetId == null) {
-      throw new ApiException("Missing the required parameter 'assetId' when calling openApi2EventManagerEventConfigsGetGet");
+      throw new ApiException("assetId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerEventConfigsGetV2Response>({
       method: "GET",

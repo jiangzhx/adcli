@@ -30,7 +30,7 @@ export class ToolsInactiveAdvertiserListV30Api {
 
   async openApiV30ToolsInactiveAdvertiserListGetWithHttpInfo(request: ToolsInactiveAdvertiserListV30ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest): Promise<ApiResponse<ToolsInactiveAdvertiserListV30Response>> {
     if (request.appId == null) {
-      throw new ApiException("Missing the required parameter 'appId' when calling openApiV30ToolsInactiveAdvertiserListGet");
+      throw new ApiException("appId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsInactiveAdvertiserListV30Response>({
       method: "GET",

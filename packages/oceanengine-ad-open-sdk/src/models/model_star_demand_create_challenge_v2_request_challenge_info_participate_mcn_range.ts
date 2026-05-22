@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarDemandCreateChallengeV2RequestChallengeInfoParticipateMcnRange {
-  mcn_ids?: number | string[];
+  mcn_ids?: (number | string)[];
 }
 

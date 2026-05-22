@@ -29,7 +29,7 @@ export class StarChallengeListV2Api {
 
   async openApi2StarChallengeListGetWithHttpInfo(request: StarChallengeListV2ApiOpenApi2StarChallengeListGetRequest): Promise<ApiResponse<StarChallengeListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarChallengeListGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarChallengeListV2Response>({
       method: "GET",

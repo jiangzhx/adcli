@@ -30,7 +30,7 @@ export class ToolsPreAuditGetV2Api {
 
   async openApi2ToolsPreAuditGetGetWithHttpInfo(request: ToolsPreAuditGetV2ApiOpenApi2ToolsPreAuditGetGetRequest): Promise<ApiResponse<ToolsPreAuditGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsPreAuditGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPreAuditGetV2Response>({
       method: "GET",

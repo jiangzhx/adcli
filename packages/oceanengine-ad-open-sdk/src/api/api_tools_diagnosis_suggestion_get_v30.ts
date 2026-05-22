@@ -6,7 +6,7 @@ import type { ToolsDiagnosisSuggestionGetV30Response } from "../models/index";
 
 
 export interface ToolsDiagnosisSuggestionGetV30ApiOpenApiV30ToolsDiagnosisSuggestionGetGetRequest {
-  promotionIds: number | string[];
+  promotionIds: (number | string)[];
   advertiserId: number | string;
 }
 
@@ -28,11 +28,11 @@ export class ToolsDiagnosisSuggestionGetV30Api {
 
   async openApiV30ToolsDiagnosisSuggestionGetGetWithHttpInfo(request: ToolsDiagnosisSuggestionGetV30ApiOpenApiV30ToolsDiagnosisSuggestionGetGetRequest): Promise<ApiResponse<ToolsDiagnosisSuggestionGetV30Response>> {
     if (request.promotionIds == null) {
-      throw new ApiException("Missing the required parameter 'promotionIds' when calling openApiV30ToolsDiagnosisSuggestionGetGet");
+      throw new ApiException("promotionIds is required and must be specified");
     }
 
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsDiagnosisSuggestionGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsDiagnosisSuggestionGetV30Response>({
       method: "GET",

@@ -5,6 +5,6 @@ import type { UniProjectMonetizationModeUpdateV30ResponseDataErrorsInner } from 
 
 export interface UniProjectMonetizationModeUpdateV30ResponseData {
   errors?: UniProjectMonetizationModeUpdateV30ResponseDataErrorsInner[];
-  project_ids?: number | string[];
+  project_ids?: (number | string)[];
 }
 

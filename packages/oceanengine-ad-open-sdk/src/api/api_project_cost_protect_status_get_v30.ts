@@ -7,7 +7,7 @@ import type { ProjectCostProtectStatusGetV30Response } from "../models/index";
 
 export interface ProjectCostProtectStatusGetV30ApiOpenApiV30ProjectCostProtectStatusGetGetRequest {
   advertiserId: number | string;
-  projectIds: number | string[];
+  projectIds: (number | string)[];
 }
 
 export class ProjectCostProtectStatusGetV30Api {
@@ -28,11 +28,19 @@ export class ProjectCostProtectStatusGetV30Api {
 
   async openApiV30ProjectCostProtectStatusGetGetWithHttpInfo(request: ProjectCostProtectStatusGetV30ApiOpenApiV30ProjectCostProtectStatusGetGetRequest): Promise<ApiResponse<ProjectCostProtectStatusGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ProjectCostProtectStatusGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.projectIds == null) {
-      throw new ApiException("Missing the required parameter 'projectIds' when calling openApiV30ProjectCostProtectStatusGetGet");
+      throw new ApiException("projectIds is required and must be specified");
+    }
+
+    if (request.projectIds != null && request.projectIds.length < 1) {
+      throw new ApiException("projectIds must have at least 1 elements");
+    }
+
+    if (request.projectIds != null && request.projectIds.length > 50) {
+      throw new ApiException("projectIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<ProjectCostProtectStatusGetV30Response>({
       method: "GET",

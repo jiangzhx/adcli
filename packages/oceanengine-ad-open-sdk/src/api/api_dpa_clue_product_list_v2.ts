@@ -30,15 +30,23 @@ export class DpaClueProductListV2Api {
 
   async openApi2DpaClueProductListGetWithHttpInfo(request: DpaClueProductListV2ApiOpenApi2DpaClueProductListGetRequest): Promise<ApiResponse<DpaClueProductListV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DpaClueProductListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2DpaClueProductListGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApi2DpaClueProductListGet");
+      throw new ApiException("pageSize is required and must be specified");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) < 1) {
+      throw new ApiException("pageSize must be greater than 1");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) > 100) {
+      throw new ApiException("pageSize must be less than 100");
     }
     return this.apiClient.requestWithHttpInfo<DpaClueProductListV2Response>({
       method: "GET",

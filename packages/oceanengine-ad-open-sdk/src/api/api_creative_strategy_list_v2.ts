@@ -30,7 +30,7 @@ export class CreativeStrategyListV2Api {
 
   async openApi2CreativeStrategyListGetWithHttpInfo(request: CreativeStrategyListV2ApiOpenApi2CreativeStrategyListGetRequest): Promise<ApiResponse<CreativeStrategyListV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2CreativeStrategyListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CreativeStrategyListV2Response>({
       method: "GET",

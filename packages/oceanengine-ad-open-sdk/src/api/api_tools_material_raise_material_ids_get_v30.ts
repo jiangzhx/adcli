@@ -28,11 +28,11 @@ export class ToolsMaterialRaiseMaterialIdsGetV30Api {
 
   async openApiV30ToolsMaterialRaiseMaterialIdsGetGetWithHttpInfo(request: ToolsMaterialRaiseMaterialIdsGetV30ApiOpenApiV30ToolsMaterialRaiseMaterialIdsGetGetRequest): Promise<ApiResponse<ToolsMaterialRaiseMaterialIdsGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsMaterialRaiseMaterialIdsGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.scheduleId == null) {
-      throw new ApiException("Missing the required parameter 'scheduleId' when calling openApiV30ToolsMaterialRaiseMaterialIdsGetGet");
+      throw new ApiException("scheduleId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsMaterialRaiseMaterialIdsGetV30Response>({
       method: "GET",

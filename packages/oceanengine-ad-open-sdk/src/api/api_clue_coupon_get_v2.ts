@@ -6,7 +6,7 @@ import type { ClueCouponGetV2ActivityTypes, ClueCouponGetV2IsDel, ClueCouponGetV
 
 
 export interface ClueCouponGetV2ApiOpenApi2ClueCouponGetGetRequest {
-  activityIds?: number | string[];
+  activityIds?: (number | string)[];
   activityTypes?: ClueCouponGetV2ActivityTypes[];
   advertiserId?: number | string;
   endTime?: string;

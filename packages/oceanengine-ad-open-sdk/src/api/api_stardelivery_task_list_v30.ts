@@ -31,7 +31,7 @@ export class StardeliveryTaskListV30Api {
 
   async openApiV30StardeliveryTaskListGetWithHttpInfo(request: StardeliveryTaskListV30ApiOpenApiV30StardeliveryTaskListGetRequest): Promise<ApiResponse<StardeliveryTaskListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30StardeliveryTaskListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskListV30Response>({
       method: "GET",

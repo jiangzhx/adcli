@@ -4,7 +4,7 @@
 import type { QianchuanAdScheduleDateUpdateV10ScheduleType } from "../models/index";
 
 export interface QianchuanAdScheduleDateUpdateV10Request {
-  ad_ids: number | string[];
+  ad_ids: (number | string)[];
   advertiser_id: number | string;
   end_time?: number;
   schedule_type: QianchuanAdScheduleDateUpdateV10ScheduleType;

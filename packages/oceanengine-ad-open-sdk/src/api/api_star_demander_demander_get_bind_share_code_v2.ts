@@ -28,11 +28,15 @@ export class StarDemanderDemanderGetBindShareCodeV2Api {
 
   async openApi2StarDemanderDemanderGetBindShareCodeGetWithHttpInfo(request: StarDemanderDemanderGetBindShareCodeV2ApiOpenApi2StarDemanderDemanderGetBindShareCodeGetRequest): Promise<ApiResponse<StarDemanderDemanderGetBindShareCodeV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemanderDemanderGetBindShareCodeGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.bizUid == null) {
-      throw new ApiException("Missing the required parameter 'bizUid' when calling openApi2StarDemanderDemanderGetBindShareCodeGet");
+      throw new ApiException("bizUid is required and must be specified");
+    }
+
+    if (request.bizUid != null && Array.from(String(request.bizUid)).length > 255) {
+      throw new ApiException("bizUid must have less than 255 elements");
     }
     return this.apiClient.requestWithHttpInfo<StarDemanderDemanderGetBindShareCodeV2Response>({
       method: "GET",

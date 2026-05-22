@@ -6,12 +6,12 @@ import type { ToolsClueGetV2Response } from "../models/index";
 
 
 export interface ToolsClueGetV2ApiOpenApi2ToolsClueGetGetRequest {
-  advertiserIds?: number | string[];
+  advertiserIds?: (number | string)[];
   startTime?: string;
   endTime?: string;
   page?: number;
   pageSize?: number;
-  clueIds?: number | string[];
+  clueIds?: (number | string)[];
   encryptSensitiveFields?: boolean;
 }
 

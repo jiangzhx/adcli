@@ -12,13 +12,13 @@ export interface AdGetV2ResponseData {
   adjust_cpa?: number;
   advanced_creative_type?: AdGetV2DataAdvancedCreativeType;
   advertiser_id?: number | string;
-  advertiser_store_ids?: number | string[];
+  advertiser_store_ids?: (number | string)[];
   app_desc?: string;
   app_introduction?: number;
   app_thumbnails?: string[];
   app_type?: AdGetV2DataAppType;
   asset_id?: number | string;
-  asset_ids?: number | string[];
+  asset_ids?: (number | string)[];
   audience?: AdGetV2ResponseDataAudience;
   audience_extend?: AdGetV2DataAudienceExtend;
   audience_package_id?: number | string;
@@ -70,7 +70,7 @@ export interface AdGetV2ResponseData {
   hide_if_exists?: number;
   id?: number | string;
   inherit_type?: AdGetV2DataInheritType;
-  inherited_advertiser_id?: number | string[];
+  inherited_advertiser_id?: (number | string)[];
   intelligent_flow_switch?: AdGetV2DataIntelligentFlowSwitch;
   inventory_catalog?: AdGetV2DataInventoryCatalog;
   inventory_type?: AdGetV2DataInventoryType[];

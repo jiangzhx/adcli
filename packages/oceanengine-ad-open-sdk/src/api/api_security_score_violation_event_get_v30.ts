@@ -31,11 +31,11 @@ export class SecurityScoreViolationEventGetV30Api {
 
   async openApiV30SecurityScoreViolationEventGetGetWithHttpInfo(request: SecurityScoreViolationEventGetV30ApiOpenApiV30SecurityScoreViolationEventGetGetRequest): Promise<ApiResponse<SecurityScoreViolationEventGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30SecurityScoreViolationEventGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.businessLine == null) {
-      throw new ApiException("Missing the required parameter 'businessLine' when calling openApiV30SecurityScoreViolationEventGetGet");
+      throw new ApiException("businessLine is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SecurityScoreViolationEventGetV30Response>({
       method: "GET",

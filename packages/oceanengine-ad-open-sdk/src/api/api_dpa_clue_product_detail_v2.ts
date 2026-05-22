@@ -7,7 +7,7 @@ import type { DpaClueProductDetailV2Response } from "../models/index";
 
 export interface DpaClueProductDetailV2ApiOpenApi2DpaClueProductDetailGetRequest {
   advertiserId: number | string;
-  productIds: number | string[];
+  productIds: (number | string)[];
 }
 
 export class DpaClueProductDetailV2Api {
@@ -28,11 +28,11 @@ export class DpaClueProductDetailV2Api {
 
   async openApi2DpaClueProductDetailGetWithHttpInfo(request: DpaClueProductDetailV2ApiOpenApi2DpaClueProductDetailGetRequest): Promise<ApiResponse<DpaClueProductDetailV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DpaClueProductDetailGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.productIds == null) {
-      throw new ApiException("Missing the required parameter 'productIds' when calling openApi2DpaClueProductDetailGet");
+      throw new ApiException("productIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DpaClueProductDetailV2Response>({
       method: "GET",

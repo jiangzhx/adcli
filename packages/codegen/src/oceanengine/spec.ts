@@ -4,6 +4,27 @@ export interface ApiParamSpec {
   required: boolean;
 }
 
+export type ApiCheckSpec =
+  | {
+      kind: "required";
+      paramName: string;
+      message: string;
+    }
+  | {
+      kind: "number";
+      paramName: string;
+      operator: "<" | ">";
+      value: string;
+      message: string;
+    }
+  | {
+      kind: "length" | "stringLength";
+      paramName: string;
+      operator: "<" | ">";
+      value: string;
+      message: string;
+    };
+
 export interface ApiQueryParamSpec {
   name: string;
   source: string;
@@ -17,6 +38,7 @@ export interface ApiSpec {
   path: string;
   responseType: string;
   params: ApiParamSpec[];
+  checks?: ApiCheckSpec[];
   queryParams: ApiQueryParamSpec[];
   formParams: ApiQueryParamSpec[];
   fileParams: ApiQueryParamSpec[];

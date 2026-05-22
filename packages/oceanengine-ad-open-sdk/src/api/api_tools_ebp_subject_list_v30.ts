@@ -9,9 +9,9 @@ export interface ToolsEbpSubjectListV30ApiOpenApiV30ToolsEbpSubjectListGetReques
   enterpriseOrganizationId: number | string;
   queryTypes: ToolsEbpSubjectListV30QueryTypes[];
   pagination: ToolsEbpSubjectListV30Pagination;
-  filterCompanyId?: number | string[];
+  filterCompanyId?: (number | string)[];
   filterStatus?: ToolsEbpSubjectListV30FilterStatus[];
-  filterAccountIds?: number | string[];
+  filterAccountIds?: (number | string)[];
 }
 
 export class ToolsEbpSubjectListV30Api {
@@ -32,15 +32,15 @@ export class ToolsEbpSubjectListV30Api {
 
   async openApiV30ToolsEbpSubjectListGetWithHttpInfo(request: ToolsEbpSubjectListV30ApiOpenApiV30ToolsEbpSubjectListGetRequest): Promise<ApiResponse<ToolsEbpSubjectListV30Response>> {
     if (request.enterpriseOrganizationId == null) {
-      throw new ApiException("Missing the required parameter 'enterpriseOrganizationId' when calling openApiV30ToolsEbpSubjectListGet");
+      throw new ApiException("enterpriseOrganizationId is required and must be specified");
     }
 
     if (request.queryTypes == null) {
-      throw new ApiException("Missing the required parameter 'queryTypes' when calling openApiV30ToolsEbpSubjectListGet");
+      throw new ApiException("queryTypes is required and must be specified");
     }
 
     if (request.pagination == null) {
-      throw new ApiException("Missing the required parameter 'pagination' when calling openApiV30ToolsEbpSubjectListGet");
+      throw new ApiException("pagination is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpSubjectListV30Response>({
       method: "GET",

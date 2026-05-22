@@ -31,11 +31,11 @@ export class DpaDetailGetV2Api {
 
   async openApi2DpaDetailGetGetWithHttpInfo(request: DpaDetailGetV2ApiOpenApi2DpaDetailGetGetRequest): Promise<ApiResponse<DpaDetailGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DpaDetailGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.productPlatformId == null) {
-      throw new ApiException("Missing the required parameter 'productPlatformId' when calling openApi2DpaDetailGetGet");
+      throw new ApiException("productPlatformId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DpaDetailGetV2Response>({
       method: "GET",

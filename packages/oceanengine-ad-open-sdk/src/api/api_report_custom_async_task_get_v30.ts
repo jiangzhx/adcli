@@ -30,7 +30,11 @@ export class ReportCustomAsyncTaskGetV30Api {
 
   async openApiV30ReportCustomAsyncTaskGetGetWithHttpInfo(request: ReportCustomAsyncTaskGetV30ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest): Promise<ApiResponse<ReportCustomAsyncTaskGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportCustomAsyncTaskGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<ReportCustomAsyncTaskGetV30Response>({
       method: "GET",

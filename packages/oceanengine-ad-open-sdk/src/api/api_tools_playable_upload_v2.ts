@@ -28,11 +28,11 @@ export class ToolsPlayableUploadV2Api {
 
   async openApi2ToolsPlayableUploadPostWithHttpInfo(request: ToolsPlayableUploadV2ApiOpenApi2ToolsPlayableUploadPostRequest): Promise<ApiResponse<ToolsPlayableUploadV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsPlayableUploadPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.playablePackage == null) {
-      throw new ApiException("Missing the required parameter 'playablePackage' when calling openApi2ToolsPlayableUploadPost");
+      throw new ApiException("playablePackage is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPlayableUploadV2Response>({
       method: "POST",

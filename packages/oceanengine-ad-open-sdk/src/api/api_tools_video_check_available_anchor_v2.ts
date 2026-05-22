@@ -7,7 +7,7 @@ import type { ToolsVideoCheckAvailableAnchorV2ExternalAction, ToolsVideoCheckAva
 
 export interface ToolsVideoCheckAvailableAnchorV2ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
   advertiserId: number | string;
-  itemIds: number | string[];
+  itemIds: (number | string)[];
   landingType: ToolsVideoCheckAvailableAnchorV2LandingType;
   externalAction: ToolsVideoCheckAvailableAnchorV2ExternalAction;
 }
@@ -30,19 +30,31 @@ export class ToolsVideoCheckAvailableAnchorV2Api {
 
   async openApi2ToolsVideoCheckAvailableAnchorGetWithHttpInfo(request: ToolsVideoCheckAvailableAnchorV2ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest): Promise<ApiResponse<ToolsVideoCheckAvailableAnchorV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsVideoCheckAvailableAnchorGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.itemIds == null) {
-      throw new ApiException("Missing the required parameter 'itemIds' when calling openApi2ToolsVideoCheckAvailableAnchorGet");
+      throw new ApiException("itemIds is required and must be specified");
+    }
+
+    if (request.itemIds != null && request.itemIds.length < 1) {
+      throw new ApiException("itemIds must have at least 1 elements");
+    }
+
+    if (request.itemIds != null && request.itemIds.length > 100) {
+      throw new ApiException("itemIds must have less than 100 elements");
     }
 
     if (request.landingType == null) {
-      throw new ApiException("Missing the required parameter 'landingType' when calling openApi2ToolsVideoCheckAvailableAnchorGet");
+      throw new ApiException("landingType is required and must be specified");
     }
 
     if (request.externalAction == null) {
-      throw new ApiException("Missing the required parameter 'externalAction' when calling openApi2ToolsVideoCheckAvailableAnchorGet");
+      throw new ApiException("externalAction is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsVideoCheckAvailableAnchorV2Response>({
       method: "GET",

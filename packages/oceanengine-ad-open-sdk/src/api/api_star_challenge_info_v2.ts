@@ -7,7 +7,7 @@ import type { StarChallengeInfoV2Response } from "../models/index";
 
 export interface StarChallengeInfoV2ApiOpenApi2StarChallengeInfoGetRequest {
   starId: number | string;
-  challengeTaskIds: number | string[];
+  challengeTaskIds: (number | string)[];
 }
 
 export class StarChallengeInfoV2Api {
@@ -28,11 +28,11 @@ export class StarChallengeInfoV2Api {
 
   async openApi2StarChallengeInfoGetWithHttpInfo(request: StarChallengeInfoV2ApiOpenApi2StarChallengeInfoGetRequest): Promise<ApiResponse<StarChallengeInfoV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarChallengeInfoGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.challengeTaskIds == null) {
-      throw new ApiException("Missing the required parameter 'challengeTaskIds' when calling openApi2StarChallengeInfoGet");
+      throw new ApiException("challengeTaskIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarChallengeInfoV2Response>({
       method: "GET",

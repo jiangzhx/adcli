@@ -28,11 +28,11 @@ export class RejectMaterialAiRepairCrossAccountGetV30Api {
 
   async openApiV30RejectMaterialAiRepairCrossAccountGetGetWithHttpInfo(request: RejectMaterialAiRepairCrossAccountGetV30ApiOpenApiV30RejectMaterialAiRepairCrossAccountGetGetRequest): Promise<ApiResponse<RejectMaterialAiRepairCrossAccountGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30RejectMaterialAiRepairCrossAccountGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.materialId == null) {
-      throw new ApiException("Missing the required parameter 'materialId' when calling openApiV30RejectMaterialAiRepairCrossAccountGetGet");
+      throw new ApiException("materialId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<RejectMaterialAiRepairCrossAccountGetV30Response>({
       method: "GET",

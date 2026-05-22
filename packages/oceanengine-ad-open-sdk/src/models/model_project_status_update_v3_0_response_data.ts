@@ -5,6 +5,6 @@ import type { ProjectStatusUpdateV30ResponseDataErrorsInner } from "../models/in
 
 export interface ProjectStatusUpdateV30ResponseData {
   errors?: ProjectStatusUpdateV30ResponseDataErrorsInner[];
-  project_ids?: number | string[];
+  project_ids?: (number | string)[];
 }
 

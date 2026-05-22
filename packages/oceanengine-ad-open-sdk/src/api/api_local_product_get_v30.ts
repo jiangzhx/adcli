@@ -31,11 +31,11 @@ export class LocalProductGetV30Api {
 
   async openApiV30LocalProductGetGetWithHttpInfo(request: LocalProductGetV30ApiOpenApiV30LocalProductGetGetRequest): Promise<ApiResponse<LocalProductGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalProductGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.localDeliveryScene == null) {
-      throw new ApiException("Missing the required parameter 'localDeliveryScene' when calling openApiV30LocalProductGetGet");
+      throw new ApiException("localDeliveryScene is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalProductGetV30Response>({
       method: "GET",

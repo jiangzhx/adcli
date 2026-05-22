@@ -31,15 +31,19 @@ export class ToolsIsSupportUniversalGetV2Api {
 
   async openApi2ToolsIsSupportUniversalGetGetWithHttpInfo(request: ToolsIsSupportUniversalGetV2ApiOpenApi2ToolsIsSupportUniversalGetGetRequest): Promise<ApiResponse<ToolsIsSupportUniversalGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsIsSupportUniversalGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.landingType == null) {
-      throw new ApiException("Missing the required parameter 'landingType' when calling openApi2ToolsIsSupportUniversalGetGet");
+      throw new ApiException("landingType is required and must be specified");
     }
 
     if (request.externalAction == null) {
-      throw new ApiException("Missing the required parameter 'externalAction' when calling openApi2ToolsIsSupportUniversalGetGet");
+      throw new ApiException("externalAction is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsIsSupportUniversalGetV2Response>({
       method: "GET",

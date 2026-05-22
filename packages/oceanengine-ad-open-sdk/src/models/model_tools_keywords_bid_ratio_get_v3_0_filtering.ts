@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface ToolsKeywordsBidRatioGetV30Filtering {
-  project_ids?: number | string[];
+  project_ids?: (number | string)[];
   words?: string[];
 }
 

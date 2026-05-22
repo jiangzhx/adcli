@@ -30,7 +30,7 @@ export class AudiencePackageGetV30Api {
 
   async openApiV30AudiencePackageGetGetWithHttpInfo(request: AudiencePackageGetV30ApiOpenApiV30AudiencePackageGetGetRequest): Promise<ApiResponse<AudiencePackageGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30AudiencePackageGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AudiencePackageGetV30Response>({
       method: "GET",

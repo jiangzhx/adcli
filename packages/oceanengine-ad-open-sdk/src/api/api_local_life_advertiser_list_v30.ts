@@ -30,7 +30,11 @@ export class LocalLifeAdvertiserListV30Api {
 
   async openApiV30LocalLifeAdvertiserListGetWithHttpInfo(request: LocalLifeAdvertiserListV30ApiOpenApiV30LocalLifeAdvertiserListGetRequest): Promise<ApiResponse<LocalLifeAdvertiserListV30Response>> {
     if (request.lifeAccountId == null) {
-      throw new ApiException("Missing the required parameter 'lifeAccountId' when calling openApiV30LocalLifeAdvertiserListGet");
+      throw new ApiException("lifeAccountId is required and must be specified");
+    }
+
+    if (request.lifeAccountId != null && Number(request.lifeAccountId) < 1) {
+      throw new ApiException("lifeAccountId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<LocalLifeAdvertiserListV30Response>({
       method: "GET",

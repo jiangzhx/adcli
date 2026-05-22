@@ -26,7 +26,7 @@ export interface ClueCouponGetV2ResponseDataListInnerCouponResourceListInner {
   resource_type?: ClueCouponGetV2DataListCouponResourceListResourceType;
   service_num?: string;
   stock?: number;
-  store_ids?: number | string[];
+  store_ids?: (number | string)[];
   title?: string;
   use_type?: string;
   valid_days?: number;

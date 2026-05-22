@@ -29,7 +29,11 @@ export class DpaTemplateGetV2Api {
 
   async openApi2DpaTemplateGetGetWithHttpInfo(request: DpaTemplateGetV2ApiOpenApi2DpaTemplateGetGetRequest): Promise<ApiResponse<DpaTemplateGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2DpaTemplateGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<DpaTemplateGetV2Response>({
       method: "GET",

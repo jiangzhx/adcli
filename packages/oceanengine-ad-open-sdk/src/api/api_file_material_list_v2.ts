@@ -33,11 +33,11 @@ export class FileMaterialListV2Api {
 
   async openApi2FileMaterialListGetWithHttpInfo(request: FileMaterialListV2ApiOpenApi2FileMaterialListGetRequest): Promise<ApiResponse<FileMaterialListV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileMaterialListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.materialSource == null) {
-      throw new ApiException("Missing the required parameter 'materialSource' when calling openApi2FileMaterialListGet");
+      throw new ApiException("materialSource is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileMaterialListV2Response>({
       method: "GET",

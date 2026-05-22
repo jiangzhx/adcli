@@ -7,7 +7,7 @@ import type { PromotionRejectReasonGetV30DeliveryMode, PromotionRejectReasonGetV
 
 export interface PromotionRejectReasonGetV30ApiOpenApiV30PromotionRejectReasonGetGetRequest {
   advertiserId: number | string;
-  promotionIds: number | string[];
+  promotionIds: (number | string)[];
   deliveryMode?: PromotionRejectReasonGetV30DeliveryMode;
   needMaterialLegoMid?: boolean;
 }
@@ -30,11 +30,23 @@ export class PromotionRejectReasonGetV30Api {
 
   async openApiV30PromotionRejectReasonGetGetWithHttpInfo(request: PromotionRejectReasonGetV30ApiOpenApiV30PromotionRejectReasonGetGetRequest): Promise<ApiResponse<PromotionRejectReasonGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30PromotionRejectReasonGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.promotionIds == null) {
-      throw new ApiException("Missing the required parameter 'promotionIds' when calling openApiV30PromotionRejectReasonGetGet");
+      throw new ApiException("promotionIds is required and must be specified");
+    }
+
+    if (request.promotionIds != null && request.promotionIds.length < 1) {
+      throw new ApiException("promotionIds must have at least 1 elements");
+    }
+
+    if (request.promotionIds != null && request.promotionIds.length > 10) {
+      throw new ApiException("promotionIds must have less than 10 elements");
     }
     return this.apiClient.requestWithHttpInfo<PromotionRejectReasonGetV30Response>({
       method: "GET",

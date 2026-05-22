@@ -31,19 +31,19 @@ export class ServeMarketActiveFuncGetV10Api {
 
   async openApiV10ServeMarketActiveFuncGetGetWithHttpInfo(request: ServeMarketActiveFuncGetV10ApiOpenApiV10ServeMarketActiveFuncGetGetRequest): Promise<ApiResponse<ServeMarketActiveFuncGetV10Response>> {
     if (request.useUid == null) {
-      throw new ApiException("Missing the required parameter 'useUid' when calling openApiV10ServeMarketActiveFuncGetGet");
+      throw new ApiException("useUid is required and must be specified");
     }
 
     if (request.appId == null) {
-      throw new ApiException("Missing the required parameter 'appId' when calling openApiV10ServeMarketActiveFuncGetGet");
+      throw new ApiException("appId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV10ServeMarketActiveFuncGetGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApiV10ServeMarketActiveFuncGetGet");
+      throw new ApiException("pageSize is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ServeMarketActiveFuncGetV10Response>({
       method: "GET",

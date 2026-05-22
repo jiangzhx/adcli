@@ -30,7 +30,7 @@ export class CustomerCenterAdvertiserTransferableListV2Api {
 
   async openApi2CustomerCenterAdvertiserTransferableListGetWithHttpInfo(request: CustomerCenterAdvertiserTransferableListV2ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest): Promise<ApiResponse<CustomerCenterAdvertiserTransferableListV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2CustomerCenterAdvertiserTransferableListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CustomerCenterAdvertiserTransferableListV2Response>({
       method: "GET",

@@ -6,6 +6,6 @@ import type { ToolsJointBidUpdateV30RequestJointScopeInfo } from "../models/inde
 export interface ToolsJointBidUpdateV30Request {
   advertiser_id: number | string;
   joint_scope_info?: ToolsJointBidUpdateV30RequestJointScopeInfo;
-  rta_id?: number | string[];
+  rta_id?: (number | string)[];
 }
 

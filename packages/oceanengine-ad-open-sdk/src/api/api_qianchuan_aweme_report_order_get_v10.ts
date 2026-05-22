@@ -35,19 +35,19 @@ export class QianchuanAwemeReportOrderGetV10Api {
 
   async openApiV10QianchuanAwemeReportOrderGetGetWithHttpInfo(request: QianchuanAwemeReportOrderGetV10ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest): Promise<ApiResponse<QianchuanAwemeReportOrderGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeReportOrderGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV10QianchuanAwemeReportOrderGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV10QianchuanAwemeReportOrderGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanAwemeReportOrderGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeReportOrderGetV10Response>({
       method: "GET",

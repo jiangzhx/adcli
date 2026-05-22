@@ -30,7 +30,7 @@ export class RejectMaterialAiRepairGetV30Api {
 
   async openApiV30RejectMaterialAiRepairGetGetWithHttpInfo(request: RejectMaterialAiRepairGetV30ApiOpenApiV30RejectMaterialAiRepairGetGetRequest): Promise<ApiResponse<RejectMaterialAiRepairGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30RejectMaterialAiRepairGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<RejectMaterialAiRepairGetV30Response>({
       method: "GET",

@@ -30,11 +30,19 @@ export class QianchuanAdKeywordsGetV10Api {
 
   async openApiV10QianchuanAdKeywordsGetGetWithHttpInfo(request: QianchuanAdKeywordsGetV10ApiOpenApiV10QianchuanAdKeywordsGetGetRequest): Promise<ApiResponse<QianchuanAdKeywordsGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdKeywordsGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) > -9223372036854775616) {
+      throw new ApiException("advertiserId must be less than -9223372036854775616");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanAdKeywordsGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdKeywordsGetV10Response>({
       method: "GET",

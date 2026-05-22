@@ -5,7 +5,7 @@ import type { CarouselListV2FilteringSource } from "../models/index";
 
 export interface CarouselListV2Filtering {
   audio_id?: string;
-  carousel_ids?: number | string[];
+  carousel_ids?: (number | string)[];
   end_time?: string;
   file_name?: string;
   image_ids?: string[];

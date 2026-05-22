@@ -30,19 +30,19 @@ export class LocalFileVideoUploadV30Api {
 
   async openApiV30LocalFileVideoUploadPostWithHttpInfo(request: LocalFileVideoUploadV30ApiOpenApiV30LocalFileVideoUploadPostRequest): Promise<ApiResponse<LocalFileVideoUploadV30Response>> {
     if (request.filename == null) {
-      throw new ApiException("Missing the required parameter 'filename' when calling openApiV30LocalFileVideoUploadPost");
+      throw new ApiException("filename is required and must be specified");
     }
 
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalFileVideoUploadPost");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.videoFile == null) {
-      throw new ApiException("Missing the required parameter 'videoFile' when calling openApiV30LocalFileVideoUploadPost");
+      throw new ApiException("videoFile is required and must be specified");
     }
 
     if (request.videoSignature == null) {
-      throw new ApiException("Missing the required parameter 'videoSignature' when calling openApiV30LocalFileVideoUploadPost");
+      throw new ApiException("videoSignature is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalFileVideoUploadV30Response>({
       method: "POST",

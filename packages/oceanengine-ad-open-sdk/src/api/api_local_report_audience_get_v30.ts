@@ -37,23 +37,23 @@ export class LocalReportAudienceGetV30Api {
 
   async openApiV30LocalReportAudienceGetGetWithHttpInfo(request: LocalReportAudienceGetV30ApiOpenApiV30LocalReportAudienceGetGetRequest): Promise<ApiResponse<LocalReportAudienceGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalReportAudienceGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV30LocalReportAudienceGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV30LocalReportAudienceGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.audienceDimension == null) {
-      throw new ApiException("Missing the required parameter 'audienceDimension' when calling openApiV30LocalReportAudienceGetGet");
+      throw new ApiException("audienceDimension is required and must be specified");
     }
 
     if (request.dataDimension == null) {
-      throw new ApiException("Missing the required parameter 'dataDimension' when calling openApiV30LocalReportAudienceGetGet");
+      throw new ApiException("dataDimension is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalReportAudienceGetV30Response>({
       method: "GET",

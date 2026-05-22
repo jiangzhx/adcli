@@ -27,7 +27,7 @@ export class AdvertiserVerifyInfoGetV30Api {
 
   async openApiV30AdvertiserVerifyInfoGetGetWithHttpInfo(request: AdvertiserVerifyInfoGetV30ApiOpenApiV30AdvertiserVerifyInfoGetGetRequest): Promise<ApiResponse<AdvertiserVerifyInfoGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30AdvertiserVerifyInfoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserVerifyInfoGetV30Response>({
       method: "GET",

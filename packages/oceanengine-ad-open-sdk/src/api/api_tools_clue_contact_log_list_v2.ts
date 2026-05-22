@@ -29,11 +29,19 @@ export class ToolsClueContactLogListV2Api {
 
   async openApi2ToolsClueContactLogListGetWithHttpInfo(request: ToolsClueContactLogListV2ApiOpenApi2ToolsClueContactLogListGetRequest): Promise<ApiResponse<ToolsClueContactLogListV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsClueContactLogListGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.clueId == null) {
-      throw new ApiException("Missing the required parameter 'clueId' when calling openApi2ToolsClueContactLogListGet");
+      throw new ApiException("clueId is required and must be specified");
+    }
+
+    if (request.clueId != null && Number(request.clueId) < 1) {
+      throw new ApiException("clueId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<ToolsClueContactLogListV2Response>({
       method: "GET",

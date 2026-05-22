@@ -31,15 +31,15 @@ export class BusinessPlatformCompanyAccountGetV30Api {
 
   async openApiV30BusinessPlatformCompanyAccountGetGetWithHttpInfo(request: BusinessPlatformCompanyAccountGetV30ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest): Promise<ApiResponse<BusinessPlatformCompanyAccountGetV30Response>> {
     if (request.organizationId == null) {
-      throw new ApiException("Missing the required parameter 'organizationId' when calling openApiV30BusinessPlatformCompanyAccountGetGet");
+      throw new ApiException("organizationId is required and must be specified");
     }
 
     if (request.companyId == null) {
-      throw new ApiException("Missing the required parameter 'companyId' when calling openApiV30BusinessPlatformCompanyAccountGetGet");
+      throw new ApiException("companyId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30BusinessPlatformCompanyAccountGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BusinessPlatformCompanyAccountGetV30Response>({
       method: "GET",

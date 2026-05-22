@@ -30,19 +30,19 @@ export class CgTransferTransferBalanceGetV30Api {
 
   async openApiV30CgTransferTransferBalanceGetGetWithHttpInfo(request: CgTransferTransferBalanceGetV30ApiOpenApiV30CgTransferTransferBalanceGetGetRequest): Promise<ApiResponse<CgTransferTransferBalanceGetV30Response>> {
     if (request.organizationId == null) {
-      throw new ApiException("Missing the required parameter 'organizationId' when calling openApiV30CgTransferTransferBalanceGetGet");
+      throw new ApiException("organizationId is required and must be specified");
     }
 
     if (request.bizRequestNo == null) {
-      throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferTransferBalanceGetGet");
+      throw new ApiException("bizRequestNo is required and must be specified");
     }
 
     if (request.targetIdList == null) {
-      throw new ApiException("Missing the required parameter 'targetIdList' when calling openApiV30CgTransferTransferBalanceGetGet");
+      throw new ApiException("targetIdList is required and must be specified");
     }
 
     if (request.platform == null) {
-      throw new ApiException("Missing the required parameter 'platform' when calling openApiV30CgTransferTransferBalanceGetGet");
+      throw new ApiException("platform is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferTransferBalanceGetV30Response>({
       method: "GET",

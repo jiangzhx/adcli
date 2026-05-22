@@ -3,7 +3,7 @@
 
 export interface DpaAssetV2DetailReadV2Request {
   advertiser_id: number | string;
-  asset_ids: number | string[];
-  unique_product_ids: number | string[];
+  asset_ids: (number | string)[];
+  unique_product_ids: (number | string)[];
 }
 

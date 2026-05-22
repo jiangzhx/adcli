@@ -7,7 +7,7 @@ import type { RejectMaterialAiRepairAcceptTaskListV30Response } from "../models/
 
 export interface RejectMaterialAiRepairAcceptTaskListV30ApiOpenApiV30RejectMaterialAiRepairAcceptTaskListGetRequest {
   advertiserId: number | string;
-  aiRepairIds: number | string[];
+  aiRepairIds: (number | string)[];
 }
 
 export class RejectMaterialAiRepairAcceptTaskListV30Api {
@@ -28,11 +28,19 @@ export class RejectMaterialAiRepairAcceptTaskListV30Api {
 
   async openApiV30RejectMaterialAiRepairAcceptTaskListGetWithHttpInfo(request: RejectMaterialAiRepairAcceptTaskListV30ApiOpenApiV30RejectMaterialAiRepairAcceptTaskListGetRequest): Promise<ApiResponse<RejectMaterialAiRepairAcceptTaskListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30RejectMaterialAiRepairAcceptTaskListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.aiRepairIds == null) {
-      throw new ApiException("Missing the required parameter 'aiRepairIds' when calling openApiV30RejectMaterialAiRepairAcceptTaskListGet");
+      throw new ApiException("aiRepairIds is required and must be specified");
+    }
+
+    if (request.aiRepairIds != null && request.aiRepairIds.length < 1) {
+      throw new ApiException("aiRepairIds must have at least 1 elements");
+    }
+
+    if (request.aiRepairIds != null && request.aiRepairIds.length > 50) {
+      throw new ApiException("aiRepairIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<RejectMaterialAiRepairAcceptTaskListV30Response>({
       method: "GET",

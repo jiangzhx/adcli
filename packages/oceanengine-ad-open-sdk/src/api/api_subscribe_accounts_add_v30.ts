@@ -28,7 +28,7 @@ export class SubscribeAccountsAddV30Api {
 
   async openApiV30SubscribeAccountsAddPostWithHttpInfo(request: SubscribeAccountsAddV30ApiOpenApiV30SubscribeAccountsAddPostRequest): Promise<ApiResponse<SubscribeAccountsAddV30Response>> {
     if (request.aPPAccessToken == null) {
-      throw new ApiException("Missing the required parameter 'aPPAccessToken' when calling openApiV30SubscribeAccountsAddPost");
+      throw new ApiException("aPPAccessToken is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SubscribeAccountsAddV30Response>({
       method: "POST",

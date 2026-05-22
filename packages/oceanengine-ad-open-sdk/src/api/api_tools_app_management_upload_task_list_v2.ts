@@ -29,15 +29,15 @@ export class ToolsAppManagementUploadTaskListV2Api {
 
   async openApi2ToolsAppManagementUploadTaskListGetWithHttpInfo(request: ToolsAppManagementUploadTaskListV2ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest): Promise<ApiResponse<ToolsAppManagementUploadTaskListV2Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApi2ToolsAppManagementUploadTaskListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApi2ToolsAppManagementUploadTaskListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApi2ToolsAppManagementUploadTaskListGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAppManagementUploadTaskListV2Response>({
       method: "GET",

@@ -28,7 +28,7 @@ export class ToolsRtaGetV2Api {
 
   async openApi2ToolsRtaGetGetWithHttpInfo(request: ToolsRtaGetV2ApiOpenApi2ToolsRtaGetGetRequest): Promise<ApiResponse<ToolsRtaGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsRtaGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsRtaGetV2Response>({
       method: "GET",

@@ -11,7 +11,7 @@ export interface AgentQueryRiskPromotionListV2ResponseDataDataInner {
   agent_id?: number | string;
   agent_name?: string;
   business_type?: AgentQueryRiskPromotionListV2DataDataBusinessType;
-  collaborator_ids?: number | string[];
+  collaborator_ids?: (number | string)[];
   collaborator_names?: string[];
   company_id?: number | string;
   company_name?: string;

@@ -28,7 +28,7 @@ export class SubscribeAccountsRemoveV30Api {
 
   async openApiV30SubscribeAccountsRemovePostWithHttpInfo(request: SubscribeAccountsRemoveV30ApiOpenApiV30SubscribeAccountsRemovePostRequest): Promise<ApiResponse<SubscribeAccountsRemoveV30Response>> {
     if (request.aPPAccessToken == null) {
-      throw new ApiException("Missing the required parameter 'aPPAccessToken' when calling openApiV30SubscribeAccountsRemovePost");
+      throw new ApiException("aPPAccessToken is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SubscribeAccountsRemoveV30Response>({
       method: "POST",

@@ -8,8 +8,8 @@ import type { LocalMarketPageListGetV30DeliveryGoal, LocalMarketPageListGetV30Re
 export interface LocalMarketPageListGetV30ApiOpenApiV30LocalMarketPageListGetGetRequest {
   localAccountId: number | string;
   deliveryGoal: LocalMarketPageListGetV30DeliveryGoal;
-  poiIds?: number | string[];
-  productIds?: number | string[];
+  poiIds?: (number | string)[];
+  productIds?: (number | string)[];
   page?: number;
   pageSize?: number;
 }
@@ -32,11 +32,15 @@ export class LocalMarketPageListGetV30Api {
 
   async openApiV30LocalMarketPageListGetGetWithHttpInfo(request: LocalMarketPageListGetV30ApiOpenApiV30LocalMarketPageListGetGetRequest): Promise<ApiResponse<LocalMarketPageListGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalMarketPageListGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
+    }
+
+    if (request.localAccountId != null && Number(request.localAccountId) < 1) {
+      throw new ApiException("localAccountId must be greater than 1");
     }
 
     if (request.deliveryGoal == null) {
-      throw new ApiException("Missing the required parameter 'deliveryGoal' when calling openApiV30LocalMarketPageListGetGet");
+      throw new ApiException("deliveryGoal is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalMarketPageListGetV30Response>({
       method: "GET",

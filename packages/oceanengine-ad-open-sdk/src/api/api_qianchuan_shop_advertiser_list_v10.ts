@@ -30,7 +30,7 @@ export class QianchuanShopAdvertiserListV10Api {
 
   async openApiV10QianchuanShopAdvertiserListGetWithHttpInfo(request: QianchuanShopAdvertiserListV10ApiOpenApiV10QianchuanShopAdvertiserListGetRequest): Promise<ApiResponse<QianchuanShopAdvertiserListV10Response>> {
     if (request.shopId == null) {
-      throw new ApiException("Missing the required parameter 'shopId' when calling openApiV10QianchuanShopAdvertiserListGet");
+      throw new ApiException("shopId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanShopAdvertiserListV10Response>({
       method: "GET",

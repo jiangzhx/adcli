@@ -28,11 +28,11 @@ export class ChargeResultV30Api {
 
   async openApiV30ChargeResultGetWithHttpInfo(request: ChargeResultV30ApiOpenApiV30ChargeResultGetRequest): Promise<ApiResponse<ChargeResultV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ChargeResultGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.chargeOrderId == null) {
-      throw new ApiException("Missing the required parameter 'chargeOrderId' when calling openApiV30ChargeResultGet");
+      throw new ApiException("chargeOrderId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ChargeResultV30Response>({
       method: "GET",

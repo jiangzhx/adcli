@@ -32,27 +32,27 @@ export class CgTransferWalletTransferCanTransferBalanceV30Api {
 
   async openApiV30CgTransferWalletTransferCanTransferBalanceGetWithHttpInfo(request: CgTransferWalletTransferCanTransferBalanceV30ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest): Promise<ApiResponse<CgTransferWalletTransferCanTransferBalanceV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30CgTransferWalletTransferCanTransferBalanceGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30CgTransferWalletTransferCanTransferBalanceGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.bizRequestNo == null) {
-      throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferWalletTransferCanTransferBalanceGet");
+      throw new ApiException("bizRequestNo is required and must be specified");
     }
 
     if (request.mainWalletId == null) {
-      throw new ApiException("Missing the required parameter 'mainWalletId' when calling openApiV30CgTransferWalletTransferCanTransferBalanceGet");
+      throw new ApiException("mainWalletId is required and must be specified");
     }
 
     if (request.subWalletList == null) {
-      throw new ApiException("Missing the required parameter 'subWalletList' when calling openApiV30CgTransferWalletTransferCanTransferBalanceGet");
+      throw new ApiException("subWalletList is required and must be specified");
     }
 
     if (request.transferDirection == null) {
-      throw new ApiException("Missing the required parameter 'transferDirection' when calling openApiV30CgTransferWalletTransferCanTransferBalanceGet");
+      throw new ApiException("transferDirection is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferWalletTransferCanTransferBalanceV30Response>({
       method: "GET",

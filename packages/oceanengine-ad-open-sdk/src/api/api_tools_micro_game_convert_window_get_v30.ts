@@ -30,19 +30,19 @@ export class ToolsMicroGameConvertWindowGetV30Api {
 
   async openApiV30ToolsMicroGameConvertWindowGetGetWithHttpInfo(request: ToolsMicroGameConvertWindowGetV30ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest): Promise<ApiResponse<ToolsMicroGameConvertWindowGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsMicroGameConvertWindowGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30ToolsMicroGameConvertWindowGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.assetId == null) {
-      throw new ApiException("Missing the required parameter 'assetId' when calling openApiV30ToolsMicroGameConvertWindowGetGet");
+      throw new ApiException("assetId is required and must be specified");
     }
 
     if (request.assetType == null) {
-      throw new ApiException("Missing the required parameter 'assetType' when calling openApiV30ToolsMicroGameConvertWindowGetGet");
+      throw new ApiException("assetType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsMicroGameConvertWindowGetV30Response>({
       method: "GET",

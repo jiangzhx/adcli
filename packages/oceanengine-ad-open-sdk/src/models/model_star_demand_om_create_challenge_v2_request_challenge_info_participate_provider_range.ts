@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface StarDemandOmCreateChallengeV2RequestChallengeInfoParticipateProviderRange {
-  provider_ids?: number | string[];
+  provider_ids?: (number | string)[];
 }
 

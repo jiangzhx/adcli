@@ -31,11 +31,11 @@ export class LocalAwemeAuthorizedGetV30Api {
 
   async openApiV30LocalAwemeAuthorizedGetGetWithHttpInfo(request: LocalAwemeAuthorizedGetV30ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest): Promise<ApiResponse<LocalAwemeAuthorizedGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalAwemeAuthorizedGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV30LocalAwemeAuthorizedGetGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalAwemeAuthorizedGetV30Response>({
       method: "GET",

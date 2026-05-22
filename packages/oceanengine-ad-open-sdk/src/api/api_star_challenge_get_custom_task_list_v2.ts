@@ -30,19 +30,19 @@ export class StarChallengeGetCustomTaskListV2Api {
 
   async openApi2StarChallengeGetCustomTaskListGetWithHttpInfo(request: StarChallengeGetCustomTaskListV2ApiOpenApi2StarChallengeGetCustomTaskListGetRequest): Promise<ApiResponse<StarChallengeGetCustomTaskListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarChallengeGetCustomTaskListGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.taskCategory == null) {
-      throw new ApiException("Missing the required parameter 'taskCategory' when calling openApi2StarChallengeGetCustomTaskListGet");
+      throw new ApiException("taskCategory is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarChallengeGetCustomTaskListGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApi2StarChallengeGetCustomTaskListGet");
+      throw new ApiException("pageSize is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarChallengeGetCustomTaskListV2Response>({
       method: "GET",

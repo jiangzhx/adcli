@@ -28,11 +28,11 @@ export class PromotionAutoGenerateConfigGetV30Api {
 
   async openApiV30PromotionAutoGenerateConfigGetGetWithHttpInfo(request: PromotionAutoGenerateConfigGetV30ApiOpenApiV30PromotionAutoGenerateConfigGetGetRequest): Promise<ApiResponse<PromotionAutoGenerateConfigGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30PromotionAutoGenerateConfigGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.configId == null) {
-      throw new ApiException("Missing the required parameter 'configId' when calling openApiV30PromotionAutoGenerateConfigGetGet");
+      throw new ApiException("configId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<PromotionAutoGenerateConfigGetV30Response>({
       method: "GET",

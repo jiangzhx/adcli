@@ -30,7 +30,7 @@ export class BusinessPlatformPartnerOrganizationListV2Api {
 
   async openApi2BusinessPlatformPartnerOrganizationListGetWithHttpInfo(request: BusinessPlatformPartnerOrganizationListV2ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest): Promise<ApiResponse<BusinessPlatformPartnerOrganizationListV2Response>> {
     if (request.organizationId == null) {
-      throw new ApiException("Missing the required parameter 'organizationId' when calling openApi2BusinessPlatformPartnerOrganizationListGet");
+      throw new ApiException("organizationId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BusinessPlatformPartnerOrganizationListV2Response>({
       method: "GET",

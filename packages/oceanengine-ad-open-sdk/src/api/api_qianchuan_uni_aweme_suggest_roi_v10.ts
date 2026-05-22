@@ -10,7 +10,7 @@ export interface QianchuanUniAwemeSuggestRoiV10ApiOpenApiV10QianchuanUniAwemeSug
   marketingGoal: QianchuanUniAwemeSuggestRoiV10MarketingGoal;
   awemeId: number | string;
   deepExternalAction: QianchuanUniAwemeSuggestRoiV10DeepExternalAction;
-  productIds?: number | string[];
+  productIds?: (number | string)[];
   adId?: number | string;
   taskId?: number | string;
   scene?: QianchuanUniAwemeSuggestRoiV10Scene;
@@ -34,19 +34,27 @@ export class QianchuanUniAwemeSuggestRoiV10Api {
 
   async openApiV10QianchuanUniAwemeSuggestRoiGetWithHttpInfo(request: QianchuanUniAwemeSuggestRoiV10ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest): Promise<ApiResponse<QianchuanUniAwemeSuggestRoiV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniAwemeSuggestRoiGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanUniAwemeSuggestRoiGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanUniAwemeSuggestRoiGet");
+      throw new ApiException("awemeId is required and must be specified");
+    }
+
+    if (request.awemeId != null && Number(request.awemeId) < 1) {
+      throw new ApiException("awemeId must be greater than 1");
     }
 
     if (request.deepExternalAction == null) {
-      throw new ApiException("Missing the required parameter 'deepExternalAction' when calling openApiV10QianchuanUniAwemeSuggestRoiGet");
+      throw new ApiException("deepExternalAction is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniAwemeSuggestRoiV10Response>({
       method: "GET",

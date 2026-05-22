@@ -30,7 +30,7 @@ export class QianchuanImageGetV10Api {
 
   async openApiV10QianchuanImageGetGetWithHttpInfo(request: QianchuanImageGetV10ApiOpenApiV10QianchuanImageGetGetRequest): Promise<ApiResponse<QianchuanImageGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanImageGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanImageGetV10Response>({
       method: "GET",

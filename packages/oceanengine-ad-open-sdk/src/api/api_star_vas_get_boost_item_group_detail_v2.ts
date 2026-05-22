@@ -28,11 +28,11 @@ export class StarVasGetBoostItemGroupDetailV2Api {
 
   async openApi2StarVasGetBoostItemGroupDetailGetWithHttpInfo(request: StarVasGetBoostItemGroupDetailV2ApiOpenApi2StarVasGetBoostItemGroupDetailGetRequest): Promise<ApiResponse<StarVasGetBoostItemGroupDetailV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarVasGetBoostItemGroupDetailGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.taskId == null) {
-      throw new ApiException("Missing the required parameter 'taskId' when calling openApi2StarVasGetBoostItemGroupDetailGet");
+      throw new ApiException("taskId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarVasGetBoostItemGroupDetailV2Response>({
       method: "GET",

@@ -38,11 +38,15 @@ export class EventManagerDeepBidTypeGetV30Api {
 
   async openApiV30EventManagerDeepBidTypeGetGetWithHttpInfo(request: EventManagerDeepBidTypeGetV30ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest): Promise<ApiResponse<EventManagerDeepBidTypeGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30EventManagerDeepBidTypeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.externalAction == null) {
-      throw new ApiException("Missing the required parameter 'externalAction' when calling openApiV30EventManagerDeepBidTypeGetGet");
+      throw new ApiException("externalAction is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerDeepBidTypeGetV30Response>({
       method: "GET",

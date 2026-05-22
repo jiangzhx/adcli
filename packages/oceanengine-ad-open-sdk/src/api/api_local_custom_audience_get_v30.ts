@@ -30,7 +30,7 @@ export class LocalCustomAudienceGetV30Api {
 
   async openApiV30LocalCustomAudienceGetGetWithHttpInfo(request: LocalCustomAudienceGetV30ApiOpenApiV30LocalCustomAudienceGetGetRequest): Promise<ApiResponse<LocalCustomAudienceGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalCustomAudienceGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalCustomAudienceGetV30Response>({
       method: "GET",

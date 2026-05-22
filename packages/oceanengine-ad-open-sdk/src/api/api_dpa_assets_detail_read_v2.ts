@@ -7,7 +7,7 @@ import type { DpaAssetsDetailReadV2Response } from "../models/index";
 
 export interface DpaAssetsDetailReadV2ApiOpenApi2DpaAssetsDetailReadGetRequest {
   advertiserId?: number | string;
-  assetIds?: number | string[];
+  assetIds?: (number | string)[];
 }
 
 export class DpaAssetsDetailReadV2Api {

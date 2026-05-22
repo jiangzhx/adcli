@@ -5,7 +5,7 @@ import type { LocalReportProjectGetV30FilteringCampaignType, LocalReportProjectG
 
 export interface LocalReportProjectGetV30Filtering {
   campaign_type?: LocalReportProjectGetV30FilteringCampaignType;
-  cdp_project_ids?: number | string[];
+  cdp_project_ids?: (number | string)[];
   delivery_mode?: LocalReportProjectGetV30FilteringDeliveryMode[];
   external_action?: LocalReportProjectGetV30FilteringExternalAction[];
   local_delivery_scene?: LocalReportProjectGetV30FilteringLocalDeliveryScene;

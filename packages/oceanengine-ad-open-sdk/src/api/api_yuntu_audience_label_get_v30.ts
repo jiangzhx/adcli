@@ -29,15 +29,15 @@ export class YuntuAudienceLabelGetV30Api {
 
   async openApiV30YuntuAudienceLabelGetGetWithHttpInfo(request: YuntuAudienceLabelGetV30ApiOpenApiV30YuntuAudienceLabelGetGetRequest): Promise<ApiResponse<YuntuAudienceLabelGetV30Response>> {
     if (request.yuntuBrandId == null) {
-      throw new ApiException("Missing the required parameter 'yuntuBrandId' when calling openApiV30YuntuAudienceLabelGetGet");
+      throw new ApiException("yuntuBrandId is required and must be specified");
     }
 
     if (request.serviceProviderId == null) {
-      throw new ApiException("Missing the required parameter 'serviceProviderId' when calling openApiV30YuntuAudienceLabelGetGet");
+      throw new ApiException("serviceProviderId is required and must be specified");
     }
 
     if (request.labelId == null) {
-      throw new ApiException("Missing the required parameter 'labelId' when calling openApiV30YuntuAudienceLabelGetGet");
+      throw new ApiException("labelId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<YuntuAudienceLabelGetV30Response>({
       method: "GET",

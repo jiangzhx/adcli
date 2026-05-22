@@ -28,11 +28,11 @@ export class BrandFileVideoUploadV30Api {
 
   async openApiV30BrandFileVideoUploadPostWithHttpInfo(request: BrandFileVideoUploadV30ApiOpenApiV30BrandFileVideoUploadPostRequest): Promise<ApiResponse<BrandFileVideoUploadV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandFileVideoUploadPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.videoFile == null) {
-      throw new ApiException("Missing the required parameter 'videoFile' when calling openApiV30BrandFileVideoUploadPost");
+      throw new ApiException("videoFile is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandFileVideoUploadV30Response>({
       method: "POST",

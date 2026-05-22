@@ -31,7 +31,7 @@ export class QianchuanUniPromotionAuthorizableShopListV10Api {
 
   async openApiV10QianchuanUniPromotionAuthorizableShopListGetWithHttpInfo(request: QianchuanUniPromotionAuthorizableShopListV10ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest): Promise<ApiResponse<QianchuanUniPromotionAuthorizableShopListV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniPromotionAuthorizableShopListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionAuthorizableShopListV10Response>({
       method: "GET",

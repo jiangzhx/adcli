@@ -30,7 +30,7 @@ export class ToolsSiteTemplateGetV2Api {
 
   async openApi2ToolsSiteTemplateGetGetWithHttpInfo(request: ToolsSiteTemplateGetV2ApiOpenApi2ToolsSiteTemplateGetGetRequest): Promise<ApiResponse<ToolsSiteTemplateGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsSiteTemplateGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsSiteTemplateGetV2Response>({
       method: "GET",

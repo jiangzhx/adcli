@@ -29,15 +29,15 @@ export class DownloadStatementV2Api {
 
   async openApi2DownloadStatementGetWithHttpInfo(request: DownloadStatementV2ApiOpenApi2DownloadStatementGetRequest): Promise<ApiResponse<DownloadStatementV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2DownloadStatementGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.attachId == null) {
-      throw new ApiException("Missing the required parameter 'attachId' when calling openApi2DownloadStatementGet");
+      throw new ApiException("attachId is required and must be specified");
     }
 
     if (request.statementId == null) {
-      throw new ApiException("Missing the required parameter 'statementId' when calling openApi2DownloadStatementGet");
+      throw new ApiException("statementId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DownloadStatementV2Response>({
       method: "GET",

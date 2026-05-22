@@ -35,31 +35,31 @@ export class CgTransferWalletTransferListV30Api {
 
   async openApiV30CgTransferWalletTransferListGetWithHttpInfo(request: CgTransferWalletTransferListV30ApiOpenApiV30CgTransferWalletTransferListGetRequest): Promise<ApiResponse<CgTransferWalletTransferListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30CgTransferWalletTransferListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30CgTransferWalletTransferListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.bizRequestNo == null) {
-      throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferWalletTransferListGet");
+      throw new ApiException("bizRequestNo is required and must be specified");
     }
 
     if (request.queryBeginTime == null) {
-      throw new ApiException("Missing the required parameter 'queryBeginTime' when calling openApiV30CgTransferWalletTransferListGet");
+      throw new ApiException("queryBeginTime is required and must be specified");
     }
 
     if (request.queryEndTime == null) {
-      throw new ApiException("Missing the required parameter 'queryEndTime' when calling openApiV30CgTransferWalletTransferListGet");
+      throw new ApiException("queryEndTime is required and must be specified");
     }
 
     if (request.queryWalletIdList == null) {
-      throw new ApiException("Missing the required parameter 'queryWalletIdList' when calling openApiV30CgTransferWalletTransferListGet");
+      throw new ApiException("queryWalletIdList is required and must be specified");
     }
 
     if (request.pageInfo == null) {
-      throw new ApiException("Missing the required parameter 'pageInfo' when calling openApiV30CgTransferWalletTransferListGet");
+      throw new ApiException("pageInfo is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferWalletTransferListV30Response>({
       method: "GET",

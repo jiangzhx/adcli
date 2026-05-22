@@ -5,6 +5,6 @@ import type { PromotionStatusUpdateV30ResponseDataErrorsInner } from "../models/
 
 export interface PromotionStatusUpdateV30ResponseData {
   errors?: PromotionStatusUpdateV30ResponseDataErrorsInner[];
-  promotion_ids?: number | string[];
+  promotion_ids?: (number | string)[];
 }
 

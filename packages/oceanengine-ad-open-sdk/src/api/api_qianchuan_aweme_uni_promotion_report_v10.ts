@@ -31,19 +31,23 @@ export class QianchuanAwemeUniPromotionReportV10Api {
 
   async openApiV10QianchuanAwemeUniPromotionReportGetWithHttpInfo(request: QianchuanAwemeUniPromotionReportV10ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest): Promise<ApiResponse<QianchuanAwemeUniPromotionReportV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeUniPromotionReportGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 0) {
+      throw new ApiException("advertiserId must be greater than 0");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanAwemeUniPromotionReportGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV10QianchuanAwemeUniPromotionReportGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV10QianchuanAwemeUniPromotionReportGet");
+      throw new ApiException("endDate is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeUniPromotionReportV10Response>({
       method: "GET",

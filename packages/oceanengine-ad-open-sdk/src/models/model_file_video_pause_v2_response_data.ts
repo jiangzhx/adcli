@@ -4,7 +4,7 @@
 import type { FileVideoPauseV2ResponseDataMaterialClearResultValue } from "../models/index";
 
 export interface FileVideoPauseV2ResponseData {
-  fail_material_ids?: number | string[];
+  fail_material_ids?: (number | string)[];
   material_clear_result?: Record<string, FileVideoPauseV2ResponseDataMaterialClearResultValue>;
   status?: string;
 }

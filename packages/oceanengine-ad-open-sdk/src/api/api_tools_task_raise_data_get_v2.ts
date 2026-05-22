@@ -28,11 +28,11 @@ export class ToolsTaskRaiseDataGetV2Api {
 
   async openApi2ToolsTaskRaiseDataGetGetWithHttpInfo(request: ToolsTaskRaiseDataGetV2ApiOpenApi2ToolsTaskRaiseDataGetGetRequest): Promise<ApiResponse<ToolsTaskRaiseDataGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsTaskRaiseDataGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.reportId == null) {
-      throw new ApiException("Missing the required parameter 'reportId' when calling openApi2ToolsTaskRaiseDataGetGet");
+      throw new ApiException("reportId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsTaskRaiseDataGetV2Response>({
       method: "GET",

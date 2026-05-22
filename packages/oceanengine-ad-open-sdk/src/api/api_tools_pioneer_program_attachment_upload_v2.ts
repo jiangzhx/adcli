@@ -34,31 +34,31 @@ export class ToolsPioneerProgramAttachmentUploadV2Api {
 
   async openApi2ToolsPioneerProgramAttachmentUploadPostWithHttpInfo(request: ToolsPioneerProgramAttachmentUploadV2ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest): Promise<ApiResponse<ToolsPioneerProgramAttachmentUploadV2Response>> {
     if (request.appId == null) {
-      throw new ApiException("Missing the required parameter 'appId' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
+      throw new ApiException("appId is required and must be specified");
     }
 
     if (request.dataFileType == null) {
-      throw new ApiException("Missing the required parameter 'dataFileType' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
+      throw new ApiException("dataFileType is required and must be specified");
     }
 
     if (request.fileData == null) {
-      throw new ApiException("Missing the required parameter 'fileData' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
+      throw new ApiException("fileData is required and must be specified");
     }
 
     if (request.fileIndex == null) {
-      throw new ApiException("Missing the required parameter 'fileIndex' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
+      throw new ApiException("fileIndex is required and must be specified");
     }
 
     if (request.fileTotalNum == null) {
-      throw new ApiException("Missing the required parameter 'fileTotalNum' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
+      throw new ApiException("fileTotalNum is required and must be specified");
     }
 
     if (request.pDate == null) {
-      throw new ApiException("Missing the required parameter 'pDate' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
+      throw new ApiException("pDate is required and must be specified");
     }
 
     if (request.platform == null) {
-      throw new ApiException("Missing the required parameter 'platform' when calling openApi2ToolsPioneerProgramAttachmentUploadPost");
+      throw new ApiException("platform is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPioneerProgramAttachmentUploadV2Response>({
       method: "POST",

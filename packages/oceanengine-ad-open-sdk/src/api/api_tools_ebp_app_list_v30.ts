@@ -32,11 +32,11 @@ export class ToolsEbpAppListV30Api {
 
   async openApiV30ToolsEbpAppListGetWithHttpInfo(request: ToolsEbpAppListV30ApiOpenApiV30ToolsEbpAppListGetRequest): Promise<ApiResponse<ToolsEbpAppListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpAppListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30ToolsEbpAppListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpAppListV30Response>({
       method: "GET",

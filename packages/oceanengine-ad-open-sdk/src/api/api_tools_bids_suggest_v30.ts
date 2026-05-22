@@ -38,15 +38,15 @@ export class ToolsBidsSuggestV30Api {
 
   async openApiV30ToolsBidsSuggestGetWithHttpInfo(request: ToolsBidsSuggestV30ApiOpenApiV30ToolsBidsSuggestGetRequest): Promise<ApiResponse<ToolsBidsSuggestV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsBidsSuggestGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.pricing == null) {
-      throw new ApiException("Missing the required parameter 'pricing' when calling openApiV30ToolsBidsSuggestGet");
+      throw new ApiException("pricing is required and must be specified");
     }
 
     if (request.externalAction == null) {
-      throw new ApiException("Missing the required parameter 'externalAction' when calling openApiV30ToolsBidsSuggestGet");
+      throw new ApiException("externalAction is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsBidsSuggestV30Response>({
       method: "GET",

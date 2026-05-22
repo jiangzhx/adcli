@@ -42,15 +42,15 @@ export class QueryInvoiceSelfV2Api {
 
   async openApi2QueryInvoiceSelfGetWithHttpInfo(request: QueryInvoiceSelfV2ApiOpenApi2QueryInvoiceSelfGetRequest): Promise<ApiResponse<QueryInvoiceSelfV2Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApi2QueryInvoiceSelfGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApi2QueryInvoiceSelfGet");
+      throw new ApiException("pageSize is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2QueryInvoiceSelfGet");
+      throw new ApiException("page is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryInvoiceSelfV2Response>({
       method: "GET",

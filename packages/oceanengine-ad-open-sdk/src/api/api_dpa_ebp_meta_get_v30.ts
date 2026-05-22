@@ -34,15 +34,19 @@ export class DpaEbpMetaGetV30Api {
 
   async openApiV30DpaEbpMetaGetGetWithHttpInfo(request: DpaEbpMetaGetV30ApiOpenApiV30DpaEbpMetaGetGetRequest): Promise<ApiResponse<DpaEbpMetaGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30DpaEbpMetaGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30DpaEbpMetaGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.platformId == null) {
-      throw new ApiException("Missing the required parameter 'platformId' when calling openApiV30DpaEbpMetaGetGet");
+      throw new ApiException("platformId is required and must be specified");
+    }
+
+    if (request.platformId != null && Number(request.platformId) < 1) {
+      throw new ApiException("platformId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<DpaEbpMetaGetV30Response>({
       method: "GET",

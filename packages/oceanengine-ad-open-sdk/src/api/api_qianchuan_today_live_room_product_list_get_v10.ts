@@ -32,15 +32,15 @@ export class QianchuanTodayLiveRoomProductListGetV10Api {
 
   async openApiV10QianchuanTodayLiveRoomProductListGetGetWithHttpInfo(request: QianchuanTodayLiveRoomProductListGetV10ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest): Promise<ApiResponse<QianchuanTodayLiveRoomProductListGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanTodayLiveRoomProductListGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.roomId == null) {
-      throw new ApiException("Missing the required parameter 'roomId' when calling openApiV10QianchuanTodayLiveRoomProductListGetGet");
+      throw new ApiException("roomId is required and must be specified");
     }
 
     if (request.fields == null) {
-      throw new ApiException("Missing the required parameter 'fields' when calling openApiV10QianchuanTodayLiveRoomProductListGetGet");
+      throw new ApiException("fields is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanTodayLiveRoomProductListGetV10Response>({
       method: "GET",

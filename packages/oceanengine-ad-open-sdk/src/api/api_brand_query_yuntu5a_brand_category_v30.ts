@@ -27,7 +27,7 @@ export class BrandQueryYuntu5aBrandCategoryV30Api {
 
   async openApiV30BrandQueryYuntu5aBrandCategoryGetWithHttpInfo(request: BrandQueryYuntu5aBrandCategoryV30ApiOpenApiV30BrandQueryYuntu5aBrandCategoryGetRequest): Promise<ApiResponse<BrandQueryYuntu5aBrandCategoryV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandQueryYuntu5aBrandCategoryGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandQueryYuntu5aBrandCategoryV30Response>({
       method: "GET",

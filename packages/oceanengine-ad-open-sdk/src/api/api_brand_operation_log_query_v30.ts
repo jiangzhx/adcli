@@ -33,15 +33,15 @@ export class BrandOperationLogQueryV30Api {
 
   async openApiV30BrandOperationLogQueryGetWithHttpInfo(request: BrandOperationLogQueryV30ApiOpenApiV30BrandOperationLogQueryGetRequest): Promise<ApiResponse<BrandOperationLogQueryV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandOperationLogQueryGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.objectId == null) {
-      throw new ApiException("Missing the required parameter 'objectId' when calling openApiV30BrandOperationLogQueryGet");
+      throw new ApiException("objectId is required and must be specified");
     }
 
     if (request.objectType == null) {
-      throw new ApiException("Missing the required parameter 'objectType' when calling openApiV30BrandOperationLogQueryGet");
+      throw new ApiException("objectType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandOperationLogQueryV30Response>({
       method: "GET",

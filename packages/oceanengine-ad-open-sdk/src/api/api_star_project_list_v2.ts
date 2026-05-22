@@ -30,15 +30,31 @@ export class StarProjectListV2Api {
 
   async openApi2StarProjectListGetWithHttpInfo(request: StarProjectListV2ApiOpenApi2StarProjectListGetRequest): Promise<ApiResponse<StarProjectListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarProjectListGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarProjectListGet");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
+    }
+
+    if (request.page != null && Number(request.page) > 10000) {
+      throw new ApiException("page must be less than 10000");
     }
 
     if (request.limit == null) {
-      throw new ApiException("Missing the required parameter 'limit' when calling openApi2StarProjectListGet");
+      throw new ApiException("limit is required and must be specified");
+    }
+
+    if (request.limit != null && Number(request.limit) < 1) {
+      throw new ApiException("limit must be greater than 1");
+    }
+
+    if (request.limit != null && Number(request.limit) > 50) {
+      throw new ApiException("limit must be less than 50");
     }
     return this.apiClient.requestWithHttpInfo<StarProjectListV2Response>({
       method: "GET",

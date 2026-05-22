@@ -28,11 +28,11 @@ export class QianchuanAwemeOrderDetailGetV10Api {
 
   async openApiV10QianchuanAwemeOrderDetailGetGetWithHttpInfo(request: QianchuanAwemeOrderDetailGetV10ApiOpenApiV10QianchuanAwemeOrderDetailGetGetRequest): Promise<ApiResponse<QianchuanAwemeOrderDetailGetV10Response>> {
     if (request.orderId == null) {
-      throw new ApiException("Missing the required parameter 'orderId' when calling openApiV10QianchuanAwemeOrderDetailGetGet");
+      throw new ApiException("orderId is required and must be specified");
     }
 
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeOrderDetailGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeOrderDetailGetV10Response>({
       method: "GET",

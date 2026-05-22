@@ -13,7 +13,7 @@ export interface LocalProjectUpdateV30Request {
   high_budget_rate?: number;
   is_set_peak_budget?: boolean;
   local_account_id: number | string;
-  market_page_ids?: number | string[];
+  market_page_ids?: (number | string)[];
   name?: string;
   peak_holidays?: LocalProjectUpdateV30PeakHolidays[];
   peak_week_days?: LocalProjectUpdateV30PeakWeekDays[];

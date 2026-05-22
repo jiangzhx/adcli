@@ -29,15 +29,23 @@ export class NativeAnchorGetDetailV30Api {
 
   async openApiV30NativeAnchorGetDetailGetWithHttpInfo(request: NativeAnchorGetDetailV30ApiOpenApiV30NativeAnchorGetDetailGetRequest): Promise<ApiResponse<NativeAnchorGetDetailV30Response>> {
     if (request.anchorIds == null) {
-      throw new ApiException("Missing the required parameter 'anchorIds' when calling openApiV30NativeAnchorGetDetailGet");
+      throw new ApiException("anchorIds is required and must be specified");
+    }
+
+    if (request.anchorIds != null && request.anchorIds.length < 1) {
+      throw new ApiException("anchorIds must have at least 1 elements");
+    }
+
+    if (request.anchorIds != null && request.anchorIds.length > 20) {
+      throw new ApiException("anchorIds must have less than 20 elements");
     }
 
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30NativeAnchorGetDetailGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.anchorType == null) {
-      throw new ApiException("Missing the required parameter 'anchorType' when calling openApiV30NativeAnchorGetDetailGet");
+      throw new ApiException("anchorType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<NativeAnchorGetDetailV30Response>({
       method: "GET",

@@ -4,7 +4,7 @@
 import type { CreativeCustomCreativeUpdateV2ResponseDataErrorsInner } from "../models/index";
 
 export interface CreativeCustomCreativeUpdateV2ResponseData {
-  creative_ids?: number | string[];
+  creative_ids?: (number | string)[];
   errors?: CreativeCustomCreativeUpdateV2ResponseDataErrorsInner[];
 }
 

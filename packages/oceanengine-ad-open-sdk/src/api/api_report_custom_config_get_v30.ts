@@ -28,11 +28,19 @@ export class ReportCustomConfigGetV30Api {
 
   async openApiV30ReportCustomConfigGetGetWithHttpInfo(request: ReportCustomConfigGetV30ApiOpenApiV30ReportCustomConfigGetGetRequest): Promise<ApiResponse<ReportCustomConfigGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportCustomConfigGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.dataTopics == null) {
-      throw new ApiException("Missing the required parameter 'dataTopics' when calling openApiV30ReportCustomConfigGetGet");
+      throw new ApiException("dataTopics is required and must be specified");
+    }
+
+    if (request.dataTopics != null && request.dataTopics.length < 1) {
+      throw new ApiException("dataTopics must have at least 1 elements");
+    }
+
+    if (request.dataTopics != null && request.dataTopics.length > 10) {
+      throw new ApiException("dataTopics must have less than 10 elements");
     }
     return this.apiClient.requestWithHttpInfo<ReportCustomConfigGetV30Response>({
       method: "GET",

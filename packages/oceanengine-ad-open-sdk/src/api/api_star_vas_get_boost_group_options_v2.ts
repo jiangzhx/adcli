@@ -27,7 +27,7 @@ export class StarVasGetBoostGroupOptionsV2Api {
 
   async openApi2StarVasGetBoostGroupOptionsGetWithHttpInfo(request: StarVasGetBoostGroupOptionsV2ApiOpenApi2StarVasGetBoostGroupOptionsGetRequest): Promise<ApiResponse<StarVasGetBoostGroupOptionsV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarVasGetBoostGroupOptionsGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarVasGetBoostGroupOptionsV2Response>({
       method: "GET",

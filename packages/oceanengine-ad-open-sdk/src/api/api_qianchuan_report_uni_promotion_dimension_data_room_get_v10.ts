@@ -37,11 +37,11 @@ export class QianchuanReportUniPromotionDimensionDataRoomGetV10Api {
 
   async openApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetWithHttpInfo(request: QianchuanReportUniPromotionDimensionDataRoomGetV10ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest): Promise<ApiResponse<QianchuanReportUniPromotionDimensionDataRoomGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanReportUniPromotionDimensionDataRoomGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.roomId == null) {
-      throw new ApiException("Missing the required parameter 'roomId' when calling openApiV10QianchuanReportUniPromotionDimensionDataRoomGetGet");
+      throw new ApiException("roomId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanReportUniPromotionDimensionDataRoomGetV10Response>({
       method: "GET",

@@ -8,8 +8,8 @@ export interface DpaVideoGetV2Filtering {
   image_mode?: DpaVideoGetV2FilteringImageMode;
   package_id?: string;
   package_name?: string;
-  product_ids?: number | string[];
-  product_platform_ids?: number | string[];
+  product_ids?: (number | string)[];
+  product_platform_ids?: (number | string)[];
   start_time?: string;
 }
 

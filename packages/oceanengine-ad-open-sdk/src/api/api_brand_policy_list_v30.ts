@@ -37,35 +37,35 @@ export class BrandPolicyListV30Api {
 
   async openApiV30BrandPolicyListGetWithHttpInfo(request: BrandPolicyListV30ApiOpenApiV30BrandPolicyListGetRequest): Promise<ApiResponse<BrandPolicyListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandPolicyListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.classify == null) {
-      throw new ApiException("Missing the required parameter 'classify' when calling openApiV30BrandPolicyListGet");
+      throw new ApiException("classify is required and must be specified");
     }
 
     if (request.proType == null) {
-      throw new ApiException("Missing the required parameter 'proType' when calling openApiV30BrandPolicyListGet");
+      throw new ApiException("proType is required and must be specified");
     }
 
     if (request.adForm == null) {
-      throw new ApiException("Missing the required parameter 'adForm' when calling openApiV30BrandPolicyListGet");
+      throw new ApiException("adForm is required and must be specified");
     }
 
     if (request.appOrigin == null) {
-      throw new ApiException("Missing the required parameter 'appOrigin' when calling openApiV30BrandPolicyListGet");
+      throw new ApiException("appOrigin is required and must be specified");
     }
 
     if (request.pricingType == null) {
-      throw new ApiException("Missing the required parameter 'pricingType' when calling openApiV30BrandPolicyListGet");
+      throw new ApiException("pricingType is required and must be specified");
     }
 
     if (request.gdSendType == null) {
-      throw new ApiException("Missing the required parameter 'gdSendType' when calling openApiV30BrandPolicyListGet");
+      throw new ApiException("gdSendType is required and must be specified");
     }
 
     if (request.deliveryInfo == null) {
-      throw new ApiException("Missing the required parameter 'deliveryInfo' when calling openApiV30BrandPolicyListGet");
+      throw new ApiException("deliveryInfo is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandPolicyListV30Response>({
       method: "GET",

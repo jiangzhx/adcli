@@ -12,7 +12,7 @@ export interface QianchuanUniAwemeAdCreateV10Request {
   multi_product_creative_list?: QianchuanUniAwemeAdCreateV10RequestMultiProductCreativeListInner[];
   name?: string;
   product_channel_info?: QianchuanUniAwemeAdCreateV10RequestProductChannelInfoInner[];
-  product_ids?: number | string[];
+  product_ids?: (number | string)[];
   programmatic_creative_media_list?: QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaList;
 }
 

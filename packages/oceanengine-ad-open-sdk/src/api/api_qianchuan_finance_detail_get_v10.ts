@@ -31,7 +31,7 @@ export class QianchuanFinanceDetailGetV10Api {
 
   async openApiV10QianchuanFinanceDetailGetGetWithHttpInfo(request: QianchuanFinanceDetailGetV10ApiOpenApiV10QianchuanFinanceDetailGetGetRequest): Promise<ApiResponse<QianchuanFinanceDetailGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanFinanceDetailGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanFinanceDetailGetV10Response>({
       method: "GET",

@@ -12,7 +12,7 @@ export interface ToolQuickAppManagementQuickAppGetV2ApiOpenApi2ToolQuickAppManag
   pageSize?: number;
   updateTime?: ToolQuickAppManagementQuickAppGetV2UpdateTime;
   searchKey?: string;
-  quickAppIds?: number | string[];
+  quickAppIds?: (number | string)[];
 }
 
 export class ToolQuickAppManagementQuickAppGetV2Api {
@@ -33,7 +33,7 @@ export class ToolQuickAppManagementQuickAppGetV2Api {
 
   async openApi2ToolQuickAppManagementQuickAppGetGetWithHttpInfo(request: ToolQuickAppManagementQuickAppGetV2ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest): Promise<ApiResponse<ToolQuickAppManagementQuickAppGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolQuickAppManagementQuickAppGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolQuickAppManagementQuickAppGetV2Response>({
       method: "GET",

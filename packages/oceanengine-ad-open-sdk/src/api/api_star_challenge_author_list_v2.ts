@@ -30,19 +30,19 @@ export class StarChallengeAuthorListV2Api {
 
   async openApi2StarChallengeAuthorListGetWithHttpInfo(request: StarChallengeAuthorListV2ApiOpenApi2StarChallengeAuthorListGetRequest): Promise<ApiResponse<StarChallengeAuthorListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarChallengeAuthorListGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.challengeTaskId == null) {
-      throw new ApiException("Missing the required parameter 'challengeTaskId' when calling openApi2StarChallengeAuthorListGet");
+      throw new ApiException("challengeTaskId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarChallengeAuthorListGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.limit == null) {
-      throw new ApiException("Missing the required parameter 'limit' when calling openApi2StarChallengeAuthorListGet");
+      throw new ApiException("limit is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarChallengeAuthorListV2Response>({
       method: "GET",

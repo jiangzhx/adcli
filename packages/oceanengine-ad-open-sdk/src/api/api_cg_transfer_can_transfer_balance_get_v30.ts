@@ -32,27 +32,27 @@ export class CgTransferCanTransferBalanceGetV30Api {
 
   async openApiV30CgTransferCanTransferBalanceGetGetWithHttpInfo(request: CgTransferCanTransferBalanceGetV30ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest): Promise<ApiResponse<CgTransferCanTransferBalanceGetV30Response>> {
     if (request.organizationId == null) {
-      throw new ApiException("Missing the required parameter 'organizationId' when calling openApiV30CgTransferCanTransferBalanceGetGet");
+      throw new ApiException("organizationId is required and must be specified");
     }
 
     if (request.bizRequestNo == null) {
-      throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferCanTransferBalanceGetGet");
+      throw new ApiException("bizRequestNo is required and must be specified");
     }
 
     if (request.opponentTargetId == null) {
-      throw new ApiException("Missing the required parameter 'opponentTargetId' when calling openApiV30CgTransferCanTransferBalanceGetGet");
+      throw new ApiException("opponentTargetId is required and must be specified");
     }
 
     if (request.targetIdList == null) {
-      throw new ApiException("Missing the required parameter 'targetIdList' when calling openApiV30CgTransferCanTransferBalanceGetGet");
+      throw new ApiException("targetIdList is required and must be specified");
     }
 
     if (request.transferDirection == null) {
-      throw new ApiException("Missing the required parameter 'transferDirection' when calling openApiV30CgTransferCanTransferBalanceGetGet");
+      throw new ApiException("transferDirection is required and must be specified");
     }
 
     if (request.platform == null) {
-      throw new ApiException("Missing the required parameter 'platform' when calling openApiV30CgTransferCanTransferBalanceGetGet");
+      throw new ApiException("platform is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferCanTransferBalanceGetV30Response>({
       method: "GET",

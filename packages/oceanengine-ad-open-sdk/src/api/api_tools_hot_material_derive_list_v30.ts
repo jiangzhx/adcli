@@ -30,15 +30,31 @@ export class ToolsHotMaterialDeriveListV30Api {
 
   async openApiV30ToolsHotMaterialDeriveListGetWithHttpInfo(request: ToolsHotMaterialDeriveListV30ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest): Promise<ApiResponse<ToolsHotMaterialDeriveListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsHotMaterialDeriveListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV30ToolsHotMaterialDeriveListGet");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
+    }
+
+    if (request.page != null && Number(request.page) > 1000) {
+      throw new ApiException("page must be less than 1000");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApiV30ToolsHotMaterialDeriveListGet");
+      throw new ApiException("pageSize is required and must be specified");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) < 1) {
+      throw new ApiException("pageSize must be greater than 1");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) > 50) {
+      throw new ApiException("pageSize must be less than 50");
     }
     return this.apiClient.requestWithHttpInfo<ToolsHotMaterialDeriveListV30Response>({
       method: "GET",

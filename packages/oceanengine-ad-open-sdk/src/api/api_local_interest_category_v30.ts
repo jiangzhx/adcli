@@ -27,7 +27,7 @@ export class LocalInterestCategoryV30Api {
 
   async openApiV30LocalInterestCategoryGetWithHttpInfo(request: LocalInterestCategoryV30ApiOpenApiV30LocalInterestCategoryGetRequest): Promise<ApiResponse<LocalInterestCategoryV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalInterestCategoryGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalInterestCategoryV30Response>({
       method: "GET",

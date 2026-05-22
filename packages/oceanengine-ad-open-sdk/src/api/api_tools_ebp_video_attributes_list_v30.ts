@@ -32,7 +32,7 @@ export class ToolsEbpVideoAttributesListV30Api {
 
   async openApiV30ToolsEbpVideoAttributesListGetWithHttpInfo(request: ToolsEbpVideoAttributesListV30ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest): Promise<ApiResponse<ToolsEbpVideoAttributesListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpVideoAttributesListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpVideoAttributesListV30Response>({
       method: "GET",

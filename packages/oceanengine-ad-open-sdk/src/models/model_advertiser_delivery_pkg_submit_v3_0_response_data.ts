@@ -3,6 +3,6 @@
 
 export interface AdvertiserDeliveryPkgSubmitV30ResponseData {
   pkg_id?: number | string;
-  qualification_ids?: number | string[];
+  qualification_ids?: (number | string)[];
 }
 

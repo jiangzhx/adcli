@@ -4,7 +4,7 @@
 import type { QianchuanAdRegionUpdateV10District, QianchuanAdRegionUpdateV10ElectricFenceRegion, QianchuanAdRegionUpdateV10ExcludeLimitedRegion, QianchuanAdRegionUpdateV10LocationType } from "../models/index";
 
 export interface QianchuanAdRegionUpdateV10Request {
-  ad_ids: number | string[];
+  ad_ids: (number | string)[];
   advertiser_id: number | string;
   city?: number[];
   district?: QianchuanAdRegionUpdateV10District;

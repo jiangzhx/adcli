@@ -30,7 +30,7 @@ export class FileVideoGetV2Api {
 
   async openApi2FileVideoGetGetWithHttpInfo(request: FileVideoGetV2ApiOpenApi2FileVideoGetGetRequest): Promise<ApiResponse<FileVideoGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoGetV2Response>({
       method: "GET",

@@ -30,7 +30,7 @@ export class BrandOrderListV30Api {
 
   async openApiV30BrandOrderListGetWithHttpInfo(request: BrandOrderListV30ApiOpenApiV30BrandOrderListGetRequest): Promise<ApiResponse<BrandOrderListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandOrderListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandOrderListV30Response>({
       method: "GET",

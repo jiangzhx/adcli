@@ -2,6 +2,6 @@
 // Do not edit manually.
 
 export interface ToolsCommentHideV30ResponseData {
-  success_comment_ids?: number | string[];
+  success_comment_ids?: (number | string)[];
 }
 

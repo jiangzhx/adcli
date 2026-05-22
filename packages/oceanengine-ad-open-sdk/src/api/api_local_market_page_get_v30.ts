@@ -7,7 +7,7 @@ import type { LocalMarketPageGetV30Response } from "../models/index";
 
 export interface LocalMarketPageGetV30ApiOpenApiV30LocalMarketPageGetGetRequest {
   localAccountId: number | string;
-  marketPageIds: number | string[];
+  marketPageIds: (number | string)[];
 }
 
 export class LocalMarketPageGetV30Api {
@@ -28,11 +28,23 @@ export class LocalMarketPageGetV30Api {
 
   async openApiV30LocalMarketPageGetGetWithHttpInfo(request: LocalMarketPageGetV30ApiOpenApiV30LocalMarketPageGetGetRequest): Promise<ApiResponse<LocalMarketPageGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalMarketPageGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
+    }
+
+    if (request.localAccountId != null && Number(request.localAccountId) < 1) {
+      throw new ApiException("localAccountId must be greater than 1");
     }
 
     if (request.marketPageIds == null) {
-      throw new ApiException("Missing the required parameter 'marketPageIds' when calling openApiV30LocalMarketPageGetGet");
+      throw new ApiException("marketPageIds is required and must be specified");
+    }
+
+    if (request.marketPageIds != null && request.marketPageIds.length < 1) {
+      throw new ApiException("marketPageIds must have at least 1 elements");
+    }
+
+    if (request.marketPageIds != null && request.marketPageIds.length > 50) {
+      throw new ApiException("marketPageIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<LocalMarketPageGetV30Response>({
       method: "GET",

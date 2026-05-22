@@ -7,7 +7,7 @@ import type { ToolsPromotionRaiseStatusGetV30Response } from "../models/index";
 
 export interface ToolsPromotionRaiseStatusGetV30ApiOpenApiV30ToolsPromotionRaiseStatusGetGetRequest {
   advertiserId: number | string;
-  promotionIds: number | string[];
+  promotionIds: (number | string)[];
 }
 
 export class ToolsPromotionRaiseStatusGetV30Api {
@@ -28,11 +28,23 @@ export class ToolsPromotionRaiseStatusGetV30Api {
 
   async openApiV30ToolsPromotionRaiseStatusGetGetWithHttpInfo(request: ToolsPromotionRaiseStatusGetV30ApiOpenApiV30ToolsPromotionRaiseStatusGetGetRequest): Promise<ApiResponse<ToolsPromotionRaiseStatusGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsPromotionRaiseStatusGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.promotionIds == null) {
-      throw new ApiException("Missing the required parameter 'promotionIds' when calling openApiV30ToolsPromotionRaiseStatusGetGet");
+      throw new ApiException("promotionIds is required and must be specified");
+    }
+
+    if (request.promotionIds != null && request.promotionIds.length < 1) {
+      throw new ApiException("promotionIds must have at least 1 elements");
+    }
+
+    if (request.promotionIds != null && request.promotionIds.length > 1) {
+      throw new ApiException("promotionIds must have less than 1 elements");
     }
     return this.apiClient.requestWithHttpInfo<ToolsPromotionRaiseStatusGetV30Response>({
       method: "GET",

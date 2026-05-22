@@ -32,15 +32,15 @@ export class QianchuanToolsEstimateAudienceV10Api {
 
   async openApiV10QianchuanToolsEstimateAudienceGetWithHttpInfo(request: QianchuanToolsEstimateAudienceV10ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest): Promise<ApiResponse<QianchuanToolsEstimateAudienceV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsEstimateAudienceGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanToolsEstimateAudienceGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
 
     if (request.externalAction == null) {
-      throw new ApiException("Missing the required parameter 'externalAction' when calling openApiV10QianchuanToolsEstimateAudienceGet");
+      throw new ApiException("externalAction is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanToolsEstimateAudienceV10Response>({
       method: "GET",

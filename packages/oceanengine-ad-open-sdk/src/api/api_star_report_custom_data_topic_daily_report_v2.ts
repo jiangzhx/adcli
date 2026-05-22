@@ -32,27 +32,27 @@ export class StarReportCustomDataTopicDailyReportV2Api {
 
   async openApi2StarReportCustomDataTopicDailyReportGetWithHttpInfo(request: StarReportCustomDataTopicDailyReportV2ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest): Promise<ApiResponse<StarReportCustomDataTopicDailyReportV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarReportCustomDataTopicDailyReportGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.workId == null) {
-      throw new ApiException("Missing the required parameter 'workId' when calling openApi2StarReportCustomDataTopicDailyReportGet");
+      throw new ApiException("workId is required and must be specified");
     }
 
     if (request.demandId == null) {
-      throw new ApiException("Missing the required parameter 'demandId' when calling openApi2StarReportCustomDataTopicDailyReportGet");
+      throw new ApiException("demandId is required and must be specified");
     }
 
     if (request.topics == null) {
-      throw new ApiException("Missing the required parameter 'topics' when calling openApi2StarReportCustomDataTopicDailyReportGet");
+      throw new ApiException("topics is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApi2StarReportCustomDataTopicDailyReportGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApi2StarReportCustomDataTopicDailyReportGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarReportCustomDataTopicDailyReportV2Response>({
       method: "GET",

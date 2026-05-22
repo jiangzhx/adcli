@@ -32,23 +32,23 @@ export class QianchuanReportLiveGetV10Api {
 
   async openApiV10QianchuanReportLiveGetGetWithHttpInfo(request: QianchuanReportLiveGetV10ApiOpenApiV10QianchuanReportLiveGetGetRequest): Promise<ApiResponse<QianchuanReportLiveGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanReportLiveGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanReportLiveGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV10QianchuanReportLiveGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV10QianchuanReportLiveGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
 
     if (request.fields == null) {
-      throw new ApiException("Missing the required parameter 'fields' when calling openApiV10QianchuanReportLiveGetGet");
+      throw new ApiException("fields is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanReportLiveGetV10Response>({
       method: "GET",

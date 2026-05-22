@@ -29,7 +29,7 @@ export class StarBillGetPendingV2Api {
 
   async openApi2StarBillGetPendingGetWithHttpInfo(request: StarBillGetPendingV2ApiOpenApi2StarBillGetPendingGetRequest): Promise<ApiResponse<StarBillGetPendingV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarBillGetPendingGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarBillGetPendingV2Response>({
       method: "GET",

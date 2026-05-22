@@ -28,11 +28,11 @@ export class SecurityAuditResultsV30Api {
 
   async openApiV30SecurityAuditResultsGetWithHttpInfo(request: SecurityAuditResultsV30ApiOpenApiV30SecurityAuditResultsGetRequest): Promise<ApiResponse<SecurityAuditResultsV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30SecurityAuditResultsGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.objectId == null) {
-      throw new ApiException("Missing the required parameter 'objectId' when calling openApiV30SecurityAuditResultsGet");
+      throw new ApiException("objectId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SecurityAuditResultsV30Response>({
       method: "GET",

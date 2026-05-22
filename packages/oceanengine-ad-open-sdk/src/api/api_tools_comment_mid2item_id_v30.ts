@@ -32,19 +32,19 @@ export class ToolsCommentMid2itemIdV30Api {
 
   async openApiV30ToolsCommentMid2itemIdGetWithHttpInfo(request: ToolsCommentMid2itemIdV30ApiOpenApiV30ToolsCommentMid2itemIdGetRequest): Promise<ApiResponse<ToolsCommentMid2itemIdV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsCommentMid2itemIdGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30ToolsCommentMid2itemIdGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30ToolsCommentMid2itemIdGet");
+      throw new ApiException("endTime is required and must be specified");
     }
 
     if (request.materialId == null) {
-      throw new ApiException("Missing the required parameter 'materialId' when calling openApiV30ToolsCommentMid2itemIdGet");
+      throw new ApiException("materialId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsCommentMid2itemIdV30Response>({
       method: "GET",

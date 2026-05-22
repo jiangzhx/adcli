@@ -9,7 +9,7 @@ export interface ReportAudienceCityV2ApiOpenApi2ReportAudienceCityGetRequest {
   advertiserId?: number | string;
   endDate?: string;
   idType?: ReportAudienceCityV2IdType;
-  ids?: number | string[];
+  ids?: (number | string)[];
   metrics?: string[];
   startDate?: string;
 }

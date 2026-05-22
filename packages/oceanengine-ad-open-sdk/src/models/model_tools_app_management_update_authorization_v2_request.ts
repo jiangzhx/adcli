@@ -5,7 +5,7 @@ import type { ToolsAppManagementUpdateAuthorizationV2OperationType } from "../mo
 
 export interface ToolsAppManagementUpdateAuthorizationV2Request {
   advertiser_id: number | string;
-  advertiser_ids: number | string[];
+  advertiser_ids: (number | string)[];
   basic_package_id: string;
   operation_type: ToolsAppManagementUpdateAuthorizationV2OperationType;
 }

@@ -31,11 +31,11 @@ export class FileAudioAdV2Api {
 
   async openApi2FileAudioAdPostWithHttpInfo(request: FileAudioAdV2ApiOpenApi2FileAudioAdPostRequest): Promise<ApiResponse<FileAudioAdV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileAudioAdPost");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.uploadType == null) {
-      throw new ApiException("Missing the required parameter 'uploadType' when calling openApi2FileAudioAdPost");
+      throw new ApiException("uploadType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileAudioAdV2Response>({
       method: "POST",

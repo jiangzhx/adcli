@@ -28,11 +28,11 @@ export class ClueWechatInstanceDetailV2Api {
 
   async openApi2ClueWechatInstanceDetailGetWithHttpInfo(request: ClueWechatInstanceDetailV2ApiOpenApi2ClueWechatInstanceDetailGetRequest): Promise<ApiResponse<ClueWechatInstanceDetailV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ClueWechatInstanceDetailGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.instanceId == null) {
-      throw new ApiException("Missing the required parameter 'instanceId' when calling openApi2ClueWechatInstanceDetailGet");
+      throw new ApiException("instanceId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ClueWechatInstanceDetailV2Response>({
       method: "GET",

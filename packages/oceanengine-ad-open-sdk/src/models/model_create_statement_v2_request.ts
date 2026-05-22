@@ -5,7 +5,7 @@ import type { CreateStatementV2Platform, CreateStatementV2TemplateType } from ".
 
 export interface CreateStatementV2Request {
   account_id?: number | string;
-  agent_ids: number | string[];
+  agent_ids: (number | string)[];
   contract_serial: string;
   file_id?: number | string;
   name?: string;

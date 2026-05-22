@@ -35,7 +35,7 @@ export class ToolsEbpVideoUploadV30Api {
 
   async openApiV30ToolsEbpVideoUploadPostWithHttpInfo(request: ToolsEbpVideoUploadV30ApiOpenApiV30ToolsEbpVideoUploadPostRequest): Promise<ApiResponse<ToolsEbpVideoUploadV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpVideoUploadPost");
+      throw new ApiException("accountId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpVideoUploadV30Response>({
       method: "POST",

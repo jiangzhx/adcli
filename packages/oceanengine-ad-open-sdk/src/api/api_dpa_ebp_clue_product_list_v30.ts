@@ -10,10 +10,10 @@ export interface DpaEbpClueProductListV30ApiOpenApiV30DpaEbpClueProductListGetRe
   accountType: DpaEbpClueProductListV30AccountType;
   offset: number;
   limit: number;
-  productIds?: number | string[];
+  productIds?: (number | string)[];
   productName?: string;
   auditStatus?: DpaEbpClueProductListV30AuditStatus[];
-  categoryIds?: number | string[];
+  categoryIds?: (number | string)[];
   productIdOrNameSearch?: string;
   statuses?: DpaEbpClueProductListV30Statuses[];
   assetQueryScope?: DpaEbpClueProductListV30AssetQueryScope;
@@ -37,19 +37,19 @@ export class DpaEbpClueProductListV30Api {
 
   async openApiV30DpaEbpClueProductListGetWithHttpInfo(request: DpaEbpClueProductListV30ApiOpenApiV30DpaEbpClueProductListGetRequest): Promise<ApiResponse<DpaEbpClueProductListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30DpaEbpClueProductListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30DpaEbpClueProductListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.offset == null) {
-      throw new ApiException("Missing the required parameter 'offset' when calling openApiV30DpaEbpClueProductListGet");
+      throw new ApiException("offset is required and must be specified");
     }
 
     if (request.limit == null) {
-      throw new ApiException("Missing the required parameter 'limit' when calling openApiV30DpaEbpClueProductListGet");
+      throw new ApiException("limit is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DpaEbpClueProductListV30Response>({
       method: "GET",

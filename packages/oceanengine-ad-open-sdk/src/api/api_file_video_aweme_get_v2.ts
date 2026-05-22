@@ -33,11 +33,15 @@ export class FileVideoAwemeGetV2Api {
 
   async openApi2FileVideoAwemeGetGetWithHttpInfo(request: FileVideoAwemeGetV2ApiOpenApi2FileVideoAwemeGetGetRequest): Promise<ApiResponse<FileVideoAwemeGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoAwemeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApi2FileVideoAwemeGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoAwemeGetV2Response>({
       method: "GET",

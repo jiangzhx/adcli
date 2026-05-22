@@ -31,11 +31,11 @@ export class StarDemandOrderListV2Api {
 
   async openApi2StarDemandOrderListGetWithHttpInfo(request: StarDemandOrderListV2ApiOpenApi2StarDemandOrderListGetRequest): Promise<ApiResponse<StarDemandOrderListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemandOrderListGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.demandId == null) {
-      throw new ApiException("Missing the required parameter 'demandId' when calling openApi2StarDemandOrderListGet");
+      throw new ApiException("demandId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarDemandOrderListV2Response>({
       method: "GET",

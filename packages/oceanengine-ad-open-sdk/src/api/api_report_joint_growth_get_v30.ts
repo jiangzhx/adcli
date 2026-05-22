@@ -32,19 +32,19 @@ export class ReportJointGrowthGetV30Api {
 
   async openApiV30ReportJointGrowthGetGetWithHttpInfo(request: ReportJointGrowthGetV30ApiOpenApiV30ReportJointGrowthGetGetRequest): Promise<ApiResponse<ReportJointGrowthGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportJointGrowthGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.rtaId == null) {
-      throw new ApiException("Missing the required parameter 'rtaId' when calling openApiV30ReportJointGrowthGetGet");
+      throw new ApiException("rtaId is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30ReportJointGrowthGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30ReportJointGrowthGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ReportJointGrowthGetV30Response>({
       method: "GET",

@@ -31,15 +31,19 @@ export class QianchuanUniPromotionProductAwemeGetV10Api {
 
   async openApiV10QianchuanUniPromotionProductAwemeGetGetWithHttpInfo(request: QianchuanUniPromotionProductAwemeGetV10ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest): Promise<ApiResponse<QianchuanUniPromotionProductAwemeGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniPromotionProductAwemeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanUniPromotionProductAwemeGetGet");
+      throw new ApiException("awemeId is required and must be specified");
+    }
+
+    if (request.awemeId != null && Number(request.awemeId) < 0) {
+      throw new ApiException("awemeId must be greater than 0");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanUniPromotionProductAwemeGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionProductAwemeGetV10Response>({
       method: "GET",

@@ -4,7 +4,7 @@
 import type { AgentChildAgentSelectV2ResponseDataPageInfo } from "../models/index";
 
 export interface AgentChildAgentSelectV2ResponseData {
-  child_agent_ids?: number | string[];
+  child_agent_ids?: (number | string)[];
   list?: number[];
   page_info?: AgentChildAgentSelectV2ResponseDataPageInfo;
 }

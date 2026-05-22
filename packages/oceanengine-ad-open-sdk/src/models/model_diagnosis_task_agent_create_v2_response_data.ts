@@ -5,6 +5,6 @@ export interface DiagnosisTaskAgentCreateV2ResponseData {
   err_code?: string;
   err_message?: string;
   fail_video_ids?: Record<string, Record<string, unknown>>;
-  task_ids?: number | string[];
+  task_ids?: (number | string)[];
 }
 

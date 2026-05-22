@@ -5,7 +5,7 @@ import type { SubscribeAccountsAddV30AccountType, SubscribeAccountsAddV30Subscri
 
 export interface SubscribeAccountsAddV30Request {
   account_type?: SubscribeAccountsAddV30AccountType;
-  advertiser_ids: number | string[];
+  advertiser_ids: (number | string)[];
   app_id: number | string;
   core_user_id: number | string;
   subscribe_package_type?: SubscribeAccountsAddV30SubscribePackageType;

@@ -28,11 +28,11 @@ export class ToolsVideoCoverSuggestV2Api {
 
   async openApi2ToolsVideoCoverSuggestGetWithHttpInfo(request: ToolsVideoCoverSuggestV2ApiOpenApi2ToolsVideoCoverSuggestGetRequest): Promise<ApiResponse<ToolsVideoCoverSuggestV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsVideoCoverSuggestGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.videoId == null) {
-      throw new ApiException("Missing the required parameter 'videoId' when calling openApi2ToolsVideoCoverSuggestGet");
+      throw new ApiException("videoId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsVideoCoverSuggestV2Response>({
       method: "GET",

@@ -35,15 +35,15 @@ export class ReportStardeliveryTaskDataGetV30Api {
 
   async openApiV30ReportStardeliveryTaskDataGetGetWithHttpInfo(request: ReportStardeliveryTaskDataGetV30ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest): Promise<ApiResponse<ReportStardeliveryTaskDataGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportStardeliveryTaskDataGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV30ReportStardeliveryTaskDataGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV30ReportStardeliveryTaskDataGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ReportStardeliveryTaskDataGetV30Response>({
       method: "GET",

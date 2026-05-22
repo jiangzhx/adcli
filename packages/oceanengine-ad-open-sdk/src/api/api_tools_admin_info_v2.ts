@@ -31,19 +31,23 @@ export class ToolsAdminInfoV2Api {
 
   async openApi2ToolsAdminInfoGetWithHttpInfo(request: ToolsAdminInfoV2ApiOpenApi2ToolsAdminInfoGetRequest): Promise<ApiResponse<ToolsAdminInfoV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsAdminInfoGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.codes == null) {
-      throw new ApiException("Missing the required parameter 'codes' when calling openApi2ToolsAdminInfoGet");
+      throw new ApiException("codes is required and must be specified");
+    }
+
+    if (request.codes != null && request.codes.length < 1) {
+      throw new ApiException("codes must have at least 1 elements");
     }
 
     if (request.language == null) {
-      throw new ApiException("Missing the required parameter 'language' when calling openApi2ToolsAdminInfoGet");
+      throw new ApiException("language is required and must be specified");
     }
 
     if (request.subDistrict == null) {
-      throw new ApiException("Missing the required parameter 'subDistrict' when calling openApi2ToolsAdminInfoGet");
+      throw new ApiException("subDistrict is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAdminInfoV2Response>({
       method: "GET",

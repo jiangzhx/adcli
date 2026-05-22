@@ -7,7 +7,7 @@ import type { FileMaterialDetailV2Response } from "../models/index";
 
 export interface FileMaterialDetailV2ApiOpenApi2FileMaterialDetailGetRequest {
   advertiserId: number | string;
-  materialIds: number | string[];
+  materialIds: (number | string)[];
 }
 
 export class FileMaterialDetailV2Api {
@@ -28,11 +28,19 @@ export class FileMaterialDetailV2Api {
 
   async openApi2FileMaterialDetailGetWithHttpInfo(request: FileMaterialDetailV2ApiOpenApi2FileMaterialDetailGetRequest): Promise<ApiResponse<FileMaterialDetailV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileMaterialDetailGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.materialIds == null) {
-      throw new ApiException("Missing the required parameter 'materialIds' when calling openApi2FileMaterialDetailGet");
+      throw new ApiException("materialIds is required and must be specified");
+    }
+
+    if (request.materialIds != null && request.materialIds.length < 1) {
+      throw new ApiException("materialIds must have at least 1 elements");
+    }
+
+    if (request.materialIds != null && request.materialIds.length > 50) {
+      throw new ApiException("materialIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<FileMaterialDetailV2Response>({
       method: "GET",

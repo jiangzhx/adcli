@@ -27,7 +27,7 @@ export class StarFeCommonServiceTalentDayGetCheckInCodeV2Api {
 
   async openApi2StarFeCommonServiceTalentDayGetCheckInCodeGetWithHttpInfo(request: StarFeCommonServiceTalentDayGetCheckInCodeV2ApiOpenApi2StarFeCommonServiceTalentDayGetCheckInCodeGetRequest): Promise<ApiResponse<StarFeCommonServiceTalentDayGetCheckInCodeV2Response>> {
     if (request.sCoreUserId == null) {
-      throw new ApiException("Missing the required parameter 'sCoreUserId' when calling openApi2StarFeCommonServiceTalentDayGetCheckInCodeGet");
+      throw new ApiException("sCoreUserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarFeCommonServiceTalentDayGetCheckInCodeV2Response>({
       method: "GET",

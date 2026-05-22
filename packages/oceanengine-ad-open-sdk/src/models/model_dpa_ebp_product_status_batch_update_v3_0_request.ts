@@ -8,6 +8,6 @@ export interface DpaEbpProductStatusBatchUpdateV30Request {
   account_type: DpaEbpProductStatusBatchUpdateV30AccountType;
   opt_status: DpaEbpProductStatusBatchUpdateV30OptStatus;
   platform_id: number | string;
-  product_ids: number | string[];
+  product_ids: (number | string)[];
 }
 

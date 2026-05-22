@@ -6,6 +6,6 @@ import type { ToolsEbpVideoDeleteV30AccountType } from "../models/index";
 export interface ToolsEbpVideoDeleteV30Request {
   account_id: number | string;
   account_type?: ToolsEbpVideoDeleteV30AccountType;
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
 }
 

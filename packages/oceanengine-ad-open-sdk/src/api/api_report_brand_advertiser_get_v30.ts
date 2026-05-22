@@ -33,23 +33,31 @@ export class ReportBrandAdvertiserGetV30Api {
 
   async openApiV30ReportBrandAdvertiserGetGetWithHttpInfo(request: ReportBrandAdvertiserGetV30ApiOpenApiV30ReportBrandAdvertiserGetGetRequest): Promise<ApiResponse<ReportBrandAdvertiserGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportBrandAdvertiserGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV30ReportBrandAdvertiserGetGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV30ReportBrandAdvertiserGetGet");
+      throw new ApiException("endTime is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApiV30ReportBrandAdvertiserGetGet");
+      throw new ApiException("page is required and must be specified");
+    }
+
+    if (request.page != null && Number(request.page) < 1) {
+      throw new ApiException("page must be greater than 1");
     }
 
     if (request.size == null) {
-      throw new ApiException("Missing the required parameter 'size' when calling openApiV30ReportBrandAdvertiserGetGet");
+      throw new ApiException("size is required and must be specified");
+    }
+
+    if (request.size != null && Number(request.size) > 100) {
+      throw new ApiException("size must be less than 100");
     }
     return this.apiClient.requestWithHttpInfo<ReportBrandAdvertiserGetV30Response>({
       method: "GET",

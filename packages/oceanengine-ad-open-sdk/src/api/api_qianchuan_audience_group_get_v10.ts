@@ -28,7 +28,7 @@ export class QianchuanAudienceGroupGetV10Api {
 
   async openApiV10QianchuanAudienceGroupGetGetWithHttpInfo(request: QianchuanAudienceGroupGetV10ApiOpenApiV10QianchuanAudienceGroupGetGetRequest): Promise<ApiResponse<QianchuanAudienceGroupGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAudienceGroupGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAudienceGroupGetV10Response>({
       method: "GET",

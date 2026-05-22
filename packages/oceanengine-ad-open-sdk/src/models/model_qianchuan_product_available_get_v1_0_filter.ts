@@ -6,7 +6,7 @@ import type { QianchuanProductAvailableGetV10FilterMarketingScene, QianchuanProd
 export interface QianchuanProductAvailableGetV10Filter {
   is_adlab?: boolean;
   marketing_scene?: QianchuanProductAvailableGetV10FilterMarketingScene;
-  product_ids?: number | string[];
+  product_ids?: (number | string)[];
   product_name?: string;
   tab?: QianchuanProductAvailableGetV10FilterTab;
 }

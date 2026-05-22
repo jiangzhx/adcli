@@ -31,11 +31,11 @@ export class SecurityScoreTotalGetV30Api {
 
   async openApiV30SecurityScoreTotalGetGetWithHttpInfo(request: SecurityScoreTotalGetV30ApiOpenApiV30SecurityScoreTotalGetGetRequest): Promise<ApiResponse<SecurityScoreTotalGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30SecurityScoreTotalGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.businessLine == null) {
-      throw new ApiException("Missing the required parameter 'businessLine' when calling openApiV30SecurityScoreTotalGetGet");
+      throw new ApiException("businessLine is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SecurityScoreTotalGetV30Response>({
       method: "GET",

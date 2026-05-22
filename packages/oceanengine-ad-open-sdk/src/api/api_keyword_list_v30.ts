@@ -28,11 +28,11 @@ export class KeywordListV30Api {
 
   async openApiV30KeywordListGetWithHttpInfo(request: KeywordListV30ApiOpenApiV30KeywordListGetRequest): Promise<ApiResponse<KeywordListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30KeywordListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV30KeywordListGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<KeywordListV30Response>({
       method: "GET",

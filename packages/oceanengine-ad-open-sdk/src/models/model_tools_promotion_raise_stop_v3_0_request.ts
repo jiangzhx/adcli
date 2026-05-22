@@ -3,6 +3,6 @@
 
 export interface ToolsPromotionRaiseStopV30Request {
   advertiser_id: number | string;
-  promotion_ids: number | string[];
+  promotion_ids: (number | string)[];
 }
 

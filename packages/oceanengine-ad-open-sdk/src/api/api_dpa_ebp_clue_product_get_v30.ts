@@ -8,7 +8,7 @@ import type { DpaEbpClueProductGetV30AccountType, DpaEbpClueProductGetV30Respons
 export interface DpaEbpClueProductGetV30ApiOpenApiV30DpaEbpClueProductGetGetRequest {
   accountId: number | string;
   accountType: DpaEbpClueProductGetV30AccountType;
-  productIds: number | string[];
+  productIds: (number | string)[];
 }
 
 export class DpaEbpClueProductGetV30Api {
@@ -29,15 +29,19 @@ export class DpaEbpClueProductGetV30Api {
 
   async openApiV30DpaEbpClueProductGetGetWithHttpInfo(request: DpaEbpClueProductGetV30ApiOpenApiV30DpaEbpClueProductGetGetRequest): Promise<ApiResponse<DpaEbpClueProductGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30DpaEbpClueProductGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30DpaEbpClueProductGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.productIds == null) {
-      throw new ApiException("Missing the required parameter 'productIds' when calling openApiV30DpaEbpClueProductGetGet");
+      throw new ApiException("productIds is required and must be specified");
+    }
+
+    if (request.productIds != null && request.productIds.length > 100) {
+      throw new ApiException("productIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<DpaEbpClueProductGetV30Response>({
       method: "GET",

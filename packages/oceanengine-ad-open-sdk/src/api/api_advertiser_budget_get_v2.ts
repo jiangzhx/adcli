@@ -6,7 +6,7 @@ import type { AdvertiserBudgetGetV2Response } from "../models/index";
 
 
 export interface AdvertiserBudgetGetV2ApiOpenApi2AdvertiserBudgetGetGetRequest {
-  advertiserIds: number | string[];
+  advertiserIds: (number | string)[];
 }
 
 export class AdvertiserBudgetGetV2Api {
@@ -27,7 +27,15 @@ export class AdvertiserBudgetGetV2Api {
 
   async openApi2AdvertiserBudgetGetGetWithHttpInfo(request: AdvertiserBudgetGetV2ApiOpenApi2AdvertiserBudgetGetGetRequest): Promise<ApiResponse<AdvertiserBudgetGetV2Response>> {
     if (request.advertiserIds == null) {
-      throw new ApiException("Missing the required parameter 'advertiserIds' when calling openApi2AdvertiserBudgetGetGet");
+      throw new ApiException("advertiserIds is required and must be specified");
+    }
+
+    if (request.advertiserIds != null && request.advertiserIds.length < 1) {
+      throw new ApiException("advertiserIds must have at least 1 elements");
+    }
+
+    if (request.advertiserIds != null && request.advertiserIds.length > 100) {
+      throw new ApiException("advertiserIds must have less than 100 elements");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserBudgetGetV2Response>({
       method: "GET",

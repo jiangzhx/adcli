@@ -7,7 +7,7 @@ import type { StarOrderGetComponentV2Response } from "../models/index";
 
 export interface StarOrderGetComponentV2ApiOpenApi2StarOrderGetComponentGetRequest {
   starId: number | string;
-  orderIds: number | string[];
+  orderIds: (number | string)[];
 }
 
 export class StarOrderGetComponentV2Api {
@@ -28,11 +28,11 @@ export class StarOrderGetComponentV2Api {
 
   async openApi2StarOrderGetComponentGetWithHttpInfo(request: StarOrderGetComponentV2ApiOpenApi2StarOrderGetComponentGetRequest): Promise<ApiResponse<StarOrderGetComponentV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarOrderGetComponentGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.orderIds == null) {
-      throw new ApiException("Missing the required parameter 'orderIds' when calling openApi2StarOrderGetComponentGet");
+      throw new ApiException("orderIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarOrderGetComponentV2Response>({
       method: "GET",

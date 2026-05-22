@@ -29,15 +29,15 @@ export class ToolsClueContactLogOverviewQueryV2Api {
 
   async openApi2ToolsClueContactLogOverviewQueryGetWithHttpInfo(request: ToolsClueContactLogOverviewQueryV2ApiOpenApi2ToolsClueContactLogOverviewQueryGetRequest): Promise<ApiResponse<ToolsClueContactLogOverviewQueryV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsClueContactLogOverviewQueryGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApi2ToolsClueContactLogOverviewQueryGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApi2ToolsClueContactLogOverviewQueryGet");
+      throw new ApiException("endTime is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsClueContactLogOverviewQueryV2Response>({
       method: "GET",

@@ -7,7 +7,7 @@ import type { CreativeRejectReasonV2Response } from "../models/index";
 
 export interface CreativeRejectReasonV2ApiOpenApi2CreativeRejectReasonGetRequest {
   advertiserId?: number | string;
-  creativeIds?: number | string[];
+  creativeIds?: (number | string)[];
 }
 
 export class CreativeRejectReasonV2Api {

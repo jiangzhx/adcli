@@ -9,7 +9,7 @@ export interface BrandCreativeGetV30ResponseDataCreativesInnerCategoryInfo {
   cdp_brand_id?: number | string;
   industry_v3?: number;
   product_name?: string[];
-  sub_brand_name_ids?: number | string[];
+  sub_brand_name_ids?: (number | string)[];
   sub_brand_names?: string[];
   yuntu_category_id?: number | string;
   yuntu_main_industry_id?: number | string;

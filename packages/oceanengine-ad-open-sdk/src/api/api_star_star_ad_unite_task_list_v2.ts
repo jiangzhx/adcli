@@ -30,7 +30,7 @@ export class StarStarAdUniteTaskListV2Api {
 
   async openApi2StarStarAdUniteTaskListGetWithHttpInfo(request: StarStarAdUniteTaskListV2ApiOpenApi2StarStarAdUniteTaskListGetRequest): Promise<ApiResponse<StarStarAdUniteTaskListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarStarAdUniteTaskListGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarStarAdUniteTaskListV2Response>({
       method: "GET",

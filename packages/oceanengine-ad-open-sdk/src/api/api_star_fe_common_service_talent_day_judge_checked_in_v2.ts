@@ -27,7 +27,7 @@ export class StarFeCommonServiceTalentDayJudgeCheckedInV2Api {
 
   async openApi2StarFeCommonServiceTalentDayJudgeCheckedInGetWithHttpInfo(request: StarFeCommonServiceTalentDayJudgeCheckedInV2ApiOpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGetRequest): Promise<ApiResponse<StarFeCommonServiceTalentDayJudgeCheckedInV2Response>> {
     if (request.code == null) {
-      throw new ApiException("Missing the required parameter 'code' when calling openApi2StarFeCommonServiceTalentDayJudgeCheckedInGet");
+      throw new ApiException("code is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarFeCommonServiceTalentDayJudgeCheckedInV2Response>({
       method: "GET",

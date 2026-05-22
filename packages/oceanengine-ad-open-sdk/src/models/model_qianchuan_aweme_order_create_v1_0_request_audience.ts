@@ -6,7 +6,7 @@ import type { QianchuanAwemeOrderCreateV10AudienceAge, QianchuanAwemeOrderCreate
 export interface QianchuanAwemeOrderCreateV10RequestAudience {
   age?: QianchuanAwemeOrderCreateV10AudienceAge[];
   audience_mode: QianchuanAwemeOrderCreateV10AudienceAudienceMode;
-  author_ids?: number | string[];
+  author_ids?: (number | string)[];
   behaviors?: QianchuanAwemeOrderCreateV10AudienceBehaviors[];
   city?: number[];
   district?: QianchuanAwemeOrderCreateV10AudienceDistrict;

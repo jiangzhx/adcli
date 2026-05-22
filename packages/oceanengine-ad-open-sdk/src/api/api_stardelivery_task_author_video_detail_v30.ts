@@ -33,11 +33,11 @@ export class StardeliveryTaskAuthorVideoDetailV30Api {
 
   async openApiV30StardeliveryTaskAuthorVideoDetailGetWithHttpInfo(request: StardeliveryTaskAuthorVideoDetailV30ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest): Promise<ApiResponse<StardeliveryTaskAuthorVideoDetailV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30StardeliveryTaskAuthorVideoDetailGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.starTaskId == null) {
-      throw new ApiException("Missing the required parameter 'starTaskId' when calling openApiV30StardeliveryTaskAuthorVideoDetailGet");
+      throw new ApiException("starTaskId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskAuthorVideoDetailV30Response>({
       method: "GET",

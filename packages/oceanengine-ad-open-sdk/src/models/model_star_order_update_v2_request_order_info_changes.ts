@@ -4,6 +4,6 @@
 export interface StarOrderUpdateV2RequestOrderInfoChanges {
   component_click_monitor_url?: string;
   item_show_monitor_url?: string;
-  link_component_ids?: number | string[];
+  link_component_ids?: (number | string)[];
 }
 

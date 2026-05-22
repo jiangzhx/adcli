@@ -5,6 +5,6 @@ import type { AdvertiserDeliveryQualificationDeleteV30ResponseDataErrorsInner } 
 
 export interface AdvertiserDeliveryQualificationDeleteV30ResponseData {
   errors?: AdvertiserDeliveryQualificationDeleteV30ResponseDataErrorsInner[];
-  qualification_ids?: number | string[];
+  qualification_ids?: (number | string)[];
 }
 

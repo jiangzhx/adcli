@@ -30,11 +30,11 @@ export class CgTransferQueryTransferDetailV30Api {
 
   async openApiV30CgTransferQueryTransferDetailGetWithHttpInfo(request: CgTransferQueryTransferDetailV30ApiOpenApiV30CgTransferQueryTransferDetailGetRequest): Promise<ApiResponse<CgTransferQueryTransferDetailV30Response>> {
     if (request.bizRequestNo == null) {
-      throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferQueryTransferDetailGet");
+      throw new ApiException("bizRequestNo is required and must be specified");
     }
 
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApiV30CgTransferQueryTransferDetailGet");
+      throw new ApiException("agentId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferQueryTransferDetailV30Response>({
       method: "GET",

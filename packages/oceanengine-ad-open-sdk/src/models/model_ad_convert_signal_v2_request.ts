@@ -2,7 +2,7 @@
 // Do not edit manually.
 
 export interface AdConvertSignalV2Request {
-  account_ids?: number | string[];
+  account_ids?: (number | string)[];
   active_ttl?: string;
   android_id?: string;
   app_package?: string;

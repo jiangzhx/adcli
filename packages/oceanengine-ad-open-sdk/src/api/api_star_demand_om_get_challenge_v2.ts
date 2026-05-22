@@ -28,11 +28,11 @@ export class StarDemandOmGetChallengeV2Api {
 
   async openApi2StarDemandOmGetChallengeGetWithHttpInfo(request: StarDemandOmGetChallengeV2ApiOpenApi2StarDemandOmGetChallengeGetRequest): Promise<ApiResponse<StarDemandOmGetChallengeV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemandOmGetChallengeGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.challengeTaskId == null) {
-      throw new ApiException("Missing the required parameter 'challengeTaskId' when calling openApi2StarDemandOmGetChallengeGet");
+      throw new ApiException("challengeTaskId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarDemandOmGetChallengeV2Response>({
       method: "GET",

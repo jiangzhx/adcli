@@ -6,7 +6,7 @@ import type { QianchuanAdRejectReasonV10Response } from "../models/index";
 
 
 export interface QianchuanAdRejectReasonV10ApiOpenApiV10QianchuanAdRejectReasonGetRequest {
-  adIds?: number | string[];
+  adIds?: (number | string)[];
   advertiserId?: number | string;
 }
 

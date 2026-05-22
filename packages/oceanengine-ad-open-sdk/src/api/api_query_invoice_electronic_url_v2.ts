@@ -7,7 +7,7 @@ import type { QueryInvoiceElectronicUrlV2Response } from "../models/index";
 
 export interface QueryInvoiceElectronicUrlV2ApiOpenApi2QueryInvoiceElectronicUrlGetRequest {
   invoiceSerial: string;
-  agentIds?: number | string[];
+  agentIds?: (number | string)[];
 }
 
 export class QueryInvoiceElectronicUrlV2Api {
@@ -28,7 +28,7 @@ export class QueryInvoiceElectronicUrlV2Api {
 
   async openApi2QueryInvoiceElectronicUrlGetWithHttpInfo(request: QueryInvoiceElectronicUrlV2ApiOpenApi2QueryInvoiceElectronicUrlGetRequest): Promise<ApiResponse<QueryInvoiceElectronicUrlV2Response>> {
     if (request.invoiceSerial == null) {
-      throw new ApiException("Missing the required parameter 'invoiceSerial' when calling openApi2QueryInvoiceElectronicUrlGet");
+      throw new ApiException("invoiceSerial is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryInvoiceElectronicUrlV2Response>({
       method: "GET",

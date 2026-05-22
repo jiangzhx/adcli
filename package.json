@@ -68,7 +68,7 @@
     "typescript-eslint": "^8.59.3"
   },
   "dependencies": {
-    "@jiangzhx/oceanengine-ad-open-sdk": "1.1.87-port.6",
+    "@jiangzhx/oceanengine-ad-open-sdk": "1.1.87-port.7",
     "@jiangzhx/tencent-ads-marketing-api-sdk": "1.7.84-port.2",
     "env-paths": "^4.0.0",
     "minisearch": "^7.2.0"

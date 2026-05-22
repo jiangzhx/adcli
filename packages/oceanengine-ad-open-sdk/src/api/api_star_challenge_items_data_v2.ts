@@ -30,11 +30,11 @@ export class StarChallengeItemsDataV2Api {
 
   async openApi2StarChallengeItemsDataGetWithHttpInfo(request: StarChallengeItemsDataV2ApiOpenApi2StarChallengeItemsDataGetRequest): Promise<ApiResponse<StarChallengeItemsDataV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarChallengeItemsDataGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.challengeTaskId == null) {
-      throw new ApiException("Missing the required parameter 'challengeTaskId' when calling openApi2StarChallengeItemsDataGet");
+      throw new ApiException("challengeTaskId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarChallengeItemsDataV2Response>({
       method: "GET",

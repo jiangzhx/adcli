@@ -28,11 +28,11 @@ export class AgentChargeVerifyV2Api {
 
   async openApi2AgentChargeVerifyGetWithHttpInfo(request: AgentChargeVerifyV2ApiOpenApi2AgentChargeVerifyGetRequest): Promise<ApiResponse<AgentChargeVerifyV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2AgentChargeVerifyGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.chargeType == null) {
-      throw new ApiException("Missing the required parameter 'chargeType' when calling openApi2AgentChargeVerifyGet");
+      throw new ApiException("chargeType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AgentChargeVerifyV2Response>({
       method: "GET",

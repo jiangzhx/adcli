@@ -5,7 +5,7 @@ import type { MaterialStatusUpdateV30ResponseDataErrorsInner } from "../models/i
 
 export interface MaterialStatusUpdateV30ResponseData {
   errors?: MaterialStatusUpdateV30ResponseDataErrorsInner[];
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
   promotion_id?: number | string;
 }
 

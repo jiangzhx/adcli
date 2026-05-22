@@ -31,11 +31,11 @@ export class FileCarouselAwemeGetV30Api {
 
   async openApiV30FileCarouselAwemeGetGetWithHttpInfo(request: FileCarouselAwemeGetV30ApiOpenApiV30FileCarouselAwemeGetGetRequest): Promise<ApiResponse<FileCarouselAwemeGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30FileCarouselAwemeGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV30FileCarouselAwemeGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileCarouselAwemeGetV30Response>({
       method: "GET",

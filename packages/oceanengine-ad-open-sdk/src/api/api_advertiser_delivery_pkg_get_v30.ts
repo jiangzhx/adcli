@@ -28,11 +28,11 @@ export class AdvertiserDeliveryPkgGetV30Api {
 
   async openApiV30AdvertiserDeliveryPkgGetGetWithHttpInfo(request: AdvertiserDeliveryPkgGetV30ApiOpenApiV30AdvertiserDeliveryPkgGetGetRequest): Promise<ApiResponse<AdvertiserDeliveryPkgGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30AdvertiserDeliveryPkgGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.pkgId == null) {
-      throw new ApiException("Missing the required parameter 'pkgId' when calling openApiV30AdvertiserDeliveryPkgGetGet");
+      throw new ApiException("pkgId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserDeliveryPkgGetV30Response>({
       method: "GET",

@@ -36,35 +36,35 @@ export class BrandQueryStockV30Api {
 
   async openApiV30BrandQueryStockGetWithHttpInfo(request: BrandQueryStockV30ApiOpenApiV30BrandQueryStockGetRequest): Promise<ApiResponse<BrandQueryStockV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandQueryStockGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.classify == null) {
-      throw new ApiException("Missing the required parameter 'classify' when calling openApiV30BrandQueryStockGet");
+      throw new ApiException("classify is required and must be specified");
     }
 
     if (request.landingType == null) {
-      throw new ApiException("Missing the required parameter 'landingType' when calling openApiV30BrandQueryStockGet");
+      throw new ApiException("landingType is required and must be specified");
     }
 
     if (request.appOrigin == null) {
-      throw new ApiException("Missing the required parameter 'appOrigin' when calling openApiV30BrandQueryStockGet");
+      throw new ApiException("appOrigin is required and must be specified");
     }
 
     if (request.adForm == null) {
-      throw new ApiException("Missing the required parameter 'adForm' when calling openApiV30BrandQueryStockGet");
+      throw new ApiException("adForm is required and must be specified");
     }
 
     if (request.gdSendType == null) {
-      throw new ApiException("Missing the required parameter 'gdSendType' when calling openApiV30BrandQueryStockGet");
+      throw new ApiException("gdSendType is required and must be specified");
     }
 
     if (request.policyNo == null) {
-      throw new ApiException("Missing the required parameter 'policyNo' when calling openApiV30BrandQueryStockGet");
+      throw new ApiException("policyNo is required and must be specified");
     }
 
     if (request.scheduleInfo == null) {
-      throw new ApiException("Missing the required parameter 'scheduleInfo' when calling openApiV30BrandQueryStockGet");
+      throw new ApiException("scheduleInfo is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandQueryStockV30Response>({
       method: "GET",

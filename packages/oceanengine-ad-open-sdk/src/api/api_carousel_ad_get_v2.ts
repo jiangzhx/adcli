@@ -7,7 +7,7 @@ import type { CarouselAdGetV2Response } from "../models/index";
 
 export interface CarouselAdGetV2ApiOpenApi2CarouselAdGetGetRequest {
   advertiserId: number | string;
-  carouselIds: number | string[];
+  carouselIds: (number | string)[];
 }
 
 export class CarouselAdGetV2Api {
@@ -28,11 +28,11 @@ export class CarouselAdGetV2Api {
 
   async openApi2CarouselAdGetGetWithHttpInfo(request: CarouselAdGetV2ApiOpenApi2CarouselAdGetGetRequest): Promise<ApiResponse<CarouselAdGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2CarouselAdGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.carouselIds == null) {
-      throw new ApiException("Missing the required parameter 'carouselIds' when calling openApi2CarouselAdGetGet");
+      throw new ApiException("carouselIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CarouselAdGetV2Response>({
       method: "GET",

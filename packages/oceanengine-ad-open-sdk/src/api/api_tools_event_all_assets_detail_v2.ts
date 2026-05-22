@@ -7,7 +7,7 @@ import type { ToolsEventAllAssetsDetailV2Response } from "../models/index";
 
 export interface ToolsEventAllAssetsDetailV2ApiOpenApi2ToolsEventAllAssetsDetailGetRequest {
   advertiserId: number | string;
-  assetIds: number | string[];
+  assetIds: (number | string)[];
 }
 
 export class ToolsEventAllAssetsDetailV2Api {
@@ -28,11 +28,19 @@ export class ToolsEventAllAssetsDetailV2Api {
 
   async openApi2ToolsEventAllAssetsDetailGetWithHttpInfo(request: ToolsEventAllAssetsDetailV2ApiOpenApi2ToolsEventAllAssetsDetailGetRequest): Promise<ApiResponse<ToolsEventAllAssetsDetailV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsEventAllAssetsDetailGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.assetIds == null) {
-      throw new ApiException("Missing the required parameter 'assetIds' when calling openApi2ToolsEventAllAssetsDetailGet");
+      throw new ApiException("assetIds is required and must be specified");
+    }
+
+    if (request.assetIds != null && request.assetIds.length < 1) {
+      throw new ApiException("assetIds must have at least 1 elements");
+    }
+
+    if (request.assetIds != null && request.assetIds.length > 50) {
+      throw new ApiException("assetIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEventAllAssetsDetailV2Response>({
       method: "GET",

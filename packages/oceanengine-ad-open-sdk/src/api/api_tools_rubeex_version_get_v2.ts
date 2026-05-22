@@ -28,11 +28,19 @@ export class ToolsRubeexVersionGetV2Api {
 
   async openApi2ToolsRubeexVersionGetGetWithHttpInfo(request: ToolsRubeexVersionGetV2ApiOpenApi2ToolsRubeexVersionGetGetRequest): Promise<ApiResponse<ToolsRubeexVersionGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsRubeexVersionGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.projectId == null) {
-      throw new ApiException("Missing the required parameter 'projectId' when calling openApi2ToolsRubeexVersionGetGet");
+      throw new ApiException("projectId is required and must be specified");
+    }
+
+    if (request.projectId != null && Number(request.projectId) < 1.0) {
+      throw new ApiException("projectId must be greater than 1.0");
+    }
+
+    if (request.projectId != null && Number(request.projectId) > 2147483647) {
+      throw new ApiException("projectId must be less than 2147483647");
     }
     return this.apiClient.requestWithHttpInfo<ToolsRubeexVersionGetV2Response>({
       method: "GET",

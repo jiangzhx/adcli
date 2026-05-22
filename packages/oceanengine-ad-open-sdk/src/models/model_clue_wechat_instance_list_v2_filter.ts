@@ -4,7 +4,7 @@
 export interface ClueWechatInstanceListV2Filter {
   create_time_end?: string;
   create_time_start?: string;
-  instance_ids?: number | string[];
+  instance_ids?: (number | string)[];
   name?: string;
   page?: number;
   page_size?: number;

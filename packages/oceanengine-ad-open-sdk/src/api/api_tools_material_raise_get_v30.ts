@@ -7,7 +7,7 @@ import type { ToolsMaterialRaiseGetV30Response } from "../models/index";
 
 export interface ToolsMaterialRaiseGetV30ApiOpenApiV30ToolsMaterialRaiseGetGetRequest {
   advertiserId: number | string;
-  projectIds: number | string[];
+  projectIds: (number | string)[];
   page?: number;
   pageSize?: number;
 }
@@ -30,11 +30,11 @@ export class ToolsMaterialRaiseGetV30Api {
 
   async openApiV30ToolsMaterialRaiseGetGetWithHttpInfo(request: ToolsMaterialRaiseGetV30ApiOpenApiV30ToolsMaterialRaiseGetGetRequest): Promise<ApiResponse<ToolsMaterialRaiseGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsMaterialRaiseGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.projectIds == null) {
-      throw new ApiException("Missing the required parameter 'projectIds' when calling openApiV30ToolsMaterialRaiseGetGet");
+      throw new ApiException("projectIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsMaterialRaiseGetV30Response>({
       method: "GET",

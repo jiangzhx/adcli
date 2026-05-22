@@ -28,11 +28,11 @@ export class DpaAlbumStatusGetV30Api {
 
   async openApiV30DpaAlbumStatusGetGetWithHttpInfo(request: DpaAlbumStatusGetV30ApiOpenApiV30DpaAlbumStatusGetGetRequest): Promise<ApiResponse<DpaAlbumStatusGetV30Response>> {
     if (request.albumId == null) {
-      throw new ApiException("Missing the required parameter 'albumId' when calling openApiV30DpaAlbumStatusGetGet");
+      throw new ApiException("albumId is required and must be specified");
     }
 
     if (request.appId == null) {
-      throw new ApiException("Missing the required parameter 'appId' when calling openApiV30DpaAlbumStatusGetGet");
+      throw new ApiException("appId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DpaAlbumStatusGetV30Response>({
       method: "GET",

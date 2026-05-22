@@ -30,7 +30,7 @@ export class FileEbpVideoGetV30Api {
 
   async openApiV30FileEbpVideoGetGetWithHttpInfo(request: FileEbpVideoGetV30ApiOpenApiV30FileEbpVideoGetGetRequest): Promise<ApiResponse<FileEbpVideoGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30FileEbpVideoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileEbpVideoGetV30Response>({
       method: "GET",

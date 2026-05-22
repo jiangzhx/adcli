@@ -29,11 +29,11 @@ export class ToolsBlueFlowKeywordListV30Api {
 
   async openApiV30ToolsBlueFlowKeywordListGetWithHttpInfo(request: ToolsBlueFlowKeywordListV30ApiOpenApiV30ToolsBlueFlowKeywordListGetRequest): Promise<ApiResponse<ToolsBlueFlowKeywordListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsBlueFlowKeywordListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.projectId == null) {
-      throw new ApiException("Missing the required parameter 'projectId' when calling openApiV30ToolsBlueFlowKeywordListGet");
+      throw new ApiException("projectId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsBlueFlowKeywordListV30Response>({
       method: "GET",

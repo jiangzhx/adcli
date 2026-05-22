@@ -30,19 +30,23 @@ export class StarChallengeGetCustomTaskDataV2Api {
 
   async openApi2StarChallengeGetCustomTaskDataGetWithHttpInfo(request: StarChallengeGetCustomTaskDataV2ApiOpenApi2StarChallengeGetCustomTaskDataGetRequest): Promise<ApiResponse<StarChallengeGetCustomTaskDataV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarChallengeGetCustomTaskDataGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.challengeTaskId == null) {
-      throw new ApiException("Missing the required parameter 'challengeTaskId' when calling openApi2StarChallengeGetCustomTaskDataGet");
+      throw new ApiException("challengeTaskId is required and must be specified");
     }
 
     if (request.page == null) {
-      throw new ApiException("Missing the required parameter 'page' when calling openApi2StarChallengeGetCustomTaskDataGet");
+      throw new ApiException("page is required and must be specified");
     }
 
     if (request.pageSize == null) {
-      throw new ApiException("Missing the required parameter 'pageSize' when calling openApi2StarChallengeGetCustomTaskDataGet");
+      throw new ApiException("pageSize is required and must be specified");
+    }
+
+    if (request.pageSize != null && Number(request.pageSize) > 100) {
+      throw new ApiException("pageSize must be less than 100");
     }
     return this.apiClient.requestWithHttpInfo<StarChallengeGetCustomTaskDataV2Response>({
       method: "GET",

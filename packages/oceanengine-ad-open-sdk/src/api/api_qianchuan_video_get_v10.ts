@@ -30,7 +30,7 @@ export class QianchuanVideoGetV10Api {
 
   async openApiV10QianchuanVideoGetGetWithHttpInfo(request: QianchuanVideoGetV10ApiOpenApiV10QianchuanVideoGetGetRequest): Promise<ApiResponse<QianchuanVideoGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanVideoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanVideoGetV10Response>({
       method: "GET",

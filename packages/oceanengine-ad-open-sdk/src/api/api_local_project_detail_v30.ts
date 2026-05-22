@@ -28,11 +28,15 @@ export class LocalProjectDetailV30Api {
 
   async openApiV30LocalProjectDetailGetWithHttpInfo(request: LocalProjectDetailV30ApiOpenApiV30LocalProjectDetailGetRequest): Promise<ApiResponse<LocalProjectDetailV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalProjectDetailGet");
+      throw new ApiException("localAccountId is required and must be specified");
+    }
+
+    if (request.localAccountId != null && Number(request.localAccountId) < 1) {
+      throw new ApiException("localAccountId must be greater than 1");
     }
 
     if (request.projectId == null) {
-      throw new ApiException("Missing the required parameter 'projectId' when calling openApiV30LocalProjectDetailGet");
+      throw new ApiException("projectId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalProjectDetailV30Response>({
       method: "GET",

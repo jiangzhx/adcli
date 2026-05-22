@@ -31,7 +31,7 @@ export class StarComponentQueryIndustryAnchorV2Api {
 
   async openApi2StarComponentQueryIndustryAnchorGetWithHttpInfo(request: StarComponentQueryIndustryAnchorV2ApiOpenApi2StarComponentQueryIndustryAnchorGetRequest): Promise<ApiResponse<StarComponentQueryIndustryAnchorV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarComponentQueryIndustryAnchorGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarComponentQueryIndustryAnchorV2Response>({
       method: "GET",

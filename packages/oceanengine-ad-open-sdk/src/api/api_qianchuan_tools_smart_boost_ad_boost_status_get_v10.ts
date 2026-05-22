@@ -7,7 +7,7 @@ import type { QianchuanToolsSmartBoostAdBoostStatusGetV10Response } from "../mod
 
 export interface QianchuanToolsSmartBoostAdBoostStatusGetV10ApiOpenApiV10QianchuanToolsSmartBoostAdBoostStatusGetGetRequest {
   advertiserId: number | string;
-  adIds: number | string[];
+  adIds: (number | string)[];
 }
 
 export class QianchuanToolsSmartBoostAdBoostStatusGetV10Api {
@@ -28,11 +28,11 @@ export class QianchuanToolsSmartBoostAdBoostStatusGetV10Api {
 
   async openApiV10QianchuanToolsSmartBoostAdBoostStatusGetGetWithHttpInfo(request: QianchuanToolsSmartBoostAdBoostStatusGetV10ApiOpenApiV10QianchuanToolsSmartBoostAdBoostStatusGetGetRequest): Promise<ApiResponse<QianchuanToolsSmartBoostAdBoostStatusGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsSmartBoostAdBoostStatusGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adIds == null) {
-      throw new ApiException("Missing the required parameter 'adIds' when calling openApiV10QianchuanToolsSmartBoostAdBoostStatusGetGet");
+      throw new ApiException("adIds is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanToolsSmartBoostAdBoostStatusGetV10Response>({
       method: "GET",

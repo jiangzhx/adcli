@@ -6,7 +6,7 @@ import type { DpaEbpClueProductDeleteV30AccountType, DpaEbpClueProductDeleteV30R
 export interface DpaEbpClueProductDeleteV30Request {
   account_id: number | string;
   account_type: DpaEbpClueProductDeleteV30AccountType;
-  product_ids?: number | string[];
+  product_ids?: (number | string)[];
   store_id_and_outer_id?: DpaEbpClueProductDeleteV30RequestStoreIdAndOuterId;
 }
 

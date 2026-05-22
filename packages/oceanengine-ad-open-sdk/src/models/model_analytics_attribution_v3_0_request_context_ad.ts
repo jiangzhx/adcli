@@ -3,10 +3,10 @@
 
 export interface AnalyticsAttributionV30RequestContextAd {
   ad_id?: number | string;
-  advertiser_ids?: number | string[];
+  advertiser_ids?: (number | string)[];
   attributed?: boolean;
   campaign_id?: number | string;
   click_time?: number;
-  customer_ids?: number | string[];
+  customer_ids?: (number | string)[];
 }
 

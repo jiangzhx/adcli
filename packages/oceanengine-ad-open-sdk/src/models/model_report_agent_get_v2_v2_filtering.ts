@@ -7,7 +7,7 @@ export interface ReportAgentGetV2V2Filtering {
   account_source?: ReportAgentGetV2V2FilteringAccountSource;
   account_status?: ReportAgentGetV2V2FilteringAccountStatus;
   active?: ReportAgentGetV2V2FilteringActive;
-  advertiser_ids?: number | string[];
+  advertiser_ids?: (number | string)[];
   company_name?: string;
   end_audit_pass_time?: string;
   first_industry?: string;

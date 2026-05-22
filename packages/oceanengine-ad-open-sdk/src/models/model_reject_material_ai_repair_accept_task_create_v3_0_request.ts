@@ -3,6 +3,6 @@
 
 export interface RejectMaterialAiRepairAcceptTaskCreateV30Request {
   advertiser_id: number | string;
-  ai_repair_ids: number | string[];
+  ai_repair_ids: (number | string)[];
 }
 

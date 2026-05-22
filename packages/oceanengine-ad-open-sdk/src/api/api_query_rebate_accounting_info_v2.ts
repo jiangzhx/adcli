@@ -30,7 +30,7 @@ export class QueryRebateAccountingInfoV2Api {
 
   async openApi2QueryRebateAccountingInfoGetWithHttpInfo(request: QueryRebateAccountingInfoV2ApiOpenApi2QueryRebateAccountingInfoGetRequest): Promise<ApiResponse<QueryRebateAccountingInfoV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2QueryRebateAccountingInfoGet");
+      throw new ApiException("agentId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryRebateAccountingInfoV2Response>({
       method: "GET",

@@ -7,7 +7,7 @@ import type { LocalMultiPoiIdPoiIdsGetV30Response } from "../models/index";
 
 export interface LocalMultiPoiIdPoiIdsGetV30ApiOpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest {
   localAccountId: number | string;
-  multiPoiIds: number | string[];
+  multiPoiIds: (number | string)[];
   needEnable?: boolean;
 }
 
@@ -29,11 +29,19 @@ export class LocalMultiPoiIdPoiIdsGetV30Api {
 
   async openApiV30LocalMultiPoiIdPoiIdsGetGetWithHttpInfo(request: LocalMultiPoiIdPoiIdsGetV30ApiOpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest): Promise<ApiResponse<LocalMultiPoiIdPoiIdsGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalMultiPoiIdPoiIdsGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.multiPoiIds == null) {
-      throw new ApiException("Missing the required parameter 'multiPoiIds' when calling openApiV30LocalMultiPoiIdPoiIdsGetGet");
+      throw new ApiException("multiPoiIds is required and must be specified");
+    }
+
+    if (request.multiPoiIds != null && request.multiPoiIds.length < 1) {
+      throw new ApiException("multiPoiIds must have at least 1 elements");
+    }
+
+    if (request.multiPoiIds != null && request.multiPoiIds.length > 50) {
+      throw new ApiException("multiPoiIds must have less than 50 elements");
     }
     return this.apiClient.requestWithHttpInfo<LocalMultiPoiIdPoiIdsGetV30Response>({
       method: "GET",

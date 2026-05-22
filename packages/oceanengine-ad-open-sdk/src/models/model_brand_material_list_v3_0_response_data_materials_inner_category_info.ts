@@ -7,7 +7,7 @@ export interface BrandMaterialListV30ResponseDataMaterialsInnerCategoryInfo {
   brand_name_id?: number | string;
   cdp_brand_id?: number | string;
   industry_v3?: number;
-  sub_brand_name_ids?: number | string[];
+  sub_brand_name_ids?: (number | string)[];
   sub_brand_names?: string[];
   yuntu_category_id?: number | string;
   yuntu_main_industry_id?: number | string;

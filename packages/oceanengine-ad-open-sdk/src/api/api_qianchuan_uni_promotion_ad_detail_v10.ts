@@ -28,11 +28,11 @@ export class QianchuanUniPromotionAdDetailV10Api {
 
   async openApiV10QianchuanUniPromotionAdDetailGetWithHttpInfo(request: QianchuanUniPromotionAdDetailV10ApiOpenApiV10QianchuanUniPromotionAdDetailGetRequest): Promise<ApiResponse<QianchuanUniPromotionAdDetailV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniPromotionAdDetailGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanUniPromotionAdDetailGet");
+      throw new ApiException("adId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionAdDetailV10Response>({
       method: "GET",

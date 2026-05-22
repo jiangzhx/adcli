@@ -31,15 +31,15 @@ export class CgTransferWalletTransferDetailV30Api {
 
   async openApiV30CgTransferWalletTransferDetailGetWithHttpInfo(request: CgTransferWalletTransferDetailV30ApiOpenApiV30CgTransferWalletTransferDetailGetRequest): Promise<ApiResponse<CgTransferWalletTransferDetailV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30CgTransferWalletTransferDetailGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30CgTransferWalletTransferDetailGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.bizRequestNo == null) {
-      throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferWalletTransferDetailGet");
+      throw new ApiException("bizRequestNo is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferWalletTransferDetailV30Response>({
       method: "GET",

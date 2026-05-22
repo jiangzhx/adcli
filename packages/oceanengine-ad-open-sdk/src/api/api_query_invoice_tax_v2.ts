@@ -28,11 +28,11 @@ export class QueryInvoiceTaxV2Api {
 
   async openApi2QueryInvoiceTaxGetWithHttpInfo(request: QueryInvoiceTaxV2ApiOpenApi2QueryInvoiceTaxGetRequest): Promise<ApiResponse<QueryInvoiceTaxV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2QueryInvoiceTaxGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApi2QueryInvoiceTaxGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QueryInvoiceTaxV2Response>({
       method: "GET",

@@ -28,7 +28,7 @@ export class ToolsSearchBidRatioGetV2Api {
 
   async openApi2ToolsSearchBidRatioGetGetWithHttpInfo(request: ToolsSearchBidRatioGetV2ApiOpenApi2ToolsSearchBidRatioGetGetRequest): Promise<ApiResponse<ToolsSearchBidRatioGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsSearchBidRatioGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsSearchBidRatioGetV2Response>({
       method: "GET",

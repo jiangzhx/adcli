@@ -38,27 +38,27 @@ export class QianchuanUniPromotionAdControlTaskListV10Api {
 
   async openApiV10QianchuanUniPromotionAdControlTaskListGetWithHttpInfo(request: QianchuanUniPromotionAdControlTaskListV10ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest): Promise<ApiResponse<QianchuanUniPromotionAdControlTaskListV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanUniPromotionAdControlTaskListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanUniPromotionAdControlTaskListGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanUniPromotionAdControlTaskListGet");
+      throw new ApiException("adId is required and must be specified");
     }
 
     if (request.startTime == null) {
-      throw new ApiException("Missing the required parameter 'startTime' when calling openApiV10QianchuanUniPromotionAdControlTaskListGet");
+      throw new ApiException("startTime is required and must be specified");
     }
 
     if (request.endTime == null) {
-      throw new ApiException("Missing the required parameter 'endTime' when calling openApiV10QianchuanUniPromotionAdControlTaskListGet");
+      throw new ApiException("endTime is required and must be specified");
     }
 
     if (request.scene == null) {
-      throw new ApiException("Missing the required parameter 'scene' when calling openApiV10QianchuanUniPromotionAdControlTaskListGet");
+      throw new ApiException("scene is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanUniPromotionAdControlTaskListV10Response>({
       method: "GET",

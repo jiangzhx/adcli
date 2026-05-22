@@ -30,11 +30,11 @@ export class CustomerCenterAccountListV30Api {
 
   async openApiV30CustomerCenterAccountListGetWithHttpInfo(request: CustomerCenterAccountListV30ApiOpenApiV30CustomerCenterAccountListGetRequest): Promise<ApiResponse<CustomerCenterAccountListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30CustomerCenterAccountListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.filter == null) {
-      throw new ApiException("Missing the required parameter 'filter' when calling openApiV30CustomerCenterAccountListGet");
+      throw new ApiException("filter is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CustomerCenterAccountListV30Response>({
       method: "GET",

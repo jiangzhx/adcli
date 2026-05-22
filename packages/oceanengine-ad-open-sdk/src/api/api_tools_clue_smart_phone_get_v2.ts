@@ -29,7 +29,11 @@ export class ToolsClueSmartPhoneGetV2Api {
 
   async openApi2ToolsClueSmartPhoneGetGetWithHttpInfo(request: ToolsClueSmartPhoneGetV2ApiOpenApi2ToolsClueSmartPhoneGetGetRequest): Promise<ApiResponse<ToolsClueSmartPhoneGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsClueSmartPhoneGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<ToolsClueSmartPhoneGetV2Response>({
       method: "GET",

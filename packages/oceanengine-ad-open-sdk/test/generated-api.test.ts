@@ -3,6 +3,7 @@ import { ApiClient } from "../src/api/client";
 import {
   AdvertiserFundGetV2Api,
   Oauth2AccessTokenApi,
+  PromotionListV30Api,
   ReportCustomConfigGetV30Api,
 } from "../src/api/index";
 import { ReportCustomConfigGetV30DataTopics } from "../src/models/index";
@@ -12,6 +13,17 @@ function jsonResponse(body: unknown) {
     status: 200,
     headers: { "Content-Type": "application/json" },
   });
+}
+
+async function expectRejectMessage(promise: Promise<unknown>, message: string) {
+  try {
+    await promise;
+  } catch (error) {
+    expect(error).toBeInstanceOf(Error);
+    expect((error as Error).message).toContain(message);
+    return;
+  }
+  throw new Error("Expected promise to reject");
 }
 
 describe("generated APIs", () => {
@@ -44,7 +56,10 @@ describe("generated APIs", () => {
       }),
     );
 
-    await expect(api.openApiV30ReportCustomConfigGetGet({ dataTopics: [] } as never)).rejects.toBeInstanceOf(Error);
+    await expectRejectMessage(
+      api.openApiV30ReportCustomConfigGetGet({ dataTopics: [] } as never),
+      "advertiserId is required and must be specified",
+    );
     await api.openApiV30ReportCustomConfigGetGet({
       advertiserId: 123,
       dataTopics: [ReportCustomConfigGetV30DataTopics.BASIC_DATA],
@@ -55,6 +70,16 @@ describe("generated APIs", () => {
     expect(url.pathname).toBe("/open_api/v3.0/report/custom/config/get/");
     expect(url.searchParams.get("advertiser_id")).toBe("123");
     expect(url.searchParams.get("data_topics")).toBe(JSON.stringify([ReportCustomConfigGetV30DataTopics.BASIC_DATA]));
+  });
+
+  test("PromotionListV30Api ports Go local parameter validations", async () => {
+    const api = new PromotionListV30Api(
+      new ApiClient({
+        fetch: async () => jsonResponse({ code: 0, data: {} }),
+      }),
+    );
+
+    await expectRejectMessage(api.openApiV30PromotionListGet({ advertiserId: 0 }), "advertiserId must be greater than 1");
   });
 
   test("AdvertiserFundGetV2Api sends scalar query params", async () => {

@@ -5,6 +5,6 @@ import type { QianchuanUniPromotionAdControlTaskStatusUpdateV10ResponseDataError
 
 export interface QianchuanUniPromotionAdControlTaskStatusUpdateV10ResponseData {
   errors?: QianchuanUniPromotionAdControlTaskStatusUpdateV10ResponseDataErrorsInner[];
-  task_ids?: number | string[];
+  task_ids?: (number | string)[];
 }
 

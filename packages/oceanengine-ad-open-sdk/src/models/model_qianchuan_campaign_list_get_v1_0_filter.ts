@@ -4,7 +4,7 @@
 import type { QianchuanCampaignListGetV10FilterMarketingGoal, QianchuanCampaignListGetV10FilterMarketingScene, QianchuanCampaignListGetV10FilterStatus } from "../models/index";
 
 export interface QianchuanCampaignListGetV10Filter {
-  ids?: number | string[];
+  ids?: (number | string)[];
   marketing_goal: QianchuanCampaignListGetV10FilterMarketingGoal;
   marketing_scene?: QianchuanCampaignListGetV10FilterMarketingScene;
   name?: string;

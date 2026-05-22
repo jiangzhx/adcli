@@ -33,11 +33,11 @@ export class AicMaterialGetV30Api {
 
   async openApiV30AicMaterialGetGetWithHttpInfo(request: AicMaterialGetV30ApiOpenApiV30AicMaterialGetGetRequest): Promise<ApiResponse<AicMaterialGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30AicMaterialGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30AicMaterialGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AicMaterialGetV30Response>({
       method: "GET",

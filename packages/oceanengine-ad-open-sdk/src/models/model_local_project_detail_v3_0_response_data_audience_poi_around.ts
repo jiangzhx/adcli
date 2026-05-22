@@ -4,7 +4,7 @@
 import type { LocalProjectDetailV30DataAudiencePoiAroundPoiAroundRadius } from "../models/index";
 
 export interface LocalProjectDetailV30ResponseDataAudiencePoiAround {
-  poi_around_ids?: number | string[];
+  poi_around_ids?: (number | string)[];
   poi_around_radius?: LocalProjectDetailV30DataAudiencePoiAroundPoiAroundRadius;
 }
 

@@ -29,15 +29,27 @@ export class QianchuanAwemeUniPromotionSuggestRoiV10Api {
 
   async openApiV10QianchuanAwemeUniPromotionSuggestRoiGetWithHttpInfo(request: QianchuanAwemeUniPromotionSuggestRoiV10ApiOpenApiV10QianchuanAwemeUniPromotionSuggestRoiGetRequest): Promise<ApiResponse<QianchuanAwemeUniPromotionSuggestRoiV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeUniPromotionSuggestRoiGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanAwemeUniPromotionSuggestRoiGet");
+      throw new ApiException("awemeId is required and must be specified");
+    }
+
+    if (request.awemeId != null && Number(request.awemeId) < 1) {
+      throw new ApiException("awemeId must be greater than 1");
     }
 
     if (request.productId == null) {
-      throw new ApiException("Missing the required parameter 'productId' when calling openApiV10QianchuanAwemeUniPromotionSuggestRoiGet");
+      throw new ApiException("productId is required and must be specified");
+    }
+
+    if (request.productId != null && Number(request.productId) < 1) {
+      throw new ApiException("productId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeUniPromotionSuggestRoiV10Response>({
       method: "GET",

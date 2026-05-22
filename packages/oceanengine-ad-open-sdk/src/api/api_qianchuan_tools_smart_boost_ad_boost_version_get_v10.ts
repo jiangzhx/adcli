@@ -30,11 +30,11 @@ export class QianchuanToolsSmartBoostAdBoostVersionGetV10Api {
 
   async openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetWithHttpInfo(request: QianchuanToolsSmartBoostAdBoostVersionGetV10ApiOpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest): Promise<ApiResponse<QianchuanToolsSmartBoostAdBoostVersionGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanToolsSmartBoostAdBoostVersionGetGet");
+      throw new ApiException("adId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanToolsSmartBoostAdBoostVersionGetV10Response>({
       method: "GET",

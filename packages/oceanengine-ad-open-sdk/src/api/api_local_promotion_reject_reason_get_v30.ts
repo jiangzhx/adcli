@@ -7,7 +7,7 @@ import type { LocalPromotionRejectReasonGetV30Response } from "../models/index";
 
 export interface LocalPromotionRejectReasonGetV30ApiOpenApiV30LocalPromotionRejectReasonGetGetRequest {
   localAccountId: number | string;
-  promotionIds: number | string[];
+  promotionIds: (number | string)[];
 }
 
 export class LocalPromotionRejectReasonGetV30Api {
@@ -28,11 +28,19 @@ export class LocalPromotionRejectReasonGetV30Api {
 
   async openApiV30LocalPromotionRejectReasonGetGetWithHttpInfo(request: LocalPromotionRejectReasonGetV30ApiOpenApiV30LocalPromotionRejectReasonGetGetRequest): Promise<ApiResponse<LocalPromotionRejectReasonGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalPromotionRejectReasonGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.promotionIds == null) {
-      throw new ApiException("Missing the required parameter 'promotionIds' when calling openApiV30LocalPromotionRejectReasonGetGet");
+      throw new ApiException("promotionIds is required and must be specified");
+    }
+
+    if (request.promotionIds != null && request.promotionIds.length < 1) {
+      throw new ApiException("promotionIds must have at least 1 elements");
+    }
+
+    if (request.promotionIds != null && request.promotionIds.length > 10) {
+      throw new ApiException("promotionIds must have less than 10 elements");
     }
     return this.apiClient.requestWithHttpInfo<LocalPromotionRejectReasonGetV30Response>({
       method: "GET",

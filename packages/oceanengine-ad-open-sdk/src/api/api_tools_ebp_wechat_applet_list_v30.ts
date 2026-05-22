@@ -32,11 +32,11 @@ export class ToolsEbpWechatAppletListV30Api {
 
   async openApiV30ToolsEbpWechatAppletListGetWithHttpInfo(request: ToolsEbpWechatAppletListV30ApiOpenApiV30ToolsEbpWechatAppletListGetRequest): Promise<ApiResponse<ToolsEbpWechatAppletListV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30ToolsEbpWechatAppletListGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30ToolsEbpWechatAppletListGet");
+      throw new ApiException("accountType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsEbpWechatAppletListV30Response>({
       method: "GET",

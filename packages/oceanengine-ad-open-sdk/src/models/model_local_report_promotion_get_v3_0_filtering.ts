@@ -9,6 +9,6 @@ export interface LocalReportPromotionGetV30Filtering {
   external_action?: LocalReportPromotionGetV30FilteringExternalAction[];
   local_delivery_scene?: LocalReportPromotionGetV30FilteringLocalDeliveryScene;
   marketing_goal?: LocalReportPromotionGetV30FilteringMarketingGoal;
-  promotion_ids?: number | string[];
+  promotion_ids?: (number | string)[];
 }
 

@@ -27,7 +27,11 @@ export class QianchuanAdQuotaGetV10Api {
 
   async openApiV10QianchuanAdQuotaGetGetWithHttpInfo(request: QianchuanAdQuotaGetV10ApiOpenApiV10QianchuanAdQuotaGetGetRequest): Promise<ApiResponse<QianchuanAdQuotaGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdQuotaGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdQuotaGetV10Response>({
       method: "GET",

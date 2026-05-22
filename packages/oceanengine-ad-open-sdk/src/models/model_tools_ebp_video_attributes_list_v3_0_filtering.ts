@@ -5,7 +5,7 @@ import type { ToolsEbpVideoAttributesListV30FilteringMaterialProperties } from "
 
 export interface ToolsEbpVideoAttributesListV30Filtering {
   end_time?: string;
-  material_ids?: number | string[];
+  material_ids?: (number | string)[];
   material_properties?: ToolsEbpVideoAttributesListV30FilteringMaterialProperties[];
   start_time?: string;
 }

@@ -31,15 +31,15 @@ export class QianchuanAwemeVideoGetV10Api {
 
   async openApiV10QianchuanAwemeVideoGetGetWithHttpInfo(request: QianchuanAwemeVideoGetV10ApiOpenApiV10QianchuanAwemeVideoGetGetRequest): Promise<ApiResponse<QianchuanAwemeVideoGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeVideoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanAwemeVideoGetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanAwemeVideoGetGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeVideoGetV10Response>({
       method: "GET",

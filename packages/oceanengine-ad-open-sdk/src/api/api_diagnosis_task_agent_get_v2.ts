@@ -7,7 +7,7 @@ import type { DiagnosisTaskAgentGetV2Response } from "../models/index";
 
 export interface DiagnosisTaskAgentGetV2ApiOpenApi2DiagnosisTaskAgentGetGetRequest {
   agentId: number | string;
-  taskIds?: number | string[];
+  taskIds?: (number | string)[];
 }
 
 export class DiagnosisTaskAgentGetV2Api {
@@ -28,7 +28,7 @@ export class DiagnosisTaskAgentGetV2Api {
 
   async openApi2DiagnosisTaskAgentGetGetWithHttpInfo(request: DiagnosisTaskAgentGetV2ApiOpenApi2DiagnosisTaskAgentGetGetRequest): Promise<ApiResponse<DiagnosisTaskAgentGetV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2DiagnosisTaskAgentGetGet");
+      throw new ApiException("agentId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<DiagnosisTaskAgentGetV2Response>({
       method: "GET",

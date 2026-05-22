@@ -29,7 +29,7 @@ export class StardeliveryTaskShareableListV30Api {
 
   async openApiV30StardeliveryTaskShareableListGetWithHttpInfo(request: StardeliveryTaskShareableListV30ApiOpenApiV30StardeliveryTaskShareableListGetRequest): Promise<ApiResponse<StardeliveryTaskShareableListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30StardeliveryTaskShareableListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskShareableListV30Response>({
       method: "GET",

@@ -33,23 +33,23 @@ export class SharedWalletTransactionDetailGetV30Api {
 
   async openApiV30SharedWalletTransactionDetailGetGetWithHttpInfo(request: SharedWalletTransactionDetailGetV30ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest): Promise<ApiResponse<SharedWalletTransactionDetailGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30SharedWalletTransactionDetailGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30SharedWalletTransactionDetailGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.sharedWalletId == null) {
-      throw new ApiException("Missing the required parameter 'sharedWalletId' when calling openApiV30SharedWalletTransactionDetailGetGet");
+      throw new ApiException("sharedWalletId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV30SharedWalletTransactionDetailGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV30SharedWalletTransactionDetailGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SharedWalletTransactionDetailGetV30Response>({
       method: "GET",

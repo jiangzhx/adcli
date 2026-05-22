@@ -32,15 +32,15 @@ export class AgentTransferTransactionRecordV2Api {
 
   async openApi2AgentTransferTransactionRecordGetWithHttpInfo(request: AgentTransferTransactionRecordV2ApiOpenApi2AgentTransferTransactionRecordGetRequest): Promise<ApiResponse<AgentTransferTransactionRecordV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2AgentTransferTransactionRecordGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApi2AgentTransferTransactionRecordGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApi2AgentTransferTransactionRecordGet");
+      throw new ApiException("endDate is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<AgentTransferTransactionRecordV2Response>({
       method: "GET",

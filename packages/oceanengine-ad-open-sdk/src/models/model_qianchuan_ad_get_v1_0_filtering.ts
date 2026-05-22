@@ -12,7 +12,7 @@ export interface QianchuanAdGetV10Filtering {
   aweme_id?: number | string;
   campaign_id?: number | string;
   campaign_scene?: QianchuanAdGetV10FilteringCampaignScene[];
-  ids?: number | string[];
+  ids?: (number | string)[];
   marketing_goal: QianchuanAdGetV10FilteringMarketingGoal;
   marketing_scene?: QianchuanAdGetV10FilteringMarketingScene;
   status?: QianchuanAdGetV10FilteringStatus;

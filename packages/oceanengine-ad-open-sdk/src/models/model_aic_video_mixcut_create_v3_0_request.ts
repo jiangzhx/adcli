@@ -14,6 +14,6 @@ export interface AicVideoMixcutCreateV30Request {
   render_option?: AicVideoMixcutCreateV30RequestRenderOption;
   subtitle_style?: AicVideoMixcutCreateV30RequestSubtitleStyle;
   task_name?: string;
-  video_element_ids: number | string[];
+  video_element_ids: (number | string)[];
 }
 

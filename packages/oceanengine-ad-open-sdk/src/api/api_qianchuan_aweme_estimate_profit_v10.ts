@@ -30,15 +30,15 @@ export class QianchuanAwemeEstimateProfitV10Api {
 
   async openApiV10QianchuanAwemeEstimateProfitGetWithHttpInfo(request: QianchuanAwemeEstimateProfitV10ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest): Promise<ApiResponse<QianchuanAwemeEstimateProfitV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAwemeEstimateProfitGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.marketingGoal == null) {
-      throw new ApiException("Missing the required parameter 'marketingGoal' when calling openApiV10QianchuanAwemeEstimateProfitGet");
+      throw new ApiException("marketingGoal is required and must be specified");
     }
 
     if (request.deliverySetting == null) {
-      throw new ApiException("Missing the required parameter 'deliverySetting' when calling openApiV10QianchuanAwemeEstimateProfitGet");
+      throw new ApiException("deliverySetting is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAwemeEstimateProfitV10Response>({
       method: "GET",

@@ -8,7 +8,7 @@ import type { QianchuanToolsGrayV10Response } from "../models/index";
 export interface QianchuanToolsGrayV10ApiOpenApiV10QianchuanToolsGrayGetRequest {
   advertiserId: number | string;
   grayKeys: string[];
-  awemeIds?: number | string[];
+  awemeIds?: (number | string)[];
 }
 
 export class QianchuanToolsGrayV10Api {
@@ -29,11 +29,11 @@ export class QianchuanToolsGrayV10Api {
 
   async openApiV10QianchuanToolsGrayGetWithHttpInfo(request: QianchuanToolsGrayV10ApiOpenApiV10QianchuanToolsGrayGetRequest): Promise<ApiResponse<QianchuanToolsGrayV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsGrayGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.grayKeys == null) {
-      throw new ApiException("Missing the required parameter 'grayKeys' when calling openApiV10QianchuanToolsGrayGet");
+      throw new ApiException("grayKeys is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanToolsGrayV10Response>({
       method: "GET",

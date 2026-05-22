@@ -30,19 +30,19 @@ export class YuntuAudienceInfoGetV30Api {
 
   async openApiV30YuntuAudienceInfoGetGetWithHttpInfo(request: YuntuAudienceInfoGetV30ApiOpenApiV30YuntuAudienceInfoGetGetRequest): Promise<ApiResponse<YuntuAudienceInfoGetV30Response>> {
     if (request.yuntuBrandId == null) {
-      throw new ApiException("Missing the required parameter 'yuntuBrandId' when calling openApiV30YuntuAudienceInfoGetGet");
+      throw new ApiException("yuntuBrandId is required and must be specified");
     }
 
     if (request.serviceProviderId == null) {
-      throw new ApiException("Missing the required parameter 'serviceProviderId' when calling openApiV30YuntuAudienceInfoGetGet");
+      throw new ApiException("serviceProviderId is required and must be specified");
     }
 
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30YuntuAudienceInfoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.customAudienceId == null) {
-      throw new ApiException("Missing the required parameter 'customAudienceId' when calling openApiV30YuntuAudienceInfoGetGet");
+      throw new ApiException("customAudienceId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<YuntuAudienceInfoGetV30Response>({
       method: "GET",

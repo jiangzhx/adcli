@@ -29,15 +29,15 @@ export class SharedWalletBudgetGetV30Api {
 
   async openApiV30SharedWalletBudgetGetGetWithHttpInfo(request: SharedWalletBudgetGetV30ApiOpenApiV30SharedWalletBudgetGetGetRequest): Promise<ApiResponse<SharedWalletBudgetGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30SharedWalletBudgetGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30SharedWalletBudgetGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.subWalletId == null) {
-      throw new ApiException("Missing the required parameter 'subWalletId' when calling openApiV30SharedWalletBudgetGetGet");
+      throw new ApiException("subWalletId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SharedWalletBudgetGetV30Response>({
       method: "GET",

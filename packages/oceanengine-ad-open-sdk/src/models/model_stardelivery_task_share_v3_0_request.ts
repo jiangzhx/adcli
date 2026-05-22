@@ -3,7 +3,7 @@
 
 export interface StardeliveryTaskShareV30Request {
   advertiser_id: number | string;
-  advertiser_ids: number | string[];
+  advertiser_ids: (number | string)[];
   star_task_id: number | string;
 }
 

@@ -36,15 +36,15 @@ export class ReportReportLiveRoomAudiencePortraitGetV30Api {
 
   async openApiV30ReportReportLiveRoomAudiencePortraitGetGetWithHttpInfo(request: ReportReportLiveRoomAudiencePortraitGetV30ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest): Promise<ApiResponse<ReportReportLiveRoomAudiencePortraitGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ReportReportLiveRoomAudiencePortraitGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.dimension == null) {
-      throw new ApiException("Missing the required parameter 'dimension' when calling openApiV30ReportReportLiveRoomAudiencePortraitGetGet");
+      throw new ApiException("dimension is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV30ReportReportLiveRoomAudiencePortraitGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ReportReportLiveRoomAudiencePortraitGetV30Response>({
       method: "GET",

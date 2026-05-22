@@ -27,7 +27,7 @@ export class StarBrandListV2Api {
 
   async openApi2StarBrandListGetWithHttpInfo(request: StarBrandListV2ApiOpenApi2StarBrandListGetRequest): Promise<ApiResponse<StarBrandListV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarBrandListGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarBrandListV2Response>({
       method: "GET",

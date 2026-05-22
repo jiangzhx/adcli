@@ -33,15 +33,15 @@ export class QianchuanAdMaterialGetV10Api {
 
   async openApiV10QianchuanAdMaterialGetGetWithHttpInfo(request: QianchuanAdMaterialGetV10ApiOpenApiV10QianchuanAdMaterialGetGetRequest): Promise<ApiResponse<QianchuanAdMaterialGetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanAdMaterialGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.adId == null) {
-      throw new ApiException("Missing the required parameter 'adId' when calling openApiV10QianchuanAdMaterialGetGet");
+      throw new ApiException("adId is required and must be specified");
     }
 
     if (request.filtering == null) {
-      throw new ApiException("Missing the required parameter 'filtering' when calling openApiV10QianchuanAdMaterialGetGet");
+      throw new ApiException("filtering is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanAdMaterialGetV10Response>({
       method: "GET",

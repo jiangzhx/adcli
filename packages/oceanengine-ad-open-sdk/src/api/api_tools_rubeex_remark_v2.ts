@@ -30,15 +30,31 @@ export class ToolsRubeexRemarkV2Api {
 
   async openApi2ToolsRubeexRemarkGetWithHttpInfo(request: ToolsRubeexRemarkV2ApiOpenApi2ToolsRubeexRemarkGetRequest): Promise<ApiResponse<ToolsRubeexRemarkV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsRubeexRemarkGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1.0) {
+      throw new ApiException("advertiserId must be greater than 1.0");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) > 9.223372036854776e+18) {
+      throw new ApiException("advertiserId must be less than 9.223372036854776E+18");
     }
 
     if (request.projectId == null) {
-      throw new ApiException("Missing the required parameter 'projectId' when calling openApi2ToolsRubeexRemarkGet");
+      throw new ApiException("projectId is required and must be specified");
+    }
+
+    if (request.projectId != null && Number(request.projectId) < 1.0) {
+      throw new ApiException("projectId must be greater than 1.0");
+    }
+
+    if (request.projectId != null && Number(request.projectId) > 2147483647) {
+      throw new ApiException("projectId must be less than 2147483647");
     }
 
     if (request.scene == null) {
-      throw new ApiException("Missing the required parameter 'scene' when calling openApi2ToolsRubeexRemarkGet");
+      throw new ApiException("scene is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsRubeexRemarkV2Response>({
       method: "GET",

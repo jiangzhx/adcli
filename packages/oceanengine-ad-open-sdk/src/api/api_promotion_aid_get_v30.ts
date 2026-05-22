@@ -7,7 +7,7 @@ import type { PromotionAidGetV30Response } from "../models/index";
 
 export interface PromotionAidGetV30ApiOpenApiV30PromotionAidGetGetRequest {
   advertiserId: number | string;
-  promotionIds: number | string[];
+  promotionIds: (number | string)[];
 }
 
 export class PromotionAidGetV30Api {
@@ -28,11 +28,19 @@ export class PromotionAidGetV30Api {
 
   async openApiV30PromotionAidGetGetWithHttpInfo(request: PromotionAidGetV30ApiOpenApiV30PromotionAidGetGetRequest): Promise<ApiResponse<PromotionAidGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30PromotionAidGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.promotionIds == null) {
-      throw new ApiException("Missing the required parameter 'promotionIds' when calling openApiV30PromotionAidGetGet");
+      throw new ApiException("promotionIds is required and must be specified");
+    }
+
+    if (request.promotionIds != null && request.promotionIds.length < 1) {
+      throw new ApiException("promotionIds must have at least 1 elements");
+    }
+
+    if (request.promotionIds != null && request.promotionIds.length > 10) {
+      throw new ApiException("promotionIds must have less than 10 elements");
     }
     return this.apiClient.requestWithHttpInfo<PromotionAidGetV30Response>({
       method: "GET",

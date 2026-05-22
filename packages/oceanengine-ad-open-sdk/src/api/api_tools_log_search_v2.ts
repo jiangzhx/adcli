@@ -7,7 +7,7 @@ import type { ToolsLogSearchV2Response } from "../models/index";
 
 export interface ToolsLogSearchV2ApiOpenApi2ToolsLogSearchGetRequest {
   advertiserId: number | string;
-  objectId?: number | string[];
+  objectId?: (number | string)[];
   startTime?: string;
   endTime?: string;
   page?: number;
@@ -32,7 +32,7 @@ export class ToolsLogSearchV2Api {
 
   async openApi2ToolsLogSearchGetWithHttpInfo(request: ToolsLogSearchV2ApiOpenApi2ToolsLogSearchGetRequest): Promise<ApiResponse<ToolsLogSearchV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsLogSearchGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsLogSearchV2Response>({
       method: "GET",

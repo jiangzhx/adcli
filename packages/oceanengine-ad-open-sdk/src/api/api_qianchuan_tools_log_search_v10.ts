@@ -9,7 +9,7 @@ export interface QianchuanToolsLogSearchV10ApiOpenApiV10QianchuanToolsLogSearchG
   advertiserId: number | string;
   objectType: QianchuanToolsLogSearchV10ObjectType;
   objectId?: number | string;
-  operatorId?: number | string[];
+  operatorId?: (number | string)[];
   startTime?: string;
   endTime?: string;
   page?: number;
@@ -34,11 +34,11 @@ export class QianchuanToolsLogSearchV10Api {
 
   async openApiV10QianchuanToolsLogSearchGetWithHttpInfo(request: QianchuanToolsLogSearchV10ApiOpenApiV10QianchuanToolsLogSearchGetRequest): Promise<ApiResponse<QianchuanToolsLogSearchV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanToolsLogSearchGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.objectType == null) {
-      throw new ApiException("Missing the required parameter 'objectType' when calling openApiV10QianchuanToolsLogSearchGet");
+      throw new ApiException("objectType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanToolsLogSearchV10Response>({
       method: "GET",

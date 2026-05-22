@@ -31,23 +31,23 @@ export class CgTransferQueryCanTransferBalanceV30Api {
 
   async openApiV30CgTransferQueryCanTransferBalanceGetWithHttpInfo(request: CgTransferQueryCanTransferBalanceV30ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest): Promise<ApiResponse<CgTransferQueryCanTransferBalanceV30Response>> {
     if (request.bizRequestNo == null) {
-      throw new ApiException("Missing the required parameter 'bizRequestNo' when calling openApiV30CgTransferQueryCanTransferBalanceGet");
+      throw new ApiException("bizRequestNo is required and must be specified");
     }
 
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApiV30CgTransferQueryCanTransferBalanceGet");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30CgTransferQueryCanTransferBalanceGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.targetAccountIdList == null) {
-      throw new ApiException("Missing the required parameter 'targetAccountIdList' when calling openApiV30CgTransferQueryCanTransferBalanceGet");
+      throw new ApiException("targetAccountIdList is required and must be specified");
     }
 
     if (request.transferDirection == null) {
-      throw new ApiException("Missing the required parameter 'transferDirection' when calling openApiV30CgTransferQueryCanTransferBalanceGet");
+      throw new ApiException("transferDirection is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CgTransferQueryCanTransferBalanceV30Response>({
       method: "GET",

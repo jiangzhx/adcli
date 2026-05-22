@@ -3,7 +3,7 @@
 
 export interface OcProjectMaterialDeleteV30Request {
   advertiser_id: number | string;
-  material_id: number | string[];
+  material_id: (number | string)[];
   project_id: number | string;
 }
 

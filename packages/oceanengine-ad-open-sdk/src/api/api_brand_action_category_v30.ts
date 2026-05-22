@@ -27,7 +27,7 @@ export class BrandActionCategoryV30Api {
 
   async openApiV30BrandActionCategoryGetWithHttpInfo(request: BrandActionCategoryV30ApiOpenApiV30BrandActionCategoryGetRequest): Promise<ApiResponse<BrandActionCategoryV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandActionCategoryGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandActionCategoryV30Response>({
       method: "GET",

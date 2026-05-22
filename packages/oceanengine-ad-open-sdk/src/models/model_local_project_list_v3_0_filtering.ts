@@ -9,15 +9,15 @@ export interface LocalProjectListV30Filtering {
   delivery_package?: LocalProjectListV30FilteringDeliveryPackage;
   local_delivery_scene?: LocalProjectListV30FilteringLocalDeliveryScene;
   marketing_goal?: LocalProjectListV30FilteringMarketingGoal;
-  product_ids?: number | string[];
+  product_ids?: (number | string)[];
   project_create_time_end?: string;
   project_create_time_start?: string;
-  project_ids?: number | string[];
+  project_ids?: (number | string)[];
   project_modify_time_end?: string;
   project_modify_time_start?: string;
   project_name?: string;
   project_status_first?: LocalProjectListV30FilteringProjectStatusFirst;
   project_status_second?: LocalProjectListV30FilteringProjectStatusSecond;
-  shop_ids?: number | string[];
+  shop_ids?: (number | string)[];
 }
 

@@ -33,15 +33,15 @@ export class QianchuanSuggestBudgetV10Api {
 
   async openApiV10QianchuanSuggestBudgetGetWithHttpInfo(request: QianchuanSuggestBudgetV10ApiOpenApiV10QianchuanSuggestBudgetGetRequest): Promise<ApiResponse<QianchuanSuggestBudgetV10Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanSuggestBudgetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.awemeId == null) {
-      throw new ApiException("Missing the required parameter 'awemeId' when calling openApiV10QianchuanSuggestBudgetGet");
+      throw new ApiException("awemeId is required and must be specified");
     }
 
     if (request.liveScheduleType == null) {
-      throw new ApiException("Missing the required parameter 'liveScheduleType' when calling openApiV10QianchuanSuggestBudgetGet");
+      throw new ApiException("liveScheduleType is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanSuggestBudgetV10Response>({
       method: "GET",

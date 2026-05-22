@@ -26,7 +26,7 @@ export interface QianchuanAdCreateV10Request {
   marketing_scene?: QianchuanAdCreateV10MarketingScene;
   multi_product_creative_list?: QianchuanAdCreateV10RequestMultiProductCreativeListInner[];
   name: string;
-  product_ids?: number | string[];
+  product_ids?: (number | string)[];
   programmatic_creative_card?: QianchuanAdCreateV10RequestProgrammaticCreativeCard;
   programmatic_creative_media_list?: QianchuanAdCreateV10RequestProgrammaticCreativeMediaListInner[];
   programmatic_creative_title_list?: QianchuanAdCreateV10RequestProgrammaticCreativeTitleListInner[];

@@ -7,7 +7,7 @@ import type { StarOrderGetInfoV2Response } from "../models/index";
 
 export interface StarOrderGetInfoV2ApiOpenApi2StarOrderGetInfoGetRequest {
   starId: number | string;
-  orderIds?: number | string[];
+  orderIds?: (number | string)[];
 }
 
 export class StarOrderGetInfoV2Api {
@@ -28,7 +28,7 @@ export class StarOrderGetInfoV2Api {
 
   async openApi2StarOrderGetInfoGetWithHttpInfo(request: StarOrderGetInfoV2ApiOpenApi2StarOrderGetInfoGetRequest): Promise<ApiResponse<StarOrderGetInfoV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarOrderGetInfoGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarOrderGetInfoV2Response>({
       method: "GET",

@@ -27,7 +27,7 @@ export class CdpBrandGetV30Api {
 
   async openApiV30CdpBrandGetGetWithHttpInfo(request: CdpBrandGetV30ApiOpenApiV30CdpBrandGetGetRequest): Promise<ApiResponse<CdpBrandGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30CdpBrandGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<CdpBrandGetV30Response>({
       method: "GET",

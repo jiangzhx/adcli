@@ -19,7 +19,7 @@ export interface ToolsBidSuggestV2ApiOpenApi2ToolsBidSuggestGetRequest {
   androidOsv?: ToolsBidSuggestV2AndroidOsv;
   appBehaviorTarget?: ToolsBidSuggestV2AppBehaviorTarget;
   appCategory?: number[];
-  appIds?: number | string[];
+  appIds?: (number | string)[];
   articleCategory?: ToolsBidSuggestV2ArticleCategory[];
   audiencePackageId?: number | string;
   autoExtendTargets?: ToolsBidSuggestV2AutoExtendTargets[];
@@ -31,7 +31,7 @@ export interface ToolsBidSuggestV2ApiOpenApi2ToolsBidSuggestGetRequest {
   bidMode?: ToolsBidSuggestV2BidMode;
   budget?: number;
   budgetMode?: ToolsBidSuggestV2BudgetMode;
-  businessIds?: number | string[];
+  businessIds?: (number | string)[];
   campaignId?: number | string;
   career?: ToolsBidSuggestV2Career[];
   carrier?: ToolsBidSuggestV2Carrier[];

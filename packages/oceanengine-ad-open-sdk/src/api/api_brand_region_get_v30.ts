@@ -27,7 +27,7 @@ export class BrandRegionGetV30Api {
 
   async openApiV30BrandRegionGetGetWithHttpInfo(request: BrandRegionGetV30ApiOpenApiV30BrandRegionGetGetRequest): Promise<ApiResponse<BrandRegionGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandRegionGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandRegionGetV30Response>({
       method: "GET",

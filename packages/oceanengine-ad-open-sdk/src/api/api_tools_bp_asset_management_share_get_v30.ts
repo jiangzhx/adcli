@@ -32,11 +32,11 @@ export class ToolsBpAssetManagementShareGetV30Api {
 
   async openApiV30ToolsBpAssetManagementShareGetGetWithHttpInfo(request: ToolsBpAssetManagementShareGetV30ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest): Promise<ApiResponse<ToolsBpAssetManagementShareGetV30Response>> {
     if (request.assetType == null) {
-      throw new ApiException("Missing the required parameter 'assetType' when calling openApiV30ToolsBpAssetManagementShareGetGet");
+      throw new ApiException("assetType is required and must be specified");
     }
 
     if (request.instanceId == null) {
-      throw new ApiException("Missing the required parameter 'instanceId' when calling openApiV30ToolsBpAssetManagementShareGetGet");
+      throw new ApiException("instanceId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsBpAssetManagementShareGetV30Response>({
       method: "GET",

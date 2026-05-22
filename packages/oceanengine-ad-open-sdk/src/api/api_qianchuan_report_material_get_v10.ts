@@ -35,19 +35,19 @@ export class QianchuanReportMaterialGetV10Api {
 
   async openApiV10QianchuanReportMaterialGetGetWithHttpInfo(request: QianchuanReportMaterialGetV10ApiOpenApiV10QianchuanReportMaterialGetGetRequest): Promise<ApiResponse<QianchuanReportMaterialGetV10Response>> {
     if (request.startDate == null) {
-      throw new ApiException("Missing the required parameter 'startDate' when calling openApiV10QianchuanReportMaterialGetGet");
+      throw new ApiException("startDate is required and must be specified");
     }
 
     if (request.endDate == null) {
-      throw new ApiException("Missing the required parameter 'endDate' when calling openApiV10QianchuanReportMaterialGetGet");
+      throw new ApiException("endDate is required and must be specified");
     }
 
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV10QianchuanReportMaterialGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.fields == null) {
-      throw new ApiException("Missing the required parameter 'fields' when calling openApiV10QianchuanReportMaterialGetGet");
+      throw new ApiException("fields is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<QianchuanReportMaterialGetV10Response>({
       method: "GET",

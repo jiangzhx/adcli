@@ -34,15 +34,15 @@ export class FileVideoAgentV2Api {
 
   async openApi2FileVideoAgentPostWithHttpInfo(request: FileVideoAgentV2ApiOpenApi2FileVideoAgentPostRequest): Promise<ApiResponse<FileVideoAgentV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2FileVideoAgentPost");
+      throw new ApiException("agentId is required and must be specified");
     }
 
     if (request.fileName == null) {
-      throw new ApiException("Missing the required parameter 'fileName' when calling openApi2FileVideoAgentPost");
+      throw new ApiException("fileName is required and must be specified");
     }
 
     if (request.isNeedAuth == null) {
-      throw new ApiException("Missing the required parameter 'isNeedAuth' when calling openApi2FileVideoAgentPost");
+      throw new ApiException("isNeedAuth is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoAgentV2Response>({
       method: "POST",

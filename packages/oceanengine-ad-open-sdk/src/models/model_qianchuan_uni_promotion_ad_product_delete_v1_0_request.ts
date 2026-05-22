@@ -4,6 +4,6 @@
 export interface QianchuanUniPromotionAdProductDeleteV10Request {
   ad_id: number | string;
   advertiser_id: number | string;
-  product_ids: number | string[];
+  product_ids: (number | string)[];
 }
 

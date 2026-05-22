@@ -34,7 +34,11 @@ export class PromotionListV30Api {
 
   async openApiV30PromotionListGetWithHttpInfo(request: PromotionListV30ApiOpenApiV30PromotionListGetRequest): Promise<ApiResponse<PromotionListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30PromotionListGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
     }
     return this.apiClient.requestWithHttpInfo<PromotionListV30Response>({
       method: "GET",

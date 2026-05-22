@@ -9,8 +9,8 @@ export interface LocalToolPackListGetV30ApiOpenApiV30LocalToolPackListGetGetRequ
   localAccountId: number | string;
   deliveryGoal: LocalToolPackListGetV30DeliveryGoal;
   intelligentSelectionMode: LocalToolPackListGetV30IntelligentSelectionMode;
-  poiIds?: number | string[];
-  productIds?: number | string[];
+  poiIds?: (number | string)[];
+  productIds?: (number | string)[];
   page?: number;
   pageSize?: number;
 }
@@ -33,15 +33,15 @@ export class LocalToolPackListGetV30Api {
 
   async openApiV30LocalToolPackListGetGetWithHttpInfo(request: LocalToolPackListGetV30ApiOpenApiV30LocalToolPackListGetGetRequest): Promise<ApiResponse<LocalToolPackListGetV30Response>> {
     if (request.localAccountId == null) {
-      throw new ApiException("Missing the required parameter 'localAccountId' when calling openApiV30LocalToolPackListGetGet");
+      throw new ApiException("localAccountId is required and must be specified");
     }
 
     if (request.deliveryGoal == null) {
-      throw new ApiException("Missing the required parameter 'deliveryGoal' when calling openApiV30LocalToolPackListGetGet");
+      throw new ApiException("deliveryGoal is required and must be specified");
     }
 
     if (request.intelligentSelectionMode == null) {
-      throw new ApiException("Missing the required parameter 'intelligentSelectionMode' when calling openApiV30LocalToolPackListGetGet");
+      throw new ApiException("intelligentSelectionMode is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<LocalToolPackListGetV30Response>({
       method: "GET",

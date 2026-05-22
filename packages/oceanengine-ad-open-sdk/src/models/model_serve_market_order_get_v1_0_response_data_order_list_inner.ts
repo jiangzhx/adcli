@@ -5,7 +5,7 @@ import type { ServeMarketOrderGetV10DataOrderListOrderStatus, ServeMarketOrderGe
 
 export interface ServeMarketOrderGetV10ResponseDataOrderListInner {
   app_active_days?: number;
-  app_available_user_ids?: number | string[];
+  app_available_user_ids?: (number | string)[];
   app_limit_user_count?: number;
   begin_time?: number;
   create_time?: number;

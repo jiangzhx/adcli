@@ -28,11 +28,11 @@ export class EventManagerAuthGetPublicKeyV2Api {
 
   async openApi2EventManagerAuthGetPublicKeyGetWithHttpInfo(request: EventManagerAuthGetPublicKeyV2ApiOpenApi2EventManagerAuthGetPublicKeyGetRequest): Promise<ApiResponse<EventManagerAuthGetPublicKeyV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2EventManagerAuthGetPublicKeyGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.credential == null) {
-      throw new ApiException("Missing the required parameter 'credential' when calling openApi2EventManagerAuthGetPublicKeyGet");
+      throw new ApiException("credential is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<EventManagerAuthGetPublicKeyV2Response>({
       method: "GET",

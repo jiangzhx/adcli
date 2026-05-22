@@ -28,7 +28,7 @@ export class ToolsAdvertiserDiagnosisSuggestionGetV30Api {
 
   async openApiV30ToolsAdvertiserDiagnosisSuggestionGetGetWithHttpInfo(request: ToolsAdvertiserDiagnosisSuggestionGetV30ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest): Promise<ApiResponse<ToolsAdvertiserDiagnosisSuggestionGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsAdvertiserDiagnosisSuggestionGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsAdvertiserDiagnosisSuggestionGetV30Response>({
       method: "GET",

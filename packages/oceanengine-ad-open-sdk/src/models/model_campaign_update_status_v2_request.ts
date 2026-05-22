@@ -5,7 +5,7 @@ import type { CampaignUpdateStatusV2OptStatus } from "../models/index";
 
 export interface CampaignUpdateStatusV2Request {
   advertiser_id: number | string;
-  campaign_ids: number | string[];
+  campaign_ids: (number | string)[];
   opt_status: CampaignUpdateStatusV2OptStatus;
 }
 

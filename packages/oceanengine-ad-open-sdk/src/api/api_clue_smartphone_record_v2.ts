@@ -7,10 +7,10 @@ import type { ClueSmartphoneRecordV2Response } from "../models/index";
 
 export interface ClueSmartphoneRecordV2ApiOpenApi2ClueSmartphoneRecordGetRequest {
   advertiserId: number | string;
-  instanceIds?: number | string[];
-  clueIds?: number | string[];
-  siteIds?: number | string[];
-  adIds?: number | string[];
+  instanceIds?: (number | string)[];
+  clueIds?: (number | string)[];
+  siteIds?: (number | string)[];
+  adIds?: (number | string)[];
   startTime?: string;
   endTime?: string;
   page?: number;
@@ -35,7 +35,15 @@ export class ClueSmartphoneRecordV2Api {
 
   async openApi2ClueSmartphoneRecordGetWithHttpInfo(request: ClueSmartphoneRecordV2ApiOpenApi2ClueSmartphoneRecordGetRequest): Promise<ApiResponse<ClueSmartphoneRecordV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ClueSmartphoneRecordGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) > -9223372036854775616) {
+      throw new ApiException("advertiserId must be less than -9223372036854775616");
     }
     return this.apiClient.requestWithHttpInfo<ClueSmartphoneRecordV2Response>({
       method: "GET",

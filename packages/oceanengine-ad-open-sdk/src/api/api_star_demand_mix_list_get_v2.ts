@@ -31,11 +31,11 @@ export class StarDemandMixListGetV2Api {
 
   async openApi2StarDemandMixListGetGetWithHttpInfo(request: StarDemandMixListGetV2ApiOpenApi2StarDemandMixListGetGetRequest): Promise<ApiResponse<StarDemandMixListGetV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarDemandMixListGetGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.demandId == null) {
-      throw new ApiException("Missing the required parameter 'demandId' when calling openApi2StarDemandMixListGetGet");
+      throw new ApiException("demandId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarDemandMixListGetV2Response>({
       method: "GET",

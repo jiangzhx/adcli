@@ -28,7 +28,7 @@ export class FileRebateCommonDownloadGetDownloadTaskListV2Api {
 
   async openApi2FileRebateCommonDownloadGetDownloadTaskListGetWithHttpInfo(request: FileRebateCommonDownloadGetDownloadTaskListV2ApiOpenApi2FileRebateCommonDownloadGetDownloadTaskListGetRequest): Promise<ApiResponse<FileRebateCommonDownloadGetDownloadTaskListV2Response>> {
     if (request.agentId == null) {
-      throw new ApiException("Missing the required parameter 'agentId' when calling openApi2FileRebateCommonDownloadGetDownloadTaskListGet");
+      throw new ApiException("agentId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileRebateCommonDownloadGetDownloadTaskListV2Response>({
       method: "GET",

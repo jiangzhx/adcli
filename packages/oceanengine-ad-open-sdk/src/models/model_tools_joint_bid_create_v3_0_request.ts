@@ -7,6 +7,6 @@ export interface ToolsJointBidCreateV30Request {
   advertiser_id: number | string;
   joint_bid_mode: ToolsJointBidCreateV30JointBidMode;
   joint_scope_info?: ToolsJointBidCreateV30RequestJointScopeInfo;
-  rta_id: number | string[];
+  rta_id: (number | string)[];
 }
 

@@ -28,11 +28,11 @@ export class ToolsKeywordsProjectInfoGetV30Api {
 
   async openApiV30ToolsKeywordsProjectInfoGetGetWithHttpInfo(request: ToolsKeywordsProjectInfoGetV30ApiOpenApiV30ToolsKeywordsProjectInfoGetGetRequest): Promise<ApiResponse<ToolsKeywordsProjectInfoGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsKeywordsProjectInfoGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.promotionWordId == null) {
-      throw new ApiException("Missing the required parameter 'promotionWordId' when calling openApiV30ToolsKeywordsProjectInfoGetGet");
+      throw new ApiException("promotionWordId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<ToolsKeywordsProjectInfoGetV30Response>({
       method: "GET",

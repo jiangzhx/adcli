@@ -11,7 +11,7 @@ export interface SubscribeAccountsListV30ApiOpenApiV30SubscribeAccountsListGetRe
   subscribeTaskId?: number | string;
   events?: string[];
   coreUserId?: number | string;
-  advertiserIds?: number | string[];
+  advertiserIds?: (number | string)[];
   statuses?: SubscribeAccountsListV30Statuses[];
   cursor?: number;
   count?: number;
@@ -38,11 +38,11 @@ export class SubscribeAccountsListV30Api {
 
   async openApiV30SubscribeAccountsListGetWithHttpInfo(request: SubscribeAccountsListV30ApiOpenApiV30SubscribeAccountsListGetRequest): Promise<ApiResponse<SubscribeAccountsListV30Response>> {
     if (request.aPPAccessToken == null) {
-      throw new ApiException("Missing the required parameter 'aPPAccessToken' when calling openApiV30SubscribeAccountsListGet");
+      throw new ApiException("aPPAccessToken is required and must be specified");
     }
 
     if (request.appId == null) {
-      throw new ApiException("Missing the required parameter 'appId' when calling openApiV30SubscribeAccountsListGet");
+      throw new ApiException("appId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SubscribeAccountsListV30Response>({
       method: "GET",

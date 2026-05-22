@@ -28,11 +28,11 @@ export class StarMcnProviderGetTaskDetailV2Api {
 
   async openApi2StarMcnProviderGetTaskDetailGetWithHttpInfo(request: StarMcnProviderGetTaskDetailV2ApiOpenApi2StarMcnProviderGetTaskDetailGetRequest): Promise<ApiResponse<StarMcnProviderGetTaskDetailV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarMcnProviderGetTaskDetailGet");
+      throw new ApiException("starId is required and must be specified");
     }
 
     if (request.taskId == null) {
-      throw new ApiException("Missing the required parameter 'taskId' when calling openApi2StarMcnProviderGetTaskDetailGet");
+      throw new ApiException("taskId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarMcnProviderGetTaskDetailV2Response>({
       method: "GET",

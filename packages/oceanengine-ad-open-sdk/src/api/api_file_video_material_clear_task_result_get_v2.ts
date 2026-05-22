@@ -30,11 +30,11 @@ export class FileVideoMaterialClearTaskResultGetV2Api {
 
   async openApi2FileVideoMaterialClearTaskResultGetGetWithHttpInfo(request: FileVideoMaterialClearTaskResultGetV2ApiOpenApi2FileVideoMaterialClearTaskResultGetGetRequest): Promise<ApiResponse<FileVideoMaterialClearTaskResultGetV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2FileVideoMaterialClearTaskResultGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.clearId == null) {
-      throw new ApiException("Missing the required parameter 'clearId' when calling openApi2FileVideoMaterialClearTaskResultGetGet");
+      throw new ApiException("clearId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<FileVideoMaterialClearTaskResultGetV2Response>({
       method: "GET",

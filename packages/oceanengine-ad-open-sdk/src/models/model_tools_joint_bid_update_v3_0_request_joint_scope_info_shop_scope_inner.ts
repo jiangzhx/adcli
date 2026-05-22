@@ -4,7 +4,7 @@
 import type { ToolsJointBidUpdateV30JointScopeInfoShopScopeDimension, ToolsJointBidUpdateV30JointScopeInfoShopScopeOperator } from "../models/index";
 
 export interface ToolsJointBidUpdateV30RequestJointScopeInfoShopScopeInner {
-  account_id?: number | string[];
+  account_id?: (number | string)[];
   dimension?: ToolsJointBidUpdateV30JointScopeInfoShopScopeDimension;
   operator?: ToolsJointBidUpdateV30JointScopeInfoShopScopeOperator;
 }

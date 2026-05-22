@@ -27,7 +27,7 @@ export class StarGetCreateChallengeDataDictV2Api {
 
   async openApi2StarGetCreateChallengeDataDictGetWithHttpInfo(request: StarGetCreateChallengeDataDictV2ApiOpenApi2StarGetCreateChallengeDataDictGetRequest): Promise<ApiResponse<StarGetCreateChallengeDataDictV2Response>> {
     if (request.starId == null) {
-      throw new ApiException("Missing the required parameter 'starId' when calling openApi2StarGetCreateChallengeDataDictGet");
+      throw new ApiException("starId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<StarGetCreateChallengeDataDictV2Response>({
       method: "GET",

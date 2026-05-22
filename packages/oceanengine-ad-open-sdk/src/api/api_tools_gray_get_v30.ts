@@ -29,11 +29,19 @@ export class ToolsGrayGetV30Api {
 
   async openApiV30ToolsGrayGetGetWithHttpInfo(request: ToolsGrayGetV30ApiOpenApiV30ToolsGrayGetGetRequest): Promise<ApiResponse<ToolsGrayGetV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30ToolsGrayGetGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
 
     if (request.grayKeys == null) {
-      throw new ApiException("Missing the required parameter 'grayKeys' when calling openApiV30ToolsGrayGetGet");
+      throw new ApiException("grayKeys is required and must be specified");
+    }
+
+    if (request.grayKeys != null && request.grayKeys.length < 1) {
+      throw new ApiException("grayKeys must have at least 1 elements");
+    }
+
+    if (request.grayKeys != null && request.grayKeys.length > 1) {
+      throw new ApiException("grayKeys must have less than 1 elements");
     }
     return this.apiClient.requestWithHttpInfo<ToolsGrayGetV30Response>({
       method: "GET",

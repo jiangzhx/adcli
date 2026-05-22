@@ -28,11 +28,27 @@ export class ToolsThirdSitePreviewV2Api {
 
   async openApi2ToolsThirdSitePreviewGetWithHttpInfo(request: ToolsThirdSitePreviewV2ApiOpenApi2ToolsThirdSitePreviewGetRequest): Promise<ApiResponse<ToolsThirdSitePreviewV2Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApi2ToolsThirdSitePreviewGet");
+      throw new ApiException("advertiserId is required and must be specified");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) < 1) {
+      throw new ApiException("advertiserId must be greater than 1");
+    }
+
+    if (request.advertiserId != null && Number(request.advertiserId) > 9223372036854775807) {
+      throw new ApiException("advertiserId must be less than 9223372036854775807");
     }
 
     if (request.siteId == null) {
-      throw new ApiException("Missing the required parameter 'siteId' when calling openApi2ToolsThirdSitePreviewGet");
+      throw new ApiException("siteId is required and must be specified");
+    }
+
+    if (request.siteId != null && Number(request.siteId) < 1) {
+      throw new ApiException("siteId must be greater than 1");
+    }
+
+    if (request.siteId != null && Number(request.siteId) > 9223372036854775807) {
+      throw new ApiException("siteId must be less than 9223372036854775807");
     }
     return this.apiClient.requestWithHttpInfo<ToolsThirdSitePreviewV2Response>({
       method: "GET",

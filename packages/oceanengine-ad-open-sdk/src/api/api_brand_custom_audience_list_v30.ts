@@ -27,7 +27,7 @@ export class BrandCustomAudienceListV30Api {
 
   async openApiV30BrandCustomAudienceListGetWithHttpInfo(request: BrandCustomAudienceListV30ApiOpenApiV30BrandCustomAudienceListGetRequest): Promise<ApiResponse<BrandCustomAudienceListV30Response>> {
     if (request.advertiserId == null) {
-      throw new ApiException("Missing the required parameter 'advertiserId' when calling openApiV30BrandCustomAudienceListGet");
+      throw new ApiException("advertiserId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<BrandCustomAudienceListV30Response>({
       method: "GET",

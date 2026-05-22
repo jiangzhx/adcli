@@ -33,15 +33,15 @@ export class SharedWalletDailyStatGetV30Api {
 
   async openApiV30SharedWalletDailyStatGetGetWithHttpInfo(request: SharedWalletDailyStatGetV30ApiOpenApiV30SharedWalletDailyStatGetGetRequest): Promise<ApiResponse<SharedWalletDailyStatGetV30Response>> {
     if (request.accountId == null) {
-      throw new ApiException("Missing the required parameter 'accountId' when calling openApiV30SharedWalletDailyStatGetGet");
+      throw new ApiException("accountId is required and must be specified");
     }
 
     if (request.accountType == null) {
-      throw new ApiException("Missing the required parameter 'accountType' when calling openApiV30SharedWalletDailyStatGetGet");
+      throw new ApiException("accountType is required and must be specified");
     }
 
     if (request.sharedWalletId == null) {
-      throw new ApiException("Missing the required parameter 'sharedWalletId' when calling openApiV30SharedWalletDailyStatGetGet");
+      throw new ApiException("sharedWalletId is required and must be specified");
     }
     return this.apiClient.requestWithHttpInfo<SharedWalletDailyStatGetV30Response>({
       method: "GET",
