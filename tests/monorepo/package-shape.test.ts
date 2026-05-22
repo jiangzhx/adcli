@@ -6,7 +6,8 @@ describe("monorepo package shape", () => {
     const pkg = JSON.parse(readFileSync("package.json", "utf8"));
 
     expect(pkg.workspaces).toEqual(["packages/*"]);
-    expect(pkg.devDependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBe("workspace:*");
+    expect(pkg.dependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBe("1.1.87-port.3");
+    expect(pkg.devDependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBeUndefined();
     expect(pkg.scripts["sdk:oceanengine:test"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk test");
     expect(pkg.scripts["sdk:oceanengine:typecheck"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk typecheck");
     expect(pkg.scripts["sdk:test"]).toBe("bun run sdk:oceanengine:test");

@@ -54,7 +54,6 @@
     "lint": "eslint"
   },
   "devDependencies": {
-    "@jiangzhx/oceanengine-ad-open-sdk": "workspace:*",
     "@eslint/js": "^9.39.4",
     "@types/node": "^20",
     "crawlee": "^3.16.0",
@@ -64,6 +63,7 @@
     "typescript-eslint": "^8.59.3"
   },
   "dependencies": {
+    "@jiangzhx/oceanengine-ad-open-sdk": "1.1.87-port.3",
     "env-paths": "^4.0.0",
     "minisearch": "^7.2.0"
   }
