@@ -1,0 +1,17 @@
+{
+  "name": "@jiangzhx/adcli-codegen",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:oceanengine": "bun run scripts/oceanengine/generate-from-java-sdk.ts",
+    "phase-a:oceanengine": "bun run scripts/oceanengine/phase-a-generate.ts",
+    "codex:oceanengine:port-apis": "bun run scripts/oceanengine/codex-port-api-files.ts",
+    "test:oceanengine": "bun test test/oceanengine/*.test.ts",
+    "test": "bun run test:oceanengine",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}

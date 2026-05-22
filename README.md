@@ -17,13 +17,13 @@ https://adcli.jiangzhx.com/search-index.json
 当前仓库使用 Bun workspace 管理：
 
 - 根包：`@jiangzhx/adcli`，负责 CLI 和文档包生成。
-- SDK 子包：`src/sdk/*`，每个媒体平台 SDK 独立维护。
+- SDK 子包：`packages/*`，每个媒体平台 SDK 独立维护。
 
 已存在的 SDK：
 
-- `src/sdk/oceanengine`: 巨量引擎 Node.js/TypeScript SDK。
+- `packages/oceanengine-ad-open-sdk`: 巨量广告开放平台 OpenAPI SDK。
 
-后续新增广点通等媒体 SDK 时，按独立子包放到 `src/sdk/<platform>/`。
+后续新增广点通等媒体 SDK 时，按平台官方 API 名称放到独立子包，例如 `packages/tencentad-marketing-api-sdk/`。
 
 ## 安装
 

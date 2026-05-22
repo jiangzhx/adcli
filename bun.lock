@@ -10,6 +10,7 @@
       },
       "devDependencies": {
         "@eslint/js": "^9.39.4",
+        "@jiangzhx/oceanengine-ad-open-sdk": "workspace:*",
         "@types/node": "^20",
         "crawlee": "^3.16.0",
         "eslint": "^9",
@@ -18,8 +19,15 @@
         "typescript-eslint": "^8.59.3",
       },
     },
-    "src/sdk/oceanengine": {
-      "name": "@jiangzhx/oceanengine-sdk",
+    "packages/codegen": {
+      "name": "@jiangzhx/adcli-codegen",
+      "devDependencies": {
+        "@types/node": "^20",
+        "typescript": "^5",
+      },
+    },
+    "packages/oceanengine-ad-open-sdk": {
+      "name": "@jiangzhx/oceanengine-ad-open-sdk",
       "version": "0.1.0",
       "devDependencies": {
         "@types/node": "^20",
@@ -121,7 +129,9 @@
 
     "@inquirer/figures": ["@inquirer/figures@1.0.15", "", {}, "sha512-t2IEY+unGHOzAaVM5Xx6DEWKeXlDDcNPeDyUpsRc6CUhBfU3VQOEl+Vssh7VNp1dR8MdUJBWhuObjXCsVpjN5g=="],
 
-    "@jiangzhx/oceanengine-sdk": ["@jiangzhx/oceanengine-sdk@workspace:src/sdk/oceanengine"],
+    "@jiangzhx/adcli-codegen": ["@jiangzhx/adcli-codegen@workspace:packages/codegen"],
+
+    "@jiangzhx/oceanengine-ad-open-sdk": ["@jiangzhx/oceanengine-ad-open-sdk@workspace:packages/oceanengine-ad-open-sdk"],
 
     "@keyv/serialize": ["@keyv/serialize@1.1.1", "", {}, "sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA=="],
 

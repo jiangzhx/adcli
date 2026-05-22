@@ -1423,7 +1423,7 @@ function compact(value) {
   return value.toLowerCase().replace(/\s+/g, "");
 }
 
-// src/sdk/oceanengine/src/runtime/ApiException.ts
+// packages/oceanengine-ad-open-sdk/src/runtime/ApiException.ts
 class ApiException extends Error {
   statusCode;
   responseBody;
@@ -1437,7 +1437,7 @@ class ApiException extends Error {
   }
 }
 
-// src/sdk/oceanengine/src/runtime/json.ts
+// packages/oceanengine-ad-open-sdk/src/runtime/json.ts
 var MAX_SAFE_INTEGER = BigInt(Number.MAX_SAFE_INTEGER);
 function parseJsonPreservingLargeIntegers(text) {
   return JSON.parse(quoteUnsafeIntegerLiterals(text));
@@ -1515,7 +1515,7 @@ function isNumberContinuation(char) {
   return isDigit(char) || char === "+" || char === "-" || char === "." || char === "e" || char === "E";
 }
 
-// src/sdk/oceanengine/src/runtime/ApiClient.ts
+// packages/oceanengine-ad-open-sdk/src/runtime/ApiClient.ts
 var SDK_VERSION = "0.0.0-phase-a";
 
 class ApiClient {
@@ -1645,7 +1645,7 @@ class ApiClient {
     return String(value);
   }
 }
-// src/sdk/oceanengine/src/generated/apis/Oauth2AdvertiserGetApi.ts
+// packages/oceanengine-ad-open-sdk/src/apis/Oauth2AdvertiserGetApi.ts
 class Oauth2AdvertiserGetApi {
   apiClient;
   constructor(apiClient = new ApiClient) {
@@ -1672,7 +1672,7 @@ class Oauth2AdvertiserGetApi {
   }
 }
 
-// src/sdk/oceanengine/src/generated/apis/ProjectListV30Api.ts
+// packages/oceanengine-ad-open-sdk/src/apis/ProjectListV30Api.ts
 class ProjectListV30Api {
   apiClient;
   constructor(apiClient = new ApiClient) {
@@ -1706,7 +1706,7 @@ class ProjectListV30Api {
   }
 }
 
-// src/sdk/oceanengine/src/generated/apis/PromotionListV30Api.ts
+// packages/oceanengine-ad-open-sdk/src/apis/PromotionListV30Api.ts
 class PromotionListV30Api {
   apiClient;
   constructor(apiClient = new ApiClient) {
@@ -1742,7 +1742,7 @@ class PromotionListV30Api {
     });
   }
 }
-// src/lib/oceanengine/config.ts
+// src/commands/oceanengine/config.ts
 import { chmod, mkdir as mkdir2, readFile as readFile2, rename as rename2, writeFile as writeFile2 } from "node:fs/promises";
 import path3 from "node:path";
 function getOceanEngineConfigInfo(options = {}) {
@@ -1788,7 +1788,7 @@ function isNotFoundError2(error) {
   return error instanceof Error && "code" in error && error.code === "ENOENT";
 }
 
-// src/lib/oceanengine/commands.ts
+// src/commands/oceanengine/commands.ts
 async function runOceanEngineCommand(argv, options = {}) {
   const args = parseOceanEngineArgs(argv);
   if (args.resource === "auth") {
@@ -1808,11 +1808,11 @@ async function runOceanEngineCommand(argv, options = {}) {
     return new Oauth2AdvertiserGetApi(apiClient).openApiOauth2AdvertiserGetGet(token);
   }
   if (isProjectListCommand(args)) {
-    const advertiserId = getRequiredNumber(args, "advertiser-id");
+    const advertiserId = getRequiredId(args, "advertiser-id");
     return new ProjectListV30Api(apiClient).openApiV30ProjectListGet(advertiserId, parseCsv(args.flags.fields), parseJsonFlag(args.flags.filtering), parseNumberFlag(args.flags.page), parseNumberFlag(args.flags["page-size"]));
   }
   if (args.resource === "promotion" && args.action === "list") {
-    const advertiserId = getRequiredNumber(args, "advertiser-id");
+    const advertiserId = getRequiredId(args, "advertiser-id");
     const filtering = {
       ...parseJsonFlag(args.flags.filtering),
       ...parseProjectFilter(args.flags["project-id"])
@@ -1900,13 +1900,12 @@ function getOptionalString(value) {
   }
   return value;
 }
-function getRequiredNumber(args, flag) {
+function getRequiredId(args, flag) {
   const value = getRequiredString(args, flag);
-  const parsed = Number(value);
-  if (!Number.isFinite(parsed)) {
-    throw new Error(`--${flag} must be a number`);
+  if (!/^\d+$/.test(value)) {
+    throw new Error(`--${flag} must be an integer id`);
   }
-  return parsed;
+  return value;
 }
 function parseNumberFlag(value) {
   if (value == null || value === true) {

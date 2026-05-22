@@ -5,7 +5,7 @@
   "type": "module",
   "packageManager": "bun@1.3.10",
   "workspaces": [
-    "src/sdk/*"
+    "packages/*"
   ],
   "homepage": "https://github.com/jiangzhx/adcli#readme",
   "repository": {
@@ -39,16 +39,22 @@
     "adcli": "bun src/cli.ts",
     "prepack": "bun run build:cli",
     "test": "bun test tests/**/*.test.ts",
-    "test:all": "bun run test && bun run sdk:test",
+    "test:all": "bun run test && bun run sdk:test && bun run codegen:test",
     "typecheck": "tsc --noEmit",
-    "typecheck:all": "bun run typecheck && bun run sdk:typecheck",
-    "sdk:oceanengine:test": "bun run --cwd src/sdk/oceanengine test",
-    "sdk:oceanengine:typecheck": "bun run --cwd src/sdk/oceanengine typecheck",
+    "typecheck:all": "bun run typecheck && bun run sdk:typecheck && bun run codegen:typecheck",
+    "sdk:oceanengine:test": "bun run --cwd packages/oceanengine-ad-open-sdk test",
+    "sdk:oceanengine:typecheck": "bun run --cwd packages/oceanengine-ad-open-sdk typecheck",
     "sdk:test": "bun run sdk:oceanengine:test",
     "sdk:typecheck": "bun run sdk:oceanengine:typecheck",
+    "codegen:oceanengine:generate": "bun run --cwd packages/codegen generate:oceanengine",
+    "codegen:oceanengine:phase-a": "bun run --cwd packages/codegen phase-a:oceanengine",
+    "codegen:oceanengine:test": "bun run --cwd packages/codegen test:oceanengine",
+    "codegen:test": "bun run --cwd packages/codegen test",
+    "codegen:typecheck": "bun run --cwd packages/codegen typecheck",
     "lint": "eslint"
   },
   "devDependencies": {
+    "@jiangzhx/oceanengine-ad-open-sdk": "workspace:*",
     "@eslint/js": "^9.39.4",
     "@types/node": "^20",
     "crawlee": "^3.16.0",

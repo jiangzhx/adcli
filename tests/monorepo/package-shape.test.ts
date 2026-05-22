@@ -5,10 +5,25 @@ describe("monorepo package shape", () => {
   test("registers SDK packages as root workspaces", () => {
     const pkg = JSON.parse(readFileSync("package.json", "utf8"));
 
-    expect(pkg.workspaces).toEqual(["src/sdk/*"]);
-    expect(pkg.scripts["sdk:oceanengine:test"]).toBe("bun run --cwd src/sdk/oceanengine test");
-    expect(pkg.scripts["sdk:oceanengine:typecheck"]).toBe("bun run --cwd src/sdk/oceanengine typecheck");
+    expect(pkg.workspaces).toEqual(["packages/*"]);
+    expect(pkg.devDependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBe("workspace:*");
+    expect(pkg.scripts["sdk:oceanengine:test"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk test");
+    expect(pkg.scripts["sdk:oceanengine:typecheck"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk typecheck");
     expect(pkg.scripts["sdk:test"]).toBe("bun run sdk:oceanengine:test");
     expect(pkg.scripts["sdk:typecheck"]).toBe("bun run sdk:oceanengine:typecheck");
+    expect(pkg.scripts["codegen:oceanengine:test"]).toBe("bun run --cwd packages/codegen test:oceanengine");
+    expect(pkg.scripts["codegen:test"]).toBe("bun run --cwd packages/codegen test");
+    expect(pkg.scripts["codegen:typecheck"]).toBe("bun run --cwd packages/codegen typecheck");
+    expect(pkg.scripts["test:all"]).toBe("bun run test && bun run sdk:test && bun run codegen:test");
+    expect(pkg.scripts["typecheck:all"]).toBe("bun run typecheck && bun run sdk:typecheck && bun run codegen:typecheck");
+  });
+
+  test("keeps codegen as a private internal workspace package", () => {
+    const pkg = JSON.parse(readFileSync("packages/codegen/package.json", "utf8"));
+
+    expect(pkg.name).toBe("@jiangzhx/adcli-codegen");
+    expect(pkg.private).toBe(true);
+    expect(pkg.scripts["generate:oceanengine"]).toBe("bun run scripts/oceanengine/generate-from-java-sdk.ts");
+    expect(pkg.scripts["test:oceanengine"]).toBe("bun test test/oceanengine/*.test.ts");
   });
 });

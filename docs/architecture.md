@@ -189,45 +189,29 @@ scripts/serve-mcp.ts
 
 ## 推荐目录
 
-当前阶段继续保持单 Node.js 仓库，不立刻拆 monorepo。
+当前仓库已经采用轻量 Bun workspace monorepo。根包继续作为 `@jiangzhx/adcli` CLI 和文档包生成入口，独立广告平台 SDK 放到 `packages/*`。
 
-原因：
-
-- Builder Agent、采集、发布和未来 MCP runtime 的边界还在快速调整。
-- 需要先跑通 `data/sources -> public/llms.txt` 端到端闭环。
-- 现在拆 `packages/*` 会增加 workspace、构建和发布复杂度，但收益还不明显。
-
-短期目录：
+当前根包目录：
 
 ```text
 src/lib/
   builder/
   llms/
+  search/
+src/commands/
+  oceanengine/
 scripts/
   discover-sources.ts
   ingest-collection.ts
   build-llms.ts
 ```
 
-等边界稳定后，再迁移成 monorepo：
+当前 monorepo 子包：
 
 ```text
-docs/
-  requirements.md
-  architecture.md
-  builder-agent.md
-  llms.md
-  roadmap.md
-
-data/
-  sources/
-public/
-  llms.txt
-  llms-full.txt
-
 packages/
-  builder/
-  llms/
+  oceanengine-ad-open-sdk/
+  codegen/
 ```
 
 迁移触发条件：

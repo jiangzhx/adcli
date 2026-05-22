@@ -2,7 +2,7 @@
 
 import { getSearchIndexCacheInfo, loadSearchIndex, refreshSearchIndex } from "@/src/lib/search/cache";
 import { searchDocuments } from "@/src/lib/search/searcher";
-import { formatOceanEngineError, formatOceanEngineOutput, runOceanEngineCommand } from "@/src/lib/oceanengine/commands";
+import { formatOceanEngineError, formatOceanEngineOutput, runOceanEngineCommand } from "@/src/commands/oceanengine/commands";
 
 type ParsedArgs = {
   domain?: string;
