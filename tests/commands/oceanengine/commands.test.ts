@@ -121,7 +121,7 @@ describe("oceanengine CLI commands", () => {
   test("preserves unsafe integer advertiser ids returned by advertiser list", async () => {
     const output = await runOceanEngineCommand(["advertiser", "list", "--access-token", "token"], {
       fetch: async () => new Response(
-        '{"code":0,"data":{"list":[{"advertiser_id":7641898034989400000,"advertiser_name":"广告主"}]}}',
+        '{"code":0,"data":{"list":[{"advertiser_id":9007199254740993,"advertiser_name":"广告主"}]}}',
         { status: 200, headers: { "Content-Type": "application/json" } },
       ),
     });
@@ -130,7 +130,7 @@ describe("oceanengine CLI commands", () => {
       code: 0,
       data: {
         list: [
-          { advertiser_id: "7641898034989400000", advertiser_name: "广告主" },
+          { advertiser_id: "9007199254740993", advertiser_name: "广告主" },
         ],
       },
     });
@@ -206,7 +206,7 @@ describe("oceanengine CLI commands", () => {
 
   test("lists OceanEngine promotions through generated SDK", async () => {
     const requests: Request[] = [];
-    const largeProjectId = "7641894773956215000";
+    const largeProjectId = "7641894773956215123";
     await runOceanEngineCommand(
       [
         "promotion",
@@ -214,7 +214,7 @@ describe("oceanengine CLI commands", () => {
         "--access-token",
         "token",
         "--advertiser-id",
-        "123",
+        "7641894773956215123",
         "--project-id",
         largeProjectId,
         "--fields",
@@ -230,7 +230,7 @@ describe("oceanengine CLI commands", () => {
 
     const url = new URL(requests[0].url);
     expect(url.pathname).toBe("/open_api/v3.0/promotion/list/");
-    expect(url.searchParams.get("advertiser_id")).toBe("123");
+    expect(url.searchParams.get("advertiser_id")).toBe("7641894773956215123");
     expect(url.searchParams.get("filtering")).toBe(`{"project_id":"${largeProjectId}"}`);
     expect(url.searchParams.get("fields")).toBe("promotion_id,name,status_first");
   });
