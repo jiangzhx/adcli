@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanToolsAwemeAuthV10Request, QianchuanToolsAwemeAuthV10Response } from "../models";
 
 
-export interface OpenApiV10QianchuanToolsAwemeAuthPostRequest {
-  qianchuanToolsAwemeAuthV10Request?: QianchuanToolsAwemeAuthV10Request;
-}
-
 export class QianchuanToolsAwemeAuthV10Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class QianchuanToolsAwemeAuthV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanToolsAwemeAuthPost(request: OpenApiV10QianchuanToolsAwemeAuthPostRequest): Promise<QianchuanToolsAwemeAuthV10Response> {
+  async openApiV10QianchuanToolsAwemeAuthPost(request: QianchuanToolsAwemeAuthV10Request): Promise<QianchuanToolsAwemeAuthV10Response> {
     const response = await this.openApiV10QianchuanToolsAwemeAuthPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanToolsAwemeAuthPostWithHttpInfo(request: OpenApiV10QianchuanToolsAwemeAuthPostRequest): Promise<ApiResponse<QianchuanToolsAwemeAuthV10Response>> {
-
+  async openApiV10QianchuanToolsAwemeAuthPostWithHttpInfo(request: QianchuanToolsAwemeAuthV10Request): Promise<ApiResponse<QianchuanToolsAwemeAuthV10Response>> {
     return this.apiClient.requestWithHttpInfo<QianchuanToolsAwemeAuthV10Response>({
       method: "POST",
       path: "/open_api/v1.0/qianchuan/tools/aweme_auth/",
       queryParams: [
 
       ],
-      body: request.qianchuanToolsAwemeAuthV10Request
+      body: request
     });
   }
 }

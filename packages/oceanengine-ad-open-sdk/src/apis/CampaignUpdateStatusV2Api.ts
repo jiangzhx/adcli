@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CampaignUpdateStatusV2Request, CampaignUpdateStatusV2Response } from "../models";
 
 
-export interface OpenApi2CampaignUpdateStatusPostRequest {
-  campaignUpdateStatusV2Request?: CampaignUpdateStatusV2Request;
-}
-
 export class CampaignUpdateStatusV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class CampaignUpdateStatusV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2CampaignUpdateStatusPost(request: OpenApi2CampaignUpdateStatusPostRequest): Promise<CampaignUpdateStatusV2Response> {
+  async openApi2CampaignUpdateStatusPost(request: CampaignUpdateStatusV2Request): Promise<CampaignUpdateStatusV2Response> {
     const response = await this.openApi2CampaignUpdateStatusPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2CampaignUpdateStatusPostWithHttpInfo(request: OpenApi2CampaignUpdateStatusPostRequest): Promise<ApiResponse<CampaignUpdateStatusV2Response>> {
-
+  async openApi2CampaignUpdateStatusPostWithHttpInfo(request: CampaignUpdateStatusV2Request): Promise<ApiResponse<CampaignUpdateStatusV2Response>> {
     return this.apiClient.requestWithHttpInfo<CampaignUpdateStatusV2Response>({
       method: "POST",
       path: "/open_api/2/campaign/update/status/",
       queryParams: [
 
       ],
-      body: request.campaignUpdateStatusV2Request
+      body: request
     });
   }
 }

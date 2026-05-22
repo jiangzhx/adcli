@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpMaterialAuthCreateV30Request, ToolsEbpMaterialAuthCreateV30Response } from "../models";
 
 
-export interface OpenApiV30ToolsEbpMaterialAuthCreatePostRequest {
-  toolsEbpMaterialAuthCreateV30Request?: ToolsEbpMaterialAuthCreateV30Request;
-}
-
 export class ToolsEbpMaterialAuthCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ToolsEbpMaterialAuthCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpMaterialAuthCreatePost(request: OpenApiV30ToolsEbpMaterialAuthCreatePostRequest): Promise<ToolsEbpMaterialAuthCreateV30Response> {
+  async openApiV30ToolsEbpMaterialAuthCreatePost(request: ToolsEbpMaterialAuthCreateV30Request): Promise<ToolsEbpMaterialAuthCreateV30Response> {
     const response = await this.openApiV30ToolsEbpMaterialAuthCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpMaterialAuthCreatePostWithHttpInfo(request: OpenApiV30ToolsEbpMaterialAuthCreatePostRequest): Promise<ApiResponse<ToolsEbpMaterialAuthCreateV30Response>> {
-
+  async openApiV30ToolsEbpMaterialAuthCreatePostWithHttpInfo(request: ToolsEbpMaterialAuthCreateV30Request): Promise<ApiResponse<ToolsEbpMaterialAuthCreateV30Response>> {
     return this.apiClient.requestWithHttpInfo<ToolsEbpMaterialAuthCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/ebp/material/auth/create/",
       queryParams: [
 
       ],
-      body: request.toolsEbpMaterialAuthCreateV30Request
+      body: request
     });
   }
 }

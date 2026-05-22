@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DpaAlbumCreateV30Request, DpaAlbumCreateV30Response } from "../models";
 
 
-export interface OpenApiV30DpaAlbumCreatePostRequest {
-  dpaAlbumCreateV30Request?: DpaAlbumCreateV30Request;
-}
-
 export class DpaAlbumCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class DpaAlbumCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30DpaAlbumCreatePost(request: OpenApiV30DpaAlbumCreatePostRequest): Promise<DpaAlbumCreateV30Response> {
+  async openApiV30DpaAlbumCreatePost(request: DpaAlbumCreateV30Request): Promise<DpaAlbumCreateV30Response> {
     const response = await this.openApiV30DpaAlbumCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30DpaAlbumCreatePostWithHttpInfo(request: OpenApiV30DpaAlbumCreatePostRequest): Promise<ApiResponse<DpaAlbumCreateV30Response>> {
-
+  async openApiV30DpaAlbumCreatePostWithHttpInfo(request: DpaAlbumCreateV30Request): Promise<ApiResponse<DpaAlbumCreateV30Response>> {
     return this.apiClient.requestWithHttpInfo<DpaAlbumCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/dpa/album/create/",
       queryParams: [
 
       ],
-      body: request.dpaAlbumCreateV30Request
+      body: request
     });
   }
 }

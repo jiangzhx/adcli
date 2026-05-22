@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandAdCancelDeleteV30Request, BrandAdCancelDeleteV30Response } from "../models";
 
 
-export interface OpenApiV30BrandAdCancelDeletePostRequest {
-  brandAdCancelDeleteV30Request?: BrandAdCancelDeleteV30Request;
-}
-
 export class BrandAdCancelDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class BrandAdCancelDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandAdCancelDeletePost(request: OpenApiV30BrandAdCancelDeletePostRequest): Promise<BrandAdCancelDeleteV30Response> {
+  async openApiV30BrandAdCancelDeletePost(request: BrandAdCancelDeleteV30Request): Promise<BrandAdCancelDeleteV30Response> {
     const response = await this.openApiV30BrandAdCancelDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandAdCancelDeletePostWithHttpInfo(request: OpenApiV30BrandAdCancelDeletePostRequest): Promise<ApiResponse<BrandAdCancelDeleteV30Response>> {
-
+  async openApiV30BrandAdCancelDeletePostWithHttpInfo(request: BrandAdCancelDeleteV30Request): Promise<ApiResponse<BrandAdCancelDeleteV30Response>> {
     return this.apiClient.requestWithHttpInfo<BrandAdCancelDeleteV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/ad/cancel_delete/",
       queryParams: [
 
       ],
-      body: request.brandAdCancelDeleteV30Request
+      body: request
     });
   }
 }

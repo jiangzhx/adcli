@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { FilePreauditSubmitV30Request, FilePreauditSubmitV30Response } from "../models";
 
 
-export interface OpenApiV30FilePreauditSubmitPostRequest {
-  filePreauditSubmitV30Request?: FilePreauditSubmitV30Request;
-}
-
 export class FilePreauditSubmitV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class FilePreauditSubmitV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30FilePreauditSubmitPost(request: OpenApiV30FilePreauditSubmitPostRequest): Promise<FilePreauditSubmitV30Response> {
+  async openApiV30FilePreauditSubmitPost(request: FilePreauditSubmitV30Request): Promise<FilePreauditSubmitV30Response> {
     const response = await this.openApiV30FilePreauditSubmitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30FilePreauditSubmitPostWithHttpInfo(request: OpenApiV30FilePreauditSubmitPostRequest): Promise<ApiResponse<FilePreauditSubmitV30Response>> {
-
+  async openApiV30FilePreauditSubmitPostWithHttpInfo(request: FilePreauditSubmitV30Request): Promise<ApiResponse<FilePreauditSubmitV30Response>> {
     return this.apiClient.requestWithHttpInfo<FilePreauditSubmitV30Response>({
       method: "POST",
       path: "/open_api/v3.0/file/preaudit/submit/",
       queryParams: [
 
       ],
-      body: request.filePreauditSubmitV30Request
+      body: request
     });
   }
 }

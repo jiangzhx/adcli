@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsMicroGameUpdateV30Request, ToolsMicroGameUpdateV30Response } from "../models";
 
 
-export interface OpenApiV30ToolsMicroGameUpdatePostRequest {
-  toolsMicroGameUpdateV30Request?: ToolsMicroGameUpdateV30Request;
-}
-
 export class ToolsMicroGameUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ToolsMicroGameUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsMicroGameUpdatePost(request: OpenApiV30ToolsMicroGameUpdatePostRequest): Promise<ToolsMicroGameUpdateV30Response> {
+  async openApiV30ToolsMicroGameUpdatePost(request: ToolsMicroGameUpdateV30Request): Promise<ToolsMicroGameUpdateV30Response> {
     const response = await this.openApiV30ToolsMicroGameUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsMicroGameUpdatePostWithHttpInfo(request: OpenApiV30ToolsMicroGameUpdatePostRequest): Promise<ApiResponse<ToolsMicroGameUpdateV30Response>> {
-
+  async openApiV30ToolsMicroGameUpdatePostWithHttpInfo(request: ToolsMicroGameUpdateV30Request): Promise<ApiResponse<ToolsMicroGameUpdateV30Response>> {
     return this.apiClient.requestWithHttpInfo<ToolsMicroGameUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/micro_game/update/",
       queryParams: [
 
       ],
-      body: request.toolsMicroGameUpdateV30Request
+      body: request
     });
   }
 }

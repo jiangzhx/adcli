@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AicImageMixcutCreateV30Request, AicImageMixcutCreateV30Response } from "../models";
 
 
-export interface OpenApiV30AicImageMixcutCreatePostRequest {
-  aicImageMixcutCreateV30Request?: AicImageMixcutCreateV30Request;
-}
-
 export class AicImageMixcutCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class AicImageMixcutCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AicImageMixcutCreatePost(request: OpenApiV30AicImageMixcutCreatePostRequest): Promise<AicImageMixcutCreateV30Response> {
+  async openApiV30AicImageMixcutCreatePost(request: AicImageMixcutCreateV30Request): Promise<AicImageMixcutCreateV30Response> {
     const response = await this.openApiV30AicImageMixcutCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AicImageMixcutCreatePostWithHttpInfo(request: OpenApiV30AicImageMixcutCreatePostRequest): Promise<ApiResponse<AicImageMixcutCreateV30Response>> {
-
+  async openApiV30AicImageMixcutCreatePostWithHttpInfo(request: AicImageMixcutCreateV30Request): Promise<ApiResponse<AicImageMixcutCreateV30Response>> {
     return this.apiClient.requestWithHttpInfo<AicImageMixcutCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/aic/image_mixcut/create/",
       queryParams: [
 
       ],
-      body: request.aicImageMixcutCreateV30Request
+      body: request
     });
   }
 }

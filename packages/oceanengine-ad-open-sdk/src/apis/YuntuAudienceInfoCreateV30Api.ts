@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { YuntuAudienceInfoCreateV30Request, YuntuAudienceInfoCreateV30Response } from "../models";
 
 
-export interface OpenApiV30YuntuAudienceInfoCreatePostRequest {
-  yuntuAudienceInfoCreateV30Request?: YuntuAudienceInfoCreateV30Request;
-}
-
 export class YuntuAudienceInfoCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class YuntuAudienceInfoCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30YuntuAudienceInfoCreatePost(request: OpenApiV30YuntuAudienceInfoCreatePostRequest): Promise<YuntuAudienceInfoCreateV30Response> {
+  async openApiV30YuntuAudienceInfoCreatePost(request: YuntuAudienceInfoCreateV30Request): Promise<YuntuAudienceInfoCreateV30Response> {
     const response = await this.openApiV30YuntuAudienceInfoCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30YuntuAudienceInfoCreatePostWithHttpInfo(request: OpenApiV30YuntuAudienceInfoCreatePostRequest): Promise<ApiResponse<YuntuAudienceInfoCreateV30Response>> {
-
+  async openApiV30YuntuAudienceInfoCreatePostWithHttpInfo(request: YuntuAudienceInfoCreateV30Request): Promise<ApiResponse<YuntuAudienceInfoCreateV30Response>> {
     return this.apiClient.requestWithHttpInfo<YuntuAudienceInfoCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/yuntu/audience_info/create/",
       queryParams: [
 
       ],
-      body: request.yuntuAudienceInfoCreateV30Request
+      body: request
     });
   }
 }

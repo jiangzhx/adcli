@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarChallengeCancelV2Request, StarChallengeCancelV2Response } from "../models";
 
 
-export interface OpenApi2StarChallengeCancelPostRequest {
-  starChallengeCancelV2Request?: StarChallengeCancelV2Request;
-}
-
 export class StarChallengeCancelV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class StarChallengeCancelV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarChallengeCancelPost(request: OpenApi2StarChallengeCancelPostRequest): Promise<StarChallengeCancelV2Response> {
+  async openApi2StarChallengeCancelPost(request: StarChallengeCancelV2Request): Promise<StarChallengeCancelV2Response> {
     const response = await this.openApi2StarChallengeCancelPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarChallengeCancelPostWithHttpInfo(request: OpenApi2StarChallengeCancelPostRequest): Promise<ApiResponse<StarChallengeCancelV2Response>> {
-
+  async openApi2StarChallengeCancelPostWithHttpInfo(request: StarChallengeCancelV2Request): Promise<ApiResponse<StarChallengeCancelV2Response>> {
     return this.apiClient.requestWithHttpInfo<StarChallengeCancelV2Response>({
       method: "POST",
       path: "/open_api/2/star/challenge/cancel/",
       queryParams: [
 
       ],
-      body: request.starChallengeCancelV2Request
+      body: request
     });
   }
 }

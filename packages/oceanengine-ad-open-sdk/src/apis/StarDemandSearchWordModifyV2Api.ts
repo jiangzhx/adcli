@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarDemandSearchWordModifyV2Request, StarDemandSearchWordModifyV2Response } from "../models";
 
 
-export interface OpenApi2StarDemandSearchWordModifyPostRequest {
-  starDemandSearchWordModifyV2Request?: StarDemandSearchWordModifyV2Request;
-}
-
 export class StarDemandSearchWordModifyV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class StarDemandSearchWordModifyV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarDemandSearchWordModifyPost(request: OpenApi2StarDemandSearchWordModifyPostRequest): Promise<StarDemandSearchWordModifyV2Response> {
+  async openApi2StarDemandSearchWordModifyPost(request: StarDemandSearchWordModifyV2Request): Promise<StarDemandSearchWordModifyV2Response> {
     const response = await this.openApi2StarDemandSearchWordModifyPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarDemandSearchWordModifyPostWithHttpInfo(request: OpenApi2StarDemandSearchWordModifyPostRequest): Promise<ApiResponse<StarDemandSearchWordModifyV2Response>> {
-
+  async openApi2StarDemandSearchWordModifyPostWithHttpInfo(request: StarDemandSearchWordModifyV2Request): Promise<ApiResponse<StarDemandSearchWordModifyV2Response>> {
     return this.apiClient.requestWithHttpInfo<StarDemandSearchWordModifyV2Response>({
       method: "POST",
       path: "/open_api/2/star/demand/search_word/modify/",
       queryParams: [
 
       ],
-      body: request.starDemandSearchWordModifyV2Request
+      body: request
     });
   }
 }

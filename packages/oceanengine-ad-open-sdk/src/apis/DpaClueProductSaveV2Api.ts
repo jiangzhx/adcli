@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DpaClueProductSaveV2Request, DpaClueProductSaveV2Response } from "../models";
 
 
-export interface OpenApi2DpaClueProductSavePostRequest {
-  dpaClueProductSaveV2Request?: DpaClueProductSaveV2Request;
-}
-
 export class DpaClueProductSaveV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class DpaClueProductSaveV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2DpaClueProductSavePost(request: OpenApi2DpaClueProductSavePostRequest): Promise<DpaClueProductSaveV2Response> {
+  async openApi2DpaClueProductSavePost(request: DpaClueProductSaveV2Request): Promise<DpaClueProductSaveV2Response> {
     const response = await this.openApi2DpaClueProductSavePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2DpaClueProductSavePostWithHttpInfo(request: OpenApi2DpaClueProductSavePostRequest): Promise<ApiResponse<DpaClueProductSaveV2Response>> {
-
+  async openApi2DpaClueProductSavePostWithHttpInfo(request: DpaClueProductSaveV2Request): Promise<ApiResponse<DpaClueProductSaveV2Response>> {
     return this.apiClient.requestWithHttpInfo<DpaClueProductSaveV2Response>({
       method: "POST",
       path: "/open_api/2/dpa/clue_product/save/",
       queryParams: [
 
       ],
-      body: request.dpaClueProductSaveV2Request
+      body: request
     });
   }
 }

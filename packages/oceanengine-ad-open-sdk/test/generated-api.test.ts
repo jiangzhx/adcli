@@ -26,7 +26,7 @@ describe("generated APIs", () => {
       }),
     );
 
-    await api.openApiOauth2AccessTokenPost({ oauth2AccessTokenRequest: { auth_code: "code", secret: "secret" } });
+    await api.openApiOauth2AccessTokenPost({ auth_code: "code", secret: "secret" });
 
     expect(requests[0].method).toBe("POST");
     expect(new URL(requests[0].url).pathname).toBe("/open_api/oauth2/access_token/");

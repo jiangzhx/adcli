@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsPrivativeWordAdAddV2Request, ToolsPrivativeWordAdAddV2Response } from "../models";
 
 
-export interface OpenApi2ToolsPrivativeWordAdAddPostRequest {
-  toolsPrivativeWordAdAddV2Request?: ToolsPrivativeWordAdAddV2Request;
-}
-
 export class ToolsPrivativeWordAdAddV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ToolsPrivativeWordAdAddV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsPrivativeWordAdAddPost(request: OpenApi2ToolsPrivativeWordAdAddPostRequest): Promise<ToolsPrivativeWordAdAddV2Response> {
+  async openApi2ToolsPrivativeWordAdAddPost(request: ToolsPrivativeWordAdAddV2Request): Promise<ToolsPrivativeWordAdAddV2Response> {
     const response = await this.openApi2ToolsPrivativeWordAdAddPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsPrivativeWordAdAddPostWithHttpInfo(request: OpenApi2ToolsPrivativeWordAdAddPostRequest): Promise<ApiResponse<ToolsPrivativeWordAdAddV2Response>> {
-
+  async openApi2ToolsPrivativeWordAdAddPostWithHttpInfo(request: ToolsPrivativeWordAdAddV2Request): Promise<ApiResponse<ToolsPrivativeWordAdAddV2Response>> {
     return this.apiClient.requestWithHttpInfo<ToolsPrivativeWordAdAddV2Response>({
       method: "POST",
       path: "/open_api/2/tools/privative_word/ad/add/",
       queryParams: [
 
       ],
-      body: request.toolsPrivativeWordAdAddV2Request
+      body: request
     });
   }
 }

@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ClueFormCreateV2Request, ClueFormCreateV2Response } from "../models";
 
 
-export interface OpenApi2ClueFormCreatePostRequest {
-  clueFormCreateV2Request?: ClueFormCreateV2Request;
-}
-
 export class ClueFormCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ClueFormCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ClueFormCreatePost(request: OpenApi2ClueFormCreatePostRequest): Promise<ClueFormCreateV2Response> {
+  async openApi2ClueFormCreatePost(request: ClueFormCreateV2Request): Promise<ClueFormCreateV2Response> {
     const response = await this.openApi2ClueFormCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ClueFormCreatePostWithHttpInfo(request: OpenApi2ClueFormCreatePostRequest): Promise<ApiResponse<ClueFormCreateV2Response>> {
-
+  async openApi2ClueFormCreatePostWithHttpInfo(request: ClueFormCreateV2Request): Promise<ApiResponse<ClueFormCreateV2Response>> {
     return this.apiClient.requestWithHttpInfo<ClueFormCreateV2Response>({
       method: "POST",
       path: "/open_api/2/clue/form/create/",
       queryParams: [
 
       ],
-      body: request.clueFormCreateV2Request
+      body: request
     });
   }
 }

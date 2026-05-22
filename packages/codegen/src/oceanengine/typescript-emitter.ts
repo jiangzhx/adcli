@@ -104,6 +104,11 @@ ${queryParams}
 }
 
 function emitApiClassBodyWithRequestObject(spec: JavaApiSpec) {
+  const singleBodyParam = getSingleBodyParam(spec);
+  if (singleBodyParam) {
+    return emitApiClassBodyWithSingleBodyParam(spec, singleBodyParam);
+  }
+
   const responseType = toTypeScriptType(spec.responseType);
   const requestType = `${upperFirst(spec.methodName)}Request`;
   const fields = spec.params
@@ -157,6 +162,49 @@ ${queryParams}
   }
 }
 `;
+}
+
+function emitApiClassBodyWithSingleBodyParam(spec: JavaApiSpec, bodyParam: { javaType: string; name: string; required: boolean }) {
+  const responseType = toTypeScriptType(spec.responseType);
+  const requestType = toTypeScriptType(bodyParam.javaType);
+
+  return `
+export class ${spec.className} {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async ${spec.methodName}(request: ${requestType}): Promise<${responseType}> {
+    const response = await this.${spec.methodName}WithHttpInfo(request);
+    return response.data;
+  }
+
+  async ${spec.methodName}WithHttpInfo(request: ${requestType}): Promise<ApiResponse<${responseType}>> {
+    return this.apiClient.requestWithHttpInfo<${responseType}>({
+      method: "${spec.httpMethod}",
+      path: "${spec.path}",
+      queryParams: [
+
+      ],
+      body: request
+    });
+  }
+}
+`;
+}
+
+function getSingleBodyParam(spec: JavaApiSpec) {
+  if (spec.params.length !== 1 || spec.queryParams.length > 0 || spec.formParams.length > 0 || !spec.bodyParam) {
+    return undefined;
+  }
+  const [param] = spec.params;
+  return spec.bodyParam === `request.${param.name}` ? param : undefined;
 }
 
 export function emitModelFile(specs: JavaModelSpec[]) {

@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ProjectRoigoalUpdateV30Request, ProjectRoigoalUpdateV30Response } from "../models";
 
 
-export interface OpenApiV30ProjectRoigoalUpdatePostRequest {
-  projectRoigoalUpdateV30Request?: ProjectRoigoalUpdateV30Request;
-}
-
 export class ProjectRoigoalUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ProjectRoigoalUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ProjectRoigoalUpdatePost(request: OpenApiV30ProjectRoigoalUpdatePostRequest): Promise<ProjectRoigoalUpdateV30Response> {
+  async openApiV30ProjectRoigoalUpdatePost(request: ProjectRoigoalUpdateV30Request): Promise<ProjectRoigoalUpdateV30Response> {
     const response = await this.openApiV30ProjectRoigoalUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ProjectRoigoalUpdatePostWithHttpInfo(request: OpenApiV30ProjectRoigoalUpdatePostRequest): Promise<ApiResponse<ProjectRoigoalUpdateV30Response>> {
-
+  async openApiV30ProjectRoigoalUpdatePostWithHttpInfo(request: ProjectRoigoalUpdateV30Request): Promise<ApiResponse<ProjectRoigoalUpdateV30Response>> {
     return this.apiClient.requestWithHttpInfo<ProjectRoigoalUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/project/roigoal/update/",
       queryParams: [
 
       ],
-      body: request.projectRoigoalUpdateV30Request
+      body: request
     });
   }
 }

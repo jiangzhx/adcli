@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsMicroAppUpdateV30Request, ToolsMicroAppUpdateV30Response } from "../models";
 
 
-export interface OpenApiV30ToolsMicroAppUpdatePostRequest {
-  toolsMicroAppUpdateV30Request?: ToolsMicroAppUpdateV30Request;
-}
-
 export class ToolsMicroAppUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ToolsMicroAppUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsMicroAppUpdatePost(request: OpenApiV30ToolsMicroAppUpdatePostRequest): Promise<ToolsMicroAppUpdateV30Response> {
+  async openApiV30ToolsMicroAppUpdatePost(request: ToolsMicroAppUpdateV30Request): Promise<ToolsMicroAppUpdateV30Response> {
     const response = await this.openApiV30ToolsMicroAppUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsMicroAppUpdatePostWithHttpInfo(request: OpenApiV30ToolsMicroAppUpdatePostRequest): Promise<ApiResponse<ToolsMicroAppUpdateV30Response>> {
-
+  async openApiV30ToolsMicroAppUpdatePostWithHttpInfo(request: ToolsMicroAppUpdateV30Request): Promise<ApiResponse<ToolsMicroAppUpdateV30Response>> {
     return this.apiClient.requestWithHttpInfo<ToolsMicroAppUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/micro_app/update/",
       queryParams: [
 
       ],
-      body: request.toolsMicroAppUpdateV30Request
+      body: request
     });
   }
 }

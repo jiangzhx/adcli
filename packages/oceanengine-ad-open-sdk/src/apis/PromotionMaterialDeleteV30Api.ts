@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionMaterialDeleteV30Request, PromotionMaterialDeleteV30Response } from "../models";
 
 
-export interface OpenApiV30PromotionMaterialDeletePostRequest {
-  promotionMaterialDeleteV30Request?: PromotionMaterialDeleteV30Request;
-}
-
 export class PromotionMaterialDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class PromotionMaterialDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionMaterialDeletePost(request: OpenApiV30PromotionMaterialDeletePostRequest): Promise<PromotionMaterialDeleteV30Response> {
+  async openApiV30PromotionMaterialDeletePost(request: PromotionMaterialDeleteV30Request): Promise<PromotionMaterialDeleteV30Response> {
     const response = await this.openApiV30PromotionMaterialDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionMaterialDeletePostWithHttpInfo(request: OpenApiV30PromotionMaterialDeletePostRequest): Promise<ApiResponse<PromotionMaterialDeleteV30Response>> {
-
+  async openApiV30PromotionMaterialDeletePostWithHttpInfo(request: PromotionMaterialDeleteV30Request): Promise<ApiResponse<PromotionMaterialDeleteV30Response>> {
     return this.apiClient.requestWithHttpInfo<PromotionMaterialDeleteV30Response>({
       method: "POST",
       path: "/open_api/v3.0/promotion/material/delete/",
       queryParams: [
 
       ],
-      body: request.promotionMaterialDeleteV30Request
+      body: request
     });
   }
 }

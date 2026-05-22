@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpMicroGameUpdateV30Request, ToolsEbpMicroGameUpdateV30Response } from "../models";
 
 
-export interface OpenApiV30ToolsEbpMicroGameUpdatePostRequest {
-  toolsEbpMicroGameUpdateV30Request?: ToolsEbpMicroGameUpdateV30Request;
-}
-
 export class ToolsEbpMicroGameUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ToolsEbpMicroGameUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpMicroGameUpdatePost(request: OpenApiV30ToolsEbpMicroGameUpdatePostRequest): Promise<ToolsEbpMicroGameUpdateV30Response> {
+  async openApiV30ToolsEbpMicroGameUpdatePost(request: ToolsEbpMicroGameUpdateV30Request): Promise<ToolsEbpMicroGameUpdateV30Response> {
     const response = await this.openApiV30ToolsEbpMicroGameUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpMicroGameUpdatePostWithHttpInfo(request: OpenApiV30ToolsEbpMicroGameUpdatePostRequest): Promise<ApiResponse<ToolsEbpMicroGameUpdateV30Response>> {
-
+  async openApiV30ToolsEbpMicroGameUpdatePostWithHttpInfo(request: ToolsEbpMicroGameUpdateV30Request): Promise<ApiResponse<ToolsEbpMicroGameUpdateV30Response>> {
     return this.apiClient.requestWithHttpInfo<ToolsEbpMicroGameUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/ebp/micro_game/update/",
       queryParams: [
 
       ],
-      body: request.toolsEbpMicroGameUpdateV30Request
+      body: request
     });
   }
 }

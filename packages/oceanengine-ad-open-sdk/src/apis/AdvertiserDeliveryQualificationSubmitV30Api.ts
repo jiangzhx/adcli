@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AdvertiserDeliveryQualificationSubmitV30Request, AdvertiserDeliveryQualificationSubmitV30Response } from "../models";
 
 
-export interface OpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest {
-  advertiserDeliveryQualificationSubmitV30Request?: AdvertiserDeliveryQualificationSubmitV30Request;
-}
-
 export class AdvertiserDeliveryQualificationSubmitV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class AdvertiserDeliveryQualificationSubmitV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AdvertiserDeliveryQualificationSubmitPost(request: OpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest): Promise<AdvertiserDeliveryQualificationSubmitV30Response> {
+  async openApiV30AdvertiserDeliveryQualificationSubmitPost(request: AdvertiserDeliveryQualificationSubmitV30Request): Promise<AdvertiserDeliveryQualificationSubmitV30Response> {
     const response = await this.openApiV30AdvertiserDeliveryQualificationSubmitPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AdvertiserDeliveryQualificationSubmitPostWithHttpInfo(request: OpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest): Promise<ApiResponse<AdvertiserDeliveryQualificationSubmitV30Response>> {
-
+  async openApiV30AdvertiserDeliveryQualificationSubmitPostWithHttpInfo(request: AdvertiserDeliveryQualificationSubmitV30Request): Promise<ApiResponse<AdvertiserDeliveryQualificationSubmitV30Response>> {
     return this.apiClient.requestWithHttpInfo<AdvertiserDeliveryQualificationSubmitV30Response>({
       method: "POST",
       path: "/open_api/v3.0/advertiser/delivery_qualification/submit/",
       queryParams: [
 
       ],
-      body: request.advertiserDeliveryQualificationSubmitV30Request
+      body: request
     });
   }
 }

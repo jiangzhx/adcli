@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { UniProjectMonetizationModeUpdateV30Request, UniProjectMonetizationModeUpdateV30Response } from "../models";
 
 
-export interface OpenApiV30UniProjectMonetizationModeUpdatePostRequest {
-  uniProjectMonetizationModeUpdateV30Request?: UniProjectMonetizationModeUpdateV30Request;
-}
-
 export class UniProjectMonetizationModeUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class UniProjectMonetizationModeUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30UniProjectMonetizationModeUpdatePost(request: OpenApiV30UniProjectMonetizationModeUpdatePostRequest): Promise<UniProjectMonetizationModeUpdateV30Response> {
+  async openApiV30UniProjectMonetizationModeUpdatePost(request: UniProjectMonetizationModeUpdateV30Request): Promise<UniProjectMonetizationModeUpdateV30Response> {
     const response = await this.openApiV30UniProjectMonetizationModeUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30UniProjectMonetizationModeUpdatePostWithHttpInfo(request: OpenApiV30UniProjectMonetizationModeUpdatePostRequest): Promise<ApiResponse<UniProjectMonetizationModeUpdateV30Response>> {
-
+  async openApiV30UniProjectMonetizationModeUpdatePostWithHttpInfo(request: UniProjectMonetizationModeUpdateV30Request): Promise<ApiResponse<UniProjectMonetizationModeUpdateV30Response>> {
     return this.apiClient.requestWithHttpInfo<UniProjectMonetizationModeUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/uni_project/monetization_mode/update/",
       queryParams: [
 
       ],
-      body: request.uniProjectMonetizationModeUpdateV30Request
+      body: request
     });
   }
 }

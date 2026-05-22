@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { CarouselCreateV2Request, CarouselCreateV2Response } from "../models";
 
 
-export interface OpenApi2CarouselCreatePostRequest {
-  carouselCreateV2Request?: CarouselCreateV2Request;
-}
-
 export class CarouselCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class CarouselCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2CarouselCreatePost(request: OpenApi2CarouselCreatePostRequest): Promise<CarouselCreateV2Response> {
+  async openApi2CarouselCreatePost(request: CarouselCreateV2Request): Promise<CarouselCreateV2Response> {
     const response = await this.openApi2CarouselCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2CarouselCreatePostWithHttpInfo(request: OpenApi2CarouselCreatePostRequest): Promise<ApiResponse<CarouselCreateV2Response>> {
-
+  async openApi2CarouselCreatePostWithHttpInfo(request: CarouselCreateV2Request): Promise<ApiResponse<CarouselCreateV2Response>> {
     return this.apiClient.requestWithHttpInfo<CarouselCreateV2Response>({
       method: "POST",
       path: "/open_api/2/carousel/create/",
       queryParams: [
 
       ],
-      body: request.carouselCreateV2Request
+      body: request
     });
   }
 }

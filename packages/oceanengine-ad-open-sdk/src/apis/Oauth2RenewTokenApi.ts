@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { Oauth2RenewTokenRequest, Oauth2RenewTokenResponse } from "../models";
 
 
-export interface OpenApiOauth2RenewTokenPostRequest {
-  oauth2RenewTokenRequest?: Oauth2RenewTokenRequest;
-}
-
 export class Oauth2RenewTokenApi {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class Oauth2RenewTokenApi {
     this.apiClient = apiClient;
   }
 
-  async openApiOauth2RenewTokenPost(request: OpenApiOauth2RenewTokenPostRequest): Promise<Oauth2RenewTokenResponse> {
+  async openApiOauth2RenewTokenPost(request: Oauth2RenewTokenRequest): Promise<Oauth2RenewTokenResponse> {
     const response = await this.openApiOauth2RenewTokenPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiOauth2RenewTokenPostWithHttpInfo(request: OpenApiOauth2RenewTokenPostRequest): Promise<ApiResponse<Oauth2RenewTokenResponse>> {
-
+  async openApiOauth2RenewTokenPostWithHttpInfo(request: Oauth2RenewTokenRequest): Promise<ApiResponse<Oauth2RenewTokenResponse>> {
     return this.apiClient.requestWithHttpInfo<Oauth2RenewTokenResponse>({
       method: "POST",
       path: "/open_api/oauth2/renew_token/",
       queryParams: [
 
       ],
-      body: request.oauth2RenewTokenRequest
+      body: request
     });
   }
 }

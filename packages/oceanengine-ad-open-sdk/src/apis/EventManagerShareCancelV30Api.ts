@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { EventManagerShareCancelV30Request, EventManagerShareCancelV30Response } from "../models";
 
 
-export interface OpenApiV30EventManagerShareCancelPostRequest {
-  eventManagerShareCancelV30Request?: EventManagerShareCancelV30Request;
-}
-
 export class EventManagerShareCancelV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class EventManagerShareCancelV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30EventManagerShareCancelPost(request: OpenApiV30EventManagerShareCancelPostRequest): Promise<EventManagerShareCancelV30Response> {
+  async openApiV30EventManagerShareCancelPost(request: EventManagerShareCancelV30Request): Promise<EventManagerShareCancelV30Response> {
     const response = await this.openApiV30EventManagerShareCancelPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30EventManagerShareCancelPostWithHttpInfo(request: OpenApiV30EventManagerShareCancelPostRequest): Promise<ApiResponse<EventManagerShareCancelV30Response>> {
-
+  async openApiV30EventManagerShareCancelPostWithHttpInfo(request: EventManagerShareCancelV30Request): Promise<ApiResponse<EventManagerShareCancelV30Response>> {
     return this.apiClient.requestWithHttpInfo<EventManagerShareCancelV30Response>({
       method: "POST",
       path: "/open_api/v3.0/event_manager/share/cancel/",
       queryParams: [
 
       ],
-      body: request.eventManagerShareCancelV30Request
+      body: request
     });
   }
 }

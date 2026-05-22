@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StardeliveryTaskAuthorVideoAuditV30Request, StardeliveryTaskAuthorVideoAuditV30Response } from "../models";
 
 
-export interface OpenApiV30StardeliveryTaskAuthorVideoAuditPostRequest {
-  stardeliveryTaskAuthorVideoAuditV30Request?: StardeliveryTaskAuthorVideoAuditV30Request;
-}
-
 export class StardeliveryTaskAuthorVideoAuditV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class StardeliveryTaskAuthorVideoAuditV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30StardeliveryTaskAuthorVideoAuditPost(request: OpenApiV30StardeliveryTaskAuthorVideoAuditPostRequest): Promise<StardeliveryTaskAuthorVideoAuditV30Response> {
+  async openApiV30StardeliveryTaskAuthorVideoAuditPost(request: StardeliveryTaskAuthorVideoAuditV30Request): Promise<StardeliveryTaskAuthorVideoAuditV30Response> {
     const response = await this.openApiV30StardeliveryTaskAuthorVideoAuditPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30StardeliveryTaskAuthorVideoAuditPostWithHttpInfo(request: OpenApiV30StardeliveryTaskAuthorVideoAuditPostRequest): Promise<ApiResponse<StardeliveryTaskAuthorVideoAuditV30Response>> {
-
+  async openApiV30StardeliveryTaskAuthorVideoAuditPostWithHttpInfo(request: StardeliveryTaskAuthorVideoAuditV30Request): Promise<ApiResponse<StardeliveryTaskAuthorVideoAuditV30Response>> {
     return this.apiClient.requestWithHttpInfo<StardeliveryTaskAuthorVideoAuditV30Response>({
       method: "POST",
       path: "/open_api/v3.0/stardelivery/task_author_video/audit/",
       queryParams: [
 
       ],
-      body: request.stardeliveryTaskAuthorVideoAuditV30Request
+      body: request
     });
   }
 }

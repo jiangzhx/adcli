@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandOrderDeleteV30Request, BrandOrderDeleteV30Response } from "../models";
 
 
-export interface OpenApiV30BrandOrderDeletePostRequest {
-  brandOrderDeleteV30Request?: BrandOrderDeleteV30Request;
-}
-
 export class BrandOrderDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class BrandOrderDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandOrderDeletePost(request: OpenApiV30BrandOrderDeletePostRequest): Promise<BrandOrderDeleteV30Response> {
+  async openApiV30BrandOrderDeletePost(request: BrandOrderDeleteV30Request): Promise<BrandOrderDeleteV30Response> {
     const response = await this.openApiV30BrandOrderDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandOrderDeletePostWithHttpInfo(request: OpenApiV30BrandOrderDeletePostRequest): Promise<ApiResponse<BrandOrderDeleteV30Response>> {
-
+  async openApiV30BrandOrderDeletePostWithHttpInfo(request: BrandOrderDeleteV30Request): Promise<ApiResponse<BrandOrderDeleteV30Response>> {
     return this.apiClient.requestWithHttpInfo<BrandOrderDeleteV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/order/delete/",
       queryParams: [
 
       ],
-      body: request.brandOrderDeleteV30Request
+      body: request
     });
   }
 }

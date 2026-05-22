@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ClueCouponCreateV2Request, ClueCouponCreateV2Response } from "../models";
 
 
-export interface OpenApi2ClueCouponCreatePostRequest {
-  clueCouponCreateV2Request?: ClueCouponCreateV2Request;
-}
-
 export class ClueCouponCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ClueCouponCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ClueCouponCreatePost(request: OpenApi2ClueCouponCreatePostRequest): Promise<ClueCouponCreateV2Response> {
+  async openApi2ClueCouponCreatePost(request: ClueCouponCreateV2Request): Promise<ClueCouponCreateV2Response> {
     const response = await this.openApi2ClueCouponCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ClueCouponCreatePostWithHttpInfo(request: OpenApi2ClueCouponCreatePostRequest): Promise<ApiResponse<ClueCouponCreateV2Response>> {
-
+  async openApi2ClueCouponCreatePostWithHttpInfo(request: ClueCouponCreateV2Request): Promise<ApiResponse<ClueCouponCreateV2Response>> {
     return this.apiClient.requestWithHttpInfo<ClueCouponCreateV2Response>({
       method: "POST",
       path: "/open_api/2/clue/coupon/create/",
       queryParams: [
 
       ],
-      body: request.clueCouponCreateV2Request
+      body: request
     });
   }
 }

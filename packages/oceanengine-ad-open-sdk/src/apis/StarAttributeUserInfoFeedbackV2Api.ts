@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarAttributeUserInfoFeedbackV2Request, StarAttributeUserInfoFeedbackV2Response } from "../models";
 
 
-export interface OpenApi2StarAttributeUserInfoFeedbackPostRequest {
-  starAttributeUserInfoFeedbackV2Request?: StarAttributeUserInfoFeedbackV2Request;
-}
-
 export class StarAttributeUserInfoFeedbackV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class StarAttributeUserInfoFeedbackV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarAttributeUserInfoFeedbackPost(request: OpenApi2StarAttributeUserInfoFeedbackPostRequest): Promise<StarAttributeUserInfoFeedbackV2Response> {
+  async openApi2StarAttributeUserInfoFeedbackPost(request: StarAttributeUserInfoFeedbackV2Request): Promise<StarAttributeUserInfoFeedbackV2Response> {
     const response = await this.openApi2StarAttributeUserInfoFeedbackPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarAttributeUserInfoFeedbackPostWithHttpInfo(request: OpenApi2StarAttributeUserInfoFeedbackPostRequest): Promise<ApiResponse<StarAttributeUserInfoFeedbackV2Response>> {
-
+  async openApi2StarAttributeUserInfoFeedbackPostWithHttpInfo(request: StarAttributeUserInfoFeedbackV2Request): Promise<ApiResponse<StarAttributeUserInfoFeedbackV2Response>> {
     return this.apiClient.requestWithHttpInfo<StarAttributeUserInfoFeedbackV2Response>({
       method: "POST",
       path: "/open_api/2/star/attribute/user_info_feedback/",
       queryParams: [
 
       ],
-      body: request.starAttributeUserInfoFeedbackV2Request
+      body: request
     });
   }
 }

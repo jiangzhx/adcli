@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsWechatGameCreateV30Request, ToolsWechatGameCreateV30Response } from "../models";
 
 
-export interface OpenApiV30ToolsWechatGameCreatePostRequest {
-  toolsWechatGameCreateV30Request?: ToolsWechatGameCreateV30Request;
-}
-
 export class ToolsWechatGameCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ToolsWechatGameCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsWechatGameCreatePost(request: OpenApiV30ToolsWechatGameCreatePostRequest): Promise<ToolsWechatGameCreateV30Response> {
+  async openApiV30ToolsWechatGameCreatePost(request: ToolsWechatGameCreateV30Request): Promise<ToolsWechatGameCreateV30Response> {
     const response = await this.openApiV30ToolsWechatGameCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsWechatGameCreatePostWithHttpInfo(request: OpenApiV30ToolsWechatGameCreatePostRequest): Promise<ApiResponse<ToolsWechatGameCreateV30Response>> {
-
+  async openApiV30ToolsWechatGameCreatePostWithHttpInfo(request: ToolsWechatGameCreateV30Request): Promise<ApiResponse<ToolsWechatGameCreateV30Response>> {
     return this.apiClient.requestWithHttpInfo<ToolsWechatGameCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/wechat_game/create/",
       queryParams: [
 
       ],
-      body: request.toolsWechatGameCreateV30Request
+      body: request
     });
   }
 }

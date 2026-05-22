@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PrepayChargeGenerateRemittanceCodeCreateV30Request, PrepayChargeGenerateRemittanceCodeCreateV30Response } from "../models";
 
 
-export interface OpenApiV30PrepayChargeGenerateRemittanceCodeCreatePostRequest {
-  prepayChargeGenerateRemittanceCodeCreateV30Request?: PrepayChargeGenerateRemittanceCodeCreateV30Request;
-}
-
 export class PrepayChargeGenerateRemittanceCodeCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class PrepayChargeGenerateRemittanceCodeCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PrepayChargeGenerateRemittanceCodeCreatePost(request: OpenApiV30PrepayChargeGenerateRemittanceCodeCreatePostRequest): Promise<PrepayChargeGenerateRemittanceCodeCreateV30Response> {
+  async openApiV30PrepayChargeGenerateRemittanceCodeCreatePost(request: PrepayChargeGenerateRemittanceCodeCreateV30Request): Promise<PrepayChargeGenerateRemittanceCodeCreateV30Response> {
     const response = await this.openApiV30PrepayChargeGenerateRemittanceCodeCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PrepayChargeGenerateRemittanceCodeCreatePostWithHttpInfo(request: OpenApiV30PrepayChargeGenerateRemittanceCodeCreatePostRequest): Promise<ApiResponse<PrepayChargeGenerateRemittanceCodeCreateV30Response>> {
-
+  async openApiV30PrepayChargeGenerateRemittanceCodeCreatePostWithHttpInfo(request: PrepayChargeGenerateRemittanceCodeCreateV30Request): Promise<ApiResponse<PrepayChargeGenerateRemittanceCodeCreateV30Response>> {
     return this.apiClient.requestWithHttpInfo<PrepayChargeGenerateRemittanceCodeCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/prepay_charge/generate_remittance_code/create/",
       queryParams: [
 
       ],
-      body: request.prepayChargeGenerateRemittanceCodeCreateV30Request
+      body: request
     });
   }
 }

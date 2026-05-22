@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsRtaStatusUpdateV2Request, ToolsRtaStatusUpdateV2Response } from "../models";
 
 
-export interface OpenApi2ToolsRtaStatusUpdatePostRequest {
-  toolsRtaStatusUpdateV2Request?: ToolsRtaStatusUpdateV2Request;
-}
-
 export class ToolsRtaStatusUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ToolsRtaStatusUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2ToolsRtaStatusUpdatePost(request: OpenApi2ToolsRtaStatusUpdatePostRequest): Promise<ToolsRtaStatusUpdateV2Response> {
+  async openApi2ToolsRtaStatusUpdatePost(request: ToolsRtaStatusUpdateV2Request): Promise<ToolsRtaStatusUpdateV2Response> {
     const response = await this.openApi2ToolsRtaStatusUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2ToolsRtaStatusUpdatePostWithHttpInfo(request: OpenApi2ToolsRtaStatusUpdatePostRequest): Promise<ApiResponse<ToolsRtaStatusUpdateV2Response>> {
-
+  async openApi2ToolsRtaStatusUpdatePostWithHttpInfo(request: ToolsRtaStatusUpdateV2Request): Promise<ApiResponse<ToolsRtaStatusUpdateV2Response>> {
     return this.apiClient.requestWithHttpInfo<ToolsRtaStatusUpdateV2Response>({
       method: "POST",
       path: "/open_api/2/tools/rta/status_update/",
       queryParams: [
 
       ],
-      body: request.toolsRtaStatusUpdateV2Request
+      body: request
     });
   }
 }

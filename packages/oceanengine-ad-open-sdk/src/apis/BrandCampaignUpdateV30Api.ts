@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandCampaignUpdateV30Request, BrandCampaignUpdateV30Response } from "../models";
 
 
-export interface OpenApiV30BrandCampaignUpdatePostRequest {
-  brandCampaignUpdateV30Request?: BrandCampaignUpdateV30Request;
-}
-
 export class BrandCampaignUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class BrandCampaignUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandCampaignUpdatePost(request: OpenApiV30BrandCampaignUpdatePostRequest): Promise<BrandCampaignUpdateV30Response> {
+  async openApiV30BrandCampaignUpdatePost(request: BrandCampaignUpdateV30Request): Promise<BrandCampaignUpdateV30Response> {
     const response = await this.openApiV30BrandCampaignUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandCampaignUpdatePostWithHttpInfo(request: OpenApiV30BrandCampaignUpdatePostRequest): Promise<ApiResponse<BrandCampaignUpdateV30Response>> {
-
+  async openApiV30BrandCampaignUpdatePostWithHttpInfo(request: BrandCampaignUpdateV30Request): Promise<ApiResponse<BrandCampaignUpdateV30Response>> {
     return this.apiClient.requestWithHttpInfo<BrandCampaignUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/campaign/update/",
       queryParams: [
 
       ],
-      body: request.brandCampaignUpdateV30Request
+      body: request
     });
   }
 }

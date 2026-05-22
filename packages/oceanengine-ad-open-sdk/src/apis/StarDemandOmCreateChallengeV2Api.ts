@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { StarDemandOmCreateChallengeV2Request, StarDemandOmCreateChallengeV2Response } from "../models";
 
 
-export interface OpenApi2StarDemandOmCreateChallengePostRequest {
-  starDemandOmCreateChallengeV2Request?: StarDemandOmCreateChallengeV2Request;
-}
-
 export class StarDemandOmCreateChallengeV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class StarDemandOmCreateChallengeV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2StarDemandOmCreateChallengePost(request: OpenApi2StarDemandOmCreateChallengePostRequest): Promise<StarDemandOmCreateChallengeV2Response> {
+  async openApi2StarDemandOmCreateChallengePost(request: StarDemandOmCreateChallengeV2Request): Promise<StarDemandOmCreateChallengeV2Response> {
     const response = await this.openApi2StarDemandOmCreateChallengePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2StarDemandOmCreateChallengePostWithHttpInfo(request: OpenApi2StarDemandOmCreateChallengePostRequest): Promise<ApiResponse<StarDemandOmCreateChallengeV2Response>> {
-
+  async openApi2StarDemandOmCreateChallengePostWithHttpInfo(request: StarDemandOmCreateChallengeV2Request): Promise<ApiResponse<StarDemandOmCreateChallengeV2Response>> {
     return this.apiClient.requestWithHttpInfo<StarDemandOmCreateChallengeV2Response>({
       method: "POST",
       path: "/open_api/2/star/demand/om_create_challenge/",
       queryParams: [
 
       ],
-      body: request.starDemandOmCreateChallengeV2Request
+      body: request
     });
   }
 }

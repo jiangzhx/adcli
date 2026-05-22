@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsAwemeBannedCreateV30Request, ToolsAwemeBannedCreateV30Response } from "../models";
 
 
-export interface OpenApiV30ToolsAwemeBannedCreatePostRequest {
-  toolsAwemeBannedCreateV30Request?: ToolsAwemeBannedCreateV30Request;
-}
-
 export class ToolsAwemeBannedCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ToolsAwemeBannedCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsAwemeBannedCreatePost(request: OpenApiV30ToolsAwemeBannedCreatePostRequest): Promise<ToolsAwemeBannedCreateV30Response> {
+  async openApiV30ToolsAwemeBannedCreatePost(request: ToolsAwemeBannedCreateV30Request): Promise<ToolsAwemeBannedCreateV30Response> {
     const response = await this.openApiV30ToolsAwemeBannedCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsAwemeBannedCreatePostWithHttpInfo(request: OpenApiV30ToolsAwemeBannedCreatePostRequest): Promise<ApiResponse<ToolsAwemeBannedCreateV30Response>> {
-
+  async openApiV30ToolsAwemeBannedCreatePostWithHttpInfo(request: ToolsAwemeBannedCreateV30Request): Promise<ApiResponse<ToolsAwemeBannedCreateV30Response>> {
     return this.apiClient.requestWithHttpInfo<ToolsAwemeBannedCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/aweme_banned/create/",
       queryParams: [
 
       ],
-      body: request.toolsAwemeBannedCreateV30Request
+      body: request
     });
   }
 }

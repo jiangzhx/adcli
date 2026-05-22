@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BudgetGroupDeleteV30Request, BudgetGroupDeleteV30Response } from "../models";
 
 
-export interface OpenApiV30BudgetGroupDeletePostRequest {
-  budgetGroupDeleteV30Request?: BudgetGroupDeleteV30Request;
-}
-
 export class BudgetGroupDeleteV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class BudgetGroupDeleteV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BudgetGroupDeletePost(request: OpenApiV30BudgetGroupDeletePostRequest): Promise<BudgetGroupDeleteV30Response> {
+  async openApiV30BudgetGroupDeletePost(request: BudgetGroupDeleteV30Request): Promise<BudgetGroupDeleteV30Response> {
     const response = await this.openApiV30BudgetGroupDeletePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BudgetGroupDeletePostWithHttpInfo(request: OpenApiV30BudgetGroupDeletePostRequest): Promise<ApiResponse<BudgetGroupDeleteV30Response>> {
-
+  async openApiV30BudgetGroupDeletePostWithHttpInfo(request: BudgetGroupDeleteV30Request): Promise<ApiResponse<BudgetGroupDeleteV30Response>> {
     return this.apiClient.requestWithHttpInfo<BudgetGroupDeleteV30Response>({
       method: "POST",
       path: "/open_api/v3.0/budget_group/delete/",
       queryParams: [
 
       ],
-      body: request.budgetGroupDeleteV30Request
+      body: request
     });
   }
 }

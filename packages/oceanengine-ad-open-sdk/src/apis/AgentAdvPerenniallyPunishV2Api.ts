@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AgentAdvPerenniallyPunishV2Request, AgentAdvPerenniallyPunishV2Response } from "../models";
 
 
-export interface OpenApi2AgentAdvPerenniallyPunishPostRequest {
-  agentAdvPerenniallyPunishV2Request?: AgentAdvPerenniallyPunishV2Request;
-}
-
 export class AgentAdvPerenniallyPunishV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class AgentAdvPerenniallyPunishV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2AgentAdvPerenniallyPunishPost(request: OpenApi2AgentAdvPerenniallyPunishPostRequest): Promise<AgentAdvPerenniallyPunishV2Response> {
+  async openApi2AgentAdvPerenniallyPunishPost(request: AgentAdvPerenniallyPunishV2Request): Promise<AgentAdvPerenniallyPunishV2Response> {
     const response = await this.openApi2AgentAdvPerenniallyPunishPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2AgentAdvPerenniallyPunishPostWithHttpInfo(request: OpenApi2AgentAdvPerenniallyPunishPostRequest): Promise<ApiResponse<AgentAdvPerenniallyPunishV2Response>> {
-
+  async openApi2AgentAdvPerenniallyPunishPostWithHttpInfo(request: AgentAdvPerenniallyPunishV2Request): Promise<ApiResponse<AgentAdvPerenniallyPunishV2Response>> {
     return this.apiClient.requestWithHttpInfo<AgentAdvPerenniallyPunishV2Response>({
       method: "POST",
       path: "/open_api/2/agent/adv/perennially/punish/",
       queryParams: [
 
       ],
-      body: request.agentAdvPerenniallyPunishV2Request
+      body: request
     });
   }
 }

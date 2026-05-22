@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DiagnosisTaskAgentCreateV2Request, DiagnosisTaskAgentCreateV2Response } from "../models";
 
 
-export interface OpenApi2DiagnosisTaskAgentCreatePostRequest {
-  diagnosisTaskAgentCreateV2Request?: DiagnosisTaskAgentCreateV2Request;
-}
-
 export class DiagnosisTaskAgentCreateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class DiagnosisTaskAgentCreateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2DiagnosisTaskAgentCreatePost(request: OpenApi2DiagnosisTaskAgentCreatePostRequest): Promise<DiagnosisTaskAgentCreateV2Response> {
+  async openApi2DiagnosisTaskAgentCreatePost(request: DiagnosisTaskAgentCreateV2Request): Promise<DiagnosisTaskAgentCreateV2Response> {
     const response = await this.openApi2DiagnosisTaskAgentCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2DiagnosisTaskAgentCreatePostWithHttpInfo(request: OpenApi2DiagnosisTaskAgentCreatePostRequest): Promise<ApiResponse<DiagnosisTaskAgentCreateV2Response>> {
-
+  async openApi2DiagnosisTaskAgentCreatePostWithHttpInfo(request: DiagnosisTaskAgentCreateV2Request): Promise<ApiResponse<DiagnosisTaskAgentCreateV2Response>> {
     return this.apiClient.requestWithHttpInfo<DiagnosisTaskAgentCreateV2Response>({
       method: "POST",
       path: "/open_api/2/diagnosis_task/agent/create/",
       queryParams: [
 
       ],
-      body: request.diagnosisTaskAgentCreateV2Request
+      body: request
     });
   }
 }

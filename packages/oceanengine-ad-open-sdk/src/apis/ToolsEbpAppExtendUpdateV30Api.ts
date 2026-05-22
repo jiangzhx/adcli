@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { ToolsEbpAppExtendUpdateV30Request, ToolsEbpAppExtendUpdateV30Response } from "../models";
 
 
-export interface OpenApiV30ToolsEbpAppExtendUpdatePostRequest {
-  toolsEbpAppExtendUpdateV30Request?: ToolsEbpAppExtendUpdateV30Request;
-}
-
 export class ToolsEbpAppExtendUpdateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class ToolsEbpAppExtendUpdateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30ToolsEbpAppExtendUpdatePost(request: OpenApiV30ToolsEbpAppExtendUpdatePostRequest): Promise<ToolsEbpAppExtendUpdateV30Response> {
+  async openApiV30ToolsEbpAppExtendUpdatePost(request: ToolsEbpAppExtendUpdateV30Request): Promise<ToolsEbpAppExtendUpdateV30Response> {
     const response = await this.openApiV30ToolsEbpAppExtendUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30ToolsEbpAppExtendUpdatePostWithHttpInfo(request: OpenApiV30ToolsEbpAppExtendUpdatePostRequest): Promise<ApiResponse<ToolsEbpAppExtendUpdateV30Response>> {
-
+  async openApiV30ToolsEbpAppExtendUpdatePostWithHttpInfo(request: ToolsEbpAppExtendUpdateV30Request): Promise<ApiResponse<ToolsEbpAppExtendUpdateV30Response>> {
     return this.apiClient.requestWithHttpInfo<ToolsEbpAppExtendUpdateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/tools/ebp/app_extend/update/",
       queryParams: [
 
       ],
-      body: request.toolsEbpAppExtendUpdateV30Request
+      body: request
     });
   }
 }

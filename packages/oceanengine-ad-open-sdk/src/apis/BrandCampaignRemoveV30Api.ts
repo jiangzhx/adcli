@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandCampaignRemoveV30Request, BrandCampaignRemoveV30Response } from "../models";
 
 
-export interface OpenApiV30BrandCampaignRemovePostRequest {
-  brandCampaignRemoveV30Request?: BrandCampaignRemoveV30Request;
-}
-
 export class BrandCampaignRemoveV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class BrandCampaignRemoveV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandCampaignRemovePost(request: OpenApiV30BrandCampaignRemovePostRequest): Promise<BrandCampaignRemoveV30Response> {
+  async openApiV30BrandCampaignRemovePost(request: BrandCampaignRemoveV30Request): Promise<BrandCampaignRemoveV30Response> {
     const response = await this.openApiV30BrandCampaignRemovePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandCampaignRemovePostWithHttpInfo(request: OpenApiV30BrandCampaignRemovePostRequest): Promise<ApiResponse<BrandCampaignRemoveV30Response>> {
-
+  async openApiV30BrandCampaignRemovePostWithHttpInfo(request: BrandCampaignRemoveV30Request): Promise<ApiResponse<BrandCampaignRemoveV30Response>> {
     return this.apiClient.requestWithHttpInfo<BrandCampaignRemoveV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/campaign/remove/",
       queryParams: [
 
       ],
-      body: request.brandCampaignRemoveV30Request
+      body: request
     });
   }
 }

@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { DpaProductStatusBatchUpdateV2Request, DpaProductStatusBatchUpdateV2Response } from "../models";
 
 
-export interface OpenApi2DpaProductStatusBatchUpdatePostRequest {
-  dpaProductStatusBatchUpdateV2Request?: DpaProductStatusBatchUpdateV2Request;
-}
-
 export class DpaProductStatusBatchUpdateV2Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class DpaProductStatusBatchUpdateV2Api {
     this.apiClient = apiClient;
   }
 
-  async openApi2DpaProductStatusBatchUpdatePost(request: OpenApi2DpaProductStatusBatchUpdatePostRequest): Promise<DpaProductStatusBatchUpdateV2Response> {
+  async openApi2DpaProductStatusBatchUpdatePost(request: DpaProductStatusBatchUpdateV2Request): Promise<DpaProductStatusBatchUpdateV2Response> {
     const response = await this.openApi2DpaProductStatusBatchUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApi2DpaProductStatusBatchUpdatePostWithHttpInfo(request: OpenApi2DpaProductStatusBatchUpdatePostRequest): Promise<ApiResponse<DpaProductStatusBatchUpdateV2Response>> {
-
+  async openApi2DpaProductStatusBatchUpdatePostWithHttpInfo(request: DpaProductStatusBatchUpdateV2Request): Promise<ApiResponse<DpaProductStatusBatchUpdateV2Response>> {
     return this.apiClient.requestWithHttpInfo<DpaProductStatusBatchUpdateV2Response>({
       method: "POST",
       path: "/open_api/2/dpa/product_status/batch_update/",
       queryParams: [
 
       ],
-      body: request.dpaProductStatusBatchUpdateV2Request
+      body: request
     });
   }
 }

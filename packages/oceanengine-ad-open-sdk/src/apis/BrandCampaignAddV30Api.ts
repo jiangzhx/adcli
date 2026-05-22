@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { BrandCampaignAddV30Request, BrandCampaignAddV30Response } from "../models";
 
 
-export interface OpenApiV30BrandCampaignAddPostRequest {
-  brandCampaignAddV30Request?: BrandCampaignAddV30Request;
-}
-
 export class BrandCampaignAddV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class BrandCampaignAddV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30BrandCampaignAddPost(request: OpenApiV30BrandCampaignAddPostRequest): Promise<BrandCampaignAddV30Response> {
+  async openApiV30BrandCampaignAddPost(request: BrandCampaignAddV30Request): Promise<BrandCampaignAddV30Response> {
     const response = await this.openApiV30BrandCampaignAddPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30BrandCampaignAddPostWithHttpInfo(request: OpenApiV30BrandCampaignAddPostRequest): Promise<ApiResponse<BrandCampaignAddV30Response>> {
-
+  async openApiV30BrandCampaignAddPostWithHttpInfo(request: BrandCampaignAddV30Request): Promise<ApiResponse<BrandCampaignAddV30Response>> {
     return this.apiClient.requestWithHttpInfo<BrandCampaignAddV30Response>({
       method: "POST",
       path: "/open_api/v3.0/brand/campaign/add/",
       queryParams: [
 
       ],
-      body: request.brandCampaignAddV30Request
+      body: request
     });
   }
 }

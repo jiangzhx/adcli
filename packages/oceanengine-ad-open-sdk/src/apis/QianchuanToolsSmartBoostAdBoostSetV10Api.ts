@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanToolsSmartBoostAdBoostSetV10Request, QianchuanToolsSmartBoostAdBoostSetV10Response } from "../models";
 
 
-export interface OpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest {
-  qianchuanToolsSmartBoostAdBoostSetV10Request?: QianchuanToolsSmartBoostAdBoostSetV10Request;
-}
-
 export class QianchuanToolsSmartBoostAdBoostSetV10Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class QianchuanToolsSmartBoostAdBoostSetV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanToolsSmartBoostAdBoostSetPost(request: OpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest): Promise<QianchuanToolsSmartBoostAdBoostSetV10Response> {
+  async openApiV10QianchuanToolsSmartBoostAdBoostSetPost(request: QianchuanToolsSmartBoostAdBoostSetV10Request): Promise<QianchuanToolsSmartBoostAdBoostSetV10Response> {
     const response = await this.openApiV10QianchuanToolsSmartBoostAdBoostSetPostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanToolsSmartBoostAdBoostSetPostWithHttpInfo(request: OpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest): Promise<ApiResponse<QianchuanToolsSmartBoostAdBoostSetV10Response>> {
-
+  async openApiV10QianchuanToolsSmartBoostAdBoostSetPostWithHttpInfo(request: QianchuanToolsSmartBoostAdBoostSetV10Request): Promise<ApiResponse<QianchuanToolsSmartBoostAdBoostSetV10Response>> {
     return this.apiClient.requestWithHttpInfo<QianchuanToolsSmartBoostAdBoostSetV10Response>({
       method: "POST",
       path: "/open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/set/",
       queryParams: [
 
       ],
-      body: request.qianchuanToolsSmartBoostAdBoostSetV10Request
+      body: request
     });
   }
 }

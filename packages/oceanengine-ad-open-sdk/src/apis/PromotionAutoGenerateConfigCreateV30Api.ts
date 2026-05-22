@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { PromotionAutoGenerateConfigCreateV30Request, PromotionAutoGenerateConfigCreateV30Response } from "../models";
 
 
-export interface OpenApiV30PromotionAutoGenerateConfigCreatePostRequest {
-  promotionAutoGenerateConfigCreateV30Request?: PromotionAutoGenerateConfigCreateV30Request;
-}
-
 export class PromotionAutoGenerateConfigCreateV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class PromotionAutoGenerateConfigCreateV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30PromotionAutoGenerateConfigCreatePost(request: OpenApiV30PromotionAutoGenerateConfigCreatePostRequest): Promise<PromotionAutoGenerateConfigCreateV30Response> {
+  async openApiV30PromotionAutoGenerateConfigCreatePost(request: PromotionAutoGenerateConfigCreateV30Request): Promise<PromotionAutoGenerateConfigCreateV30Response> {
     const response = await this.openApiV30PromotionAutoGenerateConfigCreatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30PromotionAutoGenerateConfigCreatePostWithHttpInfo(request: OpenApiV30PromotionAutoGenerateConfigCreatePostRequest): Promise<ApiResponse<PromotionAutoGenerateConfigCreateV30Response>> {
-
+  async openApiV30PromotionAutoGenerateConfigCreatePostWithHttpInfo(request: PromotionAutoGenerateConfigCreateV30Request): Promise<ApiResponse<PromotionAutoGenerateConfigCreateV30Response>> {
     return this.apiClient.requestWithHttpInfo<PromotionAutoGenerateConfigCreateV30Response>({
       method: "POST",
       path: "/open_api/v3.0/promotion/auto_generate_config/create/",
       queryParams: [
 
       ],
-      body: request.promotionAutoGenerateConfigCreateV30Request
+      body: request
     });
   }
 }

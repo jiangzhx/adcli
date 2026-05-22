@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { AicMixcutTaskSaveV30Request, AicMixcutTaskSaveV30Response } from "../models";
 
 
-export interface OpenApiV30AicMixcutTaskSavePostRequest {
-  aicMixcutTaskSaveV30Request?: AicMixcutTaskSaveV30Request;
-}
-
 export class AicMixcutTaskSaveV30Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class AicMixcutTaskSaveV30Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV30AicMixcutTaskSavePost(request: OpenApiV30AicMixcutTaskSavePostRequest): Promise<AicMixcutTaskSaveV30Response> {
+  async openApiV30AicMixcutTaskSavePost(request: AicMixcutTaskSaveV30Request): Promise<AicMixcutTaskSaveV30Response> {
     const response = await this.openApiV30AicMixcutTaskSavePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV30AicMixcutTaskSavePostWithHttpInfo(request: OpenApiV30AicMixcutTaskSavePostRequest): Promise<ApiResponse<AicMixcutTaskSaveV30Response>> {
-
+  async openApiV30AicMixcutTaskSavePostWithHttpInfo(request: AicMixcutTaskSaveV30Request): Promise<ApiResponse<AicMixcutTaskSaveV30Response>> {
     return this.apiClient.requestWithHttpInfo<AicMixcutTaskSaveV30Response>({
       method: "POST",
       path: "/open_api/v3.0/aic/mixcut_task/save/",
       queryParams: [
 
       ],
-      body: request.aicMixcutTaskSaveV30Request
+      body: request
     });
   }
 }

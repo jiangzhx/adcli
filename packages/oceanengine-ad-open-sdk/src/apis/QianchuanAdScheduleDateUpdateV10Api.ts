@@ -7,10 +7,6 @@ import type { ApiResponse } from "../runtime/ApiResponse";
 import type { QianchuanAdScheduleDateUpdateV10Request, QianchuanAdScheduleDateUpdateV10Response } from "../models";
 
 
-export interface OpenApiV10QianchuanAdScheduleDateUpdatePostRequest {
-  qianchuanAdScheduleDateUpdateV10Request?: QianchuanAdScheduleDateUpdateV10Request;
-}
-
 export class QianchuanAdScheduleDateUpdateV10Api {
   constructor(private apiClient = new ApiClient()) {}
 
@@ -22,20 +18,19 @@ export class QianchuanAdScheduleDateUpdateV10Api {
     this.apiClient = apiClient;
   }
 
-  async openApiV10QianchuanAdScheduleDateUpdatePost(request: OpenApiV10QianchuanAdScheduleDateUpdatePostRequest): Promise<QianchuanAdScheduleDateUpdateV10Response> {
+  async openApiV10QianchuanAdScheduleDateUpdatePost(request: QianchuanAdScheduleDateUpdateV10Request): Promise<QianchuanAdScheduleDateUpdateV10Response> {
     const response = await this.openApiV10QianchuanAdScheduleDateUpdatePostWithHttpInfo(request);
     return response.data;
   }
 
-  async openApiV10QianchuanAdScheduleDateUpdatePostWithHttpInfo(request: OpenApiV10QianchuanAdScheduleDateUpdatePostRequest): Promise<ApiResponse<QianchuanAdScheduleDateUpdateV10Response>> {
-
+  async openApiV10QianchuanAdScheduleDateUpdatePostWithHttpInfo(request: QianchuanAdScheduleDateUpdateV10Request): Promise<ApiResponse<QianchuanAdScheduleDateUpdateV10Response>> {
     return this.apiClient.requestWithHttpInfo<QianchuanAdScheduleDateUpdateV10Response>({
       method: "POST",
       path: "/open_api/v1.0/qianchuan/ad/schedule_date/update/",
       queryParams: [
 
       ],
-      body: request.qianchuanAdScheduleDateUpdateV10Request
+      body: request
     });
   }
 }
