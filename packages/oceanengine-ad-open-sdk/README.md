@@ -2,6 +2,34 @@
 
 基于巨量引擎官方 Go SDK [`github.com/oceanengine/ad_open_sdk_go`](https://github.com/oceanengine/ad_open_sdk_go) porting 生成的 Node.js/TypeScript SDK。
 
+## 安装
+
+```bash
+npm install @jiangzhx/oceanengine-ad-open-sdk
+```
+
+当前 npm `latest` 指向 `1.1.87-port.1`。这个版本对标官方 Go SDK `github.com/oceanengine/ad_open_sdk_go@1.1.87`。
+
+## 使用入口
+
+统一从包入口导入：
+
+```ts
+import {
+  ApiClient,
+  ReportCustomConfigGetV30Api,
+  ReportCustomConfigGetV30DataTopics,
+} from "@jiangzhx/oceanengine-ad-open-sdk";
+
+const client = new ApiClient().setAccessToken("access-token");
+const api = new ReportCustomConfigGetV30Api(client);
+
+await api.openApiV30ReportCustomConfigGetGet({
+  advertiserId: 123,
+  dataTopics: [ReportCustomConfigGetV30DataTopics.BASIC_DATA],
+});
+```
+
 ## Porting 来源
 
 当前 SDK 的目标源码是官方 Go SDK：
@@ -9,7 +37,7 @@
 - Go module: `github.com/oceanengine/ad_open_sdk_go`
 - 当前源码版本: `1.1.87`
 - 版本来源: Go SDK `config/configuration.go` 中的 `config.Version`
-- 本包生成版本记录: `src/manifest.json` 的 `sourceVersion`
+- 仓库源码中的生成版本记录: `src/manifest.json` 的 `sourceVersion`
 
 当前生成链路直接读取 Go SDK 源码里的 `api/*.go` 和 `models/*.go`，再生成 TypeScript API、类型模型和运行时调用配置。
 
@@ -36,9 +64,9 @@ bun run codegen:oceanengine:generate /path/to/ad_open_sdk_go
 
 生成时会跳过 Go SDK 中非具体接口源码，例如 `api_common.go`、`client.go`、`middleware.go`。这些文件对应的是通用 runtime 行为，本 SDK 在 `src/runtime/` 中维护 TypeScript 实现。
 
-## 当前包形态
+## 包形态
 
-当前 SDK 已经收口成独立源码包：
+源码仓库中的 SDK 子项目结构：
 
 ```txt
 packages/oceanengine-ad-open-sdk/
@@ -62,7 +90,7 @@ packages/oceanengine-ad-open-sdk/
     models/
 ```
 
-`package.json` 的 exports 指向 `dist` 构建产物；`prepack` 会在打包前执行 `bun run build`，生成可被 Node.js 直接导入的 ESM `.js` 文件和 `.d.ts` 类型声明。
+发布到 npm 的包只包含 `dist/`、`README.md` 和 `package.json`。`package.json` 的 exports 指向 `dist` 构建产物；`prepack` 会在打包前执行 `bun run build`，生成可被 Node.js 直接导入的 ESM `.js` 文件和 `.d.ts` 类型声明。
 
 生成输出结构：
 
@@ -89,24 +117,4 @@ bun run build
 bun run typecheck
 bun run test
 npm pack --dry-run
-```
-
-## 使用入口
-
-统一从包入口导入：
-
-```ts
-import {
-  ApiClient,
-  ReportCustomConfigGetV30Api,
-  ReportCustomConfigGetV30DataTopics,
-} from "@jiangzhx/oceanengine-ad-open-sdk";
-
-const client = new ApiClient().setAccessToken("access-token");
-const api = new ReportCustomConfigGetV30Api(client);
-
-await api.openApiV30ReportCustomConfigGetGet({
-  advertiserId: 123,
-  dataTopics: [ReportCustomConfigGetV30DataTopics.BASIC_DATA],
-});
 ```
