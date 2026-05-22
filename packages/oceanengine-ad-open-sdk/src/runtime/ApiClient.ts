@@ -1,9 +1,10 @@
 import { ApiException } from "./ApiException";
 import { parseJsonPreservingLargeIntegers } from "./json";
+import { SDK_VERSION } from "./sdk-version";
 import type { ApiResponse } from "./ApiResponse";
 import type { FetchLike, QueryParam, RequestOptions } from "./types";
 
-export const SDK_VERSION = "0.0.0-phase-a";
+export { SDK_VERSION };
 
 export class ApiClient {
   private basePath = "https://api.oceanengine.com";

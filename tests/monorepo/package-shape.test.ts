@@ -12,6 +12,9 @@ describe("monorepo package shape", () => {
     expect(pkg.scripts["sdk:test"]).toBe("bun run sdk:oceanengine:test");
     expect(pkg.scripts["sdk:typecheck"]).toBe("bun run sdk:oceanengine:typecheck");
     expect(pkg.scripts["codegen:oceanengine:test"]).toBe("bun run --cwd packages/codegen test:oceanengine");
+    expect(pkg.scripts["codegen:oceanengine:generate"]).toBe("bun run --cwd packages/codegen generate:oceanengine");
+    expect(pkg.scripts["codegen:oceanengine:generate:go"]).toBe("bun run --cwd packages/codegen generate:oceanengine:go");
+    expect(pkg.scripts["codegen:oceanengine:phase-a"]).toBeUndefined();
     expect(pkg.scripts["codegen:test"]).toBe("bun run --cwd packages/codegen test");
     expect(pkg.scripts["codegen:typecheck"]).toBe("bun run --cwd packages/codegen typecheck");
     expect(pkg.scripts["test:all"]).toBe("bun run test && bun run sdk:test && bun run codegen:test");
@@ -23,7 +26,9 @@ describe("monorepo package shape", () => {
 
     expect(pkg.name).toBe("@jiangzhx/adcli-codegen");
     expect(pkg.private).toBe(true);
-    expect(pkg.scripts["generate:oceanengine"]).toBe("bun run scripts/oceanengine/generate-from-java-sdk.ts");
+    expect(pkg.scripts["generate:oceanengine"]).toBe("bun run src/oceanengine/generate-from-go-sdk.ts");
+    expect(pkg.scripts["phase-a:oceanengine"]).toBeUndefined();
+    expect(pkg.scripts["codex:oceanengine:port-apis"]).toBeUndefined();
     expect(pkg.scripts["test:oceanengine"]).toBe("bun test test/oceanengine/*.test.ts");
   });
 });

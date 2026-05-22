@@ -3,7 +3,7 @@ import { mkdir, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, test } from "bun:test";
-import { generateFromGoSdk } from "../../scripts/oceanengine/generate-from-go-sdk";
+import { generateFromGoSdk } from "../../src/oceanengine/generate-from-go-sdk";
 
 describe("go generation workflow", () => {
   test("scans Go api and model directories and emits request object APIs", async () => {
@@ -11,8 +11,10 @@ describe("go generation workflow", () => {
     const outDir = mkdtempSync(join(tmpdir(), "oceanengine-node-sdk-go-"));
     try {
       await mkdir(join(root, "api"), { recursive: true });
+      await mkdir(join(root, "config"), { recursive: true });
       await mkdir(join(root, "models"), { recursive: true });
       writeFileSync(join(root, "api/api_report_custom_config_get_v30.go"), goApiSource());
+      writeFileSync(join(root, "config/configuration.go"), goConfigSource());
       writeFileSync(join(root, "models/model_report_custom_config_get_v3_0_response.go"), goModelSource("ReportCustomConfigGetV30Response"));
       writeFileSync(join(root, "models/model_report_custom_config_get_v3_0_data_topics.go"), goEnumSource());
 
@@ -33,7 +35,9 @@ describe("go generation workflow", () => {
       );
       const manifest = JSON.parse(readFileSync(join(outDir, "manifest.json"), "utf8")) as Record<string, unknown>;
       expect(manifest.source).toBe("go");
+      expect(manifest.sourceVersion).toBe("1.1.87");
       expect("goSdkRoot" in manifest).toBe(false);
+      expect(readFileSync(join(outDir, "runtime", "sdk-version.ts"), "utf8")).toContain('export const SDK_VERSION = "1.1.87";');
       expect(readFileSync(join(outDir, "apis", "ReportCustomConfigGetV30Api.ts"), "utf8")).not.toContain(root);
     } finally {
       await rm(root, { recursive: true, force: true });
@@ -41,6 +45,14 @@ describe("go generation workflow", () => {
     }
   });
 });
+
+function goConfigSource() {
+  return `
+package config
+
+const Version = "1.1.87"
+`;
+}
 
 function goApiSource() {
   return `

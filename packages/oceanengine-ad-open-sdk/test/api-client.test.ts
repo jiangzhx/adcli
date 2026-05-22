@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { ApiClient } from "../src/runtime/ApiClient";
+import { ApiClient, SDK_VERSION } from "../src/runtime/ApiClient";
 import { ApiException } from "../src/runtime/ApiException";
 
 function jsonResponse(body: unknown, init: ResponseInit = {}) {
@@ -27,7 +27,7 @@ function rawJsonResponse(body: string, init: ResponseInit = {}) {
 }
 
 describe("ApiClient", () => {
-  test("sets Java SDK compatible default headers", async () => {
+  test("sets Go SDK compatible default headers", async () => {
     const requests: Request[] = [];
     const client = new ApiClient({
       fetch: async (input) => {
@@ -41,7 +41,7 @@ describe("ApiClient", () => {
     expect(requests).toHaveLength(1);
     expect(requests[0].headers.get("User-Agent")).toBe("Bytedance Ads Openapi SDK");
     expect(requests[0].headers.get("X-Sdk-Language")).toBe("node");
-    expect(requests[0].headers.get("X-Sdk-Version")).toBeTruthy();
+    expect(requests[0].headers.get("X-Sdk-Version")).toBe(SDK_VERSION);
   });
 
   test("sends Access-Token after setAccessToken", async () => {

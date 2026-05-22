@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseGoApiSource, parseGoModelSource } from "./go-parser";
 import { emitApiClass, emitModelModule } from "./typescript-emitter";
-import type { JavaApiSpec, JavaModelSpec } from "./java-parser";
+import type { ApiSpec, ModelSpec } from "./spec";
 
 export interface GoPortWorkflowOptions {
   goSdkRoot: string;
@@ -14,6 +14,7 @@ export interface GoPortWorkflowOptions {
 
 export interface GoPortWorkflowResult {
   source: "go";
+  sourceVersion: string;
   apis: number;
   models: number;
   skipped: Array<{ file: string; reason: string }>;
@@ -24,9 +25,10 @@ export async function runGoPortWorkflow(options: GoPortWorkflowOptions): Promise
   const outputDir = resolve(options.outputDir ?? defaultSdkOutputDir());
   const apiFiles = options.apiFiles ?? (await listGoFiles(goSdkRoot, "api"));
   const modelFiles = options.modelFiles ?? (await listGoFiles(goSdkRoot, "models"));
+  const sourceVersion = await readGoSdkVersion(goSdkRoot);
   const skipped: Array<{ file: string; reason: string }> = [];
-  const apiSpecs: JavaApiSpec[] = [];
-  const modelSpecs: JavaModelSpec[] = [];
+  const apiSpecs: ApiSpec[] = [];
+  const modelSpecs: ModelSpec[] = [];
 
   await prepareOutputDir(outputDir);
 
@@ -48,6 +50,7 @@ export async function runGoPortWorkflow(options: GoPortWorkflowOptions): Promise
 
   const result: GoPortWorkflowResult = {
     source: "go",
+    sourceVersion,
     apis: apiSpecs.length,
     models: modelSpecs.length,
     skipped,
@@ -58,7 +61,6 @@ export async function runGoPortWorkflow(options: GoPortWorkflowOptions): Promise
       writeFile(
         join(outputDir, "apis", `${spec.className}.ts`),
         `${generatedHeader()}\n${emitApiClass(spec, {
-          parameterStyle: "requestObject",
           runtimePrefix: "../runtime",
           modelsModule: "../models",
         })}\n`,
@@ -72,6 +74,7 @@ export async function runGoPortWorkflow(options: GoPortWorkflowOptions): Promise
   );
   await writeFile(join(outputDir, "apis.ts"), `${generatedHeader()}\n${emitBarrel(apiSpecs.map((spec) => `./apis/${spec.className}`))}`);
   await writeFile(join(outputDir, "models.ts"), `${generatedHeader()}\n${emitBarrel(modelSpecs.map((spec) => `./models/${spec.name}`))}`);
+  await writeFile(join(outputDir, "runtime", "sdk-version.ts"), emitSdkVersion(sourceVersion));
   await writeFile(join(outputDir, "manifest.json"), `${JSON.stringify(result, null, 2)}\n`);
 
   return result;
@@ -89,9 +92,11 @@ async function prepareOutputDir(outputDir: string) {
     rm(join(outputDir, "apis.ts"), { force: true }),
     rm(join(outputDir, "models.ts"), { force: true }),
     rm(join(outputDir, "manifest.json"), { force: true }),
+    rm(join(outputDir, "runtime", "sdk-version.ts"), { force: true }),
   ]);
   await mkdir(join(outputDir, "apis"), { recursive: true });
   await mkdir(join(outputDir, "models"), { recursive: true });
+  await mkdir(join(outputDir, "runtime"), { recursive: true });
 }
 
 async function listGoFiles(goSdkRoot: string, kind: "api" | "models") {
@@ -102,6 +107,15 @@ async function readGoFile(goSdkRoot: string, kind: "api" | "models", file: strin
   return readFile(join(goSdkRoot, kind, file), "utf8");
 }
 
+async function readGoSdkVersion(goSdkRoot: string) {
+  const source = await readFile(join(goSdkRoot, "config", "configuration.go"), "utf8");
+  const match = source.match(/const\s+Version\s*=\s*"([^"]+)"/);
+  if (!match) {
+    throw new Error("Unable to parse Go SDK Version from config/configuration.go");
+  }
+  return match[1];
+}
+
 function generatedHeader() {
   return `// Generated from oceanengine/ad_open_sdk_go
 // Do not edit manually.
@@ -110,4 +124,8 @@ function generatedHeader() {
 
 function emitBarrel(modules: string[]) {
   return `${modules.map((modulePath) => `export * from "${modulePath}";`).join("\n")}\n`;
+}
+
+function emitSdkVersion(version: string) {
+  return `${generatedHeader()}\nexport const SDK_VERSION = ${JSON.stringify(version)};\n`;
 }

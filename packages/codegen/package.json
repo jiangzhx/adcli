@@ -3,10 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate:oceanengine": "bun run scripts/oceanengine/generate-from-java-sdk.ts",
-    "generate:oceanengine:go": "bun run scripts/oceanengine/generate-from-go-sdk.ts",
-    "phase-a:oceanengine": "bun run scripts/oceanengine/phase-a-generate.ts",
-    "codex:oceanengine:port-apis": "bun run scripts/oceanengine/codex-port-api-files.ts",
+    "generate:oceanengine": "bun run src/oceanengine/generate-from-go-sdk.ts",
+    "generate:oceanengine:go": "bun run src/oceanengine/generate-from-go-sdk.ts",
     "test:oceanengine": "bun test test/oceanengine/*.test.ts",
     "test": "bun run test:oceanengine",
     "typecheck": "tsc -p tsconfig.json --noEmit"

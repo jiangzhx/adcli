@@ -1,6 +1,6 @@
-import type { JavaApiSpec, JavaModelSpec } from "./java-parser";
+import type { ApiSpec, ModelSpec } from "./spec";
 
-export function parseGoApiSource(source: string, filename: string): JavaApiSpec {
+export function parseGoApiSource(source: string, filename: string): ApiSpec {
   const serviceName = requireMatch(source, /type\s+(\w+ApiService)\s+service/, filename, "service name");
   const requestMatch = source.match(/type\s+(Api\w+Request)\s+struct\s*\{([\s\S]*?)\n\}/);
   if (!requestMatch) {
@@ -29,7 +29,7 @@ export function parseGoApiSource(source: string, filename: string): JavaApiSpec 
   };
 }
 
-export function parseGoModelSource(source: string, filename: string): JavaModelSpec {
+export function parseGoModelSource(source: string, filename: string): ModelSpec {
   const enumName = source.match(/type\s+(\w+)\s+(?:string|int|int32|int64|float32|float64)/)?.[1];
   if (enumName && /const\s*\(/.test(source)) {
     return {
