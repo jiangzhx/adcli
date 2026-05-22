@@ -1,0 +1,8 @@
+export declare const PlayablePageAuditStatus: {
+    readonly PLAYABLE_PAGE_AUDIT_STATUS_UNKNOWN: "PLAYABLE_PAGE_AUDIT_STATUS_UNKNOWN";
+    readonly PLAYABLE_PAGE_AUDIT_STATUS_PENDING: "PLAYABLE_PAGE_AUDIT_STATUS_PENDING";
+    readonly PLAYABLE_PAGE_AUDIT_STATUS_APPROVED: "PLAYABLE_PAGE_AUDIT_STATUS_APPROVED";
+    readonly PLAYABLE_PAGE_AUDIT_STATUS_REJECTED: "PLAYABLE_PAGE_AUDIT_STATUS_REJECTED";
+    readonly UNKNOWN: "UNKNOWN";
+};
+export type PlayablePageAuditStatus = typeof PlayablePageAuditStatus[keyof typeof PlayablePageAuditStatus];

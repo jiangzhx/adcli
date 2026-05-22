@@ -1,0 +1,19 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+export const AdgroupSysStatus = {
+  NORMAL: "AD_GROUP_STATUS_NORMAL",
+  PENDING: "AD_GROUP_STATUS_PENDING",
+  DENIED: "AD_GROUP_STATUS_DENIED",
+  FROZEN: "AD_GROUP_STATUS_FROZEN",
+  PARTIALLY_PENDING: "AD_GROUP_STATUS_PARTIALLY_PENDING",
+  PARTIALLY_NORMAL: "AD_GROUP_STATUS_PARTIALLY_NORMAL",
+  PREPARE: "AD_GROUP_STATUS_PREPARE",
+  DELETED: "AD_GROUP_STATUS_DELETED",
+  INVALID: "AD_GROUP_STATUS_INVALID",
+  TO_BE_STARTED: "AD_GROUP_STATUS_TO_BE_STARTED",
+  ENDED: "AD_GROUP_STATUS_ENDED",
+} as const;
+
+export type AdgroupSysStatus = typeof AdgroupSysStatus[keyof typeof AdgroupSysStatus];
+

@@ -1,0 +1,8 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+export interface ResizeSpec {
+  width?: number;
+  height?: number;
+}
+

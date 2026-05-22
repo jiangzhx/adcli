@@ -1,0 +1,12 @@
+export declare const HeadClickType: {
+    readonly DEFAULT: "HEAD_CLICK_TYPE_DEFAULT";
+    readonly CUSTOMIZED: "HEAD_CLICK_TYPE_CUSTOMIZED";
+    readonly CELEBRITY_ACCOUNT: "HEAD_CLICK_TYPE_CELEBRITY_ACCOUNT";
+    readonly VIRTUAL_ACCOUNT: "HEAD_CLICK_TYPE_VIRTUAL_ACCOUNT";
+    readonly LIVE_PROFILE: "HEAD_CLICK_TYPE_LIVE_PROFILE";
+    readonly LIVE_EVENT: "HEAD_CLICK_TYPE_LIVE_EVENT";
+    readonly BRAND_PROGRAM: "HEAD_CLICK_TYPE_BRAND_PROGRAM";
+    readonly CNY_PROFILE: "HEAD_CLICK_TYPE_CNY_PROFILE";
+    readonly SEARCH_BRAND_AREA: "HEAD_CLICK_TYPE_SEARCH_BRAND_AREA";
+};
+export type HeadClickType = typeof HeadClickType[keyof typeof HeadClickType];

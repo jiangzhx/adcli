@@ -1,0 +1,8 @@
+import type { ApiErrorStruct, WechatShopAuthorizationAddResponseData } from "../models";
+export interface WechatShopAuthorizationAddResponse {
+    code?: number;
+    message?: string;
+    message_cn?: string;
+    errors?: ApiErrorStruct[];
+    data?: WechatShopAuthorizationAddResponseData;
+}

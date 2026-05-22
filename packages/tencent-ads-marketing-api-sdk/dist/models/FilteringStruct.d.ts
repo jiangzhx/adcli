@@ -1,0 +1,6 @@
+import type { FilterOperator } from "../models";
+export interface FilteringStruct {
+    field?: string;
+    operator?: FilterOperator;
+    values?: string[];
+}

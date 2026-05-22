@@ -1,0 +1,10 @@
+export declare const LeadCluesLeadsIneffectReason: {
+    readonly EMPTY: "LEADS_INEFFECT_REASON_EMPTY";
+    readonly IDENTITY_MISMATCHED: "LEADS_INEFFECT_REASON_IDENTITY_MISMATCHED";
+    readonly REGION_MISMATCHED: "LEADS_INEFFECT_REASON_REGION_MISMATCHED";
+    readonly DATA_DUPLICATION: "LEADS_INEFFECT_REASON_DATA_DUPLICATION";
+    readonly TEL_NOT_CONNECTED: "LEADS_INEFFECT_REASON_TEL_NOT_CONNECTED";
+    readonly NO_INTENTION: "LEADS_INEFFECT_REASON_NO_INTENTION";
+    readonly UNKNOWN: "LEADS_INEFFECT_REASON_UNKNOWN";
+};
+export type LeadCluesLeadsIneffectReason = typeof LeadCluesLeadsIneffectReason[keyof typeof LeadCluesLeadsIneffectReason];

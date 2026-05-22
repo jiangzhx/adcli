@@ -1,0 +1,12 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+export const ComponentMetadataFieldType = {
+    UNKNOWN: "UNKNOWN",
+    STRING: "STRING",
+    INT: "INT",
+    BOOL: "BOOL",
+    STRING_ARRAY: "STRING_ARRAY",
+    INT_ARRAY: "INT_ARRAY",
+    STRUCTURE: "STRUCTURE",
+    STRUCTURE_ARRAY: "STRUCTURE_ARRAY",
+};

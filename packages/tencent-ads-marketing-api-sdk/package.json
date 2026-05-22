@@ -1,0 +1,46 @@
+{
+  "name": "@jiangzhx/tencent-ads-marketing-api-sdk",
+  "version": "1.7.84-port.1",
+  "description": "TypeScript SDK for Tencent Ads Marketing API.",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./apis": {
+      "types": "./dist/apis.d.ts",
+      "import": "./dist/apis.js"
+    },
+    "./models": {
+      "types": "./dist/models.d.ts",
+      "import": "./dist/models.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "prepack": "bun run build",
+    "test": "bun test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "typescript": ">=5"
+  },
+  "devDependencies": {
+    "@types/json-bigint": "^1.0.4",
+    "@types/node": "^20",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "json-bigint": "^1.0.0"
+  }
+}

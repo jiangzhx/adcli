@@ -1,0 +1,47 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+import { ApiClient } from "../runtime/ApiClient";
+import { ApiException } from "../runtime/ApiException";
+import type { ApiResponse } from "../runtime/ApiResponse";
+import type { ObjectCommentFlagUpdateRequest } from "../models";
+
+export interface ObjectCommentFlagApiUpdateRequest {
+  data: ObjectCommentFlagUpdateRequest;
+}
+
+
+export class ObjectCommentFlagApi {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async update(request: ObjectCommentFlagApiUpdateRequest): Promise<unknown> {
+    const response = await this.updateWithHttpInfo(request);
+    return response.data;
+  }
+
+  async updateWithHttpInfo(request: ObjectCommentFlagApiUpdateRequest): Promise<ApiResponse<unknown>> {
+    if (request.data == null) {
+      throw new ApiException("Missing the required parameter 'data' when calling update");
+    }
+    return this.apiClient.requestWithHttpInfo<unknown>({
+      method: "POST",
+      path: "/object_comment_flag/update",
+      queryParams: [
+
+      ],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+
+}
+
+

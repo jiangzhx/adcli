@@ -1,0 +1,13 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+import type { AdcreativeElementArrayProperty, AdcreativeElementEnumProperty, NumberRestriction, StructDetail, TextRestriction } from "../models";
+
+export interface PropertyDetail {
+  string_detail?: TextRestriction;
+  integer_detail?: NumberRestriction;
+  enum_detail?: AdcreativeElementEnumProperty;
+  struct_detail?: StructDetail;
+  array_restriction?: AdcreativeElementArrayProperty;
+}
+

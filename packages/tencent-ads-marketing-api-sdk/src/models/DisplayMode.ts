@@ -1,0 +1,10 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+export const DisplayMode = {
+  DEFAULT: "DEFAULT",
+  CAROUSEL: "CAROUSEL",
+} as const;
+
+export type DisplayMode = typeof DisplayMode[keyof typeof DisplayMode];
+

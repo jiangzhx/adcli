@@ -1,0 +1,85 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+import type { AdCreativeBrand, AdCreativeCountdownTimeType, AdCreativeEndPage, AdCreativeLivingDescStruct, AdCreativeMiniCardLink, AdCreativeShopImageStruct, AdCreativeWechatChannelsSpec, AdcreativeBannerContent, AdcreativeCardContent, AdcreativeCorporate, AdcreativeElementStoryArrayItem, AdcreativeLabelledImg, AdcreativeLogoPage, AdcreativeVideoPopupButton, ChosenButton, CreativeLabel, FloatingZone, LandingPageStructure, LinkNameType, LongVideoStruct, RedEnvelopePacketSpec, RedEnvelopeStruct, ShortVideoStruct, WechatChannelsCoverImgShowType, WegameInfoSpec, WxgamePlayablePageSpec } from "../models";
+
+export interface AdcreativeCreativeElementsRead {
+  image?: string;
+  image2?: string;
+  image3?: string;
+  title?: string;
+  description?: string;
+  corporate?: AdcreativeCorporate;
+  video?: string;
+  deep_link_type?: string;
+  link_name_type?: LinkNameType;
+  image_list?: string[];
+  element_story?: AdcreativeElementStoryArrayItem[];
+  url?: string;
+  button_text?: string;
+  bottom_text?: string;
+  excitation_text?: string;
+  countdown_begin?: number;
+  countdown_expiring_timestamp?: number;
+  countdown_price?: string;
+  countdown_time_type?: AdCreativeCountdownTimeType;
+  label?: CreativeLabel[];
+  product_tags?: string[];
+  logo_description?: string;
+  logo?: string;
+  left_button?: string;
+  right_button?: string;
+  left_bottom_txt?: string;
+  animation_effect?: string;
+  phone?: string;
+  caption?: string;
+  logo_page?: AdcreativeLogoPage;
+  video_popup_url?: string;
+  video_popup_button?: AdcreativeVideoPopupButton;
+  video_popup_button_text?: string;
+  video_popup_button_url?: string;
+  button_url?: string;
+  long_video1?: string;
+  long_video2?: string;
+  short_video_struct?: ShortVideoStruct;
+  qzone_video_page_id?: string;
+  qq?: string;
+  left_canvas?: string;
+  right_canvas?: string;
+  sun_text?: string;
+  cloud_text?: string;
+  overcast_text?: string;
+  rain_text?: string;
+  snow_text?: string;
+  fog_text?: string;
+  sand_text?: string;
+  haze_text?: string;
+  labelled_img?: AdcreativeLabelledImg;
+  share_img?: string;
+  long_video_struct?: LongVideoStruct;
+  banner_content?: AdcreativeBannerContent;
+  card_content?: AdcreativeCardContent;
+  brand?: AdCreativeBrand;
+  full_screen_image?: string;
+  zip_url?: string;
+  end_page?: AdCreativeEndPage;
+  head_line?: string;
+  shop_image_struct?: AdCreativeShopImageStruct;
+  chosen_button?: ChosenButton;
+  living_desc_struct?: AdCreativeLivingDescStruct;
+  floating_zone_struct?: FloatingZone;
+  canvas_share_image?: string;
+  wegame_info_spec?: WegameInfoSpec;
+  wechat_channels_spec?: AdCreativeWechatChannelsSpec;
+  finder_object_visibility?: boolean;
+  image_list_jump_info?: LandingPageStructure[];
+  origin_video?: string;
+  red_envelope_struct?: RedEnvelopeStruct;
+  button_text_jump_info?: LandingPageStructure;
+  wxgame_playable_page_spec?: WxgamePlayablePageSpec;
+  main_jump_info?: LandingPageStructure[];
+  wechat_channels_cover_img_show_type?: WechatChannelsCoverImgShowType;
+  mini_card_link?: AdCreativeMiniCardLink;
+  red_envelope_packet_list?: RedEnvelopePacketSpec[];
+}
+

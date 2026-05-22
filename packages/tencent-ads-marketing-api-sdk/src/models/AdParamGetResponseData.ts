@@ -1,0 +1,11 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+import type { AdParamListStruct } from "../models";
+
+export interface AdParamGetResponseData {
+  system_ad_param_list?: AdParamListStruct[];
+  product_ad_param_list?: AdParamListStruct[];
+  dynamic_content_ad_param_list?: AdParamListStruct[];
+}
+

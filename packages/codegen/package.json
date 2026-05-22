@@ -5,8 +5,11 @@
   "scripts": {
     "generate:oceanengine": "bun run src/oceanengine/generate-from-go-sdk.ts",
     "generate:oceanengine:go": "bun run src/oceanengine/generate-from-go-sdk.ts",
+    "generate:tencent-ads": "bun run src/tencent-ads/generate-from-go-sdk.ts",
+    "generate:tencent-ads:go": "bun run src/tencent-ads/generate-from-go-sdk.ts",
     "test:oceanengine": "bun test test/oceanengine/*.test.ts",
-    "test": "bun run test:oceanengine",
+    "test:tencent-ads": "bun test test/tencent-ads/*.test.ts",
+    "test": "bun run test:oceanengine && bun run test:tencent-ads",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {

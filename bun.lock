@@ -41,6 +41,21 @@
         "typescript": ">=5",
       },
     },
+    "packages/tencent-ads-marketing-api-sdk": {
+      "name": "@jiangzhx/tencent-ads-marketing-api-sdk",
+      "version": "1.7.84-port.1",
+      "dependencies": {
+        "json-bigint": "^1.0.0",
+      },
+      "devDependencies": {
+        "@types/json-bigint": "^1.0.4",
+        "@types/node": "^20",
+        "typescript": "^5",
+      },
+      "peerDependencies": {
+        "typescript": ">=5",
+      },
+    },
   },
   "packages": {
     "@apify/consts": ["@apify/consts@2.53.1", "", {}, "sha512-dIapeviS1DubmhMLQVHj19nmGllgvFV8ZQTqsnYYperuKjVaTwoEs+dKoRmOnm+OvkZcVQOyDGnbQUoXsCghgw=="],
@@ -136,6 +151,8 @@
     "@jiangzhx/adcli-codegen": ["@jiangzhx/adcli-codegen@workspace:packages/codegen"],
 
     "@jiangzhx/oceanengine-ad-open-sdk": ["@jiangzhx/oceanengine-ad-open-sdk@workspace:packages/oceanengine-ad-open-sdk"],
+
+    "@jiangzhx/tencent-ads-marketing-api-sdk": ["@jiangzhx/tencent-ads-marketing-api-sdk@workspace:packages/tencent-ads-marketing-api-sdk"],
 
     "@keyv/serialize": ["@keyv/serialize@1.1.1", "", {}, "sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA=="],
 

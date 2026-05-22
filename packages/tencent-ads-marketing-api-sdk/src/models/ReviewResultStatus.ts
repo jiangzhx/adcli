@@ -1,0 +1,12 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+export const ReviewResultStatus = {
+  NORMAL: "AD_STATUS_NORMAL",
+  PENDING: "AD_STATUS_PENDING",
+  DENIED: "AD_STATUS_DENIED",
+  PARTIALLY_NORMAL: "AD_STATUS_PARTIALLY_NORMAL",
+} as const;
+
+export type ReviewResultStatus = typeof ReviewResultStatus[keyof typeof ReviewResultStatus];
+

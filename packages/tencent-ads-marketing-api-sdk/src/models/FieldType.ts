@@ -1,0 +1,17 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+export const FieldType = {
+  STRING: "FIELD_TYPE_STRING",
+  ENUM: "FIELD_TYPE_ENUM",
+  INTEGER: "FIELD_TYPE_INTEGER",
+  STRUCT: "FIELD_TYPE_STRUCT",
+  INTEGER_ARRAY: "FIELD_TYPE_INTEGER_ARRAY",
+  ENUM_ARRAY: "FIELD_TYPE_ENUM_ARRAY",
+  STRING_ARRAY: "FIELD_TYPE_STRING_ARRAY",
+  STRUCT_ARRAY: "FIELD_TYPE_STRUCT_ARRAY",
+  BOOLEAN: "FIELD_TYPE_BOOLEAN",
+} as const;
+
+export type FieldType = typeof FieldType[keyof typeof FieldType];
+

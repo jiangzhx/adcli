@@ -1,0 +1,28 @@
+export declare const TourPlaceForeign: {
+    readonly VN: "TOUR_PLACE_FOREIGN_VN";
+    readonly AU: "TOUR_PLACE_FOREIGN_AU";
+    readonly PALAO: "TOUR_PLACE_FOREIGN_PALAO";
+    readonly BALI: "TOUR_PLACE_FOREIGN_BALI";
+    readonly FJ: "TOUR_PLACE_FOREIGN_FJ";
+    readonly PUJI: "TOUR_PLACE_FOREIGN_PUJI";
+    readonly MV: "TOUR_PLACE_FOREIGN_MV";
+    readonly JP: "TOUR_PLACE_FOREIGN_JP";
+    readonly TR: "TOUR_PLACE_FOREIGN_TR";
+    readonly GR: "TOUR_PLACE_FOREIGN_GR";
+    readonly FR: "TOUR_PLACE_FOREIGN_FR";
+    readonly IT: "TOUR_PLACE_FOREIGN_IT";
+    readonly BULAGE: "TOUR_PLACE_FOREIGN_BULAGE";
+    readonly XIANBENNA: "TOUR_PLACE_FOREIGN_XIANBENNA";
+    readonly MU: "TOUR_PLACE_FOREIGN_MU";
+    readonly GE: "TOUR_PLACE_FOREIGN_GE";
+    readonly SUMEI: "TOUR_PLACE_FOREIGN_SUMEI";
+    readonly SAIBAN: "TOUR_PLACE_FOREIGN_SAIBAN";
+    readonly JIZHOU: "TOUR_PLACE_FOREIGN_JIZHOU";
+    readonly SHABA: "TOUR_PLACE_FOREIGN_SHABA";
+    readonly DE: "TOUR_PLACE_FOREIGN_DE";
+    readonly LONDON: "TOUR_PLACE_FOREIGN_LONDON";
+    readonly SYDNEY: "TOUR_PLACE_FOREIGN_SYDNEY";
+    readonly NZ: "TOUR_PLACE_FOREIGN_NZ";
+    readonly JILONGPO: "TOUR_PLACE_FOREIGN_JILONGPO";
+};
+export type TourPlaceForeign = typeof TourPlaceForeign[keyof typeof TourPlaceForeign];

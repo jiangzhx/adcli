@@ -1,0 +1,7 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+export const SharedAccountType = {
+    INVALID: "INVALID",
+    ADVERTISER: "ADVERTISER",
+    ORGANIZATION: "ORGANIZATION",
+};

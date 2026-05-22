@@ -10,11 +10,16 @@ describe("monorepo package shape", () => {
     expect(pkg.devDependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBeUndefined();
     expect(pkg.scripts["sdk:oceanengine:test"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk test");
     expect(pkg.scripts["sdk:oceanengine:typecheck"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk typecheck");
-    expect(pkg.scripts["sdk:test"]).toBe("bun run sdk:oceanengine:test");
-    expect(pkg.scripts["sdk:typecheck"]).toBe("bun run sdk:oceanengine:typecheck");
+    expect(pkg.scripts["sdk:tencent-ads:test"]).toBe("bun run --cwd packages/tencent-ads-marketing-api-sdk test");
+    expect(pkg.scripts["sdk:tencent-ads:typecheck"]).toBe("bun run --cwd packages/tencent-ads-marketing-api-sdk typecheck");
+    expect(pkg.scripts["sdk:test"]).toBe("bun run sdk:oceanengine:test && bun run sdk:tencent-ads:test");
+    expect(pkg.scripts["sdk:typecheck"]).toBe("bun run sdk:oceanengine:typecheck && bun run sdk:tencent-ads:typecheck");
     expect(pkg.scripts["codegen:oceanengine:test"]).toBe("bun run --cwd packages/codegen test:oceanengine");
     expect(pkg.scripts["codegen:oceanengine:generate"]).toBe("bun run --cwd packages/codegen generate:oceanengine");
     expect(pkg.scripts["codegen:oceanengine:generate:go"]).toBe("bun run --cwd packages/codegen generate:oceanengine:go");
+    expect(pkg.scripts["codegen:tencent-ads:test"]).toBe("bun run --cwd packages/codegen test:tencent-ads");
+    expect(pkg.scripts["codegen:tencent-ads:generate"]).toBe("bun run --cwd packages/codegen generate:tencent-ads");
+    expect(pkg.scripts["codegen:tencent-ads:generate:go"]).toBe("bun run --cwd packages/codegen generate:tencent-ads:go");
     expect(pkg.scripts["codegen:oceanengine:phase-a"]).toBeUndefined();
     expect(pkg.scripts["codegen:test"]).toBe("bun run --cwd packages/codegen test");
     expect(pkg.scripts["codegen:typecheck"]).toBe("bun run --cwd packages/codegen typecheck");
@@ -31,5 +36,6 @@ describe("monorepo package shape", () => {
     expect(pkg.scripts["phase-a:oceanengine"]).toBeUndefined();
     expect(pkg.scripts["codex:oceanengine:port-apis"]).toBeUndefined();
     expect(pkg.scripts["test:oceanengine"]).toBe("bun test test/oceanengine/*.test.ts");
+    expect(pkg.scripts["test:tencent-ads"]).toBe("bun test test/tencent-ads/*.test.ts");
   });
 });

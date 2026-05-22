@@ -1,0 +1,38 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+import type { CreateScheduledUpdateAdgroupDailyBudgetItem, DeleteAccountComponentItem, DeleteAdgroupItem, DeleteDynamicCreativeItem, DeleteFinderObjectCommentItem, DeleteScheduledTaskItem, ProcessUserPageObjectItem, ReplyFinderObjectCommentItem, UpdateAdcreativeObjectCommentFlagItem, UpdateAdgroupAutoAcquisitionItem, UpdateAdgroupBidAmountItem, UpdateAdgroupBindRtaPolicyItem, UpdateAdgroupConfiguredStatusItem, UpdateAdgroupDailyBudgetItem, UpdateAdgroupDateItem, UpdateAdgroupDeepConversionWorthAdvancedRateItem, UpdateAdgroupDeepConversionWorthRateItem, UpdateAdgroupDeriveConfItem, UpdateAdgroupEcomPkamItem, UpdateAdgroupSmartDeliveryGoalItem, UpdateAdgroupTargetingTaskItem, UpdateAdgroupTimeItem, UpdateComponentSharingItem, UpdateDeepConversionBehaviorAdvancedBidItem, UpdateDeepConversionBehaviorBidItem, UpdateDynamicCreativeConfiguredStatusItem, UpdateDynamicCreativeSearchIntelligentExtensionItem, UpdateExcludeUnionPositionPackageItem, UpdateFinderObjectCommentFlagItem, UpdateUnionPositionPackageItem } from "../models";
+
+export interface TaskSpec {
+  update_union_position_package_spec?: UpdateUnionPositionPackageItem[];
+  update_exclude_union_position_package_spec?: UpdateExcludeUnionPositionPackageItem[];
+  update_deep_conversion_behavior_bid_spec?: UpdateDeepConversionBehaviorBidItem[];
+  delete_adgroup_spec?: DeleteAdgroupItem[];
+  update_adgroup_deep_conversion_worth_rate_spec?: UpdateAdgroupDeepConversionWorthRateItem[];
+  update_adgroup_configured_status_spec?: UpdateAdgroupConfiguredStatusItem[];
+  update_adgroup_daily_budget_spec?: UpdateAdgroupDailyBudgetItem[];
+  update_adgroup_auto_acquisition_spec?: UpdateAdgroupAutoAcquisitionItem[];
+  update_adgroup_deep_conversion_worth_advanced_rate_spec?: UpdateAdgroupDeepConversionWorthAdvancedRateItem[];
+  update_deep_conversion_behavior_advanced_bid_spec?: UpdateDeepConversionBehaviorAdvancedBidItem[];
+  reply_finder_object_comment_spec?: ReplyFinderObjectCommentItem[];
+  delete_finder_object_comment_spec?: DeleteFinderObjectCommentItem[];
+  update_finder_object_comment_flag_spec?: UpdateFinderObjectCommentFlagItem[];
+  update_adgroup_time_spec?: UpdateAdgroupTimeItem[];
+  update_adgroup_date_spec?: UpdateAdgroupDateItem[];
+  update_adgroup_bid_amount_spec?: UpdateAdgroupBidAmountItem[];
+  update_adgroup_bind_rta_policy_spec?: UpdateAdgroupBindRtaPolicyItem[];
+  update_adcreative_object_comment_flag_spec?: UpdateAdcreativeObjectCommentFlagItem[];
+  update_dynamic_creative_configured_status_spec?: UpdateDynamicCreativeConfiguredStatusItem[];
+  delete_dynamic_creative_spec?: DeleteDynamicCreativeItem[];
+  process_user_page_object_spec?: ProcessUserPageObjectItem[];
+  create_scheduled_update_adgroup_daily_budget_spec?: CreateScheduledUpdateAdgroupDailyBudgetItem[];
+  delete_scheduled_task_spec?: DeleteScheduledTaskItem[];
+  update_adgroup_targeting_task_spec?: UpdateAdgroupTargetingTaskItem[];
+  update_adgroup_ecom_pkam_spec?: UpdateAdgroupEcomPkamItem[];
+  update_adgroup_derive_conf_spec?: UpdateAdgroupDeriveConfItem[];
+  update_component_sharing_spec?: UpdateComponentSharingItem[];
+  update_adgroup_smart_delivery_goal_spec?: UpdateAdgroupSmartDeliveryGoalItem[];
+  delete_account_component_spec?: DeleteAccountComponentItem[];
+  update_dynamic_creative_search_intelligent_extension_spec?: UpdateDynamicCreativeSearchIntelligentExtensionItem[];
+}
+

@@ -1,0 +1,41 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+import type { MediaSourceType, MediaStatusType, MediaSystemStatus, MediaType, SimilarityStatus } from "../models";
+
+export interface VideosGetListStruct {
+  video_id?: number | string;
+  width?: number;
+  height?: number;
+  video_frames?: number;
+  video_fps?: number;
+  video_codec?: string;
+  video_bit_rate?: number;
+  audio_codec?: string;
+  audio_bit_rate?: number;
+  file_size?: number;
+  type?: MediaType;
+  signature?: string;
+  system_status?: MediaSystemStatus;
+  description?: string;
+  preview_url?: string;
+  key_frame_image_url?: string;
+  created_time?: number;
+  last_modified_time?: number;
+  video_profile_name?: string;
+  audio_sample_rate?: number;
+  max_keyframe_interval?: number;
+  min_keyframe_interval?: number;
+  sample_aspect_ratio?: string;
+  audio_profile_name?: string;
+  scan_type?: string;
+  image_duration_millisecond?: number;
+  audio_duration_millisecond?: number;
+  source_type?: MediaSourceType;
+  product_outer_id?: string;
+  source_reference_id?: string;
+  owner_account_id?: string;
+  status?: MediaStatusType;
+  similarity_status?: SimilarityStatus;
+}
+

@@ -1,0 +1,11 @@
+export declare const WechatAuthType: {
+    readonly DEFAULT: "DEFAULT";
+    readonly SAME_CORPORATION: "SAME_CORPORATION";
+    readonly OVER_CORPORATION: "OVER_CORPORATION";
+    readonly OVER_CORPORATION_SAME_GROUP: "OVER_CORPORATION_SAME_GROUP";
+    readonly OVER_CORPORATION_EMPLOYMENT: "OVER_CORPORATION_EMPLOYMENT";
+    readonly CUSTOMER_MANAGER: "CUSTOMER_MANAGER";
+    readonly CUSTOMER_BUSINESS_UNIT: "CUSTOMER_BUSINESS_UNIT";
+    readonly GROUP_BUSINESS_UNIT: "GROUP_BUSINESS_UNIT";
+};
+export type WechatAuthType = typeof WechatAuthType[keyof typeof WechatAuthType];

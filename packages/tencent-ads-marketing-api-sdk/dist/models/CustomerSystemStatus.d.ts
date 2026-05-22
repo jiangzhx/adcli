@@ -1,0 +1,14 @@
+export declare const CustomerSystemStatus: {
+    readonly NORMAL: "CUSTOMER_STATUS_NORMAL";
+    readonly PENDING: "CUSTOMER_STATUS_PENDING";
+    readonly DENIED: "CUSTOMER_STATUS_DENIED";
+    readonly FROZEN: "CUSTOMER_STATUS_FROZEN";
+    readonly TOBE_ACCEPTED: "CUSTOMER_STATUS_TOBE_ACCEPTED";
+    readonly TOBE_ACTIVATED: "CUSTOMER_STATUS_TOBE_ACTIVATED";
+    readonly SUSPEND: "CUSTOMER_STATUS_SUSPEND";
+    readonly MATERIAL_PREPARED: "CUSTOMER_STATUS_MATERIAL_PREPARED";
+    readonly DELETED: "CUSTOMER_STATUS_DELETED";
+    readonly FROZEN_TEMPORARILY: "CUSTOMER_STATUS_FROZEN_TEMPORARILY";
+    readonly UNREGISTERED: "CUSTOMER_STATUS_UNREGISTERED";
+};
+export type CustomerSystemStatus = typeof CustomerSystemStatus[keyof typeof CustomerSystemStatus];

@@ -1,0 +1,17 @@
+{
+  "source": "go",
+  "sourceModule": "github.com/tencentad/marketing-api-go-sdk",
+  "sourceVersion": "1.7.84",
+  "apis": 668,
+  "models": 2977,
+  "skipped": [
+    {
+      "file": "pkg/api/client.go",
+      "reason": "Unable to parse service name from client.go"
+    },
+    {
+      "file": "pkg/api/v3/client.go",
+      "reason": "Unable to parse service name from v3/client.go"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+export declare const AdActionType: {
+    readonly CLICK: "CLICK";
+    readonly EXPOSURE: "EXPOSURE";
+    readonly ORDER: "ORDER";
+    readonly APP_FINISH_DOWNLOAD: "APP_FINISH_DOWNLOAD";
+    readonly APP_INSTALL: "APP_INSTALL";
+    readonly APP_ACTIVATE: "APP_ACTIVATE";
+    readonly REGISTRATION_APP: "REGISTRATION_APP";
+    readonly APP_ONE_DAY_RETENTION: "APP_ONE_DAY_RETENTION";
+    readonly ADD_TO_CART_APP: "ADD_TO_CART_APP";
+    readonly APP_PURCHASE: "APP_PURCHASE";
+    readonly APP_APPLY: "APP_APPLY";
+    readonly REGISTRATION_WEB: "REGISTRATION_WEB";
+    readonly ADD_TO_CART_WEB: "ADD_TO_CART_WEB";
+    readonly WEB_ONLINE_CONSULT: "WEB_ONLINE_CONSULT";
+    readonly WEB_MAKE_PHONE_CALL: "WEB_MAKE_PHONE_CALL";
+    readonly WEB_RESERVE_PHONE_NUMBER: "WEB_RESERVE_PHONE_NUMBER";
+    readonly WEB_RESERVATION: "WEB_RESERVATION";
+    readonly APPLY_WEB: "APPLY_WEB";
+    readonly WEB_DELIVER: "WEB_DELIVER";
+    readonly PURCHASE_WEB: "PURCHASE_WEB";
+    readonly WEB_VIEW_COMMODITY_PAGE: "WEB_VIEW_COMMODITY_PAGE";
+};
+export type AdActionType = typeof AdActionType[keyof typeof AdActionType];

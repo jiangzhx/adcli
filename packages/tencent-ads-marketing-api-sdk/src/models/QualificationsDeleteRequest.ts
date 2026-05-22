@@ -1,0 +1,12 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+import type { QualificationType } from "../models";
+
+export interface QualificationsDeleteRequest {
+  account_id?: number | string;
+  qualification_type?: QualificationType;
+  qualification_id?: number | string;
+  qualification_id_list?: number[];
+}
+

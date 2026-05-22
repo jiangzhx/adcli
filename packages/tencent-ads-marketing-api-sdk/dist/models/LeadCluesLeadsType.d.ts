@@ -1,0 +1,14 @@
+export declare const LeadCluesLeadsType: {
+    readonly FORM: "LEADS_TYPE_FORM";
+    readonly ONLINE_CONSULT: "LEADS_TYPE_ONLINE_CONSULT";
+    readonly MAKE_PHONE_CALL: "LEADS_TYPE_MAKE_PHONE_CALL";
+    readonly PHONE: "LEADS_TYPE_PHONE";
+    readonly PROMOTION_COUPON: "LEADS_TYPE_PROMOTION_COUPON";
+    readonly INTELLIGENT_TOOL: "LEADS_TYPE_INTELLIGENT_TOOL";
+    readonly LOTTERY: "LEADS_TYPE_LOTTERY";
+    readonly LANDING_PAGE_CLICK: "LEADS_TYPE_LANDING_PAGE_CLICK";
+    readonly ONE_CLICK_AUTHORIZE: "LEADS_TYPE_ONE_CLICK_AUTHORIZE";
+    readonly PAGE_SCAN_CODE: "LEADS_TYPE_PAGE_SCAN_CODE";
+    readonly PROMOTION_FOLLOW: "LEADS_TYPE_PROMOTION_FOLLOW";
+};
+export type LeadCluesLeadsType = typeof LeadCluesLeadsType[keyof typeof LeadCluesLeadsType];

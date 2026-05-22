@@ -1,0 +1,10 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+
+export const Sortord = {
+  ASCENDING: "ASCENDING",
+  DESCENDING: "DESCENDING",
+} as const;
+
+export type Sortord = typeof Sortord[keyof typeof Sortord];
+

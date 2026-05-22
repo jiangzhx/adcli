@@ -1,0 +1,26 @@
+export declare const ImageType: {
+    readonly GIF: "IMAGE_TYPE_GIF";
+    readonly JPG: "IMAGE_TYPE_JPG";
+    readonly PNG: "IMAGE_TYPE_PNG";
+    readonly SWF: "IMAGE_TYPE_SWF";
+    readonly PSD: "IMAGE_TYPE_PSD";
+    readonly BMP: "IMAGE_TYPE_BMP";
+    readonly TIFF_INTEL: "IMAGE_TYPE_TIFF_INTEL";
+    readonly TIFF_MOTOROLA: "IMAGE_TYPE_TIFF_MOTOROLA";
+    readonly JPC: "IMAGE_TYPE_JPC";
+    readonly JP2: "IMAGE_TYPE_JP2";
+    readonly JPX: "IMAGE_TYPE_JPX";
+    readonly JB2: "IMAGE_TYPE_JB2";
+    readonly SWC: "IMAGE_TYPE_SWC";
+    readonly IFF: "IMAGE_TYPE_IFF";
+    readonly WBMP: "IMAGE_TYPE_WBMP";
+    readonly XBM: "IMAGE_TYPE_XBM";
+    readonly WEBP: "IMAGE_TYPE_WEBP";
+    readonly FLV: "IMAGE_TYPE_FLV";
+    readonly WAV: "IMAGE_TYPE_WAV";
+    readonly MP3: "IMAGE_TYPE_MP3";
+    readonly MP4: "IMAGE_TYPE_MP4";
+    readonly AVI: "IMAGE_TYPE_AVI";
+    readonly MOV: "IMAGE_TYPE_MOV";
+};
+export type ImageType = typeof ImageType[keyof typeof ImageType];

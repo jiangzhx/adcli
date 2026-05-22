@@ -1,0 +1,11 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+export const BillingEvent = {
+    NONE: "BILLINGEVENT_NONE",
+    CLICK: "BILLINGEVENT_CLICK",
+    APP_DOWNLOAD: "BILLINGEVENT_APP_DOWNLOAD",
+    IMPRESSION: "BILLINGEVENT_IMPRESSION",
+    APP_INSTALL: "BILLINGEVENT_APP_INSTALL",
+    DURATION: "BILLINGEVENT_DURATION",
+    DAY: "BILLINGEVENT_DAY",
+};

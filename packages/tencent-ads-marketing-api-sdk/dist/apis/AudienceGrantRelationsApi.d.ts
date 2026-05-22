@@ -1,0 +1,23 @@
+import { ApiClient } from "../runtime/ApiClient";
+import type { ApiResponse } from "../runtime/ApiResponse";
+import type { AudienceGrantRelationsAddRequest, AudienceGrantRelationsGetResponseData } from "../models";
+export interface AudienceGrantRelationsApiAddRequest {
+    data: AudienceGrantRelationsAddRequest;
+}
+export interface AudienceGrantRelationsApiGetRequest {
+    accountId: number | string;
+    filtering?: unknown;
+    page?: number;
+    pageSize?: number;
+    fields?: unknown;
+}
+export declare class AudienceGrantRelationsApi {
+    private apiClient;
+    constructor(apiClient?: ApiClient);
+    getApiClient(): ApiClient;
+    setApiClient(apiClient: ApiClient): void;
+    add(request: AudienceGrantRelationsApiAddRequest): Promise<unknown>;
+    addWithHttpInfo(request: AudienceGrantRelationsApiAddRequest): Promise<ApiResponse<unknown>>;
+    get(request: AudienceGrantRelationsApiGetRequest): Promise<AudienceGrantRelationsGetResponseData>;
+    getWithHttpInfo(request: AudienceGrantRelationsApiGetRequest): Promise<ApiResponse<AudienceGrantRelationsGetResponseData>>;
+}

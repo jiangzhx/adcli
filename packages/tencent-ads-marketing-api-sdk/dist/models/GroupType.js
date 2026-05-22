@@ -1,0 +1,7 @@
+// Generated from tencentad/marketing-api-go-sdk
+// Do not edit manually.
+export const GroupType = {
+    DEFAULT: "GROUP_TYPE_DEFAULT",
+    GROUP_LBS: "GROUP_TYPE_GROUP_LBS",
+    GROUP_RANDOM: "GROUP_TYPE_GROUP_RANDOM",
+};

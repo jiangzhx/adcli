@@ -1,0 +1,23 @@
+export declare const PreReviewElementKey: {
+    readonly IMG: "IMG";
+    readonly TXT: "TXT";
+    readonly CORPORATE_NAME: "CORPORATE_NAME";
+    readonly CORPORATE_IMG: "CORPORATE_IMG";
+    readonly BRAND_CORPORATE_NAME: "BRAND_CORPORATE_NAME";
+    readonly BRAND_CORPORATE_IMG: "BRAND_CORPORATE_IMG";
+    readonly BRAND_CORPORATE_DESC: "BRAND_CORPORATE_DESC";
+    readonly BUTTON_TXT: "BUTTON_TXT";
+    readonly BUTTON_URL: "BUTTON_URL";
+    readonly VIDEO_POPUP_BUTTON_TXT: "VIDEO_POPUP_BUTTON_TXT";
+    readonly VIDEO_POPUP_BUTTON_URL: "VIDEO_POPUP_BUTTON_URL";
+    readonly DESC: "DESC";
+    readonly URL: "URL";
+    readonly LEFT_BOTTOM_TXT: "LEFT_BOTTOM_TXT";
+    readonly BOTTOM_TXT: "BOTTOM_TXT";
+    readonly GIF: "GIF";
+    readonly VIDEO: "VIDEO";
+    readonly LEFT_UPPER_TXT: "LEFT_UPPER_TXT";
+    readonly SHARE_DESC: "SHARE_DESC";
+    readonly SHARE_IMG: "SHARE_IMG";
+};
+export type PreReviewElementKey = typeof PreReviewElementKey[keyof typeof PreReviewElementKey];
