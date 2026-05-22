@@ -1,0 +1,6 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_currency_type.go
+// Do not edit manually.
+export const CurrencyType = {
+    UNKNOWN: "CURRENCY_TYPE_UNKNOWN",
+    CNY: "CURRENCY_TYPE_CNY",
+};

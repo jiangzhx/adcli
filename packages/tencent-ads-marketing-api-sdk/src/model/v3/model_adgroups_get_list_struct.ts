@@ -1,0 +1,87 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_adgroups_get_list_struct.go
+// Do not edit manually.
+
+import type { AdditionalProductSpec, AdxRealtimeType, AoiOptimizationStrategy, AutoAcquisitionStatus, AutoDerivedCreativePreference, BidMode, BidScene, CalcAdGroupStatus, ConfiguredStatus, CostConstraintScene, CostGuaranteeStatus, DcaSpec, DeepConversionSpec, DeepOptimizationType, EcomPkamSwitch, MarketingAssetOuterSpec, MarketingCarrierDetail, MarketingCarrierType, MarketingGoal, MarketingScene, MarketingSubGoal, MarketingTargetAttachment, MarketingTargetDetail, MarketingTargetExt, MarketingTargetType, MpaSpec, NegativeWordCntStruct, OgCompletionType, OptimizationGoal, PromotedAssetType, ReadTargetingSetting, SceneTargetingForWrite, SearchExpandTargetingSwitch, SearchExpansionSwitch, ShortPlayPayType, SiteSetExplorationStrategy, SmartBidType, SmartTargetingStatus, UserActionSetStruct } from "../v3/index";
+
+export interface AdgroupsGetListStruct {
+  targeting?: ReadTargetingSetting;
+  adgroup_id?: number | string;
+  targeting_translation?: string;
+  configured_status?: ConfiguredStatus;
+  created_time?: number;
+  last_modified_time?: number;
+  is_deleted?: boolean;
+  system_status?: CalcAdGroupStatus;
+  adgroup_name?: string;
+  marketing_goal?: MarketingGoal;
+  marketing_sub_goal?: MarketingSubGoal;
+  marketing_carrier_type?: MarketingCarrierType;
+  marketing_carrier_detail?: MarketingCarrierDetail;
+  marketing_target_type?: MarketingTargetType;
+  marketing_target_detail?: MarketingTargetDetail;
+  marketing_target_id?: number | string;
+  begin_date?: string;
+  end_date?: string;
+  first_day_begin_time?: string;
+  bid_amount?: number;
+  optimization_goal?: OptimizationGoal;
+  time_series?: string;
+  automatic_site_enabled?: boolean;
+  site_set?: string[];
+  daily_budget?: number;
+  scene_spec?: SceneTargetingForWrite;
+  user_action_sets?: UserActionSetStruct[];
+  deep_conversion_spec?: DeepConversionSpec;
+  conversion_id?: number | string;
+  deep_conversion_behavior_bid?: number;
+  deep_conversion_worth_rate?: number;
+  deep_conversion_worth_advanced_rate?: number;
+  deep_conversion_behavior_advanced_bid?: number;
+  bid_mode?: BidMode;
+  auto_acquisition_enabled?: boolean;
+  auto_acquisition_budget?: number;
+  smart_bid_type?: SmartBidType;
+  smart_cost_cap?: number;
+  auto_derived_creative_enabled?: boolean;
+  auto_derived_creative_preference?: AutoDerivedCreativePreference;
+  search_expand_targeting_switch?: SearchExpandTargetingSwitch;
+  auto_derived_landing_page_switch?: boolean;
+  data_model_version?: number;
+  bid_scene?: BidScene;
+  marketing_target_ext?: MarketingTargetExt;
+  deep_optimization_type?: DeepOptimizationType;
+  flow_optimization_enabled?: boolean;
+  marketing_target_attachment?: MarketingTargetAttachment;
+  negative_word_cnt?: NegativeWordCntStruct;
+  search_expansion_switch?: SearchExpansionSwitch;
+  marketing_asset_id?: number | string;
+  promoted_asset_type?: PromotedAssetType;
+  material_package_id?: number | string;
+  marketing_asset_outer_spec?: MarketingAssetOuterSpec;
+  poi_list?: string[];
+  marketing_scene?: MarketingScene;
+  exploration_strategy?: SiteSetExplorationStrategy;
+  priority_site_set?: string[];
+  ecom_pkam_switch?: EcomPkamSwitch;
+  forward_link_assist?: OptimizationGoal;
+  conversion_name?: string;
+  auto_acquisition_status?: AutoAcquisitionStatus;
+  cost_constraint_scene?: CostConstraintScene;
+  custom_cost_cap?: number;
+  mpa_spec?: MpaSpec;
+  short_play_pay_type?: ShortPlayPayType;
+  sell_strategy_id?: number | string;
+  og_completion_type?: OgCompletionType;
+  dca_spec?: DcaSpec;
+  aoi_optimization_strategy?: AoiOptimizationStrategy;
+  cost_guarantee_status?: CostGuaranteeStatus;
+  cost_guarantee_money?: number;
+  additional_product_spec?: AdditionalProductSpec;
+  enable_breakthrough_siteset?: boolean;
+  live_recommend_strategy_enabled?: boolean;
+  custom_cost_roi_cap?: number;
+  enable_steady_exploration?: boolean;
+  adx_realtime_type?: AdxRealtimeType;
+  smart_targeting_status?: SmartTargetingStatus;
+}
+

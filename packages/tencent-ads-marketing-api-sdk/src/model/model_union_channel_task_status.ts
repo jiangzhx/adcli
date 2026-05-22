@@ -1,0 +1,17 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_union_channel_task_status.go
+// Do not edit manually.
+
+export const UnionChannelTaskStatus = {
+  APPLYING: "UNION_CHANNEL_TASK_STATUS_APPLYING",
+  SUCCESS: "UNION_CHANNEL_TASK_STATUS_SUCCESS",
+  APP_ERROR: "UNION_CHANNEL_TASK_STATUS_APP_ERROR",
+  APP_STATUS_ERROR: "UNION_CHANNEL_TASK_STATUS_APP_STATUS_ERROR",
+  PACKAGE_NAME_ERROR: "UNION_CHANNEL_TASK_STATUS_PACKAGE_NAME_ERROR",
+  CHANNEL_NAME_ERROR: "UNION_CHANNEL_TASK_STATUS_CHANNEL_NAME_ERROR",
+  PKG_MD5_ERROR: "UNION_CHANNEL_TASK_STATUS_PKG_MD5_ERROR",
+  PKG_ERROR: "UNION_CHANNEL_TASK_STATUS_PKG_ERROR",
+  SYSTEM_ERROR: "UNION_CHANNEL_TASK_STATUS_SYSTEM_ERROR",
+} as const;
+
+export type UnionChannelTaskStatus = typeof UnionChannelTaskStatus[keyof typeof UnionChannelTaskStatus];
+

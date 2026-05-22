@@ -1,0 +1,3 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_online_preview_qrcode_get_response_data.go
+// Do not edit manually.
+export {};

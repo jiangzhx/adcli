@@ -1,0 +1,6 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_dynamic_ad_video_template_ownership_type.go
+// Do not edit manually.
+export const DynamicAdVideoTemplateOwnershipType = {
+    SELF_OWNED: "SELF_OWNED",
+    PRODUCT_VIDEO_STRAIGHT_OUT: "PRODUCT_VIDEO_STRAIGHT_OUT",
+};

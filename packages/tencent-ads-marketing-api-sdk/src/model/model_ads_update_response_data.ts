@@ -1,0 +1,7 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_ads_update_response_data.go
+// Do not edit manually.
+
+export interface AdsUpdateResponseData {
+  ad_id?: number | string;
+}
+

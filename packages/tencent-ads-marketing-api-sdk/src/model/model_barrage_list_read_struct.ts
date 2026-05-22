@@ -1,0 +1,8 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_barrage_list_read_struct.go
+// Do not edit manually.
+
+export interface BarrageListReadStruct {
+  id?: number | string;
+  text?: string;
+}
+

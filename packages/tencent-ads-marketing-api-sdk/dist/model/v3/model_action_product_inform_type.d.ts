@@ -1,0 +1,21 @@
+export declare const ActionProductInformType: {
+    readonly EC: "EC";
+    readonly ESTATE: "ESTATE";
+    readonly VIDEO: "VIDEO";
+    readonly CAR: "CAR";
+    readonly NEWS_INFORMATION: "NEWS_INFORMATION";
+    readonly BEAUTY_PERSONAL_CARE: "BEAUTY_PERSONAL_CARE";
+    readonly RETAIL: "RETAIL";
+    readonly EDUCATION: "EDUCATION";
+    readonly READING: "READING";
+    readonly INSURANCE: "INSURANCE";
+    readonly LOAN: "LOAN";
+    readonly FINANCIAL: "FINANCIAL";
+    readonly BANKCARD: "BANKCARD";
+    readonly WEDDING: "WEDDING";
+    readonly SECURITIES: "SECURITIES";
+    readonly DECORATION_BUILDING_MATERIAL: "DECORATION_BUILDING_MATERIAL";
+    readonly CARRIER: "CARRIER";
+    readonly GAME: "GAME";
+};
+export type ActionProductInformType = typeof ActionProductInformType[keyof typeof ActionProductInformType];

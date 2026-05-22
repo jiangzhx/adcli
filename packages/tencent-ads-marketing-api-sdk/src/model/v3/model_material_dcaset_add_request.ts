@@ -1,0 +1,15 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_material_dcaset_add_request.go
+// Do not edit manually.
+
+import type { MarketingAssetOuterSpecV1, MarketingTargetType } from "../v3/index";
+
+export interface MaterialDcasetAddRequest {
+  account_id?: number | string;
+  image_id_list?: number[];
+  media_id_list?: number[];
+  marketing_asset_id?: number | string;
+  marketing_target_type?: MarketingTargetType;
+  marketing_asset_outer_spec?: MarketingAssetOuterSpecV1;
+  set_name?: string;
+}
+

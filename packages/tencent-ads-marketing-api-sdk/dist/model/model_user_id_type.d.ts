@@ -1,0 +1,26 @@
+export declare const UserIdType: {
+    readonly HASH_IDFA: "HASH_IDFA";
+    readonly HASH_IMEI: "HASH_IMEI";
+    readonly HASH_MOBILE_PHONE: "HASH_MOBILE_PHONE";
+    readonly IDFA: "IDFA";
+    readonly IMEI: "IMEI";
+    readonly WX_OPENID: "WX_OPENID";
+    readonly WX_UNIONID: "WX_UNIONID";
+    readonly WECHAT_OPENID: "WECHAT_OPENID";
+    readonly SALTED_HASH_IMEI: "SALTED_HASH_IMEI";
+    readonly SALTED_HASH_IDFA: "SALTED_HASH_IDFA";
+    readonly OAID: "OAID";
+    readonly HASH_OAID: "HASH_OAID";
+    readonly SHA256_MOBILE_PHONE: "SHA256_MOBILE_PHONE";
+    readonly MD5_SHA256_IMEI: "MD5_SHA256_IMEI";
+    readonly MD5_SHA256_IDFA: "MD5_SHA256_IDFA";
+    readonly MD5_SHA256_OAID: "MD5_SHA256_OAID";
+    readonly CAID: "CAID";
+    readonly GDT_OPENID: "GDT_OPENID";
+    readonly HASH_MAC: "HASH_MAC";
+    readonly HASH_QQ: "HASH_QQ";
+    readonly MAC: "MAC";
+    readonly MOBILE_QQ_OPENID: "MOBILE_QQ_OPENID";
+    readonly QQ: "QQ";
+};
+export type UserIdType = typeof UserIdType[keyof typeof UserIdType];

@@ -1,0 +1,7 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_custom_audiences_add_response_data.go
+// Do not edit manually.
+
+export interface CustomAudiencesAddResponseData {
+  audience_id?: number | string;
+}
+

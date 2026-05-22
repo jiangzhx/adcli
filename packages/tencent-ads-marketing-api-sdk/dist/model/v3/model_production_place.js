@@ -1,0 +1,9 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_production_place.go
+// Do not edit manually.
+export const ProductionPlace = {
+    JP: "PRODUCTION_PLACE_JP",
+    RK: "PRODUCTION_PLACE_RK",
+    US: "PRODUCTION_PLACE_US",
+    CN: "PRODUCTION_PLACE_CN",
+    OTHER: "PRODUCTION_PLACE_OTHER",
+};

@@ -1,0 +1,13 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_qualification_type.go
+// Do not edit manually.
+
+export const QualificationType = {
+  INDUSTRY_QUALIFICATION: "INDUSTRY_QUALIFICATION",
+  AD_QUALIFICATION: "AD_QUALIFICATION",
+  ADDITIONAL_INDUSTRY_QUALIFICATION: "ADDITIONAL_INDUSTRY_QUALIFICATION",
+  INDUSTRY_QUALIFICATION_WECHAT: "INDUSTRY_QUALIFICATION_WECHAT",
+  AD_QUALIFICATION_WECHAT: "AD_QUALIFICATION_WECHAT",
+} as const;
+
+export type QualificationType = typeof QualificationType[keyof typeof QualificationType];
+

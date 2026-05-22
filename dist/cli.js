@@ -3835,6 +3835,877 @@ function isOceanEngineErrorPayload(payload) {
   return isRecord(payload) && typeof payload.code === "number" && payload.code !== 0;
 }
 
+// packages/tencent-ads-marketing-api-sdk/dist/api/v3/client.js
+var import_json_bigint2 = __toESM(require_json_bigint(), 1);
+
+// packages/tencent-ads-marketing-api-sdk/dist/config/v3/configuration.js
+class Configuration {
+  basePath = "https://api.e.qq.com/v3.0";
+  defaultHeaders = new Map;
+  userAgent = "Tencent Ads Marketing API SDK";
+  constructor(options = {}) {
+    if (options.basePath) {
+      this.basePath = options.basePath;
+    }
+    if (options.userAgent) {
+      this.userAgent = options.userAgent;
+    }
+    for (const [name, value] of Object.entries(options.defaultHeaders ?? {})) {
+      this.defaultHeaders.set(name, value);
+    }
+  }
+  addDefaultHeader(name, value) {
+    this.defaultHeaders.set(name, value);
+  }
+}
+function NewConfiguration() {
+  return new Configuration;
+}
+var DefaultConfiguration = NewConfiguration();
+
+// packages/tencent-ads-marketing-api-sdk/dist/api/v3/client.js
+var JSONBigStringParser2 = import_json_bigint2.default({ storeAsString: true });
+var SDK_VERSION2 = "1.7.84";
+
+class ApiClient2 {
+  basePath = DefaultConfiguration.basePath;
+  fetchImpl;
+  accessToken;
+  userToken;
+  defaultHeaders = new Headers;
+  constructor(options = {}) {
+    this.fetchImpl = options.fetch ?? fetch;
+    if (options.basePath) {
+      this.basePath = options.basePath;
+    }
+    this.setUserAgent("Tencent Ads Marketing API SDK");
+    this.addDefaultHeader("X-Sdk-Language", "node");
+    this.addDefaultHeader("X-Sdk-Version", SDK_VERSION2);
+  }
+  getBasePath() {
+    return this.basePath;
+  }
+  setBasePath(basePath) {
+    this.basePath = basePath;
+    return this;
+  }
+  setUserAgent(userAgent) {
+    this.addDefaultHeader("User-Agent", userAgent);
+    return this;
+  }
+  addDefaultHeader(name, value) {
+    this.defaultHeaders.set(name, value);
+    return this;
+  }
+  setAccessToken(token) {
+    this.accessToken = token;
+    this.addDefaultHeader("Access-Token", token);
+    return this;
+  }
+  setUserToken(token) {
+    this.userToken = token;
+    return this;
+  }
+  buildUrl(path4, queryParams = [], basePathOverride) {
+    const requestBasePath = basePathOverride ?? this.basePath;
+    const basePath = requestBasePath.endsWith("/") ? requestBasePath : `${requestBasePath}/`;
+    const relativePath = path4.startsWith("/") ? path4.slice(1) : path4;
+    const url = new URL(relativePath, basePath);
+    for (const param of queryParams) {
+      if (param.value == null) {
+        continue;
+      }
+      if (Array.isArray(param.value)) {
+        if (param.collectionFormat === "multi") {
+          url.searchParams.append(param.name, JSON.stringify(param.value));
+          continue;
+        }
+        if (param.collectionFormat !== "csv") {
+          throw new ApiException3(`Unsupported collection format for query parameter '${param.name}'`);
+        }
+        url.searchParams.append(param.name, param.value.map((value) => this.parameterToString(value)).join(","));
+        continue;
+      }
+      url.searchParams.append(param.name, this.parameterToString(param.value));
+    }
+    this.applyAuthQueryParams(url);
+    return url;
+  }
+  async request(options) {
+    const response = await this.requestWithHttpInfo(options);
+    return response.data;
+  }
+  async requestWithHttpInfo(options) {
+    const request = this.buildRequest(options);
+    const response = await this.fetchImpl(request);
+    const data = await this.readResponseBody(response, options.responseType);
+    if (!response.ok) {
+      throw new ApiException3(`HTTP ${response.status}`, {
+        statusCode: response.status,
+        responseBody: data,
+        headers: response.headers
+      });
+    }
+    return {
+      data,
+      statusCode: response.status,
+      headers: response.headers
+    };
+  }
+  buildRequest(options) {
+    const headers = new Headers(this.defaultHeaders);
+    for (const [name, value] of Object.entries(options.headers ?? {})) {
+      headers.set(name, value);
+    }
+    let body;
+    if (options.method !== "GET" && (options.formParams || options.files)) {
+      const contentType = options.contentType ?? "application/x-www-form-urlencoded";
+      if (contentType === "multipart/form-data") {
+        body = this.buildMultipartFormBody(options.formParams, options.files);
+      } else if (contentType === "application/x-www-form-urlencoded") {
+        headers.set("Content-Type", contentType);
+        const formBody = new URLSearchParams;
+        for (const [name, value] of Object.entries(options.formParams ?? {})) {
+          if (value != null) {
+            formBody.append(name, this.parameterToString(value));
+          }
+        }
+        body = formBody;
+      } else {
+        throw new ApiException3(`Unsupported form content type '${contentType}'`);
+      }
+    } else if (options.method !== "GET" && options.body != null) {
+      const contentType = options.contentType ?? "application/json";
+      headers.set("Content-Type", contentType);
+      body = contentType === "application/json" ? JSON.stringify(options.body) : String(options.body);
+    }
+    return new Request(this.buildUrl(options.path, options.queryParams, options.basePath), {
+      method: options.method,
+      headers,
+      body
+    });
+  }
+  buildMultipartFormBody(formParams = {}, files = {}) {
+    const formBody = new FormData;
+    for (const [name, value] of Object.entries(formParams)) {
+      if (value != null) {
+        formBody.append(name, this.parameterToString(value));
+      }
+    }
+    for (const [name, value] of Object.entries(files)) {
+      if (value != null) {
+        formBody.append(name, value);
+      }
+    }
+    return formBody;
+  }
+  async readResponseBody(response, responseType = "json") {
+    if (responseType === "arrayBuffer") {
+      return response.arrayBuffer();
+    }
+    const text = await response.text();
+    if (!text) {
+      return;
+    }
+    if (responseType === "text") {
+      return text;
+    }
+    const contentType = response.headers.get("Content-Type") ?? "";
+    if (contentType.includes("application/json")) {
+      return parseJsonPreservingLargeIntegers2(text);
+    }
+    return text;
+  }
+  parameterToString(value) {
+    if (value instanceof Date) {
+      return value.toISOString();
+    }
+    if (typeof value === "object" && value !== null) {
+      return JSON.stringify(value);
+    }
+    return String(value);
+  }
+  applyAuthQueryParams(url) {
+    if (!this.accessToken) {
+      return;
+    }
+    url.searchParams.set("access_token", this.accessToken);
+    url.searchParams.set("timestamp", Math.floor(Date.now() / 1000).toString());
+    url.searchParams.set("nonce", createNonce());
+    if (this.userToken) {
+      url.searchParams.set("user_token", this.userToken);
+    }
+  }
+}
+
+class ApiException3 extends Error {
+  statusCode;
+  responseBody;
+  headers;
+  constructor(message, options = {}) {
+    super(message);
+    this.name = "ApiException";
+    this.statusCode = options.statusCode;
+    this.responseBody = options.responseBody;
+    this.headers = options.headers;
+  }
+}
+function parseJsonPreservingLargeIntegers2(text) {
+  return JSONBigStringParser2.parse(text);
+}
+function createNonce() {
+  return crypto.randomUUID().replaceAll("-", "").slice(0, 20);
+}
+
+// packages/tencent-ads-marketing-api-sdk/dist/api/v3/api_adgroups.js
+class AdgroupsApi {
+  apiClient;
+  constructor(apiClient = new ApiClient2) {
+    this.apiClient = apiClient;
+  }
+  getApiClient() {
+    return this.apiClient;
+  }
+  setApiClient(apiClient) {
+    this.apiClient = apiClient;
+  }
+  async add(request) {
+    const response = await this.addWithHttpInfo(request);
+    return response.data;
+  }
+  async addWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling add");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/adgroups/add",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async delete(request) {
+    const response = await this.deleteWithHttpInfo(request);
+    return response.data;
+  }
+  async deleteWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling delete");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/adgroups/delete",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async get(request) {
+    const response = await this.getWithHttpInfo(request);
+    return response.data;
+  }
+  async getWithHttpInfo(request) {
+    if (request.accountId == null) {
+      throw new ApiException3("Missing the required parameter 'accountId' when calling get");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "GET",
+      basePath: DefaultConfiguration.basePath,
+      path: "/adgroups/get",
+      queryParams: [
+        { name: "account_id", value: request.accountId },
+        { name: "filtering", value: request.filtering, collectionFormat: "multi" },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize },
+        { name: "is_deleted", value: request.isDeleted },
+        { name: "fields", value: request.fields, collectionFormat: "multi" },
+        { name: "pagination_mode", value: request.paginationMode },
+        { name: "cursor", value: request.cursor }
+      ],
+      contentType: "text/plain"
+    });
+  }
+  async update(request) {
+    const response = await this.updateWithHttpInfo(request);
+    return response.data;
+  }
+  async updateWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling update");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/adgroups/update",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async updateBidAmount(request) {
+    const response = await this.updateBidAmountWithHttpInfo(request);
+    return response.data;
+  }
+  async updateBidAmountWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling updateBidAmount");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/adgroups/update_bid_amount",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async updateConfiguredStatus(request) {
+    const response = await this.updateConfiguredStatusWithHttpInfo(request);
+    return response.data;
+  }
+  async updateConfiguredStatusWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling updateConfiguredStatus");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/adgroups/update_configured_status",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async updateDailyBudget(request) {
+    const response = await this.updateDailyBudgetWithHttpInfo(request);
+    return response.data;
+  }
+  async updateDailyBudgetWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling updateDailyBudget");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/adgroups/update_daily_budget",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async updateDatetime(request) {
+    const response = await this.updateDatetimeWithHttpInfo(request);
+    return response.data;
+  }
+  async updateDatetimeWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling updateDatetime");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/adgroups/update_datetime",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+}
+
+// packages/tencent-ads-marketing-api-sdk/dist/api/v3/api_advertiser.js
+class AdvertiserApi {
+  apiClient;
+  constructor(apiClient = new ApiClient2) {
+    this.apiClient = apiClient;
+  }
+  getApiClient() {
+    return this.apiClient;
+  }
+  setApiClient(apiClient) {
+    this.apiClient = apiClient;
+  }
+  async add(request) {
+    const response = await this.addWithHttpInfo(request);
+    return response.data;
+  }
+  async addWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling add");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/advertiser/add",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async get(request) {
+    const response = await this.getWithHttpInfo(request);
+    return response.data;
+  }
+  async getWithHttpInfo(request) {
+    if (request.fields == null) {
+      throw new ApiException3("Missing the required parameter 'fields' when calling get");
+    }
+    if (request.paginationMode == null) {
+      throw new ApiException3("Missing the required parameter 'paginationMode' when calling get");
+    }
+    if (request.pageSize == null) {
+      throw new ApiException3("Missing the required parameter 'pageSize' when calling get");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "GET",
+      basePath: DefaultConfiguration.basePath,
+      path: "/advertiser/get",
+      queryParams: [
+        { name: "agency_id", value: request.agencyId },
+        { name: "account_id", value: request.accountId },
+        { name: "filtering", value: request.filtering, collectionFormat: "multi" },
+        { name: "fields", value: request.fields, collectionFormat: "multi" },
+        { name: "pagination_mode", value: request.paginationMode },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize },
+        { name: "cursor", value: request.cursor }
+      ],
+      contentType: "text/plain"
+    });
+  }
+  async update(request) {
+    const response = await this.updateWithHttpInfo(request);
+    return response.data;
+  }
+  async updateWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling update");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/advertiser/update",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async updateDailyBudget(request) {
+    const response = await this.updateDailyBudgetWithHttpInfo(request);
+    return response.data;
+  }
+  async updateDailyBudgetWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling updateDailyBudget");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/advertiser/update_daily_budget",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+}
+
+// packages/tencent-ads-marketing-api-sdk/dist/api/v3/api_dynamic_creatives.js
+class DynamicCreativesApi {
+  apiClient;
+  constructor(apiClient = new ApiClient2) {
+    this.apiClient = apiClient;
+  }
+  getApiClient() {
+    return this.apiClient;
+  }
+  setApiClient(apiClient) {
+    this.apiClient = apiClient;
+  }
+  async add(request) {
+    const response = await this.addWithHttpInfo(request);
+    return response.data;
+  }
+  async addWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling add");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/dynamic_creatives/add",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async delete(request) {
+    const response = await this.deleteWithHttpInfo(request);
+    return response.data;
+  }
+  async deleteWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling delete");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/dynamic_creatives/delete",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+  async get(request) {
+    const response = await this.getWithHttpInfo(request);
+    return response.data;
+  }
+  async getWithHttpInfo(request) {
+    if (request.accountId == null) {
+      throw new ApiException3("Missing the required parameter 'accountId' when calling get");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "GET",
+      basePath: DefaultConfiguration.basePath,
+      path: "/dynamic_creatives/get",
+      queryParams: [
+        { name: "account_id", value: request.accountId },
+        { name: "filtering", value: request.filtering, collectionFormat: "multi" },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize },
+        { name: "fields", value: request.fields, collectionFormat: "multi" },
+        { name: "is_deleted", value: request.isDeleted },
+        { name: "pagination_mode", value: request.paginationMode },
+        { name: "cursor", value: request.cursor }
+      ],
+      contentType: "text/plain"
+    });
+  }
+  async update(request) {
+    const response = await this.updateWithHttpInfo(request);
+    return response.data;
+  }
+  async updateWithHttpInfo(request) {
+    if (request.data == null) {
+      throw new ApiException3("Missing the required parameter 'data' when calling update");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "POST",
+      basePath: DefaultConfiguration.basePath,
+      path: "/dynamic_creatives/update",
+      queryParams: [],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+}
+
+// packages/tencent-ads-marketing-api-sdk/dist/api/v3/api_organization_account_relation.js
+class OrganizationAccountRelationApi {
+  apiClient;
+  constructor(apiClient = new ApiClient2) {
+    this.apiClient = apiClient;
+  }
+  getApiClient() {
+    return this.apiClient;
+  }
+  setApiClient(apiClient) {
+    this.apiClient = apiClient;
+  }
+  async get(request) {
+    const response = await this.getWithHttpInfo(request);
+    return response.data;
+  }
+  async getWithHttpInfo(request) {
+    if (request.paginationMode == null) {
+      throw new ApiException3("Missing the required parameter 'paginationMode' when calling get");
+    }
+    return this.apiClient.requestWithHttpInfo({
+      method: "GET",
+      basePath: DefaultConfiguration.basePath,
+      path: "/organization_account_relation/get",
+      queryParams: [
+        { name: "account_id", value: request.accountId },
+        { name: "advertiser_type", value: request.advertiserType },
+        { name: "business_unit_id", value: request.businessUnitId },
+        { name: "pagination_mode", value: request.paginationMode },
+        { name: "cursor", value: request.cursor },
+        { name: "page", value: request.page },
+        { name: "page_size", value: request.pageSize },
+        { name: "fields", value: request.fields, collectionFormat: "multi" }
+      ],
+      contentType: "text/plain"
+    });
+  }
+}
+
+// src/commands/tencent-ads/config.ts
+import { chmod as chmod2, mkdir as mkdir3, readFile as readFile3, rename as rename3, writeFile as writeFile3 } from "node:fs/promises";
+import path4 from "node:path";
+function getTencentAdsConfigInfo(options = {}) {
+  const configDir = options.configDir ?? envPaths("adcli", { suffix: "" }).cache;
+  return {
+    configPath: path4.join(configDir, "tencent-ads.json")
+  };
+}
+async function saveTencentAdsAccessToken(token, options = {}) {
+  const trimmed = token.trim();
+  if (!trimmed) {
+    throw new Error("missing Tencent Ads token");
+  }
+  const configInfo = getTencentAdsConfigInfo(options);
+  await mkdir3(path4.dirname(configInfo.configPath), { recursive: true });
+  const tempPath = `${configInfo.configPath}.${process.pid}.tmp`;
+  await writeFile3(tempPath, `${JSON.stringify({ access_token: trimmed })}
+`, {
+    encoding: "utf8",
+    mode: 384
+  });
+  await rename3(tempPath, configInfo.configPath);
+  await chmod2(configInfo.configPath, 384);
+  return configInfo;
+}
+async function loadTencentAdsAccessToken(options = {}) {
+  const configInfo = getTencentAdsConfigInfo(options);
+  let config;
+  try {
+    config = JSON.parse(await readFile3(configInfo.configPath, "utf8"));
+  } catch (error) {
+    if (isNotFoundError3(error)) {
+      return;
+    }
+    throw error;
+  }
+  if (typeof config.access_token !== "string" || !config.access_token.trim()) {
+    return;
+  }
+  return config.access_token.trim();
+}
+function isNotFoundError3(error) {
+  return error instanceof Error && "code" in error && error.code === "ENOENT";
+}
+
+// src/commands/tencent-ads/commands.ts
+async function runTencentAdsCommand(argv, options = {}) {
+  const args = parseTencentAdsArgs(argv);
+  if (args.resource === "auth") {
+    const token2 = args.action;
+    if (!token2) {
+      throw new Error("missing Tencent Ads token");
+    }
+    const configInfo = await saveTencentAdsAccessToken(token2, { configDir: options.configDir });
+    return {
+      ok: true,
+      config_path: configInfo.configPath
+    };
+  }
+  const token = await resolveAccessToken2(args, options);
+  const apiClient = new ApiClient2({ fetch: options.fetch }).setAccessToken(token);
+  if (args.resource === "advertiser" && args.action === "list") {
+    return new OrganizationAccountRelationApi(apiClient).get({
+      accountId: getOptionalId(args, "account-id") ?? getOptionalId(args, "advertiser-id"),
+      fields: parseCsv2(args.flags.fields) ?? ["account_id", "corporation_name", "is_bid", "is_mp", "is_adx", "comment_list"],
+      page: parseNumberFlag2(args.flags.page) ?? 1,
+      pageSize: parseNumberFlag2(args.flags["page-size"]) ?? 100,
+      paginationMode: getOptionalString2(args.flags["pagination-mode"]) ?? "PAGINATION_MODE_NORMAL"
+    });
+  }
+  if (args.resource === "advertiser" && args.action === "get") {
+    return new AdvertiserApi(apiClient).get({
+      accountId: getRequiredAccountId(args),
+      fields: parseCsv2(args.flags.fields) ?? ["account_id", "account_name"],
+      filtering: parseJsonFlag2(args.flags.filtering),
+      page: parseNumberFlag2(args.flags.page),
+      pageSize: parseNumberFlag2(args.flags["page-size"]) ?? 20,
+      paginationMode: getOptionalString2(args.flags["pagination-mode"]) ?? "PAGINATION_MODE_NORMAL"
+    });
+  }
+  if (args.resource === "adgroup" && args.action === "list") {
+    return new AdgroupsApi(apiClient).get({
+      accountId: getRequiredAccountId(args),
+      filtering: parseJsonFlag2(args.flags.filtering),
+      fields: parseCsv2(args.flags.fields),
+      page: parseNumberFlag2(args.flags.page),
+      pageSize: parseNumberFlag2(args.flags["page-size"])
+    });
+  }
+  if (args.resource === "dynamic-creative" && args.action === "list") {
+    return new DynamicCreativesApi(apiClient).get({
+      accountId: getRequiredAccountId(args),
+      filtering: parseJsonFlag2(args.flags.filtering),
+      fields: parseCsv2(args.flags.fields),
+      page: parseNumberFlag2(args.flags.page),
+      pageSize: parseNumberFlag2(args.flags["page-size"])
+    });
+  }
+  throw new Error(`unknown tencent-ads command: ${[args.resource, args.action].filter(Boolean).join(" ")}`);
+}
+function formatTencentAdsOutput(payload, json, argv = []) {
+  if (json) {
+    return JSON.stringify(payload, null, 2);
+  }
+  if (isTencentAdsErrorPayload(payload)) {
+    return JSON.stringify(payload, null, 2);
+  }
+  if (argv[0] === "advertiser" && argv[1] === "list") {
+    return formatEntityList2(payload, "account_id", ["account_id", "id"], ["account_name", "corporation_name", "name"]);
+  }
+  if (argv[0] === "advertiser" && argv[1] === "get") {
+    return formatEntityList2(payload, "account_id", ["account_id", "id"], ["account_name", "corporation_name", "name"]);
+  }
+  if (argv[0] === "adgroup" && argv[1] === "list") {
+    return formatEntityList2(payload, "adgroup_id", ["adgroup_id", "id"], ["adgroup_name", "name"]);
+  }
+  if (argv[0] === "dynamic-creative" && argv[1] === "list") {
+    return formatEntityList2(payload, "dynamic_creative_id", ["dynamic_creative_id", "id"], ["dynamic_creative_name", "name"]);
+  }
+  return JSON.stringify(payload, null, 2);
+}
+function formatTencentAdsError(error) {
+  if (!isRecord2(error) || !("responseBody" in error)) {
+    return;
+  }
+  const responseBody = error.responseBody;
+  if (responseBody == null) {
+    return;
+  }
+  if (typeof responseBody === "string") {
+    return responseBody;
+  }
+  return JSON.stringify(responseBody, null, 2);
+}
+function parseTencentAdsArgs(argv) {
+  const args = {
+    resource: argv[0],
+    action: argv[1],
+    flags: {}
+  };
+  for (let index = 2;index < argv.length; index += 1) {
+    const value = argv[index];
+    if (!value?.startsWith("--")) {
+      continue;
+    }
+    const name = value.slice(2);
+    const next = argv[index + 1];
+    if (!next || next.startsWith("--")) {
+      args.flags[name] = true;
+      continue;
+    }
+    args.flags[name] = next;
+    index += 1;
+  }
+  return args;
+}
+async function resolveAccessToken2(args, options) {
+  const explicitToken = getOptionalString2(args.flags["access-token"]);
+  if (explicitToken) {
+    return explicitToken;
+  }
+  const env2 = options.env ?? process.env;
+  const envToken = getOptionalString2(env2.TENCENT_ADS_ACCESS_TOKEN);
+  if (envToken) {
+    return envToken;
+  }
+  const savedToken = await loadTencentAdsAccessToken({ configDir: options.configDir });
+  if (savedToken) {
+    return savedToken;
+  }
+  throw new Error("missing --access-token; run adcli tencent-ads auth <token> or set TENCENT_ADS_ACCESS_TOKEN");
+}
+function getRequiredAccountId(args) {
+  return getRequiredId2(args, "account-id", "advertiser-id");
+}
+function getRequiredString2(args, flag, alias) {
+  const value = getOptionalString2(args.flags[flag]) ?? (alias ? getOptionalString2(args.flags[alias]) : undefined);
+  if (!value) {
+    throw new Error(alias ? `missing --${flag} or --${alias}` : `missing --${flag}`);
+  }
+  return value;
+}
+function getOptionalString2(value) {
+  if (typeof value !== "string" || !value) {
+    return;
+  }
+  return value;
+}
+function getOptionalId(args, flag) {
+  const value = getOptionalString2(args.flags[flag]);
+  if (!value) {
+    return;
+  }
+  if (!/^\d+$/.test(value)) {
+    throw new Error(`--${flag} must be an integer id`);
+  }
+  return value;
+}
+function getRequiredId2(args, flag, alias) {
+  const value = getRequiredString2(args, flag, alias);
+  if (!/^\d+$/.test(value)) {
+    throw new Error(alias ? `--${flag} or --${alias} must be an integer id` : `--${flag} must be an integer id`);
+  }
+  return value;
+}
+function parseNumberFlag2(value) {
+  if (value == null || value === true) {
+    return;
+  }
+  const parsed = Number(value);
+  if (!Number.isFinite(parsed)) {
+    throw new Error(`numeric flag must be a number: ${value}`);
+  }
+  return parsed;
+}
+function parseCsv2(value) {
+  if (typeof value !== "string" || !value) {
+    return;
+  }
+  return value.split(",").map((item) => item.trim()).filter(Boolean);
+}
+function parseJsonFlag2(value) {
+  if (typeof value !== "string" || !value) {
+    return;
+  }
+  return parseJsonPreservingLargeIntegers2(value);
+}
+function formatEntityList2(payload, idHeader, idKeys, nameKeys) {
+  const list = getPayloadList2(payload);
+  const header = `${idHeader}	name`;
+  if (list.length === 0) {
+    return header;
+  }
+  return [
+    header,
+    ...list.map((item) => {
+      const id = getRecordValue2(item, idKeys);
+      const name = getRecordValue2(item, nameKeys);
+      return `${id}	${name}`;
+    })
+  ].join(`
+`);
+}
+function getPayloadList2(payload) {
+  if (!isRecord2(payload) || !isRecord2(payload.data) || !Array.isArray(payload.data.list)) {
+    return [];
+  }
+  return payload.data.list.filter(isRecord2);
+}
+function getRecordValue2(record, keys) {
+  for (const key of keys) {
+    const value = record[key];
+    if (typeof value === "string" || typeof value === "number") {
+      return String(value);
+    }
+  }
+  return "";
+}
+function isRecord2(value) {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+function isTencentAdsErrorPayload(payload) {
+  return isRecord2(payload) && typeof payload.code === "number" && payload.code !== 0;
+}
+
 // src/cli.ts
 var help = `adcli
 
@@ -3842,6 +4713,7 @@ Usage:
   adcli list [platform] [--json]
   adcli doc <command>
   adcli oceanengine <resource> <command>
+  adcli tencent-ads <resource> <command>
   adcli prompt
   adcli llms
 
@@ -3849,6 +4721,7 @@ Commands:
   list          List supported advertising platforms and capabilities
   doc           Search and sync published advertising API docs
   oceanengine   Call OceanEngine APIs through the generated Node.js SDK
+  tencent-ads   Call Tencent Ads APIs through the generated Node.js SDK
   prompt        Print an AI/Agent instruction prompt for using the docs pack
   llms          Print LLM-readable docs pack entry URLs
 `;
@@ -3873,6 +4746,20 @@ Usage:
 Environment:
   Token precedence is --access-token, OCEANENGINE_ACCESS_TOKEN, then the saved token.
   Project list does not include deleted projects by default; use filtering status PROJECT_STATUS_ALL for all projects.
+`;
+var tencentAdsHelp = `adcli tencent-ads
+
+Usage:
+  adcli tencent-ads auth <token>
+  adcli tencent-ads advertiser list [--access-token token] [--page 1] [--page-size 100] [--json]
+  adcli tencent-ads advertiser get --account-id 123 [--access-token token] [--fields account_id,account_name] [--json]
+  adcli tencent-ads adgroup list --account-id 123 [--access-token token] [--page 1] [--page-size 20] [--fields adgroup_id,adgroup_name] [--filtering '{}'] [--json]
+  adcli tencent-ads dynamic-creative list --account-id 123 [--access-token token] [--fields dynamic_creative_id,dynamic_creative_name] [--filtering '{}'] [--json]
+
+Environment:
+  Token precedence is --access-token, TENCENT_ADS_ACCESS_TOKEN, then the saved token.
+  --advertiser-id is accepted as an alias for --account-id.
+  Tencent Ads command names follow v3 API resources; use --filtering for resource filters.
 `;
 async function main() {
   const args = parseArgs(process.argv.slice(2));
@@ -3916,6 +4803,16 @@ async function main() {
     const oceanEngineArgv = [args.command, ...args.query];
     const payload = await runOceanEngineCommand(oceanEngineArgv);
     console.log(formatOceanEngineOutput(payload, args.json, oceanEngineArgv));
+    return;
+  }
+  if (args.domain === "tencent-ads") {
+    if (!args.command || args.command === "--help" || args.command === "-h" || args.command === "help") {
+      console.log(tencentAdsHelp.trim());
+      return;
+    }
+    const tencentAdsArgv = [args.command, ...args.query];
+    const payload = await runTencentAdsCommand(tencentAdsArgv);
+    console.log(formatTencentAdsOutput(payload, args.json, tencentAdsArgv));
     return;
   }
   if (args.domain !== "doc" || args.command !== "search") {
@@ -4081,6 +4978,6 @@ function parseArgs(argv) {
   return args;
 }
 main().catch((error) => {
-  console.error(formatOceanEngineError(error) ?? (error instanceof Error ? error.message : error));
+  console.error(formatTencentAdsError(error) ?? formatOceanEngineError(error) ?? (error instanceof Error ? error.message : error));
   process.exit(1);
 });

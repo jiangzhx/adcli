@@ -1,0 +1,8 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_illegal_date_range.go
+// Do not edit manually.
+
+export interface IllegalDateRange {
+  start_date?: string;
+  end_date?: string;
+}
+

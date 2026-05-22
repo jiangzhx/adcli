@@ -7,6 +7,7 @@ describe("monorepo package shape", () => {
 
     expect(pkg.workspaces).toEqual(["packages/*"]);
     expect(pkg.dependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBe("1.1.87-port.3");
+    expect(pkg.dependencies["@jiangzhx/tencent-ads-marketing-api-sdk"]).toBe("1.7.84-port.1");
     expect(pkg.devDependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBeUndefined();
     expect(pkg.scripts["sdk:oceanengine:test"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk test");
     expect(pkg.scripts["sdk:oceanengine:typecheck"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk typecheck");

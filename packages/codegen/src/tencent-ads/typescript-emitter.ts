@@ -1,7 +1,15 @@
 import type { ApiSpec, ModelSpec } from "./spec";
 
 export interface ApiEmitOptions {
-  runtimePrefix?: string;
+  clientModule?: string;
+  configurationModules?: {
+    v1: string;
+    v3: string;
+  };
+  modelsModule?: string;
+}
+
+export interface ModelEmitOptions {
   modelsModule?: string;
 }
 
@@ -14,23 +22,27 @@ ${emitApiClassBody(specs)}
 `;
 }
 
-export function emitModelModule(spec: ModelSpec) {
+export function emitModelModule(spec: ModelSpec, options: ModelEmitOptions = {}) {
+  const modelsModule = options.modelsModule ?? "../model/index";
   const modelImports = extractModelImports(spec);
-  const importLine = modelImports.length > 0 ? `import type { ${modelImports.join(", ")} } from "../models";\n\n` : "";
+  const importLine = modelImports.length > 0 ? `import type { ${modelImports.join(", ")} } from "${modelsModule}";\n\n` : "";
   return `${importLine}${emitModel(spec)}`;
 }
 
 function emitApiHeader(specs: ApiSpec[], options: ApiEmitOptions = {}) {
-  const runtimePrefix = options.runtimePrefix ?? "../runtime";
-  const modelsModule = options.modelsModule ?? "./models";
+  const clientModule = options.clientModule ?? "./client";
+  const configurationModules = options.configurationModules ?? {
+    v1: "../config/configuration",
+    v3: "../config/v3/configuration",
+  };
+  const modelsModule = options.modelsModule ?? "./model/index";
   const modelImports = [
     ...new Set(specs.flatMap((spec) => [...extractModelTypes(spec.responseType), ...spec.params.flatMap((param) => extractModelTypes(param.javaType))])),
   ].sort();
   const modelImportLine = modelImports.length > 0 ? `\nimport type { ${modelImports.join(", ")} } from "${modelsModule}";` : "";
+  const configurationImports = emitConfigurationImports(specs, configurationModules);
 
-  return `import { ApiClient } from "${runtimePrefix}/ApiClient";
-import { ApiException } from "${runtimePrefix}/ApiException";
-import type { ApiResponse } from "${runtimePrefix}/ApiResponse";${modelImportLine}`;
+  return `import { ApiClient, ApiException, type ApiResponse } from "${clientModule}";${modelImportLine}${configurationImports}`;
 }
 
 function emitRequestInterface(spec: ApiSpec) {
@@ -81,6 +93,7 @@ function emitApiMethod(spec: ApiSpec) {
     .join(",\n");
   const formParams = emitNamedRequestObject("formParams", spec.formParams);
   const fileParams = emitNamedRequestObject("files", spec.fileParams);
+  const basePath = spec.basePath ? `      basePath: ${configurationExpression(spec.basePath)}.basePath,\n` : "";
   const contentType = spec.contentTypes[0] ? `,\n      contentType: "${spec.contentTypes[0]}"` : "";
   const body = spec.bodyParam ? `,\n      body: ${spec.bodyParam}` : "";
 
@@ -93,6 +106,7 @@ function emitApiMethod(spec: ApiSpec) {
 ${checks}
     return this.apiClient.requestWithHttpInfo<${responseType}>({
       method: "${spec.httpMethod}",
+${basePath.trimEnd()}
       path: "${spec.path}",
       queryParams: [
 ${queryParams}
@@ -108,6 +122,40 @@ function emitNamedRequestObject(name: "formParams" | "files", params: Array<{ na
   }
   const fields = params.map((param) => `        ${toPropertyKey(param.name)}: ${param.source}`).join(",\n");
   return `,\n      ${name}: {\n${fields}\n      }`;
+}
+
+function emitConfigurationImports(specs: ApiSpec[], configurationModules: { v1: string; v3: string }) {
+  const imports = [
+    ...new Set(
+      specs.flatMap((spec) => {
+        const config = configurationImport(spec.basePath, configurationModules);
+        return config ? [config] : [];
+      }),
+    ),
+  ].sort();
+  return imports.length > 0 ? `\n${imports.join("\n")}` : "";
+}
+
+function configurationImport(basePath: string | undefined, configurationModules: { v1: string; v3: string }) {
+  switch (basePath) {
+    case "https://sandbox-api.e.qq.com/v1.3":
+      return `import { DefaultConfiguration as TencentAdsV13Configuration } from "${configurationModules.v1}";`;
+    case "https://api.e.qq.com/v3.0":
+      return `import { DefaultConfiguration as TencentAdsV30Configuration } from "${configurationModules.v3}";`;
+    default:
+      return undefined;
+  }
+}
+
+function configurationExpression(basePath: string) {
+  switch (basePath) {
+    case "https://sandbox-api.e.qq.com/v1.3":
+      return "TencentAdsV13Configuration";
+    case "https://api.e.qq.com/v3.0":
+      return "TencentAdsV30Configuration";
+    default:
+      return `{ basePath: ${JSON.stringify(basePath)} }`;
+  }
 }
 
 export function emitModel(spec: ModelSpec) {

@@ -1,0 +1,13 @@
+export interface VideoChannelLeadsDataGetRequest {
+    account_id?: number | string;
+    brand_ids?: string[];
+    brand_names?: string[];
+    dealer_ids?: string[];
+    dealer_names?: string[];
+    video_channel_ids?: string[];
+    video_channel_names?: string[];
+    start_date?: number;
+    end_date?: number;
+    page?: number;
+    page_size?: number;
+}

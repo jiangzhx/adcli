@@ -1,0 +1,22 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_bidword_get_list_struct.go
+// Do not edit manually.
+
+import type { BidwordMatchType, BidwordPage, BidwordPauseType, BidwordStatus, UseGroupPriceType } from "../model/index";
+
+export interface BidwordGetListStruct {
+  bidword_id?: number | string;
+  campaign_id?: number | string;
+  adgroup_id?: number | string;
+  bidword?: string;
+  bid_price?: number;
+  match_type?: BidwordMatchType;
+  configured_status?: BidwordPauseType;
+  bidword_status?: BidwordStatus;
+  use_group_price?: UseGroupPriceType;
+  audit_msg?: string;
+  created_time?: number;
+  last_modified_time?: number;
+  pc_landing_page_info?: BidwordPage[];
+  mobile_landing_page_info?: BidwordPage[];
+}
+

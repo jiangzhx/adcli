@@ -1,7 +1,0 @@
-// Generated from tencentad/marketing-api-go-sdk
-// Do not edit manually.
-export const ShortPlayPayType = {
-    UNKNOWN: "SHORT_PLAY_PAY_TYPE_UNKNOWN",
-    FREE_PLAY: "SHORT_PLAY_PAY_TYPE_FREE_PLAY",
-    CHARGE_PLAY: "SHORT_PLAY_PAY_TYPE_CHARGE_PLAY",
-};

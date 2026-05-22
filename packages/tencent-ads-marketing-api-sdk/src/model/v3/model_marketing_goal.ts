@@ -1,0 +1,14 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_marketing_goal.go
+// Do not edit manually.
+
+export const MarketingGoal = {
+  UNKNOWN: "MARKETING_GOAL_UNKNOWN",
+  USER_GROWTH: "MARKETING_GOAL_USER_GROWTH",
+  PRODUCT_SALES: "MARKETING_GOAL_PRODUCT_SALES",
+  LEAD_RETENTION: "MARKETING_GOAL_LEAD_RETENTION",
+  BRAND_PROMOTION: "MARKETING_GOAL_BRAND_PROMOTION",
+  INCREASE_FANS_INTERACTION: "MARKETING_GOAL_INCREASE_FANS_INTERACTION",
+} as const;
+
+export type MarketingGoal = typeof MarketingGoal[keyof typeof MarketingGoal];
+

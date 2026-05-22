@@ -1,0 +1,36 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_leads_source.go
+// Do not edit manually.
+
+export const LeadsSource = {
+  OUTER_TRAFFIC: "OUTER_TRAFFIC",
+  OFFLINE: "OFFLINE",
+  AD_PREVIEW: "AD_PREVIEW",
+  XJ: "XJ",
+  FY: "FY",
+  ONE_LEAF: "ONE_LEAF",
+  WECHAT_CANVAS: "WECHAT_CANVAS",
+  XUNDA: "XUNDA",
+  YUNQUE: "YUNQUE",
+  YINGTAO: "YINGTAO",
+  CAOMEI: "CAOMEI",
+  LIZI_TONG: "LIZI_TONG",
+  ZHILIAO: "ZHILIAO",
+  GUOSHI: "GUOSHI",
+  PANZI: "PANZI",
+  QUNYOU: "QUNYOU",
+  HAILUOYUN: "HAILUOYUN",
+  INTERACTIVEPAGE: "INTERACTIVEPAGE",
+  ZHIYING: "ZHIYING",
+  JIAOPEITONG: "JIAOPEITONG",
+  YOUJU: "YOUJU",
+  YIXIN: "YIXIN",
+  AITUI: "AITUI",
+  FEIYU: "FEIYU",
+  CMS: "CMS",
+  PERSONAL_WECHAT: "PERSONAL_WECHAT",
+  TANGLANG: "TANGLANG",
+  VIDEOCHANNEL: "VIDEOCHANNEL",
+} as const;
+
+export type LeadsSource = typeof LeadsSource[keyof typeof LeadsSource];
+

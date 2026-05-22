@@ -1,0 +1,14 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_business_price.go
+// Do not edit manually.
+export const BusinessPrice = {
+    FREE: "BUSINESS_PRICE_FREE",
+    "1TO50": "BUSINESS_PRICE_1_TO_50",
+    "51TO100": "BUSINESS_PRICE_51_TO_100",
+    "101TO200": "BUSINESS_PRICE_101_TO_200",
+    "201TO1000": "BUSINESS_PRICE_201_TO_1000",
+    "1001TO3000": "BUSINESS_PRICE_1001_TO_3000",
+    "3001TO5000": "BUSINESS_PRICE_3001_TO_5000",
+    "5001TO8000": "BUSINESS_PRICE_5001_TO_8000",
+    "8001TO12000": "BUSINESS_PRICE_8001_TO_12000",
+    OUT_12000: "BUSINESS_PRICE_OUT_12000",
+};

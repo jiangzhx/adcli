@@ -1,0 +1,7 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_asset_similarity_detail_update_response_data.go
+// Do not edit manually.
+
+export interface AssetSimilarityDetailUpdateResponseData {
+  creative_asset_id?: string;
+}
+

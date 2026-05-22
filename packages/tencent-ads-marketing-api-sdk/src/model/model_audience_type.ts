@@ -1,0 +1,21 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_audience_type.go
+// Do not edit manually.
+
+export const AudienceType = {
+  AUDIENCE_TYPE_UNKNOWN: "AUDIENCE_TYPE_UNKNOWN",
+  AUDIENCE_TYPE_META: "AUDIENCE_TYPE_META",
+  AUDIENCE_TYPE_COMBINE: "AUDIENCE_TYPE_COMBINE",
+  AUDIENCE_TYPE_LOOKALIKE: "AUDIENCE_TYPE_LOOKALIKE",
+  AUDIENCE_TYPE_PACKAGE: "AUDIENCE_TYPE_PACKAGE",
+  CUSTOMER_FILE: "CUSTOMER_FILE",
+  LOOKALIKE: "LOOKALIKE",
+  USER_ACTION: "USER_ACTION",
+  LBS: "LBS",
+  KEYWORD: "KEYWORD",
+  AD: "AD",
+  COMBINE: "COMBINE",
+  LABEL: "LABEL",
+} as const;
+
+export type AudienceType = typeof AudienceType[keyof typeof AudienceType];
+

@@ -1,0 +1,19 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_lead_clues_leads_type.go
+// Do not edit manually.
+
+export const LeadCluesLeadsType = {
+  FORM: "LEADS_TYPE_FORM",
+  ONLINE_CONSULT: "LEADS_TYPE_ONLINE_CONSULT",
+  MAKE_PHONE_CALL: "LEADS_TYPE_MAKE_PHONE_CALL",
+  PHONE: "LEADS_TYPE_PHONE",
+  PROMOTION_COUPON: "LEADS_TYPE_PROMOTION_COUPON",
+  INTELLIGENT_TOOL: "LEADS_TYPE_INTELLIGENT_TOOL",
+  LOTTERY: "LEADS_TYPE_LOTTERY",
+  LANDING_PAGE_CLICK: "LEADS_TYPE_LANDING_PAGE_CLICK",
+  ONE_CLICK_AUTHORIZE: "LEADS_TYPE_ONE_CLICK_AUTHORIZE",
+  PAGE_SCAN_CODE: "LEADS_TYPE_PAGE_SCAN_CODE",
+  PROMOTION_FOLLOW: "LEADS_TYPE_PROMOTION_FOLLOW",
+} as const;
+
+export type LeadCluesLeadsType = typeof LeadCluesLeadsType[keyof typeof LeadCluesLeadsType];
+

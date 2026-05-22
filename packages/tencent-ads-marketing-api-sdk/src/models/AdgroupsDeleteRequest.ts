@@ -1,8 +1,0 @@
-// Generated from tencentad/marketing-api-go-sdk
-// Do not edit manually.
-
-export interface AdgroupsDeleteRequest {
-  account_id?: number | string;
-  adgroup_id?: number | string;
-}
-

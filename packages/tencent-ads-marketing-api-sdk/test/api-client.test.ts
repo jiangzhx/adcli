@@ -1,6 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { ApiClient, SDK_VERSION } from "../src/runtime/ApiClient";
-import { ApiException } from "../src/runtime/ApiException";
+import { ApiClient, ApiException, SDK_VERSION } from "../src/api/v3/client";
 
 function jsonResponse(body: unknown, init: ResponseInit = {}) {
   const headers = new Headers(init.headers);
@@ -43,7 +42,40 @@ describe("ApiClient", () => {
     expect(requests[0].headers.get("X-Sdk-Version")).toBe(SDK_VERSION);
   });
 
-  test("serializes multi query params as repeated keys", async () => {
+  test("preserves the v3.0 base path for generated absolute API paths", async () => {
+    const requests: Request[] = [];
+    const client = new ApiClient({
+      fetch: async (input) => {
+        requests.push(input as Request);
+        return jsonResponse({ code: 0, data: {} });
+      },
+    });
+
+    await client.request({ method: "GET", path: "/advertiser/get" });
+
+    expect(new URL(requests[0].url).pathname).toBe("/v3.0/advertiser/get");
+  });
+
+  test("adds Go SDK compatible auth query params after setAccessToken", async () => {
+    const requests: Request[] = [];
+    const client = new ApiClient({
+      fetch: async (input) => {
+        requests.push(input as Request);
+        return jsonResponse({ code: 0, data: {} });
+      },
+    });
+
+    client.setAccessToken("token-123").setUserToken("user-token");
+    await client.request({ method: "GET", path: "/advertiser/get" });
+
+    const url = new URL(requests[0].url);
+    expect(url.searchParams.get("access_token")).toBe("token-123");
+    expect(url.searchParams.get("timestamp")).toBeTruthy();
+    expect(url.searchParams.get("nonce")?.length).toBe(20);
+    expect(url.searchParams.get("user_token")).toBe("user-token");
+  });
+
+  test("serializes multi query params as JSON strings like Tencent Go SDK", async () => {
     const requests: Request[] = [];
     const client = new ApiClient({
       fetch: async (input) => {
@@ -58,7 +90,7 @@ describe("ApiClient", () => {
       queryParams: [{ name: "fields", value: ["adgroup_id", "adgroup_name"], collectionFormat: "multi" }],
     });
 
-    expect(new URL(requests[0].url).searchParams.getAll("fields")).toEqual(["adgroup_id", "adgroup_name"]);
+    expect(new URL(requests[0].url).searchParams.get("fields")).toBe('["adgroup_id","adgroup_name"]');
   });
 
   test("sends multipart form params and files", async () => {

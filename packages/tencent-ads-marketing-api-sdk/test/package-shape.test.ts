@@ -14,8 +14,16 @@ describe("tencent ads package shape", () => {
     expect(pkg.type).toBe("module");
     expect(pkg.exports["."].import).toBe("./dist/index.js");
     expect(pkg.exports["."].types).toBe("./dist/index.d.ts");
-    expect(pkg.exports["./apis"].import).toBe("./dist/apis.js");
-    expect(pkg.exports["./models"].types).toBe("./dist/models.d.ts");
+    expect(pkg.exports["./api"].import).toBe("./dist/api/index.js");
+    expect(pkg.exports["./api"].types).toBe("./dist/api/index.d.ts");
+    expect(pkg.exports["./api/v3"].import).toBe("./dist/api/v3/index.js");
+    expect(pkg.exports["./api/v3"].types).toBe("./dist/api/v3/index.d.ts");
+    expect(pkg.exports["./model"].import).toBe("./dist/model/index.js");
+    expect(pkg.exports["./model"].types).toBe("./dist/model/index.d.ts");
+    expect(pkg.exports["./model/v3"].import).toBe("./dist/model/v3/index.js");
+    expect(pkg.exports["./model/v3"].types).toBe("./dist/model/v3/index.d.ts");
+    expect(pkg.exports["./config"].import).toBe("./dist/config/configuration.js");
+    expect(pkg.exports["./config/v3"].import).toBe("./dist/config/v3/configuration.js");
     expect(pkg.files).toEqual(["dist", "README.md"]);
     expect(pkg.scripts.typecheck).toBe("tsc -p tsconfig.json --noEmit");
     expect(pkg.scripts.test).toBe("bun test test/*.test.ts");

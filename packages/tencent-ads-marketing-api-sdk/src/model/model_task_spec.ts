@@ -1,0 +1,27 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_task_spec.go
+// Do not edit manually.
+
+import type { AdcleanerDeleteAdgroupSpec, AdcleanerUpdateAdgroupConfiguredStatusSpec, ReportTaskSpec, TaskTypeAdHourlyReportSpec, TaskTypeCreateAndroidChannelPackageSpec, TaskTypeCreateAndroidUnionChannelPackageSpec, TaskTypeMassiveKeywordRecommendSpec, TaskTypeReviewElementPrereviewResultSpec, TaskTypeSearchDownloadAllSpec, TaskTypeUnionPositionReportSpec, TaskTypeUpdateAndroidChannelPackageSpec, TaskTypeUpdateAndroidUnionChannelPackageSpec, TaskTypeWechatAdDailyReportSpec, TaskTypeWechatAdHourlyReportSpec, TaskTypeWechatAdgroupDailyReportSpec, TaskTypeWechatAdgroupHourlyReportSpec, TaskTypeWechatAdvertisingDataSpec, TaskTypeWechatMomentsAdgroupHourlyReportSpec, TaskTypeWechatPoiHourlyReportSpec } from "../model/index";
+
+export interface TaskSpec {
+  report_task_spec?: ReportTaskSpec;
+  task_type_ad_hourly_report_spec?: TaskTypeAdHourlyReportSpec;
+  task_type_wechat_moments_adgroup_hourly_report_spec?: TaskTypeWechatMomentsAdgroupHourlyReportSpec;
+  task_type_wechat_adgroup_hourly_report_spec?: TaskTypeWechatAdgroupHourlyReportSpec;
+  task_type_wechat_adgroup_daily_report_spec?: TaskTypeWechatAdgroupDailyReportSpec;
+  task_type_wechat_ad_hourly_report_spec?: TaskTypeWechatAdHourlyReportSpec;
+  task_type_wechat_ad_daily_report_spec?: TaskTypeWechatAdDailyReportSpec;
+  task_type_wechat_advertising_data_spec?: TaskTypeWechatAdvertisingDataSpec;
+  task_type_wechat_poi_hourly_report_spec?: TaskTypeWechatPoiHourlyReportSpec;
+  task_type_create_android_channel_package_spec?: TaskTypeCreateAndroidChannelPackageSpec;
+  task_type_update_android_channel_package_spec?: TaskTypeUpdateAndroidChannelPackageSpec;
+  task_type_create_android_union_channel_package_spec?: TaskTypeCreateAndroidUnionChannelPackageSpec;
+  task_type_update_android_union_channel_package_spec?: TaskTypeUpdateAndroidUnionChannelPackageSpec;
+  task_type_union_position_report_spec?: TaskTypeUnionPositionReportSpec;
+  task_type_review_element_prereview_result_spec?: TaskTypeReviewElementPrereviewResultSpec;
+  task_type_massive_keyword_recommend_spec?: TaskTypeMassiveKeywordRecommendSpec;
+  task_type_search_download_all_spec?: TaskTypeSearchDownloadAllSpec;
+  adcleaner_update_adgroup_configured_status_spec?: AdcleanerUpdateAdgroupConfiguredStatusSpec;
+  adcleaner_delete_adgroup_spec?: AdcleanerDeleteAdgroupSpec;
+}
+

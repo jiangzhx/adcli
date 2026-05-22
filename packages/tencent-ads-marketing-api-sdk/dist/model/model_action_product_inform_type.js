@@ -1,0 +1,22 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_action_product_inform_type.go
+// Do not edit manually.
+export const ActionProductInformType = {
+    EC: "EC",
+    ESTATE: "ESTATE",
+    VIDEO: "VIDEO",
+    CAR: "CAR",
+    NEWS_INFORMATION: "NEWS_INFORMATION",
+    BEAUTY_PERSONAL_CARE: "BEAUTY_PERSONAL_CARE",
+    RETAIL: "RETAIL",
+    EDUCATION: "EDUCATION",
+    READING: "READING",
+    INSURANCE: "INSURANCE",
+    LOAN: "LOAN",
+    FINANCIAL: "FINANCIAL",
+    BANKCARD: "BANKCARD",
+    WEDDING: "WEDDING",
+    SECURITIES: "SECURITIES",
+    DECORATION_BUILDING_MATERIAL: "DECORATION_BUILDING_MATERIAL",
+    CARRIER: "CARRIER",
+    GAME: "GAME",
+};

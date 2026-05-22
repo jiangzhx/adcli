@@ -1,0 +1,22 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_dynamic_creatives_add_request.go
+// Do not edit manually.
+
+import type { ConfiguredStatus, CreativeComponents, DeliveryMode, DynamicCreativeType, ProgramCreativeInfo, SiteSetValidateModel } from "../v3/index";
+
+export interface DynamicCreativesAddRequest {
+  account_id?: number | string;
+  adgroup_id?: number | string;
+  dynamic_creative_name?: string;
+  creative_template_id?: number | string;
+  delivery_mode?: DeliveryMode;
+  dynamic_creative_type?: DynamicCreativeType;
+  creative_components?: CreativeComponents;
+  impression_tracking_url?: string;
+  click_tracking_url?: string;
+  program_creative_info?: ProgramCreativeInfo;
+  page_track_url?: string;
+  auto_derived_program_creative_switch?: boolean;
+  configured_status?: ConfiguredStatus;
+  site_set_validate_model?: SiteSetValidateModel;
+}
+

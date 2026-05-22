@@ -1,0 +1,9 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_account_subsidy_get_response_data.go
+// Do not edit manually.
+
+import type { AccountSubsidyGetListStruct } from "../v3/index";
+
+export interface AccountSubsidyGetResponseData {
+  list?: AccountSubsidyGetListStruct[];
+}
+

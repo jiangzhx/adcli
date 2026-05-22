@@ -1,0 +1,7 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_wechat_channels_ad_account_wechat_binding_add_request.go
+// Do not edit manually.
+
+export interface WechatChannelsAdAccountWechatBindingAddRequest {
+  account_id?: number | string;
+}
+

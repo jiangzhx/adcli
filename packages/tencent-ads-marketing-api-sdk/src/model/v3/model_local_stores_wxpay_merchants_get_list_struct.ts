@@ -1,0 +1,8 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_local_stores_wxpay_merchants_get_list_struct.go
+// Do not edit manually.
+
+export interface LocalStoresWxpayMerchantsGetListStruct {
+  wxpay_merchant_id?: number | string;
+  company_name?: string;
+}
+

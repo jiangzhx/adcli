@@ -1,0 +1,16 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_wechat_auth_type.go
+// Do not edit manually.
+
+export const WechatAuthType = {
+  DEFAULT: "DEFAULT",
+  SAME_CORPORATION: "SAME_CORPORATION",
+  OVER_CORPORATION: "OVER_CORPORATION",
+  OVER_CORPORATION_SAME_GROUP: "OVER_CORPORATION_SAME_GROUP",
+  OVER_CORPORATION_EMPLOYMENT: "OVER_CORPORATION_EMPLOYMENT",
+  CUSTOMER_MANAGER: "CUSTOMER_MANAGER",
+  CUSTOMER_BUSINESS_UNIT: "CUSTOMER_BUSINESS_UNIT",
+  GROUP_BUSINESS_UNIT: "GROUP_BUSINESS_UNIT",
+} as const;
+
+export type WechatAuthType = typeof WechatAuthType[keyof typeof WechatAuthType];
+

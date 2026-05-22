@@ -1,0 +1,10 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_components_get_response_data.go
+// Do not edit manually.
+
+import type { ComponentsGetListStruct, PageInfo } from "../v3/index";
+
+export interface ComponentsGetResponseData {
+  list?: ComponentsGetListStruct[];
+  page_info?: PageInfo;
+}
+

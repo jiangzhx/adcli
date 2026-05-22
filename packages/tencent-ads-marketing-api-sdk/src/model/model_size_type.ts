@@ -1,0 +1,14 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_size_type.go
+// Do not edit manually.
+
+export const SizeType = {
+  VERTICALVERSION_750_1536: "VERTICALVERSION_750_1536",
+  VERTICALVERSION_750_1334: "VERTICALVERSION_750_1334",
+  VERTICALVERSION_1080_1920: "VERTICALVERSION_1080_1920",
+  VERTICALVERSION: "VERTICALVERSION",
+  HORIZONTALVERSION_4_3: "HORIZONTALVERSION_4_3",
+  HORIZONTALVERSION: "HORIZONTALVERSION",
+} as const;
+
+export type SizeType = typeof SizeType[keyof typeof SizeType];
+

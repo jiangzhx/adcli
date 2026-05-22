@@ -1,0 +1,6 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_access_status.go
+// Do not edit manually.
+export const AccessStatus = {
+    COMPLETED: "ACCESS_STATUS_COMPLETED",
+    PENDING: "ACCESS_STATUS_PENDING",
+};

@@ -1,8 +1,0 @@
-// Generated from tencentad/marketing-api-go-sdk
-// Do not edit manually.
-export const ItemType = {
-    NAME: "NAME",
-    PHONE: "PHONE",
-    TEXT: "TEXT",
-    SELECT: "SELECT",
-};

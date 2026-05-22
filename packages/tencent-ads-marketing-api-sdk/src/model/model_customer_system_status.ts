@@ -1,0 +1,19 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_customer_system_status.go
+// Do not edit manually.
+
+export const CustomerSystemStatus = {
+  NORMAL: "CUSTOMER_STATUS_NORMAL",
+  PENDING: "CUSTOMER_STATUS_PENDING",
+  DENIED: "CUSTOMER_STATUS_DENIED",
+  FROZEN: "CUSTOMER_STATUS_FROZEN",
+  TOBE_ACCEPTED: "CUSTOMER_STATUS_TOBE_ACCEPTED",
+  TOBE_ACTIVATED: "CUSTOMER_STATUS_TOBE_ACTIVATED",
+  SUSPEND: "CUSTOMER_STATUS_SUSPEND",
+  MATERIAL_PREPARED: "CUSTOMER_STATUS_MATERIAL_PREPARED",
+  DELETED: "CUSTOMER_STATUS_DELETED",
+  FROZEN_TEMPORARILY: "CUSTOMER_STATUS_FROZEN_TEMPORARILY",
+  UNREGISTERED: "CUSTOMER_STATUS_UNREGISTERED",
+} as const;
+
+export type CustomerSystemStatus = typeof CustomerSystemStatus[keyof typeof CustomerSystemStatus];
+

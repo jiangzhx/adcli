@@ -1,0 +1,8 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_smart_delivery_goal_multi_optimization_spec.go
+// Do not edit manually.
+
+export interface SmartDeliveryGoalMultiOptimizationSpec {
+  multi_optimization_cost?: number;
+  multi_optimization_roi?: number;
+}
+

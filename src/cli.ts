@@ -3,6 +3,7 @@
 import { getSearchIndexCacheInfo, loadSearchIndex, refreshSearchIndex } from "@/src/lib/search/cache";
 import { searchDocuments } from "@/src/lib/search/searcher";
 import { formatOceanEngineError, formatOceanEngineOutput, runOceanEngineCommand } from "@/src/commands/oceanengine/commands";
+import { formatTencentAdsError, formatTencentAdsOutput, runTencentAdsCommand } from "@/src/commands/tencent-ads/commands";
 
 type ParsedArgs = {
   domain?: string;
@@ -21,6 +22,7 @@ Usage:
   adcli list [platform] [--json]
   adcli doc <command>
   adcli oceanengine <resource> <command>
+  adcli tencent-ads <resource> <command>
   adcli prompt
   adcli llms
 
@@ -28,6 +30,7 @@ Commands:
   list          List supported advertising platforms and capabilities
   doc           Search and sync published advertising API docs
   oceanengine   Call OceanEngine APIs through the generated Node.js SDK
+  tencent-ads   Call Tencent Ads APIs through the generated Node.js SDK
   prompt        Print an AI/Agent instruction prompt for using the docs pack
   llms          Print LLM-readable docs pack entry URLs
 `;
@@ -54,6 +57,21 @@ Usage:
 Environment:
   Token precedence is --access-token, OCEANENGINE_ACCESS_TOKEN, then the saved token.
   Project list does not include deleted projects by default; use filtering status PROJECT_STATUS_ALL for all projects.
+`;
+
+const tencentAdsHelp = `adcli tencent-ads
+
+Usage:
+  adcli tencent-ads auth <token>
+  adcli tencent-ads advertiser list [--access-token token] [--page 1] [--page-size 100] [--json]
+  adcli tencent-ads advertiser get --account-id 123 [--access-token token] [--fields account_id,account_name] [--json]
+  adcli tencent-ads adgroup list --account-id 123 [--access-token token] [--page 1] [--page-size 20] [--fields adgroup_id,adgroup_name] [--filtering '{}'] [--json]
+  adcli tencent-ads dynamic-creative list --account-id 123 [--access-token token] [--fields dynamic_creative_id,dynamic_creative_name] [--filtering '{}'] [--json]
+
+Environment:
+  Token precedence is --access-token, TENCENT_ADS_ACCESS_TOKEN, then the saved token.
+  --advertiser-id is accepted as an alias for --account-id.
+  Tencent Ads command names follow v3 API resources; use --filtering for resource filters.
 `;
 
 async function main(): Promise<void> {
@@ -106,6 +124,17 @@ async function main(): Promise<void> {
     const oceanEngineArgv = [args.command, ...args.query];
     const payload = await runOceanEngineCommand(oceanEngineArgv);
     console.log(formatOceanEngineOutput(payload, args.json, oceanEngineArgv));
+    return;
+  }
+
+  if (args.domain === "tencent-ads") {
+    if (!args.command || args.command === "--help" || args.command === "-h" || args.command === "help") {
+      console.log(tencentAdsHelp.trim());
+      return;
+    }
+    const tencentAdsArgv = [args.command, ...args.query];
+    const payload = await runTencentAdsCommand(tencentAdsArgv);
+    console.log(formatTencentAdsOutput(payload, args.json, tencentAdsArgv));
     return;
   }
 
@@ -301,6 +330,6 @@ function parseArgs(argv: string[]): ParsedArgs {
 }
 
 main().catch((error: unknown) => {
-  console.error(formatOceanEngineError(error) ?? (error instanceof Error ? error.message : error));
+  console.error(formatTencentAdsError(error) ?? formatOceanEngineError(error) ?? (error instanceof Error ? error.message : error));
   process.exit(1);
 });

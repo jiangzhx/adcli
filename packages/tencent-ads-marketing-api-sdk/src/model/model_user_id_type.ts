@@ -1,0 +1,31 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_user_id_type.go
+// Do not edit manually.
+
+export const UserIdType = {
+  HASH_IDFA: "HASH_IDFA",
+  HASH_IMEI: "HASH_IMEI",
+  HASH_MOBILE_PHONE: "HASH_MOBILE_PHONE",
+  IDFA: "IDFA",
+  IMEI: "IMEI",
+  WX_OPENID: "WX_OPENID",
+  WX_UNIONID: "WX_UNIONID",
+  WECHAT_OPENID: "WECHAT_OPENID",
+  SALTED_HASH_IMEI: "SALTED_HASH_IMEI",
+  SALTED_HASH_IDFA: "SALTED_HASH_IDFA",
+  OAID: "OAID",
+  HASH_OAID: "HASH_OAID",
+  SHA256_MOBILE_PHONE: "SHA256_MOBILE_PHONE",
+  MD5_SHA256_IMEI: "MD5_SHA256_IMEI",
+  MD5_SHA256_IDFA: "MD5_SHA256_IDFA",
+  MD5_SHA256_OAID: "MD5_SHA256_OAID",
+  CAID: "CAID",
+  GDT_OPENID: "GDT_OPENID",
+  HASH_MAC: "HASH_MAC",
+  HASH_QQ: "HASH_QQ",
+  MAC: "MAC",
+  MOBILE_QQ_OPENID: "MOBILE_QQ_OPENID",
+  QQ: "QQ",
+} as const;
+
+export type UserIdType = typeof UserIdType[keyof typeof UserIdType];
+

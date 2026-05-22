@@ -1,0 +1,7 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_search_adgroups_add_response_data.go
+// Do not edit manually.
+
+export interface SearchAdgroupsAddResponseData {
+  adgroup_id?: number | string;
+}
+

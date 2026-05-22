@@ -1,0 +1,13 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_targeting_tags_get_query_spec.go
+// Do not edit manually.
+
+import type { TargetingAdvancedRecommendType } from "../model/index";
+
+export interface TargetingTagsGetQuerySpec {
+  query?: string;
+  query_list?: string[];
+  max_result_number?: number;
+  excluding_targeting_tags?: string[];
+  advanced_recommend_type?: TargetingAdvancedRecommendType;
+}
+

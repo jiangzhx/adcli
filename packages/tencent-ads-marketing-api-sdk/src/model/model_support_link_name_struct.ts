@@ -1,0 +1,8 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_support_link_name_struct.go
+// Do not edit manually.
+
+export interface SupportLinkNameStruct {
+  link_name_type?: string;
+  description?: string;
+}
+

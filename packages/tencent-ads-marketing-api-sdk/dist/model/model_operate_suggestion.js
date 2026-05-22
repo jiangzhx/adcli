@@ -1,0 +1,11 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_operate_suggestion.go
+// Do not edit manually.
+export const OperateSuggestion = {
+    OBSERVATION: "OPERATE_SUGGESTION_OBSERVATION",
+    OPERATION: "OPERATE_SUGGESTION_OPERATION",
+    PAUSE: "OPERATE_SUGGESTION_PAUSE",
+    FINE_PLAY: "OPERATE_SUGGESTION_FINE_PLAY",
+    SUSPEND: "OPERATE_SUGGESTION_SUSPEND",
+    TRAFFIC: "OPERATE_SUGGESTION_TRAFFIC",
+    LOWPOTENTIAL: "OPERATE_SUGGESTION_LOWPOTENTIAL",
+};

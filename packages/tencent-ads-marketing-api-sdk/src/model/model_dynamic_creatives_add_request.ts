@@ -1,0 +1,61 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_dynamic_creatives_add_request.go
+// Do not edit manually.
+
+import type { AdvertiserPicMaterialSwitch, AdvertiserSublinkSwitch, AppGiftPackCode, BarrageListCreateStruct, CampaignType, ConversionDataType, ConversionTargetType, DestinationType, DynamicAdcreativeSpecForDc, DynamicCreativeElements, DynamicCreativeGroupUsed, DynamicCreativePageSpec, DynamicCreativeType, DynamicLandingPageInfo, FloatingZone, HeadClickSpec, HeadClickType, LinkPageSpec, LinkPageType, LinkUrlLinkNameType, ProgramCreativeInfo, PromotedObjectType, ShareContentSpec, SimpleCanvasSubType, UnionMarketSpec, VideoEndPageSpec, WechatChannelsTrackingSpec } from "../model/index";
+
+export interface DynamicCreativesAddRequest {
+  dynamic_creative_name?: string;
+  dynamic_creative_template_id?: number | string;
+  dynamic_creative_elements?: DynamicCreativeElements;
+  campaign_type?: CampaignType;
+  promoted_object_type?: PromotedObjectType;
+  page_type?: DestinationType;
+  automatic_site_enabled?: boolean;
+  site_set?: string[];
+  promoted_object_id?: string;
+  page_spec?: DynamicCreativePageSpec;
+  link_page_type?: LinkPageType;
+  link_name_type?: LinkUrlLinkNameType;
+  link_page_spec?: LinkPageSpec;
+  conversion_data_type?: ConversionDataType;
+  conversion_target_type?: ConversionTargetType;
+  qq_mini_game_tracking_query_string?: string;
+  deep_link_url?: string;
+  impression_tracking_url?: string;
+  click_tracking_url?: string;
+  feeds_video_comment_switch?: boolean;
+  union_market_switch?: boolean;
+  android_deep_link_app_id?: string;
+  ios_deep_link_app_id?: string;
+  universal_link_url?: string;
+  profile_id?: number | string;
+  share_content_spec?: ShareContentSpec;
+  dynamic_adcreative_spec?: DynamicAdcreativeSpecForDc;
+  component_id?: number | string;
+  video_end_page?: VideoEndPageSpec;
+  webview_url?: string;
+  simple_canvas_sub_type?: SimpleCanvasSubType;
+  floating_zone?: FloatingZone;
+  marketing_pendant_image_id?: string;
+  barrage_list?: BarrageListCreateStruct[];
+  dynamic_creative_group_used?: DynamicCreativeGroupUsed;
+  countdown_switch?: boolean;
+  app_gift_pack_code?: AppGiftPackCode;
+  enable_breakthrough_siteset?: boolean;
+  landing_page_options?: DynamicLandingPageInfo[];
+  union_market_spec?: UnionMarketSpec;
+  auto_derived_program_creative_switch?: boolean;
+  program_creative_info?: ProgramCreativeInfo;
+  dynamic_creative_type?: DynamicCreativeType;
+  head_click_type?: HeadClickType;
+  head_click_spec?: HeadClickSpec;
+  campaign_id?: number | string;
+  wechat_channels_tracking_spec?: WechatChannelsTrackingSpec;
+  page_track_url?: string;
+  industry_label?: string;
+  sublink_switch?: AdvertiserSublinkSwitch;
+  pic_material_switch?: AdvertiserPicMaterialSwitch;
+  link_name_text?: string;
+  account_id?: number | string;
+}
+

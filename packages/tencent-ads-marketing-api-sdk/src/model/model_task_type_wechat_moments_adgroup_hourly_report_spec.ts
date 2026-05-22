@@ -1,0 +1,7 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_task_type_wechat_moments_adgroup_hourly_report_spec.go
+// Do not edit manually.
+
+export interface TaskTypeWechatMomentsAdgroupHourlyReportSpec {
+  date?: string;
+}
+

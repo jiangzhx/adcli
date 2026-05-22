@@ -1,9 +1,9 @@
-export * from "./runtime/ApiClient";
-export * from "./runtime/ApiException";
-export * from "./runtime/ApiResponse";
-export * from "./runtime/CommonReqApi";
-export * from "./runtime/json";
-export * from "./runtime/sdk-version";
-export type * from "./runtime/types";
-export * from "./apis";
-export * from "./models";
+// Generated from tencentad/marketing-api-go-sdk package entrypoint
+// Do not edit manually.
+
+export * from "./api/index";
+export * from "./model/index";
+export * as v3Api from "./api/v3/index";
+export * as v3Model from "./model/v3/index";
+export * from "./config/configuration";
+export * as v3Config from "./config/v3/configuration";

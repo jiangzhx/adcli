@@ -1,0 +1,6 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_create_source_type.go
+// Do not edit manually.
+export const CreateSourceType = {
+    SELF_CREATED: "SELF_CREATED",
+    PLATFORM: "PLATFORM",
+};

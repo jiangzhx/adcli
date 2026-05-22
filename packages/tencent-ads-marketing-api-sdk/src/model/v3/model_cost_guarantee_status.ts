@@ -1,0 +1,15 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_cost_guarantee_status.go
+// Do not edit manually.
+
+export const CostGuaranteeStatus = {
+  NONE: "COST_GUARANTEE_STATUS_NONE",
+  EFFECTIVE: "COST_GUARANTEE_STATUS_EFFECTIVE",
+  FAILED: "COST_GUARANTEE_STATUS_FAILED",
+  FINISHED: "COST_GUARANTEE_STATUS_FINISHED",
+  CONFIRMING: "COST_GUARANTEE_STATUS_CONFIRMING",
+  SUCCEEDED: "COST_GUARANTEE_STATUS_SUCCEEDED",
+  FROZEN: "COST_GUARANTEE_STATUS_FROZEN",
+} as const;
+
+export type CostGuaranteeStatus = typeof CostGuaranteeStatus[keyof typeof CostGuaranteeStatus];
+

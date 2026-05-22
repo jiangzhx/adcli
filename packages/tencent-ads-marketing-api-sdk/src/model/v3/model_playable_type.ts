@@ -1,0 +1,15 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_playable_type.go
+// Do not edit manually.
+
+export const PlayableType = {
+  DEFAULT: "PLAYABLE_TYPE_DEFAULT",
+  HOMEMADE_INTERACTION: "PLAYABLE_TYPE_HOMEMADE_INTERACTION",
+  MINIGAME_INTERACTION: "PLAYABLE_TYPE_MINIGAME_INTERACTION",
+  VIDEO_INTERACTION: "PLAYABLE_TYPE_VIDEO_INTERACTION",
+  WEBSITE_INTERACTION: "PLAYABLE_TYPE_WEBSITE_INTERACTION",
+  ZIP_INTERACTION: "PLAYABLE_TYPE_ZIP_INTERACTION",
+  COMPONENT_INTERACTION: "PLAYABLE_TYPE_COMPONENT_INTERACTION",
+} as const;
+
+export type PlayableType = typeof PlayableType[keyof typeof PlayableType];
+

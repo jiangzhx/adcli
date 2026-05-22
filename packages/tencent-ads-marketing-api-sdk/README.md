@@ -12,13 +12,13 @@ npm install @jiangzhx/tencent-ads-marketing-api-sdk
 
 ## 使用入口
 
-统一从包入口导入：
+v3 接口从 `api/v3` 导入，对应 Go SDK 的 `pkg/api/v3`：
 
 ```ts
 import {
   ApiClient,
   AdgroupsApi,
-} from "@jiangzhx/tencent-ads-marketing-api-sdk";
+} from "@jiangzhx/tencent-ads-marketing-api-sdk/api/v3";
 
 const client = new ApiClient().setAccessToken("access-token");
 const api = new AdgroupsApi(client);
@@ -29,14 +29,17 @@ await api.get({
 });
 ```
 
+`@jiangzhx/tencent-ads-marketing-api-sdk/api/v3` 对应 Go SDK `pkg/api/v3` 下的接口，默认请求 `https://api.e.qq.com/v3.0`；`@jiangzhx/tencent-ads-marketing-api-sdk/api` 对应 Go SDK `pkg/api` 下的接口，按官方 Go SDK 配置请求 `https://sandbox-api.e.qq.com/v1.3`。
+
 ## Porting 来源
 
 当前 SDK 的目标源码是官方 Go SDK：
 
 - Go module: `github.com/tencentad/marketing-api-go-sdk`
 - 当前源码版本: `v1.7.84`
-- API 源码: `pkg/api/*.go` 和 `pkg/api/v3/*.go`
-- Model 源码: `pkg/model/*.go` 和 `pkg/model/v3/*.go`
+- API 源码: `pkg/api/*.go` 和 `pkg/api/v3/*.go`，生成到 `src/api/*.ts` 和 `src/api/v3/*.ts`
+- Model 源码: `pkg/model/*.go` 和 `pkg/model/v3/*.go`，生成到 `src/model/*.ts` 和 `src/model/v3/*.ts`
+- Config 源码: `pkg/config/configuration.go` 和 `pkg/config/v3/configuration.go`，生成到 `src/config/configuration.ts` 和 `src/config/v3/configuration.ts`
 - 仓库源码中的生成版本记录: `src/manifest.json` 的 `sourceVersion`
 
 生成链路读取 Go SDK 源码，生成 TypeScript API、类型模型和运行时调用配置。
@@ -51,6 +54,7 @@ bun run codegen:tencent-ads:generate /path/to/marketing-api-go-sdk
 
 核心映射规则：
 
+- Go 文件按相对目录生成到 TypeScript 文件，例如 `pkg/api/v3/api_adgroups.go` 生成 `src/api/v3/api_adgroups.ts`。
 - Go 的 `XxxApiService` 映射为 TypeScript `XxxApi` class。
 - Go service method 映射为 TypeScript request object 方法，例如 `Get(ctx, accountId, opts)` 映射为 `get({ accountId, ...opts })`。
 - Go required 参数和 `optional.*` 参数统一收口到 request object。

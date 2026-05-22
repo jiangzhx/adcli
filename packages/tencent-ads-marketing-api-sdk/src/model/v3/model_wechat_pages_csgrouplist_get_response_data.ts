@@ -1,0 +1,10 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_wechat_pages_csgrouplist_get_response_data.go
+// Do not edit manually.
+
+import type { PageInfo, WechatPagesCsgrouplistGetListStruct } from "../v3/index";
+
+export interface WechatPagesCsgrouplistGetResponseData {
+  list?: WechatPagesCsgrouplistGetListStruct[];
+  page_info?: PageInfo;
+}
+

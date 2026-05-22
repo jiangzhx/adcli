@@ -14,6 +14,7 @@ export interface ApiSpec {
   className: string;
   methodName: string;
   httpMethod: string;
+  basePath?: string;
   path: string;
   responseType: string;
   params: ApiParamSpec[];

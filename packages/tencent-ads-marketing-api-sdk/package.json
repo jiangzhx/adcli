@@ -13,13 +13,29 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./apis": {
-      "types": "./dist/apis.d.ts",
-      "import": "./dist/apis.js"
+    "./api": {
+      "types": "./dist/api/index.d.ts",
+      "import": "./dist/api/index.js"
     },
-    "./models": {
-      "types": "./dist/models.d.ts",
-      "import": "./dist/models.js"
+    "./api/v3": {
+      "types": "./dist/api/v3/index.d.ts",
+      "import": "./dist/api/v3/index.js"
+    },
+    "./model": {
+      "types": "./dist/model/index.d.ts",
+      "import": "./dist/model/index.js"
+    },
+    "./model/v3": {
+      "types": "./dist/model/v3/index.d.ts",
+      "import": "./dist/model/v3/index.js"
+    },
+    "./config": {
+      "types": "./dist/config/configuration.d.ts",
+      "import": "./dist/config/configuration.js"
+    },
+    "./config/v3": {
+      "types": "./dist/config/v3/configuration.d.ts",
+      "import": "./dist/config/v3/configuration.js"
     },
     "./package.json": "./package.json"
   },

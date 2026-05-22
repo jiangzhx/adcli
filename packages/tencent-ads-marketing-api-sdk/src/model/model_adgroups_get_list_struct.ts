@@ -1,0 +1,86 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_adgroups_get_list_struct.go
+// Do not edit manually.
+
+import type { AdStatus, AdgroupSysStatus, AutoAcquisitionStatus, BidAdjustment, BidMode, BidScene, BidStrategy, BillingEvent, CalcStatus, CostGuaranteeStatus, CreativeDisplayType, DeepConversionSpec, DeepOptimizationActionType, DynamicAdSpec, EcomPkamSwitch, MarketingScene, ModelSwitch, OptimizationGoal, PromotedObjectType, ReadTargetingSettingForAdgroup, SceneTargeting, SearchExpandTargetingSwitch, ShortPlayPayType, SiteSetExplorationStrategy, SmartBidType, SmartTargeting, UserActionSetStruct, UserActionSetStructDn } from "../model/index";
+
+export interface AdgroupsGetListStruct {
+  campaign_id?: number | string;
+  adgroup_id?: number | string;
+  adgroup_name?: string;
+  site_set?: string[];
+  automatic_site_enabled?: boolean;
+  exploration_strategy?: SiteSetExplorationStrategy;
+  priority_site_set?: string[];
+  optimization_goal?: OptimizationGoal;
+  billing_event?: BillingEvent;
+  bid_amount?: number;
+  total_budget?: number;
+  daily_budget?: number;
+  promoted_object_type?: PromotedObjectType;
+  promoted_object_id?: string;
+  app_android_channel_package_id?: string;
+  mini_game_program_id?: string;
+  targeting_id?: number | string;
+  targeting?: ReadTargetingSettingForAdgroup;
+  targeting_translation?: string;
+  is_include_unsupported_targeting?: boolean;
+  scene_spec?: SceneTargeting;
+  flow_optimization_enabled?: boolean;
+  begin_date?: string;
+  first_day_begin_time?: string;
+  end_date?: string;
+  time_series?: string;
+  configured_status?: AdStatus;
+  customized_category?: string;
+  created_time?: number;
+  last_modified_time?: number;
+  ad_count?: number;
+  dynamic_ad_spec?: DynamicAdSpec;
+  user_action_sets?: UserActionSetStructDn[];
+  additional_user_action_sets?: UserActionSetStruct[];
+  is_deleted?: boolean;
+  dynamic_creative_id?: number | string;
+  is_rewarded_video_ad?: boolean;
+  cost_guarantee_message?: string;
+  cost_guarantee_status?: CostGuaranteeStatus;
+  bid_strategy?: BidStrategy;
+  cold_start_audience?: number[];
+  auto_audience?: boolean;
+  expand_enabled?: boolean;
+  expand_targeting?: string[];
+  deep_conversion_spec?: DeepConversionSpec;
+  deep_optimization_action_type?: DeepOptimizationActionType;
+  poi_list?: string[];
+  conversion_id?: number | string;
+  deep_conversion_behavior_bid?: number;
+  deep_conversion_worth_rate?: number;
+  deep_conversion_worth_advanced_rate?: number;
+  deep_conversion_behavior_advanced_bid?: number;
+  android_channel_package_audit_message?: string;
+  system_status?: AdgroupSysStatus;
+  bid_mode?: BidMode;
+  status?: CalcStatus;
+  bid_adjustment?: BidAdjustment;
+  auto_acquisition_enabled?: boolean;
+  auto_acquisition_budget?: number;
+  creative_display_type?: CreativeDisplayType;
+  auto_derived_creative_enabled?: boolean;
+  smart_bid_type?: SmartBidType;
+  smart_cost_cap?: number;
+  marketing_scene?: MarketingScene;
+  custom_adgroup_tag?: string[];
+  smart_targeting?: SmartTargeting;
+  dynamic_creative_id_set?: number[];
+  system_status_explanation?: string;
+  auto_derived_landing_page_switch?: boolean;
+  search_expand_targeting_switch?: SearchExpandTargetingSwitch;
+  auto_acquisition_status?: AutoAcquisitionStatus;
+  ecom_pkam_switch?: EcomPkamSwitch;
+  bid_scene?: BidScene;
+  search_intelligent_extension?: ModelSwitch;
+  forward_link_assist?: OptimizationGoal;
+  short_play_pay_type?: ShortPlayPayType;
+  sell_strategy_id?: number | string;
+  feedback_id?: number | string;
+}
+

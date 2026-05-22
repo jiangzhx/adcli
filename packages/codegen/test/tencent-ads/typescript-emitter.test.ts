@@ -8,6 +8,7 @@ describe("tencent ads typescript emitter", () => {
         className: "AdgroupsApi",
         methodName: "get",
         httpMethod: "GET",
+        basePath: "https://api.e.qq.com/v3.0",
         path: "/adgroups/get",
         responseType: "AdgroupsGetResponseData",
         params: [
@@ -29,6 +30,8 @@ describe("tencent ads typescript emitter", () => {
     expect(output).toContain("export interface AdgroupsApiGetRequest");
     expect(output).toContain("accountId: number | string;");
     expect(output).toContain("fields?: unknown;");
+    expect(output).toContain('import { DefaultConfiguration as TencentAdsV30Configuration } from "../config/v3/configuration";');
+    expect(output).toContain("basePath: TencentAdsV30Configuration.basePath");
     expect(output).toContain('path: "/adgroups/get"');
     expect(output).toContain('{ name: "fields", value: request.fields, collectionFormat: "multi" }');
   });
@@ -39,6 +42,7 @@ describe("tencent ads typescript emitter", () => {
         className: "CustomAudienceFilesApi",
         methodName: "add",
         httpMethod: "POST",
+        basePath: "https://sandbox-api.e.qq.com/v1.3",
         path: "/custom_audience_files/add",
         responseType: "CustomAudienceFilesAddResponseData",
         params: [
@@ -55,6 +59,8 @@ describe("tencent ads typescript emitter", () => {
     ]);
 
     expect(output).toContain("file: Blob;");
+    expect(output).toContain('import { DefaultConfiguration as TencentAdsV13Configuration } from "../config/configuration";');
+    expect(output).toContain("basePath: TencentAdsV13Configuration.basePath");
     expect(output).toContain('contentType: "multipart/form-data"');
     expect(output).toContain("formParams:");
     expect(output).toContain("files:");
@@ -66,7 +72,7 @@ describe("tencent ads typescript emitter", () => {
       name: "AdgroupsGetResponseData",
       fields: [{ jsonName: "list", javaName: "list", javaType: "List<AdgroupsGetListStruct>", required: false }],
     });
-    expect(output).toContain('import type { AdgroupsGetListStruct } from "../models";');
+    expect(output).toContain('import type { AdgroupsGetListStruct } from "../model/index";');
     expect(output).toContain("list?: AdgroupsGetListStruct[];");
   });
 });

@@ -1,0 +1,41 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_search_adgroups_add_request.go
+// Do not edit manually.
+
+import type { BidMode, BidScene, ConfiguredStatus, DeepConversionSpec, DynamicAdType, MarketingAssetOuterSpec, MarketingCarrierDetail, MarketingCarrierType, MarketingGoal, MarketingSubGoal, OptimizationGoal, SceneTargetingForWrite, SearchExpansionSwitch, SiteSetExplorationStrategy, UserActionSetStruct, WriteTargetingSetting } from "../v3/index";
+
+export interface SearchAdgroupsAddRequest {
+  account_id?: number | string;
+  adgroup_name?: string;
+  marketing_goal?: MarketingGoal;
+  marketing_sub_goal?: MarketingSubGoal;
+  marketing_carrier_type?: MarketingCarrierType;
+  marketing_carrier_detail?: MarketingCarrierDetail;
+  begin_date?: string;
+  end_date?: string;
+  first_day_begin_time?: string;
+  bid_amount?: number;
+  optimization_goal?: OptimizationGoal;
+  time_series?: string;
+  site_set?: string[];
+  exploration_strategy?: SiteSetExplorationStrategy;
+  daily_budget?: number;
+  targeting?: WriteTargetingSetting;
+  scene_spec?: SceneTargetingForWrite;
+  user_action_sets?: UserActionSetStruct[];
+  deep_conversion_spec?: DeepConversionSpec;
+  conversion_id?: number | string;
+  deep_conversion_behavior_bid?: number;
+  deep_conversion_worth_rate?: number;
+  deep_conversion_worth_advanced_rate?: number;
+  deep_conversion_behavior_advanced_bid?: number;
+  bid_mode?: BidMode;
+  bid_scene?: BidScene;
+  configured_status?: ConfiguredStatus;
+  material_package_id?: number | string;
+  marketing_asset_id?: number | string;
+  marketing_asset_outer_spec?: MarketingAssetOuterSpec;
+  feedback_id?: number | string;
+  dynamic_ad_type?: DynamicAdType;
+  search_expansion_switch?: SearchExpansionSwitch;
+}
+

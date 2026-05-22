@@ -1,0 +1,12 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_smart_adjustment.go
+// Do not edit manually.
+
+import type { CampaignType, PromotedObjectType } from "../model/index";
+
+export interface SmartAdjustment {
+  adcreative_template_id?: number | string;
+  campaign_type?: CampaignType;
+  promoted_object_type?: PromotedObjectType;
+  site_set?: string[];
+}
+

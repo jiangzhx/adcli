@@ -1,0 +1,20 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_wechat_channels_spec_feed_page_conf_item.go
+// Do not edit manually.
+
+import type { ChannelsShopProductSpec, WechatChannelsSpecFeedCardInfo, WechatChannelsSpecFeedConfMiniGameData, WechatChannelsSpecFeedConfMiniProgramData } from "../model/index";
+
+export interface WechatChannelsSpecFeedPageConfItem {
+  ad_type?: number;
+  canvas_id?: number | string;
+  canvas_type?: number;
+  button_title?: string;
+  feed_card_info?: WechatChannelsSpecFeedCardInfo;
+  page_url?: string;
+  mini_program_data?: WechatChannelsSpecFeedConfMiniProgramData;
+  mini_game_data?: WechatChannelsSpecFeedConfMiniGameData;
+  ios_app_id?: string;
+  android_app_id?: string;
+  is_full_screen_open_landing_page?: number;
+  channels_shop_product_spec?: ChannelsShopProductSpec;
+}
+

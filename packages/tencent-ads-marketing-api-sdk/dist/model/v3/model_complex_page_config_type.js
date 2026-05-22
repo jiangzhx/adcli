@@ -1,0 +1,7 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_complex_page_config_type.go
+// Do not edit manually.
+export const ComplexPageConfigType = {
+    TEXT: "TEXT",
+    IMAGE_ID: "IMAGE_ID",
+    NUMBER: "NUMBER",
+};

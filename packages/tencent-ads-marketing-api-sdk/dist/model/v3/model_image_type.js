@@ -1,0 +1,27 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_image_type.go
+// Do not edit manually.
+export const ImageType = {
+    GIF: "IMAGE_TYPE_GIF",
+    JPG: "IMAGE_TYPE_JPG",
+    PNG: "IMAGE_TYPE_PNG",
+    SWF: "IMAGE_TYPE_SWF",
+    PSD: "IMAGE_TYPE_PSD",
+    BMP: "IMAGE_TYPE_BMP",
+    TIFF_INTEL: "IMAGE_TYPE_TIFF_INTEL",
+    TIFF_MOTOROLA: "IMAGE_TYPE_TIFF_MOTOROLA",
+    JPC: "IMAGE_TYPE_JPC",
+    JP2: "IMAGE_TYPE_JP2",
+    JPX: "IMAGE_TYPE_JPX",
+    JB2: "IMAGE_TYPE_JB2",
+    SWC: "IMAGE_TYPE_SWC",
+    IFF: "IMAGE_TYPE_IFF",
+    WBMP: "IMAGE_TYPE_WBMP",
+    XBM: "IMAGE_TYPE_XBM",
+    WEBP: "IMAGE_TYPE_WEBP",
+    FLV: "IMAGE_TYPE_FLV",
+    WAV: "IMAGE_TYPE_WAV",
+    MP3: "IMAGE_TYPE_MP3",
+    MP4: "IMAGE_TYPE_MP4",
+    AVI: "IMAGE_TYPE_AVI",
+    MOV: "IMAGE_TYPE_MOV",
+};

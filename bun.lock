@@ -6,6 +6,7 @@
       "name": "adcli",
       "dependencies": {
         "@jiangzhx/oceanengine-ad-open-sdk": "1.1.87-port.3",
+        "@jiangzhx/tencent-ads-marketing-api-sdk": "1.7.84-port.1",
         "env-paths": "^4.0.0",
         "minisearch": "^7.2.0",
       },

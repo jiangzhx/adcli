@@ -1,0 +1,10 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_realtime_cost_get_response_data.go
+// Do not edit manually.
+
+import type { Conf, RealtimeCostGetListStruct } from "../v3/index";
+
+export interface RealtimeCostGetResponseData {
+  list?: RealtimeCostGetListStruct[];
+  page_info?: Conf;
+}
+

@@ -1,0 +1,8 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_barrage_add_request.go
+// Do not edit manually.
+
+export interface BarrageAddRequest {
+  account_id?: number | string;
+  text_list?: string[];
+}
+

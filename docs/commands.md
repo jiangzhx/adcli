@@ -195,6 +195,97 @@ adcli oceanengine promotion list --advertiser-id <advertiser_id> --filtering '{"
 - SDK: `PromotionListV30Api`
 - API: `GET /open_api/v3.0/promotion/list/`
 
+### `adcli tencent-ads auth`
+
+保存腾讯广告 access token。保存后，腾讯广告相关命令可以不再重复传 `--access-token`。
+
+```bash
+adcli tencent-ads auth <token>
+```
+
+token 会按 CLI 缓存处理，保存到 AdCLI 缓存目录下的 `tencent-ads.json`。macOS 默认路径：
+
+```text
+~/Library/Caches/adcli/tencent-ads.json
+```
+
+token 优先级：
+
+1. `--access-token`
+2. `TENCENT_ADS_ACCESS_TOKEN`
+3. `adcli tencent-ads auth <token>` 保存的本地 token
+
+### `adcli tencent-ads advertiser list`
+
+通过当前仓库内的腾讯广告 Node.js SDK 拉取 BM/管家账号下的账号列表。
+默认输出 `account_id` 和 `name` 两列；需要完整响应时加 `--json`。
+
+```bash
+adcli tencent-ads advertiser list --access-token <token>
+adcli tencent-ads advertiser list --json
+adcli tencent-ads advertiser list --fields account_id,corporation_name,is_bid,is_mp,is_adx,comment_list
+```
+
+这个命令对齐 fujian 的广告主同步逻辑，默认调用 `organization_account_relation/get`，不是 `advertiser/get`。
+
+对应 SDK/API：
+
+- SDK: `api/v3.OrganizationAccountRelationApi`
+- API: `GET /organization_account_relation/get`
+
+### `adcli tencent-ads advertiser get`
+
+通过当前仓库内的腾讯广告 Node.js SDK 拉取单个账号详情，对应腾讯广告 OpenAPI 的 `advertiser/get`。
+
+```bash
+adcli tencent-ads advertiser get --account-id <account_id> --access-token <token>
+adcli tencent-ads advertiser get --account-id <account_id> --json
+adcli tencent-ads advertiser get --account-id <account_id> --fields account_id,account_name
+```
+
+对应 SDK/API：
+
+- SDK: `api/v3.AdvertiserApi`
+- API: `GET /advertiser/get`
+
+### `adcli tencent-ads adgroup list`
+
+通过当前仓库内的腾讯广告 Node.js SDK 拉取账号下的营销单元列表，对应腾讯广告 v3 API 的 `adgroups/get`。
+
+```bash
+adcli tencent-ads adgroup list --account-id <account_id> --access-token <token>
+adcli tencent-ads adgroup list --account-id <account_id> --page 1 --page-size 20
+adcli tencent-ads adgroup list --account-id <account_id> --json
+adcli tencent-ads adgroup list --account-id <account_id> --fields adgroup_id,adgroup_name
+adcli tencent-ads adgroup list --account-id <account_id> --filtering '{"configured_status":"AD_STATUS_NORMAL"}'
+```
+
+`--advertiser-id` 可作为 `--account-id` 的别名。默认输出只包含 `adgroup_id` 和 `name` 两列；使用 `--json` 打印完整原始响应。资源过滤统一传 `--filtering` JSON。
+
+对应 SDK/API：
+
+- SDK: `api/v3.AdgroupsApi`
+- API: `GET /v3.0/adgroups/get`
+
+### `adcli tencent-ads dynamic-creative list`
+
+通过当前仓库内的腾讯广告 Node.js SDK 拉取账号下的创意列表，对应腾讯广告 v3 API 的 `dynamic_creatives/get`。
+
+```bash
+adcli tencent-ads dynamic-creative list --account-id <account_id> --access-token <token>
+adcli tencent-ads dynamic-creative list --account-id <account_id> --page 1 --page-size 20
+adcli tencent-ads dynamic-creative list --account-id <account_id> --json
+adcli tencent-ads dynamic-creative list --account-id <account_id> --fields dynamic_creative_id,dynamic_creative_name
+adcli tencent-ads dynamic-creative list --account-id <account_id> --filtering '{"adgroup_id":"<adgroup_id>"}'
+```
+
+`--advertiser-id` 可作为 `--account-id` 的别名。默认输出只包含 `dynamic_creative_id` 和 `name` 两列；使用 `--json` 打印完整原始响应。资源过滤统一传 `--filtering` JSON。
+
+对应 SDK/API：
+
+- SDK: `api/v3.DynamicCreativesApi`
+- API: `GET /v3.0/dynamic_creatives/get`
+
 ## 采集命令
 
 ### `bun run discover:sources`

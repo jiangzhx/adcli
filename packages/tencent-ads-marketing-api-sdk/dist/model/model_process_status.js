@@ -1,0 +1,11 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_process_status.go
+// Do not edit manually.
+export const ProcessStatus = {
+    PENDING: "PENDING",
+    PROCESSING: "PROCESSING",
+    SUCCESS: "SUCCESS",
+    ERROR: "ERROR",
+    FROZEN: "FROZEN",
+    THAWING: "THAWING",
+    LOCKING: "LOCKING",
+};

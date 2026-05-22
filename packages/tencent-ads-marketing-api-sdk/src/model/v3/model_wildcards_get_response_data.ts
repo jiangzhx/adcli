@@ -1,0 +1,9 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_wildcards_get_response_data.go
+// Do not edit manually.
+
+import type { WildcardsGetListStruct } from "../v3/index";
+
+export interface WildcardsGetResponseData {
+  list?: WildcardsGetListStruct[];
+}
+

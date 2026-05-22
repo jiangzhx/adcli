@@ -1,0 +1,11 @@
+import type { PageInfoStruct, SortByStruct } from "../model/index";
+export interface ProgrammedTemplateGetRequest {
+    account_id?: number | string;
+    material_derive_id?: number | string;
+    material_group_id?: number | string;
+    material_derive_preview_id?: number | string;
+    template_id_list?: number[];
+    key_word?: string;
+    sort_by?: SortByStruct[];
+    page_info?: PageInfoStruct;
+}

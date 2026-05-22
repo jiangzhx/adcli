@@ -1,0 +1,47 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/api/api_leads_invalid_pay.go
+// Do not edit manually.
+
+import { ApiClient, ApiException, type ApiResponse } from "./client";
+import type { LeadsInvalidPayGetRequest, LeadsInvalidPayGetResponseData } from "../model/index";
+import { DefaultConfiguration as TencentAdsV13Configuration } from "../config/configuration";
+
+export interface LeadsInvalidPayApiGetRequest {
+  data: LeadsInvalidPayGetRequest;
+}
+
+
+export class LeadsInvalidPayApi {
+  constructor(private apiClient = new ApiClient()) {}
+
+  getApiClient() {
+    return this.apiClient;
+  }
+
+  setApiClient(apiClient: ApiClient) {
+    this.apiClient = apiClient;
+  }
+
+  async get(request: LeadsInvalidPayApiGetRequest): Promise<LeadsInvalidPayGetResponseData> {
+    const response = await this.getWithHttpInfo(request);
+    return response.data;
+  }
+
+  async getWithHttpInfo(request: LeadsInvalidPayApiGetRequest): Promise<ApiResponse<LeadsInvalidPayGetResponseData>> {
+    if (request.data == null) {
+      throw new ApiException("Missing the required parameter 'data' when calling get");
+    }
+    return this.apiClient.requestWithHttpInfo<LeadsInvalidPayGetResponseData>({
+      method: "POST",
+      basePath: TencentAdsV13Configuration.basePath,
+      path: "/leads_invalid_pay/get",
+      queryParams: [
+
+      ],
+      contentType: "application/json",
+      body: request.data
+    });
+  }
+
+}
+
+

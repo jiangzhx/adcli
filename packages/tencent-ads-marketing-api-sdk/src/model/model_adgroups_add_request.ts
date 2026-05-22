@@ -1,0 +1,71 @@
+// Generated from tencentad/marketing-api-go-sdk pkg/model/model_adgroups_add_request.go
+// Do not edit manually.
+
+import type { AdStatus, BidAdjustment, BidMode, BidScene, BidStrategy, BillingEvent, CreativeDisplayType, DeepConversionSpec, DeepOptimizationActionType, DynamicAdSpec, EcomPkamSwitch, LiveVideoMode, LiveVideoSubMode, MarketingScene, ModelSwitch, OptimizationGoal, PromotedObjectType, SceneTargetingForWrite, SearchExpandTargetingSwitch, ShortPlayPayType, SiteSetExplorationStrategy, SmartBidType, SmartTargeting, UserActionSetStruct, WriteTargetingSettingForAdgroup } from "../model/index";
+
+export interface AdgroupsAddRequest {
+  campaign_id?: number | string;
+  adgroup_name?: string;
+  promoted_object_type?: PromotedObjectType;
+  begin_date?: string;
+  first_day_begin_time?: string;
+  end_date?: string;
+  billing_event?: BillingEvent;
+  bid_amount?: number;
+  optimization_goal?: OptimizationGoal;
+  time_series?: string;
+  automatic_site_enabled?: boolean;
+  site_set?: string[];
+  exploration_strategy?: SiteSetExplorationStrategy;
+  priority_site_set?: string[];
+  daily_budget?: number;
+  promoted_object_id?: string;
+  app_android_channel_package_id?: string;
+  targeting_id?: number | string;
+  targeting?: WriteTargetingSettingForAdgroup;
+  scene_spec?: SceneTargetingForWrite;
+  flow_optimization_enabled?: boolean;
+  configured_status?: AdStatus;
+  customized_category?: string;
+  dynamic_ad_spec?: DynamicAdSpec;
+  user_action_sets?: UserActionSetStruct[];
+  additional_user_action_sets?: UserActionSetStruct[];
+  dynamic_creative_id?: number | string;
+  bid_strategy?: BidStrategy;
+  cold_start_audience?: number[];
+  auto_audience?: boolean;
+  expand_enabled?: boolean;
+  expand_targeting?: string[];
+  deep_conversion_spec?: DeepConversionSpec;
+  deep_optimization_action_type?: DeepOptimizationActionType;
+  poi_list?: string[];
+  conversion_id?: number | string;
+  deep_conversion_behavior_bid?: number;
+  deep_conversion_worth_rate?: number;
+  deep_conversion_worth_advanced_rate?: number;
+  deep_conversion_behavior_advanced_bid?: number;
+  bid_mode?: BidMode;
+  bid_adjustment?: BidAdjustment;
+  auto_acquisition_enabled?: boolean;
+  auto_acquisition_budget?: number;
+  creative_display_type?: CreativeDisplayType;
+  auto_derived_creative_enabled?: boolean;
+  smart_bid_type?: SmartBidType;
+  marketing_scene?: MarketingScene;
+  live_video_mode?: LiveVideoMode;
+  live_video_sub_mode?: LiveVideoSubMode;
+  custom_adgroup_tag?: string[];
+  smart_targeting?: SmartTargeting;
+  dynamic_creative_id_set?: number[];
+  auto_derived_landing_page_switch?: boolean;
+  search_expand_targeting_switch?: SearchExpandTargetingSwitch;
+  ecom_pkam_switch?: EcomPkamSwitch;
+  bid_scene?: BidScene;
+  search_intelligent_extension?: ModelSwitch;
+  forward_link_assist?: OptimizationGoal;
+  short_play_pay_type?: ShortPlayPayType;
+  sell_strategy_id?: number | string;
+  feedback_id?: number | string;
+  account_id?: number | string;
+}
+
