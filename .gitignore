@@ -21,6 +21,8 @@ npm-debug.log*
 
 # secrets and local environment
 .env*
+!.env.example
+!packages/**/.env.example
 *.pem
 
 # platform/tooling
