@@ -5141,9 +5141,41 @@
       "id": "oceanengine_1862334279237632",
       "doc_id": "1862334279237632",
       "platform": "oceanengine",
-      "title": "非积分处置事件NEW",
+      "title": "非积分处置事件",
       "source_url": "https://open.oceanengine.com/labels/7/docs/1862334279237632?origin=left_nav",
       "public_path": "/oceanengine/docs/1862334279237632.md"
+    },
+    {
+      "id": "oceanengine_1866222259978252",
+      "doc_id": "1866222259978252",
+      "platform": "oceanengine",
+      "title": "代理商违规信息推送-AD-本地推NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1866222259978252?origin=left_nav",
+      "public_path": "/oceanengine/docs/1866222259978252.md"
+    },
+    {
+      "id": "oceanengine_1866322298595340",
+      "doc_id": "1866322298595340",
+      "platform": "oceanengine",
+      "title": "查询IOS应用列表NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1866322298595340?origin=left_nav",
+      "public_path": "/oceanengine/docs/1866322298595340.md"
+    },
+    {
+      "id": "oceanengine_1866516136873355",
+      "doc_id": "1866516136873355",
+      "platform": "oceanengine",
+      "title": "获取账户可投品牌列表NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1866516136873355?origin=left_nav",
+      "public_path": "/oceanengine/docs/1866516136873355.md"
+    },
+    {
+      "id": "oceanengine_1866517384079625",
+      "doc_id": "1866517384079625",
+      "platform": "oceanengine",
+      "title": "获取账户可用品牌行业信息NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1866517384079625?origin=left_nav",
+      "public_path": "/oceanengine/docs/1866517384079625.md"
     }
   ],
   "outputs": {
@@ -5152,5 +5184,5 @@
     "platform_index": "/oceanengine/index.md",
     "platform_manifest": "/oceanengine/manifest.json"
   },
-  "updated_at": "2026-05-18T12:19:12.056Z"
+  "updated_at": "2026-06-05T08:02:34.969Z"
 }

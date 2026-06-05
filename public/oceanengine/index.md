@@ -1,6 +1,6 @@
 # oceanengine Docs Index
 
-Total documents: 643
+Total documents: 647
 
 - [入门指南](/oceanengine/docs/1696710497745920.md) - https://open.oceanengine.com/labels/7/docs/1696710497745920?origin=left_nav
 - [术语解释](/oceanengine/docs/1696710501763087.md) - https://open.oceanengine.com/labels/7/docs/1696710501763087?origin=left_nav
@@ -644,4 +644,8 @@ Total documents: 643
 - [钱包对公充值](/oceanengine/docs/1859993655883840.md) - https://open.oceanengine.com/labels/7/docs/1859993655883840?origin=left_nav
 - [投放账户对公充值](/oceanengine/docs/1860068027672588.md) - https://open.oceanengine.com/labels/7/docs/1860068027672588?origin=left_nav
 - [投放账户查询汇款码列表](/oceanengine/docs/1860068101111872.md) - https://open.oceanengine.com/labels/7/docs/1860068101111872?origin=left_nav
-- [非积分处置事件NEW](/oceanengine/docs/1862334279237632.md) - https://open.oceanengine.com/labels/7/docs/1862334279237632?origin=left_nav
+- [非积分处置事件](/oceanengine/docs/1862334279237632.md) - https://open.oceanengine.com/labels/7/docs/1862334279237632?origin=left_nav
+- [代理商违规信息推送-AD-本地推NEW](/oceanengine/docs/1866222259978252.md) - https://open.oceanengine.com/labels/7/docs/1866222259978252?origin=left_nav
+- [查询IOS应用列表NEW](/oceanengine/docs/1866322298595340.md) - https://open.oceanengine.com/labels/7/docs/1866322298595340?origin=left_nav
+- [获取账户可投品牌列表NEW](/oceanengine/docs/1866516136873355.md) - https://open.oceanengine.com/labels/7/docs/1866516136873355?origin=left_nav
+- [获取账户可用品牌行业信息NEW](/oceanengine/docs/1866517384079625.md) - https://open.oceanengine.com/labels/7/docs/1866517384079625?origin=left_nav

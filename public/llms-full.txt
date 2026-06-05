@@ -6052,11 +6052,35 @@
 - Source: https://open.oceanengine.com/labels/7/docs/1860068101111872?origin=left_nav
 - Doc ID: 1860068101111872
 
-### 非积分处置事件NEW
+### 非积分处置事件
 
 - Public: /oceanengine/docs/1862334279237632.md
 - Source: https://open.oceanengine.com/labels/7/docs/1862334279237632?origin=left_nav
 - Doc ID: 1862334279237632
+
+### 代理商违规信息推送-AD-本地推NEW
+
+- Public: /oceanengine/docs/1866222259978252.md
+- Source: https://open.oceanengine.com/labels/7/docs/1866222259978252?origin=left_nav
+- Doc ID: 1866222259978252
+
+### 查询IOS应用列表NEW
+
+- Public: /oceanengine/docs/1866322298595340.md
+- Source: https://open.oceanengine.com/labels/7/docs/1866322298595340?origin=left_nav
+- Doc ID: 1866322298595340
+
+### 获取账户可投品牌列表NEW
+
+- Public: /oceanengine/docs/1866516136873355.md
+- Source: https://open.oceanengine.com/labels/7/docs/1866516136873355?origin=left_nav
+- Doc ID: 1866516136873355
+
+### 获取账户可用品牌行业信息NEW
+
+- Public: /oceanengine/docs/1866517384079625.md
+- Source: https://open.oceanengine.com/labels/7/docs/1866517384079625?origin=left_nav
+- Doc ID: 1866517384079625
 
 ## tencent_ads
 
