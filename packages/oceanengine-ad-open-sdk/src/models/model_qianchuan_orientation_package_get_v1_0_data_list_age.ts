@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_orientation_package_get_v1_0_data_list_age.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_orientation_package_get_v1_0_data_list_age.go 生成
+// 不要手动编辑。
 
 export const QianchuanOrientationPackageGetV10DataListAge = {
   AGE_ABOVE_50: "AGE_ABOVE_50",

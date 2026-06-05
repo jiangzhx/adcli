@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_query_rebate_accounting_info_v2_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_query_rebate_accounting_info_v2_filtering.go 生成
+// 不要手动编辑。
 
 import type { QueryRebateAccountingInfoV2FilteringApprovalStatus, QueryRebateAccountingInfoV2FilteringIsCreateRebate, QueryRebateAccountingInfoV2FilteringMonthQuarter, QueryRebateAccountingInfoV2FilteringPlatforms, QueryRebateAccountingInfoV2FilteringUseType } from "../models/index";
 

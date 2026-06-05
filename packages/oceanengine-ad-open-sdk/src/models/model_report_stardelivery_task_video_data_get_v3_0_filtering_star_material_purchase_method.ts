@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_stardelivery_task_video_data_get_v3_0_filtering_star_material_purchase_method.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_stardelivery_task_video_data_get_v3_0_filtering_star_material_purchase_method.go 生成
+// 不要手动编辑。
 
 export const ReportStardeliveryTaskVideoDataGetV30FilteringStarMaterialPurchaseMethod = {
   FIXED_PRICE: "FIXED_PRICE",

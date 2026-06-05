@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_aweme_author_info_get_v2_response_data_authors_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_aweme_author_info_get_v2_response_data_authors_inner.go 生成
+// 不要手动编辑。
 
 export interface ToolsAwemeAuthorInfoGetV2ResponseDataAuthorsInner {
   author_name?: string;

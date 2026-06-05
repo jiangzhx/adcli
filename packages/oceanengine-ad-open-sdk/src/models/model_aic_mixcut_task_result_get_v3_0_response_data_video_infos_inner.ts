@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_aic_mixcut_task_result_get_v3_0_response_data_video_infos_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_aic_mixcut_task_result_get_v3_0_response_data_video_infos_inner.go 生成
+// 不要手动编辑。
 
 export interface AicMixcutTaskResultGetV30ResponseDataVideoInfosInner {
   video_id?: string;

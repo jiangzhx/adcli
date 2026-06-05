@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_aid_get_v3_0_data_promotion_map_data_ads_creatives_video_material_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_aid_get_v3_0_data_promotion_map_data_ads_creatives_video_material_image_mode.go 生成
+// 不要手动编辑。
 
 export const PromotionAidGetV30DataPromotionMapDataAdsCreativesVideoMaterialImageMode = {
   CREATIVE_IMAGE_MODE_AWEME_LIVE: "CREATIVE_IMAGE_MODE_AWEME_LIVE",

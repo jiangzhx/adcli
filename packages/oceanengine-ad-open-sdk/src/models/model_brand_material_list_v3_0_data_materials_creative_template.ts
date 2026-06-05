@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_data_materials_creative_template.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_data_materials_creative_template.go 生成
+// 不要手动编辑。
 
 export const BrandMaterialListV30DataMaterialsCreativeTemplate = {
   DOUYIN_CONTENT_PLANT_GRASS_AD_NORMAL: "DouyinContentPlantGrassAdNormal",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_data_task_timeline_report_v2_response_data_task_data_value.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_data_task_timeline_report_v2_response_data_task_data_value.go 生成
+// 不要手动编辑。
 
 export interface StarDataTaskTimelineReportV2ResponseDataTaskDataValue {
   comment_cnt?: number;

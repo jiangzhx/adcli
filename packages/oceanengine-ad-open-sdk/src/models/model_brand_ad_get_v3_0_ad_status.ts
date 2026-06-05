@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_ad_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_ad_status.go 生成
+// 不要手动编辑。
 
 export const BrandAdGetV30AdStatus = {
   Enum_1: 1,

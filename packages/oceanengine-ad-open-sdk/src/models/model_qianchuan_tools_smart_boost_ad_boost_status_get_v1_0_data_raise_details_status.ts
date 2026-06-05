@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_tools_smart_boost_ad_boost_status_get_v1_0_data_raise_details_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_tools_smart_boost_ad_boost_status_get_v1_0_data_raise_details_status.go 生成
+// 不要手动编辑。
 
 export const QianchuanToolsSmartBoostAdBoostStatusGetV10DataRaiseDetailsStatus = {
   CANNOT_RAISE: "CANNOT_RAISE",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_tool_query_publish_price_v3_0_audience_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_tool_query_publish_price_v3_0_audience_info.go 生成
+// 不要手动编辑。
 
 import type { BrandToolQueryPublishPriceV30AudienceInfoAc, BrandToolQueryPublishPriceV30AudienceInfoAges, BrandToolQueryPublishPriceV30AudienceInfoDistrictInfo, BrandToolQueryPublishPriceV30AudienceInfoGender, BrandToolQueryPublishPriceV30AudienceInfoPlatform, BrandToolQueryPublishPriceV30AudienceInfoRetargetingInfo } from "../models/index";
 

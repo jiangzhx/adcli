@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_micro_game_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_micro_game_create_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsMicroGameCreateV30AgeLimit, ToolsMicroGameCreateV30MaxPaymentTierRange, ToolsMicroGameCreateV30MidPaymentTierRange, ToolsMicroGameCreateV30MinPaymentTierRange, ToolsMicroGameCreateV30RequestGameLink, ToolsMicroGameCreateV30RevenueModel, ToolsMicroGameCreateV30ScheduleCards } from "../models/index";
 

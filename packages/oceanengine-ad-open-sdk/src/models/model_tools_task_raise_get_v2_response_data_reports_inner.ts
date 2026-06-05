@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_task_raise_get_v2_response_data_reports_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_task_raise_get_v2_response_data_reports_inner.go 生成
+// 不要手动编辑。
 
 import type { ToolsTaskRaiseGetV2DataReportsBudgetMode, ToolsTaskRaiseGetV2DataReportsRaiseMode, ToolsTaskRaiseGetV2DataReportsStatus } from "../models/index";
 

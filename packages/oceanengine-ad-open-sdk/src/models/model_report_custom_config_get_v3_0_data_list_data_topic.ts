@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_custom_config_get_v3_0_data_list_data_topic.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_custom_config_get_v3_0_data_list_data_topic.go 生成
+// 不要手动编辑。
 
 export const ReportCustomConfigGetV30DataListDataTopic = {
   BASIC_DATA: "BASIC_DATA",
@@ -12,8 +12,14 @@ export const ReportCustomConfigGetV30DataListDataTopic = {
   ONE_KEY_BOOST_DATA: "ONE_KEY_BOOST_DATA",
   PRODUCT_DATA: "PRODUCT_DATA",
   QUERY_DATA: "QUERY_DATA",
-  UNI_PROMOTION_DATA: "UNI_PROMOTION_DATA",
-  UNI_PROMOTION_MATERIAL_DATA: "UNI_PROMOTION_MATERIAL_DATA",
+  STD_BASIC_DATA: "STD_BASIC_DATA",
+  STD_BIDWORD_DATA: "STD_BIDWORD_DATA",
+  STD_DMP_DATA: "STD_DMP_DATA",
+  STD_MATERIAL_DATA: "STD_MATERIAL_DATA",
+  STD_PRODUCT_DATA: "STD_PRODUCT_DATA",
+  STD_QUERY_DATA: "STD_QUERY_DATA",
+  UNI_PROJECT_DATA: "UNI_PROJECT_DATA",
+  UNI_PROJECT_MATERIAL_DATA: "UNI_PROJECT_MATERIAL_DATA",
   VIDEO_DUARATION_DATA: "VIDEO_DUARATION_DATA",
 } as const;
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner.go 生成
+// 不要手动编辑。
 
 import type { BrandMaterialListV30DataMaterialsCreativeDisplayMode, BrandMaterialListV30DataMaterialsCreativeIsAigc, BrandMaterialListV30DataMaterialsCreativeTemplate, BrandMaterialListV30DataMaterialsMaterialStatus, BrandMaterialListV30ResponseDataMaterialsInnerCategoryInfo, BrandMaterialListV30ResponseDataMaterialsInnerCreativeDataInner, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponent, BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlGroupInfosInner, BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlInfo } from "../models/index";
 

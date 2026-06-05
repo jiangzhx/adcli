@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_material_get_v1_0_response_data_list_inner_fields.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_report_material_get_v1_0_response_data_list_inner_fields.go 生成
+// 不要手动编辑。
 
 export interface QianchuanReportMaterialGetV10ResponseDataListInnerFields {
   ad_all_order_gmv_settle_rate_14d?: number;

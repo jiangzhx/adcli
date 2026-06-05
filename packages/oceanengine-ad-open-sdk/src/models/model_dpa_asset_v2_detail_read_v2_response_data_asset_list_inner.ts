@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_asset_v2_detail_read_v2_response_data_asset_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_asset_v2_detail_read_v2_response_data_asset_list_inner.go 生成
+// 不要手动编辑。
 
 import type { DpaAssetV2DetailReadV2DataAssetListAssetType, DpaAssetV2DetailReadV2DataAssetListAuditStatus, DpaAssetV2DetailReadV2DataAssetListSource, DpaAssetV2DetailReadV2DataAssetListStatus } from "../models/index";
 

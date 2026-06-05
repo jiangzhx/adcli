@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dmp_data_source_read_v2_data_data_list_data_source_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dmp_data_source_read_v2_data_data_list_data_source_type.go 生成
+// 不要手动编辑。
 
 export const DmpDataSourceReadV2DataDataListDataSourceType = {
   UID: "UID",

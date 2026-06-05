@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_ebp_clue_product_save_v3_0_request_product.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_ebp_clue_product_save_v3_0_request_product.go 生成
+// 不要手动编辑。
 
 import type { DpaEbpClueProductSaveV30ProductStatus, DpaEbpClueProductSaveV30RequestProductBrandInfo, DpaEbpClueProductSaveV30RequestProductImagesUrlInner, DpaEbpClueProductSaveV30RequestProductLandingUrl, DpaEbpClueProductSaveV30RequestProductPriceInfo, DpaEbpClueProductSaveV30RequestProductShopKeeperInfo, DpaEbpClueProductSaveV30RequestProductVideosInner } from "../models/index";
 

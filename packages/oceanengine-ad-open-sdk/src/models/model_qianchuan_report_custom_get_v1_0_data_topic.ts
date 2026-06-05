@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_custom_get_v1_0_data_topic.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_report_custom_get_v1_0_data_topic.go 生成
+// 不要手动编辑。
 
 export const QianchuanReportCustomGetV10DataTopic = {
   ECP_BASIC_DATA: "ECP_BASIC_DATA",

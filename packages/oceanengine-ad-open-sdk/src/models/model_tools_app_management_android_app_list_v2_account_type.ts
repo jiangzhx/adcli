@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_management_android_app_list_v2_account_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_app_management_android_app_list_v2_account_type.go 生成
+// 不要手动编辑。
 
 export const ToolsAppManagementAndroidAppListV2AccountType = {
   AD: "AD",

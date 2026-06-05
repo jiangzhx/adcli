@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_clue_life_callback_v2_event_data_reason_code.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_clue_life_callback_v2_event_data_reason_code.go 生成
+// 不要手动编辑。
 
 export const ToolsClueLifeCallbackV2EventDataReasonCode = {
   CALL_THREE_TIMES_NO_RESPONSE: "CALL_THREE_TIMES_NO_RESPONSE",

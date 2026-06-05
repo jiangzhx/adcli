@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_bid_suggest_v2_activate_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_bid_suggest_v2_activate_type.go 生成
+// 不要手动编辑。
 
 export const ToolsBidSuggestV2ActivateType = {
   ONE_MONTH_2_THREE_MONTH: "ONE_MONTH_2_THREE_MONTH",

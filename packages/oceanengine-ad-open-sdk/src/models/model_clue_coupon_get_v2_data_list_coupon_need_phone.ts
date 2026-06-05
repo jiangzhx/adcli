@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_coupon_get_v2_data_list_coupon_need_phone.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_coupon_get_v2_data_list_coupon_need_phone.go 生成
+// 不要手动编辑。
 
 export const ClueCouponGetV2DataListCouponNeedPhone = {
   Enum_0: "0",

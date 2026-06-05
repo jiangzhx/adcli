@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_strategy_list_v2_data_strategy_models_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_strategy_list_v2_data_strategy_models_type.go 生成
+// 不要手动编辑。
 
 export const CreativeStrategyListV2DataStrategyModelsType = {
   HORIZONTAL2_HORIZONTAL: "Horizontal2Horizontal",

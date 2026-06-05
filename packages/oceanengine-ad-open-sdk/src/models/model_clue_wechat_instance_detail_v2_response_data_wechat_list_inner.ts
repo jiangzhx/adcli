@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_wechat_instance_detail_v2_response_data_wechat_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_wechat_instance_detail_v2_response_data_wechat_list_inner.go 生成
+// 不要手动编辑。
 
 import type { ClueWechatInstanceDetailV2DataWechatListHasQrCode, ClueWechatInstanceDetailV2DataWechatListWechatType } from "../models/index";
 

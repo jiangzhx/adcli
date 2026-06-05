@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_create_transfer_v3_0_request_target_account_detail_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_cg_transfer_create_transfer_v3_0_request_target_account_detail_list_inner.go 生成
+// 不要手动编辑。
 
 import type { CgTransferCreateTransferV30RequestTargetAccountDetailListInnerTransferCapitalDetailListInner } from "../models/index";
 

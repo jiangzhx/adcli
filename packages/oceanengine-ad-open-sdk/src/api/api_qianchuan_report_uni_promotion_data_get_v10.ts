@@ -1,8 +1,8 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_report_uni_promotion_data_get_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_report_uni_promotion_data_get_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
-import type { QianchuanReportUniPromotionDataGetV10DataTopic, QianchuanReportUniPromotionDataGetV10FiltersInner, QianchuanReportUniPromotionDataGetV10OrderByInner, QianchuanReportUniPromotionDataGetV10PageSize, QianchuanReportUniPromotionDataGetV10Response } from "../models/index";
+import type { QianchuanReportUniPromotionDataGetV10DataPeriod, QianchuanReportUniPromotionDataGetV10DataTopic, QianchuanReportUniPromotionDataGetV10FiltersInner, QianchuanReportUniPromotionDataGetV10OrderByInner, QianchuanReportUniPromotionDataGetV10PageSize, QianchuanReportUniPromotionDataGetV10Response } from "../models/index";
 
 
 export interface QianchuanReportUniPromotionDataGetV10ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
@@ -14,6 +14,7 @@ export interface QianchuanReportUniPromotionDataGetV10ApiOpenApiV10QianchuanRepo
   startTime: string;
   endTime: string;
   orderBy: QianchuanReportUniPromotionDataGetV10OrderByInner[];
+  dataPeriod?: QianchuanReportUniPromotionDataGetV10DataPeriod;
   page?: number;
   pageSize?: QianchuanReportUniPromotionDataGetV10PageSize;
 }
@@ -72,6 +73,7 @@ export class QianchuanReportUniPromotionDataGetV10Api {
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
         { name: "data_topic", value: request.dataTopic },
+        { name: "data_period", value: request.dataPeriod },
         { name: "dimensions", value: request.dimensions },
         { name: "metrics", value: request.metrics },
         { name: "filters", value: request.filters },

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_agent_get_v2_v2_data_list_account_source.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_agent_get_v2_v2_data_list_account_source.go 生成
+// 不要手动编辑。
 
 export const ReportAgentGetV2V2DataListAccountSource = {
   LUBAN_ACCOUNT: "LUBAN_ACCOUNT",

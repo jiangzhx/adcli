@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_hot_material_derive_list_v3_0_response_data_data_inner_derive_materials_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_hot_material_derive_list_v3_0_response_data_data_inner_derive_materials_inner.go 生成
+// 不要手动编辑。
 
 import type { ToolsHotMaterialDeriveListV30ResponseDataDataInnerDeriveMaterialsInnerStrategyDetail } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_native_anchor_update_v3_0_request_anchor_info_game_anchor.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_native_anchor_update_v3_0_request_anchor_info_game_anchor.go 生成
+// 不要手动编辑。
 
 import type { NativeAnchorUpdateV30AnchorInfoGameAnchorGameType, NativeAnchorUpdateV30RequestAnchorInfoGameAnchorAppImagesInner, NativeAnchorUpdateV30RequestAnchorInfoGameAnchorGamePackageListInner, NativeAnchorUpdateV30RequestAnchorInfoGameAnchorHeadImageListInner, NativeAnchorUpdateV30RequestAnchorInfoGameAnchorIconImagesInner } from "../models/index";
 

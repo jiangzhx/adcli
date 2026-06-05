@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_wallet_prepay_charge_generate_remittance_code_create_v3_0_delivery_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_wallet_prepay_charge_generate_remittance_code_create_v3_0_delivery_type.go 生成
+// 不要手动编辑。
 
 export const WalletPrepayChargeGenerateRemittanceCodeCreateV30DeliveryType = {
   BIDDING: "BIDDING",

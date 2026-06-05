@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_agent_prepay_charge_generate_remittance_code_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_agent_prepay_charge_generate_remittance_code_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { AgentPrepayChargeGenerateRemittanceCodeV2Request, AgentPrepayChargeGenerateRemittanceCodeV2Response } from "../models/index";

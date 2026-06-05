@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_create_v3_0_request_optimize_goal.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_create_v3_0_request_optimize_goal.go 生成
+// 不要手动编辑。
 
 import type { ProjectCreateV30OptimizeGoalDeepExternalAction, ProjectCreateV30OptimizeGoalExternalAction } from "../models/index";
 

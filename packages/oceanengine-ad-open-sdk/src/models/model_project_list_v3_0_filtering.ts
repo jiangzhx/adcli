@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_list_v3_0_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_list_v3_0_filtering.go 生成
+// 不要手动编辑。
 
 import type { ProjectListV30FilteringAdType, ProjectListV30FilteringAppPromotionType, ProjectListV30FilteringBlueFlowPackageSetting, ProjectListV30FilteringDeliveryMode, ProjectListV30FilteringDeliveryType, ProjectListV30FilteringInventoryType, ProjectListV30FilteringLandingType, ProjectListV30FilteringMarketingGoal, ProjectListV30FilteringPlatform, ProjectListV30FilteringPricing, ProjectListV30FilteringStarAutoDeliverySwitch, ProjectListV30FilteringStarDeliveryType, ProjectListV30FilteringStatus, ProjectListV30FilteringStatusFirst, ProjectListV30FilteringStatusSecond } from "../models/index";
 

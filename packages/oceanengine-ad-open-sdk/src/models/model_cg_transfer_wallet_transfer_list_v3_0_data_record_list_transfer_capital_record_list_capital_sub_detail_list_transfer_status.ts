@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_wallet_transfer_list_v3_0_data_record_list_transfer_capital_record_list_capital_sub_detail_list_transfer_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_cg_transfer_wallet_transfer_list_v3_0_data_record_list_transfer_capital_record_list_capital_sub_detail_list_transfer_status.go 生成
+// 不要手动编辑。
 
 export const CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListCapitalSubDetailListTransferStatus = {
   NO_TRANSFER: "NO_TRANSFER",

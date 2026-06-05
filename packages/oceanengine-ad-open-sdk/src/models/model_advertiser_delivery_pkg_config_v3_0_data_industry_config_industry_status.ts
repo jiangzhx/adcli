@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_config_v3_0_data_industry_config_industry_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_config_v3_0_data_industry_config_industry_status.go 生成
+// 不要手动编辑。
 
 export const AdvertiserDeliveryPkgConfigV30DataIndustryConfigIndustryStatus = {
   NONVALID: "NONVALID",

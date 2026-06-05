@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_can_transfer_balance_get_v3_0_response_data_can_transfer_detail_list_inner_payee_transfer_amount_detail_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_cg_transfer_can_transfer_balance_get_v3_0_response_data_can_transfer_detail_list_inner_payee_transfer_amount_detail_list_inner.go 生成
+// 不要手动编辑。
 
 import type { CgTransferCanTransferBalanceGetV30ResponseDataCanTransferDetailListInnerPayeeTransferAmountDetailListInnerCapitalDetailListInner } from "../models/index";
 

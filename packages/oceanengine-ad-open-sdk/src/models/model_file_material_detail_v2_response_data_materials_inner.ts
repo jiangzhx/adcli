@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_material_detail_v2_response_data_materials_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_material_detail_v2_response_data_materials_inner.go 生成
+// 不要手动编辑。
 
 export interface FileMaterialDetailV2ResponseDataMaterialsInner {
   is_ad_high_quality?: boolean;

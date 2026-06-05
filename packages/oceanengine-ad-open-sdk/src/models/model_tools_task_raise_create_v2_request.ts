@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_task_raise_create_v2_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_task_raise_create_v2_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsTaskRaiseCreateV2BudgetMode, ToolsTaskRaiseCreateV2RaiseMode } from "../models/index";
 

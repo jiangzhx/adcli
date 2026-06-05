@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_ad_get_v2_response_data_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_ad_get_v2_response_data_list_inner.go 生成
+// 不要手动编辑。
 
 import type { ReportAdGetV2DataListAc, ReportAdGetV2DataListCampaignType, ReportAdGetV2DataListCreativeMaterialMode, ReportAdGetV2DataListExternalAction, ReportAdGetV2DataListGender, ReportAdGetV2DataListImageMode, ReportAdGetV2DataListInventory, ReportAdGetV2DataListLandingType, ReportAdGetV2DataListPricing, ReportAdGetV2DataListPricingCategory, ReportAdGetV2DataListRealRecallMatchType } from "../models/index";
 

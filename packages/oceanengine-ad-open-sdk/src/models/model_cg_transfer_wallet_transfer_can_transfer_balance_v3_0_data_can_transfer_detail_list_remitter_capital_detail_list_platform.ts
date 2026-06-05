@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_wallet_transfer_can_transfer_balance_v3_0_data_can_transfer_detail_list_remitter_capital_detail_list_platform.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_cg_transfer_wallet_transfer_can_transfer_balance_v3_0_data_can_transfer_detail_list_remitter_capital_detail_list_platform.go 生成
+// 不要手动编辑。
 
 export const CgTransferWalletTransferCanTransferBalanceV30DataCanTransferDetailListRemitterCapitalDetailListPlatform = {
   AD: "AD",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_star_vas_append_order_to_boost_item_group_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_star_vas_append_order_to_boost_item_group_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { StarVasAppendOrderToBoostItemGroupV2Request, StarVasAppendOrderToBoostItemGroupV2Response } from "../models/index";

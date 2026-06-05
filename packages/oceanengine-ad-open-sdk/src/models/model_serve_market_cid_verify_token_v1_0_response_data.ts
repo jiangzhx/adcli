@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_serve_market_cid_verify_token_v1_0_response_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_serve_market_cid_verify_token_v1_0_response_data.go 生成
+// 不要手动编辑。
 
 import type { ServeMarketCidVerifyTokenV10DataCidCapacityStatus, ServeMarketCidVerifyTokenV10DataDevStatus, ServeMarketCidVerifyTokenV10DataFacilitatorSubStatus } from "../models/index";
 

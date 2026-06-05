@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_balance_get_v3_0_response_data_shared_wallet_balance_info_value_general_balance_info_ad_only_balance_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_balance_get_v3_0_response_data_shared_wallet_balance_info_value_general_balance_info_ad_only_balance_info.go 生成
+// 不要手动编辑。
 
 export interface SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValueGeneralBalanceInfoAdOnlyBalanceInfo {
   credit_bidding_valid_balance?: number;

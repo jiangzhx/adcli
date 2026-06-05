@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_material_get_v1_0_data_list_image_source.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_report_material_get_v1_0_data_list_image_source.go 生成
+// 不要手动编辑。
 
 export const QianchuanReportMaterialGetV10DataListImageSource = {
   CREATIVE_CENTER: "CREATIVE_CENTER",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_security_score_violation_event_get_v3_0_business_line.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_security_score_violation_event_get_v3_0_business_line.go 生成
+// 不要手动编辑。
 
 export const SecurityScoreViolationEventGetV30BusinessLine = {
   AD: "AD",

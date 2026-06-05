@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_diagnosis_task_agent_create_v2_request_diagnose_config.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_diagnosis_task_agent_create_v2_request_diagnose_config.go 生成
+// 不要手动编辑。
 
 import type { DiagnosisTaskAgentCreateV2DiagnoseConfigAudienceAge, DiagnosisTaskAgentCreateV2DiagnoseConfigAudienceGender, DiagnosisTaskAgentCreateV2DiagnoseConfigAudienceNetwork, DiagnosisTaskAgentCreateV2DiagnoseConfigExternalAction, DiagnosisTaskAgentCreateV2DiagnoseConfigPlatform, DiagnosisTaskAgentCreateV2DiagnoseConfigPricingType } from "../models/index";
 

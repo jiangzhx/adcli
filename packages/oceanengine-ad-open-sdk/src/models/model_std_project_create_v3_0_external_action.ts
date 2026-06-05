@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_external_action.go 生成
+// 不要手动编辑。
 
 export const StdProjectCreateV30ExternalAction = {
   AD_CONVERT_ADD_TO_CART: "AD_CONVERT_ADD_TO_CART",

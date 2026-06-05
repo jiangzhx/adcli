@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_authorized_get_v1_0_data_aweme_id_list_live_uni_prom_apply_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_authorized_get_v1_0_data_aweme_id_list_live_uni_prom_apply_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListLiveUniPromApplyType = {
   ANCHOR_HOLD: "ANCHOR_HOLD",

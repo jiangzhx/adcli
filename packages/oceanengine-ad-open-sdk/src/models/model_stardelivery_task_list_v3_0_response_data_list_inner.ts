@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_stardelivery_task_list_v3_0_response_data_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_stardelivery_task_list_v3_0_response_data_list_inner.go 生成
+// 不要手动编辑。
 
 import type { StardeliveryTaskListV30DataListStarTaskAnchorType, StardeliveryTaskListV30DataListStarTaskCategoryType, StardeliveryTaskListV30DataListStarTaskExternalAction, StardeliveryTaskListV30DataListStarTaskMaterialPurchaseMethod, StardeliveryTaskListV30DataListStarTaskSource, StardeliveryTaskListV30DataListStarTaskStatus, StardeliveryTaskListV30DataListStarTaskSubStatus } from "../models/index";
 

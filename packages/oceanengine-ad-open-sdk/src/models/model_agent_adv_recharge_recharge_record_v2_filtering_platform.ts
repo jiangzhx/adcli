@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_adv_recharge_recharge_record_v2_filtering_platform.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_adv_recharge_recharge_record_v2_filtering_platform.go 生成
+// 不要手动编辑。
 
 export const AgentAdvRechargeRechargeRecordV2FilteringPlatform = {
   AD: "AD",

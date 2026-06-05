@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_star_task_settlement_config_v2_star_task_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_star_task_settlement_config_v2_star_task_external_action.go 生成
+// 不要手动编辑。
 
 export const ToolsStarTaskSettlementConfigV2StarTaskExternalAction = {
   AD_CONVERT_TYPE_ACTIVE: "AD_CONVERT_TYPE_ACTIVE",

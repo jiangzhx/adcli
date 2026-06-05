@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_fe_common_service_talent_day_judge_checked_in_v2_response_data_platform_meetings_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_fe_common_service_talent_day_judge_checked_in_v2_response_data_platform_meetings_inner.go 生成
+// 不要手动编辑。
 
 export interface StarFeCommonServiceTalentDayJudgeCheckedInV2ResponseDataPlatformMeetingsInner {
   schedule_desc?: string;

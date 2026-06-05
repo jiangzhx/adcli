@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_wechat_pool_list_v2_data_items_wechat_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_wechat_pool_list_v2_data_items_wechat_type.go 生成
+// 不要手动编辑。
 
 export const ClueWechatPoolListV2DataItemsWechatType = {
   PERSONAL: "PERSONAL",

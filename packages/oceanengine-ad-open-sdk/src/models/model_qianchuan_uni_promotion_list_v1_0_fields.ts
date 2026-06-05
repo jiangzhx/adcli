@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_list_v1_0_fields.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_list_v1_0_fields.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniPromotionListV10Fields = {
   NO_REFUND_ECOM_COUPON_AMOUNT_FOR_ROI2: "no_refund_ecom_coupon_amount_for_roi2",

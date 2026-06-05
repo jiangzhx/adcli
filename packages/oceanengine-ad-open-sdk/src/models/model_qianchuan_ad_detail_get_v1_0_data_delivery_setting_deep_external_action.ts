@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_data_delivery_setting_deep_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_data_delivery_setting_deep_external_action.go 生成
+// 不要手动编辑。
 
 export const QianchuanAdDetailGetV10DataDeliverySettingDeepExternalAction = {
   AD_CONVERT_TYPE_CARD_ACTIVE: "AD_CONVERT_TYPE_CARD_ACTIVE",

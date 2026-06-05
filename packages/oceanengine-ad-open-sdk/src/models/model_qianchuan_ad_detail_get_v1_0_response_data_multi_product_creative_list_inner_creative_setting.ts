@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_response_data_multi_product_creative_list_inner_creative_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_response_data_multi_product_creative_list_inner_creative_setting.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeSettingCreativeAutoGenerate, QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeSettingDynamicCreative, QianchuanAdDetailGetV10DataMultiProductCreativeListCreativeSettingIsHomepageHide, QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerCreativeSettingCreativeCategory } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_custom_async_task_create_v3_0_data_task_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_custom_async_task_create_v3_0_data_task_status.go 生成
+// 不要手动编辑。
 
 export const ReportCustomAsyncTaskCreateV30DataTaskStatus = {
   ASYNC_TASK_STATUS_COMPLETED: "ASYNC_TASK_STATUS_COMPLETED",

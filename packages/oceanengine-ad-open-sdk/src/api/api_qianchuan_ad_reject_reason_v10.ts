@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_ad_reject_reason_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_ad_reject_reason_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanAdRejectReasonV10Response } from "../models/index";

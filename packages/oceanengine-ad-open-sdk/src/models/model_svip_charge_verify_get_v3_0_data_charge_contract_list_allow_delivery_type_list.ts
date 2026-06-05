@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_svip_charge_verify_get_v3_0_data_charge_contract_list_allow_delivery_type_list.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_svip_charge_verify_get_v3_0_data_charge_contract_list_allow_delivery_type_list.go 生成
+// 不要手动编辑。
 
 export const SvipChargeVerifyGetV30DataChargeContractListAllowDeliveryTypeList = {
   BIDDING: "BIDDING",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_product_update_v2_request_product_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_product_update_v2_request_product_info.go 生成
+// 不要手动编辑。
 
 import type { DpaProductUpdateV2ProductInfoSpuSource, DpaProductUpdateV2ProductInfoStatus, DpaProductUpdateV2ProductInfoStock, DpaProductUpdateV2RequestProductInfoBrandInfo, DpaProductUpdateV2RequestProductInfoGeo, DpaProductUpdateV2RequestProductInfoGeoTarget, DpaProductUpdateV2RequestProductInfoLandingInfo, DpaProductUpdateV2RequestProductInfoPriceInfo, DpaProductUpdateV2RequestProductInfoShopKeeperInfo, DpaProductUpdateV2RequestProductInfoVideosInner } from "../models/index";
 

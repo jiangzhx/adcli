@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_management_update_authorization_v2_operation_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_app_management_update_authorization_v2_operation_type.go 生成
+// 不要手动编辑。
 
 export const ToolsAppManagementUpdateAuthorizationV2OperationType = {
   ADD: "ADD",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_om_create_challenge_v2_challenge_info_commission_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_om_create_challenge_v2_challenge_info_commission_type.go 生成
+// 不要手动编辑。
 
 export const StarDemandOmCreateChallengeV2ChallengeInfoCommissionType = {
   Enum_0: 0,

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_coupon_create_v2_request_coupon.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_coupon_create_v2_request_coupon.go 生成
+// 不要手动编辑。
 
 import type { ClueCouponCreateV2CouponNeedPhone, ClueCouponCreateV2CouponNeedSmsVerify, ClueCouponCreateV2RequestCouponGlobalLimit, ClueCouponCreateV2RequestCouponResourceListInner, ClueCouponCreateV2RequestCouponUserLimit } from "../models/index";
 

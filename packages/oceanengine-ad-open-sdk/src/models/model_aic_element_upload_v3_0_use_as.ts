@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_aic_element_upload_v3_0_use_as.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_aic_element_upload_v3_0_use_as.go 生成
+// 不要手动编辑。
 
 export const AicElementUploadV30UseAs = {
   BACKGROUND: "BACKGROUND",

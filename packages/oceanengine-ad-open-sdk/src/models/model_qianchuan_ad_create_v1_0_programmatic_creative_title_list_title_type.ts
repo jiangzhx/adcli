@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_programmatic_creative_title_list_title_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_programmatic_creative_title_list_title_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanAdCreateV10ProgrammaticCreativeTitleListTitleType = {
   AWEME_CAROUSEL: "AWEME_CAROUSEL",

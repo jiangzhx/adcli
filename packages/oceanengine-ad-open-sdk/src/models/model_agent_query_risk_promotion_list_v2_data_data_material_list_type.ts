@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_query_risk_promotion_list_v2_data_data_material_list_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_query_risk_promotion_list_v2_data_data_material_list_type.go 生成
+// 不要手动编辑。
 
 export const AgentQueryRiskPromotionListV2DataDataMaterialListType = {
   IMAGE: "IMAGE",

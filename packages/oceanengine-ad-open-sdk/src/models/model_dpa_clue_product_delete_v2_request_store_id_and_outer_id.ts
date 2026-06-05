@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_clue_product_delete_v2_request_store_id_and_outer_id.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_clue_product_delete_v2_request_store_id_and_outer_id.go 生成
+// 不要手动编辑。
 
 export interface DpaClueProductDeleteV2RequestStoreIdAndOuterId {
   outer_id?: string;

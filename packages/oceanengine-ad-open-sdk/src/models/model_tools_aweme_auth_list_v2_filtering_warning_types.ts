@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_aweme_auth_list_v2_filtering_warning_types.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_aweme_auth_list_v2_filtering_warning_types.go 生成
+// 不要手动编辑。
 
 export const ToolsAwemeAuthListV2FilteringWarningTypes = {
   AUTHOR_REUQUEST_PENDING_EXPIRE: "AUTHOR_REUQUEST_PENDING_EXPIRE",

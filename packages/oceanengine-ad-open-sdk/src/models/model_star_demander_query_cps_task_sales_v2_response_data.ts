@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demander_query_cps_task_sales_v2_response_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demander_query_cps_task_sales_v2_response_data.go 生成
+// 不要手动编辑。
 
 import type { StarDemanderQueryCpsTaskSalesV2ResponseDataSalesInner } from "../models/index";
 

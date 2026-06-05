@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_uni_project_create_v3_0_video_material_list_video_hp_visibility.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_uni_project_create_v3_0_video_material_list_video_hp_visibility.go 生成
+// 不要手动编辑。
 
 export const UniProjectCreateV30VideoMaterialListVideoHpVisibility = {
   ALWAYS_VISIBLE: "ALWAYS_VISIBLE",

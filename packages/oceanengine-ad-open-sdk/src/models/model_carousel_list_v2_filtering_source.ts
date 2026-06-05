@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_carousel_list_v2_filtering_source.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_carousel_list_v2_filtering_source.go 生成
+// 不要手动编辑。
 
 export const CarouselListV2FilteringSource = {
   ACCOUNT_PUSH: "ACCOUNT_PUSH",

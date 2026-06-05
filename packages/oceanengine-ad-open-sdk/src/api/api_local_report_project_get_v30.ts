@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_local_report_project_get_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_local_report_project_get_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { LocalReportProjectGetV30Filtering, LocalReportProjectGetV30OrderType, LocalReportProjectGetV30Response, LocalReportProjectGetV30TimeGranularity } from "../models/index";

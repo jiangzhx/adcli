@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_blue_flow_package_list_v3_0_response_data_blue_flow_packages_inner_blue_flow_keyword_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_blue_flow_package_list_v3_0_response_data_blue_flow_packages_inner_blue_flow_keyword_inner.go 生成
+// 不要手动编辑。
 
 import type { ToolsBlueFlowPackageListV30DataBlueFlowPackagesBlueFlowKeywordBlueFlowRecommendType } from "../models/index";
 

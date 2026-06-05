@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_oc_project_material_get_v3_0_data_video_material_list_material_status_second.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_oc_project_material_get_v3_0_data_video_material_list_material_status_second.go 生成
+// 不要手动编辑。
 
 export const OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond = {
   MATERIAL_STATUS_AUDIT: "MATERIAL_STATUS_AUDIT",

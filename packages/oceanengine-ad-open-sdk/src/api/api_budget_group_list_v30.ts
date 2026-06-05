@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_budget_group_list_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_budget_group_list_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { BudgetGroupListV30Filtering, BudgetGroupListV30Response } from "../models/index";

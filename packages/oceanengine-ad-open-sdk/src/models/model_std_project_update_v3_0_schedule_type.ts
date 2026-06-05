@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_schedule_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_schedule_type.go 生成
+// 不要手动编辑。
 
 export const StdProjectUpdateV30ScheduleType = {
   SCHEDULE_7_DAYS: "SCHEDULE_7_DAYS",

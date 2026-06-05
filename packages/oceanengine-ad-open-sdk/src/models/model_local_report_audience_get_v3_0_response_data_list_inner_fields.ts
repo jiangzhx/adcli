@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_report_audience_get_v3_0_response_data_list_inner_fields.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_report_audience_get_v3_0_response_data_list_inner_fields.go 生成
+// 不要手动编辑。
 
 export interface LocalReportAudienceGetV30ResponseDataListInnerFields {
   click_cnt?: number;

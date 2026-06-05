@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_aweme_auth_list_v2_response_data_list_inner_auth_threshold_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_aweme_auth_list_v2_response_data_list_inner_auth_threshold_info.go 生成
+// 不要手动编辑。
 
 export interface ToolsAwemeAuthListV2ResponseDataListInnerAuthThresholdInfo {
   is_audit?: boolean;

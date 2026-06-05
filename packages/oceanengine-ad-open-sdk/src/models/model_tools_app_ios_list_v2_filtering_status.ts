@@ -1,11 +1,11 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_ios_list_v2_filtering_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_app_ios_list_v2_filtering_status.go 生成
+// 不要手动编辑。
 
 export const ToolsAppIosListV2FilteringStatus = {
-  ENABLE: "ENABLE",
   AUDIT_DOING: "AUDIT_DOING",
-  ALL: "ALL",
   AUDIT_ACCEPTED: "AUDIT_ACCEPTED",
+  ENABLE: "ENABLE",
+  ALL: "ALL",
   AUDIT_REJECTED: "AUDIT_REJECTED",
 } as const;
 

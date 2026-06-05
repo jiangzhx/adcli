@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_campaign_create_v2_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_campaign_create_v2_request.go 生成
+// 不要手动编辑。
 
 import type { CampaignCreateV2BudgetMode, CampaignCreateV2CampaignBudgetOptimization, CampaignCreateV2CampaignType, CampaignCreateV2DedicateType, CampaignCreateV2DeliveryMode, CampaignCreateV2DeliveryRelatedNum, CampaignCreateV2LandingType, CampaignCreateV2MarketingPurpose, CampaignCreateV2MarketingScene, CampaignCreateV2Operation, CampaignCreateV2SmartBidType } from "../models/index";
 

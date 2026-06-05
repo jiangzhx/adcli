@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_audience_auto_extend_enabled.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_audience_auto_extend_enabled.go 生成
+// 不要手动编辑。
 
 export const QianchuanAdCreateV10AudienceAutoExtendEnabled = {
   Enum_0: 0,

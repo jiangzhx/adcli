@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_creative_create_v3_0_request_creative_list_inner_advanced_creative_info_explore_one_time_component.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_creative_create_v3_0_request_creative_list_inner_advanced_creative_info_explore_one_time_component.go 生成
+// 不要手动编辑。
 
 import type { BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoExploreOneTimeComponentWipeAfterImage, BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoExploreOneTimeComponentWipeBeforeImage, BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfoExploreOneTimeComponentWipeImage } from "../models/index";
 

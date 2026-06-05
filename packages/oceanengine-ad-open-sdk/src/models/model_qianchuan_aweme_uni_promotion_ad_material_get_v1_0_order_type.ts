@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_ad_material_get_v1_0_order_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_ad_material_get_v1_0_order_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanAwemeUniPromotionAdMaterialGetV10OrderType = {
   ASC: "ASC",

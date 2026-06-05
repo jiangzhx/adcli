@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_yuntu_audience_label_create_v3_0_request_calculate_rule.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_yuntu_audience_label_create_v3_0_request_calculate_rule.go 生成
+// 不要手动编辑。
 
 import type { YuntuAudienceLabelCreateV30CalculateRuleFieldFilters, YuntuAudienceLabelCreateV30RequestCalculateRuleBehaviorFilters, YuntuAudienceLabelCreateV30RequestCalculateRuleItemFilters, YuntuAudienceLabelCreateV30RequestCalculateRuleWordRule } from "../models/index";
 

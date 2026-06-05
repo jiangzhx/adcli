@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_list_v3_0_filtering_status_second.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_list_v3_0_filtering_status_second.go 生成
+// 不要手动编辑。
 
 export const ProjectListV30FilteringStatusSecond = {
   PROJECT_STATUS_BUDGET_EXCEED: "PROJECT_STATUS_BUDGET_EXCEED",

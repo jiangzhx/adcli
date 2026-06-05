@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_aweme_list_v3_0_response_data_aweme_user_info_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_aweme_list_v3_0_response_data_aweme_user_info_list_inner.go 生成
+// 不要手动编辑。
 
 import type { BrandAwemeListV30DataAwemeUserInfoListAppName, BrandAwemeListV30DataAwemeUserInfoListAuthStatus, BrandAwemeListV30DataAwemeUserInfoListAuthType, BrandAwemeListV30DataAwemeUserInfoListOperatePlatform } from "../models/index";
 

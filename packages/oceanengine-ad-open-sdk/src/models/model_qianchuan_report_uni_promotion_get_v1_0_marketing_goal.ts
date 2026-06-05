@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_uni_promotion_get_v1_0_marketing_goal.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_report_uni_promotion_get_v1_0_marketing_goal.go 生成
+// 不要手动编辑。
 
 export const QianchuanReportUniPromotionGetV10MarketingGoal = {
   ALL: "ALL",

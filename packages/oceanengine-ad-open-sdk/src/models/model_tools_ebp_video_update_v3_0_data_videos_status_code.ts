@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_video_update_v3_0_data_videos_status_code.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_video_update_v3_0_data_videos_status_code.go 生成
+// 不要手动编辑。
 
 export const ToolsEbpVideoUpdateV30DataVideosStatusCode = {
   SUCCESS: "SUCCESS",

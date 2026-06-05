@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_get_v1_0_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_get_v1_0_filtering.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAdGetV10FilteringAutoManageFilter, QianchuanAdGetV10FilteringCampaignScene, QianchuanAdGetV10FilteringMarketingGoal, QianchuanAdGetV10FilteringMarketingScene, QianchuanAdGetV10FilteringStatus } from "../models/index";
 

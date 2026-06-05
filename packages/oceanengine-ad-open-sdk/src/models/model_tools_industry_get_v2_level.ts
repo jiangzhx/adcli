@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_industry_get_v2_level.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_industry_get_v2_level.go 生成
+// 不要手动编辑。
 
 export const ToolsIndustryGetV2Level = {
   Enum_1: 1,

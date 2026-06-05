@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_authorizable_shop_list_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_authorizable_shop_list_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanUniPromotionAuthorizableShopListV10Filter, QianchuanUniPromotionAuthorizableShopListV10Response } from "../models/index";

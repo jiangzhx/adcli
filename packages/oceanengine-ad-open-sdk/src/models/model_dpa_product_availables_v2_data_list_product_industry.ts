@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_product_availables_v2_data_list_product_industry.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_product_availables_v2_data_list_product_industry.go 生成
+// 不要手动编辑。
 
 export const DpaProductAvailablesV2DataListProductIndustry = {
   AUTO_NEW: "AUTO_NEW",

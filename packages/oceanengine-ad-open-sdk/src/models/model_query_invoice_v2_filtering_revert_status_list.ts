@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_query_invoice_v2_filtering_revert_status_list.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_query_invoice_v2_filtering_revert_status_list.go 生成
+// 不要手动编辑。
 
 export const QueryInvoiceV2FilteringRevertStatusList = {
   Enum_1: 1,

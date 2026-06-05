@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_detail_v3_0_response_data_customer_material_list_inner_video_material.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_promotion_detail_v3_0_response_data_customer_material_list_inner_video_material.go 生成
+// 不要手动编辑。
 
 import type { LocalPromotionDetailV30DataCustomerMaterialListVideoMaterialImageMode } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_event_manager_deep_bid_type_get_v3_0_product_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_event_manager_deep_bid_type_get_v3_0_product_setting.go 生成
+// 不要手动编辑。
 
 export const EventManagerDeepBidTypeGetV30ProductSetting = {
   MULTI_PRODUCTS: "MULTI_PRODUCTS",

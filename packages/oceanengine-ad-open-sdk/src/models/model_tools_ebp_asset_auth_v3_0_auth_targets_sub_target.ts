@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_asset_auth_v3_0_auth_targets_sub_target.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_asset_auth_v3_0_auth_targets_sub_target.go 生成
+// 不要手动编辑。
 
 export const ToolsEbpAssetAuthV30AuthTargetsSubTarget = {
   AD: "AD",

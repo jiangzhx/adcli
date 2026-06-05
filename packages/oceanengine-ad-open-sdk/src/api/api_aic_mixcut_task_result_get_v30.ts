@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_aic_mixcut_task_result_get_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_aic_mixcut_task_result_get_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { AicMixcutTaskResultGetV30AccountType, AicMixcutTaskResultGetV30Response } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_aic_image_mixcut_create_v3_0_render_option_video_duration.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_aic_image_mixcut_create_v3_0_render_option_video_duration.go 生成
+// 不要手动编辑。
 
 export const AicImageMixcutCreateV30RenderOptionVideoDuration = {
   DURATION_10_15_S: "DURATION_10_15S",

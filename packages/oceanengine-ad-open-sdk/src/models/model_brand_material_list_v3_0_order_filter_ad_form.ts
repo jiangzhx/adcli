@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_order_filter_ad_form.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_order_filter_ad_form.go 生成
+// 不要手动编辑。
 
 export const BrandMaterialListV30OrderFilterAdForm = {
   AWEME_LBS: "AWEME_LBS",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_stardelivery_task_list_v3_0_data_list_star_task_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_stardelivery_task_list_v3_0_data_list_star_task_external_action.go 生成
+// 不要手动编辑。
 
 export const StardeliveryTaskListV30DataListStarTaskExternalAction = {
   AD_CONVERT_PAGE_VIEW: "AD_CONVERT_PAGE_VIEW",

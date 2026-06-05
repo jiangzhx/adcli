@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_async_task_create_v2_task_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_async_task_create_v2_task_type.go 生成
+// 不要手动编辑。
 
 export const AsyncTaskCreateV2TaskType = {
   REPORT: "REPORT",

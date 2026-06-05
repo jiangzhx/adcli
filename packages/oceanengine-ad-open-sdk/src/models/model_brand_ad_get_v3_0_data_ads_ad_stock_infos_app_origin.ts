@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_data_ads_ad_stock_infos_app_origin.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_data_ads_ad_stock_infos_app_origin.go 生成
+// 不要手动编辑。
 
 export const BrandAdGetV30DataAdsAdStockInfosAppOrigin = {
   Enum_1: 1,

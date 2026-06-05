@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_download_package_parse_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_download_package_parse_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsDownloadPackageParseV2Request, ToolsDownloadPackageParseV2Response } from "../models/index";

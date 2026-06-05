@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_coupon_detail_v2_response_data_coupon_resource_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_coupon_detail_v2_response_data_coupon_resource_list_inner.go 生成
+// 不要手动编辑。
 
 import type { ClueCouponDetailV2DataCouponResourceListCodeType, ClueCouponDetailV2DataCouponResourceListIndustryType, ClueCouponDetailV2DataCouponResourceListResourceType, ClueCouponDetailV2ResponseDataCouponResourceListInnerGiftListInner } from "../models/index";
 

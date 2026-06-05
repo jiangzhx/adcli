@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_suggest_roi_goal_v1_0_ecom_guest_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_suggest_roi_goal_v1_0_ecom_guest_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanSuggestRoiGoalV10EcomGuestType = {
   NO_BUY: "NO_BUY",

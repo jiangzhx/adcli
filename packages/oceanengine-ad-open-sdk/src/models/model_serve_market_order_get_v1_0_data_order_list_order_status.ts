@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_serve_market_order_get_v1_0_data_order_list_order_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_serve_market_order_get_v1_0_data_order_list_order_status.go 生成
+// 不要手动编辑。
 
 export const ServeMarketOrderGetV10DataOrderListOrderStatus = {
   UNPAID: "UNPAID",

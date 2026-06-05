@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_om_create_challenge_v2_request_challenge_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_om_create_challenge_v2_request_challenge_info.go 生成
+// 不要手动编辑。
 
 import type { StarDemandOmCreateChallengeV2ChallengeInfoAuthorScope, StarDemandOmCreateChallengeV2ChallengeInfoCommissionType, StarDemandOmCreateChallengeV2ChallengeInfoProviderScope, StarDemandOmCreateChallengeV2RequestChallengeInfoCommissionInfo, StarDemandOmCreateChallengeV2RequestChallengeInfoParticipateAuthorRange, StarDemandOmCreateChallengeV2RequestChallengeInfoParticipateProviderRange } from "../models/index";
 

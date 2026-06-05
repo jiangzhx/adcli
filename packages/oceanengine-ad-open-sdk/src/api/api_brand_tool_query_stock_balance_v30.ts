@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_brand_tool_query_stock_balance_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_brand_tool_query_stock_balance_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { BrandToolQueryStockBalanceV30AdForm, BrandToolQueryStockBalanceV30AppOrigin, BrandToolQueryStockBalanceV30AudienceInfo, BrandToolQueryStockBalanceV30Classify, BrandToolQueryStockBalanceV30DeliveryInfo, BrandToolQueryStockBalanceV30FrequencyInfo, BrandToolQueryStockBalanceV30GdSendType, BrandToolQueryStockBalanceV30PricingType, BrandToolQueryStockBalanceV30ProType, BrandToolQueryStockBalanceV30Response } from "../models/index";

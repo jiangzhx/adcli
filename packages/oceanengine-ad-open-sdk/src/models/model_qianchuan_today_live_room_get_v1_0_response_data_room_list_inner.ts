@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_today_live_room_get_v1_0_response_data_room_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_today_live_room_get_v1_0_response_data_room_list_inner.go 生成
+// 不要手动编辑。
 
 import type { QianchuanTodayLiveRoomGetV10DataRoomListRoomStatus } from "../models/index";
 

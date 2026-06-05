@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_related_product_image_material_list_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_related_product_image_material_list_image_mode.go 生成
+// 不要手动编辑。
 
 export const PromotionListV30DataListPromotionRelatedProductImageMaterialListImageMode = {
   AWEME_PHOTO: "AWEME_PHOTO",

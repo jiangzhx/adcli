@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_video_check_available_anchor_v2_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_video_check_available_anchor_v2_external_action.go 生成
+// 不要手动编辑。
 
 export const ToolsVideoCheckAvailableAnchorV2ExternalAction = {
   AD_CONVERT_TYPE_ACTIVE: "AD_CONVERT_TYPE_ACTIVE",

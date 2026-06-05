@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dmp_custom_audience_select_v2_select_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dmp_custom_audience_select_v2_select_type.go 生成
+// 不要手动编辑。
 
 export const DmpCustomAudienceSelectV2SelectType = {
   Enum_0: 0,

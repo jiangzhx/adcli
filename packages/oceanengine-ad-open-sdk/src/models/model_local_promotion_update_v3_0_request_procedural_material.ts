@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_update_v3_0_request_procedural_material.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_promotion_update_v3_0_request_procedural_material.go 生成
+// 不要手动编辑。
 
 import type { LocalPromotionUpdateV30RequestProceduralMaterialCarouselMaterialListInner, LocalPromotionUpdateV30RequestProceduralMaterialTitleMaterialListInner, LocalPromotionUpdateV30RequestProceduralMaterialVideoMaterialListInner } from "../models/index";
 

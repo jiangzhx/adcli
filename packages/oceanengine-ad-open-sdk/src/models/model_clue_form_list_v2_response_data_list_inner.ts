@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_form_list_v2_response_data_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_form_list_v2_response_data_list_inner.go 生成
+// 不要手动编辑。
 
 import type { ClueFormListV2DataListEnableLayer, ClueFormListV2DataListFormType, ClueFormListV2DataListIsDel, ClueFormListV2DataListValidateType } from "../models/index";
 

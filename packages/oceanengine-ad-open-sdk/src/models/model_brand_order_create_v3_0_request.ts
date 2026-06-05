@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_order_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_order_create_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { BrandOrderCreateV30AdForm, BrandOrderCreateV30AppOrigin, BrandOrderCreateV30Classify, BrandOrderCreateV30GdSendType, BrandOrderCreateV30PricingType, BrandOrderCreateV30ProType, BrandOrderCreateV30RequestAudienceInfo, BrandOrderCreateV30RequestBookingQuantityInfo, BrandOrderCreateV30RequestFrequencyInfo } from "../models/index";
 

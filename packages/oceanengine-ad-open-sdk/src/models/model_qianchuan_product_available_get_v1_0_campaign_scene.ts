@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_product_available_get_v1_0_campaign_scene.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_product_available_get_v1_0_campaign_scene.go 生成
+// 不要手动编辑。
 
 export const QianchuanProductAvailableGetV10CampaignScene = {
   DAILY_SALE: "DAILY_SALE",

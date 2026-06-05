@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_site_get_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_site_get_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsSiteGetV2Filtering, ToolsSiteGetV2Response, ToolsSiteGetV2ShareType, ToolsSiteGetV2Status } from "../models/index";

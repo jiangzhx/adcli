@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_wallet_transfer_create_v3_0_target_wallet_detail_list_transfer_capital_detail_list_platform.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_cg_transfer_wallet_transfer_create_v3_0_target_wallet_detail_list_transfer_capital_detail_list_platform.go 生成
+// 不要手动编辑。
 
 export const CgTransferWalletTransferCreateV30TargetWalletDetailListTransferCapitalDetailListPlatform = {
   AD: "AD",

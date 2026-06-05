@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_list_v1_0_response_data_ad_list_inner_ad_info_compensate_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_list_v1_0_response_data_ad_list_inner_ad_info_compensate_info.go 生成
+// 不要手动编辑。
 
 import type { QianchuanUniPromotionListV10DataAdListAdInfoCompensateInfoCompensateStatus, QianchuanUniPromotionListV10DataAdListAdInfoCompensateInfoStatus } from "../models/index";
 

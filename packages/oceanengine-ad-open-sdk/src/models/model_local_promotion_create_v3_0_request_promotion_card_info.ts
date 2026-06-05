@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_create_v3_0_request_promotion_card_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_promotion_create_v3_0_request_promotion_card_info.go 生成
+// 不要手动编辑。
 
 import type { LocalPromotionCreateV30RequestPromotionCardInfoCallToActionsInner, LocalPromotionCreateV30RequestPromotionCardInfoProductImagesInner, LocalPromotionCreateV30RequestPromotionCardInfoProductSellingPointsInner } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_om_expand_challenge_provider_v2_om_participate_provider_range_operation_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_om_expand_challenge_provider_v2_om_participate_provider_range_operation_type.go 生成
+// 不要手动编辑。
 
 export const StarDemandOmExpandChallengeProviderV2OmParticipateProviderRangeOperationType = {
   Enum_1: 1,

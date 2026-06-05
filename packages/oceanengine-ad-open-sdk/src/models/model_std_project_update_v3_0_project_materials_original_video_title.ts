@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_project_materials_original_video_title.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_project_materials_original_video_title.go 生成
+// 不要手动编辑。
 
 export const StdProjectUpdateV30ProjectMaterialsOriginalVideoTitle = {
   OFF: "OFF",

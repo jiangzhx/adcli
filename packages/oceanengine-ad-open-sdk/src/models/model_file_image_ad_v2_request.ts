@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_image_ad_v2_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_image_ad_v2_request.go 生成
+// 不要手动编辑。
 
 import type { FileImageAdV2UploadType } from "../models/index";
 

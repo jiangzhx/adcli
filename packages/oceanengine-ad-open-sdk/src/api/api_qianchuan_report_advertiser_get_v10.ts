@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_report_advertiser_get_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_report_advertiser_get_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanReportAdvertiserGetV10Filtering, QianchuanReportAdvertiserGetV10OrderType, QianchuanReportAdvertiserGetV10Response, QianchuanReportAdvertiserGetV10TimeGranularity } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_data_audience_age.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_data_audience_age.go 生成
+// 不要手动编辑。
 
 export const LocalProjectDetailV30DataAudienceAge = {
   AGE_ABOVE_50: "AGE_ABOVE_50",

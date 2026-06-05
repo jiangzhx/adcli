@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_creative_word_select_v2_data_creative_word_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_creative_word_select_v2_data_creative_word_status.go 生成
+// 不要手动编辑。
 
 export const ToolsCreativeWordSelectV2DataCreativeWordStatus = {
   CREATIVE_WORD_STATUS_APPROVE: "CREATIVE_WORD_STATUS_APPROVE",

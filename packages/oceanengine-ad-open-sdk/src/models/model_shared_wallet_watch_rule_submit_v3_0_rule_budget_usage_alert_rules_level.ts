@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_watch_rule_submit_v3_0_rule_budget_usage_alert_rules_level.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_watch_rule_submit_v3_0_rule_budget_usage_alert_rules_level.go 生成
+// 不要手动编辑。
 
 export const SharedWalletWatchRuleSubmitV30RuleBudgetUsageAlertRulesLevel = {
   A_LEVEL: "A_LEVEL",

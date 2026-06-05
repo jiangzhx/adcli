@@ -1,0 +1,29 @@
+// 由 oceanengine/ad_open_sdk_go models/model_agent_query_risk_promotion_list_v2_filtering_local_ad_status_list.go 生成
+// 不要手动编辑。
+
+export const AgentQueryRiskPromotionListV2FilteringLocalAdStatusList = {
+  ADVERTISER_OFFLINE_BUDGET: "ADVERTISER_OFFLINE_BUDGET",
+  AD_DISABLE: "AD_DISABLE",
+  AUDIT: "AUDIT",
+  AWEME_ACCOUNT_DISABLE: "AWEME_ACCOUNT_DISABLE",
+  CAMPAIGN_OFFLINE_BUDGET: "CAMPAIGN_OFFLINE_BUDGET",
+  CAMPAIGN_PRE_OFFLINE_BUDGET: "CAMPAIGN_PRE_OFFLINE_BUDGET",
+  DELETE: "DELETE",
+  DELIVERY_OK: "DELIVERY_OK",
+  DISABLE: "DISABLE",
+  EXTERNAL_URL_DISABLE: "EXTERNAL_URL_DISABLE",
+  FROZEN: "FROZEN",
+  LIVE_ROOM_OFF: "LIVE_ROOM_OFF",
+  NO_SCHEDULE: "NO_SCHEDULE",
+  OFFLINE_AUDIT: "OFFLINE_AUDIT",
+  OFFLINE_BALANCE: "OFFLINE_BALANCE",
+  OFFLINE_BUDGET: "OFFLINE_BUDGET",
+  PRE_OFFLINE_BUDGET: "PRE_OFFLINE_BUDGET",
+  RE_AUDIT: "RE_AUDIT",
+  SHARE_WALLET_OFFLINE_BUDGET: "SHARE_WALLET_OFFLINE_BUDGET",
+  TIME_DONE: "TIME_DONE",
+  TIME_NO_REACH: "TIME_NO_REACH",
+} as const;
+
+export type AgentQueryRiskPromotionListV2FilteringLocalAdStatusList = typeof AgentQueryRiskPromotionListV2FilteringLocalAdStatusList[keyof typeof AgentQueryRiskPromotionListV2FilteringLocalAdStatusList];
+

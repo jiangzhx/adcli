@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_douplus_order_list_v3_0_response_data_order_list_inner_order.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_douplus_order_list_v3_0_response_data_order_list_inner_order.go 生成
+// 不要手动编辑。
 
 import type { DouplusOrderListV30DataOrderListOrderLiveScene, DouplusOrderListV30DataOrderListOrderSceneType, DouplusOrderListV30DataOrderListOrderTaskStatus } from "../models/index";
 

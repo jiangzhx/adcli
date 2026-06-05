@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_qualification_create_v2_v2_qualifications_ad_qualification_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_advertiser_qualification_create_v2_v2_qualifications_ad_qualification_type.go 生成
+// 不要手动编辑。
 
 export const AdvertiserQualificationCreateV2V2QualificationsAdQualificationType = {
   AUTHORIZATION: "AUTHORIZATION",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_security_open_material_audit_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_security_open_material_audit_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { SecurityOpenMaterialAuditV30BusinessType, SecurityOpenMaterialAuditV30MsgType, SecurityOpenMaterialAuditV30Type } from "../models/index";
 

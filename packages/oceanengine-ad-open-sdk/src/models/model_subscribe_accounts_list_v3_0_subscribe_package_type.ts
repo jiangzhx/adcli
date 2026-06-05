@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_subscribe_accounts_list_v3_0_subscribe_package_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_subscribe_accounts_list_v3_0_subscribe_package_type.go 生成
+// 不要手动编辑。
 
 export const SubscribeAccountsListV30SubscribePackageType = {
   APP: "APP",

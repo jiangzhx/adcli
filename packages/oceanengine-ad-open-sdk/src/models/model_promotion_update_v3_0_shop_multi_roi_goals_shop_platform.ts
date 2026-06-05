@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_update_v3_0_shop_multi_roi_goals_shop_platform.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_update_v3_0_shop_multi_roi_goals_shop_platform.go 生成
+// 不要手动编辑。
 
 export const PromotionUpdateV30ShopMultiRoiGoalsShopPlatform = {
   JD: "JD",

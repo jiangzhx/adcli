@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_tools_estimate_audience_v1_0_audience_auto_extend_targets.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_tools_estimate_audience_v1_0_audience_auto_extend_targets.go 生成
+// 不要手动编辑。
 
 export const QianchuanToolsEstimateAudienceV10AudienceAutoExtendTargets = {
   AGE: "AGE",

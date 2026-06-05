@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_micro_app_list_v3_0_response_data_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_micro_app_list_v3_0_response_data_list_inner.go 生成
+// 不要手动编辑。
 
 import type { ToolsMicroAppListV30DataListAccountType, ToolsMicroAppListV30DataListAuditStatus, ToolsMicroAppListV30DataListMaxPaymentTierRange, ToolsMicroAppListV30DataListMaxRechargeTier, ToolsMicroAppListV30DataListMembershipType, ToolsMicroAppListV30DataListMidPaymentTierRange, ToolsMicroAppListV30DataListMinPaymentTierRange, ToolsMicroAppListV30DataListMinRechargeTier, ToolsMicroAppListV30DataListPaymentForm, ToolsMicroAppListV30DataListRecommendedRechargeTier, ToolsMicroAppListV30DataListRevenueModel } from "../models/index";
 

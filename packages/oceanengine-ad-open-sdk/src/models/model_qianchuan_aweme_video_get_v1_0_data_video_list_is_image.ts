@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_video_get_v1_0_data_video_list_is_image.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_video_get_v1_0_data_video_list_is_image.go 生成
+// 不要手动编辑。
 
 export const QianchuanAwemeVideoGetV10DataVideoListIsImage = {
   Enum_0: 0,

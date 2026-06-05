@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_schedule_time_update_v3_0_data_schedule_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_schedule_time_update_v3_0_data_schedule_type.go 生成
+// 不要手动编辑。
 
 export const ProjectScheduleTimeUpdateV30DataScheduleType = {
   SCHEDULE_FROM_NOW: "SCHEDULE_FROM_NOW",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_ad_schedule_fixed_range_update_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_ad_schedule_fixed_range_update_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanAdScheduleFixedRangeUpdateV10Request, QianchuanAdScheduleFixedRangeUpdateV10Response } from "../models/index";

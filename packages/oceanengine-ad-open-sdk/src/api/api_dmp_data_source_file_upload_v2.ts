@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_dmp_data_source_file_upload_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_dmp_data_source_file_upload_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { DmpDataSourceFileUploadV2Response } from "../models/index";

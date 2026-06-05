@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_oauth2_renew_token_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_oauth2_renew_token_request.go 生成
+// 不要手动编辑。
 
 export interface Oauth2RenewTokenRequest {
   app_id: number | string;

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_product_channel_info_channel_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_product_channel_info_channel_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniAwemeAdUpdateV10ProductChannelInfoChannelType = {
   SHOP_SELL: "SHOP_SELL",

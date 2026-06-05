@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_data_ads_audience_info_platform_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_data_ads_audience_info_platform_v2.go 生成
+// 不要手动编辑。
 
 export const BrandAdGetV30DataAdsAudienceInfoPlatformV2 = {
   Enum_1: 1,

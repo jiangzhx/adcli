@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_stardelivery_task_data_get_v3_0_data_list_star_task_category_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_stardelivery_task_data_get_v3_0_data_list_star_task_category_type.go 生成
+// 不要手动编辑。
 
 export const ReportStardeliveryTaskDataGetV30DataListStarTaskCategoryType = {
   COMPASS: "COMPASS",

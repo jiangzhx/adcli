@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_info_get_v3_0_data_wallet_info_sub_wallet_info_sub_shared_range_account_platform_list.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_info_get_v3_0_data_wallet_info_sub_wallet_info_sub_shared_range_account_platform_list.go 生成
+// 不要手动编辑。
 
 export const SharedWalletWalletInfoGetV30DataWalletInfoSubWalletInfoSubSharedRangeAccountPlatformList = {
   AD: "AD",

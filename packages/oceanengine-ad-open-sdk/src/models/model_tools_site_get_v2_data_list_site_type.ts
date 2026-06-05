@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_site_get_v2_data_list_site_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_site_get_v2_data_list_site_type.go 生成
+// 不要手动编辑。
 
 export const ToolsSiteGetV2DataListSiteType = {
   ADL_AB_TEST: "ADL_AB_TEST",

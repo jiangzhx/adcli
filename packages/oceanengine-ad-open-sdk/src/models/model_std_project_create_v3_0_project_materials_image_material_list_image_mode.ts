@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_project_materials_image_material_list_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_project_materials_image_material_list_image_mode.go 生成
+// 不要手动编辑。
 
 export const StdProjectCreateV30ProjectMaterialsImageMaterialListImageMode = {
   CREATIVE_IMAGE_MODE_LARGE: "CREATIVE_IMAGE_MODE_LARGE",

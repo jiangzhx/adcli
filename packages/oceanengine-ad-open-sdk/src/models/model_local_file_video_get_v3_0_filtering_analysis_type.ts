@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_file_video_get_v3_0_filtering_analysis_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_file_video_get_v3_0_filtering_analysis_type.go 生成
+// 不要手动编辑。
 
 export const LocalFileVideoGetV30FilteringAnalysisType = {
   FIRST_PUBLISH: "FIRST_PUBLISH",

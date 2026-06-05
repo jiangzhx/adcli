@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_ebp_clue_product_list_v3_0_response_data_products_inner_brand_info_target_url.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_ebp_clue_product_list_v3_0_response_data_products_inner_brand_info_target_url.go 生成
+// 不要手动编辑。
 
 export interface DpaEbpClueProductListV30ResponseDataProductsInnerBrandInfoTargetUrl {
   target_url?: string;

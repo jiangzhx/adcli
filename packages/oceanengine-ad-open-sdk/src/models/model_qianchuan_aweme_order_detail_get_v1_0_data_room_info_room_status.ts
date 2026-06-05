@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_detail_get_v1_0_data_room_info_room_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_detail_get_v1_0_data_room_info_room_status.go 生成
+// 不要手动编辑。
 
 export const QianchuanAwemeOrderDetailGetV10DataRoomInfoRoomStatus = {
   FINISH: "FINISH",

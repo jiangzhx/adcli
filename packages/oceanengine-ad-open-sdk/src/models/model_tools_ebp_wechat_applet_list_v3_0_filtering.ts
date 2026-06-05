@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_wechat_applet_list_v3_0_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_wechat_applet_list_v3_0_filtering.go 生成
+// 不要手动编辑。
 
 import type { ToolsEbpWechatAppletListV30FilteringAssetOwnership, ToolsEbpWechatAppletListV30FilteringAuditStatus } from "../models/index";
 

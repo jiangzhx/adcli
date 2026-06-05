@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_mcn_get_contract_challenge_author_item_list_v2_v2_response_data_data_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_mcn_get_contract_challenge_author_item_list_v2_v2_response_data_data_inner.go 生成
+// 不要手动编辑。
 
 import type { StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoDailyListInner, StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerLiveEffectData, StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerSmallGameSettle } from "../models/index";
 

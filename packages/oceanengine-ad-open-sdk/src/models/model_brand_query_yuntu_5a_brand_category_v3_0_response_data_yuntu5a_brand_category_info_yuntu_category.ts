@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_query_yuntu_5a_brand_category_v3_0_response_data_yuntu5a_brand_category_info_yuntu_category.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_query_yuntu_5a_brand_category_v3_0_response_data_yuntu5a_brand_category_info_yuntu_category.go 生成
+// 不要手动编辑。
 
 import type { BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuCategoryFirstCategoryDataInner, BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuCategorySecondCategoryDataValueInner, BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuCategoryThirdCategoryDataValueInner } from "../models/index";
 

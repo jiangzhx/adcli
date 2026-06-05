@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_request_creative_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_request_creative_setting.go 生成
+// 不要手动编辑。
 
 import type { QianchuanUniAwemeAdUpdateV10CreativeSettingCreativeType } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_data_audience_aweme_fan_behaviors_days.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_data_audience_aweme_fan_behaviors_days.go 生成
+// 不要手动编辑。
 
 export const QianchuanAdDetailGetV10DataAudienceAwemeFanBehaviorsDays = {
   DAYS_15: "DAYS_15",

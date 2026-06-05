@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_clue_private_message_callback_v2_clue_convert_info_clue_convert_state.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_clue_private_message_callback_v2_clue_convert_info_clue_convert_state.go 生成
+// 不要手动编辑。
 
 export const ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = {
   NEW_CLUE: "NEW_CLUE",

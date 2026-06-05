@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_list_v3_0_data_list_landing_page_stay_time.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_list_v3_0_data_list_landing_page_stay_time.go 生成
+// 不要手动编辑。
 
 export const ProjectListV30DataListLandingPageStayTime = {
   Enum_1000: 1000,

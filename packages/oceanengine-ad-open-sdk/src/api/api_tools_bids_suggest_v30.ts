@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_bids_suggest_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_bids_suggest_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsBidsSuggestV30CampaignType, ToolsBidsSuggestV30DeepBidType, ToolsBidsSuggestV30DeepExternalAction, ToolsBidsSuggestV30ExternalAction, ToolsBidsSuggestV30MarketingGoal, ToolsBidsSuggestV30Platform, ToolsBidsSuggestV30Pricing, ToolsBidsSuggestV30Response } from "../models/index";

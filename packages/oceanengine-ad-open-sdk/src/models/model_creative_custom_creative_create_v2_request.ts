@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_custom_creative_create_v2_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_custom_creative_create_v2_request.go 生成
+// 不要手动编辑。
 
 import type { CreativeCustomCreativeCreateV2RequestAdData, CreativeCustomCreativeCreateV2RequestCreativeListInner } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_charge_verify_get_v3_0_charge_source.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_charge_verify_get_v3_0_charge_source.go 生成
+// 不要手动编辑。
 
 export const ChargeVerifyGetV30ChargeSource = {
   AUTO_CHARGE: "AUTO_CHARGE",

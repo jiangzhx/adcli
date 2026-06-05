@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_report_stardelivery_task_video_data_get_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_report_stardelivery_task_video_data_get_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ReportStardeliveryTaskVideoDataGetV30Filtering, ReportStardeliveryTaskVideoDataGetV30OrderType, ReportStardeliveryTaskVideoDataGetV30Response } from "../models/index";

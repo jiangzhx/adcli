@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_star_vas_submit_export_boost_item_group_data_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_star_vas_submit_export_boost_item_group_data_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { StarVasSubmitExportBoostItemGroupDataV2Request, StarVasSubmitExportBoostItemGroupDataV2Response } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_stardelivery_task_author_video_detail_v3_0_data_valid_author_submitted_videos_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_stardelivery_task_author_video_detail_v3_0_data_valid_author_submitted_videos_image_mode.go 生成
+// 不要手动编辑。
 
 export const StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosImageMode = {
   AWEME_PHOTO: "AWEME_PHOTO",

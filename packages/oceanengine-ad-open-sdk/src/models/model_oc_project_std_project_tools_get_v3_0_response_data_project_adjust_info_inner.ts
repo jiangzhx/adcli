@@ -1,0 +1,12 @@
+// 由 oceanengine/ad_open_sdk_go models/model_oc_project_std_project_tools_get_v3_0_response_data_project_adjust_info_inner.go 生成
+// 不要手动编辑。
+
+import type { OcProjectStdProjectToolsGetV30ResponseDataProjectAdjustInfoInnerAudienceAdjustInfo, OcProjectStdProjectToolsGetV30ResponseDataProjectAdjustInfoInnerKeywordsAdjustInfo, OcProjectStdProjectToolsGetV30ResponseDataProjectAdjustInfoInnerMaterialAdjustInfoInner } from "../models/index";
+
+export interface OcProjectStdProjectToolsGetV30ResponseDataProjectAdjustInfoInner {
+  audience_adjust_info?: OcProjectStdProjectToolsGetV30ResponseDataProjectAdjustInfoInnerAudienceAdjustInfo;
+  keywords_adjust_info?: OcProjectStdProjectToolsGetV30ResponseDataProjectAdjustInfoInnerKeywordsAdjustInfo;
+  material_adjust_info?: OcProjectStdProjectToolsGetV30ResponseDataProjectAdjustInfoInnerMaterialAdjustInfoInner[];
+  project_id?: number | string;
+}
+

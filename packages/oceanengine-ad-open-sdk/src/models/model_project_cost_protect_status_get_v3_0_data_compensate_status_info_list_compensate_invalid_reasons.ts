@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_cost_protect_status_get_v3_0_data_compensate_status_info_list_compensate_invalid_reasons.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_cost_protect_status_get_v3_0_data_compensate_status_info_list_compensate_invalid_reasons.go 生成
+// 不要手动编辑。
 
 export const ProjectCostProtectStatusGetV30DataCompensateStatusInfoListCompensateInvalidReasons = {
   ANTI_SPAM: "ANTI_SPAM",

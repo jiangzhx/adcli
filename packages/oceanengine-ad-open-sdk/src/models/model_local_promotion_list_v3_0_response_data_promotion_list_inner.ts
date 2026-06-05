@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_list_v3_0_response_data_promotion_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_promotion_list_v3_0_response_data_promotion_list_inner.go 生成
+// 不要手动编辑。
 
 import type { LocalPromotionListV30DataPromotionListAdType, LocalPromotionListV30DataPromotionListLearningPhase, LocalPromotionListV30DataPromotionListLocalDeliveryScene, LocalPromotionListV30DataPromotionListPromotionStatusFirst, LocalPromotionListV30DataPromotionListPromotionStatusSecond } from "../models/index";
 
@@ -10,6 +10,7 @@ export interface LocalPromotionListV30ResponseDataPromotionListInner {
   learning_phase?: LocalPromotionListV30DataPromotionListLearningPhase;
   local_account_id?: number | string;
   local_delivery_scene?: LocalPromotionListV30DataPromotionListLocalDeliveryScene;
+  opt_status?: number;
   project_id?: number | string;
   promotion_create_time?: string;
   promotion_id?: number | string;

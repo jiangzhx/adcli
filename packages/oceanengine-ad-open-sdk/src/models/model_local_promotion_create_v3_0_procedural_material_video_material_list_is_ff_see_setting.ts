@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_create_v3_0_procedural_material_video_material_list_is_ff_see_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_promotion_create_v3_0_procedural_material_video_material_list_is_ff_see_setting.go 生成
+// 不要手动编辑。
 
 export const LocalPromotionCreateV30ProceduralMaterialVideoMaterialListIsFfSeeSetting = {
   ALWAYS_VISIBLE: "ALWAYS_VISIBLE",

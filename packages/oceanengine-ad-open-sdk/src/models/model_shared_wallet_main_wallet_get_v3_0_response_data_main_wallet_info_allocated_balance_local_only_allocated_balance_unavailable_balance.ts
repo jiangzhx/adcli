@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_main_wallet_get_v3_0_response_data_main_wallet_info_allocated_balance_local_only_allocated_balance_unavailable_balance.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_main_wallet_get_v3_0_response_data_main_wallet_info_allocated_balance_local_only_allocated_balance_unavailable_balance.go 生成
+// 不要手动编辑。
 
 export interface SharedWalletMainWalletGetV30ResponseDataMainWalletInfoAllocatedBalanceLocalOnlyAllocatedBalanceUnavailableBalance {
   credit_bidding_balance?: number;

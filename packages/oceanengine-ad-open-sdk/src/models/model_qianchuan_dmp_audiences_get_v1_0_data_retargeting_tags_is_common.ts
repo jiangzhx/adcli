@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_dmp_audiences_get_v1_0_data_retargeting_tags_is_common.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_dmp_audiences_get_v1_0_data_retargeting_tags_is_common.go 生成
+// 不要手动编辑。
 
 export const QianchuanDmpAudiencesGetV10DataRetargetingTagsIsCommon = {
   Enum_0: 0,

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_component_query_industry_anchor_v2_response_data_components_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_component_query_industry_anchor_v2_response_data_components_inner.go 生成
+// 不要手动编辑。
 
 export interface StarComponentQueryIndustryAnchorV2ResponseDataComponentsInner {
   anchor_name?: string;

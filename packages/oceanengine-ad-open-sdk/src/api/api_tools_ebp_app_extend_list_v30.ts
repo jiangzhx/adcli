@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_ebp_app_extend_list_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_ebp_app_extend_list_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsEbpAppExtendListV30AccountType, ToolsEbpAppExtendListV30Filtering, ToolsEbpAppExtendListV30Response, ToolsEbpAppExtendListV30UpdateTime } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_get_v2_filtering_pricing.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_get_v2_filtering_pricing.go 生成
+// 不要手动编辑。
 
 export const CreativeGetV2FilteringPricing = {
   PRICING_CPA: "PRICING_CPA",

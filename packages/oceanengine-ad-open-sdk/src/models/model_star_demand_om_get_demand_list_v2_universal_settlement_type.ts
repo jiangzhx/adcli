@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_om_get_demand_list_v2_universal_settlement_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_om_get_demand_list_v2_universal_settlement_type.go 生成
+// 不要手动编辑。
 
 export const StarDemandOmGetDemandListV2UniversalSettlementType = {
   Enum_16: 16,

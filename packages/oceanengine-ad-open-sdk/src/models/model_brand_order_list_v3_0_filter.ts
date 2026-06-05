@@ -1,10 +1,11 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_order_list_v3_0_filter.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_order_list_v3_0_filter.go 生成
+// 不要手动编辑。
 
-import type { BrandOrderListV30FilterAdForm, BrandOrderListV30FilterAppOrigin, BrandOrderListV30FilterAuditStatus, BrandOrderListV30FilterClassify, BrandOrderListV30FilterGdSendType, BrandOrderListV30FilterOrderStatus, BrandOrderListV30FilterProType } from "../models/index";
+import type { BrandOrderListV30FilterAdForm, BrandOrderListV30FilterAdvancedOption, BrandOrderListV30FilterAppOrigin, BrandOrderListV30FilterAuditStatus, BrandOrderListV30FilterClassify, BrandOrderListV30FilterGdSendType, BrandOrderListV30FilterOrderStatus, BrandOrderListV30FilterProType } from "../models/index";
 
 export interface BrandOrderListV30Filter {
   ad_form?: BrandOrderListV30FilterAdForm[];
+  advanced_option?: BrandOrderListV30FilterAdvancedOption;
   app_origin?: BrandOrderListV30FilterAppOrigin;
   audit_status?: BrandOrderListV30FilterAuditStatus[];
   classify?: BrandOrderListV30FilterClassify;

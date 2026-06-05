@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_qualification_get_v3_0_response_data_subject.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_qualification_get_v3_0_response_data_subject.go 生成
+// 不要手动编辑。
 
 import type { LocalQualificationGetV30DataSubjectCheckType, LocalQualificationGetV30DataSubjectCompanyType, LocalQualificationGetV30DataSubjectQualificationType, LocalQualificationGetV30DataSubjectStatus } from "../models/index";
 

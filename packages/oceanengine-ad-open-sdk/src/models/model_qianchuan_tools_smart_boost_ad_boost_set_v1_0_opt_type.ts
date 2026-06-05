@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_tools_smart_boost_ad_boost_set_v1_0_opt_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_tools_smart_boost_ad_boost_set_v1_0_opt_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanToolsSmartBoostAdBoostSetV10OptType = {
   CANCEL_SUBSCRIBE: "CANCEL_SUBSCRIBE",

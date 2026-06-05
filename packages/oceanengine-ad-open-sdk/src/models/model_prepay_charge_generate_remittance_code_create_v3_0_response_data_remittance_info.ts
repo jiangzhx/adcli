@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_prepay_charge_generate_remittance_code_create_v3_0_response_data_remittance_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_prepay_charge_generate_remittance_code_create_v3_0_response_data_remittance_info.go 生成
+// 不要手动编辑。
 
 export interface PrepayChargeGenerateRemittanceCodeCreateV30ResponseDataRemittanceInfo {
   bank_account?: string;

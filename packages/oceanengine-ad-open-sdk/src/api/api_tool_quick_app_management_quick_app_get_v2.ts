@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tool_quick_app_management_quick_app_get_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tool_quick_app_management_quick_app_get_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolQuickAppManagementQuickAppGetV2Response, ToolQuickAppManagementQuickAppGetV2Status, ToolQuickAppManagementQuickAppGetV2UpdateTime } from "../models/index";

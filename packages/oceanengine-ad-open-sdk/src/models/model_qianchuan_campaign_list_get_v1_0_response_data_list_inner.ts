@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_campaign_list_get_v1_0_response_data_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_campaign_list_get_v1_0_response_data_list_inner.go 生成
+// 不要手动编辑。
 
 import type { QianchuanCampaignListGetV10DataListBudgetMode, QianchuanCampaignListGetV10DataListMarketingGoal, QianchuanCampaignListGetV10DataListMarketingScene, QianchuanCampaignListGetV10DataListStatus } from "../models/index";
 

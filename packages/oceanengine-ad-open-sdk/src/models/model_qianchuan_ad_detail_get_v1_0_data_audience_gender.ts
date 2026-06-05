@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_data_audience_gender.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_data_audience_gender.go 生成
+// 不要手动编辑。
 
 export const QianchuanAdDetailGetV10DataAudienceGender = {
   GENDER_FEMALE: "GENDER_FEMALE",

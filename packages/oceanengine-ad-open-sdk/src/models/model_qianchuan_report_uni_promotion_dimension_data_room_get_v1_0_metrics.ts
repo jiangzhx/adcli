@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_uni_promotion_dimension_data_room_get_v1_0_metrics.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_report_uni_promotion_dimension_data_room_get_v1_0_metrics.go 生成
+// 不要手动编辑。
 
 export const QianchuanReportUniPromotionDimensionDataRoomGetV10Metrics = {
   NO_REFUND_ECOM_COUPON_AMOUNT_FOR_ROI2: "no_refund_ecom_coupon_amount_for_roi2",

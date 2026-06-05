@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_query_rebate_balance_v2_response_data_rebates_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_query_rebate_balance_v2_response_data_rebates_inner.go 生成
+// 不要手动编辑。
 
 export interface QueryRebateBalanceV2ResponseDataRebatesInner {
   agent_id?: number | string;

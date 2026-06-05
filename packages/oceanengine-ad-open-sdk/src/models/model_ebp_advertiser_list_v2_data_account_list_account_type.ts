@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_ebp_advertiser_list_v2_data_account_list_account_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_ebp_advertiser_list_v2_data_account_list_account_type.go 生成
+// 不要手动编辑。
 
 export const EbpAdvertiserListV2DataAccountListAccountType = {
   AD_NORMAL: "AD_NORMAL",

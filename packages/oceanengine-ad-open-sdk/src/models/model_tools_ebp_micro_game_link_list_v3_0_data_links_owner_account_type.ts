@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_micro_game_link_list_v3_0_data_links_owner_account_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_micro_game_link_list_v3_0_data_links_owner_account_type.go 生成
+// 不要手动编辑。
 
 export const ToolsEbpMicroGameLinkListV30DataLinksOwnerAccountType = {
   AD: "AD",

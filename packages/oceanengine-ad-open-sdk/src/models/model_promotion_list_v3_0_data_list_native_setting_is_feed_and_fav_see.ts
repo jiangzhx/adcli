@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_native_setting_is_feed_and_fav_see.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_native_setting_is_feed_and_fav_see.go 生成
+// 不要手动编辑。
 
 export const PromotionListV30DataListNativeSettingIsFeedAndFavSee = {
   OFF: "OFF",

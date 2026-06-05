@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_query_invoice_electronic_url_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_query_invoice_electronic_url_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QueryInvoiceElectronicUrlV2Response } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_event_convert_optimized_goal_get_v3_0_data_goals_deep_goals_value_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_event_convert_optimized_goal_get_v3_0_data_goals_deep_goals_value_type.go 生成
+// 不要手动编辑。
 
 export const ToolsEventConvertOptimizedGoalGetV30DataGoalsDeepGoalsValueType = {
   DISABLED: "Disabled",

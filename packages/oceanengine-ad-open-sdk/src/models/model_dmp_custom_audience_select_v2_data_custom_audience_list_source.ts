@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dmp_custom_audience_select_v2_data_custom_audience_list_source.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dmp_custom_audience_select_v2_data_custom_audience_list_source.go 生成
+// 不要手动编辑。
 
 export const DmpCustomAudienceSelectV2DataCustomAudienceListSource = {
   CUSTOM_AUDIENCE_TYPE_BRAND: "CUSTOM_AUDIENCE_TYPE_BRAND",

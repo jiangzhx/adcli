@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_interest_action_keyword_suggest_v2_action_days.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_interest_action_keyword_suggest_v2_action_days.go 生成
+// 不要手动编辑。
 
 export const ToolsInterestActionKeywordSuggestV2ActionDays = {
   Enum_15: 15,

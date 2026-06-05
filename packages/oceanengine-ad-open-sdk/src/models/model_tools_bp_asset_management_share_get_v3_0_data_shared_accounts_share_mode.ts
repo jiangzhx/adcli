@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_get_v3_0_data_shared_accounts_share_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_get_v3_0_data_shared_accounts_share_mode.go 生成
+// 不要手动编辑。
 
 export const ToolsBpAssetManagementShareGetV30DataSharedAccountsShareMode = {
   BP_ALL_ACCOUNTS: "BP_ALL_ACCOUNTS",

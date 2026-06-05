@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_qualification_submit_v3_0_request_subject.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_advertiser_qualification_submit_v3_0_request_subject.go 生成
+// 不要手动编辑。
 
 import type { AdvertiserQualificationSubmitV30SubjectCheckType, AdvertiserQualificationSubmitV30SubjectCompanyType, AdvertiserQualificationSubmitV30SubjectQualificationType } from "../models/index";
 

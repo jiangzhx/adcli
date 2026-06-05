@@ -1,13 +1,13 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_estimate_audience_v2_age.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_estimate_audience_v2_age.go 生成
+// 不要手动编辑。
 
 export const ToolsEstimateAudienceV2Age = {
   AGE_BETWEEN_41_49: "AGE_BETWEEN_41_49",
   AGE_BETWEEN_24_30: "AGE_BETWEEN_24_30",
-  AGE_BETWEEN_18_23: "AGE_BETWEEN_18_23",
   AGE_BETWEEN_31_40: "AGE_BETWEEN_31_40",
-  AGE_BELOW_18: "AGE_BELOW_18",
   AGE_ABOVE_50: "AGE_ABOVE_50",
+  AGE_BELOW_18: "AGE_BELOW_18",
+  AGE_BETWEEN_18_23: "AGE_BETWEEN_18_23",
 } as const;
 
 export type ToolsEstimateAudienceV2Age = typeof ToolsEstimateAudienceV2Age[keyof typeof ToolsEstimateAudienceV2Age];

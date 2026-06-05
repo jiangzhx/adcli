@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_report_rta_exp_local_daily_get_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_report_rta_exp_local_daily_get_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ReportRtaExpLocalDailyGetV30Filtering, ReportRtaExpLocalDailyGetV30Response } from "../models/index";

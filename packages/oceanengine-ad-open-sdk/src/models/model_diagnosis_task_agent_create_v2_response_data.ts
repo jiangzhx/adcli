@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_diagnosis_task_agent_create_v2_response_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_diagnosis_task_agent_create_v2_response_data.go 生成
+// 不要手动编辑。
 
 export interface DiagnosisTaskAgentCreateV2ResponseData {
   err_code?: string;

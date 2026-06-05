@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_keyword_create_v2_v2_response_data_success_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_keyword_create_v2_v2_response_data_success_list_inner.go 生成
+// 不要手动编辑。
 
 import type { KeywordCreateV2V2DataSuccessListBidType, KeywordCreateV2V2DataSuccessListMatchType } from "../models/index";
 

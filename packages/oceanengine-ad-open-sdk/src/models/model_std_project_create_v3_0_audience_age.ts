@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_audience_age.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_audience_age.go 生成
+// 不要手动编辑。
 
 export const StdProjectCreateV30AudienceAge = {
   AGE_ABOVE_0_17: "AGE_ABOVE_0_17",

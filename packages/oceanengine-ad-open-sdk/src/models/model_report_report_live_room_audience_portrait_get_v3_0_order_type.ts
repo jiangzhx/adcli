@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_report_live_room_audience_portrait_get_v3_0_order_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_report_live_room_audience_portrait_get_v3_0_order_type.go 生成
+// 不要手动编辑。
 
 export const ReportReportLiveRoomAudiencePortraitGetV30OrderType = {
   ASC: "ASC",

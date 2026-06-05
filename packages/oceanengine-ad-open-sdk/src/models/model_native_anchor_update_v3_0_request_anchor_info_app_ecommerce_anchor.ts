@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_native_anchor_update_v3_0_request_anchor_info_app_ecommerce_anchor.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_native_anchor_update_v3_0_request_anchor_info_app_ecommerce_anchor.go 生成
+// 不要手动编辑。
 
 import type { NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchorAppIcon, NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchorOfficialActiBannerImage, NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchorOrangeSiteInfo, NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchorProductImage, NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchorThirdSiteInfo } from "../models/index";
 

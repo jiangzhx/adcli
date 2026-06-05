@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_stardelivery_task_video_data_get_v3_0_data_list_star_video_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_stardelivery_task_video_data_get_v3_0_data_list_star_video_status.go 生成
+// 不要手动编辑。
 
 export const ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus = {
   AD_DELIVERY_STOPPED: "AD_DELIVERY_STOPPED",

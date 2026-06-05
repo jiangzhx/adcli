@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_order_create_v1_0_delivery_setting_bid_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_order_create_v1_0_delivery_setting_bid_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanAwemeUniPromotionOrderCreateV10DeliverySettingBidType = {
   AUTO_BID: "AUTO_BID",

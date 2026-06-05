@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_oc_project_material_get_v3_0_response_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_oc_project_material_get_v3_0_response_data.go 生成
+// 不要手动编辑。
 
 import type { OcProjectMaterialGetV30ResponseDataPageInfo, OcProjectMaterialGetV30ResponseDataPlayletSeriesUrlInfoInner, OcProjectMaterialGetV30ResponseDataProductInfo, OcProjectMaterialGetV30ResponseDataTitleMaterialListInner, OcProjectMaterialGetV30ResponseDataVideoMaterialListInner } from "../models/index";
 

@@ -1,11 +1,11 @@
-// Generated from oceanengine/ad_open_sdk_go api/client.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/client.go 生成
+// 不要手动编辑。
 
 import JSONbig from "json-bigint";
 import { DefaultConfiguration } from "../config/configuration";
 
 const JSONBigStringParser = JSONbig({ storeAsString: true });
-export const SDK_VERSION = "1.1.87";
+export const SDK_VERSION = "1.1.88";
 
 export class ApiClient {
   private basePath = DefaultConfiguration.getBasePath();

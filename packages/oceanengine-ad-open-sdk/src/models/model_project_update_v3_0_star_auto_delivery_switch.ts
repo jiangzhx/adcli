@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_update_v3_0_star_auto_delivery_switch.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_update_v3_0_star_auto_delivery_switch.go 生成
+// 不要手动编辑。
 
 export const ProjectUpdateV30StarAutoDeliverySwitch = {
   OFF: "OFF",

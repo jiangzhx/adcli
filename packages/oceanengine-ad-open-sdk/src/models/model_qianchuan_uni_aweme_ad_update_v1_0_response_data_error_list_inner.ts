@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_response_data_error_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_response_data_error_list_inner.go 生成
+// 不要手动编辑。
 
 export interface QianchuanUniAwemeAdUpdateV10ResponseDataErrorListInner {
   error_code?: number;

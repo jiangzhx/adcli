@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_product_get_v1_0_response_data_product_list_inner_stats_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_product_get_v1_0_response_data_product_list_inner_stats_info.go 生成
+// 不要手动编辑。
 
 export interface QianchuanUniPromotionAdProductGetV10ResponseDataProductListInnerStatsInfo {
   no_refund_ecom_coupon_amount_for_roi2?: number;

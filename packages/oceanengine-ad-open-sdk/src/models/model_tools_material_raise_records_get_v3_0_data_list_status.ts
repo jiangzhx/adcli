@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_material_raise_records_get_v3_0_data_list_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_material_raise_records_get_v3_0_data_list_status.go 生成
+// 不要手动编辑。
 
 export const ToolsMaterialRaiseRecordsGetV30DataListStatus = {
   FINISH_RAISE: "FINISH_RAISE",

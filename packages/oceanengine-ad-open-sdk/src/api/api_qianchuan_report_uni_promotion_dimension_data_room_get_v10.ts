@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_report_uni_promotion_dimension_data_room_get_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_report_uni_promotion_dimension_data_room_get_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanReportUniPromotionDimensionDataRoomGetV10Dimension, QianchuanReportUniPromotionDimensionDataRoomGetV10Filtering, QianchuanReportUniPromotionDimensionDataRoomGetV10Metrics, QianchuanReportUniPromotionDimensionDataRoomGetV10OrderType, QianchuanReportUniPromotionDimensionDataRoomGetV10Response } from "../models/index";

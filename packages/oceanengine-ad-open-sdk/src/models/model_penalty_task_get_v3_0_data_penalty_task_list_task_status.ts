@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_penalty_task_get_v3_0_data_penalty_task_list_task_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_penalty_task_get_v3_0_data_penalty_task_list_task_status.go 生成
+// 不要手动编辑。
 
 export const PenaltyTaskGetV30DataPenaltyTaskListTaskStatus = {
   APPEAL_FINISH: "APPEAL_FINISH",

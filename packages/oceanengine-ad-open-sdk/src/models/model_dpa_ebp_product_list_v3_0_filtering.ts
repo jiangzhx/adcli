@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_ebp_product_list_v3_0_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_ebp_product_list_v3_0_filtering.go 生成
+// 不要手动编辑。
 
 import type { DpaEbpProductListV30FilteringAuditStatus, DpaEbpProductListV30FilteringIsRecommend, DpaEbpProductListV30FilteringStatus } from "../models/index";
 

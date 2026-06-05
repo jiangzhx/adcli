@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_promotion_raise_set_v3_0_raise_info_appointed_time_repeated_day.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_promotion_raise_set_v3_0_raise_info_appointed_time_repeated_day.go 生成
+// 不要手动编辑。
 
 export const ToolsPromotionRaiseSetV30RaiseInfoAppointedTimeRepeatedDay = {
   EVERY_DAY: "EVERY_DAY",

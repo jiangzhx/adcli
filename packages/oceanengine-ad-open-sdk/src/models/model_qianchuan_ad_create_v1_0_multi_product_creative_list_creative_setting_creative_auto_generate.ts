@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_multi_product_creative_list_creative_setting_creative_auto_generate.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_multi_product_creative_list_creative_setting_creative_auto_generate.go 生成
+// 不要手动编辑。
 
 export const QianchuanAdCreateV10MultiProductCreativeListCreativeSettingCreativeAutoGenerate = {
   Enum_0: 0,

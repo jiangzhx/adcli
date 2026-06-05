@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_list_v1_0_data_ad_list_ad_info_deep_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_list_v1_0_data_ad_list_ad_info_deep_external_action.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniPromotionListV10DataAdListAdInfoDeepExternalAction = {
   AD_CONVERT_TYPE_LIVE_PAY_ROI: "AD_CONVERT_TYPE_LIVE_PAY_ROI",

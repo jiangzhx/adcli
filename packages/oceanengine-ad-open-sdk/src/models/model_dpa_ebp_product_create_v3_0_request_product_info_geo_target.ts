@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_ebp_product_create_v3_0_request_product_info_geo_target.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_ebp_product_create_v3_0_request_product_info_geo_target.go 生成
+// 不要手动编辑。
 
 export interface DpaEbpProductCreateV30RequestProductInfoGeoTarget {
   latitude?: number;

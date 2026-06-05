@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_programmatic_creative_media_list_video_material_star_traffic.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_programmatic_creative_media_list_video_material_star_traffic.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniAwemeAdUpdateV10ProgrammaticCreativeMediaListVideoMaterialStarTraffic = {
   Enum_1: 1,

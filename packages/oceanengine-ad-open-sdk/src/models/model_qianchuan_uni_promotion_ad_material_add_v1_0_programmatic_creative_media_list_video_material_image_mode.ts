@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_material_add_v1_0_programmatic_creative_media_list_video_material_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_material_add_v1_0_programmatic_creative_media_list_video_material_image_mode.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniPromotionAdMaterialAddV10ProgrammaticCreativeMediaListVideoMaterialImageMode = {
   VIDEO_LARGE: "VIDEO_LARGE",

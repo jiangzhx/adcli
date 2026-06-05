@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_detail_v3_0_data_customer_material_list_video_material_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_promotion_detail_v3_0_data_customer_material_list_video_material_image_mode.go 生成
+// 不要手动编辑。
 
 export const LocalPromotionDetailV30DataCustomerMaterialListVideoMaterialImageMode = {
   IMAGE_MODE_VIDEO: "IMAGE_MODE_VIDEO",

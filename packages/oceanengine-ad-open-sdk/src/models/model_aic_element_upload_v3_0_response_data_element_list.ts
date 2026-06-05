@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_aic_element_upload_v3_0_response_data_element_list.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_aic_element_upload_v3_0_response_data_element_list.go 生成
+// 不要手动编辑。
 
 import type { AicElementUploadV30DataElementListElementType, AicElementUploadV30DataElementListUseAs } from "../models/index";
 

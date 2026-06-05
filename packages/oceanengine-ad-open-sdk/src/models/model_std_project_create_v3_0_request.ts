@@ -1,7 +1,7 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_request.go 生成
+// 不要手动编辑。
 
-import type { StdProjectCreateV30AdType, StdProjectCreateV30AigcDynamicCreativeSwitch, StdProjectCreateV30AppPromotionType, StdProjectCreateV30AppType, StdProjectCreateV30AudienceType, StdProjectCreateV30AutoExtendTraffic, StdProjectCreateV30BidType, StdProjectCreateV30BudgetMode, StdProjectCreateV30DeepBidType, StdProjectCreateV30DeepExternalAction, StdProjectCreateV30DeliveryMedium, StdProjectCreateV30DeliveryMode, StdProjectCreateV30DownloadMode, StdProjectCreateV30DownloadType, StdProjectCreateV30ExternalAction, StdProjectCreateV30IsCommentDisable, StdProjectCreateV30LandingType, StdProjectCreateV30LaunchType, StdProjectCreateV30MarketingGoal, StdProjectCreateV30NativeType, StdProjectCreateV30Pricing, StdProjectCreateV30RequestAudience, StdProjectCreateV30RequestBrandInfo, StdProjectCreateV30RequestInternalAdvertiserInfo, StdProjectCreateV30RequestKeywordsInner, StdProjectCreateV30RequestProjectMaterials, StdProjectCreateV30RequestTrackUrlSetting, StdProjectCreateV30ScheduleType, StdProjectCreateV30SearchContinueDelivery, StdProjectCreateV30StarAutoDeliverySwitch } from "../models/index";
+import type { StdProjectCreateV30AdType, StdProjectCreateV30AigcDynamicCreativeSwitch, StdProjectCreateV30AppPromotionType, StdProjectCreateV30AppType, StdProjectCreateV30AudienceType, StdProjectCreateV30AutoExtendTraffic, StdProjectCreateV30BidType, StdProjectCreateV30BudgetMode, StdProjectCreateV30DeepBidType, StdProjectCreateV30DeepExternalAction, StdProjectCreateV30DeliveryMedium, StdProjectCreateV30DeliveryMode, StdProjectCreateV30DeliveryType, StdProjectCreateV30DownloadMode, StdProjectCreateV30DownloadType, StdProjectCreateV30ExternalAction, StdProjectCreateV30IsCommentDisable, StdProjectCreateV30LandingType, StdProjectCreateV30LaunchType, StdProjectCreateV30MarketingGoal, StdProjectCreateV30NativeType, StdProjectCreateV30Pricing, StdProjectCreateV30RequestAudience, StdProjectCreateV30RequestBrandInfo, StdProjectCreateV30RequestInternalAdvertiserInfo, StdProjectCreateV30RequestKeywordsInner, StdProjectCreateV30RequestProjectMaterials, StdProjectCreateV30RequestTrackUrlSetting, StdProjectCreateV30ScheduleType, StdProjectCreateV30SearchContinueDelivery } from "../models/index";
 
 export interface StdProjectCreateV30Request {
   ad_type: StdProjectCreateV30AdType;
@@ -27,6 +27,7 @@ export interface StdProjectCreateV30Request {
   deep_external_action?: StdProjectCreateV30DeepExternalAction;
   delivery_medium?: StdProjectCreateV30DeliveryMedium;
   delivery_mode: StdProjectCreateV30DeliveryMode;
+  delivery_type?: StdProjectCreateV30DeliveryType;
   download_mode?: StdProjectCreateV30DownloadMode;
   download_type?: StdProjectCreateV30DownloadType;
   download_url?: string;
@@ -50,7 +51,6 @@ export interface StdProjectCreateV30Request {
   schedule_time?: string;
   schedule_type: StdProjectCreateV30ScheduleType;
   search_continue_delivery?: StdProjectCreateV30SearchContinueDelivery;
-  star_auto_delivery_switch?: StdProjectCreateV30StarAutoDeliverySwitch;
   star_task_id_list?: number[];
   start_time?: string;
   subscribe_url?: string;

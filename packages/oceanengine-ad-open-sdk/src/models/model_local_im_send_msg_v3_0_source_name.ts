@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_im_send_msg_v3_0_source_name.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_im_send_msg_v3_0_source_name.go 生成
+// 不要手动编辑。
 
 export const LocalImSendMsgV30SourceName = {
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go package entrypoint
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go package entrypoint 生成
+// 不要手动编辑。
 
 export * from "./api/index";
 export * from "./models/index";

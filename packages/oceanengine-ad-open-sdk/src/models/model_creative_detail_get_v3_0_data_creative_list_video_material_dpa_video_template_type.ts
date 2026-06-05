@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_data_creative_list_video_material_dpa_video_template_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_data_creative_list_video_material_dpa_video_template_type.go 生成
+// 不要手动编辑。
 
 export const CreativeDetailGetV30DataCreativeListVideoMaterialDpaVideoTemplateType = {
   DPA_VIDEO_TEMPLATE_CUSTOM: "DPA_VIDEO_TEMPLATE_CUSTOM",

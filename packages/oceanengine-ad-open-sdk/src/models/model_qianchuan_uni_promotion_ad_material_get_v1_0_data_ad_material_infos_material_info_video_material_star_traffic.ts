@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_material_get_v1_0_data_ad_material_infos_material_info_video_material_star_traffic.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_material_get_v1_0_data_ad_material_infos_material_info_video_material_star_traffic.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialStarTraffic = {
   Enum_1: 1,

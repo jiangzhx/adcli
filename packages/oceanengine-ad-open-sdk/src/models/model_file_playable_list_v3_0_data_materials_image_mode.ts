@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_playable_list_v3_0_data_materials_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_playable_list_v3_0_data_materials_image_mode.go 生成
+// 不要手动编辑。
 
 export const FilePlayableListV30DataMaterialsImageMode = {
   CREATIVE_IMAGE_MODE_TRIAL_PLAY_LARGE: "CREATIVE_IMAGE_MODE_TRIAL_PLAY_LARGE",

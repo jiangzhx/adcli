@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_clue_refund_view_get_v2_response_data_show_outer_stages_inner_refund_call_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_clue_refund_view_get_v2_response_data_show_outer_stages_inner_refund_call_list_inner.go 生成
+// 不要手动编辑。
 
 export interface ToolsClueRefundViewGetV2ResponseDataShowOuterStagesInnerRefundCallListInner {
   bill_state_text?: string;

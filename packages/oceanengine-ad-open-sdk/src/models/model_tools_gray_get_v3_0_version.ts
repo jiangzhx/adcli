@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_gray_get_v3_0_version.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_gray_get_v3_0_version.go 生成
+// 不要手动编辑。
 
 export const ToolsGrayGetV30Version = {
   OLD_VERSION: "OLD_VERSION",

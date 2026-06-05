@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go config/configuration.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go config/configuration.go 生成
+// 不要手动编辑。
 
 export class Configuration {
   host = "api.oceanengine.com";

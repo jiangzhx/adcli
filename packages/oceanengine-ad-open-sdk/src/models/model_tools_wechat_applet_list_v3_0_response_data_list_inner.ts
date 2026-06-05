@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_wechat_applet_list_v3_0_response_data_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_wechat_applet_list_v3_0_response_data_list_inner.go 生成
+// 不要手动编辑。
 
 import type { ToolsWechatAppletListV30DataListAccountType, ToolsWechatAppletListV30DataListAuditStatus, ToolsWechatAppletListV30DataListMaxPaymentTierRange, ToolsWechatAppletListV30DataListMaxRechargeTier, ToolsWechatAppletListV30DataListMembershipType, ToolsWechatAppletListV30DataListMidPaymentTierRange, ToolsWechatAppletListV30DataListMinPaymentTierRange, ToolsWechatAppletListV30DataListMinRechargeTier, ToolsWechatAppletListV30DataListPaymentForm, ToolsWechatAppletListV30DataListRecommendedRechargeTier, ToolsWechatAppletListV30DataListRevenueModel } from "../models/index";
 

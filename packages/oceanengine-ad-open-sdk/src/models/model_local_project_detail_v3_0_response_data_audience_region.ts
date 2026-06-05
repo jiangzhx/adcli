@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_response_data_audience_region.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_response_data_audience_region.go 生成
+// 不要手动编辑。
 
 import type { LocalProjectDetailV30DataAudienceRegionCityDivide, LocalProjectDetailV30DataAudienceRegionLocationType } from "../models/index";
 

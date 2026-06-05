@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_video_aweme_get_v2_data_list_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_video_aweme_get_v2_data_list_image_mode.go 生成
+// 不要手动编辑。
 
 export const FileVideoAwemeGetV2DataListImageMode = {
   CREATIVE_IMAGE_MODE_AWEME_LIVE: "CREATIVE_IMAGE_MODE_AWEME_LIVE",

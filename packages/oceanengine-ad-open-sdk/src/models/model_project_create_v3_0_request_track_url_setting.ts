@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_create_v3_0_request_track_url_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_create_v3_0_request_track_url_setting.go 生成
+// 不要手动编辑。
 
 import type { ProjectCreateV30TrackUrlSettingSendType, ProjectCreateV30TrackUrlSettingTrackUrlType } from "../models/index";
 

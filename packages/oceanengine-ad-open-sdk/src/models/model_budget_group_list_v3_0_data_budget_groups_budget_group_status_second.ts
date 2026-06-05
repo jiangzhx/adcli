@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_budget_group_list_v3_0_data_budget_groups_budget_group_status_second.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_budget_group_list_v3_0_data_budget_groups_budget_group_status_second.go 生成
+// 不要手动编辑。
 
 export const BudgetGroupListV30DataBudgetGroupsBudgetGroupStatusSecond = {
   ACCOUNT_EXCEEDED: "ACCOUNT_EXCEEDED",

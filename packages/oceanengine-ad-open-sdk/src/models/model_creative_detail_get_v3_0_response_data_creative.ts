@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_response_data_creative.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_response_data_creative.go 生成
+// 不要手动编辑。
 
 import type { CreativeDetailGetV30ResponseDataCreativeAbstractMaterialsInner, CreativeDetailGetV30ResponseDataCreativeComponentMaterialsInner, CreativeDetailGetV30ResponseDataCreativeDecorationMaterial, CreativeDetailGetV30ResponseDataCreativeImageMaterialsInner, CreativeDetailGetV30ResponseDataCreativeSubTitleMaterial, CreativeDetailGetV30ResponseDataCreativeTitleMaterialsInner, CreativeDetailGetV30ResponseDataCreativeVideoMaterialsInner } from "../models/index";
 

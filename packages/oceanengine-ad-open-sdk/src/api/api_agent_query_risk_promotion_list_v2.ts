@@ -1,18 +1,19 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_agent_query_risk_promotion_list_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_agent_query_risk_promotion_list_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
-import type { AgentQueryRiskPromotionListV2BusinessType, AgentQueryRiskPromotionListV2Filtering, AgentQueryRiskPromotionListV2Response } from "../models/index";
+import type { AgentQueryRiskPromotionListV2BusinessType, AgentQueryRiskPromotionListV2BusinessTypeList, AgentQueryRiskPromotionListV2Filtering, AgentQueryRiskPromotionListV2Response } from "../models/index";
 
 
 export interface AgentQueryRiskPromotionListV2ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
   agentId: number | string;
-  businessType: AgentQueryRiskPromotionListV2BusinessType;
   startDate: string;
   endDate: string;
+  businessType?: AgentQueryRiskPromotionListV2BusinessType;
   cursor?: number;
   count?: number;
   filtering?: AgentQueryRiskPromotionListV2Filtering;
+  businessTypeList?: AgentQueryRiskPromotionListV2BusinessTypeList[];
 }
 
 export class AgentQueryRiskPromotionListV2Api {
@@ -36,10 +37,6 @@ export class AgentQueryRiskPromotionListV2Api {
       throw new ApiException("agentId is required and must be specified");
     }
 
-    if (request.businessType == null) {
-      throw new ApiException("businessType is required and must be specified");
-    }
-
     if (request.startDate == null) {
       throw new ApiException("startDate is required and must be specified");
     }
@@ -57,7 +54,8 @@ export class AgentQueryRiskPromotionListV2Api {
         { name: "end_date", value: request.endDate },
         { name: "cursor", value: request.cursor },
         { name: "count", value: request.count },
-        { name: "filtering", value: request.filtering }
+        { name: "filtering", value: request.filtering },
+        { name: "business_type_list", value: request.businessTypeList }
       ]
     });
   }

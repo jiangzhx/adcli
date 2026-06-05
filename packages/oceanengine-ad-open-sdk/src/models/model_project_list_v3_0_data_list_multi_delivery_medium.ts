@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_list_v3_0_data_list_multi_delivery_medium.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_list_v3_0_data_list_multi_delivery_medium.go 生成
+// 不要手动编辑。
 
 export const ProjectListV30DataListMultiDeliveryMedium = {
   ORANGE: "ORANGE",

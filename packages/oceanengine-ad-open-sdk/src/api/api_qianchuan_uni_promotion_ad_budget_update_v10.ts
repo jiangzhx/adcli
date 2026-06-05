@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_ad_budget_update_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_ad_budget_update_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanUniPromotionAdBudgetUpdateV10Request, QianchuanUniPromotionAdBudgetUpdateV10Response } from "../models/index";

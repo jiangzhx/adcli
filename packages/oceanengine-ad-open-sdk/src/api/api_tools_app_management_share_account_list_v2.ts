@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_app_management_share_account_list_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_app_management_share_account_list_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsAppManagementShareAccountListV2Response, ToolsAppManagementShareAccountListV2SearchType } from "../models/index";

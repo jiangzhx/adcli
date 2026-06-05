@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_management_extend_package_update_v2_v2_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_app_management_extend_package_update_v2_v2_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsAppManagementExtendPackageUpdateV2V2AccountType, ToolsAppManagementExtendPackageUpdateV2V2Mode, ToolsAppManagementExtendPackageUpdateV2V2RequestChannelInfoListInner } from "../models/index";
 

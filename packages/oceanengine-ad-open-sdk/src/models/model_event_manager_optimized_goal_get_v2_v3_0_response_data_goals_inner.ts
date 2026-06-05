@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_event_manager_optimized_goal_get_v2_v3_0_response_data_goals_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_event_manager_optimized_goal_get_v2_v3_0_response_data_goals_inner.go 生成
+// 不要手动编辑。
 
 import type { EventManagerOptimizedGoalGetV2V30DataGoalsAssetTypes, EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction, EventManagerOptimizedGoalGetV2V30DataGoalsValueType, EventManagerOptimizedGoalGetV2V30ResponseDataGoalsInnerDeepGoalsInner } from "../models/index";
 

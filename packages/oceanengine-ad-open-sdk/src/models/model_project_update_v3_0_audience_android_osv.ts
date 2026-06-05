@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_update_v3_0_audience_android_osv.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_update_v3_0_audience_android_osv.go 生成
+// 不要手动编辑。
 
 export const ProjectUpdateV30AudienceAndroidOsv = {
   Enum_0_0: "0.0",

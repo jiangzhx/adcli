@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_region_get_v2_region_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_region_get_v2_region_type.go 生成
+// 不要手动编辑。
 
 export const ToolsRegionGetV2RegionType = {
   BUSINESS_DISTRICT: "BUSINESS_DISTRICT",

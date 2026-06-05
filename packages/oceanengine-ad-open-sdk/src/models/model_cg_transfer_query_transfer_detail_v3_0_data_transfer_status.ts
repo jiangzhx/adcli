@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_query_transfer_detail_v3_0_data_transfer_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_cg_transfer_query_transfer_detail_v3_0_data_transfer_status.go 生成
+// 不要手动编辑。
 
 export const CgTransferQueryTransferDetailV30DataTransferStatus = {
   NO_TRANSFER: "NO_TRANSFER",

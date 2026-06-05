@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_open_material_audit_pro_get_v3_0_data_input_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_open_material_audit_pro_get_v3_0_data_input_type.go 生成
+// 不要手动编辑。
 
 export const OpenMaterialAuditProGetV30DataInputType = {
   VID: "VID",

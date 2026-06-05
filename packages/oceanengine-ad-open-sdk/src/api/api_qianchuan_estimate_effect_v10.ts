@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_estimate_effect_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_estimate_effect_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanEstimateEffectV10BudgetMode, QianchuanEstimateEffectV10DeepBidType, QianchuanEstimateEffectV10DeepExternalAction, QianchuanEstimateEffectV10ExternalAction, QianchuanEstimateEffectV10LiveScheduleType, QianchuanEstimateEffectV10Response } from "../models/index";

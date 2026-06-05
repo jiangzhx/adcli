@@ -1,11 +1,14 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner_material_component_aweme_video.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner_material_component_aweme_video.go 生成
+// 不要手动编辑。
 
-import type { BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoVideo } from "../models/index";
+import type { BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoImagesInner, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoMusicInfo, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoSlidesInner, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoVideo } from "../models/index";
 
 export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideo {
   aweme_item_id?: string;
   aweme_item_source?: number;
+  images?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoImagesInner[];
+  music_info?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoMusicInfo;
+  slides?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoSlidesInner[];
   title?: string;
   video?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoVideo;
 }

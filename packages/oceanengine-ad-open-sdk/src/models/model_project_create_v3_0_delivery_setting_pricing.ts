@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_create_v3_0_delivery_setting_pricing.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_create_v3_0_delivery_setting_pricing.go 生成
+// 不要手动编辑。
 
 export const ProjectCreateV30DeliverySettingPricing = {
   PRICING_CPC: "PRICING_CPC",

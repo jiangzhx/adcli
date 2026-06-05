@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_response_data_creative_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_response_data_creative_list_inner.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAdDetailGetV10DataCreativeListImageMode, QianchuanAdDetailGetV10ResponseDataCreativeListInnerCarouselMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerImageMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerPromotionCardMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerTitleMaterial, QianchuanAdDetailGetV10ResponseDataCreativeListInnerVideoMaterial } from "../models/index";
 

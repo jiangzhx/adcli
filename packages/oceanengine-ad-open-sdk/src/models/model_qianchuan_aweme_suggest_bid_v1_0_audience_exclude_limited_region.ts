@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_suggest_bid_v1_0_audience_exclude_limited_region.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_suggest_bid_v1_0_audience_exclude_limited_region.go 生成
+// 不要手动编辑。
 
 export const QianchuanAwemeSuggestBidV10AudienceExcludeLimitedRegion = {
   Enum_0: 0,

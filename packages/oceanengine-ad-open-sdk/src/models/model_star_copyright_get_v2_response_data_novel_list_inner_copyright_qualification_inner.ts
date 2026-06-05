@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_copyright_get_v2_response_data_novel_list_inner_copyright_qualification_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_copyright_get_v2_response_data_novel_list_inner_copyright_qualification_inner.go 生成
+// 不要手动编辑。
 
 export interface StarCopyrightGetV2ResponseDataNovelListInnerCopyrightQualificationInner {
   file_name?: string;

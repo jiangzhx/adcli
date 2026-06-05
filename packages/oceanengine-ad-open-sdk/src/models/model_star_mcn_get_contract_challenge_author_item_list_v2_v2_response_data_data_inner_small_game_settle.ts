@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_mcn_get_contract_challenge_author_item_list_v2_v2_response_data_data_inner_small_game_settle.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_mcn_get_contract_challenge_author_item_list_v2_v2_response_data_data_inner_small_game_settle.go 生成
+// 不要手动编辑。
 
 export interface StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerSmallGameSettle {
   author_cps_reward?: number;

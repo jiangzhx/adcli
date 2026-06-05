@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_oauth2_refresh_token.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_oauth2_refresh_token.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { Oauth2RefreshTokenRequest, Oauth2RefreshTokenResponse } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_list_v3_0_data_list_audience_aweme_fan_time_scope.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_list_v3_0_data_list_audience_aweme_fan_time_scope.go 生成
+// 不要手动编辑。
 
 export const ProjectListV30DataListAudienceAwemeFanTimeScope = {
   FIFTEEN_DAYS: "FIFTEEN_DAYS",

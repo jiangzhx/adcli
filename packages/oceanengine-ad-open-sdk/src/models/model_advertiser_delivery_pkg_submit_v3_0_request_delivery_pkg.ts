@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_submit_v3_0_request_delivery_pkg.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_submit_v3_0_request_delivery_pkg.go 生成
+// 不要手动编辑。
 
 import type { AdvertiserDeliveryPkgSubmitV30RequestDeliveryPkgNecessaryCombine, AdvertiserDeliveryPkgSubmitV30RequestDeliveryPkgUnnecessaryCombinesInner } from "../models/index";
 

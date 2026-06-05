@@ -1,10 +1,10 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_custom_creative_create_v2_creative_list_video_material_dpa_video_template_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_custom_creative_create_v2_creative_list_video_material_dpa_video_template_type.go 生成
+// 不要手动编辑。
 
 export const CreativeCustomCreativeCreateV2CreativeListVideoMaterialDpaVideoTemplateType = {
-  DPA_VIDEO_TEMPLATE_DEPRECATED: "DPA_VIDEO_TEMPLATE_DEPRECATED",
   DPA_VIDEO_TEMPLATE_SMART: "DPA_VIDEO_TEMPLATE_SMART",
   DPA_VIDEO_TEMPLATE_CUSTOM: "DPA_VIDEO_TEMPLATE_CUSTOM",
+  DPA_VIDEO_TEMPLATE_DEPRECATED: "DPA_VIDEO_TEMPLATE_DEPRECATED",
 } as const;
 
 export type CreativeCustomCreativeCreateV2CreativeListVideoMaterialDpaVideoTemplateType = typeof CreativeCustomCreativeCreateV2CreativeListVideoMaterialDpaVideoTemplateType[keyof typeof CreativeCustomCreativeCreateV2CreativeListVideoMaterialDpaVideoTemplateType];

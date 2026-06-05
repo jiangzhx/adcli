@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_event_manager_optimized_goal_get_v2_v3_0_data_goals_deep_goals_deep_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_event_manager_optimized_goal_get_v2_v3_0_data_goals_deep_goals_deep_external_action.go 生成
+// 不要手动编辑。
 
 export const EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = {
   AD_CONVERT_PAGE_VIEW: "AD_CONVERT_PAGE_VIEW",

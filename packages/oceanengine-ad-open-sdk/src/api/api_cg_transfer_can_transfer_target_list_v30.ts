@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_cg_transfer_can_transfer_target_list_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_cg_transfer_can_transfer_target_list_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { CgTransferCanTransferTargetListV30Platform, CgTransferCanTransferTargetListV30Response, CgTransferCanTransferTargetListV30TransferDirection } from "../models/index";

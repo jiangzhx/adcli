@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_yuntu_audience_label_create_v3_0_valid_day.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_yuntu_audience_label_create_v3_0_valid_day.go 生成
+// 不要手动编辑。
 
 export const YuntuAudienceLabelCreateV30ValidDay = {
   Enum_120: 120,

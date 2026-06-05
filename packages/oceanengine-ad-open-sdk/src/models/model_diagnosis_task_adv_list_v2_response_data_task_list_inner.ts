@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_diagnosis_task_adv_list_v2_response_data_task_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_diagnosis_task_adv_list_v2_response_data_task_list_inner.go 生成
+// 不要手动编辑。
 
 import type { DiagnosisTaskAdvListV2DataTaskListIsAdHighQualityMaterial, DiagnosisTaskAdvListV2DataTaskListIsEcpHighQualityMaterial, DiagnosisTaskAdvListV2DataTaskListIsFirstPublishMaterial, DiagnosisTaskAdvListV2DataTaskListIsInefficientMaterial, DiagnosisTaskAdvListV2DataTaskListStatus } from "../models/index";
 

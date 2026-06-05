@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_app_extend_list_v3_0_response_data_extend_package_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_app_extend_list_v3_0_response_data_extend_package_list_inner.go 生成
+// 不要手动编辑。
 
 import type { ToolsEbpAppExtendListV30DataExtendPackageListStatus } from "../models/index";
 

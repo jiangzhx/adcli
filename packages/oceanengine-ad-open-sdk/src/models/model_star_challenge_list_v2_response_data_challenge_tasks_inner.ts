@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_challenge_list_v2_response_data_challenge_tasks_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_challenge_list_v2_response_data_challenge_tasks_inner.go 生成
+// 不要手动编辑。
 
 export interface StarChallengeListV2ResponseDataChallengeTasksInner {
   author_task_name?: string;

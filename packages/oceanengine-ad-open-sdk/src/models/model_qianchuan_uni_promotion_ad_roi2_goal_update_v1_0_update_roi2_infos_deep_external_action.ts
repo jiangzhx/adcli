@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_roi2_goal_update_v1_0_update_roi2_infos_deep_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_roi2_goal_update_v1_0_update_roi2_infos_deep_external_action.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniPromotionAdRoi2GoalUpdateV10UpdateRoi2InfosDeepExternalAction = {
   AD_CONVERT_TYPE_LIVE_PAY_ROI: "AD_CONVERT_TYPE_LIVE_PAY_ROI",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_config_v3_0_data_industry_config_necessaries_rules_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_config_v3_0_data_industry_config_necessaries_rules_type.go 生成
+// 不要手动编辑。
 
 export const AdvertiserDeliveryPkgConfigV30DataIndustryConfigNecessariesRulesType = {
   CHOICE: "CHOICE",

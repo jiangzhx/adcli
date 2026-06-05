@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_clue_ca_create_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_clue_ca_create_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ClueCaCreateV2Request, ClueCaCreateV2Response } from "../models/index";

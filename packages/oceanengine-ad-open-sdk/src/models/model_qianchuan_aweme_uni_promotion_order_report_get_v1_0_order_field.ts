@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_order_report_get_v1_0_order_field.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_order_report_get_v1_0_order_field.go 生成
+// 不要手动编辑。
 
 export const QianchuanAwemeUniPromotionOrderReportGetV10OrderField = {
   TOTAL_PAY_ORDER_GMV_FOR_ROI2: "total_pay_order_gmv_for_roi2",

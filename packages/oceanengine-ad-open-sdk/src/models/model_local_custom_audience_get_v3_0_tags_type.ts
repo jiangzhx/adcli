@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_custom_audience_get_v3_0_tags_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_custom_audience_get_v3_0_tags_type.go 生成
+// 不要手动编辑。
 
 export const LocalCustomAudienceGetV30TagsType = {
   CUSTOM: "CUSTOM",

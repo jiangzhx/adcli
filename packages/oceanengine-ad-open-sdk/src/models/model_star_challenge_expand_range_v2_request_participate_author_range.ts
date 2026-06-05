@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_challenge_expand_range_v2_request_participate_author_range.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_challenge_expand_range_v2_request_participate_author_range.go 生成
+// 不要手动编辑。
 
 import type { StarChallengeExpandRangeV2RequestParticipateAuthorRangeAuthorWatcherTag } from "../models/index";
 

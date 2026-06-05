@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_response_data_pivative_words.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_response_data_pivative_words.go 生成
+// 不要手动编辑。
 
 export interface QianchuanAdDetailGetV10ResponseDataPivativeWords {
   phrase_words?: string[];

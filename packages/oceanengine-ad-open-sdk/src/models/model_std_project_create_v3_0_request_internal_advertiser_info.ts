@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_request_internal_advertiser_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_request_internal_advertiser_info.go 生成
+// 不要手动编辑。
 
 import type { StdProjectCreateV30InternalAdvertiserInfoClassify } from "../models/index";
 

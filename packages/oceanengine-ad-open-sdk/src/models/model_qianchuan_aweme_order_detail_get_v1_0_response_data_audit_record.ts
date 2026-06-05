@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_detail_get_v1_0_response_data_audit_record.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_detail_get_v1_0_response_data_audit_record.go 生成
+// 不要手动编辑。
 
 export interface QianchuanAwemeOrderDetailGetV10ResponseDataAuditRecord {
   detail_desc_list?: string[];

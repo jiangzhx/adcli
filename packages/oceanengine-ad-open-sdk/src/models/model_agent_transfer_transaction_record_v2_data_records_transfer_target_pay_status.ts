@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_transfer_transaction_record_v2_data_records_transfer_target_pay_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_transfer_transaction_record_v2_data_records_transfer_target_pay_status.go 生成
+// 不要手动编辑。
 
 export const AgentTransferTransactionRecordV2DataRecordsTransferTargetPayStatus = {
   NO_TRANSFER: "NO_TRANSFER",

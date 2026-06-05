@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_ad_get_v2_response_data_audience.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_ad_get_v2_response_data_audience.go 生成
+// 不要手动编辑。
 
 import type { AdGetV2DataAudienceAc, AdGetV2DataAudienceActivateType, AdGetV2DataAudienceAge, AdGetV2DataAudienceAndroidOsv, AdGetV2DataAudienceAppBehaviorTarget, AdGetV2DataAudienceArticleCategory, AdGetV2DataAudienceAutoExtendTargets, AdGetV2DataAudienceAwemeFanBehaviors, AdGetV2DataAudienceAwemeFanTimeScope, AdGetV2DataAudienceCareer, AdGetV2DataAudienceCarrier, AdGetV2DataAudienceDeviceBrand, AdGetV2DataAudienceDeviceType, AdGetV2DataAudienceDistrict, AdGetV2DataAudienceDpaRtaRecommendType, AdGetV2DataAudienceDpaRtaSwitch, AdGetV2DataAudienceGender, AdGetV2DataAudienceInterestActionMode, AdGetV2DataAudienceIosOsv, AdGetV2DataAudienceLocationType, AdGetV2DataAudiencePlatform, AdGetV2DataAudienceSuperiorPopularityType, AdGetV2ResponseDataAudienceAction, AdGetV2ResponseDataAudienceGeolocationInner } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_life_advertiser_list_v3_0_data_adv_list_local_account_role.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_life_advertiser_list_v3_0_data_adv_list_local_account_role.go 生成
+// 不要手动编辑。
 
 export const LocalLifeAdvertiserListV30DataAdvListLocalAccountRole = {
   DIRECT_ACCOUNT: "DIRECT_ACCOUNT",

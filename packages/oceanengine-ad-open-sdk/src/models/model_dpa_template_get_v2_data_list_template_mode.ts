@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_template_get_v2_data_list_template_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_template_get_v2_data_list_template_mode.go 生成
+// 不要手动编辑。
 
 export const DpaTemplateGetV2DataListTemplateMode = {
   CREATIVE_IMAGE_MODE_SMALL: "CREATIVE_IMAGE_MODE_SMALL",

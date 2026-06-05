@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_stardelivery_task_author_detail_v3_0_response_data_task_authors_info_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_stardelivery_task_author_detail_v3_0_response_data_task_authors_info_inner.go 生成
+// 不要手动编辑。
 
 export interface StardeliveryTaskAuthorDetailV30ResponseDataTaskAuthorsInfoInner {
   aweme_id?: string;

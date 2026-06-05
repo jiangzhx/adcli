@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_block_material_get_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_block_material_get_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanUniPromotionBlockMaterialGetV10Filtering, QianchuanUniPromotionBlockMaterialGetV10MarketingGoal, QianchuanUniPromotionBlockMaterialGetV10MediaType, QianchuanUniPromotionBlockMaterialGetV10OrderField, QianchuanUniPromotionBlockMaterialGetV10Response } from "../models/index";

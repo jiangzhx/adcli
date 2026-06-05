@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_aweme_author_info_get_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_aweme_author_info_get_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsAwemeAuthorInfoGetV2Behaviors, ToolsAwemeAuthorInfoGetV2Response } from "../models/index";

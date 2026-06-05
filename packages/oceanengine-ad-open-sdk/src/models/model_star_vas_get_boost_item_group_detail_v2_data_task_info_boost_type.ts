@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_vas_get_boost_item_group_detail_v2_data_task_info_boost_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_vas_get_boost_item_group_detail_v2_data_task_info_boost_type.go 生成
+// 不要手动编辑。
 
 export const StarVasGetBoostItemGroupDetailV2DataTaskInfoBoostType = {
   CUSTOM_PACKAGE: "CUSTOM_PACKAGE",

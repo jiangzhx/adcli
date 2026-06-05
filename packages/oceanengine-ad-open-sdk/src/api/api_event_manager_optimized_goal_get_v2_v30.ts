@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_event_manager_optimized_goal_get_v2_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_event_manager_optimized_goal_get_v2_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { EventManagerOptimizedGoalGetV2V30AdType, EventManagerOptimizedGoalGetV2V30AppPromotionType, EventManagerOptimizedGoalGetV2V30AppType, EventManagerOptimizedGoalGetV2V30AssetType, EventManagerOptimizedGoalGetV2V30DeliveryMode, EventManagerOptimizedGoalGetV2V30DeliveryType, EventManagerOptimizedGoalGetV2V30DpaAdtype, EventManagerOptimizedGoalGetV2V30LandingType, EventManagerOptimizedGoalGetV2V30MarketingGoal, EventManagerOptimizedGoalGetV2V30MicroPromotionType, EventManagerOptimizedGoalGetV2V30MultiAssetType, EventManagerOptimizedGoalGetV2V30Response } from "../models/index";

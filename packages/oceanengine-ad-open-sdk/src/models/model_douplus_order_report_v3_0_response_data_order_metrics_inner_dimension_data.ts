@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_douplus_order_report_v3_0_response_data_order_metrics_inner_dimension_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_douplus_order_report_v3_0_response_data_order_metrics_inner_dimension_data.go 生成
+// 不要手动编辑。
 
 export interface DouplusOrderReportV30ResponseDataOrderMetricsInnerDimensionData {
   ad_id?: number | string;

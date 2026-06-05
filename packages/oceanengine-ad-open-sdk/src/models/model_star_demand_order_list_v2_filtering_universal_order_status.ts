@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_order_list_v2_filtering_universal_order_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_order_list_v2_filtering_universal_order_status.go 生成
+// 不要手动编辑。
 
 export const StarDemandOrderListV2FilteringUniversalOrderStatus = {
   ALL: "ALL",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_report_audience_aweme_list_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_report_audience_aweme_list_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ReportAudienceAwemeListV2Filtering, ReportAudienceAwemeListV2Response } from "../models/index";

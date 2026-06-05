@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_estimate_profit_v1_0_audience_age.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_estimate_profit_v1_0_audience_age.go 生成
+// 不要手动编辑。
 
 export const QianchuanAwemeEstimateProfitV10AudienceAge = {
   AGE_BETWEEN_18_23: "AGE_BETWEEN_18_23",

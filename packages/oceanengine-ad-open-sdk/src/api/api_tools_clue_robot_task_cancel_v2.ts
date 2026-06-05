@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_clue_robot_task_cancel_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_clue_robot_task_cancel_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsClueRobotTaskCancelV2Request, ToolsClueRobotTaskCancelV2Response } from "../models/index";

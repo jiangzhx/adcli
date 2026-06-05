@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_agent_transfer_transaction_record_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_agent_transfer_transaction_record_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { AgentTransferTransactionRecordV2Filtering, AgentTransferTransactionRecordV2Response } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_product_create_v2_request_product_info_landing_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_product_create_v2_request_product_info_landing_info.go 生成
+// 不要手动编辑。
 
 export interface DpaProductCreateV2RequestProductInfoLandingInfo {
   target_url?: string;

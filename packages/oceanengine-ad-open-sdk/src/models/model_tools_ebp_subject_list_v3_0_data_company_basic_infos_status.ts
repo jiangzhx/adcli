@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_subject_list_v3_0_data_company_basic_infos_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_subject_list_v3_0_data_company_basic_infos_status.go 生成
+// 不要手动编辑。
 
 export const ToolsEbpSubjectListV30DataCompanyBasicInfosStatus = {
   AVAILABLE: "AVAILABLE",

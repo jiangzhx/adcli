@@ -1,10 +1,11 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_list_v3_0_response_data_project_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_list_v3_0_response_data_project_list_inner.go 生成
+// 不要手动编辑。
 
 import type { LocalProjectListV30DataProjectListAdType, LocalProjectListV30DataProjectListBidType, LocalProjectListV30DataProjectListDeepExternalAction, LocalProjectListV30DataProjectListDeliveryGoal, LocalProjectListV30DataProjectListDeliveryPackage, LocalProjectListV30DataProjectListExternalAction, LocalProjectListV30DataProjectListLocalDeliveryScene, LocalProjectListV30DataProjectListMarketingGoal, LocalProjectListV30DataProjectListProjectBudgetMode, LocalProjectListV30DataProjectListProjectStatusFirst, LocalProjectListV30DataProjectListProjectStatusSecond, LocalProjectListV30ResponseDataProjectListInnerPoiInfo, LocalProjectListV30ResponseDataProjectListInnerProductInfo } from "../models/index";
 
 export interface LocalProjectListV30ResponseDataProjectListInner {
   ad_type?: LocalProjectListV30DataProjectListAdType;
+  audience_package_id?: number | string;
   bid_type?: LocalProjectListV30DataProjectListBidType;
   deep_external_action?: LocalProjectListV30DataProjectListDeepExternalAction;
   delivery_goal?: LocalProjectListV30DataProjectListDeliveryGoal;
@@ -15,6 +16,7 @@ export interface LocalProjectListV30ResponseDataProjectListInner {
   local_delivery_scene?: LocalProjectListV30DataProjectListLocalDeliveryScene;
   marketing_goal?: LocalProjectListV30DataProjectListMarketingGoal;
   name?: string;
+  opt_status?: number;
   poi_info?: LocalProjectListV30ResponseDataProjectListInnerPoiInfo;
   product_info?: LocalProjectListV30ResponseDataProjectListInnerProductInfo;
   project_bid?: string;

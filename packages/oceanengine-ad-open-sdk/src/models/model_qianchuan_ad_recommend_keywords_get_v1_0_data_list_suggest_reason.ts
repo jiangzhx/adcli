@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_recommend_keywords_get_v1_0_data_list_suggest_reason.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_recommend_keywords_get_v1_0_data_list_suggest_reason.go 生成
+// 不要手动编辑。
 
 export const QianchuanAdRecommendKeywordsGetV10DataListSuggestReason = {
   CLICK: "CLICK",

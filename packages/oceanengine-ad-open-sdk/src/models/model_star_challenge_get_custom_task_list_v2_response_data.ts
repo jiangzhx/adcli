@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_challenge_get_custom_task_list_v2_response_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_challenge_get_custom_task_list_v2_response_data.go 生成
+// 不要手动编辑。
 
 import type { StarChallengeGetCustomTaskListV2ResponseDataPageInfo, StarChallengeGetCustomTaskListV2ResponseDataTaskListInner } from "../models/index";
 

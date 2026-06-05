@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_anchor_list_v3_0_response_data_anchor_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_anchor_list_v3_0_response_data_anchor_list_inner.go 生成
+// 不要手动编辑。
 
 import type { BrandAnchorListV30DataAnchorListAnchorStatus, BrandAnchorListV30DataAnchorListAnchorType } from "../models/index";
 

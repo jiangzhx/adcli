@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_stardelivery_task_detail_v3_0_data_star_task_materials_requirements_video_reviewer.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_stardelivery_task_detail_v3_0_data_star_task_materials_requirements_video_reviewer.go 生成
+// 不要手动编辑。
 
 export const StardeliveryTaskDetailV30DataStarTaskMaterialsRequirementsVideoReviewer = {
   CONFIRM_BY_ISV_ONLY: "CONFIRM_BY_ISV_ONLY",

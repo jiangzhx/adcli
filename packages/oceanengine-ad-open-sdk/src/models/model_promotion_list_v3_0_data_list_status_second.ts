@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_status_second.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_status_second.go 生成
+// 不要手动编辑。
 
 export const PromotionListV30DataListStatusSecond = {
   APP_NOT_ALLOWED: "APP_NOT_ALLOWED",

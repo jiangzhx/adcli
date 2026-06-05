@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_update_v3_0_delivery_setting_filter_night_switch.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_update_v3_0_delivery_setting_filter_night_switch.go 生成
+// 不要手动编辑。
 
 export const ProjectUpdateV30DeliverySettingFilterNightSwitch = {
   OFF: "OFF",

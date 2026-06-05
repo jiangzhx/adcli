@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_ad_shop_info_update_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_ad_shop_info_update_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { AdShopInfoUpdateV30RequestShopInfo } from "../models/index";
 

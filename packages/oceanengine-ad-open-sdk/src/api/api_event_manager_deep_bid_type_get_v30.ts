@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_event_manager_deep_bid_type_get_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_event_manager_deep_bid_type_get_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { EventManagerDeepBidTypeGetV30AdType, EventManagerDeepBidTypeGetV30DeepExternalAction, EventManagerDeepBidTypeGetV30DeliveryMode, EventManagerDeepBidTypeGetV30ExternalAction, EventManagerDeepBidTypeGetV30LandingType, EventManagerDeepBidTypeGetV30MarketingGoal, EventManagerDeepBidTypeGetV30MicroPromotionType, EventManagerDeepBidTypeGetV30ProductSetting, EventManagerDeepBidTypeGetV30Response, EventManagerDeepBidTypeGetV30ValueOptimizedType } from "../models/index";

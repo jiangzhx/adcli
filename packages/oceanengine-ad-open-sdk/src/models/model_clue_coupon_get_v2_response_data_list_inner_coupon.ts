@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_coupon_get_v2_response_data_list_inner_coupon.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_coupon_get_v2_response_data_list_inner_coupon.go 生成
+// 不要手动编辑。
 
 import type { ClueCouponGetV2DataListCouponNeedPhone, ClueCouponGetV2DataListCouponNeedSmsVerify, ClueCouponGetV2DataListCouponStatus, ClueCouponGetV2ResponseDataListInnerCouponGlobalLimit, ClueCouponGetV2ResponseDataListInnerCouponResourceListInner, ClueCouponGetV2ResponseDataListInnerCouponUserLimit } from "../models/index";
 

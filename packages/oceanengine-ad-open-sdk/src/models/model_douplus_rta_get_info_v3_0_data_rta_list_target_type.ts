@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_douplus_rta_get_info_v3_0_data_rta_list_target_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_douplus_rta_get_info_v3_0_data_rta_list_target_type.go 生成
+// 不要手动编辑。
 
 export const DouplusRtaGetInfoV30DataRtaListTargetType = {
   ADV: "ADV",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_open_material_audit_pro_submit_v3_0_business_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_open_material_audit_pro_submit_v3_0_business_type.go 生成
+// 不要手动编辑。
 
 export const OpenMaterialAuditProSubmitV30BusinessType = {
   AD: "AD",

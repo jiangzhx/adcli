@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_report_audience_get_v3_0_filtering_roi2_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_report_audience_get_v3_0_filtering_roi2_type.go 生成
+// 不要手动编辑。
 
 export const LocalReportAudienceGetV30FilteringRoi2Type = {
   LIVE_ROI2: "LIVE_ROI2",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_control_task_list_v1_0_response_data_task_list_inner_metrics.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_control_task_list_v1_0_response_data_task_list_inner_metrics.go 生成
+// 不要手动编辑。
 
 export interface QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMetrics {
   click_cnt_for_roi2_assist?: number;

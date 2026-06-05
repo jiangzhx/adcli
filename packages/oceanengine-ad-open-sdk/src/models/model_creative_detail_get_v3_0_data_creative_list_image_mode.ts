@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_data_creative_list_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_data_creative_list_image_mode.go 生成
+// 不要手动编辑。
 
 export const CreativeDetailGetV30DataCreativeListImageMode = {
   CREATIVE_IMAGE_MODE_AWEME_LIVE: "CREATIVE_IMAGE_MODE_AWEME_LIVE",

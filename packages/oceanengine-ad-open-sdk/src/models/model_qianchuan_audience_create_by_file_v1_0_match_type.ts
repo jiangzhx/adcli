@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_audience_create_by_file_v1_0_match_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_audience_create_by_file_v1_0_match_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanAudienceCreateByFileV10MatchType = {
   UID: "UID",

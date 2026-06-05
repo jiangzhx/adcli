@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_video_delete_v3_0_account_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_video_delete_v3_0_account_type.go 生成
+// 不要手动编辑。
 
 export const ToolsEbpVideoDeleteV30AccountType = {
   EBP: "EBP",

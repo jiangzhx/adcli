@@ -1,30 +1,30 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_agent_get_v2_v2_data_list_customer_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_agent_get_v2_v2_data_list_customer_type.go 生成
+// 不要手动编辑。
 
 export const ReportAgentGetV2V2DataListCustomerType = {
-  SMB_AGENT: "SMB_AGENT",
-  KA_AGENT: "KA_AGENT",
-  LA: "LA",
-  REGION: "REGION",
+  VERTICAL: "VERTICAL",
+  GAME: "GAME",
+  I18_N_AGENT: "I18N_AGENT",
   DSP: "DSP",
+  BRANCH: "BRANCH",
+  OVERSEA_VIRTUAL: "OVERSEA_VIRTUAL",
+  LOCAL: "LOCAL",
+  LA_AGENT: "LA_AGENT",
+  VIRTUAL_KA: "VIRTUAL_KA",
+  VIRTUAL_LA: "VIRTUAL_LA",
+  VIRTUAL_SMB: "VIRTUAL_SMB",
+  INTERNAL: "INTERNAL",
+  KA_AGENT: "KA_AGENT",
+  KA: "KA",
+  INTERNET: "INTERNET",
+  LA: "LA",
+  SELF_SERVICE: "SELF_SERVICE",
+  SMB_AGENT: "SMB_AGENT",
+  SMB: "SMB",
+  REGION: "REGION",
+  EXCHANGE: "EXCHANGE",
   I18_N_ADV: "I18N_ADV",
   VIRTUAL_CUS: "VIRTUAL_CUS",
-  KA: "KA",
-  I18_N_AGENT: "I18N_AGENT",
-  LOCAL: "LOCAL",
-  VIRTUAL_SMB: "VIRTUAL_SMB",
-  BRANCH: "BRANCH",
-  EXCHANGE: "EXCHANGE",
-  OVERSEA_VIRTUAL: "OVERSEA_VIRTUAL",
-  VIRTUAL_LA: "VIRTUAL_LA",
-  SMB: "SMB",
-  VIRTUAL_KA: "VIRTUAL_KA",
-  INTERNET: "INTERNET",
-  VERTICAL: "VERTICAL",
-  SELF_SERVICE: "SELF_SERVICE",
-  LA_AGENT: "LA_AGENT",
-  INTERNAL: "INTERNAL",
-  GAME: "GAME",
 } as const;
 
 export type ReportAgentGetV2V2DataListCustomerType = typeof ReportAgentGetV2V2DataListCustomerType[keyof typeof ReportAgentGetV2V2DataListCustomerType];

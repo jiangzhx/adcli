@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_list_v2_response_data_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_list_v2_response_data_list_inner.go 生成
+// 不要手动编辑。
 
 import type { StarDemandListV2DataListComponentType, StarDemandListV2DataListTaskCategory, StarDemandListV2DataListUniversalSettlementType } from "../models/index";
 

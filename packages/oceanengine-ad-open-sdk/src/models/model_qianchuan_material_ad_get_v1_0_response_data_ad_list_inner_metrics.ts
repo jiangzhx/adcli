@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_material_ad_get_v1_0_response_data_ad_list_inner_metrics.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_material_ad_get_v1_0_response_data_ad_list_inner_metrics.go 生成
+// 不要手动编辑。
 
 export interface QianchuanMaterialAdGetV10ResponseDataAdListInnerMetrics {
   all_order_pay_count_7days?: number;

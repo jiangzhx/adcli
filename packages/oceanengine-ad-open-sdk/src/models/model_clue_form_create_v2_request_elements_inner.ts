@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_form_create_v2_request_elements_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_form_create_v2_request_elements_inner.go 生成
+// 不要手动编辑。
 
 import type { ClueFormCreateV2ElementsAllowEmpty, ClueFormCreateV2ElementsElementType, ClueFormCreateV2ElementsIsUnique, ClueFormCreateV2ElementsLayer } from "../models/index";
 

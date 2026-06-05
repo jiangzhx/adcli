@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_is_support_universal_get_v2_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_is_support_universal_get_v2_external_action.go 生成
+// 不要手动编辑。
 
 export const ToolsIsSupportUniversalGetV2ExternalAction = {
   AD_CONVERT_PAGE_VIEW: "AD_CONVERT_PAGE_VIEW",

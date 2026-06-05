@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_charge_verify_get_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_charge_verify_get_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ChargeVerifyGetV30Caller, ChargeVerifyGetV30ChargeSource, ChargeVerifyGetV30ChargeType, ChargeVerifyGetV30Platform, ChargeVerifyGetV30Response } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_image_advertiser_v2_response_data_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_image_advertiser_v2_response_data_data.go 生成
+// 不要手动编辑。
 
 export interface FileImageAdvertiserV2ResponseDataData {
   attachment_id: number | string;

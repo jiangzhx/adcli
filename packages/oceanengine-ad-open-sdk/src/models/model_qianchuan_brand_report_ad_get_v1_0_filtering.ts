@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_brand_report_ad_get_v1_0_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_brand_report_ad_get_v1_0_filtering.go 生成
+// 不要手动编辑。
 
 import type { QianchuanBrandReportAdGetV10FilteringCampaignScene, QianchuanBrandReportAdGetV10FilteringMarketingGoal, QianchuanBrandReportAdGetV10FilteringMarketingScene, QianchuanBrandReportAdGetV10FilteringSmartBidType, QianchuanBrandReportAdGetV10FilteringStatus } from "../models/index";
 

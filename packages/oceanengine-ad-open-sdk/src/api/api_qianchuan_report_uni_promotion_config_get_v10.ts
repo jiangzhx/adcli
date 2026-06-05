@@ -1,13 +1,14 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_report_uni_promotion_config_get_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_report_uni_promotion_config_get_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
-import type { QianchuanReportUniPromotionConfigGetV10DataTopics, QianchuanReportUniPromotionConfigGetV10Response } from "../models/index";
+import type { QianchuanReportUniPromotionConfigGetV10DataPeriod, QianchuanReportUniPromotionConfigGetV10DataTopics, QianchuanReportUniPromotionConfigGetV10Response } from "../models/index";
 
 
 export interface QianchuanReportUniPromotionConfigGetV10ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest {
   advertiserId: number | string;
   dataTopics: QianchuanReportUniPromotionConfigGetV10DataTopics[];
+  dataPeriod?: QianchuanReportUniPromotionConfigGetV10DataPeriod;
 }
 
 export class QianchuanReportUniPromotionConfigGetV10Api {
@@ -39,7 +40,8 @@ export class QianchuanReportUniPromotionConfigGetV10Api {
       path: "/open_api/v1.0/qianchuan/report/uni_promotion/config/get/",
       queryParams: [
         { name: "advertiser_id", value: request.advertiserId },
-        { name: "data_topics", value: request.dataTopics }
+        { name: "data_topics", value: request.dataTopics },
+        { name: "data_period", value: request.dataPeriod }
       ]
     });
   }

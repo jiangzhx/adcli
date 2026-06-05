@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_ebp_video_get_v3_0_data_list_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_ebp_video_get_v3_0_data_list_image_mode.go 生成
+// 不要手动编辑。
 
 export const FileEbpVideoGetV30DataListImageMode = {
   CREATIVE_IMAGE_MODE_CALIBRATION_FREE_VIDEO: "CREATIVE_IMAGE_MODE_CALIBRATION_FREE_VIDEO",

@@ -1,8 +1,8 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_list_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_list_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
-import type { QianchuanUniPromotionListV10AdlabScene, QianchuanUniPromotionListV10Fields, QianchuanUniPromotionListV10Filtering, QianchuanUniPromotionListV10MarketingGoal, QianchuanUniPromotionListV10OrderField, QianchuanUniPromotionListV10OrderType, QianchuanUniPromotionListV10PageSize, QianchuanUniPromotionListV10Response } from "../models/index";
+import type { QianchuanUniPromotionListV10AdlabScene, QianchuanUniPromotionListV10DataPeriod, QianchuanUniPromotionListV10Fields, QianchuanUniPromotionListV10Filtering, QianchuanUniPromotionListV10MarketingGoal, QianchuanUniPromotionListV10OrderField, QianchuanUniPromotionListV10OrderType, QianchuanUniPromotionListV10PageSize, QianchuanUniPromotionListV10Response } from "../models/index";
 
 
 export interface QianchuanUniPromotionListV10ApiOpenApiV10QianchuanUniPromotionListGetRequest {
@@ -18,6 +18,7 @@ export interface QianchuanUniPromotionListV10ApiOpenApiV10QianchuanUniPromotionL
   page?: number;
   pageSize?: QianchuanUniPromotionListV10PageSize;
   adlabScene?: QianchuanUniPromotionListV10AdlabScene;
+  dataPeriod?: QianchuanUniPromotionListV10DataPeriod;
 }
 
 export class QianchuanUniPromotionListV10Api {
@@ -71,7 +72,8 @@ export class QianchuanUniPromotionListV10Api {
         { name: "order_field", value: request.orderField },
         { name: "page", value: request.page },
         { name: "page_size", value: request.pageSize },
-        { name: "adlab_scene", value: request.adlabScene }
+        { name: "adlab_scene", value: request.adlabScene },
+        { name: "data_period", value: request.dataPeriod }
       ]
     });
   }

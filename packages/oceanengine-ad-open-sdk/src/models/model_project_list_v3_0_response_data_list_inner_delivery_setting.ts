@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_list_v3_0_response_data_list_inner_delivery_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_list_v3_0_response_data_list_inner_delivery_setting.go 生成
+// 不要手动编辑。
 
 import type { ProjectListV30DataListDeliverySettingBidSpeed, ProjectListV30DataListDeliverySettingBudgetMode, ProjectListV30DataListDeliverySettingBudgetOptimizeSwitch, ProjectListV30DataListDeliverySettingDeepBidType, ProjectListV30DataListDeliverySettingLayerRoiSwitch, ProjectListV30DataListDeliverySettingProjectCustom, ProjectListV30DataListDeliverySettingScheduleType, ProjectListV30DataListDeliverySettingSearchContinueDelivery, ProjectListV30ResponseDataListInnerDeliverySettingShopMultiRoiGoalsInner } from "../models/index";
 

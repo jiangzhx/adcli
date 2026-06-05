@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_dpa_check_index_entry_progress_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_dpa_check_index_entry_progress_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { DpaCheckIndexEntryProgressV2Request, DpaCheckIndexEntryProgressV2Response } from "../models/index";

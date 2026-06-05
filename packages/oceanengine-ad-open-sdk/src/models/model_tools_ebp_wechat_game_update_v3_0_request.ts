@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_wechat_game_update_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_wechat_game_update_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsEbpWechatGameUpdateV30AccountType, ToolsEbpWechatGameUpdateV30RequestExtra, ToolsEbpWechatGameUpdateV30RequestHead, ToolsEbpWechatGameUpdateV30RequestIcon, ToolsEbpWechatGameUpdateV30RequestMaterialInner, ToolsEbpWechatGameUpdateV30RequestQualificationsInner, ToolsEbpWechatGameUpdateV30RequestSubject } from "../models/index";
 

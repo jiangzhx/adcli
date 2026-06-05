@@ -1,15 +1,22 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_custom_get_v3_0_data_topic.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_custom_get_v3_0_data_topic.go 生成
+// 不要手动编辑。
 
 export const ReportCustomGetV30DataTopic = {
   BASIC_DATA: "BASIC_DATA",
   BIDWORD_DATA: "BIDWORD_DATA",
   DMP_DATA: "DMP_DATA",
+  DPA_VIDEO_DATA: "DPA_VIDEO_DATA",
   MATERIAL_BOOST_DATA: "MATERIAL_BOOST_DATA",
   MATERIAL_DATA: "MATERIAL_DATA",
   ONE_KEY_BOOST_DATA: "ONE_KEY_BOOST_DATA",
   PRODUCT_DATA: "PRODUCT_DATA",
   QUERY_DATA: "QUERY_DATA",
+  STD_BASIC_DATA: "STD_BASIC_DATA",
+  STD_BIDWORD_DATA: "STD_BIDWORD_DATA",
+  STD_DMP_DATA: "STD_DMP_DATA",
+  STD_MATERIAL_DATA: "STD_MATERIAL_DATA",
+  STD_PRODUCT_DATA: "STD_PRODUCT_DATA",
+  STD_QUERY_DATA: "STD_QUERY_DATA",
   UNI_PROJECT_DATA: "UNI_PROJECT_DATA",
   UNI_PROJECT_MATERIAL_DATA: "UNI_PROJECT_MATERIAL_DATA",
   VIDEO_DUARATION_DATA: "VIDEO_DUARATION_DATA",

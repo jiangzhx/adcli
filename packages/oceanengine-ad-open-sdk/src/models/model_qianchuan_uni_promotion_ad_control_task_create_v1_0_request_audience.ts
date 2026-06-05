@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_control_task_create_v1_0_request_audience.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_control_task_create_v1_0_request_audience.go 生成
+// 不要手动编辑。
 
 import type { QianchuanUniPromotionAdControlTaskCreateV10AudienceAge, QianchuanUniPromotionAdControlTaskCreateV10AudienceAwemeFanBehaviors, QianchuanUniPromotionAdControlTaskCreateV10AudienceAwemeFanBehaviorsDays, QianchuanUniPromotionAdControlTaskCreateV10AudienceDistrict, QianchuanUniPromotionAdControlTaskCreateV10AudienceGender, QianchuanUniPromotionAdControlTaskCreateV10AudienceLocationType } from "../models/index";
 

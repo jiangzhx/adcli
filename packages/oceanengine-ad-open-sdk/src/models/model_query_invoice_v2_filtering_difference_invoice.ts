@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_query_invoice_v2_filtering_difference_invoice.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_query_invoice_v2_filtering_difference_invoice.go 生成
+// 不要手动编辑。
 
 export const QueryInvoiceV2FilteringDifferenceInvoice = {
   FULL: "FULL",

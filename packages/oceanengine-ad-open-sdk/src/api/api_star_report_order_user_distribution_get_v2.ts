@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_star_report_order_user_distribution_get_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_star_report_order_user_distribution_get_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { StarReportOrderUserDistributionGetV2FanType, StarReportOrderUserDistributionGetV2InteractiveType, StarReportOrderUserDistributionGetV2Response } from "../models/index";

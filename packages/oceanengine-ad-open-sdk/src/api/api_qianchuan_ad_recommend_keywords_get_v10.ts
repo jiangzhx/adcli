@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_ad_recommend_keywords_get_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_ad_recommend_keywords_get_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanAdRecommendKeywordsGetV10Filtering, QianchuanAdRecommendKeywordsGetV10OrderField, QianchuanAdRecommendKeywordsGetV10OrderType, QianchuanAdRecommendKeywordsGetV10Response } from "../models/index";

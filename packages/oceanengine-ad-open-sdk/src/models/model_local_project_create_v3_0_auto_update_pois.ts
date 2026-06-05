@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_create_v3_0_auto_update_pois.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_create_v3_0_auto_update_pois.go 生成
+// 不要手动编辑。
 
 export const LocalProjectCreateV30AutoUpdatePois = {
   OFF: "OFF",

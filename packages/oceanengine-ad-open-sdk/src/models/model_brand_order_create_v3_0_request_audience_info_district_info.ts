@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_order_create_v3_0_request_audience_info_district_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_order_create_v3_0_request_audience_info_district_info.go 生成
+// 不要手动编辑。
 
 import type { BrandOrderCreateV30AudienceInfoDistrictInfoCitySelectType, BrandOrderCreateV30AudienceInfoDistrictInfoDistrictType, BrandOrderCreateV30AudienceInfoDistrictInfoLocationType } from "../models/index";
 

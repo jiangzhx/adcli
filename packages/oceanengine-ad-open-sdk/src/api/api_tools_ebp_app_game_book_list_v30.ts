@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_ebp_app_game_book_list_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_ebp_app_game_book_list_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsEbpAppGameBookListV30AccountType, ToolsEbpAppGameBookListV30AssetManagementScope, ToolsEbpAppGameBookListV30AssetOwnership, ToolsEbpAppGameBookListV30Filtering, ToolsEbpAppGameBookListV30Response } from "../models/index";

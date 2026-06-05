@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_filtering.go 生成
+// 不要手动编辑。
 
 import type { PromotionListV30FilteringBlueFlowPackageSetting, PromotionListV30FilteringDeliveryMode, PromotionListV30FilteringHasCarryMaterial, PromotionListV30FilteringLearningPhase, PromotionListV30FilteringRejectReasonType, PromotionListV30FilteringStarAutoDeliverySwitch, PromotionListV30FilteringStarDeliveryType, PromotionListV30FilteringStatus, PromotionListV30FilteringStatusFirst, PromotionListV30FilteringStatusSecond } from "../models/index";
 

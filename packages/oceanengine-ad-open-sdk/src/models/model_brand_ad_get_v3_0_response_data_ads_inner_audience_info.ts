@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_response_data_ads_inner_audience_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_response_data_ads_inner_audience_info.go 生成
+// 不要手动编辑。
 
 import type { BrandAdGetV30DataAdsAudienceInfoAcV2, BrandAdGetV30DataAdsAudienceInfoBrandSafety, BrandAdGetV30DataAdsAudienceInfoDistrictSplit, BrandAdGetV30DataAdsAudienceInfoDistrictType, BrandAdGetV30DataAdsAudienceInfoExcludeDistrict, BrandAdGetV30DataAdsAudienceInfoPlatformV2, BrandAdGetV30DataAdsAudienceInfoRetargetingType, BrandAdGetV30ResponseDataAdsInnerAudienceInfoGeolocationInner, BrandAdGetV30ResponseDataAdsInnerAudienceInfoRetargetingTagTypeValue } from "../models/index";
 

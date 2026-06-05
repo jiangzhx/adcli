@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_response_data_ads_inner_budget_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_response_data_ads_inner_budget_info.go 生成
+// 不要手动编辑。
 
 import type { BrandAdGetV30DataAdsBudgetInfoGdSendType, BrandAdGetV30DataAdsBudgetInfoPricingType, BrandAdGetV30ResponseDataAdsInnerBudgetInfoQuantityInfoInner } from "../models/index";
 

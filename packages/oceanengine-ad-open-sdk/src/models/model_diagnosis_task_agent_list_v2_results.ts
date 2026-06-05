@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_diagnosis_task_agent_list_v2_results.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_diagnosis_task_agent_list_v2_results.go 生成
+// 不要手动编辑。
 
 export const DiagnosisTaskAgentListV2Results = {
   AD_HIGH_QUALITY_MATERIAL: "AD_HIGH_QUALITY_MATERIAL",

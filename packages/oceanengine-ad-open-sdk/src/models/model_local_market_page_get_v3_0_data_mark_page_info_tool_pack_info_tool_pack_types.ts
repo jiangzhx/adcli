@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_market_page_get_v3_0_data_mark_page_info_tool_pack_info_tool_pack_types.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_market_page_get_v3_0_data_mark_page_info_tool_pack_info_tool_pack_types.go 生成
+// 不要手动编辑。
 
 export const LocalMarketPageGetV30DataMarkPageInfoToolPackInfoToolPackTypes = {
   TOOL_TYPE_CONSULT: "TOOL_TYPE_CONSULT",

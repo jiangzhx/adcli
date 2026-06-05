@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_create_v3_0_request_audience.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_create_v3_0_request_audience.go 生成
+// 不要手动编辑。
 
 import type { LocalProjectCreateV30AudienceAge, LocalProjectCreateV30AudienceConvertedTimeDuration, LocalProjectCreateV30AudienceCustomizedInterestAction, LocalProjectCreateV30AudienceDistrict, LocalProjectCreateV30AudienceFilterAwemeAbnormalActive, LocalProjectCreateV30AudienceFilterAwemeFansCount, LocalProjectCreateV30AudienceGender, LocalProjectCreateV30AudienceHideIfConverted, LocalProjectCreateV30RequestAudienceActionConfig, LocalProjectCreateV30RequestAudienceCustomArea, LocalProjectCreateV30RequestAudienceInterestConfig, LocalProjectCreateV30RequestAudiencePoiAround, LocalProjectCreateV30RequestAudienceRegion } from "../models/index";
 

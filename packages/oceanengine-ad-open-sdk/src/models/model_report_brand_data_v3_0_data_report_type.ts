@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_brand_data_v3_0_data_report_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_brand_data_v3_0_data_report_type.go 生成
+// 不要手动编辑。
 
 export const ReportBrandDataV30DataReportType = {
   AD: "AD",

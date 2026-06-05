@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_app_management_upload_task_create_v2_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_app_management_upload_task_create_v2_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsAppManagementUploadTaskCreateV2AccountType, ToolsAppManagementUploadTaskCreateV2FileType } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_request_delivery_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_create_v1_0_request_delivery_setting.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAdCreateV10DeliverySettingBudgetMode, QianchuanAdCreateV10DeliverySettingDeepBidType, QianchuanAdCreateV10DeliverySettingDeepExternalAction, QianchuanAdCreateV10DeliverySettingExternalAction, QianchuanAdCreateV10DeliverySettingLiveScheduleType, QianchuanAdCreateV10DeliverySettingQcpxMode, QianchuanAdCreateV10DeliverySettingSmartBidType, QianchuanAdCreateV10DeliverySettingVideoScheduleType } from "../models/index";
 

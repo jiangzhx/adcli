@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_materials_product_info_product_image_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_materials_product_info_product_image_type.go 生成
+// 不要手动编辑。
 
 export const PromotionListV30DataListPromotionMaterialsProductInfoProductImageType = {
   CUSTOM: "CUSTOM",

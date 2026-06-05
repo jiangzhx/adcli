@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_cancel_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_cancel_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsBpAssetManagementShareCancelV30AllAccountsByBp, ToolsBpAssetManagementShareCancelV30AssetType, ToolsBpAssetManagementShareCancelV30RequestAccountInfosInner, ToolsBpAssetManagementShareCancelV30RequestAllAccountsByCompanyInner, ToolsBpAssetManagementShareCancelV30ShareMode } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_comment_stick_on_top_v3_0_stick_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_comment_stick_on_top_v3_0_stick_type.go 生成
+// 不要手动编辑。
 
 export const ToolsCommentStickOnTopV30StickType = {
   CANCEL_STICK: "CANCEL_STICK",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_uni_project_list_get_v3_0_response_data_list_inner_audience.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_uni_project_list_get_v3_0_response_data_list_inner_audience.go 生成
+// 不要手动编辑。
 
 import type { UniProjectListGetV30DataListAudienceConvertedTimeDuration, UniProjectListGetV30DataListAudienceDistrict, UniProjectListGetV30DataListAudienceGender, UniProjectListGetV30DataListAudienceHideIfConverted, UniProjectListGetV30DataListAudienceLocationType, UniProjectListGetV30DataListAudiencePlatform, UniProjectListGetV30ResponseDataListInnerAudienceGeolocationInner } from "../models/index";
 

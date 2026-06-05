@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_coupon_create_v2_coupon_need_sms_verify.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_coupon_create_v2_coupon_need_sms_verify.go 生成
+// 不要手动编辑。
 
 export const ClueCouponCreateV2CouponNeedSmsVerify = {
   Enum_0: "0",

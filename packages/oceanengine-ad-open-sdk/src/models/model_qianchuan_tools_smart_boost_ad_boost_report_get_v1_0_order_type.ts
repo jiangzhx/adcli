@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_tools_smart_boost_ad_boost_report_get_v1_0_order_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_tools_smart_boost_ad_boost_report_get_v1_0_order_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanToolsSmartBoostAdBoostReportGetV10OrderType = {
   ASC: "ASC",

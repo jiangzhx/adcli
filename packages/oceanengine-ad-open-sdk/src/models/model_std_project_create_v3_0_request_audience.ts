@@ -1,7 +1,7 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_request_audience.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_request_audience.go 生成
+// 不要手动编辑。
 
-import type { StdProjectCreateV30AudienceAge, StdProjectCreateV30AudienceAndroidOsv, StdProjectCreateV30AudienceConvertedTimeDuration, StdProjectCreateV30AudienceDistrict, StdProjectCreateV30AudienceFilterEvent, StdProjectCreateV30AudienceGender, StdProjectCreateV30AudienceHarmonyOsv, StdProjectCreateV30AudienceHideIfConverted, StdProjectCreateV30AudienceHideIfExists, StdProjectCreateV30AudienceIosOsv, StdProjectCreateV30AudienceLocationType, StdProjectCreateV30AudienceRegionRecommend, StdProjectCreateV30RequestAudienceGeolocationInner } from "../models/index";
+import type { StdProjectCreateV30AudienceAge, StdProjectCreateV30AudienceAndroidOsv, StdProjectCreateV30AudienceConvertedTimeDuration, StdProjectCreateV30AudienceDistrict, StdProjectCreateV30AudienceFilterEvent, StdProjectCreateV30AudienceGender, StdProjectCreateV30AudienceHarmonyOsv, StdProjectCreateV30AudienceHideIfConverted, StdProjectCreateV30AudienceHideIfExists, StdProjectCreateV30AudienceIosOsv, StdProjectCreateV30AudienceLocationType, StdProjectCreateV30AudiencePlatform, StdProjectCreateV30AudienceRegionRecommend, StdProjectCreateV30RequestAudienceGeolocationInner } from "../models/index";
 
 export interface StdProjectCreateV30RequestAudience {
   age?: StdProjectCreateV30AudienceAge[];
@@ -17,6 +17,7 @@ export interface StdProjectCreateV30RequestAudience {
   hide_if_exists?: StdProjectCreateV30AudienceHideIfExists;
   ios_osv?: StdProjectCreateV30AudienceIosOsv;
   location_type?: StdProjectCreateV30AudienceLocationType;
+  platform?: StdProjectCreateV30AudiencePlatform[];
   region_recommend?: StdProjectCreateV30AudienceRegionRecommend;
   region_version?: string;
   retargeting_tags_exclude?: number[];

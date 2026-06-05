@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_shared_relation_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_shared_relation_create_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { SharedWalletSharedRelationCreateV30AccountPlatformList, SharedWalletSharedRelationCreateV30AccountType, SharedWalletSharedRelationCreateV30RelationChangeMode, SharedWalletSharedRelationCreateV30RequestAdvRangeParameter } from "../models/index";
 

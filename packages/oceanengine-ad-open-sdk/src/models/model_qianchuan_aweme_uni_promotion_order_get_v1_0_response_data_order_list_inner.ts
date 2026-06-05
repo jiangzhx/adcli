@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_order_get_v1_0_response_data_order_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_order_get_v1_0_response_data_order_list_inner.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAwemeUniPromotionOrderGetV10DataOrderListMarketingGoal, QianchuanAwemeUniPromotionOrderGetV10DataOrderListStatus, QianchuanAwemeUniPromotionOrderGetV10ResponseDataOrderListInnerAwemeInfo, QianchuanAwemeUniPromotionOrderGetV10ResponseDataOrderListInnerProductInfo, QianchuanAwemeUniPromotionOrderGetV10ResponseDataOrderListInnerStatsInfo } from "../models/index";
 

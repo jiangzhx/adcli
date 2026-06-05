@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_site_template_site_create_v2_bricks_picture_group_content_link_dto_link_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_site_template_site_create_v2_bricks_picture_group_content_link_dto_link_type.go 生成
+// 不要手动编辑。
 
 export const ToolsSiteTemplateSiteCreateV2BricksPictureGroupContentLinkDtoLinkType = {
   QUICK_APP: "QUICK_APP",

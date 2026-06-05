@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_create_v3_0_promotion_related_product_video_material_list_video_hp_visibility.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_create_v3_0_promotion_related_product_video_material_list_video_hp_visibility.go 生成
+// 不要手动编辑。
 
 export const PromotionCreateV30PromotionRelatedProductVideoMaterialListVideoHpVisibility = {
   ALWAYS_VISIBLE: "ALWAYS_VISIBLE",

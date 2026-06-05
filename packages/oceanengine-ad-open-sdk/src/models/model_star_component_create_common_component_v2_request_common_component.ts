@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_component_create_common_component_v2_request_common_component.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_component_create_common_component_v2_request_common_component.go 生成
+// 不要手动编辑。
 
 import type { StarComponentCreateCommonComponentV2RequestCommonComponentAnchorComponent } from "../models/index";
 

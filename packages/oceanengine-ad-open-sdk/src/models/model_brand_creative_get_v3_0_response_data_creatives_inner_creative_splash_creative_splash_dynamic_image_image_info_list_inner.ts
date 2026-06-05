@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_creative_get_v3_0_response_data_creatives_inner_creative_splash_creative_splash_dynamic_image_image_info_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_creative_get_v3_0_response_data_creatives_inner_creative_splash_creative_splash_dynamic_image_image_info_list_inner.go 生成
+// 不要手动编辑。
 
 export interface BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreativeSplashDynamicImageImageInfoListInner {
   format?: string;

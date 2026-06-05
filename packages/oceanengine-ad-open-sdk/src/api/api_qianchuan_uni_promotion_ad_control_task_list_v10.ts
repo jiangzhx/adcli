@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_ad_control_task_list_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_uni_promotion_ad_control_task_list_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanUniPromotionAdControlTaskListV10Fields, QianchuanUniPromotionAdControlTaskListV10Filtering, QianchuanUniPromotionAdControlTaskListV10MarketingGoal, QianchuanUniPromotionAdControlTaskListV10OrderType, QianchuanUniPromotionAdControlTaskListV10Response, QianchuanUniPromotionAdControlTaskListV10Scene } from "../models/index";

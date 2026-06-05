@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_create_v3_0_request_native_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_create_v3_0_request_native_setting.go 生成
+// 不要手动编辑。
 
 import type { PromotionCreateV30NativeSettingAnchorRelatedType, PromotionCreateV30NativeSettingAwemeSettingType, PromotionCreateV30NativeSettingIsFeedAndFavSee } from "../models/index";
 

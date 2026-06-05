@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_create_v1_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_create_v1_0_request.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAwemeOrderCreateV10MarketingGoal, QianchuanAwemeOrderCreateV10RequestAudience, QianchuanAwemeOrderCreateV10RequestDeliverySetting } from "../models/index";
 

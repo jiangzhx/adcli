@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_project_materials_video_material_list_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_project_materials_video_material_list_image_mode.go 生成
+// 不要手动编辑。
 
 export const StdProjectCreateV30ProjectMaterialsVideoMaterialListImageMode = {
   CREATIVE_IMAGE_MODE_VIDEO: "CREATIVE_IMAGE_MODE_VIDEO",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_carousel_get_v1_0_data_carousels_image_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_carousel_get_v1_0_data_carousels_image_mode.go 生成
+// 不要手动编辑。
 
 export const QianchuanCarouselGetV10DataCarouselsImageMode = {
   CAROUSEL: "CAROUSEL",

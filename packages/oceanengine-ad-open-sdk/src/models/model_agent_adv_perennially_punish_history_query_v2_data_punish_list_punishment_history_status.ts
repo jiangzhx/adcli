@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_adv_perennially_punish_history_query_v2_data_punish_list_punishment_history_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_adv_perennially_punish_history_query_v2_data_punish_list_punishment_history_status.go 生成
+// 不要手动编辑。
 
 export const AgentAdvPerenniallyPunishHistoryQueryV2DataPunishListPunishmentHistoryStatus = {
   FAILED: "FAILED",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_component_query_industry_anchor_v2_response.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_component_query_industry_anchor_v2_response.go 生成
+// 不要手动编辑。
 
 import type { StarComponentQueryIndustryAnchorV2ResponseData } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner_material_component_dynamic_full_screen_image_info_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner_material_component_dynamic_full_screen_image_info_list_inner.go 生成
+// 不要手动编辑。
 
 export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentDynamicFullScreenImageInfoListInner {
   d?: number;

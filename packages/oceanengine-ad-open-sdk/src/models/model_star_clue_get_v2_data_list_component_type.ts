@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_clue_get_v2_data_list_component_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_clue_get_v2_data_list_component_type.go 生成
+// 不要手动编辑。
 
 export const StarClueGetV2DataListComponentType = {
   ALL: "ALL",

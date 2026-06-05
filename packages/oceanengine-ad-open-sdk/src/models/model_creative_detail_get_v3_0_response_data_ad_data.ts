@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_response_data_ad_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_response_data_ad_data.go 生成
+// 不要手动编辑。
 
 import type { CreativeDetailGetV30DataAdDataAnchorRelatedType, CreativeDetailGetV30DataAdDataAnchorType, CreativeDetailGetV30DataAdDataDynamicCreativeSwitch, CreativeDetailGetV30DataAdDataEnableSmartSource, CreativeDetailGetV30DataAdDataParamsType, CreativeDetailGetV30DataAdDataPriorityTrial, CreativeDetailGetV30ResponseDataAdDataMiniProgramInfo, CreativeDetailGetV30ResponseDataAdDataSupplementsInner } from "../models/index";
 

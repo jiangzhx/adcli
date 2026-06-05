@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_get_v3_0_response_data_shared_accounts_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_get_v3_0_response_data_shared_accounts_inner.go 生成
+// 不要手动编辑。
 
 import type { ToolsBpAssetManagementShareGetV30DataSharedAccountsAllAccountsByBp, ToolsBpAssetManagementShareGetV30DataSharedAccountsShareMode, ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInnerAccountInfo, ToolsBpAssetManagementShareGetV30ResponseDataSharedAccountsInnerAllAccountsByCompany } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shop_bonus_create_v3_0_coupon_shop_platform.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shop_bonus_create_v3_0_coupon_shop_platform.go 生成
+// 不要手动编辑。
 
 export const ShopBonusCreateV30CouponShopPlatform = {
   ALIHEALTH: "ALIHEALTH",

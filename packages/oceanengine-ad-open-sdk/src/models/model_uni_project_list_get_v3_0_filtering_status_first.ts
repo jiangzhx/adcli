@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_uni_project_list_get_v3_0_filtering_status_first.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_uni_project_list_get_v3_0_filtering_status_first.go 生成
+// 不要手动编辑。
 
 export const UniProjectListGetV30FilteringStatusFirst = {
   PROJECT_STATUS_DELETE: "PROJECT_STATUS_DELETE",

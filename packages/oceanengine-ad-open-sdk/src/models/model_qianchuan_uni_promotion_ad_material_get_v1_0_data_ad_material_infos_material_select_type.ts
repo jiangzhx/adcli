@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_material_get_v1_0_data_ad_material_infos_material_select_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_material_get_v1_0_data_ad_material_infos_material_select_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialSelectType = {
   ALL: "ALL",

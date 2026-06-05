@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_create_v1_0_audience_region_version.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_create_v1_0_audience_region_version.go 生成
+// 不要手动编辑。
 
 export const QianchuanAwemeOrderCreateV10AudienceRegionVersion = {
   Enum_2_3_2: "2.3.2",

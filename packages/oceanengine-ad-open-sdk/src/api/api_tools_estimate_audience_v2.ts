@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_estimate_audience_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_estimate_audience_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsEstimateAudienceV2Ac, ToolsEstimateAudienceV2ActionDays, ToolsEstimateAudienceV2ActivateType, ToolsEstimateAudienceV2Age, ToolsEstimateAudienceV2AndroidOsv, ToolsEstimateAudienceV2AppBehaviorTarget, ToolsEstimateAudienceV2ArticleCategory, ToolsEstimateAudienceV2AutoExtendEnabled, ToolsEstimateAudienceV2AutoExtendTargets, ToolsEstimateAudienceV2Carrier, ToolsEstimateAudienceV2DeviceBrand, ToolsEstimateAudienceV2DeviceType, ToolsEstimateAudienceV2District, ToolsEstimateAudienceV2DpaLocalAudience, ToolsEstimateAudienceV2ExcludeCustomActionsInner, ToolsEstimateAudienceV2FilterAwemeAbnormalActive, ToolsEstimateAudienceV2FilterOwnAwemeFans, ToolsEstimateAudienceV2Gender, ToolsEstimateAudienceV2GeolocationInner, ToolsEstimateAudienceV2IncludeCustomActionsInner, ToolsEstimateAudienceV2InterestActionMode, ToolsEstimateAudienceV2IosOsv, ToolsEstimateAudienceV2LocationType, ToolsEstimateAudienceV2Platform, ToolsEstimateAudienceV2Response, ToolsEstimateAudienceV2RetargetingType, ToolsEstimateAudienceV2SuperiorPopularityType } from "../models/index";

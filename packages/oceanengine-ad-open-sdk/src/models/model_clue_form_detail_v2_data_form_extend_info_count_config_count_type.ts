@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_form_detail_v2_data_form_extend_info_count_config_count_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_form_detail_v2_data_form_extend_info_count_config_count_type.go 生成
+// 不要手动编辑。
 
 export const ClueFormDetailV2DataFormExtendInfoCountConfigCountType = {
   COUNT_TYPE_INCREMENT: "COUNT_TYPE_INCREMENT",

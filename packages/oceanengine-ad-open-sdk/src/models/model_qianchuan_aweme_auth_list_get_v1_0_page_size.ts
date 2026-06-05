@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_auth_list_get_v1_0_page_size.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_auth_list_get_v1_0_page_size.go 生成
+// 不要手动编辑。
 
 export const QianchuanAwemeAuthListGetV10PageSize = {
   Enum_10: 10,

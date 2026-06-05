@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_mcn_provider_get_task_item_list_v2_response_data_items_inner_item_info_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_mcn_provider_get_task_item_list_v2_response_data_items_inner_item_info_data.go 生成
+// 不要手动编辑。
 
 import type { StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoDataRealTimeAdConvertData, StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoDataRealTimeEffectData, StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoDataRealTimeNaturalConvertData } from "../models/index";
 

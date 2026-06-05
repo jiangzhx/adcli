@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_config_v3_0_response_data_industry_config.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_config_v3_0_response_data_industry_config.go 生成
+// 不要手动编辑。
 
 import type { AdvertiserDeliveryPkgConfigV30DataIndustryConfigIndustryStatus, AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigNecessariesInner, AdvertiserDeliveryPkgConfigV30ResponseDataIndustryConfigUnnecessariesInner } from "../models/index";
 

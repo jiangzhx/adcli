@@ -1,11 +1,11 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_audience_interest_action_list_v2_filtering_action_scene.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_audience_interest_action_list_v2_filtering_action_scene.go 生成
+// 不要手动编辑。
 
 export const ReportAudienceInterestActionListV2FilteringActionScene = {
-  E_COMMERCE: "E-COMMERCE",
   NEWS: "NEWS",
-  SEARCH: "SEARCH",
   APP: "APP",
+  E_COMMERCE: "E-COMMERCE",
+  SEARCH: "SEARCH",
   AD: "AD",
 } as const;
 

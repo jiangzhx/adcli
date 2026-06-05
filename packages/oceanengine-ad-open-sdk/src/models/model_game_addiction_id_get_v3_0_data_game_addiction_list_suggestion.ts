@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_game_addiction_id_get_v3_0_data_game_addiction_list_suggestion.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_game_addiction_id_get_v3_0_data_game_addiction_list_suggestion.go 生成
+// 不要手动编辑。
 
 export const GameAddictionIdGetV30DataGameAddictionListSuggestion = {
   ACTIVATION_LOW_BEHAVIOR_HIGH: "ACTIVATION_LOW_BEHAVIOR_HIGH",

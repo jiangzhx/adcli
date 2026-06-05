@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_rubeex_get_v2_response_data_list_inner_metrics.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_rubeex_get_v2_response_data_list_inner_metrics.go 生成
+// 不要手动编辑。
 
 export interface ReportRubeexGetV2ResponseDataListInnerMetrics {
   click_cnt?: number;

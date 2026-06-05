@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_response_data_list_inner_blue_flow_package.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_response_data_list_inner_blue_flow_package.go 生成
+// 不要手动编辑。
 
 import type { PromotionListV30DataListBlueFlowPackageBlueFlowPackageSetting } from "../models/index";
 

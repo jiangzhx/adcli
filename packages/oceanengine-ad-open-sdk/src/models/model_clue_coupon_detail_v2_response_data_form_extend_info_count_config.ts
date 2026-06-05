@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_coupon_detail_v2_response_data_form_extend_info_count_config.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_coupon_detail_v2_response_data_form_extend_info_count_config.go 生成
+// 不要手动编辑。
 
 import type { ClueCouponDetailV2DataFormExtendInfoCountConfigCountType } from "../models/index";
 

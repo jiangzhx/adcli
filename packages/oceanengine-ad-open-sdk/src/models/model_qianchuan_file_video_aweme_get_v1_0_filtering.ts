@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_file_video_aweme_get_v1_0_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_file_video_aweme_get_v1_0_filtering.go 生成
+// 不要手动编辑。
 
 export interface QianchuanFileVideoAwemeGetV10Filtering {
   aweme_item_ids?: (number | string)[];

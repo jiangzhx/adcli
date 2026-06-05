@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_adv_perennially_punish_v2_punish_reason.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_adv_perennially_punish_v2_punish_reason.go 生成
+// 不要手动编辑。
 
 export const AgentAdvPerenniallyPunishV2PunishReason = {
   BUSINESS_OPERATIING_REQUIREMENTS: "BUSINESS_OPERATIING_REQUIREMENTS",

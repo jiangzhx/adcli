@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_native_anchor_get_detail_v3_0_data_list_insurance_enterprise_anchor_conversion_btn.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_native_anchor_get_detail_v3_0_data_list_insurance_enterprise_anchor_conversion_btn.go 生成
+// 不要手动编辑。
 
 export const NativeAnchorGetDetailV30DataListInsuranceEnterpriseAnchorConversionBtn = {
   BUY_NOW: "BUY_NOW",

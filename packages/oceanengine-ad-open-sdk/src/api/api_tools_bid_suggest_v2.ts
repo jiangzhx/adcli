@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_bid_suggest_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_bid_suggest_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsBidSuggestV2Ac, ToolsBidSuggestV2ActionDays, ToolsBidSuggestV2ActionScene, ToolsBidSuggestV2ActivateType, ToolsBidSuggestV2Age, ToolsBidSuggestV2AndroidOsv, ToolsBidSuggestV2AppBehaviorTarget, ToolsBidSuggestV2ArticleCategory, ToolsBidSuggestV2AutoExtendTargets, ToolsBidSuggestV2AwemeFanBehaviors, ToolsBidSuggestV2AwemeFanTimeScope, ToolsBidSuggestV2BidMode, ToolsBidSuggestV2BudgetMode, ToolsBidSuggestV2Career, ToolsBidSuggestV2Carrier, ToolsBidSuggestV2ConvertedTimeDuration, ToolsBidSuggestV2DeviceBrand, ToolsBidSuggestV2DeviceType, ToolsBidSuggestV2District, ToolsBidSuggestV2DpaLocalAudience, ToolsBidSuggestV2DpaRtaRecommendType, ToolsBidSuggestV2DpaRtaSwitch, ToolsBidSuggestV2ExcludeCustomActionsInner, ToolsBidSuggestV2FilterAwemeAbnormalActive, ToolsBidSuggestV2FilterOwnAwemeFans, ToolsBidSuggestV2FlowControlMode, ToolsBidSuggestV2Gender, ToolsBidSuggestV2GeolocationInner, ToolsBidSuggestV2HideIfConverted, ToolsBidSuggestV2HideIfExists, ToolsBidSuggestV2IncludeCustomActionsInner, ToolsBidSuggestV2InterestActionMode, ToolsBidSuggestV2IosOsv, ToolsBidSuggestV2LocationType, ToolsBidSuggestV2Platform, ToolsBidSuggestV2Pricing, ToolsBidSuggestV2Response, ToolsBidSuggestV2RetargetingType, ToolsBidSuggestV2ScheduleType, ToolsBidSuggestV2SuperiorPopularityType } from "../models/index";

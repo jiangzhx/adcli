@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_ebp_product_detail_get_v3_0_data_list_spu_source.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_ebp_product_detail_get_v3_0_data_list_spu_source.go 生成
+// 不要手动编辑。
 
 export const DpaEbpProductDetailGetV30DataListSpuSource = {
   YUNTU_SPU: "YUNTU_SPU",

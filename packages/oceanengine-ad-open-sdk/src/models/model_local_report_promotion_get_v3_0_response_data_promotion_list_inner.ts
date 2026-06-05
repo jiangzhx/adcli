@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_report_promotion_get_v3_0_response_data_promotion_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_report_promotion_get_v3_0_response_data_promotion_list_inner.go 生成
+// 不要手动编辑。
 
 export interface LocalReportPromotionGetV30ResponseDataPromotionListInner {
   attribution_clue_confirm?: number;

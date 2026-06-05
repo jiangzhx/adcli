@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_file_material_attributes_list_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_file_material_attributes_list_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { FileMaterialAttributesListV2AccountType, FileMaterialAttributesListV2Filtering, FileMaterialAttributesListV2Response } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_smartphone_create_v2_call_display.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_smartphone_create_v2_call_display.go 生成
+// 不要手动编辑。
 
 export const ClueSmartphoneCreateV2CallDisplay = {
   Enum_0: 0,

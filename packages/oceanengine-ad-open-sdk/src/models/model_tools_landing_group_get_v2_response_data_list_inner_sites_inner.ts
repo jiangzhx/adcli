@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_landing_group_get_v2_response_data_list_inner_sites_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_landing_group_get_v2_response_data_list_inner_sites_inner.go 生成
+// 不要手动编辑。
 
 import type { ToolsLandingGroupGetV2DataListSitesSiteAuditStatus, ToolsLandingGroupGetV2DataListSitesSiteOptStatus } from "../models/index";
 

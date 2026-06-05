@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_get_v3_0_data_delivery_pkg_necessary_combine_delivery_rules_deliveries_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_advertiser_delivery_pkg_get_v3_0_data_delivery_pkg_necessary_combine_delivery_rules_deliveries_status.go 生成
+// 不要手动编辑。
 
 export const AdvertiserDeliveryPkgGetV30DataDeliveryPkgNecessaryCombineDeliveryRulesDeliveriesStatus = {
   STATUS_CONFIRM: "STATUS_CONFIRM",

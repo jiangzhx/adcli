@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_auth_list_get_v1_0_response_data_authorization_infos_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_auth_list_get_v1_0_response_data_authorization_infos_inner.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAwemeAuthListGetV10DataAuthorizationInfosAuthRange, QianchuanAwemeAuthListGetV10DataAuthorizationInfosAuthSource, QianchuanAwemeAuthListGetV10DataAuthorizationInfosAuthStatus, QianchuanAwemeAuthListGetV10DataAuthorizationInfosAuthType, QianchuanAwemeAuthListGetV10ResponseDataAuthorizationInfosInnerAuthVideoInfo } from "../models/index";
 

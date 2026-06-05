@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_wechat_applet_create_v3_0_payment_form.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_wechat_applet_create_v3_0_payment_form.go 生成
+// 不要手动编辑。
 
 export const ToolsWechatAppletCreateV30PaymentForm = {
   BOTH_OPTIONS_AVAILABLE: "BOTH_OPTIONS_AVAILABLE",

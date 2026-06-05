@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_coupon_create_v2_activity_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_coupon_create_v2_activity_type.go 生成
+// 不要手动编辑。
 
 export const ClueCouponCreateV2ActivityType = {
   DIRECT_NEED_PHONE: "DIRECT_NEED_PHONE",

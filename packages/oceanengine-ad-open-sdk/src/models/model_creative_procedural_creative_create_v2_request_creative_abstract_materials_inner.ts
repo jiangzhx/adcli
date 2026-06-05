@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_procedural_creative_create_v2_request_creative_abstract_materials_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_procedural_creative_create_v2_request_creative_abstract_materials_inner.go 生成
+// 不要手动编辑。
 
 import type { CreativeProceduralCreativeCreateV2RequestCreativeAbstractMaterialsInnerStructAbstractInfo, CreativeProceduralCreativeCreateV2RequestCreativeAbstractMaterialsInnerTextAbstractInfo } from "../models/index";
 

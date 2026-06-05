@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_clue_refund_report_get_v2_response_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_clue_refund_report_get_v2_response_data.go 生成
+// 不要手动编辑。
 
 export interface ToolsClueRefundReportGetV2ResponseData {
   advertiser_id?: number | string;

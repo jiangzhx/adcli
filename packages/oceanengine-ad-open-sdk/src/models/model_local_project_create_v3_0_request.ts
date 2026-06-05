@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_create_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { LocalProjectCreateV30AdType, LocalProjectCreateV30AigcDynamicCreativeSwitch, LocalProjectCreateV30AutoUpdatePois, LocalProjectCreateV30BidType, LocalProjectCreateV30BudgetMode, LocalProjectCreateV30DeliveryGoal, LocalProjectCreateV30DeliveryPackage, LocalProjectCreateV30DeliveryPoiMode, LocalProjectCreateV30ExternalAction, LocalProjectCreateV30IntelligentSelectionMode, LocalProjectCreateV30LocalAssetType, LocalProjectCreateV30LocalDeliveryScene, LocalProjectCreateV30MarketingGoal, LocalProjectCreateV30PeakHolidays, LocalProjectCreateV30PeakWeekDays, LocalProjectCreateV30RequestAudience, LocalProjectCreateV30ScheduleType } from "../models/index";
 

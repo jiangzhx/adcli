@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_advertiser_avatar_get_v2_data_source_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_advertiser_avatar_get_v2_data_source_status.go 生成
+// 不要手动编辑。
 
 export const AdvertiserAvatarGetV2DataSourceStatus = {
   UNSET: "UNSET",

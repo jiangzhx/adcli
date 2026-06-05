@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_control_task_list_v1_0_filtering_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_control_task_list_v1_0_filtering_external_action.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniPromotionAdControlTaskListV10FilteringExternalAction = {
   AD_CONVERT_TYPE_LIVE_PAY_ROI: "AD_CONVERT_TYPE_LIVE_PAY_ROI",

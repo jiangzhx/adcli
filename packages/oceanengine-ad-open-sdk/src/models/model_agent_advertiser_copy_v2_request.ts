@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_advertiser_copy_v2_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_advertiser_copy_v2_request.go 生成
+// 不要手动编辑。
 
 import type { AgentAdvertiserCopyV2ReportType, AgentAdvertiserCopyV2RequestItemInner } from "../models/index";
 

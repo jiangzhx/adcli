@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_query_invoice_detail_self_v2_response_data_cus_qualification_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_query_invoice_detail_self_v2_response_data_cus_qualification_info.go 生成
+// 不要手动编辑。
 
 export interface QueryInvoiceDetailSelfV2ResponseDataCusQualificationInfo {
   customer_address?: string;

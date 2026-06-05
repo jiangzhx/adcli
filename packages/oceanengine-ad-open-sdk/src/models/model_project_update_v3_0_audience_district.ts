@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_update_v3_0_audience_district.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_update_v3_0_audience_district.go 生成
+// 不要手动编辑。
 
 export const ProjectUpdateV30AudienceDistrict = {
   BUSINESS_DISTRICT: "BUSINESS_DISTRICT",

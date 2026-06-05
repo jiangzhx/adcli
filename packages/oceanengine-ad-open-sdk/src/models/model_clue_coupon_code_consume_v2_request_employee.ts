@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_clue_coupon_code_consume_v2_request_employee.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_clue_coupon_code_consume_v2_request_employee.go 生成
+// 不要手动编辑。
 
 import type { ClueCouponCodeConsumeV2EmployeeUserType } from "../models/index";
 

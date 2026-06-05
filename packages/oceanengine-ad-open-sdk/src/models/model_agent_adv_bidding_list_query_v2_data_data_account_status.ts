@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_adv_bidding_list_query_v2_data_data_account_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_adv_bidding_list_query_v2_data_data_account_status.go 生成
+// 不要手动编辑。
 
 export const AgentAdvBiddingListQueryV2DataDataAccountStatus = {
   STATUS_DISABLE: "STATUS_DISABLE",

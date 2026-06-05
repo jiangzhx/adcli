@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_cost_protect_status_get_v3_0_data_compensate_status_info_list_compensate_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_cost_protect_status_get_v3_0_data_compensate_status_info_list_compensate_status.go 生成
+// 不要手动编辑。
 
 export const PromotionCostProtectStatusGetV30DataCompensateStatusInfoListCompensateStatus = {
   DEFAULT_STATUS: "DEFAULT_STATUS",

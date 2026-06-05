@@ -4,10 +4,16 @@ import { spawnSync } from "node:child_process";
 
 const packageRoot = new URL("..", import.meta.url).pathname;
 const distDir = join(packageRoot, "dist");
+const tscBin = join(
+  packageRoot,
+  "node_modules",
+  ".bin",
+  process.platform === "win32" ? "tsc.cmd" : "tsc",
+);
 
 await rm(distDir, { recursive: true, force: true });
 
-const result = spawnSync("tsc", ["-p", "tsconfig.build.json"], {
+const result = spawnSync(tscBin, ["-p", "tsconfig.build.json"], {
   cwd: packageRoot,
   stdio: "inherit",
 });

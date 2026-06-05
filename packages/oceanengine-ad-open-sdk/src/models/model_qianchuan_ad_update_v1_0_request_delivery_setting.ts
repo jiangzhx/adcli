@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_update_v1_0_request_delivery_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_update_v1_0_request_delivery_setting.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAdUpdateV10DeliverySettingLiveScheduleType, QianchuanAdUpdateV10DeliverySettingQcpxMode, QianchuanAdUpdateV10DeliverySettingVideoScheduleType } from "../models/index";
 

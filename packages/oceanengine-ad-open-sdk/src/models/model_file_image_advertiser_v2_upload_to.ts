@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_image_advertiser_v2_upload_to.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_image_advertiser_v2_upload_to.go 生成
+// 不要手动编辑。
 
 export const FileImageAdvertiserV2UploadTo = {
   AD: "AD",

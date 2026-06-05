@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_im_send_msg_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_im_send_msg_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { LocalImSendMsgV30Scene, LocalImSendMsgV30SourceName } from "../models/index";
 

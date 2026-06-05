@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_audience_package_create_v2_hide_if_exists.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_audience_package_create_v2_hide_if_exists.go 生成
+// 不要手动编辑。
 
 export const AudiencePackageCreateV2HideIfExists = {
   Enum_0: 0,

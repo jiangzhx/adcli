@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_today_live_room_data_get_v1_0_data_topic.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_report_today_live_room_data_get_v1_0_data_topic.go 生成
+// 不要手动编辑。
 
 export const QianchuanReportTodayLiveRoomDataGetV10DataTopic = {
   ROOM_FLOW_PERFORMANCE: "ROOM_FLOW_PERFORMANCE",

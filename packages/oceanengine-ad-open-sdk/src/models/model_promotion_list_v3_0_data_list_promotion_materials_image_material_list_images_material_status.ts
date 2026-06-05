@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_materials_image_material_list_images_material_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_materials_image_material_list_images_material_status.go 生成
+// 不要手动编辑。
 
 export const PromotionListV30DataListPromotionMaterialsImageMaterialListImagesMaterialStatus = {
   MATERIAL_STATUS_ADV_OFFLINE_BUDGET: "MATERIAL_STATUS_ADV_OFFLINE_BUDGET",

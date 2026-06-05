@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_wechat_game_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_wechat_game_create_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsWechatGameCreateV30AccountType, ToolsWechatGameCreateV30AgeLimit, ToolsWechatGameCreateV30MaxPaymentTierRange, ToolsWechatGameCreateV30MidPaymentTierRange, ToolsWechatGameCreateV30MinPaymentTierRange, ToolsWechatGameCreateV30RequestAnchorList, ToolsWechatGameCreateV30RevenueModel, ToolsWechatGameCreateV30ScheduleCards } from "../models/index";
 

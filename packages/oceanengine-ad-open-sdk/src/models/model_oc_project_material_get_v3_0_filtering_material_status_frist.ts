@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_oc_project_material_get_v3_0_filtering_material_status_frist.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_oc_project_material_get_v3_0_filtering_material_status_frist.go 生成
+// 不要手动编辑。
 
 export const OcProjectMaterialGetV30FilteringMaterialStatusFrist = {
   STATUS_DELETE: "STATUS_DELETE",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_creative_create_v3_0_request_category_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_creative_create_v3_0_request_category_info.go 生成
+// 不要手动编辑。
 
 export interface BrandCreativeCreateV30RequestCategoryInfo {
   ad_key_word?: string[];

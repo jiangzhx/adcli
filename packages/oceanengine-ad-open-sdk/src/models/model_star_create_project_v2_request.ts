@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_create_project_v2_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_create_project_v2_request.go 生成
+// 不要手动编辑。
 
 export interface StarCreateProjectV2Request {
   demander_id: number | string;

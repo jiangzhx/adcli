@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_audience_gender_v2_response_data_metrics_dict.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_audience_gender_v2_response_data_metrics_dict.go 生成
+// 不要手动编辑。
 
 export interface ReportAudienceGenderV2ResponseDataMetricsDict {
   click?: number;

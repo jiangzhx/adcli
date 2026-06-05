@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_album_status_get_v3_0_data_can_not_promotion_reason.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_album_status_get_v3_0_data_can_not_promotion_reason.go 生成
+// 不要手动编辑。
 
 export const DpaAlbumStatusGetV30DataCanNotPromotionReason = {
   RESOURCE_NOT_EXIST: "RESOURCE_NOT_EXIST",

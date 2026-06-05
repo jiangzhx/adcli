@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_event_convert_optimized_goal_get_v3_0_data_goals_asset_types.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_event_convert_optimized_goal_get_v3_0_data_goals_asset_types.go 生成
+// 不要手动编辑。
 
 export const ToolsEventConvertOptimizedGoalGetV30DataGoalsAssetTypes = {
   MINI_PROGRAME: "MINI_PROGRAME",

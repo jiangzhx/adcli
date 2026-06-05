@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_quality_submit_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_quality_submit_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { FileQualitySubmitV30MaterialChannel, FileQualitySubmitV30MaterialType } from "../models/index";
 

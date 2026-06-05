@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_query_invoice_detail_v2_response_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_query_invoice_detail_v2_response_data.go 生成
+// 不要手动编辑。
 
 import type { QueryInvoiceDetailV2ResponseDataBillProjectInfoListInner, QueryInvoiceDetailV2ResponseDataCusQualificationInfo, QueryInvoiceDetailV2ResponseDataElectronicReceiveInfo, QueryInvoiceDetailV2ResponseDataPaperReceiveInfo, QueryInvoiceDetailV2ResponseDataPaperSendInfo } from "../models/index";
 

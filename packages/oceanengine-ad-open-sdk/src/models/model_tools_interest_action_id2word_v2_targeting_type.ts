@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_interest_action_id2word_v2_targeting_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_interest_action_id2word_v2_targeting_type.go 生成
+// 不要手动编辑。
 
 export const ToolsInterestActionId2wordV2TargetingType = {
   INTEREST: "INTEREST",

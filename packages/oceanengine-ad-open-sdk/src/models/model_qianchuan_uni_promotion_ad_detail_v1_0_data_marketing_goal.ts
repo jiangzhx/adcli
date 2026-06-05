@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_detail_v1_0_data_marketing_goal.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_detail_v1_0_data_marketing_goal.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniPromotionAdDetailV10DataMarketingGoal = {
   LIVE_PROM_GOODS: "LIVE_PROM_GOODS",

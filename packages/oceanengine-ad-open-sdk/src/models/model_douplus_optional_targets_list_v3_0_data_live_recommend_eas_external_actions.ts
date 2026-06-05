@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_douplus_optional_targets_list_v3_0_data_live_recommend_eas_external_actions.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_douplus_optional_targets_list_v3_0_data_live_recommend_eas_external_actions.go 生成
+// 不要手动编辑。
 
 export const DouplusOptionalTargetsListV30DataLiveRecommendEasExternalActions = {
   COMMENT_LINK_CLICK: "COMMENT_LINK_CLICK",

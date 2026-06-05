@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_country_info_v2_data_districts_description.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_country_info_v2_data_districts_description.go 生成
+// 不要手动编辑。
 
 export const ToolsCountryInfoV2DataDistrictsDescription = {
   COUNTRY: "COUNTRY",

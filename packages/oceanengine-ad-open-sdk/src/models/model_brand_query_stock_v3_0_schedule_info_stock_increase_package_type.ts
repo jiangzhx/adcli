@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_query_stock_v3_0_schedule_info_stock_increase_package_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_query_stock_v3_0_schedule_info_stock_increase_package_type.go 生成
+// 不要手动编辑。
 
 export const BrandQueryStockV30ScheduleInfoStockIncreasePackageType = {
   NONE: "NONE",

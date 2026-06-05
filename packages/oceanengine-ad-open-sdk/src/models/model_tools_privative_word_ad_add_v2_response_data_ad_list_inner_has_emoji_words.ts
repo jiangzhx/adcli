@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_privative_word_ad_add_v2_response_data_ad_list_inner_has_emoji_words.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_privative_word_ad_add_v2_response_data_ad_list_inner_has_emoji_words.go 生成
+// 不要手动编辑。
 
 export interface ToolsPrivativeWordAdAddV2ResponseDataAdListInnerHasEmojiWords {
   phrase_words?: string[];

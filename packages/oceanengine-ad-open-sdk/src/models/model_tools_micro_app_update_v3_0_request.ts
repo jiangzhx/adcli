@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_micro_app_update_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_micro_app_update_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsMicroAppUpdateV30MaxPaymentTierRange, ToolsMicroAppUpdateV30MaxRechargeTier, ToolsMicroAppUpdateV30MembershipType, ToolsMicroAppUpdateV30MidPaymentTierRange, ToolsMicroAppUpdateV30MinPaymentTierRange, ToolsMicroAppUpdateV30MinRechargeTier, ToolsMicroAppUpdateV30PaymentForm, ToolsMicroAppUpdateV30RecommendedRechargeTier, ToolsMicroAppUpdateV30RequestAppPageInner, ToolsMicroAppUpdateV30RevenueModel } from "../models/index";
 

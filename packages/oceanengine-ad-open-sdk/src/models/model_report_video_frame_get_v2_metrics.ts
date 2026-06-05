@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_video_frame_get_v2_metrics.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_video_frame_get_v2_metrics.go 生成
+// 不要手动编辑。
 
 export const ReportVideoFrameGetV2Metrics = {
   CLICK_CNT: "click_cnt",

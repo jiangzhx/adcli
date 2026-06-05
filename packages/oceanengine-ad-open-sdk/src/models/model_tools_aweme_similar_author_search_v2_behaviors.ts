@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_aweme_similar_author_search_v2_behaviors.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_aweme_similar_author_search_v2_behaviors.go 生成
+// 不要手动编辑。
 
 export const ToolsAwemeSimilarAuthorSearchV2Behaviors = {
   COMMENTED_USER: "COMMENTED_USER",

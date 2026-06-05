@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_create_v3_0_delivery_package.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_create_v3_0_delivery_package.go 生成
+// 不要手动编辑。
 
 export const LocalProjectCreateV30DeliveryPackage = {
   DELIVERY_PACKAGE_NORMAL: "DELIVERY_PACKAGE_NORMAL",

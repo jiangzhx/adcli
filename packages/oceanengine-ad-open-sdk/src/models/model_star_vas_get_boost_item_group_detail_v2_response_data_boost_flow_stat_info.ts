@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_vas_get_boost_item_group_detail_v2_response_data_boost_flow_stat_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_vas_get_boost_item_group_detail_v2_response_data_boost_flow_stat_info.go 生成
+// 不要手动编辑。
 
 export interface StarVasGetBoostItemGroupDetailV2ResponseDataBoostFlowStatInfo {
   comment: number;

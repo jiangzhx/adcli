@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_union_flow_package_report_v2_order_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_union_flow_package_report_v2_order_type.go 生成
+// 不要手动编辑。
 
 export const ToolsUnionFlowPackageReportV2OrderType = {
   ASC: "ASC",

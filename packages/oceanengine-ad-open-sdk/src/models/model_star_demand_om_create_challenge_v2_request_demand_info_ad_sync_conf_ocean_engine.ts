@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_om_create_challenge_v2_request_demand_info_ad_sync_conf_ocean_engine.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_om_create_challenge_v2_request_demand_info_ad_sync_conf_ocean_engine.go 生成
+// 不要手动编辑。
 
 export interface StarDemandOmCreateChallengeV2RequestDemandInfoAdSyncConfOceanEngine {
   ad_sync?: number;

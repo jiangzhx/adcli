@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_create_v1_0_multi_product_creative_list_title_material_title_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_create_v1_0_multi_product_creative_list_title_material_title_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanUniAwemeAdCreateV10MultiProductCreativeListTitleMaterialTitleType = {
   COMMODITY_CARD: "COMMODITY_CARD",

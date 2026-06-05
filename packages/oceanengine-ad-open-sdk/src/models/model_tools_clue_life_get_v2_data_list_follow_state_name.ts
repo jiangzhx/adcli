@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_clue_life_get_v2_data_list_follow_state_name.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_clue_life_get_v2_data_list_follow_state_name.go 生成
+// 不要手动编辑。
 
 export const ToolsClueLifeGetV2DataListFollowStateName = {
   NOT_CALLED: "NOT_CALLED",

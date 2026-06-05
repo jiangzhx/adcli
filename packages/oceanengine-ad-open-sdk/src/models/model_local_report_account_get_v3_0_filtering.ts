@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_report_account_get_v3_0_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_report_account_get_v3_0_filtering.go 生成
+// 不要手动编辑。
 
 import type { LocalReportAccountGetV30FilteringCampaignType, LocalReportAccountGetV30FilteringDeliveryMode, LocalReportAccountGetV30FilteringExternalAction, LocalReportAccountGetV30FilteringLocalDeliveryScene, LocalReportAccountGetV30FilteringMarketingGoal } from "../models/index";
 

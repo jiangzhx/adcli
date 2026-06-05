@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_douplus_optional_items_list_v3_0_external_action.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_douplus_optional_items_list_v3_0_external_action.go 生成
+// 不要手动编辑。
 
 export const DouplusOptionalItemsListV30ExternalAction = {
   COMMENT_LINK_CLICK: "COMMENT_LINK_CLICK",

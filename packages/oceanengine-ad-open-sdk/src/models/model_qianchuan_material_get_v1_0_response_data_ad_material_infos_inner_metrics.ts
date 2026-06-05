@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_material_get_v1_0_response_data_ad_material_infos_inner_metrics.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_material_get_v1_0_response_data_ad_material_infos_inner_metrics.go 生成
+// 不要手动编辑。
 
 export interface QianchuanMaterialGetV10ResponseDataAdMaterialInfosInnerMetrics {
   all_order_create_roi_7days?: number;

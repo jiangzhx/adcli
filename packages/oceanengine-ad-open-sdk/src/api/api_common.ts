@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_common.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_common.go 生成
+// 不要手动编辑。
 
 import { ApiClient, type ApiResponse, type QueryParam } from "./client";
 import type { CommonResponse } from "../models/index";

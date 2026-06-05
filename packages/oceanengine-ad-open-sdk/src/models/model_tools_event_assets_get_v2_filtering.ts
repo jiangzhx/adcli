@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_event_assets_get_v2_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_event_assets_get_v2_filtering.go 生成
+// 不要手动编辑。
 
 import type { ToolsEventAssetsGetV2FilteringApp, ToolsEventAssetsGetV2FilteringLandingPage, ToolsEventAssetsGetV2FilteringMiniProgram, ToolsEventAssetsGetV2FilteringQuickApp } from "../models/index";
 

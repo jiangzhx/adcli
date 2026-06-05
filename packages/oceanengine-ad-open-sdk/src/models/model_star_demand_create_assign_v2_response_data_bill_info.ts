@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_create_assign_v2_response_data_bill_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_create_assign_v2_response_data_bill_info.go 生成
+// 不要手动编辑。
 
 import type { StarDemandCreateAssignV2ResponseDataBillInfoOrderBillListInner } from "../models/index";
 

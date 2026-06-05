@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_request_project_materials.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_request_project_materials.go 生成
+// 不要手动编辑。
 
 import type { StdProjectUpdateV30ProjectMaterialsAnchorRelatedType, StdProjectUpdateV30ProjectMaterialsOriginalVideoTitle, StdProjectUpdateV30ProjectMaterialsUlinkUrlType, StdProjectUpdateV30RequestProjectMaterialsAnchorMaterialListInner, StdProjectUpdateV30RequestProjectMaterialsComponentMaterialListInner, StdProjectUpdateV30RequestProjectMaterialsProductInfo } from "../models/index";
 

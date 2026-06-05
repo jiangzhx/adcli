@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_query_invoice_self_v2_invoice_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_query_invoice_self_v2_invoice_type.go 生成
+// 不要手动编辑。
 
 export const QueryInvoiceSelfV2InvoiceType = {
   GENERAL: "GENERAL",

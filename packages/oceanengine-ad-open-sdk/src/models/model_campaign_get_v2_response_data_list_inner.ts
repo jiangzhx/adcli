@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_campaign_get_v2_response_data_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_campaign_get_v2_response_data_list_inner.go 生成
+// 不要手动编辑。
 
 import type { CampaignGetV2DataListBudgetMode, CampaignGetV2DataListCampaignBudgetOptimization, CampaignGetV2DataListCampaignType, CampaignGetV2DataListDedicateType, CampaignGetV2DataListDeliveryMode, CampaignGetV2DataListDeliveryRelatedNum, CampaignGetV2DataListLandingType, CampaignGetV2DataListMarketingPurpose, CampaignGetV2DataListMarketingScene, CampaignGetV2DataListSmartBidType, CampaignGetV2DataListStatus } from "../models/index";
 

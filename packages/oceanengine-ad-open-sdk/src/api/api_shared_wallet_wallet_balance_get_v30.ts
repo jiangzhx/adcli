@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_shared_wallet_wallet_balance_get_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_shared_wallet_wallet_balance_get_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { SharedWalletWalletBalanceGetV30AccountType, SharedWalletWalletBalanceGetV30Response, SharedWalletWalletBalanceGetV30WalletBalanceFilters } from "../models/index";

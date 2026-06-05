@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_clue_life_get_v2_response_data_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_clue_life_get_v2_response_data_list_inner.go 生成
+// 不要手动编辑。
 
 import type { ToolsClueLifeGetV2DataListActionType, ToolsClueLifeGetV2DataListAdType, ToolsClueLifeGetV2DataListAllocationStatus, ToolsClueLifeGetV2DataListClueType, ToolsClueLifeGetV2DataListConvertStatus, ToolsClueLifeGetV2DataListEffectiveState, ToolsClueLifeGetV2DataListEffectiveStateName, ToolsClueLifeGetV2DataListFlowEntrance, ToolsClueLifeGetV2DataListFlowType, ToolsClueLifeGetV2DataListFollowLifeAccountType, ToolsClueLifeGetV2DataListFollowStateName, ToolsClueLifeGetV2DataListGender, ToolsClueLifeGetV2DataListIsPrivateClue, ToolsClueLifeGetV2DataListLeadsPage, ToolsClueLifeGetV2DataListProductType, ToolsClueLifeGetV2DataListQcpxTicketStatus } from "../models/index";
 
@@ -22,6 +22,7 @@ export interface ToolsClueLifeGetV2ResponseDataListInner {
   clue_owner_name?: string;
   clue_return_status?: string;
   clue_type?: ToolsClueLifeGetV2DataListClueType;
+  component_event_type_tags?: number[];
   content_id?: string;
   convert_status?: ToolsClueLifeGetV2DataListConvertStatus;
   country_name?: string;

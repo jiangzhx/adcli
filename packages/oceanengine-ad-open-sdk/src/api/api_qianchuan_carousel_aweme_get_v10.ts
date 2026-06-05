@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_carousel_aweme_get_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_carousel_aweme_get_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanCarouselAwemeGetV10Filtering, QianchuanCarouselAwemeGetV10OrderField, QianchuanCarouselAwemeGetV10OrderType, QianchuanCarouselAwemeGetV10Response } from "../models/index";

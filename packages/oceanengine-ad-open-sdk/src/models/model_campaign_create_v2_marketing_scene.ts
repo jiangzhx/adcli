@@ -1,16 +1,16 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_campaign_create_v2_marketing_scene.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_campaign_create_v2_marketing_scene.go 生成
+// 不要手动编辑。
 
 export const CampaignCreateV2MarketingScene = {
-  CAR: "CAR",
-  GAME_PROMOTION: "GAME_PROMOTION",
-  EDUCATION: "EDUCATION",
   SOCIAL: "SOCIAL",
-  PROMOTION_PURPOSE: "PROMOTION_PURPOSE",
-  MERCHANTS: "MERCHANTS",
-  NOVEL: "NOVEL",
+  CAR: "CAR",
   GAME_SUBSCRIBE: "GAME_SUBSCRIBE",
+  MERCHANTS: "MERCHANTS",
+  EDUCATION: "EDUCATION",
   ECOMMERCE: "ECOMMERCE",
+  PROMOTION_PURPOSE: "PROMOTION_PURPOSE",
+  NOVEL: "NOVEL",
+  GAME_PROMOTION: "GAME_PROMOTION",
   VIDEO_INFO: "VIDEO_INFO",
 } as const;
 

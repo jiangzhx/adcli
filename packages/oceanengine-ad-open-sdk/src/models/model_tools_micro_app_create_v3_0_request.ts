@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_micro_app_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_micro_app_create_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsMicroAppCreateV30MaxPaymentTierRange, ToolsMicroAppCreateV30MaxRechargeTier, ToolsMicroAppCreateV30MembershipType, ToolsMicroAppCreateV30MidPaymentTierRange, ToolsMicroAppCreateV30MinPaymentTierRange, ToolsMicroAppCreateV30MinRechargeTier, ToolsMicroAppCreateV30PaymentForm, ToolsMicroAppCreateV30RecommendedRechargeTier, ToolsMicroAppCreateV30RequestAppPage, ToolsMicroAppCreateV30RevenueModel } from "../models/index";
 

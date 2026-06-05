@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_rubeex_get_v2_filtering_app_code.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_rubeex_get_v2_filtering_app_code.go 生成
+// 不要手动编辑。
 
 export const ReportRubeexGetV2FilteringAppCode = {
   Enum_2: 2,

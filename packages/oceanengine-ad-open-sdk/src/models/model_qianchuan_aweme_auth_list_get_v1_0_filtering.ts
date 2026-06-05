@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_auth_list_get_v1_0_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_auth_list_get_v1_0_filtering.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAwemeAuthListGetV10FilteringAuthRange, QianchuanAwemeAuthListGetV10FilteringAuthStatus, QianchuanAwemeAuthListGetV10FilteringAuthType } from "../models/index";
 

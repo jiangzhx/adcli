@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_budget_group_list_v3_0_filtering_budget_group_status_first.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_budget_group_list_v3_0_filtering_budget_group_status_first.go 生成
+// 不要手动编辑。
 
 export const BudgetGroupListV30FilteringBudgetGroupStatusFirst = {
   DELETED: "DELETED",

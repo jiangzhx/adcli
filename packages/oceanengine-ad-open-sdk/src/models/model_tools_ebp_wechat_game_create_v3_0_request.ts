@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_wechat_game_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_wechat_game_create_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsEbpWechatGameCreateV30AccountType, ToolsEbpWechatGameCreateV30RequestExtra, ToolsEbpWechatGameCreateV30RequestHead, ToolsEbpWechatGameCreateV30RequestIcon, ToolsEbpWechatGameCreateV30RequestMaterialInner } from "../models/index";
 

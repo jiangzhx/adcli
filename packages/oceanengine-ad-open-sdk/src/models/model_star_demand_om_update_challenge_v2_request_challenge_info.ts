@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_om_update_challenge_v2_request_challenge_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_om_update_challenge_v2_request_challenge_info.go 生成
+// 不要手动编辑。
 
 export interface StarDemandOmUpdateChallengeV2RequestChallengeInfo {
   anchor_title?: string;

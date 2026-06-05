@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_report_live_room_audience_portrait_get_v3_0_response_data_list_inner_fields.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_report_live_room_audience_portrait_get_v3_0_response_data_list_inner_fields.go 生成
+// 不要手动编辑。
 
 export interface ReportReportLiveRoomAudiencePortraitGetV30ResponseDataListInnerFields {
   all_avg_live_watch_duration_seconds_td?: number;

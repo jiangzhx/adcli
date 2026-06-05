@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_qualification_get_v3_0_data_industries_promotion_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_qualification_get_v3_0_data_industries_promotion_status.go 生成
+// 不要手动编辑。
 
 export const LocalQualificationGetV30DataIndustriesPromotionStatus = {
   STATUS_CONFIRM: "STATUS_CONFIRM",

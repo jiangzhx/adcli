@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_order_detail_v1_0_response_data_delivery_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_uni_promotion_order_detail_v1_0_response_data_delivery_setting.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingBidType, QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingDeepExternalAction, QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingQcpxMode } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_data_audience_filter_aweme_abnormal_active.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_data_audience_filter_aweme_abnormal_active.go 生成
+// 不要手动编辑。
 
 export const LocalProjectDetailV30DataAudienceFilterAwemeAbnormalActive = {
   FILTER_AWEME_ABNORMAL_ACTIVE_TYPE_OFF: "FILTER_AWEME_ABNORMAL_ACTIVE_TYPE_OFF",

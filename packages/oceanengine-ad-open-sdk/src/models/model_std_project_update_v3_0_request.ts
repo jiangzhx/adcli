@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { StdProjectUpdateV30AigcDynamicCreativeSwitch, StdProjectUpdateV30AudienceType, StdProjectUpdateV30AutoExtendTraffic, StdProjectUpdateV30DownloadMode, StdProjectUpdateV30IsCommentDisable, StdProjectUpdateV30RequestAudience, StdProjectUpdateV30RequestBrandInfo, StdProjectUpdateV30RequestInternalAdvertiserInfo, StdProjectUpdateV30RequestKeywordsInner, StdProjectUpdateV30RequestProjectMaterials, StdProjectUpdateV30RequestTrackUrlSetting, StdProjectUpdateV30ScheduleType, StdProjectUpdateV30SearchContinueDelivery } from "../models/index";
 

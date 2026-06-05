@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_update_v3_0_audience_action_config_action_days.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_update_v3_0_audience_action_config_action_days.go 生成
+// 不要手动编辑。
 
 export const LocalProjectUpdateV30AudienceActionConfigActionDays = {
   ACTIONDAYS_DAY15: "ACTIONDAYS_DAY15",

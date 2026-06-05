@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_query_statement_v2_response_data_project_ref_statement_list_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_query_statement_v2_response_data_project_ref_statement_list_inner.go 生成
+// 不要手动编辑。
 
 import type { QueryStatementV2ResponseDataProjectRefStatementListInnerAttachListInner } from "../models/index";
 

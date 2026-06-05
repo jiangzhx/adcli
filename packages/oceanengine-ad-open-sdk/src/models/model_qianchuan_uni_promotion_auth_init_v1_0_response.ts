@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_auth_init_v1_0_response.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_auth_init_v1_0_response.go 生成
+// 不要手动编辑。
 
 export interface QianchuanUniPromotionAuthInitV10Response {
   code?: number;

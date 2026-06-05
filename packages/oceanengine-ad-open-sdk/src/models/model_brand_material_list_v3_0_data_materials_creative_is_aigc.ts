@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_data_materials_creative_is_aigc.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_data_materials_creative_is_aigc.go 生成
+// 不要手动编辑。
 
 export const BrandMaterialListV30DataMaterialsCreativeIsAigc = {
   Enum_0: "0",

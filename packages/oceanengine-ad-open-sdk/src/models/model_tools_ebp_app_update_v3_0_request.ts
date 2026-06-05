@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_app_update_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_app_update_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { ToolsEbpAppUpdateV30AccountType, ToolsEbpAppUpdateV30FileOption, ToolsEbpAppUpdateV30GameIpType, ToolsEbpAppUpdateV30MaxPaymentTierRange, ToolsEbpAppUpdateV30MaxRechargeTier, ToolsEbpAppUpdateV30MembershipType, ToolsEbpAppUpdateV30MidPaymentTierRange, ToolsEbpAppUpdateV30MinPaymentTierRange, ToolsEbpAppUpdateV30MinRechargeTier, ToolsEbpAppUpdateV30PaymentType, ToolsEbpAppUpdateV30RecommendedRechargeTier, ToolsEbpAppUpdateV30RequestFilesInner, ToolsEbpAppUpdateV30RevenueModel, ToolsEbpAppUpdateV30ScheduleCards } from "../models/index";
 

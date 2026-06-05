@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_creative_strategy_list_v2_response_data_strategy_models_inner_state_list_inner_limit.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_creative_strategy_list_v2_response_data_strategy_models_inner_state_list_inner_limit.go 生成
+// 不要手动编辑。
 
 export interface CreativeStrategyListV2ResponseDataStrategyModelsInnerStateListInnerLimit {
   img_height?: number;

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_reject_material_ai_repair_accept_task_list_v3_0_data_result_list_ai_repair_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_reject_material_ai_repair_accept_task_list_v3_0_data_result_list_ai_repair_status.go 生成
+// 不要手动编辑。
 
 export const RejectMaterialAiRepairAcceptTaskListV30DataResultListAiRepairStatus = {
   SUCCESS: "SUCCESS",

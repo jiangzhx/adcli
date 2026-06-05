@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_custom_audience_list_v3_0_data_audience_package_list_category.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_custom_audience_list_v3_0_data_audience_package_list_category.go 生成
+// 不要手动编辑。
 
 export const BrandCustomAudienceListV30DataAudiencePackageListCategory = {
   COMMON: "COMMON",

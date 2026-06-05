@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_native_anchor_create_v3_0_request_anchor_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_native_anchor_create_v3_0_request_anchor_info.go 生成
+// 不要手动编辑。
 
 import type { NativeAnchorCreateV30AnchorInfoAnchorType, NativeAnchorCreateV30RequestAnchorInfoAppEcommerceAnchor, NativeAnchorCreateV30RequestAnchorInfoGameAnchor, NativeAnchorCreateV30RequestAnchorInfoNetServiceAnchor, NativeAnchorCreateV30RequestAnchorInfoPrivateChat, NativeAnchorCreateV30RequestAnchorInfoShoppingCartAnchor } from "../models/index";
 

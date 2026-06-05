@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_micro_app_create_v3_0_max_recharge_tier.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_micro_app_create_v3_0_max_recharge_tier.go 生成
+// 不要手动编辑。
 
 export const ToolsMicroAppCreateV30MaxRechargeTier = {
   ABOVE_200: "ABOVE_200",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_list_v3_0_response_data_list_inner_optimize_goal.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_list_v3_0_response_data_list_inner_optimize_goal.go 生成
+// 不要手动编辑。
 
 import type { ProjectListV30DataListOptimizeGoalDeepExternalAction, ProjectListV30DataListOptimizeGoalExternalAction } from "../models/index";
 

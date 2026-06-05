@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_custom_async_task_get_v3_0_filtering_data_topics.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_custom_async_task_get_v3_0_filtering_data_topics.go 生成
+// 不要手动编辑。
 
 export const ReportCustomAsyncTaskGetV30FilteringDataTopics = {
   BASIC_DATA: "BASIC_DATA",

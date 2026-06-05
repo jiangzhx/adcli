@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_cg_transfer_wallet_transfer_can_transfer_balance_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_cg_transfer_wallet_transfer_can_transfer_balance_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { CgTransferWalletTransferCanTransferBalanceV30AccountType, CgTransferWalletTransferCanTransferBalanceV30Response, CgTransferWalletTransferCanTransferBalanceV30TransferDirection } from "../models/index";

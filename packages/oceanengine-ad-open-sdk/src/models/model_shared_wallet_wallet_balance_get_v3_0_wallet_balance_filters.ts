@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_balance_get_v3_0_wallet_balance_filters.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_balance_get_v3_0_wallet_balance_filters.go 生成
+// 不要手动编辑。
 
 import type { SharedWalletWalletBalanceGetV30WalletBalanceFiltersAccountPlatformType, SharedWalletWalletBalanceGetV30WalletBalanceFiltersCapitalType, SharedWalletWalletBalanceGetV30WalletBalanceFiltersDeliveryType } from "../models/index";
 

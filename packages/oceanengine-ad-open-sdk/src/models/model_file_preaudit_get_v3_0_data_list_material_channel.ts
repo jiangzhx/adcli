@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_preaudit_get_v3_0_data_list_material_channel.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_preaudit_get_v3_0_data_list_material_channel.go 生成
+// 不要手动编辑。
 
 export const FilePreauditGetV30DataListMaterialChannel = {
   AD: "AD",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_audience_package_get_v3_0_data_audience_packages_filter_event.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_audience_package_get_v3_0_data_audience_packages_filter_event.go 生成
+// 不要手动编辑。
 
 export const AudiencePackageGetV30DataAudiencePackagesFilterEvent = {
   AD_CONVERT_EXTERNAL_ACTION: "AD_CONVERT_EXTERNAL_ACTION",

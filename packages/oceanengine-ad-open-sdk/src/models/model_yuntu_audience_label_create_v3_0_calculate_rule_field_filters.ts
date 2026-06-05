@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_yuntu_audience_label_create_v3_0_calculate_rule_field_filters.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_yuntu_audience_label_create_v3_0_calculate_rule_field_filters.go 生成
+// 不要手动编辑。
 
 export const YuntuAudienceLabelCreateV30CalculateRuleFieldFilters = {
   ASR_CONTENT: "asr_content",

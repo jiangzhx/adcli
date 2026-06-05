@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_related_product_anchor_related_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_related_product_anchor_related_type.go 生成
+// 不要手动编辑。
 
 export const PromotionListV30DataListPromotionRelatedProductAnchorRelatedType = {
   AUTO: "AUTO",

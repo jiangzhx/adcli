@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_report_brand_agent_data_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_report_brand_agent_data_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ReportBrandAgentDataV30DataReportType, ReportBrandAgentDataV30Filter, ReportBrandAgentDataV30Page, ReportBrandAgentDataV30PageType, ReportBrandAgentDataV30Response, ReportBrandAgentDataV30TimeDimension } from "../models/index";

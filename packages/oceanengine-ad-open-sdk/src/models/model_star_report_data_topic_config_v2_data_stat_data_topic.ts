@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_report_data_topic_config_v2_data_stat_data_topic.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_report_data_topic_config_v2_data_stat_data_topic.go 生成
+// 不要手动编辑。
 
 export const StarReportDataTopicConfigV2DataStatDataTopic = {
   BASIC_DATA: "BASIC_DATA",

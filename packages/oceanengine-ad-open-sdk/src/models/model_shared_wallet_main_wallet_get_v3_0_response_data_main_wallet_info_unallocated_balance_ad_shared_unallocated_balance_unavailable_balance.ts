@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_main_wallet_get_v3_0_response_data_main_wallet_info_unallocated_balance_ad_shared_unallocated_balance_unavailable_balance.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_main_wallet_get_v3_0_response_data_main_wallet_info_unallocated_balance_ad_shared_unallocated_balance_unavailable_balance.go 生成
+// 不要手动编辑。
 
 export interface SharedWalletMainWalletGetV30ResponseDataMainWalletInfoUnallocatedBalanceAdSharedUnallocatedBalanceUnavailableBalance {
   prepay_bidding_balance?: number;

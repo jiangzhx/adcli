@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_agent_adv_brand_list_query_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_agent_adv_brand_list_query_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { AgentAdvBrandListQueryV2Filtering, AgentAdvBrandListQueryV2Response } from "../models/index";

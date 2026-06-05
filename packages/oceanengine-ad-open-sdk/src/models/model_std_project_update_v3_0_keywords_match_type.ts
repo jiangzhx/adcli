@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_keywords_match_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_std_project_update_v3_0_keywords_match_type.go 生成
+// 不要手动编辑。
 
 export const StdProjectUpdateV30KeywordsMatchType = {
   EXTENSIVE: "EXTENSIVE",

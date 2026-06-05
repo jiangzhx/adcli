@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_creative_update_v3_0_request_advanced_creative_info_explore_one_time_component_wipe_after_image.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_creative_update_v3_0_request_advanced_creative_info_explore_one_time_component_wipe_after_image.go 生成
+// 不要手动编辑。
 
 export interface BrandCreativeUpdateV30RequestAdvancedCreativeInfoExploreOneTimeComponentWipeAfterImage {
   d?: number;

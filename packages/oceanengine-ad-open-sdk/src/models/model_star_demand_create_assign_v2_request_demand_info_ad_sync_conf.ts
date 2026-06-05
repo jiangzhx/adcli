@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_demand_create_assign_v2_request_demand_info_ad_sync_conf.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_demand_create_assign_v2_request_demand_info_ad_sync_conf.go 生成
+// 不要手动编辑。
 
 import type { StarDemandCreateAssignV2RequestDemandInfoAdSyncConfContentMarketing, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfDouPlus, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfEcomShop, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfLocalPromotion, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfOceanEngine, StarDemandCreateAssignV2RequestDemandInfoAdSyncConfQianchuan } from "../models/index";
 

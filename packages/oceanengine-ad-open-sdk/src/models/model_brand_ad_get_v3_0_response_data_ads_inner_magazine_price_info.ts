@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_response_data_ads_inner_magazine_price_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_response_data_ads_inner_magazine_price_info.go 生成
+// 不要手动编辑。
 
 export interface BrandAdGetV30ResponseDataAdsInnerMagazinePriceInfo {
   actual_magazine_price?: string;

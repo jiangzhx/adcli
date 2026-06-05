@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_project_create_v3_0_request_delivery_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_project_create_v3_0_request_delivery_setting.go 生成
+// 不要手动编辑。
 
 import type { ProjectCreateV30DeliverySettingBidType, ProjectCreateV30DeliverySettingBudgetMode, ProjectCreateV30DeliverySettingBudgetOptimizeSwitch, ProjectCreateV30DeliverySettingDeepBidType, ProjectCreateV30DeliverySettingFilterNightSwitch, ProjectCreateV30DeliverySettingLayerRoiSwitch, ProjectCreateV30DeliverySettingPricing, ProjectCreateV30DeliverySettingProjectCustom, ProjectCreateV30DeliverySettingScheduleType, ProjectCreateV30DeliverySettingSearchContinueDelivery } from "../models/index";
 

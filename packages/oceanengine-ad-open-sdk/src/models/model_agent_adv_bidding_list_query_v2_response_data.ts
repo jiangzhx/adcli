@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_adv_bidding_list_query_v2_response_data.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_adv_bidding_list_query_v2_response_data.go 生成
+// 不要手动编辑。
 
 import type { AgentAdvBiddingListQueryV2ResponseDataDataInner, AgentAdvBiddingListQueryV2ResponseDataPageInfo } from "../models/index";
 

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_budget_submit_v3_0_effective_mode.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_budget_submit_v3_0_effective_mode.go 生成
+// 不要手动编辑。
 
 export const SharedWalletBudgetSubmitV30EffectiveMode = {
   IMMEDIATE: "IMMEDIATE",

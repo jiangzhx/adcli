@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_create_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { PromotionCreateV30AdDownloadStatus, PromotionCreateV30AutoExtendTraffic, PromotionCreateV30BudgetMode, PromotionCreateV30CreativeAutoGenerateSwitch, PromotionCreateV30IsCommentDisable, PromotionCreateV30MaterialsType, PromotionCreateV30Operation, PromotionCreateV30RequestBrandInfo, PromotionCreateV30RequestKeywordsInner, PromotionCreateV30RequestNativeSetting, PromotionCreateV30RequestPromotionMaterials, PromotionCreateV30RequestPromotionRelatedProductInner } from "../models/index";
 

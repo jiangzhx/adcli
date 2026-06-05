@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_campaign_create_v1_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_campaign_create_v1_0_request.go 生成
+// 不要手动编辑。
 
 import type { QianchuanCampaignCreateV10BudgetMode, QianchuanCampaignCreateV10MarketingGoal, QianchuanCampaignCreateV10MarketingScene } from "../models/index";
 

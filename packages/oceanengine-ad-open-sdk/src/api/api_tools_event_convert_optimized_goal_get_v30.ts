@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_tools_event_convert_optimized_goal_get_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_tools_event_convert_optimized_goal_get_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ToolsEventConvertOptimizedGoalGetV30AssetType, ToolsEventConvertOptimizedGoalGetV30CampaignType, ToolsEventConvertOptimizedGoalGetV30LandingType, ToolsEventConvertOptimizedGoalGetV30MarketingPurpose, ToolsEventConvertOptimizedGoalGetV30Response } from "../models/index";

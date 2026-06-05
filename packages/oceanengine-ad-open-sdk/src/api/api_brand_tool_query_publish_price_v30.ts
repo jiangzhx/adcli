@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_brand_tool_query_publish_price_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_brand_tool_query_publish_price_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { BrandToolQueryPublishPriceV30AdForm, BrandToolQueryPublishPriceV30AppOrigin, BrandToolQueryPublishPriceV30AudienceInfo, BrandToolQueryPublishPriceV30Classify, BrandToolQueryPublishPriceV30DeliveryInfo, BrandToolQueryPublishPriceV30FrequencyInfo, BrandToolQueryPublishPriceV30GdSendType, BrandToolQueryPublishPriceV30PricingType, BrandToolQueryPublishPriceV30ProType, BrandToolQueryPublishPriceV30Response } from "../models/index";

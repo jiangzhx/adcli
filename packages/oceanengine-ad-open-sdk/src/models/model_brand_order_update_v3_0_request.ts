@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_order_update_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_order_update_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { BrandOrderUpdateV30RequestAudienceInfo, BrandOrderUpdateV30RequestBookingQuantityInfo, BrandOrderUpdateV30RequestFrequencyInfo } from "../models/index";
 

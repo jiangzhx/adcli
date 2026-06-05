@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_asset_v2_detail_read_v2_data_asset_list_audit_status.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_asset_v2_detail_read_v2_data_asset_list_audit_status.go 生成
+// 不要手动编辑。
 
 export const DpaAssetV2DetailReadV2DataAssetListAuditStatus = {
   REVIEW_FAIL: "REVIEW_FAIL",

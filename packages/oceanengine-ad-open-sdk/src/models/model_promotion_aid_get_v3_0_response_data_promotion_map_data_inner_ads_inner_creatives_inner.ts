@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_promotion_aid_get_v3_0_response_data_promotion_map_data_inner_ads_inner_creatives_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_promotion_aid_get_v3_0_response_data_promotion_map_data_inner_ads_inner_creatives_inner.go 生成
+// 不要手动编辑。
 
 import type { PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerImageMaterials, PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerTitleMaterial, PromotionAidGetV30ResponseDataPromotionMapDataInnerAdsInnerCreativesInnerVideoMaterial } from "../models/index";
 

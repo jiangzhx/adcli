@@ -1,10 +1,10 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_ad_get_v2_data_promotion_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_ad_get_v2_data_promotion_type.go 生成
+// 不要手动编辑。
 
 export const AdGetV2DataPromotionType = {
-  GOODS: "GOODS",
-  LANDING_PAGE_LINK: "LANDING_PAGE_LINK",
   AWEME_HOME_PAGE: "AWEME_HOME_PAGE",
+  LANDING_PAGE_LINK: "LANDING_PAGE_LINK",
+  GOODS: "GOODS",
   LIVE: "LIVE",
 } as const;
 

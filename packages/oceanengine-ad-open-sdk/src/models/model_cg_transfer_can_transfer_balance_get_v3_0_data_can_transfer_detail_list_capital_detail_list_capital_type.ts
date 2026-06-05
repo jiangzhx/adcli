@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_cg_transfer_can_transfer_balance_get_v3_0_data_can_transfer_detail_list_capital_detail_list_capital_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_cg_transfer_can_transfer_balance_get_v3_0_data_can_transfer_detail_list_capital_detail_list_capital_type.go 生成
+// 不要手动编辑。
 
 export const CgTransferCanTransferBalanceGetV30DataCanTransferDetailListCapitalDetailListCapitalType = {
   CREDIT_BIDDING: "CREDIT_BIDDING",

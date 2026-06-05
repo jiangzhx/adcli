@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_prepay_charge_generate_remittance_code_create_v3_0_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_prepay_charge_generate_remittance_code_create_v3_0_request.go 生成
+// 不要手动编辑。
 
 import type { PrepayChargeGenerateRemittanceCodeCreateV30Caller, PrepayChargeGenerateRemittanceCodeCreateV30ChargeTargetType, PrepayChargeGenerateRemittanceCodeCreateV30ChargeType, PrepayChargeGenerateRemittanceCodeCreateV30Platform, PrepayChargeGenerateRemittanceCodeCreateV30RequestContractInfo } from "../models/index";
 

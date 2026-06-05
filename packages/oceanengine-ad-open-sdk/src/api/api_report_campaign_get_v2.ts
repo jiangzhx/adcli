@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_report_campaign_get_v2.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_report_campaign_get_v2.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { ReportCampaignGetV2Filtering, ReportCampaignGetV2GroupBy, ReportCampaignGetV2OrderField, ReportCampaignGetV2OrderType, ReportCampaignGetV2Response, ReportCampaignGetV2TimeGranularity } from "../models/index";

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_data_aigc_dynamic_creative_switch.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_data_aigc_dynamic_creative_switch.go 生成
+// 不要手动编辑。
 
 export const LocalProjectDetailV30DataAigcDynamicCreativeSwitch = {
   AIGC_DYNAMIC_CREATIVE_SWITCH_OFF: "AIGC_DYNAMIC_CREATIVE_SWITCH_OFF",

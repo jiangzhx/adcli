@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_ad_get_v1_0_data_list_lab_ad_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_get_v1_0_data_list_lab_ad_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanAdGetV10DataListLabAdType = {
   LAB_AD: "LAB_AD",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_qianchuan_suggest_roi_goal_v10.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_qianchuan_suggest_roi_goal_v10.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { QianchuanSuggestRoiGoalV10CampaignScene, QianchuanSuggestRoiGoalV10DeepBidType, QianchuanSuggestRoiGoalV10DeepExternalAction, QianchuanSuggestRoiGoalV10EcomGuestType, QianchuanSuggestRoiGoalV10ExternalAction, QianchuanSuggestRoiGoalV10MarketingGoal, QianchuanSuggestRoiGoalV10MarketingScene, QianchuanSuggestRoiGoalV10Response } from "../models/index";

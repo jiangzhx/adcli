@@ -1,0 +1,10 @@
+// 由 oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner_material_component_aweme_video_slides_inner.go 生成
+// 不要手动编辑。
+
+import type { BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoSlidesInnerImage, BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoSlidesInnerVideo } from "../models/index";
+
+export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoSlidesInner {
+  image?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoSlidesInnerImage;
+  video?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoSlidesInnerVideo;
+}
+

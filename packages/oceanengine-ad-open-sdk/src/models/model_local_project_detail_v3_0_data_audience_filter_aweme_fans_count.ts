@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_data_audience_filter_aweme_fans_count.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_project_detail_v3_0_data_audience_filter_aweme_fans_count.go 生成
+// 不要手动编辑。
 
 export const LocalProjectDetailV30DataAudienceFilterAwemeFansCount = {
   FILTER_AWEME_FANS_COUNT_TYPE_OFF: "FILTER_AWEME_FANS_COUNT_TYPE_OFF",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_stardelivery_task_author_video_detail_v3_0_data_valid_author_submitted_videos_star_video_review_result.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_stardelivery_task_author_video_detail_v3_0_data_valid_author_submitted_videos_star_video_review_result.go 生成
+// 不要手动编辑。
 
 export const StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoReviewResult = {
   STATUS_PENDING_CONFIRM: "STATUS_PENDING_CONFIRM",

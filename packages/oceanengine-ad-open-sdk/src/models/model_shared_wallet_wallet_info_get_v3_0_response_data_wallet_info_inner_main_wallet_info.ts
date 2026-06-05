@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_info_get_v3_0_response_data_wallet_info_inner_main_wallet_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_wallet_info_get_v3_0_response_data_wallet_info_inner_main_wallet_info.go 生成
+// 不要手动编辑。
 
 import type { SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfoMainSharedRange } from "../models/index";
 

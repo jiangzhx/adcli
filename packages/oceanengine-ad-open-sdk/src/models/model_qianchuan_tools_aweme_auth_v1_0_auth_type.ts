@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_tools_aweme_auth_v1_0_auth_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_tools_aweme_auth_v1_0_auth_type.go 生成
+// 不要手动编辑。
 
 export const QianchuanToolsAwemeAuthV10AuthType = {
   SELF: "SELF",

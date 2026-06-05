@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go api/api_stardelivery_task_shareable_list_v30.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go api/api_stardelivery_task_shareable_list_v30.go 生成
+// 不要手动编辑。
 
 import { ApiClient, ApiException, type ApiResponse } from "./client";
 import type { StardeliveryTaskShareableListV30Response } from "../models/index";

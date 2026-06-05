@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_task_bind_project_v2_request.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_task_bind_project_v2_request.go 生成
+// 不要手动编辑。
 
 export interface StarTaskBindProjectV2Request {
   project_id: number | string;

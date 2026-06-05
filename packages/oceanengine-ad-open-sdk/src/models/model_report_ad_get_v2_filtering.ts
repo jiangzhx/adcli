@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_report_ad_get_v2_filtering.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_report_ad_get_v2_filtering.go 生成
+// 不要手动编辑。
 
 import type { ReportAdGetV2FilteringCampaignTypes, ReportAdGetV2FilteringCreativeMaterialModes, ReportAdGetV2FilteringDeliveryMode, ReportAdGetV2FilteringImageModes, ReportAdGetV2FilteringInventoryTypes, ReportAdGetV2FilteringLandingType, ReportAdGetV2FilteringLandingTypes, ReportAdGetV2FilteringPricing, ReportAdGetV2FilteringPricingCategories, ReportAdGetV2FilteringPricings, ReportAdGetV2FilteringStatus } from "../models/index";
 

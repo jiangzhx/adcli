@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_order_update_v3_0_audience_info_ages.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_order_update_v3_0_audience_info_ages.go 生成
+// 不要手动编辑。
 
 export const BrandOrderUpdateV30AudienceInfoAges = {
   ABOVE50: "ABOVE50",

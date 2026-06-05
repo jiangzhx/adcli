@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_policy_list_v3_0_audience_info.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_policy_list_v3_0_audience_info.go 生成
+// 不要手动编辑。
 
 import type { BrandPolicyListV30AudienceInfoAc, BrandPolicyListV30AudienceInfoAges, BrandPolicyListV30AudienceInfoDistrictInfo, BrandPolicyListV30AudienceInfoGender, BrandPolicyListV30AudienceInfoPlatform, BrandPolicyListV30AudienceInfoRetargetingInfo } from "../models/index";
 

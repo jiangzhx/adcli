@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_local_promotion_list_v3_0_data_promotion_list_learning_phase.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_local_promotion_list_v3_0_data_promotion_list_learning_phase.go 生成
+// 不要手动编辑。
 
 export const LocalPromotionListV30DataPromotionListLearningPhase = {
   LEARNED: "LEARNED",

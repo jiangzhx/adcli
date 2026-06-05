@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_roi2_goal_update_v1_0_request_update_roi2_infos_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_roi2_goal_update_v1_0_request_update_roi2_infos_inner.go 生成
+// 不要手动编辑。
 
 import type { QianchuanUniPromotionAdRoi2GoalUpdateV10UpdateRoi2InfosDeepExternalAction } from "../models/index";
 

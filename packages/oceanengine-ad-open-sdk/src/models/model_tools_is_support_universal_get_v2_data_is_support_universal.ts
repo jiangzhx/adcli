@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_is_support_universal_get_v2_data_is_support_universal.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_is_support_universal_get_v2_data_is_support_universal.go 生成
+// 不要手动编辑。
 
 export const ToolsIsSupportUniversalGetV2DataIsSupportUniversal = {
   CANNOT_UNIVERSAL: "CANNOT_UNIVERSAL",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_create_v1_0_request_audience.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_aweme_order_create_v1_0_request_audience.go 生成
+// 不要手动编辑。
 
 import type { QianchuanAwemeOrderCreateV10AudienceAge, QianchuanAwemeOrderCreateV10AudienceAudienceMode, QianchuanAwemeOrderCreateV10AudienceBehaviors, QianchuanAwemeOrderCreateV10AudienceDistrict, QianchuanAwemeOrderCreateV10AudienceExcludeLimitedRegion, QianchuanAwemeOrderCreateV10AudienceGender, QianchuanAwemeOrderCreateV10AudienceRegionVersion } from "../models/index";
 

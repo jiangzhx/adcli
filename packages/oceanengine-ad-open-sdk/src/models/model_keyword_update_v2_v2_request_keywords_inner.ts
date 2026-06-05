@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_keyword_update_v2_v2_request_keywords_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_keyword_update_v2_v2_request_keywords_inner.go 生成
+// 不要手动编辑。
 
 import type { KeywordUpdateV2V2KeywordsBidType, KeywordUpdateV2V2KeywordsMatchType } from "../models/index";
 

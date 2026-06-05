@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_transfer_transaction_record_v2_response_data_records_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_transfer_transaction_record_v2_response_data_records_inner.go 生成
+// 不要手动编辑。
 
 import type { AgentTransferTransactionRecordV2DataRecordsDeliveryType, AgentTransferTransactionRecordV2DataRecordsPayeeRole, AgentTransferTransactionRecordV2DataRecordsRemitterRole, AgentTransferTransactionRecordV2DataRecordsTransferTargetPayStatus, AgentTransferTransactionRecordV2DataRecordsTransferType } from "../models/index";
 

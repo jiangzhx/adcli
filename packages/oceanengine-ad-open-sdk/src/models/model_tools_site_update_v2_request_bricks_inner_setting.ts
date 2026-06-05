@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_site_update_v2_request_bricks_inner_setting.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_site_update_v2_request_bricks_inner_setting.go 生成
+// 不要手动编辑。
 
 import type { ToolsSiteUpdateV2RequestBricksInnerSettingAvatar, ToolsSiteUpdateV2RequestBricksInnerSettingBackground, ToolsSiteUpdateV2RequestBricksInnerSettingButton, ToolsSiteUpdateV2RequestBricksInnerSettingImage, ToolsSiteUpdateV2RequestBricksInnerSettingLabel, ToolsSiteUpdateV2RequestBricksInnerSettingTitle } from "../models/index";
 

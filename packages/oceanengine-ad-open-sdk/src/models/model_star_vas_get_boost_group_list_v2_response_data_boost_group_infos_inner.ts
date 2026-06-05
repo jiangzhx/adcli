@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_star_vas_get_boost_group_list_v2_response_data_boost_group_infos_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_star_vas_get_boost_group_list_v2_response_data_boost_group_infos_inner.go 生成
+// 不要手动编辑。
 
 import type { StarVasGetBoostGroupListV2DataBoostGroupInfosBidType, StarVasGetBoostGroupListV2DataBoostGroupInfosBoostAction, StarVasGetBoostGroupListV2DataBoostGroupInfosBoostType, StarVasGetBoostGroupListV2DataBoostGroupInfosStatus, StarVasGetBoostGroupListV2ResponseDataBoostGroupInfosInnerTaskInfosInner } from "../models/index";
 

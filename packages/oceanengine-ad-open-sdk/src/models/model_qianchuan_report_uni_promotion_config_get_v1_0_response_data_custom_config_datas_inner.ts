@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_qianchuan_report_uni_promotion_config_get_v1_0_response_data_custom_config_datas_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_report_uni_promotion_config_get_v1_0_response_data_custom_config_datas_inner.go 生成
+// 不要手动编辑。
 
 import type { QianchuanReportUniPromotionConfigGetV10DataCustomConfigDatasDataTopic, QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerDimensionsInner, QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerMetricsInner, QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerQueryLimit } from "../models/index";
 

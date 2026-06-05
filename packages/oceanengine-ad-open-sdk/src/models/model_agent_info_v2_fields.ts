@@ -1,16 +1,16 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_agent_info_v2_fields.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_agent_info_v2_fields.go 生成
+// 不要手动编辑。
 
 export const AgentInfoV2Fields = {
-  CUSTOMER_NAME: "customer_name",
-  COMPANY_ID: "company_id",
-  ACCOUNT_STATUS: "account_status",
-  AGENT_ID: "agent_id",
-  AGENT_NAME: "agent_name",
   CREATE_TIME: "create_time",
-  ROLE: "role",
-  CUSTOMER_ID: "customer_id",
+  AGENT_ID: "agent_id",
   COMPANY_NAME: "company_name",
+  ROLE: "role",
+  COMPANY_ID: "company_id",
+  AGENT_NAME: "agent_name",
+  CUSTOMER_NAME: "customer_name",
+  ACCOUNT_STATUS: "account_status",
+  CUSTOMER_ID: "customer_id",
 } as const;
 
 export type AgentInfoV2Fields = typeof AgentInfoV2Fields[keyof typeof AgentInfoV2Fields];

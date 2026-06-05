@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_file_material_list_v2_properties_filter.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_file_material_list_v2_properties_filter.go 生成
+// 不要手动编辑。
 
 export const FileMaterialListV2PropertiesFilter = {
   AD_HIGH_QUALITY_MATERIAL: "AD_HIGH_QUALITY_MATERIAL",

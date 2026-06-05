@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_dpa_clue_product_list_v2_response_data_products_inner.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_dpa_clue_product_list_v2_response_data_products_inner.go 生成
+// 不要手动编辑。
 
 import type { DpaClueProductListV2DataProductsAuditStatus, DpaClueProductListV2DataProductsCompletionStatus, DpaClueProductListV2DataProductsStatus, DpaClueProductListV2ResponseDataProductsInnerBrandInfo, DpaClueProductListV2ResponseDataProductsInnerCategory, DpaClueProductListV2ResponseDataProductsInnerImagesUrlInner, DpaClueProductListV2ResponseDataProductsInnerLandingInfo, DpaClueProductListV2ResponseDataProductsInnerPriceInfo, DpaClueProductListV2ResponseDataProductsInnerShopKeeperInfo, DpaClueProductListV2ResponseDataProductsInnerVideosInner } from "../models/index";
 

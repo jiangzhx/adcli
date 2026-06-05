@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_data_ads_enable_merchant_intention.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_ad_get_v3_0_data_ads_enable_merchant_intention.go 生成
+// 不要手动编辑。
 
 export const BrandAdGetV30DataAdsEnableMerchantIntention = {
   Enum_0: 0,

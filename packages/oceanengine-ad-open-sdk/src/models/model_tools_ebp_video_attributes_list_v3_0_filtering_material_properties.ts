@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_tools_ebp_video_attributes_list_v3_0_filtering_material_properties.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_tools_ebp_video_attributes_list_v3_0_filtering_material_properties.go 生成
+// 不要手动编辑。
 
 export const ToolsEbpVideoAttributesListV30FilteringMaterialProperties = {
   AD_HIGH_QUALITY_MATERIAL: "AD_HIGH_QUALITY_MATERIAL",

@@ -1,5 +1,5 @@
-// Generated from oceanengine/ad_open_sdk_go models/model_brand_order_create_v3_0_audience_info_district_info_district_type.go
-// Do not edit manually.
+// 由 oceanengine/ad_open_sdk_go models/model_brand_order_create_v3_0_audience_info_district_info_district_type.go 生成
+// 不要手动编辑。
 
 export const BrandOrderCreateV30AudienceInfoDistrictInfoDistrictType = {
   REGION: "REGION",
