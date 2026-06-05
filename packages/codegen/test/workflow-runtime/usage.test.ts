@@ -9,7 +9,7 @@ test("summarizeWorkflowUsage aggregates agent usage by phase, label, and file", 
     {
       type: "agent:end",
       timestamp: "2026-05-24T00:00:00.000Z",
-      phase: "Implement",
+      phase: "实现",
       label: "impl:api_project.go",
       usage: {
         inputTokens: 100,
@@ -21,11 +21,18 @@ test("summarizeWorkflowUsage aggregates agent usage by phase, label, and file", 
         durationApiMs: 700,
         numTurns: 1,
       },
+      toolCalls: [
+        {
+          name: "oceanengine_analyze_ast",
+          ok: true,
+          durationMs: 12,
+        },
+      ],
     },
     {
       type: "agent:end",
       timestamp: "2026-05-24T00:00:01.000Z",
-      phase: "Verify",
+      phase: "校验",
       label: "verify:api_project.go",
       usage: {
         inputTokens: 80,
@@ -35,6 +42,14 @@ test("summarizeWorkflowUsage aggregates agent usage by phase, label, and file", 
         durationApiMs: 300,
         numTurns: 1,
       },
+      toolCalls: [
+        {
+          name: "oceanengine_verify_port",
+          ok: false,
+          durationMs: 8,
+          error: "校验失败",
+        },
+      ],
     },
   ];
 
@@ -52,7 +67,17 @@ test("summarizeWorkflowUsage aggregates agent usage by phase, label, and file", 
     durationApiMs: 1000,
     numTurns: 2,
   });
-  assert.equal(summary.byPhase.Implement?.calls, 1);
+  assert.equal(summary.byPhase["实现"]?.calls, 1);
   assert.equal(summary.byLabel["verify:api_project.go"]?.inputTokens, 80);
   assert.equal(summary.byFile["api_project.go"]?.calls, 2);
+  assert.deepEqual(summary.toolCalls.total, {
+    calls: 2,
+    failed: 1,
+    durationMs: 20,
+  });
+  assert.deepEqual(summary.toolCalls.byTool.oceanengine_analyze_ast, {
+    calls: 1,
+    failed: 0,
+    durationMs: 12,
+  });
 });

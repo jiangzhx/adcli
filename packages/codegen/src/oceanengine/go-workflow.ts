@@ -182,8 +182,8 @@ function moduleBaseName(file: string) {
 }
 
 function generatedHeader(sourcePath: string) {
-  return `// Generated from oceanengine/ad_open_sdk_go ${sourcePath}
-// Do not edit manually.
+  return `// 由 oceanengine/ad_open_sdk_go ${sourcePath} 生成
+// 不要手动编辑。
 `;
 }
 

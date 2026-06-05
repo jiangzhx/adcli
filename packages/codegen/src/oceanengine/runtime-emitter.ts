@@ -417,8 +417,8 @@ export const DefaultConfiguration = NewConfiguration();
 }
 
 function generatedHeader(sourceFile: string) {
-  return `// Generated from oceanengine/ad_open_sdk_go ${sourceFile}
-// Do not edit manually.
+  return `// 由 oceanengine/ad_open_sdk_go ${sourceFile} 生成
+// 不要手动编辑。
 
 `;
 }

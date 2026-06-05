@@ -18,6 +18,19 @@ export interface WorkflowUsageSummary {
   byPhase: Record<string, UsageTotals>;
   byLabel: Record<string, UsageTotals>;
   byFile: Record<string, UsageTotals>;
+  toolCalls: ToolCallSummary;
+}
+
+export interface ToolCallTotals {
+  calls: number;
+  failed: number;
+  durationMs: number;
+}
+
+export interface ToolCallSummary {
+  total: ToolCallTotals;
+  byTool: Record<string, ToolCallTotals>;
+  byLabel: Record<string, ToolCallTotals>;
 }
 
 export function summarizeWorkflowUsage(events: WorkflowEvent[]): WorkflowUsageSummary {
@@ -26,24 +39,44 @@ export function summarizeWorkflowUsage(events: WorkflowEvent[]): WorkflowUsageSu
     byPhase: {},
     byLabel: {},
     byFile: {},
+    toolCalls: {
+      total: emptyToolCallTotals(),
+      byTool: {},
+      byLabel: {},
+    },
   };
 
   for (const event of events) {
-    if (event.type !== "agent:end" || !event.usage) {
+    if (event.type !== "agent:end") {
       continue;
     }
 
-    addUsage(summary.total, event.usage);
-
     const phase = event.phase ?? "(no phase)";
-    addUsage(bucket(summary.byPhase, phase), event.usage);
-
     const label = event.label ?? "(unlabeled)";
-    addUsage(bucket(summary.byLabel, label), event.usage);
-    addUsage(bucket(summary.byFile, fileKeyFromLabel(label)), event.usage);
+
+    if (event.usage) {
+      addUsage(summary.total, event.usage);
+      addUsage(bucket(summary.byPhase, phase), event.usage);
+      addUsage(bucket(summary.byLabel, label), event.usage);
+      addUsage(bucket(summary.byFile, fileKeyFromLabel(label)), event.usage);
+    }
+
+    for (const toolCall of event.toolCalls ?? []) {
+      addToolCall(summary.toolCalls.total, toolCall);
+      addToolCall(toolCallBucket(summary.toolCalls.byTool, toolCall.name), toolCall);
+      addToolCall(toolCallBucket(summary.toolCalls.byLabel, label), toolCall);
+    }
   }
 
   return summary;
+}
+
+function emptyToolCallTotals(): ToolCallTotals {
+  return {
+    calls: 0,
+    failed: 0,
+    durationMs: 0,
+  };
 }
 
 function emptyTotals(): UsageTotals {
@@ -77,6 +110,19 @@ function addUsage(total: UsageTotals, usage: AgentUsage): void {
   total.durationMs += usage.durationMs ?? 0;
   total.durationApiMs += usage.durationApiMs ?? 0;
   total.numTurns += usage.numTurns ?? 0;
+}
+
+function toolCallBucket(collection: Record<string, ToolCallTotals>, key: string): ToolCallTotals {
+  collection[key] ??= emptyToolCallTotals();
+  return collection[key]!;
+}
+
+function addToolCall(total: ToolCallTotals, toolCall: { ok: boolean; durationMs?: number }): void {
+  total.calls += 1;
+  if (!toolCall.ok) {
+    total.failed += 1;
+  }
+  total.durationMs += toolCall.durationMs ?? 0;
 }
 
 function inferredTotalTokens(usage: AgentUsage): number {

@@ -7,6 +7,9 @@
     "generate:oceanengine:go": "bun run src/oceanengine/generate-from-go-sdk.ts",
     "generate:tencent-ads": "bun run src/tencent-ads/generate-from-go-sdk.ts",
     "generate:tencent-ads:go": "bun run src/tencent-ads/generate-from-go-sdk.ts",
+    "analyze:oceanengine": "bun run src/oceanengine/ast-analyzer.ts",
+    "generate-model:oceanengine": "bun run src/oceanengine/model-codegen.ts",
+    "verify:oceanengine": "bun run src/oceanengine/local-verify.ts",
     "workflow:run": "bun run src/workflow-runtime/run-workflow.ts src/oceanengine/phase-a-port.workflow.js",
     "test:oceanengine": "bun test test/oceanengine/*.test.ts",
     "test:tencent-ads": "bun test test/tencent-ads/*.test.ts",
@@ -17,6 +20,7 @@
   "devDependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.3.150",
     "@types/node": "^20",
-    "typescript": "^5"
+    "typescript": "^5",
+    "zod": "^4.4.3"
   }
 }

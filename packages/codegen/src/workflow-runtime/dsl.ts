@@ -3,6 +3,7 @@ import path from "node:path";
 
 import { discoverInputs } from "./discovery";
 import { EchoAgentBackend } from "./backends/mock";
+import { resolveWorkflowTools } from "./tools";
 import type { AgentBackend, AgentRequest, RunWorkflowOptions, WorkflowEvent } from "./types";
 
 export interface WorkflowGlobals {
@@ -39,15 +40,17 @@ export function createWorkflowContext(options: RunWorkflowOptions = {}): Workflo
   const globals: WorkflowGlobals = {
     async agent(prompt, agentOptions = {}) {
       const phase = agentOptions.phase ?? activePhase;
+      const tools = agentOptions.tools ?? resolveWorkflowTools(agentOptions.toolNames, options.tools);
       const request: AgentRequest = {
         ...agentOptions,
         prompt,
         phase,
+        tools,
       };
       emit({ type: "agent:start", phase, label: request.label, data: { prompt } });
       try {
         const result = await agentBackend.run(request);
-        emit({ type: "agent:end", phase, label: request.label, data: result.output, usage: result.usage });
+        emit({ type: "agent:end", phase, label: request.label, data: result.output, usage: result.usage, toolCalls: result.toolCalls });
         return result.output;
       } catch (error) {
         emit({
@@ -121,7 +124,7 @@ async function runWithConcurrency<T>(tasks: Array<() => Promise<T> | T>, concurr
 function printEvent(event: WorkflowEvent): void {
   const verboseAgents = process.env.ADCLI_WORKFLOW_VERBOSE === "1";
   if (event.type === "phase") {
-    console.log(`\n== ${event.phase ?? event.message ?? "phase"} ==`);
+    console.log(`\n== ${event.phase ?? event.message ?? "阶段"} ==`);
     return;
   }
   if (event.type === "log") {
@@ -130,17 +133,20 @@ function printEvent(event: WorkflowEvent): void {
   }
   if (event.type === "agent:start") {
     if (verboseAgents) {
-      console.log(`agent:start ${event.label ?? "(unlabeled)"}`);
+      console.log(`agent:开始 ${event.label ?? "（未命名）"}`);
     }
     return;
   }
   if (event.type === "agent:end") {
     if (verboseAgents) {
-      console.log(`agent:end ${event.label ?? "(unlabeled)"}`);
+      console.log(`agent:结束 ${event.label ?? "（未命名）"}`);
+      if (event.toolCalls?.length) {
+        console.log(`agent:工具调用 ${event.toolCalls.map(toolCall => `${toolCall.name}:${toolCall.ok ? "ok" : "failed"}`).join(", ")}`);
+      }
     }
     return;
   }
   if (event.type === "agent:error") {
-    console.error(`agent:error ${event.label ?? "(unlabeled)"} ${event.message ?? ""}`);
+    console.error(`agent:错误 ${event.label ?? "（未命名）"} ${event.message ?? ""}`);
   }
 }

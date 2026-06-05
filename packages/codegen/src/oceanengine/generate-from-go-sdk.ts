@@ -15,7 +15,7 @@ const isCliEntry = process.argv[1] ? import.meta.url === new URL(`file://${proce
 if (isCliEntry) {
   const goSdkRoot = process.argv[2];
   if (!goSdkRoot) {
-    console.error("Usage: bun run src/oceanengine/generate-from-go-sdk.ts /path/to/ad_open_sdk_go [outputDir]");
+    console.error("用法：bun run src/oceanengine/generate-from-go-sdk.ts /path/to/ad_open_sdk_go [outputDir]");
     process.exit(1);
   }
   const outputDir = process.argv[3];

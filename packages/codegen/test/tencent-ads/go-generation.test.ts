@@ -33,10 +33,10 @@ describe("tencent ads go generation workflow", () => {
         'basePath = "https://api.e.qq.com/v3.0"',
       );
       expect(readFileSync(join(outDir, "api", "client.ts"), "utf8")).toContain(
-        "Generated from tencentad/marketing-api-go-sdk pkg/api/client.go",
+        "由 tencentad/marketing-api-go-sdk pkg/api/client.go 生成",
       );
       expect(readFileSync(join(outDir, "api", "v3", "client.ts"), "utf8")).toContain(
-        "Generated from tencentad/marketing-api-go-sdk pkg/api/v3/client.go",
+        "由 tencentad/marketing-api-go-sdk pkg/api/v3/client.go 生成",
       );
       expect(existsSync(join(outDir, "runtime"))).toBe(false);
       const index = readFileSync(join(outDir, "index.ts"), "utf8");

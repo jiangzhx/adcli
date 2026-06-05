@@ -26,14 +26,14 @@ describe("go generation workflow", () => {
       expect(result.skipped).toEqual([]);
       expect(readFileSync(join(outDir, "api", "index.ts"), "utf8")).toContain('export * from "./api_report_custom_config_get_v30";');
       expect(readFileSync(join(outDir, "api", "client.ts"), "utf8")).toContain(
-        "Generated from oceanengine/ad_open_sdk_go api/client.go",
+        "由 oceanengine/ad_open_sdk_go api/client.go 生成",
       );
       expect(readFileSync(join(outDir, "api", "api_common.ts"), "utf8")).toContain(
-        "Generated from oceanengine/ad_open_sdk_go api/api_common.go",
+        "由 oceanengine/ad_open_sdk_go api/api_common.go 生成",
       );
       expect(readFileSync(join(outDir, "config", "configuration.ts"), "utf8")).toContain('host = "api.oceanengine.com"');
       const apiOutput = readFileSync(join(outDir, "api", "api_report_custom_config_get_v30.ts"), "utf8");
-      expect(apiOutput).toContain("Generated from oceanengine/ad_open_sdk_go api/api_report_custom_config_get_v30.go");
+      expect(apiOutput).toContain("由 oceanengine/ad_open_sdk_go api/api_report_custom_config_get_v30.go 生成");
       expect(apiOutput).toContain("export interface ReportCustomConfigGetV30ApiOpenApiV30ReportCustomConfigGetGetRequest");
       expect(apiOutput).toContain("page?: number;");
       expect(apiOutput).toContain("async openApiV30ReportCustomConfigGetGet(request:");

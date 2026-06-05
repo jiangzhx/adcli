@@ -199,8 +199,8 @@ function moduleBaseName(file: string) {
 }
 
 function generatedHeader(sourcePath: string) {
-  return `// Generated from tencentad/marketing-api-go-sdk ${sourcePath}
-// Do not edit manually.
+  return `// 由 tencentad/marketing-api-go-sdk ${sourcePath} 生成
+// 不要手动编辑。
 `;
 }
 

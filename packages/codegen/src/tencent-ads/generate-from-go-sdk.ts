@@ -15,7 +15,7 @@ const isCliEntry = process.argv[1] ? import.meta.url === new URL(`file://${proce
 if (isCliEntry) {
   const goSdkRoot = process.argv[2];
   if (!goSdkRoot) {
-    console.error("Usage: bun run src/tencent-ads/generate-from-go-sdk.ts /path/to/marketing-api-go-sdk [outputDir]");
+    console.error("用法：bun run src/tencent-ads/generate-from-go-sdk.ts /path/to/marketing-api-go-sdk [outputDir]");
     process.exit(1);
   }
   const outputDir = process.argv[3];

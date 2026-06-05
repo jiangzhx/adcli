@@ -1,3 +1,5 @@
+import type { WorkflowToolDefinition } from "./tools";
+
 export type WorkflowEventType = "phase" | "log" | "agent:start" | "agent:end" | "agent:error";
 
 export interface WorkflowEvent {
@@ -8,6 +10,14 @@ export interface WorkflowEvent {
   message?: string;
   data?: unknown;
   usage?: AgentUsage;
+  toolCalls?: AgentToolCall[];
+}
+
+export interface AgentToolCall {
+  name: string;
+  ok: boolean;
+  durationMs?: number;
+  error?: string;
 }
 
 export interface AgentUsage {
@@ -27,6 +37,7 @@ export interface AgentUsage {
 export interface AgentRunResult {
   output: unknown;
   usage?: AgentUsage;
+  toolCalls?: AgentToolCall[];
 }
 
 export interface AgentRequest {
@@ -35,6 +46,8 @@ export interface AgentRequest {
   phase?: string;
   cwd?: string;
   schema?: unknown;
+  toolNames?: string[];
+  tools?: WorkflowToolDefinition[];
   allowedTools?: string[];
   permissionMode?: "acceptEdits" | "auto" | "bypassPermissions" | "default" | "dontAsk" | "plan";
   model?: string;
@@ -72,6 +85,7 @@ export interface RunWorkflowOptions {
   agentBackend?: AgentBackend;
   cwd?: string;
   defaultConcurrency?: number;
+  tools?: WorkflowToolDefinition[];
   onEvent?: (event: WorkflowEvent) => void;
 }
 
