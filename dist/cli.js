@@ -3357,7 +3357,7 @@ var DefaultConfiguration = NewConfiguration();
 
 // packages/oceanengine-ad-open-sdk/dist/api/client.js
 var JSONBigStringParser = import_json_bigint.default({ storeAsString: true });
-var SDK_VERSION = "1.1.87";
+var SDK_VERSION = "1.1.88";
 
 class ApiClient {
   basePath = DefaultConfiguration.getBasePath();
