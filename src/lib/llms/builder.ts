@@ -1,6 +1,7 @@
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 
+import { buildSourceRecipeFromUrl } from "@/src/lib/builder/ingest-url";
 import { buildSearchIndex } from "@/src/lib/search/index-builder";
 
 type SourceMetadata = {
@@ -44,8 +45,33 @@ export type BuildAllLlmsArtifactsInput = {
   rootDir?: string;
 };
 
+export type BuildLlmsArtifactsForUrlInput = {
+  rootDir?: string;
+  url: string;
+  platform?: string;
+};
+
+export type BuildLlmsArtifactsForUrlResult = {
+  platform: string;
+  document: LlmsDocument;
+  outputs: {
+    document: string;
+    llms: string;
+    llms_full: string;
+    platform_index: string;
+    platform_manifest: string;
+    search_index: string;
+  };
+};
+
 type SourceDocument = LlmsDocument & {
   source_dir: string;
+};
+
+type CollectionManifest = {
+  items?: Array<{
+    source_id?: string;
+  }>;
 };
 
 type TaskLink = {
@@ -120,6 +146,7 @@ export async function buildLlmsArtifacts(input: BuildLlmsArtifactsInput): Promis
 
   const sourceDocuments = await loadSourceDocuments(sourceRoot, input.platform);
   const documents = sourceDocuments.map(toLlmsDocument);
+  await pruneStalePlatformMarkdown(docsRoot, documents);
 
   await Promise.all(
     sourceDocuments.map(async (document) => {
@@ -159,6 +186,68 @@ export async function buildLlmsArtifacts(input: BuildLlmsArtifactsInput): Promis
   return manifest;
 }
 
+export async function buildLlmsArtifactsForUrl(input: BuildLlmsArtifactsForUrlInput): Promise<BuildLlmsArtifactsForUrlResult> {
+  const rootDir = input.rootDir ?? process.cwd();
+  const recipe = buildSourceRecipeFromUrl({
+    url: input.url,
+    platform: input.platform,
+  });
+  const publicRoot = path.join(rootDir, "public");
+  const platformRoot = path.join(publicRoot, recipe.platform);
+  const docsRoot = path.join(platformRoot, "docs");
+  const sourceDir = path.join(rootDir, "data", "sources", recipe.platform, recipe.id);
+
+  await mkdir(docsRoot, { recursive: true });
+
+  const sourceDocument = await loadSourceDocument(sourceDir, recipe.platform);
+  const document = toLlmsDocument(sourceDocument);
+  const cleanedMarkdown = await readFile(path.join(sourceDocument.source_dir, "cleaned.md"), "utf8");
+  await writeFile(
+    path.join(publicRoot, document.public_path.slice(1)),
+    `${buildSourceFrontmatter(document)}\n${cleanedMarkdown.trim()}\n`,
+    "utf8",
+  );
+
+  const existingManifest = await loadPublishedManifest(platformRoot, recipe.platform);
+  const documents = upsertDocument(existingManifest.documents, document);
+  const manifest: LlmsManifest = {
+    platform: recipe.platform,
+    documents,
+    outputs: {
+      llms: "/llms.txt",
+      llms_full: "/llms-full.txt",
+      platform_index: `/${recipe.platform}/index.md`,
+      platform_manifest: `/${recipe.platform}/manifest.json`,
+    },
+    updated_at: new Date().toISOString(),
+  };
+
+  await Promise.all([
+    writeFile(path.join(platformRoot, "index.md"), buildPlatformIndex(recipe.platform, documents), "utf8"),
+    writeFile(path.join(platformRoot, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`, "utf8"),
+  ]);
+
+  const publishedManifests = await loadPublishedManifests(publicRoot);
+  await Promise.all([
+    writeFile(path.join(publicRoot, "llms.txt"), buildLlmsTxt(publishedManifests), "utf8"),
+    writeFile(path.join(publicRoot, "llms-full.txt"), buildLlmsFullTxt(publishedManifests), "utf8"),
+  ]);
+  await buildSearchIndex({ rootDir });
+
+  return {
+    platform: recipe.platform,
+    document,
+    outputs: {
+      document: document.public_path,
+      llms: "/llms.txt",
+      llms_full: "/llms-full.txt",
+      platform_index: manifest.outputs.platform_index,
+      platform_manifest: manifest.outputs.platform_manifest,
+      search_index: "/search-index.json",
+    },
+  };
+}
+
 export async function buildAllLlmsArtifacts(input: BuildAllLlmsArtifactsInput = {}): Promise<LlmsManifest[]> {
   const rootDir = input.rootDir ?? process.cwd();
   const sourcesRoot = path.join(rootDir, "data", "sources");
@@ -174,6 +263,25 @@ export async function buildAllLlmsArtifacts(input: BuildAllLlmsArtifactsInput = 
   }
 
   return manifests;
+}
+
+async function loadPublishedManifest(platformRoot: string, platform: string): Promise<LlmsManifest> {
+  try {
+    const raw = await readFile(path.join(platformRoot, "manifest.json"), "utf8");
+    return JSON.parse(raw) as LlmsManifest;
+  } catch {
+    return {
+      platform,
+      documents: [],
+      outputs: {
+        llms: "/llms.txt",
+        llms_full: "/llms-full.txt",
+        platform_index: `/${platform}/index.md`,
+        platform_manifest: `/${platform}/manifest.json`,
+      },
+      updated_at: new Date().toISOString(),
+    };
+  }
 }
 
 async function loadPublishedManifests(publicRoot: string): Promise<LlmsManifest[]> {
@@ -196,7 +304,29 @@ async function loadPublishedManifests(publicRoot: string): Promise<LlmsManifest[
   return manifests.sort((left, right) => left.platform.localeCompare(right.platform));
 }
 
+async function pruneStalePlatformMarkdown(docsRoot: string, documents: LlmsDocument[]): Promise<void> {
+  const expectedNames = new Set(documents.map((document) => path.basename(document.public_path)));
+  const entries = await readdir(docsRoot, { withFileTypes: true });
+
+  await Promise.all(
+    entries
+      .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && !expectedNames.has(entry.name))
+      .map((entry) => rm(path.join(docsRoot, entry.name), { force: true })),
+  );
+}
+
 async function loadSourceDocuments(sourceRoot: string, platform: string): Promise<SourceDocument[]> {
+  const collectionSourceIds = await loadCollectionSourceIds(sourceRoot);
+  if (collectionSourceIds) {
+    const documents = await Promise.all(
+      Array.from(collectionSourceIds).map((sourceId) =>
+        loadSourceDocumentFromCollection(sourceRoot, platform, sourceId),
+      ),
+    );
+
+    return documents.sort((left, right) => left.doc_id.localeCompare(right.doc_id));
+  }
+
   const entries = await readdir(sourceRoot, { withFileTypes: true });
   const documents: SourceDocument[] = [];
 
@@ -206,21 +336,82 @@ async function loadSourceDocuments(sourceRoot: string, platform: string): Promis
     }
 
     const sourceDir = path.join(sourceRoot, entry.name);
-    const source = JSON.parse(await readFile(path.join(sourceDir, "source.json"), "utf8")) as SourceMetadata;
-    const docId = extractDocId(source.id);
-
-    documents.push({
-      id: source.id,
-      doc_id: docId,
-      platform,
-      title: source.title,
-      source_url: source.url,
-      public_path: `/${platform}/docs/${docId}.md`,
-      source_dir: sourceDir,
-    });
+    documents.push(await loadSourceDocument(sourceDir, platform));
   }
 
   return documents.sort((left, right) => left.doc_id.localeCompare(right.doc_id));
+}
+
+async function loadSourceDocumentFromCollection(
+  sourceRoot: string,
+  platform: string,
+  sourceId: string,
+): Promise<SourceDocument> {
+  const sourceDir = path.join(sourceRoot, sourceId);
+  try {
+    await Promise.all([
+      readFile(path.join(sourceDir, "source.json"), "utf8"),
+      readFile(path.join(sourceDir, "cleaned.md"), "utf8"),
+    ]);
+  } catch (error) {
+    if (isNotFoundError(error)) {
+      throw new Error(`collection manifest references missing source artifacts: ${sourceId}`);
+    }
+    throw error;
+  }
+
+  return loadSourceDocument(sourceDir, platform);
+}
+
+async function loadCollectionSourceIds(sourceRoot: string): Promise<Set<string> | undefined> {
+  const manifestPath = path.join(sourceRoot, "_collections", "manifest.json");
+  let raw: string;
+  try {
+    raw = await readFile(manifestPath, "utf8");
+  } catch (error) {
+    if (isNotFoundError(error)) {
+      return undefined;
+    }
+    throw error;
+  }
+
+  let manifest: CollectionManifest;
+  try {
+    manifest = JSON.parse(raw) as CollectionManifest;
+  } catch (error) {
+    throw new Error(`failed to parse collection manifest ${manifestPath}: ${error instanceof Error ? error.message : String(error)}`);
+  }
+
+  if (!Array.isArray(manifest.items)) {
+    throw new Error(`invalid collection manifest ${manifestPath}: items must be an array`);
+  }
+
+  return new Set(
+    manifest.items
+      .map((item) => item.source_id)
+      .filter((sourceId): sourceId is string => typeof sourceId === "string" && sourceId.trim() !== ""),
+  );
+}
+
+async function loadSourceDocument(sourceDir: string, platform: string): Promise<SourceDocument> {
+  const source = JSON.parse(await readFile(path.join(sourceDir, "source.json"), "utf8")) as SourceMetadata;
+  const docId = extractDocId(source.id);
+
+  return {
+    id: source.id,
+    doc_id: docId,
+    platform,
+    title: source.title,
+    source_url: source.url,
+    public_path: `/${platform}/docs/${docId}.md`,
+    source_dir: sourceDir,
+  };
+}
+
+function upsertDocument(documents: LlmsDocument[], document: LlmsDocument): LlmsDocument[] {
+  const nextDocuments = documents.filter((item) => item.id !== document.id && item.doc_id !== document.doc_id);
+  nextDocuments.push(document);
+  return nextDocuments.sort((left, right) => left.doc_id.localeCompare(right.doc_id));
 }
 
 function toLlmsDocument(document: SourceDocument): LlmsDocument {
@@ -327,4 +518,8 @@ function buildPlatformIndex(platform: string, documents: LlmsDocument[]): string
 
 function yamlScalar(value: string): string {
   return value.replace(/\r?\n/g, " ").trim();
+}
+
+function isNotFoundError(error: unknown): boolean {
+  return error instanceof Error && "code" in error && error.code === "ENOENT";
 }

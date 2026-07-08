@@ -46,7 +46,6 @@ export type SourceIngestState = {
 };
 
 export type CollectionIngestState = {
-  collection_id: string;
   platform: string;
   last_checked_at: string;
   sources: Record<string, SourceIngestState>;
@@ -290,7 +289,6 @@ async function readCollectionState(
     }
 
     return {
-      collection_id: manifest.id,
       platform: manifest.platform,
       last_checked_at: checkedAt,
       sources: {},
@@ -313,7 +311,6 @@ function collectionStatePath(rootDir: string, manifest: CollectionManifest): str
     "sources",
     manifest.platform,
     "_collections",
-    manifest.id,
     "state.json",
   );
 }

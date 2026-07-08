@@ -1,4 +1,4 @@
-export type SourceType = "official_html" | "official_pdf" | "lark_sheet" | "lark_doc" | "manual_note";
+export type SourceType = "web" | "official_pdf" | "lark_sheet" | "lark_doc" | "manual_note";
 
 export type CaptureMode = "fetch" | "playwright";
 
@@ -15,10 +15,9 @@ export type SourceRecipe = {
   };
 };
 
-export type CollectionRecipe = {
-  id: string;
+export type WebCollectionRecipe = {
   platform: string;
-  type: "official_html_collection";
+  type: "web";
   entry_url: string;
   discover: {
     mode: CaptureMode;
@@ -28,8 +27,21 @@ export type CollectionRecipe = {
   };
 };
 
+export type LarkDocUrlCollectionRecipe = {
+  platform: string;
+  type: "lark_doc";
+  entry_url: string;
+  discover: {
+    mode: "fetch";
+    link_patterns: string[];
+    max_items?: number | "all";
+  };
+};
+
+export type CollectionRecipe = WebCollectionRecipe | LarkDocUrlCollectionRecipe;
+
 const sourceTypes = new Set<SourceType>([
-  "official_html",
+  "web",
   "official_pdf",
   "lark_sheet",
   "lark_doc",
@@ -90,21 +102,20 @@ export function parseCollectionRecipe(input: unknown): CollectionRecipe {
     throw new Error("collection recipe must be an object");
   }
 
-  const id = requireSafeId(input.id, "id");
   const platform = requireSafeId(input.platform, "platform");
-  const type = requireString(input.type, "type");
-  if (type !== "official_html_collection") {
-    throw new Error("type must be official_html_collection");
+  if (input.type !== undefined) {
+    throw new Error("collection recipe type is inferred from url; remove type");
   }
 
-  const entryUrl = requireString(input.entry_url, "entry_url");
+  const entryUrl = requireString(input.url, "url");
   validateHttpUrl(entryUrl);
+  const type = inferCollectionTypeFromUrl(entryUrl);
 
   if (!isRecord(input.discover)) {
     throw new Error("discover must be an object");
   }
 
-  const mode = requireString(input.discover.mode, "discover.mode");
+  const mode = type === "lark_doc" ? "fetch" : requireString(input.discover.mode, "discover.mode");
   if (!captureModes.has(mode as CaptureMode)) {
     throw new Error(`discover.mode must be one of: ${Array.from(captureModes).join(", ")}`);
   }
@@ -115,17 +126,57 @@ export function parseCollectionRecipe(input: unknown): CollectionRecipe {
   }
 
   return {
-    id,
     platform,
-    type: "official_html_collection",
+    type,
     entry_url: entryUrl,
     discover: {
       mode: mode as CaptureMode,
       link_patterns: linkPatterns,
-      wait_for: optionalString(input.discover.wait_for, "discover.wait_for"),
+      ...type === "web"
+        ? { wait_for: optionalString(input.discover.wait_for, "discover.wait_for") }
+        : {},
       max_items: optionalPositiveIntegerOrAll(input.discover.max_items, "discover.max_items"),
     },
-  };
+  } as CollectionRecipe;
+}
+
+export function parseCollectionRecipes(input: unknown): CollectionRecipe[] {
+  if (Array.isArray(input) || !isRecord(input)) {
+    throw new Error("collection recipe config must be a platform-level object");
+  }
+
+  const platform = requireSafeId(input.platform, "platform");
+  if (!Array.isArray(input.sources)) {
+    throw new Error("sources must be an array");
+  }
+
+  if (input.sources.length === 0) {
+    throw new Error("sources must contain at least one source");
+  }
+
+  return input.sources.map((source) => parseCollectionRecipe({
+    ...requireRecord(source, "sources item"),
+    platform,
+  }));
+}
+
+function inferCollectionTypeFromUrl(url: string): CollectionRecipe["type"] {
+  const parsed = new URL(url);
+  if (isLarkDocUrl(parsed)) {
+    return "lark_doc";
+  }
+
+  return "web";
+}
+
+function isLarkDocUrl(url: URL): boolean {
+  const hostname = url.hostname.toLowerCase();
+  const isLarkHost =
+    hostname.endsWith("larkoffice.com") ||
+    hostname.endsWith("feishu.cn") ||
+    hostname.endsWith("larksuite.com");
+
+  return isLarkHost && /^\/(?:docx|wiki)\//.test(url.pathname);
 }
 
 function requireSafeId(value: unknown, field: string): string {
@@ -135,6 +186,14 @@ function requireSafeId(value: unknown, field: string): string {
   }
 
   return id;
+}
+
+function requireRecord(value: unknown, field: string): Record<string, unknown> {
+  if (!isRecord(value)) {
+    throw new Error(`${field} must be an object`);
+  }
+
+  return value;
 }
 
 function requireString(value: unknown, field: string): string {

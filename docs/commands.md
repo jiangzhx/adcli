@@ -83,6 +83,52 @@ ADCLI_SEARCH_INDEX=https://example.com/search-index.json adcli doc search "广�
 
 查询词中包含平台别名时会提升对应平台的排序权重，例如 `广点通`、`腾讯广告` 会提升 `tencent_ads` 文档，但不会硬过滤其他平台。需要明确限制平台时，使用 `--platform tencent_ads`。
 
+## 维护者采集命令
+
+### `bun run ingest:url`
+
+采集导航树未收录但可直达的单个官方文档页面，例如巨量开放平台里不出现在左侧树、但 URL 可直接打开的文档。
+
+```bash
+bun run ingest:url https://open.oceanengine.com/labels/7/docs/1865873315616282
+bun run ingest:url https://open.oceanengine.com/labels/7/docs/1865873315616282 --platform oceanengine
+```
+
+当前支持：
+
+- `oceanengine`: `https://open.oceanengine.com/labels/<label_id>/docs/<doc_id>`
+
+命令会自动从 URL 识别平台和 `doc_id`，写入 `data/sources/{platform}/...`，并从页面内容解析标题。`--title` 不受支持；如果标题或正文无法从页面解析出来，应视为采集质量问题。
+
+采集完成后，命令会提示下一步：
+
+```bash
+bun run build:llms --url https://open.oceanengine.com/labels/7/docs/1865873315616282
+```
+
+需要发布到 `public/` 文档包、`llms-full.txt` 和 `search-index.json` 时再执行这一步。
+
+### `bun run build:llms --url`
+
+只发布单个已采集 URL 对应的 Markdown 文档，并更新依赖它的汇总产物。
+
+```bash
+bun run build:llms --url https://open.oceanengine.com/labels/7/docs/1865873315616282
+bun run build:llms --url https://open.oceanengine.com/labels/7/docs/1865873315616282 --platform oceanengine
+```
+
+当前支持：
+
+- `oceanengine`: `https://open.oceanengine.com/labels/<label_id>/docs/<doc_id>`
+
+命令要求对应源数据已经存在于 `data/sources/{platform}/...`，通常先执行 `bun run ingest:url <url>`。它只重写目标文档 Markdown 文件，同时更新：
+
+- `public/{platform}/index.md`
+- `public/{platform}/manifest.json`
+- `public/llms.txt`
+- `public/llms-full.txt`
+- `public/search-index.json`
+
 ### `adcli llms`
 
 输出给 AI / Agent 使用的 docs pack 入口。
@@ -290,7 +336,7 @@ adcli tencent-ads dynamic-creative list --account-id <account_id> --filtering '{
 
 ### `bun run discover:sources`
 
-从 collection recipe 入口发现文档列表，生成 collection manifest。
+从 collection recipe 入口发现文档列表，生成 collection manifest。一个 recipe 文件对应一个平台，多个发现来源放在顶层 `sources` 数组里。
 
 ```bash
 bun run discover:sources recipes/oceanengine-open-platform-docs.json
@@ -300,16 +346,51 @@ bun run discover:sources recipes/oceanengine-open-platform-docs.json
 
 - `recipes/{platform}-*.json`
 
+配置示例：
+
+```json
+{
+  "platform": "oceanengine",
+  "sources": [
+    {
+      "url": "https://open.oceanengine.com/labels/7/docs/1839621283557572",
+      "discover": {
+        "mode": "playwright",
+        "link_patterns": ["/labels/7/docs/"],
+        "wait_for": "body",
+        "max_items": "all"
+      }
+    },
+    {
+      "url": "https://bytedance.larkoffice.com/docx/BH6zdu3j2o9hiGxr4oucedjFnGb",
+      "discover": {
+        "link_patterns": ["https://open.oceanengine.com/labels/7/docs/"],
+        "max_items": "all"
+      }
+    }
+  ]
+}
+```
+
+飞书/Lark 文档 URL 会自动按 `lark_doc` 来源处理，只把飞书文档作为 URL 来源；实际采集正文时仍采集 `link_patterns` 匹配到的官方文档地址。
+
+`lark_doc` 来源依赖 `lark-cli` 读取飞书文档内容。项目已把 `@larksuite/cli` 放在 devDependencies，`bun install` 后会安装本地 `lark-cli`。首次使用前需要完成飞书配置和授权：
+
+```bash
+bunx lark-cli config init --new
+bunx lark-cli auth login --recommend
+```
+
 输出：
 
-- `data/sources/{platform}/_collections/{collection_id}/manifest.json`
+- `data/sources/{platform}/_collections/manifest.json`
 
 ### `bun run ingest:collection`
 
 按 collection manifest 批量采集文档。
 
 ```bash
-bun run ingest:collection data/sources/oceanengine/_collections/oceanengine_open_platform_docs/manifest.json
+bun run ingest:collection data/sources/oceanengine/_collections/manifest.json
 ```
 
 支持参数：
@@ -343,6 +424,7 @@ bun run ingest:source recipes/some-single-source.json
 ### `bun run build:llms`
 
 把 `data/sources/` 编译成 `public/` 静态文档包。
+如果平台存在 `data/sources/{platform}/_collections/manifest.json`，全量构建只发布该 manifest 中的 source，并清理 `public/{platform}/docs/` 下不在当前 source 集合里的历史 Markdown。
 
 ```bash
 bun run build:llms all
@@ -357,6 +439,20 @@ bun run build:llms oceanengine
 - `public/{platform}/index.md`
 - `public/{platform}/manifest.json`
 - `public/{platform}/docs/{doc_id}.md`
+
+### `bun run deploy:cloudflare`
+
+校验 `public/` 后发布到 Cloudflare Pages 的 `adcli` 项目。
+
+```bash
+CLOUDFLARE_API_TOKEN=<token> bun run deploy:cloudflare
+```
+
+实际执行：
+
+```bash
+bun run verify:public && bunx wrangler pages deploy public --project-name adcli --branch main
+```
 
 ### `bun run build:search-index`
 

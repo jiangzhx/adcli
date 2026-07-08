@@ -66,7 +66,6 @@ export async function fetchKuaishouMenuList(entryUrl: string): Promise<unknown[]
 }
 
 export function discoverDocumentsFromKuaishouMenu(input: {
-  collectionId: string;
   platform: string;
   entryUrl: string;
   menuList: unknown[];
@@ -87,7 +86,7 @@ export function discoverDocumentsFromKuaishouMenu(input: {
       recipe: {
         id: sourceId,
         platform: input.platform,
-        type: "official_html",
+        type: "web",
         url,
         title_hint: title,
         capture: {
@@ -110,9 +109,13 @@ export function discoverDocumentsFromKuaishouMenu(input: {
   }
 
   return {
-    id: input.collectionId,
     platform: input.platform,
-    entry_url: input.entryUrl,
+    sources: [
+      {
+        type: "web",
+        entry_url: input.entryUrl,
+      },
+    ],
     discovered_at: input.discoveredAt ?? new Date().toISOString(),
     items: typeof input.maxItems === "number" ? items.slice(0, input.maxItems) : items,
   };

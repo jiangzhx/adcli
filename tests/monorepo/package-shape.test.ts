@@ -26,6 +26,7 @@ describe("monorepo package shape", () => {
     expect(pkg.scripts["codegen:typecheck"]).toBe("bun run --cwd packages/codegen typecheck");
     expect(pkg.scripts["test:all"]).toBe("bun run test && bun run sdk:test && bun run codegen:test");
     expect(pkg.scripts["typecheck:all"]).toBe("bun run typecheck && bun run sdk:typecheck && bun run codegen:typecheck");
+    expect(pkg.scripts["deploy:cloudflare"]).toBe("bun run verify:public && bunx wrangler pages deploy public --project-name adcli --branch main");
   });
 
   test("keeps codegen as a private internal workspace package", () => {

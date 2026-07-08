@@ -4,7 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { buildAllLlmsArtifacts, buildLlmsArtifacts } from "@/src/lib/llms/builder";
+import { buildAllLlmsArtifacts, buildLlmsArtifacts, buildLlmsArtifactsForUrl } from "@/src/lib/llms/builder";
 
 test("buildLlmsArtifacts publishes source markdown and llms indexes", async () => {
   const rootDir = await mkdtemp(path.join(os.tmpdir(), "adcli-"));
@@ -81,6 +81,103 @@ test("buildLlmsArtifacts keeps path-based source ids as doc ids", async () => {
   }
 });
 
+test("buildLlmsArtifacts removes markdown files missing from current sources", async () => {
+  const rootDir = await mkdtemp(path.join(os.tmpdir(), "adcli-"));
+
+  try {
+    await writeSource(rootDir, "oceanengine", "oceanengine_1741387668314126", {
+      title: "自定义报表",
+      url: "https://open.oceanengine.com/labels/7/docs/1741387668314126?origin=left_nav",
+      markdown: "# 自定义报表",
+    });
+    const docsDir = path.join(rootDir, "public", "oceanengine", "docs");
+    await mkdir(docsDir, { recursive: true });
+    await writeFile(path.join(docsDir, "stale.md"), "# stale", "utf8");
+
+    await buildLlmsArtifacts({ rootDir, platform: "oceanengine" });
+
+    await assert.rejects(
+      readFile(path.join(docsDir, "stale.md"), "utf8"),
+      /ENOENT/,
+    );
+  } finally {
+    await rm(rootDir, { force: true, recursive: true });
+  }
+});
+
+test("buildLlmsArtifacts uses collection manifest as the platform source of truth", async () => {
+  const rootDir = await mkdtemp(path.join(os.tmpdir(), "adcli-"));
+
+  try {
+    await writeSource(rootDir, "oceanengine", "oceanengine_1741387668314126", {
+      title: "自定义报表",
+      url: "https://open.oceanengine.com/labels/7/docs/1741387668314126?origin=left_nav",
+      markdown: "# 自定义报表",
+    });
+    await writeSource(rootDir, "oceanengine", "oceanengine_1800368282559564", {
+      title: "历史残留文档",
+      url: "https://open.oceanengine.com/labels/7/docs/1800368282559564?origin=left_nav",
+      markdown: "# 历史残留文档",
+    });
+    await writeCollectionManifest(rootDir, "oceanengine", ["oceanengine_1741387668314126"]);
+
+    const manifest = await buildLlmsArtifacts({ rootDir, platform: "oceanengine" });
+
+    assert.deepEqual(manifest.documents.map((document) => document.id), ["oceanengine_1741387668314126"]);
+    await assert.rejects(
+      readFile(path.join(rootDir, "public", "oceanengine", "docs", "1800368282559564.md"), "utf8"),
+      /ENOENT/,
+    );
+  } finally {
+    await rm(rootDir, { force: true, recursive: true });
+  }
+});
+
+test("buildLlmsArtifacts fails when collection manifest source has not been ingested", async () => {
+  const rootDir = await mkdtemp(path.join(os.tmpdir(), "adcli-"));
+
+  try {
+    await writeSource(rootDir, "oceanengine", "oceanengine_1741387668314126", {
+      title: "自定义报表",
+      url: "https://open.oceanengine.com/labels/7/docs/1741387668314126?origin=left_nav",
+      markdown: "# 自定义报表",
+    });
+    await writeCollectionManifest(rootDir, "oceanengine", [
+      "oceanengine_1741387668314126",
+      "oceanengine_1865873315616282",
+    ]);
+
+    await assert.rejects(
+      buildLlmsArtifacts({ rootDir, platform: "oceanengine" }),
+      /missing source artifacts.*oceanengine_1865873315616282/,
+    );
+  } finally {
+    await rm(rootDir, { force: true, recursive: true });
+  }
+});
+
+test("buildLlmsArtifacts fails when collection manifest is invalid", async () => {
+  const rootDir = await mkdtemp(path.join(os.tmpdir(), "adcli-"));
+
+  try {
+    await writeSource(rootDir, "oceanengine", "oceanengine_1741387668314126", {
+      title: "自定义报表",
+      url: "https://open.oceanengine.com/labels/7/docs/1741387668314126?origin=left_nav",
+      markdown: "# 自定义报表",
+    });
+    const dir = path.join(rootDir, "data", "sources", "oceanengine", "_collections");
+    await mkdir(dir, { recursive: true });
+    await writeFile(path.join(dir, "manifest.json"), "{not json", "utf8");
+
+    await assert.rejects(
+      buildLlmsArtifacts({ rootDir, platform: "oceanengine" }),
+      /collection manifest/,
+    );
+  } finally {
+    await rm(rootDir, { force: true, recursive: true });
+  }
+});
+
 test("buildLlmsArtifacts aggregates root indexes across built platforms", async () => {
   const rootDir = await mkdtemp(path.join(os.tmpdir(), "adcli-"));
 
@@ -140,6 +237,62 @@ test("buildAllLlmsArtifacts publishes every source platform into root indexes", 
   }
 });
 
+test("buildLlmsArtifactsForUrl publishes one source document and keeps other markdown untouched", async () => {
+  const rootDir = await mkdtemp(path.join(os.tmpdir(), "adcli-"));
+
+  try {
+    await writeSource(rootDir, "oceanengine", "oceanengine_1865819566002436", {
+      title: "创建标准项目",
+      url: "https://open.oceanengine.com/labels/7/docs/1865819566002436",
+      markdown: "# 创建标准项目\n\n创建正文",
+    });
+    await writeSource(rootDir, "oceanengine", "oceanengine_1865873315616282", {
+      title: "更新标准项目",
+      url: "https://open.oceanengine.com/labels/7/docs/1865873315616282",
+      markdown: "# 更新标准项目\n\n更新正文",
+    });
+    await buildLlmsArtifacts({ rootDir, platform: "oceanengine" });
+
+    const untouchedPath = path.join(rootDir, "public", "oceanengine", "docs", "1865819566002436.md");
+    const untouchedBefore = await readFile(untouchedPath, "utf8");
+    await writeSource(rootDir, "oceanengine", "oceanengine_1865873315616282", {
+      title: "更新标准项目",
+      url: "https://open.oceanengine.com/labels/7/docs/1865873315616282",
+      markdown: "# 更新标准项目\n\n更新后的正文",
+    });
+
+    const summary = await buildLlmsArtifactsForUrl({
+      rootDir,
+      url: "https://open.oceanengine.com/labels/7/docs/1865873315616282",
+    });
+
+    assert.equal(summary.platform, "oceanengine");
+    assert.equal(summary.document.doc_id, "1865873315616282");
+    assert.equal(summary.outputs.document, "/oceanengine/docs/1865873315616282.md");
+    assert.equal(await readFile(untouchedPath, "utf8"), untouchedBefore);
+
+    const updated = await readFile(path.join(rootDir, "public", "oceanengine", "docs", "1865873315616282.md"), "utf8");
+    assert.match(updated, /更新后的正文/);
+
+    const manifest = JSON.parse(await readFile(path.join(rootDir, "public", "oceanengine", "manifest.json"), "utf8"));
+    assert.equal(manifest.documents.length, 2);
+    assert.equal(
+      manifest.documents.find((document: { doc_id?: string }) => document.doc_id === "1865873315616282")?.title,
+      "更新标准项目",
+    );
+
+    const full = await readFile(path.join(rootDir, "public", "llms-full.txt"), "utf8");
+    assert.match(full, /更新标准项目/);
+    assert.match(full, /Doc ID: 1865873315616282/);
+
+    const searchIndex = await readFile(path.join(rootDir, "public", "search-index.json"), "utf8");
+    assert.match(searchIndex, /1865873315616282/);
+    assert.match(searchIndex, /更新后的正文/);
+  } finally {
+    await rm(rootDir, { force: true, recursive: true });
+  }
+});
+
 async function writeSource(
   rootDir: string,
   platform: string,
@@ -154,7 +307,7 @@ async function writeSource(
       {
         id: sourceId,
         platform,
-        type: "official_html",
+        type: "web",
         title: input.title,
         url: input.url,
         captured_at: "2026-05-18T00:00:00.000Z",
@@ -167,4 +320,33 @@ async function writeSource(
     "utf8",
   );
   await writeFile(path.join(dir, "cleaned.md"), input.markdown, "utf8");
+}
+
+async function writeCollectionManifest(rootDir: string, platform: string, sourceIds: string[]): Promise<void> {
+  const dir = path.join(rootDir, "data", "sources", platform, "_collections");
+  await mkdir(dir, { recursive: true });
+  await writeFile(
+    path.join(dir, "manifest.json"),
+    `${JSON.stringify(
+      {
+        platform,
+        discovered_at: "2026-07-08T00:00:00.000Z",
+        sources: [],
+        items: sourceIds.map((sourceId) => ({
+          source_id: sourceId,
+          title: sourceId,
+          url: `https://example.com/${sourceId}`,
+          recipe: {
+            id: sourceId,
+            platform,
+            type: "web",
+            url: `https://example.com/${sourceId}`,
+          },
+        })),
+      },
+      null,
+      2,
+    )}\n`,
+    "utf8",
+  );
 }

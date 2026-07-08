@@ -87,7 +87,7 @@ Builder Agent 的输入是 Source Recipe。第一版可以用 JSON 文件描述�
 {
   "id": "oceanengine_1839621283557572",
   "platform": "oceanengine",
-  "type": "official_html",
+  "type": "web",
   "url": "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
   "title_hint": "API接口",
   "tasks_hint": ["auth", "read_ad_report"],
@@ -110,16 +110,18 @@ skills/ad-docs-recipe-authoring/SKILL.md
 
 ```json
 {
-  "id": "oceanengine_open_platform_docs",
   "platform": "oceanengine",
-  "type": "official_html_collection",
-  "entry_url": "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
-  "discover": {
-    "mode": "playwright",
-    "link_patterns": ["/labels/7/docs/"],
-    "wait_for": "body",
-    "max_items": "all"
-  }
+  "sources": [
+    {
+      "url": "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
+      "discover": {
+        "mode": "playwright",
+        "link_patterns": ["/labels/7/docs/"],
+        "wait_for": "body",
+        "max_items": "all"
+      }
+    }
+  ]
 }
 ```
 
@@ -132,7 +134,7 @@ bun run discover:sources recipes/oceanengine-open-platform-docs.json
 输出：
 
 ```text
-data/sources/{platform}/_collections/{collection_id}/manifest.json
+data/sources/{platform}/_collections/manifest.json
 ```
 
 `manifest.json` 记录发现到的文档清单，并为每篇文档生成单篇 source recipe。后续再按 manifest 中的单篇 recipe 批量采集。
@@ -150,7 +152,7 @@ Discovery 和批量采集都使用 Crawlee 调度 Playwright。
 批量采集命令：
 
 ```bash
-bun run ingest:collection data/sources/oceanengine/_collections/oceanengine_open_platform_docs/manifest.json --limit 10 --concurrency 2
+bun run ingest:collection data/sources/oceanengine/_collections/manifest.json --limit 10 --concurrency 2
 ```
 
 可选参数：
@@ -169,7 +171,7 @@ bun run ingest:collection data/sources/oceanengine/_collections/oceanengine_open
 | --- | --- |
 | `id` | source 唯一 ID |
 | `platform` | 平台编码，如 `oceanengine` |
-| `type` | 来源类型，如 `official_html`、`lark_sheet`、`official_pdf` |
+| `type` | 来源类型，如 `web`、`lark_sheet`、`official_pdf` |
 | `url` | 来源 URL |
 | `title_hint` | 人工给出的标题提示 |
 | `tasks_hint` | 可能相关的任务类型 |
@@ -192,7 +194,7 @@ data/sources/{platform}/{source_id}/blocks.json
 {
   "id": "oceanengine_1839621283557572",
   "platform": "oceanengine",
-  "type": "official_html",
+  "type": "web",
   "title": "API接口",
   "url": "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
   "captured_at": "2026-05-18T00:00:00+08:00",

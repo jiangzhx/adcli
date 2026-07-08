@@ -51,7 +51,7 @@ test("buildKuaishouDocumentHtml renders API detail data into extractable source 
     recipe: {
       id: "kuaishou_3085",
       platform: "kuaishou",
-      type: "official_html",
+      type: "web",
       url: "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=3085&menuId=3784",
       title_hint: "获取 token",
       capture: {

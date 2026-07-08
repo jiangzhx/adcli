@@ -8,7 +8,7 @@ test("buildSourceArtifacts creates source metadata, cleaned markdown, and blocks
   const recipe = parseSourceRecipe({
     id: "oceanengine_1839621283557572",
     platform: "oceanengine",
-    type: "official_html",
+    type: "web",
     url: "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
     title_hint: "API接口",
     tasks_hint: ["auth"],
@@ -23,7 +23,7 @@ test("buildSourceArtifacts creates source metadata, cleaned markdown, and blocks
 
   assert.equal(artifacts.source.id, "oceanengine_1839621283557572");
   assert.equal(artifacts.source.platform, "oceanengine");
-  assert.equal(artifacts.source.type, "official_html");
+  assert.equal(artifacts.source.type, "web");
   assert.equal(artifacts.source.title, "API接口");
   assert.equal(artifacts.source.status, "ok");
   assert.match(artifacts.source.hash, /^sha256:[a-f0-9]{64}$/);

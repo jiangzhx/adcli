@@ -9,10 +9,14 @@ import {
 import type { CollectionManifest } from "@/src/lib/builder/discover";
 
 const manifest: CollectionManifest = {
-  id: "oceanengine_open_platform_docs",
   platform: "oceanengine",
-  entry_url: "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
   discovered_at: "2026-05-18T00:00:00+08:00",
+  sources: [
+    {
+      type: "web",
+      entry_url: "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
+    },
+  ],
   items: [
     {
       source_id: "oceanengine_1",
@@ -21,7 +25,7 @@ const manifest: CollectionManifest = {
       recipe: {
         id: "oceanengine_1",
         platform: "oceanengine",
-        type: "official_html",
+        type: "web",
         url: "https://open.oceanengine.com/labels/7/docs/1?origin=left_nav",
         capture: { mode: "playwright", wait_for: "body" },
       },
@@ -33,7 +37,7 @@ const manifest: CollectionManifest = {
       recipe: {
         id: "oceanengine_2",
         platform: "oceanengine",
-        type: "official_html",
+        type: "web",
         url: "https://open.oceanengine.com/labels/7/docs/2?origin=left_nav",
         capture: { mode: "playwright", wait_for: "body" },
       },
@@ -45,7 +49,7 @@ const manifest: CollectionManifest = {
       recipe: {
         id: "oceanengine_2_duplicate",
         platform: "oceanengine",
-        type: "official_html",
+        type: "web",
         url: "https://open.oceanengine.com/labels/7/docs/2?origin=left_nav",
         capture: { mode: "playwright", wait_for: "body" },
       },

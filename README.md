@@ -171,6 +171,18 @@ bun run build
 bun run build:llms all
 ```
 
+采集导航树未收录但可直达的单个官方文档：
+
+```bash
+bun run ingest:url https://open.oceanengine.com/labels/7/docs/<doc_id>
+bun run ingest:url https://open.oceanengine.com/labels/7/docs/<doc_id> --platform oceanengine
+bun run build:llms --url https://open.oceanengine.com/labels/7/docs/<doc_id>
+```
+
+`ingest:url` 会从 URL 自动识别平台并从页面解析标题，不支持手动传标题。
+
+`build:llms --url` 只重写该 URL 对应的 Markdown 文档，并更新平台索引、manifest、`llms` 和搜索索引。
+
 只重建搜索索引：
 
 ```bash
@@ -206,5 +218,7 @@ recipes/
   -> build:llms
   -> public/
 ```
+
+`discover:sources` 的 recipe 文件是平台级配置：顶层写一次 `platform`，多个发现来源放在 `sources` 数组。`recipes/oceanengine-open-platform-docs.json` 同时包含官方导航树 discovery 和飞书文档 URL 清单 discovery，维护时跑同一个文件即可。飞书文档来源依赖 `@larksuite/cli` 提供的 `lark-cli`；`bun install` 会安装它，首次使用前需要完成 `lark-cli config init --new` 和 `lark-cli auth login --recommend`。
 
 更多文档包说明见 [docs/llms.md](docs/llms.md)。

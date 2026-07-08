@@ -25,7 +25,7 @@ async function main(): Promise<void> {
     changedOnly: booleanOption("--changed-only"),
   });
 
-  console.log(`Collection: ${manifest.id}`);
+  console.log(`Platform: ${manifest.platform}`);
   console.log(`Requested: ${result.requested}`);
   console.log(`Succeeded: ${result.succeeded}`);
   console.log(`Changed: ${result.changed}`);

@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 
-import { discoverCollection, readCollectionRecipe, writeCollectionManifest } from "@/src/lib/builder/discover";
+import { discoverCollections, readCollectionRecipes, writeCollectionManifest } from "@/src/lib/builder/discover";
 
 const recipePath = process.argv[2];
 
@@ -15,11 +15,15 @@ main().catch((error: unknown) => {
 });
 
 async function main(): Promise<void> {
-  const recipe = await readCollectionRecipe(recipePath as string);
-  const manifest = await discoverCollection(recipe);
-  const targetDir = await writeCollectionManifest(process.cwd(), manifest);
+  const recipes = await readCollectionRecipes(recipePath as string);
+  const manifests = await discoverCollections(recipes);
 
-  console.log(`Discovered collection ${manifest.id}`);
-  console.log(`Documents: ${manifest.items.length}`);
-  console.log(`Output: ${targetDir}`);
+  for (const manifest of manifests) {
+    const targetDir = await writeCollectionManifest(process.cwd(), manifest);
+
+    console.log(`Discovered platform ${manifest.platform}`);
+    console.log(`Sources: ${manifest.sources.length}`);
+    console.log(`Documents: ${manifest.items.length}`);
+    console.log(`Output: ${targetDir}`);
+  }
 }

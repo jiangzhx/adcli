@@ -1,12 +1,20 @@
 import assert from "node:assert/strict";
+import { mkdtemp, readFile, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import path from "node:path";
 import test from "node:test";
 
-import { discoverDocumentsFromLinks, discoverDocumentsFromOceanEngineTree } from "@/src/lib/builder/discover";
+import {
+  discoverDocumentsFromLarkDocContent,
+  discoverDocumentsFromLinks,
+  discoverDocumentsFromOceanEngineTree,
+  readCollectionRecipes,
+  writeCollectionManifest,
+} from "@/src/lib/builder/discover";
 import { discoverDocumentsFromKuaishouMenu } from "@/src/lib/builder/kuaishou";
 
 test("discoverDocumentsFromLinks filters, normalizes, deduplicates, and creates source recipes", () => {
   const manifest = discoverDocumentsFromLinks({
-    collectionId: "oceanengine_open_platform_docs",
     platform: "oceanengine",
     entryUrl: "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
     linkPatterns: ["/labels/7/docs/"],
@@ -43,13 +51,13 @@ test("discoverDocumentsFromLinks filters, normalizes, deduplicates, and creates 
         source_id: "oceanengine_1839621283557572",
         title: "MCP 简介",
         url: "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
-        recipe_type: "official_html",
+        recipe_type: "web",
       },
       {
         source_id: "oceanengine_1839621283557000",
         title: "报表 API",
         url: "https://open.oceanengine.com/labels/7/docs/1839621283557000?origin=left_nav",
-        recipe_type: "official_html",
+        recipe_type: "web",
       },
     ],
   );
@@ -57,7 +65,6 @@ test("discoverDocumentsFromLinks filters, normalizes, deduplicates, and creates 
 
 test("discoverDocumentsFromOceanEngineTree flattens nested doc tree into source recipes", () => {
   const manifest = discoverDocumentsFromOceanEngineTree({
-    collectionId: "oceanengine_open_platform_docs",
     platform: "oceanengine",
     entryUrl: "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
     tree: {
@@ -108,7 +115,6 @@ test("discoverDocumentsFromOceanEngineTree flattens nested doc tree into source 
 
 test("discoverDocumentsFromLinks prefers a later descriptive title for duplicate urls", () => {
   const manifest = discoverDocumentsFromLinks({
-    collectionId: "oceanengine_open_platform_docs",
     platform: "oceanengine",
     entryUrl: "https://open.oceanengine.com/labels/7/docs/1839621283557572?origin=left_nav",
     linkPatterns: ["/labels/7/docs/"],
@@ -131,7 +137,6 @@ test("discoverDocumentsFromLinks prefers a later descriptive title for duplicate
 
 test("discoverDocumentsFromLinks replaces generic navigation titles", () => {
   const manifest = discoverDocumentsFromLinks({
-    collectionId: "tencent_ads_developer_docs",
     platform: "tencent_ads",
     entryUrl: "https://developers.e.qq.com/v3.0/pages/regist_developer",
     linkPatterns: ["/v3.0/pages/"],
@@ -154,7 +159,6 @@ test("discoverDocumentsFromLinks replaces generic navigation titles", () => {
 
 test("discoverDocumentsFromLinks applies max items after duplicate title improvement", () => {
   const manifest = discoverDocumentsFromLinks({
-    collectionId: "tencent_ads_developer_docs",
     platform: "tencent_ads",
     entryUrl: "https://developers.e.qq.com/v3.0/pages/regist_developer",
     linkPatterns: ["/v3.0/pages/"],
@@ -182,7 +186,6 @@ test("discoverDocumentsFromLinks applies max items after duplicate title improve
 
 test("discoverDocumentsFromLinks deduplicates the same doc id across query variants", () => {
   const manifest = discoverDocumentsFromLinks({
-    collectionId: "oceanengine_open_platform_docs",
     platform: "oceanengine",
     entryUrl: "https://open.oceanengine.com/labels/7/docs/1839621283557572",
     linkPatterns: ["/labels/7/docs/"],
@@ -205,7 +208,6 @@ test("discoverDocumentsFromLinks deduplicates the same doc id across query varia
 
 test("discoverDocumentsFromLinks creates stable source ids for path-based docs", () => {
   const manifest = discoverDocumentsFromLinks({
-    collectionId: "tencent_ads_developer_docs",
     platform: "tencent_ads",
     entryUrl: "https://developers.e.qq.com/v3.0/pages/regist_developer",
     linkPatterns: ["/v3.0/pages/", "/v3.0/docs/"],
@@ -244,7 +246,6 @@ test("discoverDocumentsFromLinks creates stable source ids for path-based docs",
 
 test("discoverDocumentsFromLinks creates stable source ids for query-based Kuaishou docs", () => {
   const manifest = discoverDocumentsFromLinks({
-    collectionId: "kuaishou_dsp_developer_docs",
     platform: "kuaishou",
     entryUrl: "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2539&menuId=3765",
     linkPatterns: ["docType=DSP"],
@@ -263,9 +264,90 @@ test("discoverDocumentsFromLinks creates stable source ids for query-based Kuais
   );
 });
 
+test("discoverDocumentsFromLarkDocContent extracts official doc urls from fetched content", () => {
+  const manifest = discoverDocumentsFromLarkDocContent({
+    platform: "oceanengine",
+    entryUrl: "https://bytedance.larkoffice.com/docx/BH6zdu3j2o9hiGxr4oucedjFnGb",
+    linkPatterns: ["https://open.oceanengine.com/labels/7/docs/"],
+    content: [
+      "<title>头条 3.0 投放接口文档拉取总结</title>",
+      "<p>创建标准项目 https://open.oceanengine.com/labels/7/docs/1865819566002436。</p>",
+      "<p>更新标准项目：https://open.oceanengine.com/labels/7/docs/1865873315616282?origin=left_nav</p>",
+      "<p>重复：https://open.oceanengine.com/labels/7/docs/1865873315616282）</p>",
+      "<p>忽略：https://example.com/not-a-doc</p>",
+    ].join("\n"),
+  });
+
+  assert.deepEqual(
+    manifest.items.map((item) => ({
+      source_id: item.source_id,
+      title: item.title,
+      url: item.url,
+    })),
+    [
+      {
+        source_id: "oceanengine_1865819566002436",
+        title: "oceanengine_1865819566002436",
+        url: "https://open.oceanengine.com/labels/7/docs/1865819566002436",
+      },
+      {
+        source_id: "oceanengine_1865873315616282",
+        title: "oceanengine_1865873315616282",
+        url: "https://open.oceanengine.com/labels/7/docs/1865873315616282?origin=left_nav",
+      },
+    ],
+  );
+});
+
+test("readCollectionRecipes reads a platform-level config file", async () => {
+  const dir = await mkdtemp(path.join(tmpdir(), "adcli-recipes-"));
+  const recipePath = path.join(dir, "collections.json");
+  await writeFile(
+    recipePath,
+    `${JSON.stringify({
+      platform: "oceanengine",
+      sources: [
+        {
+          url: "https://bytedance.larkoffice.com/docx/BH6zdu3j2o9hiGxr4oucedjFnGb",
+          discover: {
+            link_patterns: ["https://open.oceanengine.com/labels/7/docs/"],
+          },
+        },
+      ],
+    })}\n`,
+    "utf8",
+  );
+
+  const recipes = await readCollectionRecipes(recipePath);
+
+  assert.equal(recipes.length, 1);
+  assert.equal(recipes[0]?.type, "lark_doc");
+});
+
+test("writeCollectionManifest writes a platform-level manifest path", async () => {
+  const rootDir = await mkdtemp(path.join(tmpdir(), "adcli-manifest-"));
+  const manifest = discoverDocumentsFromLinks({
+    platform: "oceanengine",
+    entryUrl: "https://open.oceanengine.com/labels/7/docs/1839621283557572",
+    linkPatterns: ["/labels/7/docs/"],
+    links: [
+      {
+        text: "MCP 简介",
+        href: "https://open.oceanengine.com/labels/7/docs/1839621283557572",
+      },
+    ],
+  });
+
+  const targetDir = await writeCollectionManifest(rootDir, manifest);
+
+  assert.equal(targetDir, path.join(rootDir, "data", "sources", "oceanengine", "_collections"));
+  const written = JSON.parse(await readFile(path.join(targetDir, "manifest.json"), "utf8"));
+  assert.equal(written.platform, "oceanengine");
+  assert.equal("id" in written, false);
+});
+
 test("discoverDocumentsFromKuaishouMenu flattens menu API docs and deduplicates document ids", () => {
   const manifest = discoverDocumentsFromKuaishouMenu({
-    collectionId: "kuaishou_dsp_developer_docs",
     platform: "kuaishou",
     entryUrl: "https://developers.e.kuaishou.com/docs?docType=DSP&documentId=2539&menuId=3765",
     menuList: [

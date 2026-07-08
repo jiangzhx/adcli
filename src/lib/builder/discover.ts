@@ -1,5 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 
 import { PlaywrightCrawler } from "crawlee";
 
@@ -8,7 +10,14 @@ import {
   fetchKuaishouMenuList,
   isKuaishouDocsUrl,
 } from "./kuaishou";
-import { parseCollectionRecipe, type CollectionRecipe, type SourceRecipe } from "./recipe";
+import {
+  parseCollectionRecipes,
+  type CollectionRecipe,
+  type WebCollectionRecipe,
+  type SourceRecipe,
+} from "./recipe";
+
+const execFileAsync = promisify(execFile);
 
 export type DiscoveredLink = {
   text: string;
@@ -22,18 +31,22 @@ export type CollectionManifestItem = {
   recipe: SourceRecipe;
 };
 
-export type CollectionManifest = {
-  id: string;
-  platform: string;
+export type CollectionManifestSource = {
+  type: CollectionRecipe["type"];
   entry_url: string;
+};
+
+export type CollectionManifest = {
+  platform: string;
+  sources: CollectionManifestSource[];
   discovered_at: string;
   items: CollectionManifestItem[];
 };
 
 export type DiscoverDocumentsInput = {
-  collectionId: string;
   platform: string;
   entryUrl: string;
+  sourceType?: CollectionRecipe["type"];
   linkPatterns: string[];
   links: DiscoveredLink[];
   discoveredAt?: string;
@@ -69,7 +82,7 @@ export function discoverDocumentsFromLinks(input: DiscoverDocumentsInput): Colle
       recipe: {
         id: sourceId,
         platform: input.platform,
-        type: "official_html",
+        type: "web",
         url,
         title_hint: title === sourceId ? undefined : title,
         capture: {
@@ -95,9 +108,13 @@ export function discoverDocumentsFromLinks(input: DiscoverDocumentsInput): Colle
   const limitedItems = typeof input.maxItems === "number" ? items.slice(0, input.maxItems) : items;
 
   return {
-    id: input.collectionId,
     platform: input.platform,
-    entry_url: input.entryUrl,
+    sources: [
+      {
+        type: input.sourceType ?? "web",
+        entry_url: input.entryUrl,
+      },
+    ],
     discovered_at: input.discoveredAt ?? new Date().toISOString(),
     items: limitedItems,
   };
@@ -119,7 +136,6 @@ const genericNavigationTitles = new Set([
 ]);
 
 export function discoverDocumentsFromOceanEngineTree(input: {
-  collectionId: string;
   platform: string;
   entryUrl: string;
   tree: unknown;
@@ -134,7 +150,6 @@ export function discoverDocumentsFromOceanEngineTree(input: {
   }));
 
   return discoverDocumentsFromLinks({
-    collectionId: input.collectionId,
     platform: input.platform,
     entryUrl: input.entryUrl,
     linkPatterns: [`${labelPath}/docs/`],
@@ -144,16 +159,50 @@ export function discoverDocumentsFromOceanEngineTree(input: {
   });
 }
 
-export async function readCollectionRecipe(recipePath: string): Promise<CollectionRecipe> {
+export function discoverDocumentsFromLarkDocContent(input: {
+  platform: string;
+  entryUrl: string;
+  linkPatterns: string[];
+  content: string;
+  discoveredAt?: string;
+  maxItems?: number | "all";
+}): CollectionManifest {
+  const links = extractLinksFromText(input.content).map((url) => ({
+    text: "",
+    href: url,
+  }));
+
+  return discoverDocumentsFromLinks({
+    platform: input.platform,
+    entryUrl: input.entryUrl,
+    sourceType: "lark_doc",
+    linkPatterns: input.linkPatterns,
+    links,
+    discoveredAt: input.discoveredAt,
+    maxItems: input.maxItems,
+  });
+}
+
+export async function readCollectionRecipes(recipePath: string): Promise<CollectionRecipe[]> {
   const raw = await readFile(recipePath, "utf8");
-  return parseCollectionRecipe(JSON.parse(raw));
+  return parseCollectionRecipes(JSON.parse(raw));
 }
 
 export async function discoverCollection(recipe: CollectionRecipe): Promise<CollectionManifest> {
+  if (recipe.type === "lark_doc") {
+    const content = await fetchLarkDocContent(recipe.entry_url);
+    return discoverDocumentsFromLarkDocContent({
+      platform: recipe.platform,
+      entryUrl: recipe.entry_url,
+      linkPatterns: recipe.discover.link_patterns,
+      content,
+      maxItems: recipe.discover.max_items,
+    });
+  }
+
   if (isKuaishouDocsUrl(recipe.entry_url)) {
     const menuList = await fetchKuaishouMenuList(recipe.entry_url);
     return discoverDocumentsFromKuaishouMenu({
-      collectionId: recipe.id,
       platform: recipe.platform,
       entryUrl: recipe.entry_url,
       menuList,
@@ -166,7 +215,6 @@ export async function discoverCollection(recipe: CollectionRecipe): Promise<Coll
     : await discoverLinksWithPlaywright(recipe);
 
   const linkManifest = discoverDocumentsFromLinks({
-    collectionId: recipe.id,
     platform: recipe.platform,
     entryUrl: recipe.entry_url,
     linkPatterns: recipe.discover.link_patterns,
@@ -175,7 +223,6 @@ export async function discoverCollection(recipe: CollectionRecipe): Promise<Coll
   });
   const treeManifests = discovery.trees.map((tree) =>
     discoverDocumentsFromOceanEngineTree({
-      collectionId: recipe.id,
       platform: recipe.platform,
       entryUrl: recipe.entry_url,
       tree,
@@ -184,6 +231,38 @@ export async function discoverCollection(recipe: CollectionRecipe): Promise<Coll
   );
 
   return mergeCollectionManifests(linkManifest, ...treeManifests);
+}
+
+export async function discoverCollections(recipes: CollectionRecipe[]): Promise<CollectionManifest[]> {
+  const manifestsByPlatform = new Map<string, CollectionManifest[]>();
+
+  for (const recipe of recipes) {
+    const manifest = await discoverCollection(recipe);
+    const manifests = manifestsByPlatform.get(manifest.platform) ?? [];
+    manifests.push(manifest);
+    manifestsByPlatform.set(manifest.platform, manifests);
+  }
+
+  return Array.from(manifestsByPlatform.values()).map((manifests) => mergeCollectionManifests(...manifests));
+}
+
+async function fetchLarkDocContent(docUrl: string): Promise<string> {
+  const args = ["docs", "+fetch", "--api-version", "v2", "--doc", docUrl, "--doc-format", "markdown"];
+  const { stdout } = await execFileAsync("lark-cli", args, {
+    encoding: "utf8",
+    maxBuffer: 10 * 1024 * 1024,
+  });
+  const parsed = JSON.parse(stdout) as unknown;
+  if (!isRecord(parsed) || parsed.ok !== true || !isRecord(parsed.data) || !isRecord(parsed.data.document)) {
+    throw new Error("lark-cli docs +fetch did not return a document");
+  }
+
+  const content = parsed.data.document.content;
+  if (typeof content !== "string") {
+    throw new Error("lark-cli docs +fetch returned a document without string content");
+  }
+
+  return content;
 }
 
 export async function writeCollectionManifest(
@@ -196,7 +275,6 @@ export async function writeCollectionManifest(
     "sources",
     manifest.platform,
     "_collections",
-    manifest.id,
   );
   await mkdir(targetDir, { recursive: true });
   await writeFile(path.join(targetDir, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
@@ -222,7 +300,7 @@ async function discoverLinksWithFetch(entryUrl: string): Promise<DiscoveredLink[
   }));
 }
 
-async function discoverLinksWithPlaywright(recipe: CollectionRecipe): Promise<{
+async function discoverLinksWithPlaywright(recipe: WebCollectionRecipe): Promise<{
   links: DiscoveredLink[];
   trees: unknown[];
 }> {
@@ -269,12 +347,12 @@ async function discoverLinksWithPlaywright(recipe: CollectionRecipe): Promise<{
     },
   });
 
-  await crawler.run([{ url: recipe.entry_url, uniqueKey: recipe.id }]);
+  await crawler.run([{ url: recipe.entry_url, uniqueKey: recipe.entry_url }]);
 
   return { links, trees };
 }
 
-function mergeCollectionManifests(...manifests: CollectionManifest[]): CollectionManifest {
+export function mergeCollectionManifests(...manifests: CollectionManifest[]): CollectionManifest {
   const [first] = manifests;
   if (!first) {
     throw new Error("at least one manifest is required");
@@ -282,7 +360,9 @@ function mergeCollectionManifests(...manifests: CollectionManifest[]): Collectio
 
   const itemBySourceId = new Map<string, CollectionManifestItem>();
   const items: CollectionManifestItem[] = [];
+  const sources: CollectionManifestSource[] = [];
   for (const manifest of manifests) {
+    sources.push(...manifest.sources);
     for (const item of manifest.items) {
       const existing = itemBySourceId.get(item.source_id);
       if (existing) {
@@ -297,8 +377,24 @@ function mergeCollectionManifests(...manifests: CollectionManifest[]): Collectio
 
   return {
     ...first,
+    sources: deduplicateManifestSources(sources),
     items,
   };
+}
+
+function deduplicateManifestSources(sources: CollectionManifestSource[]): CollectionManifestSource[] {
+  const seen = new Set<string>();
+  const deduplicated: CollectionManifestSource[] = [];
+  for (const source of sources) {
+    const key = `${source.type}\n${source.entry_url}`;
+    if (seen.has(key)) {
+      continue;
+    }
+    seen.add(key);
+    deduplicated.push(source);
+  }
+
+  return deduplicated;
 }
 
 function extractOceanEngineDocs(tree: unknown): Array<{ docId: string; title: string }> {
@@ -352,6 +448,22 @@ function normalizeUrl(href: string, baseUrl: string): string | undefined {
   } catch {
     return undefined;
   }
+}
+
+function extractLinksFromText(text: string): string[] {
+  const urls: string[] = [];
+  for (const match of text.matchAll(/https?:\/\/[^\s<>"']+/g)) {
+    const url = trimTrailingUrlPunctuation((match[0] ?? "").replaceAll("&amp;", "&"));
+    if (url) {
+      urls.push(url);
+    }
+  }
+
+  return urls;
+}
+
+function trimTrailingUrlPunctuation(url: string): string {
+  return url.replace(/[),.;:!?，。；：！？、）】》」』]+$/u, "");
 }
 
 function matchesAnyPattern(url: string, patterns: string[]): boolean {
