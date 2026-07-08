@@ -75,7 +75,7 @@ ADCLI_SEARCH_INDEX=https://example.com/search-index.json adcli doc search "广�
 
 - 平台 ID。
 - 文档标题。
-- `public/` 下的 Markdown 路径。
+- 线上 Markdown URL 和 `public/` 下的 Markdown 路径。
 - 原始官方文档 URL。
 - 搜索分数。
 

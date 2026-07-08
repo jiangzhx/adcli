@@ -1,6 +1,7 @@
 #!/usr/bin/env bun
 
 import { getSearchIndexCacheInfo, loadSearchIndex, refreshSearchIndex } from "@/src/lib/search/cache";
+import { publicDocsUrl, withPublicUrls } from "@/src/lib/search/output";
 import { searchDocuments } from "@/src/lib/search/searcher";
 import { formatOceanEngineError, formatOceanEngineOutput, runOceanEngineCommand } from "@/src/commands/oceanengine/commands";
 import { formatTencentAdsError, formatTencentAdsOutput, runTencentAdsCommand } from "@/src/commands/tencent-ads/commands";
@@ -158,7 +159,7 @@ async function main(): Promise<void> {
   });
 
   if (args.json) {
-    console.log(JSON.stringify({ query, results }, null, 2));
+    console.log(JSON.stringify({ query, results: withPublicUrls(results) }, null, 2));
     return;
   }
 
@@ -169,7 +170,7 @@ async function main(): Promise<void> {
 
   for (const [index, result] of results.entries()) {
     console.log(`${index + 1}. [${result.platform}] ${result.title}`);
-    console.log(`   Doc: ${result.public_path}`);
+    console.log(`   LLMs: ${publicDocsUrl(result.public_path)}`);
     if (result.source_url) {
       console.log(`   Source: ${result.source_url}`);
     }

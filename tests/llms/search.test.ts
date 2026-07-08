@@ -6,6 +6,7 @@ import test from "node:test";
 
 import { defaultPlatformAliases } from "@/src/lib/search/platforms";
 import { buildSearchIndex } from "@/src/lib/search/index-builder";
+import { publicDocsUrl, withPublicUrls } from "@/src/lib/search/output";
 import { searchDocuments } from "@/src/lib/search/searcher";
 
 test("buildSearchIndex creates searchable records from public docs", async () => {
@@ -135,6 +136,25 @@ test("searchDocuments supports explicit platform filtering", async () => {
   });
 
   assert.deepEqual(results.map((result) => result.platform), ["tencent_ads"]);
+});
+
+test("withPublicUrls adds hosted adcli document urls", () => {
+  const results = withPublicUrls([
+    {
+      id: "oceanengine_1865819566002436",
+      platform: "oceanengine",
+      title: "创建标准项目",
+      public_path: "/oceanengine/docs/1865819566002436.md",
+      source_url: "https://open.oceanengine.com/labels/7/docs/1865819566002436",
+      headings: ["创建标准项目"],
+      text: "创建标准项目",
+      score: 1,
+      terms: ["创建", "标准", "项目"],
+    },
+  ]);
+
+  assert.equal(publicDocsUrl("/oceanengine/docs/1865819566002436.md"), "https://adcli.jiangzhx.com/oceanengine/docs/1865819566002436.md");
+  assert.equal(results[0]?.public_url, "https://adcli.jiangzhx.com/oceanengine/docs/1865819566002436.md");
 });
 
 async function writePublicDoc(
