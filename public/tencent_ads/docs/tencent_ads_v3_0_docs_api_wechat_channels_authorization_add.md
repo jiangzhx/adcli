@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_channels_authorization_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | wechat_channels_account_name | string | 视频号名称 字段长度最小 0 字节，长度最大 255 字节 |
 | authorization_certification_list | struct[] | 资质列表 数组最大长度 255 |
 | certification_image | string | 营业执照/企业资质证明图片 URL 地址 字段长度最小 1 字节，长度最大 255 字节 |
@@ -96,8 +96,6 @@ curl 'https://api.e.qq.com/v3.0/wechat_channels_authorization/add?access_token=<
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

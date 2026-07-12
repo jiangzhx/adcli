@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_barrage_recommend_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 
 ## 请求示例
 
@@ -63,4 +63,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/barrage_recommend/get?access_token=<ACCESS
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

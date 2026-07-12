@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_scene_spec_tags_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | type* | enum | 场景定向标签类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_scene_spec_tags_type) 可选值：{ WECHAT_POSITION, OFFICIAL_ACCOUNT_MEDIA_CATEGORY, MINI_PROGRAM_AND_MINI_GAME, PAY_SCENE, MOBILE_UNION_CATEGORY, WECHAT_CHANNELS_SCENE, PC_SCENE } |
 
 ## 请求示例
@@ -132,6 +132,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/scene_spec_tags/get?access_token=<ACCESS_T
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

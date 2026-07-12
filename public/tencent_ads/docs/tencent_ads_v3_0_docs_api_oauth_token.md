@@ -51,7 +51,7 @@ curl -v -G 'https://api.e.qq.com/oauth/token' \
 | account_id | integer | 授权的推广帐号 id，有操作权限的帐号 id |
 | scope_list | string[] | 权限列表，若为空，则表示拥有所属应用的所有权限 |
 | wechat_account_id | string | 授权的推广帐号对应的微信帐号 id |
-| account_role_type | enum | 授权账号身份类型，授权账号类型广告主,代理商,T1 账户,商务管家账户，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#oauth_account_role_type) |
+| account_role_type | enum | 授权账号身份类型，授权账号类型客户,代理商,T1 账户,商务管家账户，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#oauth_account_role_type) |
 | account_type | enum | 账号类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#oauth_account_type) |
 | role_type | enum | 角色，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#role_type) |
 | access_token | string | 应用 access token |
@@ -89,4 +89,4 @@ curl -v -G 'https://api.e.qq.com/oauth/token' \
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

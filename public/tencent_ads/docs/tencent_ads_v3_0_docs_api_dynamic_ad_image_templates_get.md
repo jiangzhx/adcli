@@ -28,9 +28,9 @@ source_id: tencent_ads_v3_0_docs_api_dynamic_ad_image_templates_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id，有操作权限的广告主 id |
+| account_id* | integer | 账户 id，有操作权限的账户 id |
 | product_catalog_id* | integer | 商品目录 id 最小值 0，最大值 2147483647 |
-| product_mode* | enum | 标明适用的动态商品广告类型，SINGLE 表示适用于 SDPA，MULTIPLE 表示适用于 MDPA，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_product_mode) 可选值：{ SINGLE, MULTIPLE } |
+| product_mode* | enum | 标明适用的动态商品营销类型，SINGLE 表示适用于 SDPA，MULTIPLE 表示适用于 MDPA，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_product_mode) 可选值：{ SINGLE, MULTIPLE } |
 | dynamic_ad_template_ownership_type | enum | 动态商品模板所属类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#dynamic_ad_template_ownership_type) 可选值：{ ALL, SELF_OWNED, GRANTED, COMMON, PRODUCT_CATALOG_OWNED } |
 | dynamic_ad_template_width* | integer | 动态商品模板宽度，单位 px，同比例下的传参，会返回最大尺寸的实际模板，确保投放可用，具体宽高数值详见 [\[动态商品模板宽高合法入参\]](https://developers.e.qq.com/docs/guide/ads/dynamictemplatevalidwidthheight) 最小值 1，最大值 2000 |
 | dynamic_ad_template_height* | integer | 动态商品模板高度，单位 px，同比例下的传参，会返回最大尺寸的实际模板，确保投放可用，具体宽高数值详见 [\[动态商品模板宽高合法入参\]](https://developers.e.qq.com/docs/guide/ads/dynamictemplatevalidwidthheight) 最小值 1，最大值 2000 |
@@ -128,6 +128,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_ad_image_templates/get?access_toke
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

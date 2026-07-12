@@ -30,9 +30,9 @@ source_id: tencent_ads_v3_0_docs_api_rtatarget_bind_delete
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | data* | struct[] | 解除 RTA 策略绑定信息列表 数组最小长度 1，最大长度 100 |
-| Id* | integer | 待解绑的 id，可以是广告 id、广告主 id，微信广告主 id 若来自 mp 平台则需同时提供直客 UID 和子客 UID |
-| TargetType* | integer | ID 类型，1：广告 id 3：广告主 id |
-| IsMp | integer | 是否微信广告，广告投放来源是否 mp 投放端，1：是 0：否 |
+| Id* | integer | 待解绑的 id，可以是营销单元 id、账户 id，微信账户 id 若来自 mp 平台则需同时提供直客 UID 和子客 UID |
+| TargetType* | integer | ID 类型，1：营销单元 id 3：账户 id |
+| IsMp | integer | 是否微信营销，投放来源是否 mp 投放端，1：是 0：否 |
 | OuterTargetId | string | 外部策略 id，规范见 [\[此文档\]](https://docs.qq.com/doc/DVHppWU95amZjUVVG)。 字段长度最小 1 字节，长度最大 32 字节 |
 
 ## 请求示例
@@ -55,14 +55,14 @@ curl 'https://api.e.qq.com/v3.0/rtatarget_bind/delete?access_token=<ACCESS_TOKEN
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | success | struct[] | 解绑成功的记录列表 |
-| Id | integer | 已绑定的 id，可以是广告 id、广告主 id |
-| TargetType | integer | ID 类型，1：广告 id 3：广告主 id |
-| IsMp | integer | 是否微信广告，广告投放来源是否 mp 投放端，1：是 0：否 |
+| Id | integer | 已绑定的 id，可以是营销单元 id、账户 id |
+| TargetType | integer | ID 类型，1：营销单元 id 3：账户 id |
+| IsMp | integer | 是否微信营销，投放来源是否 mp 投放端，1：是 0：否 |
 | OuterTargetId | string | 外部策略 id，规范见 [\[此文档\]](https://docs.qq.com/doc/DVHppWU95amZjUVVG)。 |
 | error | struct[] | 解绑失败的记录列表 |
-| Id | integer | 已绑定的 id，可以是广告 id、广告主 id |
-| TargetType | integer | ID 类型，1：广告 id 3：广告主 id |
-| IsMp | integer | 是否微信广告，广告投放来源是否 mp 投放端，1：是 0：否 |
+| Id | integer | 已绑定的 id，可以是营销单元 id、账户 id |
+| TargetType | integer | ID 类型，1：营销单元 id 3：账户 id |
+| IsMp | integer | 是否微信营销，投放来源是否 mp 投放端，1：是 0：否 |
 | OuterTargetId | string | 外部策略 id，规范见 [\[此文档\]](https://docs.qq.com/doc/DVHppWU95amZjUVVG)。 |
 | reason | string | 操作失败原因 |
 
@@ -82,8 +82,6 @@ curl 'https://api.e.qq.com/v3.0/rtatarget_bind/delete?access_token=<ACCESS_TOKEN
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

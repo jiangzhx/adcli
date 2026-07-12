@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_qualification_images_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | image_ids* | string[] | 资质图片 id 列表，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 数组最小长度 1，最大长度 100 字段长度最小 1 字节，长度最大 64 字节 |
 | page* | integer | 页码 最小值 1，最大值 1000 |
 | page_size* | integer | 一页显示的数据条数 最小值 1，最大值 100 |
@@ -95,4 +95,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/qualification_images/get?access_token=<ACC
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

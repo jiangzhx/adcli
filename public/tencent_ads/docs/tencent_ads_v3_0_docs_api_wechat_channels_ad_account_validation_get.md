@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_channels_ad_account_validation_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | nickname | string | 视频号用户昵称 字段长度最小 1 字节，长度最大 1024 字节 |
 | head_image_id | string | 视频号头像图片 id，通过 [\[images 模块\]](https://developers.e.qq.com/docs/api/business_assets/image/images_add) 上传图片后获得,head_image_id 对应的图片高、宽均为 512px、大小限制 400KB 字段长度最小 1 字节，长度最大 64 字节 |
 | wechat_channels_account_id* | string | 视频号账号 id 字段长度最小 1 字节，长度最大 1024 字节 |
@@ -46,7 +46,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_channels_ad_account_validation/get?
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 
 ## 应答示例
 
@@ -65,4 +65,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_channels_ad_account_validation/get?
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

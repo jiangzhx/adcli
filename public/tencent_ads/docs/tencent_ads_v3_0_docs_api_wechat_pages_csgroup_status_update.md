@@ -29,8 +29,8 @@ source_id: tencent_ads_v3_0_docs_api_wechat_pages_csgroup_status_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| corp_id* | string | 绑定的企业 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| corp_id* | string | 绑定的企业 id 字段长度最小 1 字节，长度最大 64 字节 |
 | userid* | string | 客服列表 字段长度最小 1 字节，长度最大 256 字节 |
 | status* | integer | 客服在线状态 最小值 0，最大值 1 |
 
@@ -63,6 +63,8 @@ curl 'https://api.e.qq.com/v3.0/wechat_pages_csgroup_status/update?access_token=
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

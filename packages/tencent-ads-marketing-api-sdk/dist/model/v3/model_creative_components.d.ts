@@ -1,4 +1,4 @@
-import type { ActionButtonComponent, AppGiftPackCodeComponent, AppPromotionVideoComponent, AudioComponent, BarrageComponent, BrandComponent, ChosenButtonComponent, ConsultComponent, CountDownComponent, DescriptionComponent, ElementStoryComponent, EndPageComponent, FloatingZoneComponent, FloatingZoneListComponent, FormComponent, ImageComponent, ImageListComponent, ImageShowcaseComponent, JumpinfoComponent, LabelComponent, LivingDescComponent, MarketingPendantComponent, MiniCardLinkComponent, PhoneComponent, ShopImageComponent, ShortVideoComponent, ShowDataComponent, SocialSkillComponent, TextLinkComponent, TitleComponent, VideoChannelsContentComponent, VideoComponent, VideoListComponent, VideoShowcaseComponent, WechatChannelsComponent, WxgameDirectPageComponent, WxgamePlayablePageComponent } from "../v3/index";
+import type { ActionButtonComponent, AppGiftPackCodeComponent, AppPromotionVideoComponent, AudioComponent, BarrageComponent, BrandComponent, ChannelsLiveFeedComponent, ChosenButtonComponent, ConsultComponent, CountDownComponent, DescriptionComponent, DoctorCardComponent, ElementStoryComponent, EndPageComponent, FloatingZoneComponent, FloatingZoneListComponent, FormComponent, ImageComponent, ImageListComponent, ImageShowcaseComponent, JumpinfoComponent, LabelComponent, LivingDescComponent, MarketingPendantComponent, MiniCardLinkComponent, PhoneComponent, ShopImageComponent, ShortVideoComponent, ShowDataComponent, SocialSkillComponent, TextLinkComponent, TitleComponent, VideoChannelsContentComponent, VideoComponent, VideoListComponent, VideoShowcaseComponent, WechatChannelsComponent, WxgameDirectPageComponent, WxgamePlayablePageComponent } from "../v3/index";
 export interface CreativeComponents {
     title?: TitleComponent[];
     description?: DescriptionComponent[];
@@ -37,4 +37,6 @@ export interface CreativeComponents {
     audio?: AudioComponent[];
     wxgame_direct_page?: WxgameDirectPageComponent[];
     video_list?: VideoListComponent[];
+    doctor_card?: DoctorCardComponent[];
+    channels_live_feed?: ChannelsLiveFeedComponent[];
 }

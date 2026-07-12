@@ -28,14 +28,14 @@ source_id: tencent_ads_v3_0_docs_api_creativetools_text_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | max_text_length* | integer | 文案最长字数限制 |
-| adgroup_id | int64 | 广告组 id |
+| adgroup_id | int64 | 营销组 id |
 | keyword | string | 关键字，有多个关键词用半角逗号','分割，如：零花钱,金额 字段长度最小 1 字节，长度最大 255 字节 |
 | filtering | integer[] | 过滤选项，可选值：[[0, 1], [0], [1]]，[0]代表只请求 HOT 的文案，[1]代表只请求 CTR 高的文案，[0, 1]代表只请求 HOT 和 CTR 高的文案 数组最小长度 1，最大长度 2 最小值 0，最大值 1 |
 | number | integer | 每次请求最大文案返回数量为 100 条，该字段若不填，则默认返回 10 条，若填写的值大于 200，则只返回 100 条数据 |
-| category_first_level | integer | 一级广告行业，广点通的一级行业分类 id，详见 [\[行业分类\]](https://developers.e.qq.com/docs/reference/industry_v5.1) |
-| category_second_level | integer | 二级广告行业，广点通的二级行业分类 id，详见 [\[行业分类\]](https://developers.e.qq.com/docs/reference/industry_v5.1) |
+| category_first_level | integer | 一级营销行业，广点通的一级行业分类 id，详见 [\[行业分类\]](https://developers.e.qq.com/docs/reference/industry_v5.1) |
+| category_second_level | integer | 二级营销行业，广点通的二级行业分类 id，详见 [\[行业分类\]](https://developers.e.qq.com/docs/reference/industry_v5.1) |
 | product_catalog_id | integer | 商品库 id，如果传入 product_outer_ids，该参数必填 |
 | product_outer_ids | string[] | 商品 id 列表，传入该参数，会结合商品信息推荐文案 字段长度最小 1 字节，长度最大 100 字节 |
 
@@ -100,4 +100,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/creativetools_text/get?access_token=<ACCES
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

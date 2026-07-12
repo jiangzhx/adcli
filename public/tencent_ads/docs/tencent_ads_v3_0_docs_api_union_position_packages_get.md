@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_union_position_packages_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id，有操作权限的广告主 id |
+| account_id* | integer | 账户 id，有操作权限的账户 id |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件 数组长度为 1 |
 | field* | string | 过滤字段 可选值：{ union_package_type } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 union_package_type 时，可选值：{ EQUALS } |
@@ -67,7 +67,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/union_position_packages/get?access_token=<
 | union_package_id | integer | 流量包 id |
 | union_package_name | string | 流量包名称，同一帐号下的流量包名称不允许重复，最多可创建 300 个流量包（字段长度最小 1 个等宽字符，长度最大 60 等宽字符（即字段最大长度为 60 个中文字或全角标点，120 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） |
 | union_package_type | enum | 流量包类型，流量包类型 枚举列表：UNION_PACKAGE_TYPE_INCLUDE（定投）、UNION_PACKAGE_TYPE_EXCLUDE（屏蔽），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_union_package_type) |
-| union_position_id_list | integer[] | 腾讯广告联盟广告位 id 列表 |
+| union_position_id_list | integer[] | 腾讯营销联盟营销位 id 列表 |
 | created_time | integer | 创建时间，时间戳 |
 | last_modified_time | integer | 最后修改时间，unix 时间戳，精确到秒 |
 | page_info | struct | 分页配置信息 |
@@ -106,8 +106,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/union_position_packages/get?access_token=<
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

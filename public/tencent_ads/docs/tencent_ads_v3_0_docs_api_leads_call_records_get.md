@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_leads_call_records_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主账号 id，直客账号或子客账号 |
+| account_id* | integer | 账户 id，直客账号或子客账号 |
 | page_size* | integer | 页大小，必须大于 0 |
 | page* | integer | 页数，第一页页码是 1。当使用 search_after 时，本参数不生效。 |
 | start_date* | string | 开始呼叫时间字段的查询条件起点，和终点的差值不大于 30 天。例如，2019-10-18 |
@@ -66,7 +66,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_call_records/get?access_token=<ACCES
 | request_id | string | 代表唯一的业务请求，如果因为网络或其他原因重试时，此 id 不变。如果不填，线索平台生成后返回。如果填写了，原样返回 |
 | entities | struct[] | 通话记录列表 |
 | call_id | string | 该通话记录的唯一 id |
-| account_id | integer | 广告主账号 id，直客账号或子客账号 |
+| account_id | integer | 账户 id，直客账号或子客账号 |
 | leads_id | integer | 线索 id |
 | caller | string | 主叫号码，11 位手机号或座机号(例如:01085170811) |
 | callee | string | 被叫号码，11 位手机号或座机号(例如:01085170811) |
@@ -121,4 +121,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_call_records/get?access_token=<ACCES
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

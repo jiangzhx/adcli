@@ -29,8 +29,8 @@ source_id: tencent_ads_v3_0_docs_api_component_element_urge_review_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| dynamic_creative_id* | integer | 广告创意 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| dynamic_creative_id* | integer | 创意 id |
 | urge_dimension* | enum | 催审维度，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#urge_dimension) 可选值：{ URGE_DIMENSION_COMPONENT, URGE_DIMENSION_ELEMENT } |
 | urge_dimension_value* | string | 催审纬度对应的值，催审维度：URGE_DIMENSION_COMPONENT 时，字段值为 component_id;催审维度：URGE_DIMENSION_ELEMENT 时，字段值为 element_fingerprint 字段长度最小 0 字节，长度最大 128 字节 |
 
@@ -71,4 +71,4 @@ curl 'https://api.e.qq.com/v3.0/component_element_urge_review/add?access_token=<
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -29,17 +29,17 @@ source_id: tencent_ads_v3_0_docs_api_audience_grant_relations_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | audience_id_list* | integer[] | 人群 id 列表，同 bm 授权时支持批量人群授权，跨 bm 授权时暂不支持批量人群授权 数组最小长度 1，最大长度 20 最小值 1，最大值 2147483647 |
 | grant_type* | enum | 授权类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_grant_type) 可选值：{ GRANT_TYPE_BUSINESS } |
 | grant_spec* | struct | 人群授权信息 |
 | grant_to_business_spec | struct | 授权给商务管家账号认领的账号的授权信息 |
 | grant_business_id* | integer | 商务管家账号 最小值 0，最大值 2147483647 |
 | grant_scope_type* | enum | 人群授权的范围，仅支持 'GRANT_SCOPE_TYPE_ACCOUNT' 枚举值。授权给 BM 内全部账号功能不再在此接口中支持实现，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_grant_scope_type) 可选值：{ GRANT_SCOPE_TYPE_BUSINESS, GRANT_SCOPE_TYPE_ACCOUNT } |
-| grant_business_permission | struct | 授权给商务管家账号认领所有广告账号的权限信息 |
+| grant_business_permission | struct | 授权给商务管家账号认领所有营销账号的权限信息 |
 | grant_permission_type_list* | enum[] | 人群授权权限列表，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_grant_permission_type) 可选值：{ GRANT_PERMISSION_TYPE_TARGET, GRANT_PERMISSION_TYPE_INSIGHT } |
 | grant_account_permission | struct[] | 授权给指定账号的权限信息 |
-| account_id* | integer | 广告主帐号 id，（直客和子客） |
+| account_id* | integer | 账户 id，（直客和子客） |
 | grant_permission_type_list* | enum[] | 人群授权权限列表，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_grant_permission_type) 可选值：{ GRANT_PERMISSION_TYPE_TARGET, GRANT_PERMISSION_TYPE_INSIGHT } |
 
 ## 请求示例
@@ -125,8 +125,6 @@ curl 'https://api.e.qq.com/v3.0/audience_grant_relations/add?access_token=<ACCES
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

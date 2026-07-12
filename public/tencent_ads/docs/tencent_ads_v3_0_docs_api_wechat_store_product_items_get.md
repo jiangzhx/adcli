@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_store_product_items_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id |
+| account_id* | integer | 账户 id |
 | product_catalog_id* | integer | 商品库 id |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件 数组最小长度 1，最大长度 10 |
 | field* | string | 过滤字段 可选值：{ product_outer_id, query_key, wechat_store_product_status, price, sort } |
@@ -65,7 +65,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_store_product_items/get?access_toke
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| product_outer_id | string | 广告主商品 id |
+| product_outer_id | string | 客户商品 id |
 | product_name | string | 商品名称 |
 | description | string | 商品描述 |
 | product_primary_image_urls | string[] | 微信小店商品主图列表 |
@@ -86,8 +86,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_store_product_items/get?access_toke
 | link_spu_id | string | 关联的 spu_id |
 | link_spu_name | string | 关联的 spu 名称 |
 | wechat_store_product_status | integer | 微信小店商品状态，0：初始值，5：上架，6：回收站，11：自主下架，13：违规下架/风控系统下架，14：保证金不足下架，15：品牌过期下架，20：商品被封禁 |
-| wechat_store_product_ad_status | integer | 微信小店商品可投放广告状态，1：可投放，0：不可投放 |
-| wechat_store_product_ad_unavailable_cause | string[] | 微信小店商品不可投放广告原因 |
+| wechat_store_product_ad_status | integer | 微信小店商品可投放营销状态，1：可投放，0：不可投放 |
+| wechat_store_product_ad_unavailable_cause | string[] | 微信小店商品不可投放营销原因 |
 | store_price_item_list | struct[] | 微信小店商品套装信息 |
 | store_id | string | 小店 id |
 | wx_store_product_operate_type | integer | 小店商品审核状态，0:初始值;1:封禁;2:解封;3:不可播;4:首次投放未审核 |
@@ -130,4 +130,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_store_product_items/get?access_toke
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

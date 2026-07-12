@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_operation_log_list_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | operation_object_type* | enum | 操作日志对象类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_operation_object_type) 可选值：{ OPERATION_OBJECT_TYPE_ADGROUP, OPERATION_OBJECT_TYPE_DYNAMIC_CREATIVE, OPERATION_OBJECT_TYPE_JOINT_BUDGET } |
 | start_date* | string | 开始日期，日期格式：YYYY-MM-DD，且小于等于 end_date, 不支持查询 3 个月前的数据 字段长度为 10 字节 |
 | end_date* | string | 结束日期，日期格式：YYYY-MM-DD，且大于等于 begin_date, end_date 和 start_date 的时间差不能超过 1 个月 字段长度为 10 字节 |
@@ -159,8 +159,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/operation_log_list/get?access_token=<ACCES
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

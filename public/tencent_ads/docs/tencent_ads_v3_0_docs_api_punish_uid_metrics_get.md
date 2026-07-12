@@ -1,11 +1,11 @@
 ---
-title: 获取处罚 UID 维度指标数据 全部接口
+title: 获取素材计量治理账户指标数据 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/punish_uid_metrics/get
 doc_id: tencent_ads_v3_0_docs_api_punish_uid_metrics_get
 source_id: tencent_ads_v3_0_docs_api_punish_uid_metrics_get
 ---
-# 获取处罚 UID 维度指标数据 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 获取素材计量治理账户指标数据 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -33,8 +33,8 @@ source_id: tencent_ads_v3_0_docs_api_punish_uid_metrics_get
 | start_partition_time | integer | 开始月份，yyyyMM 格式 最小值 100000，最大值 999999 |
 | end_partition_time | integer | 结束月份，yyyyMM 格式 最小值 100000，最大值 999999 |
 | account_id* | integer | 当前账户 id |
-| ops_advertiser_name_list | string[] | 客户名称列表，广告主主体名称列表 ● 若使用代理商 id 身份调用，可通过该字段指定查询某个广告主主体下的数据 ● 若使用 uid 身份调用，无需传入该参数 字段长度最小 1 字节，长度最大 255 字节 |
-| zc_agent_group | string | 代理商政策集团，● 若使用代理商 id 身份调用，无需传入该参数 ● 若使用 uid 身份调用，可通过该字段指定查询某个政策集团下的数据 字段长度最小 1 字节，长度最大 255 字节 |
+| ops_advertiser_name_list | string[] | 客户名称列表，客户主体名称列表 ● 若使用服务商 id 身份调用，可通过该字段指定查询某个客户主体下的数据 ● 若使用 uid 身份调用，无需传入该参数 字段长度最小 1 字节，长度最大 255 字节 |
+| zc_agent_group | string | 服务商政策集团，● 若使用服务商 id 身份调用，无需传入该参数 ● 若使用 uid 身份调用，可通过该字段指定查询某个政策集团下的数据 字段长度最小 1 字节，长度最大 255 字节 |
 | first_level_industry_name | string | 开户一级行业 字段长度最小 1 字节，长度最大 255 字节 |
 | second_level_industry_name | string | 开户二级行业 字段长度最小 1 字节，长度最大 255 字节 |
 | query_account_id_list | integer[] | 需要查询的账户 id 列表 |
@@ -79,20 +79,20 @@ curl 'https://api.e.qq.com/v3.0/punish_uid_metrics/get?access_token=<ACCESS_TOKE
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| data_list | struct[] | 处罚指标数据列表 |
+| data_list | struct[] | 治理账户指标数据列表 |
 | partition_time | integer | 统计周期，格式 YYYYMM |
-| ops_advertiser_name | string | 客户名称，广告主主体名称 |
-| zc_agent_group | string | 代理商政策集团 |
+| ops_advertiser_name | string | 客户名称，客户主体名称 |
+| zc_agent_group | string | 服务商政策集团 |
 | first_level_industry_name | string | 开户一级行业 |
 | second_level_industry_name | string | 开户二级行业 |
 | account_id | integer | 所查询账户 id |
-| is_penalized | integer | 是否处罚，(1=是，0=否)，该主体*政策集团*开户二级行业的是否处罚字段 |
-| penalty_review_total | integer | 复审总量，该 uid 对应的处罚口径复审总量 |
-| penalty_review_reject_cnt | integer | 处罚拒绝量，该 uid 对应的处罚口径复审拒绝量 |
-| penalty_reject_rate | string | 处罚口径拒绝率，%，该 uid 对应的处罚口径拒绝率 |
-| uid_capped_reject_cnt | integer | uid 封顶拒绝量，该 uid 对应的处罚口径复审拒绝量封顶值 |
-| penalty_unit_price | string | 计量组合单价，单位：元，该主体*政策集团*开户二级行业的处罚单价 |
-| uid_final_penalty_amount | string | 实罚金额，单位：元，该 uid 对应的计量处罚最终处罚金额 |
+| is_penalized | integer | 是否治理，(1=是，0=否)，该主体*政策集团*开户二级行业的是否治理字段 |
+| penalty_review_total | integer | 复审总量，该 uid 对应的治理口径复审总量 |
+| penalty_review_reject_cnt | integer | 拒绝量，该 uid 对应的治理口径复审拒绝量 |
+| penalty_reject_rate | string | 拒绝率，%，该 uid 对应的治理口径拒绝率 |
+| uid_capped_reject_cnt | integer | uid 封顶拒绝量，该 uid 对应的治理口径复审拒绝量封顶值 |
+| penalty_unit_price | string | 计量组合单价，单位：元，该主体*政策集团*开户二级行业的治理单价 |
+| uid_final_penalty_amount | string | 实际治理金额，单位：元，该 uid 对应的实际治理金额 |
 | account_operate_identity | string | 账户运营方，一代服务商、二代服务商、多角色、无法归属、客户 |
 | compliance_owner | string | 治理责任方，服务商、客户 |
 | page_conf | struct | 分页内容 |
@@ -127,4 +127,4 @@ curl 'https://api.e.qq.com/v3.0/punish_uid_metrics/get?access_token=<ACCESS_TOKE
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

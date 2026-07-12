@@ -1,4 +1,4 @@
-import type { FinderCommentFlag, ReplyCommentInfoItem } from "../v3/index";
+import type { FinderCommentContentType, FinderCommentFlag, ImageCommentInfo, ReplyCommentInfoItem } from "../v3/index";
 export interface CommentListGetListStruct {
     comment_id?: string;
     content?: string;
@@ -7,4 +7,6 @@ export interface CommentListGetListStruct {
     finder_ad_object_id?: number | string;
     author_replys?: ReplyCommentInfoItem[];
     comment_level?: number;
+    content_type?: FinderCommentContentType;
+    image_comment_info?: ImageCommentInfo;
 }

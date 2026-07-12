@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_material_async_tasks_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | organization_id | integer | 业务单元 id 最小值 0，最大值 9999999999 |
 | material_param_type* | enum | 素材传参类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#material_param_type) 可选值：{ MATERIAL_PARAM_TYPE_ID } |
 | material_type* | enum | 素材类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#programmed_material_type) 可选值：{ IMAGE, VIDEO } |
@@ -107,4 +107,4 @@ curl 'https://api.e.qq.com/v3.0/material_async_tasks/add?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

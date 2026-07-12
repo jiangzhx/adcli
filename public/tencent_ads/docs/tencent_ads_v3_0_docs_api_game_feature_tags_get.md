@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_game_feature_tags_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | type* | string | 标签类型，可选值：PROFIT_MODE（变现模式），GAME_TYPE（游戏类型），GAMEPLAY（核心玩法），THEME（内容题材），SUB_THEME（细分题材），GAME_TYPE_V6（游戏类型 V6），GAME_PLAY_V6（游戏主玩法 V6），GAME_SUB_PLAY_V6（游戏副玩法 V6） 可选值：{ PROFIT_MODE, GAME_TYPE, GAMEPLAY, THEME, SUB_THEME, GAME_TYPE_V6, GAME_PLAY_V6, GAME_SUB_PLAY_V6 } |
 
 ## 请求示例
@@ -90,4 +90,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/game_feature_tags/get?access_token=<ACCESS
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

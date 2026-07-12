@@ -28,8 +28,8 @@ source_id: tencent_ads_v3_0_docs_api_organization_account_relation_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告账户 id，非必填，传递了该 account_id 且 account_id 属于当前登录 access_token 对应的组织 id，会返回该账户 id 的信息 |
-| advertiser_type | enum | 广告主类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#advertiser_type_enum) 可选值：{ DIRECT_ADVERTISER, SUB_ADVERTISER } |
+| account_id | integer | 投放账户 id，非必填，传递了该 account_id 且 account_id 属于当前登录 access_token 对应的组织 id，会返回该账户 id 的信息 |
+| advertiser_type | enum | 客户类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#advertiser_type_enum) 可选值：{ DIRECT_ADVERTISER, SUB_ADVERTISER } |
 | business_unit_id | integer | 业务单元 id |
 | pagination_mode* | enum | 分页方式，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_pagination_mode) 可选值：{ PAGINATION_MODE_NORMAL, PAGINATION_MODE_CURSOR } |
 | cursor | integer | 游标翻页模式下的游标值，游标翻页模式(PAGINATION_MODE_CURSOR)使用，第一次拉取无需填写，第二次请求传递第一次返回值中返回的 cursor 字段值 最小值 1 |
@@ -56,14 +56,14 @@ curl -v -G 'https://api.e.qq.com/v3.0/organization_account_relation/get?access_t
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| account_id | integer | 广告账户 id |
+| account_id | integer | 投放账户 id |
 | corporation_name | string | 企业名称 |
-| is_bid | boolean | 是否竞价广告广告账户 即腾讯广告账户，true：是，false：否 |
-| is_mp | boolean | 是否微信 MP 广告账户，true：是，false：否 |
+| is_bid | boolean | 是否竞价投放账户 即腾讯投放账户，true：是，false：否 |
+| is_mp | boolean | 是否微信 MP 投放账户，true：是，false：否 |
 | is_adx | boolean | 废弃字段 禁止使用，true：是，false：否 |
-| comment_list | struct[] | 广告主备注 |
+| comment_list | struct[] | 客户备注 |
 | user_id | integer | 用户 id |
-| comment | string | 广告主备注 |
+| comment | string | 客户备注 |
 | page_info | struct | 分页配置信息 |
 | page | integer | 搜索页码 默认值：1 |
 | page_size | integer | 一页显示的数据条数 |
@@ -108,4 +108,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/organization_account_relation/get?access_t
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_async_tasks_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | task_name* | string | 任务名称 字段长度最小 1 字节，长度最大 120 字节 |
 | task_type* | string | 枚举列表：{ TASK_TYPE_CREATE_ANDROID_CHANNEL_PACKAGE, TASK_TYPE_UPDATE_ANDROID_CHANNEL_PACKAGE } |
 | task_spec | struct | 任务所需条件 |
@@ -54,7 +54,7 @@ source_id: tencent_ads_v3_0_docs_api_async_tasks_add
 | is_delete_creative_asset | boolean | 是否删除素材本身 |
 | is_unbind_dynamic_creatives | boolean | 是否解绑动态创意 |
 | is_delete_incomplete_dynamic_creatives | boolean | 是否删除不完整的动态创意 |
-| delete_related_creative_asset_type_list | array | 支持：IMAGE_LIST 多图组件、VIDEO_SHOWCASE 橱窗视频组件、IMAGE_SHOWCASE 橱窗图片组件 |
+| delete_related_creative_asset_type_list | array | 支持：IMAGE_LIST 多图组件、VIDEO_SHOWCASE 橱窗视频组件、IMAGE_SHOWCASE 橱窗图片组件、VIDEO_LIST 多视频组件 |
 
 使用说明
 
@@ -112,4 +112,4 @@ curl 'https://api.e.qq.com/v3.0/async_tasks/add?access_token=<ACCESS_TOKEN>&time
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -8,6 +8,7 @@ export const CreativeAssetType = {
   VIDEO: "VIDEO",
   VIDEO_SHOWCASE: "VIDEO_SHOWCASE",
   IMAGE_SHOWCASE: "IMAGE_SHOWCASE",
+  VIDEO_LIST: "VIDEO_LIST",
 } as const;
 
 export type CreativeAssetType = typeof CreativeAssetType[keyof typeof CreativeAssetType];

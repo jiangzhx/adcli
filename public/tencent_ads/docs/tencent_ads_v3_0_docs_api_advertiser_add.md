@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_advertiser_add
 
 | 请求头名称 | 描述 |
 | --- | --- |
-| X-Request-Id | 资源请求的唯一 id，该请求头参数用于保证接口重试的幂等性，即当请求参数是 A 时，X-Request-Id 为 B 时，即使重复请求，API 侧永远不会新建一个全新的广告资源，避免重试的时候重复创建。如果在创建时重复传入相同的请求参数和 X-Request-Id，那么会返回该 X-Request-Id 对应的唯一的广告资源。支持的接口列表参考[投放接口错误处理指引](https://developers.e.qq.com/docs/guide/ads/errorprocessing)章节 |
+| X-Request-Id | 资源请求的唯一 id，该请求头参数用于保证接口重试的幂等性，即当请求参数是 A 时，X-Request-Id 为 B 时，即使重复请求，API 侧永远不会新建一个全新的投放资源，避免重试的时候重复创建。如果在创建时重复传入相同的请求参数和 X-Request-Id，那么会返回该 X-Request-Id 对应的唯一的投放资源。支持的接口列表参考[投放接口错误处理指引](https://developers.e.qq.com/docs/guide/ads/errorprocessing)章节 |
 
 ## 请求参数
 
@@ -45,12 +45,10 @@ source_id: tencent_ads_v3_0_docs_api_advertiser_add
 | individual_qualification | struct | 【企业账号】必填，法人身份证明 【个人账号】必填，个人身份证明 |
 | name | string | 必填，姓名 字段长度最小 1 字节，长度最大 64 字节 |
 | identification_number | string | 必填，身份证号码 字段长度最小 1 字节，长度最大 64 字节 |
-| identification_front_image_id* | string | 身份证正面图片 id，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 字段长度最小 1 字节，长度最大 64 字节 |
-| identification_back_image_id* | string | 身份证反面图片 id，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 字段长度最小 1 字节，长度最大 64 字节 |
 | area_code | integer | 【企业账号】必填，公司所在地（需与营业执照注册地域一致），具体值参照附录中的 [\[地域信息\]](https://developers.e.qq.com/docs/reference/region) 【个人账号】不使用 |
 | system_industry_id* | integer | 开户行业 id，请填写二级行业 id，详见 [\[行业分类\]](https://developers.e.qq.com/v3.0/pages/docs/reference/industry_v6.1) |
 | introduction_url* | string | 业务介绍页地址，可填写公司网站、APP 下载页、H5 链接等，作为开户信息参考 字段长度最小 1 字节，长度最大 255 字节 |
-| daily_budget | integer | 竞价广告账户日预算，仅对竞价广告生效，合约广告不受影响单位为分，设置为 0 表示不设预算（即不限） 要求介于 5,000 分– 4,000,000,000 分之间（50 元-40,000,000 元，单位为人民币） 默认值：1000000 |
+| daily_budget | integer | 竞价投放账户日预算，仅对竞价投放生效，合约投放不受影响单位为分，设置为 0 表示不设预算（即不限） 要求介于 5,000 分– 4,000,000,000 分之间（50 元-40,000,000 元，单位为人民币） 默认值：1000000 |
 | corporate_brand_name | string | 品牌名称 字段长度最小 0 字节，长度最大 256 字节 |
 | is_adx | boolean | 是否为 ADX 程序化投放账号 可选值：{ true, false } |
 | contact_person_telephone | string | 联系人座机电话号码，格式为：区号-座机号，例如：0755-8601338 字段长度最小 0 字节，长度最大 20 字节 |
@@ -105,7 +103,7 @@ curl 'https://api.e.qq.com/v3.0/advertiser/add?access_token=<ACCESS_TOKEN>&times
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id |
+| account_id | integer | 账户 id |
 
 ## 应答示例
 
@@ -124,4 +122,4 @@ curl 'https://api.e.qq.com/v3.0/advertiser/add?access_token=<ACCESS_TOKEN>&times
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

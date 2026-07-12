@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_extend_package_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | package_id* | integer | Android 应用 id，大于等于 0 小于 2^63 |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 2 |
 | field* | string | 过滤字段 可选值：{ channel_package_id, channel_name } |
@@ -79,7 +79,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/extend_package/get?access_token=<ACCESS_TO
 | channel_name | string | 安卓应用渠道包名称 |
 | channel_package_id | string | 安卓应用渠道包 id |
 | channel_id | string | 渠道标识，必须由英文、数字和_.-组成 |
-| system_status | enum | 广告包渠道包状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#union_package_sys_status) |
+| system_status | enum | 投放包渠道包状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#union_package_sys_status) |
 | created_time | integer | 创建时间，时间戳 |
 | last_modified_time | integer | 最后修改时间，时间戳 |
 | customized_channel_id | string | 用户自定义渠道包 id，用于渠道包归因（目前必须与渠道标识 channel_id 一致） |
@@ -123,4 +123,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/extend_package/get?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

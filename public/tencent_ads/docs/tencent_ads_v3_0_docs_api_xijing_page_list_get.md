@@ -28,9 +28,9 @@ source_id: tencent_ads_v3_0_docs_api_xijing_page_list_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | page_id | int64 | 落地页 id，由蹊径生成的 id，主要用于在蹊径平台内查询落地页、删除落地页、送审落地页等相关落地页本身的操作使用 |
-| page_service_id | string | 落地页服务 id，主要用于广告主在投放端搭建广告创意选择落地页时使用 字段长度最小 0 字节，长度最大 256 字节 |
+| page_service_id | string | 落地页服务 id，主要用于客户在投放端搭建创意选择落地页时使用 字段长度最小 0 字节，长度最大 256 字节 |
 | page_name | string | 落地页名称-用于管理，当 page_source 为 GRANT 时不支持该参数 字段长度最小 1 字节，长度最大 20 字节 |
 | page_type | enum[] | 蹊径落地页类型，当 page_source 为 GRANT 时不支持该参数，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#x_j_page_type) 数组最小长度 0，最大长度 8 可选值：{ XJ_DEFAULT_H5, XJ_ANDROID_APP_H5, XJ_IOS_APP_H5, XJ_WEBSITE_H5, XJ_ANDROID_APP_NATIVE, XJ_IOS_APP_NATIVE, XJ_WEBSITE_NATIVE, XJ_FENGLING_LBS } |
 | page_last_modify_start_time | string | 蹊径落地页最近更新时间 字段长度最小 0 字节，长度最大 30 字节 |
@@ -40,7 +40,7 @@ source_id: tencent_ads_v3_0_docs_api_xijing_page_list_get
 | page_publish_status | enum[] | 蹊径落地页发布状态，当 page_source 为 GRANT 时不支持该参数，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_publish_status) 数组最小长度 0，最大长度 5 可选值：{ LANDING_PAGE_STATUS_UNPUBLISH, LANDING_PAGE_STATUS_PUBLISHED, LANDING_PAGE_STATUS_OFFLINE, LANDING_PAGE_STATUS_DELETING, LANDING_PAGE_STATUS_DELETED } |
 | page_status | enum[] | 蹊径落地页状态，当 page_source 为 GRANT 时不支持该参数，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_audit_status) 数组最小长度 0，最大长度 5 可选值：{ LANDING_PAGE_STATUS_EDITING, LANDING_PAGE_STATUS_PENDING, LANDING_PAGE_STATUS_APPROVED, LANDING_PAGE_STATUS_REJECTED, LANDING_PAGE_STATUS_DELETED } |
 | page_source | enum | 查询类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_source) 可选值：{ GRANT, OWNER } 默认值：OWNER |
-| page_owner_id | integer | 授权落地页的拥有者 id，包括代理商和广告主帐号 id。当 page_source 为 GRANT 时，支持该参数 |
+| page_owner_id | integer | 授权落地页的拥有者 id，包括代理商和账户 id。当 page_source 为 GRANT 时，支持该参数 |
 | app_id | integer | 蹊径落地页绑定的 app id |
 | app_type | enum | 蹊径落地页绑定的 app 类型，参数取值限定:ANDROID,IOS，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#app_type) 可选值：{ ANDROID, IOS } |
 | query_type | enum | 落地页状态查询方式，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_list_query_type) 可选值：{ DEFAULT, DELETED, ALL } |
@@ -70,13 +70,13 @@ curl -v -G 'https://api.e.qq.com/v3.0/xijing_page_list/get?access_token=<ACCESS_
 | --- | --- | --- |
 | list | struct[] | 蹊径落地页返回数据结构 |
 | page_id | int64 | 落地页 id，由蹊径生成的 id，主要用于在蹊径平台内查询落地页、删除落地页、送审落地页等相关落地页本身的操作使用 |
-| page_service_id | string | 落地页服务 id，主要用于广告主在投放端搭建广告创意选择落地页时使用 |
+| page_service_id | string | 落地页服务 id，主要用于客户在投放端搭建创意选择落地页时使用 |
 | page_name | string | 落地页名称-用于管理 |
 | page_type | enum | 蹊径落地页类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#x_j_page_type) |
 | page_publish_status | enum | 蹊径落地页发布状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_publish_status) |
 | page_status | enum | 蹊径落地页状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_audit_status) |
 | page_last_modify_time | string | 蹊径落地页最近更新时间 |
-| page_owner_id | integer | 授权落地页的拥有者 id，包括代理商和广告主帐号 id |
+| page_owner_id | integer | 授权落地页的拥有者 id，包括代理商和账户 id |
 | publish_url | string | 蹊落地页 Url，落地页未审核通过下不支持返还落地页链接 |
 | reject_reason | string | 落地页审核被拒理由 |
 | playable_type | enum | 互动落地页类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#x_j_playable_type) |
@@ -143,4 +143,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/xijing_page_list/get?access_token=<ACCESS_
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

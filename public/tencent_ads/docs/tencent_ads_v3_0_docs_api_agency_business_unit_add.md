@@ -31,7 +31,7 @@ source_id: tencent_ads_v3_0_docs_api_agency_business_unit_add
 | --- | --- | --- |
 | business_unit_name* | string | 服务商业务单元名称 字段长度最小 1 字节，长度最大 50 字节 |
 | business_unit_remark | string | 服务商业务单元备注 字段长度最大 200 字节 |
-| account_id_list* | integer[] | 广告主账号列表，代理商主体账号 token 可操作主体服务商下所有服务商子客，代理商普通账号 token 可操作有权限管理的所有子客 |
+| account_id_list* | integer[] | 账户列表，代理商主体账号 token 可操作主体服务商下所有服务商子客，代理商普通账号 token 可操作有权限管理的所有子客 |
 
 使用说明
 
@@ -85,4 +85,4 @@ curl 'https://api.e.qq.com/v3.0/agency_business_unit/add?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

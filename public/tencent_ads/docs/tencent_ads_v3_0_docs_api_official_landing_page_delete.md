@@ -29,8 +29,8 @@ source_id: tencent_ads_v3_0_docs_api_official_landing_page_delete
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| page_id* | int64 | 落地页服务 id，用于广告投放端搭建广告创意选择落地页时使用 |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| page_id* | int64 | 落地页服务 id，用于投放端搭建创意选择落地页时使用 |
 
 ## 请求示例
 
@@ -53,8 +53,8 @@ curl 'https://api.e.qq.com/v3.0/official_landing_page/delete?access_token=<ACCES
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| page_id | int64 | 落地页服务 id，用于广告投放端搭建广告创意选择落地页时使用 |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| page_id | int64 | 落地页服务 id，用于投放端搭建创意选择落地页时使用 |
 | landing_page_id | integer | 官方落地页 id，仅用于官方落地页模块时使用 |
 
 ## 应答示例
@@ -76,4 +76,4 @@ curl 'https://api.e.qq.com/v3.0/official_landing_page/delete?access_token=<ACCES
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

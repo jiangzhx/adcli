@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_products_system_status_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id，如果已经升级了工作台，则填写 bm_id，有操作权限的广告主 id |
+| account_id* | integer | 账户 id，如果已经升级了工作台，则填写 bm_id，有操作权限的账户 id |
 | product_catalog_id* | integer | 商品库 id |
 | feed_id | integer | 商品文件 id |
 | page | integer | 搜索页码 默认值：默认值：1，最小值 1，最大值 99999 |
@@ -98,4 +98,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/products_system_status/get?access_token=<A
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

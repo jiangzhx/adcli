@@ -29,14 +29,14 @@ source_id: tencent_ads_v3_0_docs_api_leads_claim_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主账号 id，直客账号或子客账号 |
+| account_id* | integer | 账户 id，直客账号或子客账号 |
 | leads_claim_list* | struct[] | 回传线索归因信息的列表 数组最小长度 1，最大长度 10 |
 | outer_leads_id* | string | 作为线索管理平台的线索与客户侧 CRM 系统的线索关联的唯一标识 |
 | leads_user_type | enum | 线索用户类型，线索用户 id 有值时必填，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#leads_user_type) 可选值：{ USER_TYPE_QQ, USER_TYPE_QQ_MD5, USER_TYPE_TEL, USER_TYPE_TEL_MD5, USER_TYPE_IDFA, USER_TYPE_IDFA_MD5, USER_TYPE_IMEI, USER_TYPE_IMEI_MD5, USER_TYPE_GDT_OPENID, USER_TYPE_MAC_ADDRESS, USER_TYPE_MAC_ADDRESS_MD5, USER_TYPE_OAID, USER_TYPE_OAID_MD5, USER_TYPE_WX_OPENID, USER_TYPE_WX_UNIONID, USER_TYPE_OTHERS } |
 | leads_user_wechat_appid | string | 线索用户的微信 AppId，（微信公众号/小程序/小游戏的开发者 id）。leads_user_type 为 USER_TYPE_WX_OPENID/USER_TYPE_WX_UNIONID 时此字段必填 字段长度最小 1 字节，长度最大 64 字节 |
 | leads_user_id | string | 线索用户 id 字段长度最小 1 字节，长度最大 64 字节 |
 | campaign_id | int64 | 推广计划 id |
-| adgroup_id | int64 | 广告 id 字段长度最小 0 字节，长度最大 32 字节 |
+| adgroup_id | int64 | 营销单元 id 字段长度最小 0 字节，长度最大 32 字节 |
 | wechat_agency_id | string | 微信服务商 id 字段长度最小 1 字节，长度最大 32 字节 |
 
 使用说明
@@ -94,4 +94,4 @@ curl 'https://api.e.qq.com/v3.0/leads_claim/update?access_token=<ACCESS_TOKEN>&t
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

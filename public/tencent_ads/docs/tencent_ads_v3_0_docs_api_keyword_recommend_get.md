@@ -30,15 +30,15 @@ source_id: tencent_ads_v3_0_docs_api_keyword_recommend_get
 | --- | --- | --- |
 | site_sets* | enum[] | 拓词版位集，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#recommend_site_set) 数组最小长度 1，最大长度 2 可选值：{ SITE_SET_QBSEARCH, SITE_SET_WECHAT_SEARCH } |
 | recommend_category* | enum | 推荐类别，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#recommend_category) 可选值：{ RECOMMEND_BY_INDUSTRY, RECOMMEND_BY_WORD } |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| system_industry_id* | integer | 系统行业 id，可通过账户管理->广告账号->查询腾讯广告广告主信息接口来获取具体值，[\[系统行业 id\]](https://developers.e.qq.com/docs/api/account/advertiser/advertiser_get) |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| system_industry_id* | integer | 系统行业 id，可通过账户管理->投放账户->查询腾讯营销客户信息接口来获取具体值，[\[系统行业 id\]](https://developers.e.qq.com/docs/api/account/advertiser/advertiser_get) |
 | query_word | string[] | 种子词集合，当拓词类型是 RECOMMEND_BY_WORD 时，必填 数组最小长度 1，最大长度 10 字段长度最大 40 字节 |
 | business_point_id | string | 业务点 id，当拓词类型是 RECOMMEND_BY_INDUSTRY 时 必填，具体值可通过接口获取：[\[查询行业业务点信息\]](https://developers.e.qq.com/docs/api/tools/search_promote_tools/business_point_get)。只支持三级、四级、五级行业业务点拓词数据查询 |
-| adgroup_id | int64 | 广告 id |
-| campaign_id | int64 | 推广计划 id，当获取广告主维度报表时，该值无意义 |
+| adgroup_id | int64 | 营销单元 id |
+| campaign_id | int64 | 推广计划 id，当获取客户维度报表时，该值无意义 |
 | include_word | string[] | 包含词 数组最小长度 1，最大长度 10 字段长度最大 40 字节 |
 | exclude_word | string[] | 排除词 数组最小长度 1，最大长度 100 字段长度最大 40 字节 |
-| filter_ad_word | boolean | 是否过滤广告词 可选值：{ true, false } |
+| filter_ad_word | boolean | 是否过滤营销词 可选值：{ true, false } |
 | filter_account_word | boolean | 是否过滤账户下面的词 可选值：{ true, false } |
 | recommend_reasons | enum[] | 推荐理由，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#recommend_reasons) 数组最小长度 1，最大长度 4 可选值：{ DARK_HORSE_WORD, SAME_TRADE_BUY_WORD, HIGH_CLICK_WORD, BLUE_OCEAN_WORD } |
 | province | array | 省份编码，具体值参照附录中的 [\[地域信息\]](https://developers.e.qq.com/docs/reference/region) |
@@ -136,4 +136,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/keyword_recommend/get?access_token=<ACCESS
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -8,7 +8,7 @@
 npm install @jiangzhx/tencent-ads-marketing-api-sdk
 ```
 
-本发布线对标官方 Go SDK `github.com/tencentad/marketing-api-go-sdk@v1.7.84`。
+本发布线对标官方 Go SDK `github.com/tencentad/marketing-api-go-sdk@v1.7.85`。
 
 ## 使用入口
 
@@ -36,7 +36,7 @@ await api.get({
 当前 SDK 的目标源码是官方 Go SDK：
 
 - Go module: `github.com/tencentad/marketing-api-go-sdk`
-- 当前源码版本: `v1.7.84`
+- 当前源码版本: `v1.7.85`
 - API 源码: `pkg/api/*.go` 和 `pkg/api/v3/*.go`，生成到 `src/api/*.ts` 和 `src/api/v3/*.ts`
 - Model 源码: `pkg/model/*.go` 和 `pkg/model/v3/*.go`，生成到 `src/model/*.ts` 和 `src/model/v3/*.ts`
 - Config 源码: `pkg/config/configuration.go` 和 `pkg/config/v3/configuration.go`，生成到 `src/config/configuration.ts` 和 `src/config/v3/configuration.ts`

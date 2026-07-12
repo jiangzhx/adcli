@@ -28,8 +28,8 @@ source_id: tencent_ads_v3_0_docs_api_wechat_pages_grantinfo_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| search_key | string | 根据授权方广告主账号 id 进行搜索 字段长度最小 1 字节，长度最大 1024 字节 |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| search_key | string | 根据授权方账户 id 进行搜索 字段长度最小 1 字节，长度最大 1024 字节 |
 | page | integer | 搜索页码 最小值 1，最大值 99999 默认值：1 |
 | page_size | integer | 一页显示的数据条数 最小值 1，最大值 100 默认值：10 |
 
@@ -51,8 +51,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_pages_grantinfo/get?access_token=<A
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| owner_account_id | integer | 授权方广告主账号 id |
-| owner_account_name | string | 授权方广告主帐号名称 |
+| owner_account_id | integer | 授权方账户 id |
+| owner_account_name | string | 授权方账户名称 |
 | created_time | string | 授权时间 |
 | page_info | struct | 分页配置信息 |
 | page | integer | 搜索页码 默认值：1 |
@@ -85,8 +85,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_pages_grantinfo/get?access_token=<A
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

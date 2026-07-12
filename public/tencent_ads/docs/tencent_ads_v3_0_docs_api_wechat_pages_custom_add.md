@@ -29,29 +29,29 @@ source_id: tencent_ads_v3_0_docs_api_wechat_pages_custom_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | page_name* | string | 落地页名称 字段长度最小 1 字节，长度最大 120 字节 |
 | page_specs_list* | struct[] | 页面列表，页面顺序与生成的原生页的顺序一致 |
 | bg_color | string | 背景颜色 字段长度为 7 字节 |
 | page_elements_spec_list* | struct[] | 页面组件列表，页面顺序与生成的原生页的顺序一致 |
 | element_type* | enum | 原生页中组件类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#canvas_page_element_type) 可选值：{ TOP_IMAGE, TOP_SLIDER, TOP_VIDEO, IMAGE, SLIDER, VIDEO, TEXT, APP_DOWNLOAD, WEAPP, GH, ENTERPRISE_WX, IMAGE_TEXT } |
-| top_image_spec | struct | 顶部图片组件元素， 图片大小: 不超过 300KB 图片尺寸: 朋友圈常规广告 800*800, 朋友圈卡片广告 800*450. 公众号及其他广告位 800*800/640*800/800*640/800*450 |
+| top_image_spec | struct | 顶部图片组件元素， 图片大小: 不超过 300KB 图片尺寸: 朋友圈常规营销 800*800, 朋友圈卡片营销 800*450. 公众号及其他营销位 800*800/640*800/800*640/800*450 |
 | image_id* | string | 图片 id，通过 [\[images 模块\]](https://developers.e.qq.com/docs/api/business_assets/image/images_add?version=1.1&_preview=1) 上传图片后获得 字段长度最小 1 字节，长度最大 20 字节 |
 | width* | integer | 图片宽度 |
 | height* | integer | 图片高度 |
-| ad_location* | string | 广告位，sns 代表朋友圈, gzh 代表公众号 字段长度为 3 字节 |
-| outer_style | integer | 顶部图片外部类型，ad_location 为 sns 时必填. 取值 0: 常规广告, 1: 卡片广告 最小值 0，最大值 1 |
+| ad_location* | string | 营销位，sns 代表朋友圈, gzh 代表公众号 字段长度为 3 字节 |
+| outer_style | integer | 顶部图片外部类型，ad_location 为 sns 时必填. 取值 0: 常规营销, 1: 卡片营销 最小值 0，最大值 1 |
 | top_slider_spec | struct | 顶部轮播图组件元素 图片大小: 不超过 300KB 图片尺寸: 800*800 |
 | image_id_list* | string[] | 图片 id 列表，个数为 3,4,6 数组最小长度 3，最大长度 6 |
 | width* | integer | 图片宽度 |
 | height* | integer | 图片高度 |
-| top_video_spec | struct | 顶部视频组件元素， 视频时长 6-90 秒. 视频尺寸: 朋友圈常规 640*480/640*360/750*1536/750*1334/720*1280/1280*720/1280*960, 微信平台账号：朋友圈基础卡片广告:640*360/750*1536, 朋友圈全福式卡片广告:750*<=1536 腾讯广告账号：卡片广告：640*360 公众号及其他:750*<=1536 |
+| top_video_spec | struct | 顶部视频组件元素， 视频时长 6-90 秒. 视频尺寸: 朋友圈常规 640*480/640*360/750*1536/750*1334/720*1280/1280*720/1280*960, 微信平台账号：朋友圈基础卡片营销:640*360/750*1536, 朋友圈全福式卡片营销:750*<=1536 腾讯营销账号：卡片营销：640*360 公众号及其他:750*<=1536 |
 | video_id* | string | 视频 id，通过 [\[videos 模块\]](https://developers.e.qq.com/docs/api/business_assets/video/videos_add?version=1.1&_preview=1) 上传视频后获得 字段长度最小 1 字节，长度最大 20 字节 |
 | width* | integer | 视频宽度 |
 | height* | integer | 视频高度 |
-| ad_location* | string | 广告位，sns 代表朋友圈, gzh 代表公众号 字段长度为 3 字节 |
-| outer_style | integer | 顶部视频外部类型，ad_location 为 sns 时必填 取值 0: 常规广告, 1: 基础卡片广告, 2: 全幅卡片广告 最小值 0，最大值 2 |
-| used_for_outer | integer | 仅微信平台账号有效，outer_style=1 时选填 取值 0:顶部素材用于广告外层, 1:顶部素材不用于广告外层 最小值 0，最大值 1 |
+| ad_location* | string | 营销位，sns 代表朋友圈, gzh 代表公众号 字段长度为 3 字节 |
+| outer_style | integer | 顶部视频外部类型，ad_location 为 sns 时必填 取值 0: 常规营销, 1: 基础卡片营销, 2: 全幅卡片营销 最小值 0，最大值 2 |
+| used_for_outer | integer | 仅微信平台账号有效，outer_style=1 时选填 取值 0:顶部素材用于创意外层, 1:顶部素材不用于创意外层 最小值 0，最大值 1 |
 | image_spec | struct | 基础图片组件元素， 图片大小: 不超过 300KB 图片尺寸: 宽度 750, 高度不超过 1536 |
 | image_id* | string | 图片 id，通过 [\[images 模块\]](https://developers.e.qq.com/docs/api/business_assets/image/images_add?version=1.1&_preview=1) 上传图片后获得 字段长度最小 1 字节，长度最大 20 字节 |
 | width* | integer | 图片宽度 |
@@ -369,4 +369,4 @@ curl 'https://api.e.qq.com/v3.0/wechat_pages_custom/add?access_token=<ACCESS_TOK
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

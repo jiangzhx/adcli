@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_dynamic_creative_review_results_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | dynamic_creative_id_list* | integer[] | 创意 id 列表 数组最小长度 1，最大长度 100 |
 
 ## 请求示例
@@ -47,7 +47,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_creative_review_results/get?access
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| dynamic_creative_id | integer | 广告创意 id |
+| dynamic_creative_id | integer | 创意 id |
 | element_result_list | struct[] | 元素粒度审核结果 |
 | element_id | integer | 元素 id |
 | image_id | string | 图片 id，通过 [\[images 模块\]](https://developers.e.qq.com/docs/api/business_assets/image/images_add) 上传图片后获得 |
@@ -74,6 +74,27 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_creative_review_results/get?access
 | location_img_url | string | 标注结果图 url |
 | related_img_url | string | 种子图 url |
 | time_second | float | 时间戳，视频时间点（非视频元素本字段为空） |
+| video_asr_infos | struct[] | 视频 ASR 违规信息列表 |
+| id | integer | id |
+| text | string | 命中文本内容 |
+| mark | string | 标记 |
+| label_list | array | 标签列表 |
+| reason | string | 拒绝原因 |
+| start_time | float | 开始时间，单位为秒 |
+| end_time | float | 结束时间，单位为秒 |
+| asr_type | string | ASR 类型 |
+| video_ocr_infos | struct[] | 视频 OCR 违规信息列表 |
+| id | integer | id |
+| text | string | 命中文本内容 |
+| mark | string | 标记 |
+| label_list | array | 标签列表 |
+| reason | string | 拒绝原因 |
+| time | float | 命中时间点，单位为秒 |
+| frame_bbox | integer[] | OCR 命中文本在视频帧中的位置框，边界框坐标 |
+| frame_url | string | OCR 命中文本对应的视频帧图片 URL |
+| caption_infos | struct[] | 段落违规信息列表 |
+| start_time | float | 开始时间，单位为秒 |
+| end_time | float | 结束时间，单位为秒 |
 | site_set_result_list | struct[] | 版位粒度审核结果 |
 | site_set | enum | 版位，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_site_set_definition) |
 | system_status | enum | 审核结果状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#review_result_status) |
@@ -97,6 +118,27 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_creative_review_results/get?access
 | location_img_url | string | 标注结果图 url |
 | related_img_url | string | 种子图 url |
 | time_second | float | 时间戳，视频时间点（非视频元素本字段为空） |
+| video_asr_infos | struct[] | 视频 ASR 违规信息列表 |
+| id | integer | id |
+| text | string | 命中文本内容 |
+| mark | string | 标记 |
+| label_list | array | 标签列表 |
+| reason | string | 拒绝原因 |
+| start_time | float | 开始时间，单位为秒 |
+| end_time | float | 结束时间，单位为秒 |
+| asr_type | string | ASR 类型 |
+| video_ocr_infos | struct[] | 视频 OCR 违规信息列表 |
+| id | integer | id |
+| text | string | 命中文本内容 |
+| mark | string | 标记 |
+| label_list | array | 标签列表 |
+| reason | string | 拒绝原因 |
+| time | float | 命中时间点，单位为秒 |
+| frame_bbox | integer[] | OCR 命中文本在视频帧中的位置框，边界框坐标 |
+| frame_url | string | OCR 命中文本对应的视频帧图片 URL |
+| caption_infos | struct[] | 段落违规信息列表 |
+| start_time | float | 开始时间，单位为秒 |
+| end_time | float | 结束时间，单位为秒 |
 | reject_message_list | array | 拒绝原因列表 |
 | delay_message_list | array | 被延迟审核的信息 |
 | is_all_component_compose_pending | boolean | 是否所有组件组合均为待审核，当创意下产生的所有的组件组合均待审的时候，该字段为 true |
@@ -132,6 +174,27 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_creative_review_results/get?access
 | location_img_url | string | 标注结果图 url |
 | related_img_url | string | 种子图 url |
 | time_second | float | 时间戳，视频时间点（非视频元素本字段为空） |
+| video_asr_infos | struct[] | 视频 ASR 违规信息列表 |
+| id | integer | id |
+| text | string | 命中文本内容 |
+| mark | string | 标记 |
+| label_list | array | 标签列表 |
+| reason | string | 拒绝原因 |
+| start_time | float | 开始时间，单位为秒 |
+| end_time | float | 结束时间，单位为秒 |
+| asr_type | string | ASR 类型 |
+| video_ocr_infos | struct[] | 视频 OCR 违规信息列表 |
+| id | integer | id |
+| text | string | 命中文本内容 |
+| mark | string | 标记 |
+| label_list | array | 标签列表 |
+| reason | string | 拒绝原因 |
+| time | float | 命中时间点，单位为秒 |
+| frame_bbox | integer[] | OCR 命中文本在视频帧中的位置框，边界框坐标 |
+| frame_url | string | OCR 命中文本对应的视频帧图片 URL |
+| caption_infos | struct[] | 段落违规信息列表 |
+| start_time | float | 开始时间，单位为秒 |
+| end_time | float | 结束时间，单位为秒 |
 
 ## 应答示例
 
@@ -149,7 +212,19 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_creative_review_results/get?access
                         "element_reject_detail_info": [
                             {
                                 "site_set_list": [],
-                                "reject_info_location": []
+                                "reject_info_location": [],
+                                "video_asr_infos": [
+                                    {
+                                        "label_list": []
+                                    }
+                                ],
+                                "video_ocr_infos": [
+                                    {
+                                        "label_list": [],
+                                        "frame_bbox": []
+                                    }
+                                ],
+                                "caption_infos": []
                             }
                         ]
                     }
@@ -160,7 +235,19 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_creative_review_results/get?access
                         "element_reject_detail_info": [
                             {
                                 "component_info": [],
-                                "reject_info_location": []
+                                "reject_info_location": [],
+                                "video_asr_infos": [
+                                    {
+                                        "label_list": []
+                                    }
+                                ],
+                                "video_ocr_infos": [
+                                    {
+                                        "label_list": [],
+                                        "frame_bbox": []
+                                    }
+                                ],
+                                "caption_infos": []
                             }
                         ]
                     }
@@ -178,7 +265,19 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_creative_review_results/get?access
                                         "element_reject_detail_info": [
                                             {
                                                 "site_set_list": [],
-                                                "reject_info_location": []
+                                                "reject_info_location": [],
+                                                "video_asr_infos": [
+                                                    {
+                                                        "label_list": []
+                                                    }
+                                                ],
+                                                "video_ocr_infos": [
+                                                    {
+                                                        "label_list": [],
+                                                        "frame_bbox": []
+                                                    }
+                                                ],
+                                                "caption_infos": []
                                             }
                                         ]
                                     }
@@ -195,8 +294,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_creative_review_results/get?access
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

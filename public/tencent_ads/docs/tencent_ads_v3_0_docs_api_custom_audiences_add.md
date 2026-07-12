@@ -29,10 +29,10 @@ source_id: tencent_ads_v3_0_docs_api_custom_audiences_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | name* | string | 人群名称，同一个帐号下的人群不许重名 字段长度最小 1 字节，长度最大 32 字节 |
 | type* | enum | 人群类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_audience_type) 可选值：{ CUSTOMER_FILE, LOOKALIKE, USER_ACTION, KEYWORD, AD, COMBINE } |
-| outer_audience_id | string | 广告主对人群在自己系统里的编码，只能包含数字或字母或下划线；如果该编码创建过人群，再次用该编码创建人群时，会返回之前用该编码创建的人群 id ；人群编码不能与标签编码（tag_code）重复 字段长度最小 1 字节，长度最大 128 字节 |
+| outer_audience_id | string | 客户对人群在自己系统里的编码，只能包含数字或字母或下划线；如果该编码创建过人群，再次用该编码创建人群时，会返回之前用该编码创建的人群 id ；人群编码不能与标签编码（tag_code）重复 字段长度最小 1 字节，长度最大 128 字节 |
 | description | string | 定向描述 字段长度最小 0 字节，长度最大 250 字节 |
 | audience_spec | struct | 人群信息，和 type 相关 |
 | lookalike_spec | struct | Lookalike 人群信息，当 type=LOOKALIKE 时必填 |
@@ -76,12 +76,12 @@ source_id: tencent_ads_v3_0_docs_api_custom_audiences_add
 | keyword_spec | struct | Keyword 人群信息，当 type=KEYWORD 时必填 |
 | include_keyword* | string[] | 包含关键词，最多 100 个，单个关键词字数不超过 10 数组最小长度 1，最大长度 100 字段长度最小 1 字节，长度最大 10 字节 |
 | exclude_keyword | string[] | 排除关键词，最多 20 个，单个关键词字数不超过 10 数组最大长度 20 字段长度最小 1 字节，长度最大 10 字节 |
-| ad_rule_spec | struct | 广告人群信息，当 type=AD 时必填 |
-| rule_type* | enum | 广告行为类型，其中 EXPOSURE 类型需要线下联系运营开通白名单方可使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_ad_rule_type) 可选值：{ EXPOSURE, CLICK, CONVERSION } |
-| conversion_type | enum[] | 广告转化类型，当 rule_type=CONVERSION 时该字段必填，否则该字段不能填写，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_ad_conversion_type) 数组最大长度 5 可选值：{ APP_START_DOWNLOAD, APP_FINISH_DOWNLOAD, APP_INSTALL, APP_ACTIVATE, ORDER, RESERVATION, REGISTRATION_APP, REGISTRATION_WEB, PURCHASE_APP, PURCHASE_WEB, APPLY_APP, APPLY_WEB, ADD_TO_CART_WEB, ADD_TO_CART_APP, CONSULTATION_WEB, CONSULTATION_PHONE, CALL_BACK, ADD_TO_WISHLIST, SHARE } |
+| ad_rule_spec | struct | 营销人群信息，当 type=AD 时必填 |
+| rule_type* | enum | 营销行为类型，其中 EXPOSURE 类型需要线下联系运营开通白名单方可使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_ad_rule_type) 可选值：{ EXPOSURE, CLICK, CONVERSION } |
+| conversion_type | enum[] | 转化类型，当 rule_type=CONVERSION 时该字段必填，否则该字段不能填写，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_ad_conversion_type) 数组最大长度 5 可选值：{ APP_START_DOWNLOAD, APP_FINISH_DOWNLOAD, APP_INSTALL, APP_ACTIVATE, ORDER, RESERVATION, REGISTRATION_APP, REGISTRATION_WEB, PURCHASE_APP, PURCHASE_WEB, APPLY_APP, APPLY_WEB, ADD_TO_CART_WEB, ADD_TO_CART_APP, CONSULTATION_WEB, CONSULTATION_PHONE, CALL_BACK, ADD_TO_WISHLIST, SHARE } |
 | start_date* | string | 数据起始日期，格式为 yyyy-MM-dd，必须在 90 天以内，且在今天（不包含）以前 字段长度最小 0 字节，长度最大 10 字节 |
 | end_date | string | 数据结束日期，格式为 yyyy-MM-dd，必须在 start_date（包含）之后，且在今天（不包含）以前。如果未填写，则人群数据会随源投放数据更新。 字段长度最小 0 字节，长度最大 10 字节 |
-| adgroup_id_list | integer[] | 需要提取人群的 adgroup id 列表，通过 [\[adgroups/get\]](https://developers.e.qq.com/v3.0/docs/api/adgroups/get) 接口可获得账号下的广告组列表; 数组最大长度 75 最小值 1，最大值 2147483647 |
+| adgroup_id_list | integer[] | 需要提取人群的 adgroup id 列表，通过 [\[adgroups/get\]](https://developers.e.qq.com/v3.0/docs/api/adgroups/get) 接口可获得账号下的营销组列表; 数组最大长度 75 最小值 1，最大值 2147483647 |
 | combine_spec | struct | 组合人群信息，当 type=COMBINE 时必填，最多允许用 500 个人群做组合 |
 | include* | struct[] | 包含的人群，注意这是个二维数组，第一层数组元素之间为 AND 关系，第二层数组元素之间为 OR 关系 数组最小长度 1，最大长度 500 |
 | audience_id* | integer | 人群 id 或标签 id，不支持 LOOKALIKE 和 COMBINE 人群的 id |
@@ -242,10 +242,8 @@ curl 'https://api.e.qq.com/v3.0/custom_audiences/add?access_token=<ACCESS_TOKEN>
 
 ## 可视化调试工具
 
-请求
-
 ## 相关阅读
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

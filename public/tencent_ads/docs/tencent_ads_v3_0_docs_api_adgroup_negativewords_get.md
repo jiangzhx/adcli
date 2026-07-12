@@ -28,8 +28,8 @@ source_id: tencent_ads_v3_0_docs_api_adgroup_negativewords_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| adgroup_ids* | integer[] | 广告 id 列表，数组最小长度 1，最大长度 100 |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| adgroup_ids* | integer[] | 营销单元 id 列表，数组最小长度 1，最大长度 100 |
 
 ## 请求示例
 
@@ -50,9 +50,9 @@ curl -v -G 'https://api.e.qq.com/v3.0/adgroup_negativewords/get?access_token=<AC
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| adgroup_error_list | string[] | 请求失败的广告 id 列表 |
-| adgroup_list | struct[] | 广告否定词列表 |
-| adgroup_id | int64 | 广告 id |
+| adgroup_error_list | string[] | 请求失败的营销单元 id 列表 |
+| adgroup_list | struct[] | 营销否定词列表 |
+| adgroup_id | int64 | 营销单元 id |
 | phrase_negative_words | string[] | 短语否定词，每个否定词长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） |
 | exact_negative_words | string[] | 精确否定词，每个否定词长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） |
 
@@ -86,4 +86,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/adgroup_negativewords/get?access_token=<AC
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -1,11 +1,11 @@
 ---
-title: 获取动态广告图片信息 全部接口
+title: 获取动态营销图片信息 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_images/get
 doc_id: tencent_ads_v3_0_docs_api_dynamic_ad_images_get
 source_id: tencent_ads_v3_0_docs_api_dynamic_ad_images_get
 ---
-# 获取动态广告图片信息 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 获取动态营销图片信息 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_dynamic_ad_images_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 4 |
 | field* | string | 过滤字段 可选值：{ image_signature, image_id, image_width, image_height, created_time, last_modified_time } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 image_signature 时，可选值：{ EQUALS, CONTAINS } 当 field 取值 image_id 时，可选值：{ EQUALS, CONTAINS, IN } 当 field 取值 image_width 时，可选值：{ EQUALS } 当 field 取值 image_height 时，可选值：{ EQUALS } 当 field 取值 created_time 时，可选值：{ EQUALS, LESS_EQUALS, LESS, GREATER_EQUALS, GREATER } 当 field 取值 last_modified_time 时，可选值：{ EQUALS, LESS_EQUALS, LESS, GREATER_EQUALS, GREATER } |
@@ -105,4 +105,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_ad_images/get?access_token=<ACCESS
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

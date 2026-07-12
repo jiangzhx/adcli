@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_merge_fund_type_daily_balance_report_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | date_range* | struct | 日期范围，单次查询跨度不能超过 10 天，支持两年内的数据查询 |
 | start_date* | string | 开始日期，日期格式：YYYY-MM-DD，且小于等于 end_date 字段长度为 10 字节 |
 | end_date* | string | 结束日期，日期格式：YYYY-MM-DD，且大于等于 begin_date 字段长度为 10 字节 |
@@ -61,7 +61,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/merge_fund_type_daily_balance_report/get?a
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| account_id | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | fund_type | enum | 合并资金账户类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_account_merge_type_map) |
 | time | integer | 记录对应的时间，时间戳 |
 | deposit | integer | 总存入，单位为分 |
@@ -122,4 +122,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/merge_fund_type_daily_balance_report/get?a
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

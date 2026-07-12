@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_business_unit_account_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id_list* | integer[] | 广告主账号列表，token 可操作有权限管理的所有广告主 |
+| account_id_list* | integer[] | 账户列表，token 可操作有权限管理的所有客户 |
 
 使用说明
 
@@ -53,7 +53,7 @@ curl 'https://api.e.qq.com/v3.0/business_unit_account/get?access_token=<ACCESS_T
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回列表 |
-| account_id | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | organization_id | integer | 客户业务单元 id |
 | organization_name | string | 客户业务单元名称 |
 
@@ -78,4 +78,4 @@ curl 'https://api.e.qq.com/v3.0/business_unit_account/get?access_token=<ACCESS_T
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

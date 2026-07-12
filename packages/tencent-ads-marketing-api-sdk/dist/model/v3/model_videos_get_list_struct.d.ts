@@ -1,4 +1,4 @@
-import type { MediaSourceType, MediaStatusType, MediaSystemStatus, MediaType, SimilarityStatus } from "../v3/index";
+import type { AigcFlag, MediaSourceType, MediaStatusType, MediaSystemStatus, MediaType, SimilarityStatus } from "../v3/index";
 export interface VideosGetListStruct {
     video_id?: number | string;
     width?: number;
@@ -33,4 +33,6 @@ export interface VideosGetListStruct {
     owner_account_id?: string;
     status?: MediaStatusType;
     similarity_status?: SimilarityStatus;
+    aigc_flag?: AigcFlag;
+    cover_id?: string;
 }

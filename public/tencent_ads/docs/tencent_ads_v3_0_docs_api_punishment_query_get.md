@@ -102,7 +102,7 @@ curl 'https://api.e.qq.com/v3.0/punishment_query/get?access_token=<ACCESS_TOKEN>
 | kpi_first_industry | string | KPI 一级行业 |
 | kpi_second_industry_id | integer | KPI 二级行业 id |
 | kpi_second_industry | string | KPI 二级行业 |
-| illegal_aid | string | 违规广告 AID |
+| illegal_aid | string | 违规营销 AID |
 | illegal_tid | string | 违规 TID |
 | illegal_dc_id | string | 违规 DCID |
 | illegal_component_id | string | 违规组件 id |
@@ -157,4 +157,4 @@ curl 'https://api.e.qq.com/v3.0/punishment_query/get?access_token=<ACCESS_TOKEN>
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

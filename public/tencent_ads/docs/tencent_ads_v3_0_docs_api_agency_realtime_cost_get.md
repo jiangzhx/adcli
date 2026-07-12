@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_agency_realtime_cost_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 
 ## 请求示例
 
@@ -71,4 +71,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/agency_realtime_cost/get?access_token=<ACC
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

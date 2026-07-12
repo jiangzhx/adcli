@@ -186,7 +186,7 @@ async function readGoSdkVersion(goSdkRoot: string) {
     .map((line) => line.trim().split(" "))
     .find(([sha, ref]) => sha === headSha && ref?.startsWith("refs/tags/v"))?.[1]
     ?.replace("refs/tags/v", "");
-  return tag ?? "1.7.84";
+  return tag ?? "1.7.85";
 }
 
 function sourceModulePath(file: string) {
@@ -199,8 +199,8 @@ function moduleBaseName(file: string) {
 }
 
 function generatedHeader(sourcePath: string) {
-  return `// 由 tencentad/marketing-api-go-sdk ${sourcePath} 生成
-// 不要手动编辑。
+  return `// Generated from tencentad/marketing-api-go-sdk ${sourcePath}
+// Do not edit manually.
 `;
 }
 

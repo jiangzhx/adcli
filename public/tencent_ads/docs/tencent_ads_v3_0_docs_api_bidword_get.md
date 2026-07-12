@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | filtering | struct[] | 过滤条件，若此字段不传或传空则视为无限制条件,详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 255 |
 | field* | string | 过滤字段，支持字段包括 bidword_id,adgroup_id,campaign_id,bidword,match_type,created_time,last_modified_time,delete_time,configured_status,bidword_status 可选值：{ bidword_id, adgroup_id, campaign_id, bidword, match_type, created_time, last_modified_time, delete_time, configured_status, bidword_status } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 bidword_id 时，可选值：{ EQUALS, IN } 当 field 取值 adgroup_id 时，可选值：{ EQUALS, IN } 当 field 取值 campaign_id 时，可选值：{ EQUALS, IN } 当 field 取值 bidword 时，可选值：{ EQUALS, CONTAINS, IN } 当 field 取值 match_type 时，可选值：{ EQUALS, IN } 当 field 取值 created_time 时，可选值：{ EQUALS, LESS_EQUALS, LESS, GREATER_EQUALS, GREATER } 当 field 取值 last_modified_time 时，可选值：{ EQUALS, LESS_EQUALS, LESS, GREATER_EQUALS, GREATER } 当 field 取值 delete_time 时，可选值：{ EQUALS, LESS_EQUALS, LESS, GREATER_EQUALS, GREATER } 当 field 取值 configured_status 时，可选值：{ EQUALS, IN } 当 field 取值 bidword_status 时，可选值：{ EQUALS, IN } |
@@ -76,9 +76,9 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | --- | --- | --- |
 | list | struct[] | 关键词列表 |
 | bidword_id | integer | 关键词 id |
-| campaign_id | int64 | 推广计划 id，当获取广告主维度报表时，该值无意义 |
-| adgroup_id | int64 | 广告 id |
-| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一广告下的关键词词面不允许重复 |
+| campaign_id | int64 | 推广计划 id，当获取客户维度报表时，该值无意义 |
+| adgroup_id | int64 | 营销单元 id |
+| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一营销单元下的关键词词面不允许重复 |
 | bid_price | integer | 关键词出价，单位为分，关键词出价规则待补充 |
 | match_type | enum | 关键词匹配方式，关键词匹配方式包括短语、精确、广泛匹配，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_match_type) |
 | configured_status | enum | 暂停状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_pause_type) |
@@ -116,7 +116,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | page_id | int64 | 落地页 id |
 | wechat_canvas_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id |
 | wechat_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id |
@@ -125,7 +125,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | mpa_mini_program_wildcard_url | string | mpa/dca 落地页通配符 |
 | wechat_canvas_mini_program_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id |
 | qq_app_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id |
@@ -216,7 +216,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | page_id | int64 | 落地页 id |
 | wechat_canvas_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id |
 | wechat_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id |
@@ -225,7 +225,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | mpa_mini_program_wildcard_url | string | mpa/dca 落地页通配符 |
 | wechat_canvas_mini_program_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id |
 | qq_app_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id |
@@ -309,6 +309,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | harmony_app_id | string | 鸿蒙应用 AppId |
 | wechat_channels_activity_spec | struct | 视频号活动页落地页信息 |
 | activity_id | string | 视频号活动加密 id |
+| wechat_channels_account_id | string | 视频号账号 id |
+| activity_name | string | 视频号活动名称 |
 | jumpinfo_account_id | integer | 推广帐号 id，落地页资产归属的账号 id |
 | platform_type | enum | 落地页媒体平台类型，落地页媒体平台，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#landing_page_platform_type) |
 | mobile_landing_page_info | struct[] | 兜底落地页内容列表，仅可在 page_type 为 PAGE_TYPE_APP_DEEP_LINK、PAGE_TYPE_APP_MARKET、PAGE_TYPE_WECHAT_MINI_PROGRAM、PAGE_TYPE_WECHAT_MINI_GAME 时使用 |
@@ -340,7 +342,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | page_id | int64 | 落地页 id |
 | wechat_canvas_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id |
 | wechat_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id |
@@ -349,7 +351,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | mpa_mini_program_wildcard_url | string | mpa/dca 落地页通配符 |
 | wechat_canvas_mini_program_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id |
 | qq_app_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id |
@@ -440,7 +442,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | page_id | int64 | 落地页 id |
 | wechat_canvas_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id |
 | wechat_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id |
@@ -449,7 +451,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | mpa_mini_program_wildcard_url | string | mpa/dca 落地页通配符 |
 | wechat_canvas_mini_program_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id |
 | qq_app_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id |
@@ -533,6 +535,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 | harmony_app_id | string | 鸿蒙应用 AppId |
 | wechat_channels_activity_spec | struct | 视频号活动页落地页信息 |
 | activity_id | string | 视频号活动加密 id |
+| wechat_channels_account_id | string | 视频号账号 id |
+| activity_name | string | 视频号活动名称 |
 | jumpinfo_account_id | integer | 推广帐号 id，落地页资产归属的账号 id |
 | platform_type | enum | 落地页媒体平台类型，落地页媒体平台，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#landing_page_platform_type) |
 | page_info | struct | 分页配置信息 |
@@ -580,4 +584,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/bidword/get?access_token=<ACCESS_TOKEN>&ti
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

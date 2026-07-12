@@ -29,14 +29,14 @@ source_id: tencent_ads_v3_0_docs_api_product_items_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id，如果已经升级了工作台，则填写 bm_id，有操作权限的广告主 id |
+| account_id* | integer | 账户 id，如果已经升级了工作台，则填写 bm_id，有操作权限的账户 id |
 | product_catalog_id* | integer | 商品库 id |
 | feed_id | integer | 商品文件 id |
 | request_source | string | 请求源 字段长度最小 1 字节，长度最大 256 字节 |
 | usage_info | struct | 用途 |
-| inner_appid | integer[] | appid，2:非电商广告 spu 生产(投放可使用创建资产) 数组最大长度 10 最小值 0，最大值 99 |
+| inner_appid | integer[] | appid，2:非电商营销 spu 生产(投放可使用创建资产) 数组最大长度 10 最小值 0，最大值 99 |
 | product_item_spec_list* | struct[] | 商品信息列表 数组最大长度 50 |
-| product_outer_id* | string | 广告主商品 id 字段长度最小 1 字节，长度最大 255 字节 |
+| product_outer_id* | string | 客户商品 id 字段长度最小 1 字节，长度最大 255 字节 |
 | product_name* | string | 商品名称，(电商行业规则详见下方行业特殊规则) 字段长度最小 1 字节，长度最大 256 字节 |
 | description | string | 商品描述，(短剧行业规则详见下方行业特殊规则) 字段长度最小 1 字节，长度最大 5000 字节 |
 | created_time | string | 商品创建时间 字段长度最小 19 字节，长度最大 20 字节 |
@@ -74,7 +74,7 @@ source_id: tencent_ads_v3_0_docs_api_product_items_add
 | end_time | string | 促销价结束时间 字段长度最大 20 字节 |
 | sales_volume | integer | 已售卖数 |
 | stock_volume | integer | 库存数 |
-| slogan | string | 广告语 字段长度最小 1 字节，长度最大 100 字节 |
+| slogan | string | 营销语 字段长度最小 1 字节，长度最大 100 字节 |
 | custom_label | string[] | 自定义标签 数组最大长度 50 字段长度最大 100 字节 |
 | first_category_id | integer | 一级分类 id |
 | second_category_id | integer | 二级分类 id |
@@ -202,6 +202,11 @@ source_id: tencent_ads_v3_0_docs_api_product_items_add
 | initial_total_investment | enum | 首次投资总额，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#initial_total_investment) 可选值：{ INITIAL_TOTAL_INVESTMENT_FREE, INITIAL_TOTAL_INVESTMENT_IN_10W, INITIAL_TOTAL_INVESTMENT_10W_TO_30W, INITIAL_TOTAL_INVESTMENT_30W_TO_50W, INITIAL_TOTAL_INVESTMENT_50W_TO_100W, INITIAL_TOTAL_INVESTMENT_OUT_100W } |
 | business_audience | enum | 受众，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#business_audience) 可选值：{ BUSINESS_AUDIENCE_PERSONAL, BUSINESS_AUDIENCE_ENTERPRISE } |
 | service_tag | string[] | 服务标签，如 七天无理由退货 包邮等 数组最大长度 100 字段长度最小 1 字节，长度最大 2048 字节 |
+| street_number | string | 街道号码，街道+门牌号的格式，例：埔尾路 2 号 字段长度最大 100 字节 |
+| commercial_area | string[] | 附近商圈，例如“三里屯”、“陆家嘴”、“深圳湾”等 数组最大长度 100 字段长度最大 200 字节 |
+| stars_level | integer | 星级，酒店星级 最小值 1，最大值 8 |
+| departure | string | 出发城市名称 字段长度最大 100 字节 |
+| destination | string | 目的城市名称 字段长度最大 100 字节 |
 
 使用说明
 
@@ -650,7 +655,7 @@ curl 'https://api.e.qq.com/v3.0/product_items/add?access_token=<ACCESS_TOKEN>&ti
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
 | product_id | string | 商品 id |
-| product_outer_id | string | 广告主商品 id |
+| product_outer_id | string | 客户商品 id |
 
 ## 应答示例
 
@@ -674,4 +679,4 @@ curl 'https://api.e.qq.com/v3.0/product_items/add?access_token=<ACCESS_TOKEN>&ti
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

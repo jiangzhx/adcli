@@ -28,8 +28,8 @@ source_id: tencent_ads_v3_0_docs_api_component_element_urge_review_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| dynamic_creative_id* | integer | 广告创意 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| dynamic_creative_id* | integer | 创意 id |
 | component_id_list | integer[] | 创意组件 id 列表 数组最小长度 1，最大长度 100 |
 | element_fingerprint_list | string[] | 元素指纹列表 数组最小长度 1，最大长度 100 字段长度最小 0 字节，长度最大 128 字节 |
 
@@ -50,8 +50,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/component_element_urge_review/get?access_t
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| dynamic_creative_id | integer | 广告创意 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| dynamic_creative_id | integer | 创意 id |
 | component_urge_info_list | struct[] | 组件催审状态列表，可为空 |
 | component_id | integer | 创意组件 id |
 | urge_info | struct | 催审信息 |
@@ -90,8 +90,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/component_element_urge_review/get?access_t
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

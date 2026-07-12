@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_extend_package_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | package_id* | integer | Android 应用 id，大于等于 0 小于 2^63 |
 | channel_list* | struct[] | 渠道号信息 数组最小长度 1，最大长度 200 |
 | channel_id* | string | 渠道标识，必须由英文、数字和_.-组成 字段长度最小 1 字节，长度最大 200 字节 |
@@ -102,4 +102,4 @@ curl 'https://api.e.qq.com/v3.0/extend_package/update?access_token=<ACCESS_TOKEN
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

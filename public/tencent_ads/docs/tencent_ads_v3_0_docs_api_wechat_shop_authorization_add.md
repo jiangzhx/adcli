@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_shop_authorization_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | wechat_channels_shop_name* | string | 微信小店名称 字段长度最小 0 字节，长度最大 255 字节 |
 | authorization_ttl | integer | 授权时长，单位:秒;授权到期时间计算规则为:授权发起时间+授权时长 最小值 0，最大值 9999999999 |
 
@@ -71,8 +71,6 @@ curl 'https://api.e.qq.com/v3.0/wechat_shop_authorization/add?access_token=<ACCE
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

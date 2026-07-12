@@ -37,10 +37,10 @@ source_id: tencent_ads_v3_0_docs_api_adgroups_update_configured_status
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | update_configured_status_spec* | struct[] | 更新客户设置的状态条件，数组最大长度 100 数组最大长度 100 |
-| adgroup_id* | int64 | 广告 id |
-| configured_status* | enum | 客户设置的状态，ADX 程序化广告不可填写提交，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_configured_status) 可选值：{ AD_STATUS_NORMAL, AD_STATUS_SUSPEND } |
+| adgroup_id* | int64 | 营销单元 id |
+| configured_status* | enum | 客户设置的状态，ADX 程序化投放不可填写提交，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_configured_status) 可选值：{ AD_STATUS_NORMAL, AD_STATUS_SUSPEND } |
 
 使用说明
 
@@ -79,7 +79,7 @@ curl 'https://api.e.qq.com/v3.0/adgroups/update_configured_status?access_token=<
 | code | integer | 返回码 |
 | message | string | 英文返回消息 |
 | message_cn | string | 中文返回消息 |
-| adgroup_id | int64 | 广告 id |
+| adgroup_id | int64 | 营销单元 id |
 | fail_id_list | integer[] | 失败的 id 集合 |
 
 ## 应答示例
@@ -111,4 +111,4 @@ curl 'https://api.e.qq.com/v3.0/adgroups/update_configured_status?access_token=<
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

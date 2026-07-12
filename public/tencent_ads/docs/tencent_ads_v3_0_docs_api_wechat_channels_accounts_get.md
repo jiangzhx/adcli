@@ -28,11 +28,11 @@ source_id: tencent_ads_v3_0_docs_api_wechat_channels_accounts_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最大长度 3 |
-| field* | string | 过滤字段 可选值：{ wechat_channels_account_id, is_ad_acct, created_source, video_id, wechat_channels_account_name } |
-| operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 wechat_channels_account_id 时，可选值：{ EQUALS, IN } 当 field 取值 is_ad_acct 时，可选值：{ EQUALS } 当 field 取值 created_source 时，可选值：{ EQUALS, IN } 当 field 取值 video_id 时，可选值：{ EQUALS, IN } 当 field 取值 wechat_channels_account_name 时，可选值：{ EQUALS, CONTAINS } |
-| values* | string[] | 字段取值，values 数组的个数限制与 operator 的取值相关，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 当 field 取值 wechat_channels_account_id 时，数组长度为 1 字段长度最小 1 字节，长度最大 128 字节 当 field 取值 is_ad_acct 时，数组最小长度 0，最大长度 1 字段长度最小 1 字节，长度最大 128 字节 当 field 取值 created_source 时，数组最小长度 0，最大长度 10 当 field 取值 video_id 时，数组最小长度 1，最大长度 20 字段长度最小 1 字节，长度最大 128 字节 当 field 取值 wechat_channels_account_name 时，数组长度为 1 字段长度最小 1 字节，长度最大 128 字节 |
+| field* | string | 过滤字段 可选值：{ wechat_channels_account_id, is_ad_acct, created_source, video_id, wechat_channels_account_name, authorization_type } |
+| operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 wechat_channels_account_id 时，可选值：{ EQUALS, IN } 当 field 取值 is_ad_acct 时，可选值：{ EQUALS } 当 field 取值 created_source 时，可选值：{ EQUALS, IN } 当 field 取值 video_id 时，可选值：{ EQUALS, IN } 当 field 取值 wechat_channels_account_name 时，可选值：{ EQUALS, CONTAINS } 当 field 取值 authorization_type 时，可选值：{ EQUALS, IN } |
+| values* | string[] | 字段取值，values 数组的个数限制与 operator 的取值相关，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 当 field 取值 wechat_channels_account_id 时，数组长度为 1 字段长度最小 1 字节，长度最大 128 字节 当 field 取值 is_ad_acct 时，数组最小长度 0，最大长度 1 字段长度最小 1 字节，长度最大 128 字节 当 field 取值 created_source 时，数组最小长度 0，最大长度 10 当 field 取值 video_id 时，数组最小长度 1，最大长度 20 字段长度最小 1 字节，长度最大 128 字节 当 field 取值 wechat_channels_account_name 时，数组长度为 1 字段长度最小 1 字节，长度最大 128 字节 当 field 取值 authorization_type 时，数组最小长度 1，最大长度 10 字段长度最小 1 字节，长度最大 128 字节 |
 | page | integer | 搜索页码 最小值 1，最大值 99999 默认值：1 |
 | page_size | integer | 一页显示的数据条数 最小值 1，最大值 100 默认值：10 |
 | scene | enum | 视频号使用场景，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_wechat_channels_account_scene) 可选值：{ WECHAT_CHANNELS_ACCOUNT_SECNE_FEEDS_AD, WECHAT_CHANNELS_ACCOUNT_SECNE_LIVE_AD, WECHAT_CHANNELS_ACCOUNT_SECNE_FEEDS_CREATIVE, WECHAT_CHANNELS_ACCOUNT_SECNE_VIDEO_NATIVE_CONTENT_CREATIVE } |
@@ -76,12 +76,12 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_channels_accounts/get?access_token=
 | wechat_channels_account_icon | string | 视频号头像 |
 | authorization_type | enum | 授权类型，(已废弃)，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#wechat_channels_auth_type) |
 | authorization_scope | enum | 授权范围，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#wechat_channels_auth_scope) |
-| is_blocked | boolean | 是否被限流，视频号信用分低于 85 分或处于禁播、限流等限制投放的状态，不可投放视频号直播 |
-| is_private | boolean | 是否设为私密，视频号设为私密，不可用于广告投放 |
-| is_ad_acct | boolean | 是否包含广告专用视频号账户，(只读) |
+| is_blocked | boolean | 是否被限流，视频号处于禁播、限流等限制投放的状态，不可投放视频号直播 |
+| is_private | boolean | 是否设为私密，视频号设为私密，不可用于投放 |
+| is_ad_acct | boolean | 是否包含营销专用视频号账户，(只读) |
 | authorization_begin_time | integer | 授权开始时间，授权开始时间的时间戳 |
 | authorization_ttl | integer | 授权有效时间，单位 s,最大值为 3122064000(99 年,授权时展示为不限);如果超过最大值，将默认被设置为为 3122064000。 |
-| is_disable | boolean | 是否可使用，如不可使用，创建广告/创意将被拦截 |
+| is_disable | boolean | 是否可使用，如不可使用，创建营销单元/创意将被拦截 |
 | disable_message | string | 禁用原因 |
 | authorization_status | enum | 授权状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#wechat_channels_auth_status) |
 | page_info | struct | 分页配置信息 |
@@ -116,8 +116,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_channels_accounts/get?access_token=
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

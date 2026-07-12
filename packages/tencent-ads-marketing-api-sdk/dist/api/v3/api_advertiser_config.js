@@ -38,6 +38,9 @@ export class AdvertiserConfigApi {
         if (request.accountId == null) {
             throw new ApiException("Missing the required parameter 'accountId' when calling get");
         }
+        if (request.fields == null) {
+            throw new ApiException("Missing the required parameter 'fields' when calling get");
+        }
         return this.apiClient.requestWithHttpInfo({
             method: "GET",
             basePath: TencentAdsV30Configuration.basePath,

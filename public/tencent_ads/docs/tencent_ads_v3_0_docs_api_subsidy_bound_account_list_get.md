@@ -51,7 +51,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/subsidy_bound_account_list/get?access_toke
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
 | account_id | integer | 补贴账号 id |
-| bound_account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| bound_account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | bind_status | string | 绑定状态 1-解绑 2-绑定 |
 | page_info | struct | 分页配置信息 |
 | page | integer | 搜索页码 默认值：1 |
@@ -98,4 +98,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/subsidy_bound_account_list/get?access_toke
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

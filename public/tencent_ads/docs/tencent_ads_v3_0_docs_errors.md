@@ -234,6 +234,7 @@ source_id: tencent_ads_v3_0_docs_errors
 | 64025 | 视频文件解析 META 信息错误，暂不支持该视频上传 | 视频文件解析 META 信息错误，暂不支持该视频上传 |
 | 64026 | The image could not be stored. | 存储图片失败，请检查图片类型、文件签名、上传方式和账户 id 等字段是否填写正确 |
 | 64027 | The value of parameter {PARAM} contains disallowed characters. | The value of parameter {PARAM} contains disallowed characters. |
+| 64036 | The creative material is invalid: it could have been deleted or never existed. | 操作的对象不存在或已删除，请确认 account_id 是否可操作该对象 |
 | 66000 | Catalog %s Not Found | 未找到商品目录 |
 | 66001 | Catalog %s Not Granted | 当前广告主未授权该商品库资产 |
 | 66002 | Catalog Name Duplicate | 商品库名称重复 |
@@ -438,6 +439,7 @@ source_id: tencent_ads_v3_0_docs_errors
 | 77030 | recommend_reasons is duplicate | 推荐理由里理由重复 |
 | 77031 | order_by exceed limit 1 | 排序字段结构长度超限制,最大 1 |
 | 79002 | 策略名称重复，请重新填写 | 策略名称重复，请重新填写 |
+| 79024 | 您的访问过于频繁，请稍后重试～ | 您的访问过于频繁，请稍后重试～ |
 | 80000 | Parameter '{PARAM}' is invalid. | 参数'{PARAM}'无效或不合法 |
 | 80001 | The value you specified for {PARAM} is invalid. Valid values must be greater than {VALUE_LIMIT}. | 参数{PARAM}非法, 允许的值必须在{PARAM}以上 |
 | 80002 | The value you specified for {PARAM} is invalid. Valid values must be less than {VALUE_LIMIT}. | 参数{PARAM}非法, 允许的值必须在{VALUE_LIMIT}以下 |
@@ -1120,10 +1122,35 @@ source_id: tencent_ads_v3_0_docs_errors
 | 1902234 | {PARAM0} component validate err: {PARAM1}. | {PARAM2} 组件校验失败：{PARAM3}。 |
 | 1902235 | Unable to operate the account {PARAM}, no operational rights | 无法操作以下账户{PARAM}，无运营权 |
 | 1902236 | The Source [AD_CREATIVE_AGGREGATION_PROMOTION] is only for internal use. | 聚合推广创意为系统自动创建，无需手动创建，source 字段不能指定为 AD_CREATIVE_AGGREGATION_PROMOTION。 |
-| 1902237 | Starting from {PARAM}, creating legacy search ads is no longer supported. Please use the upgraded Search Ads in the 3.0 API to create new ads. | {PARAM}起，不再支持新建旧版搜索广告，请在 3.0API 端搜索广告升级版中新建广告进行投放 |
+| 1902237 | Starting from {PARAM}, creating legacy search ads is no longer supported. Please use the upgraded Search Ads in the 3.0 API to create new ads. | {PARAM}起，不再支持新建旧版搜索营销单元，请在 3.0API 端搜索投放升级版中进行新建投放 |
 | 1902242 | The industry or entity corresponding to the UID does not have permission to advertise this product library. Please go to the product library to grant full industry or entity authorization. | uid 所在行业或主体暂无权限投放该商品库，请前往商品库进行全行业或主体授权 |
 | 1902243 | The current component has been removed and cannot be readopted to the AIGC auto creative. | 当前组件已被移除，不支持重新添加到 AIGC 自动创意 |
 | 1902244 | large offset is limited, please use cursor mode. | 深翻页查询已被限制，请使用游标分页查询 |
+| 1902246 | The wechat channels activity has expired or gone offline, please select another activity. | 视频号活动已过期或已下线，请重新选择活动。 |
+| 1902247 | The activity_id does not match the wechat_channels_account_id, please verify the activity ownership. | 活动 id 与视频号账号不匹配，请确认活动归属。 |
+| 1902248 | For wechat channels activity promotion, jump_info page_type must be PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY. | 视频号活动页推广产品下，落地页只能设置为视频号活动页类型。 |
+| 1902249 | {PARAM} field has been offline, false is no longer supported. Please remove this field or set it to true. | {PARAM} 字段已下线，不再支持传 false，请移除该字段或设置为 true |
+| 1902250 | Due to business development plans, this Mini Program is no longer supported for ad placement. Please consult your industry operations manager. | 由于业务发展规划，当前小程序已不支持投放，请咨询你的行业运营经理。 |
+| 1902251 | This interface only supports public application | 该接口仅支持三方应用 |
+| 1902253 | API key name already exists | API Key 名称已存在，请更换名称后重试 |
+| 1902254 | Authorization code is expired or invalid | 授权码已过期或无效，请重新授权 |
+| 1902255 | source_type {PARAM} is not allowed for current user | 当前用户不允许使用 {PARAM} 类型的 Key |
+| 1902256 | The image dimensions or file size do not meet the creative format requirements.Please check | 素材尺寸或大小不符合创意形式要求，请检查 |
+| 1902260 | Current smart delivery platform and industry do not support setting the organization material authorization switch. | 当前智投场景和行业不支持设置业务单元素材授权开关，如有疑问请咨询我们的专业运营团队。 |
+| 1902261 | The organization material authorization switch can only be used in conjunction with the smart delivery history component reuse strategy. | 业务单元素材授权开关仅支持与全库智选策略共同使用 |
+| 1902262 | copy create component failed. | 复制时创建组件失败 |
+| 1902264 | Video channels content doesn't support setting object comment flags. | 视频号主页视频推广暂不支持设置精选评论 |
+| 1902265 | The selected material does not match the source project idea. Please reselect the material. | 所选的素材未匹配到源项目创意，请重新选择素材 |
+| 1902270 | Project Adgroup Not Found. | 广告项目信息未找到。 |
+| 1902271 | Normal dynamic creative should not use search component. | 信息流创意不能使用搜索组件。 |
+| 1902272 | The 777 creative template does not match Video Channels Content component | 777 创意形式未匹配到视频号主页视频组件 |
+| 1902273 | The param marketing_target_type 'MARKETING_TARGET_TYPE_WECHAT_CHANNELS' is offlined where the param site_set include pcad and lm. | 腾讯平台与内容媒体版位下，视频号动态推广能力已下线。 |
+| 1902274 | Create area package conversion param invalid, reason: {PARAM0} | 创建区域控量配置参数错误，原因: {PARAM0} |
+| 1902275 | Select area package conversion param invalid, reason: {PARAM0} | 查询区域控量配置参数错误，原因: {PARAM0} |
+| 1902276 | Account-level area package conversion constraint check failed, reason: {PARAM0} | 账户级区域控量跨级约束校验失败，原因: {PARAM0} |
+| 1902277 | Area package conversion operation failed, reason: {PARAM0} | 区域控量配置操作失败，原因: {PARAM0} |
+| 1902278 | Update area package conversion param invalid, reason: {PARAM0} | 更新区域控量配置参数错误，原因: {PARAM0} |
+| 1902279 | Project-level area package conversion constraint check failed, reason: {PARAM0} | 项目级区域控量跨级约束校验失败，原因: {PARAM0} |
 
 问题仍未解决？
 

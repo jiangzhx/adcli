@@ -28,10 +28,10 @@ source_id: tencent_ads_v3_0_docs_api_comment_list_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | filtering | struct[] | 过滤条件 数组最小长度 1，最大长度 255 |
-| field* | string | 过滤字段 可选值：{ finder_usernames, keyword, created_time, finder_ad_object_id, wechat_channels_account_id, comment_analyze_keyword, comment_analyze_sentiment } |
-| operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 finder_usernames 时，可选值：{ EQUALS, IN } 当 field 取值 keyword 时，可选值：{ CONTAINS } 当 field 取值 created_time 时，可选值：{ GREATER_EQUALS, LESS_EQUALS } 当 field 取值 finder_ad_object_id 时，可选值：{ EQUALS, IN } 当 field 取值 wechat_channels_account_id 时，可选值：{ EQUALS, IN } 当 field 取值 comment_analyze_sentiment 时，可选值：{ IN } 当 field 取值 comment_analyze_keyword 时，可选值：{ CONTAINS } |
+| field* | string | 过滤字段 可选值：{ finder_usernames, keyword, created_time, finder_ad_object_id, wechat_channels_account_id, comment_analyze_keyword, comment_analyze_sentiment, dynamic_creative_id } |
+| operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 finder_usernames 时，可选值：{ EQUALS, IN } 当 field 取值 keyword 时，可选值：{ CONTAINS } 当 field 取值 created_time 时，可选值：{ GREATER_EQUALS, LESS_EQUALS } 当 field 取值 finder_ad_object_id 时，可选值：{ EQUALS, IN } 当 field 取值 wechat_channels_account_id 时，可选值：{ EQUALS, IN } 当 field 取值 comment_analyze_sentiment 时，可选值：{ IN } 当 field 取值 comment_analyze_keyword 时，可选值：{ CONTAINS } 当 field 取值 dynamic_creative_id 时，可选值：{ EQUALS, IN } |
 | values* | string[] | 字段取值，values 数组元素的个数限制与 operator 的取值相关 当 field 取值 finder_usernames 时，数组最小长度 1，最大长度 10 字段长度最小 1 字节，长度最大 1024 字节 当 field 取值 keyword 时，数组长度为 1 字段长度最小 0 字节，长度最大 65536 字节 当 field 取值 comment_analyze_keyword 时，数组长度为 1 字段长度最小 0 字节，长度最大 65536 字节 当 field 取值 created_time 时，数组长度为 1 字段长度为 10 字节 当 field 取值 finder_ad_object_id 时，数组最小长度 1，最大长度 100 字段长度最小 1 字节，长度最大 1024 字节 |
 | count | integer | 计数，一页显示的数据条数 最小值 1，最大值 100 |
 | last_buffer | string | 上次请求拉取的 buffer 位置 字段长度最小 1 字节，长度最大 1024 字节 |
@@ -64,14 +64,20 @@ curl -v -G 'https://api.e.qq.com/v3.0/comment_list/get?access_token=<ACCESS_TOKE
 | content | string | 评论内容 |
 | created_time | integer | 创建时间，时间戳 |
 | comment_flag | enum | 评论状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#finder_comment_flag) |
-| finder_ad_object_id | integer | 广告创意 id |
+| finder_ad_object_id | integer | 创意 id |
 | author_replys | struct[] | 作者回复列表 |
 | comment_id | string | 评论 id |
 | content | string | 评论内容 |
 | created_time | integer | 创建时间，时间戳 |
 | comment_flag | enum | 评论状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#finder_comment_flag) |
 | comment_level | integer | 评论层级，评论分为一级评论、二级评论 |
+| content_type | enum | 评论类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#finder_comment_content_type) |
+| image_comment_info | struct | 图片评论信息 |
+| url | string | 字符串类型 |
 | comment_level | integer | 评论层级，评论分为一级评论、二级评论 |
+| content_type | enum | 评论类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#finder_comment_content_type) |
+| image_comment_info | struct | 图片评论信息 |
+| url | string | 字符串类型 |
 | last_buffer | string | 上次请求拉取的 buffer 位置 |
 | continue_flag | integer | 是否继续拉取标记，1 表示还有数据，可以带上 last_buffer 继续拉取 |
 
@@ -88,9 +94,11 @@ curl -v -G 'https://api.e.qq.com/v3.0/comment_list/get?access_token=<ACCESS_TOKE
                 "created_time": 1491019858,
                 "author_replys": [
                     {
-                        "created_time": 1491019858
+                        "created_time": 1491019858,
+                        "image_comment_info": []
                     }
-                ]
+                ],
+                "image_comment_info": []
             }
         ]
     }
@@ -99,8 +107,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/comment_list/get?access_token=<ACCESS_TOKE
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

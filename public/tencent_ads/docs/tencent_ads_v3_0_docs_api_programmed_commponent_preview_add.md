@@ -29,8 +29,8 @@ source_id: tencent_ads_v3_0_docs_api_programmed_commponent_preview_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| adgroup_id* | int64 | 广告 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| adgroup_id* | int64 | 营销单元 id |
 | component_group_list* | struct[] | 组件信息列表，组件类型仅支持图片、视频、图集组件，数组长度为[0,15] 数组最小长度 0，最大长度 15 |
 | component_id* | integer | 创意组件 id |
 
@@ -67,7 +67,7 @@ curl 'https://api.e.qq.com/v3.0/programmed_commponent_preview/add?access_token=<
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | material_derive_id | integer | 衍生全局 id |
 | derive_data_version | enum | 衍生数据版本，区分组件化衍生和素材衍生，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#derive_data_version) |
 
@@ -91,4 +91,4 @@ curl 'https://api.e.qq.com/v3.0/programmed_commponent_preview/add?access_token=<
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

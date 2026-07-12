@@ -42,5 +42,6 @@ export declare const AccountTypeMap: {
     readonly IAA_SHARED_INCOME_COST: "FUND_TYPE_IAA_SHARED_INCOME_COST";
     readonly IAP_SHARED_INCOME_COST: "FUND_TYPE_IAP_SHARED_INCOME_COST";
     readonly UTILITY_PUBLISHER_GIFT: "FUND_TYPE_UTILITY_PUBLISHER_GIFT";
+    readonly MUTUAL_SELECTION_CREDIT_ROLL: "FUND_TYPE_MUTUAL_SELECTION_CREDIT_ROLL";
 };
 export type AccountTypeMap = typeof AccountTypeMap[keyof typeof AccountTypeMap];

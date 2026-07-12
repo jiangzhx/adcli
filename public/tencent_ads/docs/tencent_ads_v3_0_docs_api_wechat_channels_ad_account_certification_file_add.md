@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_channels_ad_account_certification_fi
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | signature* | string | 文件签名，使用文件的 md5 值，用于检查上传文件的完整性 字段长度最小 1 字节，长度最大 256 字节 |
 | file_bytes* | string | 文件二进制 base64 编码 字段长度最小 1 字节，长度最大 10485760 字节 |
 | file_name* | string | 文件名称 字段长度最小 1 字节，长度最大 256 字节 |
@@ -72,8 +72,6 @@ curl 'https://api.e.qq.com/v3.0/wechat_channels_ad_account_certification_file/ad
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

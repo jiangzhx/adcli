@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_conversion_link_assets_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | second_category_type* | enum | 营销链路二级分类，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#conversion_link_second_category_type) 可选值：{ ANDROID, IOS, QUICK_APP, WEB, WECHAT_OFFICIAL_ACCOUNT, WECHAT_CHANNELS, WECHAT_MINI_PROGRAM, WECOM, WECHAT_MINI_GAME, QQ_MINI_GAME } |
 | marketing_carrier_id* | string | 营销载体 id 字段长度最小 1 字节，长度最大 512 字节 |
 | marketing_carrier_name | string | 营销载体名称，当营销链路分类为 QUICK_APP 时必填 字段长度最小 1 字节，长度最大 64 字节 |
@@ -39,7 +39,7 @@ source_id: tencent_ads_v3_0_docs_api_conversion_link_assets_add
 | attribution_window | integer | 曝光归因窗口期，默认窗口期为 7 天 默认值：7 |
 | feedback_id | integer | 监测链接组 id 默认值：7 |
 | optional_og_nodes_index* | integer[] | 备选优化目标节点序号列表 数组最小长度 1， 最小值 0，最大值 2147483647 |
-| custom_report_nodes_index | integer[] | 用户需回传数据的节点序号列表，由回传要求为必传的节点+用户自定义上报节点组成。数据来源为「广告主上报」且回传要求不是「必传」的节点可以作为用户自定义上报节点 数组最小长度 0， 最小值 0，最大值 2147483647 |
+| custom_report_nodes_index | integer[] | 用户需回传数据的节点序号列表，由回传要求为必传的节点+用户自定义上报节点组成。数据来源为「客户上报」且回传要求不是「必传」的节点可以作为用户自定义上报节点 数组最小长度 0， 最小值 0，最大值 2147483647 |
 
 使用说明
 
@@ -80,8 +80,6 @@ curl 'https://api.e.qq.com/v3.0/conversion_link_assets/add?access_token=<ACCESS_
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

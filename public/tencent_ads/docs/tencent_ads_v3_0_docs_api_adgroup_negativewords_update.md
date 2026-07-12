@@ -29,8 +29,8 @@ source_id: tencent_ads_v3_0_docs_api_adgroup_negativewords_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| adgroup_id* | int64 | 广告 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| adgroup_id* | int64 | 营销单元 id |
 | phrase_negative_words* | string[] | 短语否定词，每个否定词长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） 数组最小长度 0，最大长度 900 字段长度最大 150 字节 |
 | exact_negative_words* | string[] | 精确否定词，每个否定词长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） 数组最小长度 0，最大长度 900 字段长度最大 150 字节 |
 
@@ -71,9 +71,9 @@ curl 'https://api.e.qq.com/v3.0/adgroup_negativewords/update?access_token=<ACCES
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| adgroup_id | int64 | 广告 id |
+| adgroup_id | int64 | 营销单元 id |
 | status | enum | 操作执行状态，OPER_FAIL，操作失败； OPER_SUCCESS，操作成功。只要有操作失败的词，就返回 OPER_FAIL，全部成功返回 OPER_SUCCESS，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#negative_word_oper_status) |
-| duplicate_words | struct | 否定词重复而导致失败的否定词列表，包括请求的否定词之间重复、请求的否定词和已有否定词重复、否定词和广告中关键词重复等 |
+| duplicate_words | struct | 否定词重复而导致失败的否定词列表，包括请求的否定词之间重复、请求的否定词和已有否定词重复、否定词和营销中关键词重复等 |
 | phrase_negative_words | string[] | 短语否定词，每个否定词长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） |
 | exact_negative_words | string[] | 精确否定词，每个否定词长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） |
 | exceed_length_words | struct | 单个否定词长度超过限制导致失败的否定词列表 |
@@ -133,4 +133,4 @@ curl 'https://api.e.qq.com/v3.0/adgroup_negativewords/update?access_token=<ACCES
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_leads_voip_call_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主账号 id，直客账号或子客账号 |
+| account_id* | integer | 账户 id，直客账号或子客账号 |
 | leads_id | integer | 线索 id |
 | outer_leads_id | string | 作为线索管理平台的线索与客户侧 CRM 系统的线索关联的唯一标识，outer_leads_id 和 leads_id 二选一必填 |
 | user_id* | integer | 客服 id，平台下客服 id 不能重复 |
@@ -75,4 +75,4 @@ curl 'https://api.e.qq.com/v3.0/leads_voip_call/add?access_token=<ACCESS_TOKEN>&
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

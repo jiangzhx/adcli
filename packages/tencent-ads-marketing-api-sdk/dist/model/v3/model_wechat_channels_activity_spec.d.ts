@@ -1,4 +1,5 @@
 export interface WechatChannelsActivitySpec {
     activity_id?: string;
     wechat_channels_account_id?: string;
+    activity_name?: string;
 }

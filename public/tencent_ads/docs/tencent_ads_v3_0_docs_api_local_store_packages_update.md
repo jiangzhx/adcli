@@ -29,13 +29,13 @@ source_id: tencent_ads_v3_0_docs_api_local_store_packages_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | local_store_package_id* | integer | 门店包 id |
 | local_store_package_name* | string | 门店包名称 字段长度最小 1 字节，长度最大 150 字节 |
 | local_store_list* | struct[] | 门店列表 数组最大长度 500 |
 | poi_id | string | poi id 字段长度最小 1 字节，长度最大 64 字节 |
 | local_store_name | string | 门店名称 字段长度最小 1 字节，长度最大 128 字节 |
-| owner_account_id | integer | 门店授权方 uid 默认值：该字段默认值为 0, 表示拉取当前广告主帐号下的门店 |
+| owner_account_id | integer | 门店授权方 uid 默认值：该字段默认值为 0, 表示拉取当前账户下的门店 |
 
 ## 请求示例
 
@@ -76,4 +76,4 @@ curl 'https://api.e.qq.com/v3.0/local_store_packages/update?access_token=<ACCESS
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

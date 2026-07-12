@@ -49,8 +49,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/agency_business_unit_list_account/get?acce
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| list | struct[] | 广告主账号列表 |
-| account_id | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| list | struct[] | 账户列表 |
+| account_id | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | page_info | struct | 分页配置信息 |
 | page | integer | 搜索页码 默认值：1 |
 | page_size | integer | 一页显示的数据条数 默认值：10 |
@@ -87,4 +87,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/agency_business_unit_list_account/get?acce
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

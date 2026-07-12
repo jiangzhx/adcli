@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_business_point_get
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | site_sets* | enum[] | 拓词版位集，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#recommend_site_set) 数组最小长度 1，最大长度 2 可选值：{ SITE_SET_QBSEARCH, SITE_SET_WECHAT_SEARCH } |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 
 ## 请求示例
 
@@ -82,6 +82,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/business_point/get?access_token=<ACCESS_TO
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

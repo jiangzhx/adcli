@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_material_async_tasks_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | organization_id | integer | 业务单元 id 最小值 0，最大值 9999999999 |
 | ownership_type | enum | 素材所属类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#ownership_type) 可选值：{ OWNED } |
 | filtering | struct[] | 过滤条件列表，若此字段不传，或传空则视为无限制条件 数组最小长度 1，最大长度 10 |
@@ -139,8 +139,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/material_async_tasks/get?access_token=<ACC
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

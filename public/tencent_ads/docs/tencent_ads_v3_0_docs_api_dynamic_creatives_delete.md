@@ -1,11 +1,11 @@
 ---
-title: 删除广告创意 全部接口
+title: 删除创意 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/delete
 doc_id: tencent_ads_v3_0_docs_api_dynamic_creatives_delete
 source_id: tencent_ads_v3_0_docs_api_dynamic_creatives_delete
 ---
-# 删除广告创意 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 删除创意 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -37,8 +37,8 @@ source_id: tencent_ads_v3_0_docs_api_dynamic_creatives_delete
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| dynamic_creative_id* | integer | 广告创意 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| dynamic_creative_id* | integer | 创意 id |
 
 使用说明
 
@@ -63,7 +63,7 @@ curl 'https://api.e.qq.com/v3.0/dynamic_creatives/delete?access_token=<ACCESS_TO
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| dynamic_creative_id | integer | 广告创意 id |
+| dynamic_creative_id | integer | 创意 id |
 
 ## 应答示例
 
@@ -82,4 +82,4 @@ curl 'https://api.e.qq.com/v3.0/dynamic_creatives/delete?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

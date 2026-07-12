@@ -28,12 +28,12 @@ source_id: tencent_ads_v3_0_docs_api_daily_reports_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | level* | enum | 获取报表类型级别，当查询业务单元的报表时,level 只支持组件层级，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_report_daily_level) 可选值：{ REPORT_LEVEL_ADVERTISER, REPORT_LEVEL_ADGROUP, REPORT_LEVEL_DYNAMIC_CREATIVE, REPORT_LEVEL_COMPONENT, REPORT_LEVEL_CHANNEL, REPORT_LEVEL_BIDWORD, REPORT_LEVEL_QUERYWORD, REPORT_LEVEL_MATERIAL_IMAGE, REPORT_LEVEL_MATERIAL_VIDEO, REPORT_LEVEL_MARKETING_ASSET, REPORT_LEVEL_PRODUCT_CATALOG, REPORT_LEVEL_PROJECT, REPORT_LEVEL_PROJECT_CREATIVE, REPORT_LEVEL_VIDEO_HIGHLIGHT, REPORT_LEVEL_PRODUCT_CREATIVE_TEMPLATE, REPORT_LEVEL_WECHAT_SHOP_PRODUCT, REPORT_LEVEL_PLAYLET } |
 | date_range* | struct | 日期范围，最早支持查询 1 年内（365 天）的数据 |
 | start_date* | string | 开始日期，日期格式：YYYY-MM-DD，且小于等于 end_date 字段长度为 10 字节 |
 | end_date* | string | 结束日期，日期格式：YYYY-MM-DD，且大于等于 begin_date 字段长度为 10 字节 |
-| filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，若获取联盟广告位信息此字段必填，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 40 |
+| filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，若获取联盟营销位信息此字段必填，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 40 |
 | field* | string | 过滤字段 可选值：{ adgroup_id, dynamic_creative_id, component_id, component_type, bidword_id, channel_id, image_id, video_id, marketing_target_type, marketing_asset_id, smart_delivery_platform, md5, product_catalog_id, product_series_id, product_outer_id, creative_template_group_id } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 adgroup_id 时，可选值：{ EQUALS, IN } 当 field 取值 dynamic_creative_id 时，可选值：{ EQUALS, IN } 当 field 取值 component_id 时，可选值：{ EQUALS, IN } 当 field 取值 component_type 时，可选值：{ EQUALS, IN } 当 field 取值 channel_id 时，可选值：{ EQUALS, IN } 当 field 取值 bidword_id 时，可选值：{ EQUALS, IN } 当 field 取值 image_id 时，可选值：{ EQUALS, IN } 当 field 取值 video_id 时，可选值：{ EQUALS, IN } 当 field 取值 marketing_target_type 时，可选值：{ EQUALS, IN } 当 field 取值 marketing_asset_id 时，可选值：{ EQUALS, IN } 当 field 取值 product_catalog_id 时，可选值：{ EQUALS, IN } 当 field 取值 product_series_id 时，可选值：{ EQUALS, IN } 当 field 取值 product_outer_id 时，可选值：{ EQUALS, IN } 当 field 取值 smart_delivery_platform 时，可选值：{ EQUALS, NOT_EQUALS } 当 field 取值 creative_template_group_id 时，可选值：{ EQUALS, IN } |
 | values* | string[] | 字段取值，values 数组的个数限制与 operator 的取值相关，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 100 字段长度最大 64 字节 |
@@ -125,16 +125,10 @@ curl -v -G 'https://api.e.qq.com/v3.0/daily_reports/get?access_token=<ACCESS_TOK
 
 枚举值会自动根据已选条件变化，只展示有示例数据的枚举值
 
-```
-暂无数据
-```
-
 ## 可视化调试工具
-
-请求
 
 ## 相关阅读
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

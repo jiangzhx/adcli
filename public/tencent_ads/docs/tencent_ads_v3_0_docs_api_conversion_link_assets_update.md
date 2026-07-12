@@ -29,13 +29,13 @@ source_id: tencent_ads_v3_0_docs_api_conversion_link_assets_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | conversion_link_asset_id* | integer | 营销链路 id |
 | version* | integer | 营销链路版本 最小值 1，最大值 2147483647 |
 | name | string | 营销链路名称 字段长度最小 1 字节，长度最大 64 字节 |
 | feedback_id | integer | 监测链接组 id |
 | optional_og_nodes_index | integer[] | 备选优化目标节点序号列表 数组最小长度 1， 最小值 0，最大值 2147483647 |
-| custom_report_nodes_index | integer[] | 用户需回传数据的节点序号列表，由回传要求为必传的节点+用户自定义上报节点组成。数据来源为「广告主上报」且回传要求不是「必传」的节点可以作为用户自定义上报节点 数组最小长度 0， 最小值 0，最大值 2147483647 |
+| custom_report_nodes_index | integer[] | 用户需回传数据的节点序号列表，由回传要求为必传的节点+用户自定义上报节点组成。数据来源为「客户上报」且回传要求不是「必传」的节点可以作为用户自定义上报节点 数组最小长度 0， 最小值 0，最大值 2147483647 |
 
 使用说明
 
@@ -77,6 +77,8 @@ curl 'https://api.e.qq.com/v3.0/conversion_link_assets/update?access_token=<ACCE
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

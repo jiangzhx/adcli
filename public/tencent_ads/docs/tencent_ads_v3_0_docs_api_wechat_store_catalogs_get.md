@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_store_catalogs_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id |
+| account_id* | integer | 账户 id |
 | store_ids | string[] | 店铺 id 列表 数组最小长度 1，最大长度 10 |
 | catalog_ids | array | 商品库 id 列表 数组最小长度 1，最大长度 10 |
 | catalog_name | string | 商品库名称 字段长度最小 1 字节，长度最大 255 字节 |
@@ -93,6 +93,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_store_catalogs/get?access_token=<AC
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

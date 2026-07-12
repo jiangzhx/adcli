@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_conversion_link_assets_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | filtering* | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 10 |
 | field* | string | 过滤字段 可选值：{ second_category_type, source } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 second_category_type 时，可选值：{ EQUALS } 当 field 取值 source 时，可选值：{ EQUALS } |
@@ -153,4 +153,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/conversion_link_assets/get?access_token=<A
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

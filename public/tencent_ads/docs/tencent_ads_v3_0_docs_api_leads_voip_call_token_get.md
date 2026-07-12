@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_leads_voip_call_token_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主账号 id，直客账号或子客账号 |
+| account_id* | integer | 账户 id，直客账号或子客账号 |
 | user_id* | integer | 客服 id，平台下客服 id 不能重复 |
 | request_id | string | 代表唯一的业务请求，如果因为网络或其他原因重试时，此 id 不变。如果不填，线索平台生成后返回。如果填写了，原样返回 |
 
@@ -60,8 +60,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_voip_call_token/get?access_token=<AC
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

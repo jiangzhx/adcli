@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_product_items_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | product_catalog_id* | integer | 商品库 id |
 | filtering | struct[] | 过滤条件，1、若此字段不传，或传空则视为无限制条件，默认只返回 Top 100 匹配商品。如需展示所有商品，请于 youhuo.qq.com 或者 youhuo.tencent.com 中查看。2、此接口为非实时接口，最大 2 小时延迟。 数组最小长度 1，最大长度 10 |
 | field* | string | 过滤字段 可选值：{ product_set_id, product_name, product_outer_id, first_category_id, second_category_id, third_category_id, fourth_category_id, sdpa_or_mdpa, category_ids, landing_page_types, filter_video, limit, high_info_tag } |
@@ -61,7 +61,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/product_items/get?access_token=<ACCESS_TOK
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| product_outer_id | string | 广告主商品 id |
+| product_outer_id | string | 客户商品 id |
 | product_name | string | 商品名称 |
 | product_image_url | string | 商品预览图 |
 | product_short_name | string | 商品简称 |
@@ -102,6 +102,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/product_items/get?access_token=<ACCESS_TOK
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

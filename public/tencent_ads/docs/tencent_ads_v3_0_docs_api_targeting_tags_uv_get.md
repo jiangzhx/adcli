@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_targeting_tags_uv_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | category_type* | enum | 行为兴趣意向定向标签类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_category_type) 可选值：{ INTEREST, BEHAVIOR, INTENTION } |
 | category_list | integer[] | 查询的标签 id 列表，如果传入了该类别下不存在的标签 id，则不会返回相应标签的信息，如果不填该参数则默认查询该类型全部可用标签 |
 
@@ -87,8 +87,14 @@ curl -v -G 'https://api.e.qq.com/v3.0/targeting_tags_uv/get?access_token=<ACCESS
 
 枚举值会自动根据已选条件变化，只展示有示例数据的枚举值
 
+```
+暂无数据
+```
+
 ## 可视化调试工具
+
+请求
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

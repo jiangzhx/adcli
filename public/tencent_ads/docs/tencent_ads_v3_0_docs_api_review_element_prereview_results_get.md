@@ -29,8 +29,8 @@ source_id: tencent_ads_v3_0_docs_api_review_element_prereview_results_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| adgroup_id | int64 | 广告 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| adgroup_id | int64 | 营销单元 id |
 | elements* | struct[] | 元素信息的列表 数组最小长度 1，最大长度 20 |
 | element_type* | enum | 元素类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#pre_review_element_type) 可选值：{ IMAGE, VIDEO, TXT, DEST_URL } |
 | element_content* | string | 元素内容，1）当元素类型为“图片”时，取值为：image_id 图片 id 2）当元素类型为“视频”时，取值为：video_id 视频 id 3）当元素类型为“文本”时，取值为：文本内容 4）当元素类型为”落地页“时，取值为：落地页的 URL 字段长度最小 0 字节，长度最大 256 字节 |
@@ -126,4 +126,4 @@ curl 'https://api.e.qq.com/v3.0/review_element_prereview_results/get?access_toke
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

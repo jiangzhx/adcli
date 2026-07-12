@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_channels_authorization_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | authorization_id* | string | 视频号授权 id 字段长度最小 1 字节，长度最大 20480 字节 |
 | authorization_begin_time* | integer | 授权开始时间，授权开始时间的时间戳 最小值 0，最大值 9999999999 |
 | authorization_ttl* | integer | 授权有效时间，单位 s,最大值为 3122064000(99 年,授权时展示为不限);如果超过最大值，将默认被设置为为 3122064000。 最小值 0，最大值 9999999999 |
@@ -95,4 +95,4 @@ curl 'https://api.e.qq.com/v3.0/wechat_channels_authorization/update?access_toke
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

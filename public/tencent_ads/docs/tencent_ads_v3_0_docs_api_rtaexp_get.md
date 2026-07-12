@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_rtaexp_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| RtaId | integer | 广告主在腾讯 RTA 的唯一客户 id，不用传，仅供文档展示使用 |
+| RtaId | integer | 客户在腾讯 RTA 的唯一客户 id，不用传，仅供文档展示使用 |
 
 ## 请求示例
 
@@ -73,8 +73,6 @@ curl 'https://api.e.qq.com/v3.0/rtaexp/get?access_token=<ACCESS_TOKEN>&timestamp
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

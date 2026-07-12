@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_local_stores_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | local_store_list | struct[] | 批量创建门店 poi 列表信息 数组最大长度 255 |
 | poi_id | string | poi id 字段长度最小 1 字节，长度最大 64 字节 |
 | local_store_biz_info | struct | 门店经营信息 |
@@ -63,7 +63,7 @@ source_id: tencent_ads_v3_0_docs_api_local_stores_add
 | opening_status | enum | 门店经营状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_local_store_opening_status) 可选值：{ OPENING_STATUS_OPENING, OPENING_STATUS_TEMPORARILY_CLOSED, OPENING_STATUS_PERMANENTLY_CLOSED } |
 | star | float | 门店星级 最小值 0，最大值 5，最多保留 1 位小数 |
 | intro | string | 门店介绍 字段长度最小 0 字节，长度最大 2048 字节 |
-| hide_poi | boolean | 是否在广告上隐藏门店信息 可选值：{ true, false } |
+| hide_poi | boolean | 是否在营销上隐藏门店信息 可选值：{ true, false } |
 | wechat_ecosystem_accounts | struct | 门店微信生态账户 |
 | wxpay_merchant_id | string[] | 微信支付商户号，可从查询微信支付商户号接口获取, 最多可输入 10 个微信支付商户号 数组最小长度 1，最大长度 50 字段长度最小 1 字节，长度最大 9223372036854775807 字节 |
 | wechat_official_account_id | string | 公众号 id 字段长度最小 1 字节，长度最大 512 字节 |
@@ -163,7 +163,7 @@ curl 'https://api.e.qq.com/v3.0/local_stores/add?access_token=<ACCESS_TOKEN>&tim
 | special_service | enum[] | 特色服务，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_local_store_special_service) |
 | opening_status | enum | 门店经营状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_local_store_opening_status) |
 | intro | string | 门店介绍 |
-| hide_poi | boolean | 是否在广告上隐藏门店信息 |
+| hide_poi | boolean | 是否在营销上隐藏门店信息 |
 | wechat_ecosystem_accounts | struct | 门店微信生态账户 |
 | wxpay_merchant_id | string[] | 微信支付商户号，可从查询微信支付商户号接口获取, 最多可输入 10 个微信支付商户号 |
 | wechat_official_account_id | string | 公众号 id |
@@ -275,4 +275,4 @@ curl 'https://api.e.qq.com/v3.0/local_stores/add?access_token=<ACCESS_TOKEN>&tim
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

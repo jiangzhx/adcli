@@ -30,8 +30,8 @@ source_id: tencent_ads_v3_0_docs_api_business_unit_account_update
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | organization_id* | integer | 客户业务单元 id |
-| add_account_id_list | integer[] | 广告主账号列表，集团或客户主体账号 token 可操作广告主帐号 |
-| delete_account_id_list | integer[] | 广告主账号列表，集团或客户主体账号 token 可操作广告主帐号 |
+| add_account_id_list | integer[] | 账户列表，集团或客户主体账号 token 可操作账户 |
+| delete_account_id_list | integer[] | 账户列表，集团或客户主体账号 token 可操作账户 |
 
 使用说明
 
@@ -72,4 +72,4 @@ curl 'https://api.e.qq.com/v3.0/business_unit_account/update?access_token=<ACCES
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_qualification_images_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | signature* | string | 图片文件签名，使用图片文件的 md5 值，用于检查上传图片文件的完整性 字段长度为 32 字节 |
 | file* | file | 被上传的图片文件，支持文件类型：jpeg、jpg、png、img 文件大小限制：小于等于 5M，单位换算规则：1KB=1024B、1M=1024KB, 宽高不可超过 50000px 且总像素不可超过 2.5 亿 px |
 
@@ -71,4 +71,4 @@ curl 'https://api.e.qq.com/v3.0/qualification_images/add?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -1,11 +1,11 @@
 ---
-title: 绑定广告预览受众 全部接口
+title: 绑定营销预览受众 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/adcreative_previews/add
 doc_id: tencent_ads_v3_0_docs_api_adcreative_previews_add
 source_id: tencent_ads_v3_0_docs_api_adcreative_previews_add
 ---
-# 绑定广告预览受众 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 绑定营销预览受众 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -29,8 +29,8 @@ source_id: tencent_ads_v3_0_docs_api_adcreative_previews_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| adgroup_id* | int64 | 广告 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| adgroup_id* | int64 | 营销单元 id |
 | user_id_type* | enum | 受众 id 类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_viewer_id_type) 可选值：{ USER_ID_TYPE_WECHAT_ID, USER_ID_TYPE_QQ_ID } |
 | user_id_list* | string[] | 受众 id 列表 数组最小长度 1，最大长度 50 字段长度最小 1 字节，长度最大 120 字节 |
 
@@ -63,7 +63,7 @@ curl 'https://api.e.qq.com/v3.0/adcreative_previews/add?access_token=<ACCESS_TOK
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | trace_id | string | 追查问题 trace_id |
 | wx_fail_user_name_list | string[] | 预览失败的微信账号 id 列表 |
 
@@ -87,4 +87,4 @@ curl 'https://api.e.qq.com/v3.0/adcreative_previews/add?access_token=<ACCESS_TOK
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -21,15 +21,6 @@ export class CreativeTemplateApi {
         if (request.accountId == null) {
             throw new ApiException("Missing the required parameter 'accountId' when calling get");
         }
-        if (request.marketingGoal == null) {
-            throw new ApiException("Missing the required parameter 'marketingGoal' when calling get");
-        }
-        if (request.marketingTargetType == null) {
-            throw new ApiException("Missing the required parameter 'marketingTargetType' when calling get");
-        }
-        if (request.marketingCarrierType == null) {
-            throw new ApiException("Missing the required parameter 'marketingCarrierType' when calling get");
-        }
         if (request.deliveryMode == null) {
             throw new ApiException("Missing the required parameter 'deliveryMode' when calling get");
         }
@@ -49,6 +40,7 @@ export class CreativeTemplateApi {
                 { name: "dynamic_creative_type", value: request.dynamicCreativeType },
                 { name: "creative_template_id", value: request.creativeTemplateId },
                 { name: "use_new_version", value: request.useNewVersion },
+                { name: "adgroup_id", value: request.adgroupId },
                 { name: "adgroup_type", value: request.adgroupType },
                 { name: "fields", value: request.fields, collectionFormat: "multi" }
             ],

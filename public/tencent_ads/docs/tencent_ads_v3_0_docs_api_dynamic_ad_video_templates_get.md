@@ -28,10 +28,10 @@ source_id: tencent_ads_v3_0_docs_api_dynamic_ad_video_templates_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id，有操作权限的广告主 id |
+| account_id* | integer | 账户 id，有操作权限的账户 id |
 | product_catalog_id* | integer | 商品库 id 最小值 0，最大值 2147483647 |
 | adcreative_template_id* | integer | 创意形式 id 最小值 0，最大值 2147483647 |
-| product_mode* | enum | 标明适用的动态商品广告类型，SINGLE 表示适用于 SDPA，MULTIPLE 表示适用于 MDPA，目前仅支持 MULTIPLE，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_product_mode) 可选值：{ SINGLE, MULTIPLE } |
+| product_mode* | enum | 标明适用的动态商品营销类型，SINGLE 表示适用于 SDPA，MULTIPLE 表示适用于 MDPA，目前仅支持 MULTIPLE，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_product_mode) 可选值：{ SINGLE, MULTIPLE } |
 | support_channel | boolean | 模板是否支持视频号 可选值：{ true, false } |
 | page | integer | 搜索页码 最小值 1，最大值 99999 默认值：1 |
 | page_size | integer | 一页显示的数据条数 最小值 1，最大值 100 默认值：10 |
@@ -136,6 +136,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/dynamic_ad_video_templates/get?access_toke
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

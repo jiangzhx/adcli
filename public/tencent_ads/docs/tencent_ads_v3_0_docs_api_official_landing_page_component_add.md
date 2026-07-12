@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_official_landing_page_component_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | page_config* | struct | 落地页配置结构 |
 | page_name* | string | 落地页名称-用于编辑器管理，不支持 emoji 字段长度最小 1 字节，长度最大 20 字节 |
 | page_title* | string | 落地页标题-用于页面展示，不支持 emoji 字段长度最小 1 字节，长度最大 20 字节 |
@@ -38,7 +38,7 @@ source_id: tencent_ads_v3_0_docs_api_official_landing_page_component_add
 | enable_android_market | boolean | 打开安卓 APP 跳转厂商功能，需要与 android_app_id 同时使用,默认为 false 可选值：{ true, false } 默认值：false |
 | share_title | string | 分享标题，不支持 emoji，需要与 share_description，share_thumburl_material_id 同时使用 字段长度最小 1 字节，长度最大 14 字节 |
 | share_description | string | 分享描述，不支持 emoji，需要与 share_title，share_thumburl_material_id 同时使用 字段长度最小 1 字节，长度最大 20 字节 |
-| share_thumburl_material_id | string | 分享缩略图素材 id，需要与 share_title，share_description 同时使用 图片尺寸：250x250px 图片格式：大小要求在 300KB 以内，仅支持 jpg 和 PNG 或 JPG 格式 注意：包含顶部外显组件时，若不传入该值，则落地页分享时，缩略图使用广告外层素材图片作为分享图 字段长度最小 1 字节，长度最大 20 字节 |
+| share_thumburl_material_id | string | 分享缩略图素材 id，需要与 share_title，share_description 同时使用 图片尺寸：250x250px 图片格式：大小要求在 300KB 以内，仅支持 jpg 和 PNG 或 JPG 格式 注意：包含顶部外显组件时，若不传入该值，则落地页分享时，缩略图使用创意外层素材图片作为分享图 字段长度最小 1 字节，长度最大 20 字节 |
 | bg_color | string | 颜色 字段长度最小 1 字节，长度最大 7 字节 默认值：#FFFFFF |
 | page_elements* | struct[] | 官方落地页组件列表，支持的组件参考示例 数组最小长度 0，最大长度 10 |
 | element_type | string | 官方落地页组件类型，HeadOutsideMaterial:顶部外显素材组件, HeadVideo:顶部视频组件, HeadImage:顶部图片组件, Head180PanoramaImage:顶部 180 度全景图组件, HeadCarousel:顶部轮播图组件, HeadText:顶部文本组件, BlockVideo:视频组件, BlockImage:图片组件, BlockCarousel:轮播图组件, BlockText:简单文本组件, BlockDivider:分割线组件, BlockCustomPage:内嵌网页组件, BlockButton:按钮组件, FixedButton:底部悬浮按钮组件, RightFixedButton:侧边悬浮按钮组件, BlockShelf:图文复合组件, BlockShelfGroup:双图文复合组件 |
@@ -424,7 +424,7 @@ curl 'https://api.e.qq.com/v3.0/official_landing_page_component/add?access_token
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| page_id | int64 | 落地页服务 id，用于广告投放端搭建广告创意选择落地页时使用 |
+| page_id | int64 | 落地页服务 id，用于投放端搭建创意选择落地页时使用 |
 | landing_page_id | integer | 官方落地页 id，仅用于官方落地页模块时使用 |
 
 ## 应答示例
@@ -449,4 +449,4 @@ curl 'https://api.e.qq.com/v3.0/official_landing_page_component/add?access_token
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

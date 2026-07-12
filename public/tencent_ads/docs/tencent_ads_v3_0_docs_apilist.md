@@ -222,6 +222,10 @@ source_id: tencent_ads_v3_0_docs_apilist
 | [conversion_link_assets/get](https://developers.e.qq.com/v3.0/docs/api/conversion_link_assets/get) | 获取营销链路列表 | ads_management ads_insights |  |
 | [conversion_link_assets/update](https://developers.e.qq.com/v3.0/docs/api/conversion_link_assets/update) | 更新营销链路 | ads_management ads_insights |  |
 | [conversion_link_asset_available/get](https://developers.e.qq.com/v3.0/docs/api/conversion_link_asset_available/get) | 获取可投放营销链路列表 | ads_management |  |
+| 资产授权 | [asset_permissions/add](https://developers.e.qq.com/v3.0/docs/api/asset_permissions/add) | 资产权限授予 | ads_management |
+| [asset_permissions/delete](https://developers.e.qq.com/v3.0/docs/api/asset_permissions/delete) | 资产权限回收 | ads_management |  |
+| [asset_pre_permissions/get](https://developers.e.qq.com/v3.0/docs/api/asset_pre_permissions/get) | 获取待确认接收授权列表接口 | ads_management |  |
+| [asset_pre_permissions/update](https://developers.e.qq.com/v3.0/docs/api/asset_pre_permissions/update) | 资产预授权确认 | ads_management |  |
 | 投放数据洞察 | [daily_reports/get](https://developers.e.qq.com/v3.0/docs/api/daily_reports/get) | 获取日报表 | ads_insights |
 | [hourly_reports/get](https://developers.e.qq.com/v3.0/docs/api/hourly_reports/get) | 获取小时报表 | ads_insights |  |
 | [targeting_tag_reports/get](https://developers.e.qq.com/v3.0/docs/api/targeting_tag_reports/get) | 获取定向标签报表 | ads_insights |  |
@@ -230,8 +234,6 @@ source_id: tencent_ads_v3_0_docs_apilist
 | [async_reports/get](https://developers.e.qq.com/v3.0/docs/api/async_reports/get) | 获取异步报表任务 | ads_insights |  |
 | [async_report_files/get](https://developers.e.qq.com/v3.0/docs/api/async_report_files/get) | 获取文件接口 | ads_insights |  |
 | 创意资产洞察 | [dc_component_summary_info/get](https://developers.e.qq.com/v3.0/docs/api/dc_component_summary_info/get) | 获取创意资产总结 | ads_insights |
-| 订单数据 | [ecommerce_order/get](https://developers.e.qq.com/v3.0/docs/api/ecommerce_order/get) | 获取订单数据 | ads_insights |
-| [ecommerce_order/update](https://developers.e.qq.com/v3.0/docs/api/ecommerce_order/update) | 更新订单状态 | ads_insights |  |
 | 线索管理 | [leads_list/get](https://developers.e.qq.com/v3.0/docs/api/leads_list/get) | 获取线索列表 | ads_management ads_insights account_management audience_management user_actions |
 | [leads/add](https://developers.e.qq.com/v3.0/docs/api/leads/add) | 新增线索 | ads_management ads_insights account_management audience_management user_actions |  |
 | [leads_status/update](https://developers.e.qq.com/v3.0/docs/api/leads_status/update) | 更新线索状态 | ads_management ads_insights account_management audience_management user_actions |  |
@@ -260,7 +262,6 @@ source_id: tencent_ads_v3_0_docs_apilist
 | [programmed_template/get](https://developers.e.qq.com/v3.0/docs/api/programmed_template/get) | 获取模板列表 | ads_management |  |
 | [programmed/get](https://developers.e.qq.com/v3.0/docs/api/programmed/get) | 获取模板预览(待废弃) | ads_management |  |
 | [programmed_material_mappings/get](https://developers.e.qq.com/v3.0/docs/api/programmed_material_mappings/get) | 获取衍生素材的原素材关系(待废弃) | ads_management |  |
-| 素材标注 | [material_ai_annotation/add](https://developers.e.qq.com/v3.0/docs/api/material_ai_annotation/add) | 素材 AI 标注 | ads_management |
 | 素材标签 | [material_labels/add](https://developers.e.qq.com/v3.0/docs/api/material_labels/add) | 创建素材标签 | ads_management |
 | [material_labels/delete](https://developers.e.qq.com/v3.0/docs/api/material_labels/delete) | 删除素材标签 | ads_management |  |
 | [material_labels/update](https://developers.e.qq.com/v3.0/docs/api/material_labels/update) | 更新素材标签 | ads_management |  |
@@ -272,12 +273,6 @@ source_id: tencent_ads_v3_0_docs_apilist
 | 动态内容素材 | [material_dcatag/add](https://developers.e.qq.com/v3.0/docs/api/material_dcatag/add) | 创建动态内容素材标签绑定 | ads_management |
 | [material_dcatag/get](https://developers.e.qq.com/v3.0/docs/api/material_dcatag/get) | 获取动态内容素材标签绑定 | ads_management |  |
 | [material_dcaset/add](https://developers.e.qq.com/v3.0/docs/api/material_dcaset/add) | 创建动态内容素材集合绑定 | ads_management |  |
-| 妙思 AI 工具 | [muse_ai_task/add](https://developers.e.qq.com/v3.0/docs/api/muse_ai_task/add) | 创建妙思任务 | ads_management |
-| [muse_ai_task/get](https://developers.e.qq.com/v3.0/docs/api/muse_ai_task/get) | 获取妙思任务结果 | ads_management |  |
-| [muse_ai_material/add](https://developers.e.qq.com/v3.0/docs/api/muse_ai_material/add) | 选择并保存妙思 AI 素材 | ads_management |  |
-| [muse_ai_ugc/add](https://developers.e.qq.com/v3.0/docs/api/muse_ai_ugc/add) | 二次编辑素材回传接口 | ads_management |  |
-| 警示语工具（待下线） | [watermarks/add](https://developers.e.qq.com/v3.0/docs/api/watermarks/add) | 添加素材警示语 | ads_management |
-| [watermarks/get](https://developers.e.qq.com/v3.0/docs/api/watermarks/get) | 获取警示语添加记录 | ads_management |  |
 | 素材异步任务(警示语) | [material_async_tasks/add](https://developers.e.qq.com/v3.0/docs/api/material_async_tasks/add) | 添加异步任务(警示语) | ads_management |
 | [material_async_tasks/get](https://developers.e.qq.com/v3.0/docs/api/material_async_tasks/get) | 获取异步任务(警示语) | ads_management |  |
 | 创意增强 MAX | [muse_derive_switch_settings/get](https://developers.e.qq.com/v3.0/docs/api/muse_derive_switch_settings/get) | 查询生成偏好设置 | ads_management |
@@ -286,12 +281,10 @@ source_id: tencent_ads_v3_0_docs_apilist
 | 联合预算工具 | [joint_budget_rules/get](https://developers.e.qq.com/v3.0/docs/api/joint_budget_rules/get) | 获取联合预算 | ads_management |
 | [joint_budget_rules/add](https://developers.e.qq.com/v3.0/docs/api/joint_budget_rules/add) | 创建联合预算 | ads_management |  |
 | [joint_budget_rules/update](https://developers.e.qq.com/v3.0/docs/api/joint_budget_rules/update) | 更新联合预算 | ads_management |  |
-| 微信原生页 | [wechat_pages_grantinfo/get](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_grantinfo/get) | 获取原生页授权方信息 | ads_management |
-| [wechat_pages_csgrouplist/get](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgrouplist/get) | 获取企业微信组件客服组 | ads_management |  |
-| [wechat_pages_csgrouplist/add](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgrouplist/add) | 增加企业微信组件客服组 | ads_management |  |
-| [wechat_pages_csgrouplist/update](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgrouplist/update) | 更新企业微信组件客服组 | ads_management |  |
-| [wechat_pages_csgroup_user/get](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgroup_user/get) | 获取企业微信组件客服列表 | ads_management |  |
-| [wechat_pages_csgroup_status/update](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgroup_status/update) | 更新企业微信客服状态 | ads_management |  |
+| 官方落地页获客助手 | [wecom_customer_acquisition_link/get](https://developers.e.qq.com/v3.0/docs/api/wecom_customer_acquisition_link/get) | 查询获客链接列表 | ads_management |
+| [wecom_customer_acquisition_link/add](https://developers.e.qq.com/v3.0/docs/api/wecom_customer_acquisition_link/add) | 创建获客链接 | ads_management |  |
+| [wecom_customer_acquisition_link/update](https://developers.e.qq.com/v3.0/docs/api/wecom_customer_acquisition_link/update) | 更新获客链接 | ads_management |  |
+| [wecom_department_user/get](https://developers.e.qq.com/v3.0/docs/api/wecom_department_user/get) | 查询部门用户列表 | ads_management |  |
 | 游戏特征信息 | [game_feature_tags/get](https://developers.e.qq.com/v3.0/docs/api/game_feature_tags/get) | 获取游戏特征标签 | ads_management |
 | [game_feature/add](https://developers.e.qq.com/v3.0/docs/api/game_feature/add) | 添加游戏 App 特征 | ads_management |  |
 | [game_feature/get](https://developers.e.qq.com/v3.0/docs/api/game_feature/get) | 获取游戏 App 特征 | ads_management |  |
@@ -326,6 +319,12 @@ source_id: tencent_ads_v3_0_docs_apilist
 | [object_comment_flag/update](https://developers.e.qq.com/v3.0/docs/api/object_comment_flag/update) | 设置开启、关闭精选评论 | ads_management |  |
 | [channels_comment/add](https://developers.e.qq.com/v3.0/docs/api/channels_comment/add) | 视频号动态新增评论 | ads_management |  |
 | [channels_comment/delete](https://developers.e.qq.com/v3.0/docs/api/channels_comment/delete) | 视频号动态删除评论 | ads_management |  |
+| 微信原生页 | [wechat_pages_csgrouplist/get](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgrouplist/get) | 获取企业微信组件客服组 | ads_management |
+| [wechat_pages_csgrouplist/add](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgrouplist/add) | 增加企业微信组件客服组 | ads_management |  |
+| [wechat_pages_csgrouplist/update](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgrouplist/update) | 更新企业微信组件客服组 | ads_management |  |
+| [wechat_pages_csgroup_user/get](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgroup_user/get) | 获取企业微信组件客服列表 | ads_management |  |
+| [wechat_pages_csgroup_status/update](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgroup_status/update) | 更新企业微信客服状态 | ads_management |  |
+| [wechat_pages_grantinfo/get](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_grantinfo/get) | 获取原生页授权方信息 | ads_management |  |
 | rta 策略管理 | [rta_info/get](https://developers.e.qq.com/v3.0/docs/api/rta_info/get) | 获取 rta 信息 | ads_management |
 | [rtatarget/get](https://developers.e.qq.com/v3.0/docs/api/rtatarget/get) | 获取 rta 策略信息 | ads_management |  |
 | [rtatarget/add](https://developers.e.qq.com/v3.0/docs/api/rtatarget/add) | 创建 rta 策略信息 | ads_management |  |
@@ -367,11 +366,13 @@ source_id: tencent_ads_v3_0_docs_apilist
 | 组件元素催审 | [component_element_urge_review/get](https://developers.e.qq.com/v3.0/docs/api/component_element_urge_review/get) | 获取创意组件元素催审状态 | ads_management |
 | [component_element_urge_review/add](https://developers.e.qq.com/v3.0/docs/api/component_element_urge_review/add) | 组件元素催审 | ads_management |  |
 | 素材风险检测 | [review_element_prereview_results/get](https://developers.e.qq.com/v3.0/docs/api/review_element_prereview_results/get) | 获取元素预审结果 | ads_management |
+| 元素预审异步任务 | [pre_review_task/add](https://developers.e.qq.com/v3.0/docs/api/pre_review_task/add) | 异步预审任务提交 | ads_management |
+| [pre_review_task/get](https://developers.e.qq.com/v3.0/docs/api/pre_review_task/get) | 异步预审结果获取 | ads_management |  |
 | 违规处罚 | [punishment_config/get](https://developers.e.qq.com/v3.0/docs/api/punishment_config/get) | 获取处罚系统配置 | ads_management |
 | [punishment_query/get](https://developers.e.qq.com/v3.0/docs/api/punishment_query/get) | 获取违规处罚列表 | ads_management |  |
-| [punish_metrics/get](https://developers.e.qq.com/v3.0/docs/api/punish_metrics/get) | 获取计量处罚指标 | ads_management |  |
-| [punish_uid_metrics/get](https://developers.e.qq.com/v3.0/docs/api/punish_uid_metrics/get) | 获取计量处罚 UID 指标 | ads_management |  |
-| [punish_detail/get](https://developers.e.qq.com/v3.0/docs/api/punish_detail/get) | 获取计量处罚明细 | ads_management |  |
+| [punish_metrics/get](https://developers.e.qq.com/v3.0/docs/api/punish_metrics/get) | 获取素材计量治理指标 | ads_management |  |
+| [punish_uid_metrics/get](https://developers.e.qq.com/v3.0/docs/api/punish_uid_metrics/get) | 获取素材计量治理账户指标 | ads_management |  |
+| [punish_detail/get](https://developers.e.qq.com/v3.0/docs/api/punish_detail/get) | 获取素材计量治理明细 | ads_management |  |
 | [illegal_complaint/get](https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/get) | 获取违规申诉列表 | ads_management |  |
 | [illegal_complaint/add](https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/add) | 创建违规申诉 | ads_management |  |
 

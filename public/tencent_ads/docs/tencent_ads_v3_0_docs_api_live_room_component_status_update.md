@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_live_room_component_status_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | component_id* | integer | 直播间组件 id |
 | component_type* | enum | 直播间组件类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#creative_component_type) 可选值：{ LIVE_IMAGE_UNKNOWN, LIVE_IMAGE_COMPONENT, LIVE_CONV_COMPONENT } |
 | status* | enum | 组件状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_sys_status) 可选值：{ AD_STATUS_NORMAL, AD_STATUS_SUSPEND } |
@@ -70,4 +70,4 @@ curl 'https://api.e.qq.com/v3.0/live_room_component_status/update?access_token=<
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

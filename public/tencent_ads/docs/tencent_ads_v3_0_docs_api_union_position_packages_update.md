@@ -29,9 +29,9 @@ source_id: tencent_ads_v3_0_docs_api_union_position_packages_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id，有操作权限的广告主 id |
+| account_id* | integer | 账户 id，有操作权限的账户 id |
 | union_package_id* | integer | 流量包 id |
-| union_position_id_list* | integer[] | 腾讯广告联盟广告位 id 列表 数组最小长度 1，最大长度 2000 |
+| union_position_id_list* | integer[] | 腾讯营销联盟营销位 id 列表 数组最小长度 1，最大长度 2000 |
 
 ## 请求示例
 
@@ -77,8 +77,6 @@ curl 'https://api.e.qq.com/v3.0/union_position_packages/update?access_token=<ACC
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

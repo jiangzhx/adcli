@@ -11,8 +11,8 @@ export interface AdvertiserConfigApiAddRequest {
 
 export interface AdvertiserConfigApiGetRequest {
   accountId: number | string;
+  fields: string[];
   organizationId?: number | string;
-  fields?: unknown;
 }
 
 
@@ -56,6 +56,10 @@ export class AdvertiserConfigApi {
   async getWithHttpInfo(request: AdvertiserConfigApiGetRequest): Promise<ApiResponse<AdvertiserConfigGetResponseData>> {
     if (request.accountId == null) {
       throw new ApiException("Missing the required parameter 'accountId' when calling get");
+    }
+
+    if (request.fields == null) {
+      throw new ApiException("Missing the required parameter 'fields' when calling get");
     }
     return this.apiClient.requestWithHttpInfo<AdvertiserConfigGetResponseData>({
       method: "GET",

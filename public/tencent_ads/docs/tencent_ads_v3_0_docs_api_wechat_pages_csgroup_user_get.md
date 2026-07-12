@@ -28,9 +28,9 @@ source_id: tencent_ads_v3_0_docs_api_wechat_pages_csgroup_user_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| corp_id* | string | 绑定的企业 id |
-| department_id | integer | 部门 id 最小值 0，最大值 9999999999 |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| corp_id* | string | 绑定的企业 id 字段长度最小 1 字节，长度最大 64 字节 |
+| department_id | integer | 部门 id，不传递该参数则获取可见范围内的部门成员列表 最小值 0，最大值 9999999999 |
 
 ## 请求示例
 
@@ -45,7 +45,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_pages_csgroup_user/get?access_token
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| user_id_list | string[] | 客服列表，通过 [\[获取企业微信客服列表\]](https://developers.e.qq.com/v3.0/docs/api/wechat_pages_csgroup_user/wechat_pages_csgroup_user_get?version=1.3&_preview=1) 获得 |
+| user_id_list | string[] | 客服列表 |
 
 ## 应答示例
 
@@ -62,8 +62,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_pages_csgroup_user/get?access_token
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

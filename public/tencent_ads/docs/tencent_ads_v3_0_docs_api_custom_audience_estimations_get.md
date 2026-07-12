@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_custom_audience_estimations_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | type* | string | 人群类型，目前仅支持 COMBINE 类型的人群 |
 | audience_spec* | struct | 人群信息，AudienceSpec 内部字段，和 type 相关 |
 | combine_spec | struct | 组合人群信息，当 type=COMBINE 时必填，最多允许用 500 个人群做组合 |
@@ -73,8 +73,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/custom_audience_estimations/get?access_tok
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

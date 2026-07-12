@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_advertiser_get
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | agency_id | integer | 服务商账号 id，服务商主体请求时必填、其他 token 忽略此参数 最小值 1 |
-| account_id | integer | 广告主帐号 id，直客客户必须填写，代理商可不填写; 如代理商不填写，则获取代理商下全部子客户的信息 |
+| account_id | integer | 账户 id，直客客户必须填写，代理商可不填写; 如代理商不填写，则获取代理商下全部子客户的信息 |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组长度为 1 |
 | field* | string | 过滤字段 可选值：{ corporation_name } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 corporation_name 时，可选值：{ EQUALS, CONTAINS } |
@@ -64,8 +64,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/advertiser/get?access_token=<ACCESS_TOKEN>
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| account_id | integer | 广告主帐号 id |
-| daily_budget | integer | 竞价广告账户日预算，单位为分，0 表示不设预算（即不限） |
+| account_id | integer | 账户 id |
+| daily_budget | integer | 竞价投放账户日预算，单位为分，0 表示不设预算（即不限） |
 | registration_type | enum | 账户主体类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#customer_registration_type) |
 | corporation_name | string | 【企业账号】企业名称 【个人账号】个人姓名 |
 | corporation_licence | string | 【企业账号】企业营业执照注册号 【个人账号】不使用 |
@@ -74,8 +74,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/advertiser/get?access_token=<ACCESS_TOKEN>
 | individual_qualification | struct | 身份证明， 【企业账号】法人身份证明 【个人账号】个人身份证明 |
 | name | string | 姓名 |
 | identification_number | string | 身份证号码 |
-| identification_front_image_id | string | 身份证正面图片 id，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 |
-| identification_back_image_id | string | 身份证反面图片 id，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 |
 | area_code | integer | 所在地，具体值参照附录中的 [\[地域信息\]](https://developers.e.qq.com/docs/reference/region) 【企业账号】公司所在地 【个人账号】不使用 |
 | mdm_id | integer | 客户主体 id |
 | mdm_name | string | 客户主体名称 |
@@ -176,4 +174,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/advertiser/get?access_token=<ACCESS_TOKEN>
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

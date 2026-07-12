@@ -5,5 +5,6 @@ export declare const CreativeAssetType: {
     readonly VIDEO: "VIDEO";
     readonly VIDEO_SHOWCASE: "VIDEO_SHOWCASE";
     readonly IMAGE_SHOWCASE: "IMAGE_SHOWCASE";
+    readonly VIDEO_LIST: "VIDEO_LIST";
 };
 export type CreativeAssetType = typeof CreativeAssetType[keyof typeof CreativeAssetType];

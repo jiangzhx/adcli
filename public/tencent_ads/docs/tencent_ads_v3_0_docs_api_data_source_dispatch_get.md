@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_data_source_dispatch_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | user_action_set_id | integer | 数据源 id，通过 user_action_sets 模块创建和获取，数据源 id 对应的类型要与 user_action_sets 中指定的 type 一致 |
 | type | enum | 用户行为源类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#am_user_action_set_type) 可选值：{ WEB, ANDROID, IOS, OFFLINE, WECHAT, WECHAT_MINI_PROGRAM, WECHAT_MINI_GAME, HARMONY } |
 | name | string | 用户行为源名称，当 type=WEB 时必填，当 type=ANDROID 或 IOS 时，若未填写该字段，则默认通过 mobile_app_id 获取名称 字段长度最小 1 字节，长度最大 32 字节 |
@@ -51,14 +51,14 @@ curl -v -G 'https://api.e.qq.com/v3.0/data_source_dispatch/get?access_token=<ACC
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | data_source_scenes | struct[] | 数据源分发列表 |
 | user_action_set_id | integer | 用户行为源 id，通过 [\[user_action_sets 接口\]](https://developers.e.qq.com/v3.0/docs/api/user_action_sets/add) 创建用户行为源时分配的唯一 id。请注意，当填写的用户行为数据源类型为 {WECHAT, WECHAT_MINI_PROGRAM, WECHAT_MINI_GAME} 时，必填 user_id 字段中的 wechat_openid (或 wechat_unionid) 及 wechat_app_id。 |
 | scenes | struct[] | 应用场景信息列表 |
 | scene | enum | 应用场景，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#data_nexus_scene) |
 | asset_ids | struct[] | 资产列表 |
 | data_set_id | integer | 数据集 id，更新商品应用场景时必填 |
-| catalog_id | integer | 商品库 id，更新动态商品广告应用场景时必填 |
+| catalog_id | integer | 商品库 id，更新动态商品营销应用场景时必填 |
 | switch_type | enum | 批量分发开关标识，SWITCH_ON 开启，SWITCH_OFF 关闭，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#data_source_dispatch_switch) |
 
 ## 应答示例
@@ -90,6 +90,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/data_source_dispatch/get?access_token=<ACC
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

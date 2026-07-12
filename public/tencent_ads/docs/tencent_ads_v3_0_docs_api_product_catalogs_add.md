@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_product_catalogs_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id，有操作权限的广告主 id，如果已经升级了工作台，则填写 bm_id 默认值：默认值：1，最小值 1，最大值 99999 |
+| account_id* | integer | 账户 id，有操作权限的账户 id，如果已经升级了工作台，则填写 bm_id |
 | catalog_name* | string | 商品库名称 字段长度最小 1 字节，长度最大 255 字节 |
 | catalog_scale_type* | enum | 商品库规模，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_catalog_scale) 可选值：{ CATALOG_SCALE_TYPE_NORMAL, CATALOG_SCALE_TYPE_HUGE } |
 | catalog_type* | enum | 商品库类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#dpa_api_catalog_type) 可选值：{ CATALOG_TYPE_UNKNOWN, CATALOG_TYPE_STANDARD, CATALOG_TYPE_FENGYE, CATALOG_TYPE_LOCAL_STORE } |
@@ -73,8 +73,6 @@ curl 'https://api.e.qq.com/v3.0/product_catalogs/add?access_token=<ACCESS_TOKEN>
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

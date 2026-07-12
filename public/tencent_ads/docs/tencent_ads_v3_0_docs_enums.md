@@ -12,21 +12,21 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| ACCOUNT_ROLE_TYPE_ADVERTISER | 广告主 |
+| ACCOUNT_ROLE_TYPE_ADVERTISER | 客户 |
 | ACCOUNT_ROLE_TYPE_AGENCY | 代理商 |
 | ACCOUNT_ROLE_TYPE_T1 | T1 账户 |
 | ACCOUNT_ROLE_TYPE_BUSINESS_MANAGER | 商务管家账户 |
 | ACCOUNT_ROLE_TYPE_DATA_NEXUS | 有数账户 |
-| ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_UNIT | 广告主业务单元 |
-| ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_MDM | 广告主主体 |
-| ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_CORPORATION | 广告主集团 |
+| ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_UNIT | 客户业务单元 |
+| ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_MDM | 客户主体 |
+| ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_CORPORATION | 客户集团 |
 | ACCOUNT_ROLE_TYPE_ORGANIZATION_AGENCY_UNIT | 代理商业务单元 |
 | ACCOUNT_ROLE_TYPE_ORGANIZATION_AGENCY_MDM | 代理商主体 |
 
 | 名称 | 描述 |
 | --- | --- |
 | ACCOUNT_TYPE_UNKNOWN | 未知 |
-| ACCOUNT_TYPE_ADVERTISER | 广告主 |
+| ACCOUNT_TYPE_ADVERTISER | 客户 |
 | ACCOUNT_TYPE_AGENCY | 代理商 |
 | ACCOUNT_TYPE_DSP | DSP |
 | ACCOUNT_TYPE_DEVELOPER | 开发者 |
@@ -45,7 +45,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | ROLE_TYPE_OPERATOR | 操作者 |
 | ROLE_TYPE_TREASURER | 财务 |
 | ROLE_TYPE_ASSISTANT | 助手 |
-| ROLE_TYPE_SELF_OPERATOR | 广告主自理投放管理员 |
+| ROLE_TYPE_SELF_OPERATOR | 客户自理投放管理员 |
 | ROLE_TYPE_ROOT | ROOT 用户 |
 | ROLE_TYPE_AGENCY_BOSS | 代理商 BOSS |
 | ROLE_TYPE_AGENCY_ADMIN | 代理商协作者系统管理员 |
@@ -136,7 +136,7 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| EXCLUDED_DIMENSION_UID | 广告主 |
+| EXCLUDED_DIMENSION_UID | 客户 |
 | EXCLUDED_DIMENSION_COMPANY_ACCOUNT | 公司主体 |
 | EXCLUDED_DIMENSION_APP | 应用 |
 | EXCLUDED_DIMENSION_PRODUCT | 商品 |
@@ -185,7 +185,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | OPTIMIZATIONGOAL_PAGE_SCAN_CODE | 加企业微信客服 |
 | OPTIMIZATIONGOAL_SELECT_COURSE | 选课 |
 | OPTIMIZATIONGOAL_CONFIRM_POTENTIAL_CUSTOMER_PHONE | 电话潜在客户 |
-| OPTIMIZATIONGOAL_MOBILE_APP_AD_INCOME | 广告变现 |
+| OPTIMIZATIONGOAL_MOBILE_APP_AD_INCOME | 流量变现 |
 | OPTIMIZATIONGOAL_MOBILE_APP_ACCREDIT | 小游戏授权 |
 | OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD | 首次会员购买 |
 | OPTIMIZATIONGOAL_PAGE_CONFIRM_EFFECTIVE_LEADS | 有效综合线索 |
@@ -253,6 +253,8 @@ source_id: tencent_ads_v3_0_docs_enums
 | OPTIMIZATIONGOAL_NET_PROFIT_24H | 二十四小时净成交成本 |
 | OPTIMIZATIONGOAL_EFFECTIVE_INSURE | 有效投保 |
 | OPTIMIZATIONGOAL_COLLECT | 店铺收藏 |
+| OPTIMIZATIONGOAL_COUPON_AMOUNT | 视频号小店广告券核销, 仅用于 pLTV 样本 |
+| OPTIMIZATIONGOAL_EFFECTIVE_CONSULT | 有效开口 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -315,16 +317,16 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| WECHAT_OFFICIAL_ACCOUNT_FOLLOWED | 关注过广告主微信公众号 |
-| WECHAT_COUPON_OBTAINED | 领取过广告主微信卡券 |
-| WECHAT_OFFICIAL_ACCOUNT_AD_LIKE | 对微信公众号广告感兴趣 |
-| WECHAT_MOMENTS_AD_LIKE | 对微信朋友圈广告感兴趣 |
+| WECHAT_OFFICIAL_ACCOUNT_FOLLOWED | 关注过客户微信公众号 |
+| WECHAT_COUPON_OBTAINED | 领取过客户微信卡券 |
+| WECHAT_OFFICIAL_ACCOUNT_AD_LIKE | 对微信公众号营销感兴趣 |
+| WECHAT_MOMENTS_AD_LIKE | 对微信朋友圈营销感兴趣 |
 | MINI_GAME_WECHAT_REGISTERED | 曾经注册过你的小游戏。当且仅当 promoted_object_type 是 PROMOTED_OBJECT_TYPE_MINI_GAME_WECHAT 时，MINI_GAME_WECHAT_REGISTERED 才可以使用 |
 | WECHAT_WORK_CONTACTS_ADDED | 已经添加过企业微信 |
-| GDT_WECHAT_OFFICIAL_ACCOUNT_FOLLOWED | GDT 账户，关注过广告主微信公众号 |
+| GDT_WECHAT_OFFICIAL_ACCOUNT_FOLLOWED | GDT 账户，关注过客户微信公众号 |
 | WECHAT_CHANNELS_FANS | 是你的视频号粉丝 |
 | WE_COM_CORP_ID_ADDED | 已经添加过企业微信 |
-| WECHAT_MINI_GAME_AD_LIKE | 曾对你的小游戏广告感兴趣或未注册 |
+| WECHAT_MINI_GAME_AD_LIKE | 曾对你的小游戏营销感兴趣或未注册 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -375,31 +377,31 @@ source_id: tencent_ads_v3_0_docs_enums
 | --- | --- |
 | ADGROUP_STATUS_FROZEN | 已冻结 |
 | ADGROUP_STATUS_SUSPEND | 暂停中 |
-| ADGROUP_STATUS_NOT_IN_DELIVERY_TIME | 广告未到投放时间 |
+| ADGROUP_STATUS_NOT_IN_DELIVERY_TIME | 营销未到投放时间 |
 | ADGROUP_STATUS_ACTIVE | 投放中 |
 | ADGROUP_STATUS_DELETED | 已删除 |
 | ADGROUP_STATUS_ACCOUNT_BALANCE_NOT_ENOUGH | 账户余额不足 |
-| ADGROUP_STATUS_DAILY_BUDGET_REACHED | 广告达到日预算上限 |
+| ADGROUP_STATUS_DAILY_BUDGET_REACHED | 营销达到日预算上限 |
 | ADGROUP_STATUS_PARTIAL_ACTIVE | 部分投放中 |
-| ADGROUP_STATUS_WECHAT_CHANNELS_STOP | 投放结束（超过 14 天广告未上线） |
+| ADGROUP_STATUS_WECHAT_CHANNELS_STOP | 投放结束（超过 14 天营销未上线） |
 | ADGROUP_STATUS_CREATIVE_STATUS_PENDING | 创意未投放 |
 | ADGROUP_STATUS_CREATIVE_EMPTY | 创意准备中 |
-| ADGROUP_STATUS_JOINT_BUDGET_REACHED | 广告被暂停（联合预算达上限） |
-| ADGROUP_STATUS_TOTAL_BUDGET_REACHED | 广告达到总预算上限 |
+| ADGROUP_STATUS_JOINT_BUDGET_REACHED | 营销被暂停（联合预算达上限） |
+| ADGROUP_STATUS_TOTAL_BUDGET_REACHED | 营销达到总预算上限 |
 | ADGROUP_STATUS_PRE_LOCK | 待锁定预算 |
 | ADGROUP_STATUS_UNLOCKING | 解锁预算中 |
 | ADGROUP_STATUS_STOP | 投放结束 |
 | ADGROUP_STATUS_LIVE_NOT_ACTIVE | 已到达投放时间（直播未开启） |
-| ADGROUP_STATUS_NOT_ACTIVE_PRODUCT_AUDIT_FAIL | 广告未投放（推广产品审核不通过） |
-| ADGROUP_STATUS_LIVE_VIOLATION | 广告未投放（直播间违规） |
-| ADGROUP_STATUS_WECHAT_STORE_PENDING | 广告未投放（店铺审核中） |
-| ADGROUP_STATUS_WECHAT_STORE_CLOSING | 广告未投放（店铺关闭中） |
-| ADGROUP_STATUS_WECHAT_STORE_CLOSED | 广告未投放（店铺已关闭） |
-| ADGROUP_STATUS_NOT_ACTIVE_PRODUCT_REMOVED | 广告未投放（商品已下架） |
-| ADGROUP_STATUS_WECHAT_STORE_NOT_AVAILABLE | 广告未投放（店铺不可投） |
-| ADGROUP_STATUS_NOT_AVAILABLE_PRODUCT_DELETE | 广告未投放（商品已删除） |
-| ADGROUP_STATUS_NOT_AVAILABLE_PRODUCT_SET_DELETE | 广告未投放（商品集合已删除） |
-| ADGROUP_STATUS_NOT_AVAILABLE_WECHAT_STORE_PRODUCT_SET_DELETE | 广告未投放（微信小店商品集合已删除） |
+| ADGROUP_STATUS_NOT_ACTIVE_PRODUCT_AUDIT_FAIL | 营销未投放（推广产品审核不通过） |
+| ADGROUP_STATUS_LIVE_VIOLATION | 营销未投放（直播间违规） |
+| ADGROUP_STATUS_WECHAT_STORE_PENDING | 营销未投放（店铺审核中） |
+| ADGROUP_STATUS_WECHAT_STORE_CLOSING | 营销未投放（店铺关闭中） |
+| ADGROUP_STATUS_WECHAT_STORE_CLOSED | 营销未投放（店铺已关闭） |
+| ADGROUP_STATUS_NOT_ACTIVE_PRODUCT_REMOVED | 营销未投放（商品已下架） |
+| ADGROUP_STATUS_WECHAT_STORE_NOT_AVAILABLE | 营销未投放（店铺不可投） |
+| ADGROUP_STATUS_NOT_AVAILABLE_PRODUCT_DELETE | 营销未投放（商品已删除） |
+| ADGROUP_STATUS_NOT_AVAILABLE_PRODUCT_SET_DELETE | 营销未投放（商品集合已删除） |
+| ADGROUP_STATUS_NOT_AVAILABLE_WECHAT_STORE_PRODUCT_SET_DELETE | 营销未投放（微信小店商品集合已删除） |
 | SMART_ADGROUP_STATUS_DELETED | 已删除 |
 | SMART_ADGROUP_STATUS_SUSPEND | 已暂停 |
 | SMART_ADGROUP_STATUS_JOINT_BUDGET_REACHED | 项目被暂停（联合预算达上限） |
@@ -492,7 +494,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | MARKETING_TARGET_TYPE_MINI_PROGRAM_WECHAT | 微信小程序 |
 | MARKETING_TARGET_TYPE_APP_QUICK_APP | 快应用 |
 | MARKETING_TARGET_TYPE_CONSUME_MEDICAL | 消费医疗 |
-| MARKETING_TARGET_TYPE_COMPREHENSIVE_HOUSEKEEPING | 家政服务库 |
+| MARKETING_TARGET_TYPE_COMPREHENSIVE_HOUSEKEEPING | 家政服务 |
 | MARKETING_TARGET_TYPE_FICTION | 小说 |
 | MARKETING_TARGET_TYPE_SHORT_DRAMA | 短剧 |
 | MARKETING_TARGET_TYPE_AUDIOVISUAL_ENTERTAINMENT | 影音文娱产品 |
@@ -514,7 +516,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | MARKETING_TARGET_TYPE_MEDICINE_INDUSTRY_COMMERCIAL | 两品一械商品 |
 | MARKETING_TARGET_TYPE_FINANCE | 金融产品 |
 | MARKETING_TARGET_TYPE_LOCAL_STORE_PACKAGE | 门店包 |
-| MARKETING_TARGET_TYPE_CATERING_AND_LEISURE | 餐饮服务库 |
+| MARKETING_TARGET_TYPE_CATERING_AND_LEISURE | 餐饮服务 |
 | MARKETING_TARGET_TYPE_CHAIN_RESTAURANT | 连锁餐饮产品 |
 | MARKETING_TARGET_TYPE_COMMODITY_SET | 商品集合 |
 | MARKETING_TARGET_TYPE_TOURIST_TRAVEL_ROUTE | 旅行路线产品 |
@@ -538,50 +540,51 @@ source_id: tencent_ads_v3_0_docs_enums
 | MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT_SET | 微信小店商品集合 |
 | MARKETING_TARGET_TYPE_PRODUCT_AGGREGATION_PAGE | 商品聚合页 |
 | MARKETING_TARGET_TYPE_WECHAT_STORE | 微信小店店铺 |
-| MARKETING_TARGET_TYPE_RESALE_AND_COMMERCIAL_LAND | 二手房和商业用地库 |
-| MARKETING_TARGET_TYPE_VIDEO_PROGRAM | 影视节目产品库 |
-| MARKETING_TARGET_TYPE_FUN_TEST | 趣味测试库 |
-| MARKETING_TARGET_TYPE_MATERNITY_PARENTING | 母婴亲子库 |
-| MARKETING_TARGET_TYPE_LEISURE_ENTERTAINMENT | 休闲娱乐库 |
-| MARKETING_TARGET_TYPE_MEDICAL_INSTITUTION | 医疗机构库 |
-| MARKETING_TARGET_TYPE_WECHAT_CHANNELS_ACTIVITY | 视频号活动库 |
+| MARKETING_TARGET_TYPE_RESALE_AND_COMMERCIAL_LAND | 二手房和商业用地 |
+| MARKETING_TARGET_TYPE_VIDEO_PROGRAM | 影视节目产品 |
+| MARKETING_TARGET_TYPE_FUN_TEST | 趣味测试 |
+| MARKETING_TARGET_TYPE_MATERNITY_PARENTING | 母婴亲子 |
+| MARKETING_TARGET_TYPE_LEISURE_ENTERTAINMENT | 休闲娱乐 |
+| MARKETING_TARGET_TYPE_MEDICAL_INSTITUTION | 医疗机构 |
+| MARKETING_TARGET_TYPE_WECHAT_CHANNELS_ACTIVITY | 视频号活动 |
 
 | 名称 | 描述 |
 | --- | --- |
-| SITE_SET_MOBILE_UNION | 腾讯广告联盟 |
+| SITE_SET_MOBILE_UNION | 腾讯营销联盟 |
 | SITE_SET_WECHAT | 微信公众号与小程序 |
 | SITE_SET_TENCENT_NEWS | 腾讯新闻 |
 | SITE_SET_TENCENT_VIDEO | 腾讯视频 |
 | SITE_SET_MOBILE_YYB | 应用宝 |
-| SITE_SET_PCQQ | 腾讯广告电脑端（PC） |
+| SITE_SET_PCQQ | 腾讯营销电脑端（PC） |
 | SITE_SET_KANDIAN | QQ 浏览器（原腾讯看点） |
 | SITE_SET_QQ_MUSIC_GAME | QQ、腾讯音乐及游戏 |
 | SITE_SET_MOMENTS | 微信朋友圈 |
 | SITE_SET_CHANNELS | 微信视频号 |
-| SITE_SET_WECHAT_SEARCH | 微信搜一搜（仅支持搜索广告） |
+| SITE_SET_WECHAT_SEARCH | 微信搜一搜（仅支持搜索营销） |
 | SITE_SET_WECHAT_PLUGIN | 微信新闻插件 |
-| SITE_SET_QBSEARCH | QQ 浏览器等（仅支持搜索广告） |
+| SITE_SET_QBSEARCH | QQ 浏览器等（仅支持搜索营销） |
 | SITE_SET_SEARCH_SCENE | 搜索场景 |
-| SITE_SET_SEARCH_MOBILE_UNION | 腾讯广告联盟搜索 |
-| SITE_SET_SMART | 自动版位（仅供智能投放报表展示） |
+| SITE_SET_SEARCH_MOBILE_UNION | 腾讯营销联盟搜索 |
+| SITE_SET_WECHAT_NON_STANDARD | 微信非标版位 |
+| SITE_SET_SMART | 智能版位（仅供智能投放报表展示） |
 
 | 名称 | 描述 |
 | --- | --- |
 | MOBILE_UNION_IN_WECHAT | 移动联盟第三方流量在微信内打开的场景 |
-| MOBILE_UNION_REWARDED_VIDEO | 激励视频，该流量场景可以为用户打造沉浸式广告体验，用奖励吸引他们完整观看视频广告，视频时长要求 5-30s |
+| MOBILE_UNION_REWARDED_VIDEO | 激励视频，该流量场景可以为用户打造沉浸式营销体验，用奖励吸引他们完整观看视频营销，视频时长要求 5-30s |
 | MOBILE_UNION_REWARDED_MEDIA | 激励媒体，含激励任务的 app、激活成本低且人群较下沉的流量场景 |
-| MOBILE_UNION_SMB_CUSTOMIZATION | 中小广告主定制，适合第 1 次投放联盟流量的中小广告主，做测试投放的冷启动，该场景流量较小，有扩量需求不建议使用 |
-| MOBILE_UNION_GAME_ADVERTISER_PECULIAR | 根据游戏广告关注的效果指标，系统推荐的定投流量，建议配合 oCPA 使用 |
-| MOBILE_UNION_READ_ADVERTISER | 阅读行业广告主定制，适合阅读行业且考核留存指标的广告主投放 |
+| MOBILE_UNION_SMB_CUSTOMIZATION | 中小客户定制，适合第 1 次投放联盟流量的中小客户，做测试投放的冷启动，该场景流量较小，有扩量需求不建议使用 |
+| MOBILE_UNION_GAME_ADVERTISER_PECULIAR | 根据游戏营销关注的效果指标，系统推荐的定投流量，建议配合 oCPA 使用 |
+| MOBILE_UNION_READ_ADVERTISER | 阅读行业客户定制，适合阅读行业且考核留存指标的客户投放 |
 
 | 名称 | 描述 |
 | --- | --- |
 | MOBILE_UNION_IN_WECHAT | 移动联盟第三方流量在微信内打开的场景 |
-| MOBILE_UNION_REWARDED_VIDEO | 激励视频，该流量场景可以为用户打造沉浸式广告体验，用奖励吸引他们完整观看视频广告，视频时长要求 5-30s |
+| MOBILE_UNION_REWARDED_VIDEO | 激励视频，该流量场景可以为用户打造沉浸式营销体验，用奖励吸引他们完整观看视频营销，视频时长要求 5-30s |
 | MOBILE_UNION_REWARDED_MEDIA | 激励媒体，含激励任务的 app、激活成本低且人群较下沉的流量场景 |
-| MOBILE_UNION_GAME_ADVERTISER_EXCLUDE | 根据游戏广告关注的效果指标，系统推荐的屏蔽流量，建议冷启动时使用 |
-| MOBILE_UNION_READ_ADVERTISER_EXCLUDE | 阅读行业广告主定制，适合阅读行业且考核留存指标的广告主投放 |
-| MOBILE_UNION_LIGHT_GAME_ADVERTISER_EXCLUDE | 阅读行业广告主定制，适合阅读行业且考核留存指标的广告主投放 |
+| MOBILE_UNION_GAME_ADVERTISER_EXCLUDE | 根据游戏营销关注的效果指标，系统推荐的屏蔽流量，建议冷启动时使用 |
+| MOBILE_UNION_READ_ADVERTISER_EXCLUDE | 阅读行业客户定制，适合阅读行业且考核留存指标的客户投放 |
+| MOBILE_UNION_LIGHT_GAME_ADVERTISER_EXCLUDE | 阅读行业客户定制，适合阅读行业且考核留存指标的客户投放 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -605,14 +608,14 @@ source_id: tencent_ads_v3_0_docs_enums
 | 名称 | 描述 |
 | --- | --- |
 | WECHAT_MOMENTS_PC | 微信朋友圈 PC 端 |
-| WECHAT_APP_REWARDED_PC | 小程序激励式广告 PC 端 |
-| WECHAT_MINI_PROGRAM_TABLE_PLAQUE_PC | 小程序插屏广告 PC 端 |
-| WECHAT_APP_COVER_PC | 小程序封面广告 PC 端 |
+| WECHAT_APP_REWARDED_PC | 小程序激励式营销 PC 端 |
+| WECHAT_MINI_PROGRAM_TABLE_PLAQUE_PC | 小程序插屏营销 PC 端 |
+| WECHAT_APP_COVER_PC | 小程序封面营销 PC 端 |
 | WECHAT_MINI_PROGRAM_NATIVE_TEMPLATE_PC | 小程序原生模版 PC 端 |
 | WECHAT_PUBLIC_ACCOUNT_ARTICLE_MIDDLE_PC | 公众号文章中部 PC 端 |
 | WECHAT_PUBLIC_ACCOUNT_ARTICLE_BOTTOM_PC | 公众号文章底部 PC 端 |
 | PCAD_PC | 腾讯平台与内容媒体 PC 端 |
-| UNION_PC | 腾讯广告联盟电脑端 |
+| UNION_PC | 腾讯营销联盟电脑端 |
 | WECHAT_CHANNELS_PC | 微信视频号电脑端 |
 | WECHAT_PUBLIC_ACCOUNT_BOX_PC | 订阅号消息列表电脑端 |
 
@@ -687,6 +690,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_LOCAL_NINE_IMG | 本地九图 |
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_FINANCE_NINE_IMG | 金融九图 |
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_VIDEO_GENERATION | 视频生成 |
+| AUTO_DERIVED_CREATIVE_METHOD_TYPE_LIVE_REALTIME_SCREEN | 直播实时画面 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -725,7 +729,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | PROMOTED_ASSET_TYPE_MINI_PROGRAM_WECHAT | 微信小程序 |
 | PROMOTED_ASSET_TYPE_APP_QUICK_APP | 快应用 |
 | PROMOTED_ASSET_TYPE_CONSUME_MEDICAL | 消费医疗 |
-| PROMOTED_ASSET_TYPE_COMPREHENSIVE_HOUSEKEEPING | 家政服务库 |
+| PROMOTED_ASSET_TYPE_COMPREHENSIVE_HOUSEKEEPING | 家政服务 |
 | PROMOTED_ASSET_TYPE_FICTION | 小说 |
 | PROMOTED_ASSET_TYPE_SHORT_DRAMA | 短剧 |
 | PROMOTED_ASSET_TYPE_AUDIOVISUAL_ENTERTAINMENT | 影音文娱产品 |
@@ -747,7 +751,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | PROMOTED_ASSET_TYPE_MEDICINE_INDUSTRY_COMMERCIAL | 两品一械商品 |
 | PROMOTED_ASSET_TYPE_FINANCE | 金融产品 |
 | PROMOTED_ASSET_TYPE_LOCAL_STORE_PACKAGE | 门店包 |
-| PROMOTED_ASSET_TYPE_CATERING_AND_LEISURE | 餐饮服务库 |
+| PROMOTED_ASSET_TYPE_CATERING_AND_LEISURE | 餐饮服务 |
 | PROMOTED_ASSET_TYPE_CHAIN_RESTAURANT | 连锁餐饮产品 |
 | PROMOTED_ASSET_TYPE_COMMODITY_SET | 商品集合 |
 | PROMOTED_ASSET_TYPE_TOURIST_TRAVEL_ROUTE | 旅行路线产品 |
@@ -771,13 +775,13 @@ source_id: tencent_ads_v3_0_docs_enums
 | PROMOTED_ASSET_TYPE_WECHAT_STORE_PRODUCT_SET | 微信小店商品集合 |
 | PROMOTED_ASSET_TYPE_PRODUCT_AGGREGATION_PAGE | 商品聚合页 |
 | PROMOTED_ASSET_TYPE_WECHAT_STORE | 微信小店店铺 |
-| PROMOTED_ASSET_TYPE_RESALE_AND_COMMERCIAL_LAND | 二手房和商业用地库 |
-| PROMOTED_ASSET_TYPE_VIDEO_PROGRAM | 影视节目产品库 |
-| PROMOTED_ASSET_TYPE_FUN_TEST | 趣味测试库 |
-| PROMOTED_ASSET_TYPE_MATERNITY_PARENTING | 母婴亲子库 |
-| PROMOTED_ASSET_TYPE_LEISURE_ENTERTAINMENT | 休闲娱乐库 |
-| PROMOTED_ASSET_TYPE_MEDICAL_INSTITUTION | 医疗机构库 |
-| PROMOTED_ASSET_TYPE_WECHAT_CHANNELS_ACTIVITY | 视频号活动库 |
+| PROMOTED_ASSET_TYPE_RESALE_AND_COMMERCIAL_LAND | 二手房和商业用地 |
+| PROMOTED_ASSET_TYPE_VIDEO_PROGRAM | 影视节目产品 |
+| PROMOTED_ASSET_TYPE_FUN_TEST | 趣味测试 |
+| PROMOTED_ASSET_TYPE_MATERNITY_PARENTING | 母婴亲子 |
+| PROMOTED_ASSET_TYPE_LEISURE_ENTERTAINMENT | 休闲娱乐 |
+| PROMOTED_ASSET_TYPE_MEDICAL_INSTITUTION | 医疗机构 |
+| PROMOTED_ASSET_TYPE_WECHAT_CHANNELS_ACTIVITY | 视频号活动 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -812,10 +816,10 @@ source_id: tencent_ads_v3_0_docs_enums
 | AUTO_ACQUISTION_STATUS_PENDING | 开启一键起量，探索中 |
 | AUTO_ACQUISTION_STATUS_END_LESS_THAN_24H | 起量完成(探索结束，预算花完，功能开启后未满 24h) |
 | AUTO_ACQUISTION_STATUS_END_MORE_THAN_24H | 起量完成(探索结束，预算花完，功能开启后已满 24h) |
-| AUTO_ACQUISTION_STATUS_COMPLETED | 起量结束(探索结束，距离广告开启已满 6h，但预算未花完（实际花费＜起量预算*90%）) |
-| AUTO_ACQUISTION_STATUS_SUSPEND_ON_LEARNING_FAIL | 起量中止(探索过程中，因广告起量情况太差，从而探索中止) |
-| AUTO_ACQUISTION_STATUS_SUSPEND_ON_PLAYING_FAIL | 起量中止(探索过程中，因广告无法播放，从而起量中止（包括广告主动或被动下线或 timeset 不连续）) |
-| AUTO_ACQUISTION_STATUS_ADVERTISER_CLOSED | 广告主主动关闭一键起量功能 |
+| AUTO_ACQUISTION_STATUS_COMPLETED | 起量结束(探索结束，距离营销开启已满 6h，但预算未花完（实际花费＜起量预算*90%）) |
+| AUTO_ACQUISTION_STATUS_SUSPEND_ON_LEARNING_FAIL | 起量中止(探索过程中，因营销起量情况太差，从而探索中止) |
+| AUTO_ACQUISTION_STATUS_SUSPEND_ON_PLAYING_FAIL | 起量中止(探索过程中，因营销无法播放，从而起量中止（包括客户动或被动下线或 timeset 不连续）) |
+| AUTO_ACQUISTION_STATUS_ADVERTISER_CLOSED | 客户主动关闭一键起量功能 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -875,18 +879,18 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| ADX_REALTIME_TYPE_DEFAULT | 送审广告 |
-| ADX_REALTIME_TYPE_NO_AUDIT | 免审广告 |
-| ADX_REALTIME_TYPE_HALF_NO_AUDIT | 半免审广告 |
+| ADX_REALTIME_TYPE_DEFAULT | 送审营销 |
+| ADX_REALTIME_TYPE_NO_AUDIT | 免审营销 |
+| ADX_REALTIME_TYPE_HALF_NO_AUDIT | 半免审营销 |
 
 | 名称 | 描述 |
 | --- | --- |
-| SMART_TARGETING_NONE | 非智能定向广告 |
-| SMART_TARGETING_AUTO | 智能定向广告 |
+| SMART_TARGETING_NONE | 非智能定向营销 |
+| SMART_TARGETING_AUTO | 智能定向营销 |
 
 | 名称 | 描述 |
 | --- | --- |
-| DYNAMIC_AD_TYPE_DYNAMIC_CONTENT | 动态内容广告 |
+| DYNAMIC_AD_TYPE_DYNAMIC_CONTENT | 动态内容营销 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -896,11 +900,6 @@ source_id: tencent_ads_v3_0_docs_enums
 | --- | --- |
 | SWITCH_STATUS_OFF | 关闭 |
 | SWITCH_STATUS_ON | 开启 |
-
-| 名称 | 描述 |
-| --- | --- |
-| BILLING_MODEL_UNKNOWN | unknown |
-| BILLING_MODEL_CPA | cpa |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -1071,8 +1070,8 @@ source_id: tencent_ads_v3_0_docs_enums
 | --- | --- |
 | NOT_USED | 不使用，仅公众号流量可使用 |
 | VIEW_DETAILS | 查看详情 |
-| GET_COUPONS | 领取优惠，选择领取优惠，需在详情页中可直接领取优惠，否则广告将会被审核驳回 |
-| MAKE_AN_APPOINTMENT | 预约活动，选择预约活动，需在详情页中体现活动预约入口，否则广告将会被审核驳回 |
+| GET_COUPONS | 领取优惠，选择领取优惠，需在详情页中可直接领取优惠，否则营销将会被审核驳回 |
+| MAKE_AN_APPOINTMENT | 预约活动，选择预约活动，需在详情页中体现活动预约入口，否则营销将会被审核驳回 |
 | BUY_NOW | 立即购买，当且仅当推广目标为电商时可使用 |
 | GO_SHOPPING | 去逛逛，当且仅当推广目标为电商时可使用 |
 | ENTER_MINI_PROGRAM | 进入小程序，仅能使用于投放小程序落地页 |
@@ -1131,8 +1130,8 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| LIVE_PROMOTED_TYPE_NATIVE_VIDEO | 原生推流 [\[promoted_objects 模块\]](https://developers.e.qq.com/docs/api/business_assets/promoted_objects/promoted_objects_add) 登记腾讯开放平台、腾讯广告上架的应用 id，创建广告时需填写之前登记的应用 id |
-| LIVE_PROMOTED_TYPE_SHORT_VIDEO | 短视频推广 [\[promoted_objects 模块\]](https://developers.e.qq.com/docs/api/business_assets/promoted_objects/promoted_objects_add) 登记 App Store 的应用 id，创建广告时需填写之前登记的应用 id |
+| LIVE_PROMOTED_TYPE_NATIVE_VIDEO | 原生推流 [\[promoted_objects 模块\]](https://developers.e.qq.com/docs/api/business_assets/promoted_objects/promoted_objects_add) 登记腾讯开放平台、腾讯营销上架的应用 id，创建营销时需填写之前登记的应用 id |
+| LIVE_PROMOTED_TYPE_SHORT_VIDEO | 短视频推广 [\[promoted_objects 模块\]](https://developers.e.qq.com/docs/api/business_assets/promoted_objects/promoted_objects_add) 登记 App Store 的应用 id，创建营销时需填写之前登记的应用 id |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -1187,6 +1186,7 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
+| SEARCH_DOCTOR_CARD | 医生卡 |
 | VIDEO_16X9 | 16:9 视频 |
 | VIDEO_9X16 | 9:16 视频 |
 | VIDEO_4X3 | 4:3 视频 |
@@ -1212,7 +1212,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | IMAGE_LIST_1X1_1 | 1:1 一图 |
 | IMAGE_LIST_16X9_1 | 16:9 一图 |
 | IMAGE_LIST_1X1_9 | 1:1 九图 |
-| IMAGE_LIST_FLEX_N | 图片列表组件任意比例数量图片 |
+| IMAGE_LIST_FLEX_N | 多图 |
 | ELEMENT_STORY | 集装箱创意组合组件 |
 | DESCRIPTION | 文案 |
 | TITLE | 标题 |
@@ -1238,7 +1238,8 @@ source_id: tencent_ads_v3_0_docs_enums
 | AUDIO | 音频组件 |
 | WECHAT_SHOP_ACTIVITY_BULK_BUY | 微信小店信息卡组件 |
 | WXGAME_DIRECT_PAGE | 小游戏直玩页组件 |
-| VIDEO_LIST_FLEX_N | 视频列表组件任意比例数量视频 |
+| CHANNELS_LIVE_FEED | 直播实时画面组件 |
+| VIDEO_LIST_FLEX_N | 多视频 |
 | BRAND | 自定义 |
 | BRAND_PAGE | 品牌简介页 |
 | BRAND_SEARCH | 搜一搜超级品专 |
@@ -1308,16 +1309,16 @@ source_id: tencent_ads_v3_0_docs_enums
 | 名称 | 描述 |
 | --- | --- |
 | INVALID | 无效 |
-| ADVERTISER | 广告主 |
+| ADVERTISER | 客户 |
 | ORGANIZATION | 业务单元 |
 
 | 名称 | 描述 |
 | --- | --- |
 | UNKNOWN | 未知 |
 | TITLE | 标题组件 |
-| DESCRIPTION | 描述组件 |
+| DESCRIPTION | 文案组件 |
 | IMAGE | 图片组件 |
-| IMAGE_LIST | 图片列表组件 |
+| IMAGE_LIST | 多图组件 |
 | JUMP_INFO | 落地页组件 |
 | VIDEO | 视频组件 |
 | BRAND | 品牌组件 |
@@ -1349,7 +1350,8 @@ source_id: tencent_ads_v3_0_docs_enums
 | AUDIO | 音频组件 |
 | WECHAT_SHOP_ACTIVITY | 微信小店信息卡组件 |
 | WXGAME_DIRECT_PAGE | 小游戏直玩页组件 |
-| VIDEO_LIST | 视频列表组件 |
+| VIDEO_LIST | 多视频组件 |
+| CHANNELS_LIVE_FEED | 直播实时画面组件 |
 | V2_TITLE | 标题 |
 | V2_DESCRIPTION | 描述 |
 | V2_LONG_SUBLINK | 长子链单条 |
@@ -1381,6 +1383,8 @@ source_id: tencent_ads_v3_0_docs_enums
 | V2_LIST_SUBLINK | 列表子链组件 |
 | V2_MDPA_TITLE | 动态商品标题 |
 | V2_MDPA_DESCRIPTION | 动态商品描述 |
+| V2_DOCTOR_CARD | 医生卡组件 |
+| V2_IMAGE_LIST_16X9 | 16:9 图集 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -1416,8 +1420,47 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| ADGROUP_TYPE_SEARCH | 搜索广告 |
-| ADGROUP_TYPE_NORMAL | 展示广告 |
+| ADGROUP_TYPE_SEARCH | 搜索营销 |
+| ADGROUP_TYPE_NORMAL | 展示营销 |
+
+| 名称 | 描述 |
+| --- | --- |
+| DELIVERY_SCENE_UNKNOWN | 未知 |
+| DELIVERY_SCENE_STANDARD | 3.0 通用 |
+| DELIVERY_SCENE_STORE_FLOW | 门店通 |
+| DELIVERY_SCENE_RETENTION | 追投 |
+| DELIVERY_SCENE_SEARCH_AUCTION | 搜索竞价 |
+| SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_PLAYLET | 爆剧跑量 |
+| SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_LEADS | 线索跑量 |
+| SMART_DELIVERY_PLATFORM_EDITION_MINI_GAME_PROMOTION | 小游戏跑量 |
+| SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_LEADS_LINK_PREFERENCE | 线索跑量-多链路优选 |
+| SMART_DELIVERY_PLATFORM_EDITION_PLAYLET_MANAGEMENT | 全剧托管 |
+| SMART_DELIVERY_PLATFORM_EDITION_BIG_GAME_PROMOTION | 游戏大推 |
+| SMART_DELIVERY_PLATFORM_EDITION_MINI_GAME_MIXED_MONETIZATION | 小游戏混变 |
+| SMART_DELIVERY_PLATFORM_EDITION_PERIODIC_STABILIZATION | 周期稳投 |
+| SMART_DELIVERY_PLATFORM_EDITION_MULTI_OPTIMIZATION | 多目标优化 |
+| SMART_DELIVERY_PLATFORM_EDITION_DRUG_PRODUCT | 商品智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_FICTION | 小说智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_TOU_YI_TOU | 投一投 |
+| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_MINI_GAME_LONG_TERM_ROI | 微信小游戏长效 ROI |
+| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_MINI_GAME_MONETIZATION | 微信小游戏变现 |
+| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_SINGLE_PRODUCT | 短直双开 |
+| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_PRODUCT_OR_LIVE | 小店单链路智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_MANAGEMENT | 全店托管智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_LIVE | 推直播间 |
+| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_PRODUCT | 推商品 |
+| SMART_DELIVERY_PLATFORM_EDITION_QYT_LIVE | 全域通直播场景 |
+| SMART_DELIVERY_PLATFORM_EDITION_QYT_WECHAT_STORE | 全域通小店场景 |
+| SMART_DELIVERY_PLATFORM_EDITION_QYT_STORE_PAGE | 全域通推店铺 |
+| SMART_DELIVERY_PLATFORM_EDITION_CPS_MANUAL | CPS 智投（手动） |
+| SMART_DELIVERY_PLATFORM_EDITION_CPS_INTELLIGENT | CPS 智投（无人托管） |
+| SMART_DELIVERY_PLATFORM_EDITION_MPA_STORE_MANAGEMENT | 全库托管智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_GAME_APP | 游戏应用智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_READING_APP | 阅读应用智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_AI_APP | AI 应用智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_USER_GROWTH_APP | 用增通用应用智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_SELECTION_AD | 互广联投智投 |
+| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_WORK | 企业微信智投 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -1488,7 +1531,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | CUSTOMER_STATUS_TOBE_ACCEPTED | 待接受 |
 | CUSTOMER_STATUS_TOBE_ACTIVATED | 待激活 |
 | CUSTOMER_STATUS_SUSPEND | 暂停 |
-| CUSTOMER_STATUS_MATERIAL_PREPARED | 广告主资料准备 |
+| CUSTOMER_STATUS_MATERIAL_PREPARED | 客户资料准备 |
 | CUSTOMER_STATUS_DELETED | 删除 |
 | CUSTOMER_STATUS_FROZEN_TEMPORARILY | 临时冻结 |
 | CUSTOMER_STATUS_UNREGISTERED | 未注册 |
@@ -1622,18 +1665,18 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| TASK_TYPE_UPDATE_UNION_POSITION_PACKAGE_NEW | 修改广告组定投腾讯广告联盟流量包 |
-| TASK_TYPE_UPDATE_EXCLUDE_UNION_POSITION_PACKAGE_NEW | 修改广告组屏蔽腾讯广告联盟流量包 |
-| TASK_TYPE_UPDATE_DEEP_CONVERSION_BEHAVIOR_BID_NEW | 修改广告组深度优化行为目标出价 |
-| TASK_TYPE_DELETE_ADGROUP_NEW | 删除广告组 |
-| TASK_TYPE_UPDATE_ADGROUP_DEEP_CONVERSION_WORTH_RATE_NEW | 修改广告组深度优化价值的期望 ROI |
-| TASK_TYPE_UPDATE_ADGROUP_CONFIGURED_STATUS_NEW | 修改广告组客户设置的状态 |
-| TASK_TYPE_UPDATE_ADGROUP_DAILY_BUDGET_NEW | 修改广告组日预算 |
-| TASK_TYPE_UPDATE_ADGROUP_AUTO_ACQUISITION_NEW | 修改广告组一键起量 |
-| TASK_TYPE_UPDATE_ADGROUP_DEEP_CONVERSION_WORTH_ADVANCED_RATE_NEW | 修改广告组深度优化价值的强化 ROI |
-| TASK_TYPE_UPDATE_DEEP_CONVERSION_BEHAVIOR_ADVANCED_BID_NEW | 修改广告组深度辅助目标出价 |
-| TASK_TYPE_UPDATE_ADGROUP_ECOM_PKAM_NEW | 修改广告组一方跑量 |
-| TASK_TYPE_UPDATE_ADGROUP_DERIVE_CONF_NEW | 修改广告组衍生创意配置 |
+| TASK_TYPE_UPDATE_UNION_POSITION_PACKAGE_NEW | 修改营销单元定投腾讯营销联盟流量包 |
+| TASK_TYPE_UPDATE_EXCLUDE_UNION_POSITION_PACKAGE_NEW | 修改营销单元屏蔽腾讯营销联盟流量包 |
+| TASK_TYPE_UPDATE_DEEP_CONVERSION_BEHAVIOR_BID_NEW | 修改营销单元深度优化行为目标出价 |
+| TASK_TYPE_DELETE_ADGROUP_NEW | 删除营销单元 |
+| TASK_TYPE_UPDATE_ADGROUP_DEEP_CONVERSION_WORTH_RATE_NEW | 修改营销单元深度优化价值的期望 ROI |
+| TASK_TYPE_UPDATE_ADGROUP_CONFIGURED_STATUS_NEW | 修改营销单元客户设置的状态 |
+| TASK_TYPE_UPDATE_ADGROUP_DAILY_BUDGET_NEW | 修改营销单元日预算 |
+| TASK_TYPE_UPDATE_ADGROUP_AUTO_ACQUISITION_NEW | 修改营销单元一键起量 |
+| TASK_TYPE_UPDATE_ADGROUP_DEEP_CONVERSION_WORTH_ADVANCED_RATE_NEW | 修改营销单元深度优化价值的强化 ROI |
+| TASK_TYPE_UPDATE_DEEP_CONVERSION_BEHAVIOR_ADVANCED_BID_NEW | 修改营销单元深度辅助目标出价 |
+| TASK_TYPE_UPDATE_ADGROUP_ECOM_PKAM_NEW | 修改营销单元一方跑量 |
+| TASK_TYPE_UPDATE_ADGROUP_DERIVE_CONF_NEW | 修改营销单元衍生创意配置 |
 | TASK_TYPE_UPDATE_COMPONENT_SHARED | 批量修改组件共享 |
 | TASK_TYPE_DELETE_ACCOUNT_COMPONENT | 批量删除账户组件 |
 | TASK_TYPE_DELETE_CREATIVE_ASSET | 删除组件并取消关联动态创意 |
@@ -1664,11 +1707,11 @@ source_id: tencent_ads_v3_0_docs_enums
 | --- | --- |
 | TASK_SCOPE_UNKNOWN | 未知，仅可读 |
 | TASK_SCOPE_CAMPAIGN | 推广计划 |
-| TASK_SCOPE_ADGROUP | 广告组 |
-| TASK_SCOPE_ADVERTISER | 广告主 |
+| TASK_SCOPE_ADGROUP | 营销单元 |
+| TASK_SCOPE_ADVERTISER | 客户 |
 | TASK_SCOPE_SCHEDULED_TASK | 预设置任务 |
-| TASK_SCOPE_AD | 广告 |
-| TASK_SCOPE_ADCREATIVE | 广告创意 |
+| TASK_SCOPE_AD | 营销 |
+| TASK_SCOPE_ADCREATIVE | 创意 |
 | TASK_SCOPE_PROJECT | 项目 |
 | TASK_SCOPE_BIDWORD | 关键词 |
 | TASK_SCOPE_COMMENT | 评论 |
@@ -1698,6 +1741,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | MARKETING_ASSET_TYPE_TRAFFIC_CAR_BRAND | 品牌 |
 | MARKETING_ASSET_TYPE_TRAFFIC_CAR_SERIES | 车系 |
 | MARKETING_ASSET_TYPE_TRAFFIC_CAR_MODEL | 车型 |
+| MARKETING_ASSET_TYPE_MINIGAME_CHANNEL | 微信小游戏渠道号 |
 | MARKETING_ASSET_TYPE_CONSUME_MEDICAL_SERVICE | 消费医疗服务 |
 | MARKETING_ASSET_TYPE_REAL_ESTATE_BRAND | 品牌 |
 | MARKETING_ASSET_TYPE_REAL_ESTATE_REAL_ESTATE | 楼盘 |
@@ -1747,6 +1791,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | MARKETING_ASSET_TYPE_VIDEO_PROGRAM_MAIN | 影视节目 |
 | MARKETING_ASSET_TYPE_PRODUCT_AGGREGATION_PAGE_CATEGORY | 品类 |
 | MARKETING_ASSET_TYPE_PRODUCT_AGGREGATION_PAGE_CUSTOMIZED_PRODUCT_BUNDLES | 自定义商品组合 |
+| MARKETING_ASSET_TYPE_PRODUCT_AGGREGATION_PAGE_WECHAT_STORE_PRODUCT_BUNDLES | 微信小店商品组合 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -1769,7 +1814,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | PROMOTED_ASSET_ATTR_KEY_EDUCATION_PRODUCT_CAPACITY | 产品容量 |
 | PROMOTED_ASSET_ATTR_KEY_EDUCATION_PRODUCT_DIRECTION1 | 产品方向 |
 | PROMOTED_ASSET_ATTR_KEY_EDUCATION_PRODUCT_DIRECTION2 | 产品方向 |
-| PROMOTED_ASSET_ATTR_KEY_EDUCATION_PRICE | 广告页体验课价格 |
+| PROMOTED_ASSET_ATTR_KEY_EDUCATION_PRICE | 营销页体验课价格 |
 | PROMOTED_ASSET_ATTR_KEY_EDUCATION_INTENDED_CROWD1 | 意向人群 |
 | PROMOTED_ASSET_ATTR_KEY_EDUCATION_INTENDED_CROWD2 | 意向人群 |
 | PROMOTED_ASSET_ATTR_KEY_EDUCATION_TEACHING_AID_TYPE1 | 教辅类型 |
@@ -1789,7 +1834,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | PROMOTED_ASSET_ATTR_KEY_EDUCATION_EDUCATIONAL_BRAND | 品牌 |
 | PROMOTED_ASSET_ATTR_KEY_EDUCATION_CERTIFICATE_TYPE | 证书类型 |
 | PROMOTED_ASSET_ATTR_KEY_EDUCATION_TARGET_DEMOGRAPHIC_SEGMENTATION | 意向人群细分 |
-| PROMOTED_ASSET_ATTR_KEY_EDUCATION_TRIAL_CLASS | 广告页体验课 |
+| PROMOTED_ASSET_ATTR_KEY_EDUCATION_TRIAL_CLASS | 营销页体验课 |
 | PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_BRANDE_NAME | 品牌 |
 | PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_SERIES_NAME | 车系 |
 | PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_MODEL_NAME | 车型名称 |
@@ -1812,6 +1857,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_MODEL_LEVEL_SUBDIVISION | 车型级别细分 |
 | PROMOTED_ASSET_ATTR_KEY_LOCAL_STORE_POI_ID | 门店 id |
 | PROMOTED_ASSET_ATTR_KEY_MINIGAME_ID | 小游戏 id |
+| PROMOTED_ASSET_ATTR_KEY_MINIGAME_CHANNELS_ID | 小游戏渠道号 |
 | PROMOTED_ASSET_ATTR_KEY_CONSUMER_PRODUCT_COMMODITY_TRADING_URL | 商品交易链接 |
 | PROMOTED_ASSET_ATTR_KEY_CONSUMER_PRODUCT_COMMODITY_TRADING_TYPE | 商品交易链接类型 |
 | PROMOTED_ASSET_ATTR_KEY_CONSUMER_PRODUCT_PRODUCT_HASH_ID | 商品 hashID |
@@ -2220,6 +2266,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_HOLIDAY_MILESTONES | 节日节点 |
 | PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_DOMAIN | 域名 |
 | PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_DIRECTORY | 路径 |
+| PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_DOMAIN_FOR_PC | 域名 |
 | PROMOTED_ASSET_ATTR_KEY_TWO_WHEEL_VEHICLE_BRAND_NAME | 品牌 |
 | PROMOTED_ASSET_ATTR_KEY_TWO_WHEEL_VEHICLE_CATE_NAME | 类目 |
 | PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_CATE_NAME | 类目 |
@@ -2255,6 +2302,9 @@ source_id: tencent_ads_v3_0_docs_enums
 | PROMOTED_ASSET_ATTR_KEY_LEISURE_ENTERTAINMENT_BRAND | 品牌 |
 | PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_BRAND | 品牌 |
 | PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_CATEGORY | 品类类目 |
+| PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_UID | 用户 id |
+| PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_WECHAT_STORE_ID | 微信小店店铺 id |
+| PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_WECHAT_STORE_PRODUCT_ID_LIST | 微信小店商品 id 列表 |
 | PROMOTED_ASSET_ATTR_KEY_MEDICAL_INSTITUTION_CATE_NAME | 类目 |
 | PROMOTED_ASSET_ATTR_KEY_MEDICAL_INSTITUTION_CUSTOMER_ENTITY_NAME | 客户主体名称 |
 | PROMOTED_ASSET_ATTR_KEY_WECHAT_CHANNELS_ACTIVITY_CATE_NAME | 类目 |
@@ -2281,9 +2331,9 @@ source_id: tencent_ads_v3_0_docs_enums
 | AD_STATUS_FROZEN | 封停 |
 | AD_STATUS_PARTIALLY_PENDING | 部分审核中 |
 | AD_STATUS_PARTIALLY_NORMAL | 部分有效 |
-| AD_STATUS_PREPARE | 准备中（当投放视频广告时，该状态代表视频转码中） |
+| AD_STATUS_PREPARE | 准备中（当投放视频营销时，该状态代表视频转码中） |
 | AD_STATUS_DELETED | 已删除 |
-| AD_STATUS_INVALID | 异常（当投放视频广告时，该状态代表视频转码失败） |
+| AD_STATUS_INVALID | 异常（当投放视频营销时，该状态代表视频转码失败） |
 | AD_STATUS_SUSPEND | 暂停 |
 
 | 名称 | 描述 |
@@ -2308,13 +2358,13 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| PAGE_SELECTOR_SCENE_DEFAULT | 默认场景（广告投放场景） |
+| PAGE_SELECTOR_SCENE_DEFAULT | 默认场景（投放场景） |
 | PAGE_SELECTOR_SCENE_LIVING | 直播间转化组件场景 |
 
 | 名称 | 描述 |
 | --- | --- |
-| WECHAT_CHANNELS_ACCOUNT_SECNE_FEEDS_AD | 视频号动态推广广告 |
-| WECHAT_CHANNELS_ACCOUNT_SECNE_LIVE_AD | 视频号直播推广广告 |
+| WECHAT_CHANNELS_ACCOUNT_SECNE_FEEDS_AD | 视频号动态推广营销 |
+| WECHAT_CHANNELS_ACCOUNT_SECNE_LIVE_AD | 视频号直播推广营销 |
 | WECHAT_CHANNELS_ACCOUNT_SECNE_FEEDS_CREATIVE | 视频号动态创意 |
 | WECHAT_CHANNELS_ACCOUNT_SECNE_VIDEO_NATIVE_CONTENT_CREATIVE | 原生动态创意 |
 
@@ -2328,6 +2378,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | CUSTOMER_MANAGER | 主体组织 |
 | CUSTOMER_BUSINESS_UNIT | 主体类型业务单元组织 |
 | GROUP_BUSINESS_UNIT | 集团类型业务单元组织 |
+| WECHAT_SHOP_LEAGUE | 优选联盟授权 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -2351,7 +2402,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | --- | --- |
 | CREATE_SOURCE_TYPE_UNKNOWN | 无创建来源 |
 | CREATE_SOURCE_TYPE_REWARD_QUEST | 创建来自小任务二次推广 |
-| CREATE_SOURCE_TYPE_FREETRADE | 创建来自互选广告二次推广 |
+| CREATE_SOURCE_TYPE_FREETRADE | 创建来自互选内容营销二次推广 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -2542,7 +2593,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | 名称 | 描述 |
 | --- | --- |
 | REPORT_LEVEL_ADVERTISER | 账户报表 |
-| REPORT_LEVEL_ADGROUP | 广告报表 |
+| REPORT_LEVEL_ADGROUP | 营销报表 |
 | REPORT_LEVEL_DYNAMIC_CREATIVE | 创意报表 |
 | REPORT_LEVEL_COMPONENT | 创意组件报表 |
 | REPORT_LEVEL_CHANNEL | 渠道包报表 |
@@ -2566,14 +2617,14 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| REQUEST_TIME | 广告播放口径 |
+| REQUEST_TIME | 营销播放口径 |
 | REPORTING_TIME | 转化回传口径 |
 | ACTIVE_TIME | 激活时间口径 |
 
 | 名称 | 描述 |
 | --- | --- |
 | REPORT_LEVEL_ADVERTISER | 账户报表 |
-| REPORT_LEVEL_ADGROUP | 广告报表 |
+| REPORT_LEVEL_ADGROUP | 营销报表 |
 | REPORT_LEVEL_DYNAMIC_CREATIVE | 创意报表 |
 | REPORT_LEVEL_CHANNEL | 渠道包报表 |
 | REPORT_LEVEL_BIDWORD | 关键词报表 |
@@ -2584,7 +2635,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | 名称 | 描述 |
 | --- | --- |
 | REPORT_LEVEL_ADVERTISER | 账户报表 |
-| REPORT_LEVEL_ADGROUP | 广告报表 |
+| REPORT_LEVEL_ADGROUP | 营销报表 |
 | REPORT_LEVEL_BIDWORD | 关键词报表 |
 | REPORT_LEVEL_QUERYWORD | 搜索词报表 |
 | REPORT_LEVEL_AGE | 年龄报表 |
@@ -2598,7 +2649,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | REPORT_LEVEL_CHANNEL | 渠道包报表 |
 | REPORT_LEVEL_LANDING_PAGE | 落地页报表 |
 | REPORT_LEVEL_MARKETING_ASSET | 推广产品报表 |
-| REPORT_LEVEL_AD_UNION | 联盟广告位报表 |
+| REPORT_LEVEL_AD_UNION | 联盟营销位报表 |
 | REPORT_LEVEL_PRODUCT_CATALOG | 商品分析报表 |
 | REPORT_LEVEL_PROJECT | 智投项目报表 |
 | REPORT_LEVEL_PROJECT_CREATIVE | 智投创意报表 |
@@ -2625,72 +2676,28 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| SITE_SET_QZONE | QQ 空间，PC 版位 (已废弃) |
-| SITE_SET_QQCLIENT | QQ 客户端(已废弃) |
-| SITE_SET_MUSIC | QQ 音乐，PC 版位 (已废弃) |
 | SITE_SET_MOBILE_UNION | 腾讯广告联盟 |
-| SITE_SET_KUAISHOU | 快手 |
-| SITE_SET_QQCOM | 腾讯网，PC 版位 (已废弃) |
 | SITE_SET_WECHAT | 微信公众号与小程序 |
-| SITE_SET_MOBILE_MYAPP | 应用宝（待废弃） |
-| SITE_SET_MOBILE_INNER | QQ、腾讯看点、腾讯音乐 (待废弃) |
 | SITE_SET_TENCENT_NEWS | 腾讯新闻 |
 | SITE_SET_TENCENT_VIDEO | 腾讯视频 |
-| SITE_SET_TENCENT_KUAIBAO | 天天快报 (已废弃) |
 | SITE_SET_MOBILE_YYB | 应用宝 |
-| SITE_SET_PCQQ | 腾讯广告电脑端（PC） |
+| SITE_SET_PCQQ | 腾讯营销电脑端（PC） |
 | SITE_SET_KANDIAN | QQ 浏览器（原腾讯看点） |
 | SITE_SET_QQ_MUSIC_GAME | QQ、腾讯音乐及游戏 |
 | SITE_SET_MOMENTS | 微信朋友圈 |
-| SITE_SET_MINI_GAME_WECHAT | 微信生态内的小游戏场景 |
-| SITE_SET_MINI_GAME_QQ | 手机 QQ 生态内的小游戏场景 |
-| SITE_SET_MOBILE_GAME | 集合腾讯游戏和腾讯广告联盟生态的手机端游戏 |
-| SITE_SET_QQSHOPPING | QQ 购物 |
+| SITE_SET_CHANNELS | 微信视频号 |
+| SITE_SET_WECHAT_SEARCH | 微信搜一搜 |
 | SITE_SET_WECHAT_PLUGIN | 微信新闻插件 |
-| SITE_SET_SMART | 自动版位 |
+| SITE_SET_QBSEARCH | QQ 浏览器等 |
+| SITE_SET_SEARCH_SCENE | 搜索场景 |
+| SITE_SET_SEARCH_MOBILE_UNION | 腾讯广告联盟搜索 |
+| SITE_SET_WECHAT_NON_STANDARD | 微信非标版位 |
+| SITE_SET_SMART | 智能版位 |
 
 | 名称 | 描述 |
 | --- | --- |
 | BID_MODE_OCPC | ocpc |
 | BID_MODE_OCPM | ocpm |
-
-| 名称 | 描述 |
-| --- | --- |
-| DELIVERY_SCENE_UNKNOWN | 未知 |
-| DELIVERY_SCENE_STANDARD | 3.0 通用 |
-| DELIVERY_SCENE_STORE_FLOW | 门店通 |
-| DELIVERY_SCENE_RETENTION | 追投 |
-| DELIVERY_SCENE_SEARCH_AUCTION | 搜索竞价 |
-| SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_PLAYLET | 爆剧跑量 |
-| SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_LEADS | 线索跑量 |
-| SMART_DELIVERY_PLATFORM_EDITION_MINI_GAME_PROMOTION | 小游戏跑量 |
-| SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_LEADS_LINK_PREFERENCE | 线索跑量-多链路优选 |
-| SMART_DELIVERY_PLATFORM_EDITION_PLAYLET_MANAGEMENT | 全剧托管 |
-| SMART_DELIVERY_PLATFORM_EDITION_BIG_GAME_PROMOTION | 游戏大推 |
-| SMART_DELIVERY_PLATFORM_EDITION_MINI_GAME_MIXED_MONETIZATION | 小游戏混变 |
-| SMART_DELIVERY_PLATFORM_EDITION_PERIODIC_STABILIZATION | 周期稳投 |
-| SMART_DELIVERY_PLATFORM_EDITION_MULTI_OPTIMIZATION | 多目标优化 |
-| SMART_DELIVERY_PLATFORM_EDITION_DRUG_PRODUCT | 商品智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_FICTION | 小说智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_MINI_GAME_LONG_TERM_ROI | 微信小游戏长效 ROI |
-| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_MINI_GAME_MONETIZATION | 微信小游戏变现 |
-| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_SINGLE_PRODUCT | 短直双开 |
-| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_PRODUCT_OR_LIVE | 小店单链路智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_MANAGEMENT | 全店托管智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_LIVE | 推直播间 |
-| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_PRODUCT | 推商品 |
-| SMART_DELIVERY_PLATFORM_EDITION_QYT_LIVE | 全域通直播场景 |
-| SMART_DELIVERY_PLATFORM_EDITION_QYT_WECHAT_STORE | 全域通小店场景 |
-| SMART_DELIVERY_PLATFORM_EDITION_QYT_STORE_PAGE | 全域通推店铺 |
-| SMART_DELIVERY_PLATFORM_EDITION_CPS_MANUAL | CPS 智投（手动） |
-| SMART_DELIVERY_PLATFORM_EDITION_CPS_INTELLIGENT | CPS 智投（无人托管） |
-| SMART_DELIVERY_PLATFORM_EDITION_MPA_STORE_MANAGEMENT | 全库托管智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_GAME_APP | 游戏应用智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_READING_APP | 阅读应用智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_AI_APP | AI 应用智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_USER_GROWTH_APP | 用增通用应用智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_SELECTION_AD | 互广联投智投 |
-| SMART_DELIVERY_PLATFORM_EDITION_WECHAT_WORK | 企业微信智投 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -2756,9 +2763,9 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| DYNAMIC_TYPE_SINGLE_PRODUCT_AD | 单商品广告 |
-| DYNAMIC_TYPE_MULTIPLE_PRODUCT_AD | 多商品广告 |
-| DYNAMIC_TYPE_DYNAMIC_CREATIVE | 动态创意广告 |
+| DYNAMIC_TYPE_SINGLE_PRODUCT_AD | 单商品营销 |
+| DYNAMIC_TYPE_MULTIPLE_PRODUCT_AD | 多商品营销 |
+| DYNAMIC_TYPE_DYNAMIC_CREATIVE | 动态创意营销 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -2825,7 +2832,7 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| CITY_LEVEL_NONE | 无城市级别，朋友圈广告不支持投放该城市级别的城市 id |
+| CITY_LEVEL_NONE | 无城市级别，朋友圈营销不支持投放该城市级别的城市 id |
 | CITY_LEVEL_FIRST | 一级城市 |
 | CITY_LEVEL_SECOND | 二级城市 |
 | CITY_LEVEL_THIRD | 三级城市 |
@@ -2847,7 +2854,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | OFFICIAL_ACCOUNT_MEDIA_CATEGORY | 公众号媒体类型 |
 | MINI_PROGRAM_AND_MINI_GAME | 小游戏小程序场景 |
 | PAY_SCENE | 订单详情页 |
-| MOBILE_UNION_CATEGORY | 腾讯广告联盟媒体类型 |
+| MOBILE_UNION_CATEGORY | 腾讯营销联盟媒体类型 |
 | WECHAT_CHANNELS_SCENE | 微信视频号定投类型 |
 | PC_SCENE | PC 端定投类型 |
 
@@ -2904,7 +2911,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | SITE_SET_QZONE | QQ 空间，PC 版位 (已废弃，请使用 SITE_SET_PCQQ 投放) |
 | SITE_SET_QQCLIENT | QQ 客户端(已废弃，请使用 SITE_SET_PCQQ 投放) |
 | SITE_SET_MUSIC | QQ 音乐，PC 版位 (已废弃，请使用 SITE_SET_PCQQ 投放) |
-| SITE_SET_MOBILE_UNION | 腾讯广告联盟 |
+| SITE_SET_MOBILE_UNION | 腾讯营销联盟 |
 | SITE_SET_KUAISHOU | 快手 (已废弃，请使用 SITE_SET_MOBILE_UNION 投放) |
 | SITE_SET_QQCOM | 腾讯网，PC 版位 (已废弃，请使用 SITE_SET_PCQQ 投放) |
 | SITE_SET_WECHAT | 微信公众号与小程序 |
@@ -2932,7 +2939,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | SITE_SET_MOBILE_UNION_DELETED | 移动应用联盟（废弃） |
 | SITE_SET_THIRDPARTY | 第三方流量 (待废弃) |
 | SITE_SET_JD_WAICAI | 京东外采流量 (待废弃) |
-| SITE_SET_PCQQ | 腾讯广告电脑端（PC） |
+| SITE_SET_PCQQ | 腾讯营销电脑端（PC） |
 | SITE_SET_KANDIAN | QQ 浏览器（原腾讯看点） |
 | SITE_SET_QQ_MUSIC_GAME | QQ、腾讯音乐及游戏 |
 | SITE_SET_MOMENTS | 微信朋友圈 |
@@ -2940,7 +2947,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | SITE_SET_MINI_GAME_QQ | QQ 小游戏 |
 | SITE_SET_MOBILE_GAME | App 游戏 |
 | SITE_SET_QQSHOPPING | QQ 购物 |
-| SITE_SET_SMART | 自动版位 |
+| SITE_SET_SMART | 智能版位 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -2951,11 +2958,16 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
+| OBJECT_PRIVATE_DISABLE_CODE_UNKNOWN | 未知 |
+| OBJECT_PRIVATE_DISABLE_CODE_NOT_APPROVED | 创意未通过审核 |
+
+| 名称 | 描述 |
+| --- | --- |
 | VISIBILITY_CODE_UNKNOWN | 未知 |
 | VISIBILITY_CODE_INSERT_READY | 可沉淀 |
 | VISIBILITY_CODE_INSERTED | 已沉淀 |
 | VISIBILITY_CODE_NOT_APPROVED | 创意未通过审核 |
-| VISIBILITY_CODE_NOT_BEGINTIME | 未到合约广告上线时间 |
+| VISIBILITY_CODE_NOT_BEGINTIME | 未到合约投放上线时间 |
 | VISIBILITY_CODE_DIFFERENT_CORPORATION | 当前账户和视频号不同主体 |
 
 | 名称 | 描述 |
@@ -2965,14 +2977,20 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
+| TEXT | 纯文本 |
+| EMOTICON | 表情 |
+| IMAGE | 图片 |
+
+| 名称 | 描述 |
+| --- | --- |
 | PLAYABLE_PAGE_STATUS_ONLINE | 版本在线 |
 | PLAYABLE_PAGE_STATUS_OFFLINE | 版本下线 |
 
 | 名称 | 描述 |
 | --- | --- |
-| OPERATION_OBJECT_TYPE_ADGROUP | 广告组 |
+| OPERATION_OBJECT_TYPE_ADGROUP | 营销单元 |
 | OPERATION_OBJECT_TYPE_DYNAMIC_CREATIVE | 动态创意 |
-| OPERATION_OBJECT_TYPE_JOINT_BUDGET | 广告联合预算管理 |
+| OPERATION_OBJECT_TYPE_JOINT_BUDGET | 营销联合预算管理 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -3025,6 +3043,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | VIDEO | 视频 |
 | VIDEO_SHOWCASE | 橱窗视频 |
 | IMAGE_SHOWCASE | 橱窗图片 |
+| VIDEO_LIST | 多视频 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -3039,7 +3058,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | 名称 | 描述 |
 | --- | --- |
 | INDUSTRY_QUALIFICATION | 行业资质 |
-| AD_QUALIFICATION | 广告资质 |
+| AD_QUALIFICATION | 资质 |
 | ADDITIONAL_INDUSTRY_QUALIFICATION | 附加行业资质 |
 
 | 名称 | 描述 |
@@ -3057,7 +3076,7 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| FUND_TYPE_CASH | 现金账户，默认开通，支持线上自助充值 |
+| FUND_TYPE_CASH | 现金账户，通过在线充值等自助方式充入的资金，将按照充值金额开票 |
 | FUND_TYPE_GIFT | 赠送账户，默认开通 |
 | FUND_TYPE_SHARED | 分成账户，默认开通 |
 | FUND_TYPE_BANK | 专用现金账户，线下银行转账后自动开通 |
@@ -3070,9 +3089,9 @@ source_id: tencent_ads_v3_0_docs_enums
 | FUND_TYPE_UNSUPPORTED | 不支持 |
 | FUND_TYPE_CONTRACT_CREDIT | 合约信用账户 |
 | FUND_TYPE_SPECIAL_GIFT | 专用账户，不支持回划给服务商转账 |
-| FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND | 微信小游戏内购快周转，不支持回划给服务商转账，不支持同商务管家下子客间转账 |
+| FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND | 分成收入快周转，来自小程序、公众号、视频号在腾讯流量变现的现金分成收入，将按照充值金额开票 |
 | FUND_TYPE_MP_GAME_DEVELOPER_GIFT | 微信小游戏内购赠送金，不支持回划给服务商转账，不支持同商务管家下子客间转账 |
-| FUND_TYPE_FLOW_SOURCE_AD_FUND | 流量主广告金，不支持回划给服务商转账，不支持同商务管家下子客间转账 |
+| FUND_TYPE_FLOW_SOURCE_AD_FUND | 流量主营销金，不支持回划给服务商转账，不支持同商务管家下子客间转账 |
 | FUND_TYPE_ANDROID_ORIENTED_GIFT | 安卓定向赠送金，不支持回划给服务商转账，不支持同商务管家下子客间转账 |
 | FUND_TYPE_LOCATION_PROMOTION_REWARDS | 附近推激励金，不支持回划给服务商转账，不支持同商务管家下子客间转账 |
 | FUND_TYPE_GIFT_RESTRICT | 微信专用小游戏抵用金，仅对部分客户开放 |
@@ -3081,11 +3100,18 @@ source_id: tencent_ads_v3_0_docs_enums
 | FUND_TYPE_SHORT_PLAY_GIFT | 短剧内购赠送金资金账户 |
 | FUND_TYPE_GAME_CHARGE_INDIRECT_REWARDS_GIFT | 小游戏转充激励金资金账户 |
 | FUND_TYPE_GAME_CHARGE_DIRECT_REWARDS_GIFT | 小游戏直接激励金资金账户 |
-| FUND_TYPE_SHORT_PLAY_PUBLISHER_GIFT | 短剧流量主赠送金资金账户, 针对短剧小程序流量主变现发放的广告金 |
-| FUND_TYPE_MP_GAME_SPECIAL_REWARDS_GIFT | 小游戏激励专项赠送金账户, 针对新游首发激励转充至广告主账户的广告金 |
-| FUND_TYPE_MINIGAME_CREDIT | 小游戏预支广告金账户, 针对小游戏后付费场景发放广告金 |
-| FUND_TYPE_MP_GAME_PC_TARGET_GIFT | 小游戏 PC 定向广告金, 针对广告主投放 PC 定向广告的消耗赠送金 |
+| FUND_TYPE_SHORT_PLAY_PUBLISHER_GIFT | 短剧流量主赠送金资金账户, 针对短剧小程序流量主变现发放的营销金 |
+| FUND_TYPE_MP_GAME_SPECIAL_REWARDS_GIFT | 小游戏激励专项赠送金账户, 针对新游首发激励转充至账户的营销金 |
+| FUND_TYPE_MINIGAME_CREDIT | 小游戏预支营销金账户, 针对小游戏后付费场景发放营销金 |
+| FUND_TYPE_MP_GAME_PC_TARGET_GIFT | 小游戏 PC 定向营销金, 针对客户投放 PC 定向营销的消耗赠送金 |
 | FUND_TYPE_INNER_RESOURCE_EXCHANGE | 内部资源置换金账户, 服务费结算 |
+| FUND_TYPE_MP_NEW_GAME_SUBSIDY | 小游戏新游补贴专用金，针对微信小游戏的新游进行平台补贴时，可使用该资金补贴新游出价参与实际营销竞价 |
+| FUND_TYPE_INTEGRATED_MARKETING | 整合营销专用金，整合营销场景下的专用资金类型 |
+| FUND_TYPE_CASH_COST | 预存账户，通过在线充值等方式充入的资金，将按照实际消耗金额开票 |
+| FUND_TYPE_IAA_SHARED_INCOME_COST | IAA 分成收入快周转，来自小程序、公众号、视频号在腾讯流量变现的现金分成收入，将按照实际消耗金额开票 |
+| FUND_TYPE_IAP_SHARED_INCOME_COST | IAP 分成收入快周转，来自小程序、公众号、视频号在腾讯流量变现的现金分成收入，将按照实际消耗金额开票 |
+| FUND_TYPE_UTILITY_PUBLISHER_GIFT | 工具类流量主营销金，针对符合门槛的工具类流量主按比例发放 |
+| FUND_TYPE_MUTUAL_SELECTION_CREDIT_ROLL | 互选信用账户，使用范围包括互选平台投放模式下“互选一口价商单”和“内容助推（互选原生软广加热）” |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -3104,15 +3130,15 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| FUND_TYPE_AD_RECHARGE | 广告充值金 |
+| FUND_TYPE_AD_RECHARGE | 营销充值金 |
 | FUND_TYPE_COMPENSATE_VIRTUAL | 补偿虚拟金账户，仅对部分客户开放 |
 | FUND_TYPE_INTERNAL_QUOTA | 内部领用金，仅对部分客户开放 |
 | FUND_TYPE_TEST_VIRTUAL | 测试虚拟金账户，仅对部分客户开放 |
 | FUND_TYPE_TCC_GIFT | TCC 赠送虚拟金账户，仅对部分客户开放 |
 | FUND_TYPE_SPECIAL_GIFT | 专用账户，不支持回划给服务商转账 |
-| FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND | 微信小游戏内购快周转，不支持回划给服务商转账 |
+| FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND | 分成收入快周转 |
 | FUND_TYPE_MP_GAME_DEVELOPER_GIFT | 微信小游戏内购赠送金，不支持回划给服务商转账 |
-| FUND_TYPE_FLOW_SOURCE_AD_FUND | 流量主广告金，不支持回划给服务商转账 |
+| FUND_TYPE_FLOW_SOURCE_AD_FUND | 流量主营销金，不支持回划给服务商转账 |
 | FUND_TYPE_ANDROID_ORIENTED_GIFT | 安卓定向赠送金，不支持回划给服务商转账 |
 | FUND_TYPE_LOCATION_PROMOTION_REWARDS | 附近推激励金，不支持回划给服务商转账 |
 | FUND_TYPE_GIFT_RESTRICT | 微信专用小游戏抵用金，仅对部分客户开放 |
@@ -3123,14 +3149,80 @@ source_id: tencent_ads_v3_0_docs_enums
 | FUND_TYPE_GAME_CHARGE_DIRECT_REWARDS_GIFT | 小游戏直接激励金资金账户 |
 | FUND_TYPE_SHORT_PLAY_PUBLISHER_GIFT | 短剧流量主赠送金资金账户 |
 | FUND_TYPE_MP_GAME_SPECIAL_REWARDS_GIFT | 小游戏激励专项赠送金账户 |
-| FUND_TYPE_MINIGAME_CREDIT | 小游戏预支广告金账户 |
-| FUND_TYPE_MP_GAME_PC_TARGET_GIFT | 小游戏 PC 定向广告金 |
+| FUND_TYPE_MINIGAME_CREDIT | 小游戏预支营销金账户 |
+| FUND_TYPE_MP_GAME_PC_TARGET_GIFT | 小游戏 PC 定向营销金 |
+| FUND_TYPE_MP_NEW_GAME_SUBSIDY | 小游戏新游补贴专用金 |
+| FUND_TYPE_INTEGRATED_MARKETING | 整合营销专用金 |
+| FUND_TYPE_IAA_SHARED_INCOME_COST | IAA 分成收入快周转 |
+| FUND_TYPE_IAP_SHARED_INCOME_COST | IAP 分成收入快周转 |
+| FUND_TYPE_UTILITY_PUBLISHER_GIFT | 工具类流量主营销金 |
 | FUND_TYPE_UNSUPPORTED | 不支持 |
 
 | 名称 | 描述 |
 | --- | --- |
 | DIRECT_ADVERTISER | 直客 |
 | SUB_ADVERTISER | 子客 |
+
+| 名称 | 描述 |
+| --- | --- |
+| ASSET_TYPE_NDMP | 新人群包 |
+| ASSET_TYPE_XIJING | 蹊径落地页资产 |
+| ASSET_TYPE_CANVAS_WECHAT | 微信原生推广页资产(待废弃) |
+| ASSET_TYPE_CANVAS_IMAGE | 素材图片资产 |
+| ASSET_TYPE_CANVAS_VIDEO | 素材视频资产 |
+| ASSET_TYPE_FENGYE | 枫叶落地页资产(已废弃) |
+| ASSET_TYPE_DYNAMIC_AD_TEMPLATE | 动态商品模板资产 |
+| ASSET_TYPE_AD_QUALIFICATION | 资质 |
+| ASSET_TYPE_CATALOG | 商品库资产 |
+| ASSET_TYPE_ACTION_SET | 行为数据源资产 |
+| ASSET_TYPE_CONVERSION_SPEC | 转化归因 |
+| ASSET_TYPE_UNION_PACKAGE | 流量包 |
+| ASSET_TYPE_ACCOUNT_WECHAT_CANVAS | 微信原生推广页资产(新) |
+| ASSET_TYPE_PROFILE | 朋友圈头像昵称跳转页 |
+| ASSET_TYPE_LOCAL_STORE | 门店资产管理 |
+| ASSET_TYPE_INTERACTIVE_PRIVATE_TEMPLATE | 互动私有模板 |
+| ASSET_TYPE_DN_DATA_SOURCE | DataNexus 数据源 |
+| ASSET_TYPE_DN_DATA_SET | DataNexus 数据集 |
+| ASSET_TYPE_DN_FILE | DataNexus 文件 |
+| ASSET_TYPE_SEARCH_BRAND_AREA | 搜索营销超级品专 |
+
+| 名称 | 描述 |
+| --- | --- |
+| ASSET_PERMISSION_GRANT_TYPE_ASSET | 按资产层级授权 |
+| ASSET_PERMISSION_GRANT_TYPE_ACCOUNT | 按账号层级授权 |
+
+| 名称 | 描述 |
+| --- | --- |
+| ASSET_TYPE_ACCOUNT_BM | BM 内指定账户 |
+| ASSET_TYPE_ACCOUNT_MDM | 主体内指定账户 |
+| ASSET_TYPE_GROUP_BM | BM 内所有账户 |
+| ASSET_TYPE_GROUP_MDM | 主体内所有账户 |
+| ASSET_TYPE_GROUP_POINT_TO_POINT | 点对点 |
+| ASSET_TYPE_AGENCY | 授权给服务商(授权给服务商自身使用) |
+
+| 名称 | 描述 |
+| --- | --- |
+| PERMISSION_TYPE_AUDIENCE | 人群提取 |
+| PERMISSION_TYPE_CLAIM | 精准归因 |
+| PERMISSION_TYPE_ALLOW_ADVERTISE | 允许投放 |
+| PERMISSION_TYPE_ALLOW_INSIGHT | 允许洞察 |
+| PERMISSION_TYPE_ALLOW_REPROCESS | 允许再加工 |
+| PERMISSION_TYPE_DMP | 腾讯营销知数 |
+| PERMISSION_TYPE_TRANSFORMATION_ATTRIBUTION | 转化归因 |
+| PERMISSION_TYPE_PKAM | pKAM |
+| PERMISSION_TYPE_DPA | 动态商品营销 |
+
+| 名称 | 描述 |
+| --- | --- |
+| PATH_TYPE_BM | BM 路径 |
+| PATH_TYPE_MDM | MDM 路径 |
+| PATH_TYPE_POINT_TO_POINT | 点对点路径 |
+| PATH_TYPE_AGENCY | 授权给服务商(授权给服务商自身使用) |
+
+| 名称 | 描述 |
+| --- | --- |
+| GRANT_ALL_YES | 全部维度授权 |
+| GRANT_ALL_NO | 帐号维度授权 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -3223,8 +3315,8 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| SINGLE | 单商品动态商品广告 |
-| MULTIPLE | 多商品动态商品广告 |
+| SINGLE | 单商品动态商品营销 |
+| MULTIPLE | 多商品动态商品营销 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -3266,17 +3358,6 @@ source_id: tencent_ads_v3_0_docs_enums
 | DEEP_LINK | 应用直达 |
 | UNIVERSAL_LINK | 通用链接 |
 | QUERY_WORD | 搜索通配符 |
-
-| 名称 | 描述 |
-| --- | --- |
-| AIGC_SOURCE_UNKNOWN | 未知 |
-| AIGC_SOURCE_MUSE | 妙思生成 |
-
-| 名称 | 描述 |
-| --- | --- |
-| AIGC_STATUS_UNKNOWN | 未知 |
-| AIGC_STATUS_USE_HM | 人工素材 |
-| AIGC_STATUS_USE_AIGC | AIGC 素材 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -3326,50 +3407,12 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| MUSE_AI_TASK_TYPE_TEXT2IMG | 文生图 |
-| MUSE_AI_TASK_TYPE_IMG2IMG | 图生图 |
-| MUSE_AI_TASK_TYPE_IMG2CAPTION | 图片提取描述 |
-
-| 名称 | 描述 |
-| --- | --- |
-| MUSE_AI_IMG2IMG_STYLE_PEOPLE | 写实风格 |
-| MUSE_AI_IMG2IMG_STYLE_GAME | 游戏 3D 风格 |
-
-| 名称 | 描述 |
-| --- | --- |
-| SIZE_1280_720 | 1280x720 |
-| SIZE_720_1280 | 720x1280 |
-| SIZE_800_800 | 800x800 |
-
-| 名称 | 描述 |
-| --- | --- |
-| MUSE_AI_TASK_WAITING | 等待中 |
-| MUSE_AI_TASK_SUCCESS | 处理完成 |
-| MUSE_AI_TASK_FAIL | 处理失败 |
+| MATERIAL_PARAM_TYPE_ID | ID 传参 |
 
 | 名称 | 描述 |
 | --- | --- |
 | IMAGE | 图片 |
 | VIDEO | 视频 |
-
-| 名称 | 描述 |
-| --- | --- |
-| SUCCESS | 同步成功 |
-| FAIL | 同步失败 |
-| ALREADY_CREATED | 素材已同步过 |
-| NO_AUTHORITY_MUSE_ID | 无效的或者无权限的素材 |
-
-| 名称 | 描述 |
-| --- | --- |
-| MATERIAL_SOURCE_TYPE_ID | ID 传参 |
-
-| 名称 | 描述 |
-| --- | --- |
-| IMAGE | 图片 |
-
-| 名称 | 描述 |
-| --- | --- |
-| MATERIAL_PARAM_TYPE_ID | ID 传参 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -3390,7 +3433,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_NOVEL_DRAMA_IMAGE | 小说短剧营销图文 |
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_DRAMA_MIX_CUT | 短剧混剪 |
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_DRAMA_TRANSFORM | 短剧竖转横 |
-| AUTO_DERIVED_CREATIVE_METHOD_TYPE_CONTEXT | 广告文案生成 |
+| AUTO_DERIVED_CREATIVE_METHOD_TYPE_CONTEXT | 营销文案生成 |
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_HOME_IMAGE | 房家图文 |
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_SMARTGAME_IMG_BG | 游戏图片裂变 |
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_SMARTGAME_NINE_IMG | 游戏九图 |
@@ -3402,6 +3445,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_LOCAL_NINE_IMG | 本地九图 |
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_FINANCE_NINE_IMG | 金融九图 |
 | AUTO_DERIVED_CREATIVE_METHOD_TYPE_VIDEO_GENERATION | 视频生成 |
+| AUTO_DERIVED_CREATIVE_METHOD_TYPE_LIVE_REALTIME_SCREEN | 直播实时画面 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -3410,11 +3454,21 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
+| MULTI_IMAGE_COLLAGE_STATUS_DISABLE | 关闭 |
+| MULTI_IMAGE_COLLAGE_STATUS_ENABLE | 开启 |
+
+| 名称 | 描述 |
+| --- | --- |
+| MULTI_IMAGE_COLLAGE_AIGC_STATUS_DISABLE | 关闭 |
+| MULTI_IMAGE_COLLAGE_AIGC_STATUS_ENABLE | 开启 |
+
+| 名称 | 描述 |
+| --- | --- |
 | CANVAS_TYPE_COMMON_PAGE | 引用外层素材原生页 |
 
 | 名称 | 描述 |
 | --- | --- |
-| SOURCE_TYPE_EQQ | 视频/图片/原生页等素材在腾讯广告平台创建 |
+| SOURCE_TYPE_EQQ | 视频/图片/原生页等素材在腾讯营销平台创建 |
 | SOURCE_TYPE_MP | 视频/图片/原生页等素材在微信公众平台创建 |
 
 | 名称 | 描述 |
@@ -3449,7 +3503,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | SHELF | 图文复合组件 |
 | FLOAT_BUTTON | 悬浮按钮 |
 | GOODS | 商品 |
-| COMMON_COMPONENT | 引用外层素材（原生推广页不需要设置顶部素材，直接引用广告创意中图片或视频素材） |
+| COMMON_COMPONENT | 引用外层素材（原生推广页不需要设置顶部素材，直接引用创意中图片或视频素材） |
 | SWIPE_WEBVIEW | 上划 webview 组件 |
 | WEBVIEW | webview 组件 |
 | ANIMATE_FLOAT_BUTTON | 动画悬浮组件 |
@@ -4066,7 +4120,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | ADD_CUSTOMER_PAGE_INTERACTIVE | 添加客户引导页面互动 |
 | CUSTOMER_PROMOTION_PAGE_VIEW | 客户活动页面浏览 |
 | CUSTOMER_PROMOTION_PAGE_INTERACTIVE | 客户活动页面互动 |
-| ABNORMAL_ACTION | 广告渠道带来，但客户认定异常的用户产生的转化行为 |
+| ABNORMAL_ACTION | 营销渠道带来，但客户认定异常的用户产生的转化行为 |
 | LIVE_STREAM | 观看直播 |
 | SCANCODE_WX | 长按扫码 |
 | STAY_PAY_7 | 7 日内复购 |
@@ -4084,8 +4138,8 @@ source_id: tencent_ads_v3_0_docs_enums
 | DEPOSIT | 入金 |
 | TRADE | 交易 |
 | SECURITY_NEGATIVE | 证券负向 |
-| AD_CLICK | 广告点击 |
-| AD_IMPRESSION | 广告曝光 |
+| AD_CLICK | 点击 |
+| AD_IMPRESSION | 曝光 |
 | SIGN_IN | 签收，订单签收 |
 | FOLLOW | 关注 |
 | ADD_DESKTOP | 加桌 |
@@ -4227,8 +4281,8 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| CAMPAIGN_TYPE_SEARCH | 搜索广告，仅支持读 |
-| CAMPAIGN_TYPE_NORMAL | 普通展示广告，可投放全流量（微信和非微信）的广告 |
+| CAMPAIGN_TYPE_SEARCH | 搜索营销，仅支持读 |
+| CAMPAIGN_TYPE_NORMAL | 普通展示营销，可投放全流量（微信和非微信）的营销 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -4262,10 +4316,10 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| DMP | 腾讯广告知数 |
+| DMP | 腾讯营销知数 |
 | TRANSFORMATION_ATTRIBUTION | 转化归因 |
 | PKAM | pKAM |
-| DPA | 动态商品广告 |
+| DPA | 动态商品营销 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -4307,35 +4361,6 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| INVISIBLE | 私有定向包 |
-| VISIBLE | 普通定向包 |
-
-| 名称 | 描述 |
-| --- | --- |
-| AWAITING_ORDER | 待确认 |
-| SHIPPING_SOON | 待发货 |
-| SHIPPED | 已发货 |
-| DELIVERED | 已签收 |
-| RETURNED | 已退货 |
-
-| 名称 | 描述 |
-| --- | --- |
-| UNKNOWN | 未知 |
-| SF_EXPRESS | 顺丰速运 |
-| STO | 申通快递 |
-| YTO | 圆通快递 |
-| ZTO | 中通快递 |
-| BEST_EXPRESS | 百世快递 |
-| YUNDA_EXPRESS | 韵达快递 |
-| TTK_EXPRESS | 天天快递 |
-| EMS | EMS |
-| CHINA_POST_EXPRESS | 中国邮政 |
-| JUST_IN_TIME | 宅急送 |
-| JD_EXPRESS | 京东快递 |
-| DEPPON_EXPRESS | 德邦物流 |
-
-| 名称 | 描述 |
-| --- | --- |
 | TIME_TYPE_CREATED_TIME | 线索入库时间 |
 | TIME_TYPE_ACTION_TIME | 线索提交时间 |
 
@@ -4366,7 +4391,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | --- | --- |
 | OUTER_TRAFFIC | 其他 |
 | OFFLINE | 外部导入 |
-| AD_PREVIEW | 广告创意 |
+| AD_PREVIEW | 创意 |
 | XJ | 蹊径落地页 |
 | FY | 枫叶电商落地页 |
 | ONE_LEAF | 一叶智能 |
@@ -4441,10 +4466,10 @@ source_id: tencent_ads_v3_0_docs_enums
 | 名称 | 描述 |
 | --- | --- |
 | NONE | 无，不需要与线索平台已有线索匹配 |
-| LEADSID | 线索 id，使用腾讯广告线索管理平台的线索唯一 id 匹配 |
+| LEADSID | 线索 id，使用腾讯营销线索管理平台的线索唯一 id 匹配 |
 | OUTERLEADSID | 外部线索 id，使用客户侧的线索唯一 id 与线索平台已有的线索匹配 |
 | CONTACT | 联系方式，使用联系方式与线索平台已有的线索匹配，优先级：leads_tel>leads_wechat>leads_qq |
-| CLICKID | 点击 id，使用腾讯广告点击 id 与线索平台已有的线索匹配 |
+| CLICKID | 点击 id，使用腾讯营销点击 id 与线索平台已有的线索匹配 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -4510,7 +4535,7 @@ source_id: tencent_ads_v3_0_docs_enums
 | LOOKALIKE | 拓展人群 |
 | USER_ACTION | 用户行为人群 |
 | KEYWORD | 关键词人群 |
-| AD | 广告人群 |
+| AD | 营销人群 |
 | COMBINE | 组合人群 |
 | LABEL | 标签人群 |
 
@@ -4612,15 +4637,15 @@ source_id: tencent_ads_v3_0_docs_enums
 | WX_OPENID | 微信用户的 openid，仅部分开通 |
 | WX_UNIONID | 微信开放平台加密的微信号，用户在一个开放平台账户的所有公众号/小程序/移动应用下，拥有唯一的微信 UnionID |
 | WECHAT_OPENID | 微信用户的 openid，仅部分开通（原有 WX_OPENID 已升级为 WECHAT_OPENID，旧的枚举可以使用至 4 月 30 日，请及时更新接口以免影响您的后续使用） |
-| SALTED_HASH_IMEI | 腾讯广告提供的基于 MD5 以及 SHA256+SALT 的 IMEI 加密方案，如何查询 salt 请见 custom_data_salt/get。目前本字段仅对特定客户开放 |
-| SALTED_HASH_IDFA | 腾讯广告提供的基于 MD5 以及 SHA256+SALT 的 IDFA 加密方案，如何查询 salt 请见 custom_data_salt/get。目前本字段仅对特定客户开放 |
+| SALTED_HASH_IMEI | 腾讯营销提供的基于 MD5 以及 SHA256+SALT 的 IMEI 加密方案，如何查询 salt 请见 custom_data_salt/get。目前本字段仅对特定客户开放 |
+| SALTED_HASH_IDFA | 腾讯营销提供的基于 MD5 以及 SHA256+SALT 的 IDFA 加密方案，如何查询 salt 请见 custom_data_salt/get。目前本字段仅对特定客户开放 |
 | OAID | MSA 制定的匿名设备标识符，保留原始值，不需要 MD5 编码 |
 | HASH_OAID | 加密后的 OAID，为不计大小写的 32 位字符串。请使用 OAID 原值直接 MD5，不要转换大小写或去连接符 |
 | SHA256_MOBILE_PHONE | SHA256 算法加密后的手机号，加密前为 11 位的纯数字串，加密后为不计大小写的 64 位数字字母串 |
 | MD5_SHA256_IMEI | 先采用 MD5 算法加密，然后再采用 SHA256 算法加密后的 IMEI，加密前需要格式转化成 14 位或 15 位数字 + 小写字母串，加密后为 64 位“数字(0-9)+小写字母(a-f)”组成的数字字母串。示例：加密前 a000002c9060f7，加密后 d64db6590359b386397db4d8a61dbc8fbd586b8a0b822ee6bc19316402d583b4 |
 | MD5_SHA256_IDFA | 先采用 MD5 算法加密，然后再采用 SHA256 算法加密后的 IDFA，加密前需要格式转化成 32 位的数字 + 大写字母，加密后为 64 位“数字(0-9)+小写字母(a-f)”组成的数字字母串。示例：加密前 FF1999CD-7177-4937-A474-74937A102630，加密后 9f2fc8b5eaaeba19fe9415767b13c1ec43c91aa039aa44684dfc8ec77d3b060 |
 | MD5_SHA256_OAID | 先采用 MD5 算法加密，然后再采用 SHA256 算法加密后的 OAID，加密前请使用 OAID 原值直接 MD5，不要转换大小写或去连接符，加密后为 64 位“数字(0-9)+小写字母(a-f)”组成的数字字母串。示例：加密前 12AD57A5C1D04C00A5B2F2F32213C617fa44f21b8c8744531b222481150a846f，加密后 7d36cf61fafac6df50aa7c874148e8241fcb57c61268037d19ed86389100bab0 |
-| CAID | 中国广告协会互联网广告标识，替代被苹果取消的 IDFA，限苹果设备，一般为 32 位。 |
+| CAID | 中国营销协会互联网营销标识，替代被苹果取消的 IDFA，限苹果设备，一般为 32 位。 |
 
 | 名称 | 描述 |
 | --- | --- |
@@ -4636,16 +4661,16 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| GRANT_TYPE_BUSINESS | 人群授权类型，将人群授权给商务管家账号下所有已认领的广告账号或者授权给商务管家账号下已认领的指定广告账号 |
+| GRANT_TYPE_BUSINESS | 人群授权类型，将人群授权给商务管家账号下所有已认领的营销账号或者授权给商务管家账号下已认领的指定营销账号 |
 
 | 名称 | 描述 |
 | --- | --- |
-| GRANT_SCOPE_TYPE_BUSINESS | 人群授权给商务管家账号认领的所有广告账号 |
-| GRANT_SCOPE_TYPE_ACCOUNT | 人群授权给服务商下指定子客或者授权给商务管家账号认领的指定广告账号 |
+| GRANT_SCOPE_TYPE_BUSINESS | 人群授权给商务管家账号认领的所有营销账号 |
+| GRANT_SCOPE_TYPE_ACCOUNT | 人群授权给服务商下指定子客或者授权给商务管家账号认领的指定营销账号 |
 
 | 名称 | 描述 |
 | --- | --- |
-| GRANT_PERMISSION_TYPE_TARGET | 广告投放权限 |
+| GRANT_PERMISSION_TYPE_TARGET | 投放权限 |
 | GRANT_PERMISSION_TYPE_INSIGHT | 人群洞察权限 |
 
 | 名称 | 描述 |
@@ -4715,8 +4740,15 @@ source_id: tencent_ads_v3_0_docs_enums
 
 | 名称 | 描述 |
 | --- | --- |
-| DYNAMIC_CREATIVE | 是动态创意广告 |
-| NOT_DYNAMIC_CREATIVE | 不是动态创意广告 |
+| DYNAMIC_CREATIVE | 是动态创意营销 |
+| NOT_DYNAMIC_CREATIVE | 不是动态创意营销 |
+
+| 名称 | 描述 |
+| --- | --- |
+| ELEMENT_TYPE_TEXT | 文本 |
+| ELEMENT_TYPE_IMAGE | 图片 |
+| ELEMENT_TYPE_VIDEO | 视频 |
+| ELEMENT_TYPE_URL | 落地页 |
 
 | 名称 | 描述 |
 | --- | --- |

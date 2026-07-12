@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_hourly_reports_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | level* | enum | 获取报表类型级别，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_report_hourly_level) 可选值：{ REPORT_LEVEL_ADVERTISER, REPORT_LEVEL_ADGROUP, REPORT_LEVEL_DYNAMIC_CREATIVE, REPORT_LEVEL_CHANNEL, REPORT_LEVEL_BIDWORD, REPORT_LEVEL_PROJECT, REPORT_LEVEL_PROJECT_CREATIVE, REPORT_LEVEL_VIDEO_HIGHLIGHT } |
 | date_range* | struct | 日期范围，最多支持查询 90 天内的数据查询，支持的最长查询跨度为 1 天 |
 | start_date* | string | 开始日期，日期格式：YYYY-MM-DD，且等于 end_date 字段长度为 10 字节 |
@@ -454,6 +454,10 @@ curl -v -G 'https://api.e.qq.com/v3.0/hourly_reports/get?access_token=<ACCESS_TO
 
 枚举值会自动根据已选条件变化，只展示有示例数据的枚举值
 
+```
+暂无数据
+```
+
 ## 可视化调试工具
 
 请求
@@ -462,4 +466,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/hourly_reports/get?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

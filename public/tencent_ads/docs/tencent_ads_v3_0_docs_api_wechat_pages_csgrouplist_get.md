@@ -28,10 +28,10 @@ source_id: tencent_ads_v3_0_docs_api_wechat_pages_csgrouplist_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | page | integer | 搜索页码 最小值 1，最大值 99999 默认值：1 |
 | page_size | integer | 一页显示的数据条数 最小值 1，最大值 100 默认值：10 |
-| corp_id | string | 绑定的企业 id |
+| corp_id | string | 绑定的企业 id 字段长度最小 1 字节，长度最大 64 字节 |
 
 ## 请求示例
 
@@ -84,4 +84,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_pages_csgrouplist/get?access_token=
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

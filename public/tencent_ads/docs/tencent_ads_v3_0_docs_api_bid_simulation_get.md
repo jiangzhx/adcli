@@ -28,10 +28,10 @@ source_id: tencent_ads_v3_0_docs_api_bid_simulation_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | req_type* | integer | 预估周期，0:小时级数据;1:天级数据, 当前投放小时曝光数>100 可提供天级预估服务 最小值 0，最大值 1 |
 | optimization_goal_level* | integer | 优化目标层级，0:浅层转化出价;1:深层转化出价 最小值 0，最大值 1 |
-| adgroup_id* | int64 | 广告 id |
+| adgroup_id* | int64 | 营销单元 id |
 | bid_list* | integer[] | 根据给定的出价序列进行模拟，单位为分 数组最小长度 1，最大长度 20 最小值 0，最大值 9999999 |
 
 ## 请求示例
@@ -76,4 +76,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/bid_simulation/get?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

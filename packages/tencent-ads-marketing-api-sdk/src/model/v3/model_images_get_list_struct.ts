@@ -1,7 +1,7 @@
 // Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_images_get_list_struct.go
 // Do not edit manually.
 
-import type { AdStatus, ImageSourceType, ImageType, ImageUsage, SimilarityStatus } from "../v3/index";
+import type { AdStatus, AigcFlag, ImageSourceType, ImageType, ImageUsage, SimilarityStatus } from "../v3/index";
 
 export interface ImagesGetListStruct {
   image_id?: string;
@@ -24,5 +24,6 @@ export interface ImagesGetListStruct {
   status?: AdStatus;
   sample_aspect_ratio?: string;
   similarity_status?: SimilarityStatus;
+  aigc_flag?: AigcFlag;
 }
 

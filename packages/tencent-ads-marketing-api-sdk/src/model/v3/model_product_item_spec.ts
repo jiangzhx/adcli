@@ -166,5 +166,10 @@ export interface ProductItemSpec {
   initial_total_investment?: InitialTotalInvestment;
   business_audience?: BusinessAudience;
   service_tag?: string[];
+  street_number?: string;
+  commercial_area?: string[];
+  stars_level?: number;
+  departure?: string;
+  destination?: string;
 }
 

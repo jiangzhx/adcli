@@ -1,11 +1,11 @@
 ---
-title: 新增广告主违规申述 全部接口
+title: 新增客户违规申述 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/add
 doc_id: tencent_ads_v3_0_docs_api_illegal_complaint_add
 source_id: tencent_ads_v3_0_docs_api_illegal_complaint_add
 ---
-# 新增广告主违规申述 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 新增客户违规申述 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_illegal_complaint_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | illegal_order_id* | string | 违规单 id |
 | complaint_reason* | string | 申述理由 |
 | file* | file | 上传申述证据文件，只支持上传 zip 文件，不超过 100MB |
@@ -63,6 +63,8 @@ curl 'https://api.e.qq.com/v3.0/illegal_complaint/add?access_token=<ACCESS_TOKEN
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_material_dcatag_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id |
+| account_id* | integer | 账户 id |
 | image_list | struct[] | 图片素材列表，不超过 100 个 |
 | image_id* | integer | 图片素材 id |
 | info | struct[] | 图片素材属性信息列表 |
@@ -111,6 +111,8 @@ curl 'https://api.e.qq.com/v3.0/material_dcatag/add?access_token=<ACCESS_TOKEN>&
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

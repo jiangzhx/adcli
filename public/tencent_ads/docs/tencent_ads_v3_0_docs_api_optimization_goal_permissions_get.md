@@ -28,8 +28,8 @@ source_id: tencent_ads_v3_0_docs_api_optimization_goal_permissions_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| site_set* | enum[] | 投放版位集合，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_site_set_definition) 数组最小长度 1，最大长度 255 可选值：{ SITE_SET_QZONE, SITE_SET_QQCLIENT, SITE_SET_MUSIC, SITE_SET_MOBILE_UNION, SITE_SET_KUAISHOU, SITE_SET_QQCOM, SITE_SET_WECHAT, SITE_SET_MOBILE_MYAPP, SITE_SET_MOBILE_INNER, SITE_SET_TENCENT_NEWS, SITE_SET_TENCENT_VIDEO, SITE_SET_TENCENT_KUAIBAO, SITE_SET_MOBILE_YYB, SITE_SET_PCQQ, SITE_SET_KANDIAN, SITE_SET_QQ_MUSIC_GAME, SITE_SET_MOMENTS, SITE_SET_MINI_GAME_WECHAT, SITE_SET_MINI_GAME_QQ, SITE_SET_MOBILE_GAME, SITE_SET_QQSHOPPING, SITE_SET_WECHAT_PLUGIN, SITE_SET_SMART } |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| site_set* | enum[] | 投放版位集合，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_site_set_definition) 数组最小长度 1，最大长度 255 可选值：{ SITE_SET_MOBILE_UNION, SITE_SET_WECHAT, SITE_SET_TENCENT_NEWS, SITE_SET_TENCENT_VIDEO, SITE_SET_MOBILE_YYB, SITE_SET_PCQQ, SITE_SET_KANDIAN, SITE_SET_QQ_MUSIC_GAME, SITE_SET_MOMENTS, SITE_SET_CHANNELS, SITE_SET_WECHAT_SEARCH, SITE_SET_WECHAT_PLUGIN, SITE_SET_QBSEARCH, SITE_SET_SEARCH_SCENE, SITE_SET_SEARCH_MOBILE_UNION, SITE_SET_WECHAT_NON_STANDARD, SITE_SET_SMART } |
 | bid_mode | enum | 出价方式，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_bid_mode) 可选值：{ BID_MODE_OCPC, BID_MODE_OCPM } |
 | marketing_goal* | enum | 营销目的类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_marketing_goal) 可选值：{ MARKETING_GOAL_UNKNOWN, MARKETING_GOAL_USER_GROWTH, MARKETING_GOAL_PRODUCT_SALES, MARKETING_GOAL_LEAD_RETENTION, MARKETING_GOAL_BRAND_PROMOTION, MARKETING_GOAL_INCREASE_FANS_INTERACTION } |
 | marketing_sub_goal* | enum | 二级营销目的类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_marketing_sub_goal) 可选值：{ MARKETING_SUB_GOAL_UNKNOWN, MARKETING_SUB_GOAL_NEW_GAME_RESERVE, MARKETING_SUB_GOAL_NEW_GAME_TEST, MARKETING_SUB_GOAL_NEW_GAME_LAUNCH, MARKETING_SUB_GOAL_PLATEAU_PHASE_LAUNCH, MARKETING_SUB_GOAL_MINI_GAME_NEW_CUSTOMER_GROWTH, MARKETING_SUB_GOAL_MINI_GAME_RETURN_CUSTOMER_ENGAGEMENT, MARKETING_SUB_GOAL_APP_ACQUISITION, MARKETING_SUB_GOAL_APP_ACTIVATION, MARKETING_SUB_GOAL_NOT_INSTALL_USER, MARKETING_SUB_GOAL_PRE_INSTALL_USER, MARKETING_SUB_GOAL_UNLOADED_USER, MARKETING_SUB_GOAL_SHORT_INACTIVE_USER, MARKETING_SUB_GOAL_LONG_INACTIVE_USER, MARKETING_SUB_GOAL_GAME_VERSION_UPGRADE, MARKETING_SUB_GOAL_NEW_STORE_OPENING, MARKETING_SUB_GOAL_EVENING_PROMOTION, MARKETING_SUB_GOAL_SPECIAL_RELEASE } |
@@ -39,7 +39,7 @@ source_id: tencent_ads_v3_0_docs_api_optimization_goal_permissions_get
 | marketing_carrier_id* | string | 营销载体 id，如安卓应用 id、IOS 应用 id、小游戏 id 等 字段长度最小 0 字节，长度最大 2048 字节 |
 | marketing_sub_carrier_id | string | 二级营销载体 id |
 | marketing_carrier_name | string | 营销载体名称 |
-| delivery_scene | enum | 投放场景，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#delivery_scene) 可选值：{ DELIVERY_SCENE_UNKNOWN, DELIVERY_SCENE_STANDARD, DELIVERY_SCENE_STORE_FLOW, DELIVERY_SCENE_RETENTION, DELIVERY_SCENE_SEARCH_AUCTION, SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_PLAYLET, SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_LEADS, SMART_DELIVERY_PLATFORM_EDITION_MINI_GAME_PROMOTION, SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_LEADS_LINK_PREFERENCE, SMART_DELIVERY_PLATFORM_EDITION_PLAYLET_MANAGEMENT, SMART_DELIVERY_PLATFORM_EDITION_BIG_GAME_PROMOTION, SMART_DELIVERY_PLATFORM_EDITION_MINI_GAME_MIXED_MONETIZATION, SMART_DELIVERY_PLATFORM_EDITION_PERIODIC_STABILIZATION, SMART_DELIVERY_PLATFORM_EDITION_MULTI_OPTIMIZATION, SMART_DELIVERY_PLATFORM_EDITION_DRUG_PRODUCT, SMART_DELIVERY_PLATFORM_EDITION_FICTION, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_MINI_GAME_LONG_TERM_ROI, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_MINI_GAME_MONETIZATION, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_SINGLE_PRODUCT, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_PRODUCT_OR_LIVE, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_MANAGEMENT, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_LIVE, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_PRODUCT, SMART_DELIVERY_PLATFORM_EDITION_QYT_LIVE, SMART_DELIVERY_PLATFORM_EDITION_QYT_WECHAT_STORE, SMART_DELIVERY_PLATFORM_EDITION_QYT_STORE_PAGE, SMART_DELIVERY_PLATFORM_EDITION_CPS_MANUAL, SMART_DELIVERY_PLATFORM_EDITION_CPS_INTELLIGENT, SMART_DELIVERY_PLATFORM_EDITION_MPA_STORE_MANAGEMENT, SMART_DELIVERY_PLATFORM_EDITION_GAME_APP, SMART_DELIVERY_PLATFORM_EDITION_READING_APP, SMART_DELIVERY_PLATFORM_EDITION_AI_APP, SMART_DELIVERY_PLATFORM_EDITION_USER_GROWTH_APP, SMART_DELIVERY_PLATFORM_EDITION_SELECTION_AD, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_WORK } |
+| delivery_scene | enum | 投放场景，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#delivery_scene) 可选值：{ DELIVERY_SCENE_UNKNOWN, DELIVERY_SCENE_STANDARD, DELIVERY_SCENE_STORE_FLOW, DELIVERY_SCENE_RETENTION, DELIVERY_SCENE_SEARCH_AUCTION, SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_PLAYLET, SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_LEADS, SMART_DELIVERY_PLATFORM_EDITION_MINI_GAME_PROMOTION, SMART_DELIVERY_PLATFORM_EDITION_ECOLOGY_LEADS_LINK_PREFERENCE, SMART_DELIVERY_PLATFORM_EDITION_PLAYLET_MANAGEMENT, SMART_DELIVERY_PLATFORM_EDITION_BIG_GAME_PROMOTION, SMART_DELIVERY_PLATFORM_EDITION_MINI_GAME_MIXED_MONETIZATION, SMART_DELIVERY_PLATFORM_EDITION_PERIODIC_STABILIZATION, SMART_DELIVERY_PLATFORM_EDITION_MULTI_OPTIMIZATION, SMART_DELIVERY_PLATFORM_EDITION_DRUG_PRODUCT, SMART_DELIVERY_PLATFORM_EDITION_FICTION, SMART_DELIVERY_PLATFORM_EDITION_TOU_YI_TOU, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_MINI_GAME_LONG_TERM_ROI, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_MINI_GAME_MONETIZATION, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_SINGLE_PRODUCT, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_PRODUCT_OR_LIVE, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_MANAGEMENT, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_LIVE, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_STORE_PRODUCT, SMART_DELIVERY_PLATFORM_EDITION_QYT_LIVE, SMART_DELIVERY_PLATFORM_EDITION_QYT_WECHAT_STORE, SMART_DELIVERY_PLATFORM_EDITION_QYT_STORE_PAGE, SMART_DELIVERY_PLATFORM_EDITION_CPS_MANUAL, SMART_DELIVERY_PLATFORM_EDITION_CPS_INTELLIGENT, SMART_DELIVERY_PLATFORM_EDITION_MPA_STORE_MANAGEMENT, SMART_DELIVERY_PLATFORM_EDITION_GAME_APP, SMART_DELIVERY_PLATFORM_EDITION_READING_APP, SMART_DELIVERY_PLATFORM_EDITION_AI_APP, SMART_DELIVERY_PLATFORM_EDITION_USER_GROWTH_APP, SMART_DELIVERY_PLATFORM_EDITION_SELECTION_AD, SMART_DELIVERY_PLATFORM_EDITION_WECHAT_WORK } |
 
 ## 请求示例
 
@@ -92,27 +92,27 @@ curl -v -G 'https://api.e.qq.com/v3.0/optimization_goal_permissions/get?access_t
 | --- | --- | --- |
 | optimization_goal_permission_list | enum[] | 浅层优化目标及对应支持的深度优化目标组合，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | deep_behavior_optimization_goal_permission_list | struct[] | 浅层优化目标及对应支持的深度优化目标行为目标组合 |
-| optimization_goal | enum | 广告优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| optimization_goal | enum | 优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | deep_behavior_optimization_goal_list | enum[] | 对应支持的深度优化行为目标组合，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | deep_worth_optimization_goal_permission_list | struct[] | 浅层优化目标及对应支持的深度优化 ROI 目标组合 |
-| optimization_goal | enum | 广告优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| optimization_goal | enum | 优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | deep_worth_optimization_goal_list | enum[] | 对应支持的深度优化 ROI 目标组合，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_deep_conversion_worth_goal) |
 | deep_behavior_advanced_goal_permission_list | struct[] | 浅层优化目标及对应支持的深度辅助目标组合 |
-| optimization_goal | enum | 广告优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| optimization_goal | enum | 优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | deep_behavior_advanced_goal_list | enum[] | 对应支持的深度辅助目标组合，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | deep_worth_advanced_goal_permission_list | struct[] | 浅层优化目标及对应支持的深度辅助 ROI 组合 |
-| optimization_goal | enum | 广告优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| optimization_goal | enum | 优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | deep_worth_advanced_goal_list | enum[] | 对应支持的辅助 ROI 组合，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_deep_conversion_worth_goal) |
 | forward_link_assist_permission_list | struct[] | 浅层优化目标及对应支持的助攻行为目标组合 |
-| optimization_goal | enum | 广告优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| optimization_goal | enum | 优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | forward_link_assist_list | enum[] | 对应支持的助攻行为目标组合，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | conversion_link_og_info | struct[] | 链路 og 对象集合 |
-| og | enum | 广告优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| og | enum | 优化目标类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | deep_og | enum | 优化转化行为目标，枚举列表：[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 | deep_roi | enum | 优化 ROI 目标，枚举列表：[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_deep_conversion_worth_goal) |
 | advanced_roi | enum | 优化 ROI 目标，枚举列表：[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_deep_conversion_worth_goal) |
 | advanced_og | enum | 深度辅助优化 OG 目标，枚举列表：[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
-| forward_link_assist | enum | 助攻行为目标，ADX 程序化广告不可填写提交，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
+| forward_link_assist | enum | 助攻行为目标，ADX 程序化投放不可填写提交，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_optimization_goal) |
 
 ## 应答示例
 
@@ -155,4 +155,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/optimization_goal_permissions/get?access_t
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

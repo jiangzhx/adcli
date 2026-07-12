@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_leads_list_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主账号 id，直客账号或子客账号 |
+| account_id* | integer | 账户 id，直客账号或子客账号 |
 | time_range* | struct | 时间范围，最长跨度 1 年。time_type=TIME_TYPE_ACTION_TIME 时填写线索提交时间，time_type=TIME_TYPE_CREATED_TIME 时填写线索入库时间 |
 | start_time* | integer | 开始时间戳，精确到秒，小于 end_time 最小值 0，最大值 9999999999 |
 | end_time* | integer | 结束时间戳，精确到秒，大于 start_time 最小值 0，最大值 9999999999 |
@@ -60,13 +60,13 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_list/get?access_token=<ACCESS_TOKEN>
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| leads_info | struct | 返回结构 |
-| account_id | integer | 广告主账号 id，直客账号或子客账号 |
+| leads_info | struct[] | 返回的线索列表 |
+| account_id | integer | 账户 id，直客账号或子客账号 |
 | leads_id | integer | 线索 id |
 | outer_leads_id | string | 外部线索 id |
 | click_id | string | 点击 id |
-| adgroup_id | int64 | 广告 id |
-| adgroup_name | string | 广告名称 |
+| adgroup_id | int64 | 营销单元 id |
+| adgroup_name | string | 营销单元 |
 | dynamic_creative_id | integer | 动态创意 id |
 | dynamic_creative_name | string | 动态创意名称 |
 | component_id | string | 组件 id |
@@ -130,11 +130,13 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_list/get?access_token=<ACCESS_TOKEN>
     "message": "",
     "message_cn": "",
     "data": {
-        "leads_info": {
-            "account_id": "<ACCOUNT_ID>",
-            "adgroup_id": "<ADGROUP_ID>",
-            "adgroup_name": "推广广告"
-        },
+        "leads_info": [
+            {
+                "account_id": "<ACCOUNT_ID>",
+                "adgroup_id": "<ADGROUP_ID>",
+                "adgroup_name": "推广广告"
+            }
+        ],
         "page_info": {
             "page": 1,
             "page_size": 10,
@@ -147,8 +149,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_list/get?access_token=<ACCESS_TOKEN>
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -1,11 +1,11 @@
 ---
-title: 创建用于广告投放的动态广告图片 全部接口
+title: 创建用于投放的动态营销图片 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_images/add
 doc_id: tencent_ads_v3_0_docs_api_dynamic_ad_images_add
 source_id: tencent_ads_v3_0_docs_api_dynamic_ad_images_add
 ---
-# 创建用于广告投放的动态广告图片 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 创建用于投放的动态营销图片 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -29,9 +29,9 @@ source_id: tencent_ads_v3_0_docs_api_dynamic_ad_images_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | product_catalog_id* | integer | 商品目录 id 最小值 0，最大值 2147483647 |
-| product_mode* | enum | 标明适用的动态商品广告类型，SINGLE 表示适用于 SDPA，MULTIPLE 表示适用于 MDPA，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_product_mode) 可选值：{ SINGLE, MULTIPLE } |
+| product_mode* | enum | 标明适用的动态商品营销类型，SINGLE 表示适用于 SDPA，MULTIPLE 表示适用于 MDPA，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_product_mode) 可选值：{ SINGLE, MULTIPLE } |
 | product_source* | string | ，product_mode 为 SINGLE 时，需传入商品 id ； product_mode 为 MULTIPLE 时，需传入商品系列 id 字段长度最小 1 字节，长度最大 128 字节 |
 | dynamic_ad_template_size* | enum | 模板使用尺寸，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#dynamic_ad_template_size) 可选值：{ SIZE_1280_720, SIZE_1080_1920, SIZE_1000_560, SIZE_960_540, SIZE_960_334, SIZE_960_274, SIZE_900_500, SIZE_800_800, SIZE_800_640, SIZE_800_450, SIZE_720_1280, SIZE_640_316, SIZE_640_960, SIZE_640_800, SIZE_640_360, SIZE_640_1136, SIZE_582_166, SIZE_498_280, SIZE_480_360, SIZE_480_320, SIZE_480_270, SIZE_465_230, SIZE_354_222, SIZE_240_180, SIZE_230_152, SIZE_147_147, SIZE_540_276 } |
 | dynamic_ad_template_id* | integer | 动态商品模板 id 最小值 0，最大值 2147483647 |
@@ -85,4 +85,4 @@ curl 'https://api.e.qq.com/v3.0/dynamic_ad_images/add?access_token=<ACCESS_TOKEN
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

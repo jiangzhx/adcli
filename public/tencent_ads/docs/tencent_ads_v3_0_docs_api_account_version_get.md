@@ -1,11 +1,11 @@
 ---
-title: 获取广告主新版 API 投放状态版本 全部接口
+title: 获取客户新版 API 投放状态版本 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/account_version/get
 doc_id: tencent_ads_v3_0_docs_api_account_version_get
 source_id: tencent_ads_v3_0_docs_api_account_version_get
 ---
-# 获取广告主新版 API 投放状态版本 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 获取客户新版 API 投放状态版本 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_account_version_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 
 ## 请求示例
 
@@ -43,7 +43,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/account_version/get?access_token=<ACCESS_T
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| adp_version | string | 投放新版 API 状态版本，可选值：ADP2（只能投放旧版 2.0 信息流广告），ADP2_OR_ADP3（引导期，同时支持投放 2.0 和 3.0 信息流广告），ADP3（切换期，只能投放新版 3.0 信息流广告） |
+| adp_version | string | 投放新版 API 状态版本，可选值：ADP2（只能投放旧版 2.0 信息流营销），ADP2_OR_ADP3（引导期，同时支持投放 2.0 和 3.0 信息流营销），ADP3（切换期，只能投放新版 3.0 信息流营销） |
 
 ## 应答示例
 
@@ -60,8 +60,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/account_version/get?access_token=<ACCESS_T
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -81,6 +81,7 @@ export class ImagesApi {
                 { name: "page_size", value: request.pageSize },
                 { name: "label_id", value: request.labelId },
                 { name: "business_scenario", value: request.businessScenario },
+                { name: "need_aigc_flag", value: request.needAigcFlag },
                 { name: "fields", value: request.fields, collectionFormat: "multi" }
             ],
             contentType: "text/plain"

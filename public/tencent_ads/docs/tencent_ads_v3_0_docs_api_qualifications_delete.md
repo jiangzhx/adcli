@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_qualifications_delete
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | qualification_type* | enum | 资质类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_qualification_type) 可选值：{ INDUSTRY_QUALIFICATION, AD_QUALIFICATION, ADDITIONAL_INDUSTRY_QUALIFICATION } |
 | qualification_id | integer | 资质 id，当资质类型非 AD_QUALIFICATION 时必填、当资质类型为 AD_QUALIFICATION 时 qualification_id/qualification_id_list 二选一必填 |
 | qualification_id_list | integer[] | 资质 id 列表 数组最小长度 0，最大长度 20 |
@@ -82,4 +82,4 @@ curl 'https://api.e.qq.com/v3.0/qualifications/delete?access_token=<ACCESS_TOKEN
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

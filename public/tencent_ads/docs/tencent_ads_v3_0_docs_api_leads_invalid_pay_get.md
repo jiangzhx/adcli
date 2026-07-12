@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_leads_invalid_pay_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | month* | string | 月份，格式 YYYY-MM 字段长度为 7 字节 |
 
 使用说明
@@ -49,8 +49,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_invalid_pay/get?access_token=<ACCESS
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 确认赔付信息 |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| account_name | string | 广告主名称 |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| account_name | string | 客户名称 |
 | is_real_pay | boolean | 是否产生真实赔付，true-是，false-否 |
 | no_pay_reason | string | 未产生赔付的原因，未真实产生赔付时有值 |
 | pay_total_amount | float | 赔付总金额，单位：元 |
@@ -95,8 +95,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_invalid_pay/get?access_token=<ACCESS
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_delete
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | list* | integer[] | 关键词 id 列表，关键词 id 个数不大于 2000 个, 如：["51213","51214","51215"] 最多 1000 个 数组最小长度 1，最大长度 1000 |
 
 ## 请求示例
@@ -60,23 +60,23 @@ curl 'https://api.e.qq.com/v3.0/bidword/delete?access_token=<ACCESS_TOKEN>&times
 | success_list | struct[] | 返回成功的关键词列表 |
 | index | number | 整数 |
 | bidword_id | integer | 关键词 id |
-| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一广告下的关键词词面不允许重复 |
+| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一营销单元下的关键词词面不允许重复 |
 | bid_price | integer | 关键词出价，单位为分，关键词出价规则待补充 |
 | match_type | enum | 关键词匹配方式，关键词匹配方式包括短语、精确、广泛匹配，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_match_type) |
 | configured_status | enum | 暂停状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_pause_type) |
 | error_msg | string | 错误信息 |
 | approval_status | integer | 审核状态 |
-| dynamic_creative_id | integer | 广告创意 id |
+| dynamic_creative_id | integer | 创意 id |
 | error_list | struct[] | 返回失败的关键词列表 |
 | index | number | 整数 |
 | bidword_id | integer | 关键词 id |
-| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一广告下的关键词词面不允许重复 |
+| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一营销单元下的关键词词面不允许重复 |
 | bid_price | integer | 关键词出价，单位为分，关键词出价规则待补充 |
 | match_type | enum | 关键词匹配方式，关键词匹配方式包括短语、精确、广泛匹配，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_match_type) |
 | configured_status | enum | 暂停状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_pause_type) |
 | error_msg | string | 错误信息 |
 | approval_status | integer | 审核状态 |
-| dynamic_creative_id | integer | 广告创意 id |
+| dynamic_creative_id | integer | 创意 id |
 
 ## 应答示例
 
@@ -107,4 +107,4 @@ curl 'https://api.e.qq.com/v3.0/bidword/delete?access_token=<ACCESS_TOKEN>&times
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

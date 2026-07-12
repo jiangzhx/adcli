@@ -34,10 +34,10 @@ source_id: tencent_ads_v3_0_docs_api_rtaexp_data_roi_get
 | BeginTime* | integer | 开始时间，格式 202011011500 |
 | EndTime* | integer | 结束时间，格式 202011012300 |
 | ExpId* | integer[] | 查询的实验 id 列表，最多 20 个 |
-| UId | string | 广告主 id，多个以英文逗号分隔，最多 500 |
+| UId | string | 账户 id，多个以英文逗号分隔，最多 500 |
 | AppId | string | APP id，多个以英文逗号分隔，最多 500 |
 | CId | string | 推广计划 id，多个以英文逗号分隔，最多 500 |
-| AId | string | 广告 id，多个以英文逗号分隔，最多 500 |
+| AId | string | 营销单元 id，多个以英文逗号分隔，最多 500 |
 | UserWeight | string | 用户权重，取值 1-10，多个以英文逗号分隔 |
 | DeviceOsType | string | 操作系统枚举值，多个以英文逗号分隔。枚举值：0：未知 1：IOS 2：ANDROID 3：WINDOWS 4：SYMBIAN 5：JAVA |
 | TotalFlag | integer | 是否汇总，0：不汇总 1：汇总，不传默认不汇总 |
@@ -93,7 +93,7 @@ curl 'https://api.e.qq.com/v3.0/rtaexp_data_roi/get?access_token=<ACCESS_TOKEN>&
 | og_104 | float | 优化目标-激活 |
 | og_105 | float | 优化目标，注册(App) |
 | og_119 | float | 优化目标-授信 |
-| og_121 | float | 优化目标-广告变现 |
+| og_121 | float | 优化目标-流量变现 |
 | og_204 | float | 优化目标-下单 |
 | og_205 | float | 优化目标-付费 |
 | og_301 | float | 优化目标-关键页面访问 |
@@ -123,7 +123,7 @@ curl 'https://api.e.qq.com/v3.0/rtaexp_data_roi/get?access_token=<ACCESS_TOKEN>&
 | roi | float | roi |
 | og_412 | integer | 优化目标-加企业微信客服 |
 | md_mg_purchase_uv | integer | 小游戏首次付费人数 |
-| md_mg_purchase_val_1 | integer | 小游戏首日付费金额，广告主回传，单位：分 |
+| md_mg_purchase_val_1 | integer | 小游戏首日付费金额，客户回传，单位：分 |
 | md_mg_purchase_val | integer | 小游戏付费金额，单位：分 |
 | weapp_reg | integer | 小游戏注册人数 |
 | og_10 | integer | 跳转按钮点击 |
@@ -201,4 +201,4 @@ curl 'https://api.e.qq.com/v3.0/rtaexp_data_roi/get?access_token=<ACCESS_TOKEN>&
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

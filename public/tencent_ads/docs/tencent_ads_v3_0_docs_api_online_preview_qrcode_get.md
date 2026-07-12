@@ -28,9 +28,9 @@ source_id: tencent_ads_v3_0_docs_api_online_preview_qrcode_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | user_id_type | enum | 受众 id 类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_viewer_id_type) 可选值：{ USER_ID_TYPE_WECHAT_ID, USER_ID_TYPE_QQ_ID } |
-| dynamic_creative_id* | integer | 广告创意 id |
+| dynamic_creative_id* | integer | 创意 id |
 | preview_creative_components | struct | 通过指定视频/图片组件以及文案组件的组件 id 指定要预览的组件组合 |
 | resource_component_id | integer | 指定要预览的视频/图片组件 id |
 | text_component_id | integer | 指定要预览的文案组件 id |
@@ -70,4 +70,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/online_preview_qrcode/get?access_token=<AC
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

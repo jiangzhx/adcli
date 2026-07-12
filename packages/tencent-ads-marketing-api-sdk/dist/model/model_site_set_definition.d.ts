@@ -56,6 +56,7 @@ export declare const SiteSetDefinition: {
     readonly FREETRADE_QQ: "SITE_SET_FREETRADE_QQ";
     readonly YUNXUAN: "SITE_SET_YUNXUAN";
     readonly SEARCH_MOBILE_UNION: "SITE_SET_SEARCH_MOBILE_UNION";
+    readonly WECHAT_NON_STANDARD: "SITE_SET_WECHAT_NON_STANDARD";
     readonly EXPAND: "SITE_SET_EXPAND";
     readonly SMART: "SITE_SET_SMART";
 };

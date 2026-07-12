@@ -1,6 +1,6 @@
 {
   "name": "@jiangzhx/adcli",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "CLI for searching hosted advertising platform API docs.",
   "type": "module",
   "packageManager": "bun@1.3.10",
@@ -72,7 +72,7 @@
   },
   "dependencies": {
     "@jiangzhx/oceanengine-ad-open-sdk": "1.1.88-port.1",
-    "@jiangzhx/tencent-ads-marketing-api-sdk": "1.7.84-port.3",
+    "@jiangzhx/tencent-ads-marketing-api-sdk": "1.7.85-port.1",
     "env-paths": "^4.0.0",
     "minisearch": "^7.2.0"
   }

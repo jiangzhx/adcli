@@ -35,7 +35,7 @@ source_id: tencent_ads_v3_0_docs_api_wallet_transfer_add
 | amount* | integer | 金额，单位为分，最小值 500000，最大值 2000000000 |
 | transfer_type* | string | 转账类型，转账类型,当值为 AGENCY_TO_WALLET 时代表代理商转账给钱包，当值为 WALLET_TO_AGENCY 时代表钱包转账给代理商 可选值：{ WALLET_TO_AGENCY, AGENCY_TO_WALLET } |
 | transfer_try_best | integer | 是否尽可能进行转账操作，当可转账金额小于预期转账金额时，尽可能转账表示能转多少转多少（可能小于预期转账金额），否则可转账金额不足时转账失败,只针对 WALLET_TO_AGENCY 转账类型生效，不传该参数默认为尽可能转账类型：0-根据实际金额进行转账类型，1-尽可能转账类型 最小值 0，最大值 1 |
-| external_bill_no | string | 调用方订单号，需要有调用方标示前缀，须要保证在同一个广告主下唯一，不支持大写字母 字段长度最小 10 字节，长度最大 35 字节 |
+| external_bill_no | string | 调用方订单号，需要有调用方标示前缀，须要保证在同一个客户下唯一，不支持大写字母 字段长度最小 10 字节，长度最大 35 字节 |
 | memo | string | 备注信息 字段长度最小 1 字节，长度最大 64 字节 |
 
 使用说明
@@ -73,7 +73,7 @@ curl 'https://api.e.qq.com/v3.0/wallet_transfer/add?access_token=<ACCESS_TOKEN>&
 | --- | --- | --- |
 | fund_type | enum | 资金账户类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_account_type_map) |
 | amount | integer | 金额，单位为分 |
-| external_bill_no | string | 调用方订单号，需要有调用方标示前缀，须要保证在同一个广告主下唯一，不支持大写字母 |
+| external_bill_no | string | 调用方订单号，需要有调用方标示前缀，须要保证在同一个客户下唯一，不支持大写字母 |
 | time | integer | 交易时间的时间戳 |
 | is_repeated | boolean | 是否重复转账，false：不是，true：是 |
 
@@ -100,4 +100,4 @@ curl 'https://api.e.qq.com/v3.0/wallet_transfer/add?access_token=<ACCESS_TOKEN>&
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

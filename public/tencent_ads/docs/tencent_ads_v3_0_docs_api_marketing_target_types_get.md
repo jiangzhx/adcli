@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_marketing_target_types_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | organization_id | integer | 业务单元 id 最小值 0，最大值 9999999999 |
 
 ## 请求示例
@@ -63,4 +63,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/marketing_target_types/get?access_token=<A
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

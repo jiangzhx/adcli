@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_landing_page_sell_strategy_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | strategy_id | integer | 策略 id |
 | strategy_status | integer | 策略状态，0：无效，1：有效 最小值 0，最大值 1 |
 | strategy_name | string | 策略名称，模糊查询 字段长度最小 1 字节，长度最大 60 字节 |
@@ -60,7 +60,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/landing_page_sell_strategy/get?access_toke
 | min_recharge_tier | float | 最低充值档位，支持填写 >= 0.01 的小数，精确到 0.01，单位元 |
 | recharge_num | integer | 起充集数，支持填写 >= 0 的整数 |
 | strategy_status | integer | 策略状态，0：无效，1：有效 |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | page_info | struct | 分页配置信息 |
 | page | integer | 搜索页码 默认值：1 |
 | page_size | integer | 一页显示的数据条数 默认值：10 |
@@ -94,4 +94,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/landing_page_sell_strategy/get?access_toke
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

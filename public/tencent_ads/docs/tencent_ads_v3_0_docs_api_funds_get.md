@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_funds_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 
 ## 请求示例
 
@@ -46,7 +46,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/funds/get?access_token=<ACCESS_TOKEN>&time
 | list | struct[] | 返回信息列表 |
 | fund_type | enum | 资金账户类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_account_type_map) |
 | balance | integer | 余额，单位为分 |
-| bill_deposit_amount | integer | 锁定金额 不实际计费 若广告未产生曝光 锁定金额会及时释放，单位为分 |
+| bill_deposit_amount | integer | 锁定金额 不实际计费 若未产生曝光 锁定金额会及时释放，单位为分 |
 | fund_status | enum | 资金状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_fund_status) |
 | realtime_cost | integer | 今日消耗，单位为分 |
 | effect_funds | struct[] | 有效资金 |
@@ -100,4 +100,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/funds/get?access_token=<ACCESS_TOKEN>&time
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

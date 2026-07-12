@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_material_labels_bind
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id |
+| account_id | integer | 账户 id |
 | organization_id | integer | account_id 或 organization_id 传其中一个即可 最小值 0，最大值 9999999999 |
 | image_id_list | string[] | 图片 id 列表 |
 | media_id_list | string[] | 视频 id 列表 |
@@ -94,4 +94,4 @@ curl 'https://api.e.qq.com/v3.0/material_labels/bind?access_token=<ACCESS_TOKEN>
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

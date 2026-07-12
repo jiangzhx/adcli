@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_local_store_packages_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 4 |
 | field* | string | 过滤字段 可选值：{ local_store_package_id, local_store_pacakge_name } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#filter_operator) 当 field 取值 local_store_package_id 时，可选值：{ EQUALS, IN } 当 field 取值 local_store_package_name 时，可选值：{ EQUALS, CONTAINS } 当 field 取值 owner_account_id 时，可选值：{ EQUALS } |
@@ -66,11 +66,11 @@ curl -v -G 'https://api.e.qq.com/v3.0/local_store_packages/get?access_token=<ACC
 | list | struct[] | 返回信息列表 |
 | local_store_package_id | integer | 门店包 id |
 | local_store_package_name | string | 门店包名称 |
-| owner_account_id | integer | 门店授权方 uid 默认值：该字段默认值为 0, 表示拉取当前广告主帐号下的门店 |
+| owner_account_id | integer | 门店授权方 uid 默认值：该字段默认值为 0, 表示拉取当前账户下的门店 |
 | local_store_list | struct[] | 门店列表 |
 | poi_id | string | poi id |
 | local_store_name | string | 门店名称 |
-| owner_account_id | integer | 门店授权方 uid 默认值：该字段默认值为 0, 表示拉取当前广告主帐号下的门店 |
+| owner_account_id | integer | 门店授权方 uid 默认值：该字段默认值为 0, 表示拉取当前账户下的门店 |
 | system_status | enum | 门店包状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_sys_status) |
 | created_time | integer | 创建时间，时间戳 |
 | last_modified_time | integer | 最后修改时间，时间戳 |
@@ -107,8 +107,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/local_store_packages/get?access_token=<ACC
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

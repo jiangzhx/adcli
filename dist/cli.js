@@ -2040,6 +2040,18 @@ function isNotFoundError(error) {
   return error instanceof Error && "code" in error && error.code === "ENOENT";
 }
 
+// src/lib/search/output.ts
+var defaultPublicDocsBaseUrl = "https://adcli.jiangzhx.com";
+function publicDocsUrl(publicPath, baseUrl = defaultPublicDocsBaseUrl) {
+  return new URL(publicPath, baseUrl).toString();
+}
+function withPublicUrls(results) {
+  return results.map((result) => ({
+    ...result,
+    public_url: publicDocsUrl(result.public_path)
+  }));
+}
+
 // node_modules/.bun/minisearch@7.2.0/node_modules/minisearch/dist/es/index.js
 var ENTRIES = "ENTRIES";
 var KEYS = "KEYS";
@@ -3918,7 +3930,7 @@ var DefaultConfiguration2 = NewConfiguration2();
 
 // packages/tencent-ads-marketing-api-sdk/dist/api/v3/client.js
 var JSONBigStringParser2 = import_json_bigint2.default({ storeAsString: true });
-var SDK_VERSION2 = "1.7.84";
+var SDK_VERSION2 = "1.7.85";
 
 class ApiClient2 {
   basePath = DefaultConfiguration2.basePath;
@@ -4917,7 +4929,7 @@ async function main() {
     limit: args.limit
   });
   if (args.json) {
-    console.log(JSON.stringify({ query, results }, null, 2));
+    console.log(JSON.stringify({ query, results: withPublicUrls(results) }, null, 2));
     return;
   }
   if (results.length === 0) {
@@ -4926,7 +4938,7 @@ async function main() {
   }
   for (const [index2, result] of results.entries()) {
     console.log(`${index2 + 1}. [${result.platform}] ${result.title}`);
-    console.log(`   Doc: ${result.public_path}`);
+    console.log(`   LLMs: ${publicDocsUrl(result.public_path)}`);
     if (result.source_url) {
       console.log(`   Source: ${result.source_url}`);
     }

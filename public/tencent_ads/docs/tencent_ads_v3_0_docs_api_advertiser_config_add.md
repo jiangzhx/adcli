@@ -29,9 +29,11 @@ source_id: tencent_ads_v3_0_docs_api_advertiser_config_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| organization_id* | integer | 业务单元 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| organization_id | integer | 业务单元 id |
 | cover_image_snapshot_type | enum | 封面图截图策略，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#cover_image_snapshot_type) 可选值：{ COVER_IMAGE_SNAPSHOT_TYPE_FIRST_FRAME, COVER_IMAGE_SNAPSHOT_TYPE_SMART_FRAME } |
+| multi_image_collage_status | enum | 多图智拼开关状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#multi_image_collage_status) 可选值：{ MULTI_IMAGE_COLLAGE_STATUS_DISABLE, MULTI_IMAGE_COLLAGE_STATUS_ENABLE } |
+| multi_image_collage_aigc_status | enum | 多图智拼 AIGC 开关状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#multi_image_collage_aigc_status) 可选值：{ MULTI_IMAGE_COLLAGE_AIGC_STATUS_DISABLE, MULTI_IMAGE_COLLAGE_AIGC_STATUS_ENABLE } |
 
 ## 请求示例
 
@@ -64,8 +66,6 @@ curl 'https://api.e.qq.com/v3.0/advertiser_config/add?access_token=<ACCESS_TOKEN
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -37,10 +37,10 @@ source_id: tencent_ads_v3_0_docs_api_adgroups_update_bid_amount
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| update_bid_amount_spec* | struct[] | 更新广告出价条件，数组最大长度 100 数组最大长度 100 |
-| adgroup_id* | int64 | 广告 id |
-| bid_amount* | integer | 广告出价，单位为分，ADX 程序化广告默认填写 200，详见 [\[出价规则\]](https://developers.e.qq.com/docs/start/limit#a5) |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| update_bid_amount_spec* | struct[] | 更新出价条件，数组最大长度 100 数组最大长度 100 |
+| adgroup_id* | int64 | 营销单元 id |
+| bid_amount* | integer | 出价，单位为分，ADX 程序化投放默认填写 200，详见 [\[出价规则\]](https://developers.e.qq.com/docs/start/limit#a5) |
 
 使用说明
 
@@ -79,7 +79,7 @@ curl 'https://api.e.qq.com/v3.0/adgroups/update_bid_amount?access_token=<ACCESS_
 | code | integer | 返回码 |
 | message | string | 英文返回消息 |
 | message_cn | string | 中文返回消息 |
-| adgroup_id | int64 | 广告 id |
+| adgroup_id | int64 | 营销单元 id |
 | fail_id_list | integer[] | 失败的 id 集合 |
 
 ## 应答示例
@@ -107,4 +107,4 @@ curl 'https://api.e.qq.com/v3.0/adgroups/update_bid_amount?access_token=<ACCESS_
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -1,7 +1,7 @@
 {
   "source": "go",
   "sourceModule": "github.com/tencentad/marketing-api-go-sdk",
-  "sourceVersion": "1.7.84",
+  "sourceVersion": "1.7.85",
   "configurations": {
     "v1": {
       "basePath": "https://sandbox-api.e.qq.com/v1.3",
@@ -12,8 +12,8 @@
       "userAgent": "Tencent Ads Marketing API SDK"
     }
   },
-  "apis": 668,
-  "models": 3918,
+  "apis": 665,
+  "models": 3904,
   "skipped": [
     {
       "file": "pkg/api/client.go",

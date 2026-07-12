@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_custom_audience_files_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | audience_id | integer | 人群 id，只能是 CUSTOMER_FILE 类人群 |
 | custom_audience_file_id | integer | 数据文件 id，通过 [\[custom_audience_files\]](https://developers.e.qq.com/v3.0/docs/api/custom_audience_files/add) 模块上传客户人群数据文件获得 |
 | page | integer | 当前页码，最小值 1 默认值：1 |
@@ -113,8 +113,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/custom_audience_files/get?access_token=<AC
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

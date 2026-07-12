@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_programmed_commponent_result_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | material_derive_id* | integer | 衍生全局 id |
 
 使用说明
@@ -50,8 +50,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/programmed_commponent_result/get?access_to
 | --- | --- | --- |
 | material_derive_id | integer | 衍生全局 id |
 | derive_data_version | enum | 衍生数据版本，区分组件化衍生和素材衍生，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#derive_data_version) |
-| dynamic_creative_id | integer | 广告创意 id |
-| adgroup_id | int64 | 广告 id |
+| dynamic_creative_id | integer | 创意 id |
+| adgroup_id | int64 | 营销单元 id |
 | list | struct[] | 衍生成品组件信息列表，数组长度为[0,20] |
 | derive_component_id | integer | 衍生组件 id |
 | origin_component_id | integer | 原始组件 id |
@@ -145,4 +145,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/programmed_commponent_result/get?access_to
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

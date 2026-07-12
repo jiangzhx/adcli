@@ -28,8 +28,8 @@ source_id: tencent_ads_v3_0_docs_api_merge_fund_type_fund_statements_detailed_ge
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| fund_type* | enum | 合并资金账户类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_account_merge_type_map) 可选值：{ FUND_TYPE_AD_RECHARGE, FUND_TYPE_COMPENSATE_VIRTUAL, FUND_TYPE_INTERNAL_QUOTA, FUND_TYPE_TEST_VIRTUAL, FUND_TYPE_TCC_GIFT, FUND_TYPE_SPECIAL_GIFT, FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND, FUND_TYPE_MP_GAME_DEVELOPER_GIFT, FUND_TYPE_FLOW_SOURCE_AD_FUND, FUND_TYPE_ANDROID_ORIENTED_GIFT, FUND_TYPE_LOCATION_PROMOTION_REWARDS, FUND_TYPE_GIFT_RESTRICT, FUND_TYPE_DEBT_FIXED, FUND_TYPE_DEBT_TEMP, FUND_TYPE_SHORT_PLAY_GIFT, FUND_TYPE_GAME_CHARGE_INDIRECT_REWARDS_GIFT, FUND_TYPE_GAME_CHARGE_DIRECT_REWARDS_GIFT, FUND_TYPE_SHORT_PLAY_PUBLISHER_GIFT, FUND_TYPE_MP_GAME_SPECIAL_REWARDS_GIFT, FUND_TYPE_MINIGAME_CREDIT, FUND_TYPE_MP_GAME_PC_TARGET_GIFT, FUND_TYPE_UNSUPPORTED } |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| fund_type* | enum | 合并资金账户类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_account_merge_type_map) 可选值：{ FUND_TYPE_AD_RECHARGE, FUND_TYPE_COMPENSATE_VIRTUAL, FUND_TYPE_INTERNAL_QUOTA, FUND_TYPE_TEST_VIRTUAL, FUND_TYPE_TCC_GIFT, FUND_TYPE_SPECIAL_GIFT, FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND, FUND_TYPE_MP_GAME_DEVELOPER_GIFT, FUND_TYPE_FLOW_SOURCE_AD_FUND, FUND_TYPE_ANDROID_ORIENTED_GIFT, FUND_TYPE_LOCATION_PROMOTION_REWARDS, FUND_TYPE_GIFT_RESTRICT, FUND_TYPE_DEBT_FIXED, FUND_TYPE_DEBT_TEMP, FUND_TYPE_SHORT_PLAY_GIFT, FUND_TYPE_GAME_CHARGE_INDIRECT_REWARDS_GIFT, FUND_TYPE_GAME_CHARGE_DIRECT_REWARDS_GIFT, FUND_TYPE_SHORT_PLAY_PUBLISHER_GIFT, FUND_TYPE_MP_GAME_SPECIAL_REWARDS_GIFT, FUND_TYPE_MINIGAME_CREDIT, FUND_TYPE_MP_GAME_PC_TARGET_GIFT, FUND_TYPE_MP_NEW_GAME_SUBSIDY, FUND_TYPE_INTEGRATED_MARKETING, FUND_TYPE_IAA_SHARED_INCOME_COST, FUND_TYPE_IAP_SHARED_INCOME_COST, FUND_TYPE_UTILITY_PUBLISHER_GIFT, FUND_TYPE_UNSUPPORTED } |
 | date_range* | struct | 日期范围，支持两年内的数据查询 |
 | start_date* | string | 开始日期，日期格式：YYYY-MM-DD，且小于等于 end_date 字段长度为 10 字节 |
 | end_date* | string | 结束日期，日期格式：YYYY-MM-DD，且大于等于 begin_date 字段长度为 10 字节 |
@@ -58,11 +58,11 @@ curl -v -G 'https://api.e.qq.com/v3.0/merge_fund_type_fund_statements_detailed/g
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | fund_type | enum | 资金账户类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_account_type_map) |
 | balance | integer | 余额，单位为分 |
 | time | integer | 交易时间，时间戳 |
-| external_bill_no | string | 调用方订单号，需要有调用方标示前缀，须要保证在同一个广告主下唯一，不支持大写字母 |
+| external_bill_no | string | 调用方订单号，需要有调用方标示前缀，须要保证在同一个客户下唯一，不支持大写字母 |
 | trade_type_ext | enum | 交易类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_trade_type_ext) |
 | amount | integer | 金额，单位为分 |
 | description | string | 描述信息 |
@@ -103,4 +103,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/merge_fund_type_fund_statements_detailed/g
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_qualifications_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | qualification_type* | enum | 资质类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_qualification_type) 可选值：{ INDUSTRY_QUALIFICATION, AD_QUALIFICATION, ADDITIONAL_INDUSTRY_QUALIFICATION } |
 | qualification_spec* | struct | 资质信息 |
 | industry_spec | struct | 行业资质信息，当且仅当 qualification_type=INDUSTRY_QUALIFICATION 时可填且必填 |
@@ -38,22 +38,22 @@ source_id: tencent_ads_v3_0_docs_api_qualifications_add
 | qualification_code* | string | 资质编码，详见 [\[资质编码列表\]](https://developers.e.qq.com/docs/reference/qualification_v5.1) 字段长度为 4 字节 |
 | image_id_list* | string[] | 资质图片 id 列表，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 数组最小长度 1，最大长度 10 字段长度最小 1 字节，长度最大 64 字节 |
 | expand_field_list | struct[] | 资质扩展字段 |
-| field_name* | string | 扩展字段名，参考 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
-| value* | string | 扩展字段值，字段约束详见 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
-| ad_spec | struct | 广告资质信息，当且仅当 qualification_type=AD_QUALIFICATION 时可填且必填 |
+| field_name* | string | 扩展字段名，参考 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
+| value* | string | 扩展字段值，字段约束详见 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
+| ad_spec | struct | 资质信息，当且仅当 qualification_type=AD_QUALIFICATION 时可填且必填 |
 | qualification_code* | string | 资质编码，详见 [\[资质编码列表\]](https://developers.e.qq.com/docs/reference/qualification_v5.1) 字段长度为 4 字节 |
 | image_id_list* | string[] | 资质图片 id 列表，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 数组最小长度 1，最大长度 10 字段长度最小 1 字节，长度最大 64 字节 |
 | expand_field_list | struct[] | 资质扩展字段 |
-| field_name* | string | 扩展字段名，参考 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
-| value* | string | 扩展字段值，字段约束详见 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
+| field_name* | string | 扩展字段名，参考 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
+| value* | string | 扩展字段值，字段约束详见 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
 | additional_industry_spec | struct | 附加行业资质信息，当且仅当 qualification_type=ADDITIONAL_INDUSTRY_QUALIFICATION 时可填且必填 |
 | system_industry_id* | integer | 行业 id，请填写二级行业 id，详见 [\[行业分类\]](https://developers.e.qq.com/v3.0/pages/docs/reference/industry_v6.1) |
 | business_scope_id | integer | 业务范围 id |
 | qualification_code* | string | 资质编码，详见 [\[资质编码列表\]](https://developers.e.qq.com/docs/reference/qualification_v5.1) 字段长度为 4 字节 |
 | image_id_list* | string[] | 资质图片 id 列表，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 数组最小长度 1，最大长度 10 字段长度最小 1 字节，长度最大 64 字节 |
 | expand_field_list | struct[] | 资质扩展字段 |
-| field_name* | string | 扩展字段名，参考 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
-| value* | string | 扩展字段值，字段约束详见 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
+| field_name* | string | 扩展字段名，参考 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
+| value* | string | 扩展字段值，字段约束详见 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
 
 使用说明
 
@@ -129,4 +129,4 @@ curl 'https://api.e.qq.com/v3.0/qualifications/add?access_token=<ACCESS_TOKEN>&t
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

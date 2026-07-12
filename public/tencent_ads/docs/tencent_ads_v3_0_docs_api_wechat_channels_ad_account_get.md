@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_channels_ad_account_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 5 |
 | field* | string | 过滤字段 可选值：{ wechat_channels_ad_account_id, nickname, created_time, last_modified_time } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 nickname 时，可选值：{ EQUALS } 当 field 取值 wechat_channels_ad_account_id 时，可选值：{ EQUALS } 当 field 取值 created_time 时，可选值：{ EQUALS, LESS_EQUALS, LESS, GREATER_EQUALS, GREATER } 当 field 取值 last_modified_time 时，可选值：{ EQUALS, LESS_EQUALS, LESS, GREATER_EQUALS, GREATER } |
@@ -64,7 +64,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_channels_ad_account/get?access_toke
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| wechat_channels_ad_account_id | integer | 视频号广告开户 id |
+| wechat_channels_ad_account_id | integer | 视频号营销开户 id |
 | export_username | string | 视频号账号 id 已废弃 |
 | wechat_bind_auth_token | string | 视频号绑定微信授权 Token |
 | wechat_bind_status | enum | 视频号一键开户微信绑定流程扫码状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#wechat_channels_ad_account_bind_wechat_status) |
@@ -132,8 +132,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_channels_ad_account/get?access_toke
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

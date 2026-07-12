@@ -53,7 +53,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/wallet_get_binding_advertiser/get?access_t
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | wallet_binding_account_list | struct[] | 返回信息列表 |
-| uid | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| uid | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | uname | string | 账户名称 |
 | advertiser_status | string | 账户状态 1-有效 2-待审核 3-审核不通过 4-封停 19-准备中 21-冻结 |
 | bind_status | string | 绑定状态 1-已解绑 2-绑定中 |
@@ -66,8 +66,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/wallet_get_binding_advertiser/get?access_t
 | balance_info_list | struct[] | 资金信息 |
 | fund_type | enum | 资金账户类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_account_type_map) |
 | balance | integer | 余额，单位为分 |
-| industry_id | string | 广告主行业 id |
-| industry_name | string | 广告主行业 |
+| industry_id | string | 客户行业 id |
+| industry_name | string | 客户行业 |
 | advertiser_daily_budget | integer | 账户日预算 |
 | identity_check | boolean | 身份验证状态，true=通过 false=不通过 |
 | deposit_check | boolean | 保证金状态，true=通过 false=不通过 |
@@ -133,4 +133,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/wallet_get_binding_advertiser/get?access_t
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

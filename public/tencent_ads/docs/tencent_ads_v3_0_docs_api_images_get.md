@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_images_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主账户 id，有操作权限的帐号 id，包括代理商和广告主帐号 id ； account_id 和 organization_id 需必填其一 |
+| account_id | integer | 账户 id，有操作权限的帐号 id，包括代理商和账户 id ； account_id 和 organization_id 需必填其一 |
 | organization_id | integer | 业务单元 id，有操作权限的业务单元 id ； account_id 和 organization_id 需必填其一 |
 | filtering | struct[] | 过滤条件，若此 filtering 字段不传 created_time 参数，则默认查询半年内数据，其余参数不传或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 4 |
 | field* | string | 过滤字段 可选值：{ image_signature, image_id, image_width, image_height, created_time, last_modified_time, source_type, product_catalog_id, product_outer_id, owner_account_id, status, image_description, sample_aspect_ratio, first_publication_status, quality_status, similarity_status, aigc_flag } |
@@ -38,6 +38,7 @@ source_id: tencent_ads_v3_0_docs_api_images_get
 | page_size | integer | 一页显示的数据条数 最小值 1，最大值 100 默认值：10 |
 | label_id | integer | 标签 id |
 | business_scenario | integer | 业务场景，1 内容素材包类型，2 投放素材包类型 |
+| need_aigc_flag | boolean | 是否需要返回 AI 标识 可选值：{ true, false } |
 
 ## 请求示例
 
@@ -79,6 +80,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/images/get?access_token=<ACCESS_TOKEN>&tim
 | status | enum | 状态，实体状态枚举，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#ad_status) |
 | sample_aspect_ratio | string | 图片宽高比 默认值：宽高比 |
 | similarity_status | enum | 相似度检测状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#similarity_status) |
+| aigc_flag | enum | AIGC 标识，标记素材的 AI 生产平台，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#aigc_flag) |
 | page_info | struct | 分页配置信息 |
 | page | integer | 搜索页码 默认值：1 |
 | page_size | integer | 一页显示的数据条数 |
@@ -121,4 +123,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/images/get?access_token=<ACCESS_TOKEN>&tim
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

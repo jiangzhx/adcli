@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_qualifications_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | qualification_type* | enum | 资质类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_qualification_type) 可选值：{ INDUSTRY_QUALIFICATION, AD_QUALIFICATION, ADDITIONAL_INDUSTRY_QUALIFICATION } |
 | filtering | struct[] | 过滤条件，此字段不传或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组长度为 1 |
 | field* | string | 过滤字段 可选值：{ qualification_id } |
@@ -67,20 +67,20 @@ curl -v -G 'https://api.e.qq.com/v3.0/qualifications/get?access_token=<ACCESS_TO
 | qualification_code | string | 资质编码，详见 [\[资质编码列表\]](https://developers.e.qq.com/docs/reference/qualification_v5.1) |
 | image_id_list | string[] | 资质图片 id 列表，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 |
 | expand_field_list | struct[] | 资质扩展字段 |
-| field_name | string | 扩展字段名，参考 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
-| value | string | 扩展字段值，字段约束详见 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
+| field_name | string | 扩展字段名，参考 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
+| value | string | 扩展字段值，字段约束详见 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
 | qualification_status | enum | 资质状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_qualification_status) |
 | expired_date | string | 资质有效日期，日期格式：YYYY-MM-DD，空代表永久有效 |
 | reject_message | string | 审核消息 |
 | created_time | integer | 创建时间，时间戳 |
 | last_modified_time | integer | 最后修改时间，时间戳 |
-| ad_qualifications | struct[] | 广告资质信息 |
+| ad_qualifications | struct[] | 资质信息 |
 | qualification_id | integer | 资质 id |
 | qualification_code | string | 资质编码，详见 [\[资质编码列表\]](https://developers.e.qq.com/docs/reference/qualification_v5.1) |
 | image_id_list | string[] | 资质图片 id 列表，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 |
 | expand_field_list | struct[] | 资质扩展字段 |
-| field_name | string | 扩展字段名，参考 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
-| value | string | 扩展字段值，字段约束详见 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
+| field_name | string | 扩展字段名，参考 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
+| value | string | 扩展字段值，字段约束详见 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
 | qualification_status | enum | 资质状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_qualification_status) |
 | expired_date | string | 资质有效日期，日期格式：YYYY-MM-DD，空代表永久有效 |
 | is_mdm_shared | enum | 资质共享状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_ad_qualification_shared_status) |
@@ -94,8 +94,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/qualifications/get?access_token=<ACCESS_TO
 | qualification_code | string | 资质编码，详见 [\[资质编码列表\]](https://developers.e.qq.com/docs/reference/qualification_v5.1) |
 | image_id_list | string[] | 资质图片 id 列表，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 |
 | expand_field_list | struct[] | 资质扩展字段 |
-| field_name | string | 扩展字段名，参考 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
-| value | string | 扩展字段值，字段约束详见 [\[获取广告主资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
+| field_name | string | 扩展字段名，参考 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) 返回的 field_name |
+| value | string | 扩展字段值，字段约束详见 [\[获取客户资质结构接口\]](https://developers.e.qq.com/v3.0/docs/api/qualification_structure/get) |
 | qualification_status | enum | 资质状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_qualification_status) |
 | expired_date | string | 资质有效日期，日期格式：YYYY-MM-DD，空代表永久有效 |
 | reject_message | string | 审核消息 |
@@ -150,4 +150,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/qualifications/get?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

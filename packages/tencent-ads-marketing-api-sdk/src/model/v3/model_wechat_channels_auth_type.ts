@@ -10,6 +10,7 @@ export const WechatChannelsAuthType = {
   CUSTOMER_MANAGER: "CUSTOMER_MANAGER",
   CUSTOMER_BUSINESS_UNIT: "CUSTOMER_BUSINESS_UNIT",
   GROUP_BUSINESS_UNIT: "GROUP_BUSINESS_UNIT",
+  WECHAT_SHOP_LEAGUE: "WECHAT_SHOP_LEAGUE",
 } as const;
 
 export type WechatChannelsAuthType = typeof WechatChannelsAuthType[keyof typeof WechatChannelsAuthType];

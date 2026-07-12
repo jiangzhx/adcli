@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_user_organization_authentication_get
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | user_token* | string | 用户实名令牌 字段长度最小 1 字节，长度最大 128 字节 |
-| account_id_list* | integer[] | 广告主账号 id 列表 数组最小长度 1，最大长度 100 |
+| account_id_list* | integer[] | 账户 id 列表 数组最小长度 1，最大长度 100 |
 
 ## 请求示例
 
@@ -45,7 +45,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/user_organization_authentication/get?acces
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| account_id | integer | 广告主账号 id |
+| account_id | integer | 账户 id |
 | authentication_status | enum | 组织认证状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#organization_authentication_status) |
 
 ## 应答示例
@@ -69,4 +69,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/user_organization_authentication/get?acces
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

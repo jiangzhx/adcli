@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_async_tasks_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 10 |
 | field* | string | 过滤字段 可选值：{ task_id, task_name, task_type, result_status, status } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 task_id 时，可选值：{ EQUALS, IN } 当 field 取值 task_name 时，可选值：{ EQUALS, CONTAINS } 当 field 取值 task_type 时，可选值：{ EQUALS, IN } 当 field 取值 result_status 时，可选值：{ EQUALS, IN } 当 field 取值 status 时，可选值：{ EQUALS, IN } |
@@ -79,7 +79,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/async_tasks/get?access_token=<ACCESS_TOKEN
 | last_modified_time | integer | 最后修改时间，时间戳 |
 | channel_package_id | string | 渠道包 id |
 | union_channel_package_info_list | struct[] |  |
-| android_union_app_id | integer | 广告包 APP id，大于等于 0 |
+| android_union_app_id | integer | 投放包 APP id，大于等于 0 |
 | package_name | string | 渠道包名称 |
 | status | enum | 渠道包任务处理状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#union_channel_task_status) |
 | created_time | integer |  |
@@ -156,4 +156,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/async_tasks/get?access_token=<ACCESS_TOKEN
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

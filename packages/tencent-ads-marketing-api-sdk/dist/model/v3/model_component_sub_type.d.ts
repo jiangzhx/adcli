@@ -30,6 +30,7 @@ export declare const ComponentSubType: {
     readonly SEARCH_LIST_SUBLINK: "SEARCH_LIST_SUBLINK";
     readonly SEARCH_MDPA_TITLE: "SEARCH_MDPA_TITLE";
     readonly SEARCH_MDPA_DESCRIPTION: "SEARCH_MDPA_DESCRIPTION";
+    readonly SEARCH_DOCTOR_CARD: "SEARCH_DOCTOR_CARD";
     readonly VIDEO_16_X9: "VIDEO_16X9";
     readonly VIDEO_9_X16: "VIDEO_9X16";
     readonly VIDEO_4_X3: "VIDEO_4X3";
@@ -108,6 +109,7 @@ export declare const ComponentSubType: {
     readonly AUDIO: "AUDIO";
     readonly WECHAT_SHOP_ACTIVITY_BULK_BUY: "WECHAT_SHOP_ACTIVITY_BULK_BUY";
     readonly WXGAME_DIRECT_PAGE: "WXGAME_DIRECT_PAGE";
+    readonly CHANNELS_LIVE_FEED: "CHANNELS_LIVE_FEED";
     readonly VIDEO_LIST_FLEX_N: "VIDEO_LIST_FLEX_N";
     readonly BRAND: "BRAND";
     readonly BRAND_PAGE: "BRAND_PAGE";

@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_channels_authorization_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | wechat_channels_account_name | string | 视频号名称 字段长度最小 0 字节，长度最大 255 字节 |
 | page | integer | 搜索页码 最小值 1，最大值 99999 默认值：1 |
 | page_size | integer | 一页显示的数据条数 最小值 1，最大值 100 默认值：10 |
@@ -76,11 +76,11 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_channels_authorization/get?access_t
 | audit_msg | string | 审核原因 |
 | authorization_type | enum | 授权类型，(已废弃)，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#wechat_channels_auth_type) |
 | authorization_scope | enum | 授权范围，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#wechat_channels_auth_scope) |
-| is_ad_acct | boolean | 是否包含广告专用视频号账户，(只读) |
+| is_ad_acct | boolean | 是否包含营销专用视频号账户，(只读) |
 | wechat_channels_account_icon | string | 视频号头像 |
 | wechat_channels_account_id | string | 视频号账号 id |
-| is_blocked | boolean | 是否被限流，视频号信用分低于 85 分或处于禁播、限流等限制投放的状态，不可投放视频号直播 |
-| is_private | boolean | 是否设为私密，视频号设为私密，不可用于广告投放 |
+| is_blocked | boolean | 是否被限流，视频号处于禁播、限流等限制投放的状态，不可投放视频号直播 |
+| is_private | boolean | 是否设为私密，视频号设为私密，不可用于投放 |
 | logout_time_second | integer | 预期注销时间，unix 时间戳，精确到秒 |
 | created_source_list | enum[] | 视频号创建来源列表，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_created_source_type) |
 | authorization_qr_code_url | string | 授权码图片链接，扫码后在微信打开 |
@@ -119,4 +119,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/wechat_channels_authorization/get?access_t
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

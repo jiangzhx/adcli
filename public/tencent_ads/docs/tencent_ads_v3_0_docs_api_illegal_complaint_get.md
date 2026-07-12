@@ -1,11 +1,11 @@
 ---
-title: 获取直客广告主违规申述列表 全部接口
+title: 获取直客客户违规申述列表 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/get
 doc_id: tencent_ads_v3_0_docs_api_illegal_complaint_get
 source_id: tencent_ads_v3_0_docs_api_illegal_complaint_get
 ---
-# 获取直客广告主违规申述列表 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 获取直客客户违规申述列表 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_illegal_complaint_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id_list* | integer[] | 广告主账号列表，token 可操作有权限管理的所有广告主 数组最小长度 1，最大长度 700 |
+| account_id_list* | integer[] | 账户列表，token 可操作有权限管理的所有客户 数组最小长度 1，最大长度 700 |
 | illegal_level_list | array | 违规等级列表 数组最小长度 1，最大长度 100 |
 | action_type_list | array | 处罚动作列表 数组最小长度 1，最大长度 100 |
 | illegal_reason | string | 处罚原因 |
@@ -73,12 +73,12 @@ curl 'https://api.e.qq.com/v3.0/illegal_complaint/get?access_token=<ACCESS_TOKEN
 | page_size | integer | 一页显示的数据条数 默认值：10 |
 | total_number | integer | 总条数 |
 | total_page | integer | 总页数 |
-| list | struct[] | 返回广告主违规申述信息列表 |
+| list | struct[] | 返回客户违规申述信息列表 |
 | illegal_order_id | string | 违规单 id |
-| advertiser_account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
-| advertiser_name | string | 广告主名称 |
-| first_industry | string | 广告主一级行业 |
-| second_industry | string | 广告主二级行业 |
+| advertiser_account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
+| advertiser_name | string | 客户名称 |
+| first_industry | string | 客户一级行业 |
+| second_industry | string | 客户二级行业 |
 | action_type | integer | 处罚动作 |
 | illegal_time | string | 时间，格式为 yyyy-MM-dd HH:mm:ss,如 2025-07-01 10:42:56 |
 | illegal_level | integer | 违规等级 |
@@ -112,6 +112,8 @@ curl 'https://api.e.qq.com/v3.0/illegal_complaint/get?access_token=<ACCESS_TOKEN
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

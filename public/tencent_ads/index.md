@@ -1,15 +1,15 @@
 # tencent_ads Docs Index
 
-Total documents: 410
+Total documents: 411
 
 - [获取客户关联的补贴账号 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_account_subsidy_get.md) - https://developers.e.qq.com/v3.0/docs/api/account_subsidy/get
-- [获取广告主新版 API 投放状态版本 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_account_version_get.md) - https://developers.e.qq.com/v3.0/docs/api/account_version/get
+- [获取客户新版 API 投放状态版本 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_account_version_get.md) - https://developers.e.qq.com/v3.0/docs/api/account_version/get
 - [获取创意标签 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_ad_label_get.md) - https://developers.e.qq.com/v3.0/docs/api/ad_label/get
 - [获取词包 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_ad_param_get.md) - https://developers.e.qq.com/v3.0/docs/api/ad_param/get
-- [联盟广告位报表接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_ad_union_reports_get.md) - https://developers.e.qq.com/v3.0/docs/api/ad_union_reports/get
-- [绑定广告预览受众 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_adcreative_previews_add.md) - https://developers.e.qq.com/v3.0/docs/api/adcreative_previews/add
-- [获取绑定的广告预览受众列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_adcreative_previews_get.md) - https://developers.e.qq.com/v3.0/docs/api/adcreative_previews/get
-- [获取广告预览二维码 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_adcreative_previews_qrcode_get.md) - https://developers.e.qq.com/v3.0/docs/api/adcreative_previews_qrcode/get
+- [联盟营销位报表接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_ad_union_reports_get.md) - https://developers.e.qq.com/v3.0/docs/api/ad_union_reports/get
+- [绑定营销预览受众 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_adcreative_previews_add.md) - https://developers.e.qq.com/v3.0/docs/api/adcreative_previews/add
+- [获取绑定的营销预览受众列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_adcreative_previews_get.md) - https://developers.e.qq.com/v3.0/docs/api/adcreative_previews/get
+- [获取营销单元预览二维码 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_adcreative_previews_qrcode_get.md) - https://developers.e.qq.com/v3.0/docs/api/adcreative_previews_qrcode/get
 - [新增否定词 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroup_negativewords_add.md) - https://developers.e.qq.com/v3.0/docs/api/adgroup_negativewords/add
 - [查询否定词 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroup_negativewords_get.md) - https://developers.e.qq.com/v3.0/docs/api/adgroup_negativewords/get
 - [更新否定词 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_adgroup_negativewords_update.md) - https://developers.e.qq.com/v3.0/docs/api/adgroup_negativewords/update
@@ -38,6 +38,10 @@ Total documents: 410
 - [服务商当日分账户实时消耗 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_realtime_cost_get.md) - https://developers.e.qq.com/v3.0/docs/api/agency_realtime_cost/get
 - [获取代理商创建的共享钱包信息列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_agency_wallet_list_get.md) - https://developers.e.qq.com/v3.0/docs/api/agency_wallet_list/get
 - [获取 Android 渠道包 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_android_channel_get.md) - https://developers.e.qq.com/v3.0/docs/api/android_channel/get
+- [资产权限授予 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_asset_permissions_add.md) - https://developers.e.qq.com/v3.0/docs/api/asset_permissions/add
+- [资产权限回收 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_asset_permissions_delete.md) - https://developers.e.qq.com/v3.0/docs/api/asset_permissions/delete
+- [获取待确认接收授权列表接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_asset_pre_permissions_get.md) - https://developers.e.qq.com/v3.0/docs/api/asset_pre_permissions/get
+- [资产预授权确认 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_asset_pre_permissions_update.md) - https://developers.e.qq.com/v3.0/docs/api/asset_pre_permissions/update
 - [获取创意资产相似度检测详情 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_asset_similarity_detail_get.md) - https://developers.e.qq.com/v3.0/docs/api/asset_similarity_detail/get
 - [更新创意资产相似度 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_asset_similarity_detail_update.md) - https://developers.e.qq.com/v3.0/docs/api/asset_similarity_detail/update
 - [获取文件接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_async_report_files_get.md) - https://developers.e.qq.com/v3.0/docs/api/async_report_files/get
@@ -96,7 +100,7 @@ Total documents: 410
 - [获取创意相关建议 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_creative_recommend_get.md) - https://developers.e.qq.com/v3.0/docs/api/creative_recommend/get
 - [获取创意形式详情 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_creative_template_get.md) - https://developers.e.qq.com/v3.0/docs/api/creative_template/get
 - [获取创意形式列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_creative_template_list_get.md) - https://developers.e.qq.com/v3.0/docs/api/creative_template_list/get
-- [获取广告创意预览 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_creative_template_previews_get.md) - https://developers.e.qq.com/v3.0/docs/api/creative_template_previews/get
+- [获取创意预览 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_creative_template_previews_get.md) - https://developers.e.qq.com/v3.0/docs/api/creative_template_previews/get
 - [获取创意文案 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_creativetools_text_get.md) - https://developers.e.qq.com/v3.0/docs/api/creativetools_text/get
 - [人群覆盖数预估 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_custom_audience_estimations_get.md) - https://developers.e.qq.com/v3.0/docs/api/custom_audience_estimations/get
 - [上传客户人群数据文件 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_custom_audience_files_add.md) - https://developers.e.qq.com/v3.0/docs/api/custom_audience_files/add
@@ -110,19 +114,17 @@ Total documents: 410
 - [数据源分发关系获取 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_data_source_dispatch_get.md) - https://developers.e.qq.com/v3.0/docs/api/data_source_dispatch/get
 - [获取创意资产总结 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dc_component_summary_info_get.md) - https://developers.e.qq.com/v3.0/docs/api/dc_component_summary_info/get
 - [获取动态商品图片模板 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_image_templates_get.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_image_templates/get
-- [创建用于广告投放的动态广告图片 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_images_add.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_images/add
-- [获取动态广告图片信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_images_get.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_images/get
-- [创建用于广告投放的动态广告视频 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_video_add.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_video/add
-- [获取广告投放的动态广告视频 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_video_get.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_video/get
+- [创建用于投放的动态营销图片 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_images_add.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_images/add
+- [获取动态营销图片信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_images_get.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_images/get
+- [创建用于投放的动态投放视频 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_video_add.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_video/add
+- [获取投放的动态营销视频 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_video_get.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_video/get
 - [获取动态商品视频模板 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_ad_video_templates_get.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_ad_video_templates/get
 - [3.0 创意绑定在线预览 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creative_previews_add.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_creative_previews/add
 - [查询动态创意审核结果 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creative_review_results_get.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_creative_review_results/get
 - [创建动态创意 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creatives_add.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/add
-- [删除广告创意 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creatives_delete.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/delete
+- [删除创意 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creatives_delete.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/delete
 - [获取动态创意 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creatives_get.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/get
 - [更新创意 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_dynamic_creatives_update.md) - https://developers.e.qq.com/v3.0/docs/api/dynamic_creatives/update
-- [获取订单 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_ecommerce_order_get.md) - https://developers.e.qq.com/v3.0/docs/api/ecommerce_order/get
-- [更新订单 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_ecommerce_order_update.md) - https://developers.e.qq.com/v3.0/docs/api/ecommerce_order/update
 - [获取元素申诉复审配额 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_element_appeal_quota_get.md) - https://developers.e.qq.com/v3.0/docs/api/element_appeal_quota/get
 - [发起元素申诉复审 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_element_appeal_review_add.md) - https://developers.e.qq.com/v3.0/docs/api/element_appeal_review/add
 - [获取元素申诉复审结果 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_element_appeal_review_get.md) - https://developers.e.qq.com/v3.0/docs/api/element_appeal_review/get
@@ -141,8 +143,8 @@ Total documents: 410
 - [获取游戏 App 特征 V6 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_game_feature_v6_get.md) - https://developers.e.qq.com/v3.0/docs/api/game_feature_v6/get
 - [获取游戏中心礼包 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_get_wx_game_app_gift_pack_get.md) - https://developers.e.qq.com/v3.0/docs/api/get_wx_game_app_gift_pack/get
 - [获取小时报表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_hourly_reports_get.md) - https://developers.e.qq.com/v3.0/docs/api/hourly_reports/get
-- [新增广告主违规申述 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_illegal_complaint_add.md) - https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/add
-- [获取直客广告主违规申述列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_illegal_complaint_get.md) - https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/get
+- [新增客户违规申述 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_illegal_complaint_add.md) - https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/add
+- [获取直客客户违规申述列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_illegal_complaint_get.md) - https://developers.e.qq.com/v3.0/docs/api/illegal_complaint/get
 - [进行图片处理 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_image_processing_add.md) - https://developers.e.qq.com/v3.0/docs/api/image_processing/add
 - [添加图片文件 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_images_add.md) - https://developers.e.qq.com/v3.0/docs/api/images/add
 - [删除图片 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_images_delete.md) - https://developers.e.qq.com/v3.0/docs/api/images/delete
@@ -194,7 +196,6 @@ Total documents: 410
 - [获取可投放推广内容资产列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_assets_get.md) - https://developers.e.qq.com/v3.0/docs/api/marketing_target_assets/get
 - [更新推广内容资产 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_assets_update.md) - https://developers.e.qq.com/v3.0/docs/api/marketing_target_assets/update
 - [获取可投放推广内容资产类型名称 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_marketing_target_types_get.md) - https://developers.e.qq.com/v3.0/docs/api/marketing_target_types/get
-- [素材标注 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_ai_annotation_add.md) - https://developers.e.qq.com/v3.0/docs/api/material_ai_annotation/add
 - [提交异步任务 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_async_tasks_add.md) - https://developers.e.qq.com/v3.0/docs/api/material_async_tasks/add
 - [获取异步任务 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_async_tasks_get.md) - https://developers.e.qq.com/v3.0/docs/api/material_async_tasks/get
 - [素材 DCA 集合绑定新增 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_material_dcaset_add.md) - https://developers.e.qq.com/v3.0/docs/api/material_dcaset/add
@@ -209,15 +210,11 @@ Total documents: 410
 - [获取资金合并类型资金流水 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_merge_fund_type_fund_statements_detailed_get.md) - https://developers.e.qq.com/v3.0/docs/api/merge_fund_type_fund_statements_detailed/get
 - [获取资金合并类型资金账户信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_merge_fund_type_funds_get.md) - https://developers.e.qq.com/v3.0/docs/api/merge_fund_type_funds/get
 - [资金合并类型同商务管家子客间转账 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_merge_fund_type_subcustomer_transfer_add.md) - https://developers.e.qq.com/v3.0/docs/api/merge_fund_type_subcustomer_transfer/add
-- [选择并保存妙思 AI 素材接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_ai_material_add.md) - https://developers.e.qq.com/v3.0/docs/api/muse_ai_material/add
-- [创建妙思任务接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_ai_task_add.md) - https://developers.e.qq.com/v3.0/docs/api/muse_ai_task/add
-- [获取妙思任务结果接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_ai_task_get.md) - https://developers.e.qq.com/v3.0/docs/api/muse_ai_task/get
-- [二次编辑素材回传接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_ai_ugc_add.md) - https://developers.e.qq.com/v3.0/docs/api/muse_ai_ugc/add
 - [获取妙思版权音频列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_audios_get.md) - https://developers.e.qq.com/v3.0/docs/api/muse_audios/get
 - [查询生成偏好设置 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_muse_derive_switch_settings_get.md) - https://developers.e.qq.com/v3.0/docs/api/muse_derive_switch_settings/get
-- [新增否定词，可在广告、创意上新增 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_negativewords_add.md) - https://developers.e.qq.com/v3.0/docs/api/negativewords/add
-- [查询否定词，可查询广告、创意的否词 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_negativewords_get.md) - https://developers.e.qq.com/v3.0/docs/api/negativewords/get
-- [更新否定词，可在广告、创意上更新 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_negativewords_update.md) - https://developers.e.qq.com/v3.0/docs/api/negativewords/update
+- [新增否定词，可在营销单元、创意上新增 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_negativewords_add.md) - https://developers.e.qq.com/v3.0/docs/api/negativewords/add
+- [查询否定词，可查询营销单元、创意的否词 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_negativewords_get.md) - https://developers.e.qq.com/v3.0/docs/api/negativewords/get
+- [更新否定词，可在营销单元、创意上更新 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_negativewords_update.md) - https://developers.e.qq.com/v3.0/docs/api/negativewords/update
 - [获取 Authorization Code 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_oauth_authorize.md) - https://developers.e.qq.com/v3.0/docs/api/oauth/authorize
 - [刷新 Refresh Token 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_oauth_refresh_token.md) - https://developers.e.qq.com/v3.0/docs/api/oauth/refresh_token
 - [通过 Authorization Code 获取 Access Token 或刷新 Access Token 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_oauth_token.md) - https://developers.e.qq.com/v3.0/docs/api/oauth/token
@@ -232,6 +229,8 @@ Total documents: 410
 - [查询优化目标权限 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_optimization_goal_permissions_get.md) - https://developers.e.qq.com/v3.0/docs/api/optimization_goal_permissions/get
 - [查询组织下账户信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_organization_account_relation_get.md) - https://developers.e.qq.com/v3.0/docs/api/organization_account_relation/get
 - [获取落地页列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_pages_get.md) - https://developers.e.qq.com/v3.0/docs/api/pages/get
+- [异步预审任务提交 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_pre_review_task_add.md) - https://developers.e.qq.com/v3.0/docs/api/pre_review_task/add
+- [异步预审结果获取 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_pre_review_task_get.md) - https://developers.e.qq.com/v3.0/docs/api/pre_review_task/get
 - [创建商品库 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_catalogs_add.md) - https://developers.e.qq.com/v3.0/docs/api/product_catalogs/add
 - [获取商品库 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_catalogs_get.md) - https://developers.e.qq.com/v3.0/docs/api/product_catalogs/get
 - [获取商品类目 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_product_categories_list_get.md) - https://developers.e.qq.com/v3.0/docs/api/product_categories_list/get
@@ -257,9 +256,9 @@ Total documents: 410
 - [获取模板预览接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_get.md) - https://developers.e.qq.com/v3.0/docs/api/programmed/get
 - [获取衍生素材映射关系接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_material_mappings_get.md) - https://developers.e.qq.com/v3.0/docs/api/programmed_material_mappings/get
 - [获取模板列表接口 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_programmed_template_get.md) - https://developers.e.qq.com/v3.0/docs/api/programmed_template/get
-- [获取计量处罚明细 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_punish_detail_get.md) - https://developers.e.qq.com/v3.0/docs/api/punish_detail/get
-- [获取处罚指标数据 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_punish_metrics_get.md) - https://developers.e.qq.com/v3.0/docs/api/punish_metrics/get
-- [获取处罚 UID 维度指标数据 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_punish_uid_metrics_get.md) - https://developers.e.qq.com/v3.0/docs/api/punish_uid_metrics/get
+- [获取素材计量治理明细数据 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_punish_detail_get.md) - https://developers.e.qq.com/v3.0/docs/api/punish_detail/get
+- [获取素材计量治理指标数据 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_punish_metrics_get.md) - https://developers.e.qq.com/v3.0/docs/api/punish_metrics/get
+- [获取素材计量治理账户指标数据 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_punish_uid_metrics_get.md) - https://developers.e.qq.com/v3.0/docs/api/punish_uid_metrics/get
 - [获取处罚系统配置 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_punishment_config_get.md) - https://developers.e.qq.com/v3.0/docs/api/punishment_config/get
 - [获取违规处罚列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_punishment_query_get.md) - https://developers.e.qq.com/v3.0/docs/api/punishment_query/get
 - [全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_qualification_images_add.md) - https://developers.e.qq.com/v3.0/docs/api/qualification_images/add
@@ -314,15 +313,13 @@ Total documents: 410
 - [获取视频文件 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_videos_get.md) - https://developers.e.qq.com/v3.0/docs/api/videos/get
 - [修改视频信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_videos_update.md) - https://developers.e.qq.com/v3.0/docs/api/videos/update
 - [通过钱包 id 去查询共享钱包基础信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_basic_info_get.md) - https://developers.e.qq.com/v3.0/docs/api/wallet_basic_info/get
-- [共享钱包绑定或解绑广告账户 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_bind_advertiser_add.md) - https://developers.e.qq.com/v3.0/docs/api/wallet_bind_advertiser/add
+- [共享钱包绑定或解绑投放账户 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_bind_advertiser_add.md) - https://developers.e.qq.com/v3.0/docs/api/wallet_bind_advertiser/add
 - [新建共享钱包 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_create_add.md) - https://developers.e.qq.com/v3.0/docs/api/wallet_create/add
 - [编辑共享钱包基础信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_edit_add.md) - https://developers.e.qq.com/v3.0/docs/api/wallet_edit/add
 - [获取钱包信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_get.md) - https://developers.e.qq.com/v3.0/docs/api/wallet/get
 - [查询单个共享钱包下的关联账户信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_get_binding_advertiser_get.md) - https://developers.e.qq.com/v3.0/docs/api/wallet_get_binding_advertiser/get
 - [共享钱包流水相关信息查询 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_invoice_get.md) - https://developers.e.qq.com/v3.0/docs/api/wallet_invoice/get
 - [发起代理商与钱包之间转账 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wallet_transfer_add.md) - https://developers.e.qq.com/v3.0/docs/api/wallet_transfer/add
-- [批量添加警示语 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_watermarks_add.md) - https://developers.e.qq.com/v3.0/docs/api/watermarks/add
-- [查询警示语添加记录 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_watermarks_get.md) - https://developers.e.qq.com/v3.0/docs/api/watermarks/get
 - [获取视频号列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_accounts_get.md) - https://developers.e.qq.com/v3.0/docs/api/wechat_channels_accounts/get
 - [视频号开户 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_add.md) - https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account/add
 - [视频号开户资质上传 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_channels_ad_account_certification_file_add.md) - https://developers.e.qq.com/v3.0/docs/api/wechat_channels_ad_account_certification_file/add
@@ -354,6 +351,10 @@ Total documents: 410
 - [查询微信小店信息 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_shop_get.md) - https://developers.e.qq.com/v3.0/docs/api/wechat_shop/get
 - [获取微信小店商品库 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_store_catalogs_get.md) - https://developers.e.qq.com/v3.0/docs/api/wechat_store_catalogs/get
 - [获取微信小店商品 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wechat_store_product_items_get.md) - https://developers.e.qq.com/v3.0/docs/api/wechat_store_product_items/get
+- [创建获客链接 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wecom_customer_acquisition_link_add.md) - https://developers.e.qq.com/v3.0/docs/api/wecom_customer_acquisition_link/add
+- [查询获客链接列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wecom_customer_acquisition_link_get.md) - https://developers.e.qq.com/v3.0/docs/api/wecom_customer_acquisition_link/get
+- [更新获客链接 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wecom_customer_acquisition_link_update.md) - https://developers.e.qq.com/v3.0/docs/api/wecom_customer_acquisition_link/update
+- [查询部门用户列表 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wecom_department_user_get.md) - https://developers.e.qq.com/v3.0/docs/api/wecom_department_user/get
 - [获取落地页通配符 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wildcards_get.md) - https://developers.e.qq.com/v3.0/docs/api/wildcards/get
 - [获取微信小游戏试玩页 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_wx_game_playable_page_get.md) - https://developers.e.qq.com/v3.0/docs/api/wx_game_playable_page/get
 - [获取蹊径落地页互动模板配置 全部接口](/tencent_ads/docs/tencent_ads_v3_0_docs_api_xijing_complex_template_get.md) - https://developers.e.qq.com/v3.0/docs/api/xijing_complex_template/get

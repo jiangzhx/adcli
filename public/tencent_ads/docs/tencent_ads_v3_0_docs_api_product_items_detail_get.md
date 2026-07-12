@@ -28,9 +28,9 @@ source_id: tencent_ads_v3_0_docs_api_product_items_detail_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | product_catalog_id* | integer | 商品库 id |
-| product_outer_id* | string | 广告主商品 id 字段长度最小 1 字节，长度最大 255 字节 |
+| product_outer_id* | string | 客户商品 id 字段长度最小 1 字节，长度最大 255 字节 |
 
 ## 请求示例
 
@@ -57,7 +57,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/product_items_detail/get?access_token=<ACC
 | product_verification_status | enum | 商品校验结果状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#product_verification_status) |
 | product_verification_message | string | 商品校验结果描述 |
 | product_item_spec | struct | 商品信息 |
-| product_outer_id | string | 广告主商品 id |
+| product_outer_id | string | 客户商品 id |
 | product_name | string | 商品名称 |
 | description | string | 商品描述 |
 | created_time | string | 商品创建时间 |
@@ -96,7 +96,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/product_items_detail/get?access_token=<ACC
 | end_time | string | 促销价结束时间 |
 | sales_volume | integer | 已售卖数 |
 | stock_volume | integer | 库存数 |
-| slogan | string | 广告语 |
+| slogan | string | 营销语 |
 | custom_label | string[] | 自定义标签 |
 | first_category_id | integer | 一级分类 id |
 | second_category_id | integer | 二级分类 id |
@@ -266,6 +266,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/product_items_detail/get?access_token=<ACC
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

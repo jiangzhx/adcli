@@ -1,4 +1,4 @@
-export declare const SDK_VERSION = "1.7.84";
+export declare const SDK_VERSION = "1.7.85";
 export declare class ApiClient {
     private basePath;
     private readonly fetchImpl;

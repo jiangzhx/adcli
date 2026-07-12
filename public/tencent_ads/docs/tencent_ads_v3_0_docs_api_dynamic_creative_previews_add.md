@@ -29,8 +29,8 @@ source_id: tencent_ads_v3_0_docs_api_dynamic_creative_previews_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| dynamic_creative_id* | integer | 广告创意 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| dynamic_creative_id* | integer | 创意 id |
 | preview_creative_components | struct | 通过指定视频/图片组件以及文案组件的组件 id 指定要预览的组件组合 |
 | resource_component_id | integer | 指定要预览的视频/图片组件 id |
 | text_component_id | integer | 指定要预览的文案组件 id |
@@ -61,7 +61,7 @@ curl 'https://api.e.qq.com/v3.0/dynamic_creative_previews/add?access_token=<ACCE
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | trace_id | string | 追查问题 trace_id |
 | wx_fail_user_name_list | string[] | 预览失败的微信账号 id 列表 |
 
@@ -85,4 +85,4 @@ curl 'https://api.e.qq.com/v3.0/dynamic_creative_previews/add?access_token=<ACCE
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_videos_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主账户 id，有操作权限的帐号 id，包括代理商和广告主帐号 id ； account_id 和 organization_id 需必填其一 |
+| account_id | integer | 账户 id，有操作权限的帐号 id，包括代理商和账户 id ； account_id 和 organization_id 需必填其一 |
 | organization_id | integer | 业务单元 id，有操作权限的业务单元 id ； account_id 和 organization_id 需必填其一 |
 | video_file* | file | 被上传的视频文件，视频二进制流，支持上传的视频文件类型为：mp4、mov、avi, 最大支持 100M 视频上传 |
 | signature* | string | 视频文件签名 字段长度为 32 字节 |
@@ -77,6 +77,8 @@ curl 'https://api.e.qq.com/v3.0/videos/add?access_token=<ACCESS_TOKEN>&timestamp
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

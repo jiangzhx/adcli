@@ -128,4 +128,4 @@ curl 'https://api.e.qq.com/v3.0/muse_audios/get?access_token=<ACCESS_TOKEN>&time
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

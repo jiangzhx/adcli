@@ -1,7 +1,7 @@
 // Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_videos_get_list_struct.go
 // Do not edit manually.
 
-import type { MediaSourceType, MediaStatusType, MediaSystemStatus, MediaType, SimilarityStatus } from "../v3/index";
+import type { AigcFlag, MediaSourceType, MediaStatusType, MediaSystemStatus, MediaType, SimilarityStatus } from "../v3/index";
 
 export interface VideosGetListStruct {
   video_id?: number | string;
@@ -37,5 +37,7 @@ export interface VideosGetListStruct {
   owner_account_id?: string;
   status?: MediaStatusType;
   similarity_status?: SimilarityStatus;
+  aigc_flag?: AigcFlag;
+  cover_id?: string;
 }
 

@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_xijing_template_list_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | page_template_id* | string | 蹊径落地页模板 id，公共的营销模板 id，或有权限的私有模板 id 字段长度最小 1 字节，长度最大 32 字节 |
 | is_interaction | boolean | 是否互动模板 可选值：{ true, false } 默认值：false |
 | is_public | boolean | 是否公共模板 可选值：{ true, false } 默认值：true |
@@ -55,7 +55,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/xijing_template_list/get?access_token=<ACC
 | --- | --- | --- |
 | list | struct[] | 蹊径模板返回数据结构 |
 | page_template_id | string | 蹊径落地页模板 id，公共的营销模板 id，或有权限的私有模板 id |
-| template_owner_id | integer | 授权模板的拥有者 id，包括代理商和广告主帐号 id |
+| template_owner_id | integer | 授权模板的拥有者 id，包括代理商和账户 id |
 | page_template_name | string | 模板名称 |
 | page_template_cover_url | string | 模板封面图 |
 | playable_type | enum | 互动落地页类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#x_j_playable_type) |
@@ -103,4 +103,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/xijing_template_list/get?access_token=<ACC
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

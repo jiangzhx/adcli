@@ -1,7 +1,7 @@
 // Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_component_value.go
 // Do not edit manually.
 
-import type { ActionButtonComponent, AppGiftPackCodeComponent, AppPromotionVideoComponent, BarrageComponent, BrandComponent, ChosenButtonComponent, ConsultComponent, CountDownComponent, DescriptionComponent, ElementStoryComponent, EndPageComponent, FloatingZoneComponent, FloatingZoneListComponent, FormComponent, ImageComponent, ImageListComponent, ImageShowcaseComponent, JumpinfoComponent, LabelComponent, LivingDescComponent, MarketingPendantComponent, MiniCardLinkComponent, PhoneComponent, ShopImageComponent, ShortVideoComponent, ShowDataComponent, SocialSkillComponent, TextLinkComponent, TitleComponent, VideoChannelsContentComponent, VideoComponent, VideoListComponent, VideoShowcaseComponent, WechatChannelsComponent, WxgameDirectPageComponent, WxgamePlayablePageComponent } from "../v3/index";
+import type { ActionButtonComponent, AppGiftPackCodeComponent, AppPromotionVideoComponent, BarrageComponent, BrandComponent, ChannelsLiveFeedComponent, ChosenButtonComponent, ConsultComponent, CountDownComponent, DescriptionComponent, DoctorCardComponent, ElementStoryComponent, EndPageComponent, FloatingZoneComponent, FloatingZoneListComponent, FormComponent, ImageComponent, ImageListComponent, ImageShowcaseComponent, JumpinfoComponent, LabelComponent, LivingDescComponent, MarketingPendantComponent, MiniCardLinkComponent, PhoneComponent, ShopImageComponent, ShortVideoComponent, ShowDataComponent, SocialSkillComponent, TextLinkComponent, TitleComponent, VideoChannelsContentComponent, VideoComponent, VideoListComponent, VideoShowcaseComponent, WechatChannelsComponent, WxgameDirectPageComponent, WxgamePlayablePageComponent } from "../v3/index";
 
 export interface ComponentValue {
   title?: TitleComponent;
@@ -40,5 +40,7 @@ export interface ComponentValue {
   video_channels_content?: VideoChannelsContentComponent;
   wxgame_direct_page?: WxgameDirectPageComponent;
   video_list?: VideoListComponent;
+  channels_live_feed?: ChannelsLiveFeedComponent;
+  doctor_card?: DoctorCardComponent;
 }
 

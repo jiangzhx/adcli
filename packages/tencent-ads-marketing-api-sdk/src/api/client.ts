@@ -5,7 +5,7 @@ import JSONbig from "json-bigint";
 import { DefaultConfiguration } from "../config/configuration";
 
 const JSONBigStringParser = JSONbig({ storeAsString: true });
-export const SDK_VERSION = "1.7.84";
+export const SDK_VERSION = "1.7.85";
 
 export class ApiClient {
   private basePath = DefaultConfiguration.basePath;

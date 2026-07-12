@@ -72,11 +72,11 @@ curl -v -G 'https://api.e.qq.com/v3.0/wallet_invoice/get?access_token=<ACCESS_TO
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | account_name | string | 账户名称 |
 | fund_type | enum | 资金账户类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_account_type_map) |
 | time | integer | 交易时间，时间戳 |
-| external_bill_no | string | 调用方订单号，需要有调用方标示前缀，须要保证在同一个广告主下唯一，不支持大写字母 |
+| external_bill_no | string | 调用方订单号，需要有调用方标示前缀，须要保证在同一个客户下唯一，不支持大写字母 |
 | trade_type_ext | enum | 交易类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_trade_type_ext) |
 | amount | integer | 金额，单位为分 |
 | description | string | 描述信息 |
@@ -123,4 +123,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/wallet_invoice/get?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

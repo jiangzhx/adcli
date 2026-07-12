@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_realtime_cost_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | level* | string | 获取实时消耗的类型级别 可选值：{ ADVERTISER, ADGROUP, ADTOTAL } |
 | date* | string | 查询日期，日期格式：YYYY-MM-DD，只支持今天的数据查询, 当 level=ADTOTAL 时不需要传该值 字段长度为 10 字节 |
 | filtering | struct[] | 过滤条件，过滤条件，当 level= ADGROUP 或 ADTOTAL 时，该字段必填；若此字段不传，或传空则视为无限制条件，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 2 |
@@ -62,7 +62,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/realtime_cost/get?access_token=<ACCESS_TOK
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| adgroup_id | int64 | 广告组 id，当获取广告主纬度报表时，该值为 0，无意义 |
+| adgroup_id | int64 | 营销单元 id，当获取客户纬度报表时，该值为 0，无意义 |
 | cost | integer | 实时消耗，单位为分 |
 | page_info | struct | 分页配置信息 |
 | page | integer | 搜索页码 默认值：1 |
@@ -98,4 +98,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/realtime_cost/get?access_token=<ACCESS_TOK
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

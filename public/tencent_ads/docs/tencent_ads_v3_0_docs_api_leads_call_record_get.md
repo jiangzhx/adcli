@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_leads_call_record_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主账号 id，直客账号或子客账号 |
+| account_id* | integer | 账户 id，直客账号或子客账号 |
 | leads_id | integer | 线索 id |
 | outer_leads_id | string | 作为线索管理平台的线索与客户侧 CRM 系统的线索关联的唯一标识，outer_leads_id 和 leads_id 二选一必填 |
 | request_id | string | 代表唯一的业务请求，如果因为网络或其他原因重试时，此 id 不变。如果不填，线索平台生成后返回。如果填写了，原样返回 |
@@ -55,7 +55,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_call_record/get?access_token=<ACCESS
 | --- | --- | --- |
 | call_records | struct[] | 通话记录列表 |
 | call_id | string | 该通话记录的唯一 id |
-| account_id | integer | 广告主账号 id，直客账号或子客账号 |
+| account_id | integer | 账户 id，直客账号或子客账号 |
 | leads_id | integer | 线索 id |
 | contact_id | string | 用来标识一次外呼行为 |
 | caller | string | 主叫号码，11 位手机号或座机号(例如:01085170811) |
@@ -105,4 +105,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/leads_call_record/get?access_token=<ACCESS
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

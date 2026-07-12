@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_user_action_sets_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | user_action_set_id | integer | 用户行为源 id，通过 [\[user_action_sets 接口\]](https://developers.e.qq.com/docs/api/user_data/user_action_set/user_action_sets_add) 创建用户行为源时分配的唯一 id。请注意，当填写的用户行为数据源类型为 {WECHAT, WECHAT_MINI_PROGRAM, WECHAT_MINI_GAME} 时，必填 user_id 字段中的 wechat_openid (或 wechat_unionid) 及 wechat_app_id。 |
 | type | enum[] | 用户行为源类型列表，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#am_user_action_set_type) 可选值：{ WEB, ANDROID, IOS, OFFLINE, WECHAT, WECHAT_MINI_PROGRAM, WECHAT_MINI_GAME, HARMONY } |
 | mobile_app_id | integer | 应用 id，IOS：App Store id ； ANDROID：应用宝 id，type=ANDROID 或 IOS 时必填 |
@@ -77,7 +77,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/user_action_sets/get?access_token=<ACCESS_
 | permission | struct | 数据源权限 |
 | can_create_audience | boolean | 是否可以提取人群，true 表示可以，false 表示不可以 |
 | can_exact_conversion_claim | boolean | 是否可以精准归因，true 表示可以，false 表示不可以 |
-| can_as_serving | boolean | 是否可以投放广告，true 表示可以，false 表示不可以 |
+| can_as_serving | boolean | 是否可以投放，true 表示可以，false 表示不可以 |
 
 ## 应答示例
 
@@ -107,4 +107,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/user_action_sets/get?access_token=<ACCESS_
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

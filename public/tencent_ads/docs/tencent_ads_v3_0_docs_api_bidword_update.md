@@ -29,17 +29,17 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | list* | struct[] | 关键词更新列表 数组最小长度 1，最大长度 1000 |
 | bidword_id* | integer | 关键词 id |
 | bid_price | integer | 关键词出价，单位为分，关键词出价规则待补充 最小值 1，最大值 99999 |
-| bid_mode | enum | 出价方式，ADX 程序化广告仅支持{BID_MODE_CPC,BID_MODE_CPM}，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_bid_mode) 可选值：{ BID_MODE_CPC, BID_MODE_CPA, BID_MODE_CPS, BID_MODE_CPM, BID_MODE_OCPC, BID_MODE_OCPM } |
+| bid_mode | enum | 出价方式，ADX 程序化投放仅支持{BID_MODE_CPC,BID_MODE_CPM}，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_bid_mode) 可选值：{ BID_MODE_CPC, BID_MODE_CPA, BID_MODE_CPS, BID_MODE_CPM, BID_MODE_OCPC, BID_MODE_OCPM } |
 | use_group_price | enum | 是否使用组出价，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#use_group_price_type) 可选值：{ USE_GROUP_PRICE, NOT_USE_GROUP_PRICE } |
 | price_update_type | enum | 出价修改类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_price_update_type) 可选值：{ RAISE_PRICE_VALUE, RAISE_PRICE_PERCENT } |
 | raise_price | integer | 出价修改幅度 最小值-99999，最大值 99999 |
 | match_type | enum | 关键词匹配方式，关键词匹配方式包括短语、精确、广泛匹配，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_match_type) 可选值：{ EXACT_MATCH, WIDE_MATCH, WORD_MATCH, PHRASE_MATCH } |
 | configured_status | enum | 暂停状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_pause_type) 可选值：{ KEYWORD_STATUS_NORMAL, KEYWORD_STATUS_SUSPEND } |
-| dynamic_creative_id | integer | 广告创意 id |
+| dynamic_creative_id | integer | 创意 id |
 | pc_landing_page_info | struct | 关键词落地页信息 |
 | landing_page_list | struct[] | 兜底落地页内容列表，仅可在 page_type 为 PAGE_TYPE_APP_DEEP_LINK、PAGE_TYPE_APP_MARKET、PAGE_TYPE_WECHAT_MINI_PROGRAM、PAGE_TYPE_WECHAT_MINI_GAME 时使用 数组最小长度 0，最大长度 10 |
 | page_type* | enum | 落地页类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#page_type) 可选值：{ PAGE_TYPE_UNKNOWN, PAGE_TYPE_ANDROID_APP, PAGE_TYPE_IOS_APP, PAGE_TYPE_XJ_ANDROID_APP_H5, PAGE_TYPE_XJ_IOS_APP_H5, PAGE_TYPE_XJ_WEB_H5, PAGE_TYPE_FENGYE_ECOMMERCE, PAGE_TYPE_XJ_QUICK, PAGE_TYPE_QQ_APP_MINI_PROGRAM, PAGE_TYPE_QQ_MINI_GAME, PAGE_TYPE_APP_DEEP_LINK, PAGE_TYPE_APP_MARKET, PAGE_TYPE_ANDROID_QUICK_APP, PAGE_TYPE_WECHAT_CANVAS, PAGE_TYPE_WECHAT_OFFICIAL_ACCOUNT_DETAIL, PAGE_TYPE_WECHAT_SIMPLE_CANVAS, PAGE_TYPE_WECHAT_MINI_GAME, PAGE_TYPE_WECHAT_CANVAS_MINI_PROGRAM, PAGE_TYPE_WECHAT_FOCUS_DAILOG, PAGE_TYPE_WECHAT_MINI_PROGRAM, PAGE_TYPE_WECHAT_CHANNELS_FEED, PAGE_TYPE_WECHAT_CHANNELS_WATCH_LIVE, PAGE_TYPE_WECHAT_CHANNELS_RESERVE_LIVE, PAGE_TYPE_WECHAT_APPOINTMENT_CARD, PAGE_TYPE_WECHAT_CONSULT, PAGE_TYPE_WECOM_CONSULT, PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD, PAGE_TYPE_H5_PROFILE, PAGE_TYPE_SEARCH_BRAND_AREA, PAGE_TYPE_WECHAT_CHANNELS_PROFILE, PAGE_TYPE_H5, PAGE_TYPE_WECHAT_CHANNELS_FOLLOW_ACCOUNT, PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT, PAGE_TYPE_APP_HARMONY, PAGE_TYPE_WECHAT_SHOP, PAGE_TYPE_OFFICIAL } |
@@ -70,7 +70,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | page_id* | int64 | 落地页 id |
 | wechat_canvas_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id* | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id 字段长度最小 1 字节，长度最大 1024 字节 |
 | wechat_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id 字段长度最小 1 字节，长度最大 384 字节 |
@@ -79,7 +79,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | mpa_mini_program_wildcard_url | string | mpa/dca 落地页通配符 字段长度最小 5 字节，长度最大 1023 字节 |
 | wechat_canvas_mini_program_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id* | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id 字段长度最小 1 字节，长度最大 1024 字节 |
 | qq_app_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id* | string | 小程序 id 字段长度最小 1 字节，长度最大 384 字节 |
@@ -170,7 +170,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | page_id* | int64 | 落地页 id |
 | wechat_canvas_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id* | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id 字段长度最小 1 字节，长度最大 1024 字节 |
 | wechat_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id 字段长度最小 1 字节，长度最大 384 字节 |
@@ -179,7 +179,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | mpa_mini_program_wildcard_url | string | mpa/dca 落地页通配符 字段长度最小 5 字节，长度最大 1023 字节 |
 | wechat_canvas_mini_program_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id* | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id 字段长度最小 1 字节，长度最大 1024 字节 |
 | qq_app_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id* | string | 小程序 id 字段长度最小 1 字节，长度最大 384 字节 |
@@ -263,6 +263,8 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | harmony_app_id | string | 鸿蒙应用 AppId 字段长度最小 0 字节，长度最大 128 字节 |
 | wechat_channels_activity_spec | struct | 视频号活动页落地页信息 |
 | activity_id* | string | 视频号活动加密 id 字段长度最小 1 字节，长度最大 256 字节 |
+| wechat_channels_account_id* | string | 视频号账号 id 字段长度最小 1 字节，长度最大 1024 字节 |
+| activity_name | string | 视频号活动名称 |
 | jumpinfo_account_id | integer | 推广帐号 id，落地页资产归属的账号 id |
 | platform_type | enum | 落地页媒体平台类型，落地页媒体平台，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#landing_page_platform_type) 可选值：{ DEFAULT, ALL, SCREEN_PC, SCREEN_PHONE, OS_ANDROID, OS_IOS } |
 | mobile_landing_page_info | struct | 关键词落地页信息 |
@@ -295,7 +297,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | page_id* | int64 | 落地页 id |
 | wechat_canvas_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id* | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id 字段长度最小 1 字节，长度最大 1024 字节 |
 | wechat_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id 字段长度最小 1 字节，长度最大 384 字节 |
@@ -304,7 +306,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | mpa_mini_program_wildcard_url | string | mpa/dca 落地页通配符 字段长度最小 5 字节，长度最大 1023 字节 |
 | wechat_canvas_mini_program_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id* | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id 字段长度最小 1 字节，长度最大 1024 字节 |
 | qq_app_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id* | string | 小程序 id 字段长度最小 1 字节，长度最大 384 字节 |
@@ -395,7 +397,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | page_id* | int64 | 落地页 id |
 | wechat_canvas_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id* | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id 字段长度最小 1 字节，长度最大 1024 字节 |
 | wechat_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id | string | 小程序 id 字段长度最小 1 字节，长度最大 384 字节 |
@@ -404,7 +406,7 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | mpa_mini_program_wildcard_url | string | mpa/dca 落地页通配符 字段长度最小 5 字节，长度最大 1023 字节 |
 | wechat_canvas_mini_program_spec | struct | 微信原生页数据，当营销载体类型为视频号直播预约时，需要额外传入 wechat_channels_live_reserve_id |
 | page_id* | int64 | 落地页 id |
-| override_canvas_head_option | enum | 原生推广页顶部素材和广告创意素材之间的替换关系，（仅在朋友圈广告使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
+| override_canvas_head_option | enum | 原生推广页顶部素材和创意素材之间的替换关系，（仅在朋友圈营销使用原生推广页情况下有效），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#override_canvas_head_option) 可选值：{ OPTION_CANVAS_OVERRIDE_CREATIVE, OPTION_CREATIVE_OVERRIDE_CANVAS, OPTION_KEEP_DIFFERENT, OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC } |
 | wechat_channels_live_reserve_id | string | 视频号直播预约 id 字段长度最小 1 字节，长度最大 1024 字节 |
 | qq_app_mini_program_spec | struct | 小程序落地页，mini_program_id 和 mini_program_path 要同时填写 |
 | mini_program_id* | string | 小程序 id 字段长度最小 1 字节，长度最大 384 字节 |
@@ -488,6 +490,8 @@ source_id: tencent_ads_v3_0_docs_api_bidword_update
 | harmony_app_id | string | 鸿蒙应用 AppId 字段长度最小 0 字节，长度最大 128 字节 |
 | wechat_channels_activity_spec | struct | 视频号活动页落地页信息 |
 | activity_id* | string | 视频号活动加密 id 字段长度最小 1 字节，长度最大 256 字节 |
+| wechat_channels_account_id* | string | 视频号账号 id 字段长度最小 1 字节，长度最大 1024 字节 |
+| activity_name | string | 视频号活动名称 |
 | jumpinfo_account_id | integer | 推广帐号 id，落地页资产归属的账号 id |
 | platform_type | enum | 落地页媒体平台类型，落地页媒体平台，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#landing_page_platform_type) 可选值：{ DEFAULT, ALL, SCREEN_PC, SCREEN_PHONE, OS_ANDROID, OS_IOS } |
 
@@ -531,23 +535,23 @@ curl 'https://api.e.qq.com/v3.0/bidword/update?access_token=<ACCESS_TOKEN>&times
 | success_list | struct[] | 返回成功的关键词列表 |
 | index | number | 整数 |
 | bidword_id | integer | 关键词 id |
-| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一广告下的关键词词面不允许重复 |
+| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一营销单元下的关键词词面不允许重复 |
 | bid_price | integer | 关键词出价，单位为分，关键词出价规则待补充 |
 | match_type | enum | 关键词匹配方式，关键词匹配方式包括短语、精确、广泛匹配，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_match_type) |
 | configured_status | enum | 暂停状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_pause_type) |
 | error_msg | string | 错误信息 |
 | approval_status | integer | 审核状态 |
-| dynamic_creative_id | integer | 广告创意 id |
+| dynamic_creative_id | integer | 创意 id |
 | error_list | struct[] | 返回失败的关键词列表 |
 | index | number | 整数 |
 | bidword_id | integer | 关键词 id |
-| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一广告下的关键词词面不允许重复 |
+| bidword | string | 关键词词面，字段长度最小 1 个等宽字符，长度最大 20 等宽字符（即字段最大长度为 20 个中文字或全角标点，40 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。），同一营销单元下的关键词词面不允许重复 |
 | bid_price | integer | 关键词出价，单位为分，关键词出价规则待补充 |
 | match_type | enum | 关键词匹配方式，关键词匹配方式包括短语、精确、广泛匹配，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_match_type) |
 | configured_status | enum | 暂停状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#bidword_pause_type) |
 | error_msg | string | 错误信息 |
 | approval_status | integer | 审核状态 |
-| dynamic_creative_id | integer | 广告创意 id |
+| dynamic_creative_id | integer | 创意 id |
 
 ## 应答示例
 
@@ -578,4 +582,4 @@ curl 'https://api.e.qq.com/v3.0/bidword/update?access_token=<ACCESS_TOKEN>&times
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

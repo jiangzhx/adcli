@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_material_dcatag_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id |
+| account_id | integer | 账户 id |
 | image_id_list | integer[] | 图片素材 id 列表 |
 | media_id_list | integer[] | 视频素材 id 列表 |
 | marketing_asset_id | integer | 推广产品 id，当推广内容资产类型为：MARKETING_TARGET_TYPE_PLATFORM_CHANNEL 表示平台频道，MARKETING_TARGET_TYPE_FINANCE 表示金融产品时才填充该字段。通过 [\[获取可投放推广内容资产列表接口\]](https://developers.e.qq.com/v3.0/docs/api/marketing_target_assets/get) 可以查询所有的产品 id。marketing_asset_id、marketing_target_type、marketing_asset_outer_spec 不能同时为空 |
@@ -109,6 +109,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/material_dcatag/get?access_token=<ACCESS_T
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

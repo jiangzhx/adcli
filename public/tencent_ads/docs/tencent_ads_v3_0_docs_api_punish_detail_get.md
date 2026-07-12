@@ -1,11 +1,11 @@
 ---
-title: 获取计量处罚明细 全部接口
+title: 获取素材计量治理明细数据 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/punish_detail/get
 doc_id: tencent_ads_v3_0_docs_api_punish_detail_get
 source_id: tencent_ads_v3_0_docs_api_punish_detail_get
 ---
-# 获取计量处罚明细 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 获取素材计量治理明细数据 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -33,18 +33,18 @@ source_id: tencent_ads_v3_0_docs_api_punish_detail_get
 | start_partition_time | integer | 开始月份，yyyyMM 格式 最小值 100000，最大值 999999 |
 | end_partition_time | integer | 结束月份，yyyyMM 格式 最小值 100000，最大值 999999 |
 | account_id* | integer | 当前账户 id |
-| agency_uid_list | string[] | 代理商 id 列表，● 若使用代理商 id 身份调用，无需传入该参数 ● 若使用 uid 身份调用，可通过该字段指定查询某个代理商 id 下的数据 字段长度最小 1 字节，长度最大 255 字节 |
-| ops_advertiser_name_list | string[] | 广告主主体名称列表 字段长度最小 1 字节，长度最大 255 字节 |
-| zc_agent_group | string | 代理商政策集团，代理商所在的政策集团 字段长度最小 1 字节，长度最大 255 字节 |
+| agency_uid_list | string[] | 服务商 id 列表，● 若使用服务商 id 身份调用，无需传入该参数 ● 若使用 uid 身份调用，可通过该字段指定查询某个服务商 id 下的数据 字段长度最小 1 字节，长度最大 255 字节 |
+| ops_advertiser_name_list | string[] | 客户名称列表 字段长度最小 1 字节，长度最大 255 字节 |
+| zc_agent_group | string | 服务商政策集团，服务商所在的政策集团 字段长度最小 1 字节，长度最大 255 字节 |
 | first_level_industry_name | string | 开户一级行业 字段长度最小 1 字节，长度最大 255 字节 |
 | second_level_industry_name | string | 开户二级行业 字段长度最小 1 字节，长度最大 255 字节 |
-| adgroup_id_list | integer[] | 广告 id 列表 |
+| adgroup_id_list | integer[] | 营销单元 id 列表 |
 | dynamic_creative_id_list | integer[] | 动态创意 id 列表 |
 | component_id_list | integer[] | 组件 id 列表 |
 | element_type | string | 元素类型，多种枚举值：ELEMENT_TYPE_TEXT=2=文本、ELEMENT_TYPE_IMAGE=3=图片、ELEMENT_TYPE_VIDEO=4=视频、ELEMENT_TYPE_URL=5=落地页 字段长度最小 1 字节，长度最大 255 字节 |
 | is_element_appeal | integer | 是否有申诉记录，1 是，0 否 最小值 0，最大值 1 |
-| agency_name_list | string[] | 代理商名称列表 字段长度最小 1 字节，长度最大 255 字节 |
-| physical_finger_list | string[] | 元素指纹列表 字段长度最小 1 字节，长度最大 255 字节 |
+| agency_name_list | string[] | 服务商名称列表 字段长度最小 1 字节，长度最大 255 字节 |
+| physical_finger_list | string[] | 元素物理指纹列表 字段长度最小 1 字节，长度最大 255 字节 |
 | reject_reason | string | 拒绝原因 字段长度最小 1 字节，长度最大 255 字节 |
 | review_begin_time | string | 审核开始时间，yyyy-MM-dd 字段长度为 10 字节 |
 | review_end_time | string | 最后审核时间，yyyy-MM-dd 字段长度为 10 字节 |
@@ -95,27 +95,29 @@ curl 'https://api.e.qq.com/v3.0/punish_detail/get?access_token=<ACCESS_TOKEN>&ti
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| data_list | struct[] | 计量处罚明细数据列表 |
+| data_list | struct[] | 计量治理明细数据列表 |
 | partition_time | integer | 统计周期，格式 YYYYMM |
 | account_id | integer | 账户 id |
-| agency_uid | string | 代理商 id |
+| agency_uid | string | 服务商 id |
 | last_review_time | string | 最后审核时间，yyyy-MM-dd |
-| ops_advertiser_name | string | 广告主主体名称 |
-| zc_agent_group | string | 代理商政策集团，代理商所在的政策集团 |
+| ops_advertiser_name | string | 客户名称 |
+| zc_agent_group | string | 服务商政策集团，服务商所在的政策集团 |
 | first_level_industry_name | string | 开户一级行业 |
 | second_level_industry_name | string | 开户二级行业 |
-| adgroup_id | int64 | 广告 id，AID |
+| adgroup_id | int64 | 营销单元 id，AID |
 | dynamic_creative_id | integer | 动态创意 id，DCID |
 | component_id | integer | 组件 id |
 | element_type | string | 元素类型，多种枚举值：ELEMENT_TYPE_TEXT=2=文本、ELEMENT_TYPE_IMAGE=3=图片、ELEMENT_TYPE_VIDEO=4=视频、ELEMENT_TYPE_URL=5=落地页 |
 | element_value | string | 元素值 |
-| physical_finger | string | 元素指纹 |
+| physical_finger | string | 元素物理指纹 |
 | reject_reason | string | 拒绝原因 |
 | is_element_appeal | integer | 是否有申诉记录，1 是，0 否 |
-| agency_name | string | 代理商名称 |
+| agency_name | string | 服务商名称 |
 | account_frame | string | 账户 K 框 |
 | account_operate_identity | string | 账户运营方，一代服务商、二代服务商、多角色、无法归属、客户 |
 | compliance_owner | string | 治理责任方，服务商、客户 |
+| element_id | integer | 元素 id |
+| element_finger_print | string | 元素审核指纹 |
 | page_conf | struct | 分页内容 |
 | page | integer | 页码 默认值：1 |
 | pageSize | integer | 每页大小，不超过 1000 默认值：20 |
@@ -145,6 +147,8 @@ curl 'https://api.e.qq.com/v3.0/punish_detail/get?access_token=<ACCESS_TOKEN>&ti
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

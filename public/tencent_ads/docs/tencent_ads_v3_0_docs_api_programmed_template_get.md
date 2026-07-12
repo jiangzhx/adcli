@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_programmed_template_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | material_derive_id* | integer | 预览 id |
 | material_preview_id | integer | 素材预览 id |
 | template_id_list | array | 模板 id 列表列表，数组长度为[0,100] 数组最小长度 0，最大长度 100 |
@@ -151,4 +151,4 @@ curl 'https://api.e.qq.com/v3.0/programmed_template/get?access_token=<ACCESS_TOK
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

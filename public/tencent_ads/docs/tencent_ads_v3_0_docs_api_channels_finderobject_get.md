@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_channels_finderobject_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | export_id* | string | 互选小任务接单视频 id 字段长度最小 1 字节，长度最大 256 字节 |
 
 ## 请求示例
@@ -66,7 +66,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/channels_finderobject/get?access_token=<AC
 | wording | string | 视频号动态组件文案 |
 | component_uuid | string | 视频号动态组件 id，如小店商品 id、iOS/Android 应用 id |
 | feeds_source_type | enum | 视频号动态类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#feeds_source_type) |
-| is_disable | boolean | 是否可使用，如不可使用，创建广告/创意将被拦截 |
+| is_disable | boolean | 是否可使用，如不可使用，创建营销单元/创意将被拦截 |
 | disable_message | string | 禁用原因 |
 | audit_status | enum | 视频号动态审核状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#ad_status) |
 
@@ -88,6 +88,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/channels_finderobject/get?access_token=<AC
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

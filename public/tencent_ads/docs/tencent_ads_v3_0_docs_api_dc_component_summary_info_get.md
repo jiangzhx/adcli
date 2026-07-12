@@ -28,8 +28,8 @@ source_id: tencent_ads_v3_0_docs_api_dc_component_summary_info_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| dynamic_creative_id | integer | 广告创意 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| dynamic_creative_id | integer | 创意 id |
 | component_summary_insight_type_list* | enum[] | 资产洞察总结需要的模块列表，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#component_summary_insight_type) 数组最小长度 1，最大长度 10 可选值：{ COMPONENTS_SUMMARY_INSIGHT_FULLFILL, COMPONENTS_SUMMARY_INSIGHT_QUALITY, COMPONENTS_SUMMARY_INSIGHT_HEALTHY, COMPONENTS_SUMMARY_INSIGHT_FIRST_PUBLICATION } |
 
 ## 请求示例
@@ -55,9 +55,9 @@ curl -v -G 'https://api.e.qq.com/v3.0/dc_component_summary_info/get?access_token
 | --- | --- | --- |
 | summary_data | struct | DC 组件汇总数据 |
 | healthy_data | struct | 健康度模块汇总数据 |
-| account_id | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| dynamic_creative_id | integer | 广告创意 id |
-| adgroup_id | int64 | 广告 id |
+| account_id | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| dynamic_creative_id | integer | 创意 id |
+| adgroup_id | int64 | 营销单元 id |
 | list | struct[] | 健康度组件类型维度汇总明细列表 |
 | agg_component_type | string | 组件类型名称 |
 | total_component_num | integer | 组件总数 |
@@ -96,8 +96,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/dc_component_summary_info/get?access_token
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

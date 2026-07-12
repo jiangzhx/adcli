@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_xijing_page_delete
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | page_id_list* | string[] | 送审页面 id 列表 数组最小长度 0，最大长度 999 |
 
 ## 请求示例
@@ -60,7 +60,7 @@ curl 'https://api.e.qq.com/v3.0/xijing_page/delete?access_token=<ACCESS_TOKEN>&t
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 页面操作返回数据结构 |
-| page_service_id | string | 落地页服务 id，主要用于广告主在投放端搭建广告创意选择落地页时使用 |
+| page_service_id | string | 落地页服务 id，主要用于客户在投放端搭建创意选择落地页时使用 |
 | code | integer | 返回码 |
 | message | string | 英文返回消息 |
 
@@ -88,4 +88,4 @@ curl 'https://api.e.qq.com/v3.0/xijing_page/delete?access_token=<ACCESS_TOKEN>&t
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

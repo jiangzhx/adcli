@@ -37,10 +37,10 @@ source_id: tencent_ads_v3_0_docs_api_adgroups_update_daily_budget
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | update_daily_budget_spec* | struct[] | 更新日限额条件 |
 | adgroup_id* | int64 | 更新日限额条件 |
-| daily_budget* | integer | 日预算，日预算，单位为分，ADX 程序化广告不可填写提交单位为分，设置为 0 表示不设预算（即不限）； 日预算需介于 5,000 分- 400,000,000 分之间（50 元- 4,000,000 元，单位为人民币）； 修改后的日预算不能低于该广告今日已消耗金额的 1.5 倍加上冻结金额；且 修改后的日预算不能低于该广告今日已消耗金额加上 5,000 分（50 元，单位为人民币）； |
+| daily_budget* | integer | 日预算，日预算，单位为分，ADX 程序化投放不可填写提交单位为分，设置为 0 表示不设预算（即不限）； 日预算需介于 5,000 分- 400,000,000 分之间（50 元- 4,000,000 元，单位为人民币）； 修改后的日预算不能低于该营销单元今日已消耗金额的 1.5 倍加上冻结金额；且 修改后的日预算不能低于该营销单元今日已消耗金额加上 5,000 分（50 元，单位为人民币）； |
 
 使用说明
 
@@ -79,7 +79,7 @@ curl 'https://api.e.qq.com/v3.0/adgroups/update_daily_budget?access_token=<ACCES
 | code | integer | 返回码 |
 | message | string | 英文返回消息 |
 | message_cn | string | 中文返回消息 |
-| adgroup_id | int64 | 广告 id |
+| adgroup_id | int64 | 营销单元 id |
 | fail_id_list | integer[] | 失败的 id 集合 |
 
 ## 应答示例
@@ -107,4 +107,4 @@ curl 'https://api.e.qq.com/v3.0/adgroups/update_daily_budget?access_token=<ACCES
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_custom_audiences_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | audience_id | integer | 人群 id，通过 [\[custom_audiences\]](https://developers.e.qq.com/v3.0/docs/api/custom_audiences/add) 模块创建客户人群获得 |
 | page | integer | 当前页码，最小值 1 默认值：1 |
 | page_size | integer | 分页大小，最小值 1，最大值 100 默认值：10 |
@@ -56,13 +56,13 @@ curl -v -G 'https://api.e.qq.com/v3.0/custom_audiences/get?access_token=<ACCESS_
 | audience_id | integer | 人群 id |
 | account_id | integer | 人群归属的推广帐号 id |
 | name | string | 人群名称 |
-| outer_audience_id | string | 广告主对人群在自己系统里的编码，只能包含数字或字母或下划线；如果该编码创建过人群，再次用该编码创建人群时，会返回之前用该编码创建的人群 id ；人群编码不能与标签编码（tag_code）重复 |
+| outer_audience_id | string | 客户对人群在自己系统里的编码，只能包含数字或字母或下划线；如果该编码创建过人群，再次用该编码创建人群时，会返回之前用该编码创建的人群 id ；人群编码不能与标签编码（tag_code）重复 |
 | description | string | 人群描述 |
 | cooperated | boolean | 深度数据合作，可将您的数据数据从 DMP 平台导出，平台将为您进行定制化的挖掘，进行深度数据合作 |
 | type | enum | 人群类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_audience_type) |
 | source | enum | 人群来源，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_audience_source) |
 | status | enum | 处理状态，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_process_status) |
-| online_status | enum | 人群包在线状态，如果人群包一段时间不更新或者不使用于广告定向，人群包会被下线处理。下线后的人群无法用于广告定向，但是洞察等不受影响。该字段仅在人群包处理状态为成功时返回和生效，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_online_status) |
+| online_status | enum | 人群包在线状态，如果人群包一段时间不更新或者不使用于营销定向，人群包会被下线处理。下线后的人群无法用于营销定向，但是洞察等不受影响。该字段仅在人群包处理状态为成功时返回和生效，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_online_status) |
 | is_own | boolean | 是否是人群包 owner，一般人群包创建者为人群包 owner |
 | error_code | integer | 人群错误码，1 表示系统错误； 101 表示种子人群活跃用户低于 2K ； 102 表示种子人群无共同特征； 201 表示人群上传的号码包文件格式错误； 202 表示解析人群上传的号码包文件失败； 203 表示号码包文件人群匹配失败。 |
 | user_count | integer | 用户覆盖数 |
@@ -110,12 +110,12 @@ curl -v -G 'https://api.e.qq.com/v3.0/custom_audiences/get?access_token=<ACCESS_
 | keyword_spec | struct | Keyword 人群信息，当 type=KEYWORD 时必填 |
 | include_keyword | string[] | 包含关键词，最多 100 个，单个关键词字数不超过 10 |
 | exclude_keyword | string[] | 排除关键词，最多 20 个，单个关键词字数不超过 10 |
-| ad_rule_spec | struct | 广告人群信息，当 type=AD 时必填 |
-| rule_type | enum | 广告行为类型，其中 EXPOSURE 类型需要线下联系运营开通白名单方可使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_ad_rule_type) |
-| conversion_type | enum[] | 广告转化类型，当 rule_type=CONVERSION 时该字段必填，否则该字段不能填写，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_ad_conversion_type) |
+| ad_rule_spec | struct | 营销人群信息，当 type=AD 时必填 |
+| rule_type | enum | 营销行为类型，其中 EXPOSURE 类型需要线下联系运营开通白名单方可使用，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_ad_rule_type) |
+| conversion_type | enum[] | 转化类型，当 rule_type=CONVERSION 时该字段必填，否则该字段不能填写，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#audience_ad_conversion_type) |
 | start_date | string | 数据起始日期，格式为 yyyy-MM-dd，必须在 90 天以内，且在今天（不包含）以前 |
 | end_date | string | 数据结束日期，格式为 yyyy-MM-dd，必须在 start_date（包含）之后，且在今天（不包含）以前。如果未填写，则人群数据会随源投放数据更新。 |
-| adgroup_id_list | integer[] | 需要提取人群的 adgroup id 列表，通过 [\[adgroups/get\]](https://developers.e.qq.com/v3.0/docs/api/adgroups/get) 接口可获得账号下的广告组列表; |
+| adgroup_id_list | integer[] | 需要提取人群的 adgroup id 列表，通过 [\[adgroups/get\]](https://developers.e.qq.com/v3.0/docs/api/adgroups/get) 接口可获得账号下的营销组列表; |
 | combine_spec | struct | 组合人群信息，当 type=COMBINE 时必填，最多允许用 500 个人群做组合 |
 | include | struct[] | 包含的人群，注意这是个二维数组，第一层数组元素之间为 AND 关系，第二层数组元素之间为 OR 关系 |
 | audience_id | integer | 人群 id 或标签 id，不支持 LOOKALIKE 和 COMBINE 人群的 id |
@@ -202,10 +202,8 @@ curl -v -G 'https://api.e.qq.com/v3.0/custom_audiences/get?access_token=<ACCESS_
 
 ## 可视化调试工具
 
-请求
-
 ## 相关阅读
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

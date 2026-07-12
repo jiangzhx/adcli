@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_component_review_results_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | component_id_list* | integer[] | 创意组件 id 列表 数组最小长度 1，最大长度 100 |
 
 ## 请求示例
@@ -72,6 +72,27 @@ curl -v -G 'https://api.e.qq.com/v3.0/component_review_results/get?access_token=
 | location_img_url | string | 标注结果图 url |
 | related_img_url | string | 种子图 url |
 | time_second | float | 时间戳，视频时间点（非视频元素本字段为空） |
+| video_asr_infos | struct[] | 视频 ASR 违规信息列表 |
+| id | integer | id |
+| text | string | 命中文本内容 |
+| mark | string | 标记 |
+| label_list | array | 标签列表 |
+| reason | string | 拒绝原因 |
+| start_time | float | 开始时间，单位为秒 |
+| end_time | float | 结束时间，单位为秒 |
+| asr_type | string | ASR 类型 |
+| video_ocr_infos | struct[] | 视频 OCR 违规信息列表 |
+| id | integer | id |
+| text | string | 命中文本内容 |
+| mark | string | 标记 |
+| label_list | array | 标签列表 |
+| reason | string | 拒绝原因 |
+| time | float | 命中时间点，单位为秒 |
+| frame_bbox | integer[] | OCR 命中文本在视频帧中的位置框，边界框坐标 |
+| frame_url | string | OCR 命中文本对应的视频帧图片 URL |
+| caption_infos | struct[] | 段落违规信息列表 |
+| start_time | float | 开始时间，单位为秒 |
+| end_time | float | 结束时间，单位为秒 |
 
 ## 应答示例
 
@@ -89,7 +110,19 @@ curl -v -G 'https://api.e.qq.com/v3.0/component_review_results/get?access_token=
                         "element_reject_detail_info": [
                             {
                                 "site_set_list": [],
-                                "reject_info_location": []
+                                "reject_info_location": [],
+                                "video_asr_infos": [
+                                    {
+                                        "label_list": []
+                                    }
+                                ],
+                                "video_ocr_infos": [
+                                    {
+                                        "label_list": [],
+                                        "frame_bbox": []
+                                    }
+                                ],
+                                "caption_infos": []
                             }
                         ]
                     }
@@ -102,8 +135,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/component_review_results/get?access_token=
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

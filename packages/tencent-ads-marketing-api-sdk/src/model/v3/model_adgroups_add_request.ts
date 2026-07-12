@@ -1,7 +1,7 @@
 // Generated from tencentad/marketing-api-go-sdk pkg/model/v3/model_adgroups_add_request.go
 // Do not edit manually.
 
-import type { AdditionalProductSpec, AdxRealtimeType, AoiOptimizationStrategy, AutoDerivedCreativePreference, BidMode, BidScene, BillingModel, CloudUnionSpec, ConfiguredStatus, CostConstraintScene, DcaSpec, DeepConversionSpec, DynamicAdType, EcomPkamSwitch, MarketingAssetOuterSpec, MarketingCarrierDetail, MarketingCarrierType, MarketingGoal, MarketingSubGoal, MpaSpec, OptimizationGoal, SceneTargetingForWrite, SearchExpandTargetingSwitch, SearchExpansionSwitch, ShortPlayPayType, SiteSetExplorationStrategy, SmartBidType, SmartCouponMode, SmartTargetingMode, UserActionSetStruct, WriteTargetingSetting } from "../v3/index";
+import type { AdditionalProductSpec, AdxRealtimeType, AoiOptimizationStrategy, AutoDerivedCreativePreference, BidMode, BidScene, CloudUnionSpec, ConfiguredStatus, CostConstraintScene, DcaSpec, DeepConversionSpec, DynamicAdType, EcomPkamSwitch, MarketingAssetOuterSpec, MarketingCarrierDetail, MarketingCarrierType, MarketingGoal, MarketingSubGoal, MpaSpec, OptimizationGoal, SceneTargetingForWrite, SearchExpandTargetingSwitch, SearchExpansionSwitch, ShortPlayPayType, SiteSetExplorationStrategy, SmartBidType, SmartCouponMode, SmartTargetingMode, UserActionSetStruct, WriteTargetingSetting } from "../v3/index";
 
 export interface AdgroupsAddRequest {
   account_id?: number | string;
@@ -69,6 +69,5 @@ export interface AdgroupsAddRequest {
   enable_steady_exploration?: boolean;
   smart_targeting_mode?: SmartTargetingMode;
   smart_coupon_mode?: SmartCouponMode;
-  billing_model?: BillingModel;
 }
 

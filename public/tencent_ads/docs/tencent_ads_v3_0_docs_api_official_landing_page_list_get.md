@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_official_landing_page_list_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | page | integer | 搜索页码 最小值 1，最大值 99999 默认值：1 |
 | page_size | integer | 一页显示的数据条数 最小值 1，最大值 100 默认值：10 |
 | filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件 数组最小长度 1，最大长度 10 |
@@ -56,7 +56,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/official_landing_page_list/get?access_toke
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 官方落地页列表数据 |
-| page_id | int64 | 落地页服务 id，用于广告投放端搭建广告创意选择落地页时使用 |
+| page_id | int64 | 落地页服务 id，用于投放端搭建创意选择落地页时使用 |
 | landing_page_id | integer | 官方落地页 id，仅用于官方落地页模块时使用 |
 | page_name | string | 落地页名称-用于编辑器管理，不支持 emoji |
 | page_title | string | 落地页标题-用于页面展示，不支持 emoji |
@@ -99,4 +99,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/official_landing_page_list/get?access_toke
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

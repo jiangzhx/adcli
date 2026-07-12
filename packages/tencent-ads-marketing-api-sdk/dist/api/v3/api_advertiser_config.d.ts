@@ -5,8 +5,8 @@ export interface AdvertiserConfigApiAddRequest {
 }
 export interface AdvertiserConfigApiGetRequest {
     accountId: number | string;
+    fields: string[];
     organizationId?: number | string;
-    fields?: unknown;
 }
 export declare class AdvertiserConfigApi {
     private apiClient;

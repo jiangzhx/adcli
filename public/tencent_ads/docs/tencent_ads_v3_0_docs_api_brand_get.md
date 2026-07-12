@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_brand_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | page | integer | 搜索页码 最小值 1，最大值 99999 默认值：1 |
 | page_size | integer | 一页显示的数据条数 最小值 1，最大值 100 默认值：10 |
 
@@ -50,7 +50,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/brand/get?access_token=<ACCESS_TOKEN>&time
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | list | struct[] | 返回信息列表 |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | name | string | 品牌形象名字，品牌形象名字必须填写，1~100 个字符 |
 | image_id | string | 品牌形象图片 id |
 | width | integer | 宽 |
@@ -96,4 +96,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/brand/get?access_token=<ACCESS_TOKEN>&time
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

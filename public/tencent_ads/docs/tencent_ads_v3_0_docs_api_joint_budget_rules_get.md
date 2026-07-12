@@ -28,8 +28,8 @@ source_id: tencent_ads_v3_0_docs_api_joint_budget_rules_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，若获取联盟广告位信息此字段必填，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 255 |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，若获取联盟营销位信息此字段必填，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 255 |
 | field* | string | 过滤字段 可选值：{ joint_budget_rule_id, joint_budget_rule_name } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 当 field 取值 joint_budget_rule_id 时，可选值：{ EQUALS, IN } 当 field 取值 joint_budget_rule_name 时，可选值：{ EQUALS } |
 | values* | string[] | 字段取值，values 数组的个数限制与 operator 的取值相关，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 当 field 取值 joint_budget_rule_id 且 operator 取值 EQUALS 时， 数组长度为 1 当 field 取值 joint_budget_rule_id 且 operator 取值 IN 时， 数组最小长度 1，最大长度 100 当 field 取值 joint_budget_rule_name 时，数组长度为 1 字段长度最小 1 字节，长度最大 180 字节 |
@@ -69,7 +69,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/joint_budget_rules/get?access_token=<ACCES
 | last_mod_time | integer | 最后修改时间，时间戳 |
 | completed_time | integer | 总限额到达时间戳，unix 时间戳，精确到秒 |
 | bldate | integer | 日限额到达日期，格式为 YYYYmmdd |
-| adgroup_id_list | integer[] | 广告 id 列表 |
+| adgroup_id_list | integer[] | 营销单元 id 列表 |
 | joint_budget_rule_type | enum | 联合预算类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#joint_budget_rule_type) |
 | page_info | struct | 分页配置信息 |
 | page | integer | 搜索页码 默认值：1 |
@@ -118,4 +118,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/joint_budget_rules/get?access_token=<ACCES
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

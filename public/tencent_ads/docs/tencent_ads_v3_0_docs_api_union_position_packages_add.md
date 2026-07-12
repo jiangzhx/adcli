@@ -29,10 +29,10 @@ source_id: tencent_ads_v3_0_docs_api_union_position_packages_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主 id，有操作权限的广告主 id |
+| account_id* | integer | 账户 id，有操作权限的账户 id |
 | union_package_name* | string | 流量包名称，同一帐号下的流量包名称不允许重复，最多可创建 300 个流量包（字段长度最小 1 个等宽字符，长度最大 60 等宽字符（即字段最大长度为 60 个中文字或全角标点，120 个英文字或半角标点。一个等宽字符等价于一个中文，等价于两个英文。） 字段长度最小 1 字节，长度最大 180 字节 |
 | union_package_type* | enum | 流量包类型，流量包类型 枚举列表：UNION_PACKAGE_TYPE_INCLUDE（定投）、UNION_PACKAGE_TYPE_EXCLUDE（屏蔽），[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_union_package_type) 可选值：{ UNION_PACKAGE_TYPE_INCLUDE, UNION_PACKAGE_TYPE_EXCLUDE } |
-| union_position_id_list* | integer[] | 腾讯广告联盟广告位 id 列表 数组最小长度 1，最大长度 2000 |
+| union_position_id_list* | integer[] | 腾讯营销联盟营销位 id 列表 数组最小长度 1，最大长度 2000 |
 
 ## 请求示例
 
@@ -76,8 +76,6 @@ curl 'https://api.e.qq.com/v3.0/union_position_packages/add?access_token=<ACCESS
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

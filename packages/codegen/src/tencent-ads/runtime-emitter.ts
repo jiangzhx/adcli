@@ -370,8 +370,8 @@ export const DefaultConfiguration = NewConfiguration();
 }
 
 function generatedHeader(sourceFile: string) {
-  return `// 由 tencentad/marketing-api-go-sdk ${sourceFile} 生成
-// 不要手动编辑。
+  return `// Generated from tencentad/marketing-api-go-sdk ${sourceFile}
+// Do not edit manually.
 
 `;
 }

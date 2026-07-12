@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_advertiser_daily_budget_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | fields* | string[] | 指定返回的字段列表 数组最小长度 1，最大长度 256 字段长度最小 1 字节，长度最大 64 字节 |
 
 使用说明
@@ -48,9 +48,9 @@ curl -v -G 'https://api.e.qq.com/v3.0/advertiser_daily_budget/get?access_token=<
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id |
-| daily_budget | integer | 竞价广告账户日预算，单位为分，0 表示不设预算（即不限） |
-| min_daily_budget | integer | 当前时刻可设置最低的竞价广告账户日预算，单位：分。 根据今日广告花费与延迟扣费金额估算，不保证此值一定可以设置成功，需要结合日预算上下限、修改幅度等因素综合判断 |
+| account_id | integer | 账户 id |
+| daily_budget | integer | 竞价投放账户日预算，单位为分，0 表示不设预算（即不限） |
+| min_daily_budget | integer | 当前时刻可设置最低的竞价投放账户日预算，单位：分。 根据今日营销花费与延迟扣费金额估算，不保证此值一定可以设置成功，需要结合日预算上下限、修改幅度等因素综合判断 |
 
 ## 应答示例
 
@@ -71,4 +71,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/advertiser_daily_budget/get?access_token=<
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

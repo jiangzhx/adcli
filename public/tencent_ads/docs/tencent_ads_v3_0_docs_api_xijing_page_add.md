@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_xijing_page_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | is_auto_submit* | integer | 是否自动送审 最小值 0，最大值 1 |
 | pages* | struct[] | 落地页配置列表 数组最小长度 0，最大长度 10 |
 | page_type* | enum | 蹊径落地页类型，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#templates_page_type) 可选值：{ PAGE_TYPE_XIJING_ANDROID, PAGE_TYPE_XIJING_IOS, PAGE_TYPE_XIJING_WEBSITE } |
@@ -167,7 +167,7 @@ curl 'https://api.e.qq.com/v3.0/xijing_page/add?access_token=<ACCESS_TOKEN>&time
 | --- | --- | --- |
 | list | struct[] | 创建页面返回数据结构 |
 | landingPageId | integer | 落地页 id，由蹊径生成的 id，主要用于在蹊径平台内查询落地页、删除落地页、送审落地页等相关落地页本身的操作使用 |
-| id | string | 落地页服务 id，主要用于广告主在投放端搭建广告创意选择落地页时使用 |
+| id | string | 落地页服务 id，主要用于客户在投放端搭建创意选择落地页时使用 |
 | code | integer | 返回码 |
 | message | string | 英文返回消息 |
 
@@ -195,4 +195,4 @@ curl 'https://api.e.qq.com/v3.0/xijing_page/add?access_token=<ACCESS_TOKEN>&time
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

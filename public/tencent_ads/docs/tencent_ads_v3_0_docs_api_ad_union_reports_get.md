@@ -1,11 +1,11 @@
 ---
-title: 联盟广告位报表接口 全部接口
+title: 联盟营销位报表接口 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/ad_union_reports/get
 doc_id: tencent_ads_v3_0_docs_api_ad_union_reports_get
 source_id: tencent_ads_v3_0_docs_api_ad_union_reports_get
 ---
-# 联盟广告位报表接口 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 联盟营销位报表接口 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_insights |
 | --- | --- |
@@ -28,9 +28,9 @@ source_id: tencent_ads_v3_0_docs_api_ad_union_reports_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | filtering | struct | 过滤字段结构，union_position_id |
-| union_position_id | integer[] | 广告位 id 列表，广告位个数不大于 20 个, 如：["51213","51214","51215"] 最多 20 个 数组最小长度 1，最大长度 20 |
+| union_position_id | integer[] | 营销位 id 列表，营销位个数不大于 20 个, 如：["51213","51214","51215"] 最多 20 个 数组最小长度 1，最大长度 20 |
 | date_range* | struct | 日期范围，最早支持查询 1 年内（365 天）的数据 |
 | start_date* | string | 开始日期，日期格式：YYYY-MM-DD，且小于等于 end_date 字段长度为 10 字节 |
 | end_date* | string | 结束日期，日期格式：YYYY-MM-DD，且大于等于 begin_date 字段长度为 10 字节 |
@@ -158,4 +158,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/ad_union_reports/get?access_token=<ACCESS_
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

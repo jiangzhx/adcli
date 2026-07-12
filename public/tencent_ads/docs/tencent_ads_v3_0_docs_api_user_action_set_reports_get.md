@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_user_action_set_reports_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | user_action_set_id* | integer | 用户行为源 id，通过 [\[user_action_sets 接口\]](https://developers.e.qq.com/docs/api/user_data/user_action_set/user_action_sets_add) 创建用户行为源时分配的唯一 id。请注意，当填写的用户行为数据源类型为 {WECHAT, WECHAT_MINI_PROGRAM, WECHAT_MINI_GAME} 时，必填 user_id 字段中的 wechat_openid (或 wechat_unionid) 及 wechat_app_id。 |
 | date_range* | struct | 时间范围，日期格式，{"start_date":"2017-03-01","end_date":"2017-04-02"} |
 | start_date* | string | 开始时间点对应的时间戳，小于或等于 end_date 字段长度为 10 字节 |
@@ -97,4 +97,4 @@ curl -v -G 'https://api.e.qq.com/v3.0/user_action_set_reports/get?access_token=<
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

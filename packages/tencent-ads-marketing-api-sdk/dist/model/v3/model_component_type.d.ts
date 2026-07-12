@@ -43,6 +43,7 @@ export declare const ComponentType: {
     readonly WECHAT_SHOP_ACTIVITY: "WECHAT_SHOP_ACTIVITY";
     readonly WXGAME_DIRECT_PAGE: "WXGAME_DIRECT_PAGE";
     readonly VIDEO_LIST: "VIDEO_LIST";
+    readonly CHANNELS_LIVE_FEED: "CHANNELS_LIVE_FEED";
     readonly V2_TITLE: "V2_TITLE";
     readonly V2_DESCRIPTION: "V2_DESCRIPTION";
     readonly V2_LONG_SUBLINK: "V2_LONG_SUBLINK";
@@ -74,6 +75,7 @@ export declare const ComponentType: {
     readonly V2_LIST_SUBLINK: "V2_LIST_SUBLINK";
     readonly V2_MDPA_TITLE: "V2_MDPA_TITLE";
     readonly V2_MDPA_DESCRIPTION: "V2_MDPA_DESCRIPTION";
+    readonly V2_DOCTOR_CARD: "V2_DOCTOR_CARD";
     readonly SEARCH_ALGORITHM_GEN: "SEARCH_ALGORITHM_GEN";
     readonly SEARCH_DERIVATIVE_TITLE: "SEARCH_DERIVATIVE_TITLE";
     readonly SMART_DELIVERY_AIGC: "SMART_DELIVERY_AIGC";

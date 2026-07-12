@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_video_channel_leads_data_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主账号 id，直客账号或子客账号 |
+| account_id* | integer | 账户 id，直客账号或子客账号 |
 | brand_ids | string[] | 品牌 id 列表，非经销商管理员必填 |
 | brand_names | string[] | 品牌名称列表 |
 | dealer_ids | string[] | 经销商 id 列表 |
@@ -86,7 +86,7 @@ curl 'https://api.e.qq.com/v3.0/video_channel_leads_data/get?access_token=<ACCES
 | form_leads_cnt | integer | 表单预约线索数 |
 | wecom_leads_cnt | integer | 加企微线索数 |
 | consult_leads_cnt | integer | 在线咨询线索数 |
-| ad_leads_cnt | integer | 广告流量线索数 |
+| ad_leads_cnt | integer | 营销流量线索数 |
 | natural_leads_cnt | integer | 自然线索数 |
 | page_info | struct | 分页信息结构 |
 | page | integer | 页数，第一页页码是 1。当使用 search_after 时，本参数不生效。 |
@@ -119,4 +119,4 @@ curl 'https://api.e.qq.com/v3.0/video_channel_leads_data/get?access_token=<ACCES
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

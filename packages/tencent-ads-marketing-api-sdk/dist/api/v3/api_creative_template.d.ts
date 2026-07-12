@@ -2,16 +2,17 @@ import { ApiClient, type ApiResponse } from "./client";
 import type { CreativeTemplateGetResponseData } from "../../model/v3/index";
 export interface CreativeTemplateApiGetRequest {
     accountId: number | string;
-    marketingGoal: string;
-    marketingTargetType: string;
-    marketingCarrierType: string;
     deliveryMode: string;
+    marketingGoal?: string;
     marketingSubGoal?: string;
+    marketingTargetType?: string;
+    marketingCarrierType?: string;
     automaticSiteEnabled?: boolean;
     siteSet?: unknown;
     dynamicCreativeType?: string;
     creativeTemplateId?: number | string;
     useNewVersion?: boolean;
+    adgroupId?: number | string;
     adgroupType?: string;
     fields?: unknown;
 }

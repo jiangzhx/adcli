@@ -29,11 +29,11 @@ source_id: tencent_ads_v3_0_docs_api_async_reports_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | task_name* | string | 任务名称 字段长度最小 1 字节，长度最大 120 字节 |
 | report_fields* | string[] | 指定异步报表返回的字段 数组最小长度 1，最大长度 1024 字段长度最小 1 字节，长度最大 64 字节 |
 | level* | enum | 异步报表类型级别，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#async_report_level) 可选值：{ REPORT_LEVEL_ADVERTISER, REPORT_LEVEL_ADGROUP, REPORT_LEVEL_BIDWORD, REPORT_LEVEL_QUERYWORD, REPORT_LEVEL_AGE, REPORT_LEVEL_GENDER, REPORT_LEVEL_REGION, REPORT_LEVEL_CITY, REPORT_LEVEL_DYNAMIC_CREATIVE, REPORT_LEVEL_COMPONENT, REPORT_LEVEL_MATERIAL_IMAGE, REPORT_LEVEL_MATERIAL_VIDEO, REPORT_LEVEL_CHANNEL, REPORT_LEVEL_LANDING_PAGE, REPORT_LEVEL_MARKETING_ASSET, REPORT_LEVEL_AD_UNION, REPORT_LEVEL_PRODUCT_CATALOG, REPORT_LEVEL_PROJECT, REPORT_LEVEL_PROJECT_CREATIVE, REPORT_LEVEL_OS, REPORT_LEVEL_PRODUCT_CREATIVE_TEMPLATE } |
-| filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，若获取联盟广告位信息此字段必填，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 5 |
+| filtering | struct[] | 过滤条件，若此字段不传，或传空则视为无限制条件，若获取联盟营销位信息此字段必填，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 5 |
 | field* | string | 过滤字段 可选值：{ adgroup_id, dynamic_creative_id, component_id, component_type, bidword_id, image_id, video_id, channel_id, union_position_id, landing_page_type, landing_page_id, md5, hour } |
 | operator* | enum | 操作符，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#api_filter_operator) 可选值：{ EQUALS, CONTAINS, LESS_EQUALS, LESS, GREATER_EQUALS, GREATER, IN, NOT_EQUALS } |
 | values* | string[] | 字段取值，values 数组元素的个数限制与 operator 的取值相关，详见 [\[过滤条件\]](https://developers.e.qq.com/docs/reference/illustration#filtering) 数组最小长度 1，最大长度 100 字段长度最小 1 字节，长度最大 64 字节 |
@@ -99,4 +99,4 @@ curl 'https://api.e.qq.com/v3.0/async_reports/add?access_token=<ACCESS_TOKEN>&ti
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

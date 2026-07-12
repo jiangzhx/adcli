@@ -37,16 +37,14 @@ source_id: tencent_ads_v3_0_docs_api_advertiser_update
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| daily_budget | integer | 竞价广告账户日预算，仅对竞价广告生效，合约广告不受影响单位为分，设置为 0 表示不设预算（即不限） 要求介于 5,000 分– 4,000,000,000 分之间（50 元-40,000,000 元，单位为人民币） 每次修改幅度不能低于 5,000 分（50 元，单位为人民币）；微信公众号平台小程序账户，每次提高幅度不能低于 50,000 分（500 元，单位为人民币） 修改账户日预算不能低于今日已消耗金额的 1.2 倍加上冻结金；且不能低于今日已消耗金额加上 5,000 分（50 元，单位为人民币） |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| daily_budget | integer | 竞价投放账户日预算，仅对竞价投放生效，合约投放不受影响单位为分，设置为 0 表示不设预算（即不限） 要求介于 5,000 分– 4,000,000,000 分之间（50 元-40,000,000 元，单位为人民币） 每次修改幅度不能低于 5,000 分（50 元，单位为人民币）；微信公众号平台小程序账户，每次提高幅度不能低于 50,000 分（500 元，单位为人民币） 修改账户日预算不能低于今日已消耗金额的 1.2 倍加上冻结金；且不能低于今日已消耗金额加上 5,000 分（50 元，单位为人民币） |
 | corporation_name | string | 【企业账号】企业名称 【个人账号】不使用 字段长度最小 1 字节，长度最大 120 字节 |
 | corporation_licence | string | 【企业账号】企业营业执照注册号 【个人账号】不使用 字段长度最小 1 字节，长度最大 18 字节 |
 | certification_image_id | string | 【企业账号】营业执照/企业资质证明图片 id，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add)上传图片后获得 【个人账号】不使用 字段长度最小 1 字节，长度最大 64 字节 |
 | individual_qualification | struct | 身份证明， 【企业账号】法人身份证明 【个人账号】个人身份证明 |
 | name | string | 必填，姓名 字段长度最小 1 字节，长度最大 64 字节 |
 | identification_number | string | 必填，身份证号码 字段长度最小 1 字节，长度最大 64 字节 |
-| identification_front_image_id* | string | 身份证正面图片 id，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 字段长度最小 1 字节，长度最大 64 字节 |
-| identification_back_image_id* | string | 身份证反面图片 id，通过 [\[资质模块\]](https://developers.e.qq.com/v3.0/docs/api/qualification_images/add) 上传图片后获得 字段长度最小 1 字节，长度最大 64 字节 |
 | area_code | integer | 【企业账号】公司所在地（需与营业执照注册地域一致），具体值参照附录中的 [\[地域信息\]](https://developers.e.qq.com/docs/reference/region) 【个人账号】不使用 |
 | system_industry_id | integer | 开户行业 id，请填写二级行业 id，详见 [\[行业分类\]](https://developers.e.qq.com/v3.0/pages/docs/reference/industry_v6.1) |
 | introduction_url | string | 业务介绍页地址，可填写公司网站、APP 下载页、H5 链接等，作为开户信息参考 字段长度最小 1 字节，长度最大 255 字节 |
@@ -121,7 +119,7 @@ curl 'https://api.e.qq.com/v3.0/advertiser/update?access_token=<ACCESS_TOKEN>&ti
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 广告主帐号 id |
+| account_id | integer | 账户 id |
 
 ## 应答示例
 
@@ -140,4 +138,4 @@ curl 'https://api.e.qq.com/v3.0/advertiser/update?access_token=<ACCESS_TOKEN>&ti
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

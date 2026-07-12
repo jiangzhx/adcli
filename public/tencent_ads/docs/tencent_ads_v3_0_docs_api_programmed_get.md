@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_programmed_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | material_derive_id* | integer | 预览 id |
 
 使用说明
@@ -55,9 +55,9 @@ curl 'https://api.e.qq.com/v3.0/programmed/get?access_token=<ACCESS_TOKEN>&times
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | material_derive_id | integer | 预览 id |
-| adgroup_id | int64 | 广告 id |
+| adgroup_id | int64 | 营销单元 id |
 | material_groups | struct[] | 素材组信息列表，数组长度为[0,100] |
 | material_group_id | integer | 素材组 id |
 | ratio | string | 素材比例 |
@@ -301,8 +301,6 @@ curl 'https://api.e.qq.com/v3.0/programmed/get?access_token=<ACCESS_TOKEN>&times
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

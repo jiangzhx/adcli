@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_programmed_commponent_preview_template_upda
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | material_derive_id* | integer | 衍生全局 id |
 | component_id* | integer | 创意组件 id |
 | material_preview_id* | integer | 预览 id |
@@ -85,8 +85,6 @@ curl 'https://api.e.qq.com/v3.0/programmed_commponent_preview_template/update?ac
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

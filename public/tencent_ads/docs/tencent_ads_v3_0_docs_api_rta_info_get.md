@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_rta_info_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| RtaId | integer | 广告主在腾讯 RTA 的唯一客户 id，不用传，仅供文档展示使用 |
+| RtaId | integer | 客户在腾讯 RTA 的唯一客户 id，不用传，仅供文档展示使用 |
 
 ## 请求示例
 
@@ -46,7 +46,7 @@ curl 'https://api.e.qq.com/v3.0/rta_info/get?access_token=<ACCESS_TOKEN>&timesta
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| RtaId | integer | 广告主在腾讯 RTA 的唯一客户 id，与 bidurl 唯一对应，由 RTA 系统生成 |
+| RtaId | integer | 客户在腾讯 RTA 的唯一客户 id，与 bidurl 唯一对应，由 RTA 系统生成 |
 | RtaName | string | 服务注册时提交的 RTA 简称 |
 | RtaCompanyName | string | 服务注册时提交的 RTA 全称 |
 | QpsLimit | integer | 当前腾讯下发请求执行的 QPS 上限值 |
@@ -58,7 +58,7 @@ curl 'https://api.e.qq.com/v3.0/rta_info/get?access_token=<ACCESS_TOKEN>&timesta
 | RuleValue | integer | 流量限制取值，不同 RuleType 对应的含义不同，具体参见 RuleDesc |
 | RuleDesc | string | 流量限制描述 |
 | bidurls | struct[] | 竞价链接列表 |
-| RtaId | integer | 广告主在腾讯 RTA 的唯一客户 id，与 bidurl 唯一对应，由 RTA 系统生成 |
+| RtaId | integer | 客户在腾讯 RTA 的唯一客户 id，与 bidurl 唯一对应，由 RTA 系统生成 |
 | BidUrl | string | 竞价链接 |
 | QpsLimit | integer | qps 限制 |
 | Phase | integer | Phase，2=> P2, 3=>P3 |
@@ -87,4 +87,4 @@ curl 'https://api.e.qq.com/v3.0/rta_info/get?access_token=<ACCESS_TOKEN>&timesta
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

@@ -29,7 +29,7 @@ source_id: tencent_ads_v3_0_docs_api_wechat_pages_add
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | page_name* | string | 落地页名称 字段长度最小 1 字节，长度最大 120 字节 |
 | page_template_id* | integer | 落地页模板 id |
 | page_elements_spec_list* | struct[] | 组件素材内容，组件的同步顺序与原生页的展示顺序一致，即第一个同步组件为顶部展示元素 数组最大长度 40 |
@@ -452,4 +452,4 @@ curl 'https://api.e.qq.com/v3.0/wechat_pages/add?access_token=<ACCESS_TOKEN>&tim
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

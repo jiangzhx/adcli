@@ -19,6 +19,7 @@ export interface VideosApiGetRequest {
     pageSize?: number;
     labelId?: number | string;
     businessScenario?: number;
+    needAigcFlag?: boolean;
     fields?: unknown;
 }
 export interface VideosApiUpdateRequest {

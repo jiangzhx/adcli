@@ -31,7 +31,7 @@ source_id: tencent_ads_v3_0_docs_api_oauth_authorize
 | client_id* | integer | 应用 id，在开发者官网创建应用后获得，可通过 [\[应用程序管理页面\]](https://developers.e.qq.com/app) 查看 |
 | redirect_uri* | string | 应用回调地址，仅支持 http 和 https，不支持指定端口号，且主域名必须与创建应用时登记的回调域名一致，若地址携带参数，需要对地址进行 urlencode 字段长度最小 1 字节，长度最大 1024 字节 |
 | state | string | 验证请求有效性参数，值为用户自取，用于阻止跨站请求伪造攻击 字段长度最小 0 字节，长度最大 512 字节 |
-| scope | string | 授权范围，可选值：ads_management（广告投放）、ads_insights（数据洞察）、account_management（帐号服务）、audience_management（人群管理）、user_actions（用户行为数据接入），不传即为授权全部权限 字段长度最小 1 字节，长度最大 64 字节 |
+| scope | string | 授权范围，可选值：ads_management（投放）、ads_insights（数据洞察）、account_management（帐号服务）、audience_management（人群管理）、user_actions（用户行为数据接入），不传即为授权全部权限 字段长度最小 1 字节，长度最大 64 字节 |
 | account_type | enum | 授权账号类型，登录账号类型 QQ/微信，[\[枚举详情\]](https://developers.e.qq.com/v3.0/docs/enums#auth_account_type) 可选值：{ ACCOUNT_TYPE_WECHAT, ACCOUNT_TYPE_QQ } 默认值：ACCOUNT_TYPE_QQ |
 
 使用说明
@@ -54,4 +54,4 @@ https://developers.e.qq.com/oauth/authorize?client_id=<CLIENT_ID>&redirect_uri=h
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

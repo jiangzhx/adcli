@@ -28,7 +28,7 @@ source_id: tencent_ads_v3_0_docs_api_element_appeal_quota_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id* | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 
 ## 请求示例
 
@@ -43,7 +43,7 @@ curl -v -G 'https://api.e.qq.com/v3.0/element_appeal_quota/get?access_token=<ACC
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和广告主帐号 id |
+| account_id | integer | 推广帐号 id，有操作权限的帐号 id，包括代理商和账户 id |
 | has_privilege | integer | 是否有权限，取值为 1 表示有权限，0 表示无权限) |
 | daily_quota | integer | 每日配额 |
 | leave_quota | integer | 剩余配额 |
@@ -64,8 +64,6 @@ curl -v -G 'https://api.e.qq.com/v3.0/element_appeal_quota/get?access_token=<ACC
 
 ## 可视化调试工具
 
-请求
-
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

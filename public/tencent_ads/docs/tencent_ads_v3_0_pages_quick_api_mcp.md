@@ -35,14 +35,21 @@ Step 3: 调用营销单元/创意快速创建工具（quick-adgroup-add/quick-dy
 
 ## 支持的投放场景
 
-| 快速投放类型 | 场景枚举值 | 场景描述 |
+| 快速投放行业 | 场景枚举值 | 场景描述 |
 | --- | --- | --- |
-| 小游戏 | DELIVERY_SCENE_USER_GROWTH_IN_WECHAT_MINI_GAME | 推广微信小游戏，营销载体是微信小游戏，目标是用户增长 |
-| 小游戏 | DELIVERY_SCENE_USER_GROWTH_IN_WECHAT_MINI_GAME_SMART_DELIVERY | 推广微信小游戏，营销载体是微信小游戏，目标是用户增长，智投场景 |
-| 小游戏 | DELIVERY_SCENE_USER_GROWTH_IN_MINI_GAME_APP_IOS_PLATEAU | 推广小游戏，营销载体是 iOS 应用，平推期，目标是用户增长 |
-| 小游戏 | DELIVERY_SCENE_USER_GROWTH_IN_MINI_GAME_APP_ANDROID_PLATEAU | 推广小游戏，营销载体是 Android 应用，平推期，目标是用户增长 |
+| 游戏 | DELIVERY_SCENE_USER_GROWTH_IN_WECHAT_MINI_GAME | 推广微信小游戏，营销载体是微信小游戏，目标是用户增长 |
+| 游戏 | DELIVERY_SCENE_USER_GROWTH_IN_WECHAT_MINI_GAME_SMART_DELIVERY | 推广微信小游戏，营销载体是微信小游戏，目标是用户增长，智投场景 |
+| 游戏 | DELIVERY_SCENE_USER_GROWTH_IN_GAME_APP_ANDROID_NEW_GAME_LAUNCH | 推广 Android 应用，营销载体是 Android 应用，新游首发，目标是用户增长 |
+| 游戏 | DELIVERY_SCENE_USER_GROWTH_IN_GAME_APP_ANDROID_PLATEAU_PHASE_LAUNCH | 推广 Android 应用，营销载体是 Android 应用，平推期投放，目标是用户增长 |
+| 游戏 | DELIVERY_SCENE_USER_GROWTH_IN_GAME_APP_IOS_NEW_GAME_LAUNCH | 推广 iOS 应用，营销载体是 iOS 应用，新游首发，目标是用户增长 |
+| 游戏 | DELIVERY_SCENE_USER_GROWTH_IN_GAME_APP_IOS_PLATEAU_PHASE_LAUNCH | 推广 iOS 应用，营销载体是 iOS 应用，平推期投放，目标是用户增长 |
+| 游戏 | DELIVERY_SCENE_USER_GROWTH_IN_GAME_APP_ANDROID_NEW_GAME_LAUNCH_SMART_DELIVERY | 推广 Android 应用，营销载体是 Android 应用，游戏应用智投，目标是用户增长 |
+| 游戏 | DELIVERY_SCENE_USER_GROWTH_IN_GAME_APP_IOS_NEW_GAME_LAUNCH_SMART_DELIVERY | 推广 iOS 应用，营销载体是 iOS 应用，游戏应用智投，目标是用户增长 |
 | 金融保险 | DELIVERY_SCENE_LEAD_RETENTION_IN_LOW_PRICE_INSURANCE_PAYMENT_JUMP_PAGE | 通过页面跳转，推广低价险，目标是线索留资 |
 | 金融保险 | DELIVERY_SCENE_LEAD_RETENTION_IN_LOW_PRICE_INSURANCE_PAYMENT_JUMP_PAGE_SMART_DELIVERY | 通过页面跳转，推广低价险，目标是线索留资，智投场景 |
+| 阅读生态 | DELIVERY_SCENE_USER_GROWTH_IN_SHORT_DRAMA_JUMP_PAGE | 推广短剧，营销载体是页面跳转，目标是用户增长 |
+| 阅读生态 | DELIVERY_SCENE_USER_GROWTH_IN_SHORT_DRAMA_APP_ANDROID | 推广短剧，营销载体是 Android 应用，目标是用户增长 |
+| 阅读生态 | DELIVERY_SCENE_USER_GROWTH_IN_FICTION_JUMP_PAGE | 推广小说，营销载体是页面跳转，目标是用户增长 |
 
 更多快速投放场景持续接入中
 

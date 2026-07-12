@@ -1,11 +1,11 @@
 ---
-title: 共享钱包绑定或解绑广告账户 全部接口
+title: 共享钱包绑定或解绑投放账户 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/wallet_bind_advertiser/add
 doc_id: tencent_ads_v3_0_docs_api_wallet_bind_advertiser_add
 source_id: tencent_ads_v3_0_docs_api_wallet_bind_advertiser_add
 ---
-# 共享钱包绑定或解绑广告账户 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 共享钱包绑定或解绑投放账户 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | account_management |
 | --- | --- |
@@ -81,4 +81,4 @@ curl 'https://api.e.qq.com/v3.0/wallet_bind_advertiser/add?access_token=<ACCESS_
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

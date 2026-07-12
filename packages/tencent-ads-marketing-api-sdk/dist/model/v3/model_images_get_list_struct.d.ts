@@ -1,4 +1,4 @@
-import type { AdStatus, ImageSourceType, ImageType, ImageUsage, SimilarityStatus } from "../v3/index";
+import type { AdStatus, AigcFlag, ImageSourceType, ImageType, ImageUsage, SimilarityStatus } from "../v3/index";
 export interface ImagesGetListStruct {
     image_id?: string;
     width?: number;
@@ -20,4 +20,5 @@ export interface ImagesGetListStruct {
     status?: AdStatus;
     sample_aspect_ratio?: string;
     similarity_status?: SimilarityStatus;
+    aigc_flag?: AigcFlag;
 }

@@ -1,11 +1,11 @@
 ---
-title: 获取广告创意预览 全部接口
+title: 获取创意预览 全部接口
 platform: tencent_ads
 source_url: https://developers.e.qq.com/v3.0/docs/api/creative_template_previews/get
 doc_id: tencent_ads_v3_0_docs_api_creative_template_previews_get
 source_id: tencent_ads_v3_0_docs_api_creative_template_previews_get
 ---
-# 获取广告创意预览 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
+# 获取创意预览 [全部接口](https://developers.e.qq.com/v3.0/docs/apilist)
 
 | 所属权限 | ads_management |
 | --- | --- |
@@ -29,8 +29,8 @@ source_id: tencent_ads_v3_0_docs_api_creative_template_previews_get
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
-| dynamic_creative_id* | integer | 广告创意 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
+| dynamic_creative_id* | integer | 创意 id |
 
 使用说明
 
@@ -67,6 +67,8 @@ curl 'https://api.e.qq.com/v3.0/creative_template_previews/get?access_token=<ACC
 
 ## 可视化调试工具
 
+请求
+
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务

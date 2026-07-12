@@ -37,12 +37,12 @@ source_id: tencent_ads_v3_0_docs_api_adgroups_update_datetime
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| account_id* | integer | 广告主帐号 id，有操作权限的帐号 id，不支持代理商 id |
+| account_id* | integer | 账户 id，有操作权限的帐号 id，不支持代理商 id |
 | update_datetime_spec* | struct[] | 更新投放时间条件，数组最大长度 100 数组最大长度 100 |
-| adgroup_id* | int64 | 广告 id |
+| adgroup_id* | int64 | 营销单元 id |
 | begin_date | string | 开始投放日期，日期格式：YYYY-MM-DD，且日期小于等于 end_date 字段长度为 10 字节 |
 | end_date | string | 结束投放日期，日期格式：YYYY-MM-DD，大于等于今天，且大于等于 begin_date ；针对微信流量的更新 end_time 的场景，会有额外的规则（更新后的 end_time 至少是当前时间的 6h 之后且当前更新时间到 end_time 与投放时段有交集 字段长度最小 0 字节，长度最大 10 字节 |
-| time_series | string | 投放时间段，格式为 48 * 7 位字符串，且都为 0 和 1，以半个小时为最小粒度，从周一零点开始至周日 24 点结束。0 为不投放，1 为投放，全传 1 视为全时段投放，不允许全部传 0。朋友圈广告的投放时间需大于等于 6 小时，小于等于 30 个自然日，且每天至少投放 6 小时，且每天投放的时段需保持一致 字段长度为 336 字节 |
+| time_series | string | 投放时间段，格式为 48 * 7 位字符串，且都为 0 和 1，以半个小时为最小粒度，从周一零点开始至周日 24 点结束。0 为不投放，1 为投放，全传 1 视为全时段投放，不允许全部传 0。朋友圈营销的投放时间需大于等于 6 小时，小于等于 30 个自然日，且每天至少投放 6 小时，且每天投放的时段需保持一致 字段长度为 336 字节 |
 
 使用说明
 
@@ -69,7 +69,7 @@ curl 'https://api.e.qq.com/v3.0/adgroups/update_datetime?access_token=<ACCESS_TO
 | code | integer | 返回码 |
 | message | string | 英文返回消息 |
 | message_cn | string | 中文返回消息 |
-| adgroup_id | int64 | 广告 id |
+| adgroup_id | int64 | 营销单元 id |
 | fail_id_list | integer[] | 失败的 id 集合 |
 
 ## 应答示例
@@ -107,4 +107,4 @@ curl 'https://api.e.qq.com/v3.0/adgroups/update_datetime?access_token=<ACCESS_TO
 
 问题仍未解决？
 
-请前往腾讯广告反馈中心在线提交问题，我们的人工客服将为你服务
+请前往腾讯营销反馈中心在线提交问题，我们的人工客服将为你服务
