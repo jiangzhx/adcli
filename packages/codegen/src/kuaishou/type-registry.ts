@@ -4,7 +4,7 @@ import type { KuaishouModelFileSpec } from "./spec";
 
 export type KuaishouTypeRegistry = Map<string, string[]>;
 
-const BUILTIN_TYPES = new Set(["KuaishouId", "PageInfo", "Record", "Uint8Array"]);
+const BUILTIN_TYPES = new Set(["KuaishouId", "PageInfo", "Record", "Uint8Array", "MatchType", "UploadField"]);
 
 export function buildTypeRegistry(modelSpecs: KuaishouModelFileSpec[]): KuaishouTypeRegistry {
   const registry: KuaishouTypeRegistry = new Map();

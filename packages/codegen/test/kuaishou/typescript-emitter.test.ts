@@ -48,6 +48,8 @@ describe("kuaishou typescript emitter", () => {
     expect(api).toContain("export { info as Info }");
     expect(api).toContain("advertiser_id: advertiserID");
     expect(api).toContain("client.post<Info>");
+    expect(api).toContain('from "../../core/index"');
+    expect(api).toContain('from "../../model/advertiser/index"');
   });
 
   test("imports array unwrap types and falls back to empty array", () => {
@@ -74,6 +76,7 @@ describe("kuaishou typescript emitter", () => {
     });
 
     expect(api).toContain("import { GetMonitorURLsRequest, GetMonitorURLsRequestInit, UnitMonitorURL } from");
+    expect(api).toContain('from "../../../model/dsp/unit/index"');
     expect(api).toContain("return resp.unit_monitor_urls ?? []");
   });
 
@@ -212,5 +215,106 @@ describe("kuaishou typescript emitter", () => {
     });
 
     expect(model).not.toContain("jsonMarshal");
+  });
+
+  test("passes extra success codes through to the client call", () => {
+    const api = emitApiFile({
+      packageName: "oauth",
+      relativePath: "api/oauth/approval_list.go",
+      modelImport: "oauth",
+      functions: [
+        {
+          functionName: "ApprovalList",
+          tsName: "approvalList",
+          kind: "post",
+          params: [
+            { goName: "accessToken", tsName: "accessToken", tsType: "string", role: "accessToken" },
+            { goName: "pageNo", tsName: "pageNo", tsType: "number", role: "scalar" },
+          ],
+          responseType: "ApprovalListResponse",
+          unwrap: "object",
+          requestType: "ApprovalListRequest",
+          requestInitType: "ApprovalListRequestInit",
+          buildsRequest: {
+            type: "ApprovalListRequest",
+            fields: [{ jsonName: "page_no", source: "param", paramName: "pageNo" }],
+          },
+          successCodes: [0, 1],
+        },
+      ],
+    });
+
+    expect(api).toContain("successCodes: [0, 1]");
+    expect(api).toContain('from "../../core/index"');
+    expect(api).toContain('from "../../model/oauth/index"');
+  });
+
+  test("imports MatchType from runtime types", () => {
+    const model = emitModelFile({
+      packageName: "report",
+      relativePath: "model/report/stat.go",
+      structs: [
+        {
+          name: "Stat",
+          requestKind: "none",
+          fields: [
+            { goName: "MatchType", jsonName: "match_type", tsType: "MatchType" },
+            { goName: "CampaignID", jsonName: "campaign_id", tsType: "KuaishouId" },
+          ],
+        },
+      ],
+    });
+
+    expect(model).toContain("import type { KuaishouId, MatchType }");
+    expect(model).not.toContain("jsonMarshal");
+  });
+
+  test("emits upload fields instead of json body", () => {
+    const model = emitModelFile({
+      packageName: "file",
+      relativePath: "model/file/ad_video_upload_v1.go",
+      structs: [
+        {
+          name: "AdVideoUploadRequestV1",
+          requestKind: "upload",
+          url: "v1/file/ad/video/upload",
+          fields: [
+            { goName: "AdvertiserID", jsonName: "advertiser_id", tsType: "KuaishouId" },
+            { goName: "File", jsonName: "file", tsType: "UploadField" },
+          ],
+        },
+      ],
+    });
+
+    expect(model).toContain("import type { UploadRequest, UploadField }");
+    expect(model).toContain("const fields: UploadField[] = []");
+    expect(model).not.toContain("jsonMarshal");
+  });
+
+  test("emits getBytes without importing Uint8Array from models", () => {
+    const api = emitApiFile({
+      packageName: "asynctask",
+      relativePath: "api/report/asynctask/download.go",
+      modelImport: "report/asynctask",
+      functions: [
+        {
+          functionName: "Download",
+          tsName: "download",
+          kind: "getBytes",
+          params: [
+            { goName: "accessToken", tsName: "accessToken", tsType: "string", role: "accessToken" },
+            { goName: "req", tsName: "req", tsType: "DownloadRequest | DownloadRequestInit", role: "request" },
+          ],
+          responseType: "Uint8Array",
+          unwrap: "object",
+          requestType: "DownloadRequest",
+          requestInitType: "DownloadRequestInit",
+        },
+      ],
+    });
+
+    expect(api).toContain("client.getBytes");
+    expect(api).toContain("Promise<Uint8Array>");
+    expect(api).not.toContain("Uint8Array } from");
   });
 });

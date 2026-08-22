@@ -4,21 +4,24 @@ import { collectReferencedTypes, resolveTypeImport, type KuaishouTypeRegistry } 
 export function emitModelFile(spec: KuaishouModelFileSpec, options: { typeRegistry?: KuaishouTypeRegistry } = {}): string {
   const needsId = spec.structs.some((model) => collectTypes(model).has("KuaishouId"));
   const needsPageInfo = spec.structs.some((model) => collectTypes(model).has("PageInfo"));
+  const needsMatchType = spec.structs.some((model) => collectTypes(model).has("MatchType"));
   const requestKinds = new Set(spec.structs.map((model) => model.requestKind).filter((kind) => kind !== "none"));
   const imports: string[] = [];
   if (requestKinds.size > 0) {
-    const names = [...requestKinds].flatMap((kind) => (kind === "get" ? ["GetRequest"] : kind === "upload" ? ["UploadRequest"] : ["PostRequest"]));
+    const names = [...requestKinds].flatMap((kind) => (kind === "get" ? ["GetRequest"] : kind === "upload" ? ["UploadRequest", "UploadField"] : ["PostRequest"]));
+    if (spec.structs.some((model) => model.fields.some((field) => field.tsType === "UploadField"))) {
+      names.push("UploadField");
+    }
     imports.push(`import type { ${[...new Set(names)].join(", ")} } from "${modelRuntimeImport(spec.relativePath)}";`);
   }
   const needsMarshal = spec.structs.some(
     (model) =>
       model.requestKind === "post" ||
-      model.requestKind === "upload" ||
       (model.requestKind === "get" && model.fields.some((field) => field.tsType.endsWith("[]"))),
   );
   const needsQuery = spec.structs.some((model) => model.requestKind === "get");
-  if (needsId || needsPageInfo || needsMarshal || needsQuery) {
-    const typeNames = [needsId ? "KuaishouId" : null, needsPageInfo ? "PageInfo" : null].filter(Boolean);
+  if (needsId || needsPageInfo || needsMatchType || needsMarshal || needsQuery) {
+    const typeNames = [needsId ? "KuaishouId" : null, needsPageInfo ? "PageInfo" : null, needsMatchType ? "MatchType" : null].filter(Boolean);
     const valueNames = [needsMarshal ? "jsonMarshal" : null, needsQuery ? "encodeQuery" : null].filter(Boolean);
     const from = modelRuntimeImport(spec.relativePath, "types");
     if (typeNames.length > 0) {
@@ -131,6 +134,21 @@ ${model.fields.map((field) => `  ${field.jsonName}?: ${field.tsType};`).join("\n
 }
 
 function emitEncode(model: KuaishouModelStructSpec): string {
+  if (model.requestKind === "upload") {
+    return `    const fields: UploadField[] = [];
+    for (const [key, value] of Object.entries(this)) {
+      if (value == null || typeof value === "function") {
+        continue;
+      }
+      if (typeof value === "object" && "value" in value) {
+        const file = value as UploadField;
+        fields.push({ key, value: file.value, reader: file.reader });
+        continue;
+      }
+      fields.push({ key, value: String(value) });
+    }
+    return fields;`;
+  }
   const objectLiteral = `{
 ${model.fields.map((field) => `      ${field.jsonName}: this.${field.jsonName},`).join("\n")}
     }`;
@@ -195,14 +213,18 @@ function emitClientCall(fn: KuaishouApiSpec): string {
   if (fn.kind === "url") {
     return `  request.app_id = client.AppID();\n  return \`\${client.oauthUrl}/\${request.path()}?\${request.encode()}\`;`;
   }
+  if (fn.kind === "getBytes") {
+    return `  return client.getBytes(${accessToken}, ${requestName}, signal);`;
+  }
   const method = fn.kind === "get" ? "get" : fn.kind === "upload" ? "upload" : fn.kind === "getOnBody" ? "getOnBody" : "post";
+  const options = fn.successCodes?.length ? `, { successCodes: [${fn.successCodes.join(", ")}] }` : "";
   if (fn.unwrap === "void") {
-    return `  await client.${method}<unknown>(${accessToken}, ${requestName}, signal);`;
+    return `  await client.${method}<unknown>(${accessToken}, ${requestName}, signal${options});`;
   }
   if (fn.unwrap === "field") {
-    return `  const resp = await client.${method}<{ ${fn.extractField}?: ${fn.responseType} }>(${accessToken}, ${requestName}, signal);\n  return resp.${fn.extractField} ?? ${unwrapFallback(fn.responseType)};`;
+    return `  const resp = await client.${method}<{ ${fn.extractField}?: ${fn.responseType} }>(${accessToken}, ${requestName}, signal${options});\n  return resp.${fn.extractField} ?? ${unwrapFallback(fn.responseType)};`;
   }
-  return `  return client.${method}<${fn.responseType}>(${accessToken}, ${requestName}, signal);`;
+  return `  return client.${method}<${fn.responseType}>(${accessToken}, ${requestName}, signal${options});`;
 }
 
 function generatedHeader(relativePath: string) {
@@ -226,17 +248,17 @@ function modelRuntimeImport(relativePath: string, file = "request") {
 
 function apiCoreImport(relativePath: string) {
   const depth = relativePath.split("/").length - 1;
-  return `${"../".repeat(depth)}core`;
+  return `${"../".repeat(depth)}core/index`;
 }
 
 function apiModelRuntimeImport(relativePath: string) {
   const depth = relativePath.split("/").length - 1;
-  return `${"../".repeat(depth)}model`;
+  return `${"../".repeat(depth)}model/index`;
 }
 
 function apiModelImport(relativePath: string, modelImport: string) {
   const depth = relativePath.split("/").length - 1;
-  return `${"../".repeat(depth)}model/${modelImport}`;
+  return `${"../".repeat(depth)}model/${modelImport}/index`;
 }
 
 function unwrapFallback(responseType: string) {
@@ -250,7 +272,7 @@ function unwrapFallback(responseType: string) {
 }
 
 function isIdentifierType(value: string | undefined): value is string {
-  return value != null && /^[A-Z][A-Za-z0-9]*$/.test(value) && value !== "KuaishouId";
+  return value != null && /^[A-Z][A-Za-z0-9]*$/.test(value) && value !== "KuaishouId" && value !== "Uint8Array";
 }
 
 function unique(values: string[]) {

@@ -1,5 +1,5 @@
 export type KuaishouRequestKind = "post" | "get" | "upload" | "none";
-export type KuaishouApiKind = "post" | "get" | "upload" | "getOnBody" | "url" | "unknown";
+export type KuaishouApiKind = "post" | "get" | "upload" | "getOnBody" | "getBytes" | "url" | "unknown";
 
 export interface KuaishouModelFieldSpec {
   goName: string;
@@ -60,6 +60,7 @@ export interface KuaishouApiSpec {
     type: string;
     fields: KuaishouApiBuildFieldSpec[];
   };
+  successCodes?: number[];
 }
 
 export interface KuaishouApiFileSpec {

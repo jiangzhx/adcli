@@ -69,6 +69,23 @@ func Create(ctx context.Context, clt *core.SDKClient, accessToken string, req *c
     });
   });
 
+  test("parses GetBytes download as getBytes returning Uint8Array", () => {
+    const api = parseGoApiSource(
+      `
+package asynctask
+func Download(ctx context.Context, clt *core.SDKClient, accessToken string, req *asynctask.DownloadRequest) ([]byte, error) {
+  return clt.GetBytes(ctx, accessToken, req)
+}
+`,
+      "api/report/asynctask/download.go",
+    );
+    expect(api.functions[0]).toMatchObject({
+      functionName: "Download",
+      kind: "getBytes",
+      responseType: "Uint8Array",
+    });
+  });
+
   test("parses oauth access token builder and authorize url", async () => {
     const models = parseGoModelSource(await readFile(`${goRoot}/model/oauth/access_token.go`, "utf8"), "model/oauth/access_token.go");
     const api = parseGoApiSource(await readFile(`${goRoot}/api/oauth/access_token.go`, "utf8"), "api/oauth/access_token.go", models.structs);

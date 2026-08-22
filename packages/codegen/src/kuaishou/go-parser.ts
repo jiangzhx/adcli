@@ -207,6 +207,9 @@ function inferApiKind(functionName: string, body: string): KuaishouApiKind {
   if (/\bclt\.GetOnBody\b/.test(body)) {
     return "getOnBody";
   }
+  if (/\bclt\.GetBytes\b/.test(body)) {
+    return "getBytes";
+  }
   if (/\bclt\.Get\b/.test(body)) {
     return "get";
   }

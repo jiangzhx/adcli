@@ -2,8 +2,9 @@ import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 
 import { parseGoApiSource, parseGoModelSource } from "./go-parser";
-import { emitApiFile, emitBarrel, emitModelFile } from "./typescript-emitter";
+import { emitPublicIndex, KUAISHOU_API_SUCCESS_CODES, publicPackageExports, selectPublicNamespaces } from "./public-surface";
 import type { KuaishouApiFileSpec, KuaishouModelFileSpec, KuaishouModelStructSpec } from "./spec";
+import { emitApiFile, emitBarrel, emitModelFile } from "./typescript-emitter";
 import { buildTypeRegistry } from "./type-registry";
 
 const RUNTIME_MODEL_FILES = new Set(["request.go", "response.go", "types.go", "doc.go"]);
@@ -60,6 +61,7 @@ export async function runGoPortWorkflow(options: KuaishouGoPortWorkflowOptions):
       const modelImport = source.match(/github.com\/bububa\/kwai-marketing-api\/model\/([\w./]+)/)?.[1];
       const relatedModels = modelImport ? (modelsByPackage.get(modelImport) ?? []) : [];
       const spec = parseGoApiSource(source, `api/${file}`, relatedModels);
+      applySuccessCodes(spec);
       apiSpecs.push(spec);
     } catch (error) {
       skipped.push({ file: `api/${file}`, reason: error instanceof Error ? error.message : String(error) });
@@ -83,6 +85,10 @@ export async function runGoPortWorkflow(options: KuaishouGoPortWorkflowOptions):
   );
   await writeBarrels(outputDir, "model", modelSpecs.map((spec) => spec.relativePath.replace(/^model\//, "").replace(/\.go$/, "")));
   await writeBarrels(outputDir, "api", apiSpecs.map((spec) => spec.relativePath.replace(/^api\//, "").replace(/\.go$/, "")));
+  const publicNamespaces = selectPublicNamespaces(apiSpecs.map((spec) => spec.relativePath));
+  const modelDirs = [...new Set(modelSpecs.map((spec) => dirname(spec.relativePath.replace(/^model\//, "").replace(/\.go$/, "")).replace(/^\.$/, "")))].filter(Boolean);
+  await writeFile(join(outputDir, "index.ts"), emitPublicIndex(publicNamespaces, modelDirs));
+  await patchPackageExports(join(outputDir, "..", "package.json"), publicNamespaces);
 
   const result: KuaishouGoPortWorkflowResult = {
     source: "go",
@@ -121,9 +127,33 @@ async function writeBarrels(outputDir: string, root: "api" | "model", files: str
     const target = join(outputDir, root, dir === "." ? "index.ts" : join(dir, "index.ts"));
     await mkdir(dirname(target), { recursive: true });
     const childDirs = [...byDir.keys()].filter((child) => child !== dir && (dir === "." ? !child.includes("/") : child.startsWith(`${dir}/`) && child.slice(dir.length + 1).split("/").length === 1));
-    const exports = [...modules.sort(), ...childDirs.map((child) => `./${child.split("/").at(-1)}`)];
+    const exports = [...modules.sort(), ...childDirs.map((child) => `./${child.split("/").at(-1)}/index`)];
     await writeFile(target, emitBarrel([...new Set(exports)]));
   }
+}
+
+function applySuccessCodes(spec: KuaishouApiFileSpec) {
+  const successCodes = KUAISHOU_API_SUCCESS_CODES[spec.relativePath];
+  if (!successCodes) {
+    return;
+  }
+  for (const fn of spec.functions) {
+    fn.successCodes = [...successCodes];
+  }
+}
+
+async function patchPackageExports(packageJsonPath: string, namespaces: ReturnType<typeof selectPublicNamespaces>) {
+  const raw = await readFile(packageJsonPath, "utf8").catch(() => "");
+  if (!raw) {
+    return;
+  }
+  const pkg = JSON.parse(raw) as { exports?: Record<string, unknown> };
+  pkg.exports = {
+    ...pkg.exports,
+    ...publicPackageExports(namespaces),
+    "./package.json": "./package.json",
+  };
+  await writeFile(packageJsonPath, `${JSON.stringify(pkg, null, 2)}\n`);
 }
 
 async function listGoFiles(goSdkRoot: string, root: "api" | "model"): Promise<string[]> {
