@@ -46,10 +46,10 @@ await api.get({
 
 ## Porting 规则
 
-生成器维护在内部包 `packages/codegen`，入口命令：
+生成器维护在 [adcli](https://github.com/jiangzhx/adcli) 的 `packages/codegen`，入口命令：
 
 ```bash
-bun run codegen:tencent-ads:generate /path/to/marketing-api-go-sdk
+bun run --cwd /path/to/adcli codegen:tencent-ads:generate /path/to/marketing-api-go-sdk /path/to/tencent-ads-marketing-api-sdk/src
 ```
 
 核心映射规则：

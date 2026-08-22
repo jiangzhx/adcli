@@ -1,0 +1,17 @@
+{
+  "source": "go",
+  "sourceModule": "github.com/bububa/kwai-marketing-api",
+  "sourceVersion": "1.10.1",
+  "apis": 209,
+  "models": 534,
+  "skipped": [
+    {
+      "file": "api/track/activate.go",
+      "reason": "Unable to parse API functions from api/track/activate.go"
+    },
+    {
+      "file": "api/track/click.go",
+      "reason": "Unable to parse API functions from api/track/click.go"
+    }
+  ]
+}

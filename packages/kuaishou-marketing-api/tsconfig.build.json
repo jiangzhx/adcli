@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationMap": false,
+    "sourceMap": false
+  },
+  "include": [
+    "src/index.ts",
+    "src/core/**/*.ts",
+    "src/model/index.ts",
+    "src/model/request.ts",
+    "src/model/response.ts",
+    "src/model/types.ts",
+    "src/model/oauth/**/*.ts",
+    "src/model/advertiser/**/*.ts",
+    "src/model/temporal_granularity.ts",
+    "src/model/dsp/campaign/**/*.ts",
+    "src/model/dsp/unit/**/*.ts",
+    "src/api/oauth/**/*.ts",
+    "src/api/advertiser/**/*.ts",
+    "src/api/dsp/campaign/**/*.ts",
+    "src/api/dsp/unit/**/*.ts"
+  ],
+  "exclude": [
+    "test/**/*.ts"
+  ]
+}

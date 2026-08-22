@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "src/index.ts",
+    "src/core/**/*.ts",
+    "src/model/index.ts",
+    "src/model/request.ts",
+    "src/model/response.ts",
+    "src/model/types.ts",
+    "src/model/oauth/**/*.ts",
+    "src/model/advertiser/**/*.ts",
+    "src/model/temporal_granularity.ts",
+    "src/model/dsp/campaign/**/*.ts",
+    "src/model/dsp/unit/**/*.ts",
+    "src/api/oauth/**/*.ts",
+    "src/api/advertiser/**/*.ts",
+    "src/api/dsp/campaign/**/*.ts",
+    "src/api/dsp/unit/**/*.ts"
+  ]
+}

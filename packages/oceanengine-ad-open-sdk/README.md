@@ -43,10 +43,10 @@ await api.openApiV30ReportCustomConfigGetGet({
 
 ## Porting 规则
 
-生成器维护在内部包 `packages/codegen`，入口命令：
+生成器维护在 [adcli](https://github.com/jiangzhx/adcli) 的 `packages/codegen`，入口命令：
 
 ```bash
-bun run codegen:oceanengine:generate /path/to/ad_open_sdk_go
+bun run --cwd /path/to/adcli codegen:oceanengine:generate /path/to/ad_open_sdk_go /path/to/oceanengine-ad-open-sdk/src
 ```
 
 核心映射规则：
