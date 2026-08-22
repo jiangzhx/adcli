@@ -10,6 +10,7 @@ export interface KuaishouModelFieldSpec {
 export interface KuaishouModelStructSpec {
   name: string;
   fields: KuaishouModelFieldSpec[];
+  embeddedTypes?: string[];
   requestKind: KuaishouRequestKind;
   url?: string;
 }
@@ -61,6 +62,7 @@ export interface KuaishouApiSpec {
     fields: KuaishouApiBuildFieldSpec[];
   };
   successCodes?: number[];
+  flatResponse?: boolean;
 }
 
 export interface KuaishouApiFileSpec {

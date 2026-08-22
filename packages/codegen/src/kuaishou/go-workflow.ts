@@ -1,8 +1,8 @@
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 
-import { parseGoApiSource, parseGoModelSource } from "./go-parser";
-import { emitPublicIndex, KUAISHOU_API_SUCCESS_CODES, publicPackageExports, selectPublicNamespaces } from "./public-surface";
+import { parseGoApiSource, parseGoModelSource, flattenEmbeddedFields } from "./go-parser";
+import { emitPublicIndex, KUAISHOU_API_FLAT_RESPONSES, KUAISHOU_API_SUCCESS_CODES, publicPackageExports, selectPublicNamespaces } from "./public-surface";
 import type { KuaishouApiFileSpec, KuaishouModelFileSpec, KuaishouModelStructSpec } from "./spec";
 import { emitApiFile, emitBarrel, emitModelFile } from "./typescript-emitter";
 import { buildTypeRegistry } from "./type-registry";
@@ -52,6 +52,8 @@ export async function runGoPortWorkflow(options: KuaishouGoPortWorkflowOptions):
     }
   }
 
+  flattenEmbeddedFields(modelSpecs);
+
   for (const file of apiFiles) {
     if (file.endsWith("doc.go") || file.endsWith("_test.go")) {
       continue;
@@ -62,6 +64,7 @@ export async function runGoPortWorkflow(options: KuaishouGoPortWorkflowOptions):
       const relatedModels = modelImport ? (modelsByPackage.get(modelImport) ?? []) : [];
       const spec = parseGoApiSource(source, `api/${file}`, relatedModels);
       applySuccessCodes(spec);
+      applyFlatResponse(spec);
       apiSpecs.push(spec);
     } catch (error) {
       skipped.push({ file: `api/${file}`, reason: error instanceof Error ? error.message : String(error) });
@@ -139,6 +142,15 @@ function applySuccessCodes(spec: KuaishouApiFileSpec) {
   }
   for (const fn of spec.functions) {
     fn.successCodes = [...successCodes];
+  }
+}
+
+function applyFlatResponse(spec: KuaishouApiFileSpec) {
+  if (!KUAISHOU_API_FLAT_RESPONSES[spec.relativePath]) {
+    return;
+  }
+  for (const fn of spec.functions) {
+    fn.flatResponse = true;
   }
 }
 

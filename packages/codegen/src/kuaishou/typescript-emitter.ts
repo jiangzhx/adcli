@@ -6,10 +6,11 @@ export function emitModelFile(spec: KuaishouModelFileSpec, options: { typeRegist
   const needsPageInfo = spec.structs.some((model) => collectTypes(model).has("PageInfo"));
   const needsMatchType = spec.structs.some((model) => collectTypes(model).has("MatchType"));
   const requestKinds = new Set(spec.structs.map((model) => model.requestKind).filter((kind) => kind !== "none"));
+  const needsUploadField = spec.structs.some((model) => model.fields.some((field) => field.tsType === "UploadField"));
   const imports: string[] = [];
-  if (requestKinds.size > 0) {
+  if (requestKinds.size > 0 || needsUploadField) {
     const names = [...requestKinds].flatMap((kind) => (kind === "get" ? ["GetRequest"] : kind === "upload" ? ["UploadRequest", "UploadField"] : ["PostRequest"]));
-    if (spec.structs.some((model) => model.fields.some((field) => field.tsType === "UploadField"))) {
+    if (needsUploadField) {
       names.push("UploadField");
     }
     imports.push(`import type { ${[...new Set(names)].join(", ")} } from "${modelRuntimeImport(spec.relativePath)}";`);
@@ -217,7 +218,7 @@ function emitClientCall(fn: KuaishouApiSpec): string {
     return `  return client.getBytes(${accessToken}, ${requestName}, signal);`;
   }
   const method = fn.kind === "get" ? "get" : fn.kind === "upload" ? "upload" : fn.kind === "getOnBody" ? "getOnBody" : "post";
-  const options = fn.successCodes?.length ? `, { successCodes: [${fn.successCodes.join(", ")}] }` : "";
+  const options = emitRequestOptions(fn);
   if (fn.unwrap === "void") {
     return `  await client.${method}<unknown>(${accessToken}, ${requestName}, signal${options});`;
   }
@@ -225,6 +226,17 @@ function emitClientCall(fn: KuaishouApiSpec): string {
     return `  const resp = await client.${method}<{ ${fn.extractField}?: ${fn.responseType} }>(${accessToken}, ${requestName}, signal${options});\n  return resp.${fn.extractField} ?? ${unwrapFallback(fn.responseType)};`;
   }
   return `  return client.${method}<${fn.responseType}>(${accessToken}, ${requestName}, signal${options});`;
+}
+
+function emitRequestOptions(fn: KuaishouApiSpec) {
+  const parts: string[] = [];
+  if (fn.successCodes?.length) {
+    parts.push(`successCodes: [${fn.successCodes.join(", ")}]`);
+  }
+  if (fn.flatResponse) {
+    parts.push("flatResponse: true");
+  }
+  return parts.length ? `, { ${parts.join(", ")} }` : "";
 }
 
 function generatedHeader(relativePath: string) {

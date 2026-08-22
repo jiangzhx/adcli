@@ -17,6 +17,10 @@ export const KUAISHOU_API_SUCCESS_CODES: Readonly<Record<string, readonly number
   "api/oauth/approval_list.go": [0, 1],
 };
 
+export const KUAISHOU_API_FLAT_RESPONSES: Readonly<Record<string, true>> = {
+  "api/report/material_report.go": true,
+};
+
 export function selectPublicNamespaces(apiFiles: string[]): KuaishouPublicNamespace[] {
   return KUAISHOU_PUBLIC_NAMESPACES.filter((namespace) => apiFiles.some((file) => fileBelongsToNamespace(file, namespace.path)));
 }

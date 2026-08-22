@@ -249,6 +249,33 @@ describe("kuaishou typescript emitter", () => {
     expect(api).toContain('from "../../model/oauth/index"');
   });
 
+  test("passes flatResponse through to the client call", () => {
+    const api = emitApiFile({
+      packageName: "report",
+      relativePath: "api/report/material_report.go",
+      modelImport: "report",
+      functions: [
+        {
+          functionName: "MaterialReport",
+          tsName: "materialReport",
+          kind: "post",
+          params: [
+            { goName: "accessToken", tsName: "accessToken", tsType: "string", role: "accessToken" },
+            { goName: "req", tsName: "req", tsType: "MaterialReportRequest | MaterialReportRequestInit", role: "request" },
+          ],
+          responseType: "ReportResponse",
+          unwrap: "object",
+          requestType: "MaterialReportRequest",
+          requestInitType: "MaterialReportRequestInit",
+          flatResponse: true,
+        },
+      ],
+    });
+
+    expect(api).toContain("flatResponse: true");
+    expect(api).toContain("client.post<ReportResponse>");
+  });
+
   test("imports MatchType from runtime types", () => {
     const model = emitModelFile({
       packageName: "report",
@@ -289,6 +316,26 @@ describe("kuaishou typescript emitter", () => {
     expect(model).toContain("import type { UploadRequest, UploadField }");
     expect(model).toContain("const fields: UploadField[] = []");
     expect(model).not.toContain("jsonMarshal");
+  });
+
+  test("imports UploadField for flattened fields on a plain struct", () => {
+    const model = emitModelFile({
+      packageName: "dmp",
+      relativePath: "model/dmp/population_upload_file_request_v2.go",
+      structs: [
+        {
+          name: "PopulationUploadFileRequest",
+          requestKind: "none",
+          fields: [
+            { goName: "AdvertiserID", jsonName: "advertiser_id", tsType: "KuaishouId" },
+            { goName: "File", jsonName: "file", tsType: "UploadField" },
+          ],
+        },
+      ],
+    });
+
+    expect(model).toContain("import type { UploadField }");
+    expect(model).toContain("file?: UploadField");
   });
 
   test("emits getBytes without importing Uint8Array from models", () => {

@@ -22,10 +22,11 @@ export function parseGoModelSource(source: string, relativePath: string): Kuaish
 
   for (const match of source.matchAll(STRUCT_PATTERN)) {
     const name = match[1];
-    const fields = parseStructFields(match[2], name);
+    const { fields, embeddedTypes } = parseStructMembers(match[2], name);
     structs.push({
       name,
       fields,
+      embeddedTypes: embeddedTypes.length > 0 ? embeddedTypes : undefined,
       requestKind: inferRequestKind(source, name),
       url: parseUrlMethod(source, name),
     });
@@ -121,28 +122,99 @@ export function parseGoApiSource(source: string, relativePath: string, models: K
 }
 
 export function parseStructFields(body: string, ownerName: string): KuaishouModelFieldSpec[] {
+  return parseStructMembers(body, ownerName).fields;
+}
+
+export function parseStructMembers(body: string, ownerName: string): { fields: KuaishouModelFieldSpec[]; embeddedTypes: string[] } {
   const fields: KuaishouModelFieldSpec[] = [];
+  const embeddedTypes: string[] = [];
   for (const rawLine of body.split("\n")) {
     const line = stripInlineComment(rawLine).trim();
     if (!line) {
       continue;
     }
-    const match = line.match(/^(\w+)\s+([^\s`]+)(?:\s+`([^`]*)`)?$/);
-    if (!match) {
+    const named = line.match(/^(\w+)\s+([^\s`]+)(?:\s+`([^`]*)`)?$/);
+    if (named) {
+      const [, goName, goType, tags] = named;
+      const jsonName = parseJsonName(tags, goName);
+      if (!jsonName) {
+        continue;
+      }
+      fields.push({
+        goName,
+        jsonName,
+        tsType: toTypeScriptType(goType, goName, ownerName),
+      });
       continue;
     }
-    const [, goName, goType, tags] = match;
-    const jsonName = parseJsonName(tags, goName);
-    if (!jsonName) {
+    const embedded = line.match(/^(\*)?(?:\w+\.)?(\w+)(?:\s+`([^`]*)`)?$/);
+    if (!embedded) {
       continue;
     }
-    fields.push({
-      goName,
-      jsonName,
-      tsType: toTypeScriptType(goType, goName, ownerName),
-    });
+    const typeName = embedded[2];
+    if (GO_BUILTIN_TYPES.has(typeName)) {
+      continue;
+    }
+    if (embedded[3]?.match(/json:"-"/)) {
+      continue;
+    }
+    embeddedTypes.push(typeName);
   }
-  return fields;
+  return { fields, embeddedTypes };
+}
+
+const GO_BUILTIN_TYPES = new Set(["string", "int", "int32", "int64", "uint64", "bool", "byte", "error", "float32", "float64"]);
+
+export function flattenEmbeddedFields(modelSpecs: KuaishouModelFileSpec[]) {
+  const entries: Array<{ spec: KuaishouModelFileSpec; model: KuaishouModelStructSpec }> = [];
+  const byName = new Map<string, Array<{ spec: KuaishouModelFileSpec; model: KuaishouModelStructSpec }>>();
+  for (const spec of modelSpecs) {
+    for (const model of spec.structs) {
+      const entry = { spec, model };
+      entries.push(entry);
+      byName.set(model.name, [...(byName.get(model.name) ?? []), entry]);
+    }
+  }
+
+  function lookup(typeName: string, fromPackage: string) {
+    const candidates = byName.get(typeName) ?? [];
+    return candidates.find((entry) => entry.spec.packageName === fromPackage) ?? candidates[0];
+  }
+
+  function expand(model: KuaishouModelStructSpec, fromPackage: string, seen: Set<string>): KuaishouModelFieldSpec[] {
+    if (seen.has(model.name)) {
+      return [...model.fields];
+    }
+    const next = new Set(seen);
+    next.add(model.name);
+    const collected: KuaishouModelFieldSpec[] = [];
+    const jsonNames = new Set<string>();
+    for (const embedName of model.embeddedTypes ?? []) {
+      const target = lookup(embedName, fromPackage);
+      if (!target) {
+        continue;
+      }
+      for (const field of expand(target.model, target.spec.packageName, next)) {
+        if (jsonNames.has(field.jsonName)) {
+          continue;
+        }
+        jsonNames.add(field.jsonName);
+        collected.push(field);
+      }
+    }
+    for (const field of model.fields) {
+      if (jsonNames.has(field.jsonName)) {
+        continue;
+      }
+      jsonNames.add(field.jsonName);
+      collected.push(field);
+    }
+    return collected;
+  }
+
+  for (const { spec, model } of entries) {
+    model.fields = expand(model, spec.packageName, new Set());
+  }
 }
 
 function inferRequestKind(source: string, typeName: string): KuaishouRequestKind {

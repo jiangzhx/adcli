@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { readFile } from "node:fs/promises";
-import { parseGoApiSource, parseGoModelSource } from "../../src/kuaishou/go-parser";
+import { parseGoApiSource, parseGoModelSource, flattenEmbeddedFields } from "../../src/kuaishou/go-parser";
 
 const goRoot = "/tmp/kwai-marketing-api-src";
 
@@ -113,6 +113,54 @@ func Download(ctx context.Context, clt *core.SDKClient, accessToken string, req 
       requestKind: "get",
       url: "v1/advertiser/white_list",
     });
+  });
+
+  test("parses anonymous embedded structs", () => {
+    const spec = parseGoModelSource(
+      `
+package report
+type UnitReportRequest struct {
+  ReportRequest
+  CampaignIDs []uint64 \`json:"campaign_ids,omitempty"\`
+}
+func (r UnitReportRequest) Url() string { return "v1/report/unit_report" }
+func (r UnitReportRequest) Encode() []byte { return nil }
+`,
+      "model/report/unit_report_request.go",
+    );
+    expect(spec.structs[0].embeddedTypes).toEqual(["ReportRequest"]);
+    expect(spec.structs[0].fields).toEqual([{ goName: "CampaignIDs", jsonName: "campaign_ids", tsType: "KuaishouId[]" }]);
+  });
+
+  test("flattens embedded ReportRequest fields onto the outer request", () => {
+    const reportRequest = parseGoModelSource(
+      `
+package report
+type ReportRequest struct {
+  AdvertiserID uint64 \`json:"advertiser_id,omitempty"\`
+  StartDate string \`json:"start_date,omitempty"\`
+  EndDate string \`json:"end_date,omitempty"\`
+  Page int \`json:"page,omitempty"\`
+  PageSize int \`json:"page_size,omitempty"\`
+}
+`,
+      "model/report/report_request.go",
+    );
+    const unitReport = parseGoModelSource(
+      `
+package report
+type UnitReportRequest struct {
+  ReportRequest
+  CampaignIDs []uint64 \`json:"campaign_ids,omitempty"\`
+}
+func (r UnitReportRequest) Url() string { return "v1/report/unit_report" }
+func (r UnitReportRequest) Encode() []byte { return nil }
+`,
+      "model/report/unit_report_request.go",
+    );
+    flattenEmbeddedFields([reportRequest, unitReport]);
+    const fields = unitReport.structs[0].fields.map((field) => field.jsonName);
+    expect(fields).toEqual(["advertiser_id", "start_date", "end_date", "page", "page_size", "campaign_ids"]);
   });
 
   test("parses string enum without a struct", async () => {
