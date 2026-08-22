@@ -2,8 +2,12 @@
 
 AdCLI 内部代码生成工具包，不发布到 npm。
 
-当前保留广告平台官方 Go SDK 到 TypeScript SDK 的生成链路：
+当前保留广告平台 Go SDK 到 TypeScript SDK 的生成链路：
 
+- `src/kuaishou/go-parser.ts`: 解析社区快手 Go SDK 的函数式 API 和 model struct。
+- `src/kuaishou/typescript-emitter.ts`: 输出 TypeScript API 函数和 request/response 类型。
+- `src/kuaishou/go-workflow.ts`: 扫描 `api/`、`model/` 并写入 `packages/kuaishou-marketing-api`。
+- `src/kuaishou/generate-from-go-sdk.ts`: 命令行入口。
 - `src/oceanengine/go-parser.ts`: 解析官方 Go SDK 的 API 和 model 源码。
 - `src/oceanengine/go-workflow.ts`: 扫描 Go SDK 并写入 TypeScript SDK 文件。
 - `src/oceanengine/typescript-emitter.ts`: 输出 TypeScript API 和 model 文件。
@@ -17,6 +21,7 @@ AdCLI 内部代码生成工具包，不发布到 npm。
 常用命令：
 
 ```bash
+bun run generate:kuaishou /path/to/kwai-marketing-api
 bun run generate:oceanengine /path/to/ad_open_sdk_go
 bun run analyze:oceanengine /path/to/ad_open_sdk_go/api/api_xxx.go
 bun run generate-model:oceanengine /path/to/ad_open_sdk_go/models/model_xxx.go

@@ -56,6 +56,9 @@
     "codegen:tencent-ads:generate": "bun run --cwd packages/codegen generate:tencent-ads",
     "codegen:tencent-ads:generate:go": "bun run --cwd packages/codegen generate:tencent-ads:go",
     "codegen:tencent-ads:test": "bun run --cwd packages/codegen test:tencent-ads",
+    "codegen:kuaishou:generate": "bun run --cwd packages/codegen generate:kuaishou",
+    "codegen:kuaishou:generate:go": "bun run --cwd packages/codegen generate:kuaishou:go",
+    "codegen:kuaishou:test": "bun run --cwd packages/codegen test:kuaishou",
     "codegen:test": "bun run --cwd packages/codegen test",
     "codegen:typecheck": "bun run --cwd packages/codegen typecheck",
     "lint": "eslint"

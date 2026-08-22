@@ -7,14 +7,17 @@
     "generate:oceanengine:go": "bun run src/oceanengine/generate-from-go-sdk.ts",
     "generate:tencent-ads": "bun run src/tencent-ads/generate-from-go-sdk.ts",
     "generate:tencent-ads:go": "bun run src/tencent-ads/generate-from-go-sdk.ts",
+    "generate:kuaishou": "bun run src/kuaishou/generate-from-go-sdk.ts",
+    "generate:kuaishou:go": "bun run src/kuaishou/generate-from-go-sdk.ts",
     "analyze:oceanengine": "bun run src/oceanengine/ast-analyzer.ts",
     "generate-model:oceanengine": "bun run src/oceanengine/model-codegen.ts",
     "verify:oceanengine": "bun run src/oceanengine/local-verify.ts",
     "workflow:run": "bun run src/workflow-runtime/run-workflow.ts src/oceanengine/phase-a-port.workflow.js",
     "test:oceanengine": "bun test test/oceanengine/*.test.ts",
     "test:tencent-ads": "bun test test/tencent-ads/*.test.ts",
+    "test:kuaishou": "bun test test/kuaishou/*.test.ts",
     "test:workflow": "bun test test/workflow-runtime/*.test.ts",
-    "test": "bun run test:oceanengine && bun run test:tencent-ads && bun run test:workflow",
+    "test": "bun run test:oceanengine && bun run test:tencent-ads && bun run test:kuaishou && bun run test:workflow",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {
