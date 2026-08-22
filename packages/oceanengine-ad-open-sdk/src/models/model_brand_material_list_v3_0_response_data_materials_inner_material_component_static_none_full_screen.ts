@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_brand_material_list_v3_0_response_data_materials_inner_material_component_static_none_full_screen.go 生成
-// 不要手动编辑。
-
-import type { BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticNoneFullScreenImageInfoBkListInner } from "../models/index";
-
-export interface BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticNoneFullScreen {
-  image_info_bk_list?: BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentStaticNoneFullScreenImageInfoBkListInner[];
-}
-

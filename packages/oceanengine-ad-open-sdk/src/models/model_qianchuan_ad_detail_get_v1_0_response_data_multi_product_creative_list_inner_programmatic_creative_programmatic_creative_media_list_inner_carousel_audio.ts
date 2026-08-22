@@ -1,7 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_ad_detail_get_v1_0_response_data_multi_product_creative_list_inner_programmatic_creative_programmatic_creative_media_list_inner_carousel_audio.go 生成
-// 不要手动编辑。
-
-export interface QianchuanAdDetailGetV10ResponseDataMultiProductCreativeListInnerProgrammaticCreativeProgrammaticCreativeMediaListInnerCarouselAudio {
-  url?: string;
-}
-

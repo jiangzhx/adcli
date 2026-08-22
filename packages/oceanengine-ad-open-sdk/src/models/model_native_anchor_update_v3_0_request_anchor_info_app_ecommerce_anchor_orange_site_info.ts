@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_native_anchor_update_v3_0_request_anchor_info_app_ecommerce_anchor_orange_site_info.go 生成
-// 不要手动编辑。
-
-export interface NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchorOrangeSiteInfo {
-  android_external_url?: string;
-  harmony_external_url?: string;
-  ios_external_url?: string;
-}
-

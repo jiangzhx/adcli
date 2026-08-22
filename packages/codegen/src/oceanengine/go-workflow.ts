@@ -1,6 +1,5 @@
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
 import { parseGoApiSource, parseGoModelSource } from "./go-parser";
 import { emitIndexFile, emitRuntimeFiles } from "./runtime-emitter";
 import { emitApiClass, emitModelModule } from "./typescript-emitter";
@@ -8,7 +7,7 @@ import type { ApiSpec, ModelSpec } from "./spec";
 
 export interface GoPortWorkflowOptions {
   goSdkRoot: string;
-  outputDir?: string;
+  outputDir: string;
   apiFiles?: string[];
   modelFiles?: string[];
 }
@@ -31,7 +30,10 @@ interface RuntimeConfigurationSpec {
 
 export async function runGoPortWorkflow(options: GoPortWorkflowOptions): Promise<GoPortWorkflowResult> {
   const goSdkRoot = resolve(options.goSdkRoot);
-  const outputDir = resolve(options.outputDir ?? defaultSdkOutputDir());
+  if (!options.outputDir) {
+    throw new Error("outputDir is required; pass the sibling SDK checkout src directory");
+  }
+  const outputDir = resolve(options.outputDir);
   const apiFiles = options.apiFiles ?? (await listGoFiles(goSdkRoot, "api"));
   const modelFiles = options.modelFiles ?? (await listGoFiles(goSdkRoot, "models"));
   const configurationSource = await readFile(join(goSdkRoot, "config", "configuration.go"), "utf8");
@@ -109,10 +111,6 @@ export async function runGoPortWorkflow(options: GoPortWorkflowOptions): Promise
   await writeFile(join(outputDir, "manifest.json"), `${JSON.stringify(result, null, 2)}\n`);
 
   return result;
-}
-
-function defaultSdkOutputDir() {
-  return resolve(dirname(fileURLToPath(import.meta.url)), "../../../oceanengine-ad-open-sdk/src");
 }
 
 async function prepareOutputDir(outputDir: string) {

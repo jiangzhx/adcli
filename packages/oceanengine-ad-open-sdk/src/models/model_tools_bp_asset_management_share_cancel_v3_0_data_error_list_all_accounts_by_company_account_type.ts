@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_tools_bp_asset_management_share_cancel_v3_0_data_error_list_all_accounts_by_company_account_type.go 生成
-// 不要手动编辑。
-
-export const ToolsBpAssetManagementShareCancelV30DataErrorListAllAccountsByCompanyAccountType = {
-  AD: "AD",
-} as const;
-
-export type ToolsBpAssetManagementShareCancelV30DataErrorListAllAccountsByCompanyAccountType = typeof ToolsBpAssetManagementShareCancelV30DataErrorListAllAccountsByCompanyAccountType[keyof typeof ToolsBpAssetManagementShareCancelV30DataErrorListAllAccountsByCompanyAccountType];
-

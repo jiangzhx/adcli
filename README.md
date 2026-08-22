@@ -12,18 +12,33 @@ https://adcli.jiangzhx.com/search-index.json
 
 项目当前是 Bun + TypeScript CLI，不使用 Next.js。
 
-## Monorepo
+## 仓库结构
 
 当前仓库使用 Bun workspace 管理：
 
 - 根包：`@jiangzhx/adcli`，负责 CLI 和文档包生成。
-- SDK 子包：`packages/*`，每个媒体平台 SDK 独立维护。
+- 内部工具：`packages/codegen`，从各平台 Go SDK 生成 TypeScript SDK。
 
-已存在的 SDK：
+媒体 SDK 已独立成仓，adcli 用 npm 版本依赖：
 
-- `packages/oceanengine-ad-open-sdk`: 巨量广告开放平台 OpenAPI SDK。
+- [@jiangzhx/oceanengine-ad-open-sdk](https://github.com/jiangzhx/oceanengine-ad-open-sdk)
+- [@jiangzhx/tencent-ads-marketing-api-sdk](https://github.com/jiangzhx/tencent-ads-marketing-api-sdk)
+- [@jiangzhx/kuaishou-marketing-api](https://github.com/jiangzhx/kuaishou-marketing-api)
 
-后续新增广点通等媒体 SDK 时，按平台官方 API 名称放到独立子包，例如 `packages/tencentad-marketing-api-sdk/`。
+本地生成时把输出写到旁边 checkout 的 SDK 仓库：
+
+```text
+startup/adcli
+startup/oceanengine-ad-open-sdk
+startup/tencent-ads-marketing-api-sdk
+startup/kuaishou-marketing-api
+```
+
+```bash
+bun run codegen:oceanengine:generate /path/to/ad_open_sdk_go ../oceanengine-ad-open-sdk/src
+bun run codegen:tencent-ads:generate /path/to/marketing-api-go-sdk ../tencent-ads-marketing-api-sdk/src
+bun run codegen:kuaishou:generate /path/to/kwai-marketing-api ../kuaishou-marketing-api/src
+```
 
 ## 安装
 

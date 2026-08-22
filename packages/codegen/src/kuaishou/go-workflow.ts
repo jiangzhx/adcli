@@ -1,6 +1,5 @@
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
 
 import { parseGoApiSource, parseGoModelSource } from "./go-parser";
 import { emitApiFile, emitBarrel, emitModelFile } from "./typescript-emitter";
@@ -11,7 +10,7 @@ const RUNTIME_MODEL_FILES = new Set(["request.go", "response.go", "types.go", "d
 
 export interface KuaishouGoPortWorkflowOptions {
   goSdkRoot: string;
-  outputDir?: string;
+  outputDir: string;
 }
 
 export interface KuaishouGoPortWorkflowResult {
@@ -25,7 +24,10 @@ export interface KuaishouGoPortWorkflowResult {
 
 export async function runGoPortWorkflow(options: KuaishouGoPortWorkflowOptions): Promise<KuaishouGoPortWorkflowResult> {
   const goSdkRoot = resolve(options.goSdkRoot);
-  const outputDir = resolve(options.outputDir ?? defaultSdkOutputDir());
+  if (!options.outputDir) {
+    throw new Error("outputDir is required; pass the sibling SDK checkout src directory");
+  }
+  const outputDir = resolve(options.outputDir);
   const modelFiles = await listGoFiles(goSdkRoot, "model");
   const apiFiles = await listGoFiles(goSdkRoot, "api");
   const skipped: Array<{ file: string; reason: string }> = [];
@@ -92,10 +94,6 @@ export async function runGoPortWorkflow(options: KuaishouGoPortWorkflowOptions):
   };
   await writeFile(join(outputDir, "manifest.json"), `${JSON.stringify(result, null, 2)}\n`);
   return result;
-}
-
-function defaultSdkOutputDir() {
-  return resolve(dirname(fileURLToPath(import.meta.url)), "../../../kuaishou-marketing-api/src");
 }
 
 async function prepareGeneratedDirs(outputDir: string) {

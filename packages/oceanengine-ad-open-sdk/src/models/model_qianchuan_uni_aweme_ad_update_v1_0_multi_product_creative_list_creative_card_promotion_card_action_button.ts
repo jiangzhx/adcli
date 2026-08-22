@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_update_v1_0_multi_product_creative_list_creative_card_promotion_card_action_button.go 生成
-// 不要手动编辑。
-
-export const QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeCardPromotionCardActionButton = {
-
-} as const;
-
-export type QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeCardPromotionCardActionButton = typeof QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeCardPromotionCardActionButton[keyof typeof QianchuanUniAwemeAdUpdateV10MultiProductCreativeListCreativeCardPromotionCardActionButton];
-

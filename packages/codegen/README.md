@@ -6,7 +6,7 @@ AdCLI 内部代码生成工具包，不发布到 npm。
 
 - `src/kuaishou/go-parser.ts`: 解析社区快手 Go SDK 的函数式 API 和 model struct。
 - `src/kuaishou/typescript-emitter.ts`: 输出 TypeScript API 函数和 request/response 类型。
-- `src/kuaishou/go-workflow.ts`: 扫描 `api/`、`model/` 并写入 `packages/kuaishou-marketing-api`。
+- `src/kuaishou/go-workflow.ts`: 扫描 `api/`、`model/` 并写入独立仓库 `kuaishou-marketing-api`。
 - `src/kuaishou/generate-from-go-sdk.ts`: 命令行入口。
 - `src/oceanengine/go-parser.ts`: 解析官方 Go SDK 的 API 和 model 源码。
 - `src/oceanengine/go-workflow.ts`: 扫描 Go SDK 并写入 TypeScript SDK 文件。
@@ -21,8 +21,9 @@ AdCLI 内部代码生成工具包，不发布到 npm。
 常用命令：
 
 ```bash
-bun run generate:kuaishou /path/to/kwai-marketing-api
-bun run generate:oceanengine /path/to/ad_open_sdk_go
+bun run generate:kuaishou /path/to/kwai-marketing-api /path/to/kuaishou-marketing-api/src
+bun run generate:oceanengine /path/to/ad_open_sdk_go /path/to/oceanengine-ad-open-sdk/src
+bun run generate:tencent-ads /path/to/marketing-api-go-sdk /path/to/tencent-ads-marketing-api-sdk/src
 bun run analyze:oceanengine /path/to/ad_open_sdk_go/api/api_xxx.go
 bun run generate-model:oceanengine /path/to/ad_open_sdk_go/models/model_xxx.go
 bun run verify:oceanengine /path/to/ad_open_sdk_go/api/api_xxx.go /path/to/ad_open_sdk_go/api/api_xxx.ts
@@ -34,7 +35,7 @@ bun run typecheck
 根目录等价命令：
 
 ```bash
-bun run codegen:oceanengine:generate /path/to/ad_open_sdk_go
+bun run codegen:oceanengine:generate /path/to/ad_open_sdk_go /path/to/oceanengine-ad-open-sdk/src
 ```
 
 AI porting workflow：
@@ -89,17 +90,17 @@ workflow 先进入“分析”阶段，用本地 Go AST 产出 API/model/unknown
 
 ```bash
 git clone https://github.com/oceanengine/ad_open_sdk_go.git /tmp/ad_open_sdk_go
-bun run generate:oceanengine /tmp/ad_open_sdk_go
+bun run generate:oceanengine /tmp/ad_open_sdk_go /path/to/oceanengine-ad-open-sdk/src
 ```
 
-生成输出默认写入：
+必须显式传入独立 SDK 仓库的 `src` 目录。生成输出写入：
 
 ```text
-packages/oceanengine-ad-open-sdk/src/api/
-packages/oceanengine-ad-open-sdk/src/config/
-packages/oceanengine-ad-open-sdk/src/models/
-packages/oceanengine-ad-open-sdk/src/index.ts
-packages/oceanengine-ad-open-sdk/src/manifest.json
+<sdk-repo>/src/api/
+<sdk-repo>/src/config/
+<sdk-repo>/src/models/
+<sdk-repo>/src/index.ts
+<sdk-repo>/src/manifest.json
 ```
 
 生成规则：

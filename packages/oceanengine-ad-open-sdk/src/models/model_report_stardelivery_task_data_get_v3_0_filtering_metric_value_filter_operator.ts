@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_report_stardelivery_task_data_get_v3_0_filtering_metric_value_filter_operator.go 生成
-// 不要手动编辑。
-
-export const ReportStardeliveryTaskDataGetV30FilteringMetricValueFilterOperator = {
-  Enum_1: 1,
-} as const;
-
-export type ReportStardeliveryTaskDataGetV30FilteringMetricValueFilterOperator = typeof ReportStardeliveryTaskDataGetV30FilteringMetricValueFilterOperator[keyof typeof ReportStardeliveryTaskDataGetV30FilteringMetricValueFilterOperator];
-

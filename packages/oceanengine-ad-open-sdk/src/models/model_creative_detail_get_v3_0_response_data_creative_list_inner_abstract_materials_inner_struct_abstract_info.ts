@@ -1,8 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_creative_detail_get_v3_0_response_data_creative_list_inner_abstract_materials_inner_struct_abstract_info.go 生成
-// 不要手动编辑。
-
-export interface CreativeDetailGetV30ResponseDataCreativeListInnerAbstractMaterialsInnerStructAbstractInfo {
-  abstract_label?: string;
-  abstract_text?: string;
-}
-

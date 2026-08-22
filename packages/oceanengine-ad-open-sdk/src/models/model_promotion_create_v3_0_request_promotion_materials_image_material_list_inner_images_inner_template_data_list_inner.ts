@@ -1,7 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_promotion_create_v3_0_request_promotion_materials_image_material_list_inner_images_inner_template_data_list_inner.go 生成
-// 不要手动编辑。
-
-export interface PromotionCreateV30RequestPromotionMaterialsImageMaterialListInnerImagesInnerTemplateDataListInner {
-  background_image_id?: string;
-}
-

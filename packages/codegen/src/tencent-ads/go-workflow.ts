@@ -1,6 +1,5 @@
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
 import { parseGoApiSource, parseGoModelSource } from "./go-parser";
 import { emitIndexFile, emitRuntimeFiles } from "./runtime-emitter";
 import { emitApiFile, emitModelModule } from "./typescript-emitter";
@@ -8,7 +7,7 @@ import type { ApiSpec, ModelSpec } from "./spec";
 
 export interface GoPortWorkflowOptions {
   goSdkRoot: string;
-  outputDir?: string;
+  outputDir: string;
   apiFiles?: string[];
   modelFiles?: string[];
 }
@@ -33,7 +32,10 @@ interface RuntimeConfigurationSpec {
 
 export async function runGoPortWorkflow(options: GoPortWorkflowOptions): Promise<GoPortWorkflowResult> {
   const goSdkRoot = resolve(options.goSdkRoot);
-  const outputDir = resolve(options.outputDir ?? defaultSdkOutputDir());
+  if (!options.outputDir) {
+    throw new Error("outputDir is required; pass the sibling SDK checkout src directory");
+  }
+  const outputDir = resolve(options.outputDir);
   const apiFiles = options.apiFiles ?? (await listGoFiles(goSdkRoot, "pkg/api"));
   const modelFiles = options.modelFiles ?? (await listGoFiles(goSdkRoot, "pkg/model"));
   const sourceVersion = await readGoSdkVersion(goSdkRoot);
@@ -133,10 +135,6 @@ export async function runGoPortWorkflow(options: GoPortWorkflowOptions): Promise
   await writeFile(join(outputDir, "manifest.json"), `${JSON.stringify(result, null, 2)}\n`);
 
   return result;
-}
-
-function defaultSdkOutputDir() {
-  return resolve(dirname(fileURLToPath(import.meta.url)), "../../../tencent-ads-marketing-api-sdk/src");
 }
 
 async function prepareOutputDir(outputDir: string) {

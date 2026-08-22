@@ -1,8 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_tools_aweme_banned_delete_v3_0_response_data_fail_inner.go 生成
-// 不要手动编辑。
-
-export interface ToolsAwemeBannedDeleteV30ResponseDataFailInner {
-  message?: string;
-  result_key?: string;
-}
-

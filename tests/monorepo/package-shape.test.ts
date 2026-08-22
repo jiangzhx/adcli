@@ -2,30 +2,27 @@ import { readFileSync } from "node:fs";
 import { describe, expect, test } from "bun:test";
 
 describe("monorepo package shape", () => {
-  test("registers SDK packages as root workspaces", () => {
+  test("keeps codegen as the only workspace and consumes SDKs from npm", () => {
     const pkg = JSON.parse(readFileSync("package.json", "utf8"));
 
-    expect(pkg.workspaces).toEqual(["packages/*"]);
+    expect(pkg.workspaces).toEqual(["packages/codegen"]);
     expect(pkg.dependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBe("1.1.88-port.1");
     expect(pkg.dependencies["@jiangzhx/tencent-ads-marketing-api-sdk"]).toBe("1.7.85-port.1");
     expect(pkg.devDependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBeUndefined();
-    expect(pkg.scripts["sdk:oceanengine:test"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk test");
-    expect(pkg.scripts["sdk:oceanengine:typecheck"]).toBe("bun run --cwd packages/oceanengine-ad-open-sdk typecheck");
-    expect(pkg.scripts["sdk:tencent-ads:test"]).toBe("bun run --cwd packages/tencent-ads-marketing-api-sdk test");
-    expect(pkg.scripts["sdk:tencent-ads:typecheck"]).toBe("bun run --cwd packages/tencent-ads-marketing-api-sdk typecheck");
-    expect(pkg.scripts["sdk:test"]).toBe("bun run sdk:oceanengine:test && bun run sdk:tencent-ads:test");
-    expect(pkg.scripts["sdk:typecheck"]).toBe("bun run sdk:oceanengine:typecheck && bun run sdk:tencent-ads:typecheck");
+    expect(pkg.scripts["sdk:oceanengine:test"]).toBeUndefined();
+    expect(pkg.scripts["sdk:test"]).toBeUndefined();
     expect(pkg.scripts["codegen:oceanengine:test"]).toBe("bun run --cwd packages/codegen test:oceanengine");
     expect(pkg.scripts["codegen:oceanengine:generate"]).toBe("bun run --cwd packages/codegen generate:oceanengine");
     expect(pkg.scripts["codegen:oceanengine:generate:go"]).toBe("bun run --cwd packages/codegen generate:oceanengine:go");
     expect(pkg.scripts["codegen:tencent-ads:test"]).toBe("bun run --cwd packages/codegen test:tencent-ads");
     expect(pkg.scripts["codegen:tencent-ads:generate"]).toBe("bun run --cwd packages/codegen generate:tencent-ads");
     expect(pkg.scripts["codegen:tencent-ads:generate:go"]).toBe("bun run --cwd packages/codegen generate:tencent-ads:go");
+    expect(pkg.scripts["codegen:kuaishou:generate"]).toBe("bun run --cwd packages/codegen generate:kuaishou");
     expect(pkg.scripts["codegen:oceanengine:phase-a"]).toBeUndefined();
     expect(pkg.scripts["codegen:test"]).toBe("bun run --cwd packages/codegen test");
     expect(pkg.scripts["codegen:typecheck"]).toBe("bun run --cwd packages/codegen typecheck");
-    expect(pkg.scripts["test:all"]).toBe("bun run test && bun run sdk:test && bun run codegen:test");
-    expect(pkg.scripts["typecheck:all"]).toBe("bun run typecheck && bun run sdk:typecheck && bun run codegen:typecheck");
+    expect(pkg.scripts["test:all"]).toBe("bun run test && bun run codegen:test");
+    expect(pkg.scripts["typecheck:all"]).toBe("bun run typecheck && bun run codegen:typecheck");
     expect(pkg.scripts["deploy:cloudflare"]).toBe("bun run verify:public && bunx wrangler pages deploy public --project-name adcli --branch main");
   });
 
@@ -39,5 +36,6 @@ describe("monorepo package shape", () => {
     expect(pkg.scripts["codex:oceanengine:port-apis"]).toBeUndefined();
     expect(pkg.scripts["test:oceanengine"]).toBe("bun test test/oceanengine/*.test.ts");
     expect(pkg.scripts["test:tencent-ads"]).toBe("bun test test/tencent-ads/*.test.ts");
+    expect(pkg.scripts["test:kuaishou"]).toBe("bun test test/kuaishou/*.test.ts");
   });
 });

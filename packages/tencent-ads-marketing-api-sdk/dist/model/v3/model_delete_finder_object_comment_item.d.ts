@@ -1,5 +1,0 @@
-export interface DeleteFinderObjectCommentItem {
-    account_id?: number | string;
-    finder_ad_object_id?: number | string;
-    comment_id?: string;
-}

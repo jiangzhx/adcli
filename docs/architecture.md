@@ -189,7 +189,7 @@ scripts/serve-mcp.ts
 
 ## 推荐目录
 
-当前仓库已经采用轻量 Bun workspace monorepo。根包继续作为 `@jiangzhx/adcli` CLI 和文档包生成入口，独立广告平台 SDK 放到 `packages/*`。
+当前仓库是 Bun workspace：根包继续作为 `@jiangzhx/adcli` CLI 和文档包生成入口，内部生成器放在 `packages/codegen`。媒体 SDK 已拆到独立 GitHub 仓库，通过 npm 版本依赖消费。
 
 当前根包目录：
 
@@ -210,8 +210,15 @@ scripts/
 
 ```text
 packages/
-  oceanengine-ad-open-sdk/
   codegen/
+```
+
+独立 SDK 仓库：
+
+```text
+github.com/jiangzhx/oceanengine-ad-open-sdk
+github.com/jiangzhx/tencent-ads-marketing-api-sdk
+github.com/jiangzhx/kuaishou-marketing-api
 ```
 
 迁移触发条件：

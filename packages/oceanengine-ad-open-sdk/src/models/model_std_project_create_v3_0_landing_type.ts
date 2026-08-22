@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_std_project_create_v3_0_landing_type.go 生成
-// 不要手动编辑。
-
-export const StdProjectCreateV30LandingType = {
-  APP: "APP",
-} as const;
-
-export type StdProjectCreateV30LandingType = typeof StdProjectCreateV30LandingType[keyof typeof StdProjectCreateV30LandingType];
-

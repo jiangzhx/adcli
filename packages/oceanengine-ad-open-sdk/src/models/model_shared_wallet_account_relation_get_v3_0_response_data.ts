@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_shared_wallet_account_relation_get_v3_0_response_data.go 生成
-// 不要手动编辑。
-
-export interface SharedWalletAccountRelationGetV30ResponseData {
-  company_id?: number | string;
-  main_wallet_id?: number | string;
-  sub_wallet_ids?: (number | string)[];
-}
-

@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_promotion_reject_reason_get_v3_0_data_list_promotion_reject_content.go 生成
-// 不要手动编辑。
-
-export const PromotionRejectReasonGetV30DataListPromotionRejectContent = {
-
-} as const;
-
-export type PromotionRejectReasonGetV30DataListPromotionRejectContent = typeof PromotionRejectReasonGetV30DataListPromotionRejectContent[keyof typeof PromotionRejectReasonGetV30DataListPromotionRejectContent];
-

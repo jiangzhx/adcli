@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_promotion_list_v3_0_data_list_promotion_materials_decoration_material_image_mode.go 生成
-// 不要手动编辑。
-
-export const PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode = {
-  CREATIVE_IMAGE_MODE_DECORATION_COUPON: "CREATIVE_IMAGE_MODE_DECORATION_COUPON",
-} as const;
-
-export type PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode = typeof PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode[keyof typeof PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode];
-

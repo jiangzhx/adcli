@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_aweme_ad_create_v1_0_multi_product_creative_list_creative_type.go 生成
-// 不要手动编辑。
-
-export const QianchuanUniAwemeAdCreateV10MultiProductCreativeListCreativeType = {
-  PROGRAMMATIC_CREATIVE: "PROGRAMMATIC_CREATIVE",
-} as const;
-
-export type QianchuanUniAwemeAdCreateV10MultiProductCreativeListCreativeType = typeof QianchuanUniAwemeAdCreateV10MultiProductCreativeListCreativeType[keyof typeof QianchuanUniAwemeAdCreateV10MultiProductCreativeListCreativeType];
-

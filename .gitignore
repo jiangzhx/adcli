@@ -8,7 +8,6 @@ node_modules/
 # generated local outputs
 /coverage
 /build
-/packages/oceanengine-ad-open-sdk/dist/
 *.tsbuildinfo
 
 # public docs pack is intentionally committed

@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_tools_material_raise_material_ids_get_v3_0_response_data_material_list_inner.go 生成
-// 不要手动编辑。
-
-export interface ToolsMaterialRaiseMaterialIdsGetV30ResponseDataMaterialListInner {
-  material_id?: number | string;
-  material_name?: string;
-  material_type?: string;
-}
-

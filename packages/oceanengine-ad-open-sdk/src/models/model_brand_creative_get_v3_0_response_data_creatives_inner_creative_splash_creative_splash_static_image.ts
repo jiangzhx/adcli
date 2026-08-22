@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_brand_creative_get_v3_0_response_data_creatives_inner_creative_splash_creative_splash_static_image.go 生成
-// 不要手动编辑。
-
-import type { BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreativeSplashStaticImageImageInfoBkListInner } from "../models/index";
-
-export interface BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreativeSplashStaticImage {
-  image_info_bk_list?: BrandCreativeGetV30ResponseDataCreativesInnerCreativeSplashCreativeSplashStaticImageImageInfoBkListInner[];
-}
-

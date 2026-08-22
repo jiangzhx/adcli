@@ -1,9 +1,0 @@
-// 由 oceanengine/ad_open_sdk_go models/model_qianchuan_uni_promotion_ad_detail_v1_0_data_multi_product_creative_list_video_material_star_traffic.go 生成
-// 不要手动编辑。
-
-export const QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic = {
-  Enum_1: 1,
-} as const;
-
-export type QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic = typeof QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic[keyof typeof QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListVideoMaterialStarTraffic];
-
