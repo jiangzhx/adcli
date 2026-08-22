@@ -6,8 +6,8 @@ describe("monorepo package shape", () => {
     const pkg = JSON.parse(readFileSync("package.json", "utf8"));
 
     expect(pkg.workspaces).toEqual(["packages/codegen"]);
-    expect(pkg.dependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBe("1.1.88-port.1");
-    expect(pkg.dependencies["@jiangzhx/tencent-ads-marketing-api-sdk"]).toBe("1.7.85-port.1");
+    expect(pkg.dependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBe("1.1.88-port.2");
+    expect(pkg.dependencies["@jiangzhx/tencent-ads-marketing-api-sdk"]).toBe("1.7.85-port.2");
     expect(pkg.devDependencies["@jiangzhx/oceanengine-ad-open-sdk"]).toBeUndefined();
     expect(pkg.scripts["sdk:oceanengine:test"]).toBeUndefined();
     expect(pkg.scripts["sdk:test"]).toBeUndefined();

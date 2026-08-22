@@ -5,8 +5,8 @@
     "": {
       "name": "adcli",
       "dependencies": {
-        "@jiangzhx/oceanengine-ad-open-sdk": "1.1.88-port.1",
-        "@jiangzhx/tencent-ads-marketing-api-sdk": "1.7.85-port.1",
+        "@jiangzhx/oceanengine-ad-open-sdk": "1.1.88-port.2",
+        "@jiangzhx/tencent-ads-marketing-api-sdk": "1.7.85-port.2",
         "env-paths": "^4.0.0",
         "minisearch": "^7.2.0",
       },
@@ -152,9 +152,9 @@
 
     "@jiangzhx/adcli-codegen": ["@jiangzhx/adcli-codegen@workspace:packages/codegen"],
 
-    "@jiangzhx/oceanengine-ad-open-sdk": ["@jiangzhx/oceanengine-ad-open-sdk@1.1.88-port.1", "", { "dependencies": { "json-bigint": "^1.0.0" }, "peerDependencies": { "typescript": ">=5" } }, "sha512-IEPWL1OGKLsRma4wlDqr8UxelH5DdYYSsh9jUqDLg5s8Dn4eQEDJ+0U5pLGL+JQQMDvEnmFSbCnE60+gbk+LHg=="],
+    "@jiangzhx/oceanengine-ad-open-sdk": ["@jiangzhx/oceanengine-ad-open-sdk@1.1.88-port.2", "", { "dependencies": { "json-bigint": "^1.0.0" }, "peerDependencies": { "typescript": ">=5" } }, "sha512-At9Tw1MGHJAPBwgo3gtCbMcR7i4Ejxj0FnMmSYouTkqxLBQ/xjXIZD/vw2tpY3nrXCFvG53pxbcV+iEB10g0Eg=="],
 
-    "@jiangzhx/tencent-ads-marketing-api-sdk": ["@jiangzhx/tencent-ads-marketing-api-sdk@1.7.85-port.1", "", { "dependencies": { "json-bigint": "^1.0.0" }, "peerDependencies": { "typescript": ">=5" } }, "sha512-x4CBWiuFY0qLyrX43oV35j9QhhZAsy5cfZyQxF6ZRxV1UXfAV7SNmKtJR//lY3KTU7SuKAq/mskpz5Qu/ZhO4Q=="],
+    "@jiangzhx/tencent-ads-marketing-api-sdk": ["@jiangzhx/tencent-ads-marketing-api-sdk@1.7.85-port.2", "", { "dependencies": { "json-bigint": "^1.0.0" }, "peerDependencies": { "typescript": ">=5" } }, "sha512-PwCDOt9FM1FDBWRW4FOwLVUNaYSJWQOruxhQzP5Q6G1GahOhyqIxIqdHDRQ0EVl8OVLeqMFXql8t5XKfW9n43Q=="],
 
     "@keyv/serialize": ["@keyv/serialize@1.1.1", "", {}, "sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA=="],
 

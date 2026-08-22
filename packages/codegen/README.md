@@ -21,9 +21,9 @@ AdCLI 内部代码生成工具包，不发布到 npm。
 常用命令：
 
 ```bash
-bun run generate:kuaishou /path/to/kwai-marketing-api /path/to/kuaishou-marketing-api/src
-bun run generate:oceanengine /path/to/ad_open_sdk_go /path/to/oceanengine-ad-open-sdk/src
-bun run generate:tencent-ads /path/to/marketing-api-go-sdk /path/to/tencent-ads-marketing-api-sdk/src
+bun run generate:kuaishou /path/to/kwai-marketing-api ../kuaishou-marketing-api/src
+bun run generate:oceanengine /path/to/ad_open_sdk_go ../oceanengine-ad-open-sdk/src
+bun run generate:tencent-ads /path/to/marketing-api-go-sdk ../tencent-ads-marketing-api-sdk/src
 bun run analyze:oceanengine /path/to/ad_open_sdk_go/api/api_xxx.go
 bun run generate-model:oceanengine /path/to/ad_open_sdk_go/models/model_xxx.go
 bun run verify:oceanengine /path/to/ad_open_sdk_go/api/api_xxx.go /path/to/ad_open_sdk_go/api/api_xxx.ts
@@ -35,7 +35,7 @@ bun run typecheck
 根目录等价命令：
 
 ```bash
-bun run codegen:oceanengine:generate /path/to/ad_open_sdk_go /path/to/oceanengine-ad-open-sdk/src
+bun run codegen:oceanengine:generate /path/to/ad_open_sdk_go ./packages/oceanengine-ad-open-sdk/src
 ```
 
 AI porting workflow：

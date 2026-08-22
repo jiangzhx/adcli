@@ -24,6 +24,11 @@ npm-debug.log*
 !packages/**/.env.example
 *.pem
 
+# local SDK checkouts (independent git repos)
+/packages/oceanengine-ad-open-sdk/
+/packages/tencent-ads-marketing-api-sdk/
+/packages/kuaishou-marketing-api/
+
 # platform/tooling
 .DS_Store
 /.vercel

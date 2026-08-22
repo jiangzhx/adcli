@@ -25,19 +25,26 @@ https://adcli.jiangzhx.com/search-index.json
 - [@jiangzhx/tencent-ads-marketing-api-sdk](https://github.com/jiangzhx/tencent-ads-marketing-api-sdk)
 - [@jiangzhx/kuaishou-marketing-api](https://github.com/jiangzhx/kuaishou-marketing-api)
 
-本地生成时把输出写到旁边 checkout 的 SDK 仓库：
+本地可以把三个 SDK 仓 clone 到 `packages/`，方便一起打开；这些目录已被 gitignore，不会进 adcli 仓库：
+
+```bash
+git clone git@github.com:jiangzhx/oceanengine-ad-open-sdk.git packages/oceanengine-ad-open-sdk
+git clone git@github.com:jiangzhx/tencent-ads-marketing-api-sdk.git packages/tencent-ads-marketing-api-sdk
+git clone git@github.com:jiangzhx/kuaishou-marketing-api.git packages/kuaishou-marketing-api
+```
 
 ```text
-startup/adcli
-startup/oceanengine-ad-open-sdk
-startup/tencent-ads-marketing-api-sdk
-startup/kuaishou-marketing-api
+adcli/
+  packages/codegen/
+  packages/oceanengine-ad-open-sdk/      # gitignored
+  packages/tencent-ads-marketing-api-sdk/ # gitignored
+  packages/kuaishou-marketing-api/       # gitignored
 ```
 
 ```bash
-bun run codegen:oceanengine:generate /path/to/ad_open_sdk_go ../oceanengine-ad-open-sdk/src
-bun run codegen:tencent-ads:generate /path/to/marketing-api-go-sdk ../tencent-ads-marketing-api-sdk/src
-bun run codegen:kuaishou:generate /path/to/kwai-marketing-api ../kuaishou-marketing-api/src
+bun run codegen:oceanengine:generate /path/to/ad_open_sdk_go ./packages/oceanengine-ad-open-sdk/src
+bun run codegen:tencent-ads:generate /path/to/marketing-api-go-sdk ./packages/tencent-ads-marketing-api-sdk/src
+bun run codegen:kuaishou:generate /path/to/kwai-marketing-api ./packages/kuaishou-marketing-api/src
 ```
 
 ## 安装

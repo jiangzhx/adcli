@@ -221,6 +221,8 @@ github.com/jiangzhx/tencent-ads-marketing-api-sdk
 github.com/jiangzhx/kuaishou-marketing-api
 ```
 
+本地可把这三个仓 clone 到 `packages/`，目录名已写入根 `.gitignore`，不会被 adcli 跟踪。
+
 迁移触发条件：
 
 - Builder Agent 和 Admin Console 开始需要独立构建或部署。
