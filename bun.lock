@@ -5,7 +5,7 @@
     "": {
       "name": "adcli",
       "dependencies": {
-        "@jiangzhx/oceanengine-ad-open-sdk": "1.1.88-port.2",
+        "@jiangzhx/oceanengine-ad-open-sdk": "1.1.95-port.1",
         "@jiangzhx/tencent-ads-marketing-api-sdk": "1.7.85-port.2",
         "env-paths": "^4.0.0",
         "minisearch": "^7.2.0",
@@ -152,7 +152,7 @@
 
     "@jiangzhx/adcli-codegen": ["@jiangzhx/adcli-codegen@workspace:packages/codegen"],
 
-    "@jiangzhx/oceanengine-ad-open-sdk": ["@jiangzhx/oceanengine-ad-open-sdk@1.1.88-port.2", "", { "dependencies": { "json-bigint": "^1.0.0" }, "peerDependencies": { "typescript": ">=5" } }, "sha512-At9Tw1MGHJAPBwgo3gtCbMcR7i4Ejxj0FnMmSYouTkqxLBQ/xjXIZD/vw2tpY3nrXCFvG53pxbcV+iEB10g0Eg=="],
+    "@jiangzhx/oceanengine-ad-open-sdk": ["@jiangzhx/oceanengine-ad-open-sdk@1.1.95-port.1", "", { "dependencies": { "json-bigint": "^1.0.0" }, "peerDependencies": { "typescript": ">=5" } }, "sha512-fuE3Txi77vwbTc7NHV9wP1ymb3yqmLILXW1dt4NazjfsLmnqJmHkCnAhi52QUeBYp2u3cg53o3smPjnQqm0hWg=="],
 
     "@jiangzhx/tencent-ads-marketing-api-sdk": ["@jiangzhx/tencent-ads-marketing-api-sdk@1.7.85-port.2", "", { "dependencies": { "json-bigint": "^1.0.0" }, "peerDependencies": { "typescript": ">=5" } }, "sha512-PwCDOt9FM1FDBWRW4FOwLVUNaYSJWQOruxhQzP5Q6G1GahOhyqIxIqdHDRQ0EVl8OVLeqMFXql8t5XKfW9n43Q=="],
 
