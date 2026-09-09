@@ -2805,7 +2805,7 @@
       "id": "oceanengine_1763117461145604",
       "doc_id": "1763117461145604",
       "platform": "oceanengine",
-      "title": "获取营销预览二维码（升级版）",
+      "title": "获取预览二维码（升级版）",
       "source_url": "https://open.oceanengine.com/labels/7/docs/1763117461145604?origin=left_nav",
       "public_path": "/oceanengine/docs/1763117461145604.md"
     },
@@ -3685,7 +3685,7 @@
       "id": "oceanengine_1800985709803914",
       "doc_id": "1800985709803914",
       "platform": "oceanengine",
-      "title": "获取账户下资产列表（新）",
+      "title": "获取账户下资产列表",
       "source_url": "https://open.oceanengine.com/labels/7/docs/1800985709803914?origin=left_nav",
       "public_path": "/oceanengine/docs/1800985709803914.md"
     },
@@ -4166,7 +4166,7 @@
       "doc_id": "1827079072367946",
       "platform": "oceanengine",
       "title": "获取拒审素材修复建议",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1827079072367946",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1827079072367946?origin=left_nav",
       "public_path": "/oceanengine/docs/1827079072367946.md"
     },
     {
@@ -4974,7 +4974,7 @@
       "doc_id": "1854927239666825",
       "platform": "oceanengine",
       "title": "获取投放项目下素材",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1854927239666825",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1854927239666825?origin=left_nav",
       "public_path": "/oceanengine/docs/1854927239666825.md"
     },
     {
@@ -4982,7 +4982,7 @@
       "doc_id": "1854929666566346",
       "platform": "oceanengine",
       "title": "批量添加投放项目下素材",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1854929666566346",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1854929666566346?origin=left_nav",
       "public_path": "/oceanengine/docs/1854929666566346.md"
     },
     {
@@ -4998,16 +4998,16 @@
       "doc_id": "1854930119140363",
       "platform": "oceanengine",
       "title": "批量修改投放项目下素材状态",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1854930119140363",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1854930119140363?origin=left_nav",
       "public_path": "/oceanengine/docs/1854930119140363.md"
     },
     {
-      "id": "oceanengine_1854930234989579",
-      "doc_id": "1854930234989579",
+      "id": "oceanengine_1854930515444873",
+      "doc_id": "1854930515444873",
       "platform": "oceanengine",
-      "title": "获取投放项目审核建议",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1854930234989579",
-      "public_path": "/oceanengine/docs/1854930234989579.md"
+      "title": "获取操作日志详情",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1854930515444873?origin=left_nav",
+      "public_path": "/oceanengine/docs/1854930515444873.md"
     },
     {
       "id": "oceanengine_1855089467521035",
@@ -5154,131 +5154,11 @@
       "public_path": "/oceanengine/docs/1862334279237632.md"
     },
     {
-      "id": "oceanengine_1865709899834368",
-      "doc_id": "1865709899834368",
-      "platform": "oceanengine",
-      "title": "创建素材起量调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865709899834368",
-      "public_path": "/oceanengine/docs/1865709899834368.md"
-    },
-    {
-      "id": "oceanengine_1865711954543627",
-      "doc_id": "1865711954543627",
-      "platform": "oceanengine",
-      "title": "获取素材起量调控任务列表",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865711954543627",
-      "public_path": "/oceanengine/docs/1865711954543627.md"
-    },
-    {
-      "id": "oceanengine_1865789577903562",
-      "doc_id": "1865789577903562",
-      "platform": "oceanengine",
-      "title": "获取项目下剩余可建调控任务数量",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865789577903562",
-      "public_path": "/oceanengine/docs/1865789577903562.md"
-    },
-    {
-      "id": "oceanengine_1865790390500555",
-      "doc_id": "1865790390500555",
-      "platform": "oceanengine",
-      "title": "获取任务成本保障状态",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865790390500555",
-      "public_path": "/oceanengine/docs/1865790390500555.md"
-    },
-    {
-      "id": "oceanengine_1865790765669609",
-      "doc_id": "1865790765669609",
-      "platform": "oceanengine",
-      "title": "创建定向调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865790765669609",
-      "public_path": "/oceanengine/docs/1865790765669609.md"
-    },
-    {
-      "id": "oceanengine_1865791328190858",
-      "doc_id": "1865791328190858",
-      "platform": "oceanengine",
-      "title": "编辑定向调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865791328190858",
-      "public_path": "/oceanengine/docs/1865791328190858.md"
-    },
-    {
-      "id": "oceanengine_1865791787916951",
-      "doc_id": "1865791787916951",
-      "platform": "oceanengine",
-      "title": "批量启停定向调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865791787916951",
-      "public_path": "/oceanengine/docs/1865791787916951.md"
-    },
-    {
-      "id": "oceanengine_1865792332937415",
-      "doc_id": "1865792332937415",
-      "platform": "oceanengine",
-      "title": "删除定向调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865792332937415",
-      "public_path": "/oceanengine/docs/1865792332937415.md"
-    },
-    {
-      "id": "oceanengine_1865792884612096",
-      "doc_id": "1865792884612096",
-      "platform": "oceanengine",
-      "title": "获取定向调控任务列表",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865792884612096",
-      "public_path": "/oceanengine/docs/1865792884612096.md"
-    },
-    {
-      "id": "oceanengine_1865798867792009",
-      "doc_id": "1865798867792009",
-      "platform": "oceanengine",
-      "title": "删除素材起量调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865798867792009",
-      "public_path": "/oceanengine/docs/1865798867792009.md"
-    },
-    {
-      "id": "oceanengine_1865799078509578",
-      "doc_id": "1865799078509578",
-      "platform": "oceanengine",
-      "title": "创建关键词调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865799078509578",
-      "public_path": "/oceanengine/docs/1865799078509578.md"
-    },
-    {
-      "id": "oceanengine_1865800083438596",
-      "doc_id": "1865800083438596",
-      "platform": "oceanengine",
-      "title": "编辑关键词调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865800083438596",
-      "public_path": "/oceanengine/docs/1865800083438596.md"
-    },
-    {
-      "id": "oceanengine_1865800196383747",
-      "doc_id": "1865800196383747",
-      "platform": "oceanengine",
-      "title": "删除关键词调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865800196383747",
-      "public_path": "/oceanengine/docs/1865800196383747.md"
-    },
-    {
-      "id": "oceanengine_1865800511192212",
-      "doc_id": "1865800511192212",
-      "platform": "oceanengine",
-      "title": "批量启停关键词调控任务",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865800511192212",
-      "public_path": "/oceanengine/docs/1865800511192212.md"
-    },
-    {
-      "id": "oceanengine_1865800833833036",
-      "doc_id": "1865800833833036",
-      "platform": "oceanengine",
-      "title": "获取关键词调控任务列表",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865800833833036",
-      "public_path": "/oceanengine/docs/1865800833833036.md"
-    },
-    {
       "id": "oceanengine_1865805197120905",
       "doc_id": "1865805197120905",
       "platform": "oceanengine",
       "title": "获取标准项目列表",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865805197120905",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1865805197120905?origin=left_nav",
       "public_path": "/oceanengine/docs/1865805197120905.md"
     },
     {
@@ -5288,6 +5168,14 @@
       "title": "标准项目下获取可用优化目标",
       "source_url": "https://open.oceanengine.com/labels/7/docs/1865817103800970",
       "public_path": "/oceanengine/docs/1865817103800970.md"
+    },
+    {
+      "id": "oceanengine_1865818432643072",
+      "doc_id": "1865818432643072",
+      "platform": "oceanengine",
+      "title": "巨量营销智擎版",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1865818432643072?origin=left_nav",
+      "public_path": "/oceanengine/docs/1865818432643072.md"
     },
     {
       "id": "oceanengine_1865818869111811",
@@ -5302,7 +5190,7 @@
       "doc_id": "1865819566002436",
       "platform": "oceanengine",
       "title": "创建标准项目",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865819566002436",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1865819566002436?origin=left_nav",
       "public_path": "/oceanengine/docs/1865819566002436.md"
     },
     {
@@ -5310,7 +5198,7 @@
       "doc_id": "1865873315616282",
       "platform": "oceanengine",
       "title": "更新标准项目",
-      "source_url": "https://open.oceanengine.com/labels/7/docs/1865873315616282",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1865873315616282?origin=left_nav",
       "public_path": "/oceanengine/docs/1865873315616282.md"
     },
     {
@@ -5344,6 +5232,334 @@
       "title": "获取账户可用品牌行业信息",
       "source_url": "https://open.oceanengine.com/labels/7/docs/1866517384079625?origin=left_nav",
       "public_path": "/oceanengine/docs/1866517384079625.md"
+    },
+    {
+      "id": "oceanengine_1868949066560512",
+      "doc_id": "1868949066560512",
+      "platform": "oceanengine",
+      "title": "获取升级版巨量引擎工作台账户星广联投任务列表",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1868949066560512?origin=left_nav",
+      "public_path": "/oceanengine/docs/1868949066560512.md"
+    },
+    {
+      "id": "oceanengine_1868950079138956",
+      "doc_id": "1868950079138956",
+      "platform": "oceanengine",
+      "title": "获取升级版巨量引擎工作台账户星广联投任务已投稿达人信息",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1868950079138956?origin=left_nav",
+      "public_path": "/oceanengine/docs/1868950079138956.md"
+    },
+    {
+      "id": "oceanengine_1868950518957124",
+      "doc_id": "1868950518957124",
+      "platform": "oceanengine",
+      "title": "获取升级版巨量引擎工作台账户星广联投视频数据",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1868950518957124?origin=left_nav",
+      "public_path": "/oceanengine/docs/1868950518957124.md"
+    },
+    {
+      "id": "oceanengine_1869423189855306",
+      "doc_id": "1869423189855306",
+      "platform": "oceanengine",
+      "title": "更新项目自选素材状态",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1869423189855306?origin=left_nav",
+      "public_path": "/oceanengine/docs/1869423189855306.md"
+    },
+    {
+      "id": "oceanengine_1870593262219592",
+      "doc_id": "1870593262219592",
+      "platform": "oceanengine",
+      "title": "【智擎版】标准项目报表实时数据变动消息推送",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1870593262219592?origin=left_nav",
+      "public_path": "/oceanengine/docs/1870593262219592.md"
+    },
+    {
+      "id": "oceanengine_1870597686604104",
+      "doc_id": "1870597686604104",
+      "platform": "oceanengine",
+      "title": "【智擎版】标准项目调控任务报表实时数据数据变动消息推送",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1870597686604104?origin=left_nav",
+      "public_path": "/oceanengine/docs/1870597686604104.md"
+    },
+    {
+      "id": "oceanengine_1870598120535044",
+      "doc_id": "1870598120535044",
+      "platform": "oceanengine",
+      "title": "【智擎版】标准项目基础素材报表实时数据变动消息推送",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1870598120535044?origin=left_nav",
+      "public_path": "/oceanengine/docs/1870598120535044.md"
+    },
+    {
+      "id": "oceanengine_1870677089664795",
+      "doc_id": "1870677089664795",
+      "platform": "oceanengine",
+      "title": "EBP组织-删除试玩/直玩素材",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1870677089664795?origin=left_nav",
+      "public_path": "/oceanengine/docs/1870677089664795.md"
+    },
+    {
+      "id": "oceanengine_1870677384747337",
+      "doc_id": "1870677384747337",
+      "platform": "oceanengine",
+      "title": "升级版工作台组织上传试玩/直玩素材",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1870677384747337?origin=left_nav",
+      "public_path": "/oceanengine/docs/1870677384747337.md"
+    },
+    {
+      "id": "oceanengine_1870677509430347",
+      "doc_id": "1870677509430347",
+      "platform": "oceanengine",
+      "title": "获取账户可用的组织试玩/直玩素材",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1870677509430347?origin=left_nav",
+      "public_path": "/oceanengine/docs/1870677509430347.md"
+    },
+    {
+      "id": "oceanengine_1870870452456523",
+      "doc_id": "1870870452456523",
+      "platform": "oceanengine",
+      "title": "【智擎版】标准项目状态实时推送",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1870870452456523?origin=left_nav",
+      "public_path": "/oceanengine/docs/1870870452456523.md"
+    },
+    {
+      "id": "oceanengine_1870871057340553",
+      "doc_id": "1870871057340553",
+      "platform": "oceanengine",
+      "title": "【智擎版】标准项目配置实时变更",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1870871057340553?origin=left_nav",
+      "public_path": "/oceanengine/docs/1870871057340553.md"
+    },
+    {
+      "id": "oceanengine_1871578054932524",
+      "doc_id": "1871578054932524",
+      "platform": "oceanengine",
+      "title": "获取组织维度视频列表（ebp）",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1871578054932524?origin=left_nav",
+      "public_path": "/oceanengine/docs/1871578054932524.md"
+    },
+    {
+      "id": "oceanengine_1872029502098632",
+      "doc_id": "1872029502098632",
+      "platform": "oceanengine",
+      "title": "升级版工作台星广联投任务管理",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872029502098632?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872029502098632.md"
+    },
+    {
+      "id": "oceanengine_1872033559772938",
+      "doc_id": "1872033559772938",
+      "platform": "oceanengine",
+      "title": "获取素材起量调控任务列表",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872033559772938?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872033559772938.md"
+    },
+    {
+      "id": "oceanengine_1872036018765980",
+      "doc_id": "1872036018765980",
+      "platform": "oceanengine",
+      "title": "项目管理",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872036018765980?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872036018765980.md"
+    },
+    {
+      "id": "oceanengine_1872036076260416",
+      "doc_id": "1872036076260416",
+      "platform": "oceanengine",
+      "title": "调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872036076260416?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872036076260416.md"
+    },
+    {
+      "id": "oceanengine_1872036184023040",
+      "doc_id": "1872036184023040",
+      "platform": "oceanengine",
+      "title": "优化目标",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872036184023040?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872036184023040.md"
+    },
+    {
+      "id": "oceanengine_1872036641062924",
+      "doc_id": "1872036641062924",
+      "platform": "oceanengine",
+      "title": "创建定向调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872036641062924?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872036641062924.md"
+    },
+    {
+      "id": "oceanengine_1872036761269376",
+      "doc_id": "1872036761269376",
+      "platform": "oceanengine",
+      "title": "编辑定向调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872036761269376?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872036761269376.md"
+    },
+    {
+      "id": "oceanengine_1872036997115008",
+      "doc_id": "1872036997115008",
+      "platform": "oceanengine",
+      "title": "删除定向调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872036997115008?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872036997115008.md"
+    },
+    {
+      "id": "oceanengine_1872037080814604",
+      "doc_id": "1872037080814604",
+      "platform": "oceanengine",
+      "title": "批量启停定向调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872037080814604?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872037080814604.md"
+    },
+    {
+      "id": "oceanengine_1872037169709132",
+      "doc_id": "1872037169709132",
+      "platform": "oceanengine",
+      "title": "获取定向调控任务列表",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872037169709132?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872037169709132.md"
+    },
+    {
+      "id": "oceanengine_1872037607466537",
+      "doc_id": "1872037607466537",
+      "platform": "oceanengine",
+      "title": "创建关键词调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872037607466537?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872037607466537.md"
+    },
+    {
+      "id": "oceanengine_1872037755000315",
+      "doc_id": "1872037755000315",
+      "platform": "oceanengine",
+      "title": "编辑关键词调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872037755000315?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872037755000315.md"
+    },
+    {
+      "id": "oceanengine_1872037861597259",
+      "doc_id": "1872037861597259",
+      "platform": "oceanengine",
+      "title": "删除关键词调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872037861597259?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872037861597259.md"
+    },
+    {
+      "id": "oceanengine_1872038932102156",
+      "doc_id": "1872038932102156",
+      "platform": "oceanengine",
+      "title": "删除素材起量调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872038932102156?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872038932102156.md"
+    },
+    {
+      "id": "oceanengine_1872041259727386",
+      "doc_id": "1872041259727386",
+      "platform": "oceanengine",
+      "title": "创建素材起量调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872041259727386?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872041259727386.md"
+    },
+    {
+      "id": "oceanengine_1872130175108228",
+      "doc_id": "1872130175108228",
+      "platform": "oceanengine",
+      "title": "获取项目下剩余可建调控任务数量",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872130175108228?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872130175108228.md"
+    },
+    {
+      "id": "oceanengine_1872131888860160",
+      "doc_id": "1872131888860160",
+      "platform": "oceanengine",
+      "title": "获取项目/调控任务保障历史列表",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872131888860160?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872131888860160.md"
+    },
+    {
+      "id": "oceanengine_1872133236794380",
+      "doc_id": "1872133236794380",
+      "platform": "oceanengine",
+      "title": "获取任务成本保障状态",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872133236794380?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872133236794380.md"
+    },
+    {
+      "id": "oceanengine_1872137299017099",
+      "doc_id": "1872137299017099",
+      "platform": "oceanengine",
+      "title": "获取关键词调控任务列表",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872137299017099?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872137299017099.md"
+    },
+    {
+      "id": "oceanengine_1872138027320329",
+      "doc_id": "1872138027320329",
+      "platform": "oceanengine",
+      "title": "批量启停关键词调控任务",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872138027320329?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872138027320329.md"
+    },
+    {
+      "id": "oceanengine_1872666215168064",
+      "doc_id": "1872666215168064",
+      "platform": "oceanengine",
+      "title": "EBP用户角色接口权限查询",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872666215168064?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872666215168064.md"
+    },
+    {
+      "id": "oceanengine_1872851830768907",
+      "doc_id": "1872851830768907",
+      "platform": "oceanengine",
+      "title": "获取项目诊断-重复投放建议NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1872851830768907?origin=left_nav",
+      "public_path": "/oceanengine/docs/1872851830768907.md"
+    },
+    {
+      "id": "oceanengine_1873738023776650",
+      "doc_id": "1873738023776650",
+      "platform": "oceanengine",
+      "title": "工作台组织管理——解绑账户NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1873738023776650?origin=left_nav",
+      "public_path": "/oceanengine/docs/1873738023776650.md"
+    },
+    {
+      "id": "oceanengine_1873738841264328",
+      "doc_id": "1873738841264328",
+      "platform": "oceanengine",
+      "title": "工作台组织管理——组织内账户转移NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1873738841264328?origin=left_nav",
+      "public_path": "/oceanengine/docs/1873738841264328.md"
+    },
+    {
+      "id": "oceanengine_1873739066289152",
+      "doc_id": "1873739066289152",
+      "platform": "oceanengine",
+      "title": "工作台组织管理——创建子组织NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1873739066289152?origin=left_nav",
+      "public_path": "/oceanengine/docs/1873739066289152.md"
+    },
+    {
+      "id": "oceanengine_1873739341685916",
+      "doc_id": "1873739341685916",
+      "platform": "oceanengine",
+      "title": "工作台组织管理——绑定账户NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1873739341685916?origin=left_nav",
+      "public_path": "/oceanengine/docs/1873739341685916.md"
+    },
+    {
+      "id": "oceanengine_1873739525036032",
+      "doc_id": "1873739525036032",
+      "platform": "oceanengine",
+      "title": "查看异步任务执行进度/结果NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1873739525036032?origin=left_nav",
+      "public_path": "/oceanengine/docs/1873739525036032.md"
+    },
+    {
+      "id": "oceanengine_1873740163136728",
+      "doc_id": "1873740163136728",
+      "platform": "oceanengine",
+      "title": "工作台组织管理——查看账户绑定组织NEW",
+      "source_url": "https://open.oceanengine.com/labels/7/docs/1873740163136728?origin=left_nav",
+      "public_path": "/oceanengine/docs/1873740163136728.md"
     }
   ],
   "outputs": {
@@ -5352,5 +5568,5 @@
     "platform_index": "/oceanengine/index.md",
     "platform_manifest": "/oceanengine/manifest.json"
   },
-  "updated_at": "2026-07-12T02:57:30.699Z"
+  "updated_at": "2026-09-09T10:25:26.275Z"
 }

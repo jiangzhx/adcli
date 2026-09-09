@@ -4300,7 +4300,7 @@
 - Source: https://open.oceanengine.com/labels/7/docs/1761603666011139?origin=left_nav
 - Doc ID: 1761603666011139
 
-### 获取营销预览二维码（升级版）
+### 获取预览二维码（升级版）
 
 - Public: /oceanengine/docs/1763117461145604.md
 - Source: https://open.oceanengine.com/labels/7/docs/1763117461145604?origin=left_nav
@@ -4960,7 +4960,7 @@
 - Source: https://open.oceanengine.com/labels/7/docs/1800831263778816?origin=left_nav
 - Doc ID: 1800831263778816
 
-### 获取账户下资产列表（新）
+### 获取账户下资产列表
 
 - Public: /oceanengine/docs/1800985709803914.md
 - Source: https://open.oceanengine.com/labels/7/docs/1800985709803914?origin=left_nav
@@ -5323,7 +5323,7 @@
 ### 获取拒审素材修复建议
 
 - Public: /oceanengine/docs/1827079072367946.md
-- Source: https://open.oceanengine.com/labels/7/docs/1827079072367946
+- Source: https://open.oceanengine.com/labels/7/docs/1827079072367946?origin=left_nav
 - Doc ID: 1827079072367946
 
 ### 创建采纳「拒审素材修复建议」任务
@@ -5929,13 +5929,13 @@
 ### 获取投放项目下素材
 
 - Public: /oceanengine/docs/1854927239666825.md
-- Source: https://open.oceanengine.com/labels/7/docs/1854927239666825
+- Source: https://open.oceanengine.com/labels/7/docs/1854927239666825?origin=left_nav
 - Doc ID: 1854927239666825
 
 ### 批量添加投放项目下素材
 
 - Public: /oceanengine/docs/1854929666566346.md
-- Source: https://open.oceanengine.com/labels/7/docs/1854929666566346
+- Source: https://open.oceanengine.com/labels/7/docs/1854929666566346?origin=left_nav
 - Doc ID: 1854929666566346
 
 ### 删除投放项目下素材
@@ -5947,14 +5947,14 @@
 ### 批量修改投放项目下素材状态
 
 - Public: /oceanengine/docs/1854930119140363.md
-- Source: https://open.oceanengine.com/labels/7/docs/1854930119140363
+- Source: https://open.oceanengine.com/labels/7/docs/1854930119140363?origin=left_nav
 - Doc ID: 1854930119140363
 
-### 获取投放项目审核建议
+### 获取操作日志详情
 
-- Public: /oceanengine/docs/1854930234989579.md
-- Source: https://open.oceanengine.com/labels/7/docs/1854930234989579
-- Doc ID: 1854930234989579
+- Public: /oceanengine/docs/1854930515444873.md
+- Source: https://open.oceanengine.com/labels/7/docs/1854930515444873?origin=left_nav
+- Doc ID: 1854930515444873
 
 ### 获取组织认证及授权主体列表
 
@@ -6064,100 +6064,10 @@
 - Source: https://open.oceanengine.com/labels/7/docs/1862334279237632?origin=left_nav
 - Doc ID: 1862334279237632
 
-### 创建素材起量调控任务
-
-- Public: /oceanengine/docs/1865709899834368.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865709899834368
-- Doc ID: 1865709899834368
-
-### 获取素材起量调控任务列表
-
-- Public: /oceanengine/docs/1865711954543627.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865711954543627
-- Doc ID: 1865711954543627
-
-### 获取项目下剩余可建调控任务数量
-
-- Public: /oceanengine/docs/1865789577903562.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865789577903562
-- Doc ID: 1865789577903562
-
-### 获取任务成本保障状态
-
-- Public: /oceanengine/docs/1865790390500555.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865790390500555
-- Doc ID: 1865790390500555
-
-### 创建定向调控任务
-
-- Public: /oceanengine/docs/1865790765669609.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865790765669609
-- Doc ID: 1865790765669609
-
-### 编辑定向调控任务
-
-- Public: /oceanengine/docs/1865791328190858.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865791328190858
-- Doc ID: 1865791328190858
-
-### 批量启停定向调控任务
-
-- Public: /oceanengine/docs/1865791787916951.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865791787916951
-- Doc ID: 1865791787916951
-
-### 删除定向调控任务
-
-- Public: /oceanengine/docs/1865792332937415.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865792332937415
-- Doc ID: 1865792332937415
-
-### 获取定向调控任务列表
-
-- Public: /oceanengine/docs/1865792884612096.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865792884612096
-- Doc ID: 1865792884612096
-
-### 删除素材起量调控任务
-
-- Public: /oceanengine/docs/1865798867792009.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865798867792009
-- Doc ID: 1865798867792009
-
-### 创建关键词调控任务
-
-- Public: /oceanengine/docs/1865799078509578.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865799078509578
-- Doc ID: 1865799078509578
-
-### 编辑关键词调控任务
-
-- Public: /oceanengine/docs/1865800083438596.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865800083438596
-- Doc ID: 1865800083438596
-
-### 删除关键词调控任务
-
-- Public: /oceanengine/docs/1865800196383747.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865800196383747
-- Doc ID: 1865800196383747
-
-### 批量启停关键词调控任务
-
-- Public: /oceanengine/docs/1865800511192212.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865800511192212
-- Doc ID: 1865800511192212
-
-### 获取关键词调控任务列表
-
-- Public: /oceanengine/docs/1865800833833036.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865800833833036
-- Doc ID: 1865800833833036
-
 ### 获取标准项目列表
 
 - Public: /oceanengine/docs/1865805197120905.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865805197120905
+- Source: https://open.oceanengine.com/labels/7/docs/1865805197120905?origin=left_nav
 - Doc ID: 1865805197120905
 
 ### 标准项目下获取可用优化目标
@@ -6165,6 +6075,12 @@
 - Public: /oceanengine/docs/1865817103800970.md
 - Source: https://open.oceanengine.com/labels/7/docs/1865817103800970
 - Doc ID: 1865817103800970
+
+### 巨量营销智擎版
+
+- Public: /oceanengine/docs/1865818432643072.md
+- Source: https://open.oceanengine.com/labels/7/docs/1865818432643072?origin=left_nav
+- Doc ID: 1865818432643072
 
 ### 标准项目下获取可用深度优化方式
 
@@ -6175,13 +6091,13 @@
 ### 创建标准项目
 
 - Public: /oceanengine/docs/1865819566002436.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865819566002436
+- Source: https://open.oceanengine.com/labels/7/docs/1865819566002436?origin=left_nav
 - Doc ID: 1865819566002436
 
 ### 更新标准项目
 
 - Public: /oceanengine/docs/1865873315616282.md
-- Source: https://open.oceanengine.com/labels/7/docs/1865873315616282
+- Source: https://open.oceanengine.com/labels/7/docs/1865873315616282?origin=left_nav
 - Doc ID: 1865873315616282
 
 ### 代理商违规信息推送-AD-本地推
@@ -6207,6 +6123,252 @@
 - Public: /oceanengine/docs/1866517384079625.md
 - Source: https://open.oceanengine.com/labels/7/docs/1866517384079625?origin=left_nav
 - Doc ID: 1866517384079625
+
+### 获取升级版巨量引擎工作台账户星广联投任务列表
+
+- Public: /oceanengine/docs/1868949066560512.md
+- Source: https://open.oceanengine.com/labels/7/docs/1868949066560512?origin=left_nav
+- Doc ID: 1868949066560512
+
+### 获取升级版巨量引擎工作台账户星广联投任务已投稿达人信息
+
+- Public: /oceanengine/docs/1868950079138956.md
+- Source: https://open.oceanengine.com/labels/7/docs/1868950079138956?origin=left_nav
+- Doc ID: 1868950079138956
+
+### 获取升级版巨量引擎工作台账户星广联投视频数据
+
+- Public: /oceanengine/docs/1868950518957124.md
+- Source: https://open.oceanengine.com/labels/7/docs/1868950518957124?origin=left_nav
+- Doc ID: 1868950518957124
+
+### 更新项目自选素材状态
+
+- Public: /oceanengine/docs/1869423189855306.md
+- Source: https://open.oceanengine.com/labels/7/docs/1869423189855306?origin=left_nav
+- Doc ID: 1869423189855306
+
+### 【智擎版】标准项目报表实时数据变动消息推送
+
+- Public: /oceanengine/docs/1870593262219592.md
+- Source: https://open.oceanengine.com/labels/7/docs/1870593262219592?origin=left_nav
+- Doc ID: 1870593262219592
+
+### 【智擎版】标准项目调控任务报表实时数据数据变动消息推送
+
+- Public: /oceanengine/docs/1870597686604104.md
+- Source: https://open.oceanengine.com/labels/7/docs/1870597686604104?origin=left_nav
+- Doc ID: 1870597686604104
+
+### 【智擎版】标准项目基础素材报表实时数据变动消息推送
+
+- Public: /oceanengine/docs/1870598120535044.md
+- Source: https://open.oceanengine.com/labels/7/docs/1870598120535044?origin=left_nav
+- Doc ID: 1870598120535044
+
+### EBP组织-删除试玩/直玩素材
+
+- Public: /oceanengine/docs/1870677089664795.md
+- Source: https://open.oceanengine.com/labels/7/docs/1870677089664795?origin=left_nav
+- Doc ID: 1870677089664795
+
+### 升级版工作台组织上传试玩/直玩素材
+
+- Public: /oceanengine/docs/1870677384747337.md
+- Source: https://open.oceanengine.com/labels/7/docs/1870677384747337?origin=left_nav
+- Doc ID: 1870677384747337
+
+### 获取账户可用的组织试玩/直玩素材
+
+- Public: /oceanengine/docs/1870677509430347.md
+- Source: https://open.oceanengine.com/labels/7/docs/1870677509430347?origin=left_nav
+- Doc ID: 1870677509430347
+
+### 【智擎版】标准项目状态实时推送
+
+- Public: /oceanengine/docs/1870870452456523.md
+- Source: https://open.oceanengine.com/labels/7/docs/1870870452456523?origin=left_nav
+- Doc ID: 1870870452456523
+
+### 【智擎版】标准项目配置实时变更
+
+- Public: /oceanengine/docs/1870871057340553.md
+- Source: https://open.oceanengine.com/labels/7/docs/1870871057340553?origin=left_nav
+- Doc ID: 1870871057340553
+
+### 获取组织维度视频列表（ebp）
+
+- Public: /oceanengine/docs/1871578054932524.md
+- Source: https://open.oceanengine.com/labels/7/docs/1871578054932524?origin=left_nav
+- Doc ID: 1871578054932524
+
+### 升级版工作台星广联投任务管理
+
+- Public: /oceanengine/docs/1872029502098632.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872029502098632?origin=left_nav
+- Doc ID: 1872029502098632
+
+### 获取素材起量调控任务列表
+
+- Public: /oceanengine/docs/1872033559772938.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872033559772938?origin=left_nav
+- Doc ID: 1872033559772938
+
+### 项目管理
+
+- Public: /oceanengine/docs/1872036018765980.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872036018765980?origin=left_nav
+- Doc ID: 1872036018765980
+
+### 调控任务
+
+- Public: /oceanengine/docs/1872036076260416.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872036076260416?origin=left_nav
+- Doc ID: 1872036076260416
+
+### 优化目标
+
+- Public: /oceanengine/docs/1872036184023040.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872036184023040?origin=left_nav
+- Doc ID: 1872036184023040
+
+### 创建定向调控任务
+
+- Public: /oceanengine/docs/1872036641062924.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872036641062924?origin=left_nav
+- Doc ID: 1872036641062924
+
+### 编辑定向调控任务
+
+- Public: /oceanengine/docs/1872036761269376.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872036761269376?origin=left_nav
+- Doc ID: 1872036761269376
+
+### 删除定向调控任务
+
+- Public: /oceanengine/docs/1872036997115008.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872036997115008?origin=left_nav
+- Doc ID: 1872036997115008
+
+### 批量启停定向调控任务
+
+- Public: /oceanengine/docs/1872037080814604.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872037080814604?origin=left_nav
+- Doc ID: 1872037080814604
+
+### 获取定向调控任务列表
+
+- Public: /oceanengine/docs/1872037169709132.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872037169709132?origin=left_nav
+- Doc ID: 1872037169709132
+
+### 创建关键词调控任务
+
+- Public: /oceanengine/docs/1872037607466537.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872037607466537?origin=left_nav
+- Doc ID: 1872037607466537
+
+### 编辑关键词调控任务
+
+- Public: /oceanengine/docs/1872037755000315.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872037755000315?origin=left_nav
+- Doc ID: 1872037755000315
+
+### 删除关键词调控任务
+
+- Public: /oceanengine/docs/1872037861597259.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872037861597259?origin=left_nav
+- Doc ID: 1872037861597259
+
+### 删除素材起量调控任务
+
+- Public: /oceanengine/docs/1872038932102156.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872038932102156?origin=left_nav
+- Doc ID: 1872038932102156
+
+### 创建素材起量调控任务
+
+- Public: /oceanengine/docs/1872041259727386.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872041259727386?origin=left_nav
+- Doc ID: 1872041259727386
+
+### 获取项目下剩余可建调控任务数量
+
+- Public: /oceanengine/docs/1872130175108228.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872130175108228?origin=left_nav
+- Doc ID: 1872130175108228
+
+### 获取项目/调控任务保障历史列表
+
+- Public: /oceanengine/docs/1872131888860160.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872131888860160?origin=left_nav
+- Doc ID: 1872131888860160
+
+### 获取任务成本保障状态
+
+- Public: /oceanengine/docs/1872133236794380.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872133236794380?origin=left_nav
+- Doc ID: 1872133236794380
+
+### 获取关键词调控任务列表
+
+- Public: /oceanengine/docs/1872137299017099.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872137299017099?origin=left_nav
+- Doc ID: 1872137299017099
+
+### 批量启停关键词调控任务
+
+- Public: /oceanengine/docs/1872138027320329.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872138027320329?origin=left_nav
+- Doc ID: 1872138027320329
+
+### EBP用户角色接口权限查询
+
+- Public: /oceanengine/docs/1872666215168064.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872666215168064?origin=left_nav
+- Doc ID: 1872666215168064
+
+### 获取项目诊断-重复投放建议NEW
+
+- Public: /oceanengine/docs/1872851830768907.md
+- Source: https://open.oceanengine.com/labels/7/docs/1872851830768907?origin=left_nav
+- Doc ID: 1872851830768907
+
+### 工作台组织管理——解绑账户NEW
+
+- Public: /oceanengine/docs/1873738023776650.md
+- Source: https://open.oceanengine.com/labels/7/docs/1873738023776650?origin=left_nav
+- Doc ID: 1873738023776650
+
+### 工作台组织管理——组织内账户转移NEW
+
+- Public: /oceanengine/docs/1873738841264328.md
+- Source: https://open.oceanengine.com/labels/7/docs/1873738841264328?origin=left_nav
+- Doc ID: 1873738841264328
+
+### 工作台组织管理——创建子组织NEW
+
+- Public: /oceanengine/docs/1873739066289152.md
+- Source: https://open.oceanengine.com/labels/7/docs/1873739066289152?origin=left_nav
+- Doc ID: 1873739066289152
+
+### 工作台组织管理——绑定账户NEW
+
+- Public: /oceanengine/docs/1873739341685916.md
+- Source: https://open.oceanengine.com/labels/7/docs/1873739341685916?origin=left_nav
+- Doc ID: 1873739341685916
+
+### 查看异步任务执行进度/结果NEW
+
+- Public: /oceanengine/docs/1873739525036032.md
+- Source: https://open.oceanengine.com/labels/7/docs/1873739525036032?origin=left_nav
+- Doc ID: 1873739525036032
+
+### 工作台组织管理——查看账户绑定组织NEW
+
+- Public: /oceanengine/docs/1873740163136728.md
+- Source: https://open.oceanengine.com/labels/7/docs/1873740163136728?origin=left_nav
+- Doc ID: 1873740163136728
 
 ## tencent_ads
 
